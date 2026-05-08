@@ -4,7 +4,7 @@
 
 ### VertexAiIndex <a name="VertexAiIndex" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index google_vertex_ai_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index google_vertex_ai_index}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer"></a>
 
@@ -20,11 +20,12 @@ VertexAiIndex.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .displayName(java.lang.String)
+    .metadata(VertexAiIndexMetadata)
 //  .description(java.lang.String)
+//  .encryptionSpec(VertexAiIndexEncryptionSpec)
 //  .id(java.lang.String)
 //  .indexUpdateMethod(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
-//  .metadata(VertexAiIndexMetadata)
 //  .project(java.lang.String)
 //  .region(java.lang.String)
 //  .timeouts(VertexAiIndexTimeouts)
@@ -43,12 +44,13 @@ VertexAiIndex.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name of the Index. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the Index. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.encryptionSpec">encryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a></code> | encryption_spec block. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.indexUpdateMethod">indexUpdateMethod</a></code> | <code>java.lang.String</code> | The update method to use with this Index. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | The labels with user-defined metadata to organize your Indexes. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The region of the index. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts">VertexAiIndexTimeouts</a></code> | timeouts block. |
 
@@ -122,7 +124,17 @@ The display name of the Index.
 
 The name can be up to 128 characters long and can consist of any UTF-8 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#display_name VertexAiIndex#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#display_name VertexAiIndex#display_name}
+
+---
+
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.metadata"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a>
+
+metadata block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#metadata VertexAiIndex#metadata}
 
 ---
 
@@ -132,7 +144,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the Index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#description VertexAiIndex#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#description VertexAiIndex#description}
+
+---
+
+##### `encryptionSpec`<sup>Optional</sup> <a name="encryptionSpec" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.encryptionSpec"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a>
+
+encryption_spec block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#encryption_spec VertexAiIndex#encryption_spec}
 
 ---
 
@@ -140,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -158,7 +180,7 @@ The value must be the followings. If not set, BATCH_UPDATE will be used by defau
 * BATCH_UPDATE: user can call indexes.patch with files on Cloud Storage of datapoints to update.
 * STREAM_UPDATE: user can call indexes.upsertDatapoints/DeleteDatapoints to update the Index and the updates will be applied in corresponding DeployedIndexes in nearly real-time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#index_update_method VertexAiIndex#index_update_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#index_update_method VertexAiIndex#index_update_method}
 
 ---
 
@@ -171,17 +193,7 @@ The labels with user-defined metadata to organize your Indexes.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#labels VertexAiIndex#labels}
-
----
-
-##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer.parameter.metadata"></a>
-
-- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a>
-
-metadata block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#metadata VertexAiIndex#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#labels VertexAiIndex#labels}
 
 ---
 
@@ -189,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}.
 
 ---
 
@@ -199,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the index. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#region VertexAiIndex#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#region VertexAiIndex#region}
 
 ---
 
@@ -209,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#timeouts VertexAiIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#timeouts VertexAiIndex#timeouts}
 
 ---
 
@@ -241,13 +253,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putEncryptionSpec">putEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putMetadata">putMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetEncryptionSpec">resetEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetIndexUpdateMethod">resetIndexUpdateMethod</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetLabels">resetLabels</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetMetadata">resetMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -565,6 +578,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putEncryptionSpec` <a name="putEncryptionSpec" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putEncryptionSpec"></a>
+
+```java
+public void putEncryptionSpec(VertexAiIndexEncryptionSpec value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putEncryptionSpec.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a>
+
+---
+
 ##### `putMetadata` <a name="putMetadata" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putMetadata"></a>
 
 ```java
@@ -595,6 +620,12 @@ public void putTimeouts(VertexAiIndexTimeouts value)
 public void resetDescription()
 ```
 
+##### `resetEncryptionSpec` <a name="resetEncryptionSpec" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetEncryptionSpec"></a>
+
+```java
+public void resetEncryptionSpec()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetId"></a>
 
 ```java
@@ -611,12 +642,6 @@ public void resetIndexUpdateMethod()
 
 ```java
 public void resetLabels()
-```
-
-##### `resetMetadata` <a name="resetMetadata" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetMetadata"></a>
-
-```java
-public void resetMetadata()
 ```
 
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetProject"></a>
@@ -740,7 +765,7 @@ The construct id used in the generated config for the VertexAiIndex to import.
 
 The id of the existing VertexAiIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,6 +798,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.deployedIndexes">deployedIndexes</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesList">VertexAiIndexDeployedIndexesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.effectiveLabels">effectiveLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.encryptionSpec">encryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference">VertexAiIndexEncryptionSpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.etag">etag</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.indexStats">indexStats</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexIndexStatsList">VertexAiIndexIndexStatsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference">VertexAiIndexMetadataOutputReference</a></code> | *No description.* |
@@ -783,6 +809,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.encryptionSpecInput">encryptionSpecInput</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.indexUpdateMethodInput">indexUpdateMethodInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
@@ -972,6 +999,16 @@ public StringMap getEffectiveLabels();
 
 ---
 
+##### `encryptionSpec`<sup>Required</sup> <a name="encryptionSpec" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.encryptionSpec"></a>
+
+```java
+public VertexAiIndexEncryptionSpecOutputReference getEncryptionSpec();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference">VertexAiIndexEncryptionSpecOutputReference</a>
+
+---
+
 ##### `etag`<sup>Required</sup> <a name="etag" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.etag"></a>
 
 ```java
@@ -1069,6 +1106,16 @@ public java.lang.String getDisplayNameInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `encryptionSpecInput`<sup>Optional</sup> <a name="encryptionSpecInput" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.encryptionSpecInput"></a>
+
+```java
+public VertexAiIndexEncryptionSpec getEncryptionSpecInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a>
 
 ---
 
@@ -1248,11 +1295,12 @@ VertexAiIndexConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .displayName(java.lang.String)
+    .metadata(VertexAiIndexMetadata)
 //  .description(java.lang.String)
+//  .encryptionSpec(VertexAiIndexEncryptionSpec)
 //  .id(java.lang.String)
 //  .indexUpdateMethod(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
-//  .metadata(VertexAiIndexMetadata)
 //  .project(java.lang.String)
 //  .region(java.lang.String)
 //  .timeouts(VertexAiIndexTimeouts)
@@ -1271,12 +1319,13 @@ VertexAiIndexConfig.builder()
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name of the Index. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the Index. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.encryptionSpec">encryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a></code> | encryption_spec block. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.indexUpdateMethod">indexUpdateMethod</a></code> | <code>java.lang.String</code> | The update method to use with this Index. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | The labels with user-defined metadata to organize your Indexes. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.region">region</a></code> | <code>java.lang.String</code> | The region of the index. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts">VertexAiIndexTimeouts</a></code> | timeouts block. |
 
@@ -1364,7 +1413,21 @@ The display name of the Index.
 
 The name can be up to 128 characters long and can consist of any UTF-8 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#display_name VertexAiIndex#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#display_name VertexAiIndex#display_name}
+
+---
+
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.metadata"></a>
+
+```java
+public VertexAiIndexMetadata getMetadata();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a>
+
+metadata block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#metadata VertexAiIndex#metadata}
 
 ---
 
@@ -1378,7 +1441,21 @@ public java.lang.String getDescription();
 
 The description of the Index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#description VertexAiIndex#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#description VertexAiIndex#description}
+
+---
+
+##### `encryptionSpec`<sup>Optional</sup> <a name="encryptionSpec" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.encryptionSpec"></a>
+
+```java
+public VertexAiIndexEncryptionSpec getEncryptionSpec();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a>
+
+encryption_spec block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#encryption_spec VertexAiIndex#encryption_spec}
 
 ---
 
@@ -1390,7 +1467,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1412,7 +1489,7 @@ The value must be the followings. If not set, BATCH_UPDATE will be used by defau
 * BATCH_UPDATE: user can call indexes.patch with files on Cloud Storage of datapoints to update.
 * STREAM_UPDATE: user can call indexes.upsertDatapoints/DeleteDatapoints to update the Index and the updates will be applied in corresponding DeployedIndexes in nearly real-time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#index_update_method VertexAiIndex#index_update_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#index_update_method VertexAiIndex#index_update_method}
 
 ---
 
@@ -1429,21 +1506,7 @@ The labels with user-defined metadata to organize your Indexes.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#labels VertexAiIndex#labels}
-
----
-
-##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.metadata"></a>
-
-```java
-public VertexAiIndexMetadata getMetadata();
-```
-
-- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a>
-
-metadata block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#metadata VertexAiIndex#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#labels VertexAiIndex#labels}
 
 ---
 
@@ -1455,7 +1518,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}.
 
 ---
 
@@ -1469,7 +1532,7 @@ public java.lang.String getRegion();
 
 The region of the index. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#region VertexAiIndex#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#region VertexAiIndex#region}
 
 ---
 
@@ -1483,7 +1546,7 @@ public VertexAiIndexTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#timeouts VertexAiIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#timeouts VertexAiIndex#timeouts}
 
 ---
 
@@ -1498,6 +1561,42 @@ VertexAiIndexDeployedIndexes.builder()
     .build();
 ```
 
+
+### VertexAiIndexEncryptionSpec <a name="VertexAiIndexEncryptionSpec" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.vertex_ai_index.VertexAiIndexEncryptionSpec;
+
+VertexAiIndexEncryptionSpec.builder()
+    .kmsKeyName(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | Required. |
+
+---
+
+##### `kmsKeyName`<sup>Required</sup> <a name="kmsKeyName" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec.property.kmsKeyName"></a>
+
+```java
+public java.lang.String getKmsKeyName();
+```
+
+- *Type:* java.lang.String
+
+Required.
+
+The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. Has the form: 'projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key'. The key needs to be in the same region as where the compute resource is created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#kms_key_name VertexAiIndex#kms_key_name}
+
+---
 
 ### VertexAiIndexIndexStats <a name="VertexAiIndexIndexStats" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexIndexStats"></a>
 
@@ -1519,7 +1618,7 @@ VertexAiIndexIndexStats.builder()
 import io.cdktn.providers.google.vertex_ai_index.VertexAiIndexMetadata;
 
 VertexAiIndexMetadata.builder()
-//  .config(VertexAiIndexMetadataConfig)
+    .config(VertexAiIndexMetadataConfig)
 //  .contentsDeltaUri(java.lang.String)
 //  .isCompleteOverwrite(java.lang.Boolean|IResolvable)
     .build();
@@ -1535,7 +1634,7 @@ VertexAiIndexMetadata.builder()
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata.property.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata.property.config"></a>
 
 ```java
 public VertexAiIndexMetadataConfig getConfig();
@@ -1545,7 +1644,7 @@ public VertexAiIndexMetadataConfig getConfig();
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#config VertexAiIndex#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#config VertexAiIndex#config}
 
 ---
 
@@ -1565,7 +1664,7 @@ Index field can be also updated as part of the same call.
 The expected structure and format of the files this URI points to is
 described at https://cloud.google.com/vertex-ai/docs/matching-engine/using-matching-engine#input-data-format
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#contents_delta_uri VertexAiIndex#contents_delta_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#contents_delta_uri VertexAiIndex#contents_delta_uri}
 
 ---
 
@@ -1579,7 +1678,7 @@ public java.lang.Boolean|IResolvable getIsCompleteOverwrite();
 
 If this field is set together with contentsDeltaUri when calling IndexService.UpdateIndex, then existing content of the Index will be replaced by the data from the contentsDeltaUri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#is_complete_overwrite VertexAiIndex#is_complete_overwrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#is_complete_overwrite VertexAiIndex#is_complete_overwrite}
 
 ---
 
@@ -1623,7 +1722,7 @@ public java.lang.Number getDimensions();
 
 The number of dimensions of the input vectors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#dimensions VertexAiIndex#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#dimensions VertexAiIndex#dimensions}
 
 ---
 
@@ -1637,7 +1736,7 @@ public VertexAiIndexMetadataConfigAlgorithmConfig getAlgorithmConfig();
 
 algorithm_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#algorithm_config VertexAiIndex#algorithm_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#algorithm_config VertexAiIndex#algorithm_config}
 
 ---
 
@@ -1655,7 +1754,7 @@ Exact reordering is a procedure where results returned by an
 approximate search algorithm are reordered via a more expensive distance computation.
 Required if tree-AH algorithm is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#approximate_neighbors_count VertexAiIndex#approximate_neighbors_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#approximate_neighbors_count VertexAiIndex#approximate_neighbors_count}
 
 ---
 
@@ -1676,7 +1775,7 @@ The value must be one of the followings:
 * COSINE_DISTANCE: Cosine Distance. Defined as 1 - cosine similarity.
 * DOT_PRODUCT_DISTANCE: Dot Product Distance. Defined as a negative of the dot product
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#distance_measure_type VertexAiIndex#distance_measure_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#distance_measure_type VertexAiIndex#distance_measure_type}
 
 ---
 
@@ -1695,7 +1794,7 @@ The value must be one of the followings:
 * UNIT_L2_NORM: Unit L2 normalization type
 * NONE: No normalization type is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#feature_norm_type VertexAiIndex#feature_norm_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#feature_norm_type VertexAiIndex#feature_norm_type}
 
 ---
 
@@ -1716,7 +1815,7 @@ The shard size must be specified when creating an index. The value must be one o
 * SHARD_SIZE_MEDIUM: Medium (20GB)
 * SHARD_SIZE_LARGE: Large (50GB)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#shard_size VertexAiIndex#shard_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#shard_size VertexAiIndex#shard_size}
 
 ---
 
@@ -1752,7 +1851,7 @@ public VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig getBruteForceC
 
 brute_force_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#brute_force_config VertexAiIndex#brute_force_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#brute_force_config VertexAiIndex#brute_force_config}
 
 ---
 
@@ -1766,7 +1865,7 @@ public VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig getTreeAhConfig();
 
 tree_ah_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#tree_ah_config VertexAiIndex#tree_ah_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#tree_ah_config VertexAiIndex#tree_ah_config}
 
 ---
 
@@ -1814,7 +1913,7 @@ public java.lang.Number getLeafNodeEmbeddingCount();
 
 Number of embeddings on each leaf node. The default value is 1000 if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#leaf_node_embedding_count VertexAiIndex#leaf_node_embedding_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#leaf_node_embedding_count VertexAiIndex#leaf_node_embedding_count}
 
 ---
 
@@ -1831,7 +1930,7 @@ The default percentage of leaf nodes that any query may be searched.
 Must be in
 range 1-100, inclusive. The default value is 10 (means 10%) if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#leaf_nodes_to_search_percent VertexAiIndex#leaf_nodes_to_search_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#leaf_nodes_to_search_percent VertexAiIndex#leaf_nodes_to_search_percent}
 
 ---
 
@@ -1853,9 +1952,9 @@ VertexAiIndexTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#create VertexAiIndex#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#delete VertexAiIndex#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#update VertexAiIndex#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#create VertexAiIndex#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#delete VertexAiIndex#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#update VertexAiIndex#update}. |
 
 ---
 
@@ -1867,7 +1966,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#create VertexAiIndex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#create VertexAiIndex#create}.
 
 ---
 
@@ -1879,7 +1978,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#delete VertexAiIndex#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#delete VertexAiIndex#delete}.
 
 ---
 
@@ -1891,7 +1990,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#update VertexAiIndex#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#update VertexAiIndex#update}.
 
 ---
 
@@ -2331,6 +2430,277 @@ public VertexAiIndexDeployedIndexes getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexes">VertexAiIndexDeployedIndexes</a>
+
+---
+
+
+### VertexAiIndexEncryptionSpecOutputReference <a name="VertexAiIndexEncryptionSpecOutputReference" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.vertex_ai_index.VertexAiIndexEncryptionSpecOutputReference;
+
+new VertexAiIndexEncryptionSpecOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.kmsKeyNameInput">kmsKeyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `kmsKeyNameInput`<sup>Optional</sup> <a name="kmsKeyNameInput" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.kmsKeyNameInput"></a>
+
+```java
+public java.lang.String getKmsKeyNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `kmsKeyName`<sup>Required</sup> <a name="kmsKeyName" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.kmsKeyName"></a>
+
+```java
+public java.lang.String getKmsKeyName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.internalValue"></a>
+
+```java
+public VertexAiIndexEncryptionSpec getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a>
 
 ---
 
@@ -4142,7 +4512,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.putConfig">putConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resetConfig">resetConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resetContentsDeltaUri">resetContentsDeltaUri</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resetIsCompleteOverwrite">resetIsCompleteOverwrite</a></code> | *No description.* |
 
@@ -4309,12 +4678,6 @@ public void putConfig(VertexAiIndexMetadataConfig value)
 - *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataConfig">VertexAiIndexMetadataConfig</a>
 
 ---
-
-##### `resetConfig` <a name="resetConfig" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resetConfig"></a>
-
-```java
-public void resetConfig()
-```
 
 ##### `resetContentsDeltaUri` <a name="resetContentsDeltaUri" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resetContentsDeltaUri"></a>
 

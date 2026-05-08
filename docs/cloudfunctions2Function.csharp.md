@@ -4,7 +4,7 @@
 
 ### Cloudfunctions2Function <a name="Cloudfunctions2Function" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2Function"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function google_cloudfunctions2_function}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function google_cloudfunctions2_function}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2Function.Initializer"></a>
 
@@ -604,7 +604,7 @@ The construct id used in the generated config for the Cloudfunctions2Function to
 
 The id of the existing Cloudfunctions2Function that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1153,7 +1153,7 @@ public Cloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy AutomaticUpdatePo
 
 automatic_update_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#automatic_update_policy Cloudfunctions2Function#automatic_update_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#automatic_update_policy Cloudfunctions2Function#automatic_update_policy}
 
 ---
 
@@ -1167,7 +1167,7 @@ public string DockerRepository { get; set; }
 
 User managed repository created in Artifact Registry optionally with a customer managed encryption key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#docker_repository Cloudfunctions2Function#docker_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#docker_repository Cloudfunctions2Function#docker_repository}
 
 ---
 
@@ -1186,7 +1186,7 @@ compatibility, if function with given name is not found, then the system
 will try to use function named "function". For Node.js this is name of a
 function exported by the module specified in source_location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#entry_point Cloudfunctions2Function#entry_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#entry_point Cloudfunctions2Function#entry_point}
 
 ---
 
@@ -1200,7 +1200,7 @@ public System.Collections.Generic.IDictionary<string, string> EnvironmentVariabl
 
 User-provided build-time environment variables for the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#environment_variables Cloudfunctions2Function#environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#environment_variables Cloudfunctions2Function#environment_variables}
 
 ---
 
@@ -1214,7 +1214,7 @@ public Cloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy OnDeployUpdatePoli
 
 on_deploy_update_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#on_deploy_update_policy Cloudfunctions2Function#on_deploy_update_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#on_deploy_update_policy Cloudfunctions2Function#on_deploy_update_policy}
 
 ---
 
@@ -1228,7 +1228,7 @@ public string Runtime { get; set; }
 
 The runtime in which to run the function. Required when deploying a new function, optional when updating an existing function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#runtime Cloudfunctions2Function#runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#runtime Cloudfunctions2Function#runtime}
 
 ---
 
@@ -1242,7 +1242,7 @@ public string ServiceAccount { get; set; }
 
 The fully-qualified name of the service account to be used for building the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#service_account Cloudfunctions2Function#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#service_account Cloudfunctions2Function#service_account}
 
 ---
 
@@ -1256,7 +1256,7 @@ public Cloudfunctions2FunctionBuildConfigSource Source { get; set; }
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#source Cloudfunctions2Function#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#source Cloudfunctions2Function#source}
 
 ---
 
@@ -1270,7 +1270,7 @@ public string WorkerPool { get; set; }
 
 Name of the Cloud Build Custom Worker Pool that should be used to build the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#worker_pool Cloudfunctions2Function#worker_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#worker_pool Cloudfunctions2Function#worker_pool}
 
 ---
 
@@ -1332,7 +1332,7 @@ public Cloudfunctions2FunctionBuildConfigSourceRepoSource RepoSource { get; set;
 
 repo_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#repo_source Cloudfunctions2Function#repo_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#repo_source Cloudfunctions2Function#repo_source}
 
 ---
 
@@ -1346,7 +1346,7 @@ public Cloudfunctions2FunctionBuildConfigSourceStorageSource StorageSource { get
 
 storage_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#storage_source Cloudfunctions2Function#storage_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#storage_source Cloudfunctions2Function#storage_source}
 
 ---
 
@@ -1392,7 +1392,7 @@ public string BranchName { get; set; }
 
 Regex matching branches to build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#branch_name Cloudfunctions2Function#branch_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#branch_name Cloudfunctions2Function#branch_name}
 
 ---
 
@@ -1406,7 +1406,7 @@ public string CommitSha { get; set; }
 
 Regex matching tags to build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#commit_sha Cloudfunctions2Function#commit_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#commit_sha Cloudfunctions2Function#commit_sha}
 
 ---
 
@@ -1420,7 +1420,7 @@ public string Dir { get; set; }
 
 Directory, relative to the source root, in which to run the build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#dir Cloudfunctions2Function#dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#dir Cloudfunctions2Function#dir}
 
 ---
 
@@ -1434,7 +1434,7 @@ public bool|IResolvable InvertRegex { get; set; }
 
 Only trigger a build if the revision regex does NOT match the revision regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#invert_regex Cloudfunctions2Function#invert_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#invert_regex Cloudfunctions2Function#invert_regex}
 
 ---
 
@@ -1448,7 +1448,7 @@ public string ProjectId { get; set; }
 
 ID of the project that owns the Cloud Source Repository. If omitted, the project ID requesting the build is assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#project_id Cloudfunctions2Function#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#project_id Cloudfunctions2Function#project_id}
 
 ---
 
@@ -1462,7 +1462,7 @@ public string RepoName { get; set; }
 
 Name of the Cloud Source Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#repo_name Cloudfunctions2Function#repo_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#repo_name Cloudfunctions2Function#repo_name}
 
 ---
 
@@ -1476,7 +1476,7 @@ public string TagName { get; set; }
 
 Regex matching tags to build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#tag_name Cloudfunctions2Function#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#tag_name Cloudfunctions2Function#tag_name}
 
 ---
 
@@ -1514,7 +1514,7 @@ public string Bucket { get; set; }
 
 Google Cloud Storage bucket containing the source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#bucket Cloudfunctions2Function#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#bucket Cloudfunctions2Function#bucket}
 
 ---
 
@@ -1528,7 +1528,7 @@ public double Generation { get; set; }
 
 Google Cloud Storage generation for the object. If the generation is omitted, the latest generation will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#generation Cloudfunctions2Function#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#generation Cloudfunctions2Function#generation}
 
 ---
 
@@ -1542,7 +1542,7 @@ public string Object { get; set; }
 
 Google Cloud Storage object containing the source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#object Cloudfunctions2Function#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#object Cloudfunctions2Function#object}
 
 ---
 
@@ -1591,10 +1591,10 @@ new Cloudfunctions2FunctionConfig {
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionConfig.property.buildConfig">BuildConfig</a></code> | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionBuildConfig">Cloudfunctions2FunctionBuildConfig</a></code> | build_config block. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionConfig.property.description">Description</a></code> | <code>string</code> | User-provided description of a function. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionConfig.property.eventTrigger">EventTrigger</a></code> | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTrigger">Cloudfunctions2FunctionEventTrigger</a></code> | event_trigger block. |
-| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#id Cloudfunctions2Function#id}. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#id Cloudfunctions2Function#id}. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionConfig.property.kmsKeyName">KmsKeyName</a></code> | <code>string</code> | Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt function resources. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A set of key/value label pairs associated with this Cloud Function. |
-| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#project Cloudfunctions2Function#project}. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#project Cloudfunctions2Function#project}. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionConfig.property.serviceConfig">ServiceConfig</a></code> | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig">Cloudfunctions2FunctionServiceConfig</a></code> | service_config block. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionTimeouts">Cloudfunctions2FunctionTimeouts</a></code> | timeouts block. |
 
@@ -1680,7 +1680,7 @@ public string Location { get; set; }
 
 The location of this cloud function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#location Cloudfunctions2Function#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#location Cloudfunctions2Function#location}
 
 ---
 
@@ -1694,7 +1694,7 @@ public string Name { get; set; }
 
 A user-defined name of the function. Function names must be unique globally and match pattern 'projects/* /locations/* /functions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#name Cloudfunctions2Function#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#name Cloudfunctions2Function#name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1710,7 +1710,7 @@ public Cloudfunctions2FunctionBuildConfig BuildConfig { get; set; }
 
 build_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#build_config Cloudfunctions2Function#build_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#build_config Cloudfunctions2Function#build_config}
 
 ---
 
@@ -1724,7 +1724,7 @@ public string Description { get; set; }
 
 User-provided description of a function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#description Cloudfunctions2Function#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#description Cloudfunctions2Function#description}
 
 ---
 
@@ -1738,7 +1738,7 @@ public Cloudfunctions2FunctionEventTrigger EventTrigger { get; set; }
 
 event_trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#event_trigger Cloudfunctions2Function#event_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#event_trigger Cloudfunctions2Function#event_trigger}
 
 ---
 
@@ -1750,7 +1750,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#id Cloudfunctions2Function#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#id Cloudfunctions2Function#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1769,7 +1769,7 @@ Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt 
 
 It must match the pattern projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#kms_key_name Cloudfunctions2Function#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#kms_key_name Cloudfunctions2Function#kms_key_name}
 
 ---
 
@@ -1786,7 +1786,7 @@ A set of key/value label pairs associated with this Cloud Function.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#labels Cloudfunctions2Function#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#labels Cloudfunctions2Function#labels}
 
 ---
 
@@ -1798,7 +1798,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#project Cloudfunctions2Function#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#project Cloudfunctions2Function#project}.
 
 ---
 
@@ -1812,7 +1812,7 @@ public Cloudfunctions2FunctionServiceConfig ServiceConfig { get; set; }
 
 service_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#service_config Cloudfunctions2Function#service_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#service_config Cloudfunctions2Function#service_config}
 
 ---
 
@@ -1826,7 +1826,7 @@ public Cloudfunctions2FunctionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#timeouts Cloudfunctions2Function#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#timeouts Cloudfunctions2Function#timeouts}
 
 ---
 
@@ -1838,8 +1838,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using Io.Cdktn.Providers.Google;
 
 new Cloudfunctions2FunctionEventTrigger {
+    string EventType,
     IResolvable|Cloudfunctions2FunctionEventTriggerEventFilters[] EventFilters = null,
-    string EventType = null,
     string PubsubTopic = null,
     string RetryPolicy = null,
     string ServiceAccountEmail = null,
@@ -1851,12 +1851,26 @@ new Cloudfunctions2FunctionEventTrigger {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTrigger.property.eventFilters">EventFilters</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerEventFilters">Cloudfunctions2FunctionEventTriggerEventFilters</a>[]</code> | event_filters block. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTrigger.property.eventType">EventType</a></code> | <code>string</code> | Required. The type of event to observe. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTrigger.property.eventFilters">EventFilters</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerEventFilters">Cloudfunctions2FunctionEventTriggerEventFilters</a>[]</code> | event_filters block. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTrigger.property.pubsubTopic">PubsubTopic</a></code> | <code>string</code> | The name of a Pub/Sub topic in the same project that will be used as the transport topic for the event delivery. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTrigger.property.retryPolicy">RetryPolicy</a></code> | <code>string</code> | Describes the retry policy in case of function's execution failure. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTrigger.property.serviceAccountEmail">ServiceAccountEmail</a></code> | <code>string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTrigger.property.triggerRegion">TriggerRegion</a></code> | <code>string</code> | The region that the trigger will be in. |
+
+---
+
+##### `EventType`<sup>Required</sup> <a name="EventType" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTrigger.property.eventType"></a>
+
+```csharp
+public string EventType { get; set; }
+```
+
+- *Type:* string
+
+Required. The type of event to observe.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#event_type Cloudfunctions2Function#event_type}
 
 ---
 
@@ -1870,21 +1884,7 @@ public IResolvable|Cloudfunctions2FunctionEventTriggerEventFilters[] EventFilter
 
 event_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#event_filters Cloudfunctions2Function#event_filters}
-
----
-
-##### `EventType`<sup>Optional</sup> <a name="EventType" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTrigger.property.eventType"></a>
-
-```csharp
-public string EventType { get; set; }
-```
-
-- *Type:* string
-
-Required. The type of event to observe.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#event_type Cloudfunctions2Function#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#event_filters Cloudfunctions2Function#event_filters}
 
 ---
 
@@ -1898,7 +1898,7 @@ public string PubsubTopic { get; set; }
 
 The name of a Pub/Sub topic in the same project that will be used as the transport topic for the event delivery.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#pubsub_topic Cloudfunctions2Function#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#pubsub_topic Cloudfunctions2Function#pubsub_topic}
 
 ---
 
@@ -1914,7 +1914,7 @@ Describes the retry policy in case of function's execution failure.
 
 Retried execution is charged as any other execution. Possible values: ["RETRY_POLICY_UNSPECIFIED", "RETRY_POLICY_DO_NOT_RETRY", "RETRY_POLICY_RETRY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#retry_policy Cloudfunctions2Function#retry_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#retry_policy Cloudfunctions2Function#retry_policy}
 
 ---
 
@@ -1932,7 +1932,7 @@ The email of the trigger's service account. The service account
 must have permission to invoke Cloud Run services. If empty, defaults to the
 Compute Engine default service account: {project_number}-compute@developer.gserviceaccount.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#service_account_email Cloudfunctions2Function#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#service_account_email Cloudfunctions2Function#service_account_email}
 
 ---
 
@@ -1951,7 +1951,7 @@ events originating in this region. It can be the same
 region as the function, a different region or multi-region, or the global
 region. If not provided, defaults to the same region as the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#trigger_region Cloudfunctions2Function#trigger_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#trigger_region Cloudfunctions2Function#trigger_region}
 
 ---
 
@@ -1993,7 +1993,7 @@ The name of a CloudEvents attribute.
 Currently, only a subset of attributes are supported for filtering. Use the 'gcloud eventarc providers describe' command to learn more about events and their attributes.
 Do not filter for the 'type' attribute here, as this is already achieved by the resource's 'event_type' attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#attribute Cloudfunctions2Function#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#attribute Cloudfunctions2Function#attribute}
 
 ---
 
@@ -2010,7 +2010,7 @@ Required.
 The value for the attribute.
 If the operator field is set as 'match-path-pattern', this value can be a path pattern instead of an exact value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#value Cloudfunctions2Function#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#value Cloudfunctions2Function#value}
 
 ---
 
@@ -2030,7 +2030,7 @@ pair specified in the filter are matched.
 The only allowed value is 'match-path-pattern'.
 [See documentation on path patterns here](https://cloud.google.com/eventarc/docs/path-patterns)'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#operator Cloudfunctions2Function#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#operator Cloudfunctions2Function#operator}
 
 ---
 
@@ -2046,6 +2046,8 @@ new Cloudfunctions2FunctionServiceConfig {
     string AvailableCpu = null,
     string AvailableMemory = null,
     string BinaryAuthorizationPolicy = null,
+    string DirectVpcEgress = null,
+    IResolvable|Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface[] DirectVpcNetworkInterface = null,
     System.Collections.Generic.IDictionary<string, string> EnvironmentVariables = null,
     string IngressSettings = null,
     double MaxInstanceCount = null,
@@ -2053,7 +2055,6 @@ new Cloudfunctions2FunctionServiceConfig {
     double MinInstanceCount = null,
     IResolvable|Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariables[] SecretEnvironmentVariables = null,
     IResolvable|Cloudfunctions2FunctionServiceConfigSecretVolumes[] SecretVolumes = null,
-    string Service = null,
     string ServiceAccountEmail = null,
     double TimeoutSeconds = null,
     string VpcConnector = null,
@@ -2069,6 +2070,8 @@ new Cloudfunctions2FunctionServiceConfig {
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.availableCpu">AvailableCpu</a></code> | <code>string</code> | The number of CPUs used in a single container instance. Default value is calculated from available memory. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.availableMemory">AvailableMemory</a></code> | <code>string</code> | The amount of memory available for a function. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.binaryAuthorizationPolicy">BinaryAuthorizationPolicy</a></code> | <code>string</code> | The binary authorization policy to be checked when deploying the Cloud Run service. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.directVpcEgress">DirectVpcEgress</a></code> | <code>string</code> | Egress settings for direct VPC. If not provided, it defaults to VPC_EGRESS_PRIVATE_RANGES_ONLY. Possible values: ["VPC_EGRESS_ALL_TRAFFIC", "VPC_EGRESS_PRIVATE_RANGES_ONLY"]. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.directVpcNetworkInterface">DirectVpcNetworkInterface</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface">Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface</a>[]</code> | direct_vpc_network_interface block. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.environmentVariables">EnvironmentVariables</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Environment variables that shall be available during function execution. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.ingressSettings">IngressSettings</a></code> | <code>string</code> | Available ingress settings. Defaults to "ALLOW_ALL" if unspecified. Default value: "ALLOW_ALL" Possible values: ["ALLOW_ALL", "ALLOW_INTERNAL_ONLY", "ALLOW_INTERNAL_AND_GCLB"]. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.maxInstanceCount">MaxInstanceCount</a></code> | <code>double</code> | The limit on the maximum number of function instances that may coexist at a given time. |
@@ -2076,7 +2079,6 @@ new Cloudfunctions2FunctionServiceConfig {
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.minInstanceCount">MinInstanceCount</a></code> | <code>double</code> | The limit on the minimum number of function instances that may coexist at a given time. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.secretEnvironmentVariables">SecretEnvironmentVariables</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariables">Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariables</a>[]</code> | secret_environment_variables block. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.secretVolumes">SecretVolumes</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumes">Cloudfunctions2FunctionServiceConfigSecretVolumes</a>[]</code> | secret_volumes block. |
-| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.service">Service</a></code> | <code>string</code> | Name of the service associated with a Function. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.serviceAccountEmail">ServiceAccountEmail</a></code> | <code>string</code> | The email of the service account for this function. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.timeoutSeconds">TimeoutSeconds</a></code> | <code>double</code> | The function execution timeout. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.vpcConnector">VpcConnector</a></code> | <code>string</code> | The Serverless VPC Access connector that this cloud function can connect to. |
@@ -2094,7 +2096,7 @@ public bool|IResolvable AllTrafficOnLatestRevision { get; set; }
 
 Whether 100% of traffic is routed to the latest revision. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#all_traffic_on_latest_revision Cloudfunctions2Function#all_traffic_on_latest_revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#all_traffic_on_latest_revision Cloudfunctions2Function#all_traffic_on_latest_revision}
 
 ---
 
@@ -2108,7 +2110,7 @@ public string AvailableCpu { get; set; }
 
 The number of CPUs used in a single container instance. Default value is calculated from available memory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#available_cpu Cloudfunctions2Function#available_cpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#available_cpu Cloudfunctions2Function#available_cpu}
 
 ---
 
@@ -2125,7 +2127,7 @@ The amount of memory available for a function.
 Defaults to 256M. Supported units are k, M, G, Mi, Gi. If no unit is
 supplied the value is interpreted as bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#available_memory Cloudfunctions2Function#available_memory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#available_memory Cloudfunctions2Function#available_memory}
 
 ---
 
@@ -2139,7 +2141,35 @@ public string BinaryAuthorizationPolicy { get; set; }
 
 The binary authorization policy to be checked when deploying the Cloud Run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#binary_authorization_policy Cloudfunctions2Function#binary_authorization_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#binary_authorization_policy Cloudfunctions2Function#binary_authorization_policy}
+
+---
+
+##### `DirectVpcEgress`<sup>Optional</sup> <a name="DirectVpcEgress" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.directVpcEgress"></a>
+
+```csharp
+public string DirectVpcEgress { get; set; }
+```
+
+- *Type:* string
+
+Egress settings for direct VPC. If not provided, it defaults to VPC_EGRESS_PRIVATE_RANGES_ONLY. Possible values: ["VPC_EGRESS_ALL_TRAFFIC", "VPC_EGRESS_PRIVATE_RANGES_ONLY"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#direct_vpc_egress Cloudfunctions2Function#direct_vpc_egress}
+
+---
+
+##### `DirectVpcNetworkInterface`<sup>Optional</sup> <a name="DirectVpcNetworkInterface" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.directVpcNetworkInterface"></a>
+
+```csharp
+public IResolvable|Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface[] DirectVpcNetworkInterface { get; set; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface">Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface</a>[]
+
+direct_vpc_network_interface block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#direct_vpc_network_interface Cloudfunctions2Function#direct_vpc_network_interface}
 
 ---
 
@@ -2153,7 +2183,7 @@ public System.Collections.Generic.IDictionary<string, string> EnvironmentVariabl
 
 Environment variables that shall be available during function execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#environment_variables Cloudfunctions2Function#environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#environment_variables Cloudfunctions2Function#environment_variables}
 
 ---
 
@@ -2167,7 +2197,7 @@ public string IngressSettings { get; set; }
 
 Available ingress settings. Defaults to "ALLOW_ALL" if unspecified. Default value: "ALLOW_ALL" Possible values: ["ALLOW_ALL", "ALLOW_INTERNAL_ONLY", "ALLOW_INTERNAL_AND_GCLB"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#ingress_settings Cloudfunctions2Function#ingress_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#ingress_settings Cloudfunctions2Function#ingress_settings}
 
 ---
 
@@ -2181,7 +2211,7 @@ public double MaxInstanceCount { get; set; }
 
 The limit on the maximum number of function instances that may coexist at a given time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#max_instance_count Cloudfunctions2Function#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#max_instance_count Cloudfunctions2Function#max_instance_count}
 
 ---
 
@@ -2195,7 +2225,7 @@ public double MaxInstanceRequestConcurrency { get; set; }
 
 Sets the maximum number of concurrent requests that each instance can receive. Defaults to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#max_instance_request_concurrency Cloudfunctions2Function#max_instance_request_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#max_instance_request_concurrency Cloudfunctions2Function#max_instance_request_concurrency}
 
 ---
 
@@ -2209,7 +2239,7 @@ public double MinInstanceCount { get; set; }
 
 The limit on the minimum number of function instances that may coexist at a given time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#min_instance_count Cloudfunctions2Function#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#min_instance_count Cloudfunctions2Function#min_instance_count}
 
 ---
 
@@ -2223,7 +2253,7 @@ public IResolvable|Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariable
 
 secret_environment_variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#secret_environment_variables Cloudfunctions2Function#secret_environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#secret_environment_variables Cloudfunctions2Function#secret_environment_variables}
 
 ---
 
@@ -2237,21 +2267,7 @@ public IResolvable|Cloudfunctions2FunctionServiceConfigSecretVolumes[] SecretVol
 
 secret_volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#secret_volumes Cloudfunctions2Function#secret_volumes}
-
----
-
-##### `Service`<sup>Optional</sup> <a name="Service" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfig.property.service"></a>
-
-```csharp
-public string Service { get; set; }
-```
-
-- *Type:* string
-
-Name of the service associated with a Function.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#service Cloudfunctions2Function#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#secret_volumes Cloudfunctions2Function#secret_volumes}
 
 ---
 
@@ -2265,7 +2281,7 @@ public string ServiceAccountEmail { get; set; }
 
 The email of the service account for this function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#service_account_email Cloudfunctions2Function#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#service_account_email Cloudfunctions2Function#service_account_email}
 
 ---
 
@@ -2283,7 +2299,7 @@ Execution is considered failed and
 can be terminated if the function is not completed at the end of the
 timeout period. Defaults to 60 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#timeout_seconds Cloudfunctions2Function#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#timeout_seconds Cloudfunctions2Function#timeout_seconds}
 
 ---
 
@@ -2297,7 +2313,7 @@ public string VpcConnector { get; set; }
 
 The Serverless VPC Access connector that this cloud function can connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#vpc_connector Cloudfunctions2Function#vpc_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#vpc_connector Cloudfunctions2Function#vpc_connector}
 
 ---
 
@@ -2311,7 +2327,77 @@ public string VpcConnectorEgressSettings { get; set; }
 
 Available egress settings. Possible values: ["VPC_CONNECTOR_EGRESS_SETTINGS_UNSPECIFIED", "PRIVATE_RANGES_ONLY", "ALL_TRAFFIC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#vpc_connector_egress_settings Cloudfunctions2Function#vpc_connector_egress_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#vpc_connector_egress_settings Cloudfunctions2Function#vpc_connector_egress_settings}
+
+---
+
+### Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface <a name="Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface {
+    string Network = null,
+    string Subnetwork = null,
+    string[] Tags = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface.property.network">Network</a></code> | <code>string</code> | The name of the VPC network to which the function will be connected. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface.property.subnetwork">Subnetwork</a></code> | <code>string</code> | The name of the VPC subnetwork that the Cloud Function resource will get IPs from. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface.property.tags">Tags</a></code> | <code>string[]</code> | Network tags applied to this Cloud Function resource. |
+
+---
+
+##### `Network`<sup>Optional</sup> <a name="Network" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface.property.network"></a>
+
+```csharp
+public string Network { get; set; }
+```
+
+- *Type:* string
+
+The name of the VPC network to which the function will be connected.
+
+Specify either a VPC network or a subnet, or both. If you specify only a network, the subnet uses the same name as the network.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#network Cloudfunctions2Function#network}
+
+---
+
+##### `Subnetwork`<sup>Optional</sup> <a name="Subnetwork" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface.property.subnetwork"></a>
+
+```csharp
+public string Subnetwork { get; set; }
+```
+
+- *Type:* string
+
+The name of the VPC subnetwork that the Cloud Function resource will get IPs from.
+
+Specify either a VPC network or a subnet, or both. If both network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the subnetwork with the same name with the network will be used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#subnetwork Cloudfunctions2Function#subnetwork}
+
+---
+
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface.property.tags"></a>
+
+```csharp
+public string[] Tags { get; set; }
+```
+
+- *Type:* string[]
+
+Network tags applied to this Cloud Function resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#tags Cloudfunctions2Function#tags}
 
 ---
 
@@ -2351,7 +2437,7 @@ public string Key { get; set; }
 
 Name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#key Cloudfunctions2Function#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#key Cloudfunctions2Function#key}
 
 ---
 
@@ -2367,7 +2453,7 @@ Project identifier (preferably project number but can also be the project ID) of
 
 If not set, it will be populated with the function's project assuming that the secret exists in the same project as of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#project_id Cloudfunctions2Function#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#project_id Cloudfunctions2Function#project_id}
 
 ---
 
@@ -2381,7 +2467,7 @@ public string Secret { get; set; }
 
 Name of the secret in secret manager (not the full resource name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#secret Cloudfunctions2Function#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#secret Cloudfunctions2Function#secret}
 
 ---
 
@@ -2397,7 +2483,7 @@ Version of the secret (version number or the string 'latest').
 
 It is recommended to use a numeric version for secret environment variables as any updates to the secret value is not reflected until new instances start.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#version Cloudfunctions2Function#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#version Cloudfunctions2Function#version}
 
 ---
 
@@ -2439,7 +2525,7 @@ The path within the container to mount the secret volume.
 
 For example, setting the mountPath as /etc/secrets would mount the secret value files under the /etc/secrets directory. This directory will also be completely shadowed and unavailable to mount any other secrets. Recommended mount path: /etc/secrets
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#mount_path Cloudfunctions2Function#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#mount_path Cloudfunctions2Function#mount_path}
 
 ---
 
@@ -2455,7 +2541,7 @@ Project identifier (preferably project number but can also be the project ID) of
 
 If not set, it will be populated with the function's project assuming that the secret exists in the same project as of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#project_id Cloudfunctions2Function#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#project_id Cloudfunctions2Function#project_id}
 
 ---
 
@@ -2469,7 +2555,7 @@ public string Secret { get; set; }
 
 Name of the secret in secret manager (not the full resource name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#secret Cloudfunctions2Function#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#secret Cloudfunctions2Function#secret}
 
 ---
 
@@ -2483,7 +2569,7 @@ public IResolvable|Cloudfunctions2FunctionServiceConfigSecretVolumesVersions[] V
 
 versions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#versions Cloudfunctions2Function#versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#versions Cloudfunctions2Function#versions}
 
 ---
 
@@ -2521,7 +2607,7 @@ Relative path of the file under the mount path where the secret value for this v
 
 For example, setting the mountPath as '/etc/secrets' and path as secret_foo would mount the secret value file at /etc/secrets/secret_foo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#path Cloudfunctions2Function#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#path Cloudfunctions2Function#path}
 
 ---
 
@@ -2537,7 +2623,7 @@ Version of the secret (version number or the string 'latest').
 
 It is preferable to use latest version with secret volumes as secret value changes are reflected immediately.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#version Cloudfunctions2Function#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#version Cloudfunctions2Function#version}
 
 ---
 
@@ -2559,9 +2645,9 @@ new Cloudfunctions2FunctionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#create Cloudfunctions2Function#create}. |
-| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#delete Cloudfunctions2Function#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#update Cloudfunctions2Function#update}. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#create Cloudfunctions2Function#create}. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#delete Cloudfunctions2Function#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#update Cloudfunctions2Function#update}. |
 
 ---
 
@@ -2573,7 +2659,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#create Cloudfunctions2Function#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#create Cloudfunctions2Function#create}.
 
 ---
 
@@ -2585,7 +2671,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#delete Cloudfunctions2Function#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#delete Cloudfunctions2Function#delete}.
 
 ---
 
@@ -2597,7 +2683,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions2_function#update Cloudfunctions2Function#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions2_function#update Cloudfunctions2Function#update}.
 
 ---
 
@@ -5345,7 +5431,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference.putEventFilters">PutEventFilters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference.resetEventFilters">ResetEventFilters</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference.resetEventType">ResetEventType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference.resetPubsubTopic">ResetPubsubTopic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference.resetRetryPolicy">ResetRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference.resetServiceAccountEmail">ResetServiceAccountEmail</a></code> | *No description.* |
@@ -5519,12 +5604,6 @@ private void PutEventFilters(IResolvable|Cloudfunctions2FunctionEventTriggerEven
 
 ```csharp
 private void ResetEventFilters()
-```
-
-##### `ResetEventType` <a name="ResetEventType" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference.resetEventType"></a>
-
-```csharp
-private void ResetEventType()
 ```
 
 ##### `ResetPubsubTopic` <a name="ResetPubsubTopic" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference.resetPubsubTopic"></a>
@@ -5740,6 +5819,520 @@ public Cloudfunctions2FunctionEventTrigger InternalValue { get; }
 ---
 
 
+### Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList <a name="Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.get"></a>
+
+```csharp
+private Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface">Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface</a>[]</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList.property.internalValue"></a>
+
+```csharp
+public IResolvable|Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface[] InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface">Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface</a>[]
+
+---
+
+
+### Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference <a name="Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.resetNetwork">ResetNetwork</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.resetSubnetwork">ResetSubnetwork</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.resetTags">ResetTags</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetNetwork` <a name="ResetNetwork" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.resetNetwork"></a>
+
+```csharp
+private void ResetNetwork()
+```
+
+##### `ResetSubnetwork` <a name="ResetSubnetwork" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.resetSubnetwork"></a>
+
+```csharp
+private void ResetSubnetwork()
+```
+
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.resetTags"></a>
+
+```csharp
+private void ResetTags()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.networkInput">NetworkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.subnetworkInput">SubnetworkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.network">Network</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.subnetwork">Subnetwork</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.tags">Tags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface">Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NetworkInput`<sup>Optional</sup> <a name="NetworkInput" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.networkInput"></a>
+
+```csharp
+public string NetworkInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SubnetworkInput`<sup>Optional</sup> <a name="SubnetworkInput" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.subnetworkInput"></a>
+
+```csharp
+public string SubnetworkInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.tagsInput"></a>
+
+```csharp
+public string[] TagsInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `Network`<sup>Required</sup> <a name="Network" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.network"></a>
+
+```csharp
+public string Network { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Subnetwork`<sup>Required</sup> <a name="Subnetwork" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.subnetwork"></a>
+
+```csharp
+public string Subnetwork { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.tags"></a>
+
+```csharp
+public string[] Tags { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface">Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface</a>
+
+---
+
+
 ### Cloudfunctions2FunctionServiceConfigOutputReference <a name="Cloudfunctions2FunctionServiceConfigOutputReference" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.Initializer"></a>
@@ -5790,12 +6383,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.putDirectVpcNetworkInterface">PutDirectVpcNetworkInterface</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.putSecretEnvironmentVariables">PutSecretEnvironmentVariables</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.putSecretVolumes">PutSecretVolumes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetAllTrafficOnLatestRevision">ResetAllTrafficOnLatestRevision</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetAvailableCpu">ResetAvailableCpu</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetAvailableMemory">ResetAvailableMemory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetBinaryAuthorizationPolicy">ResetBinaryAuthorizationPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetDirectVpcEgress">ResetDirectVpcEgress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetDirectVpcNetworkInterface">ResetDirectVpcNetworkInterface</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetEnvironmentVariables">ResetEnvironmentVariables</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetIngressSettings">ResetIngressSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetMaxInstanceCount">ResetMaxInstanceCount</a></code> | *No description.* |
@@ -5803,7 +6399,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetMinInstanceCount">ResetMinInstanceCount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetSecretEnvironmentVariables">ResetSecretEnvironmentVariables</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetSecretVolumes">ResetSecretVolumes</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetService">ResetService</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetServiceAccountEmail">ResetServiceAccountEmail</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetTimeoutSeconds">ResetTimeoutSeconds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetVpcConnector">ResetVpcConnector</a></code> | *No description.* |
@@ -5961,6 +6556,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutDirectVpcNetworkInterface` <a name="PutDirectVpcNetworkInterface" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.putDirectVpcNetworkInterface"></a>
+
+```csharp
+private void PutDirectVpcNetworkInterface(IResolvable|Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface[] Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.putDirectVpcNetworkInterface.parameter.value"></a>
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface">Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface</a>[]
+
+---
+
 ##### `PutSecretEnvironmentVariables` <a name="PutSecretEnvironmentVariables" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.putSecretEnvironmentVariables"></a>
 
 ```csharp
@@ -6009,6 +6616,18 @@ private void ResetAvailableMemory()
 private void ResetBinaryAuthorizationPolicy()
 ```
 
+##### `ResetDirectVpcEgress` <a name="ResetDirectVpcEgress" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetDirectVpcEgress"></a>
+
+```csharp
+private void ResetDirectVpcEgress()
+```
+
+##### `ResetDirectVpcNetworkInterface` <a name="ResetDirectVpcNetworkInterface" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetDirectVpcNetworkInterface"></a>
+
+```csharp
+private void ResetDirectVpcNetworkInterface()
+```
+
 ##### `ResetEnvironmentVariables` <a name="ResetEnvironmentVariables" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetEnvironmentVariables"></a>
 
 ```csharp
@@ -6051,12 +6670,6 @@ private void ResetSecretEnvironmentVariables()
 private void ResetSecretVolumes()
 ```
 
-##### `ResetService` <a name="ResetService" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetService"></a>
-
-```csharp
-private void ResetService()
-```
-
 ##### `ResetServiceAccountEmail` <a name="ResetServiceAccountEmail" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.resetServiceAccountEmail"></a>
 
 ```csharp
@@ -6088,14 +6701,18 @@ private void ResetVpcConnectorEgressSettings()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.directVpcNetworkInterface">DirectVpcNetworkInterface</a></code> | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList">Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.gcfUri">GcfUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.secretEnvironmentVariables">SecretEnvironmentVariables</a></code> | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList">Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.secretVolumes">SecretVolumes</a></code> | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumesList">Cloudfunctions2FunctionServiceConfigSecretVolumesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.service">Service</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.uri">Uri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.allTrafficOnLatestRevisionInput">AllTrafficOnLatestRevisionInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.availableCpuInput">AvailableCpuInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.availableMemoryInput">AvailableMemoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.binaryAuthorizationPolicyInput">BinaryAuthorizationPolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.directVpcEgressInput">DirectVpcEgressInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.directVpcNetworkInterfaceInput">DirectVpcNetworkInterfaceInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface">Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.environmentVariablesInput">EnvironmentVariablesInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.ingressSettingsInput">IngressSettingsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.maxInstanceCountInput">MaxInstanceCountInput</a></code> | <code>double</code> | *No description.* |
@@ -6104,7 +6721,6 @@ private void ResetVpcConnectorEgressSettings()
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.secretEnvironmentVariablesInput">SecretEnvironmentVariablesInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariables">Cloudfunctions2FunctionServiceConfigSecretEnvironmentVariables</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.secretVolumesInput">SecretVolumesInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumes">Cloudfunctions2FunctionServiceConfigSecretVolumes</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.serviceAccountEmailInput">ServiceAccountEmailInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.serviceInput">ServiceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.timeoutSecondsInput">TimeoutSecondsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.vpcConnectorEgressSettingsInput">VpcConnectorEgressSettingsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.vpcConnectorInput">VpcConnectorInput</a></code> | <code>string</code> | *No description.* |
@@ -6112,12 +6728,12 @@ private void ResetVpcConnectorEgressSettings()
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.availableCpu">AvailableCpu</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.availableMemory">AvailableMemory</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.binaryAuthorizationPolicy">BinaryAuthorizationPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.directVpcEgress">DirectVpcEgress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.environmentVariables">EnvironmentVariables</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.ingressSettings">IngressSettings</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.maxInstanceCount">MaxInstanceCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.maxInstanceRequestConcurrency">MaxInstanceRequestConcurrency</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.minInstanceCount">MinInstanceCount</a></code> | <code>double</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.service">Service</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.serviceAccountEmail">ServiceAccountEmail</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.timeoutSeconds">TimeoutSeconds</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.vpcConnector">VpcConnector</a></code> | <code>string</code> | *No description.* |
@@ -6150,6 +6766,16 @@ public string Fqn { get; }
 
 ---
 
+##### `DirectVpcNetworkInterface`<sup>Required</sup> <a name="DirectVpcNetworkInterface" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.directVpcNetworkInterface"></a>
+
+```csharp
+public Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList DirectVpcNetworkInterface { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList">Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList</a>
+
+---
+
 ##### `GcfUri`<sup>Required</sup> <a name="GcfUri" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.gcfUri"></a>
 
 ```csharp
@@ -6177,6 +6803,16 @@ public Cloudfunctions2FunctionServiceConfigSecretVolumesList SecretVolumes { get
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigSecretVolumesList">Cloudfunctions2FunctionServiceConfigSecretVolumesList</a>
+
+---
+
+##### `Service`<sup>Required</sup> <a name="Service" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.service"></a>
+
+```csharp
+public string Service { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -6227,6 +6863,26 @@ public string BinaryAuthorizationPolicyInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `DirectVpcEgressInput`<sup>Optional</sup> <a name="DirectVpcEgressInput" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.directVpcEgressInput"></a>
+
+```csharp
+public string DirectVpcEgressInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DirectVpcNetworkInterfaceInput`<sup>Optional</sup> <a name="DirectVpcNetworkInterfaceInput" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.directVpcNetworkInterfaceInput"></a>
+
+```csharp
+public IResolvable|Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface[] DirectVpcNetworkInterfaceInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface">Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface</a>[]
 
 ---
 
@@ -6310,16 +6966,6 @@ public string ServiceAccountEmailInput { get; }
 
 ---
 
-##### `ServiceInput`<sup>Optional</sup> <a name="ServiceInput" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.serviceInput"></a>
-
-```csharp
-public string ServiceInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `TimeoutSecondsInput`<sup>Optional</sup> <a name="TimeoutSecondsInput" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.timeoutSecondsInput"></a>
 
 ```csharp
@@ -6390,6 +7036,16 @@ public string BinaryAuthorizationPolicy { get; }
 
 ---
 
+##### `DirectVpcEgress`<sup>Required</sup> <a name="DirectVpcEgress" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.directVpcEgress"></a>
+
+```csharp
+public string DirectVpcEgress { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `EnvironmentVariables`<sup>Required</sup> <a name="EnvironmentVariables" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.environmentVariables"></a>
 
 ```csharp
@@ -6437,16 +7093,6 @@ public double MinInstanceCount { get; }
 ```
 
 - *Type:* double
-
----
-
-##### `Service`<sup>Required</sup> <a name="Service" id="@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionServiceConfigOutputReference.property.service"></a>
-
-```csharp
-public string Service { get; }
-```
-
-- *Type:* string
 
 ---
 

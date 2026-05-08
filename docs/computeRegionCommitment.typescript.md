@@ -4,7 +4,7 @@
 
 ### ComputeRegionCommitment <a name="ComputeRegionCommitment" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment google_compute_region_commitment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment google_compute_region_commitment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.putLicenseResource">putLicenseResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.putParams">putParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.putResources">putResources</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.resetAutoRenew">resetAutoRenew</a></code> | *No description.* |
@@ -83,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.resetExistingReservations">resetExistingReservations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.resetLicenseResource">resetLicenseResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.resetParams">resetParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.resetResources">resetResources</a></code> | *No description.* |
@@ -412,6 +414,18 @@ public putLicenseResource(value: ComputeRegionCommitmentLicenseResource): void
 
 ---
 
+##### `putParams` <a name="putParams" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.putParams"></a>
+
+```typescript
+public putParams(value: ComputeRegionCommitmentParams): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.putParams.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams">ComputeRegionCommitmentParams</a>
+
+---
+
 ##### `putResources` <a name="putResources" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.putResources"></a>
 
 ```typescript
@@ -470,6 +484,12 @@ public resetId(): void
 
 ```typescript
 public resetLicenseResource(): void
+```
+
+##### `resetParams` <a name="resetParams" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.resetParams"></a>
+
+```typescript
+public resetParams(): void
 ```
 
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.resetProject"></a>
@@ -605,7 +625,7 @@ The construct id used in the generated config for the ComputeRegionCommitment to
 
 The id of the existing ComputeRegionCommitment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -639,6 +659,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.creationTimestamp">creationTimestamp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.endTimestamp">endTimestamp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.licenseResource">licenseResource</a></code> | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResourceOutputReference">ComputeRegionCommitmentLicenseResourceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference">ComputeRegionCommitmentParamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentResourcesList">ComputeRegionCommitmentResourcesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.startTimestamp">startTimestamp</a></code> | <code>string</code> | *No description.* |
@@ -652,6 +673,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.licenseResourceInput">licenseResourceInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResource">ComputeRegionCommitmentLicenseResource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.paramsInput">paramsInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams">ComputeRegionCommitmentParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.planInput">planInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
@@ -853,6 +875,16 @@ public readonly licenseResource: ComputeRegionCommitmentLicenseResourceOutputRef
 
 ---
 
+##### `params`<sup>Required</sup> <a name="params" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.params"></a>
+
+```typescript
+public readonly params: ComputeRegionCommitmentParamsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference">ComputeRegionCommitmentParamsOutputReference</a>
+
+---
+
 ##### `resources`<sup>Required</sup> <a name="resources" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.resources"></a>
 
 ```typescript
@@ -980,6 +1012,16 @@ public readonly nameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `paramsInput`<sup>Optional</sup> <a name="paramsInput" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitment.property.paramsInput"></a>
+
+```typescript
+public readonly paramsInput: ComputeRegionCommitmentParams;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams">ComputeRegionCommitmentParams</a>
 
 ---
 
@@ -1190,9 +1232,10 @@ const computeRegionCommitmentConfig: computeRegionCommitment.ComputeRegionCommit
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.category">category</a></code> | <code>string</code> | The category of the commitment. |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.existingReservations">existingReservations</a></code> | <code>string</code> | Specifies the already existing reservations to attach to the Commitment. |
-| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#id ComputeRegionCommitment#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#id ComputeRegionCommitment#id}. |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.licenseResource">licenseResource</a></code> | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResource">ComputeRegionCommitmentLicenseResource</a></code> | license_resource block. |
-| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#project ComputeRegionCommitment#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams">ComputeRegionCommitmentParams</a></code> | params block. |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#project ComputeRegionCommitment#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.region">region</a></code> | <code>string</code> | URL of the region where this commitment may be used. |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.resources">resources</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentResources">ComputeRegionCommitmentResources</a>[]</code> | resources block. |
 | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentTimeouts">ComputeRegionCommitmentTimeouts</a></code> | timeouts block. |
@@ -1286,7 +1329,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#name ComputeRegionCommitment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#name ComputeRegionCommitment#name}
 
 ---
 
@@ -1302,7 +1345,7 @@ The plan for this commitment, which determines duration and discount rate.
 
 The currently supported plans are TWELVE_MONTH (1 year), and THIRTY_SIX_MONTH (3 years). Possible values: ["TWELVE_MONTH", "THIRTY_SIX_MONTH"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#plan ComputeRegionCommitment#plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#plan ComputeRegionCommitment#plan}
 
 ---
 
@@ -1320,7 +1363,7 @@ The default value is false if not specified.
 If the field is set to true, the commitment will be automatically renewed for either
 one or three years according to the terms of the existing commitment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#auto_renew ComputeRegionCommitment#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#auto_renew ComputeRegionCommitment#auto_renew}
 
 ---
 
@@ -1339,7 +1382,7 @@ machine resources such as VCPU or MEMORY, listed in resources. Category LICENSE
 specifies commitments composed of software licenses, listed in licenseResources.
 Note that only MACHINE commitments should have a Type specified. Possible values: ["LICENSE", "MACHINE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#category ComputeRegionCommitment#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#category ComputeRegionCommitment#category}
 
 ---
 
@@ -1353,7 +1396,7 @@ public readonly description: string;
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#description ComputeRegionCommitment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#description ComputeRegionCommitment#description}
 
 ---
 
@@ -1367,7 +1410,7 @@ public readonly existingReservations: string;
 
 Specifies the already existing reservations to attach to the Commitment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#existing_reservations ComputeRegionCommitment#existing_reservations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#existing_reservations ComputeRegionCommitment#existing_reservations}
 
 ---
 
@@ -1379,7 +1422,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#id ComputeRegionCommitment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#id ComputeRegionCommitment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1396,7 +1439,21 @@ public readonly licenseResource: ComputeRegionCommitmentLicenseResource;
 
 license_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#license_resource ComputeRegionCommitment#license_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#license_resource ComputeRegionCommitment#license_resource}
+
+---
+
+##### `params`<sup>Optional</sup> <a name="params" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentConfig.property.params"></a>
+
+```typescript
+public readonly params: ComputeRegionCommitmentParams;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams">ComputeRegionCommitmentParams</a>
+
+params block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#params ComputeRegionCommitment#params}
 
 ---
 
@@ -1408,7 +1465,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#project ComputeRegionCommitment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#project ComputeRegionCommitment#project}.
 
 ---
 
@@ -1422,7 +1479,7 @@ public readonly region: string;
 
 URL of the region where this commitment may be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#region ComputeRegionCommitment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#region ComputeRegionCommitment#region}
 
 ---
 
@@ -1436,7 +1493,7 @@ public readonly resources: IResolvable | ComputeRegionCommitmentResources[];
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#resources ComputeRegionCommitment#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#resources ComputeRegionCommitment#resources}
 
 ---
 
@@ -1450,7 +1507,7 @@ public readonly timeouts: ComputeRegionCommitmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#timeouts ComputeRegionCommitment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#timeouts ComputeRegionCommitment#timeouts}
 
 ---
 
@@ -1465,11 +1522,11 @@ public readonly type: string;
 The type of commitment, which affects the discount rate and the eligible resources.
 
 The type could be one of the following value: 'MEMORY_OPTIMIZED', 'ACCELERATOR_OPTIMIZED',
-'GENERAL_PURPOSE_N1', 'GENERAL_PURPOSE_N2', 'GENERAL_PURPOSE_N2D', 'GENERAL_PURPOSE_E2',
+'GENERAL_PURPOSE', 'GENERAL_PURPOSE_N2', 'GENERAL_PURPOSE_N2D', 'GENERAL_PURPOSE_E2',
 'GENERAL_PURPOSE_T2D', 'GENERAL_PURPOSE_C3', 'COMPUTE_OPTIMIZED_C2', 'COMPUTE_OPTIMIZED_C2D' and
 'GRAPHICS_OPTIMIZED_G2'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#type ComputeRegionCommitment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#type ComputeRegionCommitment#type}
 
 ---
 
@@ -1503,7 +1560,7 @@ public readonly license: string;
 
 Any applicable license URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#license ComputeRegionCommitment#license}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#license ComputeRegionCommitment#license}
 
 ---
 
@@ -1517,7 +1574,7 @@ public readonly amount: string;
 
 The number of licenses purchased.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#amount ComputeRegionCommitment#amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#amount ComputeRegionCommitment#amount}
 
 ---
 
@@ -1531,7 +1588,43 @@ public readonly coresPerLicense: string;
 
 Specifies the core range of the instance for which this license applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#cores_per_license ComputeRegionCommitment#cores_per_license}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#cores_per_license ComputeRegionCommitment#cores_per_license}
+
+---
+
+### ComputeRegionCommitmentParams <a name="ComputeRegionCommitmentParams" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams.Initializer"></a>
+
+```typescript
+import { computeRegionCommitment } from '@cdktn/provider-google'
+
+const computeRegionCommitmentParams: computeRegionCommitment.ComputeRegionCommitmentParams = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams.property.resourceManagerTags">resourceManagerTags</a></code> | <code>{[ key: string ]: string}</code> | Resource manager tags to be bound to the commitment. |
+
+---
+
+##### `resourceManagerTags`<sup>Optional</sup> <a name="resourceManagerTags" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams.property.resourceManagerTags"></a>
+
+```typescript
+public readonly resourceManagerTags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Resource manager tags to be bound to the commitment.
+
+Tag keys and values have the
+same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+and values are in the format tagValues/456.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#resource_manager_tags ComputeRegionCommitment#resource_manager_tags}
 
 ---
 
@@ -1565,7 +1658,7 @@ public readonly acceleratorType: string;
 
 Name of the accelerator type resource. Applicable only when the type is ACCELERATOR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#accelerator_type ComputeRegionCommitment#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#accelerator_type ComputeRegionCommitment#accelerator_type}
 
 ---
 
@@ -1583,7 +1676,7 @@ For vCPUs, this can just be an integer. For memory,
 this must be provided in MB. Memory must be a multiple of 256 MB,
 with up to 6.5GB of memory per every vCPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#amount ComputeRegionCommitment#amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#amount ComputeRegionCommitment#amount}
 
 ---
 
@@ -1597,7 +1690,7 @@ public readonly type: string;
 
 Type of resource for which this commitment applies. Possible values are VCPU, MEMORY, LOCAL_SSD, and ACCELERATOR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#type ComputeRegionCommitment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#type ComputeRegionCommitment#type}
 
 ---
 
@@ -1615,8 +1708,8 @@ const computeRegionCommitmentTimeouts: computeRegionCommitment.ComputeRegionComm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#create ComputeRegionCommitment#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#delete ComputeRegionCommitment#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#create ComputeRegionCommitment#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#delete ComputeRegionCommitment#delete}. |
 
 ---
 
@@ -1628,7 +1721,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#create ComputeRegionCommitment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#create ComputeRegionCommitment#create}.
 
 ---
 
@@ -1640,7 +1733,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_commitment#delete ComputeRegionCommitment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_commitment#delete ComputeRegionCommitment#delete}.
 
 ---
 
@@ -1971,6 +2064,284 @@ public readonly internalValue: ComputeRegionCommitmentLicenseResource;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentLicenseResource">ComputeRegionCommitmentLicenseResource</a>
+
+---
+
+
+### ComputeRegionCommitmentParamsOutputReference <a name="ComputeRegionCommitmentParamsOutputReference" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.Initializer"></a>
+
+```typescript
+import { computeRegionCommitment } from '@cdktn/provider-google'
+
+new computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.resetResourceManagerTags">resetResourceManagerTags</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetResourceManagerTags` <a name="resetResourceManagerTags" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.resetResourceManagerTags"></a>
+
+```typescript
+public resetResourceManagerTags(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.property.resourceManagerTagsInput">resourceManagerTagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.property.resourceManagerTags">resourceManagerTags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams">ComputeRegionCommitmentParams</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `resourceManagerTagsInput`<sup>Optional</sup> <a name="resourceManagerTagsInput" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.property.resourceManagerTagsInput"></a>
+
+```typescript
+public readonly resourceManagerTagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `resourceManagerTags`<sup>Required</sup> <a name="resourceManagerTags" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.property.resourceManagerTags"></a>
+
+```typescript
+public readonly resourceManagerTags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ComputeRegionCommitmentParams;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParams">ComputeRegionCommitmentParams</a>
 
 ---
 

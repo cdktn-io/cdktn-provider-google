@@ -4,12 +4,12 @@
 
 ### IapTunnelDestGroupIamBinding <a name="IapTunnelDestGroupIamBinding" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding google_iap_tunnel_dest_group_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding google_iap_tunnel_dest_group_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.NewIapTunnelDestGroupIamBinding(scope Construct, id *string, config IapTunnelDestGroupIamBindingConfig) IapTunnelDestGroupIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.IapTunnelDestGroupIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the IapTunnelDestGroupIamBindi
 
 The id of the existing IapTunnelDestGroupIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iaptunneldestgroupiambinding"
 
 &iaptunneldestgroupiambinding.IapTunnelDestGroupIamBindingCondition {
 	Expression: *string,
@@ -908,9 +908,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#expression IapTunnelDestGroupIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#title IapTunnelDestGroupIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#description IapTunnelDestGroupIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#expression IapTunnelDestGroupIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#title IapTunnelDestGroupIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#description IapTunnelDestGroupIamBinding#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#expression IapTunnelDestGroupIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#expression IapTunnelDestGroupIamBinding#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#title IapTunnelDestGroupIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#title IapTunnelDestGroupIamBinding#title}.
 
 ---
 
@@ -946,7 +946,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#description IapTunnelDestGroupIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#description IapTunnelDestGroupIamBinding#description}.
 
 ---
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iaptunneldestgroupiambinding"
 
 &iaptunneldestgroupiambinding.IapTunnelDestGroupIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgro
 	DestGroup: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -986,13 +986,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgro
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.destGroup">DestGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#dest_group IapTunnelDestGroupIamBinding#dest_group}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#members IapTunnelDestGroupIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#role IapTunnelDestGroupIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.destGroup">DestGroup</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#dest_group IapTunnelDestGroupIamBinding#dest_group}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#members IapTunnelDestGroupIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#role IapTunnelDestGroupIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingCondition">IapTunnelDestGroupIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#id IapTunnelDestGroupIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#project IapTunnelDestGroupIamBinding#project}. |
-| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#region IapTunnelDestGroupIamBinding#region}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#id IapTunnelDestGroupIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#project IapTunnelDestGroupIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#region IapTunnelDestGroupIamBinding#region}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ DestGroup *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#dest_group IapTunnelDestGroupIamBinding#dest_group}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#dest_group IapTunnelDestGroupIamBinding#dest_group}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#members IapTunnelDestGroupIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#members IapTunnelDestGroupIamBinding#members}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#role IapTunnelDestGroupIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#role IapTunnelDestGroupIamBinding#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Condition IapTunnelDestGroupIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#condition IapTunnelDestGroupIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#condition IapTunnelDestGroupIamBinding#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#id IapTunnelDestGroupIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#id IapTunnelDestGroupIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#project IapTunnelDestGroupIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#project IapTunnelDestGroupIamBinding#project}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_tunnel_dest_group_iam_binding#region IapTunnelDestGroupIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_tunnel_dest_group_iam_binding#region IapTunnelDestGroupIamBinding#region}.
 
 ---
 
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapTunnelDestGroupIamBinding.IapTunnelDestGroupIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iaptunneldestgroupiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iaptunneldestgroupiambinding"
 
 iaptunneldestgroupiambinding.NewIapTunnelDestGroupIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapTunnelDestGroupIamBindingConditionOutputReference
 ```

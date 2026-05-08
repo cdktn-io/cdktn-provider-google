@@ -4,7 +4,7 @@
 
 ### StorageBucketIamBinding <a name="StorageBucketIamBinding" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.Initializer"></a>
 
@@ -75,8 +75,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.putCondition">putCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.resetCondition">resetCondition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -401,6 +403,18 @@ public putCondition(value: StorageBucketIamBindingCondition): void
 
 ---
 
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value: StorageBucketIamBindingTimeouts): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts">StorageBucketIamBindingTimeouts</a>
+
+---
+
 ##### `resetCondition` <a name="resetCondition" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.resetCondition"></a>
 
 ```typescript
@@ -411,6 +425,12 @@ public resetCondition(): void
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -516,7 +536,7 @@ The construct id used in the generated config for the StorageBucketIamBinding to
 
 The id of the existing StorageBucketIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -548,11 +568,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConditionOutputReference">StorageBucketIamBindingConditionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.etag">etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference">StorageBucketIamBindingTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.bucketInput">bucketInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.conditionInput">conditionInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition">StorageBucketIamBindingCondition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.membersInput">membersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts">StorageBucketIamBindingTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.members">members</a></code> | <code>string[]</code> | *No description.* |
@@ -722,6 +744,16 @@ public readonly etag: string;
 
 ---
 
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: StorageBucketIamBindingTimeoutsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference">StorageBucketIamBindingTimeoutsOutputReference</a>
+
+---
+
 ##### `bucketInput`<sup>Optional</sup> <a name="bucketInput" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.bucketInput"></a>
 
 ```typescript
@@ -769,6 +801,16 @@ public readonly roleInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: IResolvable | StorageBucketIamBindingTimeouts;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts">StorageBucketIamBindingTimeouts</a>
 
 ---
 
@@ -846,9 +888,9 @@ const storageBucketIamBindingCondition: storageBucketIamBinding.StorageBucketIam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#expression StorageBucketIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#title StorageBucketIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#description StorageBucketIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#expression StorageBucketIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#title StorageBucketIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#description StorageBucketIamBinding#description}. |
 
 ---
 
@@ -860,7 +902,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#expression StorageBucketIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#expression StorageBucketIamBinding#expression}.
 
 ---
 
@@ -872,7 +914,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#title StorageBucketIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#title StorageBucketIamBinding#title}.
 
 ---
 
@@ -884,7 +926,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#description StorageBucketIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#description StorageBucketIamBinding#description}.
 
 ---
 
@@ -909,11 +951,12 @@ const storageBucketIamBindingConfig: storageBucketIamBinding.StorageBucketIamBin
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#bucket StorageBucketIamBinding#bucket}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#members StorageBucketIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#role StorageBucketIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.bucket">bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#bucket StorageBucketIamBinding#bucket}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#members StorageBucketIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#role StorageBucketIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition">StorageBucketIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#id StorageBucketIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#id StorageBucketIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts">StorageBucketIamBindingTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -995,7 +1038,7 @@ public readonly bucket: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#bucket StorageBucketIamBinding#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#bucket StorageBucketIamBinding#bucket}.
 
 ---
 
@@ -1007,7 +1050,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#members StorageBucketIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#members StorageBucketIamBinding#members}.
 
 ---
 
@@ -1019,7 +1062,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#role StorageBucketIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#role StorageBucketIamBinding#role}.
 
 ---
 
@@ -1033,7 +1076,7 @@ public readonly condition: StorageBucketIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#condition StorageBucketIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#condition StorageBucketIamBinding#condition}
 
 ---
 
@@ -1045,10 +1088,54 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_binding#id StorageBucketIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#id StorageBucketIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: StorageBucketIamBindingTimeouts;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts">StorageBucketIamBindingTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#timeouts StorageBucketIamBinding#timeouts}
+
+---
+
+### StorageBucketIamBindingTimeouts <a name="StorageBucketIamBindingTimeouts" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts.Initializer"></a>
+
+```typescript
+import { storageBucketIamBinding } from '@cdktn/provider-google'
+
+const storageBucketIamBindingTimeouts: storageBucketIamBinding.StorageBucketIamBindingTimeouts = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#create StorageBucketIamBinding#create}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#create StorageBucketIamBinding#create}.
 
 ---
 
@@ -1372,6 +1459,284 @@ public readonly internalValue: StorageBucketIamBindingCondition;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition">StorageBucketIamBindingCondition</a>
+
+---
+
+
+### StorageBucketIamBindingTimeoutsOutputReference <a name="StorageBucketIamBindingTimeoutsOutputReference" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { storageBucketIamBinding } from '@cdktn/provider-google'
+
+new storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts">StorageBucketIamBindingTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | StorageBucketIamBindingTimeouts;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts">StorageBucketIamBindingTimeouts</a>
 
 ---
 

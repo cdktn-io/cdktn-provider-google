@@ -4,7 +4,7 @@
 
 ### BigqueryConnection <a name="BigqueryConnection" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection google_bigquery_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection google_bigquery_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer"></a>
 
@@ -24,6 +24,7 @@ BigqueryConnection.Builder.create(Construct scope, java.lang.String id)
 //  .cloudResource(BigqueryConnectionCloudResource)
 //  .cloudSpanner(BigqueryConnectionCloudSpanner)
 //  .cloudSql(BigqueryConnectionCloudSql)
+//  .configuration(BigqueryConnectionConfiguration)
 //  .connectionId(java.lang.String)
 //  .description(java.lang.String)
 //  .friendlyName(java.lang.String)
@@ -52,13 +53,14 @@ BigqueryConnection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.cloudResource">cloudResource</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudResource">BigqueryConnectionCloudResource</a></code> | cloud_resource block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.cloudSpanner">cloudSpanner</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSpanner">BigqueryConnectionCloudSpanner</a></code> | cloud_spanner block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.cloudSql">cloudSql</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSql">BigqueryConnectionCloudSql</a></code> | cloud_sql block. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a></code> | configuration block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Optional connection id that should be assigned to the created connection. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A descriptive description for the connection. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.friendlyName">friendlyName</a></code> | <code>java.lang.String</code> | A descriptive name for the connection. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#id BigqueryConnection#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#id BigqueryConnection#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | Optional. The Cloud KMS key that is used for encryption. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The geographic location where the connection should reside. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#project BigqueryConnection#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#project BigqueryConnection#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.spark">spark</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionSpark">BigqueryConnectionSpark</a></code> | spark block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts">BigqueryConnectionTimeouts</a></code> | timeouts block. |
 
@@ -130,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#aws BigqueryConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#aws BigqueryConnection#aws}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#azure BigqueryConnection#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#azure BigqueryConnection#azure}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloud_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#cloud_resource BigqueryConnection#cloud_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#cloud_resource BigqueryConnection#cloud_resource}
 
 ---
 
@@ -160,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloud_spanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#cloud_spanner BigqueryConnection#cloud_spanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#cloud_spanner BigqueryConnection#cloud_spanner}
 
 ---
 
@@ -170,7 +172,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloud_sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#cloud_sql BigqueryConnection#cloud_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#cloud_sql BigqueryConnection#cloud_sql}
+
+---
+
+##### `configuration`<sup>Optional</sup> <a name="configuration" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.Initializer.parameter.configuration"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a>
+
+configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#configuration BigqueryConnection#configuration}
 
 ---
 
@@ -180,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional connection id that should be assigned to the created connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#connection_id BigqueryConnection#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#connection_id BigqueryConnection#connection_id}
 
 ---
 
@@ -190,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A descriptive description for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#description BigqueryConnection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#description BigqueryConnection#description}
 
 ---
 
@@ -200,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A descriptive name for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#friendly_name BigqueryConnection#friendly_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#friendly_name BigqueryConnection#friendly_name}
 
 ---
 
@@ -208,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#id BigqueryConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#id BigqueryConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -223,7 +235,7 @@ Optional. The Cloud KMS key that is used for encryption.
 
 Example: projects/[kms_project_id]/locations/[region]/keyRings/[key_region]/cryptoKeys/[key]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#kms_key_name BigqueryConnection#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#kms_key_name BigqueryConnection#kms_key_name}
 
 ---
 
@@ -240,7 +252,7 @@ Spanner Connections same as spanner region
 AWS allowed regions are aws-us-east-1
 Azure allowed regions are azure-eastus2
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#location BigqueryConnection#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#location BigqueryConnection#location}
 
 ---
 
@@ -248,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#project BigqueryConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#project BigqueryConnection#project}.
 
 ---
 
@@ -258,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 spark block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#spark BigqueryConnection#spark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#spark BigqueryConnection#spark}
 
 ---
 
@@ -268,7 +280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#timeouts BigqueryConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#timeouts BigqueryConnection#timeouts}
 
 ---
 
@@ -305,6 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.putCloudResource">putCloudResource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.putCloudSpanner">putCloudSpanner</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.putCloudSql">putCloudSql</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.putConfiguration">putConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.putSpark">putSpark</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetAws">resetAws</a></code> | *No description.* |
@@ -312,6 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetCloudResource">resetCloudResource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetCloudSpanner">resetCloudSpanner</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetCloudSql">resetCloudSql</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetConfiguration">resetConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetConnectionId">resetConnectionId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetFriendlyName">resetFriendlyName</a></code> | *No description.* |
@@ -695,6 +709,18 @@ public void putCloudSql(BigqueryConnectionCloudSql value)
 
 ---
 
+##### `putConfiguration` <a name="putConfiguration" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.putConfiguration"></a>
+
+```java
+public void putConfiguration(BigqueryConnectionConfiguration value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.putConfiguration.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a>
+
+---
+
 ##### `putSpark` <a name="putSpark" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.putSpark"></a>
 
 ```java
@@ -747,6 +773,12 @@ public void resetCloudSpanner()
 
 ```java
 public void resetCloudSql()
+```
+
+##### `resetConfiguration` <a name="resetConfiguration" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetConfiguration"></a>
+
+```java
+public void resetConfiguration()
 ```
 
 ##### `resetConnectionId` <a name="resetConnectionId" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.resetConnectionId"></a>
@@ -906,7 +938,7 @@ The construct id used in the generated config for the BigqueryConnection to impo
 
 The id of the existing BigqueryConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -941,6 +973,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.cloudResource">cloudResource</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudResourceOutputReference">BigqueryConnectionCloudResourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.cloudSpanner">cloudSpanner</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSpannerOutputReference">BigqueryConnectionCloudSpannerOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.cloudSql">cloudSql</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSqlOutputReference">BigqueryConnectionCloudSqlOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference">BigqueryConnectionConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.hasCredential">hasCredential</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.spark">spark</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionSparkOutputReference">BigqueryConnectionSparkOutputReference</a></code> | *No description.* |
@@ -950,6 +983,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.cloudResourceInput">cloudResourceInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudResource">BigqueryConnectionCloudResource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.cloudSpannerInput">cloudSpannerInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSpanner">BigqueryConnectionCloudSpanner</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.cloudSqlInput">cloudSqlInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSql">BigqueryConnectionCloudSql</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.configurationInput">configurationInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.connectionIdInput">connectionIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.friendlyNameInput">friendlyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1161,6 +1195,16 @@ public BigqueryConnectionCloudSqlOutputReference getCloudSql();
 
 ---
 
+##### `configuration`<sup>Required</sup> <a name="configuration" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.configuration"></a>
+
+```java
+public BigqueryConnectionConfigurationOutputReference getConfiguration();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference">BigqueryConnectionConfigurationOutputReference</a>
+
+---
+
 ##### `hasCredential`<sup>Required</sup> <a name="hasCredential" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.hasCredential"></a>
 
 ```java
@@ -1248,6 +1292,16 @@ public BigqueryConnectionCloudSql getCloudSqlInput();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSql">BigqueryConnectionCloudSql</a>
+
+---
+
+##### `configurationInput`<sup>Optional</sup> <a name="configurationInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnection.property.configurationInput"></a>
+
+```java
+public BigqueryConnectionConfiguration getConfigurationInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a>
 
 ---
 
@@ -1461,7 +1515,7 @@ public BigqueryConnectionAwsAccessRole getAccessRole();
 
 access_role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#access_role BigqueryConnection#access_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#access_role BigqueryConnection#access_role}
 
 ---
 
@@ -1495,7 +1549,7 @@ public java.lang.String getIamRoleId();
 
 The user’s AWS IAM Role that trusts the Google-owned AWS IAM user Connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#iam_role_id BigqueryConnection#iam_role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#iam_role_id BigqueryConnection#iam_role_id}
 
 ---
 
@@ -1531,7 +1585,7 @@ public java.lang.String getCustomerTenantId();
 
 The id of customer's directory that host the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#customer_tenant_id BigqueryConnection#customer_tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#customer_tenant_id BigqueryConnection#customer_tenant_id}
 
 ---
 
@@ -1545,7 +1599,7 @@ public java.lang.String getFederatedApplicationClientId();
 
 The Azure Application (client) ID where the federated credentials will be hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#federated_application_client_id BigqueryConnection#federated_application_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#federated_application_client_id BigqueryConnection#federated_application_client_id}
 
 ---
 
@@ -1601,7 +1655,7 @@ public java.lang.String getDatabase();
 
 Cloud Spanner database in the form 'project/instance/database'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
 
 ---
 
@@ -1617,7 +1671,7 @@ Cloud Spanner database role for fine-grained access control.
 
 The Cloud Spanner admin should have provisioned the database role with appropriate permissions, such as 'SELECT' and 'INSERT'. Other users should only use roles provided by their Cloud Spanner admins. The database role name must start with a letter, and can only contain letters, numbers, and underscores. For more details, see https://cloud.google.com/spanner/docs/fgac-about.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#database_role BigqueryConnection#database_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#database_role BigqueryConnection#database_role}
 
 ---
 
@@ -1633,7 +1687,7 @@ Allows setting max parallelism per query when executing on Spanner independent c
 
 If unspecified, default values of parallelism are chosen that are dependent on the Cloud Spanner instance configuration. 'useParallelism' and 'useDataBoost' must be set when setting max parallelism.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#max_parallelism BigqueryConnection#max_parallelism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#max_parallelism BigqueryConnection#max_parallelism}
 
 ---
 
@@ -1649,7 +1703,7 @@ If set, the request will be executed via Spanner independent compute resources.
 
 'use_parallelism' must be set when using data boost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#use_data_boost BigqueryConnection#use_data_boost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#use_data_boost BigqueryConnection#use_data_boost}
 
 ---
 
@@ -1663,7 +1717,7 @@ public java.lang.Boolean|IResolvable getUseParallelism();
 
 If parallelism should be used when reading from Cloud Spanner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#use_parallelism BigqueryConnection#use_parallelism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#use_parallelism BigqueryConnection#use_parallelism}
 
 ---
 
@@ -1679,7 +1733,7 @@ If the serverless analytics service should be used to read data from Cloud Spann
 
 'useParallelism' must be set when using serverless analytics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#use_serverless_analytics BigqueryConnection#use_serverless_analytics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#use_serverless_analytics BigqueryConnection#use_serverless_analytics}
 
 ---
 
@@ -1719,7 +1773,7 @@ public BigqueryConnectionCloudSqlCredential getCredential();
 
 credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#credential BigqueryConnection#credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#credential BigqueryConnection#credential}
 
 ---
 
@@ -1733,7 +1787,7 @@ public java.lang.String getDatabase();
 
 Database name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
 
 ---
 
@@ -1747,7 +1801,7 @@ public java.lang.String getInstanceId();
 
 Cloud SQL instance ID in the form project:location:instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#instance_id BigqueryConnection#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#instance_id BigqueryConnection#instance_id}
 
 ---
 
@@ -1761,7 +1815,7 @@ public java.lang.String getType();
 
 Type of the Cloud SQL database. Possible values: ["DATABASE_TYPE_UNSPECIFIED", "POSTGRES", "MYSQL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#type BigqueryConnection#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#type BigqueryConnection#type}
 
 ---
 
@@ -1797,7 +1851,7 @@ public java.lang.String getPassword();
 
 Password for database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#password BigqueryConnection#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#password BigqueryConnection#password}
 
 ---
 
@@ -1811,7 +1865,7 @@ public java.lang.String getUsername();
 
 Username for database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#username BigqueryConnection#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#username BigqueryConnection#username}
 
 ---
 
@@ -1835,6 +1889,7 @@ BigqueryConnectionConfig.builder()
 //  .cloudResource(BigqueryConnectionCloudResource)
 //  .cloudSpanner(BigqueryConnectionCloudSpanner)
 //  .cloudSql(BigqueryConnectionCloudSql)
+//  .configuration(BigqueryConnectionConfiguration)
 //  .connectionId(java.lang.String)
 //  .description(java.lang.String)
 //  .friendlyName(java.lang.String)
@@ -1863,13 +1918,14 @@ BigqueryConnectionConfig.builder()
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.cloudResource">cloudResource</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudResource">BigqueryConnectionCloudResource</a></code> | cloud_resource block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.cloudSpanner">cloudSpanner</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSpanner">BigqueryConnectionCloudSpanner</a></code> | cloud_spanner block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.cloudSql">cloudSql</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSql">BigqueryConnectionCloudSql</a></code> | cloud_sql block. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a></code> | configuration block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.connectionId">connectionId</a></code> | <code>java.lang.String</code> | Optional connection id that should be assigned to the created connection. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.description">description</a></code> | <code>java.lang.String</code> | A descriptive description for the connection. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.friendlyName">friendlyName</a></code> | <code>java.lang.String</code> | A descriptive name for the connection. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#id BigqueryConnection#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#id BigqueryConnection#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | Optional. The Cloud KMS key that is used for encryption. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.location">location</a></code> | <code>java.lang.String</code> | The geographic location where the connection should reside. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#project BigqueryConnection#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#project BigqueryConnection#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.spark">spark</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionSpark">BigqueryConnectionSpark</a></code> | spark block. |
 | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts">BigqueryConnectionTimeouts</a></code> | timeouts block. |
 
@@ -1955,7 +2011,7 @@ public BigqueryConnectionAws getAws();
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#aws BigqueryConnection#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#aws BigqueryConnection#aws}
 
 ---
 
@@ -1969,7 +2025,7 @@ public BigqueryConnectionAzure getAzure();
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#azure BigqueryConnection#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#azure BigqueryConnection#azure}
 
 ---
 
@@ -1983,7 +2039,7 @@ public BigqueryConnectionCloudResource getCloudResource();
 
 cloud_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#cloud_resource BigqueryConnection#cloud_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#cloud_resource BigqueryConnection#cloud_resource}
 
 ---
 
@@ -1997,7 +2053,7 @@ public BigqueryConnectionCloudSpanner getCloudSpanner();
 
 cloud_spanner block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#cloud_spanner BigqueryConnection#cloud_spanner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#cloud_spanner BigqueryConnection#cloud_spanner}
 
 ---
 
@@ -2011,7 +2067,21 @@ public BigqueryConnectionCloudSql getCloudSql();
 
 cloud_sql block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#cloud_sql BigqueryConnection#cloud_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#cloud_sql BigqueryConnection#cloud_sql}
+
+---
+
+##### `configuration`<sup>Optional</sup> <a name="configuration" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfig.property.configuration"></a>
+
+```java
+public BigqueryConnectionConfiguration getConfiguration();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a>
+
+configuration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#configuration BigqueryConnection#configuration}
 
 ---
 
@@ -2025,7 +2095,7 @@ public java.lang.String getConnectionId();
 
 Optional connection id that should be assigned to the created connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#connection_id BigqueryConnection#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#connection_id BigqueryConnection#connection_id}
 
 ---
 
@@ -2039,7 +2109,7 @@ public java.lang.String getDescription();
 
 A descriptive description for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#description BigqueryConnection#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#description BigqueryConnection#description}
 
 ---
 
@@ -2053,7 +2123,7 @@ public java.lang.String getFriendlyName();
 
 A descriptive name for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#friendly_name BigqueryConnection#friendly_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#friendly_name BigqueryConnection#friendly_name}
 
 ---
 
@@ -2065,7 +2135,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#id BigqueryConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#id BigqueryConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2084,7 +2154,7 @@ Optional. The Cloud KMS key that is used for encryption.
 
 Example: projects/[kms_project_id]/locations/[region]/keyRings/[key_region]/cryptoKeys/[key]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#kms_key_name BigqueryConnection#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#kms_key_name BigqueryConnection#kms_key_name}
 
 ---
 
@@ -2105,7 +2175,7 @@ Spanner Connections same as spanner region
 AWS allowed regions are aws-us-east-1
 Azure allowed regions are azure-eastus2
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#location BigqueryConnection#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#location BigqueryConnection#location}
 
 ---
 
@@ -2117,7 +2187,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#project BigqueryConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#project BigqueryConnection#project}.
 
 ---
 
@@ -2131,7 +2201,7 @@ public BigqueryConnectionSpark getSpark();
 
 spark block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#spark BigqueryConnection#spark}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#spark BigqueryConnection#spark}
 
 ---
 
@@ -2145,7 +2215,378 @@ public BigqueryConnectionTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#timeouts BigqueryConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#timeouts BigqueryConnection#timeouts}
+
+---
+
+### BigqueryConnectionConfiguration <a name="BigqueryConnectionConfiguration" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfiguration;
+
+BigqueryConnectionConfiguration.builder()
+    .asset(BigqueryConnectionConfigurationAsset)
+    .connectorId(java.lang.String)
+//  .authentication(BigqueryConnectionConfigurationAuthentication)
+//  .endpoint(BigqueryConnectionConfigurationEndpoint)
+//  .network(BigqueryConnectionConfigurationNetwork)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration.property.asset">asset</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset">BigqueryConnectionConfigurationAsset</a></code> | asset block. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration.property.connectorId">connectorId</a></code> | <code>java.lang.String</code> | The ID of the connector. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication">BigqueryConnectionConfigurationAuthentication</a></code> | authentication block. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration.property.endpoint">endpoint</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint">BigqueryConnectionConfigurationEndpoint</a></code> | endpoint block. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration.property.network">network</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork">BigqueryConnectionConfigurationNetwork</a></code> | network block. |
+
+---
+
+##### `asset`<sup>Required</sup> <a name="asset" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration.property.asset"></a>
+
+```java
+public BigqueryConnectionConfigurationAsset getAsset();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset">BigqueryConnectionConfigurationAsset</a>
+
+asset block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#asset BigqueryConnection#asset}
+
+---
+
+##### `connectorId`<sup>Required</sup> <a name="connectorId" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration.property.connectorId"></a>
+
+```java
+public java.lang.String getConnectorId();
+```
+
+- *Type:* java.lang.String
+
+The ID of the connector.
+
+Possible values include 'google-alloydb', 'google-cloudsql-mysql',
+'google-cloudsql-postgres', and other connector IDs supported by the BigQuery Connector framework.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#connector_id BigqueryConnection#connector_id}
+
+---
+
+##### `authentication`<sup>Optional</sup> <a name="authentication" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration.property.authentication"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthentication getAuthentication();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication">BigqueryConnectionConfigurationAuthentication</a>
+
+authentication block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#authentication BigqueryConnection#authentication}
+
+---
+
+##### `endpoint`<sup>Optional</sup> <a name="endpoint" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration.property.endpoint"></a>
+
+```java
+public BigqueryConnectionConfigurationEndpoint getEndpoint();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint">BigqueryConnectionConfigurationEndpoint</a>
+
+endpoint block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#endpoint BigqueryConnection#endpoint}
+
+---
+
+##### `network`<sup>Optional</sup> <a name="network" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration.property.network"></a>
+
+```java
+public BigqueryConnectionConfigurationNetwork getNetwork();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork">BigqueryConnectionConfigurationNetwork</a>
+
+network block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#network BigqueryConnection#network}
+
+---
+
+### BigqueryConnectionConfigurationAsset <a name="BigqueryConnectionConfigurationAsset" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationAsset;
+
+BigqueryConnectionConfigurationAsset.builder()
+//  .database(java.lang.String)
+//  .googleCloudResource(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset.property.database">database</a></code> | <code>java.lang.String</code> | The name of the database. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset.property.googleCloudResource">googleCloudResource</a></code> | <code>java.lang.String</code> | The full resource name of the Google Cloud resource. For AlloyDB, this is in the format of '//alloydb.googleapis.com/projects/{project}/locations/{region}/clusters/{cluster}/instances/{instance}'. |
+
+---
+
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset.property.database"></a>
+
+```java
+public java.lang.String getDatabase();
+```
+
+- *Type:* java.lang.String
+
+The name of the database.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#database BigqueryConnection#database}
+
+---
+
+##### `googleCloudResource`<sup>Optional</sup> <a name="googleCloudResource" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset.property.googleCloudResource"></a>
+
+```java
+public java.lang.String getGoogleCloudResource();
+```
+
+- *Type:* java.lang.String
+
+The full resource name of the Google Cloud resource. For AlloyDB, this is in the format of '//alloydb.googleapis.com/projects/{project}/locations/{region}/clusters/{cluster}/instances/{instance}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#google_cloud_resource BigqueryConnection#google_cloud_resource}
+
+---
+
+### BigqueryConnectionConfigurationAuthentication <a name="BigqueryConnectionConfigurationAuthentication" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationAuthentication;
+
+BigqueryConnectionConfigurationAuthentication.builder()
+//  .usernamePassword(BigqueryConnectionConfigurationAuthenticationUsernamePassword)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication.property.usernamePassword">usernamePassword</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword">BigqueryConnectionConfigurationAuthenticationUsernamePassword</a></code> | username_password block. |
+
+---
+
+##### `usernamePassword`<sup>Optional</sup> <a name="usernamePassword" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication.property.usernamePassword"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthenticationUsernamePassword getUsernamePassword();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword">BigqueryConnectionConfigurationAuthenticationUsernamePassword</a>
+
+username_password block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#username_password BigqueryConnection#username_password}
+
+---
+
+### BigqueryConnectionConfigurationAuthenticationUsernamePassword <a name="BigqueryConnectionConfigurationAuthenticationUsernamePassword" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationAuthenticationUsernamePassword;
+
+BigqueryConnectionConfigurationAuthenticationUsernamePassword.builder()
+    .password(BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword)
+    .username(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword.property.password">password</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword">BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword</a></code> | password block. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword.property.username">username</a></code> | <code>java.lang.String</code> | Username for the connector. |
+
+---
+
+##### `password`<sup>Required</sup> <a name="password" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword.property.password"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword getPassword();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword">BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword</a>
+
+password block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#password BigqueryConnection#password}
+
+---
+
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword.property.username"></a>
+
+```java
+public java.lang.String getUsername();
+```
+
+- *Type:* java.lang.String
+
+Username for the connector.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#username BigqueryConnection#username}
+
+---
+
+### BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword <a name="BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword;
+
+BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword.builder()
+    .plaintext(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword.property.plaintext">plaintext</a></code> | <code>java.lang.String</code> | The plaintext password. |
+
+---
+
+##### `plaintext`<sup>Required</sup> <a name="plaintext" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword.property.plaintext"></a>
+
+```java
+public java.lang.String getPlaintext();
+```
+
+- *Type:* java.lang.String
+
+The plaintext password.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#plaintext BigqueryConnection#plaintext}
+
+---
+
+### BigqueryConnectionConfigurationEndpoint <a name="BigqueryConnectionConfigurationEndpoint" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationEndpoint;
+
+BigqueryConnectionConfigurationEndpoint.builder()
+//  .hostPort(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint.property.hostPort">hostPort</a></code> | <code>java.lang.String</code> | Host and port in the format of 'host:port' for the connector endpoint. |
+
+---
+
+##### `hostPort`<sup>Optional</sup> <a name="hostPort" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint.property.hostPort"></a>
+
+```java
+public java.lang.String getHostPort();
+```
+
+- *Type:* java.lang.String
+
+Host and port in the format of 'host:port' for the connector endpoint.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#host_port BigqueryConnection#host_port}
+
+---
+
+### BigqueryConnectionConfigurationNetwork <a name="BigqueryConnectionConfigurationNetwork" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationNetwork;
+
+BigqueryConnectionConfigurationNetwork.builder()
+//  .privateServiceConnect(BigqueryConnectionConfigurationNetworkPrivateServiceConnect)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork.property.privateServiceConnect">privateServiceConnect</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect">BigqueryConnectionConfigurationNetworkPrivateServiceConnect</a></code> | private_service_connect block. |
+
+---
+
+##### `privateServiceConnect`<sup>Optional</sup> <a name="privateServiceConnect" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork.property.privateServiceConnect"></a>
+
+```java
+public BigqueryConnectionConfigurationNetworkPrivateServiceConnect getPrivateServiceConnect();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect">BigqueryConnectionConfigurationNetworkPrivateServiceConnect</a>
+
+private_service_connect block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#private_service_connect BigqueryConnection#private_service_connect}
+
+---
+
+### BigqueryConnectionConfigurationNetworkPrivateServiceConnect <a name="BigqueryConnectionConfigurationNetworkPrivateServiceConnect" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect;
+
+BigqueryConnectionConfigurationNetworkPrivateServiceConnect.builder()
+    .networkAttachment(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect.property.networkAttachment">networkAttachment</a></code> | <code>java.lang.String</code> | The resource name of a network attachment in the format of 'projects/{project}/regions/{region}/networkAttachments/{networkAttachment}'. |
+
+---
+
+##### `networkAttachment`<sup>Required</sup> <a name="networkAttachment" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect.property.networkAttachment"></a>
+
+```java
+public java.lang.String getNetworkAttachment();
+```
+
+- *Type:* java.lang.String
+
+The resource name of a network attachment in the format of 'projects/{project}/regions/{region}/networkAttachments/{networkAttachment}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#network_attachment BigqueryConnection#network_attachment}
 
 ---
 
@@ -2181,7 +2622,7 @@ public BigqueryConnectionSparkMetastoreServiceConfig getMetastoreServiceConfig()
 
 metastore_service_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#metastore_service_config BigqueryConnection#metastore_service_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#metastore_service_config BigqueryConnection#metastore_service_config}
 
 ---
 
@@ -2195,7 +2636,7 @@ public BigqueryConnectionSparkSparkHistoryServerConfig getSparkHistoryServerConf
 
 spark_history_server_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#spark_history_server_config BigqueryConnection#spark_history_server_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#spark_history_server_config BigqueryConnection#spark_history_server_config}
 
 ---
 
@@ -2229,7 +2670,7 @@ public java.lang.String getMetastoreService();
 
 Resource name of an existing Dataproc Metastore service in the form of projects/[projectId]/locations/[region]/services/[serviceId].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#metastore_service BigqueryConnection#metastore_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#metastore_service BigqueryConnection#metastore_service}
 
 ---
 
@@ -2263,7 +2704,7 @@ public java.lang.String getDataprocCluster();
 
 Resource name of an existing Dataproc Cluster to act as a Spark History Server for the connection if the form of projects/[projectId]/regions/[region]/clusters/[cluster_name].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#dataproc_cluster BigqueryConnection#dataproc_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#dataproc_cluster BigqueryConnection#dataproc_cluster}
 
 ---
 
@@ -2285,9 +2726,9 @@ BigqueryConnectionTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#create BigqueryConnection#create}. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#delete BigqueryConnection#delete}. |
-| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#update BigqueryConnection#update}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#create BigqueryConnection#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#delete BigqueryConnection#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#update BigqueryConnection#update}. |
 
 ---
 
@@ -2299,7 +2740,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#create BigqueryConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#create BigqueryConnection#create}.
 
 ---
 
@@ -2311,7 +2752,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#delete BigqueryConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#delete BigqueryConnection#delete}.
 
 ---
 
@@ -2323,7 +2764,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_connection#update BigqueryConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_connection#update BigqueryConnection#update}.
 
 ---
 
@@ -4576,6 +5017,2475 @@ public BigqueryConnectionCloudSql getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudSql">BigqueryConnectionCloudSql</a>
+
+---
+
+
+### BigqueryConnectionConfigurationAssetOutputReference <a name="BigqueryConnectionConfigurationAssetOutputReference" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationAssetOutputReference;
+
+new BigqueryConnectionConfigurationAssetOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.resetDatabase">resetDatabase</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.resetGoogleCloudResource">resetGoogleCloudResource</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetDatabase` <a name="resetDatabase" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.resetDatabase"></a>
+
+```java
+public void resetDatabase()
+```
+
+##### `resetGoogleCloudResource` <a name="resetGoogleCloudResource" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.resetGoogleCloudResource"></a>
+
+```java
+public void resetGoogleCloudResource()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.databaseInput">databaseInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.googleCloudResourceInput">googleCloudResourceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.database">database</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.googleCloudResource">googleCloudResource</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset">BigqueryConnectionConfigurationAsset</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `databaseInput`<sup>Optional</sup> <a name="databaseInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.databaseInput"></a>
+
+```java
+public java.lang.String getDatabaseInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `googleCloudResourceInput`<sup>Optional</sup> <a name="googleCloudResourceInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.googleCloudResourceInput"></a>
+
+```java
+public java.lang.String getGoogleCloudResourceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.database"></a>
+
+```java
+public java.lang.String getDatabase();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `googleCloudResource`<sup>Required</sup> <a name="googleCloudResource" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.googleCloudResource"></a>
+
+```java
+public java.lang.String getGoogleCloudResource();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference.property.internalValue"></a>
+
+```java
+public BigqueryConnectionConfigurationAsset getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset">BigqueryConnectionConfigurationAsset</a>
+
+---
+
+
+### BigqueryConnectionConfigurationAuthenticationOutputReference <a name="BigqueryConnectionConfigurationAuthenticationOutputReference" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationAuthenticationOutputReference;
+
+new BigqueryConnectionConfigurationAuthenticationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.putUsernamePassword">putUsernamePassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.resetUsernamePassword">resetUsernamePassword</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putUsernamePassword` <a name="putUsernamePassword" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.putUsernamePassword"></a>
+
+```java
+public void putUsernamePassword(BigqueryConnectionConfigurationAuthenticationUsernamePassword value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.putUsernamePassword.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword">BigqueryConnectionConfigurationAuthenticationUsernamePassword</a>
+
+---
+
+##### `resetUsernamePassword` <a name="resetUsernamePassword" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.resetUsernamePassword"></a>
+
+```java
+public void resetUsernamePassword()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.serviceAccount">serviceAccount</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.usernamePassword">usernamePassword</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference">BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.usernamePasswordInput">usernamePasswordInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword">BigqueryConnectionConfigurationAuthenticationUsernamePassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication">BigqueryConnectionConfigurationAuthentication</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serviceAccount`<sup>Required</sup> <a name="serviceAccount" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.serviceAccount"></a>
+
+```java
+public java.lang.String getServiceAccount();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `usernamePassword`<sup>Required</sup> <a name="usernamePassword" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.usernamePassword"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference getUsernamePassword();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference">BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference</a>
+
+---
+
+##### `usernamePasswordInput`<sup>Optional</sup> <a name="usernamePasswordInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.usernamePasswordInput"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthenticationUsernamePassword getUsernamePasswordInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword">BigqueryConnectionConfigurationAuthenticationUsernamePassword</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference.property.internalValue"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthentication getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication">BigqueryConnectionConfigurationAuthentication</a>
+
+---
+
+
+### BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference <a name="BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference;
+
+new BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.putPassword">putPassword</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putPassword` <a name="putPassword" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.putPassword"></a>
+
+```java
+public void putPassword(BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.putPassword.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword">BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.password">password</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference">BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.passwordInput">passwordInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword">BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword">BigqueryConnectionConfigurationAuthenticationUsernamePassword</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `password`<sup>Required</sup> <a name="password" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.password"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference getPassword();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference">BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference</a>
+
+---
+
+##### `passwordInput`<sup>Optional</sup> <a name="passwordInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.passwordInput"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword getPasswordInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword">BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword</a>
+
+---
+
+##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.usernameInput"></a>
+
+```java
+public java.lang.String getUsernameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.username"></a>
+
+```java
+public java.lang.String getUsername();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordOutputReference.property.internalValue"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthenticationUsernamePassword getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePassword">BigqueryConnectionConfigurationAuthenticationUsernamePassword</a>
+
+---
+
+
+### BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference <a name="BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference;
+
+new BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.secretType">secretType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.plaintextInput">plaintextInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.plaintext">plaintext</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword">BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `secretType`<sup>Required</sup> <a name="secretType" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.secretType"></a>
+
+```java
+public java.lang.String getSecretType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `plaintextInput`<sup>Optional</sup> <a name="plaintextInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.plaintextInput"></a>
+
+```java
+public java.lang.String getPlaintextInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `plaintext`<sup>Required</sup> <a name="plaintext" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.plaintext"></a>
+
+```java
+public java.lang.String getPlaintext();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference.property.internalValue"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword">BigqueryConnectionConfigurationAuthenticationUsernamePasswordPassword</a>
+
+---
+
+
+### BigqueryConnectionConfigurationEndpointOutputReference <a name="BigqueryConnectionConfigurationEndpointOutputReference" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationEndpointOutputReference;
+
+new BigqueryConnectionConfigurationEndpointOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.resetHostPort">resetHostPort</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetHostPort` <a name="resetHostPort" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.resetHostPort"></a>
+
+```java
+public void resetHostPort()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.property.hostPortInput">hostPortInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.property.hostPort">hostPort</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint">BigqueryConnectionConfigurationEndpoint</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `hostPortInput`<sup>Optional</sup> <a name="hostPortInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.property.hostPortInput"></a>
+
+```java
+public java.lang.String getHostPortInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `hostPort`<sup>Required</sup> <a name="hostPort" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.property.hostPort"></a>
+
+```java
+public java.lang.String getHostPort();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference.property.internalValue"></a>
+
+```java
+public BigqueryConnectionConfigurationEndpoint getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint">BigqueryConnectionConfigurationEndpoint</a>
+
+---
+
+
+### BigqueryConnectionConfigurationNetworkOutputReference <a name="BigqueryConnectionConfigurationNetworkOutputReference" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationNetworkOutputReference;
+
+new BigqueryConnectionConfigurationNetworkOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.putPrivateServiceConnect">putPrivateServiceConnect</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.resetPrivateServiceConnect">resetPrivateServiceConnect</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putPrivateServiceConnect` <a name="putPrivateServiceConnect" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.putPrivateServiceConnect"></a>
+
+```java
+public void putPrivateServiceConnect(BigqueryConnectionConfigurationNetworkPrivateServiceConnect value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.putPrivateServiceConnect.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect">BigqueryConnectionConfigurationNetworkPrivateServiceConnect</a>
+
+---
+
+##### `resetPrivateServiceConnect` <a name="resetPrivateServiceConnect" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.resetPrivateServiceConnect"></a>
+
+```java
+public void resetPrivateServiceConnect()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.property.privateServiceConnect">privateServiceConnect</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference">BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.property.privateServiceConnectInput">privateServiceConnectInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect">BigqueryConnectionConfigurationNetworkPrivateServiceConnect</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork">BigqueryConnectionConfigurationNetwork</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `privateServiceConnect`<sup>Required</sup> <a name="privateServiceConnect" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.property.privateServiceConnect"></a>
+
+```java
+public BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference getPrivateServiceConnect();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference">BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference</a>
+
+---
+
+##### `privateServiceConnectInput`<sup>Optional</sup> <a name="privateServiceConnectInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.property.privateServiceConnectInput"></a>
+
+```java
+public BigqueryConnectionConfigurationNetworkPrivateServiceConnect getPrivateServiceConnectInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect">BigqueryConnectionConfigurationNetworkPrivateServiceConnect</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference.property.internalValue"></a>
+
+```java
+public BigqueryConnectionConfigurationNetwork getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork">BigqueryConnectionConfigurationNetwork</a>
+
+---
+
+
+### BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference <a name="BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference;
+
+new BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.property.networkAttachmentInput">networkAttachmentInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.property.networkAttachment">networkAttachment</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect">BigqueryConnectionConfigurationNetworkPrivateServiceConnect</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `networkAttachmentInput`<sup>Optional</sup> <a name="networkAttachmentInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.property.networkAttachmentInput"></a>
+
+```java
+public java.lang.String getNetworkAttachmentInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `networkAttachment`<sup>Required</sup> <a name="networkAttachment" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.property.networkAttachment"></a>
+
+```java
+public java.lang.String getNetworkAttachment();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnectOutputReference.property.internalValue"></a>
+
+```java
+public BigqueryConnectionConfigurationNetworkPrivateServiceConnect getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkPrivateServiceConnect">BigqueryConnectionConfigurationNetworkPrivateServiceConnect</a>
+
+---
+
+
+### BigqueryConnectionConfigurationOutputReference <a name="BigqueryConnectionConfigurationOutputReference" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.bigquery_connection.BigqueryConnectionConfigurationOutputReference;
+
+new BigqueryConnectionConfigurationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putAsset">putAsset</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putAuthentication">putAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putEndpoint">putEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putNetwork">putNetwork</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.resetAuthentication">resetAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.resetEndpoint">resetEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.resetNetwork">resetNetwork</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAsset` <a name="putAsset" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putAsset"></a>
+
+```java
+public void putAsset(BigqueryConnectionConfigurationAsset value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putAsset.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset">BigqueryConnectionConfigurationAsset</a>
+
+---
+
+##### `putAuthentication` <a name="putAuthentication" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putAuthentication"></a>
+
+```java
+public void putAuthentication(BigqueryConnectionConfigurationAuthentication value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putAuthentication.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication">BigqueryConnectionConfigurationAuthentication</a>
+
+---
+
+##### `putEndpoint` <a name="putEndpoint" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putEndpoint"></a>
+
+```java
+public void putEndpoint(BigqueryConnectionConfigurationEndpoint value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putEndpoint.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint">BigqueryConnectionConfigurationEndpoint</a>
+
+---
+
+##### `putNetwork` <a name="putNetwork" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putNetwork"></a>
+
+```java
+public void putNetwork(BigqueryConnectionConfigurationNetwork value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.putNetwork.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork">BigqueryConnectionConfigurationNetwork</a>
+
+---
+
+##### `resetAuthentication` <a name="resetAuthentication" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.resetAuthentication"></a>
+
+```java
+public void resetAuthentication()
+```
+
+##### `resetEndpoint` <a name="resetEndpoint" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.resetEndpoint"></a>
+
+```java
+public void resetEndpoint()
+```
+
+##### `resetNetwork` <a name="resetNetwork" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.resetNetwork"></a>
+
+```java
+public void resetNetwork()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.asset">asset</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference">BigqueryConnectionConfigurationAssetOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference">BigqueryConnectionConfigurationAuthenticationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.endpoint">endpoint</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference">BigqueryConnectionConfigurationEndpointOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.network">network</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference">BigqueryConnectionConfigurationNetworkOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.assetInput">assetInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset">BigqueryConnectionConfigurationAsset</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.authenticationInput">authenticationInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication">BigqueryConnectionConfigurationAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.connectorIdInput">connectorIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.endpointInput">endpointInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint">BigqueryConnectionConfigurationEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.networkInput">networkInput</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork">BigqueryConnectionConfigurationNetwork</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.connectorId">connectorId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `asset`<sup>Required</sup> <a name="asset" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.asset"></a>
+
+```java
+public BigqueryConnectionConfigurationAssetOutputReference getAsset();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAssetOutputReference">BigqueryConnectionConfigurationAssetOutputReference</a>
+
+---
+
+##### `authentication`<sup>Required</sup> <a name="authentication" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.authentication"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthenticationOutputReference getAuthentication();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthenticationOutputReference">BigqueryConnectionConfigurationAuthenticationOutputReference</a>
+
+---
+
+##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.endpoint"></a>
+
+```java
+public BigqueryConnectionConfigurationEndpointOutputReference getEndpoint();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpointOutputReference">BigqueryConnectionConfigurationEndpointOutputReference</a>
+
+---
+
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.network"></a>
+
+```java
+public BigqueryConnectionConfigurationNetworkOutputReference getNetwork();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetworkOutputReference">BigqueryConnectionConfigurationNetworkOutputReference</a>
+
+---
+
+##### `assetInput`<sup>Optional</sup> <a name="assetInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.assetInput"></a>
+
+```java
+public BigqueryConnectionConfigurationAsset getAssetInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAsset">BigqueryConnectionConfigurationAsset</a>
+
+---
+
+##### `authenticationInput`<sup>Optional</sup> <a name="authenticationInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.authenticationInput"></a>
+
+```java
+public BigqueryConnectionConfigurationAuthentication getAuthenticationInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationAuthentication">BigqueryConnectionConfigurationAuthentication</a>
+
+---
+
+##### `connectorIdInput`<sup>Optional</sup> <a name="connectorIdInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.connectorIdInput"></a>
+
+```java
+public java.lang.String getConnectorIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `endpointInput`<sup>Optional</sup> <a name="endpointInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.endpointInput"></a>
+
+```java
+public BigqueryConnectionConfigurationEndpoint getEndpointInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationEndpoint">BigqueryConnectionConfigurationEndpoint</a>
+
+---
+
+##### `networkInput`<sup>Optional</sup> <a name="networkInput" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.networkInput"></a>
+
+```java
+public BigqueryConnectionConfigurationNetwork getNetworkInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationNetwork">BigqueryConnectionConfigurationNetwork</a>
+
+---
+
+##### `connectorId`<sup>Required</sup> <a name="connectorId" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.connectorId"></a>
+
+```java
+public java.lang.String getConnectorId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfigurationOutputReference.property.internalValue"></a>
+
+```java
+public BigqueryConnectionConfiguration getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.bigqueryConnection.BigqueryConnectionConfiguration">BigqueryConnectionConfiguration</a>
 
 ---
 

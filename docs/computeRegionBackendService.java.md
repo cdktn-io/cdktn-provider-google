@@ -4,7 +4,7 @@
 
 ### ComputeRegionBackendService <a name="ComputeRegionBackendService" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service google_compute_region_backend_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service google_compute_region_backend_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer"></a>
 
@@ -39,15 +39,19 @@ ComputeRegionBackendService.Builder.create(Construct scope, java.lang.String id)
 //  .localityLbPolicy(java.lang.String)
 //  .logConfig(ComputeRegionBackendServiceLogConfig)
 //  .network(java.lang.String)
+//  .networkPassThroughLbTrafficPolicy(ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy)
 //  .outlierDetection(ComputeRegionBackendServiceOutlierDetection)
+//  .params(ComputeRegionBackendServiceParams)
 //  .portName(java.lang.String)
 //  .project(java.lang.String)
 //  .protocol(java.lang.String)
 //  .region(java.lang.String)
+//  .securityPolicy(java.lang.String)
 //  .sessionAffinity(java.lang.String)
 //  .strongSessionAffinityCookie(ComputeRegionBackendServiceStrongSessionAffinityCookie)
 //  .timeouts(ComputeRegionBackendServiceTimeouts)
 //  .timeoutSec(java.lang.Number)
+//  .tlsSettings(ComputeRegionBackendServiceTlsSettings)
     .build();
 ```
 
@@ -76,21 +80,25 @@ ComputeRegionBackendService.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.haPolicy">haPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceHaPolicy">ComputeRegionBackendServiceHaPolicy</a></code> | ha_policy block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.healthChecks">healthChecks</a></code> | <code>java.util.List<java.lang.String></code> | The set of URLs to HealthCheck resources for health checking this RegionBackendService. Currently at most one health check can be specified. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.iap">iap</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceIap">ComputeRegionBackendServiceIap</a></code> | iap block. |
-| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#id ComputeRegionBackendService#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#id ComputeRegionBackendService#id}. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.ipAddressSelectionPolicy">ipAddressSelectionPolicy</a></code> | <code>java.lang.String</code> | Specifies preference of traffic to the backend (from the proxy and from the client for proxyless gRPC). |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.loadBalancingScheme">loadBalancingScheme</a></code> | <code>java.lang.String</code> | Indicates what kind of load balancing this regional backend service will be used for. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.localityLbPolicy">localityLbPolicy</a></code> | <code>java.lang.String</code> | The load balancing algorithm used within the scope of the locality. The possible values are:. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.logConfig">logConfig</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceLogConfig">ComputeRegionBackendServiceLogConfig</a></code> | log_config block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.network">network</a></code> | <code>java.lang.String</code> | The URL of the network to which this backend service belongs. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.networkPassThroughLbTrafficPolicy">networkPassThroughLbTrafficPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy</a></code> | network_pass_through_lb_traffic_policy block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.outlierDetection">outlierDetection</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceOutlierDetection">ComputeRegionBackendServiceOutlierDetection</a></code> | outlier_detection block. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams">ComputeRegionBackendServiceParams</a></code> | params block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.portName">portName</a></code> | <code>java.lang.String</code> | A named port on a backend instance group representing the port for communication to the backend VMs in that group. |
-| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#project ComputeRegionBackendService#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#project ComputeRegionBackendService#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.protocol">protocol</a></code> | <code>java.lang.String</code> | The protocol this BackendService uses to communicate with backends. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | The Region in which the created backend service should reside. If it is not provided, the provider region is used. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.securityPolicy">securityPolicy</a></code> | <code>java.lang.String</code> | The security policy associated with this backend service. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.sessionAffinity">sessionAffinity</a></code> | <code>java.lang.String</code> | Type of session affinity to use. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.strongSessionAffinityCookie">strongSessionAffinityCookie</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceStrongSessionAffinityCookie">ComputeRegionBackendServiceStrongSessionAffinityCookie</a></code> | strong_session_affinity_cookie block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts">ComputeRegionBackendServiceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.timeoutSec">timeoutSec</a></code> | <code>java.lang.Number</code> | The backend service timeout has a different meaning depending on the type of load balancer. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.tlsSettings">tlsSettings</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings">ComputeRegionBackendServiceTlsSettings</a></code> | tls_settings block. |
 
 ---
 
@@ -168,7 +176,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
 
 ---
 
@@ -184,7 +192,7 @@ maximum allowed value for TTL is one day.
 
 When the load balancing scheme is INTERNAL, this field is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#affinity_cookie_ttl_sec ComputeRegionBackendService#affinity_cookie_ttl_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#affinity_cookie_ttl_sec ComputeRegionBackendService#affinity_cookie_ttl_sec}
 
 ---
 
@@ -194,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 backend block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#backend ComputeRegionBackendService#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#backend ComputeRegionBackendService#backend}
 
 ---
 
@@ -204,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cdn_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#cdn_policy ComputeRegionBackendService#cdn_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#cdn_policy ComputeRegionBackendService#cdn_policy}
 
 ---
 
@@ -214,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 circuit_breakers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#circuit_breakers ComputeRegionBackendService#circuit_breakers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#circuit_breakers ComputeRegionBackendService#circuit_breakers}
 
 ---
 
@@ -224,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Time for which instance will be drained (not accept new connections, but still work to finish started).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#connection_draining_timeout_sec ComputeRegionBackendService#connection_draining_timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#connection_draining_timeout_sec ComputeRegionBackendService#connection_draining_timeout_sec}
 
 ---
 
@@ -234,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 consistent_hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#consistent_hash ComputeRegionBackendService#consistent_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#consistent_hash ComputeRegionBackendService#consistent_hash}
 
 ---
 
@@ -244,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
 
 ---
 
@@ -254,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
 
 ---
 
@@ -264,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, enable Cloud CDN for this RegionBackendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enable_cdn ComputeRegionBackendService#enable_cdn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enable_cdn ComputeRegionBackendService#enable_cdn}
 
 ---
 
@@ -274,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 failover_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#failover_policy ComputeRegionBackendService#failover_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#failover_policy ComputeRegionBackendService#failover_policy}
 
 ---
 
@@ -284,7 +292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ha_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#ha_policy ComputeRegionBackendService#ha_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#ha_policy ComputeRegionBackendService#ha_policy}
 
 ---
 
@@ -297,7 +305,7 @@ The set of URLs to HealthCheck resources for health checking this RegionBackendS
 A health check must be specified unless the backend service uses an internet
 or serverless NEG as a backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#health_checks ComputeRegionBackendService#health_checks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#health_checks ComputeRegionBackendService#health_checks}
 
 ---
 
@@ -307,7 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 iap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#iap ComputeRegionBackendService#iap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#iap ComputeRegionBackendService#iap}
 
 ---
 
@@ -315,7 +323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#id ComputeRegionBackendService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#id ComputeRegionBackendService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -330,7 +338,7 @@ Specifies preference of traffic to the backend (from the proxy and from the clie
 
 Possible values: ["IPV4_ONLY", "PREFER_IPV6", "IPV6_ONLY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#ip_address_selection_policy ComputeRegionBackendService#ip_address_selection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#ip_address_selection_policy ComputeRegionBackendService#ip_address_selection_policy}
 
 ---
 
@@ -342,9 +350,9 @@ Indicates what kind of load balancing this regional backend service will be used
 
 A backend service created for one type of load
 balancing cannot be used with the other(s). For more information, refer to
-[Choosing a load balancer](https://cloud.google.com/load-balancing/docs/backend-service). Default value: "INTERNAL" Possible values: ["EXTERNAL", "EXTERNAL_MANAGED", "INTERNAL", "INTERNAL_MANAGED"]
+[Choosing a load balancer](https://cloud.google.com/load-balancing/docs/backend-service). Default value: "INTERNAL" Possible values: ["EXTERNAL", "EXTERNAL_MANAGED", "INTERNAL", "INTERNAL_MANAGED", "INTERNAL_SELF_MANAGED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#load_balancing_scheme ComputeRegionBackendService#load_balancing_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#load_balancing_scheme ComputeRegionBackendService#load_balancing_scheme}
 
 ---
 
@@ -408,7 +416,7 @@ Only ROUND_ROBIN and RING_HASH are supported when the backend service is referen
 by a URL map that is bound to target gRPC proxy that has validate_for_proxyless
 field set to true. Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV", "WEIGHTED_MAGLEV", "WEIGHTED_ROUND_ROBIN"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#locality_lb_policy ComputeRegionBackendService#locality_lb_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#locality_lb_policy ComputeRegionBackendService#locality_lb_policy}
 
 ---
 
@@ -418,7 +426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#log_config ComputeRegionBackendService#log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#log_config ComputeRegionBackendService#log_config}
 
 ---
 
@@ -428,9 +436,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The URL of the network to which this backend service belongs.
 
-This field can only be specified when the load balancing scheme is set to INTERNAL.
+This field must be set for Internal Passthrough Network Load Balancers when the haPolicy is enabled, and for External Passthrough Network Load Balancers when the haPolicy fastIpMove is enabled.
+This field can only be specified when the load balancing scheme is set to INTERNAL, or when the load balancing scheme is set to EXTERNAL and haPolicy fastIpMove is enabled.
+Changes to this field force recreation of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#network ComputeRegionBackendService#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#network ComputeRegionBackendService#network}
+
+---
+
+##### `networkPassThroughLbTrafficPolicy`<sup>Optional</sup> <a name="networkPassThroughLbTrafficPolicy" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.networkPassThroughLbTrafficPolicy"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy</a>
+
+network_pass_through_lb_traffic_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#network_pass_through_lb_traffic_policy ComputeRegionBackendService#network_pass_through_lb_traffic_policy}
 
 ---
 
@@ -440,7 +460,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 outlier_detection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#outlier_detection ComputeRegionBackendService#outlier_detection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#outlier_detection ComputeRegionBackendService#outlier_detection}
+
+---
+
+##### `params`<sup>Optional</sup> <a name="params" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.params"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams">ComputeRegionBackendServiceParams</a>
+
+params block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#params ComputeRegionBackendService#params}
 
 ---
 
@@ -457,7 +487,7 @@ backend instance group. This parameter has no meaning if the backends are NEGs. 
 default of "http" if not given.
 Must be omitted when the loadBalancingScheme is INTERNAL (Internal TCP/UDP Load Balancing).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#port_name ComputeRegionBackendService#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#port_name ComputeRegionBackendService#port_name}
 
 ---
 
@@ -465,7 +495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#project ComputeRegionBackendService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#project ComputeRegionBackendService#project}.
 
 ---
 
@@ -479,7 +509,7 @@ The default is HTTP. Possible values are HTTP, HTTPS, HTTP2, H2C, TCP, SSL, UDP
 or GRPC. Refer to the documentation for the load balancers or for Traffic Director
 for more information. Possible values: ["HTTP", "HTTPS", "HTTP2", "TCP", "SSL", "UDP", "GRPC", "UNSPECIFIED", "H2C"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#protocol ComputeRegionBackendService#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#protocol ComputeRegionBackendService#protocol}
 
 ---
 
@@ -489,7 +519,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Region in which the created backend service should reside. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#region ComputeRegionBackendService#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#region ComputeRegionBackendService#region}
+
+---
+
+##### `securityPolicy`<sup>Optional</sup> <a name="securityPolicy" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.securityPolicy"></a>
+
+- *Type:* java.lang.String
+
+The security policy associated with this backend service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#security_policy ComputeRegionBackendService#security_policy}
 
 ---
 
@@ -502,7 +542,7 @@ Type of session affinity to use.
 The default is NONE. Session affinity is
 not applicable if the protocol is UDP. Possible values: ["NONE", "CLIENT_IP", "CLIENT_IP_PORT_PROTO", "CLIENT_IP_PROTO", "GENERATED_COOKIE", "HEADER_FIELD", "HTTP_COOKIE", "CLIENT_IP_NO_DESTINATION", "STRONG_COOKIE_AFFINITY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#session_affinity ComputeRegionBackendService#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#session_affinity ComputeRegionBackendService#session_affinity}
 
 ---
 
@@ -512,7 +552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 strong_session_affinity_cookie block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#strong_session_affinity_cookie ComputeRegionBackendService#strong_session_affinity_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#strong_session_affinity_cookie ComputeRegionBackendService#strong_session_affinity_cookie}
 
 ---
 
@@ -522,7 +562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#timeouts ComputeRegionBackendService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#timeouts ComputeRegionBackendService#timeouts}
 
 ---
 
@@ -536,7 +576,17 @@ For more information see, [Backend service settings](https://cloud.google.com/co
 The default is 30 seconds.
 The full range of timeout values allowed goes from 1 through 2,147,483,647 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#timeout_sec ComputeRegionBackendService#timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#timeout_sec ComputeRegionBackendService#timeout_sec}
+
+---
+
+##### `tlsSettings`<sup>Optional</sup> <a name="tlsSettings" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.Initializer.parameter.tlsSettings"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings">ComputeRegionBackendServiceTlsSettings</a>
+
+tls_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#tls_settings ComputeRegionBackendService#tls_settings}
 
 ---
 
@@ -577,9 +627,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putHaPolicy">putHaPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putIap">putIap</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putLogConfig">putLogConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putNetworkPassThroughLbTrafficPolicy">putNetworkPassThroughLbTrafficPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putOutlierDetection">putOutlierDetection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putParams">putParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putStrongSessionAffinityCookie">putStrongSessionAffinityCookie</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putTlsSettings">putTlsSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetAffinityCookieTtlSec">resetAffinityCookieTtlSec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetBackend">resetBackend</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetCdnPolicy">resetCdnPolicy</a></code> | *No description.* |
@@ -599,15 +652,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetLocalityLbPolicy">resetLocalityLbPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetLogConfig">resetLogConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetNetwork">resetNetwork</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetNetworkPassThroughLbTrafficPolicy">resetNetworkPassThroughLbTrafficPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetOutlierDetection">resetOutlierDetection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetParams">resetParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetPortName">resetPortName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetProtocol">resetProtocol</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetSecurityPolicy">resetSecurityPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetSessionAffinity">resetSessionAffinity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetStrongSessionAffinityCookie">resetStrongSessionAffinityCookie</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetTimeoutSec">resetTimeoutSec</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetTlsSettings">resetTlsSettings</a></code> | *No description.* |
 
 ---
 
@@ -1030,6 +1087,18 @@ public void putLogConfig(ComputeRegionBackendServiceLogConfig value)
 
 ---
 
+##### `putNetworkPassThroughLbTrafficPolicy` <a name="putNetworkPassThroughLbTrafficPolicy" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putNetworkPassThroughLbTrafficPolicy"></a>
+
+```java
+public void putNetworkPassThroughLbTrafficPolicy(ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putNetworkPassThroughLbTrafficPolicy.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy</a>
+
+---
+
 ##### `putOutlierDetection` <a name="putOutlierDetection" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putOutlierDetection"></a>
 
 ```java
@@ -1039,6 +1108,18 @@ public void putOutlierDetection(ComputeRegionBackendServiceOutlierDetection valu
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putOutlierDetection.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceOutlierDetection">ComputeRegionBackendServiceOutlierDetection</a>
+
+---
+
+##### `putParams` <a name="putParams" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putParams"></a>
+
+```java
+public void putParams(ComputeRegionBackendServiceParams value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putParams.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams">ComputeRegionBackendServiceParams</a>
 
 ---
 
@@ -1063,6 +1144,18 @@ public void putTimeouts(ComputeRegionBackendServiceTimeouts value)
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putTimeouts.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts">ComputeRegionBackendServiceTimeouts</a>
+
+---
+
+##### `putTlsSettings` <a name="putTlsSettings" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putTlsSettings"></a>
+
+```java
+public void putTlsSettings(ComputeRegionBackendServiceTlsSettings value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.putTlsSettings.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings">ComputeRegionBackendServiceTlsSettings</a>
 
 ---
 
@@ -1180,10 +1273,22 @@ public void resetLogConfig()
 public void resetNetwork()
 ```
 
+##### `resetNetworkPassThroughLbTrafficPolicy` <a name="resetNetworkPassThroughLbTrafficPolicy" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetNetworkPassThroughLbTrafficPolicy"></a>
+
+```java
+public void resetNetworkPassThroughLbTrafficPolicy()
+```
+
 ##### `resetOutlierDetection` <a name="resetOutlierDetection" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetOutlierDetection"></a>
 
 ```java
 public void resetOutlierDetection()
+```
+
+##### `resetParams` <a name="resetParams" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetParams"></a>
+
+```java
+public void resetParams()
 ```
 
 ##### `resetPortName` <a name="resetPortName" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetPortName"></a>
@@ -1210,6 +1315,12 @@ public void resetProtocol()
 public void resetRegion()
 ```
 
+##### `resetSecurityPolicy` <a name="resetSecurityPolicy" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetSecurityPolicy"></a>
+
+```java
+public void resetSecurityPolicy()
+```
+
 ##### `resetSessionAffinity` <a name="resetSessionAffinity" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetSessionAffinity"></a>
 
 ```java
@@ -1232,6 +1343,12 @@ public void resetTimeouts()
 
 ```java
 public void resetTimeoutSec()
+```
+
+##### `resetTlsSettings` <a name="resetTlsSettings" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.resetTlsSettings"></a>
+
+```java
+public void resetTlsSettings()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -1337,7 +1454,7 @@ The construct id used in the generated config for the ComputeRegionBackendServic
 
 The id of the existing ComputeRegionBackendService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1379,10 +1496,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.haPolicy">haPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceHaPolicyOutputReference">ComputeRegionBackendServiceHaPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.iap">iap</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceIapOutputReference">ComputeRegionBackendServiceIapOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.logConfig">logConfig</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceLogConfigOutputReference">ComputeRegionBackendServiceLogConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.networkPassThroughLbTrafficPolicy">networkPassThroughLbTrafficPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.outlierDetection">outlierDetection</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceOutlierDetectionOutputReference">ComputeRegionBackendServiceOutlierDetectionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference">ComputeRegionBackendServiceParamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.selfLink">selfLink</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.strongSessionAffinityCookie">strongSessionAffinityCookie</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference">ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeoutsOutputReference">ComputeRegionBackendServiceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.tlsSettings">tlsSettings</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference">ComputeRegionBackendServiceTlsSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.affinityCookieTtlSecInput">affinityCookieTtlSecInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.backendInput">backendInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceBackend">ComputeRegionBackendServiceBackend</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.cdnPolicyInput">cdnPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceCdnPolicy">ComputeRegionBackendServiceCdnPolicy</a></code> | *No description.* |
@@ -1403,15 +1523,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.logConfigInput">logConfigInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceLogConfig">ComputeRegionBackendServiceLogConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.networkInput">networkInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.networkPassThroughLbTrafficPolicyInput">networkPassThroughLbTrafficPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.outlierDetectionInput">outlierDetectionInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceOutlierDetection">ComputeRegionBackendServiceOutlierDetection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.paramsInput">paramsInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams">ComputeRegionBackendServiceParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.portNameInput">portNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.protocolInput">protocolInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.securityPolicyInput">securityPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.sessionAffinityInput">sessionAffinityInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.strongSessionAffinityCookieInput">strongSessionAffinityCookieInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceStrongSessionAffinityCookie">ComputeRegionBackendServiceStrongSessionAffinityCookie</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.timeoutSecInput">timeoutSecInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts">ComputeRegionBackendServiceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.tlsSettingsInput">tlsSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings">ComputeRegionBackendServiceTlsSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.affinityCookieTtlSec">affinityCookieTtlSec</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.connectionDrainingTimeoutSec">connectionDrainingTimeoutSec</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1427,6 +1551,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.protocol">protocol</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.securityPolicy">securityPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.sessionAffinity">sessionAffinity</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.timeoutSec">timeoutSec</a></code> | <code>java.lang.Number</code> | *No description.* |
 
@@ -1694,6 +1819,16 @@ public ComputeRegionBackendServiceLogConfigOutputReference getLogConfig();
 
 ---
 
+##### `networkPassThroughLbTrafficPolicy`<sup>Required</sup> <a name="networkPassThroughLbTrafficPolicy" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.networkPassThroughLbTrafficPolicy"></a>
+
+```java
+public ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference getNetworkPassThroughLbTrafficPolicy();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference</a>
+
+---
+
 ##### `outlierDetection`<sup>Required</sup> <a name="outlierDetection" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.outlierDetection"></a>
 
 ```java
@@ -1701,6 +1836,16 @@ public ComputeRegionBackendServiceOutlierDetectionOutputReference getOutlierDete
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceOutlierDetectionOutputReference">ComputeRegionBackendServiceOutlierDetectionOutputReference</a>
+
+---
+
+##### `params`<sup>Required</sup> <a name="params" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.params"></a>
+
+```java
+public ComputeRegionBackendServiceParamsOutputReference getParams();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference">ComputeRegionBackendServiceParamsOutputReference</a>
 
 ---
 
@@ -1731,6 +1876,16 @@ public ComputeRegionBackendServiceTimeoutsOutputReference getTimeouts();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeoutsOutputReference">ComputeRegionBackendServiceTimeoutsOutputReference</a>
+
+---
+
+##### `tlsSettings`<sup>Required</sup> <a name="tlsSettings" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.tlsSettings"></a>
+
+```java
+public ComputeRegionBackendServiceTlsSettingsOutputReference getTlsSettings();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference">ComputeRegionBackendServiceTlsSettingsOutputReference</a>
 
 ---
 
@@ -1934,6 +2089,16 @@ public java.lang.String getNetworkInput();
 
 ---
 
+##### `networkPassThroughLbTrafficPolicyInput`<sup>Optional</sup> <a name="networkPassThroughLbTrafficPolicyInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.networkPassThroughLbTrafficPolicyInput"></a>
+
+```java
+public ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy getNetworkPassThroughLbTrafficPolicyInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy</a>
+
+---
+
 ##### `outlierDetectionInput`<sup>Optional</sup> <a name="outlierDetectionInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.outlierDetectionInput"></a>
 
 ```java
@@ -1941,6 +2106,16 @@ public ComputeRegionBackendServiceOutlierDetection getOutlierDetectionInput();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceOutlierDetection">ComputeRegionBackendServiceOutlierDetection</a>
+
+---
+
+##### `paramsInput`<sup>Optional</sup> <a name="paramsInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.paramsInput"></a>
+
+```java
+public ComputeRegionBackendServiceParams getParamsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams">ComputeRegionBackendServiceParams</a>
 
 ---
 
@@ -1984,6 +2159,16 @@ public java.lang.String getRegionInput();
 
 ---
 
+##### `securityPolicyInput`<sup>Optional</sup> <a name="securityPolicyInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.securityPolicyInput"></a>
+
+```java
+public java.lang.String getSecurityPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `sessionAffinityInput`<sup>Optional</sup> <a name="sessionAffinityInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.sessionAffinityInput"></a>
 
 ```java
@@ -2021,6 +2206,16 @@ public IResolvable|ComputeRegionBackendServiceTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts">ComputeRegionBackendServiceTimeouts</a>
+
+---
+
+##### `tlsSettingsInput`<sup>Optional</sup> <a name="tlsSettingsInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.tlsSettingsInput"></a>
+
+```java
+public ComputeRegionBackendServiceTlsSettings getTlsSettingsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings">ComputeRegionBackendServiceTlsSettings</a>
 
 ---
 
@@ -2174,6 +2369,16 @@ public java.lang.String getRegion();
 
 ---
 
+##### `securityPolicy`<sup>Required</sup> <a name="securityPolicy" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.securityPolicy"></a>
+
+```java
+public java.lang.String getSecurityPolicy();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `sessionAffinity`<sup>Required</sup> <a name="sessionAffinity" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendService.property.sessionAffinity"></a>
 
 ```java
@@ -2288,7 +2493,7 @@ Note that you must specify an Instance Group or Network Endpoint
 Group resource using the fully-qualified URL, rather than a
 partial URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#group ComputeRegionBackendService#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#group ComputeRegionBackendService#group}
 
 ---
 
@@ -2305,7 +2510,7 @@ Specifies the balancing mode for this backend.
 See the [Backend Services Overview](https://cloud.google.com/load-balancing/docs/backend-service#balancing-mode)
 for an explanation of load balancing modes. Default value: "UTILIZATION" Possible values: ["UTILIZATION", "RATE", "CONNECTION", "CUSTOM_METRICS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#balancing_mode ComputeRegionBackendService#balancing_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#balancing_mode ComputeRegionBackendService#balancing_mode}
 
 ---
 
@@ -2327,7 +2532,7 @@ capacity_scaler for all backends must be non-zero.
 A setting of 0 means the group is completely drained, offering
 0% of its available Capacity. Valid range is [0.0,1.0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#capacity_scaler ComputeRegionBackendService#capacity_scaler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#capacity_scaler ComputeRegionBackendService#capacity_scaler}
 
 ---
 
@@ -2341,7 +2546,7 @@ public IResolvable|java.util.List<ComputeRegionBackendServiceBackendCustomMetric
 
 custom_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
 
 ---
 
@@ -2355,7 +2560,7 @@ public java.lang.String getDescription();
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
 
 ---
 
@@ -2372,7 +2577,7 @@ This field designates whether this is a failover backend.
 More
 than one failover backend can be configured for a given RegionBackendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#failover ComputeRegionBackendService#failover}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#failover ComputeRegionBackendService#failover}
 
 ---
 
@@ -2394,7 +2599,7 @@ For CONNECTION mode, either maxConnections or one
 of maxConnectionsPerInstance or maxConnectionsPerEndpoint,
 as appropriate for group type, must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_connections ComputeRegionBackendService#max_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_connections ComputeRegionBackendService#max_connections}
 
 ---
 
@@ -2413,7 +2618,7 @@ used in either CONNECTION or UTILIZATION balancing modes. For
 CONNECTION mode, either maxConnections or
 maxConnectionsPerEndpoint must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_connections_per_endpoint ComputeRegionBackendService#max_connections_per_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_connections_per_endpoint ComputeRegionBackendService#max_connections_per_endpoint}
 
 ---
 
@@ -2432,7 +2637,7 @@ Can be used in either CONNECTION or UTILIZATION balancing modes.
 For CONNECTION mode, either maxConnections or
 maxConnectionsPerInstance must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_connections_per_instance ComputeRegionBackendService#max_connections_per_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_connections_per_instance ComputeRegionBackendService#max_connections_per_instance}
 
 ---
 
@@ -2451,7 +2656,7 @@ but required if RATE mode. Either maxRate or one
 of maxRatePerInstance or maxRatePerEndpoint, as appropriate for
 group type, must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_rate ComputeRegionBackendService#max_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_rate ComputeRegionBackendService#max_rate}
 
 ---
 
@@ -2470,7 +2675,7 @@ the group. Can be used in either balancing mode. For RATE mode,
 either maxRate or maxRatePerEndpoint must be set. Cannot be set
 for INTERNAL backend services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_rate_per_endpoint ComputeRegionBackendService#max_rate_per_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_rate_per_endpoint ComputeRegionBackendService#max_rate_per_endpoint}
 
 ---
 
@@ -2489,7 +2694,7 @@ the group. Can be used in either balancing mode. For RATE mode,
 either maxRate or maxRatePerInstance must be set. Cannot be set
 for INTERNAL backend services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_rate_per_instance ComputeRegionBackendService#max_rate_per_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_rate_per_instance ComputeRegionBackendService#max_rate_per_instance}
 
 ---
 
@@ -2507,7 +2712,7 @@ This ratio defines the
 CPU utilization target for the group. Valid range is [0.0, 1.0].
 Cannot be set for INTERNAL backend services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_utilization ComputeRegionBackendService#max_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_utilization ComputeRegionBackendService#max_utilization}
 
 ---
 
@@ -2545,7 +2750,7 @@ public java.lang.Boolean|IResolvable getDryRun();
 
 If true, the metric data is collected and reported to Cloud Monitoring, but is not used for load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#dry_run ComputeRegionBackendService#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#dry_run ComputeRegionBackendService#dry_run}
 
 ---
 
@@ -2569,7 +2774,7 @@ field can only be used for a global or regional backend service with the
 loadBalancingScheme set to <code>EXTERNAL_MANAGED</code>,
 <code>INTERNAL_MANAGED</code> <code>INTERNAL_SELF_MANAGED</code>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
 
 ---
 
@@ -2583,7 +2788,7 @@ public java.lang.Number getMaxUtilization();
 
 Optional parameter to define a target utilization for the Custom Metrics balancing mode. The valid range is <code>[0.0, 1.0]</code>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_utilization ComputeRegionBackendService#max_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_utilization ComputeRegionBackendService#max_utilization}
 
 ---
 
@@ -2633,7 +2838,7 @@ public ComputeRegionBackendServiceCdnPolicyCacheKeyPolicy getCacheKeyPolicy();
 
 cache_key_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#cache_key_policy ComputeRegionBackendService#cache_key_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#cache_key_policy ComputeRegionBackendService#cache_key_policy}
 
 ---
 
@@ -2649,7 +2854,7 @@ Specifies the cache setting for all responses from this backend.
 
 The possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL and CACHE_ALL_STATIC Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#cache_mode ComputeRegionBackendService#cache_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#cache_mode ComputeRegionBackendService#cache_mode}
 
 ---
 
@@ -2663,7 +2868,7 @@ public java.lang.Number getClientTtl();
 
 Specifies the maximum allowed TTL for cached content served by this origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#client_ttl ComputeRegionBackendService#client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#client_ttl ComputeRegionBackendService#client_ttl}
 
 ---
 
@@ -2677,7 +2882,7 @@ public java.lang.Number getDefaultTtl();
 
 Specifies the default TTL for cached content served by this origin for responses that do not have an existing valid TTL (max-age or s-max-age).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#default_ttl ComputeRegionBackendService#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#default_ttl ComputeRegionBackendService#default_ttl}
 
 ---
 
@@ -2691,7 +2896,7 @@ public java.lang.Number getMaxTtl();
 
 Specifies the maximum allowed TTL for cached content served by this origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_ttl ComputeRegionBackendService#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_ttl ComputeRegionBackendService#max_ttl}
 
 ---
 
@@ -2705,7 +2910,7 @@ public java.lang.Boolean|IResolvable getNegativeCaching();
 
 Negative caching allows per-status code TTLs to be set, in order to apply fine-grained caching for common errors or redirects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#negative_caching ComputeRegionBackendService#negative_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#negative_caching ComputeRegionBackendService#negative_caching}
 
 ---
 
@@ -2719,7 +2924,7 @@ public IResolvable|java.util.List<ComputeRegionBackendServiceCdnPolicyNegativeCa
 
 negative_caching_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#negative_caching_policy ComputeRegionBackendService#negative_caching_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#negative_caching_policy ComputeRegionBackendService#negative_caching_policy}
 
 ---
 
@@ -2733,7 +2938,7 @@ public java.lang.Number getServeWhileStale();
 
 Serve existing content from the cache (if available) when revalidating content with the origin, or when an error is encountered when refreshing the cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#serve_while_stale ComputeRegionBackendService#serve_while_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#serve_while_stale ComputeRegionBackendService#serve_while_stale}
 
 ---
 
@@ -2757,7 +2962,7 @@ internally behave as though all responses from this backend had a
 existing Cache-Control header. The actual headers served in
 responses will not be altered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#signed_url_cache_max_age_sec ComputeRegionBackendService#signed_url_cache_max_age_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#signed_url_cache_max_age_sec ComputeRegionBackendService#signed_url_cache_max_age_sec}
 
 ---
 
@@ -2801,7 +3006,7 @@ public java.lang.Boolean|IResolvable getIncludeHost();
 
 If true requests to different hosts will be cached separately.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#include_host ComputeRegionBackendService#include_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#include_host ComputeRegionBackendService#include_host}
 
 ---
 
@@ -2815,7 +3020,7 @@ public java.util.List<java.lang.String> getIncludeNamedCookies();
 
 Names of cookies to include in cache keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#include_named_cookies ComputeRegionBackendService#include_named_cookies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#include_named_cookies ComputeRegionBackendService#include_named_cookies}
 
 ---
 
@@ -2829,7 +3034,7 @@ public java.lang.Boolean|IResolvable getIncludeProtocol();
 
 If true, http and https requests will be cached separately.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#include_protocol ComputeRegionBackendService#include_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#include_protocol ComputeRegionBackendService#include_protocol}
 
 ---
 
@@ -2849,7 +3054,7 @@ string will be included.
 If false, the query string will be excluded from the cache
 key entirely.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#include_query_string ComputeRegionBackendService#include_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#include_query_string ComputeRegionBackendService#include_query_string}
 
 ---
 
@@ -2868,7 +3073,7 @@ query_string_whitelist or query_string_blacklist, not both.
 '&' and '=' will be percent encoded and not treated as
 delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#query_string_blacklist ComputeRegionBackendService#query_string_blacklist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#query_string_blacklist ComputeRegionBackendService#query_string_blacklist}
 
 ---
 
@@ -2887,7 +3092,7 @@ query_string_whitelist or query_string_blacklist, not both.
 '&' and '=' will be percent encoded and not treated as
 delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#query_string_whitelist ComputeRegionBackendService#query_string_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#query_string_whitelist ComputeRegionBackendService#query_string_whitelist}
 
 ---
 
@@ -2924,7 +3129,7 @@ The HTTP status code to define a TTL against.
 Only HTTP status codes 300, 301, 308, 404, 405, 410, 421, 451 and 501
 can be specified as values, and you cannot specify a status code more than once.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#code ComputeRegionBackendService#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#code ComputeRegionBackendService#code}
 
 ---
 
@@ -2966,7 +3171,7 @@ public java.lang.Number getMaxConnections();
 
 The maximum number of connections to the backend cluster. Defaults to 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_connections ComputeRegionBackendService#max_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_connections ComputeRegionBackendService#max_connections}
 
 ---
 
@@ -2980,7 +3185,7 @@ public java.lang.Number getMaxPendingRequests();
 
 The maximum number of pending requests to the backend cluster. Defaults to 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_pending_requests ComputeRegionBackendService#max_pending_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_pending_requests ComputeRegionBackendService#max_pending_requests}
 
 ---
 
@@ -2994,7 +3199,7 @@ public java.lang.Number getMaxRequests();
 
 The maximum number of parallel requests to the backend cluster. Defaults to 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_requests ComputeRegionBackendService#max_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_requests ComputeRegionBackendService#max_requests}
 
 ---
 
@@ -3013,7 +3218,7 @@ is respected by both the HTTP/1.1 and HTTP/2 implementations. If
 not specified, there is no limit. Setting this parameter to 1
 will effectively disable keep alive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_requests_per_connection ComputeRegionBackendService#max_requests_per_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_requests_per_connection ComputeRegionBackendService#max_requests_per_connection}
 
 ---
 
@@ -3027,7 +3232,7 @@ public java.lang.Number getMaxRetries();
 
 The maximum number of parallel retries to the backend cluster. Defaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_retries ComputeRegionBackendService#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_retries ComputeRegionBackendService#max_retries}
 
 ---
 
@@ -3066,15 +3271,19 @@ ComputeRegionBackendServiceConfig.builder()
 //  .localityLbPolicy(java.lang.String)
 //  .logConfig(ComputeRegionBackendServiceLogConfig)
 //  .network(java.lang.String)
+//  .networkPassThroughLbTrafficPolicy(ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy)
 //  .outlierDetection(ComputeRegionBackendServiceOutlierDetection)
+//  .params(ComputeRegionBackendServiceParams)
 //  .portName(java.lang.String)
 //  .project(java.lang.String)
 //  .protocol(java.lang.String)
 //  .region(java.lang.String)
+//  .securityPolicy(java.lang.String)
 //  .sessionAffinity(java.lang.String)
 //  .strongSessionAffinityCookie(ComputeRegionBackendServiceStrongSessionAffinityCookie)
 //  .timeouts(ComputeRegionBackendServiceTimeouts)
 //  .timeoutSec(java.lang.Number)
+//  .tlsSettings(ComputeRegionBackendServiceTlsSettings)
     .build();
 ```
 
@@ -3103,21 +3312,25 @@ ComputeRegionBackendServiceConfig.builder()
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.haPolicy">haPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceHaPolicy">ComputeRegionBackendServiceHaPolicy</a></code> | ha_policy block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.healthChecks">healthChecks</a></code> | <code>java.util.List<java.lang.String></code> | The set of URLs to HealthCheck resources for health checking this RegionBackendService. Currently at most one health check can be specified. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.iap">iap</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceIap">ComputeRegionBackendServiceIap</a></code> | iap block. |
-| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#id ComputeRegionBackendService#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#id ComputeRegionBackendService#id}. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.ipAddressSelectionPolicy">ipAddressSelectionPolicy</a></code> | <code>java.lang.String</code> | Specifies preference of traffic to the backend (from the proxy and from the client for proxyless gRPC). |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.loadBalancingScheme">loadBalancingScheme</a></code> | <code>java.lang.String</code> | Indicates what kind of load balancing this regional backend service will be used for. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.localityLbPolicy">localityLbPolicy</a></code> | <code>java.lang.String</code> | The load balancing algorithm used within the scope of the locality. The possible values are:. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.logConfig">logConfig</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceLogConfig">ComputeRegionBackendServiceLogConfig</a></code> | log_config block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.network">network</a></code> | <code>java.lang.String</code> | The URL of the network to which this backend service belongs. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.networkPassThroughLbTrafficPolicy">networkPassThroughLbTrafficPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy</a></code> | network_pass_through_lb_traffic_policy block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.outlierDetection">outlierDetection</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceOutlierDetection">ComputeRegionBackendServiceOutlierDetection</a></code> | outlier_detection block. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams">ComputeRegionBackendServiceParams</a></code> | params block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.portName">portName</a></code> | <code>java.lang.String</code> | A named port on a backend instance group representing the port for communication to the backend VMs in that group. |
-| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#project ComputeRegionBackendService#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#project ComputeRegionBackendService#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.protocol">protocol</a></code> | <code>java.lang.String</code> | The protocol this BackendService uses to communicate with backends. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.region">region</a></code> | <code>java.lang.String</code> | The Region in which the created backend service should reside. If it is not provided, the provider region is used. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.securityPolicy">securityPolicy</a></code> | <code>java.lang.String</code> | The security policy associated with this backend service. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.sessionAffinity">sessionAffinity</a></code> | <code>java.lang.String</code> | Type of session affinity to use. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.strongSessionAffinityCookie">strongSessionAffinityCookie</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceStrongSessionAffinityCookie">ComputeRegionBackendServiceStrongSessionAffinityCookie</a></code> | strong_session_affinity_cookie block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts">ComputeRegionBackendServiceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.timeoutSec">timeoutSec</a></code> | <code>java.lang.Number</code> | The backend service timeout has a different meaning depending on the type of load balancer. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.tlsSettings">tlsSettings</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings">ComputeRegionBackendServiceTlsSettings</a></code> | tls_settings block. |
 
 ---
 
@@ -3209,7 +3422,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
 
 ---
 
@@ -3229,7 +3442,7 @@ maximum allowed value for TTL is one day.
 
 When the load balancing scheme is INTERNAL, this field is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#affinity_cookie_ttl_sec ComputeRegionBackendService#affinity_cookie_ttl_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#affinity_cookie_ttl_sec ComputeRegionBackendService#affinity_cookie_ttl_sec}
 
 ---
 
@@ -3243,7 +3456,7 @@ public IResolvable|java.util.List<ComputeRegionBackendServiceBackend> getBackend
 
 backend block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#backend ComputeRegionBackendService#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#backend ComputeRegionBackendService#backend}
 
 ---
 
@@ -3257,7 +3470,7 @@ public ComputeRegionBackendServiceCdnPolicy getCdnPolicy();
 
 cdn_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#cdn_policy ComputeRegionBackendService#cdn_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#cdn_policy ComputeRegionBackendService#cdn_policy}
 
 ---
 
@@ -3271,7 +3484,7 @@ public ComputeRegionBackendServiceCircuitBreakers getCircuitBreakers();
 
 circuit_breakers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#circuit_breakers ComputeRegionBackendService#circuit_breakers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#circuit_breakers ComputeRegionBackendService#circuit_breakers}
 
 ---
 
@@ -3285,7 +3498,7 @@ public java.lang.Number getConnectionDrainingTimeoutSec();
 
 Time for which instance will be drained (not accept new connections, but still work to finish started).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#connection_draining_timeout_sec ComputeRegionBackendService#connection_draining_timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#connection_draining_timeout_sec ComputeRegionBackendService#connection_draining_timeout_sec}
 
 ---
 
@@ -3299,7 +3512,7 @@ public ComputeRegionBackendServiceConsistentHash getConsistentHash();
 
 consistent_hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#consistent_hash ComputeRegionBackendService#consistent_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#consistent_hash ComputeRegionBackendService#consistent_hash}
 
 ---
 
@@ -3313,7 +3526,7 @@ public IResolvable|java.util.List<ComputeRegionBackendServiceCustomMetrics> getC
 
 custom_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
 
 ---
 
@@ -3327,7 +3540,7 @@ public java.lang.String getDescription();
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
 
 ---
 
@@ -3341,7 +3554,7 @@ public java.lang.Boolean|IResolvable getEnableCdn();
 
 If true, enable Cloud CDN for this RegionBackendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enable_cdn ComputeRegionBackendService#enable_cdn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enable_cdn ComputeRegionBackendService#enable_cdn}
 
 ---
 
@@ -3355,7 +3568,7 @@ public ComputeRegionBackendServiceFailoverPolicy getFailoverPolicy();
 
 failover_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#failover_policy ComputeRegionBackendService#failover_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#failover_policy ComputeRegionBackendService#failover_policy}
 
 ---
 
@@ -3369,7 +3582,7 @@ public ComputeRegionBackendServiceHaPolicy getHaPolicy();
 
 ha_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#ha_policy ComputeRegionBackendService#ha_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#ha_policy ComputeRegionBackendService#ha_policy}
 
 ---
 
@@ -3386,7 +3599,7 @@ The set of URLs to HealthCheck resources for health checking this RegionBackendS
 A health check must be specified unless the backend service uses an internet
 or serverless NEG as a backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#health_checks ComputeRegionBackendService#health_checks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#health_checks ComputeRegionBackendService#health_checks}
 
 ---
 
@@ -3400,7 +3613,7 @@ public ComputeRegionBackendServiceIap getIap();
 
 iap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#iap ComputeRegionBackendService#iap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#iap ComputeRegionBackendService#iap}
 
 ---
 
@@ -3412,7 +3625,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#id ComputeRegionBackendService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#id ComputeRegionBackendService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3431,7 +3644,7 @@ Specifies preference of traffic to the backend (from the proxy and from the clie
 
 Possible values: ["IPV4_ONLY", "PREFER_IPV6", "IPV6_ONLY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#ip_address_selection_policy ComputeRegionBackendService#ip_address_selection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#ip_address_selection_policy ComputeRegionBackendService#ip_address_selection_policy}
 
 ---
 
@@ -3447,9 +3660,9 @@ Indicates what kind of load balancing this regional backend service will be used
 
 A backend service created for one type of load
 balancing cannot be used with the other(s). For more information, refer to
-[Choosing a load balancer](https://cloud.google.com/load-balancing/docs/backend-service). Default value: "INTERNAL" Possible values: ["EXTERNAL", "EXTERNAL_MANAGED", "INTERNAL", "INTERNAL_MANAGED"]
+[Choosing a load balancer](https://cloud.google.com/load-balancing/docs/backend-service). Default value: "INTERNAL" Possible values: ["EXTERNAL", "EXTERNAL_MANAGED", "INTERNAL", "INTERNAL_MANAGED", "INTERNAL_SELF_MANAGED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#load_balancing_scheme ComputeRegionBackendService#load_balancing_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#load_balancing_scheme ComputeRegionBackendService#load_balancing_scheme}
 
 ---
 
@@ -3517,7 +3730,7 @@ Only ROUND_ROBIN and RING_HASH are supported when the backend service is referen
 by a URL map that is bound to target gRPC proxy that has validate_for_proxyless
 field set to true. Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV", "WEIGHTED_MAGLEV", "WEIGHTED_ROUND_ROBIN"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#locality_lb_policy ComputeRegionBackendService#locality_lb_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#locality_lb_policy ComputeRegionBackendService#locality_lb_policy}
 
 ---
 
@@ -3531,7 +3744,7 @@ public ComputeRegionBackendServiceLogConfig getLogConfig();
 
 log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#log_config ComputeRegionBackendService#log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#log_config ComputeRegionBackendService#log_config}
 
 ---
 
@@ -3545,9 +3758,25 @@ public java.lang.String getNetwork();
 
 The URL of the network to which this backend service belongs.
 
-This field can only be specified when the load balancing scheme is set to INTERNAL.
+This field must be set for Internal Passthrough Network Load Balancers when the haPolicy is enabled, and for External Passthrough Network Load Balancers when the haPolicy fastIpMove is enabled.
+This field can only be specified when the load balancing scheme is set to INTERNAL, or when the load balancing scheme is set to EXTERNAL and haPolicy fastIpMove is enabled.
+Changes to this field force recreation of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#network ComputeRegionBackendService#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#network ComputeRegionBackendService#network}
+
+---
+
+##### `networkPassThroughLbTrafficPolicy`<sup>Optional</sup> <a name="networkPassThroughLbTrafficPolicy" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.networkPassThroughLbTrafficPolicy"></a>
+
+```java
+public ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy getNetworkPassThroughLbTrafficPolicy();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy</a>
+
+network_pass_through_lb_traffic_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#network_pass_through_lb_traffic_policy ComputeRegionBackendService#network_pass_through_lb_traffic_policy}
 
 ---
 
@@ -3561,7 +3790,21 @@ public ComputeRegionBackendServiceOutlierDetection getOutlierDetection();
 
 outlier_detection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#outlier_detection ComputeRegionBackendService#outlier_detection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#outlier_detection ComputeRegionBackendService#outlier_detection}
+
+---
+
+##### `params`<sup>Optional</sup> <a name="params" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.params"></a>
+
+```java
+public ComputeRegionBackendServiceParams getParams();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams">ComputeRegionBackendServiceParams</a>
+
+params block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#params ComputeRegionBackendService#params}
 
 ---
 
@@ -3582,7 +3825,7 @@ backend instance group. This parameter has no meaning if the backends are NEGs. 
 default of "http" if not given.
 Must be omitted when the loadBalancingScheme is INTERNAL (Internal TCP/UDP Load Balancing).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#port_name ComputeRegionBackendService#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#port_name ComputeRegionBackendService#port_name}
 
 ---
 
@@ -3594,7 +3837,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#project ComputeRegionBackendService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#project ComputeRegionBackendService#project}.
 
 ---
 
@@ -3612,7 +3855,7 @@ The default is HTTP. Possible values are HTTP, HTTPS, HTTP2, H2C, TCP, SSL, UDP
 or GRPC. Refer to the documentation for the load balancers or for Traffic Director
 for more information. Possible values: ["HTTP", "HTTPS", "HTTP2", "TCP", "SSL", "UDP", "GRPC", "UNSPECIFIED", "H2C"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#protocol ComputeRegionBackendService#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#protocol ComputeRegionBackendService#protocol}
 
 ---
 
@@ -3626,7 +3869,21 @@ public java.lang.String getRegion();
 
 The Region in which the created backend service should reside. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#region ComputeRegionBackendService#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#region ComputeRegionBackendService#region}
+
+---
+
+##### `securityPolicy`<sup>Optional</sup> <a name="securityPolicy" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.securityPolicy"></a>
+
+```java
+public java.lang.String getSecurityPolicy();
+```
+
+- *Type:* java.lang.String
+
+The security policy associated with this backend service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#security_policy ComputeRegionBackendService#security_policy}
 
 ---
 
@@ -3643,7 +3900,7 @@ Type of session affinity to use.
 The default is NONE. Session affinity is
 not applicable if the protocol is UDP. Possible values: ["NONE", "CLIENT_IP", "CLIENT_IP_PORT_PROTO", "CLIENT_IP_PROTO", "GENERATED_COOKIE", "HEADER_FIELD", "HTTP_COOKIE", "CLIENT_IP_NO_DESTINATION", "STRONG_COOKIE_AFFINITY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#session_affinity ComputeRegionBackendService#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#session_affinity ComputeRegionBackendService#session_affinity}
 
 ---
 
@@ -3657,7 +3914,7 @@ public ComputeRegionBackendServiceStrongSessionAffinityCookie getStrongSessionAf
 
 strong_session_affinity_cookie block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#strong_session_affinity_cookie ComputeRegionBackendService#strong_session_affinity_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#strong_session_affinity_cookie ComputeRegionBackendService#strong_session_affinity_cookie}
 
 ---
 
@@ -3671,7 +3928,7 @@ public ComputeRegionBackendServiceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#timeouts ComputeRegionBackendService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#timeouts ComputeRegionBackendService#timeouts}
 
 ---
 
@@ -3689,7 +3946,21 @@ For more information see, [Backend service settings](https://cloud.google.com/co
 The default is 30 seconds.
 The full range of timeout values allowed goes from 1 through 2,147,483,647 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#timeout_sec ComputeRegionBackendService#timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#timeout_sec ComputeRegionBackendService#timeout_sec}
+
+---
+
+##### `tlsSettings`<sup>Optional</sup> <a name="tlsSettings" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceConfig.property.tlsSettings"></a>
+
+```java
+public ComputeRegionBackendServiceTlsSettings getTlsSettings();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings">ComputeRegionBackendServiceTlsSettings</a>
+
+tls_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#tls_settings ComputeRegionBackendService#tls_settings}
 
 ---
 
@@ -3727,7 +3998,7 @@ public ComputeRegionBackendServiceConsistentHashHttpCookie getHttpCookie();
 
 http_cookie block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#http_cookie ComputeRegionBackendService#http_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#http_cookie ComputeRegionBackendService#http_cookie}
 
 ---
 
@@ -3743,7 +4014,7 @@ The hash based on the value of the specified header field.
 
 This field is applicable if the sessionAffinity is set to HEADER_FIELD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#http_header_name ComputeRegionBackendService#http_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#http_header_name ComputeRegionBackendService#http_header_name}
 
 ---
 
@@ -3763,7 +4034,7 @@ is larger than the ring size, each host will be assigned a single
 virtual node.
 Defaults to 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#minimum_ring_size ComputeRegionBackendService#minimum_ring_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#minimum_ring_size ComputeRegionBackendService#minimum_ring_size}
 
 ---
 
@@ -3801,7 +4072,7 @@ public java.lang.String getName();
 
 Name of the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
 
 ---
 
@@ -3815,7 +4086,7 @@ public java.lang.String getPath();
 
 Path to set for the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#path ComputeRegionBackendService#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#path ComputeRegionBackendService#path}
 
 ---
 
@@ -3829,7 +4100,7 @@ public ComputeRegionBackendServiceConsistentHashHttpCookieTtl getTtl();
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#ttl ComputeRegionBackendService#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#ttl ComputeRegionBackendService#ttl}
 
 ---
 
@@ -3865,7 +4136,7 @@ public java.lang.Number getSeconds();
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
 
 ---
 
@@ -3883,7 +4154,7 @@ Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must
 be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
 
 ---
 
@@ -3919,7 +4190,7 @@ public java.lang.Boolean|IResolvable getDryRun();
 
 If true, the metric data is not used for load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#dry_run ComputeRegionBackendService#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#dry_run ComputeRegionBackendService#dry_run}
 
 ---
 
@@ -3943,7 +4214,7 @@ field can only be used for a global or regional backend service with the
 loadBalancingScheme set to <code>EXTERNAL_MANAGED</code>,
 <code>INTERNAL_MANAGED</code> <code>INTERNAL_SELF_MANAGED</code>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
 
 ---
 
@@ -3989,7 +4260,7 @@ of 10 min.
 This can be set to true only if the protocol is TCP.
 The default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#disable_connection_drain_on_failover ComputeRegionBackendService#disable_connection_drain_on_failover}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#disable_connection_drain_on_failover ComputeRegionBackendService#disable_connection_drain_on_failover}
 
 ---
 
@@ -4007,7 +4278,7 @@ When set to true, traffic is dropped. When
 set to false, new connections are sent across all VMs in the primary group.
 The default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#drop_traffic_if_unhealthy ComputeRegionBackendService#drop_traffic_if_unhealthy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#drop_traffic_if_unhealthy ComputeRegionBackendService#drop_traffic_if_unhealthy}
 
 ---
 
@@ -4030,7 +4301,7 @@ backend in the "force" mode, where traffic will be spread to the healthy
 VMs with the best effort, or to all VMs when no VM is healthy.
 This field is only used with l4 load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#failover_ratio ComputeRegionBackendService#failover_ratio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#failover_ratio ComputeRegionBackendService#failover_ratio}
 
 ---
 
@@ -4077,7 +4348,7 @@ Specifies whether fast IP move is enabled, and if so, the mechanism to achieve i
   forwarding rule IP address with that VM, and both new and in-flight packets
   are quickly delivered to that VM. Possible values: ["DISABLED", "GARP_RA"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#fast_ip_move ComputeRegionBackendService#fast_ip_move}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#fast_ip_move ComputeRegionBackendService#fast_ip_move}
 
 ---
 
@@ -4091,7 +4362,7 @@ public ComputeRegionBackendServiceHaPolicyLeader getLeader();
 
 leader block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#leader ComputeRegionBackendService#leader}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#leader ComputeRegionBackendService#leader}
 
 ---
 
@@ -4127,7 +4398,7 @@ public java.lang.String getBackendGroup();
 
 A fully-qualified URL of the zonal Network Endpoint Group (NEG) that the leader is attached to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#backend_group ComputeRegionBackendService#backend_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#backend_group ComputeRegionBackendService#backend_group}
 
 ---
 
@@ -4141,7 +4412,7 @@ public ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpoint getNetworkEndpoi
 
 network_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#network_endpoint ComputeRegionBackendService#network_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#network_endpoint ComputeRegionBackendService#network_endpoint}
 
 ---
 
@@ -4178,7 +4449,7 @@ The name of the VM instance of the leader network endpoint.
 The instance must
 already be attached to the NEG specified in the haPolicy.leader.backendGroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#instance ComputeRegionBackendService#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#instance ComputeRegionBackendService#instance}
 
 ---
 
@@ -4216,7 +4487,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether the serving infrastructure will authenticate and authorize all incoming requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enabled ComputeRegionBackendService#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enabled ComputeRegionBackendService#enabled}
 
 ---
 
@@ -4230,7 +4501,7 @@ public java.lang.String getOauth2ClientId();
 
 OAuth2 Client ID for IAP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#oauth2_client_id ComputeRegionBackendService#oauth2_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#oauth2_client_id ComputeRegionBackendService#oauth2_client_id}
 
 ---
 
@@ -4244,7 +4515,7 @@ public java.lang.String getOauth2ClientSecret();
 
 OAuth2 Client Secret for IAP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#oauth2_client_secret ComputeRegionBackendService#oauth2_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#oauth2_client_secret ComputeRegionBackendService#oauth2_client_secret}
 
 ---
 
@@ -4284,7 +4555,7 @@ public java.lang.Boolean|IResolvable getEnable();
 
 Whether to enable logging for the load balancer traffic served by this backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enable ComputeRegionBackendService#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enable ComputeRegionBackendService#enable}
 
 ---
 
@@ -4300,7 +4571,7 @@ Specifies the fields to include in logging.
 
 This field can only be specified if logging is enabled for this backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#optional_fields ComputeRegionBackendService#optional_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#optional_fields ComputeRegionBackendService#optional_fields}
 
 ---
 
@@ -4314,7 +4585,7 @@ public java.lang.String getOptionalMode();
 
 Specifies the optional logging mode for the load balancer traffic. Supported values: INCLUDE_ALL_OPTIONAL, EXCLUDE_ALL_OPTIONAL, CUSTOM. Possible values: ["INCLUDE_ALL_OPTIONAL", "EXCLUDE_ALL_OPTIONAL", "CUSTOM"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#optional_mode ComputeRegionBackendService#optional_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#optional_mode ComputeRegionBackendService#optional_mode}
 
 ---
 
@@ -4333,7 +4604,97 @@ the field must be in [0, 1]. This configures the sampling rate of requests to th
 where 1.0 means all logged requests are reported and 0.0 means no logged requests are reported.
 The default value is 1.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#sample_rate ComputeRegionBackendService#sample_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#sample_rate ComputeRegionBackendService#sample_rate}
+
+---
+
+### ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy <a name="ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.compute_region_backend_service.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy;
+
+ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy.builder()
+//  .zonalAffinity(ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy.property.zonalAffinity">zonalAffinity</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity</a></code> | zonal_affinity block. |
+
+---
+
+##### `zonalAffinity`<sup>Optional</sup> <a name="zonalAffinity" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy.property.zonalAffinity"></a>
+
+```java
+public ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity getZonalAffinity();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity</a>
+
+zonal_affinity block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#zonal_affinity ComputeRegionBackendService#zonal_affinity}
+
+---
+
+### ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity <a name="ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.compute_region_backend_service.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity;
+
+ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity.builder()
+//  .spillover(java.lang.String)
+//  .spilloverRatio(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity.property.spillover">spillover</a></code> | <code>java.lang.String</code> | This field indicates whether zonal affinity is enabled or not. Default value: "ZONAL_AFFINITY_DISABLED" Possible values: ["ZONAL_AFFINITY_DISABLED", "ZONAL_AFFINITY_SPILL_CROSS_ZONE", "ZONAL_AFFINITY_STAY_WITHIN_ZONE"]. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity.property.spilloverRatio">spilloverRatio</a></code> | <code>java.lang.Number</code> | The value of the field must be in [0, 1]. |
+
+---
+
+##### `spillover`<sup>Optional</sup> <a name="spillover" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity.property.spillover"></a>
+
+```java
+public java.lang.String getSpillover();
+```
+
+- *Type:* java.lang.String
+
+This field indicates whether zonal affinity is enabled or not. Default value: "ZONAL_AFFINITY_DISABLED" Possible values: ["ZONAL_AFFINITY_DISABLED", "ZONAL_AFFINITY_SPILL_CROSS_ZONE", "ZONAL_AFFINITY_STAY_WITHIN_ZONE"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#spillover ComputeRegionBackendService#spillover}
+
+---
+
+##### `spilloverRatio`<sup>Optional</sup> <a name="spilloverRatio" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity.property.spilloverRatio"></a>
+
+```java
+public java.lang.Number getSpilloverRatio();
+```
+
+- *Type:* java.lang.Number
+
+The value of the field must be in [0, 1].
+
+When the ratio of the count of healthy backend endpoints in a zone
+to the count of backend endpoints in that same zone is equal to or above this threshold, the load balancer
+distributes new connections to all healthy endpoints in the local zone only. When the ratio of the count
+of healthy backend endpoints in a zone to the count of backend endpoints in that same zone is below this
+threshold, the load balancer distributes all new connections to all healthy endpoints across all zones.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#spillover_ratio ComputeRegionBackendService#spillover_ratio}
 
 ---
 
@@ -4387,7 +4748,7 @@ public ComputeRegionBackendServiceOutlierDetectionBaseEjectionTime getBaseEjecti
 
 base_ejection_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#base_ejection_time ComputeRegionBackendService#base_ejection_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#base_ejection_time ComputeRegionBackendService#base_ejection_time}
 
 ---
 
@@ -4405,7 +4766,7 @@ When the
 backend host is accessed over HTTP, a 5xx return code qualifies as an error.
 Defaults to 5.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#consecutive_errors ComputeRegionBackendService#consecutive_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#consecutive_errors ComputeRegionBackendService#consecutive_errors}
 
 ---
 
@@ -4421,7 +4782,7 @@ The number of consecutive gateway failures (502, 503, 504 status or connection e
 
 Defaults to 5.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#consecutive_gateway_failure ComputeRegionBackendService#consecutive_gateway_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#consecutive_gateway_failure ComputeRegionBackendService#consecutive_gateway_failure}
 
 ---
 
@@ -4438,7 +4799,7 @@ The percentage chance that a host will be actually ejected when an outlier statu
 This setting can be used to disable
 ejection or to ramp it up slowly. Defaults to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enforcing_consecutive_errors ComputeRegionBackendService#enforcing_consecutive_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enforcing_consecutive_errors ComputeRegionBackendService#enforcing_consecutive_errors}
 
 ---
 
@@ -4455,7 +4816,7 @@ The percentage chance that a host will be actually ejected when an outlier statu
 This setting can be
 used to disable ejection or to ramp it up slowly. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enforcing_consecutive_gateway_failure ComputeRegionBackendService#enforcing_consecutive_gateway_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enforcing_consecutive_gateway_failure ComputeRegionBackendService#enforcing_consecutive_gateway_failure}
 
 ---
 
@@ -4472,7 +4833,7 @@ The percentage chance that a host will be actually ejected when an outlier statu
 This setting can be used to
 disable ejection or to ramp it up slowly. Defaults to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enforcing_success_rate ComputeRegionBackendService#enforcing_success_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enforcing_success_rate ComputeRegionBackendService#enforcing_success_rate}
 
 ---
 
@@ -4486,7 +4847,7 @@ public ComputeRegionBackendServiceOutlierDetectionInterval getInterval();
 
 interval block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#interval ComputeRegionBackendService#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#interval ComputeRegionBackendService#interval}
 
 ---
 
@@ -4500,7 +4861,7 @@ public java.lang.Number getMaxEjectionPercent();
 
 Maximum percentage of hosts in the load balancing pool for the backend service that can be ejected. Defaults to 10%.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_ejection_percent ComputeRegionBackendService#max_ejection_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_ejection_percent ComputeRegionBackendService#max_ejection_percent}
 
 ---
 
@@ -4518,7 +4879,7 @@ If the number of hosts is less than this setting, outlier
 detection via success rate statistics is not performed for any host in the
 cluster. Defaults to 5.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#success_rate_minimum_hosts ComputeRegionBackendService#success_rate_minimum_hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#success_rate_minimum_hosts ComputeRegionBackendService#success_rate_minimum_hosts}
 
 ---
 
@@ -4536,7 +4897,7 @@ If the volume is lower than this setting, outlier
 detection via success rate statistics is not performed for that host. Defaults
 to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#success_rate_request_volume ComputeRegionBackendService#success_rate_request_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#success_rate_request_volume ComputeRegionBackendService#success_rate_request_volume}
 
 ---
 
@@ -4556,7 +4917,7 @@ success rate: mean - (stdev * success_rate_stdev_factor). This factor is divided
 by a thousand to get a double. That is, if the desired factor is 1.9, the
 runtime value should be 1900. Defaults to 1900.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#success_rate_stdev_factor ComputeRegionBackendService#success_rate_stdev_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#success_rate_stdev_factor ComputeRegionBackendService#success_rate_stdev_factor}
 
 ---
 
@@ -4592,7 +4953,7 @@ public java.lang.Number getSeconds();
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
 
 ---
 
@@ -4610,7 +4971,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
 
 ---
 
@@ -4646,7 +5007,7 @@ public java.lang.Number getSeconds();
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
 
 ---
 
@@ -4664,7 +5025,45 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
+
+---
+
+### ComputeRegionBackendServiceParams <a name="ComputeRegionBackendServiceParams" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.compute_region_backend_service.ComputeRegionBackendServiceParams;
+
+ComputeRegionBackendServiceParams.builder()
+//  .resourceManagerTags(java.util.Map<java.lang.String, java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams.property.resourceManagerTags">resourceManagerTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Resource manager tags to be bound to the region backend service. |
+
+---
+
+##### `resourceManagerTags`<sup>Optional</sup> <a name="resourceManagerTags" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams.property.resourceManagerTags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getResourceManagerTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Resource manager tags to be bound to the region backend service.
+
+Tag keys and values have the
+same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+and values are in the format tagValues/456.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#resource_manager_tags ComputeRegionBackendService#resource_manager_tags}
 
 ---
 
@@ -4702,7 +5101,7 @@ public java.lang.String getName();
 
 Name of the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
 
 ---
 
@@ -4716,7 +5115,7 @@ public java.lang.String getPath();
 
 Path to set for the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#path ComputeRegionBackendService#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#path ComputeRegionBackendService#path}
 
 ---
 
@@ -4730,7 +5129,7 @@ public ComputeRegionBackendServiceStrongSessionAffinityCookieTtl getTtl();
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#ttl ComputeRegionBackendService#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#ttl ComputeRegionBackendService#ttl}
 
 ---
 
@@ -4766,7 +5165,7 @@ public java.lang.Number getSeconds();
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
 
 ---
 
@@ -4784,7 +5183,7 @@ Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must
 be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
 
 ---
 
@@ -4806,9 +5205,9 @@ ComputeRegionBackendServiceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#create ComputeRegionBackendService#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#delete ComputeRegionBackendService#delete}. |
-| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#update ComputeRegionBackendService#update}. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#create ComputeRegionBackendService#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#delete ComputeRegionBackendService#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#update ComputeRegionBackendService#update}. |
 
 ---
 
@@ -4820,7 +5219,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#create ComputeRegionBackendService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#create ComputeRegionBackendService#create}.
 
 ---
 
@@ -4832,7 +5231,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#delete ComputeRegionBackendService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#delete ComputeRegionBackendService#delete}.
 
 ---
 
@@ -4844,7 +5243,123 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#update ComputeRegionBackendService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#update ComputeRegionBackendService#update}.
+
+---
+
+### ComputeRegionBackendServiceTlsSettings <a name="ComputeRegionBackendServiceTlsSettings" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.compute_region_backend_service.ComputeRegionBackendServiceTlsSettings;
+
+ComputeRegionBackendServiceTlsSettings.builder()
+//  .authenticationConfig(java.lang.String)
+//  .sni(java.lang.String)
+//  .subjectAltNames(IResolvable|java.util.List<ComputeRegionBackendServiceTlsSettingsSubjectAltNames>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings.property.authenticationConfig">authenticationConfig</a></code> | <code>java.lang.String</code> | Reference to the BackendAuthenticationConfig resource from the networksecurity.googleapis.com namespace. Can be used in authenticating TLS connections to the backend, as specified by the authenticationMode field. Can only be specified if authenticationMode is not NONE. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings.property.sni">sni</a></code> | <code>java.lang.String</code> | Server Name Indication - see RFC3546 section 3.1. If set, the load balancer sends this string as the SNI hostname in the TLS connection to the backend, and requires that this string match a Subject Alternative Name (SAN) in the backend's server certificate. With a Regional Internet NEG backend, if the SNI is specified here, the load balancer uses it regardless of whether the Regional Internet NEG is specified with FQDN or IP address and port. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings.property.subjectAltNames">subjectAltNames</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames">ComputeRegionBackendServiceTlsSettingsSubjectAltNames</a>></code> | subject_alt_names block. |
+
+---
+
+##### `authenticationConfig`<sup>Optional</sup> <a name="authenticationConfig" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings.property.authenticationConfig"></a>
+
+```java
+public java.lang.String getAuthenticationConfig();
+```
+
+- *Type:* java.lang.String
+
+Reference to the BackendAuthenticationConfig resource from the networksecurity.googleapis.com namespace. Can be used in authenticating TLS connections to the backend, as specified by the authenticationMode field. Can only be specified if authenticationMode is not NONE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#authentication_config ComputeRegionBackendService#authentication_config}
+
+---
+
+##### `sni`<sup>Optional</sup> <a name="sni" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings.property.sni"></a>
+
+```java
+public java.lang.String getSni();
+```
+
+- *Type:* java.lang.String
+
+Server Name Indication - see RFC3546 section 3.1. If set, the load balancer sends this string as the SNI hostname in the TLS connection to the backend, and requires that this string match a Subject Alternative Name (SAN) in the backend's server certificate. With a Regional Internet NEG backend, if the SNI is specified here, the load balancer uses it regardless of whether the Regional Internet NEG is specified with FQDN or IP address and port.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#sni ComputeRegionBackendService#sni}
+
+---
+
+##### `subjectAltNames`<sup>Optional</sup> <a name="subjectAltNames" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings.property.subjectAltNames"></a>
+
+```java
+public IResolvable|java.util.List<ComputeRegionBackendServiceTlsSettingsSubjectAltNames> getSubjectAltNames();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames">ComputeRegionBackendServiceTlsSettingsSubjectAltNames</a>>
+
+subject_alt_names block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#subject_alt_names ComputeRegionBackendService#subject_alt_names}
+
+---
+
+### ComputeRegionBackendServiceTlsSettingsSubjectAltNames <a name="ComputeRegionBackendServiceTlsSettingsSubjectAltNames" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.compute_region_backend_service.ComputeRegionBackendServiceTlsSettingsSubjectAltNames;
+
+ComputeRegionBackendServiceTlsSettingsSubjectAltNames.builder()
+//  .dnsName(java.lang.String)
+//  .uniformResourceIdentifier(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames.property.dnsName">dnsName</a></code> | <code>java.lang.String</code> | The SAN specified as a DNS Name. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames.property.uniformResourceIdentifier">uniformResourceIdentifier</a></code> | <code>java.lang.String</code> | The SAN specified as a URI. |
+
+---
+
+##### `dnsName`<sup>Optional</sup> <a name="dnsName" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames.property.dnsName"></a>
+
+```java
+public java.lang.String getDnsName();
+```
+
+- *Type:* java.lang.String
+
+The SAN specified as a DNS Name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#dns_name ComputeRegionBackendService#dns_name}
+
+---
+
+##### `uniformResourceIdentifier`<sup>Optional</sup> <a name="uniformResourceIdentifier" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames.property.uniformResourceIdentifier"></a>
+
+```java
+public java.lang.String getUniformResourceIdentifier();
+```
+
+- *Type:* java.lang.String
+
+The SAN specified as a URI.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#uniform_resource_identifier ComputeRegionBackendService#uniform_resource_identifier}
 
 ---
 
@@ -11397,6 +11912,604 @@ public ComputeRegionBackendServiceLogConfig getInternalValue();
 ---
 
 
+### ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference <a name="ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.compute_region_backend_service.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference;
+
+new ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.putZonalAffinity">putZonalAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.resetZonalAffinity">resetZonalAffinity</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putZonalAffinity` <a name="putZonalAffinity" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.putZonalAffinity"></a>
+
+```java
+public void putZonalAffinity(ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.putZonalAffinity.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity</a>
+
+---
+
+##### `resetZonalAffinity` <a name="resetZonalAffinity" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.resetZonalAffinity"></a>
+
+```java
+public void resetZonalAffinity()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.property.zonalAffinity">zonalAffinity</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.property.zonalAffinityInput">zonalAffinityInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `zonalAffinity`<sup>Required</sup> <a name="zonalAffinity" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.property.zonalAffinity"></a>
+
+```java
+public ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference getZonalAffinity();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference</a>
+
+---
+
+##### `zonalAffinityInput`<sup>Optional</sup> <a name="zonalAffinityInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.property.zonalAffinityInput"></a>
+
+```java
+public ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity getZonalAffinityInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference.property.internalValue"></a>
+
+```java
+public ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy</a>
+
+---
+
+
+### ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference <a name="ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.compute_region_backend_service.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference;
+
+new ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.resetSpillover">resetSpillover</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.resetSpilloverRatio">resetSpilloverRatio</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetSpillover` <a name="resetSpillover" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.resetSpillover"></a>
+
+```java
+public void resetSpillover()
+```
+
+##### `resetSpilloverRatio` <a name="resetSpilloverRatio" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.resetSpilloverRatio"></a>
+
+```java
+public void resetSpilloverRatio()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.spilloverInput">spilloverInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.spilloverRatioInput">spilloverRatioInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.spillover">spillover</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.spilloverRatio">spilloverRatio</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `spilloverInput`<sup>Optional</sup> <a name="spilloverInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.spilloverInput"></a>
+
+```java
+public java.lang.String getSpilloverInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `spilloverRatioInput`<sup>Optional</sup> <a name="spilloverRatioInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.spilloverRatioInput"></a>
+
+```java
+public java.lang.Number getSpilloverRatioInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `spillover`<sup>Required</sup> <a name="spillover" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.spillover"></a>
+
+```java
+public java.lang.String getSpillover();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `spilloverRatio`<sup>Required</sup> <a name="spilloverRatio" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.spilloverRatio"></a>
+
+```java
+public java.lang.Number getSpilloverRatio();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference.property.internalValue"></a>
+
+```java
+public ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity">ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity</a>
+
+---
+
+
 ### ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference <a name="ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference.Initializer"></a>
@@ -12591,6 +13704,284 @@ public ComputeRegionBackendServiceOutlierDetection getInternalValue();
 ---
 
 
+### ComputeRegionBackendServiceParamsOutputReference <a name="ComputeRegionBackendServiceParamsOutputReference" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.compute_region_backend_service.ComputeRegionBackendServiceParamsOutputReference;
+
+new ComputeRegionBackendServiceParamsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.resetResourceManagerTags">resetResourceManagerTags</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetResourceManagerTags` <a name="resetResourceManagerTags" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.resetResourceManagerTags"></a>
+
+```java
+public void resetResourceManagerTags()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.property.resourceManagerTagsInput">resourceManagerTagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.property.resourceManagerTags">resourceManagerTags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams">ComputeRegionBackendServiceParams</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `resourceManagerTagsInput`<sup>Optional</sup> <a name="resourceManagerTagsInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.property.resourceManagerTagsInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getResourceManagerTagsInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `resourceManagerTags`<sup>Required</sup> <a name="resourceManagerTags" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.property.resourceManagerTags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getResourceManagerTags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParamsOutputReference.property.internalValue"></a>
+
+```java
+public ComputeRegionBackendServiceParams getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceParams">ComputeRegionBackendServiceParams</a>
+
+---
+
+
 ### ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference <a name="ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference.Initializer"></a>
@@ -13572,6 +14963,840 @@ public IResolvable|ComputeRegionBackendServiceTimeouts getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTimeouts">ComputeRegionBackendServiceTimeouts</a>
+
+---
+
+
+### ComputeRegionBackendServiceTlsSettingsOutputReference <a name="ComputeRegionBackendServiceTlsSettingsOutputReference" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.compute_region_backend_service.ComputeRegionBackendServiceTlsSettingsOutputReference;
+
+new ComputeRegionBackendServiceTlsSettingsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.putSubjectAltNames">putSubjectAltNames</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.resetAuthenticationConfig">resetAuthenticationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.resetSni">resetSni</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.resetSubjectAltNames">resetSubjectAltNames</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putSubjectAltNames` <a name="putSubjectAltNames" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.putSubjectAltNames"></a>
+
+```java
+public void putSubjectAltNames(IResolvable|java.util.List<ComputeRegionBackendServiceTlsSettingsSubjectAltNames> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.putSubjectAltNames.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames">ComputeRegionBackendServiceTlsSettingsSubjectAltNames</a>>
+
+---
+
+##### `resetAuthenticationConfig` <a name="resetAuthenticationConfig" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.resetAuthenticationConfig"></a>
+
+```java
+public void resetAuthenticationConfig()
+```
+
+##### `resetSni` <a name="resetSni" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.resetSni"></a>
+
+```java
+public void resetSni()
+```
+
+##### `resetSubjectAltNames` <a name="resetSubjectAltNames" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.resetSubjectAltNames"></a>
+
+```java
+public void resetSubjectAltNames()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.subjectAltNames">subjectAltNames</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList">ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.authenticationConfigInput">authenticationConfigInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.sniInput">sniInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.subjectAltNamesInput">subjectAltNamesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames">ComputeRegionBackendServiceTlsSettingsSubjectAltNames</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.authenticationConfig">authenticationConfig</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.sni">sni</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings">ComputeRegionBackendServiceTlsSettings</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `subjectAltNames`<sup>Required</sup> <a name="subjectAltNames" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.subjectAltNames"></a>
+
+```java
+public ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList getSubjectAltNames();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList">ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList</a>
+
+---
+
+##### `authenticationConfigInput`<sup>Optional</sup> <a name="authenticationConfigInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.authenticationConfigInput"></a>
+
+```java
+public java.lang.String getAuthenticationConfigInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sniInput`<sup>Optional</sup> <a name="sniInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.sniInput"></a>
+
+```java
+public java.lang.String getSniInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `subjectAltNamesInput`<sup>Optional</sup> <a name="subjectAltNamesInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.subjectAltNamesInput"></a>
+
+```java
+public IResolvable|java.util.List<ComputeRegionBackendServiceTlsSettingsSubjectAltNames> getSubjectAltNamesInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames">ComputeRegionBackendServiceTlsSettingsSubjectAltNames</a>>
+
+---
+
+##### `authenticationConfig`<sup>Required</sup> <a name="authenticationConfig" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.authenticationConfig"></a>
+
+```java
+public java.lang.String getAuthenticationConfig();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sni`<sup>Required</sup> <a name="sni" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.sni"></a>
+
+```java
+public java.lang.String getSni();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsOutputReference.property.internalValue"></a>
+
+```java
+public ComputeRegionBackendServiceTlsSettings getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettings">ComputeRegionBackendServiceTlsSettings</a>
+
+---
+
+
+### ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList <a name="ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.compute_region_backend_service.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList;
+
+new ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.get"></a>
+
+```java
+public ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames">ComputeRegionBackendServiceTlsSettingsSubjectAltNames</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<ComputeRegionBackendServiceTlsSettingsSubjectAltNames> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames">ComputeRegionBackendServiceTlsSettingsSubjectAltNames</a>>
+
+---
+
+
+### ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference <a name="ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.compute_region_backend_service.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference;
+
+new ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.resetDnsName">resetDnsName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.resetUniformResourceIdentifier">resetUniformResourceIdentifier</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetDnsName` <a name="resetDnsName" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.resetDnsName"></a>
+
+```java
+public void resetDnsName()
+```
+
+##### `resetUniformResourceIdentifier` <a name="resetUniformResourceIdentifier" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.resetUniformResourceIdentifier"></a>
+
+```java
+public void resetUniformResourceIdentifier()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.dnsNameInput">dnsNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.uniformResourceIdentifierInput">uniformResourceIdentifierInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.dnsName">dnsName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.uniformResourceIdentifier">uniformResourceIdentifier</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames">ComputeRegionBackendServiceTlsSettingsSubjectAltNames</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `dnsNameInput`<sup>Optional</sup> <a name="dnsNameInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.dnsNameInput"></a>
+
+```java
+public java.lang.String getDnsNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `uniformResourceIdentifierInput`<sup>Optional</sup> <a name="uniformResourceIdentifierInput" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.uniformResourceIdentifierInput"></a>
+
+```java
+public java.lang.String getUniformResourceIdentifierInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `dnsName`<sup>Required</sup> <a name="dnsName" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.dnsName"></a>
+
+```java
+public java.lang.String getDnsName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `uniformResourceIdentifier`<sup>Required</sup> <a name="uniformResourceIdentifier" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.uniformResourceIdentifier"></a>
+
+```java
+public java.lang.String getUniformResourceIdentifier();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ComputeRegionBackendServiceTlsSettingsSubjectAltNames getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.computeRegionBackendService.ComputeRegionBackendServiceTlsSettingsSubjectAltNames">ComputeRegionBackendServiceTlsSettingsSubjectAltNames</a>
 
 ---
 

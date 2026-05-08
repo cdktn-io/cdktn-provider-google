@@ -4,12 +4,12 @@
 
 ### LookerInstance <a name="LookerInstance" id="@cdktn/provider-google.lookerInstance.LookerInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance google_looker_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance google_looker_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstance(scope Construct, id *string, config LookerInstanceConfig) LookerInstance
 ```
@@ -75,23 +75,29 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.putAdminSettings">PutAdminSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.putControlledEgressConfig">PutControlledEgressConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.putCustomDomain">PutCustomDomain</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.putDenyMaintenancePeriod">PutDenyMaintenancePeriod</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.putEncryptionConfig">PutEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.putMaintenanceWindow">PutMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.putOauthConfig">PutOauthConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.putPeriodicExportConfig">PutPeriodicExportConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.putPscConfig">PutPscConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.putUserMetadata">PutUserMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetAdminSettings">ResetAdminSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetConsumerNetwork">ResetConsumerNetwork</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetControlledEgressConfig">ResetControlledEgressConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetControlledEgressEnabled">ResetControlledEgressEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetCustomDomain">ResetCustomDomain</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetDenyMaintenancePeriod">ResetDenyMaintenancePeriod</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetEncryptionConfig">ResetEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetFipsEnabled">ResetFipsEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetGeminiEnabled">ResetGeminiEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetMaintenanceWindow">ResetMaintenanceWindow</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetPeriodicExportConfig">ResetPeriodicExportConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetPlatformEdition">ResetPlatformEdition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetPrivateIpEnabled">ResetPrivateIpEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.resetProject">ResetProject</a></code> | *No description.* |
@@ -426,6 +432,18 @@ func PutAdminSettings(value LookerInstanceAdminSettings)
 
 ---
 
+##### `PutControlledEgressConfig` <a name="PutControlledEgressConfig" id="@cdktn/provider-google.lookerInstance.LookerInstance.putControlledEgressConfig"></a>
+
+```go
+func PutControlledEgressConfig(value LookerInstanceControlledEgressConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.lookerInstance.LookerInstance.putControlledEgressConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig">LookerInstanceControlledEgressConfig</a>
+
+---
+
 ##### `PutCustomDomain` <a name="PutCustomDomain" id="@cdktn/provider-google.lookerInstance.LookerInstance.putCustomDomain"></a>
 
 ```go
@@ -486,6 +504,18 @@ func PutOauthConfig(value LookerInstanceOauthConfig)
 
 ---
 
+##### `PutPeriodicExportConfig` <a name="PutPeriodicExportConfig" id="@cdktn/provider-google.lookerInstance.LookerInstance.putPeriodicExportConfig"></a>
+
+```go
+func PutPeriodicExportConfig(value LookerInstancePeriodicExportConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.lookerInstance.LookerInstance.putPeriodicExportConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig">LookerInstancePeriodicExportConfig</a>
+
+---
+
 ##### `PutPscConfig` <a name="PutPscConfig" id="@cdktn/provider-google.lookerInstance.LookerInstance.putPscConfig"></a>
 
 ```go
@@ -534,6 +564,18 @@ func ResetAdminSettings()
 func ResetConsumerNetwork()
 ```
 
+##### `ResetControlledEgressConfig` <a name="ResetControlledEgressConfig" id="@cdktn/provider-google.lookerInstance.LookerInstance.resetControlledEgressConfig"></a>
+
+```go
+func ResetControlledEgressConfig()
+```
+
+##### `ResetControlledEgressEnabled` <a name="ResetControlledEgressEnabled" id="@cdktn/provider-google.lookerInstance.LookerInstance.resetControlledEgressEnabled"></a>
+
+```go
+func ResetControlledEgressEnabled()
+```
+
 ##### `ResetCustomDomain` <a name="ResetCustomDomain" id="@cdktn/provider-google.lookerInstance.LookerInstance.resetCustomDomain"></a>
 
 ```go
@@ -564,6 +606,12 @@ func ResetEncryptionConfig()
 func ResetFipsEnabled()
 ```
 
+##### `ResetGeminiEnabled` <a name="ResetGeminiEnabled" id="@cdktn/provider-google.lookerInstance.LookerInstance.resetGeminiEnabled"></a>
+
+```go
+func ResetGeminiEnabled()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.lookerInstance.LookerInstance.resetId"></a>
 
 ```go
@@ -574,6 +622,12 @@ func ResetId()
 
 ```go
 func ResetMaintenanceWindow()
+```
+
+##### `ResetPeriodicExportConfig` <a name="ResetPeriodicExportConfig" id="@cdktn/provider-google.lookerInstance.LookerInstance.resetPeriodicExportConfig"></a>
+
+```go
+func ResetPeriodicExportConfig()
 ```
 
 ##### `ResetPlatformEdition` <a name="ResetPlatformEdition" id="@cdktn/provider-google.lookerInstance.LookerInstance.resetPlatformEdition"></a>
@@ -650,7 +704,7 @@ func ResetUserMetadata()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.lookerInstance.LookerInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.LookerInstance_IsConstruct(x interface{}) *bool
 ```
@@ -682,7 +736,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.lookerInstance.LookerInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.LookerInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -696,7 +750,7 @@ lookerinstance.LookerInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.lookerInstance.LookerInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.LookerInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -710,7 +764,7 @@ lookerinstance.LookerInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.lookerInstance.LookerInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.LookerInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -739,7 +793,7 @@ The construct id used in the generated config for the LookerInstance to import.
 
 The id of the existing LookerInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,6 +824,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.adminSettings">AdminSettings</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceAdminSettingsOutputReference">LookerInstanceAdminSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.controlledEgressConfig">ControlledEgressConfig</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference">LookerInstanceControlledEgressConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.createTime">CreateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.customDomain">CustomDomain</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceCustomDomainOutputReference">LookerInstanceCustomDomainOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.denyMaintenancePeriod">DenyMaintenancePeriod</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodOutputReference">LookerInstanceDenyMaintenancePeriodOutputReference</a></code> | *No description.* |
@@ -781,21 +836,26 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.lookerVersion">LookerVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindowOutputReference">LookerInstanceMaintenanceWindowOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.oauthConfig">OauthConfig</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfigOutputReference">LookerInstanceOauthConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.periodicExportConfig">PeriodicExportConfig</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference">LookerInstancePeriodicExportConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.pscConfig">PscConfig</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePscConfigOutputReference">LookerInstancePscConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceTimeoutsOutputReference">LookerInstanceTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.userMetadata">UserMetadata</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceUserMetadataOutputReference">LookerInstanceUserMetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.adminSettingsInput">AdminSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceAdminSettings">LookerInstanceAdminSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.consumerNetworkInput">ConsumerNetworkInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.controlledEgressConfigInput">ControlledEgressConfigInput</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig">LookerInstanceControlledEgressConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.controlledEgressEnabledInput">ControlledEgressEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.customDomainInput">CustomDomainInput</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceCustomDomain">LookerInstanceCustomDomain</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.denyMaintenancePeriodInput">DenyMaintenancePeriodInput</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriod">LookerInstanceDenyMaintenancePeriod</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.encryptionConfigInput">EncryptionConfigInput</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceEncryptionConfig">LookerInstanceEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.fipsEnabledInput">FipsEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.geminiEnabledInput">GeminiEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.maintenanceWindowInput">MaintenanceWindowInput</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindow">LookerInstanceMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.oauthConfigInput">OauthConfigInput</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfig">LookerInstanceOauthConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.periodicExportConfigInput">PeriodicExportConfigInput</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig">LookerInstancePeriodicExportConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.platformEditionInput">PlatformEditionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.privateIpEnabledInput">PrivateIpEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
@@ -807,8 +867,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.userMetadataInput">UserMetadataInput</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceUserMetadata">LookerInstanceUserMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.consumerNetwork">ConsumerNetwork</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.controlledEgressEnabled">ControlledEgressEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.fipsEnabled">FipsEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.geminiEnabled">GeminiEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstance.property.platformEdition">PlatformEdition</a></code> | <code>*string</code> | *No description.* |
@@ -973,6 +1035,16 @@ func AdminSettings() LookerInstanceAdminSettingsOutputReference
 
 ---
 
+##### `ControlledEgressConfig`<sup>Required</sup> <a name="ControlledEgressConfig" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.controlledEgressConfig"></a>
+
+```go
+func ControlledEgressConfig() LookerInstanceControlledEgressConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference">LookerInstanceControlledEgressConfigOutputReference</a>
+
+---
+
 ##### `CreateTime`<sup>Required</sup> <a name="CreateTime" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.createTime"></a>
 
 ```go
@@ -1083,6 +1155,16 @@ func OauthConfig() LookerInstanceOauthConfigOutputReference
 
 ---
 
+##### `PeriodicExportConfig`<sup>Required</sup> <a name="PeriodicExportConfig" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.periodicExportConfig"></a>
+
+```go
+func PeriodicExportConfig() LookerInstancePeriodicExportConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference">LookerInstancePeriodicExportConfigOutputReference</a>
+
+---
+
 ##### `PscConfig`<sup>Required</sup> <a name="PscConfig" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.pscConfig"></a>
 
 ```go
@@ -1143,6 +1225,26 @@ func ConsumerNetworkInput() *string
 
 ---
 
+##### `ControlledEgressConfigInput`<sup>Optional</sup> <a name="ControlledEgressConfigInput" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.controlledEgressConfigInput"></a>
+
+```go
+func ControlledEgressConfigInput() LookerInstanceControlledEgressConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig">LookerInstanceControlledEgressConfig</a>
+
+---
+
+##### `ControlledEgressEnabledInput`<sup>Optional</sup> <a name="ControlledEgressEnabledInput" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.controlledEgressEnabledInput"></a>
+
+```go
+func ControlledEgressEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `CustomDomainInput`<sup>Optional</sup> <a name="CustomDomainInput" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.customDomainInput"></a>
 
 ```go
@@ -1193,6 +1295,16 @@ func FipsEnabledInput() interface{}
 
 ---
 
+##### `GeminiEnabledInput`<sup>Optional</sup> <a name="GeminiEnabledInput" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.geminiEnabledInput"></a>
+
+```go
+func GeminiEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.idInput"></a>
 
 ```go
@@ -1230,6 +1342,16 @@ func OauthConfigInput() LookerInstanceOauthConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfig">LookerInstanceOauthConfig</a>
+
+---
+
+##### `PeriodicExportConfigInput`<sup>Optional</sup> <a name="PeriodicExportConfigInput" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.periodicExportConfigInput"></a>
+
+```go
+func PeriodicExportConfigInput() LookerInstancePeriodicExportConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig">LookerInstancePeriodicExportConfig</a>
 
 ---
 
@@ -1343,6 +1465,16 @@ func ConsumerNetwork() *string
 
 ---
 
+##### `ControlledEgressEnabled`<sup>Required</sup> <a name="ControlledEgressEnabled" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.controlledEgressEnabled"></a>
+
+```go
+func ControlledEgressEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.deletionPolicy"></a>
 
 ```go
@@ -1357,6 +1489,16 @@ func DeletionPolicy() *string
 
 ```go
 func FipsEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `GeminiEnabled`<sup>Required</sup> <a name="GeminiEnabled" id="@cdktn/provider-google.lookerInstance.LookerInstance.property.geminiEnabled"></a>
+
+```go
+func GeminiEnabled() interface{}
 ```
 
 - *Type:* interface{}
@@ -1478,7 +1620,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceAdminSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceAdminSettings {
 	AllowedEmailDomains: *[]*string,
@@ -1508,7 +1650,7 @@ Updating this list will restart the instance. Updating the allowed email domains
 means the value provided will be considered as the entire list and not an amendment to the
 existing list of allowed email domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#allowed_email_domains LookerInstance#allowed_email_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#allowed_email_domains LookerInstance#allowed_email_domains}
 
 ---
 
@@ -1517,7 +1659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceConfig {
 	Connection: interface{},
@@ -1528,26 +1670,30 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceOauthConfig,
-	AdminSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceAdminSettings,
+	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceOauthConfig,
+	AdminSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceAdminSettings,
 	ConsumerNetwork: *string,
-	CustomDomain: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceCustomDomain,
+	ControlledEgressConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceControlledEgressConfig,
+	ControlledEgressEnabled: interface{},
+	CustomDomain: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceCustomDomain,
 	DeletionPolicy: *string,
-	DenyMaintenancePeriod: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceDenyMaintenancePeriod,
-	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceEncryptionConfig,
+	DenyMaintenancePeriod: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceDenyMaintenancePeriod,
+	EncryptionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceEncryptionConfig,
 	FipsEnabled: interface{},
+	GeminiEnabled: interface{},
 	Id: *string,
-	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceMaintenanceWindow,
+	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceMaintenanceWindow,
+	PeriodicExportConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstancePeriodicExportConfig,
 	PlatformEdition: *string,
 	PrivateIpEnabled: interface{},
 	Project: *string,
-	PscConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstancePscConfig,
+	PscConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstancePscConfig,
 	PscEnabled: interface{},
 	PublicIpEnabled: interface{},
 	Region: *string,
 	ReservedRange: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceTimeouts,
-	UserMetadata: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceUserMetadata,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceTimeouts,
+	UserMetadata: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceUserMetadata,
 }
 ```
 
@@ -1566,16 +1712,20 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.oauthConfig">OauthConfig</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfig">LookerInstanceOauthConfig</a></code> | oauth_config block. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.adminSettings">AdminSettings</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceAdminSettings">LookerInstanceAdminSettings</a></code> | admin_settings block. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.consumerNetwork">ConsumerNetwork</a></code> | <code>*string</code> | Network name in the consumer project in the format of: projects/{project}/global/networks/{network} Note that the consumer network may be in a different GCP project than the consumer project that is hosting the Looker Instance. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.controlledEgressConfig">ControlledEgressConfig</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig">LookerInstanceControlledEgressConfig</a></code> | controlled_egress_config block. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.controlledEgressEnabled">ControlledEgressEnabled</a></code> | <code>interface{}</code> | Whether controlled egress is enabled on the Looker instance. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.customDomain">CustomDomain</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceCustomDomain">LookerInstanceCustomDomain</a></code> | custom_domain block. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Policy to determine if the cluster should be deleted forcefully. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.denyMaintenancePeriod">DenyMaintenancePeriod</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriod">LookerInstanceDenyMaintenancePeriod</a></code> | deny_maintenance_period block. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.encryptionConfig">EncryptionConfig</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceEncryptionConfig">LookerInstanceEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.fipsEnabled">FipsEnabled</a></code> | <code>interface{}</code> | FIPS 140-2 Encryption enablement for Looker (Google Cloud Core). |
-| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#id LookerInstance#id}. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.geminiEnabled">GeminiEnabled</a></code> | <code>interface{}</code> | Gemini enablement for Looker (Google Cloud Core). |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#id LookerInstance#id}. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindow">LookerInstanceMaintenanceWindow</a></code> | maintenance_window block. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.periodicExportConfig">PeriodicExportConfig</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig">LookerInstancePeriodicExportConfig</a></code> | periodic_export_config block. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.platformEdition">PlatformEdition</a></code> | <code>*string</code> | Platform editions for a Looker instance. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.privateIpEnabled">PrivateIpEnabled</a></code> | <code>interface{}</code> | Whether private IP is enabled on the Looker instance. |
-| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#project LookerInstance#project}. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#project LookerInstance#project}. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.pscConfig">PscConfig</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePscConfig">LookerInstancePscConfig</a></code> | psc_config block. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.pscEnabled">PscEnabled</a></code> | <code>interface{}</code> | Whether Public Service Connect (PSC) is enabled on the Looker instance. |
 | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.publicIpEnabled">PublicIpEnabled</a></code> | <code>interface{}</code> | Whether public IP is enabled on the Looker instance. |
@@ -1666,7 +1816,7 @@ Name *string
 
 The ID of the instance or a fully qualified identifier for the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#name LookerInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#name LookerInstance#name}
 
 ---
 
@@ -1680,7 +1830,7 @@ OauthConfig LookerInstanceOauthConfig
 
 oauth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#oauth_config LookerInstance#oauth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#oauth_config LookerInstance#oauth_config}
 
 ---
 
@@ -1694,7 +1844,7 @@ AdminSettings LookerInstanceAdminSettings
 
 admin_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#admin_settings LookerInstance#admin_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#admin_settings LookerInstance#admin_settings}
 
 ---
 
@@ -1708,7 +1858,35 @@ ConsumerNetwork *string
 
 Network name in the consumer project in the format of: projects/{project}/global/networks/{network} Note that the consumer network may be in a different GCP project than the consumer project that is hosting the Looker Instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#consumer_network LookerInstance#consumer_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#consumer_network LookerInstance#consumer_network}
+
+---
+
+##### `ControlledEgressConfig`<sup>Optional</sup> <a name="ControlledEgressConfig" id="@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.controlledEgressConfig"></a>
+
+```go
+ControlledEgressConfig LookerInstanceControlledEgressConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig">LookerInstanceControlledEgressConfig</a>
+
+controlled_egress_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#controlled_egress_config LookerInstance#controlled_egress_config}
+
+---
+
+##### `ControlledEgressEnabled`<sup>Optional</sup> <a name="ControlledEgressEnabled" id="@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.controlledEgressEnabled"></a>
+
+```go
+ControlledEgressEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Whether controlled egress is enabled on the Looker instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#controlled_egress_enabled LookerInstance#controlled_egress_enabled}
 
 ---
 
@@ -1722,7 +1900,7 @@ CustomDomain LookerInstanceCustomDomain
 
 custom_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#custom_domain LookerInstance#custom_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#custom_domain LookerInstance#custom_domain}
 
 ---
 
@@ -1740,7 +1918,7 @@ If setting deletion_policy = "FORCE", the Looker instance will be deleted regard
 of its nested resources. If set to "DEFAULT", Looker instances that still have
 nested resources will return an error. Possible values: DEFAULT, FORCE
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#deletion_policy LookerInstance#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#deletion_policy LookerInstance#deletion_policy}
 
 ---
 
@@ -1754,7 +1932,7 @@ DenyMaintenancePeriod LookerInstanceDenyMaintenancePeriod
 
 deny_maintenance_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#deny_maintenance_period LookerInstance#deny_maintenance_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#deny_maintenance_period LookerInstance#deny_maintenance_period}
 
 ---
 
@@ -1768,7 +1946,7 @@ EncryptionConfig LookerInstanceEncryptionConfig
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#encryption_config LookerInstance#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#encryption_config LookerInstance#encryption_config}
 
 ---
 
@@ -1782,7 +1960,21 @@ FipsEnabled interface{}
 
 FIPS 140-2 Encryption enablement for Looker (Google Cloud Core).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#fips_enabled LookerInstance#fips_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#fips_enabled LookerInstance#fips_enabled}
+
+---
+
+##### `GeminiEnabled`<sup>Optional</sup> <a name="GeminiEnabled" id="@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.geminiEnabled"></a>
+
+```go
+GeminiEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Gemini enablement for Looker (Google Cloud Core).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#gemini_enabled LookerInstance#gemini_enabled}
 
 ---
 
@@ -1794,7 +1986,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#id LookerInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#id LookerInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1811,7 +2003,21 @@ MaintenanceWindow LookerInstanceMaintenanceWindow
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#maintenance_window LookerInstance#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#maintenance_window LookerInstance#maintenance_window}
+
+---
+
+##### `PeriodicExportConfig`<sup>Optional</sup> <a name="PeriodicExportConfig" id="@cdktn/provider-google.lookerInstance.LookerInstanceConfig.property.periodicExportConfig"></a>
+
+```go
+PeriodicExportConfig LookerInstancePeriodicExportConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig">LookerInstancePeriodicExportConfig</a>
+
+periodic_export_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#periodic_export_config LookerInstance#periodic_export_config}
 
 ---
 
@@ -1839,7 +2045,7 @@ Each edition maps to a set of instance features, like its size. Must be one of t
 * LOOKER_CORE_TRIAL_ENTERPRISE: An enterprise trial edition of Looker (Google Cloud core) product.
 * LOOKER_CORE_TRIAL_EMBED: An embed trial edition of Looker (Google Cloud core) product. Default value: "LOOKER_CORE_TRIAL" Possible values: ["LOOKER_CORE_TRIAL", "LOOKER_CORE_STANDARD", "LOOKER_CORE_STANDARD_ANNUAL", "LOOKER_CORE_ENTERPRISE_ANNUAL", "LOOKER_CORE_EMBED_ANNUAL", "LOOKER_CORE_NONPROD_STANDARD_ANNUAL", "LOOKER_CORE_NONPROD_ENTERPRISE_ANNUAL", "LOOKER_CORE_NONPROD_EMBED_ANNUAL", "LOOKER_CORE_TRIAL_STANDARD", "LOOKER_CORE_TRIAL_ENTERPRISE", "LOOKER_CORE_TRIAL_EMBED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#platform_edition LookerInstance#platform_edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#platform_edition LookerInstance#platform_edition}
 
 ---
 
@@ -1853,7 +2059,7 @@ PrivateIpEnabled interface{}
 
 Whether private IP is enabled on the Looker instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#private_ip_enabled LookerInstance#private_ip_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#private_ip_enabled LookerInstance#private_ip_enabled}
 
 ---
 
@@ -1865,7 +2071,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#project LookerInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#project LookerInstance#project}.
 
 ---
 
@@ -1879,7 +2085,7 @@ PscConfig LookerInstancePscConfig
 
 psc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#psc_config LookerInstance#psc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#psc_config LookerInstance#psc_config}
 
 ---
 
@@ -1893,7 +2099,7 @@ PscEnabled interface{}
 
 Whether Public Service Connect (PSC) is enabled on the Looker instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#psc_enabled LookerInstance#psc_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#psc_enabled LookerInstance#psc_enabled}
 
 ---
 
@@ -1907,7 +2113,7 @@ PublicIpEnabled interface{}
 
 Whether public IP is enabled on the Looker instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#public_ip_enabled LookerInstance#public_ip_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#public_ip_enabled LookerInstance#public_ip_enabled}
 
 ---
 
@@ -1921,7 +2127,7 @@ Region *string
 
 The name of the Looker region of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#region LookerInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#region LookerInstance#region}
 
 ---
 
@@ -1937,7 +2143,7 @@ Name of a reserved IP address range within the consumer network, to be used for 
 
 User may or may not specify this in a request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#reserved_range LookerInstance#reserved_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#reserved_range LookerInstance#reserved_range}
 
 ---
 
@@ -1951,7 +2157,7 @@ Timeouts LookerInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#timeouts LookerInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#timeouts LookerInstance#timeouts}
 
 ---
 
@@ -1965,7 +2171,57 @@ UserMetadata LookerInstanceUserMetadata
 
 user_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#user_metadata LookerInstance#user_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#user_metadata LookerInstance#user_metadata}
+
+---
+
+### LookerInstanceControlledEgressConfig <a name="LookerInstanceControlledEgressConfig" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+
+&lookerinstance.LookerInstanceControlledEgressConfig {
+	EgressFqdns: *[]*string,
+	MarketplaceEnabled: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig.property.egressFqdns">EgressFqdns</a></code> | <code>*[]*string</code> | List of fully qualified domain names to be added to the allowlist for outbound traffic. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig.property.marketplaceEnabled">MarketplaceEnabled</a></code> | <code>interface{}</code> | Whether the Looker Marketplace is enabled. |
+
+---
+
+##### `EgressFqdns`<sup>Optional</sup> <a name="EgressFqdns" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig.property.egressFqdns"></a>
+
+```go
+EgressFqdns *[]*string
+```
+
+- *Type:* *[]*string
+
+List of fully qualified domain names to be added to the allowlist for outbound traffic.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#egress_fqdns LookerInstance#egress_fqdns}
+
+---
+
+##### `MarketplaceEnabled`<sup>Optional</sup> <a name="MarketplaceEnabled" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig.property.marketplaceEnabled"></a>
+
+```go
+MarketplaceEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Whether the Looker Marketplace is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#marketplace_enabled LookerInstance#marketplace_enabled}
 
 ---
 
@@ -1974,7 +2230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceCustomDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceCustomDomain {
 	Domain: *string,
@@ -1999,7 +2255,7 @@ Domain *string
 
 Domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#domain LookerInstance#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#domain LookerInstance#domain}
 
 ---
 
@@ -2008,12 +2264,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceDenyMaintenancePeriod {
-	EndDate: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDate,
-	StartDate: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDate,
-	Time: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceDenyMaintenancePeriodTime,
+	EndDate: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDate,
+	StartDate: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDate,
+	Time: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceDenyMaintenancePeriodTime,
 }
 ```
 
@@ -2037,7 +2293,7 @@ EndDate LookerInstanceDenyMaintenancePeriodEndDate
 
 end_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#end_date LookerInstance#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#end_date LookerInstance#end_date}
 
 ---
 
@@ -2051,7 +2307,7 @@ StartDate LookerInstanceDenyMaintenancePeriodStartDate
 
 start_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#start_date LookerInstance#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#start_date LookerInstance#start_date}
 
 ---
 
@@ -2065,7 +2321,7 @@ Time LookerInstanceDenyMaintenancePeriodTime
 
 time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#time LookerInstance#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#time LookerInstance#time}
 
 ---
 
@@ -2074,7 +2330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceDenyMaintenancePeriodEndDate {
 	Day: *f64,
@@ -2106,7 +2362,7 @@ Day of a month.
 Must be from 1 to 31 and valid for the year and month, or 0
 to specify a year by itself or a year and month where the day isn't significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#day LookerInstance#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#day LookerInstance#day}
 
 ---
 
@@ -2123,7 +2379,7 @@ Month of a year.
 Must be from 1 to 12, or 0 to specify a year without a
 month and day.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#month LookerInstance#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#month LookerInstance#month}
 
 ---
 
@@ -2137,7 +2393,7 @@ Year *f64
 
 Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#year LookerInstance#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#year LookerInstance#year}
 
 ---
 
@@ -2146,7 +2402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceDenyMaintenancePeriodStartDate {
 	Day: *f64,
@@ -2178,7 +2434,7 @@ Day of a month.
 Must be from 1 to 31 and valid for the year and month, or 0
 to specify a year by itself or a year and month where the day isn't significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#day LookerInstance#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#day LookerInstance#day}
 
 ---
 
@@ -2195,7 +2451,7 @@ Month of a year.
 Must be from 1 to 12, or 0 to specify a year without a
 month and day.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#month LookerInstance#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#month LookerInstance#month}
 
 ---
 
@@ -2209,7 +2465,7 @@ Year *f64
 
 Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#year LookerInstance#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#year LookerInstance#year}
 
 ---
 
@@ -2218,7 +2474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceDenyMaintenancePeriodTime {
 	Hours: *f64,
@@ -2249,7 +2505,7 @@ Hours *f64
 
 Hours of day in 24 hour format. Should be from 0 to 23.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#hours LookerInstance#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#hours LookerInstance#hours}
 
 ---
 
@@ -2263,7 +2519,7 @@ Minutes *f64
 
 Minutes of hour of day. Must be from 0 to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#minutes LookerInstance#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#minutes LookerInstance#minutes}
 
 ---
 
@@ -2277,7 +2533,7 @@ Nanos *f64
 
 Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#nanos LookerInstance#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#nanos LookerInstance#nanos}
 
 ---
 
@@ -2291,7 +2547,7 @@ Seconds *f64
 
 Seconds of minutes of the time. Must normally be from 0 to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#seconds LookerInstance#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#seconds LookerInstance#seconds}
 
 ---
 
@@ -2300,7 +2556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceEncryptionConfig {
 	KmsKeyName: *string,
@@ -2325,7 +2581,7 @@ KmsKeyName *string
 
 Name of the customer managed encryption key (CMEK) in KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#kms_key_name LookerInstance#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#kms_key_name LookerInstance#kms_key_name}
 
 ---
 
@@ -2334,11 +2590,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceMaintenanceWindow {
 	DayOfWeek: *string,
-	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v18.lookerInstance.LookerInstanceMaintenanceWindowStartTime,
+	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstanceMaintenanceWindowStartTime,
 }
 ```
 
@@ -2369,7 +2625,7 @@ Required. Day of the week for this MaintenanceWindow (in UTC).
 * SATURDAY: Saturday
 * SUNDAY: Sunday Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#day_of_week LookerInstance#day_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#day_of_week LookerInstance#day_of_week}
 
 ---
 
@@ -2383,7 +2639,7 @@ StartTime LookerInstanceMaintenanceWindowStartTime
 
 start_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#start_time LookerInstance#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#start_time LookerInstance#start_time}
 
 ---
 
@@ -2392,7 +2648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindowStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceMaintenanceWindowStartTime {
 	Hours: *f64,
@@ -2423,7 +2679,7 @@ Hours *f64
 
 Hours of day in 24 hour format. Should be from 0 to 23.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#hours LookerInstance#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#hours LookerInstance#hours}
 
 ---
 
@@ -2437,7 +2693,7 @@ Minutes *f64
 
 Minutes of hour of day. Must be from 0 to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#minutes LookerInstance#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#minutes LookerInstance#minutes}
 
 ---
 
@@ -2451,7 +2707,7 @@ Nanos *f64
 
 Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#nanos LookerInstance#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#nanos LookerInstance#nanos}
 
 ---
 
@@ -2465,7 +2721,7 @@ Seconds *f64
 
 Seconds of minutes of the time. Must normally be from 0 to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#seconds LookerInstance#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#seconds LookerInstance#seconds}
 
 ---
 
@@ -2474,7 +2730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceOauthConfig {
 	ClientId: *string,
@@ -2501,7 +2757,7 @@ ClientId *string
 
 The client ID for the Oauth config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#client_id LookerInstance#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#client_id LookerInstance#client_id}
 
 ---
 
@@ -2515,7 +2771,155 @@ ClientSecret *string
 
 The client secret for the Oauth config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#client_secret LookerInstance#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#client_secret LookerInstance#client_secret}
+
+---
+
+### LookerInstancePeriodicExportConfig <a name="LookerInstancePeriodicExportConfig" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+
+&lookerinstance.LookerInstancePeriodicExportConfig {
+	GcsUri: *string,
+	KmsKey: *string,
+	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v19.lookerInstance.LookerInstancePeriodicExportConfigStartTime,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig.property.gcsUri">GcsUri</a></code> | <code>*string</code> | Cloud Storage bucket URI for periodic export. Format: gs://{bucket_name}. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig.property.kmsKey">KmsKey</a></code> | <code>*string</code> | Name of the CMEK key in KMS. Format: projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig.property.startTime">StartTime</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime">LookerInstancePeriodicExportConfigStartTime</a></code> | start_time block. |
+
+---
+
+##### `GcsUri`<sup>Required</sup> <a name="GcsUri" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig.property.gcsUri"></a>
+
+```go
+GcsUri *string
+```
+
+- *Type:* *string
+
+Cloud Storage bucket URI for periodic export. Format: gs://{bucket_name}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#gcs_uri LookerInstance#gcs_uri}
+
+---
+
+##### `KmsKey`<sup>Required</sup> <a name="KmsKey" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig.property.kmsKey"></a>
+
+```go
+KmsKey *string
+```
+
+- *Type:* *string
+
+Name of the CMEK key in KMS. Format: projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#kms_key LookerInstance#kms_key}
+
+---
+
+##### `StartTime`<sup>Required</sup> <a name="StartTime" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig.property.startTime"></a>
+
+```go
+StartTime LookerInstancePeriodicExportConfigStartTime
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime">LookerInstancePeriodicExportConfigStartTime</a>
+
+start_time block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#start_time LookerInstance#start_time}
+
+---
+
+### LookerInstancePeriodicExportConfigStartTime <a name="LookerInstancePeriodicExportConfigStartTime" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+
+&lookerinstance.LookerInstancePeriodicExportConfigStartTime {
+	Hours: *f64,
+	Minutes: *f64,
+	Nanos: *f64,
+	Seconds: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime.property.hours">Hours</a></code> | <code>*f64</code> | Hours of day in 24 hour format. Should be from 0 to 23. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime.property.minutes">Minutes</a></code> | <code>*f64</code> | Minutes of hour of day. Must be from 0 to 59. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime.property.nanos">Nanos</a></code> | <code>*f64</code> | Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime.property.seconds">Seconds</a></code> | <code>*f64</code> | Seconds of minutes of the time. Must normally be from 0 to 59. |
+
+---
+
+##### `Hours`<sup>Optional</sup> <a name="Hours" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime.property.hours"></a>
+
+```go
+Hours *f64
+```
+
+- *Type:* *f64
+
+Hours of day in 24 hour format. Should be from 0 to 23.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#hours LookerInstance#hours}
+
+---
+
+##### `Minutes`<sup>Optional</sup> <a name="Minutes" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime.property.minutes"></a>
+
+```go
+Minutes *f64
+```
+
+- *Type:* *f64
+
+Minutes of hour of day. Must be from 0 to 59.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#minutes LookerInstance#minutes}
+
+---
+
+##### `Nanos`<sup>Optional</sup> <a name="Nanos" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime.property.nanos"></a>
+
+```go
+Nanos *f64
+```
+
+- *Type:* *f64
+
+Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#nanos LookerInstance#nanos}
+
+---
+
+##### `Seconds`<sup>Optional</sup> <a name="Seconds" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime.property.seconds"></a>
+
+```go
+Seconds *f64
+```
+
+- *Type:* *f64
+
+Seconds of minutes of the time. Must normally be from 0 to 59.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#seconds LookerInstance#seconds}
 
 ---
 
@@ -2524,7 +2928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstancePscConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstancePscConfig {
 	AllowedVpcs: *[]*string,
@@ -2551,7 +2955,7 @@ AllowedVpcs *[]*string
 
 List of VPCs that are allowed ingress into the Looker instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#allowed_vpcs LookerInstance#allowed_vpcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#allowed_vpcs LookerInstance#allowed_vpcs}
 
 ---
 
@@ -2565,7 +2969,7 @@ ServiceAttachments interface{}
 
 service_attachments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#service_attachments LookerInstance#service_attachments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#service_attachments LookerInstance#service_attachments}
 
 ---
 
@@ -2574,7 +2978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachments.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstancePscConfigServiceAttachments {
 	LocalFqdn: *string,
@@ -2601,7 +3005,7 @@ LocalFqdn *string
 
 Fully qualified domain name that will be used in the private DNS record created for the service attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#local_fqdn LookerInstance#local_fqdn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#local_fqdn LookerInstance#local_fqdn}
 
 ---
 
@@ -2615,7 +3019,7 @@ TargetServiceAttachmentUri *string
 
 URI of the service attachment to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#target_service_attachment_uri LookerInstance#target_service_attachment_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#target_service_attachment_uri LookerInstance#target_service_attachment_uri}
 
 ---
 
@@ -2624,7 +3028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceTimeouts {
 	Create: *string,
@@ -2637,9 +3041,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#create LookerInstance#create}. |
-| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#delete LookerInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#update LookerInstance#update}. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#create LookerInstance#create}. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#delete LookerInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#update LookerInstance#update}. |
 
 ---
 
@@ -2651,7 +3055,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#create LookerInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#create LookerInstance#create}.
 
 ---
 
@@ -2663,7 +3067,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#delete LookerInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#delete LookerInstance#delete}.
 
 ---
 
@@ -2675,7 +3079,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#update LookerInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#update LookerInstance#update}.
 
 ---
 
@@ -2684,7 +3088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lookerInstance.LookerInstanceUserMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 &lookerinstance.LookerInstanceUserMetadata {
 	AdditionalDeveloperUserCount: *f64,
@@ -2713,7 +3117,7 @@ AdditionalDeveloperUserCount *f64
 
 Number of additional Developer Users to allocate to the Looker Instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#additional_developer_user_count LookerInstance#additional_developer_user_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#additional_developer_user_count LookerInstance#additional_developer_user_count}
 
 ---
 
@@ -2727,7 +3131,7 @@ AdditionalStandardUserCount *f64
 
 Number of additional Standard Users to allocate to the Looker Instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#additional_standard_user_count LookerInstance#additional_standard_user_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#additional_standard_user_count LookerInstance#additional_standard_user_count}
 
 ---
 
@@ -2741,7 +3145,7 @@ AdditionalViewerUserCount *f64
 
 Number of additional Viewer Users to allocate to the Looker Instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#additional_viewer_user_count LookerInstance#additional_viewer_user_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#additional_viewer_user_count LookerInstance#additional_viewer_user_count}
 
 ---
 
@@ -2752,7 +3156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceAdminSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceAdminSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceAdminSettingsOutputReference
 ```
@@ -3025,12 +3429,319 @@ func InternalValue() LookerInstanceAdminSettings
 ---
 
 
+### LookerInstanceControlledEgressConfigOutputReference <a name="LookerInstanceControlledEgressConfigOutputReference" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+
+lookerinstance.NewLookerInstanceControlledEgressConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceControlledEgressConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.resetEgressFqdns">ResetEgressFqdns</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.resetMarketplaceEnabled">ResetMarketplaceEnabled</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetEgressFqdns` <a name="ResetEgressFqdns" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.resetEgressFqdns"></a>
+
+```go
+func ResetEgressFqdns()
+```
+
+##### `ResetMarketplaceEnabled` <a name="ResetMarketplaceEnabled" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.resetMarketplaceEnabled"></a>
+
+```go
+func ResetMarketplaceEnabled()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.egressFqdnsInput">EgressFqdnsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.marketplaceEnabledInput">MarketplaceEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.egressFqdns">EgressFqdns</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.marketplaceEnabled">MarketplaceEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig">LookerInstanceControlledEgressConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EgressFqdnsInput`<sup>Optional</sup> <a name="EgressFqdnsInput" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.egressFqdnsInput"></a>
+
+```go
+func EgressFqdnsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `MarketplaceEnabledInput`<sup>Optional</sup> <a name="MarketplaceEnabledInput" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.marketplaceEnabledInput"></a>
+
+```go
+func MarketplaceEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `EgressFqdns`<sup>Required</sup> <a name="EgressFqdns" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.egressFqdns"></a>
+
+```go
+func EgressFqdns() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `MarketplaceEnabled`<sup>Required</sup> <a name="MarketplaceEnabled" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.marketplaceEnabled"></a>
+
+```go
+func MarketplaceEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() LookerInstanceControlledEgressConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstanceControlledEgressConfig">LookerInstanceControlledEgressConfig</a>
+
+---
+
+
 ### LookerInstanceCustomDomainOutputReference <a name="LookerInstanceCustomDomainOutputReference" id="@cdktn/provider-google.lookerInstance.LookerInstanceCustomDomainOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceCustomDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceCustomDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceCustomDomainOutputReference
 ```
@@ -3319,7 +4030,7 @@ func InternalValue() LookerInstanceCustomDomain
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodEndDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceDenyMaintenancePeriodEndDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceDenyMaintenancePeriodEndDateOutputReference
 ```
@@ -3655,7 +4366,7 @@ func InternalValue() LookerInstanceDenyMaintenancePeriodEndDate
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceDenyMaintenancePeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceDenyMaintenancePeriodOutputReference
 ```
@@ -4009,7 +4720,7 @@ func InternalValue() LookerInstanceDenyMaintenancePeriod
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodStartDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceDenyMaintenancePeriodStartDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceDenyMaintenancePeriodStartDateOutputReference
 ```
@@ -4345,7 +5056,7 @@ func InternalValue() LookerInstanceDenyMaintenancePeriodStartDate
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceDenyMaintenancePeriodTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceDenyMaintenancePeriodTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceDenyMaintenancePeriodTimeOutputReference
 ```
@@ -4710,7 +5421,7 @@ func InternalValue() LookerInstanceDenyMaintenancePeriodTime
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceEncryptionConfigOutputReference
 ```
@@ -5010,7 +5721,7 @@ func InternalValue() LookerInstanceEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceMaintenanceWindowOutputReference
 ```
@@ -5316,7 +6027,7 @@ func InternalValue() LookerInstanceMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceMaintenanceWindowStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceMaintenanceWindowStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceMaintenanceWindowStartTimeOutputReference
 ```
@@ -5681,7 +6392,7 @@ func InternalValue() LookerInstanceMaintenanceWindowStartTime
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceOauthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceOauthConfigOutputReference
 ```
@@ -5969,12 +6680,705 @@ func InternalValue() LookerInstanceOauthConfig
 ---
 
 
+### LookerInstancePeriodicExportConfigOutputReference <a name="LookerInstancePeriodicExportConfigOutputReference" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+
+lookerinstance.NewLookerInstancePeriodicExportConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstancePeriodicExportConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.putStartTime">PutStartTime</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutStartTime` <a name="PutStartTime" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.putStartTime"></a>
+
+```go
+func PutStartTime(value LookerInstancePeriodicExportConfigStartTime)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.putStartTime.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime">LookerInstancePeriodicExportConfigStartTime</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.startTime">StartTime</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference">LookerInstancePeriodicExportConfigStartTimeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.gcsUriInput">GcsUriInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.kmsKeyInput">KmsKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.startTimeInput">StartTimeInput</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime">LookerInstancePeriodicExportConfigStartTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.gcsUri">GcsUri</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.kmsKey">KmsKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig">LookerInstancePeriodicExportConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StartTime`<sup>Required</sup> <a name="StartTime" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.startTime"></a>
+
+```go
+func StartTime() LookerInstancePeriodicExportConfigStartTimeOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference">LookerInstancePeriodicExportConfigStartTimeOutputReference</a>
+
+---
+
+##### `GcsUriInput`<sup>Optional</sup> <a name="GcsUriInput" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.gcsUriInput"></a>
+
+```go
+func GcsUriInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `KmsKeyInput`<sup>Optional</sup> <a name="KmsKeyInput" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.kmsKeyInput"></a>
+
+```go
+func KmsKeyInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StartTimeInput`<sup>Optional</sup> <a name="StartTimeInput" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.startTimeInput"></a>
+
+```go
+func StartTimeInput() LookerInstancePeriodicExportConfigStartTime
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime">LookerInstancePeriodicExportConfigStartTime</a>
+
+---
+
+##### `GcsUri`<sup>Required</sup> <a name="GcsUri" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.gcsUri"></a>
+
+```go
+func GcsUri() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `KmsKey`<sup>Required</sup> <a name="KmsKey" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.kmsKey"></a>
+
+```go
+func KmsKey() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() LookerInstancePeriodicExportConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfig">LookerInstancePeriodicExportConfig</a>
+
+---
+
+
+### LookerInstancePeriodicExportConfigStartTimeOutputReference <a name="LookerInstancePeriodicExportConfigStartTimeOutputReference" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
+
+lookerinstance.NewLookerInstancePeriodicExportConfigStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstancePeriodicExportConfigStartTimeOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.resetHours">ResetHours</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.resetMinutes">ResetMinutes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.resetNanos">ResetNanos</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.resetSeconds">ResetSeconds</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetHours` <a name="ResetHours" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.resetHours"></a>
+
+```go
+func ResetHours()
+```
+
+##### `ResetMinutes` <a name="ResetMinutes" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.resetMinutes"></a>
+
+```go
+func ResetMinutes()
+```
+
+##### `ResetNanos` <a name="ResetNanos" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.resetNanos"></a>
+
+```go
+func ResetNanos()
+```
+
+##### `ResetSeconds` <a name="ResetSeconds" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.resetSeconds"></a>
+
+```go
+func ResetSeconds()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.hoursInput">HoursInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.minutesInput">MinutesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.nanosInput">NanosInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.secondsInput">SecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.hours">Hours</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.minutes">Minutes</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.nanos">Nanos</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.seconds">Seconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime">LookerInstancePeriodicExportConfigStartTime</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `HoursInput`<sup>Optional</sup> <a name="HoursInput" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.hoursInput"></a>
+
+```go
+func HoursInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `MinutesInput`<sup>Optional</sup> <a name="MinutesInput" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.minutesInput"></a>
+
+```go
+func MinutesInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `NanosInput`<sup>Optional</sup> <a name="NanosInput" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.nanosInput"></a>
+
+```go
+func NanosInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `SecondsInput`<sup>Optional</sup> <a name="SecondsInput" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.secondsInput"></a>
+
+```go
+func SecondsInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Hours`<sup>Required</sup> <a name="Hours" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.hours"></a>
+
+```go
+func Hours() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Minutes`<sup>Required</sup> <a name="Minutes" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.minutes"></a>
+
+```go
+func Minutes() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Nanos`<sup>Required</sup> <a name="Nanos" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.nanos"></a>
+
+```go
+func Nanos() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Seconds`<sup>Required</sup> <a name="Seconds" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.seconds"></a>
+
+```go
+func Seconds() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTimeOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() LookerInstancePeriodicExportConfigStartTime
+```
+
+- *Type:* <a href="#@cdktn/provider-google.lookerInstance.LookerInstancePeriodicExportConfigStartTime">LookerInstancePeriodicExportConfigStartTime</a>
+
+---
+
+
 ### LookerInstancePscConfigOutputReference <a name="LookerInstancePscConfigOutputReference" id="@cdktn/provider-google.lookerInstance.LookerInstancePscConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstancePscConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstancePscConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstancePscConfigOutputReference
 ```
@@ -6305,7 +7709,7 @@ func InternalValue() LookerInstancePscConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstancePscConfigServiceAttachmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LookerInstancePscConfigServiceAttachmentsList
 ```
@@ -6465,7 +7869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstancePscConfigServiceAttachmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstancePscConfigServiceAttachmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LookerInstancePscConfigServiceAttachmentsOutputReference
 ```
@@ -6801,7 +8205,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceTimeoutsOutputReference
 ```
@@ -7137,7 +8541,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lookerInstance.LookerInstanceUserMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/lookerinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/lookerinstance"
 
 lookerinstance.NewLookerInstanceUserMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LookerInstanceUserMetadataOutputReference
 ```

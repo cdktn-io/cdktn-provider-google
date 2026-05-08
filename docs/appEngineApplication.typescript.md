@@ -4,7 +4,7 @@
 
 ### AppEngineApplication <a name="AppEngineApplication" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application google_app_engine_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application google_app_engine_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication.Initializer"></a>
 
@@ -84,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.resetServingStatus">resetServingStatus</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.resetSslPolicy">resetSslPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -475,6 +476,12 @@ public resetProject(): void
 public resetServingStatus(): void
 ```
 
+##### `resetSslPolicy` <a name="resetSslPolicy" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication.resetSslPolicy"></a>
+
+```typescript
+public resetSslPolicy(): void
+```
+
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication.resetTimeouts"></a>
 
 ```typescript
@@ -584,7 +591,7 @@ The construct id used in the generated config for the AppEngineApplication to im
 
 The id of the existing AppEngineApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -632,6 +639,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.locationIdInput">locationIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.servingStatusInput">servingStatusInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.sslPolicyInput">sslPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationTimeouts">AppEngineApplicationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.authDomain">authDomain</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.databaseType">databaseType</a></code> | <code>string</code> | *No description.* |
@@ -639,6 +647,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.locationId">locationId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.project">project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.servingStatus">servingStatus</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.sslPolicy">sslPolicy</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -964,6 +973,16 @@ public readonly servingStatusInput: string;
 
 ---
 
+##### `sslPolicyInput`<sup>Optional</sup> <a name="sslPolicyInput" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.sslPolicyInput"></a>
+
+```typescript
+public readonly sslPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.timeoutsInput"></a>
 
 ```typescript
@@ -1034,6 +1053,16 @@ public readonly servingStatus: string;
 
 ---
 
+##### `sslPolicy`<sup>Required</sup> <a name="sslPolicy" id="@cdktn/provider-google.appEngineApplication.AppEngineApplication.property.sslPolicy"></a>
+
+```typescript
+public readonly sslPolicy: string;
+```
+
+- *Type:* string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1077,12 +1106,13 @@ const appEngineApplicationConfig: appEngineApplication.AppEngineApplicationConfi
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.locationId">locationId</a></code> | <code>string</code> | The location to serve the app from. |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.authDomain">authDomain</a></code> | <code>string</code> | The domain to authenticate users with when using App Engine's User API. |
-| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.databaseType">databaseType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#database_type AppEngineApplication#database_type}. |
+| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.databaseType">databaseType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#database_type AppEngineApplication#database_type}. |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.featureSettings">featureSettings</a></code> | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationFeatureSettings">AppEngineApplicationFeatureSettings</a></code> | feature_settings block. |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.iap">iap</a></code> | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationIap">AppEngineApplicationIap</a></code> | iap block. |
-| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#id AppEngineApplication#id}. |
+| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#id AppEngineApplication#id}. |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.project">project</a></code> | <code>string</code> | The project ID to create the application under. |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.servingStatus">servingStatus</a></code> | <code>string</code> | The serving status of the app. |
+| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.sslPolicy">sslPolicy</a></code> | <code>string</code> | The SSL policy that will be applied to the application. |
 | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationTimeouts">AppEngineApplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1167,7 +1197,7 @@ public readonly locationId: string;
 
 The location to serve the app from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#location_id AppEngineApplication#location_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#location_id AppEngineApplication#location_id}
 
 ---
 
@@ -1181,7 +1211,7 @@ public readonly authDomain: string;
 
 The domain to authenticate users with when using App Engine's User API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#auth_domain AppEngineApplication#auth_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#auth_domain AppEngineApplication#auth_domain}
 
 ---
 
@@ -1193,7 +1223,7 @@ public readonly databaseType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#database_type AppEngineApplication#database_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#database_type AppEngineApplication#database_type}.
 
 ---
 
@@ -1207,7 +1237,7 @@ public readonly featureSettings: AppEngineApplicationFeatureSettings;
 
 feature_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#feature_settings AppEngineApplication#feature_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#feature_settings AppEngineApplication#feature_settings}
 
 ---
 
@@ -1221,7 +1251,7 @@ public readonly iap: AppEngineApplicationIap;
 
 iap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#iap AppEngineApplication#iap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#iap AppEngineApplication#iap}
 
 ---
 
@@ -1233,7 +1263,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#id AppEngineApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#id AppEngineApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1250,7 +1280,7 @@ public readonly project: string;
 
 The project ID to create the application under.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#project AppEngineApplication#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#project AppEngineApplication#project}
 
 ---
 
@@ -1264,7 +1294,23 @@ public readonly servingStatus: string;
 
 The serving status of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#serving_status AppEngineApplication#serving_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#serving_status AppEngineApplication#serving_status}
+
+---
+
+##### `sslPolicy`<sup>Optional</sup> <a name="sslPolicy" id="@cdktn/provider-google.appEngineApplication.AppEngineApplicationConfig.property.sslPolicy"></a>
+
+```typescript
+public readonly sslPolicy: string;
+```
+
+- *Type:* string
+
+The SSL policy that will be applied to the application.
+
+If set to Modern it will restrict traffic with TLS \u003c 1.2 and allow only Modern Ciphers suite
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#ssl_policy AppEngineApplication#ssl_policy}
 
 ---
 
@@ -1278,7 +1324,7 @@ public readonly timeouts: AppEngineApplicationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#timeouts AppEngineApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#timeouts AppEngineApplication#timeouts}
 
 ---
 
@@ -1296,7 +1342,7 @@ const appEngineApplicationFeatureSettings: appEngineApplication.AppEngineApplica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationFeatureSettings.property.splitHealthChecks">splitHealthChecks</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#split_health_checks AppEngineApplication#split_health_checks}. |
+| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationFeatureSettings.property.splitHealthChecks">splitHealthChecks</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#split_health_checks AppEngineApplication#split_health_checks}. |
 
 ---
 
@@ -1308,7 +1354,7 @@ public readonly splitHealthChecks: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#split_health_checks AppEngineApplication#split_health_checks}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#split_health_checks AppEngineApplication#split_health_checks}.
 
 ---
 
@@ -1342,7 +1388,7 @@ public readonly oauth2ClientId: string;
 
 OAuth2 client ID to use for the authentication flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#oauth2_client_id AppEngineApplication#oauth2_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#oauth2_client_id AppEngineApplication#oauth2_client_id}
 
 ---
 
@@ -1358,7 +1404,7 @@ OAuth2 client secret to use for the authentication flow.
 
 The SHA-256 hash of the value is returned in the oauth2ClientSecretSha256 field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#oauth2_client_secret AppEngineApplication#oauth2_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#oauth2_client_secret AppEngineApplication#oauth2_client_secret}
 
 ---
 
@@ -1372,7 +1418,7 @@ public readonly enabled: boolean | IResolvable;
 
 Adapted for use with the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#enabled AppEngineApplication#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#enabled AppEngineApplication#enabled}
 
 ---
 
@@ -1390,8 +1436,8 @@ const appEngineApplicationTimeouts: appEngineApplication.AppEngineApplicationTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#create AppEngineApplication#create}. |
-| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#update AppEngineApplication#update}. |
+| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#create AppEngineApplication#create}. |
+| <code><a href="#@cdktn/provider-google.appEngineApplication.AppEngineApplicationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#update AppEngineApplication#update}. |
 
 ---
 
@@ -1403,7 +1449,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#create AppEngineApplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#create AppEngineApplication#create}.
 
 ---
 
@@ -1415,7 +1461,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/app_engine_application#update AppEngineApplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/app_engine_application#update AppEngineApplication#update}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### SccV2OrganizationNotificationConfig <a name="SccV2OrganizationNotificationConfig" id="@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizationnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2organizationnotificationconfig"
 
 sccv2organizationnotificationconfig.NewSccV2OrganizationNotificationConfig(scope Construct, id *string, config SccV2OrganizationNotificationConfigConfig) SccV2OrganizationNotificationConfig
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizationnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2organizationnotificationconfig"
 
 sccv2organizationnotificationconfig.SccV2OrganizationNotificationConfig_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizationnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2organizationnotificationconfig"
 
 sccv2organizationnotificationconfig.SccV2OrganizationNotificationConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ sccv2organizationnotificationconfig.SccV2OrganizationNotificationConfig_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizationnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2organizationnotificationconfig"
 
 sccv2organizationnotificationconfig.SccV2OrganizationNotificationConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ sccv2organizationnotificationconfig.SccV2OrganizationNotificationConfig_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizationnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2organizationnotificationconfig"
 
 sccv2organizationnotificationconfig.SccV2OrganizationNotificationConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the SccV2OrganizationNotificat
 
 The id of the existing SccV2OrganizationNotificationConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -941,7 +941,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizationnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2organizationnotificationconfig"
 
 &sccv2organizationnotificationconfig.SccV2OrganizationNotificationConfigConfig {
 	Connection: interface{},
@@ -954,11 +954,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizatio
 	ConfigId: *string,
 	Organization: *string,
 	PubsubTopic: *string,
-	StreamingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigStreamingConfig,
+	StreamingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigStreamingConfig,
 	Description: *string,
 	Id: *string,
 	Location: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigTimeouts,
 }
 ```
 
@@ -978,7 +978,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizatio
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigConfig.property.pubsubTopic">PubsubTopic</a></code> | <code>*string</code> | The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]". |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigConfig.property.streamingConfig">StreamingConfig</a></code> | <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigStreamingConfig">SccV2OrganizationNotificationConfigStreamingConfig</a></code> | streaming_config block. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigConfig.property.description">Description</a></code> | <code>*string</code> | The description of the notification config (max of 1024 characters). |
-| <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#id SccV2OrganizationNotificationConfig#id}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#id SccV2OrganizationNotificationConfig#id}. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigConfig.property.location">Location</a></code> | <code>*string</code> | location Id is provided by organization. If not provided, Use global as default. |
 | <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigTimeouts">SccV2OrganizationNotificationConfigTimeouts</a></code> | timeouts block. |
 
@@ -1064,7 +1064,7 @@ ConfigId *string
 
 This must be unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#config_id SccV2OrganizationNotificationConfig#config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#config_id SccV2OrganizationNotificationConfig#config_id}
 
 ---
 
@@ -1078,7 +1078,7 @@ Organization *string
 
 The organization whose Cloud Security Command Center the Notification Config lives in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#organization SccV2OrganizationNotificationConfig#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#organization SccV2OrganizationNotificationConfig#organization}
 
 ---
 
@@ -1092,7 +1092,7 @@ PubsubTopic *string
 
 The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#pubsub_topic SccV2OrganizationNotificationConfig#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#pubsub_topic SccV2OrganizationNotificationConfig#pubsub_topic}
 
 ---
 
@@ -1106,7 +1106,7 @@ StreamingConfig SccV2OrganizationNotificationConfigStreamingConfig
 
 streaming_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#streaming_config SccV2OrganizationNotificationConfig#streaming_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#streaming_config SccV2OrganizationNotificationConfig#streaming_config}
 
 ---
 
@@ -1120,7 +1120,7 @@ Description *string
 
 The description of the notification config (max of 1024 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#description SccV2OrganizationNotificationConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#description SccV2OrganizationNotificationConfig#description}
 
 ---
 
@@ -1132,7 +1132,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#id SccV2OrganizationNotificationConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#id SccV2OrganizationNotificationConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1149,7 +1149,7 @@ Location *string
 
 location Id is provided by organization. If not provided, Use global as default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#location SccV2OrganizationNotificationConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#location SccV2OrganizationNotificationConfig#location}
 
 ---
 
@@ -1163,7 +1163,7 @@ Timeouts SccV2OrganizationNotificationConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#timeouts SccV2OrganizationNotificationConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#timeouts SccV2OrganizationNotificationConfig#timeouts}
 
 ---
 
@@ -1172,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigStreamingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizationnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2organizationnotificationconfig"
 
 &sccv2organizationnotificationconfig.SccV2OrganizationNotificationConfigStreamingConfig {
 	Filter: *string,
@@ -1222,7 +1222,7 @@ See
 [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 for information on how to write a filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#filter SccV2OrganizationNotificationConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#filter SccV2OrganizationNotificationConfig#filter}
 
 ---
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizationnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2organizationnotificationconfig"
 
 &sccv2organizationnotificationconfig.SccV2OrganizationNotificationConfigTimeouts {
 	Create: *string,
@@ -1244,9 +1244,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#create SccV2OrganizationNotificationConfig#create}. |
-| <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#delete SccV2OrganizationNotificationConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#update SccV2OrganizationNotificationConfig#update}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#create SccV2OrganizationNotificationConfig#create}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#delete SccV2OrganizationNotificationConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#update SccV2OrganizationNotificationConfig#update}. |
 
 ---
 
@@ -1258,7 +1258,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#create SccV2OrganizationNotificationConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#create SccV2OrganizationNotificationConfig#create}.
 
 ---
 
@@ -1270,7 +1270,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#delete SccV2OrganizationNotificationConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#delete SccV2OrganizationNotificationConfig#delete}.
 
 ---
 
@@ -1282,7 +1282,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_notification_config#update SccV2OrganizationNotificationConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_v2_organization_notification_config#update SccV2OrganizationNotificationConfig#update}.
 
 ---
 
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigStreamingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizationnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2organizationnotificationconfig"
 
 sccv2organizationnotificationconfig.NewSccV2OrganizationNotificationConfigStreamingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccV2OrganizationNotificationConfigStreamingConfigOutputReference
 ```
@@ -1564,7 +1564,7 @@ func InternalValue() SccV2OrganizationNotificationConfigStreamingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2OrganizationNotificationConfig.SccV2OrganizationNotificationConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccv2organizationnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccv2organizationnotificationconfig"
 
 sccv2organizationnotificationconfig.NewSccV2OrganizationNotificationConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccV2OrganizationNotificationConfigTimeoutsOutputReference
 ```

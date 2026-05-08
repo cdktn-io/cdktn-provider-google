@@ -4,12 +4,12 @@
 
 ### BigqueryReservationAssignment <a name="BigqueryReservationAssignment" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryreservationassignment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryreservationassignment"
 
 bigqueryreservationassignment.NewBigqueryReservationAssignment(scope Construct, id *string, config BigqueryReservationAssignmentConfig) BigqueryReservationAssignment
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryreservationassignment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryreservationassignment"
 
 bigqueryreservationassignment.BigqueryReservationAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryreservationassignment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryreservationassignment"
 
 bigqueryreservationassignment.BigqueryReservationAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ bigqueryreservationassignment.BigqueryReservationAssignment_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryreservationassignment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryreservationassignment"
 
 bigqueryreservationassignment.BigqueryReservationAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ bigqueryreservationassignment.BigqueryReservationAssignment_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryreservationassignment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryreservationassignment"
 
 bigqueryreservationassignment.BigqueryReservationAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the BigqueryReservationAssignm
 
 The id of the existing BigqueryReservationAssignment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryreservationassignment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryreservationassignment"
 
 &bigqueryreservationassignment.BigqueryReservationAssignmentConfig {
 	Connection: interface{},
@@ -922,7 +922,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryreservat
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts,
 }
 ```
 
@@ -940,9 +940,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryreservat
 | <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.assignee">Assignee</a></code> | <code>*string</code> | The resource which will use the reservation. E.g. projects/myproject, folders/123, organizations/456. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.jobType">JobType</a></code> | <code>*string</code> | Types of job, which could be specified when using the reservation. Possible values: JOB_TYPE_UNSPECIFIED, PIPELINE, QUERY, CONTINUOUS. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.reservation">Reservation</a></code> | <code>*string</code> | The reservation for the resource. |
-| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#id BigqueryReservationAssignment#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#id BigqueryReservationAssignment#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.location">Location</a></code> | <code>*string</code> | The location for the resource. |
-| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#project BigqueryReservationAssignment#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#project BigqueryReservationAssignment#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1027,7 +1027,7 @@ Assignee *string
 
 The resource which will use the reservation. E.g. projects/myproject, folders/123, organizations/456.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#assignee BigqueryReservationAssignment#assignee}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#assignee BigqueryReservationAssignment#assignee}
 
 ---
 
@@ -1041,7 +1041,7 @@ JobType *string
 
 Types of job, which could be specified when using the reservation. Possible values: JOB_TYPE_UNSPECIFIED, PIPELINE, QUERY, CONTINUOUS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#job_type BigqueryReservationAssignment#job_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#job_type BigqueryReservationAssignment#job_type}
 
 ---
 
@@ -1055,7 +1055,7 @@ Reservation *string
 
 The reservation for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#reservation BigqueryReservationAssignment#reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#reservation BigqueryReservationAssignment#reservation}
 
 ---
 
@@ -1067,7 +1067,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#id BigqueryReservationAssignment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#id BigqueryReservationAssignment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1084,7 +1084,7 @@ Location *string
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#location BigqueryReservationAssignment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#location BigqueryReservationAssignment#location}
 
 ---
 
@@ -1096,7 +1096,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#project BigqueryReservationAssignment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#project BigqueryReservationAssignment#project}.
 
 ---
 
@@ -1110,7 +1110,7 @@ Timeouts BigqueryReservationAssignmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#timeouts BigqueryReservationAssignment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#timeouts BigqueryReservationAssignment#timeouts}
 
 ---
 
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryreservationassignment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryreservationassignment"
 
 &bigqueryreservationassignment.BigqueryReservationAssignmentTimeouts {
 	Create: *string,
@@ -1131,8 +1131,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryreservat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#create BigqueryReservationAssignment#create}. |
-| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#delete BigqueryReservationAssignment#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#create BigqueryReservationAssignment#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#delete BigqueryReservationAssignment#delete}. |
 
 ---
 
@@ -1144,7 +1144,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#create BigqueryReservationAssignment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#create BigqueryReservationAssignment#create}.
 
 ---
 
@@ -1156,7 +1156,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#delete BigqueryReservationAssignment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigquery_reservation_assignment#delete BigqueryReservationAssignment#delete}.
 
 ---
 
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/bigqueryreservationassignment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/bigqueryreservationassignment"
 
 bigqueryreservationassignment.NewBigqueryReservationAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryReservationAssignmentTimeoutsOutputReference
 ```

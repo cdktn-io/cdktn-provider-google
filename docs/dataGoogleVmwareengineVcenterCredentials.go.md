@@ -4,12 +4,12 @@
 
 ### DataGoogleVmwareengineVcenterCredentials <a name="DataGoogleVmwareengineVcenterCredentials" id="@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_vcenter_credentials google_vmwareengine_vcenter_credentials}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_vcenter_credentials google_vmwareengine_vcenter_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareenginevcentercredentials"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginevcentercredentials"
 
 datagooglevmwareenginevcentercredentials.NewDataGoogleVmwareengineVcenterCredentials(scope Construct, id *string, config DataGoogleVmwareengineVcenterCredentialsConfig) DataGoogleVmwareengineVcenterCredentials
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareenginevcentercredentials"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginevcentercredentials"
 
 datagooglevmwareenginevcentercredentials.DataGoogleVmwareengineVcenterCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareenginevcentercredentials"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginevcentercredentials"
 
 datagooglevmwareenginevcentercredentials.DataGoogleVmwareengineVcenterCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglevmwareenginevcentercredentials.DataGoogleVmwareengineVcenterCredential
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareenginevcentercredentials"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginevcentercredentials"
 
 datagooglevmwareenginevcentercredentials.DataGoogleVmwareengineVcenterCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglevmwareenginevcentercredentials.DataGoogleVmwareengineVcenterCredential
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareenginevcentercredentials"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginevcentercredentials"
 
 datagooglevmwareenginevcentercredentials.DataGoogleVmwareengineVcenterCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleVmwareengineVcen
 
 The id of the existing DataGoogleVmwareengineVcenterCredentials that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_vcenter_credentials#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_vcenter_credentials#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmwareenginevcentercredentials"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevmwareenginevcentercredentials"
 
 &datagooglevmwareenginevcentercredentials.DataGoogleVmwareengineVcenterCredentialsConfig {
 	Connection: interface{},
@@ -665,7 +665,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevmware
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentialsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentialsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentialsConfig.property.parent">Parent</a></code> | <code>*string</code> | The resource name of the private cloud which contains vcenter. |
-| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_vcenter_credentials#id DataGoogleVmwareengineVcenterCredentials#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineVcenterCredentials.DataGoogleVmwareengineVcenterCredentialsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_vcenter_credentials#id DataGoogleVmwareengineVcenterCredentials#id}. |
 
 ---
 
@@ -752,7 +752,7 @@ The resource name of the private cloud which contains vcenter.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_vcenter_credentials#parent DataGoogleVmwareengineVcenterCredentials#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_vcenter_credentials#parent DataGoogleVmwareengineVcenterCredentials#parent}
 
 ---
 
@@ -764,7 +764,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_vcenter_credentials#id DataGoogleVmwareengineVcenterCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_vcenter_credentials#id DataGoogleVmwareengineVcenterCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

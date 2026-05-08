@@ -4,7 +4,7 @@
 
 ### PrivatecaCaPool <a name="PrivatecaCaPool" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool google_privateca_ca_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool google_privateca_ca_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.Initializer"></a>
 
@@ -74,9 +74,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.putEncryptionSpec">PutEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.putIssuancePolicy">PutIssuancePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.putPublishingOptions">PutPublishingOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.resetEncryptionSpec">ResetEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.resetIssuancePolicy">ResetIssuancePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.resetLabels">ResetLabels</a></code> | *No description.* |
@@ -395,6 +397,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutEncryptionSpec` <a name="PutEncryptionSpec" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.putEncryptionSpec"></a>
+
+```csharp
+private void PutEncryptionSpec(PrivatecaCaPoolEncryptionSpec Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.putEncryptionSpec.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpec">PrivatecaCaPoolEncryptionSpec</a>
+
+---
+
 ##### `PutIssuancePolicy` <a name="PutIssuancePolicy" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.putIssuancePolicy"></a>
 
 ```csharp
@@ -430,6 +444,12 @@ private void PutTimeouts(PrivatecaCaPoolTimeouts Value)
 - *Type:* <a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolTimeouts">PrivatecaCaPoolTimeouts</a>
 
 ---
+
+##### `ResetEncryptionSpec` <a name="ResetEncryptionSpec" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.resetEncryptionSpec"></a>
+
+```csharp
+private void ResetEncryptionSpec()
+```
 
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.resetId"></a>
 
@@ -570,7 +590,7 @@ The construct id used in the generated config for the PrivatecaCaPool to import.
 
 The id of the existing PrivatecaCaPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -601,10 +621,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.effectiveLabels">EffectiveLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.encryptionSpec">EncryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference">PrivatecaCaPoolEncryptionSpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.issuancePolicy">IssuancePolicy</a></code> | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyOutputReference">PrivatecaCaPoolIssuancePolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.publishingOptions">PublishingOptions</a></code> | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolPublishingOptionsOutputReference">PrivatecaCaPoolPublishingOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolTimeoutsOutputReference">PrivatecaCaPoolTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.encryptionSpecInput">EncryptionSpecInput</a></code> | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpec">PrivatecaCaPoolEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.issuancePolicyInput">IssuancePolicyInput</a></code> | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicy">PrivatecaCaPoolIssuancePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
@@ -775,6 +797,16 @@ public StringMap EffectiveLabels { get; }
 
 ---
 
+##### `EncryptionSpec`<sup>Required</sup> <a name="EncryptionSpec" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.encryptionSpec"></a>
+
+```csharp
+public PrivatecaCaPoolEncryptionSpecOutputReference EncryptionSpec { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference">PrivatecaCaPoolEncryptionSpecOutputReference</a>
+
+---
+
 ##### `IssuancePolicy`<sup>Required</sup> <a name="IssuancePolicy" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.issuancePolicy"></a>
 
 ```csharp
@@ -812,6 +844,16 @@ public PrivatecaCaPoolTimeoutsOutputReference Timeouts { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolTimeoutsOutputReference">PrivatecaCaPoolTimeoutsOutputReference</a>
+
+---
+
+##### `EncryptionSpecInput`<sup>Optional</sup> <a name="EncryptionSpecInput" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPool.property.encryptionSpecInput"></a>
+
+```csharp
+public PrivatecaCaPoolEncryptionSpec EncryptionSpecInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpec">PrivatecaCaPoolEncryptionSpec</a>
 
 ---
 
@@ -1003,6 +1045,7 @@ new PrivatecaCaPoolConfig {
     string Location,
     string Name,
     string Tier,
+    PrivatecaCaPoolEncryptionSpec EncryptionSpec = null,
     string Id = null,
     PrivatecaCaPoolIssuancePolicy IssuancePolicy = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
@@ -1026,10 +1069,11 @@ new PrivatecaCaPoolConfig {
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.location">Location</a></code> | <code>string</code> | Location of the CaPool. A full list of valid locations can be found by running 'gcloud privateca locations list'. |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.name">Name</a></code> | <code>string</code> | The name for this CaPool. |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.tier">Tier</a></code> | <code>string</code> | The Tier of this CaPool. Possible values: ["ENTERPRISE", "DEVOPS"]. |
-| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#id PrivatecaCaPool#id}. |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.encryptionSpec">EncryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpec">PrivatecaCaPoolEncryptionSpec</a></code> | encryption_spec block. |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#id PrivatecaCaPool#id}. |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.issuancePolicy">IssuancePolicy</a></code> | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicy">PrivatecaCaPoolIssuancePolicy</a></code> | issuance_policy block. |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Labels with user-defined metadata. |
-| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#project PrivatecaCaPool#project}. |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#project PrivatecaCaPool#project}. |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.publishingOptions">PublishingOptions</a></code> | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolPublishingOptions">PrivatecaCaPoolPublishingOptions</a></code> | publishing_options block. |
 | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolTimeouts">PrivatecaCaPoolTimeouts</a></code> | timeouts block. |
 
@@ -1115,7 +1159,7 @@ public string Location { get; set; }
 
 Location of the CaPool. A full list of valid locations can be found by running 'gcloud privateca locations list'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#location PrivatecaCaPool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#location PrivatecaCaPool#location}
 
 ---
 
@@ -1129,7 +1173,7 @@ public string Name { get; set; }
 
 The name for this CaPool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#name PrivatecaCaPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#name PrivatecaCaPool#name}
 
 ---
 
@@ -1143,7 +1187,21 @@ public string Tier { get; set; }
 
 The Tier of this CaPool. Possible values: ["ENTERPRISE", "DEVOPS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#tier PrivatecaCaPool#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#tier PrivatecaCaPool#tier}
+
+---
+
+##### `EncryptionSpec`<sup>Optional</sup> <a name="EncryptionSpec" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolConfig.property.encryptionSpec"></a>
+
+```csharp
+public PrivatecaCaPoolEncryptionSpec EncryptionSpec { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpec">PrivatecaCaPoolEncryptionSpec</a>
+
+encryption_spec block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#encryption_spec PrivatecaCaPool#encryption_spec}
 
 ---
 
@@ -1155,7 +1213,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#id PrivatecaCaPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#id PrivatecaCaPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1172,7 +1230,7 @@ public PrivatecaCaPoolIssuancePolicy IssuancePolicy { get; set; }
 
 issuance_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#issuance_policy PrivatecaCaPool#issuance_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#issuance_policy PrivatecaCaPool#issuance_policy}
 
 ---
 
@@ -1192,7 +1250,7 @@ An object containing a list of "key": value pairs. Example: { "name": "wrench", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#labels PrivatecaCaPool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#labels PrivatecaCaPool#labels}
 
 ---
 
@@ -1204,7 +1262,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#project PrivatecaCaPool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#project PrivatecaCaPool#project}.
 
 ---
 
@@ -1218,7 +1276,7 @@ public PrivatecaCaPoolPublishingOptions PublishingOptions { get; set; }
 
 publishing_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#publishing_options PrivatecaCaPool#publishing_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#publishing_options PrivatecaCaPool#publishing_options}
 
 ---
 
@@ -1232,7 +1290,43 @@ public PrivatecaCaPoolTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#timeouts PrivatecaCaPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#timeouts PrivatecaCaPool#timeouts}
+
+---
+
+### PrivatecaCaPoolEncryptionSpec <a name="PrivatecaCaPoolEncryptionSpec" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpec"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpec.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new PrivatecaCaPoolEncryptionSpec {
+    string CloudKmsKey = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpec.property.cloudKmsKey">CloudKmsKey</a></code> | <code>string</code> | The resource name for an existing Cloud KMS key in the format 'projects/* /locations/* /keyRings/* /cryptoKeys/*'. |
+
+---
+
+##### `CloudKmsKey`<sup>Optional</sup> <a name="CloudKmsKey" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpec.property.cloudKmsKey"></a>
+
+```csharp
+public string CloudKmsKey { get; set; }
+```
+
+- *Type:* string
+
+The resource name for an existing Cloud KMS key in the format 'projects/* /locations/* /keyRings/* /cryptoKeys/*'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#cloud_kms_key PrivatecaCaPool#cloud_kms_key}
+
+Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
 ---
 
@@ -1276,7 +1370,7 @@ public PrivatecaCaPoolIssuancePolicyAllowedIssuanceModes AllowedIssuanceModes { 
 
 allowed_issuance_modes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#allowed_issuance_modes PrivatecaCaPool#allowed_issuance_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#allowed_issuance_modes PrivatecaCaPool#allowed_issuance_modes}
 
 ---
 
@@ -1290,7 +1384,7 @@ public IResolvable|PrivatecaCaPoolIssuancePolicyAllowedKeyTypes[] AllowedKeyType
 
 allowed_key_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#allowed_key_types PrivatecaCaPool#allowed_key_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#allowed_key_types PrivatecaCaPool#allowed_key_types}
 
 ---
 
@@ -1310,7 +1404,7 @@ time). If set, the certificates will be issued with a not_before_time of the iss
 time minus the backdate_duration. The not_after_time will be adjusted to preserve the
 requested lifetime. The backdate_duration must be less than or equal to 48 hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#backdate_duration PrivatecaCaPool#backdate_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#backdate_duration PrivatecaCaPool#backdate_duration}
 
 ---
 
@@ -1324,7 +1418,7 @@ public PrivatecaCaPoolIssuancePolicyBaselineValues BaselineValues { get; set; }
 
 baseline_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#baseline_values PrivatecaCaPool#baseline_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#baseline_values PrivatecaCaPool#baseline_values}
 
 ---
 
@@ -1338,7 +1432,7 @@ public PrivatecaCaPoolIssuancePolicyIdentityConstraints IdentityConstraints { ge
 
 identity_constraints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#identity_constraints PrivatecaCaPool#identity_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#identity_constraints PrivatecaCaPool#identity_constraints}
 
 ---
 
@@ -1355,7 +1449,7 @@ The maximum lifetime allowed for issued Certificates.
 Note that if the issuing CertificateAuthority
 expires before a Certificate's requested maximumLifetime, the effective lifetime will be explicitly truncated to match it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#maximum_lifetime PrivatecaCaPool#maximum_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#maximum_lifetime PrivatecaCaPool#maximum_lifetime}
 
 ---
 
@@ -1391,7 +1485,7 @@ public bool|IResolvable AllowConfigBasedIssuance { get; set; }
 
 When true, allows callers to create Certificates by specifying a CertificateConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#allow_config_based_issuance PrivatecaCaPool#allow_config_based_issuance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#allow_config_based_issuance PrivatecaCaPool#allow_config_based_issuance}
 
 ---
 
@@ -1405,7 +1499,7 @@ public bool|IResolvable AllowCsrBasedIssuance { get; set; }
 
 When true, allows callers to create Certificates by specifying a CSR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#allow_csr_based_issuance PrivatecaCaPool#allow_csr_based_issuance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#allow_csr_based_issuance PrivatecaCaPool#allow_csr_based_issuance}
 
 ---
 
@@ -1441,7 +1535,7 @@ public PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve EllipticCurve {
 
 elliptic_curve block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#elliptic_curve PrivatecaCaPool#elliptic_curve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#elliptic_curve PrivatecaCaPool#elliptic_curve}
 
 ---
 
@@ -1455,7 +1549,7 @@ public PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa Rsa { get; set; }
 
 rsa block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#rsa PrivatecaCaPool#rsa}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#rsa PrivatecaCaPool#rsa}
 
 ---
 
@@ -1489,7 +1583,7 @@ public string SignatureAlgorithm { get; set; }
 
 The algorithm used. Possible values: ["ECDSA_P256", "ECDSA_P384", "EDDSA_25519"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#signature_algorithm PrivatecaCaPool#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#signature_algorithm PrivatecaCaPool#signature_algorithm}
 
 ---
 
@@ -1528,7 +1622,7 @@ The maximum allowed RSA modulus size, in bits.
 If this is not set, or if set to zero, the
 service will not enforce an explicit upper bound on RSA modulus sizes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#max_modulus_size PrivatecaCaPool#max_modulus_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#max_modulus_size PrivatecaCaPool#max_modulus_size}
 
 ---
 
@@ -1545,7 +1639,7 @@ The minimum allowed RSA modulus size, in bits.
 If this is not set, or if set to zero, the
 service-level min RSA modulus size will continue to apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#min_modulus_size PrivatecaCaPool#min_modulus_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#min_modulus_size PrivatecaCaPool#min_modulus_size}
 
 ---
 
@@ -1589,7 +1683,7 @@ public PrivatecaCaPoolIssuancePolicyBaselineValuesCaOptions CaOptions { get; set
 
 ca_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#ca_options PrivatecaCaPool#ca_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#ca_options PrivatecaCaPool#ca_options}
 
 ---
 
@@ -1603,7 +1697,7 @@ public PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsage KeyUsage { get; set; 
 
 key_usage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#key_usage PrivatecaCaPool#key_usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#key_usage PrivatecaCaPool#key_usage}
 
 ---
 
@@ -1617,7 +1711,7 @@ public IResolvable|PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensio
 
 additional_extensions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#additional_extensions PrivatecaCaPool#additional_extensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#additional_extensions PrivatecaCaPool#additional_extensions}
 
 ---
 
@@ -1631,7 +1725,7 @@ public string[] AiaOcspServers { get; set; }
 
 Describes Online Certificate Status Protocol (OCSP) endpoint addresses that appear in the "Authority Information Access" extension in the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#aia_ocsp_servers PrivatecaCaPool#aia_ocsp_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#aia_ocsp_servers PrivatecaCaPool#aia_ocsp_servers}
 
 ---
 
@@ -1645,7 +1739,7 @@ public PrivatecaCaPoolIssuancePolicyBaselineValuesNameConstraints NameConstraint
 
 name_constraints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#name_constraints PrivatecaCaPool#name_constraints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#name_constraints PrivatecaCaPool#name_constraints}
 
 ---
 
@@ -1659,7 +1753,7 @@ public IResolvable|PrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds[] Policy
 
 policy_ids block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#policy_ids PrivatecaCaPool#policy_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#policy_ids PrivatecaCaPool#policy_ids}
 
 ---
 
@@ -1697,7 +1791,7 @@ public bool|IResolvable Critical { get; set; }
 
 Indicates whether or not this extension is critical (i.e., if the client does not know how to handle this extension, the client should consider this to be an error).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#critical PrivatecaCaPool#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#critical PrivatecaCaPool#critical}
 
 ---
 
@@ -1711,7 +1805,7 @@ public PrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsObjectId O
 
 object_id block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#object_id PrivatecaCaPool#object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#object_id PrivatecaCaPool#object_id}
 
 ---
 
@@ -1725,7 +1819,7 @@ public string Value { get; set; }
 
 The value of this X.509 extension. A base64-encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#value PrivatecaCaPool#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#value PrivatecaCaPool#value}
 
 ---
 
@@ -1759,7 +1853,7 @@ public double[] ObjectIdPath { get; set; }
 
 An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#object_id_path PrivatecaCaPool#object_id_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#object_id_path PrivatecaCaPool#object_id_path}
 
 ---
 
@@ -1799,7 +1893,7 @@ public bool|IResolvable IsCa { get; set; }
 
 When true, the "CA" in Basic Constraints extension will be set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#is_ca PrivatecaCaPool#is_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#is_ca PrivatecaCaPool#is_ca}
 
 ---
 
@@ -1816,7 +1910,7 @@ Refers to the "path length constraint" in Basic Constraints extension.
 For a CA certificate, this value describes the depth of
 subordinate CA certificates that are allowed. If this value is less than 0, the request will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#max_issuer_path_length PrivatecaCaPool#max_issuer_path_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#max_issuer_path_length PrivatecaCaPool#max_issuer_path_length}
 
 ---
 
@@ -1832,7 +1926,7 @@ When true, the "CA" in Basic Constraints extension will be set to false.
 
 If both 'is_ca' and 'non_ca' are unset, the extension will be omitted from the CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#non_ca PrivatecaCaPool#non_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#non_ca PrivatecaCaPool#non_ca}
 
 ---
 
@@ -1849,7 +1943,7 @@ When true, the "path length constraint" in Basic Constraints extension will be s
 if both 'max_issuer_path_length' and 'zero_max_issuer_path_length' are unset,
 the max path length will be omitted from the CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#zero_max_issuer_path_length PrivatecaCaPool#zero_max_issuer_path_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#zero_max_issuer_path_length PrivatecaCaPool#zero_max_issuer_path_length}
 
 ---
 
@@ -1887,7 +1981,7 @@ public PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsage BaseKeyUs
 
 base_key_usage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#base_key_usage PrivatecaCaPool#base_key_usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#base_key_usage PrivatecaCaPool#base_key_usage}
 
 ---
 
@@ -1901,7 +1995,7 @@ public PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsage Exten
 
 extended_key_usage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#extended_key_usage PrivatecaCaPool#extended_key_usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#extended_key_usage PrivatecaCaPool#extended_key_usage}
 
 ---
 
@@ -1915,7 +2009,7 @@ public IResolvable|PrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExt
 
 unknown_extended_key_usages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#unknown_extended_key_usages PrivatecaCaPool#unknown_extended_key_usages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#unknown_extended_key_usages PrivatecaCaPool#unknown_extended_key_usages}
 
 ---
 
@@ -1965,7 +2059,7 @@ public bool|IResolvable CertSign { get; set; }
 
 The key may be used to sign certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#cert_sign PrivatecaCaPool#cert_sign}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#cert_sign PrivatecaCaPool#cert_sign}
 
 ---
 
@@ -1979,7 +2073,7 @@ public bool|IResolvable ContentCommitment { get; set; }
 
 The key may be used for cryptographic commitments. Note that this may also be referred to as "non-repudiation".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#content_commitment PrivatecaCaPool#content_commitment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#content_commitment PrivatecaCaPool#content_commitment}
 
 ---
 
@@ -1993,7 +2087,7 @@ public bool|IResolvable CrlSign { get; set; }
 
 The key may be used sign certificate revocation lists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#crl_sign PrivatecaCaPool#crl_sign}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#crl_sign PrivatecaCaPool#crl_sign}
 
 ---
 
@@ -2007,7 +2101,7 @@ public bool|IResolvable DataEncipherment { get; set; }
 
 The key may be used to encipher data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#data_encipherment PrivatecaCaPool#data_encipherment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#data_encipherment PrivatecaCaPool#data_encipherment}
 
 ---
 
@@ -2021,7 +2115,7 @@ public bool|IResolvable DecipherOnly { get; set; }
 
 The key may be used to decipher only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#decipher_only PrivatecaCaPool#decipher_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#decipher_only PrivatecaCaPool#decipher_only}
 
 ---
 
@@ -2035,7 +2129,7 @@ public bool|IResolvable DigitalSignature { get; set; }
 
 The key may be used for digital signatures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#digital_signature PrivatecaCaPool#digital_signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#digital_signature PrivatecaCaPool#digital_signature}
 
 ---
 
@@ -2049,7 +2143,7 @@ public bool|IResolvable EncipherOnly { get; set; }
 
 The key may be used to encipher only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#encipher_only PrivatecaCaPool#encipher_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#encipher_only PrivatecaCaPool#encipher_only}
 
 ---
 
@@ -2063,7 +2157,7 @@ public bool|IResolvable KeyAgreement { get; set; }
 
 The key may be used in a key agreement protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#key_agreement PrivatecaCaPool#key_agreement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#key_agreement PrivatecaCaPool#key_agreement}
 
 ---
 
@@ -2077,7 +2171,7 @@ public bool|IResolvable KeyEncipherment { get; set; }
 
 The key may be used to encipher other keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#key_encipherment PrivatecaCaPool#key_encipherment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#key_encipherment PrivatecaCaPool#key_encipherment}
 
 ---
 
@@ -2121,7 +2215,7 @@ public bool|IResolvable ClientAuth { get; set; }
 
 Corresponds to OID 1.3.6.1.5.5.7.3.2. Officially described as "TLS WWW client authentication", though regularly used for non-WWW TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#client_auth PrivatecaCaPool#client_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#client_auth PrivatecaCaPool#client_auth}
 
 ---
 
@@ -2135,7 +2229,7 @@ public bool|IResolvable CodeSigning { get; set; }
 
 Corresponds to OID 1.3.6.1.5.5.7.3.3. Officially described as "Signing of downloadable executable code client authentication".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#code_signing PrivatecaCaPool#code_signing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#code_signing PrivatecaCaPool#code_signing}
 
 ---
 
@@ -2149,7 +2243,7 @@ public bool|IResolvable EmailProtection { get; set; }
 
 Corresponds to OID 1.3.6.1.5.5.7.3.4. Officially described as "Email protection".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#email_protection PrivatecaCaPool#email_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#email_protection PrivatecaCaPool#email_protection}
 
 ---
 
@@ -2163,7 +2257,7 @@ public bool|IResolvable OcspSigning { get; set; }
 
 Corresponds to OID 1.3.6.1.5.5.7.3.9. Officially described as "Signing OCSP responses".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#ocsp_signing PrivatecaCaPool#ocsp_signing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#ocsp_signing PrivatecaCaPool#ocsp_signing}
 
 ---
 
@@ -2177,7 +2271,7 @@ public bool|IResolvable ServerAuth { get; set; }
 
 Corresponds to OID 1.3.6.1.5.5.7.3.1. Officially described as "TLS WWW server authentication", though regularly used for non-WWW TLS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#server_auth PrivatecaCaPool#server_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#server_auth PrivatecaCaPool#server_auth}
 
 ---
 
@@ -2191,7 +2285,7 @@ public bool|IResolvable TimeStamping { get; set; }
 
 Corresponds to OID 1.3.6.1.5.5.7.3.8. Officially described as "Binding the hash of an object to a time".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#time_stamping PrivatecaCaPool#time_stamping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#time_stamping PrivatecaCaPool#time_stamping}
 
 ---
 
@@ -2225,7 +2319,7 @@ public double[] ObjectIdPath { get; set; }
 
 An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#object_id_path PrivatecaCaPool#object_id_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#object_id_path PrivatecaCaPool#object_id_path}
 
 ---
 
@@ -2275,7 +2369,7 @@ public bool|IResolvable Critical { get; set; }
 
 Indicates whether or not the name constraints are marked critical.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#critical PrivatecaCaPool#critical}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#critical PrivatecaCaPool#critical}
 
 ---
 
@@ -2295,7 +2389,7 @@ the left-hand side of the name satisfies the name constraint.
 For example, 'example.com', 'www.example.com', 'www.sub.example.com'
 would satisfy 'example.com' while 'example1.com' does not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#excluded_dns_names PrivatecaCaPool#excluded_dns_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#excluded_dns_names PrivatecaCaPool#excluded_dns_names}
 
 ---
 
@@ -2314,7 +2408,7 @@ email address, a hostname to indicate all email addresses on that host or
 a domain with a leading period (e.g. '.example.com') to indicate
 all email addresses in that domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#excluded_email_addresses PrivatecaCaPool#excluded_email_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#excluded_email_addresses PrivatecaCaPool#excluded_email_addresses}
 
 ---
 
@@ -2333,7 +2427,7 @@ are expressed using CIDR notation as specified in RFC 4632.
 For IPv6 addresses, the ranges are expressed in similar encoding as IPv4
 addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#excluded_ip_ranges PrivatecaCaPool#excluded_ip_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#excluded_ip_ranges PrivatecaCaPool#excluded_ip_ranges}
 
 ---
 
@@ -2350,7 +2444,7 @@ Contains the excluded URIs that apply to the host part of the name.
 The value can be a hostname or a domain with a
 leading period (like '.example.com')
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#excluded_uris PrivatecaCaPool#excluded_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#excluded_uris PrivatecaCaPool#excluded_uris}
 
 ---
 
@@ -2370,7 +2464,7 @@ the left-hand side of the name satisfies the name constraint.
 For example, 'example.com', 'www.example.com', 'www.sub.example.com'
 would satisfy 'example.com' while 'example1.com' does not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#permitted_dns_names PrivatecaCaPool#permitted_dns_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#permitted_dns_names PrivatecaCaPool#permitted_dns_names}
 
 ---
 
@@ -2389,7 +2483,7 @@ email address, a hostname to indicate all email addresses on that host or
 a domain with a leading period (e.g. '.example.com') to indicate
 all email addresses in that domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#permitted_email_addresses PrivatecaCaPool#permitted_email_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#permitted_email_addresses PrivatecaCaPool#permitted_email_addresses}
 
 ---
 
@@ -2408,7 +2502,7 @@ are expressed using CIDR notation as specified in RFC 4632.
 For IPv6 addresses, the ranges are expressed in similar encoding as IPv4
 addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#permitted_ip_ranges PrivatecaCaPool#permitted_ip_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#permitted_ip_ranges PrivatecaCaPool#permitted_ip_ranges}
 
 ---
 
@@ -2425,7 +2519,7 @@ Contains the permitted URIs that apply to the host part of the name.
 The value can be a hostname or a domain with a
 leading period (like '.example.com')
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#permitted_uris PrivatecaCaPool#permitted_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#permitted_uris PrivatecaCaPool#permitted_uris}
 
 ---
 
@@ -2459,7 +2553,7 @@ public double[] ObjectIdPath { get; set; }
 
 An ObjectId specifies an object identifier (OID). These provide context and describe types in ASN.1 messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#object_id_path PrivatecaCaPool#object_id_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#object_id_path PrivatecaCaPool#object_id_path}
 
 ---
 
@@ -2499,7 +2593,7 @@ If this is set, the SubjectAltNames extension may be copied from a certificate r
 
 Otherwise, the requested SubjectAltNames will be discarded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#allow_subject_alt_names_passthrough PrivatecaCaPool#allow_subject_alt_names_passthrough}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#allow_subject_alt_names_passthrough PrivatecaCaPool#allow_subject_alt_names_passthrough}
 
 ---
 
@@ -2515,7 +2609,7 @@ If this is set, the Subject field may be copied from a certificate request into 
 
 Otherwise, the requested Subject will be discarded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#allow_subject_passthrough PrivatecaCaPool#allow_subject_passthrough}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#allow_subject_passthrough PrivatecaCaPool#allow_subject_passthrough}
 
 ---
 
@@ -2529,7 +2623,7 @@ public PrivatecaCaPoolIssuancePolicyIdentityConstraintsCelExpression CelExpressi
 
 cel_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#cel_expression PrivatecaCaPool#cel_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#cel_expression PrivatecaCaPool#cel_expression}
 
 ---
 
@@ -2569,7 +2663,7 @@ public string Expression { get; set; }
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#expression PrivatecaCaPool#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#expression PrivatecaCaPool#expression}
 
 ---
 
@@ -2585,7 +2679,7 @@ Description of the expression.
 
 This is a longer text which describes the expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#description PrivatecaCaPool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#description PrivatecaCaPool#description}
 
 ---
 
@@ -2599,7 +2693,7 @@ public string Location { get; set; }
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#location PrivatecaCaPool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#location PrivatecaCaPool#location}
 
 ---
 
@@ -2613,7 +2707,7 @@ public string Title { get; set; }
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#title PrivatecaCaPool#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#title PrivatecaCaPool#title}
 
 ---
 
@@ -2651,7 +2745,7 @@ public bool|IResolvable PublishCaCert { get; set; }
 
 When true, publishes each CertificateAuthority's CA certificate and includes its URL in the "Authority Information Access" X.509 extension in all issued Certificates. If this is false, the CA certificate will not be published and the corresponding X.509 extension will not be written in issued certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#publish_ca_cert PrivatecaCaPool#publish_ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#publish_ca_cert PrivatecaCaPool#publish_ca_cert}
 
 ---
 
@@ -2665,7 +2759,7 @@ public bool|IResolvable PublishCrl { get; set; }
 
 When true, publishes each CertificateAuthority's CRL and includes its URL in the "CRL Distribution Points" X.509 extension in all issued Certificates. If this is false, CRLs will not be published and the corresponding X.509 extension will not be written in issued certificates. CRLs will expire 7 days from their creation. However, we will rebuild daily. CRLs are also rebuilt shortly after a certificate is revoked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#publish_crl PrivatecaCaPool#publish_crl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#publish_crl PrivatecaCaPool#publish_crl}
 
 ---
 
@@ -2682,7 +2776,7 @@ Specifies the encoding format of each CertificateAuthority's CA certificate and 
 If this is omitted, CA certificates and CRLs
 will be published in PEM. Possible values: ["PEM", "DER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#encoding_format PrivatecaCaPool#encoding_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#encoding_format PrivatecaCaPool#encoding_format}
 
 ---
 
@@ -2704,9 +2798,9 @@ new PrivatecaCaPoolTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#create PrivatecaCaPool#create}. |
-| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#delete PrivatecaCaPool#delete}. |
-| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#update PrivatecaCaPool#update}. |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#create PrivatecaCaPool#create}. |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#delete PrivatecaCaPool#delete}. |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#update PrivatecaCaPool#update}. |
 
 ---
 
@@ -2718,7 +2812,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#create PrivatecaCaPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#create PrivatecaCaPool#create}.
 
 ---
 
@@ -2730,7 +2824,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#delete PrivatecaCaPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#delete PrivatecaCaPool#delete}.
 
 ---
 
@@ -2742,11 +2836,289 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/privateca_ca_pool#update PrivatecaCaPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/privateca_ca_pool#update PrivatecaCaPool#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### PrivatecaCaPoolEncryptionSpecOutputReference <a name="PrivatecaCaPoolEncryptionSpecOutputReference" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new PrivatecaCaPoolEncryptionSpecOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.resetCloudKmsKey">ResetCloudKmsKey</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCloudKmsKey` <a name="ResetCloudKmsKey" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.resetCloudKmsKey"></a>
+
+```csharp
+private void ResetCloudKmsKey()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.property.cloudKmsKeyInput">CloudKmsKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.property.cloudKmsKey">CloudKmsKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpec">PrivatecaCaPoolEncryptionSpec</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CloudKmsKeyInput`<sup>Optional</sup> <a name="CloudKmsKeyInput" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.property.cloudKmsKeyInput"></a>
+
+```csharp
+public string CloudKmsKeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CloudKmsKey`<sup>Required</sup> <a name="CloudKmsKey" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.property.cloudKmsKey"></a>
+
+```csharp
+public string CloudKmsKey { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpecOutputReference.property.internalValue"></a>
+
+```csharp
+public PrivatecaCaPoolEncryptionSpec InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolEncryptionSpec">PrivatecaCaPoolEncryptionSpec</a>
+
+---
+
 
 ### PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference <a name="PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference" id="@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference"></a>
 

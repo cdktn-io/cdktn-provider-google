@@ -4,7 +4,7 @@
 
 ### HealthcareFhirStore <a name="HealthcareFhirStore" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store google_healthcare_fhir_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer"></a>
 
@@ -34,6 +34,7 @@ HealthcareFhirStore.Builder.create(Construct scope, java.lang.String id)
 //  .notificationConfigs(IResolvable|java.util.List<HealthcareFhirStoreNotificationConfigs>)
 //  .streamConfigs(IResolvable|java.util.List<HealthcareFhirStoreStreamConfigs>)
 //  .timeouts(HealthcareFhirStoreTimeouts)
+//  .validationConfig(HealthcareFhirStoreValidationConfig)
     .build();
 ```
 
@@ -57,12 +58,13 @@ HealthcareFhirStore.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.disableResourceVersioning">disableResourceVersioning</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to disable resource versioning for this FHIR store. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.enableHistoryImport">enableHistoryImport</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to allow the bulk import API to accept history bundles and directly insert historical resource versions into the FHIR store. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.enableUpdateCreate">enableUpdateCreate</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether this FHIR store has the updateCreate capability. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User-supplied key-value pairs used to organize FHIR stores. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.notificationConfig">notificationConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfig">HealthcareFhirStoreNotificationConfig</a></code> | notification_config block. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.notificationConfigs">notificationConfigs</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>></code> | notification_configs block. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.streamConfigs">streamConfigs</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>></code> | stream_configs block. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.validationConfig">validationConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig">HealthcareFhirStoreValidationConfig</a></code> | validation_config block. |
 
 ---
 
@@ -132,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#dataset HealthcareFhirStore#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#dataset HealthcareFhirStore#dataset}
 
 ---
 
@@ -144,7 +146,7 @@ The resource name for the FhirStore.
 
 ** Changing this property may recreate the FHIR store (removing all data) **
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#name HealthcareFhirStore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#name HealthcareFhirStore#name}
 
 ---
 
@@ -154,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The FHIR specification version. Possible values: ["DSTU2", "STU3", "R4"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#version HealthcareFhirStore#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#version HealthcareFhirStore#version}
 
 ---
 
@@ -166,7 +168,7 @@ Enable parsing of references within complex FHIR data types such as Extensions.
 
 If this value is set to ENABLED, then features like referential integrity and Bundle reference rewriting apply to all references. If this flag has not been specified the behavior of the FHIR store will not change, references in complex data types will not be parsed. New stores will have this value set to ENABLED by default after a notification period. Warning: turning on this flag causes processing existing resources to fail if they contain references to non-existent resources. Possible values: ["COMPLEX_DATA_TYPE_REFERENCE_PARSING_UNSPECIFIED", "DISABLED", "ENABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#complex_data_type_reference_parsing HealthcareFhirStore#complex_data_type_reference_parsing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#complex_data_type_reference_parsing HealthcareFhirStore#complex_data_type_reference_parsing}
 
 ---
 
@@ -179,7 +181,7 @@ If true, overrides the default search behavior for this FHIR store to handling=s
 If false, uses the FHIR specification default handling=lenient which ignores unrecognized search parameters.
 The handling can always be changed from the default on an individual API call by setting the HTTP header Prefer: handling=strict or Prefer: handling=lenient.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#default_search_handling_strict HealthcareFhirStore#default_search_handling_strict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#default_search_handling_strict HealthcareFhirStore#default_search_handling_strict}
 
 ---
 
@@ -197,7 +199,7 @@ Patient.get$everything, will not return all the results if broken references exi
 
 ** Changing this property may recreate the FHIR store (removing all data) **
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#disable_referential_integrity HealthcareFhirStore#disable_referential_integrity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#disable_referential_integrity HealthcareFhirStore#disable_referential_integrity}
 
 ---
 
@@ -215,7 +217,7 @@ attempts to read the historical versions.
 
 ** Changing this property may recreate the FHIR store (removing all data) **
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#disable_resource_versioning HealthcareFhirStore#disable_resource_versioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#disable_resource_versioning HealthcareFhirStore#disable_resource_versioning}
 
 ---
 
@@ -233,7 +235,7 @@ will fail with an error.
 
 ** This property can be changed manually in the Google Cloud Healthcare admin console without recreating the FHIR store **
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#enable_history_import HealthcareFhirStore#enable_history_import}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#enable_history_import HealthcareFhirStore#enable_history_import}
 
 ---
 
@@ -250,7 +252,7 @@ logs with appropriate levels of care if client-specified resource IDs contain se
 identifiers, those IDs will be part of the FHIR resource path recorded in Cloud audit logs and Cloud Pub/Sub
 notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#enable_update_create HealthcareFhirStore#enable_update_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#enable_update_create HealthcareFhirStore#enable_update_create}
 
 ---
 
@@ -258,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -285,7 +287,7 @@ Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#labels HealthcareFhirStore#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#labels HealthcareFhirStore#labels}
 
 ---
 
@@ -295,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 notification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#notification_config HealthcareFhirStore#notification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#notification_config HealthcareFhirStore#notification_config}
 
 ---
 
@@ -305,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 notification_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#notification_configs HealthcareFhirStore#notification_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#notification_configs HealthcareFhirStore#notification_configs}
 
 ---
 
@@ -315,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 stream_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#stream_configs HealthcareFhirStore#stream_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#stream_configs HealthcareFhirStore#stream_configs}
 
 ---
 
@@ -325,7 +327,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#timeouts HealthcareFhirStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#timeouts HealthcareFhirStore#timeouts}
+
+---
+
+##### `validationConfig`<sup>Optional</sup> <a name="validationConfig" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.Initializer.parameter.validationConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig">HealthcareFhirStoreValidationConfig</a>
+
+validation_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#validation_config HealthcareFhirStore#validation_config}
 
 ---
 
@@ -361,6 +373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.putNotificationConfigs">putNotificationConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.putStreamConfigs">putStreamConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.putValidationConfig">putValidationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.resetComplexDataTypeReferenceParsing">resetComplexDataTypeReferenceParsing</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.resetDefaultSearchHandlingStrict">resetDefaultSearchHandlingStrict</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.resetDisableReferentialIntegrity">resetDisableReferentialIntegrity</a></code> | *No description.* |
@@ -373,6 +386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.resetNotificationConfigs">resetNotificationConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.resetStreamConfigs">resetStreamConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.resetValidationConfig">resetValidationConfig</a></code> | *No description.* |
 
 ---
 
@@ -735,6 +749,18 @@ public void putTimeouts(HealthcareFhirStoreTimeouts value)
 
 ---
 
+##### `putValidationConfig` <a name="putValidationConfig" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.putValidationConfig"></a>
+
+```java
+public void putValidationConfig(HealthcareFhirStoreValidationConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.putValidationConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig">HealthcareFhirStoreValidationConfig</a>
+
+---
+
 ##### `resetComplexDataTypeReferenceParsing` <a name="resetComplexDataTypeReferenceParsing" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.resetComplexDataTypeReferenceParsing"></a>
 
 ```java
@@ -805,6 +831,12 @@ public void resetStreamConfigs()
 
 ```java
 public void resetTimeouts()
+```
+
+##### `resetValidationConfig` <a name="resetValidationConfig" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.resetValidationConfig"></a>
+
+```java
+public void resetValidationConfig()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -910,7 +942,7 @@ The construct id used in the generated config for the HealthcareFhirStore to imp
 
 The id of the existing HealthcareFhirStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -947,6 +979,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.streamConfigs">streamConfigs</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigsList">HealthcareFhirStoreStreamConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.terraformLabels">terraformLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeoutsOutputReference">HealthcareFhirStoreTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.validationConfig">validationConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference">HealthcareFhirStoreValidationConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.complexDataTypeReferenceParsingInput">complexDataTypeReferenceParsingInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.datasetInput">datasetInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.defaultSearchHandlingStrictInput">defaultSearchHandlingStrictInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -961,6 +994,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.notificationConfigsInput">notificationConfigsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.streamConfigsInput">streamConfigsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.validationConfigInput">validationConfigInput</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig">HealthcareFhirStoreValidationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.versionInput">versionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.complexDataTypeReferenceParsing">complexDataTypeReferenceParsing</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.dataset">dataset</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1188,6 +1222,16 @@ public HealthcareFhirStoreTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `validationConfig`<sup>Required</sup> <a name="validationConfig" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.validationConfig"></a>
+
+```java
+public HealthcareFhirStoreValidationConfigOutputReference getValidationConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference">HealthcareFhirStoreValidationConfigOutputReference</a>
+
+---
+
 ##### `complexDataTypeReferenceParsingInput`<sup>Optional</sup> <a name="complexDataTypeReferenceParsingInput" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.complexDataTypeReferenceParsingInput"></a>
 
 ```java
@@ -1325,6 +1369,16 @@ public IResolvable|HealthcareFhirStoreTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a>
+
+---
+
+##### `validationConfigInput`<sup>Optional</sup> <a name="validationConfigInput" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStore.property.validationConfigInput"></a>
+
+```java
+public HealthcareFhirStoreValidationConfig getValidationConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig">HealthcareFhirStoreValidationConfig</a>
 
 ---
 
@@ -1498,6 +1552,7 @@ HealthcareFhirStoreConfig.builder()
 //  .notificationConfigs(IResolvable|java.util.List<HealthcareFhirStoreNotificationConfigs>)
 //  .streamConfigs(IResolvable|java.util.List<HealthcareFhirStoreStreamConfigs>)
 //  .timeouts(HealthcareFhirStoreTimeouts)
+//  .validationConfig(HealthcareFhirStoreValidationConfig)
     .build();
 ```
 
@@ -1521,12 +1576,13 @@ HealthcareFhirStoreConfig.builder()
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.disableResourceVersioning">disableResourceVersioning</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to disable resource versioning for this FHIR store. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.enableHistoryImport">enableHistoryImport</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to allow the bulk import API to accept history bundles and directly insert historical resource versions into the FHIR store. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.enableUpdateCreate">enableUpdateCreate</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether this FHIR store has the updateCreate capability. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User-supplied key-value pairs used to organize FHIR stores. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.notificationConfig">notificationConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfig">HealthcareFhirStoreNotificationConfig</a></code> | notification_config block. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.notificationConfigs">notificationConfigs</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreNotificationConfigs">HealthcareFhirStoreNotificationConfigs</a>></code> | notification_configs block. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.streamConfigs">streamConfigs</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreStreamConfigs">HealthcareFhirStoreStreamConfigs</a>></code> | stream_configs block. |
 | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.validationConfig">validationConfig</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig">HealthcareFhirStoreValidationConfig</a></code> | validation_config block. |
 
 ---
 
@@ -1610,7 +1666,7 @@ public java.lang.String getDataset();
 
 Identifies the dataset addressed by this request. Must be in the format 'projects/{project}/locations/{location}/datasets/{dataset}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#dataset HealthcareFhirStore#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#dataset HealthcareFhirStore#dataset}
 
 ---
 
@@ -1626,7 +1682,7 @@ The resource name for the FhirStore.
 
 ** Changing this property may recreate the FHIR store (removing all data) **
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#name HealthcareFhirStore#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#name HealthcareFhirStore#name}
 
 ---
 
@@ -1640,7 +1696,7 @@ public java.lang.String getVersion();
 
 The FHIR specification version. Possible values: ["DSTU2", "STU3", "R4"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#version HealthcareFhirStore#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#version HealthcareFhirStore#version}
 
 ---
 
@@ -1656,7 +1712,7 @@ Enable parsing of references within complex FHIR data types such as Extensions.
 
 If this value is set to ENABLED, then features like referential integrity and Bundle reference rewriting apply to all references. If this flag has not been specified the behavior of the FHIR store will not change, references in complex data types will not be parsed. New stores will have this value set to ENABLED by default after a notification period. Warning: turning on this flag causes processing existing resources to fail if they contain references to non-existent resources. Possible values: ["COMPLEX_DATA_TYPE_REFERENCE_PARSING_UNSPECIFIED", "DISABLED", "ENABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#complex_data_type_reference_parsing HealthcareFhirStore#complex_data_type_reference_parsing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#complex_data_type_reference_parsing HealthcareFhirStore#complex_data_type_reference_parsing}
 
 ---
 
@@ -1673,7 +1729,7 @@ If true, overrides the default search behavior for this FHIR store to handling=s
 If false, uses the FHIR specification default handling=lenient which ignores unrecognized search parameters.
 The handling can always be changed from the default on an individual API call by setting the HTTP header Prefer: handling=strict or Prefer: handling=lenient.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#default_search_handling_strict HealthcareFhirStore#default_search_handling_strict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#default_search_handling_strict HealthcareFhirStore#default_search_handling_strict}
 
 ---
 
@@ -1695,7 +1751,7 @@ Patient.get$everything, will not return all the results if broken references exi
 
 ** Changing this property may recreate the FHIR store (removing all data) **
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#disable_referential_integrity HealthcareFhirStore#disable_referential_integrity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#disable_referential_integrity HealthcareFhirStore#disable_referential_integrity}
 
 ---
 
@@ -1717,7 +1773,7 @@ attempts to read the historical versions.
 
 ** Changing this property may recreate the FHIR store (removing all data) **
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#disable_resource_versioning HealthcareFhirStore#disable_resource_versioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#disable_resource_versioning HealthcareFhirStore#disable_resource_versioning}
 
 ---
 
@@ -1739,7 +1795,7 @@ will fail with an error.
 
 ** This property can be changed manually in the Google Cloud Healthcare admin console without recreating the FHIR store **
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#enable_history_import HealthcareFhirStore#enable_history_import}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#enable_history_import HealthcareFhirStore#enable_history_import}
 
 ---
 
@@ -1760,7 +1816,7 @@ logs with appropriate levels of care if client-specified resource IDs contain se
 identifiers, those IDs will be part of the FHIR resource path recorded in Cloud audit logs and Cloud Pub/Sub
 notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#enable_update_create HealthcareFhirStore#enable_update_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#enable_update_create HealthcareFhirStore#enable_update_create}
 
 ---
 
@@ -1772,7 +1828,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#id HealthcareFhirStore#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1803,7 +1859,7 @@ Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#labels HealthcareFhirStore#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#labels HealthcareFhirStore#labels}
 
 ---
 
@@ -1817,7 +1873,7 @@ public HealthcareFhirStoreNotificationConfig getNotificationConfig();
 
 notification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#notification_config HealthcareFhirStore#notification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#notification_config HealthcareFhirStore#notification_config}
 
 ---
 
@@ -1831,7 +1887,7 @@ public IResolvable|java.util.List<HealthcareFhirStoreNotificationConfigs> getNot
 
 notification_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#notification_configs HealthcareFhirStore#notification_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#notification_configs HealthcareFhirStore#notification_configs}
 
 ---
 
@@ -1845,7 +1901,7 @@ public IResolvable|java.util.List<HealthcareFhirStoreStreamConfigs> getStreamCon
 
 stream_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#stream_configs HealthcareFhirStore#stream_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#stream_configs HealthcareFhirStore#stream_configs}
 
 ---
 
@@ -1859,7 +1915,21 @@ public HealthcareFhirStoreTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#timeouts HealthcareFhirStore#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#timeouts HealthcareFhirStore#timeouts}
+
+---
+
+##### `validationConfig`<sup>Optional</sup> <a name="validationConfig" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreConfig.property.validationConfig"></a>
+
+```java
+public HealthcareFhirStoreValidationConfig getValidationConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig">HealthcareFhirStoreValidationConfig</a>
+
+validation_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#validation_config HealthcareFhirStore#validation_config}
 
 ---
 
@@ -1900,7 +1970,7 @@ was published. Notifications are only sent if the topic is non-empty. Topic name
 project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
 Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#pubsub_topic HealthcareFhirStore#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#pubsub_topic HealthcareFhirStore#pubsub_topic}
 
 ---
 
@@ -1945,7 +2015,7 @@ was published. Notifications are only sent if the topic is non-empty. Topic name
 project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
 Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#pubsub_topic HealthcareFhirStore#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#pubsub_topic HealthcareFhirStore#pubsub_topic}
 
 ---
 
@@ -1964,7 +2034,7 @@ full FHIR resource. When a resource change is too large or during heavy traffic,
 sent. Clients should always check the "payloadType" label from a Pub/Sub message to determine whether
 it needs to fetch the full resource as a separate operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#send_full_resource HealthcareFhirStore#send_full_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#send_full_resource HealthcareFhirStore#send_full_resource}
 
 ---
 
@@ -1984,7 +2054,7 @@ resource change is too large or during heavy traffic, only the resource name wil
 check the "payloadType" label from a Pub/Sub message to determine whether it needs to fetch the full previous
 resource as a separate operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#send_previous_resource_on_delete HealthcareFhirStore#send_previous_resource_on_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#send_previous_resource_on_delete HealthcareFhirStore#send_previous_resource_on_delete}
 
 ---
 
@@ -2020,7 +2090,7 @@ public HealthcareFhirStoreStreamConfigsBigqueryDestination getBigqueryDestinatio
 
 bigquery_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#bigquery_destination HealthcareFhirStore#bigquery_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#bigquery_destination HealthcareFhirStore#bigquery_destination}
 
 ---
 
@@ -2038,7 +2108,7 @@ See
 https://www.hl7.org/fhir/valueset-resource-types.html for a list of all FHIR resource types. The server treats
 an empty list as an intent to stream all the supported resource types in this FHIR store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#resource_types HealthcareFhirStore#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#resource_types HealthcareFhirStore#resource_types}
 
 ---
 
@@ -2074,7 +2144,7 @@ public java.lang.String getDatasetUri();
 
 BigQuery URI to a dataset, up to 2000 characters long, in the format bq://projectId.bqDatasetId.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#dataset_uri HealthcareFhirStore#dataset_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#dataset_uri HealthcareFhirStore#dataset_uri}
 
 ---
 
@@ -2088,7 +2158,7 @@ public HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig getSchema
 
 schema_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#schema_config HealthcareFhirStore#schema_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#schema_config HealthcareFhirStore#schema_config}
 
 ---
 
@@ -2131,7 +2201,7 @@ resource is a recursive structure; when the depth is 2, the CodeSystem table wil
 concept.concept but not concept.concept.concept. If not specified or set to 0, the server will use the default
 value 2. The maximum depth allowed is 5.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#recursive_structure_depth HealthcareFhirStore#recursive_structure_depth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#recursive_structure_depth HealthcareFhirStore#recursive_structure_depth}
 
 ---
 
@@ -2145,7 +2215,7 @@ public HealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfigLastUpdate
 
 last_updated_partition_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#last_updated_partition_config HealthcareFhirStore#last_updated_partition_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#last_updated_partition_config HealthcareFhirStore#last_updated_partition_config}
 
 ---
 
@@ -2164,7 +2234,7 @@ Specifies the output schema type.
 * ANALYTICS_V2: Analytics V2, similar to schema defined by the FHIR community, with added support for extensions with one or more occurrences and contained resources in stringified JSON.
 * LOSSLESS: A data-driven schema generated from the fields present in the FHIR data being exported, with no additional simplification. Default value: "ANALYTICS" Possible values: ["ANALYTICS", "ANALYTICS_V2", "LOSSLESS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#schema_type HealthcareFhirStore#schema_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#schema_type HealthcareFhirStore#schema_type}
 
 ---
 
@@ -2200,7 +2270,7 @@ public java.lang.String getType();
 
 Type of partitioning. Possible values: ["PARTITION_TYPE_UNSPECIFIED", "HOUR", "DAY", "MONTH", "YEAR"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#type HealthcareFhirStore#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#type HealthcareFhirStore#type}
 
 ---
 
@@ -2214,7 +2284,7 @@ public java.lang.String getExpirationMs();
 
 Number of milliseconds for which to keep the storage for a partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#expiration_ms HealthcareFhirStore#expiration_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#expiration_ms HealthcareFhirStore#expiration_ms}
 
 ---
 
@@ -2236,9 +2306,9 @@ HealthcareFhirStoreTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#create HealthcareFhirStore#create}. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#delete HealthcareFhirStore#delete}. |
-| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#update HealthcareFhirStore#update}. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#create HealthcareFhirStore#create}. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#delete HealthcareFhirStore#delete}. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#update HealthcareFhirStore#update}. |
 
 ---
 
@@ -2250,7 +2320,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#create HealthcareFhirStore#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#create HealthcareFhirStore#create}.
 
 ---
 
@@ -2262,7 +2332,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#delete HealthcareFhirStore#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#delete HealthcareFhirStore#delete}.
 
 ---
 
@@ -2274,7 +2344,125 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/healthcare_fhir_store#update HealthcareFhirStore#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#update HealthcareFhirStore#update}.
+
+---
+
+### HealthcareFhirStoreValidationConfig <a name="HealthcareFhirStoreValidationConfig" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.healthcare_fhir_store.HealthcareFhirStoreValidationConfig;
+
+HealthcareFhirStoreValidationConfig.builder()
+//  .disableFhirpathValidation(java.lang.Boolean|IResolvable)
+//  .disableProfileValidation(java.lang.Boolean|IResolvable)
+//  .disableReferenceTypeValidation(java.lang.Boolean|IResolvable)
+//  .disableRequiredFieldValidation(java.lang.Boolean|IResolvable)
+//  .enabledImplementationGuides(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig.property.disableFhirpathValidation">disableFhirpathValidation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to disable FHIRPath validation for incoming resources. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig.property.disableProfileValidation">disableProfileValidation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to disable profile validation for this FHIR store. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig.property.disableReferenceTypeValidation">disableReferenceTypeValidation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to disable reference type validation for incoming resources. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig.property.disableRequiredFieldValidation">disableRequiredFieldValidation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to disable required fields validation for incoming resources. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig.property.enabledImplementationGuides">enabledImplementationGuides</a></code> | <code>java.util.List<java.lang.String></code> | A list of implementation guide URLs in this FHIR store that are used to configure the profiles to use for validation. |
+
+---
+
+##### `disableFhirpathValidation`<sup>Optional</sup> <a name="disableFhirpathValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig.property.disableFhirpathValidation"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableFhirpathValidation();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether to disable FHIRPath validation for incoming resources.
+
+The default value is false. Set this to true to disable checking incoming resources for conformance against FHIRPath requirement defined in the FHIR specification. This property only affects resource types that do not have profiles configured for them, any rules in enabled implementation guides will still be enforced.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#disable_fhirpath_validation HealthcareFhirStore#disable_fhirpath_validation}
+
+---
+
+##### `disableProfileValidation`<sup>Optional</sup> <a name="disableProfileValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig.property.disableProfileValidation"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableProfileValidation();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether to disable profile validation for this FHIR store.
+
+The default value is false. Set this to true to disable checking incoming resources for conformance against structure definitions in this FHIR store.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#disable_profile_validation HealthcareFhirStore#disable_profile_validation}
+
+---
+
+##### `disableReferenceTypeValidation`<sup>Optional</sup> <a name="disableReferenceTypeValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig.property.disableReferenceTypeValidation"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableReferenceTypeValidation();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether to disable reference type validation for incoming resources.
+
+The default value is false. Set this to true to disable checking incoming resources for conformance against reference type requirement defined in the FHIR specification. This property only affects resource types that do not have profiles configured for them, any rules in enabled implementation guides will still be enforced.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#disable_reference_type_validation HealthcareFhirStore#disable_reference_type_validation}
+
+---
+
+##### `disableRequiredFieldValidation`<sup>Optional</sup> <a name="disableRequiredFieldValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig.property.disableRequiredFieldValidation"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableRequiredFieldValidation();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether to disable required fields validation for incoming resources.
+
+The default value is false. Set this to true to disable checking incoming resources for conformance against required fields requirement defined in the FHIR specification. This property only affects resource types that do not have profiles configured for them, any rules in enabled implementation guides will still be enforced.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#disable_required_field_validation HealthcareFhirStore#disable_required_field_validation}
+
+---
+
+##### `enabledImplementationGuides`<sup>Optional</sup> <a name="enabledImplementationGuides" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig.property.enabledImplementationGuides"></a>
+
+```java
+public java.util.List<java.lang.String> getEnabledImplementationGuides();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+A list of implementation guide URLs in this FHIR store that are used to configure the profiles to use for validation.
+
+When a URL cannot be resolved (for example, in a type assertion), the server does not return an error.
+For example, to use the US Core profiles for validation, set enabledImplementationGuides to ["http://hl7.org/fhir/us/core/ImplementationGuide/ig"]. If enabledImplementationGuides is empty or omitted, then incoming resources are only required to conform to the base FHIR profiles. Otherwise, a resource must conform to at least one profile listed in the global property of one of the enabled ImplementationGuides.
+The Cloud Healthcare API does not currently enforce all of the rules in a StructureDefinition. The following rules are supported:
+
+* min/max
+* minValue/maxValue
+* maxLength
+* type
+* fixed[x]
+* pattern[x] on simple types
+* slicing, when using "value" as the discriminator type
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/healthcare_fhir_store#enabled_implementation_guides HealthcareFhirStore#enabled_implementation_guides}
 
 ---
 
@@ -4829,6 +5017,400 @@ public IResolvable|HealthcareFhirStoreTimeouts getInternalValue();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreTimeouts">HealthcareFhirStoreTimeouts</a>
+
+---
+
+
+### HealthcareFhirStoreValidationConfigOutputReference <a name="HealthcareFhirStoreValidationConfigOutputReference" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.healthcare_fhir_store.HealthcareFhirStoreValidationConfigOutputReference;
+
+new HealthcareFhirStoreValidationConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resetDisableFhirpathValidation">resetDisableFhirpathValidation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resetDisableProfileValidation">resetDisableProfileValidation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resetDisableReferenceTypeValidation">resetDisableReferenceTypeValidation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resetDisableRequiredFieldValidation">resetDisableRequiredFieldValidation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resetEnabledImplementationGuides">resetEnabledImplementationGuides</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetDisableFhirpathValidation` <a name="resetDisableFhirpathValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resetDisableFhirpathValidation"></a>
+
+```java
+public void resetDisableFhirpathValidation()
+```
+
+##### `resetDisableProfileValidation` <a name="resetDisableProfileValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resetDisableProfileValidation"></a>
+
+```java
+public void resetDisableProfileValidation()
+```
+
+##### `resetDisableReferenceTypeValidation` <a name="resetDisableReferenceTypeValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resetDisableReferenceTypeValidation"></a>
+
+```java
+public void resetDisableReferenceTypeValidation()
+```
+
+##### `resetDisableRequiredFieldValidation` <a name="resetDisableRequiredFieldValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resetDisableRequiredFieldValidation"></a>
+
+```java
+public void resetDisableRequiredFieldValidation()
+```
+
+##### `resetEnabledImplementationGuides` <a name="resetEnabledImplementationGuides" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.resetEnabledImplementationGuides"></a>
+
+```java
+public void resetEnabledImplementationGuides()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableFhirpathValidationInput">disableFhirpathValidationInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableProfileValidationInput">disableProfileValidationInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableReferenceTypeValidationInput">disableReferenceTypeValidationInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableRequiredFieldValidationInput">disableRequiredFieldValidationInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.enabledImplementationGuidesInput">enabledImplementationGuidesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableFhirpathValidation">disableFhirpathValidation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableProfileValidation">disableProfileValidation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableReferenceTypeValidation">disableReferenceTypeValidation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableRequiredFieldValidation">disableRequiredFieldValidation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.enabledImplementationGuides">enabledImplementationGuides</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig">HealthcareFhirStoreValidationConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `disableFhirpathValidationInput`<sup>Optional</sup> <a name="disableFhirpathValidationInput" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableFhirpathValidationInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableFhirpathValidationInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `disableProfileValidationInput`<sup>Optional</sup> <a name="disableProfileValidationInput" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableProfileValidationInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableProfileValidationInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `disableReferenceTypeValidationInput`<sup>Optional</sup> <a name="disableReferenceTypeValidationInput" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableReferenceTypeValidationInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableReferenceTypeValidationInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `disableRequiredFieldValidationInput`<sup>Optional</sup> <a name="disableRequiredFieldValidationInput" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableRequiredFieldValidationInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableRequiredFieldValidationInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `enabledImplementationGuidesInput`<sup>Optional</sup> <a name="enabledImplementationGuidesInput" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.enabledImplementationGuidesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getEnabledImplementationGuidesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `disableFhirpathValidation`<sup>Required</sup> <a name="disableFhirpathValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableFhirpathValidation"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableFhirpathValidation();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `disableProfileValidation`<sup>Required</sup> <a name="disableProfileValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableProfileValidation"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableProfileValidation();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `disableReferenceTypeValidation`<sup>Required</sup> <a name="disableReferenceTypeValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableReferenceTypeValidation"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableReferenceTypeValidation();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `disableRequiredFieldValidation`<sup>Required</sup> <a name="disableRequiredFieldValidation" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.disableRequiredFieldValidation"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDisableRequiredFieldValidation();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `enabledImplementationGuides`<sup>Required</sup> <a name="enabledImplementationGuides" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.enabledImplementationGuides"></a>
+
+```java
+public java.util.List<java.lang.String> getEnabledImplementationGuides();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfigOutputReference.property.internalValue"></a>
+
+```java
+public HealthcareFhirStoreValidationConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.healthcareFhirStore.HealthcareFhirStoreValidationConfig">HealthcareFhirStoreValidationConfig</a>
 
 ---
 

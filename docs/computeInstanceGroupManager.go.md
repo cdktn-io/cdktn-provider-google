@@ -4,12 +4,12 @@
 
 ### ComputeInstanceGroupManager <a name="ComputeInstanceGroupManager" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager google_compute_instance_group_manager}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManager(scope Construct, id *string, config ComputeInstanceGroupManagerConfig) ComputeInstanceGroupManager
 ```
@@ -83,6 +83,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putStatefulDisk">PutStatefulDisk</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putStatefulExternalIp">PutStatefulExternalIp</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putStatefulInternalIp">PutStatefulInternalIp</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putTargetSizePolicy">PutTargetSizePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putUpdatePolicy">PutUpdatePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putVersion">PutVersion</a></code> | *No description.* |
@@ -101,6 +102,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.resetStatefulInternalIp">ResetStatefulInternalIp</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.resetTargetPools">ResetTargetPools</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.resetTargetSize">ResetTargetSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.resetTargetSizePolicy">ResetTargetSizePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.resetTargetStoppedSize">ResetTargetStoppedSize</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.resetTargetSuspendedSize">ResetTargetSuspendedSize</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -528,6 +530,18 @@ func PutStatefulInternalIp(value interface{})
 
 ---
 
+##### `PutTargetSizePolicy` <a name="PutTargetSizePolicy" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putTargetSizePolicy"></a>
+
+```go
+func PutTargetSizePolicy(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putTargetSizePolicy.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.putTimeouts"></a>
 
 ```go
@@ -654,6 +668,12 @@ func ResetTargetPools()
 func ResetTargetSize()
 ```
 
+##### `ResetTargetSizePolicy` <a name="ResetTargetSizePolicy" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.resetTargetSizePolicy"></a>
+
+```go
+func ResetTargetSizePolicy()
+```
+
 ##### `ResetTargetStoppedSize` <a name="ResetTargetStoppedSize" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.resetTargetStoppedSize"></a>
 
 ```go
@@ -710,7 +730,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.ComputeInstanceGroupManager_IsConstruct(x interface{}) *bool
 ```
@@ -742,7 +762,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.ComputeInstanceGroupManager_IsTerraformElement(x interface{}) *bool
 ```
@@ -756,7 +776,7 @@ computeinstancegroupmanager.ComputeInstanceGroupManager_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.ComputeInstanceGroupManager_IsTerraformResource(x interface{}) *bool
 ```
@@ -770,7 +790,7 @@ computeinstancegroupmanager.ComputeInstanceGroupManager_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.ComputeInstanceGroupManager_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +819,7 @@ The construct id used in the generated config for the ComputeInstanceGroupManage
 
 The id of the existing ComputeInstanceGroupManager that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -845,6 +865,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.statefulExternalIp">StatefulExternalIp</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList">ComputeInstanceGroupManagerStatefulExternalIpList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.statefulInternalIp">StatefulInternalIp</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList">ComputeInstanceGroupManagerStatefulInternalIpList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.status">Status</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusList">ComputeInstanceGroupManagerStatusList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetSizePolicy">TargetSizePolicy</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList">ComputeInstanceGroupManagerTargetSizePolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference">ComputeInstanceGroupManagerTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.updatePolicy">UpdatePolicy</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference">ComputeInstanceGroupManagerUpdatePolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.version">Version</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList">ComputeInstanceGroupManagerVersionList</a></code> | *No description.* |
@@ -865,6 +886,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.statefulInternalIpInput">StatefulInternalIpInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetPoolsInput">TargetPoolsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetSizeInput">TargetSizeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetSizePolicyInput">TargetSizePolicyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetStoppedSizeInput">TargetStoppedSizeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetSuspendedSizeInput">TargetSuspendedSizeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -1191,6 +1213,16 @@ func Status() ComputeInstanceGroupManagerStatusList
 
 ---
 
+##### `TargetSizePolicy`<sup>Required</sup> <a name="TargetSizePolicy" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetSizePolicy"></a>
+
+```go
+func TargetSizePolicy() ComputeInstanceGroupManagerTargetSizePolicyList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList">ComputeInstanceGroupManagerTargetSizePolicyList</a>
+
+---
+
 ##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.timeouts"></a>
 
 ```go
@@ -1388,6 +1420,16 @@ func TargetSizeInput() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `TargetSizePolicyInput`<sup>Optional</sup> <a name="TargetSizePolicyInput" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManager.property.targetSizePolicyInput"></a>
+
+```go
+func TargetSizePolicyInput() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1626,7 +1668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerAllInstancesConfig {
 	Labels: *map[string]*string,
@@ -1653,7 +1695,7 @@ Labels *map[string]*string
 
 The label key-value pairs that you want to patch onto the instance,.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#labels ComputeInstanceGroupManager#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#labels ComputeInstanceGroupManager#labels}
 
 ---
 
@@ -1669,7 +1711,7 @@ The metadata key-value pairs that you want to patch onto the instance.
 
 For more information, see Project and instance metadata,
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#metadata ComputeInstanceGroupManager#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#metadata ComputeInstanceGroupManager#metadata}
 
 ---
 
@@ -1678,7 +1720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerAutoHealingPolicies {
 	HealthCheck: *string,
@@ -1705,7 +1747,7 @@ HealthCheck *string
 
 The health check resource that signals autohealing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#health_check ComputeInstanceGroupManager#health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#health_check ComputeInstanceGroupManager#health_check}
 
 ---
 
@@ -1721,7 +1763,7 @@ The number of seconds that the managed instance group waits before it applies au
 
 Between 0 and 3600.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#initial_delay_sec ComputeInstanceGroupManager#initial_delay_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#initial_delay_sec ComputeInstanceGroupManager#initial_delay_sec}
 
 ---
 
@@ -1730,7 +1772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerConfig {
 	Connection: interface{},
@@ -1743,25 +1785,26 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstanceg
 	BaseInstanceName: *string,
 	Name: *string,
 	Version: interface{},
-	AllInstancesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfig,
-	AutoHealingPolicies: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPolicies,
+	AllInstancesConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfig,
+	AutoHealingPolicies: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPolicies,
 	Description: *string,
 	Id: *string,
-	InstanceLifecyclePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicy,
+	InstanceLifecyclePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicy,
 	ListManagedInstancesResults: *string,
 	NamedPort: interface{},
 	Project: *string,
-	ResourcePolicies: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePolicies,
-	StandbyPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicy,
+	ResourcePolicies: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePolicies,
+	StandbyPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicy,
 	StatefulDisk: interface{},
 	StatefulExternalIp: interface{},
 	StatefulInternalIp: interface{},
 	TargetPools: *[]*string,
 	TargetSize: *f64,
+	TargetSizePolicy: interface{},
 	TargetStoppedSize: *f64,
 	TargetSuspendedSize: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts,
-	UpdatePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicy,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts,
+	UpdatePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicy,
 	WaitForInstances: interface{},
 	WaitForInstancesStatus: *string,
 	Zone: *string,
@@ -1785,7 +1828,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstanceg
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.allInstancesConfig">AllInstancesConfig</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfig">ComputeInstanceGroupManagerAllInstancesConfig</a></code> | all_instances_config block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.autoHealingPolicies">AutoHealingPolicies</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPolicies">ComputeInstanceGroupManagerAutoHealingPolicies</a></code> | auto_healing_policies block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.description">Description</a></code> | <code>*string</code> | An optional textual description of the instance group manager. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#id ComputeInstanceGroupManager#id}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#id ComputeInstanceGroupManager#id}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.instanceLifecyclePolicy">InstanceLifecyclePolicy</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicy">ComputeInstanceGroupManagerInstanceLifecyclePolicy</a></code> | instance_lifecycle_policy block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.listManagedInstancesResults">ListManagedInstancesResults</a></code> | <code>*string</code> | Pagination behavior of the listManagedInstances API method for this managed instance group. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.namedPort">NamedPort</a></code> | <code>interface{}</code> | named_port block. |
@@ -1797,6 +1840,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstanceg
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.statefulInternalIp">StatefulInternalIp</a></code> | <code>interface{}</code> | stateful_internal_ip block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.targetPools">TargetPools</a></code> | <code>*[]*string</code> | The full URL of all target pools to which new instances in the group are added. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.targetSize">TargetSize</a></code> | <code>*f64</code> | The target number of running instances for this managed instance group. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.targetSizePolicy">TargetSizePolicy</a></code> | <code>interface{}</code> | target_size_policy block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.targetStoppedSize">TargetStoppedSize</a></code> | <code>*f64</code> | The target number of stopped instances for this managed instance group. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.targetSuspendedSize">TargetSuspendedSize</a></code> | <code>*f64</code> | The target number of suspended instances for this managed instance group. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts">ComputeInstanceGroupManagerTimeouts</a></code> | timeouts block. |
@@ -1889,7 +1933,7 @@ The base instance name to use for instances in this group.
 
 The value must be a valid RFC1035 name. Supported characters are lowercase letters, numbers, and hyphens (-). Instances are named by appending a hyphen and a random four-character string to the base instance name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#base_instance_name ComputeInstanceGroupManager#base_instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#base_instance_name ComputeInstanceGroupManager#base_instance_name}
 
 ---
 
@@ -1905,7 +1949,7 @@ The name of the instance group manager.
 
 Must be 1-63 characters long and comply with RFC1035. Supported characters include lowercase letters, numbers, and hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#name ComputeInstanceGroupManager#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#name ComputeInstanceGroupManager#name}
 
 ---
 
@@ -1919,7 +1963,7 @@ Version interface{}
 
 version block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#version ComputeInstanceGroupManager#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#version ComputeInstanceGroupManager#version}
 
 ---
 
@@ -1933,7 +1977,7 @@ AllInstancesConfig ComputeInstanceGroupManagerAllInstancesConfig
 
 all_instances_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#all_instances_config ComputeInstanceGroupManager#all_instances_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#all_instances_config ComputeInstanceGroupManager#all_instances_config}
 
 ---
 
@@ -1947,7 +1991,7 @@ AutoHealingPolicies ComputeInstanceGroupManagerAutoHealingPolicies
 
 auto_healing_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#auto_healing_policies ComputeInstanceGroupManager#auto_healing_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#auto_healing_policies ComputeInstanceGroupManager#auto_healing_policies}
 
 ---
 
@@ -1961,7 +2005,7 @@ Description *string
 
 An optional textual description of the instance group manager.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#description ComputeInstanceGroupManager#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#description ComputeInstanceGroupManager#description}
 
 ---
 
@@ -1973,7 +2017,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#id ComputeInstanceGroupManager#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#id ComputeInstanceGroupManager#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1990,7 +2034,7 @@ InstanceLifecyclePolicy ComputeInstanceGroupManagerInstanceLifecyclePolicy
 
 instance_lifecycle_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#instance_lifecycle_policy ComputeInstanceGroupManager#instance_lifecycle_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#instance_lifecycle_policy ComputeInstanceGroupManager#instance_lifecycle_policy}
 
 ---
 
@@ -2006,7 +2050,7 @@ Pagination behavior of the listManagedInstances API method for this managed inst
 
 Valid values are: "PAGELESS", "PAGINATED". If PAGELESS (default), Pagination is disabled for the group's listManagedInstances API method. maxResults and pageToken query parameters are ignored and all instances are returned in a single response. If PAGINATED, pagination is enabled, maxResults and pageToken query parameters are respected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#list_managed_instances_results ComputeInstanceGroupManager#list_managed_instances_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#list_managed_instances_results ComputeInstanceGroupManager#list_managed_instances_results}
 
 ---
 
@@ -2020,7 +2064,7 @@ NamedPort interface{}
 
 named_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#named_port ComputeInstanceGroupManager#named_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#named_port ComputeInstanceGroupManager#named_port}
 
 ---
 
@@ -2036,7 +2080,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#project ComputeInstanceGroupManager#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#project ComputeInstanceGroupManager#project}
 
 ---
 
@@ -2050,7 +2094,7 @@ ResourcePolicies ComputeInstanceGroupManagerResourcePolicies
 
 resource_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#resource_policies ComputeInstanceGroupManager#resource_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#resource_policies ComputeInstanceGroupManager#resource_policies}
 
 ---
 
@@ -2064,7 +2108,7 @@ StandbyPolicy ComputeInstanceGroupManagerStandbyPolicy
 
 standby_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#standby_policy ComputeInstanceGroupManager#standby_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#standby_policy ComputeInstanceGroupManager#standby_policy}
 
 ---
 
@@ -2078,7 +2122,7 @@ StatefulDisk interface{}
 
 stateful_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#stateful_disk ComputeInstanceGroupManager#stateful_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#stateful_disk ComputeInstanceGroupManager#stateful_disk}
 
 ---
 
@@ -2092,7 +2136,7 @@ StatefulExternalIp interface{}
 
 stateful_external_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#stateful_external_ip ComputeInstanceGroupManager#stateful_external_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#stateful_external_ip ComputeInstanceGroupManager#stateful_external_ip}
 
 ---
 
@@ -2106,7 +2150,7 @@ StatefulInternalIp interface{}
 
 stateful_internal_ip block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#stateful_internal_ip ComputeInstanceGroupManager#stateful_internal_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#stateful_internal_ip ComputeInstanceGroupManager#stateful_internal_ip}
 
 ---
 
@@ -2122,7 +2166,7 @@ The full URL of all target pools to which new instances in the group are added.
 
 Updating the target pools attribute does not affect existing instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#target_pools ComputeInstanceGroupManager#target_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#target_pools ComputeInstanceGroupManager#target_pools}
 
 ---
 
@@ -2138,7 +2182,21 @@ The target number of running instances for this managed instance group.
 
 This value should always be explicitly set unless this resource is attached to an autoscaler, in which case it should never be set. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#target_size ComputeInstanceGroupManager#target_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#target_size ComputeInstanceGroupManager#target_size}
+
+---
+
+##### `TargetSizePolicy`<sup>Optional</sup> <a name="TargetSizePolicy" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerConfig.property.targetSizePolicy"></a>
+
+```go
+TargetSizePolicy interface{}
+```
+
+- *Type:* interface{}
+
+target_size_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#target_size_policy ComputeInstanceGroupManager#target_size_policy}
 
 ---
 
@@ -2152,7 +2210,7 @@ TargetStoppedSize *f64
 
 The target number of stopped instances for this managed instance group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#target_stopped_size ComputeInstanceGroupManager#target_stopped_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#target_stopped_size ComputeInstanceGroupManager#target_stopped_size}
 
 ---
 
@@ -2166,7 +2224,7 @@ TargetSuspendedSize *f64
 
 The target number of suspended instances for this managed instance group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#target_suspended_size ComputeInstanceGroupManager#target_suspended_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#target_suspended_size ComputeInstanceGroupManager#target_suspended_size}
 
 ---
 
@@ -2180,7 +2238,7 @@ Timeouts ComputeInstanceGroupManagerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#timeouts ComputeInstanceGroupManager#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#timeouts ComputeInstanceGroupManager#timeouts}
 
 ---
 
@@ -2194,7 +2252,7 @@ UpdatePolicy ComputeInstanceGroupManagerUpdatePolicy
 
 update_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#update_policy ComputeInstanceGroupManager#update_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#update_policy ComputeInstanceGroupManager#update_policy}
 
 ---
 
@@ -2210,7 +2268,7 @@ Whether to wait for all instances to be created/updated before returning.
 
 Note that if this is set to true and the operation does not succeed, Terraform will continue trying until it times out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#wait_for_instances ComputeInstanceGroupManager#wait_for_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#wait_for_instances ComputeInstanceGroupManager#wait_for_instances}
 
 ---
 
@@ -2226,7 +2284,7 @@ When used with wait_for_instances specifies the status to wait for.
 
 When STABLE is specified this resource will wait until the instances are stable before returning. When UPDATED is set, it will wait for the version target to be reached and any per instance configs to be effective and all instances configs to be effective as well as all instances to be stable before returning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#wait_for_instances_status ComputeInstanceGroupManager#wait_for_instances_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#wait_for_instances_status ComputeInstanceGroupManager#wait_for_instances_status}
 
 ---
 
@@ -2240,7 +2298,7 @@ Zone *string
 
 The zone that instances in this group should be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#zone ComputeInstanceGroupManager#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#zone ComputeInstanceGroupManager#zone}
 
 ---
 
@@ -2249,7 +2307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerInstanceLifecyclePolicy {
 	DefaultActionOnFailure: *string,
@@ -2276,7 +2334,7 @@ DefaultActionOnFailure *string
 
 Default behavior for all instance or health check failures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#default_action_on_failure ComputeInstanceGroupManager#default_action_on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#default_action_on_failure ComputeInstanceGroupManager#default_action_on_failure}
 
 ---
 
@@ -2292,7 +2350,7 @@ Specifies whether to apply the group's latest configuration when repairing a VM.
 
 Valid options are: YES, NO. If YES and you updated the group's instance template or per-instance configurations after the VM was created, then these changes are applied when VM is repaired. If NO (default), then updates are applied in accordance with the group's update policy type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#force_update_on_repair ComputeInstanceGroupManager#force_update_on_repair}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#force_update_on_repair ComputeInstanceGroupManager#force_update_on_repair}
 
 ---
 
@@ -2301,7 +2359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPort.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerNamedPort {
 	Name: *string,
@@ -2328,7 +2386,7 @@ Name *string
 
 The name of the port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#name ComputeInstanceGroupManager#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#name ComputeInstanceGroupManager#name}
 
 ---
 
@@ -2342,7 +2400,7 @@ Port *f64
 
 The port number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#port ComputeInstanceGroupManager#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#port ComputeInstanceGroupManager#port}
 
 ---
 
@@ -2351,7 +2409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerResourcePolicies {
 	WorkloadPolicy: *string,
@@ -2378,7 +2436,7 @@ The URL of the workload policy that is specified for this managed instance group
 
 It can be a full or partial URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#workload_policy ComputeInstanceGroupManager#workload_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#workload_policy ComputeInstanceGroupManager#workload_policy}
 
 ---
 
@@ -2387,7 +2445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerStandbyPolicy {
 	InitialDelaySec: *f64,
@@ -2416,7 +2474,7 @@ Specifies the number of seconds that the MIG should wait to suspend or stop a VM
 
 The initial delay gives the initialization script the time to prepare your VM for a quick scale out. The value of initial delay must be between 0 and 3600 seconds. The default value is 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#initial_delay_sec ComputeInstanceGroupManager#initial_delay_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#initial_delay_sec ComputeInstanceGroupManager#initial_delay_sec}
 
 ---
 
@@ -2432,7 +2490,7 @@ Defines how a MIG resumes or starts VMs from a standby pool when the group scale
 
 The default mode is "MANUAL".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#mode ComputeInstanceGroupManager#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#mode ComputeInstanceGroupManager#mode}
 
 ---
 
@@ -2441,7 +2499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerStatefulDisk {
 	DeviceName: *string,
@@ -2468,7 +2526,7 @@ DeviceName *string
 
 The device name of the disk to be attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#device_name ComputeInstanceGroupManager#device_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#device_name ComputeInstanceGroupManager#device_name}
 
 ---
 
@@ -2484,7 +2542,7 @@ A value that prescribes what should happen to the stateful disk when the VM inst
 
 The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the disk when the VM is deleted, but do not delete the disk. ON_PERMANENT_INSTANCE_DELETION will delete the stateful disk when the VM is permanently deleted from the instance group. The default is NEVER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#delete_rule ComputeInstanceGroupManager#delete_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#delete_rule ComputeInstanceGroupManager#delete_rule}
 
 ---
 
@@ -2493,7 +2551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerStatefulExternalIp {
 	DeleteRule: *string,
@@ -2522,7 +2580,7 @@ A value that prescribes what should happen to an associated static Address resou
 
 The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the IP when the VM is deleted, but do not delete the address resource. ON_PERMANENT_INSTANCE_DELETION will delete the stateful address when the VM is permanently deleted from the instance group. The default is NEVER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#delete_rule ComputeInstanceGroupManager#delete_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#delete_rule ComputeInstanceGroupManager#delete_rule}
 
 ---
 
@@ -2536,7 +2594,7 @@ InterfaceName *string
 
 The network interface name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#interface_name ComputeInstanceGroupManager#interface_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#interface_name ComputeInstanceGroupManager#interface_name}
 
 ---
 
@@ -2545,7 +2603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerStatefulInternalIp {
 	DeleteRule: *string,
@@ -2574,7 +2632,7 @@ A value that prescribes what should happen to an associated static Address resou
 
 The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the IP when the VM is deleted, but do not delete the address resource. ON_PERMANENT_INSTANCE_DELETION will delete the stateful address when the VM is permanently deleted from the instance group. The default is NEVER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#delete_rule ComputeInstanceGroupManager#delete_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#delete_rule ComputeInstanceGroupManager#delete_rule}
 
 ---
 
@@ -2588,7 +2646,7 @@ InterfaceName *string
 
 The network interface name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#interface_name ComputeInstanceGroupManager#interface_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#interface_name ComputeInstanceGroupManager#interface_name}
 
 ---
 
@@ -2597,7 +2655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerStatus {
 
@@ -2610,7 +2668,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstanceg
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerStatusAllInstancesConfig {
 
@@ -2623,7 +2681,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstanceg
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStateful.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerStatusStateful {
 
@@ -2636,7 +2694,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstanceg
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigs {
 
@@ -2649,7 +2707,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstanceg
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerStatusVersionTarget {
 
@@ -2657,12 +2715,46 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstanceg
 ```
 
 
+### ComputeInstanceGroupManagerTargetSizePolicy <a name="ComputeInstanceGroupManagerTargetSizePolicy" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicy.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
+
+&computeinstancegroupmanager.ComputeInstanceGroupManagerTargetSizePolicy {
+	Mode: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicy.property.mode">Mode</a></code> | <code>*string</code> | The mode of target size policy based on which the MIG creates its VMs individually or all at once. |
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicy.property.mode"></a>
+
+```go
+Mode *string
+```
+
+- *Type:* *string
+
+The mode of target size policy based on which the MIG creates its VMs individually or all at once.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#mode ComputeInstanceGroupManager#mode}
+
+---
+
 ### ComputeInstanceGroupManagerTimeouts <a name="ComputeInstanceGroupManagerTimeouts" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerTimeouts {
 	Create: *string,
@@ -2675,9 +2767,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstanceg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#create ComputeInstanceGroupManager#create}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#delete ComputeInstanceGroupManager#delete}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#update ComputeInstanceGroupManager#update}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#create ComputeInstanceGroupManager#create}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#delete ComputeInstanceGroupManager#delete}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#update ComputeInstanceGroupManager#update}. |
 
 ---
 
@@ -2689,7 +2781,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#create ComputeInstanceGroupManager#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#create ComputeInstanceGroupManager#create}.
 
 ---
 
@@ -2701,7 +2793,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#delete ComputeInstanceGroupManager#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#delete ComputeInstanceGroupManager#delete}.
 
 ---
 
@@ -2713,7 +2805,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#update ComputeInstanceGroupManager#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#update ComputeInstanceGroupManager#update}.
 
 ---
 
@@ -2722,7 +2814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerUpdatePolicy {
 	MinimalAction: *string,
@@ -2763,7 +2855,7 @@ Minimal action to be taken on an instance.
 
 You can specify either NONE to forbid any actions, REFRESH to update without stopping instances, RESTART to restart existing instances or REPLACE to delete and create new instances from the target template. If you specify a REFRESH, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#minimal_action ComputeInstanceGroupManager#minimal_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#minimal_action ComputeInstanceGroupManager#minimal_action}
 
 ---
 
@@ -2779,7 +2871,7 @@ The type of update process.
 
 You can specify either PROACTIVE so that the instance group manager proactively executes actions in order to bring instances to their target versions or OPPORTUNISTIC so that no action is proactively executed but the update will be performed as part of other actions (for example, resizes or recreateInstances calls).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#type ComputeInstanceGroupManager#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#type ComputeInstanceGroupManager#type}
 
 ---
 
@@ -2795,7 +2887,7 @@ Specifies a fixed number of VM instances.
 
 This must be a positive integer. Conflicts with max_surge_percent. Both cannot be 0
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#max_surge_fixed ComputeInstanceGroupManager#max_surge_fixed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#max_surge_fixed ComputeInstanceGroupManager#max_surge_fixed}
 
 ---
 
@@ -2809,7 +2901,7 @@ MaxSurgePercent *f64
 
 Specifies a percentage of instances between 0 to 100%, inclusive. For example, specify 80 for 80%. Conflicts with max_surge_fixed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#max_surge_percent ComputeInstanceGroupManager#max_surge_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#max_surge_percent ComputeInstanceGroupManager#max_surge_percent}
 
 ---
 
@@ -2823,7 +2915,7 @@ MaxUnavailableFixed *f64
 
 Specifies a fixed number of VM instances. This must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#max_unavailable_fixed ComputeInstanceGroupManager#max_unavailable_fixed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#max_unavailable_fixed ComputeInstanceGroupManager#max_unavailable_fixed}
 
 ---
 
@@ -2837,7 +2929,7 @@ MaxUnavailablePercent *f64
 
 Specifies a percentage of instances between 0 to 100%, inclusive. For example, specify 80 for 80%.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#max_unavailable_percent ComputeInstanceGroupManager#max_unavailable_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#max_unavailable_percent ComputeInstanceGroupManager#max_unavailable_percent}
 
 ---
 
@@ -2853,7 +2945,7 @@ Most disruptive action that is allowed to be taken on an instance.
 
 You can specify either NONE to forbid any actions, REFRESH to allow actions that do not need instance restart, RESTART to allow actions that can be applied without instance replacing or REPLACE to allow all possible actions. If the Updater determines that the minimal update action needed is more disruptive than most disruptive allowed action you specify it will not perform the update at all.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#most_disruptive_allowed_action ComputeInstanceGroupManager#most_disruptive_allowed_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#most_disruptive_allowed_action ComputeInstanceGroupManager#most_disruptive_allowed_action}
 
 ---
 
@@ -2869,7 +2961,7 @@ The instance replacement method for managed instance groups.
 
 Valid values are: "RECREATE", "SUBSTITUTE". If SUBSTITUTE (default), the group replaces VM instances with new instances that have randomly generated names. If RECREATE, instance names are preserved.  You must also set max_unavailable_fixed or max_unavailable_percent to be greater than 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#replacement_method ComputeInstanceGroupManager#replacement_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#replacement_method ComputeInstanceGroupManager#replacement_method}
 
 ---
 
@@ -2878,12 +2970,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerVersion {
 	InstanceTemplate: *string,
 	Name: *string,
-	TargetSize: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSize,
+	TargetSize: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSize,
 }
 ```
 
@@ -2907,7 +2999,7 @@ InstanceTemplate *string
 
 The full URL to an instance template from which all new instances of this version will be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#instance_template ComputeInstanceGroupManager#instance_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#instance_template ComputeInstanceGroupManager#instance_template}
 
 ---
 
@@ -2921,7 +3013,7 @@ Name *string
 
 Version name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#name ComputeInstanceGroupManager#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#name ComputeInstanceGroupManager#name}
 
 ---
 
@@ -2935,7 +3027,7 @@ TargetSize ComputeInstanceGroupManagerVersionTargetSize
 
 target_size block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#target_size ComputeInstanceGroupManager#target_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#target_size ComputeInstanceGroupManager#target_size}
 
 ---
 
@@ -2944,7 +3036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSize.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 &computeinstancegroupmanager.ComputeInstanceGroupManagerVersionTargetSize {
 	Fixed: *f64,
@@ -2971,7 +3063,7 @@ Fixed *f64
 
 The number of instances which are managed for this version. Conflicts with percent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#fixed ComputeInstanceGroupManager#fixed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#fixed ComputeInstanceGroupManager#fixed}
 
 ---
 
@@ -2987,7 +3079,7 @@ The number of instances (calculated as percentage) which are managed for this ve
 
 Conflicts with fixed. Note that when using percent, rounding will be in favor of explicitly set target_size values; a managed instance group with 2 instances and 2 versions, one of which has a target_size.percent of 60 will create 2 instances of that version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_manager#percent ComputeInstanceGroupManager#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_manager#percent ComputeInstanceGroupManager#percent}
 
 ---
 
@@ -2998,7 +3090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAllInstancesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerAllInstancesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupManagerAllInstancesConfigOutputReference
 ```
@@ -3305,7 +3397,7 @@ func InternalValue() ComputeInstanceGroupManagerAllInstancesConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerAutoHealingPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 ```
@@ -3598,7 +3690,7 @@ func InternalValue() ComputeInstanceGroupManagerAutoHealingPolicies
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference
 ```
@@ -3905,7 +3997,7 @@ func InternalValue() ComputeInstanceGroupManagerInstanceLifecyclePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerNamedPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerNamedPortList
 ```
@@ -4065,7 +4157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerNamedPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerNamedPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInstanceGroupManagerNamedPortOutputReference
 ```
@@ -4376,7 +4468,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerResourcePoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerResourcePoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupManagerResourcePoliciesOutputReference
 ```
@@ -4654,7 +4746,7 @@ func InternalValue() ComputeInstanceGroupManagerResourcePolicies
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStandbyPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStandbyPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupManagerStandbyPolicyOutputReference
 ```
@@ -4961,7 +5053,7 @@ func InternalValue() ComputeInstanceGroupManagerStandbyPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatefulDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerStatefulDiskList
 ```
@@ -5121,7 +5213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatefulDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInstanceGroupManagerStatefulDiskOutputReference
 ```
@@ -5439,7 +5531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatefulExternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerStatefulExternalIpList
 ```
@@ -5599,7 +5691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulExternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatefulExternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInstanceGroupManagerStatefulExternalIpOutputReference
 ```
@@ -5924,7 +6016,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatefulInternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerStatefulInternalIpList
 ```
@@ -6084,7 +6176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatefulInternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatefulInternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInstanceGroupManagerStatefulInternalIpOutputReference
 ```
@@ -6409,7 +6501,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatusAllInstancesConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerStatusAllInstancesConfigList
 ```
@@ -6558,7 +6650,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference
 ```
@@ -6847,7 +6939,7 @@ func InternalValue() ComputeInstanceGroupManagerStatusAllInstancesConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerStatusList
 ```
@@ -6996,7 +7088,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInstanceGroupManagerStatusOutputReference
 ```
@@ -7307,7 +7399,7 @@ func InternalValue() ComputeInstanceGroupManagerStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatusStatefulList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerStatusStatefulList
 ```
@@ -7456,7 +7548,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatusStatefulOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInstanceGroupManagerStatusStatefulOutputReference
 ```
@@ -7745,7 +7837,7 @@ func InternalValue() ComputeInstanceGroupManagerStatusStateful
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList
 ```
@@ -7894,7 +7986,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference
 ```
@@ -8172,7 +8264,7 @@ func InternalValue() ComputeInstanceGroupManagerStatusStatefulPerInstanceConfigs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatusVersionTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerStatusVersionTargetList
 ```
@@ -8321,7 +8413,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerStatusVersionTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerStatusVersionTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInstanceGroupManagerStatusVersionTargetOutputReference
 ```
@@ -8594,12 +8686,461 @@ func InternalValue() ComputeInstanceGroupManagerStatusVersionTarget
 ---
 
 
+### ComputeInstanceGroupManagerTargetSizePolicyList <a name="ComputeInstanceGroupManagerTargetSizePolicyList" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
+
+computeinstancegroupmanager.NewComputeInstanceGroupManagerTargetSizePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerTargetSizePolicyList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.get"></a>
+
+```go
+func Get(index *f64) ComputeInstanceGroupManagerTargetSizePolicyOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ComputeInstanceGroupManagerTargetSizePolicyOutputReference <a name="ComputeInstanceGroupManagerTargetSizePolicyOutputReference" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
+
+computeinstancegroupmanager.NewComputeInstanceGroupManagerTargetSizePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInstanceGroupManagerTargetSizePolicyOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.property.modeInput">ModeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.property.mode">Mode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ModeInput`<sup>Optional</sup> <a name="ModeInput" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.property.modeInput"></a>
+
+```go
+func ModeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.property.mode"></a>
+
+```go
+func Mode() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTargetSizePolicyOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### ComputeInstanceGroupManagerTimeoutsOutputReference <a name="ComputeInstanceGroupManagerTimeoutsOutputReference" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupManagerTimeoutsOutputReference
 ```
@@ -8935,7 +9476,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerUpdatePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerUpdatePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupManagerUpdatePolicyOutputReference
 ```
@@ -9402,7 +9943,7 @@ func InternalValue() ComputeInstanceGroupManagerUpdatePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerVersionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInstanceGroupManagerVersionList
 ```
@@ -9562,7 +10103,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInstanceGroupManagerVersionOutputReference
 ```
@@ -9922,7 +10463,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerVersionTargetSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinstancegroupmanager"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstancegroupmanager"
 
 computeinstancegroupmanager.NewComputeInstanceGroupManagerVersionTargetSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupManagerVersionTargetSizeOutputReference
 ```

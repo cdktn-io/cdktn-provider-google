@@ -4,7 +4,7 @@
 
 ### VmwareengineNetwork <a name="VmwareengineNetwork" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network google_vmwareengine_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network google_vmwareengine_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the VmwareengineNetwork to imp
 
 The id of the existing VmwareengineNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -560,9 +560,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.etag">etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeoutsOutputReference">VmwareengineNetworkTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.uid">uid</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.vpcNetworks">vpcNetworks</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkVpcNetworksList">VmwareengineNetworkVpcNetworksList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -722,6 +725,26 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.createTime"></a>
+
+```typescript
+public readonly createTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `etag`<sup>Required</sup> <a name="etag" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.etag"></a>
+
+```typescript
+public readonly etag: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.state"></a>
 
 ```typescript
@@ -746,6 +769,16 @@ public readonly timeouts: VmwareengineNetworkTimeoutsOutputReference;
 
 ```typescript
 public readonly uid: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.property.updateTime"></a>
+
+```typescript
+public readonly updateTime: string;
 ```
 
 - *Type:* string
@@ -937,8 +970,8 @@ const vmwareengineNetworkConfig: vmwareengineNetwork.VmwareengineNetworkConfig =
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.name">name</a></code> | <code>string</code> | The ID of the VMwareEngineNetwork. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.type">type</a></code> | <code>string</code> | VMware Engine network type. Possible values: ["LEGACY", "STANDARD"]. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.description">description</a></code> | <code>string</code> | User-provided description for this VMware Engine network. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#id VmwareengineNetwork#id}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#project VmwareengineNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#id VmwareengineNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#project VmwareengineNetwork#project}. |
 | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts">VmwareengineNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1023,7 +1056,7 @@ public readonly location: string;
 
 The location where the VMwareEngineNetwork should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#location VmwareengineNetwork#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#location VmwareengineNetwork#location}
 
 ---
 
@@ -1037,7 +1070,7 @@ public readonly name: string;
 
 The ID of the VMwareEngineNetwork.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#name VmwareengineNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#name VmwareengineNetwork#name}
 
 ---
 
@@ -1051,7 +1084,7 @@ public readonly type: string;
 
 VMware Engine network type. Possible values: ["LEGACY", "STANDARD"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#type VmwareengineNetwork#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#type VmwareengineNetwork#type}
 
 ---
 
@@ -1065,7 +1098,7 @@ public readonly description: string;
 
 User-provided description for this VMware Engine network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#description VmwareengineNetwork#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#description VmwareengineNetwork#description}
 
 ---
 
@@ -1077,7 +1110,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#id VmwareengineNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#id VmwareengineNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1092,7 +1125,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#project VmwareengineNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#project VmwareengineNetwork#project}.
 
 ---
 
@@ -1106,7 +1139,7 @@ public readonly timeouts: VmwareengineNetworkTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#timeouts VmwareengineNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#timeouts VmwareengineNetwork#timeouts}
 
 ---
 
@@ -1124,9 +1157,9 @@ const vmwareengineNetworkTimeouts: vmwareengineNetwork.VmwareengineNetworkTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#create VmwareengineNetwork#create}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#delete VmwareengineNetwork#delete}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#update VmwareengineNetwork#update}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#create VmwareengineNetwork#create}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#delete VmwareengineNetwork#delete}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#update VmwareengineNetwork#update}. |
 
 ---
 
@@ -1138,7 +1171,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#create VmwareengineNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#create VmwareengineNetwork#create}.
 
 ---
 
@@ -1150,7 +1183,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#delete VmwareengineNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#delete VmwareengineNetwork#delete}.
 
 ---
 
@@ -1162,7 +1195,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vmwareengine_network#update VmwareengineNetwork#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vmwareengine_network#update VmwareengineNetwork#update}.
 
 ---
 

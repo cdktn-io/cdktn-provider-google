@@ -4,7 +4,7 @@
 
 ### DataGoogleDnsRecordSet <a name="DataGoogleDnsRecordSet" id="@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set google_dns_record_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set google_dns_record_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleDnsRecordSet to 
 
 The id of the existing DataGoogleDnsRecordSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,11 +740,11 @@ new DataGoogleDnsRecordSetConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.managedZone">ManagedZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set#managed_zone DataGoogleDnsRecordSet#managed_zone}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set#name DataGoogleDnsRecordSet#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set#type DataGoogleDnsRecordSet#type}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set#id DataGoogleDnsRecordSet#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set#project DataGoogleDnsRecordSet#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.managedZone">ManagedZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set#managed_zone DataGoogleDnsRecordSet#managed_zone}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set#name DataGoogleDnsRecordSet#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set#type DataGoogleDnsRecordSet#type}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set#id DataGoogleDnsRecordSet#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set#project DataGoogleDnsRecordSet#project}. |
 
 ---
 
@@ -826,7 +826,7 @@ public string ManagedZone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set#managed_zone DataGoogleDnsRecordSet#managed_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set#managed_zone DataGoogleDnsRecordSet#managed_zone}.
 
 ---
 
@@ -838,7 +838,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set#name DataGoogleDnsRecordSet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set#name DataGoogleDnsRecordSet#name}.
 
 ---
 
@@ -850,7 +850,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set#type DataGoogleDnsRecordSet#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set#type DataGoogleDnsRecordSet#type}.
 
 ---
 
@@ -862,7 +862,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set#id DataGoogleDnsRecordSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set#id DataGoogleDnsRecordSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -877,7 +877,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_record_set#project DataGoogleDnsRecordSet#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_record_set#project DataGoogleDnsRecordSet#project}.
 
 ---
 

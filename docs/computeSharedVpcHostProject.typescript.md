@@ -4,7 +4,7 @@
 
 ### ComputeSharedVpcHostProject <a name="ComputeSharedVpcHostProject" id="@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project google_compute_shared_vpc_host_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_shared_vpc_host_project google_compute_shared_vpc_host_project}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProject.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ComputeSharedVpcHostProjec
 
 The id of the existing ComputeSharedVpcHostProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_shared_vpc_host_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ const computeSharedVpcHostProjectConfig: computeSharedVpcHostProject.ComputeShar
 | <code><a href="#@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectConfig.property.project">project</a></code> | <code>string</code> | The ID of the project that will serve as a Shared VPC host project. |
-| <code><a href="#@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project#id ComputeSharedVpcHostProject#id}. |
+| <code><a href="#@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_shared_vpc_host_project#id ComputeSharedVpcHostProject#id}. |
 | <code><a href="#@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectTimeouts">ComputeSharedVpcHostProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -884,7 +884,7 @@ public readonly project: string;
 
 The ID of the project that will serve as a Shared VPC host project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project#project ComputeSharedVpcHostProject#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_shared_vpc_host_project#project ComputeSharedVpcHostProject#project}
 
 ---
 
@@ -896,7 +896,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project#id ComputeSharedVpcHostProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_shared_vpc_host_project#id ComputeSharedVpcHostProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -913,7 +913,7 @@ public readonly timeouts: ComputeSharedVpcHostProjectTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project#timeouts ComputeSharedVpcHostProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_shared_vpc_host_project#timeouts ComputeSharedVpcHostProject#timeouts}
 
 ---
 
@@ -931,8 +931,8 @@ const computeSharedVpcHostProjectTimeouts: computeSharedVpcHostProject.ComputeSh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project#create ComputeSharedVpcHostProject#create}. |
-| <code><a href="#@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project#delete ComputeSharedVpcHostProject#delete}. |
+| <code><a href="#@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_shared_vpc_host_project#create ComputeSharedVpcHostProject#create}. |
+| <code><a href="#@cdktn/provider-google.computeSharedVpcHostProject.ComputeSharedVpcHostProjectTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_shared_vpc_host_project#delete ComputeSharedVpcHostProject#delete}. |
 
 ---
 
@@ -944,7 +944,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project#create ComputeSharedVpcHostProject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_shared_vpc_host_project#create ComputeSharedVpcHostProject#create}.
 
 ---
 
@@ -956,7 +956,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_shared_vpc_host_project#delete ComputeSharedVpcHostProject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_shared_vpc_host_project#delete ComputeSharedVpcHostProject#delete}.
 
 ---
 

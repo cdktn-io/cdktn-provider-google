@@ -4,7 +4,7 @@
 
 ### DataGoogleAlloydbCluster <a name="DataGoogleAlloydbCluster" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster google_alloydb_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster google_alloydb_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.Initializer"></a>
 
@@ -38,9 +38,9 @@ DataGoogleAlloydbCluster.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | The ID of the alloydb cluster. |
-| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#id DataGoogleAlloydbCluster#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#id DataGoogleAlloydbCluster#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location where the alloydb cluster should reside. |
-| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#project DataGoogleAlloydbCluster#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#project DataGoogleAlloydbCluster#project}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the alloydb cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#cluster_id DataGoogleAlloydbCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#cluster_id DataGoogleAlloydbCluster#cluster_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#id DataGoogleAlloydbCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#id DataGoogleAlloydbCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The location where the alloydb cluster should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#location DataGoogleAlloydbCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#location DataGoogleAlloydbCluster#location}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#project DataGoogleAlloydbCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#project DataGoogleAlloydbCluster#project}.
 
 ---
 
@@ -505,7 +505,7 @@ The construct id used in the generated config for the DataGoogleAlloydbCluster t
 
 The id of the existing DataGoogleAlloydbCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -535,12 +535,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.annotations">annotations</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.automatedBackupPolicy">automatedBackupPolicy</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterAutomatedBackupPolicyList">DataGoogleAlloydbClusterAutomatedBackupPolicyList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.backupdrBackupSource">backupdrBackupSource</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList">DataGoogleAlloydbClusterBackupdrBackupSourceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.backupSource">backupSource</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupSourceList">DataGoogleAlloydbClusterBackupSourceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.clusterType">clusterType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.continuousBackupConfig">continuousBackupConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterContinuousBackupConfigList">DataGoogleAlloydbClusterContinuousBackupConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.continuousBackupInfo">continuousBackupInfo</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterContinuousBackupInfoList">DataGoogleAlloydbClusterContinuousBackupInfoList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.databaseVersion">databaseVersion</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.dataplexConfig">dataplexConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList">DataGoogleAlloydbClusterDataplexConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.deletionProtection">deletionProtection</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.effectiveAnnotations">effectiveAnnotations</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.effectiveLabels">effectiveLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
@@ -555,6 +558,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.networkConfig">networkConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterNetworkConfigList">DataGoogleAlloydbClusterNetworkConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.pscConfig">pscConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterPscConfigList">DataGoogleAlloydbClusterPscConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.reconciling">reconciling</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.restoreBackupdrBackupSource">restoreBackupdrBackupSource</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList">DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.restoreBackupdrPitrSource">restoreBackupdrPitrSource</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList">DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.restoreBackupSource">restoreBackupSource</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupSourceList">DataGoogleAlloydbClusterRestoreBackupSourceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.restoreContinuousBackupSource">restoreContinuousBackupSource</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreContinuousBackupSourceList">DataGoogleAlloydbClusterRestoreContinuousBackupSourceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.secondaryConfig">secondaryConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterSecondaryConfigList">DataGoogleAlloydbClusterSecondaryConfigList</a></code> | *No description.* |
@@ -717,6 +722,16 @@ public DataGoogleAlloydbClusterAutomatedBackupPolicyList getAutomatedBackupPolic
 
 ---
 
+##### `backupdrBackupSource`<sup>Required</sup> <a name="backupdrBackupSource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.backupdrBackupSource"></a>
+
+```java
+public DataGoogleAlloydbClusterBackupdrBackupSourceList getBackupdrBackupSource();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList">DataGoogleAlloydbClusterBackupdrBackupSourceList</a>
+
+---
+
 ##### `backupSource`<sup>Required</sup> <a name="backupSource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.backupSource"></a>
 
 ```java
@@ -767,6 +782,16 @@ public java.lang.String getDatabaseVersion();
 
 ---
 
+##### `dataplexConfig`<sup>Required</sup> <a name="dataplexConfig" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.dataplexConfig"></a>
+
+```java
+public DataGoogleAlloydbClusterDataplexConfigList getDataplexConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList">DataGoogleAlloydbClusterDataplexConfigList</a>
+
+---
+
 ##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.deletionPolicy"></a>
 
 ```java
@@ -774,6 +799,16 @@ public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `deletionProtection`<sup>Required</sup> <a name="deletionProtection" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.deletionProtection"></a>
+
+```java
+public IResolvable getDeletionProtection();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -914,6 +949,26 @@ public IResolvable getReconciling();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable
+
+---
+
+##### `restoreBackupdrBackupSource`<sup>Required</sup> <a name="restoreBackupdrBackupSource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.restoreBackupdrBackupSource"></a>
+
+```java
+public DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList getRestoreBackupdrBackupSource();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList">DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList</a>
+
+---
+
+##### `restoreBackupdrPitrSource`<sup>Required</sup> <a name="restoreBackupdrPitrSource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbCluster.property.restoreBackupdrPitrSource"></a>
+
+```java
+public DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList getRestoreBackupdrPitrSource();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList">DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList</a>
 
 ---
 
@@ -1179,6 +1234,18 @@ DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes.builder()
 ```
 
 
+### DataGoogleAlloydbClusterBackupdrBackupSource <a name="DataGoogleAlloydbClusterBackupdrBackupSource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSource.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterBackupdrBackupSource;
+
+DataGoogleAlloydbClusterBackupdrBackupSource.builder()
+    .build();
+```
+
+
 ### DataGoogleAlloydbClusterBackupSource <a name="DataGoogleAlloydbClusterBackupSource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupSource"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupSource.Initializer"></a>
@@ -1225,9 +1292,9 @@ DataGoogleAlloydbClusterConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | The ID of the alloydb cluster. |
-| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#id DataGoogleAlloydbCluster#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#id DataGoogleAlloydbCluster#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location where the alloydb cluster should reside. |
-| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#project DataGoogleAlloydbCluster#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#project DataGoogleAlloydbCluster#project}. |
 
 ---
 
@@ -1311,7 +1378,7 @@ public java.lang.String getClusterId();
 
 The ID of the alloydb cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#cluster_id DataGoogleAlloydbCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#cluster_id DataGoogleAlloydbCluster#cluster_id}
 
 ---
 
@@ -1323,7 +1390,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#id DataGoogleAlloydbCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#id DataGoogleAlloydbCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1340,7 +1407,7 @@ public java.lang.String getLocation();
 
 The location where the alloydb cluster should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#location DataGoogleAlloydbCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#location DataGoogleAlloydbCluster#location}
 
 ---
 
@@ -1352,7 +1419,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/alloydb_cluster#project DataGoogleAlloydbCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/alloydb_cluster#project DataGoogleAlloydbCluster#project}.
 
 ---
 
@@ -1400,6 +1467,18 @@ DataGoogleAlloydbClusterContinuousBackupInfo.builder()
 import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterContinuousBackupInfoEncryptionInfo;
 
 DataGoogleAlloydbClusterContinuousBackupInfoEncryptionInfo.builder()
+    .build();
+```
+
+
+### DataGoogleAlloydbClusterDataplexConfig <a name="DataGoogleAlloydbClusterDataplexConfig" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterDataplexConfig;
+
+DataGoogleAlloydbClusterDataplexConfig.builder()
     .build();
 ```
 
@@ -1508,6 +1587,30 @@ DataGoogleAlloydbClusterNetworkConfig.builder()
 import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterPscConfig;
 
 DataGoogleAlloydbClusterPscConfig.builder()
+    .build();
+```
+
+
+### DataGoogleAlloydbClusterRestoreBackupdrBackupSource <a name="DataGoogleAlloydbClusterRestoreBackupdrBackupSource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSource.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSource;
+
+DataGoogleAlloydbClusterRestoreBackupdrBackupSource.builder()
+    .build();
+```
+
+
+### DataGoogleAlloydbClusterRestoreBackupdrPitrSource <a name="DataGoogleAlloydbClusterRestoreBackupdrPitrSource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSource.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSource;
+
+DataGoogleAlloydbClusterRestoreBackupdrPitrSource.builder()
     .build();
 ```
 
@@ -4245,6 +4348,433 @@ public DataGoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes get
 ---
 
 
+### DataGoogleAlloydbClusterBackupdrBackupSourceList <a name="DataGoogleAlloydbClusterBackupdrBackupSourceList" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterBackupdrBackupSourceList;
+
+new DataGoogleAlloydbClusterBackupdrBackupSourceList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.get"></a>
+
+```java
+public DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference <a name="DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference;
+
+new DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.property.backup">backup</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSource">DataGoogleAlloydbClusterBackupdrBackupSource</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `backup`<sup>Required</sup> <a name="backup" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.property.backup"></a>
+
+```java
+public java.lang.String getBackup();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSourceOutputReference.property.internalValue"></a>
+
+```java
+public DataGoogleAlloydbClusterBackupdrBackupSource getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupdrBackupSource">DataGoogleAlloydbClusterBackupdrBackupSource</a>
+
+---
+
+
 ### DataGoogleAlloydbClusterBackupSourceList <a name="DataGoogleAlloydbClusterBackupSourceList" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupSourceList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterBackupSourceList.Initializer"></a>
@@ -6446,6 +6976,433 @@ public DataGoogleAlloydbClusterContinuousBackupInfo getInternalValue();
 ---
 
 
+### DataGoogleAlloydbClusterDataplexConfigList <a name="DataGoogleAlloydbClusterDataplexConfigList" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterDataplexConfigList;
+
+new DataGoogleAlloydbClusterDataplexConfigList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.get"></a>
+
+```java
+public DataGoogleAlloydbClusterDataplexConfigOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### DataGoogleAlloydbClusterDataplexConfigOutputReference <a name="DataGoogleAlloydbClusterDataplexConfigOutputReference" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterDataplexConfigOutputReference;
+
+new DataGoogleAlloydbClusterDataplexConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.property.enabled">enabled</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfig">DataGoogleAlloydbClusterDataplexConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.property.enabled"></a>
+
+```java
+public IResolvable getEnabled();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfigOutputReference.property.internalValue"></a>
+
+```java
+public DataGoogleAlloydbClusterDataplexConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterDataplexConfig">DataGoogleAlloydbClusterDataplexConfig</a>
+
+---
+
+
 ### DataGoogleAlloydbClusterEncryptionConfigList <a name="DataGoogleAlloydbClusterEncryptionConfigList" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterEncryptionConfigList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterEncryptionConfigList.Initializer"></a>
@@ -7689,6 +8646,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterInitialUserOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterInitialUserOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterInitialUserOutputReference.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterInitialUserOutputReference.property.passwordWo">passwordWo</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterInitialUserOutputReference.property.passwordWoVersion">passwordWoVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterInitialUserOutputReference.property.user">user</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterInitialUserOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterInitialUser">DataGoogleAlloydbClusterInitialUser</a></code> | *No description.* |
 
@@ -7722,6 +8681,26 @@ public java.lang.String getFqn();
 
 ```java
 public java.lang.String getPassword();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterInitialUserOutputReference.property.passwordWo"></a>
+
+```java
+public java.lang.String getPasswordWo();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `passwordWoVersion`<sup>Required</sup> <a name="passwordWoVersion" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterInitialUserOutputReference.property.passwordWoVersion"></a>
+
+```java
+public java.lang.String getPasswordWoVersion();
 ```
 
 - *Type:* java.lang.String
@@ -10395,6 +11374,871 @@ public DataGoogleAlloydbClusterPscConfig getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterPscConfig">DataGoogleAlloydbClusterPscConfig</a>
+
+---
+
+
+### DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList <a name="DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList;
+
+new DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.get"></a>
+
+```java
+public DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference <a name="DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference;
+
+new DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.property.backup">backup</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSource">DataGoogleAlloydbClusterRestoreBackupdrBackupSource</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `backup`<sup>Required</sup> <a name="backup" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.property.backup"></a>
+
+```java
+public java.lang.String getBackup();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSourceOutputReference.property.internalValue"></a>
+
+```java
+public DataGoogleAlloydbClusterRestoreBackupdrBackupSource getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrBackupSource">DataGoogleAlloydbClusterRestoreBackupdrBackupSource</a>
+
+---
+
+
+### DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList <a name="DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList;
+
+new DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.get"></a>
+
+```java
+public DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference <a name="DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_alloydb_cluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference;
+
+new DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.property.dataSource">dataSource</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.property.pointInTime">pointInTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSource">DataGoogleAlloydbClusterRestoreBackupdrPitrSource</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `dataSource`<sup>Required</sup> <a name="dataSource" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.property.dataSource"></a>
+
+```java
+public java.lang.String getDataSource();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `pointInTime`<sup>Required</sup> <a name="pointInTime" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.property.pointInTime"></a>
+
+```java
+public java.lang.String getPointInTime();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference.property.internalValue"></a>
+
+```java
+public DataGoogleAlloydbClusterRestoreBackupdrPitrSource getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleAlloydbCluster.DataGoogleAlloydbClusterRestoreBackupdrPitrSource">DataGoogleAlloydbClusterRestoreBackupdrPitrSource</a>
 
 ---
 

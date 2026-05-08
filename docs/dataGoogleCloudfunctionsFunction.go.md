@@ -4,12 +4,12 @@
 
 ### DataGoogleCloudfunctionsFunction <a name="DataGoogleCloudfunctionsFunction" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions_function google_cloudfunctions_function}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunction(scope Construct, id *string, config DataGoogleCloudfunctionsFunctionConfig) DataGoogleCloudfunctionsFunction
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunction_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunction_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunction_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunction_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleCloudfunctionsFu
 
 The id of the existing DataGoogleCloudfunctionsFunction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions_function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions_function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1048,7 +1048,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 &datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicy {
 
@@ -1061,7 +1061,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudf
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 &datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunctionConfig {
 	Connection: interface{},
@@ -1090,7 +1090,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudf
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionConfig.property.name">Name</a></code> | <code>*string</code> | A user-defined name of the function. Function names must be unique globally. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions_function#id DataGoogleCloudfunctionsFunction#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions_function#id DataGoogleCloudfunctionsFunction#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionConfig.property.project">Project</a></code> | <code>*string</code> | Project of the function. If it is not provided, the provider project is used. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionConfig.property.region">Region</a></code> | <code>*string</code> | Region of function. If it is not provided, the provider region is used. |
 
@@ -1176,7 +1176,7 @@ Name *string
 
 A user-defined name of the function. Function names must be unique globally.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions_function#name DataGoogleCloudfunctionsFunction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions_function#name DataGoogleCloudfunctionsFunction#name}
 
 ---
 
@@ -1188,7 +1188,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions_function#id DataGoogleCloudfunctionsFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions_function#id DataGoogleCloudfunctionsFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1205,7 +1205,7 @@ Project *string
 
 Project of the function. If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions_function#project DataGoogleCloudfunctionsFunction#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions_function#project DataGoogleCloudfunctionsFunction#project}
 
 ---
 
@@ -1219,7 +1219,7 @@ Region *string
 
 Region of function. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions_function#region DataGoogleCloudfunctionsFunction#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions_function#region DataGoogleCloudfunctionsFunction#region}
 
 ---
 
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 &datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunctionEventTrigger {
 
@@ -1241,7 +1241,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudf
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 &datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicy {
 
@@ -1254,7 +1254,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudf
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 &datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicy {
 
@@ -1267,7 +1267,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudf
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretEnvironmentVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 &datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunctionSecretEnvironmentVariables {
 
@@ -1280,7 +1280,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudf
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 &datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunctionSecretVolumes {
 
@@ -1293,7 +1293,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudf
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 &datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunctionSecretVolumesVersions {
 
@@ -1306,7 +1306,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudf
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSourceRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 &datagooglecloudfunctionsfunction.DataGoogleCloudfunctionsFunctionSourceRepository {
 
@@ -1321,7 +1321,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudf
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyList
 ```
@@ -1470,7 +1470,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicyOutputReference
 ```
@@ -1737,7 +1737,7 @@ func InternalValue() DataGoogleCloudfunctionsFunctionAutomaticUpdatePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyList
 ```
@@ -1886,7 +1886,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference
 ```
@@ -2164,7 +2164,7 @@ func InternalValue() DataGoogleCloudfunctionsFunctionEventTriggerFailurePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionEventTriggerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudfunctionsFunctionEventTriggerList
 ```
@@ -2313,7 +2313,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionEventTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionEventTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudfunctionsFunctionEventTriggerOutputReference
 ```
@@ -2613,7 +2613,7 @@ func InternalValue() DataGoogleCloudfunctionsFunctionEventTrigger
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyList
 ```
@@ -2762,7 +2762,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicyOutputReference
 ```
@@ -3040,7 +3040,7 @@ func InternalValue() DataGoogleCloudfunctionsFunctionOnDeployUpdatePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesList
 ```
@@ -3189,7 +3189,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudfunctionsFunctionSecretEnvironmentVariablesOutputReference
 ```
@@ -3500,7 +3500,7 @@ func InternalValue() DataGoogleCloudfunctionsFunctionSecretEnvironmentVariables
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionSecretVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudfunctionsFunctionSecretVolumesList
 ```
@@ -3649,7 +3649,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionSecretVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudfunctionsFunctionSecretVolumesOutputReference
 ```
@@ -3960,7 +3960,7 @@ func InternalValue() DataGoogleCloudfunctionsFunctionSecretVolumes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionSecretVolumesVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudfunctionsFunctionSecretVolumesVersionsList
 ```
@@ -4109,7 +4109,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSecretVolumesVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionSecretVolumesVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudfunctionsFunctionSecretVolumesVersionsOutputReference
 ```
@@ -4398,7 +4398,7 @@ func InternalValue() DataGoogleCloudfunctionsFunctionSecretVolumesVersions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSourceRepositoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionSourceRepositoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudfunctionsFunctionSourceRepositoryList
 ```
@@ -4547,7 +4547,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudfunctionsFunction.DataGoogleCloudfunctionsFunctionSourceRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecloudfunctionsfunction"
 
 datagooglecloudfunctionsfunction.NewDataGoogleCloudfunctionsFunctionSourceRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudfunctionsFunctionSourceRepositoryOutputReference
 ```

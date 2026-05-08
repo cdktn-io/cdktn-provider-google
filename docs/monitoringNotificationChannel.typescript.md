@@ -4,7 +4,7 @@
 
 ### MonitoringNotificationChannel <a name="MonitoringNotificationChannel" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel google_monitoring_notification_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel google_monitoring_notification_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannel.Initializer"></a>
 
@@ -585,7 +585,7 @@ The construct id used in the generated config for the MonitoringNotificationChan
 
 The id of the existing MonitoringNotificationChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1070,9 +1070,9 @@ const monitoringNotificationChannelConfig: monitoringNotificationChannel.Monitor
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig.property.displayName">displayName</a></code> | <code>string</code> | An optional human-readable name for this notification channel. |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether notifications are forwarded to the described channel. |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig.property.forceDelete">forceDelete</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, the notification channel will be deleted regardless of its use in alert policies (the policies will be updated to remove the channel). |
-| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#id MonitoringNotificationChannel#id}. |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#id MonitoringNotificationChannel#id}. |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Configuration fields that define the channel and its behavior. |
-| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#project MonitoringNotificationChannel#project}. |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#project MonitoringNotificationChannel#project}. |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig.property.sensitiveLabels">sensitiveLabels</a></code> | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels">MonitoringNotificationChannelSensitiveLabels</a></code> | sensitive_labels block. |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelTimeouts">MonitoringNotificationChannelTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelConfig.property.userLabels">userLabels</a></code> | <code>{[ key: string ]: string}</code> | User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema, unlike the labels field. |
@@ -1161,7 +1161,7 @@ The type of the notification channel.
 
 This field matches the value of the NotificationChannelDescriptor.type field. See https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.notificationChannelDescriptors/list to get the list of valid values such as "email", "slack", etc...
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#type MonitoringNotificationChannel#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#type MonitoringNotificationChannel#type}
 
 ---
 
@@ -1177,7 +1177,7 @@ An optional human-readable description of this notification channel.
 
 This description may provide additional details, beyond the display name, for the channel. This may not exceed 1024 Unicode characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#description MonitoringNotificationChannel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#description MonitoringNotificationChannel#description}
 
 ---
 
@@ -1193,7 +1193,7 @@ An optional human-readable name for this notification channel.
 
 It is recommended that you specify a non-empty and unique name in order to make it easier to identify the channels in your project, though this is not enforced. The display name is limited to 512 Unicode characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#display_name MonitoringNotificationChannel#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#display_name MonitoringNotificationChannel#display_name}
 
 ---
 
@@ -1209,7 +1209,7 @@ Whether notifications are forwarded to the described channel.
 
 This makes it possible to disable delivery of notifications to a particular channel without removing the channel from all alerting policies that reference the channel. This is a more convenient approach when the change is temporary and you want to receive notifications from the same set of alerting policies on the channel at some point in the future.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#enabled MonitoringNotificationChannel#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#enabled MonitoringNotificationChannel#enabled}
 
 ---
 
@@ -1227,7 +1227,7 @@ If false, channels that are still
 referenced by an existing alerting policy will fail to be
 deleted in a delete operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#force_delete MonitoringNotificationChannel#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#force_delete MonitoringNotificationChannel#force_delete}
 
 ---
 
@@ -1239,7 +1239,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#id MonitoringNotificationChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#id MonitoringNotificationChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1264,7 +1264,7 @@ Labels with sensitive data are obfuscated by the API and therefore Terraform can
 determine if there are upstream changes to these fields. They can also be configured via
 the sensitive_labels block, but cannot be configured in both places.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#labels MonitoringNotificationChannel#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#labels MonitoringNotificationChannel#labels}
 
 ---
 
@@ -1276,7 +1276,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#project MonitoringNotificationChannel#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#project MonitoringNotificationChannel#project}.
 
 ---
 
@@ -1290,7 +1290,7 @@ public readonly sensitiveLabels: MonitoringNotificationChannelSensitiveLabels;
 
 sensitive_labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#sensitive_labels MonitoringNotificationChannel#sensitive_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#sensitive_labels MonitoringNotificationChannel#sensitive_labels}
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly timeouts: MonitoringNotificationChannelTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#timeouts MonitoringNotificationChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#timeouts MonitoringNotificationChannel#timeouts}
 
 ---
 
@@ -1320,7 +1320,7 @@ User-supplied key/value data that does not need to conform to the corresponding 
 
 This field is intended to be used for organizing and identifying the NotificationChannel objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes, whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must begin with a letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#user_labels MonitoringNotificationChannel#user_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#user_labels MonitoringNotificationChannel#user_labels}
 
 ---
 
@@ -1339,8 +1339,14 @@ const monitoringNotificationChannelSensitiveLabels: monitoringNotificationChanne
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.authToken">authToken</a></code> | <code>string</code> | An authorization token for a notification channel. Channel types that support this field include: slack. |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.authTokenWo">authTokenWo</a></code> | <code>string</code> | An authorization token for a notification channel. Channel types that support this field include: slack. |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.authTokenWoVersion">authTokenWoVersion</a></code> | <code>string</code> | Triggers update of 'auth_token_wo' write-only. |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.password">password</a></code> | <code>string</code> | An password for a notification channel. Channel types that support this field include: webhook_basicauth. |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.passwordWo">passwordWo</a></code> | <code>string</code> | An password for a notification channel. Channel types that support this field include: webhook_basicauth. |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.passwordWoVersion">passwordWoVersion</a></code> | <code>string</code> | Triggers update of 'password_wo' write-only. |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.serviceKey">serviceKey</a></code> | <code>string</code> | An servicekey token for a notification channel. Channel types that support this field include: pagerduty. |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.serviceKeyWo">serviceKeyWo</a></code> | <code>string</code> | An servicekey token for a notification channel. Channel types that support this field include: pagerduty. |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.serviceKeyWoVersion">serviceKeyWoVersion</a></code> | <code>string</code> | Triggers update of 'service_key_wo' write-only. |
 
 ---
 
@@ -1354,7 +1360,37 @@ public readonly authToken: string;
 
 An authorization token for a notification channel. Channel types that support this field include: slack.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#auth_token MonitoringNotificationChannel#auth_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#auth_token MonitoringNotificationChannel#auth_token}
+
+---
+
+##### `authTokenWo`<sup>Optional</sup> <a name="authTokenWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.authTokenWo"></a>
+
+```typescript
+public readonly authTokenWo: string;
+```
+
+- *Type:* string
+
+An authorization token for a notification channel. Channel types that support this field include: slack.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#auth_token_wo MonitoringNotificationChannel#auth_token_wo}
+
+---
+
+##### `authTokenWoVersion`<sup>Optional</sup> <a name="authTokenWoVersion" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.authTokenWoVersion"></a>
+
+```typescript
+public readonly authTokenWoVersion: string;
+```
+
+- *Type:* string
+
+Triggers update of 'auth_token_wo' write-only.
+
+Increment this value when an update to 'auth_token_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#auth_token_wo_version MonitoringNotificationChannel#auth_token_wo_version}
 
 ---
 
@@ -1368,7 +1404,37 @@ public readonly password: string;
 
 An password for a notification channel. Channel types that support this field include: webhook_basicauth.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#password MonitoringNotificationChannel#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#password MonitoringNotificationChannel#password}
+
+---
+
+##### `passwordWo`<sup>Optional</sup> <a name="passwordWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.passwordWo"></a>
+
+```typescript
+public readonly passwordWo: string;
+```
+
+- *Type:* string
+
+An password for a notification channel. Channel types that support this field include: webhook_basicauth.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#password_wo MonitoringNotificationChannel#password_wo}
+
+---
+
+##### `passwordWoVersion`<sup>Optional</sup> <a name="passwordWoVersion" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.passwordWoVersion"></a>
+
+```typescript
+public readonly passwordWoVersion: string;
+```
+
+- *Type:* string
+
+Triggers update of 'password_wo' write-only.
+
+Increment this value when an update to 'password_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#password_wo_version MonitoringNotificationChannel#password_wo_version}
 
 ---
 
@@ -1382,7 +1448,37 @@ public readonly serviceKey: string;
 
 An servicekey token for a notification channel. Channel types that support this field include: pagerduty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#service_key MonitoringNotificationChannel#service_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#service_key MonitoringNotificationChannel#service_key}
+
+---
+
+##### `serviceKeyWo`<sup>Optional</sup> <a name="serviceKeyWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.serviceKeyWo"></a>
+
+```typescript
+public readonly serviceKeyWo: string;
+```
+
+- *Type:* string
+
+An servicekey token for a notification channel. Channel types that support this field include: pagerduty.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#service_key_wo MonitoringNotificationChannel#service_key_wo}
+
+---
+
+##### `serviceKeyWoVersion`<sup>Optional</sup> <a name="serviceKeyWoVersion" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels.property.serviceKeyWoVersion"></a>
+
+```typescript
+public readonly serviceKeyWoVersion: string;
+```
+
+- *Type:* string
+
+Triggers update of 'service_key_wo' write-only.
+
+Increment this value when an update to 'service_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#service_key_wo_version MonitoringNotificationChannel#service_key_wo_version}
 
 ---
 
@@ -1400,9 +1496,9 @@ const monitoringNotificationChannelTimeouts: monitoringNotificationChannel.Monit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#create MonitoringNotificationChannel#create}. |
-| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#delete MonitoringNotificationChannel#delete}. |
-| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#update MonitoringNotificationChannel#update}. |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#create MonitoringNotificationChannel#create}. |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#delete MonitoringNotificationChannel#delete}. |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#update MonitoringNotificationChannel#update}. |
 
 ---
 
@@ -1414,7 +1510,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#create MonitoringNotificationChannel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#create MonitoringNotificationChannel#create}.
 
 ---
 
@@ -1426,7 +1522,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#delete MonitoringNotificationChannel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#delete MonitoringNotificationChannel#delete}.
 
 ---
 
@@ -1438,7 +1534,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#update MonitoringNotificationChannel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#update MonitoringNotificationChannel#update}.
 
 ---
 
@@ -1495,8 +1591,14 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetAuthToken">resetAuthToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetAuthTokenWo">resetAuthTokenWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetAuthTokenWoVersion">resetAuthTokenWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetPassword">resetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetPasswordWo">resetPasswordWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetPasswordWoVersion">resetPasswordWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetServiceKey">resetServiceKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetServiceKeyWo">resetServiceKeyWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetServiceKeyWoVersion">resetServiceKeyWoVersion</a></code> | *No description.* |
 
 ---
 
@@ -1656,16 +1758,52 @@ Returns a reversible string representation.
 public resetAuthToken(): void
 ```
 
+##### `resetAuthTokenWo` <a name="resetAuthTokenWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetAuthTokenWo"></a>
+
+```typescript
+public resetAuthTokenWo(): void
+```
+
+##### `resetAuthTokenWoVersion` <a name="resetAuthTokenWoVersion" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetAuthTokenWoVersion"></a>
+
+```typescript
+public resetAuthTokenWoVersion(): void
+```
+
 ##### `resetPassword` <a name="resetPassword" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetPassword"></a>
 
 ```typescript
 public resetPassword(): void
 ```
 
+##### `resetPasswordWo` <a name="resetPasswordWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetPasswordWo"></a>
+
+```typescript
+public resetPasswordWo(): void
+```
+
+##### `resetPasswordWoVersion` <a name="resetPasswordWoVersion" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetPasswordWoVersion"></a>
+
+```typescript
+public resetPasswordWoVersion(): void
+```
+
 ##### `resetServiceKey` <a name="resetServiceKey" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetServiceKey"></a>
 
 ```typescript
 public resetServiceKey(): void
+```
+
+##### `resetServiceKeyWo` <a name="resetServiceKeyWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetServiceKeyWo"></a>
+
+```typescript
+public resetServiceKeyWo(): void
+```
+
+##### `resetServiceKeyWoVersion` <a name="resetServiceKeyWoVersion" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.resetServiceKeyWoVersion"></a>
+
+```typescript
+public resetServiceKeyWoVersion(): void
 ```
 
 
@@ -1676,11 +1814,23 @@ public resetServiceKey(): void
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenInput">authTokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWoInput">authTokenWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWoVersionInput">authTokenWoVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWoInput">passwordWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWoVersionInput">passwordWoVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyInput">serviceKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWoInput">serviceKeyWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWoVersionInput">serviceKeyWoVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authToken">authToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWo">authTokenWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWoVersion">authTokenWoVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.password">password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWo">passwordWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWoVersion">passwordWoVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKey">serviceKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWo">serviceKeyWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWoVersion">serviceKeyWoVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabels">MonitoringNotificationChannelSensitiveLabels</a></code> | *No description.* |
 
 ---
@@ -1719,10 +1869,50 @@ public readonly authTokenInput: string;
 
 ---
 
+##### `authTokenWoInput`<sup>Optional</sup> <a name="authTokenWoInput" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWoInput"></a>
+
+```typescript
+public readonly authTokenWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authTokenWoVersionInput`<sup>Optional</sup> <a name="authTokenWoVersionInput" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWoVersionInput"></a>
+
+```typescript
+public readonly authTokenWoVersionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `passwordInput`<sup>Optional</sup> <a name="passwordInput" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordInput"></a>
 
 ```typescript
 public readonly passwordInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `passwordWoInput`<sup>Optional</sup> <a name="passwordWoInput" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWoInput"></a>
+
+```typescript
+public readonly passwordWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `passwordWoVersionInput`<sup>Optional</sup> <a name="passwordWoVersionInput" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWoVersionInput"></a>
+
+```typescript
+public readonly passwordWoVersionInput: string;
 ```
 
 - *Type:* string
@@ -1739,10 +1929,50 @@ public readonly serviceKeyInput: string;
 
 ---
 
+##### `serviceKeyWoInput`<sup>Optional</sup> <a name="serviceKeyWoInput" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWoInput"></a>
+
+```typescript
+public readonly serviceKeyWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceKeyWoVersionInput`<sup>Optional</sup> <a name="serviceKeyWoVersionInput" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWoVersionInput"></a>
+
+```typescript
+public readonly serviceKeyWoVersionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `authToken`<sup>Required</sup> <a name="authToken" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authToken"></a>
 
 ```typescript
 public readonly authToken: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authTokenWo`<sup>Required</sup> <a name="authTokenWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWo"></a>
+
+```typescript
+public readonly authTokenWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authTokenWoVersion`<sup>Required</sup> <a name="authTokenWoVersion" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.authTokenWoVersion"></a>
+
+```typescript
+public readonly authTokenWoVersion: string;
 ```
 
 - *Type:* string
@@ -1759,10 +1989,50 @@ public readonly password: string;
 
 ---
 
+##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWo"></a>
+
+```typescript
+public readonly passwordWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `passwordWoVersion`<sup>Required</sup> <a name="passwordWoVersion" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.passwordWoVersion"></a>
+
+```typescript
+public readonly passwordWoVersion: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `serviceKey`<sup>Required</sup> <a name="serviceKey" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKey"></a>
 
 ```typescript
 public readonly serviceKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceKeyWo`<sup>Required</sup> <a name="serviceKeyWo" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWo"></a>
+
+```typescript
+public readonly serviceKeyWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceKeyWoVersion`<sup>Required</sup> <a name="serviceKeyWoVersion" id="@cdktn/provider-google.monitoringNotificationChannel.MonitoringNotificationChannelSensitiveLabelsOutputReference.property.serviceKeyWoVersion"></a>
+
+```typescript
+public readonly serviceKeyWoVersion: string;
 ```
 
 - *Type:* string

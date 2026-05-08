@@ -4,12 +4,12 @@
 
 ### AlloydbInstance <a name="AlloydbInstance" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance google_alloydb_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance google_alloydb_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstance(scope Construct, id *string, config AlloydbInstanceConfig) AlloydbInstance
 ```
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.putClientConnectionConfig">PutClientConnectionConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.putConnectionPoolConfig">PutConnectionPoolConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.putMachineConfig">PutMachineConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.putNetworkConfig">PutNetworkConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.putPscInstanceConfig">PutPscInstanceConfig</a></code> | *No description.* |
@@ -85,6 +86,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetAnnotations">ResetAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetAvailabilityType">ResetAvailabilityType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetClientConnectionConfig">ResetClientConnectionConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetConnectionPoolConfig">ResetConnectionPoolConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetDatabaseFlags">ResetDatabaseFlags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetGceZone">ResetGceZone</a></code> | *No description.* |
@@ -420,6 +422,18 @@ func PutClientConnectionConfig(value AlloydbInstanceClientConnectionConfig)
 
 ---
 
+##### `PutConnectionPoolConfig` <a name="PutConnectionPoolConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.putConnectionPoolConfig"></a>
+
+```go
+func PutConnectionPoolConfig(value AlloydbInstanceConnectionPoolConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.putConnectionPoolConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a>
+
+---
+
 ##### `PutMachineConfig` <a name="PutMachineConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.putMachineConfig"></a>
 
 ```go
@@ -516,6 +530,12 @@ func ResetAvailabilityType()
 func ResetClientConnectionConfig()
 ```
 
+##### `ResetConnectionPoolConfig` <a name="ResetConnectionPoolConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetConnectionPoolConfig"></a>
+
+```go
+func ResetConnectionPoolConfig()
+```
+
 ##### `ResetDatabaseFlags` <a name="ResetDatabaseFlags" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetDatabaseFlags"></a>
 
 ```go
@@ -596,7 +616,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.AlloydbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -628,7 +648,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.AlloydbInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -642,7 +662,7 @@ alloydbinstance.AlloydbInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.AlloydbInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -656,7 +676,7 @@ alloydbinstance.AlloydbInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.AlloydbInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +705,7 @@ The construct id used in the generated config for the AlloydbInstance to import.
 
 The id of the existing AlloydbInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -716,6 +736,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.clientConnectionConfig">ClientConnectionConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference">AlloydbInstanceClientConnectionConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.connectionPoolConfig">ConnectionPoolConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference">AlloydbInstanceConnectionPoolConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.createTime">CreateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.effectiveAnnotations">EffectiveAnnotations</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.effectiveLabels">EffectiveLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
@@ -739,6 +760,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.availabilityTypeInput">AvailabilityTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.clientConnectionConfigInput">ClientConnectionConfigInput</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig">AlloydbInstanceClientConnectionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.clusterInput">ClusterInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.connectionPoolConfigInput">ConnectionPoolConfigInput</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.databaseFlagsInput">DatabaseFlagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.gceZoneInput">GceZoneInput</a></code> | <code>*string</code> | *No description.* |
@@ -915,6 +937,16 @@ func ClientConnectionConfig() AlloydbInstanceClientConnectionConfigOutputReferen
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference">AlloydbInstanceClientConnectionConfigOutputReference</a>
+
+---
+
+##### `ConnectionPoolConfig`<sup>Required</sup> <a name="ConnectionPoolConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.connectionPoolConfig"></a>
+
+```go
+func ConnectionPoolConfig() AlloydbInstanceConnectionPoolConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference">AlloydbInstanceConnectionPoolConfigOutputReference</a>
 
 ---
 
@@ -1145,6 +1177,16 @@ func ClusterInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ConnectionPoolConfigInput`<sup>Optional</sup> <a name="ConnectionPoolConfigInput" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.connectionPoolConfigInput"></a>
+
+```go
+func ConnectionPoolConfigInput() AlloydbInstanceConnectionPoolConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a>
 
 ---
 
@@ -1413,11 +1455,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstanceClientConnectionConfig {
 	RequireConnectors: interface{},
-	SslConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfig,
+	SslConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfig,
 }
 ```
 
@@ -1440,7 +1482,7 @@ RequireConnectors interface{}
 
 Configuration to enforce connectors only (ex: AuthProxy) connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#require_connectors AlloydbInstance#require_connectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#require_connectors AlloydbInstance#require_connectors}
 
 ---
 
@@ -1454,7 +1496,7 @@ SslConfig AlloydbInstanceClientConnectionConfigSslConfig
 
 ssl_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#ssl_config AlloydbInstance#ssl_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#ssl_config AlloydbInstance#ssl_config}
 
 ---
 
@@ -1463,7 +1505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstanceClientConnectionConfigSslConfig {
 	SslMode: *string,
@@ -1488,7 +1530,7 @@ SslMode *string
 
 SSL mode. Specifies client-server SSL/TLS connection behavior. Possible values: ["ENCRYPTED_ONLY", "ALLOW_UNENCRYPTED_AND_ENCRYPTED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#ssl_mode AlloydbInstance#ssl_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#ssl_mode AlloydbInstance#ssl_mode}
 
 ---
 
@@ -1497,7 +1539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstanceConfig {
 	Connection: interface{},
@@ -1513,18 +1555,19 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
 	ActivationPolicy: *string,
 	Annotations: *map[string]*string,
 	AvailabilityType: *string,
-	ClientConnectionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.alloydbInstance.AlloydbInstanceClientConnectionConfig,
+	ClientConnectionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.alloydbInstance.AlloydbInstanceClientConnectionConfig,
+	ConnectionPoolConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.alloydbInstance.AlloydbInstanceConnectionPoolConfig,
 	DatabaseFlags: *map[string]*string,
 	DisplayName: *string,
 	GceZone: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	MachineConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.alloydbInstance.AlloydbInstanceMachineConfig,
-	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.alloydbInstance.AlloydbInstanceNetworkConfig,
-	PscInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.alloydbInstance.AlloydbInstancePscInstanceConfig,
-	QueryInsightsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.alloydbInstance.AlloydbInstanceQueryInsightsConfig,
-	ReadPoolConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.alloydbInstance.AlloydbInstanceReadPoolConfig,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.alloydbInstance.AlloydbInstanceTimeouts,
+	MachineConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.alloydbInstance.AlloydbInstanceMachineConfig,
+	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.alloydbInstance.AlloydbInstanceNetworkConfig,
+	PscInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.alloydbInstance.AlloydbInstancePscInstanceConfig,
+	QueryInsightsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.alloydbInstance.AlloydbInstanceQueryInsightsConfig,
+	ReadPoolConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.alloydbInstance.AlloydbInstanceReadPoolConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.alloydbInstance.AlloydbInstanceTimeouts,
 }
 ```
 
@@ -1546,10 +1589,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.annotations">Annotations</a></code> | <code>*map[string]*string</code> | Annotations to allow client tools to store small amount of arbitrary data. This is distinct from labels. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.availabilityType">AvailabilityType</a></code> | <code>*string</code> | 'Availability type of an Instance. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.clientConnectionConfig">ClientConnectionConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig">AlloydbInstanceClientConnectionConfig</a></code> | client_connection_config block. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.connectionPoolConfig">ConnectionPoolConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a></code> | connection_pool_config block. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.databaseFlags">DatabaseFlags</a></code> | <code>*map[string]*string</code> | Database flags. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User-settable and human-readable display name for the Instance. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.gceZone">GceZone</a></code> | <code>*string</code> | The Compute Engine zone that the instance should serve from, per https://cloud.google.com/compute/docs/regions-zones This can ONLY be specified for ZONAL instances. If present for a REGIONAL instance, an error will be thrown. If this is absent for a ZONAL instance, instance is created in a random zone with available capacity. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#id AlloydbInstance#id}. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#id AlloydbInstance#id}. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | User-defined labels for the alloydb instance. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.machineConfig">MachineConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfig">AlloydbInstanceMachineConfig</a></code> | machine_config block. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.networkConfig">NetworkConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig">AlloydbInstanceNetworkConfig</a></code> | network_config block. |
@@ -1640,7 +1684,7 @@ Cluster *string
 
 Identifies the alloydb cluster. Must be in the format 'projects/{project}/locations/{location}/clusters/{cluster_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#cluster AlloydbInstance#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#cluster AlloydbInstance#cluster}
 
 ---
 
@@ -1654,7 +1698,7 @@ InstanceId *string
 
 The ID of the alloydb instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#instance_id AlloydbInstance#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#instance_id AlloydbInstance#instance_id}
 
 ---
 
@@ -1675,7 +1719,7 @@ If the instance type is SECONDARY, the terraform delete instance operation does 
 Use deletion_policy = "FORCE" in the associated secondary cluster and delete the cluster forcefully to delete the secondary cluster as well its associated secondary instance.
 Users can undo the delete secondary instance action by importing the deleted secondary instance by calling terraform import. Possible values: ["PRIMARY", "READ_POOL", "SECONDARY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#instance_type AlloydbInstance#instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#instance_type AlloydbInstance#instance_type}
 
 ---
 
@@ -1698,7 +1742,7 @@ example, a read pool instance should be stopped before stopping primary
 etc.). Please refer to the API documentation for more details.
 Possible values are: 'ACTIVATION_POLICY_UNSPECIFIED', 'ALWAYS', 'NEVER'.' Possible values: ["ACTIVATION_POLICY_UNSPECIFIED", "ALWAYS", "NEVER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#activation_policy AlloydbInstance#activation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#activation_policy AlloydbInstance#activation_policy}
 
 ---
 
@@ -1715,7 +1759,7 @@ Annotations to allow client tools to store small amount of arbitrary data. This 
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#annotations AlloydbInstance#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#annotations AlloydbInstance#annotations}
 
 ---
 
@@ -1736,7 +1780,7 @@ Read pools of size 1 can only have zonal availability. Read pools with a node co
 can have regional availability (nodes are present in 2 or more zones in a region).
 Possible values are: 'AVAILABILITY_TYPE_UNSPECIFIED', 'ZONAL', 'REGIONAL'.' Possible values: ["AVAILABILITY_TYPE_UNSPECIFIED", "ZONAL", "REGIONAL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#availability_type AlloydbInstance#availability_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#availability_type AlloydbInstance#availability_type}
 
 ---
 
@@ -1750,7 +1794,21 @@ ClientConnectionConfig AlloydbInstanceClientConnectionConfig
 
 client_connection_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#client_connection_config AlloydbInstance#client_connection_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#client_connection_config AlloydbInstance#client_connection_config}
+
+---
+
+##### `ConnectionPoolConfig`<sup>Optional</sup> <a name="ConnectionPoolConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.connectionPoolConfig"></a>
+
+```go
+ConnectionPoolConfig AlloydbInstanceConnectionPoolConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a>
+
+connection_pool_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#connection_pool_config AlloydbInstance#connection_pool_config}
 
 ---
 
@@ -1766,7 +1824,7 @@ Database flags.
 
 Set at instance level. * They are copied from primary instance on read instance creation. * Read instances can set new or override existing flags that are relevant for reads, e.g. for enabling columnar cache on a read instance. Flags set on read instance may or may not be present on primary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#database_flags AlloydbInstance#database_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#database_flags AlloydbInstance#database_flags}
 
 ---
 
@@ -1780,7 +1838,7 @@ DisplayName *string
 
 User-settable and human-readable display name for the Instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#display_name AlloydbInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#display_name AlloydbInstance#display_name}
 
 ---
 
@@ -1794,7 +1852,7 @@ GceZone *string
 
 The Compute Engine zone that the instance should serve from, per https://cloud.google.com/compute/docs/regions-zones This can ONLY be specified for ZONAL instances. If present for a REGIONAL instance, an error will be thrown. If this is absent for a ZONAL instance, instance is created in a random zone with available capacity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#gce_zone AlloydbInstance#gce_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#gce_zone AlloydbInstance#gce_zone}
 
 ---
 
@@ -1806,7 +1864,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#id AlloydbInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#id AlloydbInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1826,7 +1884,7 @@ User-defined labels for the alloydb instance.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#labels AlloydbInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#labels AlloydbInstance#labels}
 
 ---
 
@@ -1840,7 +1898,7 @@ MachineConfig AlloydbInstanceMachineConfig
 
 machine_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#machine_config AlloydbInstance#machine_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#machine_config AlloydbInstance#machine_config}
 
 ---
 
@@ -1854,7 +1912,7 @@ NetworkConfig AlloydbInstanceNetworkConfig
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#network_config AlloydbInstance#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#network_config AlloydbInstance#network_config}
 
 ---
 
@@ -1868,7 +1926,7 @@ PscInstanceConfig AlloydbInstancePscInstanceConfig
 
 psc_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#psc_instance_config AlloydbInstance#psc_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#psc_instance_config AlloydbInstance#psc_instance_config}
 
 ---
 
@@ -1882,7 +1940,7 @@ QueryInsightsConfig AlloydbInstanceQueryInsightsConfig
 
 query_insights_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#query_insights_config AlloydbInstance#query_insights_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#query_insights_config AlloydbInstance#query_insights_config}
 
 ---
 
@@ -1896,7 +1954,7 @@ ReadPoolConfig AlloydbInstanceReadPoolConfig
 
 read_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#read_pool_config AlloydbInstance#read_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#read_pool_config AlloydbInstance#read_pool_config}
 
 ---
 
@@ -1910,7 +1968,66 @@ Timeouts AlloydbInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#timeouts AlloydbInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#timeouts AlloydbInstance#timeouts}
+
+---
+
+### AlloydbInstanceConnectionPoolConfig <a name="AlloydbInstanceConnectionPoolConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
+
+&alloydbinstance.AlloydbInstanceConnectionPoolConfig {
+	Enabled: interface{},
+	Flags: *map[string]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether to enabled Managed Connection Pool. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig.property.flags">Flags</a></code> | <code>*map[string]*string</code> | Flags for configuring managed connection pooling when it is enabled. |
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig.property.enabled"></a>
+
+```go
+Enabled interface{}
+```
+
+- *Type:* interface{}
+
+Whether to enabled Managed Connection Pool.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#enabled AlloydbInstance#enabled}
+
+---
+
+##### `Flags`<sup>Optional</sup> <a name="Flags" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig.property.flags"></a>
+
+```go
+Flags *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Flags for configuring managed connection pooling when it is enabled.
+
+These flags will only be set if 'connection_pool_config.enabled' is
+true.
+Please see
+https://cloud.google.com/alloydb/docs/configure-managed-connection-pooling#configuration-options
+for a comprehensive list of flags that can be set. To specify the flags
+in Terraform, please remove the "connection-pooling-" prefix and use
+underscores instead of dashes in the name. For example,
+"connection-pooling-pool-mode" would be "pool_mode".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#flags AlloydbInstance#flags}
 
 ---
 
@@ -1919,7 +2036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstanceMachineConfig {
 	CpuCount: *f64,
@@ -1946,7 +2063,7 @@ CpuCount *f64
 
 The number of CPU's in the VM instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#cpu_count AlloydbInstance#cpu_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#cpu_count AlloydbInstance#cpu_count}
 
 ---
 
@@ -1960,7 +2077,7 @@ MachineType *string
 
 Machine type of the VM instance. E.g. "n2-highmem-4", "n2-highmem-8", "c4a-highmem-4-lssd". 'cpu_count' must match the number of vCPUs in the machine type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#machine_type AlloydbInstance#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#machine_type AlloydbInstance#machine_type}
 
 ---
 
@@ -1969,7 +2086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstanceNetworkConfig {
 	AllocatedIpRangeOverride: *string,
@@ -2003,7 +2120,7 @@ Name of the allocated IP range for the private IP AlloyDB instance, for example:
 If set, the instance IPs will be created from this allocated range and will override the IP range used by the parent cluster.
 The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#allocated_ip_range_override AlloydbInstance#allocated_ip_range_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#allocated_ip_range_override AlloydbInstance#allocated_ip_range_override}
 
 ---
 
@@ -2017,7 +2134,7 @@ AuthorizedExternalNetworks interface{}
 
 authorized_external_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#authorized_external_networks AlloydbInstance#authorized_external_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#authorized_external_networks AlloydbInstance#authorized_external_networks}
 
 ---
 
@@ -2031,7 +2148,7 @@ EnableOutboundPublicIp interface{}
 
 Enabling outbound public ip for the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#enable_outbound_public_ip AlloydbInstance#enable_outbound_public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#enable_outbound_public_ip AlloydbInstance#enable_outbound_public_ip}
 
 ---
 
@@ -2049,7 +2166,7 @@ If a user wishes to disable this,
 please also clear the list of the authorized external networks set on
 the same instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#enable_public_ip AlloydbInstance#enable_public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#enable_public_ip AlloydbInstance#enable_public_ip}
 
 ---
 
@@ -2058,7 +2175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworks {
 	CidrRange: *string,
@@ -2083,7 +2200,7 @@ CidrRange *string
 
 CIDR range for one authorized network of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#cidr_range AlloydbInstance#cidr_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#cidr_range AlloydbInstance#cidr_range}
 
 ---
 
@@ -2092,7 +2209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstancePscInstanceConfig {
 	AllowedConsumerProjects: *[]*string,
@@ -2123,7 +2240,7 @@ List of consumer projects that are allowed to create PSC endpoints to service-at
 
 These should be specified as project numbers only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#allowed_consumer_projects AlloydbInstance#allowed_consumer_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#allowed_consumer_projects AlloydbInstance#allowed_consumer_projects}
 
 ---
 
@@ -2137,7 +2254,7 @@ PscAutoConnections interface{}
 
 psc_auto_connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#psc_auto_connections AlloydbInstance#psc_auto_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#psc_auto_connections AlloydbInstance#psc_auto_connections}
 
 ---
 
@@ -2151,7 +2268,7 @@ PscInterfaceConfigs interface{}
 
 psc_interface_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#psc_interface_configs AlloydbInstance#psc_interface_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#psc_interface_configs AlloydbInstance#psc_interface_configs}
 
 ---
 
@@ -2160,7 +2277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstancePscInstanceConfigPscAutoConnections {
 	ConsumerNetwork: *string,
@@ -2191,7 +2308,7 @@ The consumer network might be hosted a different project than the
 consumer project. The API expects the consumer project specified to be
 the project ID (and not the project number)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#consumer_network AlloydbInstance#consumer_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#consumer_network AlloydbInstance#consumer_network}
 
 ---
 
@@ -2208,7 +2325,7 @@ The consumer project to which the PSC service automation endpoint will be create
 The API expects the consumer project to be the project ID(
 and not the project number).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#consumer_project AlloydbInstance#consumer_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#consumer_project AlloydbInstance#consumer_project}
 
 ---
 
@@ -2217,7 +2334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigs {
 	NetworkAttachmentResource: *string,
@@ -2245,7 +2362,7 @@ The network attachment resource created in the consumer project to which the PSC
 This is of the format: "projects/${CONSUMER_PROJECT}/regions/${REGION}/networkAttachments/${NETWORK_ATTACHMENT_NAME}".
 The network attachment must be in the same region as the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#network_attachment_resource AlloydbInstance#network_attachment_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#network_attachment_resource AlloydbInstance#network_attachment_resource}
 
 ---
 
@@ -2254,7 +2371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstanceQueryInsightsConfig {
 	QueryPlansPerMinute: *f64,
@@ -2287,7 +2404,7 @@ Number of query execution plans captured by Insights per minute for all queries 
 
 The default value is 5. Any integer between 0 and 20 is considered valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#query_plans_per_minute AlloydbInstance#query_plans_per_minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#query_plans_per_minute AlloydbInstance#query_plans_per_minute}
 
 ---
 
@@ -2301,7 +2418,7 @@ QueryStringLength *f64
 
 Query string length. The default value is 1024. Any integer between 256 and 4500 is considered valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#query_string_length AlloydbInstance#query_string_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#query_string_length AlloydbInstance#query_string_length}
 
 ---
 
@@ -2315,7 +2432,7 @@ RecordApplicationTags interface{}
 
 Record application tags for an instance. This flag is turned "on" by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#record_application_tags AlloydbInstance#record_application_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#record_application_tags AlloydbInstance#record_application_tags}
 
 ---
 
@@ -2329,7 +2446,7 @@ RecordClientAddress interface{}
 
 Record client address for an instance. Client address is PII information. This flag is turned "on" by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#record_client_address AlloydbInstance#record_client_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#record_client_address AlloydbInstance#record_client_address}
 
 ---
 
@@ -2338,7 +2455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstanceReadPoolConfig {
 	NodeCount: *f64,
@@ -2363,7 +2480,7 @@ NodeCount *f64
 
 Read capacity, i.e. number of nodes in a read pool instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#node_count AlloydbInstance#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#node_count AlloydbInstance#node_count}
 
 ---
 
@@ -2372,7 +2489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 &alloydbinstance.AlloydbInstanceTimeouts {
 	Create: *string,
@@ -2385,9 +2502,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#create AlloydbInstance#create}. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#delete AlloydbInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#update AlloydbInstance#update}. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#create AlloydbInstance#create}. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#delete AlloydbInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#update AlloydbInstance#update}. |
 
 ---
 
@@ -2399,7 +2516,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#create AlloydbInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#create AlloydbInstance#create}.
 
 ---
 
@@ -2411,7 +2528,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#delete AlloydbInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#delete AlloydbInstance#delete}.
 
 ---
 
@@ -2423,7 +2540,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#update AlloydbInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#update AlloydbInstance#update}.
 
 ---
 
@@ -2434,7 +2551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstanceClientConnectionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbInstanceClientConnectionConfigOutputReference
 ```
@@ -2754,7 +2871,7 @@ func InternalValue() AlloydbInstanceClientConnectionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstanceClientConnectionConfigSslConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbInstanceClientConnectionConfigSslConfigOutputReference
 ```
@@ -3027,12 +3144,323 @@ func InternalValue() AlloydbInstanceClientConnectionConfigSslConfig
 ---
 
 
+### AlloydbInstanceConnectionPoolConfigOutputReference <a name="AlloydbInstanceConnectionPoolConfigOutputReference" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
+
+alloydbinstance.NewAlloydbInstanceConnectionPoolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbInstanceConnectionPoolConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.resetFlags">ResetFlags</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetFlags` <a name="ResetFlags" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.resetFlags"></a>
+
+```go
+func ResetFlags()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.poolerCount">PoolerCount</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.enabledInput">EnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.flagsInput">FlagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.enabled">Enabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.flags">Flags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PoolerCount`<sup>Required</sup> <a name="PoolerCount" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.poolerCount"></a>
+
+```go
+func PoolerCount() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.enabledInput"></a>
+
+```go
+func EnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `FlagsInput`<sup>Optional</sup> <a name="FlagsInput" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.flagsInput"></a>
+
+```go
+func FlagsInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.enabled"></a>
+
+```go
+func Enabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Flags`<sup>Required</sup> <a name="Flags" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.flags"></a>
+
+```go
+func Flags() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() AlloydbInstanceConnectionPoolConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a>
+
+---
+
+
 ### AlloydbInstanceMachineConfigOutputReference <a name="AlloydbInstanceMachineConfigOutputReference" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstanceMachineConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbInstanceMachineConfigOutputReference
 ```
@@ -3339,7 +3767,7 @@ func InternalValue() AlloydbInstanceMachineConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstanceNetworkConfigAuthorizedExternalNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlloydbInstanceNetworkConfigAuthorizedExternalNetworksList
 ```
@@ -3499,7 +3927,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlloydbInstanceNetworkConfigAuthorizedExternalNetworksOutputReference
 ```
@@ -3795,7 +4223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstanceNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbInstanceNetworkConfigOutputReference
 ```
@@ -4173,7 +4601,7 @@ func InternalValue() AlloydbInstanceNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstancePscInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbInstancePscInstanceConfigOutputReference
 ```
@@ -4557,7 +4985,7 @@ func InternalValue() AlloydbInstancePscInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstancePscInstanceConfigPscAutoConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlloydbInstancePscInstanceConfigPscAutoConnectionsList
 ```
@@ -4717,7 +5145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlloydbInstancePscInstanceConfigPscAutoConnectionsOutputReference
 ```
@@ -5075,7 +5503,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstancePscInstanceConfigPscInterfaceConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AlloydbInstancePscInstanceConfigPscInterfaceConfigsList
 ```
@@ -5235,7 +5663,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AlloydbInstancePscInstanceConfigPscInterfaceConfigsOutputReference
 ```
@@ -5531,7 +5959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceQueryInsightsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstanceQueryInsightsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbInstanceQueryInsightsConfigOutputReference
 ```
@@ -5896,7 +6324,7 @@ func InternalValue() AlloydbInstanceQueryInsightsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceReadPoolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstanceReadPoolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbInstanceReadPoolConfigOutputReference
 ```
@@ -6174,7 +6602,7 @@ func InternalValue() AlloydbInstanceReadPoolConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/alloydbinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/alloydbinstance"
 
 alloydbinstance.NewAlloydbInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AlloydbInstanceTimeoutsOutputReference
 ```

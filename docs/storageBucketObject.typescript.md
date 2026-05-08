@@ -4,7 +4,7 @@
 
 ### StorageBucketObject <a name="StorageBucketObject" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object google_storage_bucket_object}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.putContexts">putContexts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.putCustomerEncryption">putCustomerEncryption</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.putRetention">putRetention</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.putTimeouts">putTimeouts</a></code> | *No description.* |
@@ -83,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.resetContentEncoding">resetContentEncoding</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.resetContentLanguage">resetContentLanguage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.resetContentType">resetContentType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.resetContexts">resetContexts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.resetCustomerEncryption">resetCustomerEncryption</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.resetDetectMd5Hash">resetDetectMd5Hash</a></code> | *No description.* |
@@ -409,6 +411,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putContexts` <a name="putContexts" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject.putContexts"></a>
+
+```typescript
+public putContexts(value: StorageBucketObjectContexts): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject.putContexts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts">StorageBucketObjectContexts</a>
+
+---
+
 ##### `putCustomerEncryption` <a name="putCustomerEncryption" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject.putCustomerEncryption"></a>
 
 ```typescript
@@ -479,6 +493,12 @@ public resetContentLanguage(): void
 
 ```typescript
 public resetContentType(): void
+```
+
+##### `resetContexts` <a name="resetContexts" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject.resetContexts"></a>
+
+```typescript
+public resetContexts(): void
 ```
 
 ##### `resetCustomerEncryption` <a name="resetCustomerEncryption" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject.resetCustomerEncryption"></a>
@@ -668,7 +688,7 @@ The construct id used in the generated config for the StorageBucketObject to imp
 
 The id of the existing StorageBucketObject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -698,6 +718,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.contexts">contexts</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference">StorageBucketObjectContextsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.crc32C">crc32C</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.customerEncryption">customerEncryption</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectCustomerEncryptionOutputReference">StorageBucketObjectCustomerEncryptionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.generation">generation</a></code> | <code>number</code> | *No description.* |
@@ -715,6 +736,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.contentInput">contentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.contentLanguageInput">contentLanguageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.contentTypeInput">contentTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.contextsInput">contextsInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts">StorageBucketObjectContexts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.customerEncryptionInput">customerEncryptionInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectCustomerEncryption">StorageBucketObjectCustomerEncryption</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.detectMd5HashInput">detectMd5HashInput</a></code> | <code>string</code> | *No description.* |
@@ -894,6 +916,16 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `contexts`<sup>Required</sup> <a name="contexts" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.contexts"></a>
+
+```typescript
+public readonly contexts: StorageBucketObjectContextsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference">StorageBucketObjectContextsOutputReference</a>
+
+---
+
 ##### `crc32C`<sup>Required</sup> <a name="crc32C" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.crc32C"></a>
 
 ```typescript
@@ -1061,6 +1093,16 @@ public readonly contentTypeInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `contextsInput`<sup>Optional</sup> <a name="contextsInput" id="@cdktn/provider-google.storageBucketObject.StorageBucketObject.property.contextsInput"></a>
+
+```typescript
+public readonly contextsInput: StorageBucketObjectContexts;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts">StorageBucketObjectContexts</a>
 
 ---
 
@@ -1453,12 +1495,13 @@ const storageBucketObjectConfig: storageBucketObject.StorageBucketObjectConfig =
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.contentEncoding">contentEncoding</a></code> | <code>string</code> | Content-Encoding of the object data. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.contentLanguage">contentLanguage</a></code> | <code>string</code> | Content-Language of the object data. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.contentType">contentType</a></code> | <code>string</code> | Content-Type of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8". |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.contexts">contexts</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts">StorageBucketObjectContexts</a></code> | contexts block. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.customerEncryption">customerEncryption</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectCustomerEncryption">StorageBucketObjectCustomerEncryption</a></code> | customer_encryption block. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | The deletion policy for the object. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.detectMd5Hash">detectMd5Hash</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.detectMd5Hash">detectMd5Hash</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.eventBasedHold">eventBasedHold</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether an object is under event-based hold. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.forceEmptyContentType">forceEmptyContentType</a></code> | <code>boolean \| cdktn.IResolvable</code> | Flag to set empty Content-Type. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.kmsKeyName">kmsKeyName</a></code> | <code>string</code> | Resource name of the Cloud KMS key that will be used to encrypt the object. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | User-provided metadata, in key/value pairs. |
 | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.retention">retention</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectRetention">StorageBucketObjectRetention</a></code> | retention block. |
@@ -1550,7 +1593,7 @@ public readonly bucket: string;
 
 The name of the containing bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#bucket StorageBucketObject#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#bucket StorageBucketObject#bucket}
 
 ---
 
@@ -1564,7 +1607,7 @@ public readonly name: string;
 
 The name of the object. If you're interpolating the name of this object, see output_name instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#name StorageBucketObject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#name StorageBucketObject#name}
 
 ---
 
@@ -1580,7 +1623,7 @@ Cache-Control directive to specify caching behavior of object data.
 
 If omitted and object is accessible to all anonymous users, the default will be public, max-age=3600
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#cache_control StorageBucketObject#cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#cache_control StorageBucketObject#cache_control}
 
 ---
 
@@ -1596,7 +1639,7 @@ Data as string to be uploaded.
 
 Must be defined if source is not. Note: The content field is marked as sensitive. To view the raw contents of the object, please define an output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#content StorageBucketObject#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#content StorageBucketObject#content}
 
 ---
 
@@ -1610,7 +1653,7 @@ public readonly contentDisposition: string;
 
 Content-Disposition of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#content_disposition StorageBucketObject#content_disposition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#content_disposition StorageBucketObject#content_disposition}
 
 ---
 
@@ -1624,7 +1667,7 @@ public readonly contentEncoding: string;
 
 Content-Encoding of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#content_encoding StorageBucketObject#content_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#content_encoding StorageBucketObject#content_encoding}
 
 ---
 
@@ -1638,7 +1681,7 @@ public readonly contentLanguage: string;
 
 Content-Language of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#content_language StorageBucketObject#content_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#content_language StorageBucketObject#content_language}
 
 ---
 
@@ -1652,7 +1695,21 @@ public readonly contentType: string;
 
 Content-Type of the object data. Defaults to "application/octet-stream" or "text/plain; charset=utf-8".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#content_type StorageBucketObject#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#content_type StorageBucketObject#content_type}
+
+---
+
+##### `contexts`<sup>Optional</sup> <a name="contexts" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectConfig.property.contexts"></a>
+
+```typescript
+public readonly contexts: StorageBucketObjectContexts;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts">StorageBucketObjectContexts</a>
+
+contexts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#contexts StorageBucketObject#contexts}
 
 ---
 
@@ -1666,7 +1723,7 @@ public readonly customerEncryption: StorageBucketObjectCustomerEncryption;
 
 customer_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#customer_encryption StorageBucketObject#customer_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#customer_encryption StorageBucketObject#customer_encryption}
 
 ---
 
@@ -1682,7 +1739,7 @@ The deletion policy for the object.
 
 Setting ABANDON allows the resource to be abandoned rather than deleted when removed from your Terraform configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#deletion_policy StorageBucketObject#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#deletion_policy StorageBucketObject#deletion_policy}
 
 ---
 
@@ -1694,7 +1751,7 @@ public readonly detectMd5Hash: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#detect_md5hash StorageBucketObject#detect_md5hash}.
 
 ---
 
@@ -1710,7 +1767,7 @@ Whether an object is under event-based hold.
 
 Event-based hold is a way to retain objects until an event occurs, which is signified by the hold's release (i.e. this value is set to false). After being released (set to false), such objects will be subject to bucket-level retention (if any).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#event_based_hold StorageBucketObject#event_based_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#event_based_hold StorageBucketObject#event_based_hold}
 
 ---
 
@@ -1724,7 +1781,7 @@ public readonly forceEmptyContentType: boolean | IResolvable;
 
 Flag to set empty Content-Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#force_empty_content_type StorageBucketObject#force_empty_content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#force_empty_content_type StorageBucketObject#force_empty_content_type}
 
 ---
 
@@ -1736,7 +1793,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#id StorageBucketObject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1755,7 +1812,7 @@ Resource name of the Cloud KMS key that will be used to encrypt the object.
 
 Overrides the object metadata's kmsKeyName value, if any.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#kms_key_name StorageBucketObject#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#kms_key_name StorageBucketObject#kms_key_name}
 
 ---
 
@@ -1769,7 +1826,7 @@ public readonly metadata: {[ key: string ]: string};
 
 User-provided metadata, in key/value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#metadata StorageBucketObject#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#metadata StorageBucketObject#metadata}
 
 ---
 
@@ -1783,7 +1840,7 @@ public readonly retention: StorageBucketObjectRetention;
 
 retention block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#retention StorageBucketObject#retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#retention StorageBucketObject#retention}
 
 ---
 
@@ -1797,7 +1854,7 @@ public readonly source: string;
 
 A path to the data you want to upload. Must be defined if content is not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#source StorageBucketObject#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#source StorageBucketObject#source}
 
 ---
 
@@ -1811,7 +1868,7 @@ public readonly sourceMd5Hash: string;
 
 User-provided md5hash, Base 64 MD5 hash of the object data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#source_md5hash StorageBucketObject#source_md5hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#source_md5hash StorageBucketObject#source_md5hash}
 
 ---
 
@@ -1827,7 +1884,7 @@ The StorageClass of the new bucket object.
 
 Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE. If not provided, this defaults to the bucket's default storage class or to a standard class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#storage_class StorageBucketObject#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#storage_class StorageBucketObject#storage_class}
 
 ---
 
@@ -1843,7 +1900,7 @@ Whether an object is under temporary hold.
 
 While this flag is set to true, the object is protected against deletion and overwrites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#temporary_hold StorageBucketObject#temporary_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#temporary_hold StorageBucketObject#temporary_hold}
 
 ---
 
@@ -1857,7 +1914,86 @@ public readonly timeouts: StorageBucketObjectTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#timeouts StorageBucketObject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#timeouts StorageBucketObject#timeouts}
+
+---
+
+### StorageBucketObjectContexts <a name="StorageBucketObjectContexts" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts.Initializer"></a>
+
+```typescript
+import { storageBucketObject } from '@cdktn/provider-google'
+
+const storageBucketObjectContexts: storageBucketObject.StorageBucketObjectContexts = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts.property.custom">custom</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom">StorageBucketObjectContextsCustom</a>[]</code> | custom block. |
+
+---
+
+##### `custom`<sup>Required</sup> <a name="custom" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts.property.custom"></a>
+
+```typescript
+public readonly custom: IResolvable | StorageBucketObjectContextsCustom[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom">StorageBucketObjectContextsCustom</a>[]
+
+custom block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#custom StorageBucketObject#custom}
+
+---
+
+### StorageBucketObjectContextsCustom <a name="StorageBucketObjectContextsCustom" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom.Initializer"></a>
+
+```typescript
+import { storageBucketObject } from '@cdktn/provider-google'
+
+const storageBucketObjectContextsCustom: storageBucketObject.StorageBucketObjectContextsCustom = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom.property.key">key</a></code> | <code>string</code> | An individual object context. Context keys and their corresponding values must start with an alphanumeric character. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom.property.value">value</a></code> | <code>string</code> | The value associated with this context. This field holds the primary information for the given context key. |
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom.property.key"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* string
+
+An individual object context. Context keys and their corresponding values must start with an alphanumeric character.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#key StorageBucketObject#key}
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+The value associated with this context. This field holds the primary information for the given context key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#value StorageBucketObject#value}
 
 ---
 
@@ -1890,7 +2026,7 @@ public readonly encryptionKey: string;
 
 Base64 encoded customer supplied encryption key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#encryption_key StorageBucketObject#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#encryption_key StorageBucketObject#encryption_key}
 
 ---
 
@@ -1904,7 +2040,7 @@ public readonly encryptionAlgorithm: string;
 
 The encryption algorithm. Default: AES256.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#encryption_algorithm StorageBucketObject#encryption_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#encryption_algorithm StorageBucketObject#encryption_algorithm}
 
 ---
 
@@ -1937,7 +2073,7 @@ public readonly mode: string;
 
 The object retention mode. Supported values include: "Unlocked", "Locked".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#mode StorageBucketObject#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#mode StorageBucketObject#mode}
 
 ---
 
@@ -1951,7 +2087,7 @@ public readonly retainUntilTime: string;
 
 Time in RFC 3339 (e.g. 2030-01-01T02:03:04Z) until which object retention protects this object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#retain_until_time StorageBucketObject#retain_until_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#retain_until_time StorageBucketObject#retain_until_time}
 
 ---
 
@@ -1969,9 +2105,9 @@ const storageBucketObjectTimeouts: storageBucketObject.StorageBucketObjectTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#create StorageBucketObject#create}. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#delete StorageBucketObject#delete}. |
-| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#update StorageBucketObject#update}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#create StorageBucketObject#create}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#delete StorageBucketObject#delete}. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#update StorageBucketObject#update}. |
 
 ---
 
@@ -1983,7 +2119,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#create StorageBucketObject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#create StorageBucketObject#create}.
 
 ---
 
@@ -1995,7 +2131,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#delete StorageBucketObject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#delete StorageBucketObject#delete}.
 
 ---
 
@@ -2007,11 +2143,788 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_object#update StorageBucketObject#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_object#update StorageBucketObject#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### StorageBucketObjectContextsCustomList <a name="StorageBucketObjectContextsCustomList" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.Initializer"></a>
+
+```typescript
+import { storageBucketObject } from '@cdktn/provider-google'
+
+new storageBucketObject.StorageBucketObjectContextsCustomList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.get"></a>
+
+```typescript
+public get(index: number): StorageBucketObjectContextsCustomOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom">StorageBucketObjectContextsCustom</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | StorageBucketObjectContextsCustom[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom">StorageBucketObjectContextsCustom</a>[]
+
+---
+
+
+### StorageBucketObjectContextsCustomOutputReference <a name="StorageBucketObjectContextsCustomOutputReference" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.Initializer"></a>
+
+```typescript
+import { storageBucketObject } from '@cdktn/provider-google'
+
+new storageBucketObject.StorageBucketObjectContextsCustomOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom">StorageBucketObjectContextsCustom</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.createTime"></a>
+
+```typescript
+public readonly createTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.updateTime"></a>
+
+```typescript
+public readonly updateTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.keyInput"></a>
+
+```typescript
+public readonly keyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.valueInput"></a>
+
+```typescript
+public readonly valueInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.key"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.value"></a>
+
+```typescript
+public readonly value: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | StorageBucketObjectContextsCustom;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom">StorageBucketObjectContextsCustom</a>
+
+---
+
+
+### StorageBucketObjectContextsOutputReference <a name="StorageBucketObjectContextsOutputReference" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.Initializer"></a>
+
+```typescript
+import { storageBucketObject } from '@cdktn/provider-google'
+
+new storageBucketObject.StorageBucketObjectContextsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.putCustom">putCustom</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putCustom` <a name="putCustom" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.putCustom"></a>
+
+```typescript
+public putCustom(value: IResolvable | StorageBucketObjectContextsCustom[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.putCustom.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom">StorageBucketObjectContextsCustom</a>[]
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.property.custom">custom</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList">StorageBucketObjectContextsCustomList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.property.customInput">customInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom">StorageBucketObjectContextsCustom</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts">StorageBucketObjectContexts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `custom`<sup>Required</sup> <a name="custom" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.property.custom"></a>
+
+```typescript
+public readonly custom: StorageBucketObjectContextsCustomList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustomList">StorageBucketObjectContextsCustomList</a>
+
+---
+
+##### `customInput`<sup>Optional</sup> <a name="customInput" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.property.customInput"></a>
+
+```typescript
+public readonly customInput: IResolvable | StorageBucketObjectContextsCustom[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsCustom">StorageBucketObjectContextsCustom</a>[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectContextsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: StorageBucketObjectContexts;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketObject.StorageBucketObjectContexts">StorageBucketObjectContexts</a>
+
+---
+
 
 ### StorageBucketObjectCustomerEncryptionOutputReference <a name="StorageBucketObjectCustomerEncryptionOutputReference" id="@cdktn/provider-google.storageBucketObject.StorageBucketObjectCustomerEncryptionOutputReference"></a>
 

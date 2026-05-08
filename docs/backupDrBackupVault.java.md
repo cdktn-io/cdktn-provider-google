@@ -4,7 +4,7 @@
 
 ### BackupDrBackupVault <a name="BackupDrBackupVault" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault google_backup_dr_backup_vault}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer"></a>
 
@@ -28,6 +28,7 @@ BackupDrBackupVault.Builder.create(Construct scope, java.lang.String id)
 //  .backupRetentionInheritance(java.lang.String)
 //  .description(java.lang.String)
 //  .effectiveTime(java.lang.String)
+//  .encryptionConfig(BackupDrBackupVaultEncryptionConfig)
 //  .forceDelete(java.lang.Boolean|IResolvable)
 //  .forceUpdate(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
@@ -59,13 +60,14 @@ BackupDrBackupVault.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.backupRetentionInheritance">backupRetentionInheritance</a></code> | <code>java.lang.String</code> | How a backup's enforced retention end time is inherited. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Optional. The description of the BackupVault instance (2048 characters or less). |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.effectiveTime">effectiveTime</a></code> | <code>java.lang.String</code> | Optional. Time after which the BackupVault resource is locked. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig">BackupDrBackupVaultEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.forceUpdate">forceUpdate</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set, allow update to extend the minimum enforced retention for backup vault. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.ignoreBackupPlanReferences">ignoreBackupPlanReferences</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.ignoreInactiveDatasources">ignoreInactiveDatasources</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Optional. Resource labels to represent user provided metadata. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a></code> | timeouts block. |
 
 ---
@@ -138,7 +140,7 @@ Required.
 
 The default and minimum enforced retention for each backup within the backup vault. The enforced retention for each backup can be extended.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#backup_minimum_enforced_retention_duration BackupDrBackupVault#backup_minimum_enforced_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#backup_minimum_enforced_retention_duration BackupDrBackupVault#backup_minimum_enforced_retention_duration}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Required. ID of the requesting object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#backup_vault_id BackupDrBackupVault#backup_vault_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#backup_vault_id BackupDrBackupVault#backup_vault_id}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The GCP location for the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#location BackupDrBackupVault#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#location BackupDrBackupVault#location}
 
 ---
 
@@ -170,7 +172,7 @@ Access restriction for the backup vault.
 
 Default value is 'WITHIN_ORGANIZATION' if not provided during creation. Default value: "WITHIN_ORGANIZATION" Possible values: ["ACCESS_RESTRICTION_UNSPECIFIED", "WITHIN_PROJECT", "WITHIN_ORGANIZATION", "UNRESTRICTED", "WITHIN_ORG_BUT_UNRESTRICTED_FOR_BA"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#access_restriction BackupDrBackupVault#access_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#access_restriction BackupDrBackupVault#access_restriction}
 
 ---
 
@@ -180,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
 
 ---
 
@@ -193,7 +195,7 @@ Optional. User annotations. See https://google.aip.dev/128#annotations Stores sm
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#annotations BackupDrBackupVault#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#annotations BackupDrBackupVault#annotations}
 
 ---
 
@@ -205,7 +207,7 @@ How a backup's enforced retention end time is inherited.
 
 Default value is 'INHERIT_VAULT_RETENTION' if not provided during creation. Possible values: ["BACKUP_RETENTION_INHERITANCE_UNSPECIFIED", "INHERIT_VAULT_RETENTION", "MATCH_BACKUP_EXPIRE_TIME"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#backup_retention_inheritance BackupDrBackupVault#backup_retention_inheritance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#backup_retention_inheritance BackupDrBackupVault#backup_retention_inheritance}
 
 ---
 
@@ -215,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. The description of the BackupVault instance (2048 characters or less).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#description BackupDrBackupVault#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#description BackupDrBackupVault#description}
 
 ---
 
@@ -225,7 +227,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. Time after which the BackupVault resource is locked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#effective_time BackupDrBackupVault#effective_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#effective_time BackupDrBackupVault#effective_time}
+
+---
+
+##### `encryptionConfig`<sup>Optional</sup> <a name="encryptionConfig" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.Initializer.parameter.encryptionConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig">BackupDrBackupVaultEncryptionConfig</a>
+
+encryption_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#encryption_config BackupDrBackupVault#encryption_config}
 
 ---
 
@@ -237,7 +249,7 @@ If set, the following restrictions against deletion of the backup vault instance
 
 * deletion of a backup vault instance that is being referenced by an active backup plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
 
 ---
 
@@ -252,7 +264,7 @@ the restriction against conflicting retention periods. This conflict may occur w
 expiration schedule defined by the associated backup plan is shorter than the minimum
 retention set by the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
 
 ---
 
@@ -260,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -273,7 +285,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
 
 ---
 
@@ -283,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
 
 ---
 
@@ -296,7 +308,7 @@ Optional. Resource labels to represent user provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#labels BackupDrBackupVault#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#labels BackupDrBackupVault#labels}
 
 ---
 
@@ -304,7 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}.
 
 ---
 
@@ -314,7 +326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#timeouts BackupDrBackupVault#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#timeouts BackupDrBackupVault#timeouts}
 
 ---
 
@@ -346,6 +358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.putEncryptionConfig">putEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.resetAccessRestriction">resetAccessRestriction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.resetAllowMissing">resetAllowMissing</a></code> | *No description.* |
@@ -353,6 +366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.resetBackupRetentionInheritance">resetBackupRetentionInheritance</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.resetEffectiveTime">resetEffectiveTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.resetEncryptionConfig">resetEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.resetForceDelete">resetForceDelete</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.resetForceUpdate">resetForceUpdate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.resetId">resetId</a></code> | *No description.* |
@@ -675,6 +689,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putEncryptionConfig` <a name="putEncryptionConfig" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.putEncryptionConfig"></a>
+
+```java
+public void putEncryptionConfig(BackupDrBackupVaultEncryptionConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.putEncryptionConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig">BackupDrBackupVaultEncryptionConfig</a>
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.putTimeouts"></a>
 
 ```java
@@ -721,6 +747,12 @@ public void resetDescription()
 
 ```java
 public void resetEffectiveTime()
+```
+
+##### `resetEncryptionConfig` <a name="resetEncryptionConfig" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.resetEncryptionConfig"></a>
+
+```java
+public void resetEncryptionConfig()
 ```
 
 ##### `resetForceDelete` <a name="resetForceDelete" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.resetForceDelete"></a>
@@ -874,7 +906,7 @@ The construct id used in the generated config for the BackupDrBackupVault to imp
 
 The id of the existing BackupDrBackupVault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -909,6 +941,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.deletable">deletable</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.effectiveAnnotations">effectiveAnnotations</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.effectiveLabels">effectiveLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference">BackupDrBackupVaultEncryptionConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.etag">etag</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.serviceAccount">serviceAccount</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -926,6 +959,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.backupVaultIdInput">backupVaultIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.effectiveTimeInput">effectiveTimeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.encryptionConfigInput">encryptionConfigInput</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig">BackupDrBackupVaultEncryptionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forceDeleteInput">forceDeleteInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.forceUpdateInput">forceUpdateInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1146,6 +1180,16 @@ public StringMap getEffectiveLabels();
 
 ---
 
+##### `encryptionConfig`<sup>Required</sup> <a name="encryptionConfig" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.encryptionConfig"></a>
+
+```java
+public BackupDrBackupVaultEncryptionConfigOutputReference getEncryptionConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference">BackupDrBackupVaultEncryptionConfigOutputReference</a>
+
+---
+
 ##### `etag`<sup>Required</sup> <a name="etag" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.etag"></a>
 
 ```java
@@ -1313,6 +1357,16 @@ public java.lang.String getEffectiveTimeInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `encryptionConfigInput`<sup>Optional</sup> <a name="encryptionConfigInput" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVault.property.encryptionConfigInput"></a>
+
+```java
+public BackupDrBackupVaultEncryptionConfig getEncryptionConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig">BackupDrBackupVaultEncryptionConfig</a>
 
 ---
 
@@ -1610,6 +1664,7 @@ BackupDrBackupVaultConfig.builder()
 //  .backupRetentionInheritance(java.lang.String)
 //  .description(java.lang.String)
 //  .effectiveTime(java.lang.String)
+//  .encryptionConfig(BackupDrBackupVaultEncryptionConfig)
 //  .forceDelete(java.lang.Boolean|IResolvable)
 //  .forceUpdate(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
@@ -1641,13 +1696,14 @@ BackupDrBackupVaultConfig.builder()
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.backupRetentionInheritance">backupRetentionInheritance</a></code> | <code>java.lang.String</code> | How a backup's enforced retention end time is inherited. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.description">description</a></code> | <code>java.lang.String</code> | Optional. The description of the BackupVault instance (2048 characters or less). |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.effectiveTime">effectiveTime</a></code> | <code>java.lang.String</code> | Optional. Time after which the BackupVault resource is locked. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig">BackupDrBackupVaultEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.forceDelete">forceDelete</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.forceUpdate">forceUpdate</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set, allow update to extend the minimum enforced retention for backup vault. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.ignoreBackupPlanReferences">ignoreBackupPlanReferences</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.ignoreInactiveDatasources">ignoreInactiveDatasources</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Optional. Resource labels to represent user provided metadata. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}. |
 | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts">BackupDrBackupVaultTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1734,7 +1790,7 @@ Required.
 
 The default and minimum enforced retention for each backup within the backup vault. The enforced retention for each backup can be extended.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#backup_minimum_enforced_retention_duration BackupDrBackupVault#backup_minimum_enforced_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#backup_minimum_enforced_retention_duration BackupDrBackupVault#backup_minimum_enforced_retention_duration}
 
 ---
 
@@ -1748,7 +1804,7 @@ public java.lang.String getBackupVaultId();
 
 Required. ID of the requesting object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#backup_vault_id BackupDrBackupVault#backup_vault_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#backup_vault_id BackupDrBackupVault#backup_vault_id}
 
 ---
 
@@ -1762,7 +1818,7 @@ public java.lang.String getLocation();
 
 The GCP location for the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#location BackupDrBackupVault#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#location BackupDrBackupVault#location}
 
 ---
 
@@ -1778,7 +1834,7 @@ Access restriction for the backup vault.
 
 Default value is 'WITHIN_ORGANIZATION' if not provided during creation. Default value: "WITHIN_ORGANIZATION" Possible values: ["ACCESS_RESTRICTION_UNSPECIFIED", "WITHIN_PROJECT", "WITHIN_ORGANIZATION", "UNRESTRICTED", "WITHIN_ORG_BUT_UNRESTRICTED_FOR_BA"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#access_restriction BackupDrBackupVault#access_restriction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#access_restriction BackupDrBackupVault#access_restriction}
 
 ---
 
@@ -1792,7 +1848,7 @@ public java.lang.Boolean|IResolvable getAllowMissing();
 
 Allow idempotent deletion of backup vault. The request will still succeed in case the backup vault does not exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#allow_missing BackupDrBackupVault#allow_missing}
 
 ---
 
@@ -1809,7 +1865,7 @@ Optional. User annotations. See https://google.aip.dev/128#annotations Stores sm
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#annotations BackupDrBackupVault#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#annotations BackupDrBackupVault#annotations}
 
 ---
 
@@ -1825,7 +1881,7 @@ How a backup's enforced retention end time is inherited.
 
 Default value is 'INHERIT_VAULT_RETENTION' if not provided during creation. Possible values: ["BACKUP_RETENTION_INHERITANCE_UNSPECIFIED", "INHERIT_VAULT_RETENTION", "MATCH_BACKUP_EXPIRE_TIME"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#backup_retention_inheritance BackupDrBackupVault#backup_retention_inheritance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#backup_retention_inheritance BackupDrBackupVault#backup_retention_inheritance}
 
 ---
 
@@ -1839,7 +1895,7 @@ public java.lang.String getDescription();
 
 Optional. The description of the BackupVault instance (2048 characters or less).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#description BackupDrBackupVault#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#description BackupDrBackupVault#description}
 
 ---
 
@@ -1853,7 +1909,21 @@ public java.lang.String getEffectiveTime();
 
 Optional. Time after which the BackupVault resource is locked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#effective_time BackupDrBackupVault#effective_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#effective_time BackupDrBackupVault#effective_time}
+
+---
+
+##### `encryptionConfig`<sup>Optional</sup> <a name="encryptionConfig" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultConfig.property.encryptionConfig"></a>
+
+```java
+public BackupDrBackupVaultEncryptionConfig getEncryptionConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig">BackupDrBackupVaultEncryptionConfig</a>
+
+encryption_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#encryption_config BackupDrBackupVault#encryption_config}
 
 ---
 
@@ -1869,7 +1939,7 @@ If set, the following restrictions against deletion of the backup vault instance
 
 * deletion of a backup vault instance that is being referenced by an active backup plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#force_delete BackupDrBackupVault#force_delete}
 
 ---
 
@@ -1888,7 +1958,7 @@ the restriction against conflicting retention periods. This conflict may occur w
 expiration schedule defined by the associated backup plan is shorter than the minimum
 retention set by the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#force_update BackupDrBackupVault#force_update}
 
 ---
 
@@ -1900,7 +1970,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#id BackupDrBackupVault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1917,7 +1987,7 @@ public java.lang.Boolean|IResolvable getIgnoreBackupPlanReferences();
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance that is being referenced by an active backup plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#ignore_backup_plan_references BackupDrBackupVault#ignore_backup_plan_references}
 
 ---
 
@@ -1931,7 +2001,7 @@ public java.lang.Boolean|IResolvable getIgnoreInactiveDatasources();
 
 If set, the following restrictions against deletion of the backup vault instance can be overridden:    * deletion of a backup vault instance containing no backups, but still containing empty datasources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#ignore_inactive_datasources BackupDrBackupVault#ignore_inactive_datasources}
 
 ---
 
@@ -1948,7 +2018,7 @@ Optional. Resource labels to represent user provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#labels BackupDrBackupVault#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#labels BackupDrBackupVault#labels}
 
 ---
 
@@ -1960,7 +2030,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#project BackupDrBackupVault#project}.
 
 ---
 
@@ -1974,7 +2044,43 @@ public BackupDrBackupVaultTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#timeouts BackupDrBackupVault#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#timeouts BackupDrBackupVault#timeouts}
+
+---
+
+### BackupDrBackupVaultEncryptionConfig <a name="BackupDrBackupVaultEncryptionConfig" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.backup_dr_backup_vault.BackupDrBackupVaultEncryptionConfig;
+
+BackupDrBackupVaultEncryptionConfig.builder()
+//  .kmsKeyName(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | The Resource name of the Cloud KMS key to be used to encrypt new backups. |
+
+---
+
+##### `kmsKeyName`<sup>Optional</sup> <a name="kmsKeyName" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig.property.kmsKeyName"></a>
+
+```java
+public java.lang.String getKmsKeyName();
+```
+
+- *Type:* java.lang.String
+
+The Resource name of the Cloud KMS key to be used to encrypt new backups.
+
+The key must be in the same location as the backup vault. The key must be a Cloud KMS CryptoKey.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#kms_key_name BackupDrBackupVault#kms_key_name}
 
 ---
 
@@ -1996,9 +2102,9 @@ BackupDrBackupVaultTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}. |
-| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}. |
 
 ---
 
@@ -2010,7 +2116,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#create BackupDrBackupVault#create}.
 
 ---
 
@@ -2022,7 +2128,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#delete BackupDrBackupVault#delete}.
 
 ---
 
@@ -2034,11 +2140,289 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_backup_vault#update BackupDrBackupVault#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### BackupDrBackupVaultEncryptionConfigOutputReference <a name="BackupDrBackupVaultEncryptionConfigOutputReference" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.backup_dr_backup_vault.BackupDrBackupVaultEncryptionConfigOutputReference;
+
+new BackupDrBackupVaultEncryptionConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.resetKmsKeyName">resetKmsKeyName</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetKmsKeyName` <a name="resetKmsKeyName" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.resetKmsKeyName"></a>
+
+```java
+public void resetKmsKeyName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.property.kmsKeyNameInput">kmsKeyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.property.kmsKeyName">kmsKeyName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig">BackupDrBackupVaultEncryptionConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `kmsKeyNameInput`<sup>Optional</sup> <a name="kmsKeyNameInput" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.property.kmsKeyNameInput"></a>
+
+```java
+public java.lang.String getKmsKeyNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `kmsKeyName`<sup>Required</sup> <a name="kmsKeyName" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.property.kmsKeyName"></a>
+
+```java
+public java.lang.String getKmsKeyName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfigOutputReference.property.internalValue"></a>
+
+```java
+public BackupDrBackupVaultEncryptionConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultEncryptionConfig">BackupDrBackupVaultEncryptionConfig</a>
+
+---
+
 
 ### BackupDrBackupVaultTimeoutsOutputReference <a name="BackupDrBackupVaultTimeoutsOutputReference" id="@cdktn/provider-google.backupDrBackupVault.BackupDrBackupVaultTimeoutsOutputReference"></a>
 

@@ -4,12 +4,12 @@
 
 ### DataprocGdcServiceInstance <a name="DataprocGdcServiceInstance" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance google_dataproc_gdc_service_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance google_dataproc_gdc_service_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 dataprocgdcserviceinstance.NewDataprocGdcServiceInstance(scope Construct, id *string, config DataprocGdcServiceInstanceConfig) DataprocGdcServiceInstance
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 dataprocgdcserviceinstance.DataprocGdcServiceInstance_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 dataprocgdcserviceinstance.DataprocGdcServiceInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ dataprocgdcserviceinstance.DataprocGdcServiceInstance_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 dataprocgdcserviceinstance.DataprocGdcServiceInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ dataprocgdcserviceinstance.DataprocGdcServiceInstance_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 dataprocgdcserviceinstance.DataprocGdcServiceInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -584,7 +584,7 @@ The construct id used in the generated config for the DataprocGdcServiceInstance
 
 The id of the existing DataprocGdcServiceInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1125,7 +1125,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 &dataprocgdcserviceinstance.DataprocGdcServiceInstanceConfig {
 	Connection: interface{},
@@ -1138,13 +1138,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcservi
 	Location: *string,
 	ServiceInstanceId: *string,
 	DisplayName: *string,
-	GdceCluster: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocGdcServiceInstance.DataprocGdcServiceInstanceGdceCluster,
+	GdceCluster: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataprocGdcServiceInstance.DataprocGdcServiceInstanceGdceCluster,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
 	ServiceAccount: *string,
-	SparkServiceInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocGdcServiceInstance.DataprocGdcServiceInstanceSparkServiceInstanceConfig,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataprocGdcServiceInstance.DataprocGdcServiceInstanceTimeouts,
+	SparkServiceInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataprocGdcServiceInstance.DataprocGdcServiceInstanceSparkServiceInstanceConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataprocGdcServiceInstance.DataprocGdcServiceInstanceTimeouts,
 }
 ```
 
@@ -1163,9 +1163,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcservi
 | <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.property.serviceInstanceId">ServiceInstanceId</a></code> | <code>*string</code> | Id of the service instance. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User-provided human-readable name to be used in user interfaces. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.property.gdceCluster">GdceCluster</a></code> | <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceGdceCluster">DataprocGdcServiceInstanceGdceCluster</a></code> | gdce_cluster block. |
-| <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#id DataprocGdcServiceInstance#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#id DataprocGdcServiceInstance#id}. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The labels to associate with this service instance. Labels may be used for filtering and billing tracking. |
-| <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#project DataprocGdcServiceInstance#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#project DataprocGdcServiceInstance#project}. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | Requested service account to associate with ServiceInstance. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.property.sparkServiceInstanceConfig">SparkServiceInstanceConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceSparkServiceInstanceConfig">DataprocGdcServiceInstanceSparkServiceInstanceConfig</a></code> | spark_service_instance_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceTimeouts">DataprocGdcServiceInstanceTimeouts</a></code> | timeouts block. |
@@ -1252,7 +1252,7 @@ Location *string
 
 Location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#location DataprocGdcServiceInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#location DataprocGdcServiceInstance#location}
 
 ---
 
@@ -1266,7 +1266,7 @@ ServiceInstanceId *string
 
 Id of the service instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#service_instance_id DataprocGdcServiceInstance#service_instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#service_instance_id DataprocGdcServiceInstance#service_instance_id}
 
 ---
 
@@ -1280,7 +1280,7 @@ DisplayName *string
 
 User-provided human-readable name to be used in user interfaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#display_name DataprocGdcServiceInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#display_name DataprocGdcServiceInstance#display_name}
 
 ---
 
@@ -1294,7 +1294,7 @@ GdceCluster DataprocGdcServiceInstanceGdceCluster
 
 gdce_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#gdce_cluster DataprocGdcServiceInstance#gdce_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#gdce_cluster DataprocGdcServiceInstance#gdce_cluster}
 
 ---
 
@@ -1306,7 +1306,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#id DataprocGdcServiceInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#id DataprocGdcServiceInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1326,7 +1326,7 @@ The labels to associate with this service instance. Labels may be used for filte
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#labels DataprocGdcServiceInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#labels DataprocGdcServiceInstance#labels}
 
 ---
 
@@ -1338,7 +1338,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#project DataprocGdcServiceInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#project DataprocGdcServiceInstance#project}.
 
 ---
 
@@ -1352,7 +1352,7 @@ ServiceAccount *string
 
 Requested service account to associate with ServiceInstance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#service_account DataprocGdcServiceInstance#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#service_account DataprocGdcServiceInstance#service_account}
 
 ---
 
@@ -1366,7 +1366,7 @@ SparkServiceInstanceConfig DataprocGdcServiceInstanceSparkServiceInstanceConfig
 
 spark_service_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#spark_service_instance_config DataprocGdcServiceInstance#spark_service_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#spark_service_instance_config DataprocGdcServiceInstance#spark_service_instance_config}
 
 ---
 
@@ -1380,7 +1380,7 @@ Timeouts DataprocGdcServiceInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#timeouts DataprocGdcServiceInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#timeouts DataprocGdcServiceInstance#timeouts}
 
 ---
 
@@ -1389,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceGdceCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 &dataprocgdcserviceinstance.DataprocGdcServiceInstanceGdceCluster {
 	GdceCluster: *string,
@@ -1414,7 +1414,7 @@ GdceCluster *string
 
 Gdce cluster resource id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#gdce_cluster DataprocGdcServiceInstance#gdce_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#gdce_cluster DataprocGdcServiceInstance#gdce_cluster}
 
 ---
 
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceSparkServiceInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 &dataprocgdcserviceinstance.DataprocGdcServiceInstanceSparkServiceInstanceConfig {
 
@@ -1436,7 +1436,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcservi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 &dataprocgdcserviceinstance.DataprocGdcServiceInstanceTimeouts {
 	Create: *string,
@@ -1449,9 +1449,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcservi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#create DataprocGdcServiceInstance#create}. |
-| <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#delete DataprocGdcServiceInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#update DataprocGdcServiceInstance#update}. |
+| <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#create DataprocGdcServiceInstance#create}. |
+| <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#delete DataprocGdcServiceInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#update DataprocGdcServiceInstance#update}. |
 
 ---
 
@@ -1463,7 +1463,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#create DataprocGdcServiceInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#create DataprocGdcServiceInstance#create}.
 
 ---
 
@@ -1475,7 +1475,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#delete DataprocGdcServiceInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#delete DataprocGdcServiceInstance#delete}.
 
 ---
 
@@ -1487,7 +1487,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_gdc_service_instance#update DataprocGdcServiceInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_service_instance#update DataprocGdcServiceInstance#update}.
 
 ---
 
@@ -1498,7 +1498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceGdceClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 dataprocgdcserviceinstance.NewDataprocGdcServiceInstanceGdceClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocGdcServiceInstanceGdceClusterOutputReference
 ```
@@ -1769,7 +1769,7 @@ func InternalValue() DataprocGdcServiceInstanceGdceCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceSparkServiceInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 dataprocgdcserviceinstance.NewDataprocGdcServiceInstanceSparkServiceInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocGdcServiceInstanceSparkServiceInstanceConfigOutputReference
 ```
@@ -2018,7 +2018,7 @@ func InternalValue() DataprocGdcServiceInstanceSparkServiceInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcServiceInstance.DataprocGdcServiceInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataprocgdcserviceinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataprocgdcserviceinstance"
 
 dataprocgdcserviceinstance.NewDataprocGdcServiceInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocGdcServiceInstanceTimeoutsOutputReference
 ```

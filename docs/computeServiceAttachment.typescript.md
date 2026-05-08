@@ -4,7 +4,7 @@
 
 ### ComputeServiceAttachment <a name="ComputeServiceAttachment" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment google_compute_service_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment google_compute_service_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.Initializer"></a>
 
@@ -86,6 +86,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.resetReconcileConnections">resetReconcileConnections</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.resetSendPropagatedConnectionLimitIfZero">resetSendPropagatedConnectionLimitIfZero</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.resetShowNatIps">resetShowNatIps</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -483,6 +484,12 @@ public resetRegion(): void
 public resetSendPropagatedConnectionLimitIfZero(): void
 ```
 
+##### `resetShowNatIps` <a name="resetShowNatIps" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.resetShowNatIps"></a>
+
+```typescript
+public resetShowNatIps(): void
+```
+
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.resetTimeouts"></a>
 
 ```typescript
@@ -592,7 +599,7 @@ The construct id used in the generated config for the ComputeServiceAttachment t
 
 The id of the existing ComputeServiceAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -625,6 +632,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.connectedEndpoints">connectedEndpoints</a></code> | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsList">ComputeServiceAttachmentConnectedEndpointsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.consumerAcceptLists">consumerAcceptLists</a></code> | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsList">ComputeServiceAttachmentConsumerAcceptListsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.fingerprint">fingerprint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.pscServiceAttachmentId">pscServiceAttachmentId</a></code> | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList">ComputeServiceAttachmentPscServiceAttachmentIdList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeoutsOutputReference">ComputeServiceAttachmentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.connectionPreferenceInput">connectionPreferenceInput</a></code> | <code>string</code> | *No description.* |
@@ -641,6 +649,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.reconcileConnectionsInput">reconcileConnectionsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.sendPropagatedConnectionLimitIfZeroInput">sendPropagatedConnectionLimitIfZeroInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.showNatIpsInput">showNatIpsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.targetServiceInput">targetServiceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts">ComputeServiceAttachmentTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.connectionPreference">connectionPreference</a></code> | <code>string</code> | *No description.* |
@@ -656,6 +665,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.reconcileConnections">reconcileConnections</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.sendPropagatedConnectionLimitIfZero">sendPropagatedConnectionLimitIfZero</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.showNatIps">showNatIps</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.targetService">targetService</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -832,6 +842,16 @@ public readonly fingerprint: string;
 
 ---
 
+##### `pscServiceAttachmentId`<sup>Required</sup> <a name="pscServiceAttachmentId" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.pscServiceAttachmentId"></a>
+
+```typescript
+public readonly pscServiceAttachmentId: ComputeServiceAttachmentPscServiceAttachmentIdList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList">ComputeServiceAttachmentPscServiceAttachmentIdList</a>
+
+---
+
 ##### `selfLink`<sup>Required</sup> <a name="selfLink" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.selfLink"></a>
 
 ```typescript
@@ -992,6 +1012,16 @@ public readonly sendPropagatedConnectionLimitIfZeroInput: boolean | IResolvable;
 
 ---
 
+##### `showNatIpsInput`<sup>Optional</sup> <a name="showNatIpsInput" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.showNatIpsInput"></a>
+
+```typescript
+public readonly showNatIpsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `targetServiceInput`<sup>Optional</sup> <a name="targetServiceInput" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.targetServiceInput"></a>
 
 ```typescript
@@ -1142,6 +1172,16 @@ public readonly sendPropagatedConnectionLimitIfZero: boolean | IResolvable;
 
 ---
 
+##### `showNatIps`<sup>Required</sup> <a name="showNatIps" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.showNatIps"></a>
+
+```typescript
+public readonly showNatIps: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `targetService`<sup>Required</sup> <a name="targetService" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.property.targetService"></a>
 
 ```typescript
@@ -1202,12 +1242,13 @@ const computeServiceAttachmentConfig: computeServiceAttachment.ComputeServiceAtt
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.consumerRejectLists">consumerRejectLists</a></code> | <code>string[]</code> | An array of projects that are not allowed to connect to this service attachment. |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.domainNames">domainNames</a></code> | <code>string[]</code> | If specified, the domain name will be used during the integration between the PSC connected endpoints and the Cloud DNS. |
-| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#id ComputeServiceAttachment#id}. |
-| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#project ComputeServiceAttachment#project}. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#id ComputeServiceAttachment#id}. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#project ComputeServiceAttachment#project}. |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.propagatedConnectionLimit">propagatedConnectionLimit</a></code> | <code>number</code> | The number of consumer spokes that connected Private Service Connect endpoints can be propagated to through Network Connectivity Center. |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.reconcileConnections">reconcileConnections</a></code> | <code>boolean \| cdktn.IResolvable</code> | This flag determines whether a consumer accept/reject list change can reconcile the statuses of existing ACCEPTED or REJECTED PSC endpoints. |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.region">region</a></code> | <code>string</code> | URL of the region where the resource resides. |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.sendPropagatedConnectionLimitIfZero">sendPropagatedConnectionLimitIfZero</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls the behavior of propagated_connection_limit. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.showNatIps">showNatIps</a></code> | <code>boolean \| cdktn.IResolvable</code> | NOTE: This field is temporarily non-functional due to an underlying API issue. |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts">ComputeServiceAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1292,7 +1333,7 @@ public readonly connectionPreference: string;
 
 The connection preference to use for this service attachment. Valid values include "ACCEPT_AUTOMATIC", "ACCEPT_MANUAL".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#connection_preference ComputeServiceAttachment#connection_preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#connection_preference ComputeServiceAttachment#connection_preference}
 
 ---
 
@@ -1306,7 +1347,7 @@ public readonly enableProxyProtocol: boolean | IResolvable;
 
 If true, enable the proxy protocol which is for supplying client TCP/IP address data in TCP connections that traverse proxies on their way to destination servers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#enable_proxy_protocol ComputeServiceAttachment#enable_proxy_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#enable_proxy_protocol ComputeServiceAttachment#enable_proxy_protocol}
 
 ---
 
@@ -1327,7 +1368,7 @@ which means the first character must be a lowercase letter, and all
 following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#name ComputeServiceAttachment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#name ComputeServiceAttachment#name}
 
 ---
 
@@ -1341,7 +1382,7 @@ public readonly natSubnets: string[];
 
 An array of subnets that is provided for NAT in this service attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#nat_subnets ComputeServiceAttachment#nat_subnets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#nat_subnets ComputeServiceAttachment#nat_subnets}
 
 ---
 
@@ -1355,7 +1396,7 @@ public readonly targetService: string;
 
 The URL of a service serving the endpoint identified by this service attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#target_service ComputeServiceAttachment#target_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#target_service ComputeServiceAttachment#target_service}
 
 ---
 
@@ -1369,7 +1410,7 @@ public readonly consumerAcceptLists: IResolvable | ComputeServiceAttachmentConsu
 
 consumer_accept_lists block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#consumer_accept_lists ComputeServiceAttachment#consumer_accept_lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#consumer_accept_lists ComputeServiceAttachment#consumer_accept_lists}
 
 ---
 
@@ -1383,7 +1424,7 @@ public readonly consumerRejectLists: string[];
 
 An array of projects that are not allowed to connect to this service attachment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#consumer_reject_lists ComputeServiceAttachment#consumer_reject_lists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#consumer_reject_lists ComputeServiceAttachment#consumer_reject_lists}
 
 ---
 
@@ -1397,7 +1438,7 @@ public readonly description: string;
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#description ComputeServiceAttachment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#description ComputeServiceAttachment#description}
 
 ---
 
@@ -1415,7 +1456,7 @@ For example, this is a
 valid domain name: "p.mycompany.com.". Current max number of domain names
 supported is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#domain_names ComputeServiceAttachment#domain_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#domain_names ComputeServiceAttachment#domain_names}
 
 ---
 
@@ -1427,7 +1468,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#id ComputeServiceAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#id ComputeServiceAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1442,7 +1483,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#project ComputeServiceAttachment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#project ComputeServiceAttachment#project}.
 
 ---
 
@@ -1463,7 +1504,7 @@ If the connection preference of the service attachment is ACCEPT_AUTOMATIC, the 
 
 If unspecified, the default propagated connection limit is 250. To explicitly send a zero value, set 'send_propagated_connection_limit_if_zero = true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#propagated_connection_limit ComputeServiceAttachment#propagated_connection_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#propagated_connection_limit ComputeServiceAttachment#propagated_connection_limit}
 
 ---
 
@@ -1480,7 +1521,7 @@ This flag determines whether a consumer accept/reject list change can reconcile 
 If false, connection policy update will only affect existing PENDING PSC endpoints. Existing ACCEPTED/REJECTED endpoints will remain untouched regardless how the connection policy is modified .
 If true, update will affect both PENDING and ACCEPTED/REJECTED PSC endpoints. For example, an ACCEPTED PSC endpoint will be moved to REJECTED if its project is added to the reject list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#reconcile_connections ComputeServiceAttachment#reconcile_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#reconcile_connections ComputeServiceAttachment#reconcile_connections}
 
 ---
 
@@ -1494,7 +1535,7 @@ public readonly region: string;
 
 URL of the region where the resource resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#region ComputeServiceAttachment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#region ComputeServiceAttachment#region}
 
 ---
 
@@ -1512,7 +1553,24 @@ When false, setting propagated_connection_limit to zero causes the provider to u
 When true, the provider will set propagated_connection_limit to zero.
 Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#send_propagated_connection_limit_if_zero ComputeServiceAttachment#send_propagated_connection_limit_if_zero}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#send_propagated_connection_limit_if_zero ComputeServiceAttachment#send_propagated_connection_limit_if_zero}
+
+---
+
+##### `showNatIps`<sup>Optional</sup> <a name="showNatIps" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.property.showNatIps"></a>
+
+```typescript
+public readonly showNatIps: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+NOTE: This field is temporarily non-functional due to an underlying API issue.
+
+Any value provided here will be ignored until the API issue is resolved, expected around 2026-03.
+[If true, show NAT IPs of all connected endpoints.]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#show_nat_ips ComputeServiceAttachment#show_nat_ips}
 
 ---
 
@@ -1526,7 +1584,7 @@ public readonly timeouts: ComputeServiceAttachmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#timeouts ComputeServiceAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#timeouts ComputeServiceAttachment#timeouts}
 
 ---
 
@@ -1556,6 +1614,7 @@ const computeServiceAttachmentConsumerAcceptLists: computeServiceAttachment.Comp
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptLists.property.connectionLimit">connectionLimit</a></code> | <code>number</code> | The number of consumer forwarding rules the consumer project can create. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptLists.property.endpointUrl">endpointUrl</a></code> | <code>string</code> | The endpoint that is allowed to connect to this service attachment. |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptLists.property.networkUrl">networkUrl</a></code> | <code>string</code> | The network that is allowed to connect to this service attachment. Only one of project_id_or_num and network_url may be set. |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptLists.property.projectIdOrNum">projectIdOrNum</a></code> | <code>string</code> | A project that is allowed to connect to this service attachment. Only one of project_id_or_num and network_url may be set. |
 
@@ -1571,7 +1630,23 @@ public readonly connectionLimit: number;
 
 The number of consumer forwarding rules the consumer project can create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#connection_limit ComputeServiceAttachment#connection_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#connection_limit ComputeServiceAttachment#connection_limit}
+
+---
+
+##### `endpointUrl`<sup>Optional</sup> <a name="endpointUrl" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptLists.property.endpointUrl"></a>
+
+```typescript
+public readonly endpointUrl: string;
+```
+
+- *Type:* string
+
+The endpoint that is allowed to connect to this service attachment.
+
+Only one of project_id_or_num, network_url and endpoint_url may be set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#endpoint_url ComputeServiceAttachment#endpoint_url}
 
 ---
 
@@ -1585,7 +1660,7 @@ public readonly networkUrl: string;
 
 The network that is allowed to connect to this service attachment. Only one of project_id_or_num and network_url may be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#network_url ComputeServiceAttachment#network_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#network_url ComputeServiceAttachment#network_url}
 
 ---
 
@@ -1599,9 +1674,20 @@ public readonly projectIdOrNum: string;
 
 A project that is allowed to connect to this service attachment. Only one of project_id_or_num and network_url may be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#project_id_or_num ComputeServiceAttachment#project_id_or_num}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#project_id_or_num ComputeServiceAttachment#project_id_or_num}
 
 ---
+
+### ComputeServiceAttachmentPscServiceAttachmentId <a name="ComputeServiceAttachmentPscServiceAttachmentId" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentId"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentId.Initializer"></a>
+
+```typescript
+import { computeServiceAttachment } from '@cdktn/provider-google'
+
+const computeServiceAttachmentPscServiceAttachmentId: computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentId = { ... }
+```
+
 
 ### ComputeServiceAttachmentTimeouts <a name="ComputeServiceAttachmentTimeouts" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts"></a>
 
@@ -1617,9 +1703,9 @@ const computeServiceAttachmentTimeouts: computeServiceAttachment.ComputeServiceA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#create ComputeServiceAttachment#create}. |
-| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#delete ComputeServiceAttachment#delete}. |
-| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#update ComputeServiceAttachment#update}. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#create ComputeServiceAttachment#create}. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#delete ComputeServiceAttachment#delete}. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#update ComputeServiceAttachment#update}. |
 
 ---
 
@@ -1631,7 +1717,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#create ComputeServiceAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#create ComputeServiceAttachment#create}.
 
 ---
 
@@ -1643,7 +1729,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#delete ComputeServiceAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#delete ComputeServiceAttachment#delete}.
 
 ---
 
@@ -1655,7 +1741,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_service_attachment#update ComputeServiceAttachment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_service_attachment#update ComputeServiceAttachment#update}.
 
 ---
 
@@ -2040,6 +2126,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference.property.consumerNetwork">consumerNetwork</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference.property.endpoint">endpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference.property.natIps">natIps</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference.property.propagatedConnectionCount">propagatedConnectionCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference.property.pscConnectionId">pscConnectionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
@@ -2088,6 +2175,16 @@ public readonly endpoint: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `natIps`<sup>Required</sup> <a name="natIps" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference.property.natIps"></a>
+
+```typescript
+public readonly natIps: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -2360,6 +2457,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.resetEndpointUrl">resetEndpointUrl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.resetNetworkUrl">resetNetworkUrl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.resetProjectIdOrNum">resetProjectIdOrNum</a></code> | *No description.* |
 
@@ -2515,6 +2613,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetEndpointUrl` <a name="resetEndpointUrl" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.resetEndpointUrl"></a>
+
+```typescript
+public resetEndpointUrl(): void
+```
+
 ##### `resetNetworkUrl` <a name="resetNetworkUrl" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.resetNetworkUrl"></a>
 
 ```typescript
@@ -2535,9 +2639,11 @@ public resetProjectIdOrNum(): void
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.connectionLimitInput">connectionLimitInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.endpointUrlInput">endpointUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.networkUrlInput">networkUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.projectIdOrNumInput">projectIdOrNumInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.connectionLimit">connectionLimit</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.endpointUrl">endpointUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.networkUrl">networkUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.projectIdOrNum">projectIdOrNum</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptLists">ComputeServiceAttachmentConsumerAcceptLists</a></code> | *No description.* |
@@ -2578,6 +2684,16 @@ public readonly connectionLimitInput: number;
 
 ---
 
+##### `endpointUrlInput`<sup>Optional</sup> <a name="endpointUrlInput" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.endpointUrlInput"></a>
+
+```typescript
+public readonly endpointUrlInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `networkUrlInput`<sup>Optional</sup> <a name="networkUrlInput" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.networkUrlInput"></a>
 
 ```typescript
@@ -2608,6 +2724,16 @@ public readonly connectionLimit: number;
 
 ---
 
+##### `endpointUrl`<sup>Required</sup> <a name="endpointUrl" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.endpointUrl"></a>
+
+```typescript
+public readonly endpointUrl: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `networkUrl`<sup>Required</sup> <a name="networkUrl" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.property.networkUrl"></a>
 
 ```typescript
@@ -2635,6 +2761,444 @@ public readonly internalValue: IResolvable | ComputeServiceAttachmentConsumerAcc
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptLists">ComputeServiceAttachmentConsumerAcceptLists</a>
+
+---
+
+
+### ComputeServiceAttachmentPscServiceAttachmentIdList <a name="ComputeServiceAttachmentPscServiceAttachmentIdList" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.Initializer"></a>
+
+```typescript
+import { computeServiceAttachment } from '@cdktn/provider-google'
+
+new computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.get"></a>
+
+```typescript
+public get(index: number): ComputeServiceAttachmentPscServiceAttachmentIdOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### ComputeServiceAttachmentPscServiceAttachmentIdOutputReference <a name="ComputeServiceAttachmentPscServiceAttachmentIdOutputReference" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.Initializer"></a>
+
+```typescript
+import { computeServiceAttachment } from '@cdktn/provider-google'
+
+new computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.property.high">high</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.property.low">low</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentId">ComputeServiceAttachmentPscServiceAttachmentId</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `high`<sup>Required</sup> <a name="high" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.property.high"></a>
+
+```typescript
+public readonly high: string;
+```
+
+- *Type:* string
+
+---
+
+##### `low`<sup>Required</sup> <a name="low" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.property.low"></a>
+
+```typescript
+public readonly low: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentIdOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ComputeServiceAttachmentPscServiceAttachmentId;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentPscServiceAttachmentId">ComputeServiceAttachmentPscServiceAttachmentId</a>
 
 ---
 

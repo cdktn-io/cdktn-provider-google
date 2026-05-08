@@ -4,7 +4,7 @@
 
 ### DataGoogleVmwareengineCluster <a name="DataGoogleVmwareengineCluster" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleVmwareengineClus
 
 The id of the existing DataGoogleVmwareengineCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -423,10 +423,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.autoscalingSettings">autoscalingSettings</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterAutoscalingSettingsList">DataGoogleVmwareengineClusterAutoscalingSettingsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.datastoreMountConfig">datastoreMountConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList">DataGoogleVmwareengineClusterDatastoreMountConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.management">management</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.nodeTypeConfigs">nodeTypeConfigs</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterNodeTypeConfigsList">DataGoogleVmwareengineClusterNodeTypeConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.state">state</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.uid">uid</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.parentInput">parentInput</a></code> | <code>string</code> | *No description.* |
@@ -568,6 +571,26 @@ public readonly autoscalingSettings: DataGoogleVmwareengineClusterAutoscalingSet
 
 ---
 
+##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.createTime"></a>
+
+```typescript
+public readonly createTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `datastoreMountConfig`<sup>Required</sup> <a name="datastoreMountConfig" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.datastoreMountConfig"></a>
+
+```typescript
+public readonly datastoreMountConfig: DataGoogleVmwareengineClusterDatastoreMountConfigList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList">DataGoogleVmwareengineClusterDatastoreMountConfigList</a>
+
+---
+
 ##### `management`<sup>Required</sup> <a name="management" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.management"></a>
 
 ```typescript
@@ -602,6 +625,16 @@ public readonly state: string;
 
 ```typescript
 public readonly uid: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineCluster.property.updateTime"></a>
+
+```typescript
+public readonly updateTime: string;
 ```
 
 - *Type:* string
@@ -766,7 +799,7 @@ const dataGoogleVmwareengineClusterConfig: dataGoogleVmwareengineCluster.DataGoo
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.name">name</a></code> | <code>string</code> | The ID of the Cluster. |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.parent">parent</a></code> | <code>string</code> | The resource name of the private cloud to create a new cluster in. |
-| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}. |
 
 ---
 
@@ -850,7 +883,7 @@ public readonly name: string;
 
 The ID of the Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
 
 ---
 
@@ -867,7 +900,7 @@ The resource name of the private cloud to create a new cluster in.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
 
 ---
 
@@ -879,12 +912,34 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
+
+### DataGoogleVmwareengineClusterDatastoreMountConfig <a name="DataGoogleVmwareengineClusterDatastoreMountConfig" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfig.Initializer"></a>
+
+```typescript
+import { dataGoogleVmwareengineCluster } from '@cdktn/provider-google'
+
+const dataGoogleVmwareengineClusterDatastoreMountConfig: dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfig = { ... }
+```
+
+
+### DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork <a name="DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork.Initializer"></a>
+
+```typescript
+import { dataGoogleVmwareengineCluster } from '@cdktn/provider-google'
+
+const dataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork: dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork = { ... }
+```
+
 
 ### DataGoogleVmwareengineClusterNodeTypeConfigs <a name="DataGoogleVmwareengineClusterNodeTypeConfigs" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterNodeTypeConfigs"></a>
 
@@ -3151,6 +3206,959 @@ public readonly internalValue: DataGoogleVmwareengineClusterAutoscalingSettings;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterAutoscalingSettings">DataGoogleVmwareengineClusterAutoscalingSettings</a>
+
+---
+
+
+### DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList <a name="DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.Initializer"></a>
+
+```typescript
+import { dataGoogleVmwareengineCluster } from '@cdktn/provider-google'
+
+new dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.get"></a>
+
+```typescript
+public get(index: number): DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference <a name="DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.Initializer"></a>
+
+```typescript
+import { dataGoogleVmwareengineCluster } from '@cdktn/provider-google'
+
+new dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.connectionCount">connectionCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.mtu">mtu</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.networkPeering">networkPeering</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.subnet">subnet</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork">DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `connectionCount`<sup>Required</sup> <a name="connectionCount" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.connectionCount"></a>
+
+```typescript
+public readonly connectionCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `mtu`<sup>Required</sup> <a name="mtu" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.mtu"></a>
+
+```typescript
+public readonly mtu: number;
+```
+
+- *Type:* number
+
+---
+
+##### `networkPeering`<sup>Required</sup> <a name="networkPeering" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.networkPeering"></a>
+
+```typescript
+public readonly networkPeering: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subnet`<sup>Required</sup> <a name="subnet" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.subnet"></a>
+
+```typescript
+public readonly subnet: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork">DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork</a>
+
+---
+
+
+### DataGoogleVmwareengineClusterDatastoreMountConfigList <a name="DataGoogleVmwareengineClusterDatastoreMountConfigList" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.Initializer"></a>
+
+```typescript
+import { dataGoogleVmwareengineCluster } from '@cdktn/provider-google'
+
+new dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.get"></a>
+
+```typescript
+public get(index: number): DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference <a name="DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.Initializer"></a>
+
+```typescript
+import { dataGoogleVmwareengineCluster } from '@cdktn/provider-google'
+
+new dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.accessMode">accessMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.datastore">datastore</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.datastoreNetwork">datastoreNetwork</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList">DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.fileShare">fileShare</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.ignoreColocation">ignoreColocation</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.nfsVersion">nfsVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.servers">servers</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfig">DataGoogleVmwareengineClusterDatastoreMountConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accessMode`<sup>Required</sup> <a name="accessMode" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.accessMode"></a>
+
+```typescript
+public readonly accessMode: string;
+```
+
+- *Type:* string
+
+---
+
+##### `datastore`<sup>Required</sup> <a name="datastore" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.datastore"></a>
+
+```typescript
+public readonly datastore: string;
+```
+
+- *Type:* string
+
+---
+
+##### `datastoreNetwork`<sup>Required</sup> <a name="datastoreNetwork" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.datastoreNetwork"></a>
+
+```typescript
+public readonly datastoreNetwork: DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList">DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList</a>
+
+---
+
+##### `fileShare`<sup>Required</sup> <a name="fileShare" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.fileShare"></a>
+
+```typescript
+public readonly fileShare: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ignoreColocation`<sup>Required</sup> <a name="ignoreColocation" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.ignoreColocation"></a>
+
+```typescript
+public readonly ignoreColocation: IResolvable;
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `nfsVersion`<sup>Required</sup> <a name="nfsVersion" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.nfsVersion"></a>
+
+```typescript
+public readonly nfsVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `servers`<sup>Required</sup> <a name="servers" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.servers"></a>
+
+```typescript
+public readonly servers: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataGoogleVmwareengineClusterDatastoreMountConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleVmwareengineCluster.DataGoogleVmwareengineClusterDatastoreMountConfig">DataGoogleVmwareengineClusterDatastoreMountConfig</a>
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataGoogleProjectIamCustomRoles <a name="DataGoogleProjectIamCustomRoles" id="@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project_iam_custom_roles google_project_iam_custom_roles}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project_iam_custom_roles google_project_iam_custom_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojectiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprojectiamcustomroles"
 
 datagoogleprojectiamcustomroles.NewDataGoogleProjectIamCustomRoles(scope Construct, id *string, config DataGoogleProjectIamCustomRolesConfig) DataGoogleProjectIamCustomRoles
 ```
@@ -326,7 +326,7 @@ func ResetView()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojectiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprojectiamcustomroles"
 
 datagoogleprojectiamcustomroles.DataGoogleProjectIamCustomRoles_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojectiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprojectiamcustomroles"
 
 datagoogleprojectiamcustomroles.DataGoogleProjectIamCustomRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleprojectiamcustomroles.DataGoogleProjectIamCustomRoles_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojectiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprojectiamcustomroles"
 
 datagoogleprojectiamcustomroles.DataGoogleProjectIamCustomRoles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagoogleprojectiamcustomroles.DataGoogleProjectIamCustomRoles_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRoles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojectiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprojectiamcustomroles"
 
 datagoogleprojectiamcustomroles.DataGoogleProjectIamCustomRoles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataGoogleProjectIamCustom
 
 The id of the existing DataGoogleProjectIamCustomRoles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project_iam_custom_roles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project_iam_custom_roles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojectiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprojectiamcustomroles"
 
 &datagoogleprojectiamcustomroles.DataGoogleProjectIamCustomRolesConfig {
 	Connection: interface{},
@@ -720,10 +720,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojec
 | <code><a href="#@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project_iam_custom_roles#id DataGoogleProjectIamCustomRoles#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project_iam_custom_roles#project DataGoogleProjectIamCustomRoles#project}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.property.showDeleted">ShowDeleted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project_iam_custom_roles#show_deleted DataGoogleProjectIamCustomRoles#show_deleted}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.property.view">View</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project_iam_custom_roles#view DataGoogleProjectIamCustomRoles#view}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project_iam_custom_roles#id DataGoogleProjectIamCustomRoles#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project_iam_custom_roles#project DataGoogleProjectIamCustomRoles#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.property.showDeleted">ShowDeleted</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project_iam_custom_roles#show_deleted DataGoogleProjectIamCustomRoles#show_deleted}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesConfig.property.view">View</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project_iam_custom_roles#view DataGoogleProjectIamCustomRoles#view}. |
 
 ---
 
@@ -805,7 +805,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project_iam_custom_roles#id DataGoogleProjectIamCustomRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project_iam_custom_roles#id DataGoogleProjectIamCustomRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -820,7 +820,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project_iam_custom_roles#project DataGoogleProjectIamCustomRoles#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project_iam_custom_roles#project DataGoogleProjectIamCustomRoles#project}.
 
 ---
 
@@ -832,7 +832,7 @@ ShowDeleted interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project_iam_custom_roles#show_deleted DataGoogleProjectIamCustomRoles#show_deleted}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project_iam_custom_roles#show_deleted DataGoogleProjectIamCustomRoles#show_deleted}.
 
 ---
 
@@ -844,7 +844,7 @@ View *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project_iam_custom_roles#view DataGoogleProjectIamCustomRoles#view}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project_iam_custom_roles#view DataGoogleProjectIamCustomRoles#view}.
 
 ---
 
@@ -853,7 +853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojectiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprojectiamcustomroles"
 
 &datagoogleprojectiamcustomroles.DataGoogleProjectIamCustomRolesRoles {
 
@@ -868,7 +868,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojectiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprojectiamcustomroles"
 
 datagoogleprojectiamcustomroles.NewDataGoogleProjectIamCustomRolesRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleProjectIamCustomRolesRolesList
 ```
@@ -1017,7 +1017,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojectiamcustomroles"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleprojectiamcustomroles"
 
 datagoogleprojectiamcustomroles.NewDataGoogleProjectIamCustomRolesRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleProjectIamCustomRolesRolesOutputReference
 ```

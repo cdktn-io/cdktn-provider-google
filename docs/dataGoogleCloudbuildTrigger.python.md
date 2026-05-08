@@ -4,7 +4,7 @@
 
 ### DataGoogleCloudbuildTrigger <a name="DataGoogleCloudbuildTrigger" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger google_cloudbuild_trigger}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger google_cloudbuild_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.Initializer"></a>
 
@@ -41,8 +41,8 @@ dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger(
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.Initializer.parameter.location">location</a></code> | <code>str</code> | The [Cloud Build location](https://cloud.google.com/build/docs/locations) for the trigger. If not specified, "global" is used. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.Initializer.parameter.triggerId">trigger_id</a></code> | <code>str</code> | The unique identifier for the trigger. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#id DataGoogleCloudbuildTrigger#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#project DataGoogleCloudbuildTrigger#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#id DataGoogleCloudbuildTrigger#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#project DataGoogleCloudbuildTrigger#project}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The [Cloud Build location](https://cloud.google.com/build/docs/locations) for the trigger. If not specified, "global" is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#location DataGoogleCloudbuildTrigger#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#location DataGoogleCloudbuildTrigger#location}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The unique identifier for the trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#trigger_id DataGoogleCloudbuildTrigger#trigger_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#trigger_id DataGoogleCloudbuildTrigger#trigger_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#id DataGoogleCloudbuildTrigger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#id DataGoogleCloudbuildTrigger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#project DataGoogleCloudbuildTrigger#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#project DataGoogleCloudbuildTrigger#project}.
 
 ---
 
@@ -538,7 +538,7 @@ The construct id used in the generated config for the DataGoogleCloudbuildTrigge
 
 The id of the existing DataGoogleCloudbuildTrigger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -571,6 +571,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.property.buildAttribute">build_attribute</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildList">DataGoogleCloudbuildTriggerBuildList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.property.developerConnectEventConfig">developer_connect_event_config</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList">DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.property.filename">filename</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.property.filter">filter</a></code> | <code>str</code> | *No description.* |
@@ -768,6 +769,16 @@ description: str
 ```
 
 - *Type:* str
+
+---
+
+##### `developer_connect_event_config`<sup>Required</sup> <a name="developer_connect_event_config" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTrigger.property.developerConnectEventConfig"></a>
+
+```python
+developer_connect_event_config: DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList">DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList</a>
 
 ---
 
@@ -1307,8 +1318,8 @@ dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerConfig(
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerConfig.property.location">location</a></code> | <code>str</code> | The [Cloud Build location](https://cloud.google.com/build/docs/locations) for the trigger. If not specified, "global" is used. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerConfig.property.triggerId">trigger_id</a></code> | <code>str</code> | The unique identifier for the trigger. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#id DataGoogleCloudbuildTrigger#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#project DataGoogleCloudbuildTrigger#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#id DataGoogleCloudbuildTrigger#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#project DataGoogleCloudbuildTrigger#project}. |
 
 ---
 
@@ -1392,7 +1403,7 @@ location: str
 
 The [Cloud Build location](https://cloud.google.com/build/docs/locations) for the trigger. If not specified, "global" is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#location DataGoogleCloudbuildTrigger#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#location DataGoogleCloudbuildTrigger#location}
 
 ---
 
@@ -1406,7 +1417,7 @@ trigger_id: str
 
 The unique identifier for the trigger.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#trigger_id DataGoogleCloudbuildTrigger#trigger_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#trigger_id DataGoogleCloudbuildTrigger#trigger_id}
 
 ---
 
@@ -1418,7 +1429,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#id DataGoogleCloudbuildTrigger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#id DataGoogleCloudbuildTrigger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1433,9 +1444,42 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudbuild_trigger#project DataGoogleCloudbuildTrigger#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudbuild_trigger#project DataGoogleCloudbuildTrigger#project}.
 
 ---
+
+### DataGoogleCloudbuildTriggerDeveloperConnectEventConfig <a name="DataGoogleCloudbuildTriggerDeveloperConnectEventConfig" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfig.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloudbuild_trigger
+
+dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfig()
+```
+
+
+### DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequest <a name="DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequest" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequest"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequest.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloudbuild_trigger
+
+dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequest()
+```
+
+
+### DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPush <a name="DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPush" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPush"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPush.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloudbuild_trigger
+
+dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPush()
+```
+
 
 ### DataGoogleCloudbuildTriggerGitFileSource <a name="DataGoogleCloudbuildTriggerGitFileSource" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerGitFileSource"></a>
 
@@ -12070,6 +12114,1475 @@ internal_value: DataGoogleCloudbuildTriggerBuildStepVolumes
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerBuildStepVolumes">DataGoogleCloudbuildTriggerBuildStepVolumes</a>
+
+---
+
+
+### DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList <a name="DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloudbuild_trigger
+
+dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference <a name="DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloudbuild_trigger
+
+dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.gitRepositoryLink">git_repository_link</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.gitRepositoryLinkType">git_repository_link_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.pullRequest">pull_request</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList">DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.push">push</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList">DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfig">DataGoogleCloudbuildTriggerDeveloperConnectEventConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `git_repository_link`<sup>Required</sup> <a name="git_repository_link" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.gitRepositoryLink"></a>
+
+```python
+git_repository_link: str
+```
+
+- *Type:* str
+
+---
+
+##### `git_repository_link_type`<sup>Required</sup> <a name="git_repository_link_type" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.gitRepositoryLinkType"></a>
+
+```python
+git_repository_link_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `pull_request`<sup>Required</sup> <a name="pull_request" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.pullRequest"></a>
+
+```python
+pull_request: DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList">DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList</a>
+
+---
+
+##### `push`<sup>Required</sup> <a name="push" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.push"></a>
+
+```python
+push: DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList">DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataGoogleCloudbuildTriggerDeveloperConnectEventConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfig">DataGoogleCloudbuildTriggerDeveloperConnectEventConfig</a>
+
+---
+
+
+### DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList <a name="DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloudbuild_trigger
+
+dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference <a name="DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloudbuild_trigger
+
+dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.commentControl">comment_control</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.invertRegex">invert_regex</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequest">DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequest</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `branch`<sup>Required</sup> <a name="branch" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.branch"></a>
+
+```python
+branch: str
+```
+
+- *Type:* str
+
+---
+
+##### `comment_control`<sup>Required</sup> <a name="comment_control" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.commentControl"></a>
+
+```python
+comment_control: str
+```
+
+- *Type:* str
+
+---
+
+##### `invert_regex`<sup>Required</sup> <a name="invert_regex" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.invertRegex"></a>
+
+```python
+invert_regex: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequest
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequest">DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPullRequest</a>
+
+---
+
+
+### DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList <a name="DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloudbuild_trigger
+
+dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference <a name="DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloudbuild_trigger
+
+dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.branch">branch</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.invertRegex">invert_regex</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.tag">tag</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPush">DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPush</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `branch`<sup>Required</sup> <a name="branch" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.branch"></a>
+
+```python
+branch: str
+```
+
+- *Type:* str
+
+---
+
+##### `invert_regex`<sup>Required</sup> <a name="invert_regex" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.invertRegex"></a>
+
+```python
+invert_regex: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `tag`<sup>Required</sup> <a name="tag" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.tag"></a>
+
+```python
+tag: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPushOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPush
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudbuildTrigger.DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPush">DataGoogleCloudbuildTriggerDeveloperConnectEventConfigPush</a>
 
 ---
 

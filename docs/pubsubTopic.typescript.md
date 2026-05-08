@@ -4,7 +4,7 @@
 
 ### PubsubTopic <a name="PubsubTopic" id="@cdktn/provider-google.pubsubTopic.PubsubTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic google_pubsub_topic}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic google_pubsub_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubTopic.PubsubTopic.Initializer"></a>
 
@@ -88,6 +88,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.resetMessageTransforms">resetMessageTransforms</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.resetSchemaSettings">resetSchemaSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -515,6 +516,12 @@ public resetProject(): void
 public resetSchemaSettings(): void
 ```
 
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-google.pubsubTopic.PubsubTopic.resetTags"></a>
+
+```typescript
+public resetTags(): void
+```
+
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.pubsubTopic.PubsubTopic.resetTimeouts"></a>
 
 ```typescript
@@ -624,7 +631,7 @@ The construct id used in the generated config for the PubsubTopic to import.
 
 The id of the existing PubsubTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,6 +678,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.property.schemaSettingsInput">schemaSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicSchemaSettings">PubsubTopicSchemaSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicTimeouts">PubsubTopicTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.property.kmsKeyName">kmsKeyName</a></code> | <code>string</code> | *No description.* |
@@ -678,6 +686,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.property.messageRetentionDuration">messageRetentionDuration</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopic.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 
 ---
 
@@ -993,6 +1002,16 @@ public readonly schemaSettingsInput: PubsubTopicSchemaSettings;
 
 ---
 
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-google.pubsubTopic.PubsubTopic.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.pubsubTopic.PubsubTopic.property.timeoutsInput"></a>
 
 ```typescript
@@ -1063,6 +1082,16 @@ public readonly project: string;
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-google.pubsubTopic.PubsubTopic.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1105,15 +1134,16 @@ const pubsubTopicConfig: pubsubTopic.PubsubTopicConfig = { ... }
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.name">name</a></code> | <code>string</code> | Name of the topic. |
-| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#id PubsubTopic#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#id PubsubTopic#id}. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.ingestionDataSourceSettings">ingestionDataSourceSettings</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettings">PubsubTopicIngestionDataSourceSettings</a></code> | ingestion_data_source_settings block. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.kmsKeyName">kmsKeyName</a></code> | <code>string</code> | The resource name of the Cloud KMS CryptoKey to be used to protect access to messages published on this topic. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | A set of key/value label pairs to assign to this Topic. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.messageRetentionDuration">messageRetentionDuration</a></code> | <code>string</code> | Indicates the minimum duration to retain a message after it is published to the topic. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.messageStoragePolicy">messageStoragePolicy</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageStoragePolicy">PubsubTopicMessageStoragePolicy</a></code> | message_storage_policy block. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.messageTransforms">messageTransforms</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransforms">PubsubTopicMessageTransforms</a>[]</code> | message_transforms block. |
-| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#project PubsubTopic#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#project PubsubTopic#project}. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.schemaSettings">schemaSettings</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicSchemaSettings">PubsubTopicSchemaSettings</a></code> | schema_settings block. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Input only. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicTimeouts">PubsubTopicTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1198,7 +1228,7 @@ public readonly name: string;
 
 Name of the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#name PubsubTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#name PubsubTopic#name}
 
 ---
 
@@ -1210,7 +1240,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#id PubsubTopic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#id PubsubTopic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1227,7 +1257,7 @@ public readonly ingestionDataSourceSettings: PubsubTopicIngestionDataSourceSetti
 
 ingestion_data_source_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#ingestion_data_source_settings PubsubTopic#ingestion_data_source_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#ingestion_data_source_settings PubsubTopic#ingestion_data_source_settings}
 
 ---
 
@@ -1246,7 +1276,7 @@ Your project's PubSub service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 The expected format is 'projects/* /locations/* /keyRings/* /cryptoKeys/*'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#kms_key_name PubsubTopic#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#kms_key_name PubsubTopic#kms_key_name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1265,7 +1295,7 @@ A set of key/value label pairs to assign to this Topic.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#labels PubsubTopic#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#labels PubsubTopic#labels}
 
 ---
 
@@ -1287,7 +1317,7 @@ set, message retention is controlled by settings on individual subscriptions.
 The rotation period has the format of a decimal number, followed by the
 letter 's' (seconds). Cannot be more than 31 days or less than 10 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#message_retention_duration PubsubTopic#message_retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#message_retention_duration PubsubTopic#message_retention_duration}
 
 ---
 
@@ -1301,7 +1331,7 @@ public readonly messageStoragePolicy: PubsubTopicMessageStoragePolicy;
 
 message_storage_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#message_storage_policy PubsubTopic#message_storage_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#message_storage_policy PubsubTopic#message_storage_policy}
 
 ---
 
@@ -1315,7 +1345,7 @@ public readonly messageTransforms: IResolvable | PubsubTopicMessageTransforms[];
 
 message_transforms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#message_transforms PubsubTopic#message_transforms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#message_transforms PubsubTopic#message_transforms}
 
 ---
 
@@ -1327,7 +1357,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#project PubsubTopic#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#project PubsubTopic#project}.
 
 ---
 
@@ -1341,7 +1371,30 @@ public readonly schemaSettings: PubsubTopicSchemaSettings;
 
 schema_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#schema_settings PubsubTopic#schema_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#schema_settings PubsubTopic#schema_settings}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-google.pubsubTopic.PubsubTopicConfig.property.tags"></a>
+
+```typescript
+public readonly tags: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Input only.
+
+Resource manager tags to be bound to the topic. Tag keys and
+values have the same definition as resource manager tags. Keys must be in
+the format tagKeys/{tag_key_id}, and values are in the format
+tagValues/456. The field is ignored when empty. The field is immutable and
+causes resource replacement when mutated. This field is only set at create
+time and modifying this field after creation will trigger recreation. To
+apply tags to an existing resource, see the 'google_tags_tag_value'
+resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#tags PubsubTopic#tags}
 
 ---
 
@@ -1355,7 +1408,7 @@ public readonly timeouts: PubsubTopicTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#timeouts PubsubTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#timeouts PubsubTopic#timeouts}
 
 ---
 
@@ -1392,7 +1445,7 @@ public readonly awsKinesis: PubsubTopicIngestionDataSourceSettingsAwsKinesis;
 
 aws_kinesis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#aws_kinesis PubsubTopic#aws_kinesis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#aws_kinesis PubsubTopic#aws_kinesis}
 
 ---
 
@@ -1406,7 +1459,7 @@ public readonly awsMsk: PubsubTopicIngestionDataSourceSettingsAwsMsk;
 
 aws_msk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#aws_msk PubsubTopic#aws_msk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#aws_msk PubsubTopic#aws_msk}
 
 ---
 
@@ -1420,7 +1473,7 @@ public readonly azureEventHubs: PubsubTopicIngestionDataSourceSettingsAzureEvent
 
 azure_event_hubs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#azure_event_hubs PubsubTopic#azure_event_hubs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#azure_event_hubs PubsubTopic#azure_event_hubs}
 
 ---
 
@@ -1434,7 +1487,7 @@ public readonly cloudStorage: PubsubTopicIngestionDataSourceSettingsCloudStorage
 
 cloud_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#cloud_storage PubsubTopic#cloud_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#cloud_storage PubsubTopic#cloud_storage}
 
 ---
 
@@ -1448,7 +1501,7 @@ public readonly confluentCloud: PubsubTopicIngestionDataSourceSettingsConfluentC
 
 confluent_cloud block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#confluent_cloud PubsubTopic#confluent_cloud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#confluent_cloud PubsubTopic#confluent_cloud}
 
 ---
 
@@ -1462,7 +1515,7 @@ public readonly platformLogsSettings: PubsubTopicIngestionDataSourceSettingsPlat
 
 platform_logs_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#platform_logs_settings PubsubTopic#platform_logs_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#platform_logs_settings PubsubTopic#platform_logs_settings}
 
 ---
 
@@ -1500,7 +1553,7 @@ AWS role ARN to be used for Federated Identity authentication with Kinesis.
 Check the Pub/Sub docs for how to set up this role and the
 required permissions that need to be attached to it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#aws_role_arn PubsubTopic#aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#aws_role_arn PubsubTopic#aws_role_arn}
 
 ---
 
@@ -1517,7 +1570,7 @@ The Kinesis consumer ARN to used for ingestion in Enhanced Fan-Out mode.
 The consumer must be already
 created and ready to be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#consumer_arn PubsubTopic#consumer_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#consumer_arn PubsubTopic#consumer_arn}
 
 ---
 
@@ -1534,7 +1587,7 @@ The GCP service account to be used for Federated Identity authentication with Ki
 The 'awsRoleArn' must be set up with 'accounts.google.com:sub'
 equals to this service account number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
 
 ---
 
@@ -1548,7 +1601,7 @@ public readonly streamArn: string;
 
 The Kinesis stream ARN to ingest data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#stream_arn PubsubTopic#stream_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#stream_arn PubsubTopic#stream_arn}
 
 ---
 
@@ -1586,7 +1639,7 @@ AWS role ARN to be used for Federated Identity authentication with MSK.
 Check the Pub/Sub docs for how to set up this role and the
 required permissions that need to be attached to it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#aws_role_arn PubsubTopic#aws_role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#aws_role_arn PubsubTopic#aws_role_arn}
 
 ---
 
@@ -1600,7 +1653,7 @@ public readonly clusterArn: string;
 
 ARN that uniquely identifies the MSK cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#cluster_arn PubsubTopic#cluster_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#cluster_arn PubsubTopic#cluster_arn}
 
 ---
 
@@ -1617,7 +1670,7 @@ The GCP service account to be used for Federated Identity authentication with MS
 The 'awsRoleArn' must be set up with 'accounts.google.com:sub'
 equals to this service account number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
 
 ---
 
@@ -1631,7 +1684,7 @@ public readonly topic: string;
 
 The name of the MSK topic that Pub/Sub will import from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#topic PubsubTopic#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#topic PubsubTopic#topic}
 
 ---
 
@@ -1669,7 +1722,7 @@ public readonly clientId: string;
 
 The Azure event hub client ID to use for ingestion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#client_id PubsubTopic#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#client_id PubsubTopic#client_id}
 
 ---
 
@@ -1683,7 +1736,7 @@ public readonly eventHub: string;
 
 The Azure event hub to ingest data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#event_hub PubsubTopic#event_hub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#event_hub PubsubTopic#event_hub}
 
 ---
 
@@ -1697,7 +1750,7 @@ public readonly gcpServiceAccount: string;
 
 The GCP service account to be used for Federated Identity authentication with Azure (via a 'AssumeRoleWithWebIdentity' call for the provided role).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
 
 ---
 
@@ -1711,7 +1764,7 @@ public readonly namespace: string;
 
 The Azure event hub namespace to ingest data from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#namespace PubsubTopic#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#namespace PubsubTopic#namespace}
 
 ---
 
@@ -1725,7 +1778,7 @@ public readonly resourceGroup: string;
 
 The name of the resource group within an Azure subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#resource_group PubsubTopic#resource_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#resource_group PubsubTopic#resource_group}
 
 ---
 
@@ -1739,7 +1792,7 @@ public readonly subscriptionId: string;
 
 The Azure event hub subscription ID to use for ingestion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#subscription_id PubsubTopic#subscription_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#subscription_id PubsubTopic#subscription_id}
 
 ---
 
@@ -1753,7 +1806,7 @@ public readonly tenantId: string;
 
 The Azure event hub tenant ID to use for ingestion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#tenant_id PubsubTopic#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#tenant_id PubsubTopic#tenant_id}
 
 ---
 
@@ -1790,7 +1843,7 @@ public readonly bucket: string;
 
 Cloud Storage bucket. The bucket name must be without any prefix like "gs://". See the bucket naming requirements: https://cloud.google.com/storage/docs/buckets#naming.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#bucket PubsubTopic#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#bucket PubsubTopic#bucket}
 
 ---
 
@@ -1804,7 +1857,7 @@ public readonly avroFormat: PubsubTopicIngestionDataSourceSettingsCloudStorageAv
 
 avro_format block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#avro_format PubsubTopic#avro_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#avro_format PubsubTopic#avro_format}
 
 ---
 
@@ -1822,7 +1875,7 @@ If unset, all
 objects will be ingested. See the supported patterns:
 https://cloud.google.com/storage/docs/json_api/v1/objects/list#list-objects-and-prefixes-using-glob
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#match_glob PubsubTopic#match_glob}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#match_glob PubsubTopic#match_glob}
 
 ---
 
@@ -1840,7 +1893,7 @@ If set, only objects with a
 larger or equal timestamp will be ingested. Unset by default, meaning
 all objects will be ingested.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#minimum_object_create_time PubsubTopic#minimum_object_create_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#minimum_object_create_time PubsubTopic#minimum_object_create_time}
 
 ---
 
@@ -1854,7 +1907,7 @@ public readonly pubsubAvroFormat: PubsubTopicIngestionDataSourceSettingsCloudSto
 
 pubsub_avro_format block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#pubsub_avro_format PubsubTopic#pubsub_avro_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#pubsub_avro_format PubsubTopic#pubsub_avro_format}
 
 ---
 
@@ -1868,7 +1921,7 @@ public readonly textFormat: PubsubTopicIngestionDataSourceSettingsCloudStorageTe
 
 text_format block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#text_format PubsubTopic#text_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#text_format PubsubTopic#text_format}
 
 ---
 
@@ -1926,7 +1979,7 @@ Each line of text as
 specified by the delimiter will be set to the 'data' field of a Pub/Sub
 message. When unset, '\n' is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#delimiter PubsubTopic#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#delimiter PubsubTopic#delimiter}
 
 ---
 
@@ -1962,7 +2015,7 @@ public readonly bootstrapServer: string;
 
 The Confluent Cloud bootstrap server. The format is url:port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#bootstrap_server PubsubTopic#bootstrap_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#bootstrap_server PubsubTopic#bootstrap_server}
 
 ---
 
@@ -1976,7 +2029,7 @@ public readonly gcpServiceAccount: string;
 
 The GCP service account to be used for Federated Identity authentication with Confluent Cloud.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#gcp_service_account PubsubTopic#gcp_service_account}
 
 ---
 
@@ -1990,7 +2043,7 @@ public readonly identityPoolId: string;
 
 Identity pool ID to be used for Federated Identity authentication with Confluent Cloud.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#identity_pool_id PubsubTopic#identity_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#identity_pool_id PubsubTopic#identity_pool_id}
 
 ---
 
@@ -2004,7 +2057,7 @@ public readonly topic: string;
 
 Name of the Confluent Cloud topic that Pub/Sub will import from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#topic PubsubTopic#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#topic PubsubTopic#topic}
 
 ---
 
@@ -2018,7 +2071,7 @@ public readonly clusterId: string;
 
 The Confluent Cloud cluster ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#cluster_id PubsubTopic#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#cluster_id PubsubTopic#cluster_id}
 
 ---
 
@@ -2053,7 +2106,7 @@ The minimum severity level of Platform Logs that will be written.
 If unspecified,
 no Platform Logs will be written. Default value: "SEVERITY_UNSPECIFIED" Possible values: ["SEVERITY_UNSPECIFIED", "DISABLED", "DEBUG", "INFO", "WARNING", "ERROR"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#severity PubsubTopic#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#severity PubsubTopic#severity}
 
 ---
 
@@ -2092,7 +2145,7 @@ of GCP altogether) will be routed for storage in one of the
 allowed regions. An empty list means that no regions are allowed,
 and is not a valid configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#allowed_persistence_regions PubsubTopic#allowed_persistence_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#allowed_persistence_regions PubsubTopic#allowed_persistence_regions}
 
 ---
 
@@ -2110,7 +2163,7 @@ That is, Pub/Sub will fail topics.publish
 operations on this topic and subscribe operations on any subscription
 attached to this topic in any region that is not in 'allowedPersistenceRegions'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#enforce_in_transit PubsubTopic#enforce_in_transit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#enforce_in_transit PubsubTopic#enforce_in_transit}
 
 ---
 
@@ -2128,8 +2181,23 @@ const pubsubTopicMessageTransforms: pubsubTopic.PubsubTopicMessageTransforms = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransforms.property.aiInference">aiInference</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference">PubsubTopicMessageTransformsAiInference</a></code> | ai_inference block. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransforms.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls whether or not to use this transform. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransforms.property.javascriptUdf">javascriptUdf</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdf">PubsubTopicMessageTransformsJavascriptUdf</a></code> | javascript_udf block. |
+
+---
+
+##### `aiInference`<sup>Optional</sup> <a name="aiInference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransforms.property.aiInference"></a>
+
+```typescript
+public readonly aiInference: PubsubTopicMessageTransformsAiInference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference">PubsubTopicMessageTransformsAiInference</a>
+
+ai_inference block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#ai_inference PubsubTopic#ai_inference}
 
 ---
 
@@ -2146,7 +2214,7 @@ Controls whether or not to use this transform.
 If not set or 'false',
 the transform will be applied to messages. Default: 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#disabled PubsubTopic#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#disabled PubsubTopic#disabled}
 
 ---
 
@@ -2160,7 +2228,106 @@ public readonly javascriptUdf: PubsubTopicMessageTransformsJavascriptUdf;
 
 javascript_udf block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#javascript_udf PubsubTopic#javascript_udf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#javascript_udf PubsubTopic#javascript_udf}
+
+---
+
+### PubsubTopicMessageTransformsAiInference <a name="PubsubTopicMessageTransformsAiInference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference.Initializer"></a>
+
+```typescript
+import { pubsubTopic } from '@cdktn/provider-google'
+
+const pubsubTopicMessageTransformsAiInference: pubsubTopic.PubsubTopicMessageTransformsAiInference = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference.property.endpoint">endpoint</a></code> | <code>string</code> | The endpoint to a Vertex AI model of the form 'projects/{project}/locations/{location}/endpoints/{endpoint}' or 'projects/{project}/locations/{location}/publishers/{publisher}/models/{model}'. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>string</code> | The service account to use to make prediction requests against endpoints. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference.property.unstructuredInference">unstructuredInference</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference">PubsubTopicMessageTransformsAiInferenceUnstructuredInference</a></code> | unstructured_inference block. |
+
+---
+
+##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference.property.endpoint"></a>
+
+```typescript
+public readonly endpoint: string;
+```
+
+- *Type:* string
+
+The endpoint to a Vertex AI model of the form 'projects/{project}/locations/{location}/endpoints/{endpoint}' or 'projects/{project}/locations/{location}/publishers/{publisher}/models/{model}'.
+
+Vertex AI API requests will be sent to this endpoint.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#endpoint PubsubTopic#endpoint}
+
+---
+
+##### `serviceAccountEmail`<sup>Optional</sup> <a name="serviceAccountEmail" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference.property.serviceAccountEmail"></a>
+
+```typescript
+public readonly serviceAccountEmail: string;
+```
+
+- *Type:* string
+
+The service account to use to make prediction requests against endpoints.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#service_account_email PubsubTopic#service_account_email}
+
+---
+
+##### `unstructuredInference`<sup>Optional</sup> <a name="unstructuredInference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference.property.unstructuredInference"></a>
+
+```typescript
+public readonly unstructuredInference: PubsubTopicMessageTransformsAiInferenceUnstructuredInference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference">PubsubTopicMessageTransformsAiInferenceUnstructuredInference</a>
+
+unstructured_inference block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#unstructured_inference PubsubTopic#unstructured_inference}
+
+---
+
+### PubsubTopicMessageTransformsAiInferenceUnstructuredInference <a name="PubsubTopicMessageTransformsAiInferenceUnstructuredInference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference.Initializer"></a>
+
+```typescript
+import { pubsubTopic } from '@cdktn/provider-google'
+
+const pubsubTopicMessageTransformsAiInferenceUnstructuredInference: pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | A parameters object to be included in each inference request. |
+
+---
+
+##### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference.property.parameters"></a>
+
+```typescript
+public readonly parameters: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+A parameters object to be included in each inference request.
+
+The parameters object is combined with the data field of the Pub/Sub
+message to form the inference request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#parameters PubsubTopic#parameters}
 
 ---
 
@@ -2208,7 +2375,7 @@ public readonly functionName: string;
 
 Name of the JavaScript function that should be applied to Pub/Sub messages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#function_name PubsubTopic#function_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#function_name PubsubTopic#function_name}
 
 ---
 
@@ -2245,7 +2412,7 @@ Format is projects/{project}/schemas/{schema}.
 The value of this field will be _deleted-schema_
 if the schema has been deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#schema PubsubTopic#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#schema PubsubTopic#schema}
 
 ---
 
@@ -2259,7 +2426,7 @@ public readonly encoding: string;
 
 The encoding of messages validated against schema. Default value: "ENCODING_UNSPECIFIED" Possible values: ["ENCODING_UNSPECIFIED", "JSON", "BINARY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#encoding PubsubTopic#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#encoding PubsubTopic#encoding}
 
 ---
 
@@ -2277,9 +2444,9 @@ const pubsubTopicTimeouts: pubsubTopic.PubsubTopicTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#create PubsubTopic#create}. |
-| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#delete PubsubTopic#delete}. |
-| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#update PubsubTopic#update}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#create PubsubTopic#create}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#delete PubsubTopic#delete}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#update PubsubTopic#update}. |
 
 ---
 
@@ -2291,7 +2458,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#create PubsubTopic#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#create PubsubTopic#create}.
 
 ---
 
@@ -2303,7 +2470,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#delete PubsubTopic#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#delete PubsubTopic#delete}.
 
 ---
 
@@ -2315,7 +2482,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_topic#update PubsubTopic#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_topic#update PubsubTopic#update}.
 
 ---
 
@@ -6123,6 +6290,626 @@ public readonly internalValue: PubsubTopicMessageStoragePolicy;
 ---
 
 
+### PubsubTopicMessageTransformsAiInferenceOutputReference <a name="PubsubTopicMessageTransformsAiInferenceOutputReference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.Initializer"></a>
+
+```typescript
+import { pubsubTopic } from '@cdktn/provider-google'
+
+new pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.putUnstructuredInference">putUnstructuredInference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.resetServiceAccountEmail">resetServiceAccountEmail</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.resetUnstructuredInference">resetUnstructuredInference</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putUnstructuredInference` <a name="putUnstructuredInference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.putUnstructuredInference"></a>
+
+```typescript
+public putUnstructuredInference(value: PubsubTopicMessageTransformsAiInferenceUnstructuredInference): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.putUnstructuredInference.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference">PubsubTopicMessageTransformsAiInferenceUnstructuredInference</a>
+
+---
+
+##### `resetServiceAccountEmail` <a name="resetServiceAccountEmail" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.resetServiceAccountEmail"></a>
+
+```typescript
+public resetServiceAccountEmail(): void
+```
+
+##### `resetUnstructuredInference` <a name="resetUnstructuredInference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.resetUnstructuredInference"></a>
+
+```typescript
+public resetUnstructuredInference(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.unstructuredInference">unstructuredInference</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference">PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.endpointInput">endpointInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.serviceAccountEmailInput">serviceAccountEmailInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.unstructuredInferenceInput">unstructuredInferenceInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference">PubsubTopicMessageTransformsAiInferenceUnstructuredInference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.endpoint">endpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference">PubsubTopicMessageTransformsAiInference</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `unstructuredInference`<sup>Required</sup> <a name="unstructuredInference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.unstructuredInference"></a>
+
+```typescript
+public readonly unstructuredInference: PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference">PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference</a>
+
+---
+
+##### `endpointInput`<sup>Optional</sup> <a name="endpointInput" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.endpointInput"></a>
+
+```typescript
+public readonly endpointInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceAccountEmailInput`<sup>Optional</sup> <a name="serviceAccountEmailInput" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.serviceAccountEmailInput"></a>
+
+```typescript
+public readonly serviceAccountEmailInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `unstructuredInferenceInput`<sup>Optional</sup> <a name="unstructuredInferenceInput" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.unstructuredInferenceInput"></a>
+
+```typescript
+public readonly unstructuredInferenceInput: PubsubTopicMessageTransformsAiInferenceUnstructuredInference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference">PubsubTopicMessageTransformsAiInferenceUnstructuredInference</a>
+
+---
+
+##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.endpoint"></a>
+
+```typescript
+public readonly endpoint: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceAccountEmail`<sup>Required</sup> <a name="serviceAccountEmail" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.serviceAccountEmail"></a>
+
+```typescript
+public readonly serviceAccountEmail: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PubsubTopicMessageTransformsAiInference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference">PubsubTopicMessageTransformsAiInference</a>
+
+---
+
+
+### PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference <a name="PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer"></a>
+
+```typescript
+import { pubsubTopic } from '@cdktn/provider-google'
+
+new pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.resetParameters">resetParameters</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetParameters` <a name="resetParameters" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.resetParameters"></a>
+
+```typescript
+public resetParameters(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.parametersInput">parametersInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference">PubsubTopicMessageTransformsAiInferenceUnstructuredInference</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `parametersInput`<sup>Optional</sup> <a name="parametersInput" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.parametersInput"></a>
+
+```typescript
+public readonly parametersInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.parameters"></a>
+
+```typescript
+public readonly parameters: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: PubsubTopicMessageTransformsAiInferenceUnstructuredInference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference">PubsubTopicMessageTransformsAiInferenceUnstructuredInference</a>
+
+---
+
+
 ### PubsubTopicMessageTransformsJavascriptUdfOutputReference <a name="PubsubTopicMessageTransformsJavascriptUdfOutputReference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdfOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdfOutputReference.Initializer"></a>
@@ -6644,7 +7431,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.putAiInference">putAiInference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.putJavascriptUdf">putJavascriptUdf</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.resetAiInference">resetAiInference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.resetDisabled">resetDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.resetJavascriptUdf">resetJavascriptUdf</a></code> | *No description.* |
 
@@ -6800,6 +7589,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putAiInference` <a name="putAiInference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.putAiInference"></a>
+
+```typescript
+public putAiInference(value: PubsubTopicMessageTransformsAiInference): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.putAiInference.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference">PubsubTopicMessageTransformsAiInference</a>
+
+---
+
 ##### `putJavascriptUdf` <a name="putJavascriptUdf" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.putJavascriptUdf"></a>
 
 ```typescript
@@ -6811,6 +7612,12 @@ public putJavascriptUdf(value: PubsubTopicMessageTransformsJavascriptUdf): void
 - *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdf">PubsubTopicMessageTransformsJavascriptUdf</a>
 
 ---
+
+##### `resetAiInference` <a name="resetAiInference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.resetAiInference"></a>
+
+```typescript
+public resetAiInference(): void
+```
 
 ##### `resetDisabled` <a name="resetDisabled" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.resetDisabled"></a>
 
@@ -6831,7 +7638,9 @@ public resetJavascriptUdf(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.property.aiInference">aiInference</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference">PubsubTopicMessageTransformsAiInferenceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.property.javascriptUdf">javascriptUdf</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdfOutputReference">PubsubTopicMessageTransformsJavascriptUdfOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.property.aiInferenceInput">aiInferenceInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference">PubsubTopicMessageTransformsAiInference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.property.javascriptUdfInput">javascriptUdfInput</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdf">PubsubTopicMessageTransformsJavascriptUdf</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -6863,6 +7672,16 @@ public readonly fqn: string;
 
 ---
 
+##### `aiInference`<sup>Required</sup> <a name="aiInference" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.property.aiInference"></a>
+
+```typescript
+public readonly aiInference: PubsubTopicMessageTransformsAiInferenceOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference">PubsubTopicMessageTransformsAiInferenceOutputReference</a>
+
+---
+
 ##### `javascriptUdf`<sup>Required</sup> <a name="javascriptUdf" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.property.javascriptUdf"></a>
 
 ```typescript
@@ -6870,6 +7689,16 @@ public readonly javascriptUdf: PubsubTopicMessageTransformsJavascriptUdfOutputRe
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdfOutputReference">PubsubTopicMessageTransformsJavascriptUdfOutputReference</a>
+
+---
+
+##### `aiInferenceInput`<sup>Optional</sup> <a name="aiInferenceInput" id="@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference.property.aiInferenceInput"></a>
+
+```typescript
+public readonly aiInferenceInput: PubsubTopicMessageTransformsAiInference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference">PubsubTopicMessageTransformsAiInference</a>
 
 ---
 

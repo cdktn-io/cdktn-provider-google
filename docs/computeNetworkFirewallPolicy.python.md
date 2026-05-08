@@ -4,7 +4,7 @@
 
 ### ComputeNetworkFirewallPolicy <a name="ComputeNetworkFirewallPolicy" id="@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy google_compute_network_firewall_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy google_compute_network_firewall_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.Initializer"></a>
 
@@ -24,6 +24,7 @@ computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy(
   name: str,
   description: str = None,
   id: str = None,
+  policy_type: str = None,
   project: str = None,
   timeouts: ComputeNetworkFirewallPolicyTimeouts = None
 )
@@ -42,8 +43,9 @@ computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy(
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | User-provided name of the Network firewall policy. |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#id ComputeNetworkFirewallPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#project ComputeNetworkFirewallPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#id ComputeNetworkFirewallPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.Initializer.parameter.policyType">policy_type</a></code> | <code>str</code> | Policy type is used to determine which resources (networks) the policy can be associated with. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#project ComputeNetworkFirewallPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyTimeouts">ComputeNetworkFirewallPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +118,7 @@ User-provided name of the Network firewall policy.
 
 The name should be unique in the project in which the firewall policy is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#name ComputeNetworkFirewallPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#name ComputeNetworkFirewallPolicy#name}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#description ComputeNetworkFirewallPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#description ComputeNetworkFirewallPolicy#description}
 
 ---
 
@@ -134,10 +136,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#id ComputeNetworkFirewallPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#id ComputeNetworkFirewallPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `policy_type`<sup>Optional</sup> <a name="policy_type" id="@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.Initializer.parameter.policyType"></a>
+
+- *Type:* str
+
+Policy type is used to determine which resources (networks) the policy can be associated with.
+
+A policy can be associated with a network only if the network has the matching policyType in its network profile.
+Different policy types may support some of the Firewall Rules features. Possible values: ["VPC_POLICY"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#policy_type ComputeNetworkFirewallPolicy#policy_type}
 
 ---
 
@@ -145,7 +160,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#project ComputeNetworkFirewallPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#project ComputeNetworkFirewallPolicy#project}.
 
 ---
 
@@ -155,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#timeouts ComputeNetworkFirewallPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#timeouts ComputeNetworkFirewallPolicy#timeouts}
 
 ---
 
@@ -190,6 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.resetPolicyType">reset_policy_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
@@ -557,7 +573,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#create ComputeNetworkFirewallPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#create ComputeNetworkFirewallPolicy#create}.
 
 ---
 
@@ -565,7 +581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#delete ComputeNetworkFirewallPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#delete ComputeNetworkFirewallPolicy#delete}.
 
 ---
 
@@ -573,7 +589,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#update ComputeNetworkFirewallPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#update ComputeNetworkFirewallPolicy#update}.
 
 ---
 
@@ -587,6 +603,12 @@ def reset_description() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_policy_type` <a name="reset_policy_type" id="@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.resetPolicyType"></a>
+
+```python
+def reset_policy_type() -> None
 ```
 
 ##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.resetProject"></a>
@@ -715,7 +737,7 @@ The construct id used in the generated config for the ComputeNetworkFirewallPoli
 
 The id of the existing ComputeNetworkFirewallPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,11 +777,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.policyTypeInput">policy_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyTimeouts">ComputeNetworkFirewallPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.policyType">policy_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.project">project</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1006,6 +1030,16 @@ name_input: str
 
 ---
 
+##### `policy_type_input`<sup>Optional</sup> <a name="policy_type_input" id="@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.policyTypeInput"></a>
+
+```python
+policy_type_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.projectInput"></a>
 
 ```python
@@ -1050,6 +1084,16 @@ id: str
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `policy_type`<sup>Required</sup> <a name="policy_type" id="@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicy.property.policyType"></a>
+
+```python
+policy_type: str
 ```
 
 - *Type:* str
@@ -1104,6 +1148,7 @@ computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig(
   name: str,
   description: str = None,
   id: str = None,
+  policy_type: str = None,
   project: str = None,
   timeouts: ComputeNetworkFirewallPolicyTimeouts = None
 )
@@ -1122,8 +1167,9 @@ computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig(
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig.property.name">name</a></code> | <code>str</code> | User-provided name of the Network firewall policy. |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#id ComputeNetworkFirewallPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#project ComputeNetworkFirewallPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#id ComputeNetworkFirewallPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig.property.policyType">policy_type</a></code> | <code>str</code> | Policy type is used to determine which resources (networks) the policy can be associated with. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#project ComputeNetworkFirewallPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyTimeouts">ComputeNetworkFirewallPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1210,7 +1256,7 @@ User-provided name of the Network firewall policy.
 
 The name should be unique in the project in which the firewall policy is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#name ComputeNetworkFirewallPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#name ComputeNetworkFirewallPolicy#name}
 
 ---
 
@@ -1224,7 +1270,7 @@ description: str
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#description ComputeNetworkFirewallPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#description ComputeNetworkFirewallPolicy#description}
 
 ---
 
@@ -1236,10 +1282,27 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#id ComputeNetworkFirewallPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#id ComputeNetworkFirewallPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `policy_type`<sup>Optional</sup> <a name="policy_type" id="@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyConfig.property.policyType"></a>
+
+```python
+policy_type: str
+```
+
+- *Type:* str
+
+Policy type is used to determine which resources (networks) the policy can be associated with.
+
+A policy can be associated with a network only if the network has the matching policyType in its network profile.
+Different policy types may support some of the Firewall Rules features. Possible values: ["VPC_POLICY"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#policy_type ComputeNetworkFirewallPolicy#policy_type}
 
 ---
 
@@ -1251,7 +1314,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#project ComputeNetworkFirewallPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#project ComputeNetworkFirewallPolicy#project}.
 
 ---
 
@@ -1265,7 +1328,7 @@ timeouts: ComputeNetworkFirewallPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#timeouts ComputeNetworkFirewallPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#timeouts ComputeNetworkFirewallPolicy#timeouts}
 
 ---
 
@@ -1287,9 +1350,9 @@ computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#create ComputeNetworkFirewallPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#delete ComputeNetworkFirewallPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#update ComputeNetworkFirewallPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#create ComputeNetworkFirewallPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#delete ComputeNetworkFirewallPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicy.ComputeNetworkFirewallPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#update ComputeNetworkFirewallPolicy#update}. |
 
 ---
 
@@ -1301,7 +1364,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#create ComputeNetworkFirewallPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#create ComputeNetworkFirewallPolicy#create}.
 
 ---
 
@@ -1313,7 +1376,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#delete ComputeNetworkFirewallPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#delete ComputeNetworkFirewallPolicy#delete}.
 
 ---
 
@@ -1325,7 +1388,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_firewall_policy#update ComputeNetworkFirewallPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_firewall_policy#update ComputeNetworkFirewallPolicy#update}.
 
 ---
 

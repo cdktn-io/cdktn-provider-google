@@ -4,12 +4,12 @@
 
 ### StorageControlOrganizationIntelligenceConfig <a name="StorageControlOrganizationIntelligenceConfig" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config google_storage_control_organization_intelligence_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.NewStorageControlOrganizationIntelligenceConfig(scope Construct, id *string, config StorageControlOrganizationIntelligenceConfigConfig) StorageControlOrganizationIntelligenceConfig
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfig_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntellige
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntellige
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the StorageControlOrganization
 
 The id of the existing StorageControlOrganizationIntelligenceConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,7 +886,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 &storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfigConfig {
 	Connection: interface{},
@@ -898,9 +898,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolor
 	Provisioners: *[]interface{},
 	Name: *string,
 	EditionConfig: *string,
-	Filter: github.com/cdktn-io/cdktn-provider-google-go/google/v18.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilter,
+	Filter: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilter,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTimeouts,
 }
 ```
 
@@ -918,7 +918,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolor
 | <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigConfig.property.name">Name</a></code> | <code>*string</code> | Identifier of the GCP Organization. For GCP org, this field should be organization number. |
 | <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigConfig.property.editionConfig">EditionConfig</a></code> | <code>*string</code> | Edition configuration of the Storage Intelligence resource. Valid values are INHERIT, DISABLED, TRIAL and STANDARD. |
 | <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilter">StorageControlOrganizationIntelligenceConfigFilter</a></code> | filter block. |
-| <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#id StorageControlOrganizationIntelligenceConfig#id}. |
+| <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#id StorageControlOrganizationIntelligenceConfig#id}. |
 | <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTimeouts">StorageControlOrganizationIntelligenceConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1003,7 +1003,7 @@ Name *string
 
 Identifier of the GCP Organization. For GCP org, this field should be organization number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#name StorageControlOrganizationIntelligenceConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#name StorageControlOrganizationIntelligenceConfig#name}
 
 ---
 
@@ -1017,7 +1017,7 @@ EditionConfig *string
 
 Edition configuration of the Storage Intelligence resource. Valid values are INHERIT, DISABLED, TRIAL and STANDARD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#edition_config StorageControlOrganizationIntelligenceConfig#edition_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#edition_config StorageControlOrganizationIntelligenceConfig#edition_config}
 
 ---
 
@@ -1031,7 +1031,7 @@ Filter StorageControlOrganizationIntelligenceConfigFilter
 
 filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#filter StorageControlOrganizationIntelligenceConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#filter StorageControlOrganizationIntelligenceConfig#filter}
 
 ---
 
@@ -1043,7 +1043,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#id StorageControlOrganizationIntelligenceConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#id StorageControlOrganizationIntelligenceConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1060,7 +1060,7 @@ Timeouts StorageControlOrganizationIntelligenceConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#timeouts StorageControlOrganizationIntelligenceConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#timeouts StorageControlOrganizationIntelligenceConfig#timeouts}
 
 ---
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 &storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfig {
 
@@ -1082,13 +1082,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolor
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 &storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfigFilter {
-	ExcludedCloudStorageBuckets: github.com/cdktn-io/cdktn-provider-google-go/google/v18.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets,
-	ExcludedCloudStorageLocations: github.com/cdktn-io/cdktn-provider-google-go/google/v18.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations,
-	IncludedCloudStorageBuckets: github.com/cdktn-io/cdktn-provider-google-go/google/v18.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets,
-	IncludedCloudStorageLocations: github.com/cdktn-io/cdktn-provider-google-go/google/v18.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocations,
+	ExcludedCloudStorageBuckets: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets,
+	ExcludedCloudStorageLocations: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations,
+	IncludedCloudStorageBuckets: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets,
+	IncludedCloudStorageLocations: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocations,
 }
 ```
 
@@ -1113,7 +1113,7 @@ ExcludedCloudStorageBuckets StorageControlOrganizationIntelligenceConfigFilterEx
 
 excluded_cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#excluded_cloud_storage_buckets StorageControlOrganizationIntelligenceConfig#excluded_cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#excluded_cloud_storage_buckets StorageControlOrganizationIntelligenceConfig#excluded_cloud_storage_buckets}
 
 ---
 
@@ -1127,7 +1127,7 @@ ExcludedCloudStorageLocations StorageControlOrganizationIntelligenceConfigFilter
 
 excluded_cloud_storage_locations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#excluded_cloud_storage_locations StorageControlOrganizationIntelligenceConfig#excluded_cloud_storage_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#excluded_cloud_storage_locations StorageControlOrganizationIntelligenceConfig#excluded_cloud_storage_locations}
 
 ---
 
@@ -1141,7 +1141,7 @@ IncludedCloudStorageBuckets StorageControlOrganizationIntelligenceConfigFilterIn
 
 included_cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#included_cloud_storage_buckets StorageControlOrganizationIntelligenceConfig#included_cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#included_cloud_storage_buckets StorageControlOrganizationIntelligenceConfig#included_cloud_storage_buckets}
 
 ---
 
@@ -1155,7 +1155,7 @@ IncludedCloudStorageLocations StorageControlOrganizationIntelligenceConfigFilter
 
 included_cloud_storage_locations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#included_cloud_storage_locations StorageControlOrganizationIntelligenceConfig#included_cloud_storage_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#included_cloud_storage_locations StorageControlOrganizationIntelligenceConfig#included_cloud_storage_locations}
 
 ---
 
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 &storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBuckets {
 	BucketIdRegexes: *[]*string,
@@ -1189,7 +1189,7 @@ BucketIdRegexes *[]*string
 
 List of bucket id regexes to exclude in the storage intelligence plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#bucket_id_regexes StorageControlOrganizationIntelligenceConfig#bucket_id_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#bucket_id_regexes StorageControlOrganizationIntelligenceConfig#bucket_id_regexes}
 
 ---
 
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 &storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocations {
 	Locations: *[]*string,
@@ -1223,7 +1223,7 @@ Locations *[]*string
 
 List of locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#locations StorageControlOrganizationIntelligenceConfig#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#locations StorageControlOrganizationIntelligenceConfig#locations}
 
 ---
 
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 &storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBuckets {
 	BucketIdRegexes: *[]*string,
@@ -1257,7 +1257,7 @@ BucketIdRegexes *[]*string
 
 List of bucket id regexes to exclude in the storage intelligence plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#bucket_id_regexes StorageControlOrganizationIntelligenceConfig#bucket_id_regexes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#bucket_id_regexes StorageControlOrganizationIntelligenceConfig#bucket_id_regexes}
 
 ---
 
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 &storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocations {
 	Locations: *[]*string,
@@ -1291,7 +1291,7 @@ Locations *[]*string
 
 List of locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#locations StorageControlOrganizationIntelligenceConfig#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#locations StorageControlOrganizationIntelligenceConfig#locations}
 
 ---
 
@@ -1300,7 +1300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 &storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfigTimeouts {
 	Create: *string,
@@ -1313,9 +1313,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#create StorageControlOrganizationIntelligenceConfig#create}. |
-| <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#delete StorageControlOrganizationIntelligenceConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#update StorageControlOrganizationIntelligenceConfig#update}. |
+| <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#create StorageControlOrganizationIntelligenceConfig#create}. |
+| <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#delete StorageControlOrganizationIntelligenceConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#update StorageControlOrganizationIntelligenceConfig#update}. |
 
 ---
 
@@ -1327,7 +1327,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#create StorageControlOrganizationIntelligenceConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#create StorageControlOrganizationIntelligenceConfig#create}.
 
 ---
 
@@ -1339,7 +1339,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#delete StorageControlOrganizationIntelligenceConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#delete StorageControlOrganizationIntelligenceConfig#delete}.
 
 ---
 
@@ -1351,7 +1351,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_control_organization_intelligence_config#update StorageControlOrganizationIntelligenceConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_control_organization_intelligence_config#update StorageControlOrganizationIntelligenceConfig#update}.
 
 ---
 
@@ -1360,7 +1360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTrialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 &storagecontrolorganizationintelligenceconfig.StorageControlOrganizationIntelligenceConfigTrialConfig {
 
@@ -1375,7 +1375,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolor
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.NewStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigList
 ```
@@ -1524,7 +1524,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.NewStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference
 ```
@@ -1813,7 +1813,7 @@ func InternalValue() StorageControlOrganizationIntelligenceConfigEffectiveIntell
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.NewStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference
 ```
@@ -2084,7 +2084,7 @@ func InternalValue() StorageControlOrganizationIntelligenceConfigFilterExcludedC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.NewStorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageControlOrganizationIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference
 ```
@@ -2355,7 +2355,7 @@ func InternalValue() StorageControlOrganizationIntelligenceConfigFilterExcludedC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.NewStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference
 ```
@@ -2626,7 +2626,7 @@ func InternalValue() StorageControlOrganizationIntelligenceConfigFilterIncludedC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.NewStorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageControlOrganizationIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference
 ```
@@ -2897,7 +2897,7 @@ func InternalValue() StorageControlOrganizationIntelligenceConfigFilterIncludedC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.NewStorageControlOrganizationIntelligenceConfigFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageControlOrganizationIntelligenceConfigFilterOutputReference
 ```
@@ -3314,7 +3314,7 @@ func InternalValue() StorageControlOrganizationIntelligenceConfigFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.NewStorageControlOrganizationIntelligenceConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageControlOrganizationIntelligenceConfigTimeoutsOutputReference
 ```
@@ -3650,7 +3650,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTrialConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.NewStorageControlOrganizationIntelligenceConfigTrialConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageControlOrganizationIntelligenceConfigTrialConfigList
 ```
@@ -3799,7 +3799,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageControlOrganizationIntelligenceConfig.StorageControlOrganizationIntelligenceConfigTrialConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagecontrolorganizationintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagecontrolorganizationintelligenceconfig"
 
 storagecontrolorganizationintelligenceconfig.NewStorageControlOrganizationIntelligenceConfigTrialConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageControlOrganizationIntelligenceConfigTrialConfigOutputReference
 ```

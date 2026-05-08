@@ -4,7 +4,7 @@
 
 ### StorageBucketIamMember <a name="StorageBucketIamMember" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member google_storage_bucket_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member google_storage_bucket_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.Initializer"></a>
 
@@ -75,8 +75,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.putCondition">PutCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.resetCondition">ResetCondition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -401,6 +403,18 @@ private void PutCondition(StorageBucketIamMemberCondition Value)
 
 ---
 
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.putTimeouts"></a>
+
+```csharp
+private void PutTimeouts(StorageBucketIamMemberTimeouts Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts">StorageBucketIamMemberTimeouts</a>
+
+---
+
 ##### `ResetCondition` <a name="ResetCondition" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.resetCondition"></a>
 
 ```csharp
@@ -411,6 +425,12 @@ private void ResetCondition()
 
 ```csharp
 private void ResetId()
+```
+
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.resetTimeouts"></a>
+
+```csharp
+private void ResetTimeouts()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -516,7 +536,7 @@ The construct id used in the generated config for the StorageBucketIamMember to 
 
 The id of the existing StorageBucketIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -548,11 +568,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConditionOutputReference">StorageBucketIamMemberConditionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference">StorageBucketIamMemberTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.bucketInput">BucketInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.conditionInput">ConditionInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberCondition">StorageBucketIamMemberCondition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.memberInput">MemberInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.roleInput">RoleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts">StorageBucketIamMemberTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.bucket">Bucket</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.member">Member</a></code> | <code>string</code> | *No description.* |
@@ -722,6 +744,16 @@ public string Etag { get; }
 
 ---
 
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.timeouts"></a>
+
+```csharp
+public StorageBucketIamMemberTimeoutsOutputReference Timeouts { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference">StorageBucketIamMemberTimeoutsOutputReference</a>
+
+---
+
 ##### `BucketInput`<sup>Optional</sup> <a name="BucketInput" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.bucketInput"></a>
 
 ```csharp
@@ -769,6 +801,16 @@ public string RoleInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMember.property.timeoutsInput"></a>
+
+```csharp
+public IResolvable|StorageBucketIamMemberTimeouts TimeoutsInput { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts">StorageBucketIamMemberTimeouts</a>
 
 ---
 
@@ -850,9 +892,9 @@ new StorageBucketIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#expression StorageBucketIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#title StorageBucketIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#description StorageBucketIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#expression StorageBucketIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#title StorageBucketIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#description StorageBucketIamMember#description}. |
 
 ---
 
@@ -864,7 +906,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#expression StorageBucketIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#expression StorageBucketIamMember#expression}.
 
 ---
 
@@ -876,7 +918,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#title StorageBucketIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#title StorageBucketIamMember#title}.
 
 ---
 
@@ -888,7 +930,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#description StorageBucketIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#description StorageBucketIamMember#description}.
 
 ---
 
@@ -911,7 +953,8 @@ new StorageBucketIamMemberConfig {
     string Member,
     string Role,
     StorageBucketIamMemberCondition Condition = null,
-    string Id = null
+    string Id = null,
+    StorageBucketIamMemberTimeouts Timeouts = null
 };
 ```
 
@@ -926,11 +969,12 @@ new StorageBucketIamMemberConfig {
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#bucket StorageBucketIamMember#bucket}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#member StorageBucketIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#role StorageBucketIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#bucket StorageBucketIamMember#bucket}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#member StorageBucketIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#role StorageBucketIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberCondition">StorageBucketIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#id StorageBucketIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#id StorageBucketIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts">StorageBucketIamMemberTimeouts</a></code> | timeouts block. |
 
 ---
 
@@ -1012,7 +1056,7 @@ public string Bucket { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#bucket StorageBucketIamMember#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#bucket StorageBucketIamMember#bucket}.
 
 ---
 
@@ -1024,7 +1068,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#member StorageBucketIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#member StorageBucketIamMember#member}.
 
 ---
 
@@ -1036,7 +1080,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#role StorageBucketIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#role StorageBucketIamMember#role}.
 
 ---
 
@@ -1050,7 +1094,7 @@ public StorageBucketIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#condition StorageBucketIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#condition StorageBucketIamMember#condition}
 
 ---
 
@@ -1062,10 +1106,56 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket_iam_member#id StorageBucketIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#id StorageBucketIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberConfig.property.timeouts"></a>
+
+```csharp
+public StorageBucketIamMemberTimeouts Timeouts { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts">StorageBucketIamMemberTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#timeouts StorageBucketIamMember#timeouts}
+
+---
+
+### StorageBucketIamMemberTimeouts <a name="StorageBucketIamMemberTimeouts" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new StorageBucketIamMemberTimeouts {
+    string Create = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#create StorageBucketIamMember#create}. |
+
+---
+
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts.property.create"></a>
+
+```csharp
+public string Create { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_member#create StorageBucketIamMember#create}.
 
 ---
 
@@ -1389,6 +1479,284 @@ public StorageBucketIamMemberCondition InternalValue { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberCondition">StorageBucketIamMemberCondition</a>
+
+---
+
+
+### StorageBucketIamMemberTimeoutsOutputReference <a name="StorageBucketIamMemberTimeoutsOutputReference" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new StorageBucketIamMemberTimeoutsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.resetCreate"></a>
+
+```csharp
+private void ResetCreate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts">StorageBucketIamMemberTimeouts</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.property.createInput"></a>
+
+```csharp
+public string CreateInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.property.create"></a>
+
+```csharp
+public string Create { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeoutsOutputReference.property.internalValue"></a>
+
+```csharp
+public IResolvable|StorageBucketIamMemberTimeouts InternalValue { get; }
+```
+
+- *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.storageBucketIamMember.StorageBucketIamMemberTimeouts">StorageBucketIamMemberTimeouts</a>
 
 ---
 

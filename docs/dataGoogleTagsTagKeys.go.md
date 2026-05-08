@@ -4,12 +4,12 @@
 
 ### DataGoogleTagsTagKeys <a name="DataGoogleTagsTagKeys" id="@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_keys google_tags_tag_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_keys google_tags_tag_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletagstagkeys"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogletagstagkeys"
 
 datagoogletagstagkeys.NewDataGoogleTagsTagKeys(scope Construct, id *string, config DataGoogleTagsTagKeysConfig) DataGoogleTagsTagKeys
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletagstagkeys"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogletagstagkeys"
 
 datagoogletagstagkeys.DataGoogleTagsTagKeys_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletagstagkeys"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogletagstagkeys"
 
 datagoogletagstagkeys.DataGoogleTagsTagKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagoogletagstagkeys.DataGoogleTagsTagKeys_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletagstagkeys"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogletagstagkeys"
 
 datagoogletagstagkeys.DataGoogleTagsTagKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogletagstagkeys.DataGoogleTagsTagKeys_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletagstagkeys"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogletagstagkeys"
 
 datagoogletagstagkeys.DataGoogleTagsTagKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleTagsTagKeys to i
 
 The id of the existing DataGoogleTagsTagKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletagstagkeys"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogletagstagkeys"
 
 &datagoogletagstagkeys.DataGoogleTagsTagKeysConfig {
 	Connection: interface{},
@@ -653,8 +653,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletagsta
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_keys#parent DataGoogleTagsTagKeys#parent}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_keys#id DataGoogleTagsTagKeys#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_keys#parent DataGoogleTagsTagKeys#parent}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_keys#id DataGoogleTagsTagKeys#id}. |
 
 ---
 
@@ -736,7 +736,7 @@ Parent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_keys#parent DataGoogleTagsTagKeys#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_keys#parent DataGoogleTagsTagKeys#parent}.
 
 ---
 
@@ -748,7 +748,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_keys#id DataGoogleTagsTagKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_keys#id DataGoogleTagsTagKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -760,7 +760,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletagstagkeys"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogletagstagkeys"
 
 &datagoogletagstagkeys.DataGoogleTagsTagKeysKeys {
 
@@ -775,7 +775,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletagsta
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletagstagkeys"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogletagstagkeys"
 
 datagoogletagstagkeys.NewDataGoogleTagsTagKeysKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleTagsTagKeysKeysList
 ```
@@ -924,7 +924,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogletagstagkeys"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogletagstagkeys"
 
 datagoogletagstagkeys.NewDataGoogleTagsTagKeysKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleTagsTagKeysKeysOutputReference
 ```
@@ -1147,6 +1147,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference.property.allowedValuesRegex">AllowedValuesRegex</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference.property.createTime">CreateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -1178,6 +1179,16 @@ If this returns an empty array the stack will not be attached.
 
 ```go
 func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AllowedValuesRegex`<sup>Required</sup> <a name="AllowedValuesRegex" id="@cdktn/provider-google.dataGoogleTagsTagKeys.DataGoogleTagsTagKeysKeysOutputReference.property.allowedValuesRegex"></a>
+
+```go
+func AllowedValuesRegex() *string
 ```
 
 - *Type:* *string

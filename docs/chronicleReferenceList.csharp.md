@@ -4,7 +4,7 @@
 
 ### ChronicleReferenceList <a name="ChronicleReferenceList" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list google_chronicle_reference_list}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list google_chronicle_reference_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.Initializer"></a>
 
@@ -75,9 +75,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.putEntries">PutEntries</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.putScopeInfo">PutScopeInfo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.resetScopeInfo">ResetScopeInfo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -403,6 +405,18 @@ private void PutEntries(IResolvable|ChronicleReferenceListEntries[] Value)
 
 ---
 
+##### `PutScopeInfo` <a name="PutScopeInfo" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.putScopeInfo"></a>
+
+```csharp
+private void PutScopeInfo(ChronicleReferenceListScopeInfo Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.putScopeInfo.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfo">ChronicleReferenceListScopeInfo</a>
+
+---
+
 ##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.putTimeouts"></a>
 
 ```csharp
@@ -425,6 +439,12 @@ private void ResetId()
 
 ```csharp
 private void ResetProject()
+```
+
+##### `ResetScopeInfo` <a name="ResetScopeInfo" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.resetScopeInfo"></a>
+
+```csharp
+private void ResetScopeInfo()
 ```
 
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.resetTimeouts"></a>
@@ -536,7 +556,7 @@ The construct id used in the generated config for the ChronicleReferenceList to 
 
 The id of the existing ChronicleReferenceList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -572,7 +592,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.revisionCreateTime">RevisionCreateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.ruleAssociationsCount">RuleAssociationsCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.rules">Rules</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.scopeInfo">ScopeInfo</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList">ChronicleReferenceListScopeInfoList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.scopeInfo">ScopeInfo</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference">ChronicleReferenceListScopeInfoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListTimeoutsOutputReference">ChronicleReferenceListTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.entriesInput">EntriesInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListEntries">ChronicleReferenceListEntries</a>[]</code> | *No description.* |
@@ -581,6 +601,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.locationInput">LocationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.referenceListIdInput">ReferenceListIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.scopeInfoInput">ScopeInfoInput</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfo">ChronicleReferenceListScopeInfo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.syntaxTypeInput">SyntaxTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListTimeouts">ChronicleReferenceListTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.description">Description</a></code> | <code>string</code> | *No description.* |
@@ -798,10 +819,10 @@ public string[] Rules { get; }
 ##### `ScopeInfo`<sup>Required</sup> <a name="ScopeInfo" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.scopeInfo"></a>
 
 ```csharp
-public ChronicleReferenceListScopeInfoList ScopeInfo { get; }
+public ChronicleReferenceListScopeInfoOutputReference ScopeInfo { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList">ChronicleReferenceListScopeInfoList</a>
+- *Type:* <a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference">ChronicleReferenceListScopeInfoOutputReference</a>
 
 ---
 
@@ -882,6 +903,16 @@ public string ReferenceListIdInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `ScopeInfoInput`<sup>Optional</sup> <a name="ScopeInfoInput" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceList.property.scopeInfoInput"></a>
+
+```csharp
+public ChronicleReferenceListScopeInfo ScopeInfoInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfo">ChronicleReferenceListScopeInfo</a>
 
 ---
 
@@ -1018,6 +1049,7 @@ new ChronicleReferenceListConfig {
     string SyntaxType,
     string Id = null,
     string Project = null,
+    ChronicleReferenceListScopeInfo ScopeInfo = null,
     ChronicleReferenceListTimeouts Timeouts = null
 };
 ```
@@ -1039,8 +1071,9 @@ new ChronicleReferenceListConfig {
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListConfig.property.location">Location</a></code> | <code>string</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListConfig.property.referenceListId">ReferenceListId</a></code> | <code>string</code> | Required. |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListConfig.property.syntaxType">SyntaxType</a></code> | <code>string</code> | Possible values: REFERENCE_LIST_SYNTAX_TYPE_PLAIN_TEXT_STRING REFERENCE_LIST_SYNTAX_TYPE_REGEX REFERENCE_LIST_SYNTAX_TYPE_CIDR. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#id ChronicleReferenceList#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#project ChronicleReferenceList#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#id ChronicleReferenceList#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#project ChronicleReferenceList#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListConfig.property.scopeInfo">ScopeInfo</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfo">ChronicleReferenceListScopeInfo</a></code> | scope_info block. |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListTimeouts">ChronicleReferenceListTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1125,7 +1158,7 @@ public string Description { get; set; }
 
 Required. A user-provided description of the reference list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#description ChronicleReferenceList#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#description ChronicleReferenceList#description}
 
 ---
 
@@ -1139,7 +1172,7 @@ public IResolvable|ChronicleReferenceListEntries[] Entries { get; set; }
 
 entries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#entries ChronicleReferenceList#entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#entries ChronicleReferenceList#entries}
 
 ---
 
@@ -1153,7 +1186,7 @@ public string Instance { get; set; }
 
 The unique identifier for the Chronicle instance, which is the same as the customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#instance ChronicleReferenceList#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#instance ChronicleReferenceList#instance}
 
 ---
 
@@ -1169,7 +1202,7 @@ The location of the resource.
 
 This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#location ChronicleReferenceList#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#location ChronicleReferenceList#location}
 
 ---
 
@@ -1191,7 +1224,7 @@ the reference list. It must satisfy the following requirements:
 * Has length < 256.
 * Must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#reference_list_id ChronicleReferenceList#reference_list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#reference_list_id ChronicleReferenceList#reference_list_id}
 
 ---
 
@@ -1205,7 +1238,7 @@ public string SyntaxType { get; set; }
 
 Possible values: REFERENCE_LIST_SYNTAX_TYPE_PLAIN_TEXT_STRING REFERENCE_LIST_SYNTAX_TYPE_REGEX REFERENCE_LIST_SYNTAX_TYPE_CIDR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#syntax_type ChronicleReferenceList#syntax_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#syntax_type ChronicleReferenceList#syntax_type}
 
 ---
 
@@ -1217,7 +1250,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#id ChronicleReferenceList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#id ChronicleReferenceList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1232,7 +1265,21 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#project ChronicleReferenceList#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#project ChronicleReferenceList#project}.
+
+---
+
+##### `ScopeInfo`<sup>Optional</sup> <a name="ScopeInfo" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListConfig.property.scopeInfo"></a>
+
+```csharp
+public ChronicleReferenceListScopeInfo ScopeInfo { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfo">ChronicleReferenceListScopeInfo</a>
+
+scope_info block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#scope_info ChronicleReferenceList#scope_info}
 
 ---
 
@@ -1246,7 +1293,7 @@ public ChronicleReferenceListTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#timeouts ChronicleReferenceList#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#timeouts ChronicleReferenceList#timeouts}
 
 ---
 
@@ -1280,7 +1327,7 @@ public string Value { get; set; }
 
 Required. The value of the entry. Maximum length is 512 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#value ChronicleReferenceList#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#value ChronicleReferenceList#value}
 
 ---
 
@@ -1292,10 +1339,31 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using Io.Cdktn.Providers.Google;
 
 new ChronicleReferenceListScopeInfo {
-
+    ChronicleReferenceListScopeInfoReferenceListScope ReferenceListScope = null
 };
 ```
 
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfo.property.referenceListScope">ReferenceListScope</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScope">ChronicleReferenceListScopeInfoReferenceListScope</a></code> | reference_list_scope block. |
+
+---
+
+##### `ReferenceListScope`<sup>Optional</sup> <a name="ReferenceListScope" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfo.property.referenceListScope"></a>
+
+```csharp
+public ChronicleReferenceListScopeInfoReferenceListScope ReferenceListScope { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScope">ChronicleReferenceListScopeInfoReferenceListScope</a>
+
+reference_list_scope block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#reference_list_scope ChronicleReferenceList#reference_list_scope}
+
+---
 
 ### ChronicleReferenceListScopeInfoReferenceListScope <a name="ChronicleReferenceListScopeInfoReferenceListScope" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScope"></a>
 
@@ -1305,10 +1373,35 @@ new ChronicleReferenceListScopeInfo {
 using Io.Cdktn.Providers.Google;
 
 new ChronicleReferenceListScopeInfoReferenceListScope {
-
+    string[] ScopeNames = null
 };
 ```
 
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScope.property.scopeNames">ScopeNames</a></code> | <code>string[]</code> | Optional. |
+
+---
+
+##### `ScopeNames`<sup>Optional</sup> <a name="ScopeNames" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScope.property.scopeNames"></a>
+
+```csharp
+public string[] ScopeNames { get; set; }
+```
+
+- *Type:* string[]
+
+Optional.
+
+The list of scope names of the reference list. The scope names should be
+full resource names and should be of the format:
+"projects/{project}/locations/{location}/instances/{instance}/dataAccessScopes/{scope_name}".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#scope_names ChronicleReferenceList#scope_names}
+
+---
 
 ### ChronicleReferenceListTimeouts <a name="ChronicleReferenceListTimeouts" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListTimeouts"></a>
 
@@ -1328,9 +1421,9 @@ new ChronicleReferenceListTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#create ChronicleReferenceList#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#delete ChronicleReferenceList#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#update ChronicleReferenceList#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#create ChronicleReferenceList#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#delete ChronicleReferenceList#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#update ChronicleReferenceList#update}. |
 
 ---
 
@@ -1342,7 +1435,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#create ChronicleReferenceList#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#create ChronicleReferenceList#create}.
 
 ---
 
@@ -1354,7 +1447,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#delete ChronicleReferenceList#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#delete ChronicleReferenceList#delete}.
 
 ---
 
@@ -1366,7 +1459,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/chronicle_reference_list#update ChronicleReferenceList#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_reference_list#update ChronicleReferenceList#update}.
 
 ---
 
@@ -1821,155 +1914,6 @@ public IResolvable|ChronicleReferenceListEntries InternalValue { get; }
 ---
 
 
-### ChronicleReferenceListScopeInfoList <a name="ChronicleReferenceListScopeInfoList" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.Initializer"></a>
-
-```csharp
-using Io.Cdktn.Providers.Google;
-
-new ChronicleReferenceListScopeInfoList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* Io.Cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.get">Get</a></code> | *No description.* |
-
----
-
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.allWithMapKey"></a>
-
-```csharp
-private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* string
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.computeFqn"></a>
-
-```csharp
-private string ComputeFqn()
-```
-
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.resolve"></a>
-
-```csharp
-private object Resolve(IResolveContext Context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.resolve.parameter._context"></a>
-
-- *Type:* Io.Cdktn.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.toString"></a>
-
-```csharp
-private string ToString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `Get` <a name="Get" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.get"></a>
-
-```csharp
-private ChronicleReferenceListScopeInfoOutputReference Get(double Index)
-```
-
-###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.get.parameter.index"></a>
-
-- *Type:* double
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.property.creationStack"></a>
-
-```csharp
-public string[] CreationStack { get; }
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoList.property.fqn"></a>
-
-```csharp
-public string Fqn { get; }
-```
-
-- *Type:* string
-
----
-
-
 ### ChronicleReferenceListScopeInfoOutputReference <a name="ChronicleReferenceListScopeInfoOutputReference" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.Initializer"></a>
@@ -1977,15 +1921,13 @@ public string Fqn { get; }
 ```csharp
 using Io.Cdktn.Providers.Google;
 
-new ChronicleReferenceListScopeInfoOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+new ChronicleReferenceListScopeInfoOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -2002,22 +1944,6 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* double
-
-the index of this item in the list.
-
----
-
-##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -2038,6 +1964,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.putReferenceListScope">PutReferenceListScope</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.resetReferenceListScope">ResetReferenceListScope</a></code> | *No description.* |
 
 ---
 
@@ -2191,6 +2119,24 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutReferenceListScope` <a name="PutReferenceListScope" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.putReferenceListScope"></a>
+
+```csharp
+private void PutReferenceListScope(ChronicleReferenceListScopeInfoReferenceListScope Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.putReferenceListScope.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScope">ChronicleReferenceListScopeInfoReferenceListScope</a>
+
+---
+
+##### `ResetReferenceListScope` <a name="ResetReferenceListScope" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.resetReferenceListScope"></a>
+
+```csharp
+private void ResetReferenceListScope()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2198,7 +2144,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.property.referenceListScope">ReferenceListScope</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList">ChronicleReferenceListScopeInfoReferenceListScopeList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.property.referenceListScope">ReferenceListScope</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference">ChronicleReferenceListScopeInfoReferenceListScopeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.property.referenceListScopeInput">ReferenceListScopeInput</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScope">ChronicleReferenceListScopeInfoReferenceListScope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfo">ChronicleReferenceListScopeInfo</a></code> | *No description.* |
 
 ---
@@ -2230,10 +2177,20 @@ public string Fqn { get; }
 ##### `ReferenceListScope`<sup>Required</sup> <a name="ReferenceListScope" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.property.referenceListScope"></a>
 
 ```csharp
-public ChronicleReferenceListScopeInfoReferenceListScopeList ReferenceListScope { get; }
+public ChronicleReferenceListScopeInfoReferenceListScopeOutputReference ReferenceListScope { get; }
 ```
 
-- *Type:* <a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList">ChronicleReferenceListScopeInfoReferenceListScopeList</a>
+- *Type:* <a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference">ChronicleReferenceListScopeInfoReferenceListScopeOutputReference</a>
+
+---
+
+##### `ReferenceListScopeInput`<sup>Optional</sup> <a name="ReferenceListScopeInput" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoOutputReference.property.referenceListScopeInput"></a>
+
+```csharp
+public ChronicleReferenceListScopeInfoReferenceListScope ReferenceListScopeInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScope">ChronicleReferenceListScopeInfoReferenceListScope</a>
 
 ---
 
@@ -2248,155 +2205,6 @@ public ChronicleReferenceListScopeInfo InternalValue { get; }
 ---
 
 
-### ChronicleReferenceListScopeInfoReferenceListScopeList <a name="ChronicleReferenceListScopeInfoReferenceListScopeList" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList"></a>
-
-#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.Initializer"></a>
-
-```csharp
-using Io.Cdktn.Providers.Google;
-
-new ChronicleReferenceListScopeInfoReferenceListScopeList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
-
----
-
-##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.Initializer.parameter.terraformResource"></a>
-
-- *Type:* Io.Cdktn.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* string
-
-The attribute on the parent resource this class is referencing.
-
----
-
-##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.Initializer.parameter.wrapsSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.get">Get</a></code> | *No description.* |
-
----
-
-##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.allWithMapKey"></a>
-
-```csharp
-private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
-```
-
-Creating an iterator for this complex list.
-
-The list will be converted into a map with the mapKeyAttributeName as the key.
-
-###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
-
-- *Type:* string
-
----
-
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.computeFqn"></a>
-
-```csharp
-private string ComputeFqn()
-```
-
-##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.resolve"></a>
-
-```csharp
-private object Resolve(IResolveContext Context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.resolve.parameter._context"></a>
-
-- *Type:* Io.Cdktn.IResolveContext
-
----
-
-##### `ToString` <a name="ToString" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.toString"></a>
-
-```csharp
-private string ToString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-##### `Get` <a name="Get" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.get"></a>
-
-```csharp
-private ChronicleReferenceListScopeInfoReferenceListScopeOutputReference Get(double Index)
-```
-
-###### `Index`<sup>Required</sup> <a name="Index" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.get.parameter.index"></a>
-
-- *Type:* double
-
-the index of the item to return.
-
----
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-
----
-
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.property.creationStack"></a>
-
-```csharp
-public string[] CreationStack { get; }
-```
-
-- *Type:* string[]
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeList.property.fqn"></a>
-
-```csharp
-public string Fqn { get; }
-```
-
-- *Type:* string
-
----
-
-
 ### ChronicleReferenceListScopeInfoReferenceListScopeOutputReference <a name="ChronicleReferenceListScopeInfoReferenceListScopeOutputReference" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.Initializer"></a>
@@ -2404,15 +2212,13 @@ public string Fqn { get; }
 ```csharp
 using Io.Cdktn.Providers.Google;
 
-new ChronicleReferenceListScopeInfoReferenceListScopeOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+new ChronicleReferenceListScopeInfoReferenceListScopeOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
-| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
@@ -2429,22 +2235,6 @@ The parent resource.
 - *Type:* string
 
 The attribute on the parent resource this class is referencing.
-
----
-
-##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.Initializer.parameter.complexObjectIndex"></a>
-
-- *Type:* double
-
-the index of this item in the list.
-
----
-
-##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
-
-- *Type:* bool
-
-whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 ---
 
@@ -2465,6 +2255,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.resetScopeNames">ResetScopeNames</a></code> | *No description.* |
 
 ---
 
@@ -2618,6 +2409,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetScopeNames` <a name="ResetScopeNames" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.resetScopeNames"></a>
+
+```csharp
+private void ResetScopeNames()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2625,6 +2422,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.property.scopeNamesInput">ScopeNamesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.property.scopeNames">ScopeNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScope">ChronicleReferenceListScopeInfoReferenceListScope</a></code> | *No description.* |
 
@@ -2651,6 +2449,16 @@ public string Fqn { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `ScopeNamesInput`<sup>Optional</sup> <a name="ScopeNamesInput" id="@cdktn/provider-google.chronicleReferenceList.ChronicleReferenceListScopeInfoReferenceListScopeOutputReference.property.scopeNamesInput"></a>
+
+```csharp
+public string[] ScopeNamesInput { get; }
+```
+
+- *Type:* string[]
 
 ---
 

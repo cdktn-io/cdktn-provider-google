@@ -4,12 +4,12 @@
 
 ### SecretManagerRegionalSecret <a name="SecretManagerRegionalSecret" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret google_secret_manager_regional_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret google_secret_manager_regional_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecret(scope Construct, id *string, config SecretManagerRegionalSecretConfig) SecretManagerRegionalSecret
 ```
@@ -550,7 +550,7 @@ func ResetVersionDestroyTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.SecretManagerRegionalSecret_IsConstruct(x interface{}) *bool
 ```
@@ -582,7 +582,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.SecretManagerRegionalSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -596,7 +596,7 @@ secretmanagerregionalsecret.SecretManagerRegionalSecret_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.SecretManagerRegionalSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ secretmanagerregionalsecret.SecretManagerRegionalSecret_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.SecretManagerRegionalSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -639,7 +639,7 @@ The construct id used in the generated config for the SecretManagerRegionalSecre
 
 The id of the existing SecretManagerRegionalSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1246,7 +1246,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 &secretmanagerregionalsecret.SecretManagerRegionalSecretConfig {
 	Connection: interface{},
@@ -1259,15 +1259,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerreg
 	Location: *string,
 	SecretId: *string,
 	Annotations: *map[string]*string,
-	CustomerManagedEncryption: github.com/cdktn-io/cdktn-provider-google-go/google/v18.secretManagerRegionalSecret.SecretManagerRegionalSecretCustomerManagedEncryption,
+	CustomerManagedEncryption: github.com/cdktn-io/cdktn-provider-google-go/google/v19.secretManagerRegionalSecret.SecretManagerRegionalSecretCustomerManagedEncryption,
 	DeletionProtection: interface{},
 	ExpireTime: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Rotation: github.com/cdktn-io/cdktn-provider-google-go/google/v18.secretManagerRegionalSecret.SecretManagerRegionalSecretRotation,
+	Rotation: github.com/cdktn-io/cdktn-provider-google-go/google/v19.secretManagerRegionalSecret.SecretManagerRegionalSecretRotation,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts,
 	Topics: interface{},
 	Ttl: *string,
 	VersionAliases: *map[string]*string,
@@ -1292,9 +1292,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerreg
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.customerManagedEncryption">CustomerManagedEncryption</a></code> | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretCustomerManagedEncryption">SecretManagerRegionalSecretCustomerManagedEncryption</a></code> | customer_managed_encryption block. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | Whether Terraform will be prevented from destroying the regional secret. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.expireTime">ExpireTime</a></code> | <code>*string</code> | Timestamp in UTC when the regional secret is scheduled to expire. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#id SecretManagerRegionalSecret#id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#id SecretManagerRegionalSecret#id}. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The labels assigned to this regional secret. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#project SecretManagerRegionalSecret#project}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#project SecretManagerRegionalSecret#project}. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.rotation">Rotation</a></code> | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretRotation">SecretManagerRegionalSecretRotation</a></code> | rotation block. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | A map of resource manager tags. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts">SecretManagerRegionalSecretTimeouts</a></code> | timeouts block. |
@@ -1385,7 +1385,7 @@ Location *string
 
 The location of the regional secret. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#location SecretManagerRegionalSecret#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#location SecretManagerRegionalSecret#location}
 
 ---
 
@@ -1399,7 +1399,7 @@ SecretId *string
 
 This must be unique within the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#secret_id SecretManagerRegionalSecret#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#secret_id SecretManagerRegionalSecret#secret_id}
 
 ---
 
@@ -1429,7 +1429,7 @@ An object containing a list of "key": value pairs. Example:
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#annotations SecretManagerRegionalSecret#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#annotations SecretManagerRegionalSecret#annotations}
 
 ---
 
@@ -1443,7 +1443,7 @@ CustomerManagedEncryption SecretManagerRegionalSecretCustomerManagedEncryption
 
 customer_managed_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#customer_managed_encryption SecretManagerRegionalSecret#customer_managed_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#customer_managed_encryption SecretManagerRegionalSecret#customer_managed_encryption}
 
 ---
 
@@ -1461,7 +1461,7 @@ Defaults to false.
 When the field is set to true in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the federation will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#deletion_protection SecretManagerRegionalSecret#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#deletion_protection SecretManagerRegionalSecret#deletion_protection}
 
 ---
 
@@ -1480,7 +1480,7 @@ output, regardless of what was sent on input. A timestamp in RFC3339 UTC "Zulu" 
 nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and
 "2014-10-02T15:01:23.045123456Z". Only one of 'expire_time' or 'ttl' can be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#expire_time SecretManagerRegionalSecret#expire_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#expire_time SecretManagerRegionalSecret#expire_time}
 
 ---
 
@@ -1492,7 +1492,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#id SecretManagerRegionalSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#id SecretManagerRegionalSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1523,7 +1523,7 @@ An object containing a list of "key": value pairs. Example:
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#labels SecretManagerRegionalSecret#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#labels SecretManagerRegionalSecret#labels}
 
 ---
 
@@ -1535,7 +1535,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#project SecretManagerRegionalSecret#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#project SecretManagerRegionalSecret#project}.
 
 ---
 
@@ -1549,7 +1549,7 @@ Rotation SecretManagerRegionalSecretRotation
 
 rotation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#rotation SecretManagerRegionalSecret#rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#rotation SecretManagerRegionalSecret#rotation}
 
 ---
 
@@ -1566,7 +1566,7 @@ A map of resource manager tags.
 Resource manager tag keys and values have the same definition as resource manager tags.
 Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#tags SecretManagerRegionalSecret#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#tags SecretManagerRegionalSecret#tags}
 
 ---
 
@@ -1580,7 +1580,7 @@ Timeouts SecretManagerRegionalSecretTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#timeouts SecretManagerRegionalSecret#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#timeouts SecretManagerRegionalSecret#timeouts}
 
 ---
 
@@ -1594,7 +1594,7 @@ Topics interface{}
 
 topics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#topics SecretManagerRegionalSecret#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#topics SecretManagerRegionalSecret#topics}
 
 ---
 
@@ -1611,7 +1611,7 @@ The TTL for the regional secret.
 A duration in seconds with up to nine fractional digits,
 terminated by 's'. Example: "3.5s". Only one of 'ttl' or 'expire_time' can be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#ttl SecretManagerRegionalSecret#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#ttl SecretManagerRegionalSecret#ttl}
 
 ---
 
@@ -1633,7 +1633,7 @@ characters. An alias string must start with a letter and cannot be the string
 An object containing a list of "key": value pairs. Example:
 { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#version_aliases SecretManagerRegionalSecret#version_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#version_aliases SecretManagerRegionalSecret#version_aliases}
 
 ---
 
@@ -1652,7 +1652,7 @@ For secret with versionDestroyTtl>0, version destruction doesn't happen immediat
 on calling destroy instead the version goes to a disabled state and
 the actual destruction happens after this TTL expires. It must be atleast 24h.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#version_destroy_ttl SecretManagerRegionalSecret#version_destroy_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#version_destroy_ttl SecretManagerRegionalSecret#version_destroy_ttl}
 
 ---
 
@@ -1661,7 +1661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretCustomerManagedEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 &secretmanagerregionalsecret.SecretManagerRegionalSecretCustomerManagedEncryption {
 	KmsKeyName: *string,
@@ -1686,7 +1686,7 @@ KmsKeyName *string
 
 The resource name of the Cloud KMS CryptoKey used to encrypt secret payloads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#kms_key_name SecretManagerRegionalSecret#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#kms_key_name SecretManagerRegionalSecret#kms_key_name}
 
 ---
 
@@ -1695,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 &secretmanagerregionalsecret.SecretManagerRegionalSecretRotation {
 	NextRotationTime: *string,
@@ -1725,7 +1725,7 @@ Timestamp in UTC at which the Secret is scheduled to rotate.
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine
 fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#next_rotation_time SecretManagerRegionalSecret#next_rotation_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#next_rotation_time SecretManagerRegionalSecret#next_rotation_time}
 
 ---
 
@@ -1744,7 +1744,7 @@ and at most 3153600000s (100 years). If rotationPeriod is set, 'next_rotation_ti
 be set. 'next_rotation_time' will be advanced by this period when the service
 automatically sends rotation notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#rotation_period SecretManagerRegionalSecret#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#rotation_period SecretManagerRegionalSecret#rotation_period}
 
 ---
 
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 &secretmanagerregionalsecret.SecretManagerRegionalSecretTimeouts {
 	Create: *string,
@@ -1766,9 +1766,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerreg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#create SecretManagerRegionalSecret#create}. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#delete SecretManagerRegionalSecret#delete}. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#update SecretManagerRegionalSecret#update}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#create SecretManagerRegionalSecret#create}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#delete SecretManagerRegionalSecret#delete}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#update SecretManagerRegionalSecret#update}. |
 
 ---
 
@@ -1780,7 +1780,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#create SecretManagerRegionalSecret#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#create SecretManagerRegionalSecret#create}.
 
 ---
 
@@ -1792,7 +1792,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#delete SecretManagerRegionalSecret#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#delete SecretManagerRegionalSecret#delete}.
 
 ---
 
@@ -1804,7 +1804,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#update SecretManagerRegionalSecret#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#update SecretManagerRegionalSecret#update}.
 
 ---
 
@@ -1813,7 +1813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTopics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 &secretmanagerregionalsecret.SecretManagerRegionalSecretTopics {
 	Name: *string,
@@ -1841,7 +1841,7 @@ The resource name of the Pub/Sub topic that will be published to, in the followi
 For publication to succeed, the Secret Manager Service
 Agent service account must have pubsub.publisher permissions on the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/secret_manager_regional_secret#name SecretManagerRegionalSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_regional_secret#name SecretManagerRegionalSecret#name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1854,7 +1854,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretCustomerManagedEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecretCustomerManagedEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretManagerRegionalSecretCustomerManagedEncryptionOutputReference
 ```
@@ -2125,7 +2125,7 @@ func InternalValue() SecretManagerRegionalSecretCustomerManagedEncryption
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretRotationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecretRotationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretManagerRegionalSecretRotationOutputReference
 ```
@@ -2432,7 +2432,7 @@ func InternalValue() SecretManagerRegionalSecretRotation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecretTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretManagerRegionalSecretTimeoutsOutputReference
 ```
@@ -2768,7 +2768,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTopicsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecretTopicsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecretManagerRegionalSecretTopicsList
 ```
@@ -2928,7 +2928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecret.SecretManagerRegionalSecretTopicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/secretmanagerregionalsecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/secretmanagerregionalsecret"
 
 secretmanagerregionalsecret.NewSecretManagerRegionalSecretTopicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecretManagerRegionalSecretTopicsOutputReference
 ```

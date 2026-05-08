@@ -4,7 +4,7 @@
 
 ### ApigeeEnvgroup <a name="ApigeeEnvgroup" id="@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup google_apigee_envgroup}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup google_apigee_envgroup}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroup.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the ApigeeEnvgroup to import.
 
 The id of the existing ApigeeEnvgroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,7 +852,7 @@ const apigeeEnvgroupConfig: apigeeEnvgroup.ApigeeEnvgroupConfig = { ... }
 | <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupConfig.property.name">name</a></code> | <code>string</code> | The resource ID of the environment group. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupConfig.property.orgId">orgId</a></code> | <code>string</code> | The Apigee Organization associated with the Apigee environment group, in the format 'organizations/{{org_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupConfig.property.hostnames">hostnames</a></code> | <code>string[]</code> | Hostnames of the environment group. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#id ApigeeEnvgroup#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#id ApigeeEnvgroup#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupTimeouts">ApigeeEnvgroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -937,7 +937,7 @@ public readonly name: string;
 
 The resource ID of the environment group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#name ApigeeEnvgroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#name ApigeeEnvgroup#name}
 
 ---
 
@@ -951,7 +951,7 @@ public readonly orgId: string;
 
 The Apigee Organization associated with the Apigee environment group, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#org_id ApigeeEnvgroup#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#org_id ApigeeEnvgroup#org_id}
 
 ---
 
@@ -965,7 +965,7 @@ public readonly hostnames: string[];
 
 Hostnames of the environment group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#hostnames ApigeeEnvgroup#hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#hostnames ApigeeEnvgroup#hostnames}
 
 ---
 
@@ -977,7 +977,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#id ApigeeEnvgroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#id ApigeeEnvgroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -994,7 +994,7 @@ public readonly timeouts: ApigeeEnvgroupTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#timeouts ApigeeEnvgroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#timeouts ApigeeEnvgroup#timeouts}
 
 ---
 
@@ -1012,9 +1012,9 @@ const apigeeEnvgroupTimeouts: apigeeEnvgroup.ApigeeEnvgroupTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#create ApigeeEnvgroup#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#delete ApigeeEnvgroup#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#update ApigeeEnvgroup#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#create ApigeeEnvgroup#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#delete ApigeeEnvgroup#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvgroup.ApigeeEnvgroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#update ApigeeEnvgroup#update}. |
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#create ApigeeEnvgroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#create ApigeeEnvgroup#create}.
 
 ---
 
@@ -1038,7 +1038,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#delete ApigeeEnvgroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#delete ApigeeEnvgroup#delete}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_envgroup#update ApigeeEnvgroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_envgroup#update ApigeeEnvgroup#update}.
 
 ---
 

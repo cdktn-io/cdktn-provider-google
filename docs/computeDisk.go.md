@@ -4,12 +4,12 @@
 
 ### ComputeDisk <a name="ComputeDisk" id="@cdktn/provider-google.computeDisk.ComputeDisk"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk google_compute_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk google_compute_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDisk.ComputeDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.NewComputeDisk(scope Construct, id *string, config ComputeDiskConfig) ComputeDisk
 ```
@@ -694,7 +694,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeDisk.ComputeDisk.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.ComputeDisk_IsConstruct(x interface{}) *bool
 ```
@@ -726,7 +726,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeDisk.ComputeDisk.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.ComputeDisk_IsTerraformElement(x interface{}) *bool
 ```
@@ -740,7 +740,7 @@ computedisk.ComputeDisk_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeDisk.ComputeDisk.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.ComputeDisk_IsTerraformResource(x interface{}) *bool
 ```
@@ -754,7 +754,7 @@ computedisk.ComputeDisk_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeDisk.ComputeDisk.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.ComputeDisk_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -783,7 +783,7 @@ The construct id used in the generated config for the ComputeDisk to import.
 
 The id of the existing ComputeDisk that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1786,7 +1786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDisk.ComputeDiskAsyncPrimaryDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 &computedisk.ComputeDiskAsyncPrimaryDisk {
 	Disk: *string,
@@ -1811,7 +1811,7 @@ Disk *string
 
 Primary disk for asynchronous disk replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#disk ComputeDisk#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#disk ComputeDisk#disk}
 
 ---
 
@@ -1820,7 +1820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDisk.ComputeDiskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 &computedisk.ComputeDiskConfig {
 	Connection: interface{},
@@ -1833,18 +1833,18 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
 	Name: *string,
 	AccessMode: *string,
 	Architecture: *string,
-	AsyncPrimaryDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeDisk.ComputeDiskAsyncPrimaryDisk,
+	AsyncPrimaryDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeDisk.ComputeDiskAsyncPrimaryDisk,
 	CreateSnapshotBeforeDestroy: interface{},
 	CreateSnapshotBeforeDestroyPrefix: *string,
 	Description: *string,
-	DiskEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeDisk.ComputeDiskDiskEncryptionKey,
+	DiskEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeDisk.ComputeDiskDiskEncryptionKey,
 	EnableConfidentialCompute: interface{},
 	GuestOsFeatures: interface{},
 	Id: *string,
 	Image: *string,
 	Labels: *map[string]*string,
 	Licenses: *[]*string,
-	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeDisk.ComputeDiskParams,
+	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeDisk.ComputeDiskParams,
 	PhysicalBlockSizeBytes: *f64,
 	Project: *string,
 	ProvisionedIops: *f64,
@@ -1852,12 +1852,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
 	Size: *f64,
 	Snapshot: *string,
 	SourceDisk: *string,
-	SourceImageEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeDisk.ComputeDiskSourceImageEncryptionKey,
+	SourceImageEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeDisk.ComputeDiskSourceImageEncryptionKey,
 	SourceInstantSnapshot: *string,
-	SourceSnapshotEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeDisk.ComputeDiskSourceSnapshotEncryptionKey,
+	SourceSnapshotEncryptionKey: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeDisk.ComputeDiskSourceSnapshotEncryptionKey,
 	SourceStorageObject: *string,
 	StoragePool: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeDisk.ComputeDiskTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeDisk.ComputeDiskTimeouts,
 	Type: *string,
 	Zone: *string,
 }
@@ -1884,13 +1884,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.diskEncryptionKey">DiskEncryptionKey</a></code> | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey">ComputeDiskDiskEncryptionKey</a></code> | disk_encryption_key block. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.enableConfidentialCompute">EnableConfidentialCompute</a></code> | <code>interface{}</code> | Whether this disk is using confidential compute mode. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.guestOsFeatures">GuestOsFeatures</a></code> | <code>interface{}</code> | guest_os_features block. |
-| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#id ComputeDisk#id}. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#id ComputeDisk#id}. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.image">Image</a></code> | <code>*string</code> | The image from which to initialize this disk. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels to apply to this disk.  A list of key->value pairs. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.licenses">Licenses</a></code> | <code>*[]*string</code> | Any applicable license URI. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskParams">ComputeDiskParams</a></code> | params block. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.physicalBlockSizeBytes">PhysicalBlockSizeBytes</a></code> | <code>*f64</code> | Physical block size of the persistent disk, in bytes. |
-| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#project ComputeDisk#project}. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#project ComputeDisk#project}. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.provisionedIops">ProvisionedIops</a></code> | <code>*f64</code> | Indicates how many IOPS must be provisioned for the disk. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.provisionedThroughput">ProvisionedThroughput</a></code> | <code>*f64</code> | Indicates how much Throughput must be provisioned for the disk. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.size">Size</a></code> | <code>*f64</code> | Size of the persistent disk, specified in GB. |
@@ -1995,7 +1995,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#name ComputeDisk#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#name ComputeDisk#name}
 
 ---
 
@@ -2016,7 +2016,7 @@ For example:
 * READ_ONLY_SINGLE: The AccessMode means the disk can be attached to multiple instances in RO mode.
   The AccessMode is only valid for Hyperdisk disk types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#access_mode ComputeDisk#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#access_mode ComputeDisk#access_mode}
 
 ---
 
@@ -2030,7 +2030,7 @@ Architecture *string
 
 The architecture of the disk. Values include 'X86_64', 'ARM64'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#architecture ComputeDisk#architecture}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#architecture ComputeDisk#architecture}
 
 ---
 
@@ -2044,7 +2044,7 @@ AsyncPrimaryDisk ComputeDiskAsyncPrimaryDisk
 
 async_primary_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#async_primary_disk ComputeDisk#async_primary_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#async_primary_disk ComputeDisk#async_primary_disk}
 
 ---
 
@@ -2061,7 +2061,7 @@ If set to true, a snapshot of the disk will be created before it is destroyed.
 If your disk is encrypted with customer managed encryption keys these will be reused for the snapshot creation.
 The name of the snapshot by default will be '{{disk-name}}-YYYYMMDD-HHmm'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#create_snapshot_before_destroy ComputeDisk#create_snapshot_before_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#create_snapshot_before_destroy ComputeDisk#create_snapshot_before_destroy}
 
 ---
 
@@ -2075,7 +2075,7 @@ CreateSnapshotBeforeDestroyPrefix *string
 
 This will set a custom name prefix for the snapshot that's created when the disk is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#create_snapshot_before_destroy_prefix ComputeDisk#create_snapshot_before_destroy_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#create_snapshot_before_destroy_prefix ComputeDisk#create_snapshot_before_destroy_prefix}
 
 ---
 
@@ -2089,7 +2089,7 @@ Description *string
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#description ComputeDisk#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#description ComputeDisk#description}
 
 ---
 
@@ -2103,7 +2103,7 @@ DiskEncryptionKey ComputeDiskDiskEncryptionKey
 
 disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#disk_encryption_key ComputeDisk#disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#disk_encryption_key ComputeDisk#disk_encryption_key}
 
 ---
 
@@ -2119,7 +2119,7 @@ Whether this disk is using confidential compute mode.
 
 Note: Only supported on hyperdisk skus, disk_encryption_key is required when setting to true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#enable_confidential_compute ComputeDisk#enable_confidential_compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#enable_confidential_compute ComputeDisk#enable_confidential_compute}
 
 ---
 
@@ -2133,7 +2133,7 @@ GuestOsFeatures interface{}
 
 guest_os_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#guest_os_features ComputeDisk#guest_os_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#guest_os_features ComputeDisk#guest_os_features}
 
 ---
 
@@ -2145,7 +2145,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#id ComputeDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#id ComputeDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2172,7 +2172,7 @@ images names must include the family name. If they don't, use the
 For instance, the image 'centos-6-v20180104' includes its family name 'centos-6'.
 These images can be referred by family name here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#image ComputeDisk#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#image ComputeDisk#image}
 
 ---
 
@@ -2189,7 +2189,7 @@ Labels to apply to this disk.  A list of key->value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#labels ComputeDisk#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#labels ComputeDisk#labels}
 
 ---
 
@@ -2203,7 +2203,7 @@ Licenses *[]*string
 
 Any applicable license URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#licenses ComputeDisk#licenses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#licenses ComputeDisk#licenses}
 
 ---
 
@@ -2217,7 +2217,7 @@ Params ComputeDiskParams
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#params ComputeDisk#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#params ComputeDisk#params}
 
 ---
 
@@ -2237,7 +2237,7 @@ are 4096 and 16384, other sizes may be added in the future.
 If an unsupported value is requested, the error message will list
 the supported values for the caller's project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#physical_block_size_bytes ComputeDisk#physical_block_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#physical_block_size_bytes ComputeDisk#physical_block_size_bytes}
 
 ---
 
@@ -2249,7 +2249,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#project ComputeDisk#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#project ComputeDisk#project}.
 
 ---
 
@@ -2266,7 +2266,7 @@ Indicates how many IOPS must be provisioned for the disk.
 Note: Updating currently is only supported by hyperdisk skus without the need to delete and recreate the disk, hyperdisk
 allows for an update of IOPS every 4 hours. To update your hyperdisk more frequently, you'll need to manually delete and recreate it
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#provisioned_iops ComputeDisk#provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#provisioned_iops ComputeDisk#provisioned_iops}
 
 ---
 
@@ -2283,7 +2283,7 @@ Indicates how much Throughput must be provisioned for the disk.
 Note: Updating currently is only supported by hyperdisk skus without the need to delete and recreate the disk, hyperdisk
 allows for an update of Throughput every 4 hours. To update your hyperdisk more frequently, you'll need to manually delete and recreate it
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#provisioned_throughput ComputeDisk#provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#provisioned_throughput ComputeDisk#provisioned_throughput}
 
 ---
 
@@ -2311,7 +2311,7 @@ if upsizing is detected but recreates the disk if downsizing is requested.
 You can add 'lifecycle.prevent_destroy' in the config to prevent destroying
 and recreating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#size ComputeDisk#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#size ComputeDisk#size}
 
 ---
 
@@ -2335,7 +2335,7 @@ following are valid values:
 * 'global/snapshots/snapshot'
 * 'snapshot'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#snapshot ComputeDisk#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#snapshot ComputeDisk#snapshot}
 
 ---
 
@@ -2359,7 +2359,7 @@ For example, the following are valid values:
 * zones/{zone}/disks/{disk}
 * regions/{region}/disks/{disk}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#source_disk ComputeDisk#source_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#source_disk ComputeDisk#source_disk}
 
 ---
 
@@ -2373,7 +2373,7 @@ SourceImageEncryptionKey ComputeDiskSourceImageEncryptionKey
 
 source_image_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#source_image_encryption_key ComputeDisk#source_image_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#source_image_encryption_key ComputeDisk#source_image_encryption_key}
 
 ---
 
@@ -2394,7 +2394,7 @@ For example, the following are valid values:
 * 'projects/project/zones/zone/instantSnapshots/instantSnapshot'
 * 'zones/zone/instantSnapshots/instantSnapshot'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#source_instant_snapshot ComputeDisk#source_instant_snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#source_instant_snapshot ComputeDisk#source_instant_snapshot}
 
 ---
 
@@ -2408,7 +2408,7 @@ SourceSnapshotEncryptionKey ComputeDiskSourceSnapshotEncryptionKey
 
 source_snapshot_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#source_snapshot_encryption_key ComputeDisk#source_snapshot_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#source_snapshot_encryption_key ComputeDisk#source_snapshot_encryption_key}
 
 ---
 
@@ -2427,7 +2427,7 @@ Valid URIs may start with gs:// or https://storage.googleapis.com/.
 This flag is not optimized for creating multiple disks from a source storage object.
 To create many disks from a source storage object, use gcloud compute images import instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#source_storage_object ComputeDisk#source_storage_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#source_storage_object ComputeDisk#source_storage_object}
 
 ---
 
@@ -2448,7 +2448,7 @@ For example:
 * /zones/{zone}/storagePools/{storagePool}
 * /{storagePool}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#storage_pool ComputeDisk#storage_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#storage_pool ComputeDisk#storage_pool}
 
 ---
 
@@ -2462,7 +2462,7 @@ Timeouts ComputeDiskTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#timeouts ComputeDisk#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#timeouts ComputeDisk#timeouts}
 
 ---
 
@@ -2478,7 +2478,7 @@ URL of the disk type resource describing which disk type to use to create the di
 
 Provide this when creating the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#type ComputeDisk#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#type ComputeDisk#type}
 
 ---
 
@@ -2492,7 +2492,7 @@ Zone *string
 
 A reference to the zone where the disk resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#zone ComputeDisk#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#zone ComputeDisk#zone}
 
 ---
 
@@ -2501,7 +2501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 &computedisk.ComputeDiskDiskEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -2538,7 +2538,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
 
 ---
 
@@ -2554,7 +2554,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
 
 ---
 
@@ -2568,7 +2568,7 @@ RawKey *string
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
 
 ---
 
@@ -2584,7 +2584,7 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#rsa_encrypted_key ComputeDisk#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#rsa_encrypted_key ComputeDisk#rsa_encrypted_key}
 
 ---
 
@@ -2593,7 +2593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDisk.ComputeDiskGuestOsFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 &computedisk.ComputeDiskGuestOsFeatures {
 	Type: *string,
@@ -2618,7 +2618,7 @@ Type *string
 
 The type of supported feature. Read [Enabling guest operating system features](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#guest-os-features) to see a list of available options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#type ComputeDisk#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#type ComputeDisk#type}
 
 ---
 
@@ -2627,7 +2627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDisk.ComputeDiskParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 &computedisk.ComputeDiskParams {
 	ResourceManagerTags: *map[string]*string,
@@ -2656,7 +2656,7 @@ Tag keys and values have the
 same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
 and values are in the format tagValues/456.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#resource_manager_tags ComputeDisk#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#resource_manager_tags ComputeDisk#resource_manager_tags}
 
 ---
 
@@ -2665,7 +2665,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDisk.ComputeDiskSourceImageEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 &computedisk.ComputeDiskSourceImageEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -2700,7 +2700,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
 
 ---
 
@@ -2716,7 +2716,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
 
 ---
 
@@ -2730,7 +2730,7 @@ RawKey *string
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
 
 ---
 
@@ -2739,7 +2739,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDisk.ComputeDiskSourceSnapshotEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 &computedisk.ComputeDiskSourceSnapshotEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -2774,7 +2774,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
 
 ---
 
@@ -2790,7 +2790,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
 
 ---
 
@@ -2804,7 +2804,7 @@ RawKey *string
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
 
 ---
 
@@ -2813,7 +2813,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 &computedisk.ComputeDiskTimeouts {
 	Create: *string,
@@ -2826,9 +2826,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#create ComputeDisk#create}. |
-| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#delete ComputeDisk#delete}. |
-| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#update ComputeDisk#update}. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#create ComputeDisk#create}. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#delete ComputeDisk#delete}. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#update ComputeDisk#update}. |
 
 ---
 
@@ -2840,7 +2840,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#create ComputeDisk#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#create ComputeDisk#create}.
 
 ---
 
@@ -2852,7 +2852,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#delete ComputeDisk#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#delete ComputeDisk#delete}.
 
 ---
 
@@ -2864,7 +2864,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_disk#update ComputeDisk#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_disk#update ComputeDisk#update}.
 
 ---
 
@@ -2875,7 +2875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDisk.ComputeDiskAsyncPrimaryDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.NewComputeDiskAsyncPrimaryDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskAsyncPrimaryDiskOutputReference
 ```
@@ -3146,7 +3146,7 @@ func InternalValue() ComputeDiskAsyncPrimaryDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.NewComputeDiskDiskEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskDiskEncryptionKeyOutputReference
 ```
@@ -3522,7 +3522,7 @@ func InternalValue() ComputeDiskDiskEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDisk.ComputeDiskGuestOsFeaturesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.NewComputeDiskGuestOsFeaturesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeDiskGuestOsFeaturesList
 ```
@@ -3682,7 +3682,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDisk.ComputeDiskGuestOsFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.NewComputeDiskGuestOsFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeDiskGuestOsFeaturesOutputReference
 ```
@@ -3971,7 +3971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDisk.ComputeDiskParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.NewComputeDiskParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskParamsOutputReference
 ```
@@ -4249,7 +4249,7 @@ func InternalValue() ComputeDiskParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDisk.ComputeDiskSourceImageEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.NewComputeDiskSourceImageEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskSourceImageEncryptionKeyOutputReference
 ```
@@ -4596,7 +4596,7 @@ func InternalValue() ComputeDiskSourceImageEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDisk.ComputeDiskSourceSnapshotEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.NewComputeDiskSourceSnapshotEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskSourceSnapshotEncryptionKeyOutputReference
 ```
@@ -4943,7 +4943,7 @@ func InternalValue() ComputeDiskSourceSnapshotEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDisk.ComputeDiskTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computedisk"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computedisk"
 
 computedisk.NewComputeDiskTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskTimeoutsOutputReference
 ```

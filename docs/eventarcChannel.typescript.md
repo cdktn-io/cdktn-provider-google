@@ -4,7 +4,7 @@
 
 ### EventarcChannel <a name="EventarcChannel" id="@cdktn/provider-google.eventarcChannel.EventarcChannel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel google_eventarc_channel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel google_eventarc_channel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.eventarcChannel.EventarcChannel.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.resetCryptoKeyName">resetCryptoKeyName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.resetThirdPartyProvider">resetThirdPartyProvider</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -416,6 +417,12 @@ public resetCryptoKeyName(): void
 public resetId(): void
 ```
 
+##### `resetLabels` <a name="resetLabels" id="@cdktn/provider-google.eventarcChannel.EventarcChannel.resetLabels"></a>
+
+```typescript
+public resetLabels(): void
+```
+
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.eventarcChannel.EventarcChannel.resetProject"></a>
 
 ```typescript
@@ -537,7 +544,7 @@ The construct id used in the generated config for the EventarcChannel to import.
 
 The id of the existing EventarcChannel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -569,13 +576,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.activationToken">activationToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.pubsubTopic">pubsubTopic</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.state">state</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelTimeoutsOutputReference">EventarcChannelTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.cryptoKeyNameInput">cryptoKeyNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
@@ -583,6 +593,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelTimeouts">EventarcChannelTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.cryptoKeyName">cryptoKeyName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannel.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -752,6 +763,16 @@ public readonly createTime: string;
 
 ---
 
+##### `effectiveLabels`<sup>Required</sup> <a name="effectiveLabels" id="@cdktn/provider-google.eventarcChannel.EventarcChannel.property.effectiveLabels"></a>
+
+```typescript
+public readonly effectiveLabels: StringMap;
+```
+
+- *Type:* cdktn.StringMap
+
+---
+
 ##### `pubsubTopic`<sup>Required</sup> <a name="pubsubTopic" id="@cdktn/provider-google.eventarcChannel.EventarcChannel.property.pubsubTopic"></a>
 
 ```typescript
@@ -769,6 +790,16 @@ public readonly state: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `terraformLabels`<sup>Required</sup> <a name="terraformLabels" id="@cdktn/provider-google.eventarcChannel.EventarcChannel.property.terraformLabels"></a>
+
+```typescript
+public readonly terraformLabels: StringMap;
+```
+
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -819,6 +850,16 @@ public readonly idInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktn/provider-google.eventarcChannel.EventarcChannel.property.labelsInput"></a>
+
+```typescript
+public readonly labelsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -889,6 +930,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-google.eventarcChannel.EventarcChannel.property.labels"></a>
+
+```typescript
+public readonly labels: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -976,8 +1027,9 @@ const eventarcChannelConfig: eventarcChannel.EventarcChannelConfig = { ... }
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelConfig.property.location">location</a></code> | <code>string</code> | The location for the resource. |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelConfig.property.name">name</a></code> | <code>string</code> | The resource name of the channel. Must be unique within the location on the project. |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelConfig.property.cryptoKeyName">cryptoKeyName</a></code> | <code>string</code> | Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt their event data. |
-| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#id EventarcChannel#id}. |
-| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#project EventarcChannel#project}. |
+| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#id EventarcChannel#id}. |
+| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | User-defined labels for the channel. |
+| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#project EventarcChannel#project}. |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelConfig.property.thirdPartyProvider">thirdPartyProvider</a></code> | <code>string</code> | The name of the event provider (e.g. Eventarc SaaS partner) associated with the channel. This provider will be granted permissions to publish events to the channel. Format: 'projects/{project}/locations/{location}/providers/{provider_id}'. |
 | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelTimeouts">EventarcChannelTimeouts</a></code> | timeouts block. |
 
@@ -1063,7 +1115,7 @@ public readonly location: string;
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#location EventarcChannel#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#location EventarcChannel#location}
 
 ---
 
@@ -1077,7 +1129,7 @@ public readonly name: string;
 
 The resource name of the channel. Must be unique within the location on the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#name EventarcChannel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#name EventarcChannel#name}
 
 ---
 
@@ -1093,7 +1145,7 @@ Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt 
 
 It must match the pattern 'projects/* /locations/* /keyRings/* /cryptoKeys/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#crypto_key_name EventarcChannel#crypto_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#crypto_key_name EventarcChannel#crypto_key_name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1107,10 +1159,27 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#id EventarcChannel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#id EventarcChannel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.eventarcChannel.EventarcChannelConfig.property.labels"></a>
+
+```typescript
+public readonly labels: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+User-defined labels for the channel.
+
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+Please refer to the field 'effective_labels' for all of the labels present on the resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#labels EventarcChannel#labels}
 
 ---
 
@@ -1122,7 +1191,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#project EventarcChannel#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#project EventarcChannel#project}.
 
 ---
 
@@ -1136,7 +1205,7 @@ public readonly thirdPartyProvider: string;
 
 The name of the event provider (e.g. Eventarc SaaS partner) associated with the channel. This provider will be granted permissions to publish events to the channel. Format: 'projects/{project}/locations/{location}/providers/{provider_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#third_party_provider EventarcChannel#third_party_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#third_party_provider EventarcChannel#third_party_provider}
 
 ---
 
@@ -1150,7 +1219,7 @@ public readonly timeouts: EventarcChannelTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#timeouts EventarcChannel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#timeouts EventarcChannel#timeouts}
 
 ---
 
@@ -1168,9 +1237,9 @@ const eventarcChannelTimeouts: eventarcChannel.EventarcChannelTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#create EventarcChannel#create}. |
-| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#delete EventarcChannel#delete}. |
-| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#update EventarcChannel#update}. |
+| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#create EventarcChannel#create}. |
+| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#delete EventarcChannel#delete}. |
+| <code><a href="#@cdktn/provider-google.eventarcChannel.EventarcChannelTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#update EventarcChannel#update}. |
 
 ---
 
@@ -1182,7 +1251,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#create EventarcChannel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#create EventarcChannel#create}.
 
 ---
 
@@ -1194,7 +1263,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#delete EventarcChannel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#delete EventarcChannel#delete}.
 
 ---
 
@@ -1206,7 +1275,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#update EventarcChannel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#update EventarcChannel#update}.
 
 ---
 

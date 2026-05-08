@@ -4,12 +4,12 @@
 
 ### DialogflowCxWebhook <a name="DialogflowCxWebhook" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook google_dialogflow_cx_webhook}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook google_dialogflow_cx_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.NewDialogflowCxWebhook(scope Construct, id *string, config DialogflowCxWebhookConfig) DialogflowCxWebhook
 ```
@@ -509,7 +509,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.DialogflowCxWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.DialogflowCxWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ dialogflowcxwebhook.DialogflowCxWebhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.DialogflowCxWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -569,7 +569,7 @@ dialogflowcxwebhook.DialogflowCxWebhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.DialogflowCxWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ The construct id used in the generated config for the DialogflowCxWebhook to imp
 
 The id of the existing DialogflowCxWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1062,7 +1062,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 &dialogflowcxwebhook.DialogflowCxWebhookConfig {
 	Connection: interface{},
@@ -1076,13 +1076,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebh
 	Disabled: interface{},
 	EnableSpellCorrection: interface{},
 	EnableStackdriverLogging: interface{},
-	GenericWebService: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService,
+	GenericWebService: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService,
 	Id: *string,
 	Parent: *string,
 	SecuritySettings: *string,
-	ServiceDirectory: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectory,
+	ServiceDirectory: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectory,
 	Timeout: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxWebhook.DialogflowCxWebhookTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxWebhook.DialogflowCxWebhookTimeouts,
 }
 ```
 
@@ -1102,7 +1102,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebh
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookConfig.property.enableSpellCorrection">EnableSpellCorrection</a></code> | <code>interface{}</code> | Deprecated. Indicates if automatic spell correction is enabled in detect intent requests. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookConfig.property.enableStackdriverLogging">EnableStackdriverLogging</a></code> | <code>interface{}</code> | Deprecated. Determines whether this agent should log conversation queries. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookConfig.property.genericWebService">GenericWebService</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService">DialogflowCxWebhookGenericWebService</a></code> | generic_web_service block. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#id DialogflowCxWebhook#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#id DialogflowCxWebhook#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookConfig.property.parent">Parent</a></code> | <code>*string</code> | The agent to create a webhook for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookConfig.property.securitySettings">SecuritySettings</a></code> | <code>*string</code> | Deprecated. Name of the SecuritySettings reference for the agent. Format: projects/<Project ID>/locations/<Location ID>/securitySettings/<Security Settings ID>. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookConfig.property.serviceDirectory">ServiceDirectory</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectory">DialogflowCxWebhookServiceDirectory</a></code> | service_directory block. |
@@ -1191,7 +1191,7 @@ DisplayName *string
 
 The human-readable name of the webhook, unique within the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#display_name DialogflowCxWebhook#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#display_name DialogflowCxWebhook#display_name}
 
 ---
 
@@ -1205,7 +1205,7 @@ Disabled interface{}
 
 Indicates whether the webhook is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#disabled DialogflowCxWebhook#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#disabled DialogflowCxWebhook#disabled}
 
 ---
 
@@ -1219,7 +1219,7 @@ EnableSpellCorrection interface{}
 
 Deprecated. Indicates if automatic spell correction is enabled in detect intent requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#enable_spell_correction DialogflowCxWebhook#enable_spell_correction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#enable_spell_correction DialogflowCxWebhook#enable_spell_correction}
 
 ---
 
@@ -1233,7 +1233,7 @@ EnableStackdriverLogging interface{}
 
 Deprecated. Determines whether this agent should log conversation queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#enable_stackdriver_logging DialogflowCxWebhook#enable_stackdriver_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#enable_stackdriver_logging DialogflowCxWebhook#enable_stackdriver_logging}
 
 ---
 
@@ -1247,7 +1247,7 @@ GenericWebService DialogflowCxWebhookGenericWebService
 
 generic_web_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#generic_web_service DialogflowCxWebhook#generic_web_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#generic_web_service DialogflowCxWebhook#generic_web_service}
 
 ---
 
@@ -1259,7 +1259,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#id DialogflowCxWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#id DialogflowCxWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1276,7 +1276,7 @@ Parent *string
 
 The agent to create a webhook for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#parent DialogflowCxWebhook#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#parent DialogflowCxWebhook#parent}
 
 ---
 
@@ -1290,7 +1290,7 @@ SecuritySettings *string
 
 Deprecated. Name of the SecuritySettings reference for the agent. Format: projects/<Project ID>/locations/<Location ID>/securitySettings/<Security Settings ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#security_settings DialogflowCxWebhook#security_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#security_settings DialogflowCxWebhook#security_settings}
 
 ---
 
@@ -1304,7 +1304,7 @@ ServiceDirectory DialogflowCxWebhookServiceDirectory
 
 service_directory block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#service_directory DialogflowCxWebhook#service_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#service_directory DialogflowCxWebhook#service_directory}
 
 ---
 
@@ -1318,7 +1318,7 @@ Timeout *string
 
 Webhook execution timeout.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#timeout DialogflowCxWebhook#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#timeout DialogflowCxWebhook#timeout}
 
 ---
 
@@ -1332,7 +1332,7 @@ Timeouts DialogflowCxWebhookTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#timeouts DialogflowCxWebhook#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#timeouts DialogflowCxWebhook#timeouts}
 
 ---
 
@@ -1341,18 +1341,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 &dialogflowcxwebhook.DialogflowCxWebhookGenericWebService {
 	Uri: *string,
 	AllowedCaCerts: *[]*string,
 	HttpMethod: *string,
-	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOauthConfig,
+	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOauthConfig,
 	ParameterMapping: *map[string]*string,
 	RequestBody: *string,
 	RequestHeaders: *map[string]*string,
 	SecretVersionForUsernamePassword: *string,
 	SecretVersionsForRequestHeaders: interface{},
+	ServiceAccountAuthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig,
 	ServiceAgentAuth: *string,
 	WebhookType: *string,
 }
@@ -1371,6 +1372,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebh
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService.property.requestHeaders">RequestHeaders</a></code> | <code>*map[string]*string</code> | The HTTP request headers to send together with webhook requests. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService.property.secretVersionForUsernamePassword">SecretVersionForUsernamePassword</a></code> | <code>*string</code> | The SecretManager secret version resource storing the username:password pair for HTTP Basic authentication. Format: 'projects/{project}/secrets/{secret}/versions/{version}'. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService.property.secretVersionsForRequestHeaders">SecretVersionsForRequestHeaders</a></code> | <code>interface{}</code> | secret_versions_for_request_headers block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService.property.serviceAccountAuthConfig">ServiceAccountAuthConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig</a></code> | service_account_auth_config block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService.property.serviceAgentAuth">ServiceAgentAuth</a></code> | <code>*string</code> | Indicate the auth token type generated from the [Diglogflow service agent](https://cloud.google.com/iam/docs/service-agents#dialogflow-service-agent). The generated token is sent in the Authorization header. Possible values: ["NONE", "ID_TOKEN", "ACCESS_TOKEN"]. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService.property.webhookType">WebhookType</a></code> | <code>*string</code> | Type of the webhook. Possible values: ["STANDARD", "FLEXIBLE"]. |
 
@@ -1386,7 +1388,7 @@ Uri *string
 
 The webhook URI for receiving POST requests. It must use https protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#uri DialogflowCxWebhook#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#uri DialogflowCxWebhook#uri}
 
 ---
 
@@ -1411,7 +1413,7 @@ openssl x509 -req -days 200 -in example.com.csr \
 -out example.com.crt \
 -extfile <(printf "\nsubjectAltName='DNS:www.example.com'")
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#allowed_ca_certs DialogflowCxWebhook#allowed_ca_certs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#allowed_ca_certs DialogflowCxWebhook#allowed_ca_certs}
 
 ---
 
@@ -1428,7 +1430,7 @@ HTTP method for the flexible webhook calls.
 Standard webhook always uses
 POST. Possible values: ["POST", "GET", "HEAD", "PUT", "DELETE", "PATCH", "OPTIONS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#http_method DialogflowCxWebhook#http_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#http_method DialogflowCxWebhook#http_method}
 
 ---
 
@@ -1442,7 +1444,7 @@ OauthConfig DialogflowCxWebhookGenericWebServiceOauthConfig
 
 oauth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#oauth_config DialogflowCxWebhook#oauth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#oauth_config DialogflowCxWebhook#oauth_config}
 
 ---
 
@@ -1459,7 +1461,7 @@ Maps the values extracted from specific fields of the flexible webhook response 
 * Key: session parameter name
 * Value: field path in the webhook response
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#parameter_mapping DialogflowCxWebhook#parameter_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#parameter_mapping DialogflowCxWebhook#parameter_mapping}
 
 ---
 
@@ -1473,7 +1475,7 @@ RequestBody *string
 
 Defines a custom JSON object as request body to send to flexible webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#request_body DialogflowCxWebhook#request_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#request_body DialogflowCxWebhook#request_body}
 
 ---
 
@@ -1487,7 +1489,7 @@ RequestHeaders *map[string]*string
 
 The HTTP request headers to send together with webhook requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#request_headers DialogflowCxWebhook#request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#request_headers DialogflowCxWebhook#request_headers}
 
 ---
 
@@ -1501,7 +1503,7 @@ SecretVersionForUsernamePassword *string
 
 The SecretManager secret version resource storing the username:password pair for HTTP Basic authentication. Format: 'projects/{project}/secrets/{secret}/versions/{version}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#secret_version_for_username_password DialogflowCxWebhook#secret_version_for_username_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#secret_version_for_username_password DialogflowCxWebhook#secret_version_for_username_password}
 
 ---
 
@@ -1515,7 +1517,21 @@ SecretVersionsForRequestHeaders interface{}
 
 secret_versions_for_request_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#secret_versions_for_request_headers DialogflowCxWebhook#secret_versions_for_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#secret_versions_for_request_headers DialogflowCxWebhook#secret_versions_for_request_headers}
+
+---
+
+##### `ServiceAccountAuthConfig`<sup>Optional</sup> <a name="ServiceAccountAuthConfig" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebService.property.serviceAccountAuthConfig"></a>
+
+```go
+ServiceAccountAuthConfig DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig</a>
+
+service_account_auth_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#service_account_auth_config DialogflowCxWebhook#service_account_auth_config}
 
 ---
 
@@ -1529,7 +1545,7 @@ ServiceAgentAuth *string
 
 Indicate the auth token type generated from the [Diglogflow service agent](https://cloud.google.com/iam/docs/service-agents#dialogflow-service-agent). The generated token is sent in the Authorization header. Possible values: ["NONE", "ID_TOKEN", "ACCESS_TOKEN"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#service_agent_auth DialogflowCxWebhook#service_agent_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#service_agent_auth DialogflowCxWebhook#service_agent_auth}
 
 ---
 
@@ -1543,7 +1559,7 @@ WebhookType *string
 
 Type of the webhook. Possible values: ["STANDARD", "FLEXIBLE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#webhook_type DialogflowCxWebhook#webhook_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#webhook_type DialogflowCxWebhook#webhook_type}
 
 ---
 
@@ -1552,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOauthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 &dialogflowcxwebhook.DialogflowCxWebhookGenericWebServiceOauthConfig {
 	ClientId: *string,
@@ -1585,7 +1601,7 @@ ClientId *string
 
 The client ID provided by the 3rd party platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#client_id DialogflowCxWebhook#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#client_id DialogflowCxWebhook#client_id}
 
 ---
 
@@ -1599,7 +1615,7 @@ TokenEndpoint *string
 
 The token endpoint provided by the 3rd party platform to exchange an access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#token_endpoint DialogflowCxWebhook#token_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#token_endpoint DialogflowCxWebhook#token_endpoint}
 
 ---
 
@@ -1613,7 +1629,7 @@ ClientSecret *string
 
 The client secret provided by the 3rd party platform.  If the 'secret_version_for_client_secret' field is set, this field will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#client_secret DialogflowCxWebhook#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#client_secret DialogflowCxWebhook#client_secret}
 
 ---
 
@@ -1627,7 +1643,7 @@ Scopes *[]*string
 
 The OAuth scopes to grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#scopes DialogflowCxWebhook#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#scopes DialogflowCxWebhook#scopes}
 
 ---
 
@@ -1645,7 +1661,7 @@ If this field is set, the 'client_secret' field will be
 ignored.
 Format: 'projects/{project}/secrets/{secret}/versions/{version}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#secret_version_for_client_secret DialogflowCxWebhook#secret_version_for_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#secret_version_for_client_secret DialogflowCxWebhook#secret_version_for_client_secret}
 
 ---
 
@@ -1654,7 +1670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 &dialogflowcxwebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders {
 	Key: *string,
@@ -1666,7 +1682,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#key DialogflowCxWebhook#key}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#key DialogflowCxWebhook#key}. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeaders.property.secretVersion">SecretVersion</a></code> | <code>*string</code> | The SecretManager secret version resource storing the header value. Format: 'projects/{project}/secrets/{secret}/versions/{version}'. |
 
 ---
@@ -1679,7 +1695,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#key DialogflowCxWebhook#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#key DialogflowCxWebhook#key}.
 
 ---
 
@@ -1693,7 +1709,48 @@ SecretVersion *string
 
 The SecretManager secret version resource storing the header value. Format: 'projects/{project}/secrets/{secret}/versions/{version}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#secret_version DialogflowCxWebhook#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#secret_version DialogflowCxWebhook#secret_version}
+
+---
+
+### DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig <a name="DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
+
+&dialogflowcxwebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig {
+	ServiceAccount: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | The email address of the service account used to authenticate the webhook call. |
+
+---
+
+##### `ServiceAccount`<sup>Required</sup> <a name="ServiceAccount" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig.property.serviceAccount"></a>
+
+```go
+ServiceAccount *string
+```
+
+- *Type:* *string
+
+The email address of the service account used to authenticate the webhook call.
+
+Dialogflow uses this service account to exchange an access token and the access
+token is then sent in the **Authorization** header of the webhook request.
+
+The service account must have the **roles/iam.serviceAccountTokenCreator** role
+granted to the
+[Dialogflow service agent](https://cloud.google.com/iam/docs/service-agents?_gl=1*1jsujvh*_ga*NjYxMzU3OTg2LjE3Njc3MzQ4NjM.*_ga_WH2QY8WWF5*czE3Njc3MzQ2MjgkbzIkZzEkdDE3Njc3MzQ3NzQkajYwJGwwJGgw#dialogflow-service-agent).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#service_account DialogflowCxWebhook#service_account}
 
 ---
 
@@ -1702,11 +1759,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 &dialogflowcxwebhook.DialogflowCxWebhookServiceDirectory {
 	Service: *string,
-	GenericWebService: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebService,
+	GenericWebService: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebService,
 }
 ```
 
@@ -1729,7 +1786,7 @@ Service *string
 
 The name of Service Directory service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#service DialogflowCxWebhook#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#service DialogflowCxWebhook#service}
 
 ---
 
@@ -1743,7 +1800,7 @@ GenericWebService DialogflowCxWebhookServiceDirectoryGenericWebService
 
 generic_web_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#generic_web_service DialogflowCxWebhook#generic_web_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#generic_web_service DialogflowCxWebhook#generic_web_service}
 
 ---
 
@@ -1752,18 +1809,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 &dialogflowcxwebhook.DialogflowCxWebhookServiceDirectoryGenericWebService {
 	Uri: *string,
 	AllowedCaCerts: *[]*string,
 	HttpMethod: *string,
-	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig,
+	OauthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig,
 	ParameterMapping: *map[string]*string,
 	RequestBody: *string,
 	RequestHeaders: *map[string]*string,
 	SecretVersionForUsernamePassword: *string,
 	SecretVersionsForRequestHeaders: interface{},
+	ServiceAccountAuthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig,
 	ServiceAgentAuth: *string,
 	WebhookType: *string,
 }
@@ -1782,6 +1840,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebh
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebService.property.requestHeaders">RequestHeaders</a></code> | <code>*map[string]*string</code> | The HTTP request headers to send together with webhook requests. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebService.property.secretVersionForUsernamePassword">SecretVersionForUsernamePassword</a></code> | <code>*string</code> | The SecretManager secret version resource storing the username:password pair for HTTP Basic authentication. Format: 'projects/{project}/secrets/{secret}/versions/{version}'. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebService.property.secretVersionsForRequestHeaders">SecretVersionsForRequestHeaders</a></code> | <code>interface{}</code> | secret_versions_for_request_headers block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebService.property.serviceAccountAuthConfig">ServiceAccountAuthConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig</a></code> | service_account_auth_config block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebService.property.serviceAgentAuth">ServiceAgentAuth</a></code> | <code>*string</code> | Indicate the auth token type generated from the [Diglogflow service agent](https://cloud.google.com/iam/docs/service-agents#dialogflow-service-agent). The generated token is sent in the Authorization header. Possible values: ["NONE", "ID_TOKEN", "ACCESS_TOKEN"]. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebService.property.webhookType">WebhookType</a></code> | <code>*string</code> | Type of the webhook. Possible values: ["STANDARD", "FLEXIBLE"]. |
 
@@ -1797,7 +1856,7 @@ Uri *string
 
 The webhook URI for receiving POST requests. It must use https protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#uri DialogflowCxWebhook#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#uri DialogflowCxWebhook#uri}
 
 ---
 
@@ -1822,7 +1881,7 @@ openssl x509 -req -days 200 -in example.com.csr \
 -out example.com.crt \
 -extfile <(printf "\nsubjectAltName='DNS:www.example.com'")
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#allowed_ca_certs DialogflowCxWebhook#allowed_ca_certs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#allowed_ca_certs DialogflowCxWebhook#allowed_ca_certs}
 
 ---
 
@@ -1839,7 +1898,7 @@ HTTP method for the flexible webhook calls.
 Standard webhook always uses
 POST. Possible values: ["POST", "GET", "HEAD", "PUT", "DELETE", "PATCH", "OPTIONS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#http_method DialogflowCxWebhook#http_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#http_method DialogflowCxWebhook#http_method}
 
 ---
 
@@ -1853,7 +1912,7 @@ OauthConfig DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig
 
 oauth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#oauth_config DialogflowCxWebhook#oauth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#oauth_config DialogflowCxWebhook#oauth_config}
 
 ---
 
@@ -1870,7 +1929,7 @@ Maps the values extracted from specific fields of the flexible webhook response 
 * Key: session parameter name
 * Value: field path in the webhook response
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#parameter_mapping DialogflowCxWebhook#parameter_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#parameter_mapping DialogflowCxWebhook#parameter_mapping}
 
 ---
 
@@ -1884,7 +1943,7 @@ RequestBody *string
 
 Defines a custom JSON object as request body to send to flexible webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#request_body DialogflowCxWebhook#request_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#request_body DialogflowCxWebhook#request_body}
 
 ---
 
@@ -1898,7 +1957,7 @@ RequestHeaders *map[string]*string
 
 The HTTP request headers to send together with webhook requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#request_headers DialogflowCxWebhook#request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#request_headers DialogflowCxWebhook#request_headers}
 
 ---
 
@@ -1912,7 +1971,7 @@ SecretVersionForUsernamePassword *string
 
 The SecretManager secret version resource storing the username:password pair for HTTP Basic authentication. Format: 'projects/{project}/secrets/{secret}/versions/{version}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#secret_version_for_username_password DialogflowCxWebhook#secret_version_for_username_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#secret_version_for_username_password DialogflowCxWebhook#secret_version_for_username_password}
 
 ---
 
@@ -1926,7 +1985,21 @@ SecretVersionsForRequestHeaders interface{}
 
 secret_versions_for_request_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#secret_versions_for_request_headers DialogflowCxWebhook#secret_versions_for_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#secret_versions_for_request_headers DialogflowCxWebhook#secret_versions_for_request_headers}
+
+---
+
+##### `ServiceAccountAuthConfig`<sup>Optional</sup> <a name="ServiceAccountAuthConfig" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebService.property.serviceAccountAuthConfig"></a>
+
+```go
+ServiceAccountAuthConfig DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig</a>
+
+service_account_auth_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#service_account_auth_config DialogflowCxWebhook#service_account_auth_config}
 
 ---
 
@@ -1940,7 +2013,7 @@ ServiceAgentAuth *string
 
 Indicate the auth token type generated from the [Diglogflow service agent](https://cloud.google.com/iam/docs/service-agents#dialogflow-service-agent). The generated token is sent in the Authorization header. Possible values: ["NONE", "ID_TOKEN", "ACCESS_TOKEN"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#service_agent_auth DialogflowCxWebhook#service_agent_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#service_agent_auth DialogflowCxWebhook#service_agent_auth}
 
 ---
 
@@ -1954,7 +2027,7 @@ WebhookType *string
 
 Type of the webhook. Possible values: ["STANDARD", "FLEXIBLE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#webhook_type DialogflowCxWebhook#webhook_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#webhook_type DialogflowCxWebhook#webhook_type}
 
 ---
 
@@ -1963,7 +2036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 &dialogflowcxwebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig {
 	ClientId: *string,
@@ -1996,7 +2069,7 @@ ClientId *string
 
 The client ID provided by the 3rd party platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#client_id DialogflowCxWebhook#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#client_id DialogflowCxWebhook#client_id}
 
 ---
 
@@ -2010,7 +2083,7 @@ TokenEndpoint *string
 
 The token endpoint provided by the 3rd party platform to exchange an access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#token_endpoint DialogflowCxWebhook#token_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#token_endpoint DialogflowCxWebhook#token_endpoint}
 
 ---
 
@@ -2024,7 +2097,7 @@ ClientSecret *string
 
 The client secret provided by the 3rd party platform.  If the 'secret_version_for_client_secret' field is set, this field will be ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#client_secret DialogflowCxWebhook#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#client_secret DialogflowCxWebhook#client_secret}
 
 ---
 
@@ -2038,7 +2111,7 @@ Scopes *[]*string
 
 The OAuth scopes to grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#scopes DialogflowCxWebhook#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#scopes DialogflowCxWebhook#scopes}
 
 ---
 
@@ -2056,7 +2129,7 @@ If this field is set, the 'client_secret' field will be
 ignored.
 Format: 'projects/{project}/secrets/{secret}/versions/{version}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#secret_version_for_client_secret DialogflowCxWebhook#secret_version_for_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#secret_version_for_client_secret DialogflowCxWebhook#secret_version_for_client_secret}
 
 ---
 
@@ -2065,7 +2138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 &dialogflowcxwebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders {
 	Key: *string,
@@ -2077,7 +2150,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#key DialogflowCxWebhook#key}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#key DialogflowCxWebhook#key}. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeaders.property.secretVersion">SecretVersion</a></code> | <code>*string</code> | The SecretManager secret version resource storing the header value. Format: 'projects/{project}/secrets/{secret}/versions/{version}'. |
 
 ---
@@ -2090,7 +2163,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#key DialogflowCxWebhook#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#key DialogflowCxWebhook#key}.
 
 ---
 
@@ -2104,7 +2177,48 @@ SecretVersion *string
 
 The SecretManager secret version resource storing the header value. Format: 'projects/{project}/secrets/{secret}/versions/{version}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#secret_version DialogflowCxWebhook#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#secret_version DialogflowCxWebhook#secret_version}
+
+---
+
+### DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig <a name="DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
+
+&dialogflowcxwebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig {
+	ServiceAccount: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | The email address of the service account used to authenticate the webhook call. |
+
+---
+
+##### `ServiceAccount`<sup>Required</sup> <a name="ServiceAccount" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig.property.serviceAccount"></a>
+
+```go
+ServiceAccount *string
+```
+
+- *Type:* *string
+
+The email address of the service account used to authenticate the webhook call.
+
+Dialogflow uses this service account to exchange an access token and the access
+token is then sent in the **Authorization** header of the webhook request.
+
+The service account must have the **roles/iam.serviceAccountTokenCreator** role
+granted to the
+[Dialogflow service agent](https://cloud.google.com/iam/docs/service-agents?_gl=1*1jsujvh*_ga*NjYxMzU3OTg2LjE3Njc3MzQ4NjM.*_ga_WH2QY8WWF5*czE3Njc3MzQ2MjgkbzIkZzEkdDE3Njc3MzQ3NzQkajYwJGwwJGgw#dialogflow-service-agent).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#service_account DialogflowCxWebhook#service_account}
 
 ---
 
@@ -2113,7 +2227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 &dialogflowcxwebhook.DialogflowCxWebhookTimeouts {
 	Create: *string,
@@ -2126,9 +2240,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebh
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#create DialogflowCxWebhook#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#delete DialogflowCxWebhook#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#update DialogflowCxWebhook#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#create DialogflowCxWebhook#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#delete DialogflowCxWebhook#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#update DialogflowCxWebhook#update}. |
 
 ---
 
@@ -2140,7 +2254,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#create DialogflowCxWebhook#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#create DialogflowCxWebhook#create}.
 
 ---
 
@@ -2152,7 +2266,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#delete DialogflowCxWebhook#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#delete DialogflowCxWebhook#delete}.
 
 ---
 
@@ -2164,7 +2278,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_webhook#update DialogflowCxWebhook#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_webhook#update DialogflowCxWebhook#update}.
 
 ---
 
@@ -2175,7 +2289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.NewDialogflowCxWebhookGenericWebServiceOauthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference
 ```
@@ -2555,7 +2669,7 @@ func InternalValue() DialogflowCxWebhookGenericWebServiceOauthConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.NewDialogflowCxWebhookGenericWebServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxWebhookGenericWebServiceOutputReference
 ```
@@ -2602,6 +2716,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.putOauthConfig">PutOauthConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.putSecretVersionsForRequestHeaders">PutSecretVersionsForRequestHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.putServiceAccountAuthConfig">PutServiceAccountAuthConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetAllowedCaCerts">ResetAllowedCaCerts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetHttpMethod">ResetHttpMethod</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetOauthConfig">ResetOauthConfig</a></code> | *No description.* |
@@ -2610,6 +2725,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetRequestHeaders">ResetRequestHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetSecretVersionForUsernamePassword">ResetSecretVersionForUsernamePassword</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetSecretVersionsForRequestHeaders">ResetSecretVersionsForRequestHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetServiceAccountAuthConfig">ResetServiceAccountAuthConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetServiceAgentAuth">ResetServiceAgentAuth</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetWebhookType">ResetWebhookType</a></code> | *No description.* |
 
@@ -2789,6 +2905,18 @@ func PutSecretVersionsForRequestHeaders(value interface{})
 
 ---
 
+##### `PutServiceAccountAuthConfig` <a name="PutServiceAccountAuthConfig" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.putServiceAccountAuthConfig"></a>
+
+```go
+func PutServiceAccountAuthConfig(value DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.putServiceAccountAuthConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig</a>
+
+---
+
 ##### `ResetAllowedCaCerts` <a name="ResetAllowedCaCerts" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetAllowedCaCerts"></a>
 
 ```go
@@ -2837,6 +2965,12 @@ func ResetSecretVersionForUsernamePassword()
 func ResetSecretVersionsForRequestHeaders()
 ```
 
+##### `ResetServiceAccountAuthConfig` <a name="ResetServiceAccountAuthConfig" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetServiceAccountAuthConfig"></a>
+
+```go
+func ResetServiceAccountAuthConfig()
+```
+
 ##### `ResetServiceAgentAuth` <a name="ResetServiceAgentAuth" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.resetServiceAgentAuth"></a>
 
 ```go
@@ -2858,6 +2992,7 @@ func ResetWebhookType()
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.oauthConfig">OauthConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference">DialogflowCxWebhookGenericWebServiceOauthConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.secretVersionsForRequestHeaders">SecretVersionsForRequestHeaders</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList">DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.serviceAccountAuthConfig">ServiceAccountAuthConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference">DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.allowedCaCertsInput">AllowedCaCertsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.httpMethodInput">HttpMethodInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.oauthConfigInput">OauthConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOauthConfig">DialogflowCxWebhookGenericWebServiceOauthConfig</a></code> | *No description.* |
@@ -2866,6 +3001,7 @@ func ResetWebhookType()
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.requestHeadersInput">RequestHeadersInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.secretVersionForUsernamePasswordInput">SecretVersionForUsernamePasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.secretVersionsForRequestHeadersInput">SecretVersionsForRequestHeadersInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.serviceAccountAuthConfigInput">ServiceAccountAuthConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.serviceAgentAuthInput">ServiceAgentAuthInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.uriInput">UriInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.webhookTypeInput">WebhookTypeInput</a></code> | <code>*string</code> | *No description.* |
@@ -2923,6 +3059,16 @@ func SecretVersionsForRequestHeaders() DialogflowCxWebhookGenericWebServiceSecre
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList">DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList</a>
+
+---
+
+##### `ServiceAccountAuthConfig`<sup>Required</sup> <a name="ServiceAccountAuthConfig" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.serviceAccountAuthConfig"></a>
+
+```go
+func ServiceAccountAuthConfig() DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference">DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference</a>
 
 ---
 
@@ -3003,6 +3149,16 @@ func SecretVersionsForRequestHeadersInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `ServiceAccountAuthConfigInput`<sup>Optional</sup> <a name="ServiceAccountAuthConfigInput" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceOutputReference.property.serviceAccountAuthConfigInput"></a>
+
+```go
+func ServiceAccountAuthConfigInput() DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig</a>
 
 ---
 
@@ -3142,7 +3298,7 @@ func InternalValue() DialogflowCxWebhookGenericWebService
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.NewDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList
 ```
@@ -3302,7 +3458,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.NewDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersOutputReference
 ```
@@ -3608,12 +3764,283 @@ func InternalValue() interface{}
 ---
 
 
+### DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference <a name="DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
+
+dialogflowcxwebhook.NewDialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.property.serviceAccountInput">ServiceAccountInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccountInput`<sup>Optional</sup> <a name="ServiceAccountInput" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.property.serviceAccountInput"></a>
+
+```go
+func ServiceAccountInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccount`<sup>Required</sup> <a name="ServiceAccount" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.property.serviceAccount"></a>
+
+```go
+func ServiceAccount() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookGenericWebServiceServiceAccountAuthConfig</a>
+
+---
+
+
 ### DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference <a name="DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.NewDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference
 ```
@@ -3993,7 +4420,7 @@ func InternalValue() DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.NewDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference
 ```
@@ -4040,6 +4467,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.putOauthConfig">PutOauthConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.putSecretVersionsForRequestHeaders">PutSecretVersionsForRequestHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.putServiceAccountAuthConfig">PutServiceAccountAuthConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetAllowedCaCerts">ResetAllowedCaCerts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetHttpMethod">ResetHttpMethod</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetOauthConfig">ResetOauthConfig</a></code> | *No description.* |
@@ -4048,6 +4476,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetRequestHeaders">ResetRequestHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetSecretVersionForUsernamePassword">ResetSecretVersionForUsernamePassword</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetSecretVersionsForRequestHeaders">ResetSecretVersionsForRequestHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetServiceAccountAuthConfig">ResetServiceAccountAuthConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetServiceAgentAuth">ResetServiceAgentAuth</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetWebhookType">ResetWebhookType</a></code> | *No description.* |
 
@@ -4227,6 +4656,18 @@ func PutSecretVersionsForRequestHeaders(value interface{})
 
 ---
 
+##### `PutServiceAccountAuthConfig` <a name="PutServiceAccountAuthConfig" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.putServiceAccountAuthConfig"></a>
+
+```go
+func PutServiceAccountAuthConfig(value DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.putServiceAccountAuthConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig</a>
+
+---
+
 ##### `ResetAllowedCaCerts` <a name="ResetAllowedCaCerts" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetAllowedCaCerts"></a>
 
 ```go
@@ -4275,6 +4716,12 @@ func ResetSecretVersionForUsernamePassword()
 func ResetSecretVersionsForRequestHeaders()
 ```
 
+##### `ResetServiceAccountAuthConfig` <a name="ResetServiceAccountAuthConfig" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetServiceAccountAuthConfig"></a>
+
+```go
+func ResetServiceAccountAuthConfig()
+```
+
 ##### `ResetServiceAgentAuth` <a name="ResetServiceAgentAuth" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.resetServiceAgentAuth"></a>
 
 ```go
@@ -4296,6 +4743,7 @@ func ResetWebhookType()
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.oauthConfig">OauthConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference">DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.secretVersionsForRequestHeaders">SecretVersionsForRequestHeaders</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList">DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.serviceAccountAuthConfig">ServiceAccountAuthConfig</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference">DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.allowedCaCertsInput">AllowedCaCertsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.httpMethodInput">HttpMethodInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.oauthConfigInput">OauthConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig">DialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig</a></code> | *No description.* |
@@ -4304,6 +4752,7 @@ func ResetWebhookType()
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.requestHeadersInput">RequestHeadersInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.secretVersionForUsernamePasswordInput">SecretVersionForUsernamePasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.secretVersionsForRequestHeadersInput">SecretVersionsForRequestHeadersInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.serviceAccountAuthConfigInput">ServiceAccountAuthConfigInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.serviceAgentAuthInput">ServiceAgentAuthInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.uriInput">UriInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.webhookTypeInput">WebhookTypeInput</a></code> | <code>*string</code> | *No description.* |
@@ -4361,6 +4810,16 @@ func SecretVersionsForRequestHeaders() DialogflowCxWebhookServiceDirectoryGeneri
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList">DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList</a>
+
+---
+
+##### `ServiceAccountAuthConfig`<sup>Required</sup> <a name="ServiceAccountAuthConfig" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.serviceAccountAuthConfig"></a>
+
+```go
+func ServiceAccountAuthConfig() DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference">DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference</a>
 
 ---
 
@@ -4441,6 +4900,16 @@ func SecretVersionsForRequestHeadersInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `ServiceAccountAuthConfigInput`<sup>Optional</sup> <a name="ServiceAccountAuthConfigInput" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference.property.serviceAccountAuthConfigInput"></a>
+
+```go
+func ServiceAccountAuthConfigInput() DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig</a>
 
 ---
 
@@ -4580,7 +5049,7 @@ func InternalValue() DialogflowCxWebhookServiceDirectoryGenericWebService
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.NewDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersList
 ```
@@ -4740,7 +5209,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.NewDialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowCxWebhookServiceDirectoryGenericWebServiceSecretVersionsForRequestHeadersOutputReference
 ```
@@ -5046,12 +5515,283 @@ func InternalValue() interface{}
 ---
 
 
+### DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference <a name="DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
+
+dialogflowcxwebhook.NewDialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.property.serviceAccountInput">ServiceAccountInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccountInput`<sup>Optional</sup> <a name="ServiceAccountInput" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.property.serviceAccountInput"></a>
+
+```go
+func ServiceAccountInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccount`<sup>Required</sup> <a name="ServiceAccount" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.property.serviceAccount"></a>
+
+```go
+func ServiceAccount() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig">DialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig</a>
+
+---
+
+
 ### DialogflowCxWebhookServiceDirectoryOutputReference <a name="DialogflowCxWebhookServiceDirectoryOutputReference" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookServiceDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.NewDialogflowCxWebhookServiceDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxWebhookServiceDirectoryOutputReference
 ```
@@ -5364,7 +6104,7 @@ func InternalValue() DialogflowCxWebhookServiceDirectory
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxWebhook.DialogflowCxWebhookTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dialogflowcxwebhook"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dialogflowcxwebhook"
 
 dialogflowcxwebhook.NewDialogflowCxWebhookTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowCxWebhookTimeoutsOutputReference
 ```

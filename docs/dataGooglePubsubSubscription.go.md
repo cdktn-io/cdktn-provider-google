@@ -4,12 +4,12 @@
 
 ### DataGooglePubsubSubscription <a name="DataGooglePubsubSubscription" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_subscription google_pubsub_subscription}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_subscription google_pubsub_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscription(scope Construct, id *string, config DataGooglePubsubSubscriptionConfig) DataGooglePubsubSubscription
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.DataGooglePubsubSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.DataGooglePubsubSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglepubsubsubscription.DataGooglePubsubSubscription_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.DataGooglePubsubSubscription_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglepubsubsubscription.DataGooglePubsubSubscription_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.DataGooglePubsubSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGooglePubsubSubscripti
 
 The id of the existing DataGooglePubsubSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -444,6 +444,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.property.pushConfig">PushConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigList">DataGooglePubsubSubscriptionPushConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.property.retainAckedMessages">RetainAckedMessages</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.property.retryPolicy">RetryPolicy</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicyList">DataGooglePubsubSubscriptionRetryPolicyList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.property.tags">Tags</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.property.topic">Topic</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -727,6 +728,16 @@ func RetryPolicy() DataGooglePubsubSubscriptionRetryPolicyList
 
 ---
 
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.property.tags"></a>
+
+```go
+func Tags() StringMap
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMap
+
+---
+
 ##### `TerraformLabels`<sup>Required</sup> <a name="TerraformLabels" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscription.property.terraformLabels"></a>
 
 ```go
@@ -832,7 +843,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionBigqueryConfig {
 
@@ -845,7 +856,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionCloudStorageConfig {
 
@@ -858,9 +869,22 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigAvroConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionCloudStorageConfigAvroConfig {
+
+}
+```
+
+
+### DataGooglePubsubSubscriptionCloudStorageConfigTextConfig <a name="DataGooglePubsubSubscriptionCloudStorageConfigTextConfig" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfig.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
+
+&datagooglepubsubsubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfig {
 
 }
 ```
@@ -871,7 +895,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionConfig {
 	Connection: interface{},
@@ -899,8 +923,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionConfig.property.name">Name</a></code> | <code>*string</code> | Name of the subscription. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_subscription#id DataGooglePubsubSubscription#id}. |
-| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_subscription#project DataGooglePubsubSubscription#project}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_subscription#id DataGooglePubsubSubscription#id}. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_subscription#project DataGooglePubsubSubscription#project}. |
 
 ---
 
@@ -984,7 +1008,7 @@ Name *string
 
 Name of the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_subscription#name DataGooglePubsubSubscription#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_subscription#name DataGooglePubsubSubscription#name}
 
 ---
 
@@ -996,7 +1020,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_subscription#id DataGooglePubsubSubscription#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_subscription#id DataGooglePubsubSubscription#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1011,7 +1035,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_subscription#project DataGooglePubsubSubscription#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_subscription#project DataGooglePubsubSubscription#project}.
 
 ---
 
@@ -1020,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionDeadLetterPolicy {
 
@@ -1033,7 +1057,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionExpirationPolicy {
 
@@ -1046,9 +1070,35 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransforms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionMessageTransforms {
+
+}
+```
+
+
+### DataGooglePubsubSubscriptionMessageTransformsAiInference <a name="DataGooglePubsubSubscriptionMessageTransformsAiInference" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInference"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
+
+&datagooglepubsubsubscription.DataGooglePubsubSubscriptionMessageTransformsAiInference {
+
+}
+```
+
+
+### DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference <a name="DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
+
+&datagooglepubsubsubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference {
 
 }
 ```
@@ -1059,7 +1109,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsJavascriptUdf.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionMessageTransformsJavascriptUdf {
 
@@ -1072,7 +1122,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionPushConfig {
 
@@ -1085,7 +1135,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigNoWrapper.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionPushConfigNoWrapper {
 
@@ -1098,7 +1148,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionPushConfigOidcToken {
 
@@ -1111,7 +1161,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 &datagooglepubsubsubscription.DataGooglePubsubSubscriptionRetryPolicy {
 
@@ -1126,7 +1176,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsub
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionBigqueryConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionBigqueryConfigList
 ```
@@ -1275,7 +1325,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionBigqueryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionBigqueryConfigOutputReference
 ```
@@ -1608,7 +1658,7 @@ func InternalValue() DataGooglePubsubSubscriptionBigqueryConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionCloudStorageConfigAvroConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigList
 ```
@@ -1757,7 +1807,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionCloudStorageConfigAvroConfigOutputReference
 ```
@@ -2046,7 +2096,7 @@ func InternalValue() DataGooglePubsubSubscriptionCloudStorageConfigAvroConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionCloudStorageConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionCloudStorageConfigList
 ```
@@ -2195,7 +2245,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionCloudStorageConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionCloudStorageConfigOutputReference
 ```
@@ -2428,6 +2478,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigOutputReference.property.maxMessages">MaxMessages</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigOutputReference.property.serviceAccountEmail">ServiceAccountEmail</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigOutputReference.property.state">State</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigOutputReference.property.textConfig">TextConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList">DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfig">DataGooglePubsubSubscriptionCloudStorageConfig</a></code> | *No description.* |
 
 ---
@@ -2556,6 +2607,16 @@ func State() *string
 
 ---
 
+##### `TextConfig`<sup>Required</sup> <a name="TextConfig" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigOutputReference.property.textConfig"></a>
+
+```go
+func TextConfig() DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList">DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList</a>
+
+---
+
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigOutputReference.property.internalValue"></a>
 
 ```go
@@ -2567,12 +2628,439 @@ func InternalValue() DataGooglePubsubSubscriptionCloudStorageConfig
 ---
 
 
+### DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList <a name="DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
+
+datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionCloudStorageConfigTextConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.get"></a>
+
+```go
+func Get(index *f64) DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference <a name="DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
+
+datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.property.state">State</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfig">DataGooglePubsubSubscriptionCloudStorageConfigTextConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `State`<sup>Required</sup> <a name="State" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.property.state"></a>
+
+```go
+func State() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataGooglePubsubSubscriptionCloudStorageConfigTextConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionCloudStorageConfigTextConfig">DataGooglePubsubSubscriptionCloudStorageConfigTextConfig</a>
+
+---
+
+
 ### DataGooglePubsubSubscriptionDeadLetterPolicyList <a name="DataGooglePubsubSubscriptionDeadLetterPolicyList" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicyList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionDeadLetterPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionDeadLetterPolicyList
 ```
@@ -2721,7 +3209,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionDeadLetterPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionDeadLetterPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionDeadLetterPolicyOutputReference
 ```
@@ -3010,7 +3498,7 @@ func InternalValue() DataGooglePubsubSubscriptionDeadLetterPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionExpirationPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionExpirationPolicyList
 ```
@@ -3159,7 +3647,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionExpirationPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionExpirationPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionExpirationPolicyOutputReference
 ```
@@ -3432,12 +3920,888 @@ func InternalValue() DataGooglePubsubSubscriptionExpirationPolicy
 ---
 
 
+### DataGooglePubsubSubscriptionMessageTransformsAiInferenceList <a name="DataGooglePubsubSubscriptionMessageTransformsAiInferenceList" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
+
+datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionMessageTransformsAiInferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionMessageTransformsAiInferenceList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.get"></a>
+
+```go
+func Get(index *f64) DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference <a name="DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
+
+datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.endpoint">Endpoint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.serviceAccountEmail">ServiceAccountEmail</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.unstructuredInference">UnstructuredInference</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList">DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInference">DataGooglePubsubSubscriptionMessageTransformsAiInference</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Endpoint`<sup>Required</sup> <a name="Endpoint" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.endpoint"></a>
+
+```go
+func Endpoint() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccountEmail`<sup>Required</sup> <a name="ServiceAccountEmail" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.serviceAccountEmail"></a>
+
+```go
+func ServiceAccountEmail() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UnstructuredInference`<sup>Required</sup> <a name="UnstructuredInference" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.unstructuredInference"></a>
+
+```go
+func UnstructuredInference() DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList">DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList</a>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataGooglePubsubSubscriptionMessageTransformsAiInference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInference">DataGooglePubsubSubscriptionMessageTransformsAiInference</a>
+
+---
+
+
+### DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList <a name="DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
+
+datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.get"></a>
+
+```go
+func Get(index *f64) DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference <a name="DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
+
+datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.parameters">Parameters</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference">DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Parameters`<sup>Required</sup> <a name="Parameters" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.parameters"></a>
+
+```go
+func Parameters() StringMap
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMap
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference">DataGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInference</a>
+
+---
+
+
 ### DataGooglePubsubSubscriptionMessageTransformsJavascriptUdfList <a name="DataGooglePubsubSubscriptionMessageTransformsJavascriptUdfList" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsJavascriptUdfList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsJavascriptUdfList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionMessageTransformsJavascriptUdfList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionMessageTransformsJavascriptUdfList
 ```
@@ -3586,7 +4950,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputReference
 ```
@@ -3875,7 +5239,7 @@ func InternalValue() DataGooglePubsubSubscriptionMessageTransformsJavascriptUdf
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionMessageTransformsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionMessageTransformsList
 ```
@@ -4024,7 +5388,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionMessageTransformsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionMessageTransformsOutputReference
 ```
@@ -4247,6 +5611,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsOutputReference.property.aiInference">AiInference</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList">DataGooglePubsubSubscriptionMessageTransformsAiInferenceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsOutputReference.property.disabled">Disabled</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsOutputReference.property.javascriptUdf">JavascriptUdf</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsJavascriptUdfList">DataGooglePubsubSubscriptionMessageTransformsJavascriptUdfList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransforms">DataGooglePubsubSubscriptionMessageTransforms</a></code> | *No description.* |
@@ -4274,6 +5639,16 @@ func Fqn() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `AiInference`<sup>Required</sup> <a name="AiInference" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsOutputReference.property.aiInference"></a>
+
+```go
+func AiInference() DataGooglePubsubSubscriptionMessageTransformsAiInferenceList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionMessageTransformsAiInferenceList">DataGooglePubsubSubscriptionMessageTransformsAiInferenceList</a>
 
 ---
 
@@ -4313,7 +5688,7 @@ func InternalValue() DataGooglePubsubSubscriptionMessageTransforms
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionPushConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionPushConfigList
 ```
@@ -4462,7 +5837,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigNoWrapperList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionPushConfigNoWrapperList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionPushConfigNoWrapperList
 ```
@@ -4611,7 +5986,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference
 ```
@@ -4889,7 +6264,7 @@ func InternalValue() DataGooglePubsubSubscriptionPushConfigNoWrapper
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionPushConfigOidcTokenList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionPushConfigOidcTokenList
 ```
@@ -5038,7 +6413,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionPushConfigOidcTokenOutputReference
 ```
@@ -5327,7 +6702,7 @@ func InternalValue() DataGooglePubsubSubscriptionPushConfigOidcToken
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionPushConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionPushConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionPushConfigOutputReference
 ```
@@ -5638,7 +7013,7 @@ func InternalValue() DataGooglePubsubSubscriptionPushConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionRetryPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGooglePubsubSubscriptionRetryPolicyList
 ```
@@ -5787,7 +7162,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglepubsubsubscription"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglepubsubsubscription"
 
 datagooglepubsubsubscription.NewDataGooglePubsubSubscriptionRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionRetryPolicyOutputReference
 ```

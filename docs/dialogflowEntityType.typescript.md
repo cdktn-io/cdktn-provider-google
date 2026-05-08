@@ -4,7 +4,7 @@
 
 ### DialogflowEntityType <a name="DialogflowEntityType" id="@cdktn/provider-google.dialogflowEntityType.DialogflowEntityType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type google_dialogflow_entity_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type google_dialogflow_entity_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowEntityType.DialogflowEntityType.Initializer"></a>
 
@@ -550,7 +550,7 @@ The construct id used in the generated config for the DialogflowEntityType to im
 
 The id of the existing DialogflowEntityType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -935,8 +935,8 @@ const dialogflowEntityTypeConfig: dialogflowEntityType.DialogflowEntityTypeConfi
 | <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeConfig.property.kind">kind</a></code> | <code>string</code> | Indicates the kind of entity type. |
 | <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeConfig.property.enableFuzzyExtraction">enableFuzzyExtraction</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables fuzzy entity extraction during classification. |
 | <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeConfig.property.entities">entities</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeEntities">DialogflowEntityTypeEntities</a>[]</code> | entities block. |
-| <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#id DialogflowEntityType#id}. |
-| <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#project DialogflowEntityType#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#id DialogflowEntityType#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#project DialogflowEntityType#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeTimeouts">DialogflowEntityTypeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1021,7 +1021,7 @@ public readonly displayName: string;
 
 The name of this entity type to be displayed on the console.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#display_name DialogflowEntityType#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#display_name DialogflowEntityType#display_name}
 
 ---
 
@@ -1040,7 +1040,7 @@ Indicates the kind of entity type.
 types can contain references to other entity types (with or without aliases).
 * KIND_REGEXP: Regexp entity types allow to specify regular expressions in entries values. Possible values: ["KIND_MAP", "KIND_LIST", "KIND_REGEXP"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#kind DialogflowEntityType#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#kind DialogflowEntityType#kind}
 
 ---
 
@@ -1054,7 +1054,7 @@ public readonly enableFuzzyExtraction: boolean | IResolvable;
 
 Enables fuzzy entity extraction during classification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#enable_fuzzy_extraction DialogflowEntityType#enable_fuzzy_extraction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#enable_fuzzy_extraction DialogflowEntityType#enable_fuzzy_extraction}
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly entities: IResolvable | DialogflowEntityTypeEntities[];
 
 entities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#entities DialogflowEntityType#entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#entities DialogflowEntityType#entities}
 
 ---
 
@@ -1080,7 +1080,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#id DialogflowEntityType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#id DialogflowEntityType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1095,7 +1095,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#project DialogflowEntityType#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#project DialogflowEntityType#project}.
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly timeouts: DialogflowEntityTypeTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#timeouts DialogflowEntityType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#timeouts DialogflowEntityType#timeouts}
 
 ---
 
@@ -1147,7 +1147,7 @@ could be green onions.
 For KIND_LIST entity types:
 * This collection must contain exactly one synonym equal to value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#synonyms DialogflowEntityType#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#synonyms DialogflowEntityType#synonyms}
 
 ---
 
@@ -1168,7 +1168,7 @@ For KIND_MAP entity types:
 For KIND_LIST entity types:
 * A string that can contain references to other entity types (with or without aliases).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#value DialogflowEntityType#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#value DialogflowEntityType#value}
 
 ---
 
@@ -1186,9 +1186,9 @@ const dialogflowEntityTypeTimeouts: dialogflowEntityType.DialogflowEntityTypeTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#create DialogflowEntityType#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#delete DialogflowEntityType#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#update DialogflowEntityType#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#create DialogflowEntityType#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#delete DialogflowEntityType#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowEntityType.DialogflowEntityTypeTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#update DialogflowEntityType#update}. |
 
 ---
 
@@ -1200,7 +1200,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#create DialogflowEntityType#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#create DialogflowEntityType#create}.
 
 ---
 
@@ -1212,7 +1212,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#delete DialogflowEntityType#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#delete DialogflowEntityType#delete}.
 
 ---
 
@@ -1224,7 +1224,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_entity_type#update DialogflowEntityType#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_entity_type#update DialogflowEntityType#update}.
 
 ---
 

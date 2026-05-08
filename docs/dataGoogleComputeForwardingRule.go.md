@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeForwardingRule <a name="DataGoogleComputeForwardingRule" id="@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_forwarding_rule google_compute_forwarding_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeforwardingrule"
 
 datagooglecomputeforwardingrule.NewDataGoogleComputeForwardingRule(scope Construct, id *string, config DataGoogleComputeForwardingRuleConfig) DataGoogleComputeForwardingRule
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeforwardingrule"
 
 datagooglecomputeforwardingrule.DataGoogleComputeForwardingRule_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeforwardingrule"
 
 datagooglecomputeforwardingrule.DataGoogleComputeForwardingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputeforwardingrule.DataGoogleComputeForwardingRule_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeforwardingrule"
 
 datagooglecomputeforwardingrule.DataGoogleComputeForwardingRule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputeforwardingrule.DataGoogleComputeForwardingRule_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeforwardingrule"
 
 datagooglecomputeforwardingrule.DataGoogleComputeForwardingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleComputeForwardin
 
 The id of the existing DataGoogleComputeForwardingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_forwarding_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_forwarding_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1037,7 +1037,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeforwardingrule"
 
 &datagooglecomputeforwardingrule.DataGoogleComputeForwardingRuleConfig {
 	Connection: interface{},
@@ -1066,8 +1066,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource; |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_forwarding_rule#id DataGoogleComputeForwardingRule#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_forwarding_rule#project DataGoogleComputeForwardingRule#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_forwarding_rule#id DataGoogleComputeForwardingRule#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_forwarding_rule#project DataGoogleComputeForwardingRule#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleConfig.property.region">Region</a></code> | <code>*string</code> | A reference to the region where the regional forwarding rule resides. |
 
 ---
@@ -1166,7 +1166,7 @@ For Private Service Connect forwarding rules that forward traffic to Google
 APIs, the forwarding rule name must be a 1-20 characters string with
 lowercase letters and numbers and must start with a letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_forwarding_rule#name DataGoogleComputeForwardingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_forwarding_rule#name DataGoogleComputeForwardingRule#name}
 
 ---
 
@@ -1178,7 +1178,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_forwarding_rule#id DataGoogleComputeForwardingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_forwarding_rule#id DataGoogleComputeForwardingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1193,7 +1193,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_forwarding_rule#project DataGoogleComputeForwardingRule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_forwarding_rule#project DataGoogleComputeForwardingRule#project}.
 
 ---
 
@@ -1209,7 +1209,7 @@ A reference to the region where the regional forwarding rule resides.
 
 This field is not applicable to global forwarding rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_forwarding_rule#region DataGoogleComputeForwardingRule#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_forwarding_rule#region DataGoogleComputeForwardingRule#region}
 
 ---
 
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeforwardingrule"
 
 &datagooglecomputeforwardingrule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrations {
 
@@ -1233,7 +1233,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeforwardingrule"
 
 datagooglecomputeforwardingrule.NewDataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsList
 ```
@@ -1382,7 +1382,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeForwardingRule.DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeforwardingrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeforwardingrule"
 
 datagooglecomputeforwardingrule.NewDataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference
 ```

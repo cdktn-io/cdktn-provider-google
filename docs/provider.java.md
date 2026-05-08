@@ -4,7 +4,7 @@
 
 ### GoogleProvider <a name="GoogleProvider" id="@cdktn/provider-google.provider.GoogleProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs google}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs google}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.provider.GoogleProvider.Initializer"></a>
 
@@ -30,18 +30,22 @@ GoogleProvider.Builder.create(Construct scope, java.lang.String id)
 //  .batching(IResolvable|java.util.List<GoogleProviderBatching>)
 //  .beyondcorpCustomEndpoint(java.lang.String)
 //  .biglakeCustomEndpoint(java.lang.String)
+//  .biglakeIcebergCustomEndpoint(java.lang.String)
 //  .bigqueryAnalyticsHubCustomEndpoint(java.lang.String)
 //  .bigqueryConnectionCustomEndpoint(java.lang.String)
 //  .bigQueryCustomEndpoint(java.lang.String)
 //  .bigqueryDatapolicyCustomEndpoint(java.lang.String)
+//  .bigqueryDatapolicyv2CustomEndpoint(java.lang.String)
 //  .bigqueryDataTransferCustomEndpoint(java.lang.String)
 //  .bigqueryReservationCustomEndpoint(java.lang.String)
 //  .bigtableCustomEndpoint(java.lang.String)
+//  .billingBudgetsCustomEndpoint(java.lang.String)
 //  .billingCustomEndpoint(java.lang.String)
 //  .billingProject(java.lang.String)
 //  .binaryAuthorizationCustomEndpoint(java.lang.String)
 //  .blockchainNodeEngineCustomEndpoint(java.lang.String)
 //  .certificateManagerCustomEndpoint(java.lang.String)
+//  .cesCustomEndpoint(java.lang.String)
 //  .chronicleCustomEndpoint(java.lang.String)
 //  .cloudAssetCustomEndpoint(java.lang.String)
 //  .cloudBillingCustomEndpoint(java.lang.String)
@@ -58,6 +62,7 @@ GoogleProvider.Builder.create(Construct scope, java.lang.String id)
 //  .cloudRunCustomEndpoint(java.lang.String)
 //  .cloudRunV2CustomEndpoint(java.lang.String)
 //  .cloudSchedulerCustomEndpoint(java.lang.String)
+//  .cloudSecurityComplianceCustomEndpoint(java.lang.String)
 //  .cloudTasksCustomEndpoint(java.lang.String)
 //  .colabCustomEndpoint(java.lang.String)
 //  .composerCustomEndpoint(java.lang.String)
@@ -73,7 +78,9 @@ GoogleProvider.Builder.create(Construct scope, java.lang.String id)
 //  .databaseMigrationServiceCustomEndpoint(java.lang.String)
 //  .dataCatalogCustomEndpoint(java.lang.String)
 //  .dataflowCustomEndpoint(java.lang.String)
+//  .dataformCustomEndpoint(java.lang.String)
 //  .dataFusionCustomEndpoint(java.lang.String)
+//  .dataLineageCustomEndpoint(java.lang.String)
 //  .dataLossPreventionCustomEndpoint(java.lang.String)
 //  .dataPipelineCustomEndpoint(java.lang.String)
 //  .dataplexCustomEndpoint(java.lang.String)
@@ -99,6 +106,7 @@ GoogleProvider.Builder.create(Construct scope, java.lang.String id)
 //  .firebaseAppCheckCustomEndpoint(java.lang.String)
 //  .firebaseAppHostingCustomEndpoint(java.lang.String)
 //  .firebaseDataConnectCustomEndpoint(java.lang.String)
+//  .firebaseRemoteConfigCustomEndpoint(java.lang.String)
 //  .firebaserulesCustomEndpoint(java.lang.String)
 //  .firestoreCustomEndpoint(java.lang.String)
 //  .geminiCustomEndpoint(java.lang.String)
@@ -107,6 +115,7 @@ GoogleProvider.Builder.create(Construct scope, java.lang.String id)
 //  .gkeHubCustomEndpoint(java.lang.String)
 //  .gkeonpremCustomEndpoint(java.lang.String)
 //  .healthcareCustomEndpoint(java.lang.String)
+//  .hypercomputeclusterCustomEndpoint(java.lang.String)
 //  .iam2CustomEndpoint(java.lang.String)
 //  .iam3CustomEndpoint(java.lang.String)
 //  .iamBetaCustomEndpoint(java.lang.String)
@@ -133,10 +142,12 @@ GoogleProvider.Builder.create(Construct scope, java.lang.String id)
 //  .monitoringCustomEndpoint(java.lang.String)
 //  .netappCustomEndpoint(java.lang.String)
 //  .networkConnectivityCustomEndpoint(java.lang.String)
+//  .networkConnectivityv1CustomEndpoint(java.lang.String)
 //  .networkManagementCustomEndpoint(java.lang.String)
 //  .networkSecurityCustomEndpoint(java.lang.String)
 //  .networkServicesCustomEndpoint(java.lang.String)
 //  .notebooksCustomEndpoint(java.lang.String)
+//  .observabilityCustomEndpoint(java.lang.String)
 //  .oracleDatabaseCustomEndpoint(java.lang.String)
 //  .orgPolicyCustomEndpoint(java.lang.String)
 //  .osConfigCustomEndpoint(java.lang.String)
@@ -145,6 +156,9 @@ GoogleProvider.Builder.create(Construct scope, java.lang.String id)
 //  .parallelstoreCustomEndpoint(java.lang.String)
 //  .parameterManagerCustomEndpoint(java.lang.String)
 //  .parameterManagerRegionalCustomEndpoint(java.lang.String)
+//  .pollInterval(java.lang.String)
+//  .preferGlobalEndpoints(java.lang.Boolean|IResolvable)
+//  .preferRegionalEndpoints(java.lang.Boolean|IResolvable)
 //  .privatecaCustomEndpoint(java.lang.String)
 //  .privilegedAccessManagerCustomEndpoint(java.lang.String)
 //  .project(java.lang.String)
@@ -156,6 +170,7 @@ GoogleProvider.Builder.create(Construct scope, java.lang.String id)
 //  .region(java.lang.String)
 //  .requestReason(java.lang.String)
 //  .requestTimeout(java.lang.String)
+//  .resourceManager3CustomEndpoint(java.lang.String)
 //  .resourceManagerCustomEndpoint(java.lang.String)
 //  .resourceManagerV3CustomEndpoint(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
@@ -166,6 +181,7 @@ GoogleProvider.Builder.create(Construct scope, java.lang.String id)
 //  .securityCenterManagementCustomEndpoint(java.lang.String)
 //  .securityCenterV2CustomEndpoint(java.lang.String)
 //  .securitypostureCustomEndpoint(java.lang.String)
+//  .serviceDirectoryCustomEndpoint(java.lang.String)
 //  .serviceManagementCustomEndpoint(java.lang.String)
 //  .serviceNetworkingCustomEndpoint(java.lang.String)
 //  .serviceUsageCustomEndpoint(java.lang.String)
@@ -181,15 +197,17 @@ GoogleProvider.Builder.create(Construct scope, java.lang.String id)
 //  .tagsCustomEndpoint(java.lang.String)
 //  .tagsLocationCustomEndpoint(java.lang.String)
 //  .terraformAttributionLabelAdditionStrategy(java.lang.String)
-//  .tpuCustomEndpoint(java.lang.String)
 //  .transcoderCustomEndpoint(java.lang.String)
 //  .universeDomain(java.lang.String)
 //  .userProjectOverride(java.lang.Boolean|IResolvable)
+//  .vectorSearchCustomEndpoint(java.lang.String)
 //  .vertexAiCustomEndpoint(java.lang.String)
 //  .vmwareengineCustomEndpoint(java.lang.String)
 //  .vpcAccessCustomEndpoint(java.lang.String)
 //  .workbenchCustomEndpoint(java.lang.String)
 //  .workflowsCustomEndpoint(java.lang.String)
+//  .workloadIdentityCustomEndpoint(java.lang.String)
+//  .workstationsCustomEndpoint(java.lang.String)
 //  .zone(java.lang.String)
     .build();
 ```
@@ -198,185 +216,203 @@ GoogleProvider.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.accessApprovalCustomEndpoint">accessApprovalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_approval_custom_endpoint GoogleProvider#access_approval_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.accessContextManagerCustomEndpoint">accessContextManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_context_manager_custom_endpoint GoogleProvider#access_context_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.accessToken">accessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_token GoogleProvider#access_token}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.activeDirectoryCustomEndpoint">activeDirectoryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#active_directory_custom_endpoint GoogleProvider#active_directory_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.addTerraformAttributionLabel">addTerraformAttributionLabel</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#add_terraform_attribution_label GoogleProvider#add_terraform_attribution_label}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.accessApprovalCustomEndpoint">accessApprovalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_approval_custom_endpoint GoogleProvider#access_approval_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.accessContextManagerCustomEndpoint">accessContextManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_context_manager_custom_endpoint GoogleProvider#access_context_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.accessToken">accessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_token GoogleProvider#access_token}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.activeDirectoryCustomEndpoint">activeDirectoryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#active_directory_custom_endpoint GoogleProvider#active_directory_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.addTerraformAttributionLabel">addTerraformAttributionLabel</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#add_terraform_attribution_label GoogleProvider#add_terraform_attribution_label}. |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.alloydbCustomEndpoint">alloydbCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#alloydb_custom_endpoint GoogleProvider#alloydb_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.apigeeCustomEndpoint">apigeeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apigee_custom_endpoint GoogleProvider#apigee_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.apihubCustomEndpoint">apihubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apihub_custom_endpoint GoogleProvider#apihub_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.apikeysCustomEndpoint">apikeysCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apikeys_custom_endpoint GoogleProvider#apikeys_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.appEngineCustomEndpoint">appEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#app_engine_custom_endpoint GoogleProvider#app_engine_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.apphubCustomEndpoint">apphubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apphub_custom_endpoint GoogleProvider#apphub_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.artifactRegistryCustomEndpoint">artifactRegistryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#artifact_registry_custom_endpoint GoogleProvider#artifact_registry_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.assuredWorkloadsCustomEndpoint">assuredWorkloadsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#assured_workloads_custom_endpoint GoogleProvider#assured_workloads_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.backupDrCustomEndpoint">backupDrCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#backup_dr_custom_endpoint GoogleProvider#backup_dr_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.alloydbCustomEndpoint">alloydbCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#alloydb_custom_endpoint GoogleProvider#alloydb_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.apigeeCustomEndpoint">apigeeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apigee_custom_endpoint GoogleProvider#apigee_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.apihubCustomEndpoint">apihubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apihub_custom_endpoint GoogleProvider#apihub_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.apikeysCustomEndpoint">apikeysCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apikeys_custom_endpoint GoogleProvider#apikeys_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.appEngineCustomEndpoint">appEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#app_engine_custom_endpoint GoogleProvider#app_engine_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.apphubCustomEndpoint">apphubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apphub_custom_endpoint GoogleProvider#apphub_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.artifactRegistryCustomEndpoint">artifactRegistryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#artifact_registry_custom_endpoint GoogleProvider#artifact_registry_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.assuredWorkloadsCustomEndpoint">assuredWorkloadsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#assured_workloads_custom_endpoint GoogleProvider#assured_workloads_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.backupDrCustomEndpoint">backupDrCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#backup_dr_custom_endpoint GoogleProvider#backup_dr_custom_endpoint}. |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.batching">batching</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.provider.GoogleProviderBatching">GoogleProviderBatching</a>></code> | batching block. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.beyondcorpCustomEndpoint">beyondcorpCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#beyondcorp_custom_endpoint GoogleProvider#beyondcorp_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.biglakeCustomEndpoint">biglakeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#biglake_custom_endpoint GoogleProvider#biglake_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryAnalyticsHubCustomEndpoint">bigqueryAnalyticsHubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_analytics_hub_custom_endpoint GoogleProvider#bigquery_analytics_hub_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryConnectionCustomEndpoint">bigqueryConnectionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_connection_custom_endpoint GoogleProvider#bigquery_connection_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigQueryCustomEndpoint">bigQueryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#big_query_custom_endpoint GoogleProvider#big_query_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryDatapolicyCustomEndpoint">bigqueryDatapolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_datapolicy_custom_endpoint GoogleProvider#bigquery_datapolicy_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryDataTransferCustomEndpoint">bigqueryDataTransferCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_data_transfer_custom_endpoint GoogleProvider#bigquery_data_transfer_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryReservationCustomEndpoint">bigqueryReservationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_reservation_custom_endpoint GoogleProvider#bigquery_reservation_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigtableCustomEndpoint">bigtableCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigtable_custom_endpoint GoogleProvider#bigtable_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.billingCustomEndpoint">billingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#billing_custom_endpoint GoogleProvider#billing_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.billingProject">billingProject</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#billing_project GoogleProvider#billing_project}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.binaryAuthorizationCustomEndpoint">binaryAuthorizationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#binary_authorization_custom_endpoint GoogleProvider#binary_authorization_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.blockchainNodeEngineCustomEndpoint">blockchainNodeEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#blockchain_node_engine_custom_endpoint GoogleProvider#blockchain_node_engine_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.certificateManagerCustomEndpoint">certificateManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#certificate_manager_custom_endpoint GoogleProvider#certificate_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.chronicleCustomEndpoint">chronicleCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#chronicle_custom_endpoint GoogleProvider#chronicle_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudAssetCustomEndpoint">cloudAssetCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_asset_custom_endpoint GoogleProvider#cloud_asset_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudBillingCustomEndpoint">cloudBillingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_billing_custom_endpoint GoogleProvider#cloud_billing_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudBuildCustomEndpoint">cloudBuildCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_build_custom_endpoint GoogleProvider#cloud_build_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudbuildv2CustomEndpoint">cloudbuildv2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloudbuildv2_custom_endpoint GoogleProvider#cloudbuildv2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.clouddeployCustomEndpoint">clouddeployCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#clouddeploy_custom_endpoint GoogleProvider#clouddeploy_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.clouddomainsCustomEndpoint">clouddomainsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#clouddomains_custom_endpoint GoogleProvider#clouddomains_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudfunctions2CustomEndpoint">cloudfunctions2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloudfunctions2_custom_endpoint GoogleProvider#cloudfunctions2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudFunctionsCustomEndpoint">cloudFunctionsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_functions_custom_endpoint GoogleProvider#cloud_functions_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudIdentityCustomEndpoint">cloudIdentityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_identity_custom_endpoint GoogleProvider#cloud_identity_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudIdsCustomEndpoint">cloudIdsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_ids_custom_endpoint GoogleProvider#cloud_ids_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudQuotasCustomEndpoint">cloudQuotasCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_quotas_custom_endpoint GoogleProvider#cloud_quotas_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudResourceManagerCustomEndpoint">cloudResourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_resource_manager_custom_endpoint GoogleProvider#cloud_resource_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudRunCustomEndpoint">cloudRunCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_run_custom_endpoint GoogleProvider#cloud_run_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudRunV2CustomEndpoint">cloudRunV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_run_v2_custom_endpoint GoogleProvider#cloud_run_v2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudSchedulerCustomEndpoint">cloudSchedulerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_scheduler_custom_endpoint GoogleProvider#cloud_scheduler_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudTasksCustomEndpoint">cloudTasksCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_tasks_custom_endpoint GoogleProvider#cloud_tasks_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.colabCustomEndpoint">colabCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#colab_custom_endpoint GoogleProvider#colab_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.composerCustomEndpoint">composerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#composer_custom_endpoint GoogleProvider#composer_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.computeCustomEndpoint">computeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#compute_custom_endpoint GoogleProvider#compute_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.contactCenterInsightsCustomEndpoint">contactCenterInsightsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#contact_center_insights_custom_endpoint GoogleProvider#contact_center_insights_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.containerAnalysisCustomEndpoint">containerAnalysisCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_analysis_custom_endpoint GoogleProvider#container_analysis_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.containerAttachedCustomEndpoint">containerAttachedCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_attached_custom_endpoint GoogleProvider#container_attached_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.containerAwsCustomEndpoint">containerAwsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_aws_custom_endpoint GoogleProvider#container_aws_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.containerAzureCustomEndpoint">containerAzureCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_azure_custom_endpoint GoogleProvider#container_azure_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.containerCustomEndpoint">containerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_custom_endpoint GoogleProvider#container_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.coreBillingCustomEndpoint">coreBillingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#core_billing_custom_endpoint GoogleProvider#core_billing_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.credentials">credentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#credentials GoogleProvider#credentials}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.databaseMigrationServiceCustomEndpoint">databaseMigrationServiceCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#database_migration_service_custom_endpoint GoogleProvider#database_migration_service_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataCatalogCustomEndpoint">dataCatalogCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_catalog_custom_endpoint GoogleProvider#data_catalog_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataflowCustomEndpoint">dataflowCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataflow_custom_endpoint GoogleProvider#dataflow_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataFusionCustomEndpoint">dataFusionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_fusion_custom_endpoint GoogleProvider#data_fusion_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataLossPreventionCustomEndpoint">dataLossPreventionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_loss_prevention_custom_endpoint GoogleProvider#data_loss_prevention_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataPipelineCustomEndpoint">dataPipelineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_pipeline_custom_endpoint GoogleProvider#data_pipeline_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataplexCustomEndpoint">dataplexCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataplex_custom_endpoint GoogleProvider#dataplex_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataprocCustomEndpoint">dataprocCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_custom_endpoint GoogleProvider#dataproc_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataprocGdcCustomEndpoint">dataprocGdcCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_gdc_custom_endpoint GoogleProvider#dataproc_gdc_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataprocMetastoreCustomEndpoint">dataprocMetastoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_metastore_custom_endpoint GoogleProvider#dataproc_metastore_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.datastreamCustomEndpoint">datastreamCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#datastream_custom_endpoint GoogleProvider#datastream_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.defaultLabels">defaultLabels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#default_labels GoogleProvider#default_labels}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.deploymentManagerCustomEndpoint">deploymentManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#deployment_manager_custom_endpoint GoogleProvider#deployment_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.developerConnectCustomEndpoint">developerConnectCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#developer_connect_custom_endpoint GoogleProvider#developer_connect_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dialogflowCustomEndpoint">dialogflowCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dialogflow_custom_endpoint GoogleProvider#dialogflow_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dialogflowCxCustomEndpoint">dialogflowCxCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dialogflow_cx_custom_endpoint GoogleProvider#dialogflow_cx_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.discoveryEngineCustomEndpoint">discoveryEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#discovery_engine_custom_endpoint GoogleProvider#discovery_engine_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dnsCustomEndpoint">dnsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dns_custom_endpoint GoogleProvider#dns_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.documentAiCustomEndpoint">documentAiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#document_ai_custom_endpoint GoogleProvider#document_ai_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.documentAiWarehouseCustomEndpoint">documentAiWarehouseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#document_ai_warehouse_custom_endpoint GoogleProvider#document_ai_warehouse_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.edgecontainerCustomEndpoint">edgecontainerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#edgecontainer_custom_endpoint GoogleProvider#edgecontainer_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.edgenetworkCustomEndpoint">edgenetworkCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#edgenetwork_custom_endpoint GoogleProvider#edgenetwork_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.essentialContactsCustomEndpoint">essentialContactsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#essential_contacts_custom_endpoint GoogleProvider#essential_contacts_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.eventarcCustomEndpoint">eventarcCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#eventarc_custom_endpoint GoogleProvider#eventarc_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.beyondcorpCustomEndpoint">beyondcorpCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#beyondcorp_custom_endpoint GoogleProvider#beyondcorp_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.biglakeCustomEndpoint">biglakeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#biglake_custom_endpoint GoogleProvider#biglake_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.biglakeIcebergCustomEndpoint">biglakeIcebergCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#biglake_iceberg_custom_endpoint GoogleProvider#biglake_iceberg_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryAnalyticsHubCustomEndpoint">bigqueryAnalyticsHubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_analytics_hub_custom_endpoint GoogleProvider#bigquery_analytics_hub_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryConnectionCustomEndpoint">bigqueryConnectionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_connection_custom_endpoint GoogleProvider#bigquery_connection_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigQueryCustomEndpoint">bigQueryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#big_query_custom_endpoint GoogleProvider#big_query_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryDatapolicyCustomEndpoint">bigqueryDatapolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_datapolicy_custom_endpoint GoogleProvider#bigquery_datapolicy_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryDatapolicyv2CustomEndpoint">bigqueryDatapolicyv2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_datapolicyv2_custom_endpoint GoogleProvider#bigquery_datapolicyv2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryDataTransferCustomEndpoint">bigqueryDataTransferCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_data_transfer_custom_endpoint GoogleProvider#bigquery_data_transfer_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryReservationCustomEndpoint">bigqueryReservationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_reservation_custom_endpoint GoogleProvider#bigquery_reservation_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigtableCustomEndpoint">bigtableCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigtable_custom_endpoint GoogleProvider#bigtable_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.billingBudgetsCustomEndpoint">billingBudgetsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_budgets_custom_endpoint GoogleProvider#billing_budgets_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.billingCustomEndpoint">billingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_custom_endpoint GoogleProvider#billing_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.billingProject">billingProject</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_project GoogleProvider#billing_project}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.binaryAuthorizationCustomEndpoint">binaryAuthorizationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#binary_authorization_custom_endpoint GoogleProvider#binary_authorization_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.blockchainNodeEngineCustomEndpoint">blockchainNodeEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#blockchain_node_engine_custom_endpoint GoogleProvider#blockchain_node_engine_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.certificateManagerCustomEndpoint">certificateManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#certificate_manager_custom_endpoint GoogleProvider#certificate_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cesCustomEndpoint">cesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#ces_custom_endpoint GoogleProvider#ces_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.chronicleCustomEndpoint">chronicleCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#chronicle_custom_endpoint GoogleProvider#chronicle_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudAssetCustomEndpoint">cloudAssetCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_asset_custom_endpoint GoogleProvider#cloud_asset_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudBillingCustomEndpoint">cloudBillingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_billing_custom_endpoint GoogleProvider#cloud_billing_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudBuildCustomEndpoint">cloudBuildCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_build_custom_endpoint GoogleProvider#cloud_build_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudbuildv2CustomEndpoint">cloudbuildv2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloudbuildv2_custom_endpoint GoogleProvider#cloudbuildv2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.clouddeployCustomEndpoint">clouddeployCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#clouddeploy_custom_endpoint GoogleProvider#clouddeploy_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.clouddomainsCustomEndpoint">clouddomainsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#clouddomains_custom_endpoint GoogleProvider#clouddomains_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudfunctions2CustomEndpoint">cloudfunctions2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloudfunctions2_custom_endpoint GoogleProvider#cloudfunctions2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudFunctionsCustomEndpoint">cloudFunctionsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_functions_custom_endpoint GoogleProvider#cloud_functions_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudIdentityCustomEndpoint">cloudIdentityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_identity_custom_endpoint GoogleProvider#cloud_identity_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudIdsCustomEndpoint">cloudIdsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_ids_custom_endpoint GoogleProvider#cloud_ids_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudQuotasCustomEndpoint">cloudQuotasCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_quotas_custom_endpoint GoogleProvider#cloud_quotas_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudResourceManagerCustomEndpoint">cloudResourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_resource_manager_custom_endpoint GoogleProvider#cloud_resource_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudRunCustomEndpoint">cloudRunCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_run_custom_endpoint GoogleProvider#cloud_run_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudRunV2CustomEndpoint">cloudRunV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_run_v2_custom_endpoint GoogleProvider#cloud_run_v2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudSchedulerCustomEndpoint">cloudSchedulerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_scheduler_custom_endpoint GoogleProvider#cloud_scheduler_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudSecurityComplianceCustomEndpoint">cloudSecurityComplianceCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_security_compliance_custom_endpoint GoogleProvider#cloud_security_compliance_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudTasksCustomEndpoint">cloudTasksCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_tasks_custom_endpoint GoogleProvider#cloud_tasks_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.colabCustomEndpoint">colabCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#colab_custom_endpoint GoogleProvider#colab_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.composerCustomEndpoint">composerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#composer_custom_endpoint GoogleProvider#composer_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.computeCustomEndpoint">computeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#compute_custom_endpoint GoogleProvider#compute_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.contactCenterInsightsCustomEndpoint">contactCenterInsightsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#contact_center_insights_custom_endpoint GoogleProvider#contact_center_insights_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.containerAnalysisCustomEndpoint">containerAnalysisCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_analysis_custom_endpoint GoogleProvider#container_analysis_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.containerAttachedCustomEndpoint">containerAttachedCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_attached_custom_endpoint GoogleProvider#container_attached_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.containerAwsCustomEndpoint">containerAwsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_aws_custom_endpoint GoogleProvider#container_aws_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.containerAzureCustomEndpoint">containerAzureCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_azure_custom_endpoint GoogleProvider#container_azure_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.containerCustomEndpoint">containerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_custom_endpoint GoogleProvider#container_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.coreBillingCustomEndpoint">coreBillingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#core_billing_custom_endpoint GoogleProvider#core_billing_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.credentials">credentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#credentials GoogleProvider#credentials}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.databaseMigrationServiceCustomEndpoint">databaseMigrationServiceCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#database_migration_service_custom_endpoint GoogleProvider#database_migration_service_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataCatalogCustomEndpoint">dataCatalogCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_catalog_custom_endpoint GoogleProvider#data_catalog_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataflowCustomEndpoint">dataflowCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataflow_custom_endpoint GoogleProvider#dataflow_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataformCustomEndpoint">dataformCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataform_custom_endpoint GoogleProvider#dataform_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataFusionCustomEndpoint">dataFusionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_fusion_custom_endpoint GoogleProvider#data_fusion_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataLineageCustomEndpoint">dataLineageCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_lineage_custom_endpoint GoogleProvider#data_lineage_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataLossPreventionCustomEndpoint">dataLossPreventionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_loss_prevention_custom_endpoint GoogleProvider#data_loss_prevention_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataPipelineCustomEndpoint">dataPipelineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_pipeline_custom_endpoint GoogleProvider#data_pipeline_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataplexCustomEndpoint">dataplexCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataplex_custom_endpoint GoogleProvider#dataplex_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataprocCustomEndpoint">dataprocCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_custom_endpoint GoogleProvider#dataproc_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataprocGdcCustomEndpoint">dataprocGdcCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_gdc_custom_endpoint GoogleProvider#dataproc_gdc_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataprocMetastoreCustomEndpoint">dataprocMetastoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_metastore_custom_endpoint GoogleProvider#dataproc_metastore_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.datastreamCustomEndpoint">datastreamCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#datastream_custom_endpoint GoogleProvider#datastream_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.defaultLabels">defaultLabels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#default_labels GoogleProvider#default_labels}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.deploymentManagerCustomEndpoint">deploymentManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#deployment_manager_custom_endpoint GoogleProvider#deployment_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.developerConnectCustomEndpoint">developerConnectCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#developer_connect_custom_endpoint GoogleProvider#developer_connect_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dialogflowCustomEndpoint">dialogflowCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dialogflow_custom_endpoint GoogleProvider#dialogflow_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dialogflowCxCustomEndpoint">dialogflowCxCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dialogflow_cx_custom_endpoint GoogleProvider#dialogflow_cx_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.discoveryEngineCustomEndpoint">discoveryEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#discovery_engine_custom_endpoint GoogleProvider#discovery_engine_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dnsCustomEndpoint">dnsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dns_custom_endpoint GoogleProvider#dns_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.documentAiCustomEndpoint">documentAiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#document_ai_custom_endpoint GoogleProvider#document_ai_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.documentAiWarehouseCustomEndpoint">documentAiWarehouseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#document_ai_warehouse_custom_endpoint GoogleProvider#document_ai_warehouse_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.edgecontainerCustomEndpoint">edgecontainerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#edgecontainer_custom_endpoint GoogleProvider#edgecontainer_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.edgenetworkCustomEndpoint">edgenetworkCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#edgenetwork_custom_endpoint GoogleProvider#edgenetwork_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.essentialContactsCustomEndpoint">essentialContactsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#essential_contacts_custom_endpoint GoogleProvider#essential_contacts_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.eventarcCustomEndpoint">eventarcCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#eventarc_custom_endpoint GoogleProvider#eventarc_custom_endpoint}. |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.externalCredentials">externalCredentials</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.provider.GoogleProviderExternalCredentials">GoogleProviderExternalCredentials</a>></code> | external_credentials block. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.filestoreCustomEndpoint">filestoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#filestore_custom_endpoint GoogleProvider#filestore_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firebaseAppCheckCustomEndpoint">firebaseAppCheckCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_app_check_custom_endpoint GoogleProvider#firebase_app_check_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firebaseAppHostingCustomEndpoint">firebaseAppHostingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_app_hosting_custom_endpoint GoogleProvider#firebase_app_hosting_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firebaseDataConnectCustomEndpoint">firebaseDataConnectCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_data_connect_custom_endpoint GoogleProvider#firebase_data_connect_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firebaserulesCustomEndpoint">firebaserulesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebaserules_custom_endpoint GoogleProvider#firebaserules_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firestoreCustomEndpoint">firestoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firestore_custom_endpoint GoogleProvider#firestore_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.geminiCustomEndpoint">geminiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gemini_custom_endpoint GoogleProvider#gemini_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.gkeBackupCustomEndpoint">gkeBackupCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_backup_custom_endpoint GoogleProvider#gke_backup_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.gkeHub2CustomEndpoint">gkeHub2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_hub2_custom_endpoint GoogleProvider#gke_hub2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.gkeHubCustomEndpoint">gkeHubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_hub_custom_endpoint GoogleProvider#gke_hub_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.gkeonpremCustomEndpoint">gkeonpremCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gkeonprem_custom_endpoint GoogleProvider#gkeonprem_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.healthcareCustomEndpoint">healthcareCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#healthcare_custom_endpoint GoogleProvider#healthcare_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iam2CustomEndpoint">iam2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam2_custom_endpoint GoogleProvider#iam2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iam3CustomEndpoint">iam3CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam3_custom_endpoint GoogleProvider#iam3_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iamBetaCustomEndpoint">iamBetaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_beta_custom_endpoint GoogleProvider#iam_beta_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iamCredentialsCustomEndpoint">iamCredentialsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_credentials_custom_endpoint GoogleProvider#iam_credentials_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iamCustomEndpoint">iamCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_custom_endpoint GoogleProvider#iam_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iamWorkforcePoolCustomEndpoint">iamWorkforcePoolCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_workforce_pool_custom_endpoint GoogleProvider#iam_workforce_pool_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iapCustomEndpoint">iapCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iap_custom_endpoint GoogleProvider#iap_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.identityPlatformCustomEndpoint">identityPlatformCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#identity_platform_custom_endpoint GoogleProvider#identity_platform_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.impersonateServiceAccount">impersonateServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#impersonate_service_account GoogleProvider#impersonate_service_account}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.impersonateServiceAccountDelegates">impersonateServiceAccountDelegates</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#impersonate_service_account_delegates GoogleProvider#impersonate_service_account_delegates}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.integrationConnectorsCustomEndpoint">integrationConnectorsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#integration_connectors_custom_endpoint GoogleProvider#integration_connectors_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.integrationsCustomEndpoint">integrationsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#integrations_custom_endpoint GoogleProvider#integrations_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.kmsCustomEndpoint">kmsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#kms_custom_endpoint GoogleProvider#kms_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.loggingCustomEndpoint">loggingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#logging_custom_endpoint GoogleProvider#logging_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.lookerCustomEndpoint">lookerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#looker_custom_endpoint GoogleProvider#looker_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.lustreCustomEndpoint">lustreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#lustre_custom_endpoint GoogleProvider#lustre_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.managedKafkaCustomEndpoint">managedKafkaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#managed_kafka_custom_endpoint GoogleProvider#managed_kafka_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.memcacheCustomEndpoint">memcacheCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#memcache_custom_endpoint GoogleProvider#memcache_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.memorystoreCustomEndpoint">memorystoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#memorystore_custom_endpoint GoogleProvider#memorystore_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.migrationCenterCustomEndpoint">migrationCenterCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#migration_center_custom_endpoint GoogleProvider#migration_center_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.mlEngineCustomEndpoint">mlEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#ml_engine_custom_endpoint GoogleProvider#ml_engine_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.modelArmorCustomEndpoint">modelArmorCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#model_armor_custom_endpoint GoogleProvider#model_armor_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.modelArmorGlobalCustomEndpoint">modelArmorGlobalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#model_armor_global_custom_endpoint GoogleProvider#model_armor_global_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.monitoringCustomEndpoint">monitoringCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#monitoring_custom_endpoint GoogleProvider#monitoring_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.netappCustomEndpoint">netappCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#netapp_custom_endpoint GoogleProvider#netapp_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.networkConnectivityCustomEndpoint">networkConnectivityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_connectivity_custom_endpoint GoogleProvider#network_connectivity_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.networkManagementCustomEndpoint">networkManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_management_custom_endpoint GoogleProvider#network_management_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.networkSecurityCustomEndpoint">networkSecurityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_security_custom_endpoint GoogleProvider#network_security_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.networkServicesCustomEndpoint">networkServicesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_services_custom_endpoint GoogleProvider#network_services_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.notebooksCustomEndpoint">notebooksCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#notebooks_custom_endpoint GoogleProvider#notebooks_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.oracleDatabaseCustomEndpoint">oracleDatabaseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#oracle_database_custom_endpoint GoogleProvider#oracle_database_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.orgPolicyCustomEndpoint">orgPolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#org_policy_custom_endpoint GoogleProvider#org_policy_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.osConfigCustomEndpoint">osConfigCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_config_custom_endpoint GoogleProvider#os_config_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.osConfigV2CustomEndpoint">osConfigV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_config_v2_custom_endpoint GoogleProvider#os_config_v2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.osLoginCustomEndpoint">osLoginCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_login_custom_endpoint GoogleProvider#os_login_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.parallelstoreCustomEndpoint">parallelstoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parallelstore_custom_endpoint GoogleProvider#parallelstore_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.parameterManagerCustomEndpoint">parameterManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parameter_manager_custom_endpoint GoogleProvider#parameter_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.parameterManagerRegionalCustomEndpoint">parameterManagerRegionalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parameter_manager_regional_custom_endpoint GoogleProvider#parameter_manager_regional_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.privatecaCustomEndpoint">privatecaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#privateca_custom_endpoint GoogleProvider#privateca_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.privilegedAccessManagerCustomEndpoint">privilegedAccessManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#privileged_access_manager_custom_endpoint GoogleProvider#privileged_access_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#project GoogleProvider#project}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.publicCaCustomEndpoint">publicCaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#public_ca_custom_endpoint GoogleProvider#public_ca_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.pubsubCustomEndpoint">pubsubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#pubsub_custom_endpoint GoogleProvider#pubsub_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.pubsubLiteCustomEndpoint">pubsubLiteCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#pubsub_lite_custom_endpoint GoogleProvider#pubsub_lite_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.recaptchaEnterpriseCustomEndpoint">recaptchaEnterpriseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#recaptcha_enterprise_custom_endpoint GoogleProvider#recaptcha_enterprise_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.redisCustomEndpoint">redisCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#redis_custom_endpoint GoogleProvider#redis_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#region GoogleProvider#region}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.requestReason">requestReason</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#request_reason GoogleProvider#request_reason}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.requestTimeout">requestTimeout</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#request_timeout GoogleProvider#request_timeout}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.resourceManagerCustomEndpoint">resourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#resource_manager_custom_endpoint GoogleProvider#resource_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.resourceManagerV3CustomEndpoint">resourceManagerV3CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#resource_manager_v3_custom_endpoint GoogleProvider#resource_manager_v3_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#scopes GoogleProvider#scopes}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.secretManagerCustomEndpoint">secretManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secret_manager_custom_endpoint GoogleProvider#secret_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.secretManagerRegionalCustomEndpoint">secretManagerRegionalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secret_manager_regional_custom_endpoint GoogleProvider#secret_manager_regional_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.secureSourceManagerCustomEndpoint">secureSourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secure_source_manager_custom_endpoint GoogleProvider#secure_source_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.securityCenterCustomEndpoint">securityCenterCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_custom_endpoint GoogleProvider#security_center_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.securityCenterManagementCustomEndpoint">securityCenterManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_management_custom_endpoint GoogleProvider#security_center_management_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.securityCenterV2CustomEndpoint">securityCenterV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_v2_custom_endpoint GoogleProvider#security_center_v2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.securitypostureCustomEndpoint">securitypostureCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#securityposture_custom_endpoint GoogleProvider#securityposture_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.serviceManagementCustomEndpoint">serviceManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_management_custom_endpoint GoogleProvider#service_management_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.serviceNetworkingCustomEndpoint">serviceNetworkingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_networking_custom_endpoint GoogleProvider#service_networking_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.serviceUsageCustomEndpoint">serviceUsageCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_usage_custom_endpoint GoogleProvider#service_usage_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.siteVerificationCustomEndpoint">siteVerificationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#site_verification_custom_endpoint GoogleProvider#site_verification_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.sourceRepoCustomEndpoint">sourceRepoCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#source_repo_custom_endpoint GoogleProvider#source_repo_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.spannerCustomEndpoint">spannerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#spanner_custom_endpoint GoogleProvider#spanner_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.sqlCustomEndpoint">sqlCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#sql_custom_endpoint GoogleProvider#sql_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.storageBatchOperationsCustomEndpoint">storageBatchOperationsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_batch_operations_custom_endpoint GoogleProvider#storage_batch_operations_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.storageControlCustomEndpoint">storageControlCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_control_custom_endpoint GoogleProvider#storage_control_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.storageCustomEndpoint">storageCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_custom_endpoint GoogleProvider#storage_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.storageInsightsCustomEndpoint">storageInsightsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_insights_custom_endpoint GoogleProvider#storage_insights_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.storageTransferCustomEndpoint">storageTransferCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_transfer_custom_endpoint GoogleProvider#storage_transfer_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.tagsCustomEndpoint">tagsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tags_custom_endpoint GoogleProvider#tags_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.tagsLocationCustomEndpoint">tagsLocationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tags_location_custom_endpoint GoogleProvider#tags_location_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.terraformAttributionLabelAdditionStrategy">terraformAttributionLabelAdditionStrategy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#terraform_attribution_label_addition_strategy GoogleProvider#terraform_attribution_label_addition_strategy}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.tpuCustomEndpoint">tpuCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tpu_custom_endpoint GoogleProvider#tpu_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.transcoderCustomEndpoint">transcoderCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#transcoder_custom_endpoint GoogleProvider#transcoder_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.universeDomain">universeDomain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#universe_domain GoogleProvider#universe_domain}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.userProjectOverride">userProjectOverride</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#user_project_override GoogleProvider#user_project_override}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.vertexAiCustomEndpoint">vertexAiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vertex_ai_custom_endpoint GoogleProvider#vertex_ai_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.vmwareengineCustomEndpoint">vmwareengineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vmwareengine_custom_endpoint GoogleProvider#vmwareengine_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.vpcAccessCustomEndpoint">vpcAccessCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vpc_access_custom_endpoint GoogleProvider#vpc_access_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.workbenchCustomEndpoint">workbenchCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#workbench_custom_endpoint GoogleProvider#workbench_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.workflowsCustomEndpoint">workflowsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#workflows_custom_endpoint GoogleProvider#workflows_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#zone GoogleProvider#zone}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.filestoreCustomEndpoint">filestoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#filestore_custom_endpoint GoogleProvider#filestore_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firebaseAppCheckCustomEndpoint">firebaseAppCheckCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_app_check_custom_endpoint GoogleProvider#firebase_app_check_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firebaseAppHostingCustomEndpoint">firebaseAppHostingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_app_hosting_custom_endpoint GoogleProvider#firebase_app_hosting_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firebaseDataConnectCustomEndpoint">firebaseDataConnectCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_data_connect_custom_endpoint GoogleProvider#firebase_data_connect_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firebaseRemoteConfigCustomEndpoint">firebaseRemoteConfigCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_remote_config_custom_endpoint GoogleProvider#firebase_remote_config_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firebaserulesCustomEndpoint">firebaserulesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebaserules_custom_endpoint GoogleProvider#firebaserules_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firestoreCustomEndpoint">firestoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firestore_custom_endpoint GoogleProvider#firestore_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.geminiCustomEndpoint">geminiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gemini_custom_endpoint GoogleProvider#gemini_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.gkeBackupCustomEndpoint">gkeBackupCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_backup_custom_endpoint GoogleProvider#gke_backup_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.gkeHub2CustomEndpoint">gkeHub2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_hub2_custom_endpoint GoogleProvider#gke_hub2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.gkeHubCustomEndpoint">gkeHubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_hub_custom_endpoint GoogleProvider#gke_hub_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.gkeonpremCustomEndpoint">gkeonpremCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gkeonprem_custom_endpoint GoogleProvider#gkeonprem_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.healthcareCustomEndpoint">healthcareCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#healthcare_custom_endpoint GoogleProvider#healthcare_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.hypercomputeclusterCustomEndpoint">hypercomputeclusterCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#hypercomputecluster_custom_endpoint GoogleProvider#hypercomputecluster_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iam2CustomEndpoint">iam2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam2_custom_endpoint GoogleProvider#iam2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iam3CustomEndpoint">iam3CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam3_custom_endpoint GoogleProvider#iam3_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iamBetaCustomEndpoint">iamBetaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_beta_custom_endpoint GoogleProvider#iam_beta_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iamCredentialsCustomEndpoint">iamCredentialsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_credentials_custom_endpoint GoogleProvider#iam_credentials_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iamCustomEndpoint">iamCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_custom_endpoint GoogleProvider#iam_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iamWorkforcePoolCustomEndpoint">iamWorkforcePoolCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_workforce_pool_custom_endpoint GoogleProvider#iam_workforce_pool_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.iapCustomEndpoint">iapCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iap_custom_endpoint GoogleProvider#iap_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.identityPlatformCustomEndpoint">identityPlatformCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#identity_platform_custom_endpoint GoogleProvider#identity_platform_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.impersonateServiceAccount">impersonateServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#impersonate_service_account GoogleProvider#impersonate_service_account}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.impersonateServiceAccountDelegates">impersonateServiceAccountDelegates</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#impersonate_service_account_delegates GoogleProvider#impersonate_service_account_delegates}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.integrationConnectorsCustomEndpoint">integrationConnectorsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#integration_connectors_custom_endpoint GoogleProvider#integration_connectors_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.integrationsCustomEndpoint">integrationsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#integrations_custom_endpoint GoogleProvider#integrations_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.kmsCustomEndpoint">kmsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#kms_custom_endpoint GoogleProvider#kms_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.loggingCustomEndpoint">loggingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#logging_custom_endpoint GoogleProvider#logging_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.lookerCustomEndpoint">lookerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#looker_custom_endpoint GoogleProvider#looker_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.lustreCustomEndpoint">lustreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#lustre_custom_endpoint GoogleProvider#lustre_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.managedKafkaCustomEndpoint">managedKafkaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#managed_kafka_custom_endpoint GoogleProvider#managed_kafka_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.memcacheCustomEndpoint">memcacheCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#memcache_custom_endpoint GoogleProvider#memcache_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.memorystoreCustomEndpoint">memorystoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#memorystore_custom_endpoint GoogleProvider#memorystore_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.migrationCenterCustomEndpoint">migrationCenterCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#migration_center_custom_endpoint GoogleProvider#migration_center_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.mlEngineCustomEndpoint">mlEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#ml_engine_custom_endpoint GoogleProvider#ml_engine_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.modelArmorCustomEndpoint">modelArmorCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#model_armor_custom_endpoint GoogleProvider#model_armor_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.modelArmorGlobalCustomEndpoint">modelArmorGlobalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#model_armor_global_custom_endpoint GoogleProvider#model_armor_global_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.monitoringCustomEndpoint">monitoringCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#monitoring_custom_endpoint GoogleProvider#monitoring_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.netappCustomEndpoint">netappCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#netapp_custom_endpoint GoogleProvider#netapp_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.networkConnectivityCustomEndpoint">networkConnectivityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_connectivity_custom_endpoint GoogleProvider#network_connectivity_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.networkConnectivityv1CustomEndpoint">networkConnectivityv1CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_connectivityv1_custom_endpoint GoogleProvider#network_connectivityv1_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.networkManagementCustomEndpoint">networkManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_management_custom_endpoint GoogleProvider#network_management_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.networkSecurityCustomEndpoint">networkSecurityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_security_custom_endpoint GoogleProvider#network_security_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.networkServicesCustomEndpoint">networkServicesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_services_custom_endpoint GoogleProvider#network_services_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.notebooksCustomEndpoint">notebooksCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#notebooks_custom_endpoint GoogleProvider#notebooks_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.observabilityCustomEndpoint">observabilityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#observability_custom_endpoint GoogleProvider#observability_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.oracleDatabaseCustomEndpoint">oracleDatabaseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#oracle_database_custom_endpoint GoogleProvider#oracle_database_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.orgPolicyCustomEndpoint">orgPolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#org_policy_custom_endpoint GoogleProvider#org_policy_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.osConfigCustomEndpoint">osConfigCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_config_custom_endpoint GoogleProvider#os_config_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.osConfigV2CustomEndpoint">osConfigV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_config_v2_custom_endpoint GoogleProvider#os_config_v2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.osLoginCustomEndpoint">osLoginCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_login_custom_endpoint GoogleProvider#os_login_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.parallelstoreCustomEndpoint">parallelstoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parallelstore_custom_endpoint GoogleProvider#parallelstore_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.parameterManagerCustomEndpoint">parameterManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parameter_manager_custom_endpoint GoogleProvider#parameter_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.parameterManagerRegionalCustomEndpoint">parameterManagerRegionalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parameter_manager_regional_custom_endpoint GoogleProvider#parameter_manager_regional_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.pollInterval">pollInterval</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#poll_interval GoogleProvider#poll_interval}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.preferGlobalEndpoints">preferGlobalEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#prefer_global_endpoints GoogleProvider#prefer_global_endpoints}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.preferRegionalEndpoints">preferRegionalEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#prefer_regional_endpoints GoogleProvider#prefer_regional_endpoints}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.privatecaCustomEndpoint">privatecaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#privateca_custom_endpoint GoogleProvider#privateca_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.privilegedAccessManagerCustomEndpoint">privilegedAccessManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#privileged_access_manager_custom_endpoint GoogleProvider#privileged_access_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#project GoogleProvider#project}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.publicCaCustomEndpoint">publicCaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#public_ca_custom_endpoint GoogleProvider#public_ca_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.pubsubCustomEndpoint">pubsubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#pubsub_custom_endpoint GoogleProvider#pubsub_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.pubsubLiteCustomEndpoint">pubsubLiteCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#pubsub_lite_custom_endpoint GoogleProvider#pubsub_lite_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.recaptchaEnterpriseCustomEndpoint">recaptchaEnterpriseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#recaptcha_enterprise_custom_endpoint GoogleProvider#recaptcha_enterprise_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.redisCustomEndpoint">redisCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#redis_custom_endpoint GoogleProvider#redis_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#region GoogleProvider#region}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.requestReason">requestReason</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#request_reason GoogleProvider#request_reason}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.requestTimeout">requestTimeout</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#request_timeout GoogleProvider#request_timeout}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.resourceManager3CustomEndpoint">resourceManager3CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager3_custom_endpoint GoogleProvider#resource_manager3_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.resourceManagerCustomEndpoint">resourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager_custom_endpoint GoogleProvider#resource_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.resourceManagerV3CustomEndpoint">resourceManagerV3CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager_v3_custom_endpoint GoogleProvider#resource_manager_v3_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#scopes GoogleProvider#scopes}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.secretManagerCustomEndpoint">secretManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secret_manager_custom_endpoint GoogleProvider#secret_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.secretManagerRegionalCustomEndpoint">secretManagerRegionalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secret_manager_regional_custom_endpoint GoogleProvider#secret_manager_regional_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.secureSourceManagerCustomEndpoint">secureSourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secure_source_manager_custom_endpoint GoogleProvider#secure_source_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.securityCenterCustomEndpoint">securityCenterCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_custom_endpoint GoogleProvider#security_center_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.securityCenterManagementCustomEndpoint">securityCenterManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_management_custom_endpoint GoogleProvider#security_center_management_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.securityCenterV2CustomEndpoint">securityCenterV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_v2_custom_endpoint GoogleProvider#security_center_v2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.securitypostureCustomEndpoint">securitypostureCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#securityposture_custom_endpoint GoogleProvider#securityposture_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.serviceDirectoryCustomEndpoint">serviceDirectoryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_directory_custom_endpoint GoogleProvider#service_directory_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.serviceManagementCustomEndpoint">serviceManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_management_custom_endpoint GoogleProvider#service_management_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.serviceNetworkingCustomEndpoint">serviceNetworkingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_networking_custom_endpoint GoogleProvider#service_networking_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.serviceUsageCustomEndpoint">serviceUsageCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_usage_custom_endpoint GoogleProvider#service_usage_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.siteVerificationCustomEndpoint">siteVerificationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#site_verification_custom_endpoint GoogleProvider#site_verification_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.sourceRepoCustomEndpoint">sourceRepoCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#source_repo_custom_endpoint GoogleProvider#source_repo_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.spannerCustomEndpoint">spannerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#spanner_custom_endpoint GoogleProvider#spanner_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.sqlCustomEndpoint">sqlCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#sql_custom_endpoint GoogleProvider#sql_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.storageBatchOperationsCustomEndpoint">storageBatchOperationsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_batch_operations_custom_endpoint GoogleProvider#storage_batch_operations_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.storageControlCustomEndpoint">storageControlCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_control_custom_endpoint GoogleProvider#storage_control_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.storageCustomEndpoint">storageCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_custom_endpoint GoogleProvider#storage_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.storageInsightsCustomEndpoint">storageInsightsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_insights_custom_endpoint GoogleProvider#storage_insights_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.storageTransferCustomEndpoint">storageTransferCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_transfer_custom_endpoint GoogleProvider#storage_transfer_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.tagsCustomEndpoint">tagsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#tags_custom_endpoint GoogleProvider#tags_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.tagsLocationCustomEndpoint">tagsLocationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#tags_location_custom_endpoint GoogleProvider#tags_location_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.terraformAttributionLabelAdditionStrategy">terraformAttributionLabelAdditionStrategy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#terraform_attribution_label_addition_strategy GoogleProvider#terraform_attribution_label_addition_strategy}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.transcoderCustomEndpoint">transcoderCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#transcoder_custom_endpoint GoogleProvider#transcoder_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.universeDomain">universeDomain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#universe_domain GoogleProvider#universe_domain}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.userProjectOverride">userProjectOverride</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#user_project_override GoogleProvider#user_project_override}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.vectorSearchCustomEndpoint">vectorSearchCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vector_search_custom_endpoint GoogleProvider#vector_search_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.vertexAiCustomEndpoint">vertexAiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vertex_ai_custom_endpoint GoogleProvider#vertex_ai_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.vmwareengineCustomEndpoint">vmwareengineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vmwareengine_custom_endpoint GoogleProvider#vmwareengine_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.vpcAccessCustomEndpoint">vpcAccessCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vpc_access_custom_endpoint GoogleProvider#vpc_access_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.workbenchCustomEndpoint">workbenchCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workbench_custom_endpoint GoogleProvider#workbench_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.workflowsCustomEndpoint">workflowsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workflows_custom_endpoint GoogleProvider#workflows_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.workloadIdentityCustomEndpoint">workloadIdentityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workload_identity_custom_endpoint GoogleProvider#workload_identity_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.workstationsCustomEndpoint">workstationsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workstations_custom_endpoint GoogleProvider#workstations_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#zone GoogleProvider#zone}. |
 
 ---
 
@@ -402,7 +438,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_approval_custom_endpoint GoogleProvider#access_approval_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_approval_custom_endpoint GoogleProvider#access_approval_custom_endpoint}.
 
 ---
 
@@ -410,7 +446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_context_manager_custom_endpoint GoogleProvider#access_context_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_context_manager_custom_endpoint GoogleProvider#access_context_manager_custom_endpoint}.
 
 ---
 
@@ -418,7 +454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_token GoogleProvider#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_token GoogleProvider#access_token}.
 
 ---
 
@@ -426,7 +462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#active_directory_custom_endpoint GoogleProvider#active_directory_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#active_directory_custom_endpoint GoogleProvider#active_directory_custom_endpoint}.
 
 ---
 
@@ -434,7 +470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#add_terraform_attribution_label GoogleProvider#add_terraform_attribution_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#add_terraform_attribution_label GoogleProvider#add_terraform_attribution_label}.
 
 ---
 
@@ -444,7 +480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#alias GoogleProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#alias GoogleProvider#alias}
 
 ---
 
@@ -452,7 +488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#alloydb_custom_endpoint GoogleProvider#alloydb_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#alloydb_custom_endpoint GoogleProvider#alloydb_custom_endpoint}.
 
 ---
 
@@ -460,7 +496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apigee_custom_endpoint GoogleProvider#apigee_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apigee_custom_endpoint GoogleProvider#apigee_custom_endpoint}.
 
 ---
 
@@ -468,7 +504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apihub_custom_endpoint GoogleProvider#apihub_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apihub_custom_endpoint GoogleProvider#apihub_custom_endpoint}.
 
 ---
 
@@ -476,7 +512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apikeys_custom_endpoint GoogleProvider#apikeys_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apikeys_custom_endpoint GoogleProvider#apikeys_custom_endpoint}.
 
 ---
 
@@ -484,7 +520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#app_engine_custom_endpoint GoogleProvider#app_engine_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#app_engine_custom_endpoint GoogleProvider#app_engine_custom_endpoint}.
 
 ---
 
@@ -492,7 +528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apphub_custom_endpoint GoogleProvider#apphub_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apphub_custom_endpoint GoogleProvider#apphub_custom_endpoint}.
 
 ---
 
@@ -500,7 +536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#artifact_registry_custom_endpoint GoogleProvider#artifact_registry_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#artifact_registry_custom_endpoint GoogleProvider#artifact_registry_custom_endpoint}.
 
 ---
 
@@ -508,7 +544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#assured_workloads_custom_endpoint GoogleProvider#assured_workloads_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#assured_workloads_custom_endpoint GoogleProvider#assured_workloads_custom_endpoint}.
 
 ---
 
@@ -516,7 +552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#backup_dr_custom_endpoint GoogleProvider#backup_dr_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#backup_dr_custom_endpoint GoogleProvider#backup_dr_custom_endpoint}.
 
 ---
 
@@ -526,7 +562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 batching block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#batching GoogleProvider#batching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#batching GoogleProvider#batching}
 
 ---
 
@@ -534,7 +570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#beyondcorp_custom_endpoint GoogleProvider#beyondcorp_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#beyondcorp_custom_endpoint GoogleProvider#beyondcorp_custom_endpoint}.
 
 ---
 
@@ -542,7 +578,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#biglake_custom_endpoint GoogleProvider#biglake_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#biglake_custom_endpoint GoogleProvider#biglake_custom_endpoint}.
+
+---
+
+##### `biglakeIcebergCustomEndpoint`<sup>Optional</sup> <a name="biglakeIcebergCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.biglakeIcebergCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#biglake_iceberg_custom_endpoint GoogleProvider#biglake_iceberg_custom_endpoint}.
 
 ---
 
@@ -550,7 +594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_analytics_hub_custom_endpoint GoogleProvider#bigquery_analytics_hub_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_analytics_hub_custom_endpoint GoogleProvider#bigquery_analytics_hub_custom_endpoint}.
 
 ---
 
@@ -558,7 +602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_connection_custom_endpoint GoogleProvider#bigquery_connection_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_connection_custom_endpoint GoogleProvider#bigquery_connection_custom_endpoint}.
 
 ---
 
@@ -566,7 +610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#big_query_custom_endpoint GoogleProvider#big_query_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#big_query_custom_endpoint GoogleProvider#big_query_custom_endpoint}.
 
 ---
 
@@ -574,7 +618,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_datapolicy_custom_endpoint GoogleProvider#bigquery_datapolicy_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_datapolicy_custom_endpoint GoogleProvider#bigquery_datapolicy_custom_endpoint}.
+
+---
+
+##### `bigqueryDatapolicyv2CustomEndpoint`<sup>Optional</sup> <a name="bigqueryDatapolicyv2CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.bigqueryDatapolicyv2CustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_datapolicyv2_custom_endpoint GoogleProvider#bigquery_datapolicyv2_custom_endpoint}.
 
 ---
 
@@ -582,7 +634,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_data_transfer_custom_endpoint GoogleProvider#bigquery_data_transfer_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_data_transfer_custom_endpoint GoogleProvider#bigquery_data_transfer_custom_endpoint}.
 
 ---
 
@@ -590,7 +642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_reservation_custom_endpoint GoogleProvider#bigquery_reservation_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_reservation_custom_endpoint GoogleProvider#bigquery_reservation_custom_endpoint}.
 
 ---
 
@@ -598,7 +650,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigtable_custom_endpoint GoogleProvider#bigtable_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigtable_custom_endpoint GoogleProvider#bigtable_custom_endpoint}.
+
+---
+
+##### `billingBudgetsCustomEndpoint`<sup>Optional</sup> <a name="billingBudgetsCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.billingBudgetsCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_budgets_custom_endpoint GoogleProvider#billing_budgets_custom_endpoint}.
 
 ---
 
@@ -606,7 +666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#billing_custom_endpoint GoogleProvider#billing_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_custom_endpoint GoogleProvider#billing_custom_endpoint}.
 
 ---
 
@@ -614,7 +674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#billing_project GoogleProvider#billing_project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_project GoogleProvider#billing_project}.
 
 ---
 
@@ -622,7 +682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#binary_authorization_custom_endpoint GoogleProvider#binary_authorization_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#binary_authorization_custom_endpoint GoogleProvider#binary_authorization_custom_endpoint}.
 
 ---
 
@@ -630,7 +690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#blockchain_node_engine_custom_endpoint GoogleProvider#blockchain_node_engine_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#blockchain_node_engine_custom_endpoint GoogleProvider#blockchain_node_engine_custom_endpoint}.
 
 ---
 
@@ -638,7 +698,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#certificate_manager_custom_endpoint GoogleProvider#certificate_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#certificate_manager_custom_endpoint GoogleProvider#certificate_manager_custom_endpoint}.
+
+---
+
+##### `cesCustomEndpoint`<sup>Optional</sup> <a name="cesCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cesCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#ces_custom_endpoint GoogleProvider#ces_custom_endpoint}.
 
 ---
 
@@ -646,7 +714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#chronicle_custom_endpoint GoogleProvider#chronicle_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#chronicle_custom_endpoint GoogleProvider#chronicle_custom_endpoint}.
 
 ---
 
@@ -654,7 +722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_asset_custom_endpoint GoogleProvider#cloud_asset_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_asset_custom_endpoint GoogleProvider#cloud_asset_custom_endpoint}.
 
 ---
 
@@ -662,7 +730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_billing_custom_endpoint GoogleProvider#cloud_billing_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_billing_custom_endpoint GoogleProvider#cloud_billing_custom_endpoint}.
 
 ---
 
@@ -670,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_build_custom_endpoint GoogleProvider#cloud_build_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_build_custom_endpoint GoogleProvider#cloud_build_custom_endpoint}.
 
 ---
 
@@ -678,7 +746,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloudbuildv2_custom_endpoint GoogleProvider#cloudbuildv2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloudbuildv2_custom_endpoint GoogleProvider#cloudbuildv2_custom_endpoint}.
 
 ---
 
@@ -686,7 +754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#clouddeploy_custom_endpoint GoogleProvider#clouddeploy_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#clouddeploy_custom_endpoint GoogleProvider#clouddeploy_custom_endpoint}.
 
 ---
 
@@ -694,7 +762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#clouddomains_custom_endpoint GoogleProvider#clouddomains_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#clouddomains_custom_endpoint GoogleProvider#clouddomains_custom_endpoint}.
 
 ---
 
@@ -702,7 +770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloudfunctions2_custom_endpoint GoogleProvider#cloudfunctions2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloudfunctions2_custom_endpoint GoogleProvider#cloudfunctions2_custom_endpoint}.
 
 ---
 
@@ -710,7 +778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_functions_custom_endpoint GoogleProvider#cloud_functions_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_functions_custom_endpoint GoogleProvider#cloud_functions_custom_endpoint}.
 
 ---
 
@@ -718,7 +786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_identity_custom_endpoint GoogleProvider#cloud_identity_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_identity_custom_endpoint GoogleProvider#cloud_identity_custom_endpoint}.
 
 ---
 
@@ -726,7 +794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_ids_custom_endpoint GoogleProvider#cloud_ids_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_ids_custom_endpoint GoogleProvider#cloud_ids_custom_endpoint}.
 
 ---
 
@@ -734,7 +802,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_quotas_custom_endpoint GoogleProvider#cloud_quotas_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_quotas_custom_endpoint GoogleProvider#cloud_quotas_custom_endpoint}.
 
 ---
 
@@ -742,7 +810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_resource_manager_custom_endpoint GoogleProvider#cloud_resource_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_resource_manager_custom_endpoint GoogleProvider#cloud_resource_manager_custom_endpoint}.
 
 ---
 
@@ -750,7 +818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_run_custom_endpoint GoogleProvider#cloud_run_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_run_custom_endpoint GoogleProvider#cloud_run_custom_endpoint}.
 
 ---
 
@@ -758,7 +826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_run_v2_custom_endpoint GoogleProvider#cloud_run_v2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_run_v2_custom_endpoint GoogleProvider#cloud_run_v2_custom_endpoint}.
 
 ---
 
@@ -766,7 +834,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_scheduler_custom_endpoint GoogleProvider#cloud_scheduler_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_scheduler_custom_endpoint GoogleProvider#cloud_scheduler_custom_endpoint}.
+
+---
+
+##### `cloudSecurityComplianceCustomEndpoint`<sup>Optional</sup> <a name="cloudSecurityComplianceCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.cloudSecurityComplianceCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_security_compliance_custom_endpoint GoogleProvider#cloud_security_compliance_custom_endpoint}.
 
 ---
 
@@ -774,7 +850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_tasks_custom_endpoint GoogleProvider#cloud_tasks_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_tasks_custom_endpoint GoogleProvider#cloud_tasks_custom_endpoint}.
 
 ---
 
@@ -782,7 +858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#colab_custom_endpoint GoogleProvider#colab_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#colab_custom_endpoint GoogleProvider#colab_custom_endpoint}.
 
 ---
 
@@ -790,7 +866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#composer_custom_endpoint GoogleProvider#composer_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#composer_custom_endpoint GoogleProvider#composer_custom_endpoint}.
 
 ---
 
@@ -798,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#compute_custom_endpoint GoogleProvider#compute_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#compute_custom_endpoint GoogleProvider#compute_custom_endpoint}.
 
 ---
 
@@ -806,7 +882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#contact_center_insights_custom_endpoint GoogleProvider#contact_center_insights_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#contact_center_insights_custom_endpoint GoogleProvider#contact_center_insights_custom_endpoint}.
 
 ---
 
@@ -814,7 +890,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_analysis_custom_endpoint GoogleProvider#container_analysis_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_analysis_custom_endpoint GoogleProvider#container_analysis_custom_endpoint}.
 
 ---
 
@@ -822,7 +898,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_attached_custom_endpoint GoogleProvider#container_attached_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_attached_custom_endpoint GoogleProvider#container_attached_custom_endpoint}.
 
 ---
 
@@ -830,7 +906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_aws_custom_endpoint GoogleProvider#container_aws_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_aws_custom_endpoint GoogleProvider#container_aws_custom_endpoint}.
 
 ---
 
@@ -838,7 +914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_azure_custom_endpoint GoogleProvider#container_azure_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_azure_custom_endpoint GoogleProvider#container_azure_custom_endpoint}.
 
 ---
 
@@ -846,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_custom_endpoint GoogleProvider#container_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_custom_endpoint GoogleProvider#container_custom_endpoint}.
 
 ---
 
@@ -854,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#core_billing_custom_endpoint GoogleProvider#core_billing_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#core_billing_custom_endpoint GoogleProvider#core_billing_custom_endpoint}.
 
 ---
 
@@ -862,7 +938,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#credentials GoogleProvider#credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#credentials GoogleProvider#credentials}.
 
 ---
 
@@ -870,7 +946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#database_migration_service_custom_endpoint GoogleProvider#database_migration_service_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#database_migration_service_custom_endpoint GoogleProvider#database_migration_service_custom_endpoint}.
 
 ---
 
@@ -878,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_catalog_custom_endpoint GoogleProvider#data_catalog_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_catalog_custom_endpoint GoogleProvider#data_catalog_custom_endpoint}.
 
 ---
 
@@ -886,7 +962,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataflow_custom_endpoint GoogleProvider#dataflow_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataflow_custom_endpoint GoogleProvider#dataflow_custom_endpoint}.
+
+---
+
+##### `dataformCustomEndpoint`<sup>Optional</sup> <a name="dataformCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataformCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataform_custom_endpoint GoogleProvider#dataform_custom_endpoint}.
 
 ---
 
@@ -894,7 +978,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_fusion_custom_endpoint GoogleProvider#data_fusion_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_fusion_custom_endpoint GoogleProvider#data_fusion_custom_endpoint}.
+
+---
+
+##### `dataLineageCustomEndpoint`<sup>Optional</sup> <a name="dataLineageCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.dataLineageCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_lineage_custom_endpoint GoogleProvider#data_lineage_custom_endpoint}.
 
 ---
 
@@ -902,7 +994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_loss_prevention_custom_endpoint GoogleProvider#data_loss_prevention_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_loss_prevention_custom_endpoint GoogleProvider#data_loss_prevention_custom_endpoint}.
 
 ---
 
@@ -910,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_pipeline_custom_endpoint GoogleProvider#data_pipeline_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_pipeline_custom_endpoint GoogleProvider#data_pipeline_custom_endpoint}.
 
 ---
 
@@ -918,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataplex_custom_endpoint GoogleProvider#dataplex_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataplex_custom_endpoint GoogleProvider#dataplex_custom_endpoint}.
 
 ---
 
@@ -926,7 +1018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_custom_endpoint GoogleProvider#dataproc_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_custom_endpoint GoogleProvider#dataproc_custom_endpoint}.
 
 ---
 
@@ -934,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_gdc_custom_endpoint GoogleProvider#dataproc_gdc_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_gdc_custom_endpoint GoogleProvider#dataproc_gdc_custom_endpoint}.
 
 ---
 
@@ -942,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_metastore_custom_endpoint GoogleProvider#dataproc_metastore_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_metastore_custom_endpoint GoogleProvider#dataproc_metastore_custom_endpoint}.
 
 ---
 
@@ -950,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#datastream_custom_endpoint GoogleProvider#datastream_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#datastream_custom_endpoint GoogleProvider#datastream_custom_endpoint}.
 
 ---
 
@@ -958,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#default_labels GoogleProvider#default_labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#default_labels GoogleProvider#default_labels}.
 
 ---
 
@@ -966,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#deployment_manager_custom_endpoint GoogleProvider#deployment_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#deployment_manager_custom_endpoint GoogleProvider#deployment_manager_custom_endpoint}.
 
 ---
 
@@ -974,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#developer_connect_custom_endpoint GoogleProvider#developer_connect_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#developer_connect_custom_endpoint GoogleProvider#developer_connect_custom_endpoint}.
 
 ---
 
@@ -982,7 +1074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dialogflow_custom_endpoint GoogleProvider#dialogflow_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dialogflow_custom_endpoint GoogleProvider#dialogflow_custom_endpoint}.
 
 ---
 
@@ -990,7 +1082,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dialogflow_cx_custom_endpoint GoogleProvider#dialogflow_cx_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dialogflow_cx_custom_endpoint GoogleProvider#dialogflow_cx_custom_endpoint}.
 
 ---
 
@@ -998,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#discovery_engine_custom_endpoint GoogleProvider#discovery_engine_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#discovery_engine_custom_endpoint GoogleProvider#discovery_engine_custom_endpoint}.
 
 ---
 
@@ -1006,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dns_custom_endpoint GoogleProvider#dns_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dns_custom_endpoint GoogleProvider#dns_custom_endpoint}.
 
 ---
 
@@ -1014,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#document_ai_custom_endpoint GoogleProvider#document_ai_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#document_ai_custom_endpoint GoogleProvider#document_ai_custom_endpoint}.
 
 ---
 
@@ -1022,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#document_ai_warehouse_custom_endpoint GoogleProvider#document_ai_warehouse_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#document_ai_warehouse_custom_endpoint GoogleProvider#document_ai_warehouse_custom_endpoint}.
 
 ---
 
@@ -1030,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#edgecontainer_custom_endpoint GoogleProvider#edgecontainer_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#edgecontainer_custom_endpoint GoogleProvider#edgecontainer_custom_endpoint}.
 
 ---
 
@@ -1038,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#edgenetwork_custom_endpoint GoogleProvider#edgenetwork_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#edgenetwork_custom_endpoint GoogleProvider#edgenetwork_custom_endpoint}.
 
 ---
 
@@ -1046,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#essential_contacts_custom_endpoint GoogleProvider#essential_contacts_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#essential_contacts_custom_endpoint GoogleProvider#essential_contacts_custom_endpoint}.
 
 ---
 
@@ -1054,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#eventarc_custom_endpoint GoogleProvider#eventarc_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#eventarc_custom_endpoint GoogleProvider#eventarc_custom_endpoint}.
 
 ---
 
@@ -1064,7 +1156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 external_credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#external_credentials GoogleProvider#external_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#external_credentials GoogleProvider#external_credentials}
 
 ---
 
@@ -1072,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#filestore_custom_endpoint GoogleProvider#filestore_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#filestore_custom_endpoint GoogleProvider#filestore_custom_endpoint}.
 
 ---
 
@@ -1080,7 +1172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_app_check_custom_endpoint GoogleProvider#firebase_app_check_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_app_check_custom_endpoint GoogleProvider#firebase_app_check_custom_endpoint}.
 
 ---
 
@@ -1088,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_app_hosting_custom_endpoint GoogleProvider#firebase_app_hosting_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_app_hosting_custom_endpoint GoogleProvider#firebase_app_hosting_custom_endpoint}.
 
 ---
 
@@ -1096,7 +1188,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_data_connect_custom_endpoint GoogleProvider#firebase_data_connect_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_data_connect_custom_endpoint GoogleProvider#firebase_data_connect_custom_endpoint}.
+
+---
+
+##### `firebaseRemoteConfigCustomEndpoint`<sup>Optional</sup> <a name="firebaseRemoteConfigCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.firebaseRemoteConfigCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_remote_config_custom_endpoint GoogleProvider#firebase_remote_config_custom_endpoint}.
 
 ---
 
@@ -1104,7 +1204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebaserules_custom_endpoint GoogleProvider#firebaserules_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebaserules_custom_endpoint GoogleProvider#firebaserules_custom_endpoint}.
 
 ---
 
@@ -1112,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firestore_custom_endpoint GoogleProvider#firestore_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firestore_custom_endpoint GoogleProvider#firestore_custom_endpoint}.
 
 ---
 
@@ -1120,7 +1220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gemini_custom_endpoint GoogleProvider#gemini_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gemini_custom_endpoint GoogleProvider#gemini_custom_endpoint}.
 
 ---
 
@@ -1128,7 +1228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_backup_custom_endpoint GoogleProvider#gke_backup_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_backup_custom_endpoint GoogleProvider#gke_backup_custom_endpoint}.
 
 ---
 
@@ -1136,7 +1236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_hub2_custom_endpoint GoogleProvider#gke_hub2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_hub2_custom_endpoint GoogleProvider#gke_hub2_custom_endpoint}.
 
 ---
 
@@ -1144,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_hub_custom_endpoint GoogleProvider#gke_hub_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_hub_custom_endpoint GoogleProvider#gke_hub_custom_endpoint}.
 
 ---
 
@@ -1152,7 +1252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gkeonprem_custom_endpoint GoogleProvider#gkeonprem_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gkeonprem_custom_endpoint GoogleProvider#gkeonprem_custom_endpoint}.
 
 ---
 
@@ -1160,7 +1260,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#healthcare_custom_endpoint GoogleProvider#healthcare_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#healthcare_custom_endpoint GoogleProvider#healthcare_custom_endpoint}.
+
+---
+
+##### `hypercomputeclusterCustomEndpoint`<sup>Optional</sup> <a name="hypercomputeclusterCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.hypercomputeclusterCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#hypercomputecluster_custom_endpoint GoogleProvider#hypercomputecluster_custom_endpoint}.
 
 ---
 
@@ -1168,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam2_custom_endpoint GoogleProvider#iam2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam2_custom_endpoint GoogleProvider#iam2_custom_endpoint}.
 
 ---
 
@@ -1176,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam3_custom_endpoint GoogleProvider#iam3_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam3_custom_endpoint GoogleProvider#iam3_custom_endpoint}.
 
 ---
 
@@ -1184,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_beta_custom_endpoint GoogleProvider#iam_beta_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_beta_custom_endpoint GoogleProvider#iam_beta_custom_endpoint}.
 
 ---
 
@@ -1192,7 +1300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_credentials_custom_endpoint GoogleProvider#iam_credentials_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_credentials_custom_endpoint GoogleProvider#iam_credentials_custom_endpoint}.
 
 ---
 
@@ -1200,7 +1308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_custom_endpoint GoogleProvider#iam_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_custom_endpoint GoogleProvider#iam_custom_endpoint}.
 
 ---
 
@@ -1208,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_workforce_pool_custom_endpoint GoogleProvider#iam_workforce_pool_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_workforce_pool_custom_endpoint GoogleProvider#iam_workforce_pool_custom_endpoint}.
 
 ---
 
@@ -1216,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iap_custom_endpoint GoogleProvider#iap_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iap_custom_endpoint GoogleProvider#iap_custom_endpoint}.
 
 ---
 
@@ -1224,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#identity_platform_custom_endpoint GoogleProvider#identity_platform_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#identity_platform_custom_endpoint GoogleProvider#identity_platform_custom_endpoint}.
 
 ---
 
@@ -1232,7 +1340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#impersonate_service_account GoogleProvider#impersonate_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#impersonate_service_account GoogleProvider#impersonate_service_account}.
 
 ---
 
@@ -1240,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#impersonate_service_account_delegates GoogleProvider#impersonate_service_account_delegates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#impersonate_service_account_delegates GoogleProvider#impersonate_service_account_delegates}.
 
 ---
 
@@ -1248,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#integration_connectors_custom_endpoint GoogleProvider#integration_connectors_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#integration_connectors_custom_endpoint GoogleProvider#integration_connectors_custom_endpoint}.
 
 ---
 
@@ -1256,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#integrations_custom_endpoint GoogleProvider#integrations_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#integrations_custom_endpoint GoogleProvider#integrations_custom_endpoint}.
 
 ---
 
@@ -1264,7 +1372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#kms_custom_endpoint GoogleProvider#kms_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#kms_custom_endpoint GoogleProvider#kms_custom_endpoint}.
 
 ---
 
@@ -1272,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#logging_custom_endpoint GoogleProvider#logging_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#logging_custom_endpoint GoogleProvider#logging_custom_endpoint}.
 
 ---
 
@@ -1280,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#looker_custom_endpoint GoogleProvider#looker_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#looker_custom_endpoint GoogleProvider#looker_custom_endpoint}.
 
 ---
 
@@ -1288,7 +1396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#lustre_custom_endpoint GoogleProvider#lustre_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#lustre_custom_endpoint GoogleProvider#lustre_custom_endpoint}.
 
 ---
 
@@ -1296,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#managed_kafka_custom_endpoint GoogleProvider#managed_kafka_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#managed_kafka_custom_endpoint GoogleProvider#managed_kafka_custom_endpoint}.
 
 ---
 
@@ -1304,7 +1412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#memcache_custom_endpoint GoogleProvider#memcache_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#memcache_custom_endpoint GoogleProvider#memcache_custom_endpoint}.
 
 ---
 
@@ -1312,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#memorystore_custom_endpoint GoogleProvider#memorystore_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#memorystore_custom_endpoint GoogleProvider#memorystore_custom_endpoint}.
 
 ---
 
@@ -1320,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#migration_center_custom_endpoint GoogleProvider#migration_center_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#migration_center_custom_endpoint GoogleProvider#migration_center_custom_endpoint}.
 
 ---
 
@@ -1328,7 +1436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#ml_engine_custom_endpoint GoogleProvider#ml_engine_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#ml_engine_custom_endpoint GoogleProvider#ml_engine_custom_endpoint}.
 
 ---
 
@@ -1336,7 +1444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#model_armor_custom_endpoint GoogleProvider#model_armor_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#model_armor_custom_endpoint GoogleProvider#model_armor_custom_endpoint}.
 
 ---
 
@@ -1344,7 +1452,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#model_armor_global_custom_endpoint GoogleProvider#model_armor_global_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#model_armor_global_custom_endpoint GoogleProvider#model_armor_global_custom_endpoint}.
 
 ---
 
@@ -1352,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#monitoring_custom_endpoint GoogleProvider#monitoring_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#monitoring_custom_endpoint GoogleProvider#monitoring_custom_endpoint}.
 
 ---
 
@@ -1360,7 +1468,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#netapp_custom_endpoint GoogleProvider#netapp_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#netapp_custom_endpoint GoogleProvider#netapp_custom_endpoint}.
 
 ---
 
@@ -1368,7 +1476,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_connectivity_custom_endpoint GoogleProvider#network_connectivity_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_connectivity_custom_endpoint GoogleProvider#network_connectivity_custom_endpoint}.
+
+---
+
+##### `networkConnectivityv1CustomEndpoint`<sup>Optional</sup> <a name="networkConnectivityv1CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.networkConnectivityv1CustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_connectivityv1_custom_endpoint GoogleProvider#network_connectivityv1_custom_endpoint}.
 
 ---
 
@@ -1376,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_management_custom_endpoint GoogleProvider#network_management_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_management_custom_endpoint GoogleProvider#network_management_custom_endpoint}.
 
 ---
 
@@ -1384,7 +1500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_security_custom_endpoint GoogleProvider#network_security_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_security_custom_endpoint GoogleProvider#network_security_custom_endpoint}.
 
 ---
 
@@ -1392,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_services_custom_endpoint GoogleProvider#network_services_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_services_custom_endpoint GoogleProvider#network_services_custom_endpoint}.
 
 ---
 
@@ -1400,7 +1516,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#notebooks_custom_endpoint GoogleProvider#notebooks_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#notebooks_custom_endpoint GoogleProvider#notebooks_custom_endpoint}.
+
+---
+
+##### `observabilityCustomEndpoint`<sup>Optional</sup> <a name="observabilityCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.observabilityCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#observability_custom_endpoint GoogleProvider#observability_custom_endpoint}.
 
 ---
 
@@ -1408,7 +1532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#oracle_database_custom_endpoint GoogleProvider#oracle_database_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#oracle_database_custom_endpoint GoogleProvider#oracle_database_custom_endpoint}.
 
 ---
 
@@ -1416,7 +1540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#org_policy_custom_endpoint GoogleProvider#org_policy_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#org_policy_custom_endpoint GoogleProvider#org_policy_custom_endpoint}.
 
 ---
 
@@ -1424,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_config_custom_endpoint GoogleProvider#os_config_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_config_custom_endpoint GoogleProvider#os_config_custom_endpoint}.
 
 ---
 
@@ -1432,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_config_v2_custom_endpoint GoogleProvider#os_config_v2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_config_v2_custom_endpoint GoogleProvider#os_config_v2_custom_endpoint}.
 
 ---
 
@@ -1440,7 +1564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_login_custom_endpoint GoogleProvider#os_login_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_login_custom_endpoint GoogleProvider#os_login_custom_endpoint}.
 
 ---
 
@@ -1448,7 +1572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parallelstore_custom_endpoint GoogleProvider#parallelstore_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parallelstore_custom_endpoint GoogleProvider#parallelstore_custom_endpoint}.
 
 ---
 
@@ -1456,7 +1580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parameter_manager_custom_endpoint GoogleProvider#parameter_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parameter_manager_custom_endpoint GoogleProvider#parameter_manager_custom_endpoint}.
 
 ---
 
@@ -1464,7 +1588,31 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parameter_manager_regional_custom_endpoint GoogleProvider#parameter_manager_regional_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parameter_manager_regional_custom_endpoint GoogleProvider#parameter_manager_regional_custom_endpoint}.
+
+---
+
+##### `pollInterval`<sup>Optional</sup> <a name="pollInterval" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.pollInterval"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#poll_interval GoogleProvider#poll_interval}.
+
+---
+
+##### `preferGlobalEndpoints`<sup>Optional</sup> <a name="preferGlobalEndpoints" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.preferGlobalEndpoints"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#prefer_global_endpoints GoogleProvider#prefer_global_endpoints}.
+
+---
+
+##### `preferRegionalEndpoints`<sup>Optional</sup> <a name="preferRegionalEndpoints" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.preferRegionalEndpoints"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#prefer_regional_endpoints GoogleProvider#prefer_regional_endpoints}.
 
 ---
 
@@ -1472,7 +1620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#privateca_custom_endpoint GoogleProvider#privateca_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#privateca_custom_endpoint GoogleProvider#privateca_custom_endpoint}.
 
 ---
 
@@ -1480,7 +1628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#privileged_access_manager_custom_endpoint GoogleProvider#privileged_access_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#privileged_access_manager_custom_endpoint GoogleProvider#privileged_access_manager_custom_endpoint}.
 
 ---
 
@@ -1488,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#project GoogleProvider#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#project GoogleProvider#project}.
 
 ---
 
@@ -1496,7 +1644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#public_ca_custom_endpoint GoogleProvider#public_ca_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#public_ca_custom_endpoint GoogleProvider#public_ca_custom_endpoint}.
 
 ---
 
@@ -1504,7 +1652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#pubsub_custom_endpoint GoogleProvider#pubsub_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#pubsub_custom_endpoint GoogleProvider#pubsub_custom_endpoint}.
 
 ---
 
@@ -1512,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#pubsub_lite_custom_endpoint GoogleProvider#pubsub_lite_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#pubsub_lite_custom_endpoint GoogleProvider#pubsub_lite_custom_endpoint}.
 
 ---
 
@@ -1520,7 +1668,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#recaptcha_enterprise_custom_endpoint GoogleProvider#recaptcha_enterprise_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#recaptcha_enterprise_custom_endpoint GoogleProvider#recaptcha_enterprise_custom_endpoint}.
 
 ---
 
@@ -1528,7 +1676,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#redis_custom_endpoint GoogleProvider#redis_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#redis_custom_endpoint GoogleProvider#redis_custom_endpoint}.
 
 ---
 
@@ -1536,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#region GoogleProvider#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#region GoogleProvider#region}.
 
 ---
 
@@ -1544,7 +1692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#request_reason GoogleProvider#request_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#request_reason GoogleProvider#request_reason}.
 
 ---
 
@@ -1552,7 +1700,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#request_timeout GoogleProvider#request_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#request_timeout GoogleProvider#request_timeout}.
+
+---
+
+##### `resourceManager3CustomEndpoint`<sup>Optional</sup> <a name="resourceManager3CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.resourceManager3CustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager3_custom_endpoint GoogleProvider#resource_manager3_custom_endpoint}.
 
 ---
 
@@ -1560,7 +1716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#resource_manager_custom_endpoint GoogleProvider#resource_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager_custom_endpoint GoogleProvider#resource_manager_custom_endpoint}.
 
 ---
 
@@ -1568,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#resource_manager_v3_custom_endpoint GoogleProvider#resource_manager_v3_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager_v3_custom_endpoint GoogleProvider#resource_manager_v3_custom_endpoint}.
 
 ---
 
@@ -1576,7 +1732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#scopes GoogleProvider#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#scopes GoogleProvider#scopes}.
 
 ---
 
@@ -1584,7 +1740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secret_manager_custom_endpoint GoogleProvider#secret_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secret_manager_custom_endpoint GoogleProvider#secret_manager_custom_endpoint}.
 
 ---
 
@@ -1592,7 +1748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secret_manager_regional_custom_endpoint GoogleProvider#secret_manager_regional_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secret_manager_regional_custom_endpoint GoogleProvider#secret_manager_regional_custom_endpoint}.
 
 ---
 
@@ -1600,7 +1756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secure_source_manager_custom_endpoint GoogleProvider#secure_source_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secure_source_manager_custom_endpoint GoogleProvider#secure_source_manager_custom_endpoint}.
 
 ---
 
@@ -1608,7 +1764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_custom_endpoint GoogleProvider#security_center_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_custom_endpoint GoogleProvider#security_center_custom_endpoint}.
 
 ---
 
@@ -1616,7 +1772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_management_custom_endpoint GoogleProvider#security_center_management_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_management_custom_endpoint GoogleProvider#security_center_management_custom_endpoint}.
 
 ---
 
@@ -1624,7 +1780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_v2_custom_endpoint GoogleProvider#security_center_v2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_v2_custom_endpoint GoogleProvider#security_center_v2_custom_endpoint}.
 
 ---
 
@@ -1632,7 +1788,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#securityposture_custom_endpoint GoogleProvider#securityposture_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#securityposture_custom_endpoint GoogleProvider#securityposture_custom_endpoint}.
+
+---
+
+##### `serviceDirectoryCustomEndpoint`<sup>Optional</sup> <a name="serviceDirectoryCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.serviceDirectoryCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_directory_custom_endpoint GoogleProvider#service_directory_custom_endpoint}.
 
 ---
 
@@ -1640,7 +1804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_management_custom_endpoint GoogleProvider#service_management_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_management_custom_endpoint GoogleProvider#service_management_custom_endpoint}.
 
 ---
 
@@ -1648,7 +1812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_networking_custom_endpoint GoogleProvider#service_networking_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_networking_custom_endpoint GoogleProvider#service_networking_custom_endpoint}.
 
 ---
 
@@ -1656,7 +1820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_usage_custom_endpoint GoogleProvider#service_usage_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_usage_custom_endpoint GoogleProvider#service_usage_custom_endpoint}.
 
 ---
 
@@ -1664,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#site_verification_custom_endpoint GoogleProvider#site_verification_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#site_verification_custom_endpoint GoogleProvider#site_verification_custom_endpoint}.
 
 ---
 
@@ -1672,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#source_repo_custom_endpoint GoogleProvider#source_repo_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#source_repo_custom_endpoint GoogleProvider#source_repo_custom_endpoint}.
 
 ---
 
@@ -1680,7 +1844,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#spanner_custom_endpoint GoogleProvider#spanner_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#spanner_custom_endpoint GoogleProvider#spanner_custom_endpoint}.
 
 ---
 
@@ -1688,7 +1852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#sql_custom_endpoint GoogleProvider#sql_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#sql_custom_endpoint GoogleProvider#sql_custom_endpoint}.
 
 ---
 
@@ -1696,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_batch_operations_custom_endpoint GoogleProvider#storage_batch_operations_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_batch_operations_custom_endpoint GoogleProvider#storage_batch_operations_custom_endpoint}.
 
 ---
 
@@ -1704,7 +1868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_control_custom_endpoint GoogleProvider#storage_control_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_control_custom_endpoint GoogleProvider#storage_control_custom_endpoint}.
 
 ---
 
@@ -1712,7 +1876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_custom_endpoint GoogleProvider#storage_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_custom_endpoint GoogleProvider#storage_custom_endpoint}.
 
 ---
 
@@ -1720,7 +1884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_insights_custom_endpoint GoogleProvider#storage_insights_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_insights_custom_endpoint GoogleProvider#storage_insights_custom_endpoint}.
 
 ---
 
@@ -1728,7 +1892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_transfer_custom_endpoint GoogleProvider#storage_transfer_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_transfer_custom_endpoint GoogleProvider#storage_transfer_custom_endpoint}.
 
 ---
 
@@ -1736,7 +1900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tags_custom_endpoint GoogleProvider#tags_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#tags_custom_endpoint GoogleProvider#tags_custom_endpoint}.
 
 ---
 
@@ -1744,7 +1908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tags_location_custom_endpoint GoogleProvider#tags_location_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#tags_location_custom_endpoint GoogleProvider#tags_location_custom_endpoint}.
 
 ---
 
@@ -1752,15 +1916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#terraform_attribution_label_addition_strategy GoogleProvider#terraform_attribution_label_addition_strategy}.
-
----
-
-##### `tpuCustomEndpoint`<sup>Optional</sup> <a name="tpuCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.tpuCustomEndpoint"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tpu_custom_endpoint GoogleProvider#tpu_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#terraform_attribution_label_addition_strategy GoogleProvider#terraform_attribution_label_addition_strategy}.
 
 ---
 
@@ -1768,7 +1924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#transcoder_custom_endpoint GoogleProvider#transcoder_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#transcoder_custom_endpoint GoogleProvider#transcoder_custom_endpoint}.
 
 ---
 
@@ -1776,7 +1932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#universe_domain GoogleProvider#universe_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#universe_domain GoogleProvider#universe_domain}.
 
 ---
 
@@ -1784,7 +1940,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#user_project_override GoogleProvider#user_project_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#user_project_override GoogleProvider#user_project_override}.
+
+---
+
+##### `vectorSearchCustomEndpoint`<sup>Optional</sup> <a name="vectorSearchCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.vectorSearchCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vector_search_custom_endpoint GoogleProvider#vector_search_custom_endpoint}.
 
 ---
 
@@ -1792,7 +1956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vertex_ai_custom_endpoint GoogleProvider#vertex_ai_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vertex_ai_custom_endpoint GoogleProvider#vertex_ai_custom_endpoint}.
 
 ---
 
@@ -1800,7 +1964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vmwareengine_custom_endpoint GoogleProvider#vmwareengine_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vmwareengine_custom_endpoint GoogleProvider#vmwareengine_custom_endpoint}.
 
 ---
 
@@ -1808,7 +1972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vpc_access_custom_endpoint GoogleProvider#vpc_access_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vpc_access_custom_endpoint GoogleProvider#vpc_access_custom_endpoint}.
 
 ---
 
@@ -1816,7 +1980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#workbench_custom_endpoint GoogleProvider#workbench_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workbench_custom_endpoint GoogleProvider#workbench_custom_endpoint}.
 
 ---
 
@@ -1824,7 +1988,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#workflows_custom_endpoint GoogleProvider#workflows_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workflows_custom_endpoint GoogleProvider#workflows_custom_endpoint}.
+
+---
+
+##### `workloadIdentityCustomEndpoint`<sup>Optional</sup> <a name="workloadIdentityCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.workloadIdentityCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workload_identity_custom_endpoint GoogleProvider#workload_identity_custom_endpoint}.
+
+---
+
+##### `workstationsCustomEndpoint`<sup>Optional</sup> <a name="workstationsCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.Initializer.parameter.workstationsCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workstations_custom_endpoint GoogleProvider#workstations_custom_endpoint}.
 
 ---
 
@@ -1832,7 +2012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#zone GoogleProvider#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#zone GoogleProvider#zone}.
 
 ---
 
@@ -1866,18 +2046,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBatching">resetBatching</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBeyondcorpCustomEndpoint">resetBeyondcorpCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBiglakeCustomEndpoint">resetBiglakeCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBiglakeIcebergCustomEndpoint">resetBiglakeIcebergCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBigqueryAnalyticsHubCustomEndpoint">resetBigqueryAnalyticsHubCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBigqueryConnectionCustomEndpoint">resetBigqueryConnectionCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBigQueryCustomEndpoint">resetBigQueryCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBigqueryDatapolicyCustomEndpoint">resetBigqueryDatapolicyCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBigqueryDatapolicyv2CustomEndpoint">resetBigqueryDatapolicyv2CustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBigqueryDataTransferCustomEndpoint">resetBigqueryDataTransferCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBigqueryReservationCustomEndpoint">resetBigqueryReservationCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBigtableCustomEndpoint">resetBigtableCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBillingBudgetsCustomEndpoint">resetBillingBudgetsCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBillingCustomEndpoint">resetBillingCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBillingProject">resetBillingProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBinaryAuthorizationCustomEndpoint">resetBinaryAuthorizationCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetBlockchainNodeEngineCustomEndpoint">resetBlockchainNodeEngineCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetCertificateManagerCustomEndpoint">resetCertificateManagerCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetCesCustomEndpoint">resetCesCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetChronicleCustomEndpoint">resetChronicleCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetCloudAssetCustomEndpoint">resetCloudAssetCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetCloudBillingCustomEndpoint">resetCloudBillingCustomEndpoint</a></code> | *No description.* |
@@ -1894,6 +2078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetCloudRunCustomEndpoint">resetCloudRunCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetCloudRunV2CustomEndpoint">resetCloudRunV2CustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetCloudSchedulerCustomEndpoint">resetCloudSchedulerCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetCloudSecurityComplianceCustomEndpoint">resetCloudSecurityComplianceCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetCloudTasksCustomEndpoint">resetCloudTasksCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetColabCustomEndpoint">resetColabCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetComposerCustomEndpoint">resetComposerCustomEndpoint</a></code> | *No description.* |
@@ -1909,7 +2094,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetDatabaseMigrationServiceCustomEndpoint">resetDatabaseMigrationServiceCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetDataCatalogCustomEndpoint">resetDataCatalogCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetDataflowCustomEndpoint">resetDataflowCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetDataformCustomEndpoint">resetDataformCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetDataFusionCustomEndpoint">resetDataFusionCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetDataLineageCustomEndpoint">resetDataLineageCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetDataLossPreventionCustomEndpoint">resetDataLossPreventionCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetDataPipelineCustomEndpoint">resetDataPipelineCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetDataplexCustomEndpoint">resetDataplexCustomEndpoint</a></code> | *No description.* |
@@ -1935,6 +2122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetFirebaseAppCheckCustomEndpoint">resetFirebaseAppCheckCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetFirebaseAppHostingCustomEndpoint">resetFirebaseAppHostingCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetFirebaseDataConnectCustomEndpoint">resetFirebaseDataConnectCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetFirebaseRemoteConfigCustomEndpoint">resetFirebaseRemoteConfigCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetFirebaserulesCustomEndpoint">resetFirebaserulesCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetFirestoreCustomEndpoint">resetFirestoreCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetGeminiCustomEndpoint">resetGeminiCustomEndpoint</a></code> | *No description.* |
@@ -1943,6 +2131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetGkeHubCustomEndpoint">resetGkeHubCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetGkeonpremCustomEndpoint">resetGkeonpremCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetHealthcareCustomEndpoint">resetHealthcareCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetHypercomputeclusterCustomEndpoint">resetHypercomputeclusterCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetIam2CustomEndpoint">resetIam2CustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetIam3CustomEndpoint">resetIam3CustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetIamBetaCustomEndpoint">resetIamBetaCustomEndpoint</a></code> | *No description.* |
@@ -1969,10 +2158,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetMonitoringCustomEndpoint">resetMonitoringCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetNetappCustomEndpoint">resetNetappCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetNetworkConnectivityCustomEndpoint">resetNetworkConnectivityCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetNetworkConnectivityv1CustomEndpoint">resetNetworkConnectivityv1CustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetNetworkManagementCustomEndpoint">resetNetworkManagementCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetNetworkSecurityCustomEndpoint">resetNetworkSecurityCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetNetworkServicesCustomEndpoint">resetNetworkServicesCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetNotebooksCustomEndpoint">resetNotebooksCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetObservabilityCustomEndpoint">resetObservabilityCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetOracleDatabaseCustomEndpoint">resetOracleDatabaseCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetOrgPolicyCustomEndpoint">resetOrgPolicyCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetOsConfigCustomEndpoint">resetOsConfigCustomEndpoint</a></code> | *No description.* |
@@ -1981,6 +2172,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetParallelstoreCustomEndpoint">resetParallelstoreCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetParameterManagerCustomEndpoint">resetParameterManagerCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetParameterManagerRegionalCustomEndpoint">resetParameterManagerRegionalCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetPollInterval">resetPollInterval</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetPreferGlobalEndpoints">resetPreferGlobalEndpoints</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetPreferRegionalEndpoints">resetPreferRegionalEndpoints</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetPrivatecaCustomEndpoint">resetPrivatecaCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetPrivilegedAccessManagerCustomEndpoint">resetPrivilegedAccessManagerCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetProject">resetProject</a></code> | *No description.* |
@@ -1992,6 +2186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetRequestReason">resetRequestReason</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetRequestTimeout">resetRequestTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetResourceManager3CustomEndpoint">resetResourceManager3CustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetResourceManagerCustomEndpoint">resetResourceManagerCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetResourceManagerV3CustomEndpoint">resetResourceManagerV3CustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetScopes">resetScopes</a></code> | *No description.* |
@@ -2002,6 +2197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetSecurityCenterManagementCustomEndpoint">resetSecurityCenterManagementCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetSecurityCenterV2CustomEndpoint">resetSecurityCenterV2CustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetSecuritypostureCustomEndpoint">resetSecuritypostureCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetServiceDirectoryCustomEndpoint">resetServiceDirectoryCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetServiceManagementCustomEndpoint">resetServiceManagementCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetServiceNetworkingCustomEndpoint">resetServiceNetworkingCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetServiceUsageCustomEndpoint">resetServiceUsageCustomEndpoint</a></code> | *No description.* |
@@ -2017,15 +2213,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetTagsCustomEndpoint">resetTagsCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetTagsLocationCustomEndpoint">resetTagsLocationCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetTerraformAttributionLabelAdditionStrategy">resetTerraformAttributionLabelAdditionStrategy</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetTpuCustomEndpoint">resetTpuCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetTranscoderCustomEndpoint">resetTranscoderCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetUniverseDomain">resetUniverseDomain</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetUserProjectOverride">resetUserProjectOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetVectorSearchCustomEndpoint">resetVectorSearchCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetVertexAiCustomEndpoint">resetVertexAiCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetVmwareengineCustomEndpoint">resetVmwareengineCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetVpcAccessCustomEndpoint">resetVpcAccessCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetWorkbenchCustomEndpoint">resetWorkbenchCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetWorkflowsCustomEndpoint">resetWorkflowsCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetWorkloadIdentityCustomEndpoint">resetWorkloadIdentityCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetWorkstationsCustomEndpoint">resetWorkstationsCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.resetZone">resetZone</a></code> | *No description.* |
 
 ---
@@ -2229,6 +2427,12 @@ public void resetBeyondcorpCustomEndpoint()
 public void resetBiglakeCustomEndpoint()
 ```
 
+##### `resetBiglakeIcebergCustomEndpoint` <a name="resetBiglakeIcebergCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetBiglakeIcebergCustomEndpoint"></a>
+
+```java
+public void resetBiglakeIcebergCustomEndpoint()
+```
+
 ##### `resetBigqueryAnalyticsHubCustomEndpoint` <a name="resetBigqueryAnalyticsHubCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetBigqueryAnalyticsHubCustomEndpoint"></a>
 
 ```java
@@ -2253,6 +2457,12 @@ public void resetBigQueryCustomEndpoint()
 public void resetBigqueryDatapolicyCustomEndpoint()
 ```
 
+##### `resetBigqueryDatapolicyv2CustomEndpoint` <a name="resetBigqueryDatapolicyv2CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetBigqueryDatapolicyv2CustomEndpoint"></a>
+
+```java
+public void resetBigqueryDatapolicyv2CustomEndpoint()
+```
+
 ##### `resetBigqueryDataTransferCustomEndpoint` <a name="resetBigqueryDataTransferCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetBigqueryDataTransferCustomEndpoint"></a>
 
 ```java
@@ -2269,6 +2479,12 @@ public void resetBigqueryReservationCustomEndpoint()
 
 ```java
 public void resetBigtableCustomEndpoint()
+```
+
+##### `resetBillingBudgetsCustomEndpoint` <a name="resetBillingBudgetsCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetBillingBudgetsCustomEndpoint"></a>
+
+```java
+public void resetBillingBudgetsCustomEndpoint()
 ```
 
 ##### `resetBillingCustomEndpoint` <a name="resetBillingCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetBillingCustomEndpoint"></a>
@@ -2299,6 +2515,12 @@ public void resetBlockchainNodeEngineCustomEndpoint()
 
 ```java
 public void resetCertificateManagerCustomEndpoint()
+```
+
+##### `resetCesCustomEndpoint` <a name="resetCesCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetCesCustomEndpoint"></a>
+
+```java
+public void resetCesCustomEndpoint()
 ```
 
 ##### `resetChronicleCustomEndpoint` <a name="resetChronicleCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetChronicleCustomEndpoint"></a>
@@ -2397,6 +2619,12 @@ public void resetCloudRunV2CustomEndpoint()
 public void resetCloudSchedulerCustomEndpoint()
 ```
 
+##### `resetCloudSecurityComplianceCustomEndpoint` <a name="resetCloudSecurityComplianceCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetCloudSecurityComplianceCustomEndpoint"></a>
+
+```java
+public void resetCloudSecurityComplianceCustomEndpoint()
+```
+
 ##### `resetCloudTasksCustomEndpoint` <a name="resetCloudTasksCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetCloudTasksCustomEndpoint"></a>
 
 ```java
@@ -2487,10 +2715,22 @@ public void resetDataCatalogCustomEndpoint()
 public void resetDataflowCustomEndpoint()
 ```
 
+##### `resetDataformCustomEndpoint` <a name="resetDataformCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetDataformCustomEndpoint"></a>
+
+```java
+public void resetDataformCustomEndpoint()
+```
+
 ##### `resetDataFusionCustomEndpoint` <a name="resetDataFusionCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetDataFusionCustomEndpoint"></a>
 
 ```java
 public void resetDataFusionCustomEndpoint()
+```
+
+##### `resetDataLineageCustomEndpoint` <a name="resetDataLineageCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetDataLineageCustomEndpoint"></a>
+
+```java
+public void resetDataLineageCustomEndpoint()
 ```
 
 ##### `resetDataLossPreventionCustomEndpoint` <a name="resetDataLossPreventionCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetDataLossPreventionCustomEndpoint"></a>
@@ -2643,6 +2883,12 @@ public void resetFirebaseAppHostingCustomEndpoint()
 public void resetFirebaseDataConnectCustomEndpoint()
 ```
 
+##### `resetFirebaseRemoteConfigCustomEndpoint` <a name="resetFirebaseRemoteConfigCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetFirebaseRemoteConfigCustomEndpoint"></a>
+
+```java
+public void resetFirebaseRemoteConfigCustomEndpoint()
+```
+
 ##### `resetFirebaserulesCustomEndpoint` <a name="resetFirebaserulesCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetFirebaserulesCustomEndpoint"></a>
 
 ```java
@@ -2689,6 +2935,12 @@ public void resetGkeonpremCustomEndpoint()
 
 ```java
 public void resetHealthcareCustomEndpoint()
+```
+
+##### `resetHypercomputeclusterCustomEndpoint` <a name="resetHypercomputeclusterCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetHypercomputeclusterCustomEndpoint"></a>
+
+```java
+public void resetHypercomputeclusterCustomEndpoint()
 ```
 
 ##### `resetIam2CustomEndpoint` <a name="resetIam2CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetIam2CustomEndpoint"></a>
@@ -2847,6 +3099,12 @@ public void resetNetappCustomEndpoint()
 public void resetNetworkConnectivityCustomEndpoint()
 ```
 
+##### `resetNetworkConnectivityv1CustomEndpoint` <a name="resetNetworkConnectivityv1CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetNetworkConnectivityv1CustomEndpoint"></a>
+
+```java
+public void resetNetworkConnectivityv1CustomEndpoint()
+```
+
 ##### `resetNetworkManagementCustomEndpoint` <a name="resetNetworkManagementCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetNetworkManagementCustomEndpoint"></a>
 
 ```java
@@ -2869,6 +3127,12 @@ public void resetNetworkServicesCustomEndpoint()
 
 ```java
 public void resetNotebooksCustomEndpoint()
+```
+
+##### `resetObservabilityCustomEndpoint` <a name="resetObservabilityCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetObservabilityCustomEndpoint"></a>
+
+```java
+public void resetObservabilityCustomEndpoint()
 ```
 
 ##### `resetOracleDatabaseCustomEndpoint` <a name="resetOracleDatabaseCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetOracleDatabaseCustomEndpoint"></a>
@@ -2917,6 +3181,24 @@ public void resetParameterManagerCustomEndpoint()
 
 ```java
 public void resetParameterManagerRegionalCustomEndpoint()
+```
+
+##### `resetPollInterval` <a name="resetPollInterval" id="@cdktn/provider-google.provider.GoogleProvider.resetPollInterval"></a>
+
+```java
+public void resetPollInterval()
+```
+
+##### `resetPreferGlobalEndpoints` <a name="resetPreferGlobalEndpoints" id="@cdktn/provider-google.provider.GoogleProvider.resetPreferGlobalEndpoints"></a>
+
+```java
+public void resetPreferGlobalEndpoints()
+```
+
+##### `resetPreferRegionalEndpoints` <a name="resetPreferRegionalEndpoints" id="@cdktn/provider-google.provider.GoogleProvider.resetPreferRegionalEndpoints"></a>
+
+```java
+public void resetPreferRegionalEndpoints()
 ```
 
 ##### `resetPrivatecaCustomEndpoint` <a name="resetPrivatecaCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetPrivatecaCustomEndpoint"></a>
@@ -2985,6 +3267,12 @@ public void resetRequestReason()
 public void resetRequestTimeout()
 ```
 
+##### `resetResourceManager3CustomEndpoint` <a name="resetResourceManager3CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetResourceManager3CustomEndpoint"></a>
+
+```java
+public void resetResourceManager3CustomEndpoint()
+```
+
 ##### `resetResourceManagerCustomEndpoint` <a name="resetResourceManagerCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetResourceManagerCustomEndpoint"></a>
 
 ```java
@@ -3043,6 +3331,12 @@ public void resetSecurityCenterV2CustomEndpoint()
 
 ```java
 public void resetSecuritypostureCustomEndpoint()
+```
+
+##### `resetServiceDirectoryCustomEndpoint` <a name="resetServiceDirectoryCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetServiceDirectoryCustomEndpoint"></a>
+
+```java
+public void resetServiceDirectoryCustomEndpoint()
 ```
 
 ##### `resetServiceManagementCustomEndpoint` <a name="resetServiceManagementCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetServiceManagementCustomEndpoint"></a>
@@ -3135,12 +3429,6 @@ public void resetTagsLocationCustomEndpoint()
 public void resetTerraformAttributionLabelAdditionStrategy()
 ```
 
-##### `resetTpuCustomEndpoint` <a name="resetTpuCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetTpuCustomEndpoint"></a>
-
-```java
-public void resetTpuCustomEndpoint()
-```
-
 ##### `resetTranscoderCustomEndpoint` <a name="resetTranscoderCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetTranscoderCustomEndpoint"></a>
 
 ```java
@@ -3157,6 +3445,12 @@ public void resetUniverseDomain()
 
 ```java
 public void resetUserProjectOverride()
+```
+
+##### `resetVectorSearchCustomEndpoint` <a name="resetVectorSearchCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetVectorSearchCustomEndpoint"></a>
+
+```java
+public void resetVectorSearchCustomEndpoint()
 ```
 
 ##### `resetVertexAiCustomEndpoint` <a name="resetVertexAiCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetVertexAiCustomEndpoint"></a>
@@ -3187,6 +3481,18 @@ public void resetWorkbenchCustomEndpoint()
 
 ```java
 public void resetWorkflowsCustomEndpoint()
+```
+
+##### `resetWorkloadIdentityCustomEndpoint` <a name="resetWorkloadIdentityCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetWorkloadIdentityCustomEndpoint"></a>
+
+```java
+public void resetWorkloadIdentityCustomEndpoint()
+```
+
+##### `resetWorkstationsCustomEndpoint` <a name="resetWorkstationsCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.resetWorkstationsCustomEndpoint"></a>
+
+```java
+public void resetWorkstationsCustomEndpoint()
 ```
 
 ##### `resetZone` <a name="resetZone" id="@cdktn/provider-google.provider.GoogleProvider.resetZone"></a>
@@ -3298,7 +3604,7 @@ The construct id used in the generated config for the GoogleProvider to import.
 
 The id of the existing GoogleProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -3341,18 +3647,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.batchingInput">batchingInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.provider.GoogleProviderBatching">GoogleProviderBatching</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.beyondcorpCustomEndpointInput">beyondcorpCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.biglakeCustomEndpointInput">biglakeCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.biglakeIcebergCustomEndpointInput">biglakeIcebergCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryAnalyticsHubCustomEndpointInput">bigqueryAnalyticsHubCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryConnectionCustomEndpointInput">bigqueryConnectionCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigQueryCustomEndpointInput">bigQueryCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryDatapolicyCustomEndpointInput">bigqueryDatapolicyCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryDatapolicyv2CustomEndpointInput">bigqueryDatapolicyv2CustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryDataTransferCustomEndpointInput">bigqueryDataTransferCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryReservationCustomEndpointInput">bigqueryReservationCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigtableCustomEndpointInput">bigtableCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.billingBudgetsCustomEndpointInput">billingBudgetsCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.billingCustomEndpointInput">billingCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.billingProjectInput">billingProjectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.binaryAuthorizationCustomEndpointInput">binaryAuthorizationCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.blockchainNodeEngineCustomEndpointInput">blockchainNodeEngineCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.certificateManagerCustomEndpointInput">certificateManagerCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cesCustomEndpointInput">cesCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.chronicleCustomEndpointInput">chronicleCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudAssetCustomEndpointInput">cloudAssetCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudBillingCustomEndpointInput">cloudBillingCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3369,6 +3679,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudRunCustomEndpointInput">cloudRunCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudRunV2CustomEndpointInput">cloudRunV2CustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudSchedulerCustomEndpointInput">cloudSchedulerCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudSecurityComplianceCustomEndpointInput">cloudSecurityComplianceCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudTasksCustomEndpointInput">cloudTasksCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.colabCustomEndpointInput">colabCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.composerCustomEndpointInput">composerCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3384,7 +3695,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.databaseMigrationServiceCustomEndpointInput">databaseMigrationServiceCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataCatalogCustomEndpointInput">dataCatalogCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataflowCustomEndpointInput">dataflowCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataformCustomEndpointInput">dataformCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataFusionCustomEndpointInput">dataFusionCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataLineageCustomEndpointInput">dataLineageCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataLossPreventionCustomEndpointInput">dataLossPreventionCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataPipelineCustomEndpointInput">dataPipelineCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataplexCustomEndpointInput">dataplexCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3410,6 +3723,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firebaseAppCheckCustomEndpointInput">firebaseAppCheckCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firebaseAppHostingCustomEndpointInput">firebaseAppHostingCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firebaseDataConnectCustomEndpointInput">firebaseDataConnectCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firebaseRemoteConfigCustomEndpointInput">firebaseRemoteConfigCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firebaserulesCustomEndpointInput">firebaserulesCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firestoreCustomEndpointInput">firestoreCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.geminiCustomEndpointInput">geminiCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3418,6 +3732,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.gkeHubCustomEndpointInput">gkeHubCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.gkeonpremCustomEndpointInput">gkeonpremCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.healthcareCustomEndpointInput">healthcareCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.hypercomputeclusterCustomEndpointInput">hypercomputeclusterCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.iam2CustomEndpointInput">iam2CustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.iam3CustomEndpointInput">iam3CustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.iamBetaCustomEndpointInput">iamBetaCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3444,10 +3759,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.monitoringCustomEndpointInput">monitoringCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.netappCustomEndpointInput">netappCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.networkConnectivityCustomEndpointInput">networkConnectivityCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.networkConnectivityv1CustomEndpointInput">networkConnectivityv1CustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.networkManagementCustomEndpointInput">networkManagementCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.networkSecurityCustomEndpointInput">networkSecurityCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.networkServicesCustomEndpointInput">networkServicesCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.notebooksCustomEndpointInput">notebooksCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.observabilityCustomEndpointInput">observabilityCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.oracleDatabaseCustomEndpointInput">oracleDatabaseCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.orgPolicyCustomEndpointInput">orgPolicyCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.osConfigCustomEndpointInput">osConfigCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3456,6 +3773,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.parallelstoreCustomEndpointInput">parallelstoreCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.parameterManagerCustomEndpointInput">parameterManagerCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.parameterManagerRegionalCustomEndpointInput">parameterManagerRegionalCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.pollIntervalInput">pollIntervalInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.preferGlobalEndpointsInput">preferGlobalEndpointsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.preferRegionalEndpointsInput">preferRegionalEndpointsInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.privatecaCustomEndpointInput">privatecaCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.privilegedAccessManagerCustomEndpointInput">privilegedAccessManagerCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3467,6 +3787,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.requestReasonInput">requestReasonInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.requestTimeoutInput">requestTimeoutInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.resourceManager3CustomEndpointInput">resourceManager3CustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.resourceManagerCustomEndpointInput">resourceManagerCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.resourceManagerV3CustomEndpointInput">resourceManagerV3CustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.scopesInput">scopesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -3477,6 +3798,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.securityCenterManagementCustomEndpointInput">securityCenterManagementCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.securityCenterV2CustomEndpointInput">securityCenterV2CustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.securitypostureCustomEndpointInput">securitypostureCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.serviceDirectoryCustomEndpointInput">serviceDirectoryCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.serviceManagementCustomEndpointInput">serviceManagementCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.serviceNetworkingCustomEndpointInput">serviceNetworkingCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.serviceUsageCustomEndpointInput">serviceUsageCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3492,15 +3814,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.tagsCustomEndpointInput">tagsCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.tagsLocationCustomEndpointInput">tagsLocationCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.terraformAttributionLabelAdditionStrategyInput">terraformAttributionLabelAdditionStrategyInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.tpuCustomEndpointInput">tpuCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.transcoderCustomEndpointInput">transcoderCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.universeDomainInput">universeDomainInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.userProjectOverrideInput">userProjectOverrideInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.vectorSearchCustomEndpointInput">vectorSearchCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.vertexAiCustomEndpointInput">vertexAiCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.vmwareengineCustomEndpointInput">vmwareengineCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.vpcAccessCustomEndpointInput">vpcAccessCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.workbenchCustomEndpointInput">workbenchCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.workflowsCustomEndpointInput">workflowsCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.workloadIdentityCustomEndpointInput">workloadIdentityCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.workstationsCustomEndpointInput">workstationsCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.accessApprovalCustomEndpoint">accessApprovalCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.accessContextManagerCustomEndpoint">accessContextManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3519,18 +3843,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.batching">batching</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.provider.GoogleProviderBatching">GoogleProviderBatching</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.beyondcorpCustomEndpoint">beyondcorpCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.biglakeCustomEndpoint">biglakeCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.biglakeIcebergCustomEndpoint">biglakeIcebergCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryAnalyticsHubCustomEndpoint">bigqueryAnalyticsHubCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryConnectionCustomEndpoint">bigqueryConnectionCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigQueryCustomEndpoint">bigQueryCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryDatapolicyCustomEndpoint">bigqueryDatapolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryDatapolicyv2CustomEndpoint">bigqueryDatapolicyv2CustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryDataTransferCustomEndpoint">bigqueryDataTransferCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigqueryReservationCustomEndpoint">bigqueryReservationCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.bigtableCustomEndpoint">bigtableCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.billingBudgetsCustomEndpoint">billingBudgetsCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.billingCustomEndpoint">billingCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.billingProject">billingProject</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.binaryAuthorizationCustomEndpoint">binaryAuthorizationCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.blockchainNodeEngineCustomEndpoint">blockchainNodeEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.certificateManagerCustomEndpoint">certificateManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cesCustomEndpoint">cesCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.chronicleCustomEndpoint">chronicleCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudAssetCustomEndpoint">cloudAssetCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudBillingCustomEndpoint">cloudBillingCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3547,6 +3875,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudRunCustomEndpoint">cloudRunCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudRunV2CustomEndpoint">cloudRunV2CustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudSchedulerCustomEndpoint">cloudSchedulerCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudSecurityComplianceCustomEndpoint">cloudSecurityComplianceCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.cloudTasksCustomEndpoint">cloudTasksCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.colabCustomEndpoint">colabCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.composerCustomEndpoint">composerCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3562,7 +3891,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.databaseMigrationServiceCustomEndpoint">databaseMigrationServiceCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataCatalogCustomEndpoint">dataCatalogCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataflowCustomEndpoint">dataflowCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataformCustomEndpoint">dataformCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataFusionCustomEndpoint">dataFusionCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataLineageCustomEndpoint">dataLineageCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataLossPreventionCustomEndpoint">dataLossPreventionCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataPipelineCustomEndpoint">dataPipelineCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.dataplexCustomEndpoint">dataplexCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3588,6 +3919,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firebaseAppCheckCustomEndpoint">firebaseAppCheckCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firebaseAppHostingCustomEndpoint">firebaseAppHostingCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firebaseDataConnectCustomEndpoint">firebaseDataConnectCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firebaseRemoteConfigCustomEndpoint">firebaseRemoteConfigCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firebaserulesCustomEndpoint">firebaserulesCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.firestoreCustomEndpoint">firestoreCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.geminiCustomEndpoint">geminiCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3596,6 +3928,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.gkeHubCustomEndpoint">gkeHubCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.gkeonpremCustomEndpoint">gkeonpremCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.healthcareCustomEndpoint">healthcareCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.hypercomputeclusterCustomEndpoint">hypercomputeclusterCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.iam2CustomEndpoint">iam2CustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.iam3CustomEndpoint">iam3CustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.iamBetaCustomEndpoint">iamBetaCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3622,10 +3955,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.monitoringCustomEndpoint">monitoringCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.netappCustomEndpoint">netappCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.networkConnectivityCustomEndpoint">networkConnectivityCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.networkConnectivityv1CustomEndpoint">networkConnectivityv1CustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.networkManagementCustomEndpoint">networkManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.networkSecurityCustomEndpoint">networkSecurityCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.networkServicesCustomEndpoint">networkServicesCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.notebooksCustomEndpoint">notebooksCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.observabilityCustomEndpoint">observabilityCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.oracleDatabaseCustomEndpoint">oracleDatabaseCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.orgPolicyCustomEndpoint">orgPolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.osConfigCustomEndpoint">osConfigCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3634,6 +3969,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.parallelstoreCustomEndpoint">parallelstoreCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.parameterManagerCustomEndpoint">parameterManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.parameterManagerRegionalCustomEndpoint">parameterManagerRegionalCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.pollInterval">pollInterval</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.preferGlobalEndpoints">preferGlobalEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.preferRegionalEndpoints">preferRegionalEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.privatecaCustomEndpoint">privatecaCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.privilegedAccessManagerCustomEndpoint">privilegedAccessManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3645,6 +3983,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.requestReason">requestReason</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.requestTimeout">requestTimeout</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.resourceManager3CustomEndpoint">resourceManager3CustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.resourceManagerCustomEndpoint">resourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.resourceManagerV3CustomEndpoint">resourceManagerV3CustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -3655,6 +3994,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.securityCenterManagementCustomEndpoint">securityCenterManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.securityCenterV2CustomEndpoint">securityCenterV2CustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.securitypostureCustomEndpoint">securitypostureCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.serviceDirectoryCustomEndpoint">serviceDirectoryCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.serviceManagementCustomEndpoint">serviceManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.serviceNetworkingCustomEndpoint">serviceNetworkingCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.serviceUsageCustomEndpoint">serviceUsageCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3670,15 +4010,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.tagsCustomEndpoint">tagsCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.tagsLocationCustomEndpoint">tagsLocationCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.terraformAttributionLabelAdditionStrategy">terraformAttributionLabelAdditionStrategy</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.tpuCustomEndpoint">tpuCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.transcoderCustomEndpoint">transcoderCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.universeDomain">universeDomain</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.userProjectOverride">userProjectOverride</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.vectorSearchCustomEndpoint">vectorSearchCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.vertexAiCustomEndpoint">vertexAiCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.vmwareengineCustomEndpoint">vmwareengineCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.vpcAccessCustomEndpoint">vpcAccessCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.workbenchCustomEndpoint">workbenchCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.workflowsCustomEndpoint">workflowsCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.workloadIdentityCustomEndpoint">workloadIdentityCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.workstationsCustomEndpoint">workstationsCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProvider.property.zone">zone</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -3955,6 +4297,16 @@ public java.lang.String getBiglakeCustomEndpointInput();
 
 ---
 
+##### `biglakeIcebergCustomEndpointInput`<sup>Optional</sup> <a name="biglakeIcebergCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.biglakeIcebergCustomEndpointInput"></a>
+
+```java
+public java.lang.String getBiglakeIcebergCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `bigqueryAnalyticsHubCustomEndpointInput`<sup>Optional</sup> <a name="bigqueryAnalyticsHubCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.bigqueryAnalyticsHubCustomEndpointInput"></a>
 
 ```java
@@ -3995,6 +4347,16 @@ public java.lang.String getBigqueryDatapolicyCustomEndpointInput();
 
 ---
 
+##### `bigqueryDatapolicyv2CustomEndpointInput`<sup>Optional</sup> <a name="bigqueryDatapolicyv2CustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.bigqueryDatapolicyv2CustomEndpointInput"></a>
+
+```java
+public java.lang.String getBigqueryDatapolicyv2CustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `bigqueryDataTransferCustomEndpointInput`<sup>Optional</sup> <a name="bigqueryDataTransferCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.bigqueryDataTransferCustomEndpointInput"></a>
 
 ```java
@@ -4019,6 +4381,16 @@ public java.lang.String getBigqueryReservationCustomEndpointInput();
 
 ```java
 public java.lang.String getBigtableCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `billingBudgetsCustomEndpointInput`<sup>Optional</sup> <a name="billingBudgetsCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.billingBudgetsCustomEndpointInput"></a>
+
+```java
+public java.lang.String getBillingBudgetsCustomEndpointInput();
 ```
 
 - *Type:* java.lang.String
@@ -4069,6 +4441,16 @@ public java.lang.String getBlockchainNodeEngineCustomEndpointInput();
 
 ```java
 public java.lang.String getCertificateManagerCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `cesCustomEndpointInput`<sup>Optional</sup> <a name="cesCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.cesCustomEndpointInput"></a>
+
+```java
+public java.lang.String getCesCustomEndpointInput();
 ```
 
 - *Type:* java.lang.String
@@ -4235,6 +4617,16 @@ public java.lang.String getCloudSchedulerCustomEndpointInput();
 
 ---
 
+##### `cloudSecurityComplianceCustomEndpointInput`<sup>Optional</sup> <a name="cloudSecurityComplianceCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.cloudSecurityComplianceCustomEndpointInput"></a>
+
+```java
+public java.lang.String getCloudSecurityComplianceCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `cloudTasksCustomEndpointInput`<sup>Optional</sup> <a name="cloudTasksCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.cloudTasksCustomEndpointInput"></a>
 
 ```java
@@ -4385,10 +4777,30 @@ public java.lang.String getDataflowCustomEndpointInput();
 
 ---
 
+##### `dataformCustomEndpointInput`<sup>Optional</sup> <a name="dataformCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.dataformCustomEndpointInput"></a>
+
+```java
+public java.lang.String getDataformCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `dataFusionCustomEndpointInput`<sup>Optional</sup> <a name="dataFusionCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.dataFusionCustomEndpointInput"></a>
 
 ```java
 public java.lang.String getDataFusionCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `dataLineageCustomEndpointInput`<sup>Optional</sup> <a name="dataLineageCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.dataLineageCustomEndpointInput"></a>
+
+```java
+public java.lang.String getDataLineageCustomEndpointInput();
 ```
 
 - *Type:* java.lang.String
@@ -4645,6 +5057,16 @@ public java.lang.String getFirebaseDataConnectCustomEndpointInput();
 
 ---
 
+##### `firebaseRemoteConfigCustomEndpointInput`<sup>Optional</sup> <a name="firebaseRemoteConfigCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.firebaseRemoteConfigCustomEndpointInput"></a>
+
+```java
+public java.lang.String getFirebaseRemoteConfigCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `firebaserulesCustomEndpointInput`<sup>Optional</sup> <a name="firebaserulesCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.firebaserulesCustomEndpointInput"></a>
 
 ```java
@@ -4719,6 +5141,16 @@ public java.lang.String getGkeonpremCustomEndpointInput();
 
 ```java
 public java.lang.String getHealthcareCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `hypercomputeclusterCustomEndpointInput`<sup>Optional</sup> <a name="hypercomputeclusterCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.hypercomputeclusterCustomEndpointInput"></a>
+
+```java
+public java.lang.String getHypercomputeclusterCustomEndpointInput();
 ```
 
 - *Type:* java.lang.String
@@ -4985,6 +5417,16 @@ public java.lang.String getNetworkConnectivityCustomEndpointInput();
 
 ---
 
+##### `networkConnectivityv1CustomEndpointInput`<sup>Optional</sup> <a name="networkConnectivityv1CustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.networkConnectivityv1CustomEndpointInput"></a>
+
+```java
+public java.lang.String getNetworkConnectivityv1CustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `networkManagementCustomEndpointInput`<sup>Optional</sup> <a name="networkManagementCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.networkManagementCustomEndpointInput"></a>
 
 ```java
@@ -5019,6 +5461,16 @@ public java.lang.String getNetworkServicesCustomEndpointInput();
 
 ```java
 public java.lang.String getNotebooksCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `observabilityCustomEndpointInput`<sup>Optional</sup> <a name="observabilityCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.observabilityCustomEndpointInput"></a>
+
+```java
+public java.lang.String getObservabilityCustomEndpointInput();
 ```
 
 - *Type:* java.lang.String
@@ -5102,6 +5554,36 @@ public java.lang.String getParameterManagerRegionalCustomEndpointInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `pollIntervalInput`<sup>Optional</sup> <a name="pollIntervalInput" id="@cdktn/provider-google.provider.GoogleProvider.property.pollIntervalInput"></a>
+
+```java
+public java.lang.String getPollIntervalInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `preferGlobalEndpointsInput`<sup>Optional</sup> <a name="preferGlobalEndpointsInput" id="@cdktn/provider-google.provider.GoogleProvider.property.preferGlobalEndpointsInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreferGlobalEndpointsInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `preferRegionalEndpointsInput`<sup>Optional</sup> <a name="preferRegionalEndpointsInput" id="@cdktn/provider-google.provider.GoogleProvider.property.preferRegionalEndpointsInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreferRegionalEndpointsInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -5215,6 +5697,16 @@ public java.lang.String getRequestTimeoutInput();
 
 ---
 
+##### `resourceManager3CustomEndpointInput`<sup>Optional</sup> <a name="resourceManager3CustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.resourceManager3CustomEndpointInput"></a>
+
+```java
+public java.lang.String getResourceManager3CustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `resourceManagerCustomEndpointInput`<sup>Optional</sup> <a name="resourceManagerCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.resourceManagerCustomEndpointInput"></a>
 
 ```java
@@ -5309,6 +5801,16 @@ public java.lang.String getSecurityCenterV2CustomEndpointInput();
 
 ```java
 public java.lang.String getSecuritypostureCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serviceDirectoryCustomEndpointInput`<sup>Optional</sup> <a name="serviceDirectoryCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.serviceDirectoryCustomEndpointInput"></a>
+
+```java
+public java.lang.String getServiceDirectoryCustomEndpointInput();
 ```
 
 - *Type:* java.lang.String
@@ -5465,16 +5967,6 @@ public java.lang.String getTerraformAttributionLabelAdditionStrategyInput();
 
 ---
 
-##### `tpuCustomEndpointInput`<sup>Optional</sup> <a name="tpuCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.tpuCustomEndpointInput"></a>
-
-```java
-public java.lang.String getTpuCustomEndpointInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `transcoderCustomEndpointInput`<sup>Optional</sup> <a name="transcoderCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.transcoderCustomEndpointInput"></a>
 
 ```java
@@ -5502,6 +5994,16 @@ public java.lang.Boolean|IResolvable getUserProjectOverrideInput();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `vectorSearchCustomEndpointInput`<sup>Optional</sup> <a name="vectorSearchCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.vectorSearchCustomEndpointInput"></a>
+
+```java
+public java.lang.String getVectorSearchCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -5549,6 +6051,26 @@ public java.lang.String getWorkbenchCustomEndpointInput();
 
 ```java
 public java.lang.String getWorkflowsCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `workloadIdentityCustomEndpointInput`<sup>Optional</sup> <a name="workloadIdentityCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.workloadIdentityCustomEndpointInput"></a>
+
+```java
+public java.lang.String getWorkloadIdentityCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `workstationsCustomEndpointInput`<sup>Optional</sup> <a name="workstationsCustomEndpointInput" id="@cdktn/provider-google.provider.GoogleProvider.property.workstationsCustomEndpointInput"></a>
+
+```java
+public java.lang.String getWorkstationsCustomEndpointInput();
 ```
 
 - *Type:* java.lang.String
@@ -5735,6 +6257,16 @@ public java.lang.String getBiglakeCustomEndpoint();
 
 ---
 
+##### `biglakeIcebergCustomEndpoint`<sup>Optional</sup> <a name="biglakeIcebergCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.biglakeIcebergCustomEndpoint"></a>
+
+```java
+public java.lang.String getBiglakeIcebergCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `bigqueryAnalyticsHubCustomEndpoint`<sup>Optional</sup> <a name="bigqueryAnalyticsHubCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.bigqueryAnalyticsHubCustomEndpoint"></a>
 
 ```java
@@ -5775,6 +6307,16 @@ public java.lang.String getBigqueryDatapolicyCustomEndpoint();
 
 ---
 
+##### `bigqueryDatapolicyv2CustomEndpoint`<sup>Optional</sup> <a name="bigqueryDatapolicyv2CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.bigqueryDatapolicyv2CustomEndpoint"></a>
+
+```java
+public java.lang.String getBigqueryDatapolicyv2CustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `bigqueryDataTransferCustomEndpoint`<sup>Optional</sup> <a name="bigqueryDataTransferCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.bigqueryDataTransferCustomEndpoint"></a>
 
 ```java
@@ -5799,6 +6341,16 @@ public java.lang.String getBigqueryReservationCustomEndpoint();
 
 ```java
 public java.lang.String getBigtableCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `billingBudgetsCustomEndpoint`<sup>Optional</sup> <a name="billingBudgetsCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.billingBudgetsCustomEndpoint"></a>
+
+```java
+public java.lang.String getBillingBudgetsCustomEndpoint();
 ```
 
 - *Type:* java.lang.String
@@ -5849,6 +6401,16 @@ public java.lang.String getBlockchainNodeEngineCustomEndpoint();
 
 ```java
 public java.lang.String getCertificateManagerCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `cesCustomEndpoint`<sup>Optional</sup> <a name="cesCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.cesCustomEndpoint"></a>
+
+```java
+public java.lang.String getCesCustomEndpoint();
 ```
 
 - *Type:* java.lang.String
@@ -6015,6 +6577,16 @@ public java.lang.String getCloudSchedulerCustomEndpoint();
 
 ---
 
+##### `cloudSecurityComplianceCustomEndpoint`<sup>Optional</sup> <a name="cloudSecurityComplianceCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.cloudSecurityComplianceCustomEndpoint"></a>
+
+```java
+public java.lang.String getCloudSecurityComplianceCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `cloudTasksCustomEndpoint`<sup>Optional</sup> <a name="cloudTasksCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.cloudTasksCustomEndpoint"></a>
 
 ```java
@@ -6165,10 +6737,30 @@ public java.lang.String getDataflowCustomEndpoint();
 
 ---
 
+##### `dataformCustomEndpoint`<sup>Optional</sup> <a name="dataformCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.dataformCustomEndpoint"></a>
+
+```java
+public java.lang.String getDataformCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `dataFusionCustomEndpoint`<sup>Optional</sup> <a name="dataFusionCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.dataFusionCustomEndpoint"></a>
 
 ```java
 public java.lang.String getDataFusionCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `dataLineageCustomEndpoint`<sup>Optional</sup> <a name="dataLineageCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.dataLineageCustomEndpoint"></a>
+
+```java
+public java.lang.String getDataLineageCustomEndpoint();
 ```
 
 - *Type:* java.lang.String
@@ -6425,6 +7017,16 @@ public java.lang.String getFirebaseDataConnectCustomEndpoint();
 
 ---
 
+##### `firebaseRemoteConfigCustomEndpoint`<sup>Optional</sup> <a name="firebaseRemoteConfigCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.firebaseRemoteConfigCustomEndpoint"></a>
+
+```java
+public java.lang.String getFirebaseRemoteConfigCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `firebaserulesCustomEndpoint`<sup>Optional</sup> <a name="firebaserulesCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.firebaserulesCustomEndpoint"></a>
 
 ```java
@@ -6499,6 +7101,16 @@ public java.lang.String getGkeonpremCustomEndpoint();
 
 ```java
 public java.lang.String getHealthcareCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `hypercomputeclusterCustomEndpoint`<sup>Optional</sup> <a name="hypercomputeclusterCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.hypercomputeclusterCustomEndpoint"></a>
+
+```java
+public java.lang.String getHypercomputeclusterCustomEndpoint();
 ```
 
 - *Type:* java.lang.String
@@ -6765,6 +7377,16 @@ public java.lang.String getNetworkConnectivityCustomEndpoint();
 
 ---
 
+##### `networkConnectivityv1CustomEndpoint`<sup>Optional</sup> <a name="networkConnectivityv1CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.networkConnectivityv1CustomEndpoint"></a>
+
+```java
+public java.lang.String getNetworkConnectivityv1CustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `networkManagementCustomEndpoint`<sup>Optional</sup> <a name="networkManagementCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.networkManagementCustomEndpoint"></a>
 
 ```java
@@ -6799,6 +7421,16 @@ public java.lang.String getNetworkServicesCustomEndpoint();
 
 ```java
 public java.lang.String getNotebooksCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `observabilityCustomEndpoint`<sup>Optional</sup> <a name="observabilityCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.observabilityCustomEndpoint"></a>
+
+```java
+public java.lang.String getObservabilityCustomEndpoint();
 ```
 
 - *Type:* java.lang.String
@@ -6882,6 +7514,36 @@ public java.lang.String getParameterManagerRegionalCustomEndpoint();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `pollInterval`<sup>Optional</sup> <a name="pollInterval" id="@cdktn/provider-google.provider.GoogleProvider.property.pollInterval"></a>
+
+```java
+public java.lang.String getPollInterval();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `preferGlobalEndpoints`<sup>Optional</sup> <a name="preferGlobalEndpoints" id="@cdktn/provider-google.provider.GoogleProvider.property.preferGlobalEndpoints"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreferGlobalEndpoints();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `preferRegionalEndpoints`<sup>Optional</sup> <a name="preferRegionalEndpoints" id="@cdktn/provider-google.provider.GoogleProvider.property.preferRegionalEndpoints"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreferRegionalEndpoints();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -6995,6 +7657,16 @@ public java.lang.String getRequestTimeout();
 
 ---
 
+##### `resourceManager3CustomEndpoint`<sup>Optional</sup> <a name="resourceManager3CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.resourceManager3CustomEndpoint"></a>
+
+```java
+public java.lang.String getResourceManager3CustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `resourceManagerCustomEndpoint`<sup>Optional</sup> <a name="resourceManagerCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.resourceManagerCustomEndpoint"></a>
 
 ```java
@@ -7089,6 +7761,16 @@ public java.lang.String getSecurityCenterV2CustomEndpoint();
 
 ```java
 public java.lang.String getSecuritypostureCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `serviceDirectoryCustomEndpoint`<sup>Optional</sup> <a name="serviceDirectoryCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.serviceDirectoryCustomEndpoint"></a>
+
+```java
+public java.lang.String getServiceDirectoryCustomEndpoint();
 ```
 
 - *Type:* java.lang.String
@@ -7245,16 +7927,6 @@ public java.lang.String getTerraformAttributionLabelAdditionStrategy();
 
 ---
 
-##### `tpuCustomEndpoint`<sup>Optional</sup> <a name="tpuCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.tpuCustomEndpoint"></a>
-
-```java
-public java.lang.String getTpuCustomEndpoint();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `transcoderCustomEndpoint`<sup>Optional</sup> <a name="transcoderCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.transcoderCustomEndpoint"></a>
 
 ```java
@@ -7282,6 +7954,16 @@ public java.lang.Boolean|IResolvable getUserProjectOverride();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `vectorSearchCustomEndpoint`<sup>Optional</sup> <a name="vectorSearchCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.vectorSearchCustomEndpoint"></a>
+
+```java
+public java.lang.String getVectorSearchCustomEndpoint();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -7335,6 +8017,26 @@ public java.lang.String getWorkflowsCustomEndpoint();
 
 ---
 
+##### `workloadIdentityCustomEndpoint`<sup>Optional</sup> <a name="workloadIdentityCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.workloadIdentityCustomEndpoint"></a>
+
+```java
+public java.lang.String getWorkloadIdentityCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `workstationsCustomEndpoint`<sup>Optional</sup> <a name="workstationsCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProvider.property.workstationsCustomEndpoint"></a>
+
+```java
+public java.lang.String getWorkstationsCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `zone`<sup>Optional</sup> <a name="zone" id="@cdktn/provider-google.provider.GoogleProvider.property.zone"></a>
 
 ```java
@@ -7382,8 +8084,8 @@ GoogleProviderBatching.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderBatching.property.enableBatching">enableBatching</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#enable_batching GoogleProvider#enable_batching}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderBatching.property.sendAfter">sendAfter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#send_after GoogleProvider#send_after}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderBatching.property.enableBatching">enableBatching</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#enable_batching GoogleProvider#enable_batching}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderBatching.property.sendAfter">sendAfter</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#send_after GoogleProvider#send_after}. |
 
 ---
 
@@ -7395,7 +8097,7 @@ public java.lang.Boolean|IResolvable getEnableBatching();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#enable_batching GoogleProvider#enable_batching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#enable_batching GoogleProvider#enable_batching}.
 
 ---
 
@@ -7407,7 +8109,7 @@ public java.lang.String getSendAfter();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#send_after GoogleProvider#send_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#send_after GoogleProvider#send_after}.
 
 ---
 
@@ -7437,18 +8139,22 @@ GoogleProviderConfig.builder()
 //  .batching(IResolvable|java.util.List<GoogleProviderBatching>)
 //  .beyondcorpCustomEndpoint(java.lang.String)
 //  .biglakeCustomEndpoint(java.lang.String)
+//  .biglakeIcebergCustomEndpoint(java.lang.String)
 //  .bigqueryAnalyticsHubCustomEndpoint(java.lang.String)
 //  .bigqueryConnectionCustomEndpoint(java.lang.String)
 //  .bigQueryCustomEndpoint(java.lang.String)
 //  .bigqueryDatapolicyCustomEndpoint(java.lang.String)
+//  .bigqueryDatapolicyv2CustomEndpoint(java.lang.String)
 //  .bigqueryDataTransferCustomEndpoint(java.lang.String)
 //  .bigqueryReservationCustomEndpoint(java.lang.String)
 //  .bigtableCustomEndpoint(java.lang.String)
+//  .billingBudgetsCustomEndpoint(java.lang.String)
 //  .billingCustomEndpoint(java.lang.String)
 //  .billingProject(java.lang.String)
 //  .binaryAuthorizationCustomEndpoint(java.lang.String)
 //  .blockchainNodeEngineCustomEndpoint(java.lang.String)
 //  .certificateManagerCustomEndpoint(java.lang.String)
+//  .cesCustomEndpoint(java.lang.String)
 //  .chronicleCustomEndpoint(java.lang.String)
 //  .cloudAssetCustomEndpoint(java.lang.String)
 //  .cloudBillingCustomEndpoint(java.lang.String)
@@ -7465,6 +8171,7 @@ GoogleProviderConfig.builder()
 //  .cloudRunCustomEndpoint(java.lang.String)
 //  .cloudRunV2CustomEndpoint(java.lang.String)
 //  .cloudSchedulerCustomEndpoint(java.lang.String)
+//  .cloudSecurityComplianceCustomEndpoint(java.lang.String)
 //  .cloudTasksCustomEndpoint(java.lang.String)
 //  .colabCustomEndpoint(java.lang.String)
 //  .composerCustomEndpoint(java.lang.String)
@@ -7480,7 +8187,9 @@ GoogleProviderConfig.builder()
 //  .databaseMigrationServiceCustomEndpoint(java.lang.String)
 //  .dataCatalogCustomEndpoint(java.lang.String)
 //  .dataflowCustomEndpoint(java.lang.String)
+//  .dataformCustomEndpoint(java.lang.String)
 //  .dataFusionCustomEndpoint(java.lang.String)
+//  .dataLineageCustomEndpoint(java.lang.String)
 //  .dataLossPreventionCustomEndpoint(java.lang.String)
 //  .dataPipelineCustomEndpoint(java.lang.String)
 //  .dataplexCustomEndpoint(java.lang.String)
@@ -7506,6 +8215,7 @@ GoogleProviderConfig.builder()
 //  .firebaseAppCheckCustomEndpoint(java.lang.String)
 //  .firebaseAppHostingCustomEndpoint(java.lang.String)
 //  .firebaseDataConnectCustomEndpoint(java.lang.String)
+//  .firebaseRemoteConfigCustomEndpoint(java.lang.String)
 //  .firebaserulesCustomEndpoint(java.lang.String)
 //  .firestoreCustomEndpoint(java.lang.String)
 //  .geminiCustomEndpoint(java.lang.String)
@@ -7514,6 +8224,7 @@ GoogleProviderConfig.builder()
 //  .gkeHubCustomEndpoint(java.lang.String)
 //  .gkeonpremCustomEndpoint(java.lang.String)
 //  .healthcareCustomEndpoint(java.lang.String)
+//  .hypercomputeclusterCustomEndpoint(java.lang.String)
 //  .iam2CustomEndpoint(java.lang.String)
 //  .iam3CustomEndpoint(java.lang.String)
 //  .iamBetaCustomEndpoint(java.lang.String)
@@ -7540,10 +8251,12 @@ GoogleProviderConfig.builder()
 //  .monitoringCustomEndpoint(java.lang.String)
 //  .netappCustomEndpoint(java.lang.String)
 //  .networkConnectivityCustomEndpoint(java.lang.String)
+//  .networkConnectivityv1CustomEndpoint(java.lang.String)
 //  .networkManagementCustomEndpoint(java.lang.String)
 //  .networkSecurityCustomEndpoint(java.lang.String)
 //  .networkServicesCustomEndpoint(java.lang.String)
 //  .notebooksCustomEndpoint(java.lang.String)
+//  .observabilityCustomEndpoint(java.lang.String)
 //  .oracleDatabaseCustomEndpoint(java.lang.String)
 //  .orgPolicyCustomEndpoint(java.lang.String)
 //  .osConfigCustomEndpoint(java.lang.String)
@@ -7552,6 +8265,9 @@ GoogleProviderConfig.builder()
 //  .parallelstoreCustomEndpoint(java.lang.String)
 //  .parameterManagerCustomEndpoint(java.lang.String)
 //  .parameterManagerRegionalCustomEndpoint(java.lang.String)
+//  .pollInterval(java.lang.String)
+//  .preferGlobalEndpoints(java.lang.Boolean|IResolvable)
+//  .preferRegionalEndpoints(java.lang.Boolean|IResolvable)
 //  .privatecaCustomEndpoint(java.lang.String)
 //  .privilegedAccessManagerCustomEndpoint(java.lang.String)
 //  .project(java.lang.String)
@@ -7563,6 +8279,7 @@ GoogleProviderConfig.builder()
 //  .region(java.lang.String)
 //  .requestReason(java.lang.String)
 //  .requestTimeout(java.lang.String)
+//  .resourceManager3CustomEndpoint(java.lang.String)
 //  .resourceManagerCustomEndpoint(java.lang.String)
 //  .resourceManagerV3CustomEndpoint(java.lang.String)
 //  .scopes(java.util.List<java.lang.String>)
@@ -7573,6 +8290,7 @@ GoogleProviderConfig.builder()
 //  .securityCenterManagementCustomEndpoint(java.lang.String)
 //  .securityCenterV2CustomEndpoint(java.lang.String)
 //  .securitypostureCustomEndpoint(java.lang.String)
+//  .serviceDirectoryCustomEndpoint(java.lang.String)
 //  .serviceManagementCustomEndpoint(java.lang.String)
 //  .serviceNetworkingCustomEndpoint(java.lang.String)
 //  .serviceUsageCustomEndpoint(java.lang.String)
@@ -7588,15 +8306,17 @@ GoogleProviderConfig.builder()
 //  .tagsCustomEndpoint(java.lang.String)
 //  .tagsLocationCustomEndpoint(java.lang.String)
 //  .terraformAttributionLabelAdditionStrategy(java.lang.String)
-//  .tpuCustomEndpoint(java.lang.String)
 //  .transcoderCustomEndpoint(java.lang.String)
 //  .universeDomain(java.lang.String)
 //  .userProjectOverride(java.lang.Boolean|IResolvable)
+//  .vectorSearchCustomEndpoint(java.lang.String)
 //  .vertexAiCustomEndpoint(java.lang.String)
 //  .vmwareengineCustomEndpoint(java.lang.String)
 //  .vpcAccessCustomEndpoint(java.lang.String)
 //  .workbenchCustomEndpoint(java.lang.String)
 //  .workflowsCustomEndpoint(java.lang.String)
+//  .workloadIdentityCustomEndpoint(java.lang.String)
+//  .workstationsCustomEndpoint(java.lang.String)
 //  .zone(java.lang.String)
     .build();
 ```
@@ -7605,185 +8325,203 @@ GoogleProviderConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.accessApprovalCustomEndpoint">accessApprovalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_approval_custom_endpoint GoogleProvider#access_approval_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.accessContextManagerCustomEndpoint">accessContextManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_context_manager_custom_endpoint GoogleProvider#access_context_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.accessToken">accessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_token GoogleProvider#access_token}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.activeDirectoryCustomEndpoint">activeDirectoryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#active_directory_custom_endpoint GoogleProvider#active_directory_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.addTerraformAttributionLabel">addTerraformAttributionLabel</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#add_terraform_attribution_label GoogleProvider#add_terraform_attribution_label}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.accessApprovalCustomEndpoint">accessApprovalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_approval_custom_endpoint GoogleProvider#access_approval_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.accessContextManagerCustomEndpoint">accessContextManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_context_manager_custom_endpoint GoogleProvider#access_context_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.accessToken">accessToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_token GoogleProvider#access_token}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.activeDirectoryCustomEndpoint">activeDirectoryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#active_directory_custom_endpoint GoogleProvider#active_directory_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.addTerraformAttributionLabel">addTerraformAttributionLabel</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#add_terraform_attribution_label GoogleProvider#add_terraform_attribution_label}. |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.alloydbCustomEndpoint">alloydbCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#alloydb_custom_endpoint GoogleProvider#alloydb_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.apigeeCustomEndpoint">apigeeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apigee_custom_endpoint GoogleProvider#apigee_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.apihubCustomEndpoint">apihubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apihub_custom_endpoint GoogleProvider#apihub_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.apikeysCustomEndpoint">apikeysCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apikeys_custom_endpoint GoogleProvider#apikeys_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.appEngineCustomEndpoint">appEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#app_engine_custom_endpoint GoogleProvider#app_engine_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.apphubCustomEndpoint">apphubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apphub_custom_endpoint GoogleProvider#apphub_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.artifactRegistryCustomEndpoint">artifactRegistryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#artifact_registry_custom_endpoint GoogleProvider#artifact_registry_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.assuredWorkloadsCustomEndpoint">assuredWorkloadsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#assured_workloads_custom_endpoint GoogleProvider#assured_workloads_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.backupDrCustomEndpoint">backupDrCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#backup_dr_custom_endpoint GoogleProvider#backup_dr_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.alloydbCustomEndpoint">alloydbCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#alloydb_custom_endpoint GoogleProvider#alloydb_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.apigeeCustomEndpoint">apigeeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apigee_custom_endpoint GoogleProvider#apigee_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.apihubCustomEndpoint">apihubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apihub_custom_endpoint GoogleProvider#apihub_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.apikeysCustomEndpoint">apikeysCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apikeys_custom_endpoint GoogleProvider#apikeys_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.appEngineCustomEndpoint">appEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#app_engine_custom_endpoint GoogleProvider#app_engine_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.apphubCustomEndpoint">apphubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apphub_custom_endpoint GoogleProvider#apphub_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.artifactRegistryCustomEndpoint">artifactRegistryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#artifact_registry_custom_endpoint GoogleProvider#artifact_registry_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.assuredWorkloadsCustomEndpoint">assuredWorkloadsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#assured_workloads_custom_endpoint GoogleProvider#assured_workloads_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.backupDrCustomEndpoint">backupDrCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#backup_dr_custom_endpoint GoogleProvider#backup_dr_custom_endpoint}. |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.batching">batching</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.provider.GoogleProviderBatching">GoogleProviderBatching</a>></code> | batching block. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.beyondcorpCustomEndpoint">beyondcorpCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#beyondcorp_custom_endpoint GoogleProvider#beyondcorp_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.biglakeCustomEndpoint">biglakeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#biglake_custom_endpoint GoogleProvider#biglake_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryAnalyticsHubCustomEndpoint">bigqueryAnalyticsHubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_analytics_hub_custom_endpoint GoogleProvider#bigquery_analytics_hub_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryConnectionCustomEndpoint">bigqueryConnectionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_connection_custom_endpoint GoogleProvider#bigquery_connection_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigQueryCustomEndpoint">bigQueryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#big_query_custom_endpoint GoogleProvider#big_query_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryDatapolicyCustomEndpoint">bigqueryDatapolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_datapolicy_custom_endpoint GoogleProvider#bigquery_datapolicy_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryDataTransferCustomEndpoint">bigqueryDataTransferCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_data_transfer_custom_endpoint GoogleProvider#bigquery_data_transfer_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryReservationCustomEndpoint">bigqueryReservationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_reservation_custom_endpoint GoogleProvider#bigquery_reservation_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigtableCustomEndpoint">bigtableCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigtable_custom_endpoint GoogleProvider#bigtable_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.billingCustomEndpoint">billingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#billing_custom_endpoint GoogleProvider#billing_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.billingProject">billingProject</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#billing_project GoogleProvider#billing_project}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.binaryAuthorizationCustomEndpoint">binaryAuthorizationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#binary_authorization_custom_endpoint GoogleProvider#binary_authorization_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.blockchainNodeEngineCustomEndpoint">blockchainNodeEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#blockchain_node_engine_custom_endpoint GoogleProvider#blockchain_node_engine_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.certificateManagerCustomEndpoint">certificateManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#certificate_manager_custom_endpoint GoogleProvider#certificate_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.chronicleCustomEndpoint">chronicleCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#chronicle_custom_endpoint GoogleProvider#chronicle_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudAssetCustomEndpoint">cloudAssetCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_asset_custom_endpoint GoogleProvider#cloud_asset_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudBillingCustomEndpoint">cloudBillingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_billing_custom_endpoint GoogleProvider#cloud_billing_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudBuildCustomEndpoint">cloudBuildCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_build_custom_endpoint GoogleProvider#cloud_build_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudbuildv2CustomEndpoint">cloudbuildv2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloudbuildv2_custom_endpoint GoogleProvider#cloudbuildv2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.clouddeployCustomEndpoint">clouddeployCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#clouddeploy_custom_endpoint GoogleProvider#clouddeploy_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.clouddomainsCustomEndpoint">clouddomainsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#clouddomains_custom_endpoint GoogleProvider#clouddomains_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudfunctions2CustomEndpoint">cloudfunctions2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloudfunctions2_custom_endpoint GoogleProvider#cloudfunctions2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudFunctionsCustomEndpoint">cloudFunctionsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_functions_custom_endpoint GoogleProvider#cloud_functions_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudIdentityCustomEndpoint">cloudIdentityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_identity_custom_endpoint GoogleProvider#cloud_identity_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudIdsCustomEndpoint">cloudIdsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_ids_custom_endpoint GoogleProvider#cloud_ids_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudQuotasCustomEndpoint">cloudQuotasCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_quotas_custom_endpoint GoogleProvider#cloud_quotas_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudResourceManagerCustomEndpoint">cloudResourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_resource_manager_custom_endpoint GoogleProvider#cloud_resource_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudRunCustomEndpoint">cloudRunCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_run_custom_endpoint GoogleProvider#cloud_run_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudRunV2CustomEndpoint">cloudRunV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_run_v2_custom_endpoint GoogleProvider#cloud_run_v2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudSchedulerCustomEndpoint">cloudSchedulerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_scheduler_custom_endpoint GoogleProvider#cloud_scheduler_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudTasksCustomEndpoint">cloudTasksCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_tasks_custom_endpoint GoogleProvider#cloud_tasks_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.colabCustomEndpoint">colabCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#colab_custom_endpoint GoogleProvider#colab_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.composerCustomEndpoint">composerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#composer_custom_endpoint GoogleProvider#composer_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.computeCustomEndpoint">computeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#compute_custom_endpoint GoogleProvider#compute_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.contactCenterInsightsCustomEndpoint">contactCenterInsightsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#contact_center_insights_custom_endpoint GoogleProvider#contact_center_insights_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.containerAnalysisCustomEndpoint">containerAnalysisCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_analysis_custom_endpoint GoogleProvider#container_analysis_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.containerAttachedCustomEndpoint">containerAttachedCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_attached_custom_endpoint GoogleProvider#container_attached_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.containerAwsCustomEndpoint">containerAwsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_aws_custom_endpoint GoogleProvider#container_aws_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.containerAzureCustomEndpoint">containerAzureCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_azure_custom_endpoint GoogleProvider#container_azure_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.containerCustomEndpoint">containerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_custom_endpoint GoogleProvider#container_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.coreBillingCustomEndpoint">coreBillingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#core_billing_custom_endpoint GoogleProvider#core_billing_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.credentials">credentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#credentials GoogleProvider#credentials}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.databaseMigrationServiceCustomEndpoint">databaseMigrationServiceCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#database_migration_service_custom_endpoint GoogleProvider#database_migration_service_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataCatalogCustomEndpoint">dataCatalogCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_catalog_custom_endpoint GoogleProvider#data_catalog_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataflowCustomEndpoint">dataflowCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataflow_custom_endpoint GoogleProvider#dataflow_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataFusionCustomEndpoint">dataFusionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_fusion_custom_endpoint GoogleProvider#data_fusion_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataLossPreventionCustomEndpoint">dataLossPreventionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_loss_prevention_custom_endpoint GoogleProvider#data_loss_prevention_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataPipelineCustomEndpoint">dataPipelineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_pipeline_custom_endpoint GoogleProvider#data_pipeline_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataplexCustomEndpoint">dataplexCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataplex_custom_endpoint GoogleProvider#dataplex_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataprocCustomEndpoint">dataprocCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_custom_endpoint GoogleProvider#dataproc_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataprocGdcCustomEndpoint">dataprocGdcCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_gdc_custom_endpoint GoogleProvider#dataproc_gdc_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataprocMetastoreCustomEndpoint">dataprocMetastoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_metastore_custom_endpoint GoogleProvider#dataproc_metastore_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.datastreamCustomEndpoint">datastreamCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#datastream_custom_endpoint GoogleProvider#datastream_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.defaultLabels">defaultLabels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#default_labels GoogleProvider#default_labels}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.deploymentManagerCustomEndpoint">deploymentManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#deployment_manager_custom_endpoint GoogleProvider#deployment_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.developerConnectCustomEndpoint">developerConnectCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#developer_connect_custom_endpoint GoogleProvider#developer_connect_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dialogflowCustomEndpoint">dialogflowCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dialogflow_custom_endpoint GoogleProvider#dialogflow_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dialogflowCxCustomEndpoint">dialogflowCxCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dialogflow_cx_custom_endpoint GoogleProvider#dialogflow_cx_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.discoveryEngineCustomEndpoint">discoveryEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#discovery_engine_custom_endpoint GoogleProvider#discovery_engine_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dnsCustomEndpoint">dnsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dns_custom_endpoint GoogleProvider#dns_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.documentAiCustomEndpoint">documentAiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#document_ai_custom_endpoint GoogleProvider#document_ai_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.documentAiWarehouseCustomEndpoint">documentAiWarehouseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#document_ai_warehouse_custom_endpoint GoogleProvider#document_ai_warehouse_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.edgecontainerCustomEndpoint">edgecontainerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#edgecontainer_custom_endpoint GoogleProvider#edgecontainer_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.edgenetworkCustomEndpoint">edgenetworkCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#edgenetwork_custom_endpoint GoogleProvider#edgenetwork_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.essentialContactsCustomEndpoint">essentialContactsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#essential_contacts_custom_endpoint GoogleProvider#essential_contacts_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.eventarcCustomEndpoint">eventarcCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#eventarc_custom_endpoint GoogleProvider#eventarc_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.beyondcorpCustomEndpoint">beyondcorpCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#beyondcorp_custom_endpoint GoogleProvider#beyondcorp_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.biglakeCustomEndpoint">biglakeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#biglake_custom_endpoint GoogleProvider#biglake_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.biglakeIcebergCustomEndpoint">biglakeIcebergCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#biglake_iceberg_custom_endpoint GoogleProvider#biglake_iceberg_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryAnalyticsHubCustomEndpoint">bigqueryAnalyticsHubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_analytics_hub_custom_endpoint GoogleProvider#bigquery_analytics_hub_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryConnectionCustomEndpoint">bigqueryConnectionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_connection_custom_endpoint GoogleProvider#bigquery_connection_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigQueryCustomEndpoint">bigQueryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#big_query_custom_endpoint GoogleProvider#big_query_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryDatapolicyCustomEndpoint">bigqueryDatapolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_datapolicy_custom_endpoint GoogleProvider#bigquery_datapolicy_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryDatapolicyv2CustomEndpoint">bigqueryDatapolicyv2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_datapolicyv2_custom_endpoint GoogleProvider#bigquery_datapolicyv2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryDataTransferCustomEndpoint">bigqueryDataTransferCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_data_transfer_custom_endpoint GoogleProvider#bigquery_data_transfer_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryReservationCustomEndpoint">bigqueryReservationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_reservation_custom_endpoint GoogleProvider#bigquery_reservation_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.bigtableCustomEndpoint">bigtableCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigtable_custom_endpoint GoogleProvider#bigtable_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.billingBudgetsCustomEndpoint">billingBudgetsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_budgets_custom_endpoint GoogleProvider#billing_budgets_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.billingCustomEndpoint">billingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_custom_endpoint GoogleProvider#billing_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.billingProject">billingProject</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_project GoogleProvider#billing_project}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.binaryAuthorizationCustomEndpoint">binaryAuthorizationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#binary_authorization_custom_endpoint GoogleProvider#binary_authorization_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.blockchainNodeEngineCustomEndpoint">blockchainNodeEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#blockchain_node_engine_custom_endpoint GoogleProvider#blockchain_node_engine_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.certificateManagerCustomEndpoint">certificateManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#certificate_manager_custom_endpoint GoogleProvider#certificate_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cesCustomEndpoint">cesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#ces_custom_endpoint GoogleProvider#ces_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.chronicleCustomEndpoint">chronicleCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#chronicle_custom_endpoint GoogleProvider#chronicle_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudAssetCustomEndpoint">cloudAssetCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_asset_custom_endpoint GoogleProvider#cloud_asset_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudBillingCustomEndpoint">cloudBillingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_billing_custom_endpoint GoogleProvider#cloud_billing_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudBuildCustomEndpoint">cloudBuildCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_build_custom_endpoint GoogleProvider#cloud_build_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudbuildv2CustomEndpoint">cloudbuildv2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloudbuildv2_custom_endpoint GoogleProvider#cloudbuildv2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.clouddeployCustomEndpoint">clouddeployCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#clouddeploy_custom_endpoint GoogleProvider#clouddeploy_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.clouddomainsCustomEndpoint">clouddomainsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#clouddomains_custom_endpoint GoogleProvider#clouddomains_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudfunctions2CustomEndpoint">cloudfunctions2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloudfunctions2_custom_endpoint GoogleProvider#cloudfunctions2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudFunctionsCustomEndpoint">cloudFunctionsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_functions_custom_endpoint GoogleProvider#cloud_functions_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudIdentityCustomEndpoint">cloudIdentityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_identity_custom_endpoint GoogleProvider#cloud_identity_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudIdsCustomEndpoint">cloudIdsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_ids_custom_endpoint GoogleProvider#cloud_ids_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudQuotasCustomEndpoint">cloudQuotasCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_quotas_custom_endpoint GoogleProvider#cloud_quotas_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudResourceManagerCustomEndpoint">cloudResourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_resource_manager_custom_endpoint GoogleProvider#cloud_resource_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudRunCustomEndpoint">cloudRunCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_run_custom_endpoint GoogleProvider#cloud_run_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudRunV2CustomEndpoint">cloudRunV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_run_v2_custom_endpoint GoogleProvider#cloud_run_v2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudSchedulerCustomEndpoint">cloudSchedulerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_scheduler_custom_endpoint GoogleProvider#cloud_scheduler_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudSecurityComplianceCustomEndpoint">cloudSecurityComplianceCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_security_compliance_custom_endpoint GoogleProvider#cloud_security_compliance_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudTasksCustomEndpoint">cloudTasksCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_tasks_custom_endpoint GoogleProvider#cloud_tasks_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.colabCustomEndpoint">colabCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#colab_custom_endpoint GoogleProvider#colab_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.composerCustomEndpoint">composerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#composer_custom_endpoint GoogleProvider#composer_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.computeCustomEndpoint">computeCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#compute_custom_endpoint GoogleProvider#compute_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.contactCenterInsightsCustomEndpoint">contactCenterInsightsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#contact_center_insights_custom_endpoint GoogleProvider#contact_center_insights_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.containerAnalysisCustomEndpoint">containerAnalysisCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_analysis_custom_endpoint GoogleProvider#container_analysis_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.containerAttachedCustomEndpoint">containerAttachedCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_attached_custom_endpoint GoogleProvider#container_attached_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.containerAwsCustomEndpoint">containerAwsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_aws_custom_endpoint GoogleProvider#container_aws_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.containerAzureCustomEndpoint">containerAzureCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_azure_custom_endpoint GoogleProvider#container_azure_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.containerCustomEndpoint">containerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_custom_endpoint GoogleProvider#container_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.coreBillingCustomEndpoint">coreBillingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#core_billing_custom_endpoint GoogleProvider#core_billing_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.credentials">credentials</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#credentials GoogleProvider#credentials}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.databaseMigrationServiceCustomEndpoint">databaseMigrationServiceCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#database_migration_service_custom_endpoint GoogleProvider#database_migration_service_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataCatalogCustomEndpoint">dataCatalogCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_catalog_custom_endpoint GoogleProvider#data_catalog_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataflowCustomEndpoint">dataflowCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataflow_custom_endpoint GoogleProvider#dataflow_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataformCustomEndpoint">dataformCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataform_custom_endpoint GoogleProvider#dataform_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataFusionCustomEndpoint">dataFusionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_fusion_custom_endpoint GoogleProvider#data_fusion_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataLineageCustomEndpoint">dataLineageCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_lineage_custom_endpoint GoogleProvider#data_lineage_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataLossPreventionCustomEndpoint">dataLossPreventionCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_loss_prevention_custom_endpoint GoogleProvider#data_loss_prevention_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataPipelineCustomEndpoint">dataPipelineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_pipeline_custom_endpoint GoogleProvider#data_pipeline_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataplexCustomEndpoint">dataplexCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataplex_custom_endpoint GoogleProvider#dataplex_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataprocCustomEndpoint">dataprocCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_custom_endpoint GoogleProvider#dataproc_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataprocGdcCustomEndpoint">dataprocGdcCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_gdc_custom_endpoint GoogleProvider#dataproc_gdc_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dataprocMetastoreCustomEndpoint">dataprocMetastoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_metastore_custom_endpoint GoogleProvider#dataproc_metastore_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.datastreamCustomEndpoint">datastreamCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#datastream_custom_endpoint GoogleProvider#datastream_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.defaultLabels">defaultLabels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#default_labels GoogleProvider#default_labels}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.deploymentManagerCustomEndpoint">deploymentManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#deployment_manager_custom_endpoint GoogleProvider#deployment_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.developerConnectCustomEndpoint">developerConnectCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#developer_connect_custom_endpoint GoogleProvider#developer_connect_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dialogflowCustomEndpoint">dialogflowCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dialogflow_custom_endpoint GoogleProvider#dialogflow_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dialogflowCxCustomEndpoint">dialogflowCxCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dialogflow_cx_custom_endpoint GoogleProvider#dialogflow_cx_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.discoveryEngineCustomEndpoint">discoveryEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#discovery_engine_custom_endpoint GoogleProvider#discovery_engine_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.dnsCustomEndpoint">dnsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dns_custom_endpoint GoogleProvider#dns_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.documentAiCustomEndpoint">documentAiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#document_ai_custom_endpoint GoogleProvider#document_ai_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.documentAiWarehouseCustomEndpoint">documentAiWarehouseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#document_ai_warehouse_custom_endpoint GoogleProvider#document_ai_warehouse_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.edgecontainerCustomEndpoint">edgecontainerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#edgecontainer_custom_endpoint GoogleProvider#edgecontainer_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.edgenetworkCustomEndpoint">edgenetworkCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#edgenetwork_custom_endpoint GoogleProvider#edgenetwork_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.essentialContactsCustomEndpoint">essentialContactsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#essential_contacts_custom_endpoint GoogleProvider#essential_contacts_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.eventarcCustomEndpoint">eventarcCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#eventarc_custom_endpoint GoogleProvider#eventarc_custom_endpoint}. |
 | <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.externalCredentials">externalCredentials</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.provider.GoogleProviderExternalCredentials">GoogleProviderExternalCredentials</a>></code> | external_credentials block. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.filestoreCustomEndpoint">filestoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#filestore_custom_endpoint GoogleProvider#filestore_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.firebaseAppCheckCustomEndpoint">firebaseAppCheckCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_app_check_custom_endpoint GoogleProvider#firebase_app_check_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.firebaseAppHostingCustomEndpoint">firebaseAppHostingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_app_hosting_custom_endpoint GoogleProvider#firebase_app_hosting_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.firebaseDataConnectCustomEndpoint">firebaseDataConnectCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_data_connect_custom_endpoint GoogleProvider#firebase_data_connect_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.firebaserulesCustomEndpoint">firebaserulesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebaserules_custom_endpoint GoogleProvider#firebaserules_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.firestoreCustomEndpoint">firestoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firestore_custom_endpoint GoogleProvider#firestore_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.geminiCustomEndpoint">geminiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gemini_custom_endpoint GoogleProvider#gemini_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.gkeBackupCustomEndpoint">gkeBackupCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_backup_custom_endpoint GoogleProvider#gke_backup_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.gkeHub2CustomEndpoint">gkeHub2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_hub2_custom_endpoint GoogleProvider#gke_hub2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.gkeHubCustomEndpoint">gkeHubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_hub_custom_endpoint GoogleProvider#gke_hub_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.gkeonpremCustomEndpoint">gkeonpremCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gkeonprem_custom_endpoint GoogleProvider#gkeonprem_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.healthcareCustomEndpoint">healthcareCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#healthcare_custom_endpoint GoogleProvider#healthcare_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iam2CustomEndpoint">iam2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam2_custom_endpoint GoogleProvider#iam2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iam3CustomEndpoint">iam3CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam3_custom_endpoint GoogleProvider#iam3_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iamBetaCustomEndpoint">iamBetaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_beta_custom_endpoint GoogleProvider#iam_beta_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iamCredentialsCustomEndpoint">iamCredentialsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_credentials_custom_endpoint GoogleProvider#iam_credentials_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iamCustomEndpoint">iamCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_custom_endpoint GoogleProvider#iam_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iamWorkforcePoolCustomEndpoint">iamWorkforcePoolCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_workforce_pool_custom_endpoint GoogleProvider#iam_workforce_pool_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iapCustomEndpoint">iapCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iap_custom_endpoint GoogleProvider#iap_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.identityPlatformCustomEndpoint">identityPlatformCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#identity_platform_custom_endpoint GoogleProvider#identity_platform_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.impersonateServiceAccount">impersonateServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#impersonate_service_account GoogleProvider#impersonate_service_account}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.impersonateServiceAccountDelegates">impersonateServiceAccountDelegates</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#impersonate_service_account_delegates GoogleProvider#impersonate_service_account_delegates}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.integrationConnectorsCustomEndpoint">integrationConnectorsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#integration_connectors_custom_endpoint GoogleProvider#integration_connectors_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.integrationsCustomEndpoint">integrationsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#integrations_custom_endpoint GoogleProvider#integrations_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.kmsCustomEndpoint">kmsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#kms_custom_endpoint GoogleProvider#kms_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.loggingCustomEndpoint">loggingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#logging_custom_endpoint GoogleProvider#logging_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.lookerCustomEndpoint">lookerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#looker_custom_endpoint GoogleProvider#looker_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.lustreCustomEndpoint">lustreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#lustre_custom_endpoint GoogleProvider#lustre_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.managedKafkaCustomEndpoint">managedKafkaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#managed_kafka_custom_endpoint GoogleProvider#managed_kafka_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.memcacheCustomEndpoint">memcacheCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#memcache_custom_endpoint GoogleProvider#memcache_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.memorystoreCustomEndpoint">memorystoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#memorystore_custom_endpoint GoogleProvider#memorystore_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.migrationCenterCustomEndpoint">migrationCenterCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#migration_center_custom_endpoint GoogleProvider#migration_center_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.mlEngineCustomEndpoint">mlEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#ml_engine_custom_endpoint GoogleProvider#ml_engine_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.modelArmorCustomEndpoint">modelArmorCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#model_armor_custom_endpoint GoogleProvider#model_armor_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.modelArmorGlobalCustomEndpoint">modelArmorGlobalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#model_armor_global_custom_endpoint GoogleProvider#model_armor_global_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.monitoringCustomEndpoint">monitoringCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#monitoring_custom_endpoint GoogleProvider#monitoring_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.netappCustomEndpoint">netappCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#netapp_custom_endpoint GoogleProvider#netapp_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.networkConnectivityCustomEndpoint">networkConnectivityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_connectivity_custom_endpoint GoogleProvider#network_connectivity_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.networkManagementCustomEndpoint">networkManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_management_custom_endpoint GoogleProvider#network_management_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.networkSecurityCustomEndpoint">networkSecurityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_security_custom_endpoint GoogleProvider#network_security_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.networkServicesCustomEndpoint">networkServicesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_services_custom_endpoint GoogleProvider#network_services_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.notebooksCustomEndpoint">notebooksCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#notebooks_custom_endpoint GoogleProvider#notebooks_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.oracleDatabaseCustomEndpoint">oracleDatabaseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#oracle_database_custom_endpoint GoogleProvider#oracle_database_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.orgPolicyCustomEndpoint">orgPolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#org_policy_custom_endpoint GoogleProvider#org_policy_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.osConfigCustomEndpoint">osConfigCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_config_custom_endpoint GoogleProvider#os_config_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.osConfigV2CustomEndpoint">osConfigV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_config_v2_custom_endpoint GoogleProvider#os_config_v2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.osLoginCustomEndpoint">osLoginCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_login_custom_endpoint GoogleProvider#os_login_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.parallelstoreCustomEndpoint">parallelstoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parallelstore_custom_endpoint GoogleProvider#parallelstore_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.parameterManagerCustomEndpoint">parameterManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parameter_manager_custom_endpoint GoogleProvider#parameter_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.parameterManagerRegionalCustomEndpoint">parameterManagerRegionalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parameter_manager_regional_custom_endpoint GoogleProvider#parameter_manager_regional_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.privatecaCustomEndpoint">privatecaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#privateca_custom_endpoint GoogleProvider#privateca_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.privilegedAccessManagerCustomEndpoint">privilegedAccessManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#privileged_access_manager_custom_endpoint GoogleProvider#privileged_access_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#project GoogleProvider#project}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.publicCaCustomEndpoint">publicCaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#public_ca_custom_endpoint GoogleProvider#public_ca_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.pubsubCustomEndpoint">pubsubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#pubsub_custom_endpoint GoogleProvider#pubsub_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.pubsubLiteCustomEndpoint">pubsubLiteCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#pubsub_lite_custom_endpoint GoogleProvider#pubsub_lite_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.recaptchaEnterpriseCustomEndpoint">recaptchaEnterpriseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#recaptcha_enterprise_custom_endpoint GoogleProvider#recaptcha_enterprise_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.redisCustomEndpoint">redisCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#redis_custom_endpoint GoogleProvider#redis_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#region GoogleProvider#region}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.requestReason">requestReason</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#request_reason GoogleProvider#request_reason}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.requestTimeout">requestTimeout</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#request_timeout GoogleProvider#request_timeout}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.resourceManagerCustomEndpoint">resourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#resource_manager_custom_endpoint GoogleProvider#resource_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.resourceManagerV3CustomEndpoint">resourceManagerV3CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#resource_manager_v3_custom_endpoint GoogleProvider#resource_manager_v3_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#scopes GoogleProvider#scopes}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.secretManagerCustomEndpoint">secretManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secret_manager_custom_endpoint GoogleProvider#secret_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.secretManagerRegionalCustomEndpoint">secretManagerRegionalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secret_manager_regional_custom_endpoint GoogleProvider#secret_manager_regional_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.secureSourceManagerCustomEndpoint">secureSourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secure_source_manager_custom_endpoint GoogleProvider#secure_source_manager_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.securityCenterCustomEndpoint">securityCenterCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_custom_endpoint GoogleProvider#security_center_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.securityCenterManagementCustomEndpoint">securityCenterManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_management_custom_endpoint GoogleProvider#security_center_management_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.securityCenterV2CustomEndpoint">securityCenterV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_v2_custom_endpoint GoogleProvider#security_center_v2_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.securitypostureCustomEndpoint">securitypostureCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#securityposture_custom_endpoint GoogleProvider#securityposture_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.serviceManagementCustomEndpoint">serviceManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_management_custom_endpoint GoogleProvider#service_management_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.serviceNetworkingCustomEndpoint">serviceNetworkingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_networking_custom_endpoint GoogleProvider#service_networking_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.serviceUsageCustomEndpoint">serviceUsageCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_usage_custom_endpoint GoogleProvider#service_usage_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.siteVerificationCustomEndpoint">siteVerificationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#site_verification_custom_endpoint GoogleProvider#site_verification_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.sourceRepoCustomEndpoint">sourceRepoCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#source_repo_custom_endpoint GoogleProvider#source_repo_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.spannerCustomEndpoint">spannerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#spanner_custom_endpoint GoogleProvider#spanner_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.sqlCustomEndpoint">sqlCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#sql_custom_endpoint GoogleProvider#sql_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.storageBatchOperationsCustomEndpoint">storageBatchOperationsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_batch_operations_custom_endpoint GoogleProvider#storage_batch_operations_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.storageControlCustomEndpoint">storageControlCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_control_custom_endpoint GoogleProvider#storage_control_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.storageCustomEndpoint">storageCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_custom_endpoint GoogleProvider#storage_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.storageInsightsCustomEndpoint">storageInsightsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_insights_custom_endpoint GoogleProvider#storage_insights_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.storageTransferCustomEndpoint">storageTransferCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_transfer_custom_endpoint GoogleProvider#storage_transfer_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.tagsCustomEndpoint">tagsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tags_custom_endpoint GoogleProvider#tags_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.tagsLocationCustomEndpoint">tagsLocationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tags_location_custom_endpoint GoogleProvider#tags_location_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.terraformAttributionLabelAdditionStrategy">terraformAttributionLabelAdditionStrategy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#terraform_attribution_label_addition_strategy GoogleProvider#terraform_attribution_label_addition_strategy}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.tpuCustomEndpoint">tpuCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tpu_custom_endpoint GoogleProvider#tpu_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.transcoderCustomEndpoint">transcoderCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#transcoder_custom_endpoint GoogleProvider#transcoder_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.universeDomain">universeDomain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#universe_domain GoogleProvider#universe_domain}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.userProjectOverride">userProjectOverride</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#user_project_override GoogleProvider#user_project_override}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.vertexAiCustomEndpoint">vertexAiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vertex_ai_custom_endpoint GoogleProvider#vertex_ai_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.vmwareengineCustomEndpoint">vmwareengineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vmwareengine_custom_endpoint GoogleProvider#vmwareengine_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.vpcAccessCustomEndpoint">vpcAccessCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vpc_access_custom_endpoint GoogleProvider#vpc_access_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.workbenchCustomEndpoint">workbenchCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#workbench_custom_endpoint GoogleProvider#workbench_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.workflowsCustomEndpoint">workflowsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#workflows_custom_endpoint GoogleProvider#workflows_custom_endpoint}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#zone GoogleProvider#zone}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.filestoreCustomEndpoint">filestoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#filestore_custom_endpoint GoogleProvider#filestore_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.firebaseAppCheckCustomEndpoint">firebaseAppCheckCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_app_check_custom_endpoint GoogleProvider#firebase_app_check_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.firebaseAppHostingCustomEndpoint">firebaseAppHostingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_app_hosting_custom_endpoint GoogleProvider#firebase_app_hosting_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.firebaseDataConnectCustomEndpoint">firebaseDataConnectCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_data_connect_custom_endpoint GoogleProvider#firebase_data_connect_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.firebaseRemoteConfigCustomEndpoint">firebaseRemoteConfigCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_remote_config_custom_endpoint GoogleProvider#firebase_remote_config_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.firebaserulesCustomEndpoint">firebaserulesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebaserules_custom_endpoint GoogleProvider#firebaserules_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.firestoreCustomEndpoint">firestoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firestore_custom_endpoint GoogleProvider#firestore_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.geminiCustomEndpoint">geminiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gemini_custom_endpoint GoogleProvider#gemini_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.gkeBackupCustomEndpoint">gkeBackupCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_backup_custom_endpoint GoogleProvider#gke_backup_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.gkeHub2CustomEndpoint">gkeHub2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_hub2_custom_endpoint GoogleProvider#gke_hub2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.gkeHubCustomEndpoint">gkeHubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_hub_custom_endpoint GoogleProvider#gke_hub_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.gkeonpremCustomEndpoint">gkeonpremCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gkeonprem_custom_endpoint GoogleProvider#gkeonprem_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.healthcareCustomEndpoint">healthcareCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#healthcare_custom_endpoint GoogleProvider#healthcare_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.hypercomputeclusterCustomEndpoint">hypercomputeclusterCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#hypercomputecluster_custom_endpoint GoogleProvider#hypercomputecluster_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iam2CustomEndpoint">iam2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam2_custom_endpoint GoogleProvider#iam2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iam3CustomEndpoint">iam3CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam3_custom_endpoint GoogleProvider#iam3_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iamBetaCustomEndpoint">iamBetaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_beta_custom_endpoint GoogleProvider#iam_beta_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iamCredentialsCustomEndpoint">iamCredentialsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_credentials_custom_endpoint GoogleProvider#iam_credentials_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iamCustomEndpoint">iamCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_custom_endpoint GoogleProvider#iam_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iamWorkforcePoolCustomEndpoint">iamWorkforcePoolCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_workforce_pool_custom_endpoint GoogleProvider#iam_workforce_pool_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.iapCustomEndpoint">iapCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iap_custom_endpoint GoogleProvider#iap_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.identityPlatformCustomEndpoint">identityPlatformCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#identity_platform_custom_endpoint GoogleProvider#identity_platform_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.impersonateServiceAccount">impersonateServiceAccount</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#impersonate_service_account GoogleProvider#impersonate_service_account}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.impersonateServiceAccountDelegates">impersonateServiceAccountDelegates</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#impersonate_service_account_delegates GoogleProvider#impersonate_service_account_delegates}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.integrationConnectorsCustomEndpoint">integrationConnectorsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#integration_connectors_custom_endpoint GoogleProvider#integration_connectors_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.integrationsCustomEndpoint">integrationsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#integrations_custom_endpoint GoogleProvider#integrations_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.kmsCustomEndpoint">kmsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#kms_custom_endpoint GoogleProvider#kms_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.loggingCustomEndpoint">loggingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#logging_custom_endpoint GoogleProvider#logging_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.lookerCustomEndpoint">lookerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#looker_custom_endpoint GoogleProvider#looker_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.lustreCustomEndpoint">lustreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#lustre_custom_endpoint GoogleProvider#lustre_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.managedKafkaCustomEndpoint">managedKafkaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#managed_kafka_custom_endpoint GoogleProvider#managed_kafka_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.memcacheCustomEndpoint">memcacheCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#memcache_custom_endpoint GoogleProvider#memcache_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.memorystoreCustomEndpoint">memorystoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#memorystore_custom_endpoint GoogleProvider#memorystore_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.migrationCenterCustomEndpoint">migrationCenterCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#migration_center_custom_endpoint GoogleProvider#migration_center_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.mlEngineCustomEndpoint">mlEngineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#ml_engine_custom_endpoint GoogleProvider#ml_engine_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.modelArmorCustomEndpoint">modelArmorCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#model_armor_custom_endpoint GoogleProvider#model_armor_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.modelArmorGlobalCustomEndpoint">modelArmorGlobalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#model_armor_global_custom_endpoint GoogleProvider#model_armor_global_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.monitoringCustomEndpoint">monitoringCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#monitoring_custom_endpoint GoogleProvider#monitoring_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.netappCustomEndpoint">netappCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#netapp_custom_endpoint GoogleProvider#netapp_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.networkConnectivityCustomEndpoint">networkConnectivityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_connectivity_custom_endpoint GoogleProvider#network_connectivity_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.networkConnectivityv1CustomEndpoint">networkConnectivityv1CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_connectivityv1_custom_endpoint GoogleProvider#network_connectivityv1_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.networkManagementCustomEndpoint">networkManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_management_custom_endpoint GoogleProvider#network_management_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.networkSecurityCustomEndpoint">networkSecurityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_security_custom_endpoint GoogleProvider#network_security_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.networkServicesCustomEndpoint">networkServicesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_services_custom_endpoint GoogleProvider#network_services_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.notebooksCustomEndpoint">notebooksCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#notebooks_custom_endpoint GoogleProvider#notebooks_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.observabilityCustomEndpoint">observabilityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#observability_custom_endpoint GoogleProvider#observability_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.oracleDatabaseCustomEndpoint">oracleDatabaseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#oracle_database_custom_endpoint GoogleProvider#oracle_database_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.orgPolicyCustomEndpoint">orgPolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#org_policy_custom_endpoint GoogleProvider#org_policy_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.osConfigCustomEndpoint">osConfigCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_config_custom_endpoint GoogleProvider#os_config_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.osConfigV2CustomEndpoint">osConfigV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_config_v2_custom_endpoint GoogleProvider#os_config_v2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.osLoginCustomEndpoint">osLoginCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_login_custom_endpoint GoogleProvider#os_login_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.parallelstoreCustomEndpoint">parallelstoreCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parallelstore_custom_endpoint GoogleProvider#parallelstore_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.parameterManagerCustomEndpoint">parameterManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parameter_manager_custom_endpoint GoogleProvider#parameter_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.parameterManagerRegionalCustomEndpoint">parameterManagerRegionalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parameter_manager_regional_custom_endpoint GoogleProvider#parameter_manager_regional_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.pollInterval">pollInterval</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#poll_interval GoogleProvider#poll_interval}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.preferGlobalEndpoints">preferGlobalEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#prefer_global_endpoints GoogleProvider#prefer_global_endpoints}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.preferRegionalEndpoints">preferRegionalEndpoints</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#prefer_regional_endpoints GoogleProvider#prefer_regional_endpoints}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.privatecaCustomEndpoint">privatecaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#privateca_custom_endpoint GoogleProvider#privateca_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.privilegedAccessManagerCustomEndpoint">privilegedAccessManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#privileged_access_manager_custom_endpoint GoogleProvider#privileged_access_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#project GoogleProvider#project}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.publicCaCustomEndpoint">publicCaCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#public_ca_custom_endpoint GoogleProvider#public_ca_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.pubsubCustomEndpoint">pubsubCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#pubsub_custom_endpoint GoogleProvider#pubsub_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.pubsubLiteCustomEndpoint">pubsubLiteCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#pubsub_lite_custom_endpoint GoogleProvider#pubsub_lite_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.recaptchaEnterpriseCustomEndpoint">recaptchaEnterpriseCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#recaptcha_enterprise_custom_endpoint GoogleProvider#recaptcha_enterprise_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.redisCustomEndpoint">redisCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#redis_custom_endpoint GoogleProvider#redis_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#region GoogleProvider#region}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.requestReason">requestReason</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#request_reason GoogleProvider#request_reason}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.requestTimeout">requestTimeout</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#request_timeout GoogleProvider#request_timeout}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.resourceManager3CustomEndpoint">resourceManager3CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager3_custom_endpoint GoogleProvider#resource_manager3_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.resourceManagerCustomEndpoint">resourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager_custom_endpoint GoogleProvider#resource_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.resourceManagerV3CustomEndpoint">resourceManagerV3CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager_v3_custom_endpoint GoogleProvider#resource_manager_v3_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.scopes">scopes</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#scopes GoogleProvider#scopes}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.secretManagerCustomEndpoint">secretManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secret_manager_custom_endpoint GoogleProvider#secret_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.secretManagerRegionalCustomEndpoint">secretManagerRegionalCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secret_manager_regional_custom_endpoint GoogleProvider#secret_manager_regional_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.secureSourceManagerCustomEndpoint">secureSourceManagerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secure_source_manager_custom_endpoint GoogleProvider#secure_source_manager_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.securityCenterCustomEndpoint">securityCenterCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_custom_endpoint GoogleProvider#security_center_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.securityCenterManagementCustomEndpoint">securityCenterManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_management_custom_endpoint GoogleProvider#security_center_management_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.securityCenterV2CustomEndpoint">securityCenterV2CustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_v2_custom_endpoint GoogleProvider#security_center_v2_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.securitypostureCustomEndpoint">securitypostureCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#securityposture_custom_endpoint GoogleProvider#securityposture_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.serviceDirectoryCustomEndpoint">serviceDirectoryCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_directory_custom_endpoint GoogleProvider#service_directory_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.serviceManagementCustomEndpoint">serviceManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_management_custom_endpoint GoogleProvider#service_management_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.serviceNetworkingCustomEndpoint">serviceNetworkingCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_networking_custom_endpoint GoogleProvider#service_networking_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.serviceUsageCustomEndpoint">serviceUsageCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_usage_custom_endpoint GoogleProvider#service_usage_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.siteVerificationCustomEndpoint">siteVerificationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#site_verification_custom_endpoint GoogleProvider#site_verification_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.sourceRepoCustomEndpoint">sourceRepoCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#source_repo_custom_endpoint GoogleProvider#source_repo_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.spannerCustomEndpoint">spannerCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#spanner_custom_endpoint GoogleProvider#spanner_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.sqlCustomEndpoint">sqlCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#sql_custom_endpoint GoogleProvider#sql_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.storageBatchOperationsCustomEndpoint">storageBatchOperationsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_batch_operations_custom_endpoint GoogleProvider#storage_batch_operations_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.storageControlCustomEndpoint">storageControlCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_control_custom_endpoint GoogleProvider#storage_control_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.storageCustomEndpoint">storageCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_custom_endpoint GoogleProvider#storage_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.storageInsightsCustomEndpoint">storageInsightsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_insights_custom_endpoint GoogleProvider#storage_insights_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.storageTransferCustomEndpoint">storageTransferCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_transfer_custom_endpoint GoogleProvider#storage_transfer_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.tagsCustomEndpoint">tagsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#tags_custom_endpoint GoogleProvider#tags_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.tagsLocationCustomEndpoint">tagsLocationCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#tags_location_custom_endpoint GoogleProvider#tags_location_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.terraformAttributionLabelAdditionStrategy">terraformAttributionLabelAdditionStrategy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#terraform_attribution_label_addition_strategy GoogleProvider#terraform_attribution_label_addition_strategy}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.transcoderCustomEndpoint">transcoderCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#transcoder_custom_endpoint GoogleProvider#transcoder_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.universeDomain">universeDomain</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#universe_domain GoogleProvider#universe_domain}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.userProjectOverride">userProjectOverride</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#user_project_override GoogleProvider#user_project_override}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.vectorSearchCustomEndpoint">vectorSearchCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vector_search_custom_endpoint GoogleProvider#vector_search_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.vertexAiCustomEndpoint">vertexAiCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vertex_ai_custom_endpoint GoogleProvider#vertex_ai_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.vmwareengineCustomEndpoint">vmwareengineCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vmwareengine_custom_endpoint GoogleProvider#vmwareengine_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.vpcAccessCustomEndpoint">vpcAccessCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vpc_access_custom_endpoint GoogleProvider#vpc_access_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.workbenchCustomEndpoint">workbenchCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workbench_custom_endpoint GoogleProvider#workbench_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.workflowsCustomEndpoint">workflowsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workflows_custom_endpoint GoogleProvider#workflows_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.workloadIdentityCustomEndpoint">workloadIdentityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workload_identity_custom_endpoint GoogleProvider#workload_identity_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.workstationsCustomEndpoint">workstationsCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workstations_custom_endpoint GoogleProvider#workstations_custom_endpoint}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#zone GoogleProvider#zone}. |
 
 ---
 
@@ -7795,7 +8533,7 @@ public java.lang.String getAccessApprovalCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_approval_custom_endpoint GoogleProvider#access_approval_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_approval_custom_endpoint GoogleProvider#access_approval_custom_endpoint}.
 
 ---
 
@@ -7807,7 +8545,7 @@ public java.lang.String getAccessContextManagerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_context_manager_custom_endpoint GoogleProvider#access_context_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_context_manager_custom_endpoint GoogleProvider#access_context_manager_custom_endpoint}.
 
 ---
 
@@ -7819,7 +8557,7 @@ public java.lang.String getAccessToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#access_token GoogleProvider#access_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#access_token GoogleProvider#access_token}.
 
 ---
 
@@ -7831,7 +8569,7 @@ public java.lang.String getActiveDirectoryCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#active_directory_custom_endpoint GoogleProvider#active_directory_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#active_directory_custom_endpoint GoogleProvider#active_directory_custom_endpoint}.
 
 ---
 
@@ -7843,7 +8581,7 @@ public java.lang.Boolean|IResolvable getAddTerraformAttributionLabel();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#add_terraform_attribution_label GoogleProvider#add_terraform_attribution_label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#add_terraform_attribution_label GoogleProvider#add_terraform_attribution_label}.
 
 ---
 
@@ -7857,7 +8595,7 @@ public java.lang.String getAlias();
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#alias GoogleProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#alias GoogleProvider#alias}
 
 ---
 
@@ -7869,7 +8607,7 @@ public java.lang.String getAlloydbCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#alloydb_custom_endpoint GoogleProvider#alloydb_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#alloydb_custom_endpoint GoogleProvider#alloydb_custom_endpoint}.
 
 ---
 
@@ -7881,7 +8619,7 @@ public java.lang.String getApigeeCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apigee_custom_endpoint GoogleProvider#apigee_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apigee_custom_endpoint GoogleProvider#apigee_custom_endpoint}.
 
 ---
 
@@ -7893,7 +8631,7 @@ public java.lang.String getApihubCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apihub_custom_endpoint GoogleProvider#apihub_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apihub_custom_endpoint GoogleProvider#apihub_custom_endpoint}.
 
 ---
 
@@ -7905,7 +8643,7 @@ public java.lang.String getApikeysCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apikeys_custom_endpoint GoogleProvider#apikeys_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apikeys_custom_endpoint GoogleProvider#apikeys_custom_endpoint}.
 
 ---
 
@@ -7917,7 +8655,7 @@ public java.lang.String getAppEngineCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#app_engine_custom_endpoint GoogleProvider#app_engine_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#app_engine_custom_endpoint GoogleProvider#app_engine_custom_endpoint}.
 
 ---
 
@@ -7929,7 +8667,7 @@ public java.lang.String getApphubCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#apphub_custom_endpoint GoogleProvider#apphub_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#apphub_custom_endpoint GoogleProvider#apphub_custom_endpoint}.
 
 ---
 
@@ -7941,7 +8679,7 @@ public java.lang.String getArtifactRegistryCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#artifact_registry_custom_endpoint GoogleProvider#artifact_registry_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#artifact_registry_custom_endpoint GoogleProvider#artifact_registry_custom_endpoint}.
 
 ---
 
@@ -7953,7 +8691,7 @@ public java.lang.String getAssuredWorkloadsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#assured_workloads_custom_endpoint GoogleProvider#assured_workloads_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#assured_workloads_custom_endpoint GoogleProvider#assured_workloads_custom_endpoint}.
 
 ---
 
@@ -7965,7 +8703,7 @@ public java.lang.String getBackupDrCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#backup_dr_custom_endpoint GoogleProvider#backup_dr_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#backup_dr_custom_endpoint GoogleProvider#backup_dr_custom_endpoint}.
 
 ---
 
@@ -7979,7 +8717,7 @@ public IResolvable|java.util.List<GoogleProviderBatching> getBatching();
 
 batching block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#batching GoogleProvider#batching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#batching GoogleProvider#batching}
 
 ---
 
@@ -7991,7 +8729,7 @@ public java.lang.String getBeyondcorpCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#beyondcorp_custom_endpoint GoogleProvider#beyondcorp_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#beyondcorp_custom_endpoint GoogleProvider#beyondcorp_custom_endpoint}.
 
 ---
 
@@ -8003,7 +8741,19 @@ public java.lang.String getBiglakeCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#biglake_custom_endpoint GoogleProvider#biglake_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#biglake_custom_endpoint GoogleProvider#biglake_custom_endpoint}.
+
+---
+
+##### `biglakeIcebergCustomEndpoint`<sup>Optional</sup> <a name="biglakeIcebergCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.biglakeIcebergCustomEndpoint"></a>
+
+```java
+public java.lang.String getBiglakeIcebergCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#biglake_iceberg_custom_endpoint GoogleProvider#biglake_iceberg_custom_endpoint}.
 
 ---
 
@@ -8015,7 +8765,7 @@ public java.lang.String getBigqueryAnalyticsHubCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_analytics_hub_custom_endpoint GoogleProvider#bigquery_analytics_hub_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_analytics_hub_custom_endpoint GoogleProvider#bigquery_analytics_hub_custom_endpoint}.
 
 ---
 
@@ -8027,7 +8777,7 @@ public java.lang.String getBigqueryConnectionCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_connection_custom_endpoint GoogleProvider#bigquery_connection_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_connection_custom_endpoint GoogleProvider#bigquery_connection_custom_endpoint}.
 
 ---
 
@@ -8039,7 +8789,7 @@ public java.lang.String getBigQueryCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#big_query_custom_endpoint GoogleProvider#big_query_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#big_query_custom_endpoint GoogleProvider#big_query_custom_endpoint}.
 
 ---
 
@@ -8051,7 +8801,19 @@ public java.lang.String getBigqueryDatapolicyCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_datapolicy_custom_endpoint GoogleProvider#bigquery_datapolicy_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_datapolicy_custom_endpoint GoogleProvider#bigquery_datapolicy_custom_endpoint}.
+
+---
+
+##### `bigqueryDatapolicyv2CustomEndpoint`<sup>Optional</sup> <a name="bigqueryDatapolicyv2CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.bigqueryDatapolicyv2CustomEndpoint"></a>
+
+```java
+public java.lang.String getBigqueryDatapolicyv2CustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_datapolicyv2_custom_endpoint GoogleProvider#bigquery_datapolicyv2_custom_endpoint}.
 
 ---
 
@@ -8063,7 +8825,7 @@ public java.lang.String getBigqueryDataTransferCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_data_transfer_custom_endpoint GoogleProvider#bigquery_data_transfer_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_data_transfer_custom_endpoint GoogleProvider#bigquery_data_transfer_custom_endpoint}.
 
 ---
 
@@ -8075,7 +8837,7 @@ public java.lang.String getBigqueryReservationCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigquery_reservation_custom_endpoint GoogleProvider#bigquery_reservation_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigquery_reservation_custom_endpoint GoogleProvider#bigquery_reservation_custom_endpoint}.
 
 ---
 
@@ -8087,7 +8849,19 @@ public java.lang.String getBigtableCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#bigtable_custom_endpoint GoogleProvider#bigtable_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#bigtable_custom_endpoint GoogleProvider#bigtable_custom_endpoint}.
+
+---
+
+##### `billingBudgetsCustomEndpoint`<sup>Optional</sup> <a name="billingBudgetsCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.billingBudgetsCustomEndpoint"></a>
+
+```java
+public java.lang.String getBillingBudgetsCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_budgets_custom_endpoint GoogleProvider#billing_budgets_custom_endpoint}.
 
 ---
 
@@ -8099,7 +8873,7 @@ public java.lang.String getBillingCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#billing_custom_endpoint GoogleProvider#billing_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_custom_endpoint GoogleProvider#billing_custom_endpoint}.
 
 ---
 
@@ -8111,7 +8885,7 @@ public java.lang.String getBillingProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#billing_project GoogleProvider#billing_project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#billing_project GoogleProvider#billing_project}.
 
 ---
 
@@ -8123,7 +8897,7 @@ public java.lang.String getBinaryAuthorizationCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#binary_authorization_custom_endpoint GoogleProvider#binary_authorization_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#binary_authorization_custom_endpoint GoogleProvider#binary_authorization_custom_endpoint}.
 
 ---
 
@@ -8135,7 +8909,7 @@ public java.lang.String getBlockchainNodeEngineCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#blockchain_node_engine_custom_endpoint GoogleProvider#blockchain_node_engine_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#blockchain_node_engine_custom_endpoint GoogleProvider#blockchain_node_engine_custom_endpoint}.
 
 ---
 
@@ -8147,7 +8921,19 @@ public java.lang.String getCertificateManagerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#certificate_manager_custom_endpoint GoogleProvider#certificate_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#certificate_manager_custom_endpoint GoogleProvider#certificate_manager_custom_endpoint}.
+
+---
+
+##### `cesCustomEndpoint`<sup>Optional</sup> <a name="cesCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.cesCustomEndpoint"></a>
+
+```java
+public java.lang.String getCesCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#ces_custom_endpoint GoogleProvider#ces_custom_endpoint}.
 
 ---
 
@@ -8159,7 +8945,7 @@ public java.lang.String getChronicleCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#chronicle_custom_endpoint GoogleProvider#chronicle_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#chronicle_custom_endpoint GoogleProvider#chronicle_custom_endpoint}.
 
 ---
 
@@ -8171,7 +8957,7 @@ public java.lang.String getCloudAssetCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_asset_custom_endpoint GoogleProvider#cloud_asset_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_asset_custom_endpoint GoogleProvider#cloud_asset_custom_endpoint}.
 
 ---
 
@@ -8183,7 +8969,7 @@ public java.lang.String getCloudBillingCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_billing_custom_endpoint GoogleProvider#cloud_billing_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_billing_custom_endpoint GoogleProvider#cloud_billing_custom_endpoint}.
 
 ---
 
@@ -8195,7 +8981,7 @@ public java.lang.String getCloudBuildCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_build_custom_endpoint GoogleProvider#cloud_build_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_build_custom_endpoint GoogleProvider#cloud_build_custom_endpoint}.
 
 ---
 
@@ -8207,7 +8993,7 @@ public java.lang.String getCloudbuildv2CustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloudbuildv2_custom_endpoint GoogleProvider#cloudbuildv2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloudbuildv2_custom_endpoint GoogleProvider#cloudbuildv2_custom_endpoint}.
 
 ---
 
@@ -8219,7 +9005,7 @@ public java.lang.String getClouddeployCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#clouddeploy_custom_endpoint GoogleProvider#clouddeploy_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#clouddeploy_custom_endpoint GoogleProvider#clouddeploy_custom_endpoint}.
 
 ---
 
@@ -8231,7 +9017,7 @@ public java.lang.String getClouddomainsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#clouddomains_custom_endpoint GoogleProvider#clouddomains_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#clouddomains_custom_endpoint GoogleProvider#clouddomains_custom_endpoint}.
 
 ---
 
@@ -8243,7 +9029,7 @@ public java.lang.String getCloudfunctions2CustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloudfunctions2_custom_endpoint GoogleProvider#cloudfunctions2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloudfunctions2_custom_endpoint GoogleProvider#cloudfunctions2_custom_endpoint}.
 
 ---
 
@@ -8255,7 +9041,7 @@ public java.lang.String getCloudFunctionsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_functions_custom_endpoint GoogleProvider#cloud_functions_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_functions_custom_endpoint GoogleProvider#cloud_functions_custom_endpoint}.
 
 ---
 
@@ -8267,7 +9053,7 @@ public java.lang.String getCloudIdentityCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_identity_custom_endpoint GoogleProvider#cloud_identity_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_identity_custom_endpoint GoogleProvider#cloud_identity_custom_endpoint}.
 
 ---
 
@@ -8279,7 +9065,7 @@ public java.lang.String getCloudIdsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_ids_custom_endpoint GoogleProvider#cloud_ids_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_ids_custom_endpoint GoogleProvider#cloud_ids_custom_endpoint}.
 
 ---
 
@@ -8291,7 +9077,7 @@ public java.lang.String getCloudQuotasCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_quotas_custom_endpoint GoogleProvider#cloud_quotas_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_quotas_custom_endpoint GoogleProvider#cloud_quotas_custom_endpoint}.
 
 ---
 
@@ -8303,7 +9089,7 @@ public java.lang.String getCloudResourceManagerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_resource_manager_custom_endpoint GoogleProvider#cloud_resource_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_resource_manager_custom_endpoint GoogleProvider#cloud_resource_manager_custom_endpoint}.
 
 ---
 
@@ -8315,7 +9101,7 @@ public java.lang.String getCloudRunCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_run_custom_endpoint GoogleProvider#cloud_run_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_run_custom_endpoint GoogleProvider#cloud_run_custom_endpoint}.
 
 ---
 
@@ -8327,7 +9113,7 @@ public java.lang.String getCloudRunV2CustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_run_v2_custom_endpoint GoogleProvider#cloud_run_v2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_run_v2_custom_endpoint GoogleProvider#cloud_run_v2_custom_endpoint}.
 
 ---
 
@@ -8339,7 +9125,19 @@ public java.lang.String getCloudSchedulerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_scheduler_custom_endpoint GoogleProvider#cloud_scheduler_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_scheduler_custom_endpoint GoogleProvider#cloud_scheduler_custom_endpoint}.
+
+---
+
+##### `cloudSecurityComplianceCustomEndpoint`<sup>Optional</sup> <a name="cloudSecurityComplianceCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.cloudSecurityComplianceCustomEndpoint"></a>
+
+```java
+public java.lang.String getCloudSecurityComplianceCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_security_compliance_custom_endpoint GoogleProvider#cloud_security_compliance_custom_endpoint}.
 
 ---
 
@@ -8351,7 +9149,7 @@ public java.lang.String getCloudTasksCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#cloud_tasks_custom_endpoint GoogleProvider#cloud_tasks_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#cloud_tasks_custom_endpoint GoogleProvider#cloud_tasks_custom_endpoint}.
 
 ---
 
@@ -8363,7 +9161,7 @@ public java.lang.String getColabCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#colab_custom_endpoint GoogleProvider#colab_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#colab_custom_endpoint GoogleProvider#colab_custom_endpoint}.
 
 ---
 
@@ -8375,7 +9173,7 @@ public java.lang.String getComposerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#composer_custom_endpoint GoogleProvider#composer_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#composer_custom_endpoint GoogleProvider#composer_custom_endpoint}.
 
 ---
 
@@ -8387,7 +9185,7 @@ public java.lang.String getComputeCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#compute_custom_endpoint GoogleProvider#compute_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#compute_custom_endpoint GoogleProvider#compute_custom_endpoint}.
 
 ---
 
@@ -8399,7 +9197,7 @@ public java.lang.String getContactCenterInsightsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#contact_center_insights_custom_endpoint GoogleProvider#contact_center_insights_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#contact_center_insights_custom_endpoint GoogleProvider#contact_center_insights_custom_endpoint}.
 
 ---
 
@@ -8411,7 +9209,7 @@ public java.lang.String getContainerAnalysisCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_analysis_custom_endpoint GoogleProvider#container_analysis_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_analysis_custom_endpoint GoogleProvider#container_analysis_custom_endpoint}.
 
 ---
 
@@ -8423,7 +9221,7 @@ public java.lang.String getContainerAttachedCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_attached_custom_endpoint GoogleProvider#container_attached_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_attached_custom_endpoint GoogleProvider#container_attached_custom_endpoint}.
 
 ---
 
@@ -8435,7 +9233,7 @@ public java.lang.String getContainerAwsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_aws_custom_endpoint GoogleProvider#container_aws_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_aws_custom_endpoint GoogleProvider#container_aws_custom_endpoint}.
 
 ---
 
@@ -8447,7 +9245,7 @@ public java.lang.String getContainerAzureCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_azure_custom_endpoint GoogleProvider#container_azure_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_azure_custom_endpoint GoogleProvider#container_azure_custom_endpoint}.
 
 ---
 
@@ -8459,7 +9257,7 @@ public java.lang.String getContainerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#container_custom_endpoint GoogleProvider#container_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#container_custom_endpoint GoogleProvider#container_custom_endpoint}.
 
 ---
 
@@ -8471,7 +9269,7 @@ public java.lang.String getCoreBillingCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#core_billing_custom_endpoint GoogleProvider#core_billing_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#core_billing_custom_endpoint GoogleProvider#core_billing_custom_endpoint}.
 
 ---
 
@@ -8483,7 +9281,7 @@ public java.lang.String getCredentials();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#credentials GoogleProvider#credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#credentials GoogleProvider#credentials}.
 
 ---
 
@@ -8495,7 +9293,7 @@ public java.lang.String getDatabaseMigrationServiceCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#database_migration_service_custom_endpoint GoogleProvider#database_migration_service_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#database_migration_service_custom_endpoint GoogleProvider#database_migration_service_custom_endpoint}.
 
 ---
 
@@ -8507,7 +9305,7 @@ public java.lang.String getDataCatalogCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_catalog_custom_endpoint GoogleProvider#data_catalog_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_catalog_custom_endpoint GoogleProvider#data_catalog_custom_endpoint}.
 
 ---
 
@@ -8519,7 +9317,19 @@ public java.lang.String getDataflowCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataflow_custom_endpoint GoogleProvider#dataflow_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataflow_custom_endpoint GoogleProvider#dataflow_custom_endpoint}.
+
+---
+
+##### `dataformCustomEndpoint`<sup>Optional</sup> <a name="dataformCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.dataformCustomEndpoint"></a>
+
+```java
+public java.lang.String getDataformCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataform_custom_endpoint GoogleProvider#dataform_custom_endpoint}.
 
 ---
 
@@ -8531,7 +9341,19 @@ public java.lang.String getDataFusionCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_fusion_custom_endpoint GoogleProvider#data_fusion_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_fusion_custom_endpoint GoogleProvider#data_fusion_custom_endpoint}.
+
+---
+
+##### `dataLineageCustomEndpoint`<sup>Optional</sup> <a name="dataLineageCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.dataLineageCustomEndpoint"></a>
+
+```java
+public java.lang.String getDataLineageCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_lineage_custom_endpoint GoogleProvider#data_lineage_custom_endpoint}.
 
 ---
 
@@ -8543,7 +9365,7 @@ public java.lang.String getDataLossPreventionCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_loss_prevention_custom_endpoint GoogleProvider#data_loss_prevention_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_loss_prevention_custom_endpoint GoogleProvider#data_loss_prevention_custom_endpoint}.
 
 ---
 
@@ -8555,7 +9377,7 @@ public java.lang.String getDataPipelineCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#data_pipeline_custom_endpoint GoogleProvider#data_pipeline_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#data_pipeline_custom_endpoint GoogleProvider#data_pipeline_custom_endpoint}.
 
 ---
 
@@ -8567,7 +9389,7 @@ public java.lang.String getDataplexCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataplex_custom_endpoint GoogleProvider#dataplex_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataplex_custom_endpoint GoogleProvider#dataplex_custom_endpoint}.
 
 ---
 
@@ -8579,7 +9401,7 @@ public java.lang.String getDataprocCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_custom_endpoint GoogleProvider#dataproc_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_custom_endpoint GoogleProvider#dataproc_custom_endpoint}.
 
 ---
 
@@ -8591,7 +9413,7 @@ public java.lang.String getDataprocGdcCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_gdc_custom_endpoint GoogleProvider#dataproc_gdc_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_gdc_custom_endpoint GoogleProvider#dataproc_gdc_custom_endpoint}.
 
 ---
 
@@ -8603,7 +9425,7 @@ public java.lang.String getDataprocMetastoreCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dataproc_metastore_custom_endpoint GoogleProvider#dataproc_metastore_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dataproc_metastore_custom_endpoint GoogleProvider#dataproc_metastore_custom_endpoint}.
 
 ---
 
@@ -8615,7 +9437,7 @@ public java.lang.String getDatastreamCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#datastream_custom_endpoint GoogleProvider#datastream_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#datastream_custom_endpoint GoogleProvider#datastream_custom_endpoint}.
 
 ---
 
@@ -8627,7 +9449,7 @@ public java.util.Map<java.lang.String, java.lang.String> getDefaultLabels();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#default_labels GoogleProvider#default_labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#default_labels GoogleProvider#default_labels}.
 
 ---
 
@@ -8639,7 +9461,7 @@ public java.lang.String getDeploymentManagerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#deployment_manager_custom_endpoint GoogleProvider#deployment_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#deployment_manager_custom_endpoint GoogleProvider#deployment_manager_custom_endpoint}.
 
 ---
 
@@ -8651,7 +9473,7 @@ public java.lang.String getDeveloperConnectCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#developer_connect_custom_endpoint GoogleProvider#developer_connect_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#developer_connect_custom_endpoint GoogleProvider#developer_connect_custom_endpoint}.
 
 ---
 
@@ -8663,7 +9485,7 @@ public java.lang.String getDialogflowCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dialogflow_custom_endpoint GoogleProvider#dialogflow_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dialogflow_custom_endpoint GoogleProvider#dialogflow_custom_endpoint}.
 
 ---
 
@@ -8675,7 +9497,7 @@ public java.lang.String getDialogflowCxCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dialogflow_cx_custom_endpoint GoogleProvider#dialogflow_cx_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dialogflow_cx_custom_endpoint GoogleProvider#dialogflow_cx_custom_endpoint}.
 
 ---
 
@@ -8687,7 +9509,7 @@ public java.lang.String getDiscoveryEngineCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#discovery_engine_custom_endpoint GoogleProvider#discovery_engine_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#discovery_engine_custom_endpoint GoogleProvider#discovery_engine_custom_endpoint}.
 
 ---
 
@@ -8699,7 +9521,7 @@ public java.lang.String getDnsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#dns_custom_endpoint GoogleProvider#dns_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#dns_custom_endpoint GoogleProvider#dns_custom_endpoint}.
 
 ---
 
@@ -8711,7 +9533,7 @@ public java.lang.String getDocumentAiCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#document_ai_custom_endpoint GoogleProvider#document_ai_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#document_ai_custom_endpoint GoogleProvider#document_ai_custom_endpoint}.
 
 ---
 
@@ -8723,7 +9545,7 @@ public java.lang.String getDocumentAiWarehouseCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#document_ai_warehouse_custom_endpoint GoogleProvider#document_ai_warehouse_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#document_ai_warehouse_custom_endpoint GoogleProvider#document_ai_warehouse_custom_endpoint}.
 
 ---
 
@@ -8735,7 +9557,7 @@ public java.lang.String getEdgecontainerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#edgecontainer_custom_endpoint GoogleProvider#edgecontainer_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#edgecontainer_custom_endpoint GoogleProvider#edgecontainer_custom_endpoint}.
 
 ---
 
@@ -8747,7 +9569,7 @@ public java.lang.String getEdgenetworkCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#edgenetwork_custom_endpoint GoogleProvider#edgenetwork_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#edgenetwork_custom_endpoint GoogleProvider#edgenetwork_custom_endpoint}.
 
 ---
 
@@ -8759,7 +9581,7 @@ public java.lang.String getEssentialContactsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#essential_contacts_custom_endpoint GoogleProvider#essential_contacts_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#essential_contacts_custom_endpoint GoogleProvider#essential_contacts_custom_endpoint}.
 
 ---
 
@@ -8771,7 +9593,7 @@ public java.lang.String getEventarcCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#eventarc_custom_endpoint GoogleProvider#eventarc_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#eventarc_custom_endpoint GoogleProvider#eventarc_custom_endpoint}.
 
 ---
 
@@ -8785,7 +9607,7 @@ public IResolvable|java.util.List<GoogleProviderExternalCredentials> getExternal
 
 external_credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#external_credentials GoogleProvider#external_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#external_credentials GoogleProvider#external_credentials}
 
 ---
 
@@ -8797,7 +9619,7 @@ public java.lang.String getFilestoreCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#filestore_custom_endpoint GoogleProvider#filestore_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#filestore_custom_endpoint GoogleProvider#filestore_custom_endpoint}.
 
 ---
 
@@ -8809,7 +9631,7 @@ public java.lang.String getFirebaseAppCheckCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_app_check_custom_endpoint GoogleProvider#firebase_app_check_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_app_check_custom_endpoint GoogleProvider#firebase_app_check_custom_endpoint}.
 
 ---
 
@@ -8821,7 +9643,7 @@ public java.lang.String getFirebaseAppHostingCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_app_hosting_custom_endpoint GoogleProvider#firebase_app_hosting_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_app_hosting_custom_endpoint GoogleProvider#firebase_app_hosting_custom_endpoint}.
 
 ---
 
@@ -8833,7 +9655,19 @@ public java.lang.String getFirebaseDataConnectCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebase_data_connect_custom_endpoint GoogleProvider#firebase_data_connect_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_data_connect_custom_endpoint GoogleProvider#firebase_data_connect_custom_endpoint}.
+
+---
+
+##### `firebaseRemoteConfigCustomEndpoint`<sup>Optional</sup> <a name="firebaseRemoteConfigCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.firebaseRemoteConfigCustomEndpoint"></a>
+
+```java
+public java.lang.String getFirebaseRemoteConfigCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebase_remote_config_custom_endpoint GoogleProvider#firebase_remote_config_custom_endpoint}.
 
 ---
 
@@ -8845,7 +9679,7 @@ public java.lang.String getFirebaserulesCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firebaserules_custom_endpoint GoogleProvider#firebaserules_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firebaserules_custom_endpoint GoogleProvider#firebaserules_custom_endpoint}.
 
 ---
 
@@ -8857,7 +9691,7 @@ public java.lang.String getFirestoreCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#firestore_custom_endpoint GoogleProvider#firestore_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#firestore_custom_endpoint GoogleProvider#firestore_custom_endpoint}.
 
 ---
 
@@ -8869,7 +9703,7 @@ public java.lang.String getGeminiCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gemini_custom_endpoint GoogleProvider#gemini_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gemini_custom_endpoint GoogleProvider#gemini_custom_endpoint}.
 
 ---
 
@@ -8881,7 +9715,7 @@ public java.lang.String getGkeBackupCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_backup_custom_endpoint GoogleProvider#gke_backup_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_backup_custom_endpoint GoogleProvider#gke_backup_custom_endpoint}.
 
 ---
 
@@ -8893,7 +9727,7 @@ public java.lang.String getGkeHub2CustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_hub2_custom_endpoint GoogleProvider#gke_hub2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_hub2_custom_endpoint GoogleProvider#gke_hub2_custom_endpoint}.
 
 ---
 
@@ -8905,7 +9739,7 @@ public java.lang.String getGkeHubCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gke_hub_custom_endpoint GoogleProvider#gke_hub_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gke_hub_custom_endpoint GoogleProvider#gke_hub_custom_endpoint}.
 
 ---
 
@@ -8917,7 +9751,7 @@ public java.lang.String getGkeonpremCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#gkeonprem_custom_endpoint GoogleProvider#gkeonprem_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#gkeonprem_custom_endpoint GoogleProvider#gkeonprem_custom_endpoint}.
 
 ---
 
@@ -8929,7 +9763,19 @@ public java.lang.String getHealthcareCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#healthcare_custom_endpoint GoogleProvider#healthcare_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#healthcare_custom_endpoint GoogleProvider#healthcare_custom_endpoint}.
+
+---
+
+##### `hypercomputeclusterCustomEndpoint`<sup>Optional</sup> <a name="hypercomputeclusterCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.hypercomputeclusterCustomEndpoint"></a>
+
+```java
+public java.lang.String getHypercomputeclusterCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#hypercomputecluster_custom_endpoint GoogleProvider#hypercomputecluster_custom_endpoint}.
 
 ---
 
@@ -8941,7 +9787,7 @@ public java.lang.String getIam2CustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam2_custom_endpoint GoogleProvider#iam2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam2_custom_endpoint GoogleProvider#iam2_custom_endpoint}.
 
 ---
 
@@ -8953,7 +9799,7 @@ public java.lang.String getIam3CustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam3_custom_endpoint GoogleProvider#iam3_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam3_custom_endpoint GoogleProvider#iam3_custom_endpoint}.
 
 ---
 
@@ -8965,7 +9811,7 @@ public java.lang.String getIamBetaCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_beta_custom_endpoint GoogleProvider#iam_beta_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_beta_custom_endpoint GoogleProvider#iam_beta_custom_endpoint}.
 
 ---
 
@@ -8977,7 +9823,7 @@ public java.lang.String getIamCredentialsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_credentials_custom_endpoint GoogleProvider#iam_credentials_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_credentials_custom_endpoint GoogleProvider#iam_credentials_custom_endpoint}.
 
 ---
 
@@ -8989,7 +9835,7 @@ public java.lang.String getIamCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_custom_endpoint GoogleProvider#iam_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_custom_endpoint GoogleProvider#iam_custom_endpoint}.
 
 ---
 
@@ -9001,7 +9847,7 @@ public java.lang.String getIamWorkforcePoolCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iam_workforce_pool_custom_endpoint GoogleProvider#iam_workforce_pool_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iam_workforce_pool_custom_endpoint GoogleProvider#iam_workforce_pool_custom_endpoint}.
 
 ---
 
@@ -9013,7 +9859,7 @@ public java.lang.String getIapCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#iap_custom_endpoint GoogleProvider#iap_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#iap_custom_endpoint GoogleProvider#iap_custom_endpoint}.
 
 ---
 
@@ -9025,7 +9871,7 @@ public java.lang.String getIdentityPlatformCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#identity_platform_custom_endpoint GoogleProvider#identity_platform_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#identity_platform_custom_endpoint GoogleProvider#identity_platform_custom_endpoint}.
 
 ---
 
@@ -9037,7 +9883,7 @@ public java.lang.String getImpersonateServiceAccount();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#impersonate_service_account GoogleProvider#impersonate_service_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#impersonate_service_account GoogleProvider#impersonate_service_account}.
 
 ---
 
@@ -9049,7 +9895,7 @@ public java.util.List<java.lang.String> getImpersonateServiceAccountDelegates();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#impersonate_service_account_delegates GoogleProvider#impersonate_service_account_delegates}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#impersonate_service_account_delegates GoogleProvider#impersonate_service_account_delegates}.
 
 ---
 
@@ -9061,7 +9907,7 @@ public java.lang.String getIntegrationConnectorsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#integration_connectors_custom_endpoint GoogleProvider#integration_connectors_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#integration_connectors_custom_endpoint GoogleProvider#integration_connectors_custom_endpoint}.
 
 ---
 
@@ -9073,7 +9919,7 @@ public java.lang.String getIntegrationsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#integrations_custom_endpoint GoogleProvider#integrations_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#integrations_custom_endpoint GoogleProvider#integrations_custom_endpoint}.
 
 ---
 
@@ -9085,7 +9931,7 @@ public java.lang.String getKmsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#kms_custom_endpoint GoogleProvider#kms_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#kms_custom_endpoint GoogleProvider#kms_custom_endpoint}.
 
 ---
 
@@ -9097,7 +9943,7 @@ public java.lang.String getLoggingCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#logging_custom_endpoint GoogleProvider#logging_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#logging_custom_endpoint GoogleProvider#logging_custom_endpoint}.
 
 ---
 
@@ -9109,7 +9955,7 @@ public java.lang.String getLookerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#looker_custom_endpoint GoogleProvider#looker_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#looker_custom_endpoint GoogleProvider#looker_custom_endpoint}.
 
 ---
 
@@ -9121,7 +9967,7 @@ public java.lang.String getLustreCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#lustre_custom_endpoint GoogleProvider#lustre_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#lustre_custom_endpoint GoogleProvider#lustre_custom_endpoint}.
 
 ---
 
@@ -9133,7 +9979,7 @@ public java.lang.String getManagedKafkaCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#managed_kafka_custom_endpoint GoogleProvider#managed_kafka_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#managed_kafka_custom_endpoint GoogleProvider#managed_kafka_custom_endpoint}.
 
 ---
 
@@ -9145,7 +9991,7 @@ public java.lang.String getMemcacheCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#memcache_custom_endpoint GoogleProvider#memcache_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#memcache_custom_endpoint GoogleProvider#memcache_custom_endpoint}.
 
 ---
 
@@ -9157,7 +10003,7 @@ public java.lang.String getMemorystoreCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#memorystore_custom_endpoint GoogleProvider#memorystore_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#memorystore_custom_endpoint GoogleProvider#memorystore_custom_endpoint}.
 
 ---
 
@@ -9169,7 +10015,7 @@ public java.lang.String getMigrationCenterCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#migration_center_custom_endpoint GoogleProvider#migration_center_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#migration_center_custom_endpoint GoogleProvider#migration_center_custom_endpoint}.
 
 ---
 
@@ -9181,7 +10027,7 @@ public java.lang.String getMlEngineCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#ml_engine_custom_endpoint GoogleProvider#ml_engine_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#ml_engine_custom_endpoint GoogleProvider#ml_engine_custom_endpoint}.
 
 ---
 
@@ -9193,7 +10039,7 @@ public java.lang.String getModelArmorCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#model_armor_custom_endpoint GoogleProvider#model_armor_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#model_armor_custom_endpoint GoogleProvider#model_armor_custom_endpoint}.
 
 ---
 
@@ -9205,7 +10051,7 @@ public java.lang.String getModelArmorGlobalCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#model_armor_global_custom_endpoint GoogleProvider#model_armor_global_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#model_armor_global_custom_endpoint GoogleProvider#model_armor_global_custom_endpoint}.
 
 ---
 
@@ -9217,7 +10063,7 @@ public java.lang.String getMonitoringCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#monitoring_custom_endpoint GoogleProvider#monitoring_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#monitoring_custom_endpoint GoogleProvider#monitoring_custom_endpoint}.
 
 ---
 
@@ -9229,7 +10075,7 @@ public java.lang.String getNetappCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#netapp_custom_endpoint GoogleProvider#netapp_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#netapp_custom_endpoint GoogleProvider#netapp_custom_endpoint}.
 
 ---
 
@@ -9241,7 +10087,19 @@ public java.lang.String getNetworkConnectivityCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_connectivity_custom_endpoint GoogleProvider#network_connectivity_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_connectivity_custom_endpoint GoogleProvider#network_connectivity_custom_endpoint}.
+
+---
+
+##### `networkConnectivityv1CustomEndpoint`<sup>Optional</sup> <a name="networkConnectivityv1CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.networkConnectivityv1CustomEndpoint"></a>
+
+```java
+public java.lang.String getNetworkConnectivityv1CustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_connectivityv1_custom_endpoint GoogleProvider#network_connectivityv1_custom_endpoint}.
 
 ---
 
@@ -9253,7 +10111,7 @@ public java.lang.String getNetworkManagementCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_management_custom_endpoint GoogleProvider#network_management_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_management_custom_endpoint GoogleProvider#network_management_custom_endpoint}.
 
 ---
 
@@ -9265,7 +10123,7 @@ public java.lang.String getNetworkSecurityCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_security_custom_endpoint GoogleProvider#network_security_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_security_custom_endpoint GoogleProvider#network_security_custom_endpoint}.
 
 ---
 
@@ -9277,7 +10135,7 @@ public java.lang.String getNetworkServicesCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#network_services_custom_endpoint GoogleProvider#network_services_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#network_services_custom_endpoint GoogleProvider#network_services_custom_endpoint}.
 
 ---
 
@@ -9289,7 +10147,19 @@ public java.lang.String getNotebooksCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#notebooks_custom_endpoint GoogleProvider#notebooks_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#notebooks_custom_endpoint GoogleProvider#notebooks_custom_endpoint}.
+
+---
+
+##### `observabilityCustomEndpoint`<sup>Optional</sup> <a name="observabilityCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.observabilityCustomEndpoint"></a>
+
+```java
+public java.lang.String getObservabilityCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#observability_custom_endpoint GoogleProvider#observability_custom_endpoint}.
 
 ---
 
@@ -9301,7 +10171,7 @@ public java.lang.String getOracleDatabaseCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#oracle_database_custom_endpoint GoogleProvider#oracle_database_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#oracle_database_custom_endpoint GoogleProvider#oracle_database_custom_endpoint}.
 
 ---
 
@@ -9313,7 +10183,7 @@ public java.lang.String getOrgPolicyCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#org_policy_custom_endpoint GoogleProvider#org_policy_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#org_policy_custom_endpoint GoogleProvider#org_policy_custom_endpoint}.
 
 ---
 
@@ -9325,7 +10195,7 @@ public java.lang.String getOsConfigCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_config_custom_endpoint GoogleProvider#os_config_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_config_custom_endpoint GoogleProvider#os_config_custom_endpoint}.
 
 ---
 
@@ -9337,7 +10207,7 @@ public java.lang.String getOsConfigV2CustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_config_v2_custom_endpoint GoogleProvider#os_config_v2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_config_v2_custom_endpoint GoogleProvider#os_config_v2_custom_endpoint}.
 
 ---
 
@@ -9349,7 +10219,7 @@ public java.lang.String getOsLoginCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#os_login_custom_endpoint GoogleProvider#os_login_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#os_login_custom_endpoint GoogleProvider#os_login_custom_endpoint}.
 
 ---
 
@@ -9361,7 +10231,7 @@ public java.lang.String getParallelstoreCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parallelstore_custom_endpoint GoogleProvider#parallelstore_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parallelstore_custom_endpoint GoogleProvider#parallelstore_custom_endpoint}.
 
 ---
 
@@ -9373,7 +10243,7 @@ public java.lang.String getParameterManagerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parameter_manager_custom_endpoint GoogleProvider#parameter_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parameter_manager_custom_endpoint GoogleProvider#parameter_manager_custom_endpoint}.
 
 ---
 
@@ -9385,7 +10255,43 @@ public java.lang.String getParameterManagerRegionalCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#parameter_manager_regional_custom_endpoint GoogleProvider#parameter_manager_regional_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#parameter_manager_regional_custom_endpoint GoogleProvider#parameter_manager_regional_custom_endpoint}.
+
+---
+
+##### `pollInterval`<sup>Optional</sup> <a name="pollInterval" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.pollInterval"></a>
+
+```java
+public java.lang.String getPollInterval();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#poll_interval GoogleProvider#poll_interval}.
+
+---
+
+##### `preferGlobalEndpoints`<sup>Optional</sup> <a name="preferGlobalEndpoints" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.preferGlobalEndpoints"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreferGlobalEndpoints();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#prefer_global_endpoints GoogleProvider#prefer_global_endpoints}.
+
+---
+
+##### `preferRegionalEndpoints`<sup>Optional</sup> <a name="preferRegionalEndpoints" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.preferRegionalEndpoints"></a>
+
+```java
+public java.lang.Boolean|IResolvable getPreferRegionalEndpoints();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#prefer_regional_endpoints GoogleProvider#prefer_regional_endpoints}.
 
 ---
 
@@ -9397,7 +10303,7 @@ public java.lang.String getPrivatecaCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#privateca_custom_endpoint GoogleProvider#privateca_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#privateca_custom_endpoint GoogleProvider#privateca_custom_endpoint}.
 
 ---
 
@@ -9409,7 +10315,7 @@ public java.lang.String getPrivilegedAccessManagerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#privileged_access_manager_custom_endpoint GoogleProvider#privileged_access_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#privileged_access_manager_custom_endpoint GoogleProvider#privileged_access_manager_custom_endpoint}.
 
 ---
 
@@ -9421,7 +10327,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#project GoogleProvider#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#project GoogleProvider#project}.
 
 ---
 
@@ -9433,7 +10339,7 @@ public java.lang.String getPublicCaCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#public_ca_custom_endpoint GoogleProvider#public_ca_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#public_ca_custom_endpoint GoogleProvider#public_ca_custom_endpoint}.
 
 ---
 
@@ -9445,7 +10351,7 @@ public java.lang.String getPubsubCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#pubsub_custom_endpoint GoogleProvider#pubsub_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#pubsub_custom_endpoint GoogleProvider#pubsub_custom_endpoint}.
 
 ---
 
@@ -9457,7 +10363,7 @@ public java.lang.String getPubsubLiteCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#pubsub_lite_custom_endpoint GoogleProvider#pubsub_lite_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#pubsub_lite_custom_endpoint GoogleProvider#pubsub_lite_custom_endpoint}.
 
 ---
 
@@ -9469,7 +10375,7 @@ public java.lang.String getRecaptchaEnterpriseCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#recaptcha_enterprise_custom_endpoint GoogleProvider#recaptcha_enterprise_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#recaptcha_enterprise_custom_endpoint GoogleProvider#recaptcha_enterprise_custom_endpoint}.
 
 ---
 
@@ -9481,7 +10387,7 @@ public java.lang.String getRedisCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#redis_custom_endpoint GoogleProvider#redis_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#redis_custom_endpoint GoogleProvider#redis_custom_endpoint}.
 
 ---
 
@@ -9493,7 +10399,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#region GoogleProvider#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#region GoogleProvider#region}.
 
 ---
 
@@ -9505,7 +10411,7 @@ public java.lang.String getRequestReason();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#request_reason GoogleProvider#request_reason}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#request_reason GoogleProvider#request_reason}.
 
 ---
 
@@ -9517,7 +10423,19 @@ public java.lang.String getRequestTimeout();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#request_timeout GoogleProvider#request_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#request_timeout GoogleProvider#request_timeout}.
+
+---
+
+##### `resourceManager3CustomEndpoint`<sup>Optional</sup> <a name="resourceManager3CustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.resourceManager3CustomEndpoint"></a>
+
+```java
+public java.lang.String getResourceManager3CustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager3_custom_endpoint GoogleProvider#resource_manager3_custom_endpoint}.
 
 ---
 
@@ -9529,7 +10447,7 @@ public java.lang.String getResourceManagerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#resource_manager_custom_endpoint GoogleProvider#resource_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager_custom_endpoint GoogleProvider#resource_manager_custom_endpoint}.
 
 ---
 
@@ -9541,7 +10459,7 @@ public java.lang.String getResourceManagerV3CustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#resource_manager_v3_custom_endpoint GoogleProvider#resource_manager_v3_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#resource_manager_v3_custom_endpoint GoogleProvider#resource_manager_v3_custom_endpoint}.
 
 ---
 
@@ -9553,7 +10471,7 @@ public java.util.List<java.lang.String> getScopes();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#scopes GoogleProvider#scopes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#scopes GoogleProvider#scopes}.
 
 ---
 
@@ -9565,7 +10483,7 @@ public java.lang.String getSecretManagerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secret_manager_custom_endpoint GoogleProvider#secret_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secret_manager_custom_endpoint GoogleProvider#secret_manager_custom_endpoint}.
 
 ---
 
@@ -9577,7 +10495,7 @@ public java.lang.String getSecretManagerRegionalCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secret_manager_regional_custom_endpoint GoogleProvider#secret_manager_regional_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secret_manager_regional_custom_endpoint GoogleProvider#secret_manager_regional_custom_endpoint}.
 
 ---
 
@@ -9589,7 +10507,7 @@ public java.lang.String getSecureSourceManagerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#secure_source_manager_custom_endpoint GoogleProvider#secure_source_manager_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#secure_source_manager_custom_endpoint GoogleProvider#secure_source_manager_custom_endpoint}.
 
 ---
 
@@ -9601,7 +10519,7 @@ public java.lang.String getSecurityCenterCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_custom_endpoint GoogleProvider#security_center_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_custom_endpoint GoogleProvider#security_center_custom_endpoint}.
 
 ---
 
@@ -9613,7 +10531,7 @@ public java.lang.String getSecurityCenterManagementCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_management_custom_endpoint GoogleProvider#security_center_management_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_management_custom_endpoint GoogleProvider#security_center_management_custom_endpoint}.
 
 ---
 
@@ -9625,7 +10543,7 @@ public java.lang.String getSecurityCenterV2CustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#security_center_v2_custom_endpoint GoogleProvider#security_center_v2_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#security_center_v2_custom_endpoint GoogleProvider#security_center_v2_custom_endpoint}.
 
 ---
 
@@ -9637,7 +10555,19 @@ public java.lang.String getSecuritypostureCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#securityposture_custom_endpoint GoogleProvider#securityposture_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#securityposture_custom_endpoint GoogleProvider#securityposture_custom_endpoint}.
+
+---
+
+##### `serviceDirectoryCustomEndpoint`<sup>Optional</sup> <a name="serviceDirectoryCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.serviceDirectoryCustomEndpoint"></a>
+
+```java
+public java.lang.String getServiceDirectoryCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_directory_custom_endpoint GoogleProvider#service_directory_custom_endpoint}.
 
 ---
 
@@ -9649,7 +10579,7 @@ public java.lang.String getServiceManagementCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_management_custom_endpoint GoogleProvider#service_management_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_management_custom_endpoint GoogleProvider#service_management_custom_endpoint}.
 
 ---
 
@@ -9661,7 +10591,7 @@ public java.lang.String getServiceNetworkingCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_networking_custom_endpoint GoogleProvider#service_networking_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_networking_custom_endpoint GoogleProvider#service_networking_custom_endpoint}.
 
 ---
 
@@ -9673,7 +10603,7 @@ public java.lang.String getServiceUsageCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_usage_custom_endpoint GoogleProvider#service_usage_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_usage_custom_endpoint GoogleProvider#service_usage_custom_endpoint}.
 
 ---
 
@@ -9685,7 +10615,7 @@ public java.lang.String getSiteVerificationCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#site_verification_custom_endpoint GoogleProvider#site_verification_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#site_verification_custom_endpoint GoogleProvider#site_verification_custom_endpoint}.
 
 ---
 
@@ -9697,7 +10627,7 @@ public java.lang.String getSourceRepoCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#source_repo_custom_endpoint GoogleProvider#source_repo_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#source_repo_custom_endpoint GoogleProvider#source_repo_custom_endpoint}.
 
 ---
 
@@ -9709,7 +10639,7 @@ public java.lang.String getSpannerCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#spanner_custom_endpoint GoogleProvider#spanner_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#spanner_custom_endpoint GoogleProvider#spanner_custom_endpoint}.
 
 ---
 
@@ -9721,7 +10651,7 @@ public java.lang.String getSqlCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#sql_custom_endpoint GoogleProvider#sql_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#sql_custom_endpoint GoogleProvider#sql_custom_endpoint}.
 
 ---
 
@@ -9733,7 +10663,7 @@ public java.lang.String getStorageBatchOperationsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_batch_operations_custom_endpoint GoogleProvider#storage_batch_operations_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_batch_operations_custom_endpoint GoogleProvider#storage_batch_operations_custom_endpoint}.
 
 ---
 
@@ -9745,7 +10675,7 @@ public java.lang.String getStorageControlCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_control_custom_endpoint GoogleProvider#storage_control_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_control_custom_endpoint GoogleProvider#storage_control_custom_endpoint}.
 
 ---
 
@@ -9757,7 +10687,7 @@ public java.lang.String getStorageCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_custom_endpoint GoogleProvider#storage_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_custom_endpoint GoogleProvider#storage_custom_endpoint}.
 
 ---
 
@@ -9769,7 +10699,7 @@ public java.lang.String getStorageInsightsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_insights_custom_endpoint GoogleProvider#storage_insights_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_insights_custom_endpoint GoogleProvider#storage_insights_custom_endpoint}.
 
 ---
 
@@ -9781,7 +10711,7 @@ public java.lang.String getStorageTransferCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#storage_transfer_custom_endpoint GoogleProvider#storage_transfer_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#storage_transfer_custom_endpoint GoogleProvider#storage_transfer_custom_endpoint}.
 
 ---
 
@@ -9793,7 +10723,7 @@ public java.lang.String getTagsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tags_custom_endpoint GoogleProvider#tags_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#tags_custom_endpoint GoogleProvider#tags_custom_endpoint}.
 
 ---
 
@@ -9805,7 +10735,7 @@ public java.lang.String getTagsLocationCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tags_location_custom_endpoint GoogleProvider#tags_location_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#tags_location_custom_endpoint GoogleProvider#tags_location_custom_endpoint}.
 
 ---
 
@@ -9817,19 +10747,7 @@ public java.lang.String getTerraformAttributionLabelAdditionStrategy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#terraform_attribution_label_addition_strategy GoogleProvider#terraform_attribution_label_addition_strategy}.
-
----
-
-##### `tpuCustomEndpoint`<sup>Optional</sup> <a name="tpuCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.tpuCustomEndpoint"></a>
-
-```java
-public java.lang.String getTpuCustomEndpoint();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#tpu_custom_endpoint GoogleProvider#tpu_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#terraform_attribution_label_addition_strategy GoogleProvider#terraform_attribution_label_addition_strategy}.
 
 ---
 
@@ -9841,7 +10759,7 @@ public java.lang.String getTranscoderCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#transcoder_custom_endpoint GoogleProvider#transcoder_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#transcoder_custom_endpoint GoogleProvider#transcoder_custom_endpoint}.
 
 ---
 
@@ -9853,7 +10771,7 @@ public java.lang.String getUniverseDomain();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#universe_domain GoogleProvider#universe_domain}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#universe_domain GoogleProvider#universe_domain}.
 
 ---
 
@@ -9865,7 +10783,19 @@ public java.lang.Boolean|IResolvable getUserProjectOverride();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#user_project_override GoogleProvider#user_project_override}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#user_project_override GoogleProvider#user_project_override}.
+
+---
+
+##### `vectorSearchCustomEndpoint`<sup>Optional</sup> <a name="vectorSearchCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.vectorSearchCustomEndpoint"></a>
+
+```java
+public java.lang.String getVectorSearchCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vector_search_custom_endpoint GoogleProvider#vector_search_custom_endpoint}.
 
 ---
 
@@ -9877,7 +10807,7 @@ public java.lang.String getVertexAiCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vertex_ai_custom_endpoint GoogleProvider#vertex_ai_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vertex_ai_custom_endpoint GoogleProvider#vertex_ai_custom_endpoint}.
 
 ---
 
@@ -9889,7 +10819,7 @@ public java.lang.String getVmwareengineCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vmwareengine_custom_endpoint GoogleProvider#vmwareengine_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vmwareengine_custom_endpoint GoogleProvider#vmwareengine_custom_endpoint}.
 
 ---
 
@@ -9901,7 +10831,7 @@ public java.lang.String getVpcAccessCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#vpc_access_custom_endpoint GoogleProvider#vpc_access_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#vpc_access_custom_endpoint GoogleProvider#vpc_access_custom_endpoint}.
 
 ---
 
@@ -9913,7 +10843,7 @@ public java.lang.String getWorkbenchCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#workbench_custom_endpoint GoogleProvider#workbench_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workbench_custom_endpoint GoogleProvider#workbench_custom_endpoint}.
 
 ---
 
@@ -9925,7 +10855,31 @@ public java.lang.String getWorkflowsCustomEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#workflows_custom_endpoint GoogleProvider#workflows_custom_endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workflows_custom_endpoint GoogleProvider#workflows_custom_endpoint}.
+
+---
+
+##### `workloadIdentityCustomEndpoint`<sup>Optional</sup> <a name="workloadIdentityCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.workloadIdentityCustomEndpoint"></a>
+
+```java
+public java.lang.String getWorkloadIdentityCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workload_identity_custom_endpoint GoogleProvider#workload_identity_custom_endpoint}.
+
+---
+
+##### `workstationsCustomEndpoint`<sup>Optional</sup> <a name="workstationsCustomEndpoint" id="@cdktn/provider-google.provider.GoogleProviderConfig.property.workstationsCustomEndpoint"></a>
+
+```java
+public java.lang.String getWorkstationsCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#workstations_custom_endpoint GoogleProvider#workstations_custom_endpoint}.
 
 ---
 
@@ -9937,7 +10891,7 @@ public java.lang.String getZone();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#zone GoogleProvider#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#zone GoogleProvider#zone}.
 
 ---
 
@@ -9959,9 +10913,9 @@ GoogleProviderExternalCredentials.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderExternalCredentials.property.audience">audience</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#audience GoogleProvider#audience}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderExternalCredentials.property.identityToken">identityToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#identity_token GoogleProvider#identity_token}. |
-| <code><a href="#@cdktn/provider-google.provider.GoogleProviderExternalCredentials.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_account_email GoogleProvider#service_account_email}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderExternalCredentials.property.audience">audience</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#audience GoogleProvider#audience}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderExternalCredentials.property.identityToken">identityToken</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#identity_token GoogleProvider#identity_token}. |
+| <code><a href="#@cdktn/provider-google.provider.GoogleProviderExternalCredentials.property.serviceAccountEmail">serviceAccountEmail</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_account_email GoogleProvider#service_account_email}. |
 
 ---
 
@@ -9973,7 +10927,7 @@ public java.lang.String getAudience();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#audience GoogleProvider#audience}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#audience GoogleProvider#audience}.
 
 ---
 
@@ -9985,7 +10939,7 @@ public java.lang.String getIdentityToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#identity_token GoogleProvider#identity_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#identity_token GoogleProvider#identity_token}.
 
 ---
 
@@ -9997,7 +10951,7 @@ public java.lang.String getServiceAccountEmail();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs#service_account_email GoogleProvider#service_account_email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs#service_account_email GoogleProvider#service_account_email}.
 
 ---
 

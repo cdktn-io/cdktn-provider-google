@@ -4,12 +4,12 @@
 
 ### DataGoogleServiceAccount <a name="DataGoogleServiceAccount" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account google_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account google_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccount"
 
 datagoogleserviceaccount.NewDataGoogleServiceAccount(scope Construct, id *string, config DataGoogleServiceAccountConfig) DataGoogleServiceAccount
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccount"
 
 datagoogleserviceaccount.DataGoogleServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccount"
 
 datagoogleserviceaccount.DataGoogleServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleserviceaccount.DataGoogleServiceAccount_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccount"
 
 datagoogleserviceaccount.DataGoogleServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleserviceaccount.DataGoogleServiceAccount_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccount"
 
 datagoogleserviceaccount.DataGoogleServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleServiceAccount t
 
 The id of the existing DataGoogleServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleserviceaccount"
 
 &datagoogleserviceaccount.DataGoogleServiceAccountConfig {
 	Connection: interface{},
@@ -738,9 +738,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleservic
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#account_id DataGoogleServiceAccount#account_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#id DataGoogleServiceAccount#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#project DataGoogleServiceAccount#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account#account_id DataGoogleServiceAccount#account_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account#id DataGoogleServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account#project DataGoogleServiceAccount#project}. |
 
 ---
 
@@ -822,7 +822,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#account_id DataGoogleServiceAccount#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account#account_id DataGoogleServiceAccount#account_id}.
 
 ---
 
@@ -834,7 +834,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#id DataGoogleServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account#id DataGoogleServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -849,7 +849,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#project DataGoogleServiceAccount#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account#project DataGoogleServiceAccount#project}.
 
 ---
 

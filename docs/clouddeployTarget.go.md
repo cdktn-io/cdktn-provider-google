@@ -4,12 +4,12 @@
 
 ### ClouddeployTarget <a name="ClouddeployTarget" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target google_clouddeploy_target}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target google_clouddeploy_target}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTarget(scope Construct, id *string, config ClouddeployTargetConfig) ClouddeployTarget
 ```
@@ -609,7 +609,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.ClouddeployTarget_IsConstruct(x interface{}) *bool
 ```
@@ -641,7 +641,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.ClouddeployTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -655,7 +655,7 @@ clouddeploytarget.ClouddeployTarget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.ClouddeployTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -669,7 +669,7 @@ clouddeploytarget.ClouddeployTarget_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.ClouddeployTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -698,7 +698,7 @@ The construct id used in the generated config for the ClouddeployTarget to impor
 
 The id of the existing ClouddeployTarget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1360,7 +1360,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetAnthosCluster {
 	Membership: *string,
@@ -1385,7 +1385,7 @@ Membership *string
 
 Membership of the GKE Hub-registered cluster to which to apply the Skaffold configuration. Format is `projects/{project}/locations/{location}/memberships/{membership_name}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#membership ClouddeployTarget#membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#membership ClouddeployTarget#membership}
 
 ---
 
@@ -1394,7 +1394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetAssociatedEntities {
 	EntityId: *string,
@@ -1423,7 +1423,7 @@ EntityId *string
 
 The name for the key in the map for which this object is mapped to in the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#entity_id ClouddeployTarget#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#entity_id ClouddeployTarget#entity_id}
 
 ---
 
@@ -1437,7 +1437,7 @@ AnthosClusters interface{}
 
 anthos_clusters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#anthos_clusters ClouddeployTarget#anthos_clusters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#anthos_clusters ClouddeployTarget#anthos_clusters}
 
 ---
 
@@ -1451,7 +1451,7 @@ GkeClusters interface{}
 
 gke_clusters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#gke_clusters ClouddeployTarget#gke_clusters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#gke_clusters ClouddeployTarget#gke_clusters}
 
 ---
 
@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetAssociatedEntitiesAnthosClusters {
 	Membership: *string,
@@ -1485,7 +1485,7 @@ Membership *string
 
 Optional. Membership of the GKE Hub-registered cluster to which to apply the Skaffold configuration. Format is `projects/{project}/locations/{location}/memberships/{membership_name}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#membership ClouddeployTarget#membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#membership ClouddeployTarget#membership}
 
 ---
 
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetAssociatedEntitiesGkeClusters {
 	Cluster: *string,
@@ -1523,7 +1523,7 @@ Cluster *string
 
 Optional. Information specifying a GKE Cluster. Format is `projects/{project_id}/locations/{location_id}/clusters/{cluster_id}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#cluster ClouddeployTarget#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#cluster ClouddeployTarget#cluster}
 
 ---
 
@@ -1539,7 +1539,7 @@ Optional.
 
 If true, `cluster` is accessed using the private IP address of the control plane endpoint. Otherwise, the default IP address of the control plane endpoint is used. The default IP address is the private IP address for clusters with private control-plane endpoints and the public IP address otherwise. Only specify this option when `cluster` is a [private GKE cluster](https://cloud.google.com/kubernetes-engine/docs/concepts/private-cluster-concept).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#internal_ip ClouddeployTarget#internal_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#internal_ip ClouddeployTarget#internal_ip}
 
 ---
 
@@ -1553,7 +1553,7 @@ ProxyUrl *string
 
 Optional. If set, used to configure a [proxy](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#proxy) to the Kubernetes server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#proxy_url ClouddeployTarget#proxy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#proxy_url ClouddeployTarget#proxy_url}
 
 ---
 
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetConfig {
 	Connection: interface{},
@@ -1575,20 +1575,20 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarge
 	Location: *string,
 	Name: *string,
 	Annotations: *map[string]*string,
-	AnthosCluster: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployTarget.ClouddeployTargetAnthosCluster,
+	AnthosCluster: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetAnthosCluster,
 	AssociatedEntities: interface{},
-	CustomTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployTarget.ClouddeployTargetCustomTarget,
+	CustomTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetCustomTarget,
 	DeployParameters: *map[string]*string,
 	Description: *string,
 	ExecutionConfigs: interface{},
-	Gke: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployTarget.ClouddeployTargetGke,
+	Gke: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetGke,
 	Id: *string,
 	Labels: *map[string]*string,
-	MultiTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployTarget.ClouddeployTargetMultiTarget,
+	MultiTarget: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetMultiTarget,
 	Project: *string,
 	RequireApproval: interface{},
-	Run: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployTarget.ClouddeployTargetRun,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.clouddeployTarget.ClouddeployTargetTimeouts,
+	Run: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetRun,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetTimeouts,
 }
 ```
 
@@ -1613,7 +1613,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarge
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.description">Description</a></code> | <code>*string</code> | Optional. Description of the `Target`. Max length is 255 characters. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.executionConfigs">ExecutionConfigs</a></code> | <code>interface{}</code> | execution_configs block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.gke">Gke</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke">ClouddeployTargetGke</a></code> | gke block. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#id ClouddeployTarget#id}. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#id ClouddeployTarget#id}. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.multiTarget">MultiTarget</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTarget">ClouddeployTargetMultiTarget</a></code> | multi_target block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetConfig.property.project">Project</a></code> | <code>*string</code> | The project for the resource. |
@@ -1703,7 +1703,7 @@ Location *string
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#location ClouddeployTarget#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#location ClouddeployTarget#location}
 
 ---
 
@@ -1717,7 +1717,7 @@ Name *string
 
 Name of the `Target`. Format is `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#name ClouddeployTarget#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#name ClouddeployTarget#name}
 
 ---
 
@@ -1736,7 +1736,7 @@ User annotations. These attributes can only be set and used by the user, and not
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field `effective_annotations` for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#annotations ClouddeployTarget#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#annotations ClouddeployTarget#annotations}
 
 ---
 
@@ -1750,7 +1750,7 @@ AnthosCluster ClouddeployTargetAnthosCluster
 
 anthos_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#anthos_cluster ClouddeployTarget#anthos_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#anthos_cluster ClouddeployTarget#anthos_cluster}
 
 ---
 
@@ -1764,7 +1764,7 @@ AssociatedEntities interface{}
 
 associated_entities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#associated_entities ClouddeployTarget#associated_entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#associated_entities ClouddeployTarget#associated_entities}
 
 ---
 
@@ -1778,7 +1778,7 @@ CustomTarget ClouddeployTargetCustomTarget
 
 custom_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#custom_target ClouddeployTarget#custom_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#custom_target ClouddeployTarget#custom_target}
 
 ---
 
@@ -1792,7 +1792,7 @@ DeployParameters *map[string]*string
 
 Optional. The deploy parameters to use for this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#deploy_parameters ClouddeployTarget#deploy_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#deploy_parameters ClouddeployTarget#deploy_parameters}
 
 ---
 
@@ -1806,7 +1806,7 @@ Description *string
 
 Optional. Description of the `Target`. Max length is 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#description ClouddeployTarget#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#description ClouddeployTarget#description}
 
 ---
 
@@ -1820,7 +1820,7 @@ ExecutionConfigs interface{}
 
 execution_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#execution_configs ClouddeployTarget#execution_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#execution_configs ClouddeployTarget#execution_configs}
 
 ---
 
@@ -1834,7 +1834,7 @@ Gke ClouddeployTargetGke
 
 gke block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#gke ClouddeployTarget#gke}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#gke ClouddeployTarget#gke}
 
 ---
 
@@ -1846,7 +1846,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#id ClouddeployTarget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#id ClouddeployTarget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1868,7 +1868,7 @@ Labels are attributes that can be set and used by both the user and by Google Cl
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field `effective_labels` for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#labels ClouddeployTarget#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#labels ClouddeployTarget#labels}
 
 ---
 
@@ -1882,7 +1882,7 @@ MultiTarget ClouddeployTargetMultiTarget
 
 multi_target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#multi_target ClouddeployTarget#multi_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#multi_target ClouddeployTarget#multi_target}
 
 ---
 
@@ -1896,7 +1896,7 @@ Project *string
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#project ClouddeployTarget#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#project ClouddeployTarget#project}
 
 ---
 
@@ -1910,7 +1910,7 @@ RequireApproval interface{}
 
 Optional. Whether or not the `Target` requires approval.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#require_approval ClouddeployTarget#require_approval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#require_approval ClouddeployTarget#require_approval}
 
 ---
 
@@ -1924,7 +1924,7 @@ Run ClouddeployTargetRun
 
 run block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#run ClouddeployTarget#run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#run ClouddeployTarget#run}
 
 ---
 
@@ -1938,7 +1938,7 @@ Timeouts ClouddeployTargetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#timeouts ClouddeployTarget#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#timeouts ClouddeployTarget#timeouts}
 
 ---
 
@@ -1947,7 +1947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetCustomTarget {
 	CustomTargetType: *string,
@@ -1972,7 +1972,7 @@ CustomTargetType *string
 
 Required. The name of the CustomTargetType. Format must be `projects/{project}/locations/{location}/customTargetTypes/{custom_target_type}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#custom_target_type ClouddeployTarget#custom_target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#custom_target_type ClouddeployTarget#custom_target_type}
 
 ---
 
@@ -1981,12 +1981,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetExecutionConfigs {
 	Usages: *[]*string,
 	ArtifactStorage: *string,
+	DefaultPool: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool,
 	ExecutionTimeout: *string,
+	PrivatePool: github.com/cdktn-io/cdktn-provider-google-go/google/v19.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool,
 	ServiceAccount: *string,
 	Verbose: interface{},
 	WorkerPool: *string,
@@ -1999,7 +2001,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarge
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.usages">Usages</a></code> | <code>*[]*string</code> | Required. Usages when this configuration should be applied. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.artifactStorage">ArtifactStorage</a></code> | <code>*string</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.defaultPool">DefaultPool</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool">ClouddeployTargetExecutionConfigsDefaultPool</a></code> | default_pool block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.executionTimeout">ExecutionTimeout</a></code> | <code>*string</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.privatePool">PrivatePool</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool">ClouddeployTargetExecutionConfigsPrivatePool</a></code> | private_pool block. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | Optional. Google service account to use for execution. If unspecified, the project execution service account (-compute@developer.gserviceaccount.com) is used. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.verbose">Verbose</a></code> | <code>interface{}</code> | Optional. If true, additional logging will be enabled when running builds in this execution environment. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.workerPool">WorkerPool</a></code> | <code>*string</code> | Optional. |
@@ -2016,7 +2020,7 @@ Usages *[]*string
 
 Required. Usages when this configuration should be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#usages ClouddeployTarget#usages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#usages ClouddeployTarget#usages}
 
 ---
 
@@ -2032,7 +2036,21 @@ Optional.
 
 Cloud Storage location in which to store execution outputs. This can either be a bucket ("gs://my-bucket") or a path within a bucket ("gs://my-bucket/my-dir"). If unspecified, a default bucket located in the same region will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#artifact_storage ClouddeployTarget#artifact_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#artifact_storage ClouddeployTarget#artifact_storage}
+
+---
+
+##### `DefaultPool`<sup>Optional</sup> <a name="DefaultPool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.defaultPool"></a>
+
+```go
+DefaultPool ClouddeployTargetExecutionConfigsDefaultPool
+```
+
+- *Type:* <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool">ClouddeployTargetExecutionConfigsDefaultPool</a>
+
+default_pool block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#default_pool ClouddeployTarget#default_pool}
 
 ---
 
@@ -2048,7 +2066,21 @@ Optional.
 
 Execution timeout for a Cloud Build Execution. This must be between 10m and 24h in seconds format. If unspecified, a default timeout of 1h is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#execution_timeout ClouddeployTarget#execution_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#execution_timeout ClouddeployTarget#execution_timeout}
+
+---
+
+##### `PrivatePool`<sup>Optional</sup> <a name="PrivatePool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigs.property.privatePool"></a>
+
+```go
+PrivatePool ClouddeployTargetExecutionConfigsPrivatePool
+```
+
+- *Type:* <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool">ClouddeployTargetExecutionConfigsPrivatePool</a>
+
+private_pool block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#private_pool ClouddeployTarget#private_pool}
 
 ---
 
@@ -2062,7 +2094,7 @@ ServiceAccount *string
 
 Optional. Google service account to use for execution. If unspecified, the project execution service account (-compute@developer.gserviceaccount.com) is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#service_account ClouddeployTarget#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#service_account ClouddeployTarget#service_account}
 
 ---
 
@@ -2076,7 +2108,7 @@ Verbose interface{}
 
 Optional. If true, additional logging will be enabled when running builds in this execution environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#verbose ClouddeployTarget#verbose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#verbose ClouddeployTarget#verbose}
 
 ---
 
@@ -2092,7 +2124,127 @@ Optional.
 
 The resource name of the `WorkerPool`, with the format `projects/{project}/locations/{location}/workerPools/{worker_pool}`. If this optional field is unspecified, the default Cloud Build pool will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#worker_pool ClouddeployTarget#worker_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#worker_pool ClouddeployTarget#worker_pool}
+
+---
+
+### ClouddeployTargetExecutionConfigsDefaultPool <a name="ClouddeployTargetExecutionConfigsDefaultPool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
+
+&clouddeploytarget.ClouddeployTargetExecutionConfigsDefaultPool {
+	ArtifactStorage: *string,
+	ServiceAccount: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool.property.artifactStorage">ArtifactStorage</a></code> | <code>*string</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | Optional. Google service account to use for execution. If unspecified, the project execution service account (-compute@developer.gserviceaccount.com) will be used. |
+
+---
+
+##### `ArtifactStorage`<sup>Optional</sup> <a name="ArtifactStorage" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool.property.artifactStorage"></a>
+
+```go
+ArtifactStorage *string
+```
+
+- *Type:* *string
+
+Optional.
+
+Cloud Storage location where execution outputs should be stored. This can either be a bucket ("gs://my-bucket") or a path within a bucket ("gs://my-bucket/my-dir"). If unspecified, a default bucket located in the same region will be used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#artifact_storage ClouddeployTarget#artifact_storage}
+
+---
+
+##### `ServiceAccount`<sup>Optional</sup> <a name="ServiceAccount" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool.property.serviceAccount"></a>
+
+```go
+ServiceAccount *string
+```
+
+- *Type:* *string
+
+Optional. Google service account to use for execution. If unspecified, the project execution service account (-compute@developer.gserviceaccount.com) will be used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#service_account ClouddeployTarget#service_account}
+
+---
+
+### ClouddeployTargetExecutionConfigsPrivatePool <a name="ClouddeployTargetExecutionConfigsPrivatePool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
+
+&clouddeploytarget.ClouddeployTargetExecutionConfigsPrivatePool {
+	WorkerPool: *string,
+	ArtifactStorage: *string,
+	ServiceAccount: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool.property.workerPool">WorkerPool</a></code> | <code>*string</code> | Required. Resource name of the Cloud Build worker pool to use. The format is `projects/{project}/locations/{location}/workerPools/{pool}`. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool.property.artifactStorage">ArtifactStorage</a></code> | <code>*string</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | Optional. Google service account to use for execution. If unspecified, the project execution service account (-compute@developer.gserviceaccount.com) will be used. |
+
+---
+
+##### `WorkerPool`<sup>Required</sup> <a name="WorkerPool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool.property.workerPool"></a>
+
+```go
+WorkerPool *string
+```
+
+- *Type:* *string
+
+Required. Resource name of the Cloud Build worker pool to use. The format is `projects/{project}/locations/{location}/workerPools/{pool}`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#worker_pool ClouddeployTarget#worker_pool}
+
+---
+
+##### `ArtifactStorage`<sup>Optional</sup> <a name="ArtifactStorage" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool.property.artifactStorage"></a>
+
+```go
+ArtifactStorage *string
+```
+
+- *Type:* *string
+
+Optional.
+
+Cloud Storage location where execution outputs should be stored. This can either be a bucket ("gs://my-bucket") or a path within a bucket ("gs://my-bucket/my-dir"). If unspecified, a default bucket located in the same region will be used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#artifact_storage ClouddeployTarget#artifact_storage}
+
+---
+
+##### `ServiceAccount`<sup>Optional</sup> <a name="ServiceAccount" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool.property.serviceAccount"></a>
+
+```go
+ServiceAccount *string
+```
+
+- *Type:* *string
+
+Optional. Google service account to use for execution. If unspecified, the project execution service account (-compute@developer.gserviceaccount.com) will be used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#service_account ClouddeployTarget#service_account}
 
 ---
 
@@ -2101,7 +2253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGke.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetGke {
 	Cluster: *string,
@@ -2132,7 +2284,7 @@ Cluster *string
 
 Information specifying a GKE Cluster. Format is `projects/{project_id}/locations/{location_id}/clusters/{cluster_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#cluster ClouddeployTarget#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#cluster ClouddeployTarget#cluster}
 
 ---
 
@@ -2148,7 +2300,7 @@ Optional.
 
 If set, the cluster will be accessed using the DNS endpoint. Note that both `dns_endpoint` and `internal_ip` cannot be set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#dns_endpoint ClouddeployTarget#dns_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#dns_endpoint ClouddeployTarget#dns_endpoint}
 
 ---
 
@@ -2164,7 +2316,7 @@ Optional.
 
 If true, `cluster` is accessed using the private IP address of the control plane endpoint. Otherwise, the default IP address of the control plane endpoint is used. The default IP address is the private IP address for clusters with private control-plane endpoints and the public IP address otherwise. Only specify this option when `cluster` is a [private GKE cluster](https://cloud.google.com/kubernetes-engine/docs/concepts/private-cluster-concept).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#internal_ip ClouddeployTarget#internal_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#internal_ip ClouddeployTarget#internal_ip}
 
 ---
 
@@ -2178,7 +2330,7 @@ ProxyUrl *string
 
 Optional. If set, used to configure a [proxy](https://kubernetes.io/docs/concepts/configuration/organize-cluster-access-kubeconfig/#proxy) to the Kubernetes server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#proxy_url ClouddeployTarget#proxy_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#proxy_url ClouddeployTarget#proxy_url}
 
 ---
 
@@ -2187,7 +2339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetMultiTarget {
 	TargetIds: *[]*string,
@@ -2212,7 +2364,7 @@ TargetIds *[]*string
 
 Required. The target_ids of this multiTarget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#target_ids ClouddeployTarget#target_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#target_ids ClouddeployTarget#target_ids}
 
 ---
 
@@ -2221,7 +2373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRun.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetRun {
 	Location: *string,
@@ -2246,7 +2398,7 @@ Location *string
 
 Required. The location where the Cloud Run Service should be located. Format is `projects/{project}/locations/{location}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#location ClouddeployTarget#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#location ClouddeployTarget#location}
 
 ---
 
@@ -2255,7 +2407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 &clouddeploytarget.ClouddeployTargetTimeouts {
 	Create: *string,
@@ -2268,9 +2420,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarge
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#create ClouddeployTarget#create}. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#delete ClouddeployTarget#delete}. |
-| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#update ClouddeployTarget#update}. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#create ClouddeployTarget#create}. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#delete ClouddeployTarget#delete}. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#update ClouddeployTarget#update}. |
 
 ---
 
@@ -2282,7 +2434,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#create ClouddeployTarget#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#create ClouddeployTarget#create}.
 
 ---
 
@@ -2294,7 +2446,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#delete ClouddeployTarget#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#delete ClouddeployTarget#delete}.
 
 ---
 
@@ -2306,7 +2458,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/clouddeploy_target#update ClouddeployTarget#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/clouddeploy_target#update ClouddeployTarget#update}.
 
 ---
 
@@ -2317,7 +2469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAnthosClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAnthosClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetAnthosClusterOutputReference
 ```
@@ -2595,7 +2747,7 @@ func InternalValue() ClouddeployTargetAnthosCluster
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesAnthosClustersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployTargetAssociatedEntitiesAnthosClustersList
 ```
@@ -2755,7 +2907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference
 ```
@@ -3051,7 +3203,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesGkeClustersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployTargetAssociatedEntitiesGkeClustersList
 ```
@@ -3211,7 +3363,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesGkeClustersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 ```
@@ -3565,7 +3717,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployTargetAssociatedEntitiesList
 ```
@@ -3725,7 +3877,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetAssociatedEntitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployTargetAssociatedEntitiesOutputReference
 ```
@@ -4098,7 +4250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetCustomTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetCustomTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetCustomTargetOutputReference
 ```
@@ -4364,12 +4516,319 @@ func InternalValue() ClouddeployTargetCustomTarget
 ---
 
 
+### ClouddeployTargetExecutionConfigsDefaultPoolOutputReference <a name="ClouddeployTargetExecutionConfigsDefaultPoolOutputReference" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
+
+clouddeploytarget.NewClouddeployTargetExecutionConfigsDefaultPoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetExecutionConfigsDefaultPoolOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.resetArtifactStorage">ResetArtifactStorage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.resetServiceAccount">ResetServiceAccount</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetArtifactStorage` <a name="ResetArtifactStorage" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.resetArtifactStorage"></a>
+
+```go
+func ResetArtifactStorage()
+```
+
+##### `ResetServiceAccount` <a name="ResetServiceAccount" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.resetServiceAccount"></a>
+
+```go
+func ResetServiceAccount()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.artifactStorageInput">ArtifactStorageInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.serviceAccountInput">ServiceAccountInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.artifactStorage">ArtifactStorage</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool">ClouddeployTargetExecutionConfigsDefaultPool</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ArtifactStorageInput`<sup>Optional</sup> <a name="ArtifactStorageInput" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.artifactStorageInput"></a>
+
+```go
+func ArtifactStorageInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccountInput`<sup>Optional</sup> <a name="ServiceAccountInput" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.serviceAccountInput"></a>
+
+```go
+func ServiceAccountInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ArtifactStorage`<sup>Required</sup> <a name="ArtifactStorage" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.artifactStorage"></a>
+
+```go
+func ArtifactStorage() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccount`<sup>Required</sup> <a name="ServiceAccount" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.serviceAccount"></a>
+
+```go
+func ServiceAccount() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ClouddeployTargetExecutionConfigsDefaultPool
+```
+
+- *Type:* <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool">ClouddeployTargetExecutionConfigsDefaultPool</a>
+
+---
+
+
 ### ClouddeployTargetExecutionConfigsList <a name="ClouddeployTargetExecutionConfigsList" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetExecutionConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ClouddeployTargetExecutionConfigsList
 ```
@@ -4529,7 +4988,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetExecutionConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ClouddeployTargetExecutionConfigsOutputReference
 ```
@@ -4592,8 +5051,12 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.putDefaultPool">PutDefaultPool</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.putPrivatePool">PutPrivatePool</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetArtifactStorage">ResetArtifactStorage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetDefaultPool">ResetDefaultPool</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetExecutionTimeout">ResetExecutionTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetPrivatePool">ResetPrivatePool</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetServiceAccount">ResetServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetVerbose">ResetVerbose</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetWorkerPool">ResetWorkerPool</a></code> | *No description.* |
@@ -4750,16 +5213,52 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutDefaultPool` <a name="PutDefaultPool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.putDefaultPool"></a>
+
+```go
+func PutDefaultPool(value ClouddeployTargetExecutionConfigsDefaultPool)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.putDefaultPool.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool">ClouddeployTargetExecutionConfigsDefaultPool</a>
+
+---
+
+##### `PutPrivatePool` <a name="PutPrivatePool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.putPrivatePool"></a>
+
+```go
+func PutPrivatePool(value ClouddeployTargetExecutionConfigsPrivatePool)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.putPrivatePool.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool">ClouddeployTargetExecutionConfigsPrivatePool</a>
+
+---
+
 ##### `ResetArtifactStorage` <a name="ResetArtifactStorage" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetArtifactStorage"></a>
 
 ```go
 func ResetArtifactStorage()
 ```
 
+##### `ResetDefaultPool` <a name="ResetDefaultPool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetDefaultPool"></a>
+
+```go
+func ResetDefaultPool()
+```
+
 ##### `ResetExecutionTimeout` <a name="ResetExecutionTimeout" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetExecutionTimeout"></a>
 
 ```go
 func ResetExecutionTimeout()
+```
+
+##### `ResetPrivatePool` <a name="ResetPrivatePool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetPrivatePool"></a>
+
+```go
+func ResetPrivatePool()
 ```
 
 ##### `ResetServiceAccount` <a name="ResetServiceAccount" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.resetServiceAccount"></a>
@@ -4787,8 +5286,12 @@ func ResetWorkerPool()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.defaultPool">DefaultPool</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference">ClouddeployTargetExecutionConfigsDefaultPoolOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.privatePool">PrivatePool</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference">ClouddeployTargetExecutionConfigsPrivatePoolOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.artifactStorageInput">ArtifactStorageInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.defaultPoolInput">DefaultPoolInput</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool">ClouddeployTargetExecutionConfigsDefaultPool</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.executionTimeoutInput">ExecutionTimeoutInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.privatePoolInput">PrivatePoolInput</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool">ClouddeployTargetExecutionConfigsPrivatePool</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.serviceAccountInput">ServiceAccountInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.usagesInput">UsagesInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.verboseInput">VerboseInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -4827,6 +5330,26 @@ func Fqn() *string
 
 ---
 
+##### `DefaultPool`<sup>Required</sup> <a name="DefaultPool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.defaultPool"></a>
+
+```go
+func DefaultPool() ClouddeployTargetExecutionConfigsDefaultPoolOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPoolOutputReference">ClouddeployTargetExecutionConfigsDefaultPoolOutputReference</a>
+
+---
+
+##### `PrivatePool`<sup>Required</sup> <a name="PrivatePool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.privatePool"></a>
+
+```go
+func PrivatePool() ClouddeployTargetExecutionConfigsPrivatePoolOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference">ClouddeployTargetExecutionConfigsPrivatePoolOutputReference</a>
+
+---
+
 ##### `ArtifactStorageInput`<sup>Optional</sup> <a name="ArtifactStorageInput" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.artifactStorageInput"></a>
 
 ```go
@@ -4837,6 +5360,16 @@ func ArtifactStorageInput() *string
 
 ---
 
+##### `DefaultPoolInput`<sup>Optional</sup> <a name="DefaultPoolInput" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.defaultPoolInput"></a>
+
+```go
+func DefaultPoolInput() ClouddeployTargetExecutionConfigsDefaultPool
+```
+
+- *Type:* <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsDefaultPool">ClouddeployTargetExecutionConfigsDefaultPool</a>
+
+---
+
 ##### `ExecutionTimeoutInput`<sup>Optional</sup> <a name="ExecutionTimeoutInput" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.executionTimeoutInput"></a>
 
 ```go
@@ -4844,6 +5377,16 @@ func ExecutionTimeoutInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PrivatePoolInput`<sup>Optional</sup> <a name="PrivatePoolInput" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsOutputReference.property.privatePoolInput"></a>
+
+```go
+func PrivatePoolInput() ClouddeployTargetExecutionConfigsPrivatePool
+```
+
+- *Type:* <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool">ClouddeployTargetExecutionConfigsPrivatePool</a>
 
 ---
 
@@ -4958,12 +5501,341 @@ func InternalValue() interface{}
 ---
 
 
+### ClouddeployTargetExecutionConfigsPrivatePoolOutputReference <a name="ClouddeployTargetExecutionConfigsPrivatePoolOutputReference" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
+
+clouddeploytarget.NewClouddeployTargetExecutionConfigsPrivatePoolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetExecutionConfigsPrivatePoolOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.resetArtifactStorage">ResetArtifactStorage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.resetServiceAccount">ResetServiceAccount</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetArtifactStorage` <a name="ResetArtifactStorage" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.resetArtifactStorage"></a>
+
+```go
+func ResetArtifactStorage()
+```
+
+##### `ResetServiceAccount` <a name="ResetServiceAccount" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.resetServiceAccount"></a>
+
+```go
+func ResetServiceAccount()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.artifactStorageInput">ArtifactStorageInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.serviceAccountInput">ServiceAccountInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.workerPoolInput">WorkerPoolInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.artifactStorage">ArtifactStorage</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.workerPool">WorkerPool</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool">ClouddeployTargetExecutionConfigsPrivatePool</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ArtifactStorageInput`<sup>Optional</sup> <a name="ArtifactStorageInput" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.artifactStorageInput"></a>
+
+```go
+func ArtifactStorageInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccountInput`<sup>Optional</sup> <a name="ServiceAccountInput" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.serviceAccountInput"></a>
+
+```go
+func ServiceAccountInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkerPoolInput`<sup>Optional</sup> <a name="WorkerPoolInput" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.workerPoolInput"></a>
+
+```go
+func WorkerPoolInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ArtifactStorage`<sup>Required</sup> <a name="ArtifactStorage" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.artifactStorage"></a>
+
+```go
+func ArtifactStorage() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccount`<sup>Required</sup> <a name="ServiceAccount" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.serviceAccount"></a>
+
+```go
+func ServiceAccount() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `WorkerPool`<sup>Required</sup> <a name="WorkerPool" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.workerPool"></a>
+
+```go
+func WorkerPool() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePoolOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ClouddeployTargetExecutionConfigsPrivatePool
+```
+
+- *Type:* <a href="#@cdktn/provider-google.clouddeployTarget.ClouddeployTargetExecutionConfigsPrivatePool">ClouddeployTargetExecutionConfigsPrivatePool</a>
+
+---
+
+
 ### ClouddeployTargetGkeOutputReference <a name="ClouddeployTargetGkeOutputReference" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetGkeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetGkeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetGkeOutputReference
 ```
@@ -5328,7 +6200,7 @@ func InternalValue() ClouddeployTargetGke
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetMultiTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetMultiTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetMultiTargetOutputReference
 ```
@@ -5599,7 +6471,7 @@ func InternalValue() ClouddeployTargetMultiTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetRunOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetRunOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetRunOutputReference
 ```
@@ -5870,7 +6742,7 @@ func InternalValue() ClouddeployTargetRun
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.clouddeployTarget.ClouddeployTargetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/clouddeploytarget"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/clouddeploytarget"
 
 clouddeploytarget.NewClouddeployTargetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ClouddeployTargetTimeoutsOutputReference
 ```

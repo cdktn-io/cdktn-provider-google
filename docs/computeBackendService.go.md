@@ -4,12 +4,12 @@
 
 ### ComputeBackendService <a name="ComputeBackendService" id="@cdktn/provider-google.computeBackendService.ComputeBackendService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service google_compute_backend_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service google_compute_backend_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendService(scope Construct, id *string, config ComputeBackendServiceConfig) ComputeBackendService
 ```
@@ -84,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.putLogConfig">PutLogConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.putMaxStreamDuration">PutMaxStreamDuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.putOutlierDetection">PutOutlierDetection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.putParams">PutParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.putSecuritySettings">PutSecuritySettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.putStrongSessionAffinityCookie">PutStrongSessionAffinityCookie</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.putTimeouts">PutTimeouts</a></code> | *No description.* |
@@ -113,6 +114,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.resetLogConfig">ResetLogConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.resetMaxStreamDuration">ResetMaxStreamDuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.resetOutlierDetection">ResetOutlierDetection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.resetParams">ResetParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.resetPortName">ResetPortName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.resetProtocol">ResetProtocol</a></code> | *No description.* |
@@ -556,6 +558,18 @@ func PutOutlierDetection(value ComputeBackendServiceOutlierDetection)
 
 ---
 
+##### `PutParams` <a name="PutParams" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putParams"></a>
+
+```go
+func PutParams(value ComputeBackendServiceParams)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putParams.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParams">ComputeBackendServiceParams</a>
+
+---
+
 ##### `PutSecuritySettings` <a name="PutSecuritySettings" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.putSecuritySettings"></a>
 
 ```go
@@ -754,6 +768,12 @@ func ResetMaxStreamDuration()
 func ResetOutlierDetection()
 ```
 
+##### `ResetParams` <a name="ResetParams" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.resetParams"></a>
+
+```go
+func ResetParams()
+```
+
 ##### `ResetPortName` <a name="ResetPortName" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.resetPortName"></a>
 
 ```go
@@ -834,7 +854,7 @@ func ResetTlsSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.ComputeBackendService_IsConstruct(x interface{}) *bool
 ```
@@ -866,7 +886,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.ComputeBackendService_IsTerraformElement(x interface{}) *bool
 ```
@@ -880,7 +900,7 @@ computebackendservice.ComputeBackendService_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.ComputeBackendService_IsTerraformResource(x interface{}) *bool
 ```
@@ -894,7 +914,7 @@ computebackendservice.ComputeBackendService_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.ComputeBackendService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -923,7 +943,7 @@ The construct id used in the generated config for the ComputeBackendService to i
 
 The id of the existing ComputeBackendService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -966,6 +986,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.logConfig">LogConfig</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference">ComputeBackendServiceLogConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.maxStreamDuration">MaxStreamDuration</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDurationOutputReference">ComputeBackendServiceMaxStreamDurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.outlierDetection">OutlierDetection</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionOutputReference">ComputeBackendServiceOutlierDetectionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference">ComputeBackendServiceParamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.securitySettings">SecuritySettings</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference">ComputeBackendServiceSecuritySettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.strongSessionAffinityCookie">StrongSessionAffinityCookie</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieOutputReference">ComputeBackendServiceStrongSessionAffinityCookieOutputReference</a></code> | *No description.* |
@@ -997,6 +1018,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.maxStreamDurationInput">MaxStreamDurationInput</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDuration">ComputeBackendServiceMaxStreamDuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.outlierDetectionInput">OutlierDetectionInput</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetection">ComputeBackendServiceOutlierDetection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.paramsInput">ParamsInput</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParams">ComputeBackendServiceParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.portNameInput">PortNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendService.property.protocolInput">ProtocolInput</a></code> | <code>*string</code> | *No description.* |
@@ -1303,6 +1325,16 @@ func OutlierDetection() ComputeBackendServiceOutlierDetectionOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionOutputReference">ComputeBackendServiceOutlierDetectionOutputReference</a>
+
+---
+
+##### `Params`<sup>Required</sup> <a name="Params" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.property.params"></a>
+
+```go
+func Params() ComputeBackendServiceParamsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference">ComputeBackendServiceParamsOutputReference</a>
 
 ---
 
@@ -1613,6 +1645,16 @@ func OutlierDetectionInput() ComputeBackendServiceOutlierDetection
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetection">ComputeBackendServiceOutlierDetection</a>
+
+---
+
+##### `ParamsInput`<sup>Optional</sup> <a name="ParamsInput" id="@cdktn/provider-google.computeBackendService.ComputeBackendService.property.paramsInput"></a>
+
+```go
+func ParamsInput() ComputeBackendServiceParams
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParams">ComputeBackendServiceParams</a>
 
 ---
 
@@ -1981,7 +2023,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceBackend {
 	Group: *string,
@@ -2047,7 +2089,7 @@ Note that you must specify an Instance Group or Network Endpoint
 Group resource using the fully-qualified URL, rather than a
 partial URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#group ComputeBackendService#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#group ComputeBackendService#group}
 
 ---
 
@@ -2066,9 +2108,9 @@ UTILIZATION. Valid values are UTILIZATION, RATE (for HTTP(S)),
 CUSTOM_METRICS (for HTTP(s)) and CONNECTION (for TCP/SSL).
 
 See the [Backend Services Overview](https://cloud.google.com/load-balancing/docs/backend-service#balancing-mode)
-for an explanation of load balancing modes. Default value: "UTILIZATION" Possible values: ["UTILIZATION", "RATE", "CONNECTION", "CUSTOM_METRICS"]
+for an explanation of load balancing modes. Default value: "UTILIZATION" Possible values: ["UTILIZATION", "RATE", "CONNECTION", "CUSTOM_METRICS", "IN_FLIGHT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#balancing_mode ComputeBackendService#balancing_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#balancing_mode ComputeBackendService#balancing_mode}
 
 ---
 
@@ -2087,7 +2129,7 @@ of its configured capacity (depending on balancingMode). A
 setting of 0 means the group is completely drained, offering
 0% of its available Capacity. Valid range is [0.0,1.0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#capacity_scaler ComputeBackendService#capacity_scaler}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#capacity_scaler ComputeBackendService#capacity_scaler}
 
 ---
 
@@ -2101,7 +2143,7 @@ CustomMetrics interface{}
 
 custom_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#custom_metrics ComputeBackendService#custom_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#custom_metrics ComputeBackendService#custom_metrics}
 
 ---
 
@@ -2115,7 +2157,7 @@ Description *string
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#description ComputeBackendService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#description ComputeBackendService#description}
 
 ---
 
@@ -2133,7 +2175,7 @@ For CONNECTION mode, either maxConnections or one
 of maxConnectionsPerInstance or maxConnectionsPerEndpoint,
 as appropriate for group type, must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_connections ComputeBackendService#max_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_connections ComputeBackendService#max_connections}
 
 ---
 
@@ -2154,7 +2196,7 @@ UTILIZATION balancing modes.
 For CONNECTION mode, either
 maxConnections or maxConnectionsPerEndpoint must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_connections_per_endpoint ComputeBackendService#max_connections_per_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_connections_per_endpoint ComputeBackendService#max_connections_per_endpoint}
 
 ---
 
@@ -2175,7 +2217,7 @@ UTILIZATION balancing modes.
 For CONNECTION mode, either maxConnections or
 maxConnectionsPerInstance must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_connections_per_instance ComputeBackendService#max_connections_per_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_connections_per_instance ComputeBackendService#max_connections_per_instance}
 
 ---
 
@@ -2194,7 +2236,7 @@ but required if RATE mode. For RATE mode, either maxRate or one
 of maxRatePerInstance or maxRatePerEndpoint, as appropriate for
 group type, must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_rate ComputeBackendService#max_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_rate ComputeBackendService#max_rate}
 
 ---
 
@@ -2212,7 +2254,7 @@ This is used to calculate the capacity of
 the group. Can be used in either balancing mode. For RATE mode,
 either maxRate or maxRatePerEndpoint must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_rate_per_endpoint ComputeBackendService#max_rate_per_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_rate_per_endpoint ComputeBackendService#max_rate_per_endpoint}
 
 ---
 
@@ -2230,7 +2272,7 @@ This is used to calculate the capacity of
 the group. Can be used in either balancing mode. For RATE mode,
 either maxRate or maxRatePerInstance must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_rate_per_instance ComputeBackendService#max_rate_per_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_rate_per_instance ComputeBackendService#max_rate_per_instance}
 
 ---
 
@@ -2244,7 +2286,7 @@ MaxUtilization *f64
 
 Used when balancingMode is UTILIZATION. This ratio defines the CPU utilization target for the group. Valid range is [0.0, 1.0].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_utilization ComputeBackendService#max_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_utilization ComputeBackendService#max_utilization}
 
 ---
 
@@ -2265,7 +2307,7 @@ This field cannot be set when loadBalancingScheme is set to 'EXTERNAL'. The poss
 * DEFAULT: If preferred backends don't have enough capacity, backends in this layer would be used and
   traffic would be assigned based on the load balancing algorithm you use. This is the default Possible values: ["PREFERRED", "DEFAULT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#preference ComputeBackendService#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#preference ComputeBackendService#preference}
 
 ---
 
@@ -2274,7 +2316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceBackendCustomMetrics {
 	DryRun: interface{},
@@ -2303,7 +2345,7 @@ DryRun interface{}
 
 If true, the metric data is collected and reported to Cloud Monitoring, but is not used for load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#dry_run ComputeBackendService#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#dry_run ComputeBackendService#dry_run}
 
 ---
 
@@ -2327,7 +2369,7 @@ field can only be used for a global or regional backend service with the
 loadBalancingScheme set to <code>EXTERNAL_MANAGED</code>,
 <code>INTERNAL_MANAGED</code> <code>INTERNAL_SELF_MANAGED</code>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
 
 ---
 
@@ -2341,7 +2383,7 @@ MaxUtilization *f64
 
 Optional parameter to define a target utilization for the Custom Metrics balancing mode. The valid range is <code>[0.0, 1.0]</code>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_utilization ComputeBackendService#max_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_utilization ComputeBackendService#max_utilization}
 
 ---
 
@@ -2350,11 +2392,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceCdnPolicy {
 	BypassCacheOnRequestHeaders: interface{},
-	CacheKeyPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy,
+	CacheKeyPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy,
 	CacheMode: *string,
 	ClientTtl: *f64,
 	DefaultTtl: *f64,
@@ -2395,7 +2437,7 @@ BypassCacheOnRequestHeaders interface{}
 
 bypass_cache_on_request_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#bypass_cache_on_request_headers ComputeBackendService#bypass_cache_on_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#bypass_cache_on_request_headers ComputeBackendService#bypass_cache_on_request_headers}
 
 ---
 
@@ -2409,7 +2451,7 @@ CacheKeyPolicy ComputeBackendServiceCdnPolicyCacheKeyPolicy
 
 cache_key_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#cache_key_policy ComputeBackendService#cache_key_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#cache_key_policy ComputeBackendService#cache_key_policy}
 
 ---
 
@@ -2425,7 +2467,7 @@ Specifies the cache setting for all responses from this backend.
 
 The possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL and CACHE_ALL_STATIC Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#cache_mode ComputeBackendService#cache_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#cache_mode ComputeBackendService#cache_mode}
 
 ---
 
@@ -2439,7 +2481,7 @@ ClientTtl *f64
 
 Specifies the maximum allowed TTL for cached content served by this origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#client_ttl ComputeBackendService#client_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#client_ttl ComputeBackendService#client_ttl}
 
 ---
 
@@ -2453,7 +2495,7 @@ DefaultTtl *f64
 
 Specifies the default TTL for cached content served by this origin for responses that do not have an existing valid TTL (max-age or s-max-age).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#default_ttl ComputeBackendService#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#default_ttl ComputeBackendService#default_ttl}
 
 ---
 
@@ -2467,7 +2509,7 @@ MaxTtl *f64
 
 Specifies the maximum allowed TTL for cached content served by this origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_ttl ComputeBackendService#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_ttl ComputeBackendService#max_ttl}
 
 ---
 
@@ -2481,7 +2523,7 @@ NegativeCaching interface{}
 
 Negative caching allows per-status code TTLs to be set, in order to apply fine-grained caching for common errors or redirects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#negative_caching ComputeBackendService#negative_caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#negative_caching ComputeBackendService#negative_caching}
 
 ---
 
@@ -2495,7 +2537,7 @@ NegativeCachingPolicy interface{}
 
 negative_caching_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#negative_caching_policy ComputeBackendService#negative_caching_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#negative_caching_policy ComputeBackendService#negative_caching_policy}
 
 ---
 
@@ -2509,7 +2551,7 @@ RequestCoalescing interface{}
 
 If true then Cloud CDN will combine multiple concurrent cache fill requests into a small number of requests to the origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#request_coalescing ComputeBackendService#request_coalescing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#request_coalescing ComputeBackendService#request_coalescing}
 
 ---
 
@@ -2523,7 +2565,7 @@ ServeWhileStale *f64
 
 Serve existing content from the cache (if available) when revalidating content with the origin, or when an error is encountered when refreshing the cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#serve_while_stale ComputeBackendService#serve_while_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#serve_while_stale ComputeBackendService#serve_while_stale}
 
 ---
 
@@ -2547,7 +2589,7 @@ internally behave as though all responses from this backend had a
 existing Cache-Control header. The actual headers served in
 responses will not be altered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#signed_url_cache_max_age_sec ComputeBackendService#signed_url_cache_max_age_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#signed_url_cache_max_age_sec ComputeBackendService#signed_url_cache_max_age_sec}
 
 ---
 
@@ -2556,7 +2598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders {
 	HeaderName: *string,
@@ -2581,7 +2623,7 @@ HeaderName *string
 
 The header field name to match on when bypassing cache. Values are case-insensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#header_name ComputeBackendService#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#header_name ComputeBackendService#header_name}
 
 ---
 
@@ -2590,7 +2632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceCdnPolicyCacheKeyPolicy {
 	IncludeHost: interface{},
@@ -2627,7 +2669,7 @@ IncludeHost interface{}
 
 If true requests to different hosts will be cached separately.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#include_host ComputeBackendService#include_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#include_host ComputeBackendService#include_host}
 
 ---
 
@@ -2641,7 +2683,7 @@ IncludeHttpHeaders *[]*string
 
 Allows HTTP request headers (by name) to be used in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#include_http_headers ComputeBackendService#include_http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#include_http_headers ComputeBackendService#include_http_headers}
 
 ---
 
@@ -2655,7 +2697,7 @@ IncludeNamedCookies *[]*string
 
 Names of cookies to include in cache keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#include_named_cookies ComputeBackendService#include_named_cookies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#include_named_cookies ComputeBackendService#include_named_cookies}
 
 ---
 
@@ -2669,7 +2711,7 @@ IncludeProtocol interface{}
 
 If true, http and https requests will be cached separately.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#include_protocol ComputeBackendService#include_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#include_protocol ComputeBackendService#include_protocol}
 
 ---
 
@@ -2689,7 +2731,7 @@ string will be included.
 If false, the query string will be excluded from the cache
 key entirely.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#include_query_string ComputeBackendService#include_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#include_query_string ComputeBackendService#include_query_string}
 
 ---
 
@@ -2708,7 +2750,7 @@ query_string_whitelist or query_string_blacklist, not both.
 '&' and '=' will be percent encoded and not treated as
 delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#query_string_blacklist ComputeBackendService#query_string_blacklist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#query_string_blacklist ComputeBackendService#query_string_blacklist}
 
 ---
 
@@ -2727,7 +2769,7 @@ query_string_whitelist or query_string_blacklist, not both.
 '&' and '=' will be percent encoded and not treated as
 delimiters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#query_string_whitelist ComputeBackendService#query_string_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#query_string_whitelist ComputeBackendService#query_string_whitelist}
 
 ---
 
@@ -2736,7 +2778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceCdnPolicyNegativeCachingPolicy {
 	Code: *f64,
@@ -2766,7 +2808,7 @@ The HTTP status code to define a TTL against.
 Only HTTP status codes 300, 301, 308, 404, 405, 410, 421, 451 and 501
 can be specified as values, and you cannot specify a status code more than once.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#code ComputeBackendService#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#code ComputeBackendService#code}
 
 ---
 
@@ -2783,7 +2825,7 @@ The TTL (in seconds) for which to cache responses with the corresponding status 
 The maximum allowed value is 1800s
 (30 minutes), noting that infrequently accessed objects may be evicted from the cache before the defined TTL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#ttl ComputeBackendService#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#ttl ComputeBackendService#ttl}
 
 ---
 
@@ -2792,7 +2834,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceCircuitBreakers {
 	MaxConnections: *f64,
@@ -2825,7 +2867,7 @@ MaxConnections *f64
 
 The maximum number of connections to the backend cluster. Defaults to 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_connections ComputeBackendService#max_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_connections ComputeBackendService#max_connections}
 
 ---
 
@@ -2839,7 +2881,7 @@ MaxPendingRequests *f64
 
 The maximum number of pending requests to the backend cluster. Defaults to 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_pending_requests ComputeBackendService#max_pending_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_pending_requests ComputeBackendService#max_pending_requests}
 
 ---
 
@@ -2853,7 +2895,7 @@ MaxRequests *f64
 
 The maximum number of parallel requests to the backend cluster. Defaults to 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_requests ComputeBackendService#max_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_requests ComputeBackendService#max_requests}
 
 ---
 
@@ -2872,7 +2914,7 @@ is respected by both the HTTP/1.1 and HTTP/2 implementations. If
 not specified, there is no limit. Setting this parameter to 1
 will effectively disable keep alive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_requests_per_connection ComputeBackendService#max_requests_per_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_requests_per_connection ComputeBackendService#max_requests_per_connection}
 
 ---
 
@@ -2886,7 +2928,7 @@ MaxRetries *f64
 
 The maximum number of parallel retries to the backend cluster. Defaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_retries ComputeBackendService#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_retries ComputeBackendService#max_retries}
 
 ---
 
@@ -2895,7 +2937,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceConfig {
 	Connection: interface{},
@@ -2908,11 +2950,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendse
 	Name: *string,
 	AffinityCookieTtlSec: *f64,
 	Backend: interface{},
-	CdnPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceCdnPolicy,
-	CircuitBreakers: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceCircuitBreakers,
+	CdnPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceCdnPolicy,
+	CircuitBreakers: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceCircuitBreakers,
 	CompressionMode: *string,
 	ConnectionDrainingTimeoutSec: *f64,
-	ConsistentHash: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceConsistentHash,
+	ConsistentHash: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceConsistentHash,
 	CustomMetrics: interface{},
 	CustomRequestHeaders: *[]*string,
 	CustomResponseHeaders: *[]*string,
@@ -2922,26 +2964,27 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendse
 	ExternalManagedMigrationState: *string,
 	ExternalManagedMigrationTestingPercentage: *f64,
 	HealthChecks: *[]*string,
-	Iap: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceIap,
+	Iap: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceIap,
 	Id: *string,
 	IpAddressSelectionPolicy: *string,
 	LoadBalancingScheme: *string,
 	LocalityLbPolicies: interface{},
 	LocalityLbPolicy: *string,
-	LogConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceLogConfig,
-	MaxStreamDuration: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceMaxStreamDuration,
-	OutlierDetection: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceOutlierDetection,
+	LogConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceLogConfig,
+	MaxStreamDuration: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceMaxStreamDuration,
+	OutlierDetection: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceOutlierDetection,
+	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceParams,
 	PortName: *string,
 	Project: *string,
 	Protocol: *string,
 	SecurityPolicy: *string,
-	SecuritySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceSecuritySettings,
+	SecuritySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceSecuritySettings,
 	ServiceLbPolicy: *string,
 	SessionAffinity: *string,
-	StrongSessionAffinityCookie: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookie,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceTimeouts,
+	StrongSessionAffinityCookie: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookie,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceTimeouts,
 	TimeoutSec: *f64,
-	TlsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceTlsSettings,
+	TlsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceTlsSettings,
 }
 ```
 
@@ -2974,7 +3017,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendse
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.externalManagedMigrationTestingPercentage">ExternalManagedMigrationTestingPercentage</a></code> | <code>*f64</code> | Determines the fraction of requests that should be processed by the Global external Application Load Balancer. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.healthChecks">HealthChecks</a></code> | <code>*[]*string</code> | The set of URLs to the HttpHealthCheck or HttpsHealthCheck resource for health checking this BackendService. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.iap">Iap</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceIap">ComputeBackendServiceIap</a></code> | iap block. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#id ComputeBackendService#id}. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#id ComputeBackendService#id}. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.ipAddressSelectionPolicy">IpAddressSelectionPolicy</a></code> | <code>*string</code> | Specifies preference of traffic to the backend (from the proxy and from the client for proxyless gRPC). |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.loadBalancingScheme">LoadBalancingScheme</a></code> | <code>*string</code> | Indicates whether the backend service will be used with internal or external load balancing. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.localityLbPolicies">LocalityLbPolicies</a></code> | <code>interface{}</code> | locality_lb_policies block. |
@@ -2982,8 +3025,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendse
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.logConfig">LogConfig</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfig">ComputeBackendServiceLogConfig</a></code> | log_config block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.maxStreamDuration">MaxStreamDuration</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDuration">ComputeBackendServiceMaxStreamDuration</a></code> | max_stream_duration block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.outlierDetection">OutlierDetection</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetection">ComputeBackendServiceOutlierDetection</a></code> | outlier_detection block. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParams">ComputeBackendServiceParams</a></code> | params block. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.portName">PortName</a></code> | <code>*string</code> | Name of backend port. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#project ComputeBackendService#project}. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#project ComputeBackendService#project}. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.protocol">Protocol</a></code> | <code>*string</code> | The protocol this BackendService uses to communicate with backends. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.securityPolicy">SecurityPolicy</a></code> | <code>*string</code> | The security policy associated with this backend service. |
 | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.securitySettings">SecuritySettings</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettings">ComputeBackendServiceSecuritySettings</a></code> | security_settings block. |
@@ -3084,7 +3128,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
 
 ---
 
@@ -3104,7 +3148,7 @@ maximum allowed value for TTL is one day.
 
 When the load balancing scheme is INTERNAL, this field is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#affinity_cookie_ttl_sec ComputeBackendService#affinity_cookie_ttl_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#affinity_cookie_ttl_sec ComputeBackendService#affinity_cookie_ttl_sec}
 
 ---
 
@@ -3118,7 +3162,7 @@ Backend interface{}
 
 backend block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#backend ComputeBackendService#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#backend ComputeBackendService#backend}
 
 ---
 
@@ -3132,7 +3176,7 @@ CdnPolicy ComputeBackendServiceCdnPolicy
 
 cdn_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#cdn_policy ComputeBackendService#cdn_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#cdn_policy ComputeBackendService#cdn_policy}
 
 ---
 
@@ -3146,7 +3190,7 @@ CircuitBreakers ComputeBackendServiceCircuitBreakers
 
 circuit_breakers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#circuit_breakers ComputeBackendService#circuit_breakers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#circuit_breakers ComputeBackendService#circuit_breakers}
 
 ---
 
@@ -3160,7 +3204,7 @@ CompressionMode *string
 
 Compress text responses using Brotli or gzip compression, based on the client's Accept-Encoding header. Possible values: ["AUTOMATIC", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#compression_mode ComputeBackendService#compression_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#compression_mode ComputeBackendService#compression_mode}
 
 ---
 
@@ -3174,7 +3218,7 @@ ConnectionDrainingTimeoutSec *f64
 
 Time for which instance will be drained (not accept new connections, but still work to finish started).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#connection_draining_timeout_sec ComputeBackendService#connection_draining_timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#connection_draining_timeout_sec ComputeBackendService#connection_draining_timeout_sec}
 
 ---
 
@@ -3188,7 +3232,7 @@ ConsistentHash ComputeBackendServiceConsistentHash
 
 consistent_hash block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#consistent_hash ComputeBackendService#consistent_hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#consistent_hash ComputeBackendService#consistent_hash}
 
 ---
 
@@ -3202,7 +3246,7 @@ CustomMetrics interface{}
 
 custom_metrics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#custom_metrics ComputeBackendService#custom_metrics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#custom_metrics ComputeBackendService#custom_metrics}
 
 ---
 
@@ -3216,7 +3260,7 @@ CustomRequestHeaders *[]*string
 
 Headers that the HTTP/S load balancer should add to proxied requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#custom_request_headers ComputeBackendService#custom_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#custom_request_headers ComputeBackendService#custom_request_headers}
 
 ---
 
@@ -3230,7 +3274,7 @@ CustomResponseHeaders *[]*string
 
 Headers that the HTTP/S load balancer should add to proxied responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#custom_response_headers ComputeBackendService#custom_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#custom_response_headers ComputeBackendService#custom_response_headers}
 
 ---
 
@@ -3244,7 +3288,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#description ComputeBackendService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#description ComputeBackendService#description}
 
 ---
 
@@ -3258,7 +3302,7 @@ EdgeSecurityPolicy *string
 
 The resource URL for the edge security policy associated with this backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#edge_security_policy ComputeBackendService#edge_security_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#edge_security_policy ComputeBackendService#edge_security_policy}
 
 ---
 
@@ -3272,7 +3316,7 @@ EnableCdn interface{}
 
 If true, enable Cloud CDN for this BackendService.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#enable_cdn ComputeBackendService#enable_cdn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#enable_cdn ComputeBackendService#enable_cdn}
 
 ---
 
@@ -3296,7 +3340,7 @@ scheme from EXTERNAL_MANAGED to EXTERNAL requires the state to be set to TEST_AL
 the same time. Optionally, the TEST_BY_PERCENTAGE state can be used to migrate some traffic
 back to EXTERNAL or PREPARE can be used to migrate all traffic back to EXTERNAL. Possible values: ["PREPARE", "TEST_BY_PERCENTAGE", "TEST_ALL_TRAFFIC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#external_managed_migration_state ComputeBackendService#external_managed_migration_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#external_managed_migration_state ComputeBackendService#external_managed_migration_state}
 
 ---
 
@@ -3318,7 +3362,7 @@ see: Session Affinity.
 This value can only be set if the loadBalancingScheme in the backend service is set to
 EXTERNAL (when using the Classic ALB) and the migration state is TEST_BY_PERCENTAGE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#external_managed_migration_testing_percentage ComputeBackendService#external_managed_migration_testing_percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#external_managed_migration_testing_percentage ComputeBackendService#external_managed_migration_testing_percentage}
 
 ---
 
@@ -3340,7 +3384,7 @@ or serverless NEG as a backend.
 
 For internal load balancing, a URL to a HealthCheck resource must be specified instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#health_checks ComputeBackendService#health_checks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#health_checks ComputeBackendService#health_checks}
 
 ---
 
@@ -3354,7 +3398,7 @@ Iap ComputeBackendServiceIap
 
 iap block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#iap ComputeBackendService#iap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#iap ComputeBackendService#iap}
 
 ---
 
@@ -3366,7 +3410,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#id ComputeBackendService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#id ComputeBackendService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3385,7 +3429,7 @@ Specifies preference of traffic to the backend (from the proxy and from the clie
 
 Possible values: ["IPV4_ONLY", "PREFER_IPV6", "IPV6_ONLY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#ip_address_selection_policy ComputeBackendService#ip_address_selection_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#ip_address_selection_policy ComputeBackendService#ip_address_selection_policy}
 
 ---
 
@@ -3403,7 +3447,7 @@ A backend service created for one type of
 load balancing cannot be used with the other. For more information, refer to
 [Choosing a load balancer](https://cloud.google.com/load-balancing/docs/backend-service). Default value: "EXTERNAL" Possible values: ["EXTERNAL", "INTERNAL_SELF_MANAGED", "INTERNAL_MANAGED", "EXTERNAL_MANAGED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#load_balancing_scheme ComputeBackendService#load_balancing_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#load_balancing_scheme ComputeBackendService#load_balancing_scheme}
 
 ---
 
@@ -3417,7 +3461,7 @@ LocalityLbPolicies interface{}
 
 locality_lb_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#locality_lb_policies ComputeBackendService#locality_lb_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#locality_lb_policies ComputeBackendService#locality_lb_policies}
 
 ---
 
@@ -3485,7 +3529,7 @@ Only ROUND_ROBIN and RING_HASH are supported when the backend service is referen
 by a URL map that is bound to target gRPC proxy that has validate_for_proxyless
 field set to true. Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV", "WEIGHTED_MAGLEV", "WEIGHTED_ROUND_ROBIN"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#locality_lb_policy ComputeBackendService#locality_lb_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#locality_lb_policy ComputeBackendService#locality_lb_policy}
 
 ---
 
@@ -3499,7 +3543,7 @@ LogConfig ComputeBackendServiceLogConfig
 
 log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#log_config ComputeBackendService#log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#log_config ComputeBackendService#log_config}
 
 ---
 
@@ -3513,7 +3557,7 @@ MaxStreamDuration ComputeBackendServiceMaxStreamDuration
 
 max_stream_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_stream_duration ComputeBackendService#max_stream_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_stream_duration ComputeBackendService#max_stream_duration}
 
 ---
 
@@ -3527,7 +3571,21 @@ OutlierDetection ComputeBackendServiceOutlierDetection
 
 outlier_detection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#outlier_detection ComputeBackendService#outlier_detection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#outlier_detection ComputeBackendService#outlier_detection}
+
+---
+
+##### `Params`<sup>Optional</sup> <a name="Params" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConfig.property.params"></a>
+
+```go
+Params ComputeBackendServiceParams
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParams">ComputeBackendServiceParams</a>
+
+params block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#params ComputeBackendService#params}
 
 ---
 
@@ -3545,7 +3603,7 @@ The same name should appear in the instance
 groups referenced by this service. Required when the load balancing
 scheme is EXTERNAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#port_name ComputeBackendService#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#port_name ComputeBackendService#port_name}
 
 ---
 
@@ -3557,7 +3615,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#project ComputeBackendService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#project ComputeBackendService#project}.
 
 ---
 
@@ -3576,7 +3634,7 @@ or GRPC. Refer to the documentation for the load balancers or for Traffic Direct
 for more information. Must be set to GRPC when the backend service is referenced
 by a URL map that is bound to target gRPC proxy. Possible values: ["HTTP", "HTTPS", "HTTP2", "TCP", "SSL", "UDP", "GRPC", "UNSPECIFIED", "H2C"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#protocol ComputeBackendService#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#protocol ComputeBackendService#protocol}
 
 ---
 
@@ -3590,7 +3648,7 @@ SecurityPolicy *string
 
 The security policy associated with this backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#security_policy ComputeBackendService#security_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#security_policy ComputeBackendService#security_policy}
 
 ---
 
@@ -3604,7 +3662,7 @@ SecuritySettings ComputeBackendServiceSecuritySettings
 
 security_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#security_settings ComputeBackendService#security_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#security_settings ComputeBackendService#security_settings}
 
 ---
 
@@ -3618,7 +3676,7 @@ ServiceLbPolicy *string
 
 URL to networkservices.ServiceLbPolicy resource. Can only be set if load balancing scheme is EXTERNAL, EXTERNAL_MANAGED, INTERNAL_MANAGED or INTERNAL_SELF_MANAGED and the scope is global.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#service_lb_policy ComputeBackendService#service_lb_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#service_lb_policy ComputeBackendService#service_lb_policy}
 
 ---
 
@@ -3635,7 +3693,7 @@ Type of session affinity to use.
 The default is NONE. Session affinity is
 not applicable if the protocol is UDP. Possible values: ["NONE", "CLIENT_IP", "CLIENT_IP_PORT_PROTO", "CLIENT_IP_PROTO", "GENERATED_COOKIE", "HEADER_FIELD", "HTTP_COOKIE", "STRONG_COOKIE_AFFINITY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#session_affinity ComputeBackendService#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#session_affinity ComputeBackendService#session_affinity}
 
 ---
 
@@ -3649,7 +3707,7 @@ StrongSessionAffinityCookie ComputeBackendServiceStrongSessionAffinityCookie
 
 strong_session_affinity_cookie block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#strong_session_affinity_cookie ComputeBackendService#strong_session_affinity_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#strong_session_affinity_cookie ComputeBackendService#strong_session_affinity_cookie}
 
 ---
 
@@ -3663,7 +3721,7 @@ Timeouts ComputeBackendServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#timeouts ComputeBackendService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#timeouts ComputeBackendService#timeouts}
 
 ---
 
@@ -3681,7 +3739,7 @@ For more information see, [Backend service settings](https://cloud.google.com/co
 The default is 30 seconds.
 The full range of timeout values allowed goes from 1 through 2,147,483,647 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#timeout_sec ComputeBackendService#timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#timeout_sec ComputeBackendService#timeout_sec}
 
 ---
 
@@ -3695,7 +3753,7 @@ TlsSettings ComputeBackendServiceTlsSettings
 
 tls_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#tls_settings ComputeBackendService#tls_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#tls_settings ComputeBackendService#tls_settings}
 
 ---
 
@@ -3704,10 +3762,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHash.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceConsistentHash {
-	HttpCookie: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceConsistentHashHttpCookie,
+	HttpCookie: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceConsistentHashHttpCookie,
 	HttpHeaderName: *string,
 	MinimumRingSize: *f64,
 }
@@ -3733,7 +3791,7 @@ HttpCookie ComputeBackendServiceConsistentHashHttpCookie
 
 http_cookie block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#http_cookie ComputeBackendService#http_cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#http_cookie ComputeBackendService#http_cookie}
 
 ---
 
@@ -3749,7 +3807,7 @@ The hash based on the value of the specified header field.
 
 This field is applicable if the sessionAffinity is set to HEADER_FIELD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#http_header_name ComputeBackendService#http_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#http_header_name ComputeBackendService#http_header_name}
 
 ---
 
@@ -3769,7 +3827,7 @@ is larger than the ring size, each host will be assigned a single
 virtual node.
 Defaults to 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#minimum_ring_size ComputeBackendService#minimum_ring_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#minimum_ring_size ComputeBackendService#minimum_ring_size}
 
 ---
 
@@ -3778,12 +3836,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookie.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceConsistentHashHttpCookie {
 	Name: *string,
 	Path: *string,
-	Ttl: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtl,
+	Ttl: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtl,
 }
 ```
 
@@ -3807,7 +3865,7 @@ Name *string
 
 Name of the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
 
 ---
 
@@ -3821,7 +3879,7 @@ Path *string
 
 Path to set for the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#path ComputeBackendService#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#path ComputeBackendService#path}
 
 ---
 
@@ -3835,7 +3893,7 @@ Ttl ComputeBackendServiceConsistentHashHttpCookieTtl
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#ttl ComputeBackendService#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#ttl ComputeBackendService#ttl}
 
 ---
 
@@ -3844,7 +3902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceConsistentHashHttpCookieTtl {
 	Seconds: *f64,
@@ -3871,7 +3929,7 @@ Seconds *f64
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#seconds ComputeBackendService#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#seconds ComputeBackendService#seconds}
 
 ---
 
@@ -3889,7 +3947,7 @@ Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must
 be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#nanos ComputeBackendService#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#nanos ComputeBackendService#nanos}
 
 ---
 
@@ -3898,7 +3956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetrics.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceCustomMetrics {
 	DryRun: interface{},
@@ -3925,7 +3983,7 @@ DryRun interface{}
 
 If true, the metric data is not used for load balancing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#dry_run ComputeBackendService#dry_run}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#dry_run ComputeBackendService#dry_run}
 
 ---
 
@@ -3949,7 +4007,7 @@ field can only be used for a global or regional backend service with the
 loadBalancingScheme set to <code>EXTERNAL_MANAGED</code>,
 <code>INTERNAL_MANAGED</code> <code>INTERNAL_SELF_MANAGED</code>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
 
 ---
 
@@ -3958,7 +4016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceIap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceIap {
 	Enabled: interface{},
@@ -3987,7 +4045,7 @@ Enabled interface{}
 
 Whether the serving infrastructure will authenticate and authorize all incoming requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#enabled ComputeBackendService#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#enabled ComputeBackendService#enabled}
 
 ---
 
@@ -4001,7 +4059,7 @@ Oauth2ClientId *string
 
 OAuth2 Client ID for IAP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#oauth2_client_id ComputeBackendService#oauth2_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#oauth2_client_id ComputeBackendService#oauth2_client_id}
 
 ---
 
@@ -4015,7 +4073,7 @@ Oauth2ClientSecret *string
 
 OAuth2 Client Secret for IAP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#oauth2_client_secret ComputeBackendService#oauth2_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#oauth2_client_secret ComputeBackendService#oauth2_client_secret}
 
 ---
 
@@ -4024,11 +4082,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceLocalityLbPolicies {
-	CustomPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicy,
-	Policy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicy,
+	CustomPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicy,
+	Policy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicy,
 }
 ```
 
@@ -4051,7 +4109,7 @@ CustomPolicy ComputeBackendServiceLocalityLbPoliciesCustomPolicy
 
 custom_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#custom_policy ComputeBackendService#custom_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#custom_policy ComputeBackendService#custom_policy}
 
 ---
 
@@ -4065,7 +4123,7 @@ Policy ComputeBackendServiceLocalityLbPoliciesPolicy
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#policy ComputeBackendService#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#policy ComputeBackendService#policy}
 
 ---
 
@@ -4074,7 +4132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceLocalityLbPoliciesCustomPolicy {
 	Name: *string,
@@ -4109,7 +4167,7 @@ myorg.CustomLbPolicy). The maximum length is 256 characters.
 Note that specifying the same custom policy more than once for a
 backend is not a valid configuration and will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
 
 ---
 
@@ -4123,7 +4181,7 @@ Data *string
 
 An optional, arbitrary JSON object with configuration data, understood by a locally installed custom policy implementation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#data ComputeBackendService#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#data ComputeBackendService#data}
 
 ---
 
@@ -4132,7 +4190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceLocalityLbPoliciesPolicy {
 	Name: *string,
@@ -4188,7 +4246,7 @@ The possible values are:
   build times and host selection times. For more information about
   Maglev, refer to https://ai.google/research/pubs/pub44824 Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
 
 ---
 
@@ -4197,7 +4255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceLogConfig {
 	Enable: interface{},
@@ -4228,7 +4286,7 @@ Enable interface{}
 
 Whether to enable logging for the load balancer traffic served by this backend service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#enable ComputeBackendService#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#enable ComputeBackendService#enable}
 
 ---
 
@@ -4242,7 +4300,7 @@ OptionalFields *[]*string
 
 This field can only be specified if logging is enabled for this backend service and "logConfig.optionalMode" was set to CUSTOM. Contains a list of optional fields you want to include in the logs. For example: serverInstance, serverGkeDetails.cluster, serverGkeDetails.pod.podNamespace For example: orca_load_report, tls.protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#optional_fields ComputeBackendService#optional_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#optional_fields ComputeBackendService#optional_fields}
 
 ---
 
@@ -4256,7 +4314,7 @@ OptionalMode *string
 
 Specifies the optional logging mode for the load balancer traffic. Supported values: INCLUDE_ALL_OPTIONAL, EXCLUDE_ALL_OPTIONAL, CUSTOM. Possible values: ["INCLUDE_ALL_OPTIONAL", "EXCLUDE_ALL_OPTIONAL", "CUSTOM"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#optional_mode ComputeBackendService#optional_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#optional_mode ComputeBackendService#optional_mode}
 
 ---
 
@@ -4275,7 +4333,7 @@ the field must be in [0, 1]. This configures the sampling rate of requests to th
 where 1.0 means all logged requests are reported and 0.0 means no logged requests are reported.
 The default value is 1.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#sample_rate ComputeBackendService#sample_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#sample_rate ComputeBackendService#sample_rate}
 
 ---
 
@@ -4284,7 +4342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceMaxStreamDuration {
 	Seconds: *string,
@@ -4311,7 +4369,7 @@ Seconds *string
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#seconds ComputeBackendService#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#seconds ComputeBackendService#seconds}
 
 ---
 
@@ -4328,7 +4386,7 @@ Span of time that's a fraction of a second at nanosecond resolution.
 Durations less than one second are represented with a 0 seconds field and a positive nanos field.
 Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#nanos ComputeBackendService#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#nanos ComputeBackendService#nanos}
 
 ---
 
@@ -4337,16 +4395,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceOutlierDetection {
-	BaseEjectionTime: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTime,
+	BaseEjectionTime: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTime,
 	ConsecutiveErrors: *f64,
 	ConsecutiveGatewayFailure: *f64,
 	EnforcingConsecutiveErrors: *f64,
 	EnforcingConsecutiveGatewayFailure: *f64,
 	EnforcingSuccessRate: *f64,
-	Interval: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceOutlierDetectionInterval,
+	Interval: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceOutlierDetectionInterval,
 	MaxEjectionPercent: *f64,
 	SuccessRateMinimumHosts: *f64,
 	SuccessRateRequestVolume: *f64,
@@ -4382,7 +4440,7 @@ BaseEjectionTime ComputeBackendServiceOutlierDetectionBaseEjectionTime
 
 base_ejection_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#base_ejection_time ComputeBackendService#base_ejection_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#base_ejection_time ComputeBackendService#base_ejection_time}
 
 ---
 
@@ -4400,7 +4458,7 @@ When the
 backend host is accessed over HTTP, a 5xx return code qualifies as an error.
 Defaults to 5.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#consecutive_errors ComputeBackendService#consecutive_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#consecutive_errors ComputeBackendService#consecutive_errors}
 
 ---
 
@@ -4416,7 +4474,7 @@ The number of consecutive gateway failures (502, 503, 504 status or connection e
 
 Defaults to 5.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#consecutive_gateway_failure ComputeBackendService#consecutive_gateway_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#consecutive_gateway_failure ComputeBackendService#consecutive_gateway_failure}
 
 ---
 
@@ -4433,7 +4491,7 @@ The percentage chance that a host will be actually ejected when an outlier statu
 This setting can be used to disable
 ejection or to ramp it up slowly. Defaults to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#enforcing_consecutive_errors ComputeBackendService#enforcing_consecutive_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#enforcing_consecutive_errors ComputeBackendService#enforcing_consecutive_errors}
 
 ---
 
@@ -4450,7 +4508,7 @@ The percentage chance that a host will be actually ejected when an outlier statu
 This setting can be
 used to disable ejection or to ramp it up slowly. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#enforcing_consecutive_gateway_failure ComputeBackendService#enforcing_consecutive_gateway_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#enforcing_consecutive_gateway_failure ComputeBackendService#enforcing_consecutive_gateway_failure}
 
 ---
 
@@ -4467,7 +4525,7 @@ The percentage chance that a host will be actually ejected when an outlier statu
 This setting can be used to
 disable ejection or to ramp it up slowly. Defaults to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#enforcing_success_rate ComputeBackendService#enforcing_success_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#enforcing_success_rate ComputeBackendService#enforcing_success_rate}
 
 ---
 
@@ -4481,7 +4539,7 @@ Interval ComputeBackendServiceOutlierDetectionInterval
 
 interval block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#interval ComputeBackendService#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#interval ComputeBackendService#interval}
 
 ---
 
@@ -4495,7 +4553,7 @@ MaxEjectionPercent *f64
 
 Maximum percentage of hosts in the load balancing pool for the backend service that can be ejected. Defaults to 10%.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#max_ejection_percent ComputeBackendService#max_ejection_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#max_ejection_percent ComputeBackendService#max_ejection_percent}
 
 ---
 
@@ -4513,7 +4571,7 @@ If the number of hosts is less than this setting, outlier
 detection via success rate statistics is not performed for any host in the
 cluster. Defaults to 5.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#success_rate_minimum_hosts ComputeBackendService#success_rate_minimum_hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#success_rate_minimum_hosts ComputeBackendService#success_rate_minimum_hosts}
 
 ---
 
@@ -4531,7 +4589,7 @@ If the volume is lower than this setting, outlier
 detection via success rate statistics is not performed for that host. Defaults
 to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#success_rate_request_volume ComputeBackendService#success_rate_request_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#success_rate_request_volume ComputeBackendService#success_rate_request_volume}
 
 ---
 
@@ -4551,7 +4609,7 @@ success rate: mean - (stdev * success_rate_stdev_factor). This factor is divided
 by a thousand to get a double. That is, if the desired factor is 1.9, the
 runtime value should be 1900. Defaults to 1900.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#success_rate_stdev_factor ComputeBackendService#success_rate_stdev_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#success_rate_stdev_factor ComputeBackendService#success_rate_stdev_factor}
 
 ---
 
@@ -4560,7 +4618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceOutlierDetectionBaseEjectionTime {
 	Seconds: *f64,
@@ -4587,7 +4645,7 @@ Seconds *f64
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#seconds ComputeBackendService#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#seconds ComputeBackendService#seconds}
 
 ---
 
@@ -4605,7 +4663,7 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#nanos ComputeBackendService#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#nanos ComputeBackendService#nanos}
 
 ---
 
@@ -4614,7 +4672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionInterval.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceOutlierDetectionInterval {
 	Seconds: *f64,
@@ -4641,7 +4699,7 @@ Seconds *f64
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#seconds ComputeBackendService#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#seconds ComputeBackendService#seconds}
 
 ---
 
@@ -4659,7 +4717,45 @@ Durations
 less than one second are represented with a 0 'seconds' field and a positive
 'nanos' field. Must be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#nanos ComputeBackendService#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#nanos ComputeBackendService#nanos}
+
+---
+
+### ComputeBackendServiceParams <a name="ComputeBackendServiceParams" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParams.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
+
+&computebackendservice.ComputeBackendServiceParams {
+	ResourceManagerTags: *map[string]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParams.property.resourceManagerTags">ResourceManagerTags</a></code> | <code>*map[string]*string</code> | Resource manager tags to be bound to the backend service. |
+
+---
+
+##### `ResourceManagerTags`<sup>Optional</sup> <a name="ResourceManagerTags" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParams.property.resourceManagerTags"></a>
+
+```go
+ResourceManagerTags *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Resource manager tags to be bound to the backend service.
+
+Tag keys and values have the
+same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+and values are in the format tagValues/456.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#resource_manager_tags ComputeBackendService#resource_manager_tags}
 
 ---
 
@@ -4668,10 +4764,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceSecuritySettings {
-	AwsV4Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4Authentication,
+	AwsV4Authentication: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4Authentication,
 	ClientTlsPolicy: *string,
 	SubjectAltNames: *[]*string,
 }
@@ -4697,7 +4793,7 @@ AwsV4Authentication ComputeBackendServiceSecuritySettingsAwsV4Authentication
 
 aws_v4_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#aws_v4_authentication ComputeBackendService#aws_v4_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#aws_v4_authentication ComputeBackendService#aws_v4_authentication}
 
 ---
 
@@ -4714,7 +4810,7 @@ ClientTlsPolicy is a resource that specifies how a client should authenticate co
 This resource itself does not affect
 configuration unless it is attached to a backend service resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#client_tls_policy ComputeBackendService#client_tls_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#client_tls_policy ComputeBackendService#client_tls_policy}
 
 ---
 
@@ -4731,7 +4827,7 @@ A list of alternate names to verify the subject identity in the certificate.
 If specified, the client will verify that the server certificate's subject
 alt name matches one of the specified values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#subject_alt_names ComputeBackendService#subject_alt_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#subject_alt_names ComputeBackendService#subject_alt_names}
 
 ---
 
@@ -4740,7 +4836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4Authentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceSecuritySettingsAwsV4Authentication {
 	AccessKey: *string,
@@ -4773,7 +4869,7 @@ The access key used for s3 bucket authentication.
 
 Required for updating or creating a backend that uses AWS v4 signature authentication, but will not be returned as part of the configuration when queried with a REST API GET request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#access_key ComputeBackendService#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#access_key ComputeBackendService#access_key}
 
 ---
 
@@ -4787,7 +4883,7 @@ AccessKeyId *string
 
 The identifier of an access key used for s3 bucket authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#access_key_id ComputeBackendService#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#access_key_id ComputeBackendService#access_key_id}
 
 ---
 
@@ -4803,7 +4899,7 @@ The optional version identifier for the access key.
 
 You can use this to keep track of different iterations of your access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#access_key_version ComputeBackendService#access_key_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#access_key_version ComputeBackendService#access_key_version}
 
 ---
 
@@ -4820,7 +4916,7 @@ The name of the cloud region of your origin.
 This is a free-form field with the name of the region your cloud uses to host your origin.
 For example, "us-east-1" for AWS or "us-ashburn-1" for OCI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#origin_region ComputeBackendService#origin_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#origin_region ComputeBackendService#origin_region}
 
 ---
 
@@ -4829,12 +4925,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookie.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceStrongSessionAffinityCookie {
 	Name: *string,
 	Path: *string,
-	Ttl: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtl,
+	Ttl: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtl,
 }
 ```
 
@@ -4858,7 +4954,7 @@ Name *string
 
 Name of the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#name ComputeBackendService#name}
 
 ---
 
@@ -4872,7 +4968,7 @@ Path *string
 
 Path to set for the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#path ComputeBackendService#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#path ComputeBackendService#path}
 
 ---
 
@@ -4886,7 +4982,7 @@ Ttl ComputeBackendServiceStrongSessionAffinityCookieTtl
 
 ttl block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#ttl ComputeBackendService#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#ttl ComputeBackendService#ttl}
 
 ---
 
@@ -4895,7 +4991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceStrongSessionAffinityCookieTtl {
 	Seconds: *f64,
@@ -4922,7 +5018,7 @@ Seconds *f64
 
 Span of time at a resolution of a second. Must be from 0 to 315,576,000,000 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#seconds ComputeBackendService#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#seconds ComputeBackendService#seconds}
 
 ---
 
@@ -4940,7 +5036,7 @@ Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must
 be from 0 to 999,999,999 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#nanos ComputeBackendService#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#nanos ComputeBackendService#nanos}
 
 ---
 
@@ -4949,7 +5045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceTimeouts {
 	Create: *string,
@@ -4962,9 +5058,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendse
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#create ComputeBackendService#create}. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#delete ComputeBackendService#delete}. |
-| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#update ComputeBackendService#update}. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#create ComputeBackendService#create}. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#delete ComputeBackendService#delete}. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#update ComputeBackendService#update}. |
 
 ---
 
@@ -4976,7 +5072,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#create ComputeBackendService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#create ComputeBackendService#create}.
 
 ---
 
@@ -4988,7 +5084,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#delete ComputeBackendService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#delete ComputeBackendService#delete}.
 
 ---
 
@@ -5000,7 +5096,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#update ComputeBackendService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#update ComputeBackendService#update}.
 
 ---
 
@@ -5009,7 +5105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceTlsSettings {
 	AuthenticationConfig: *string,
@@ -5038,7 +5134,7 @@ AuthenticationConfig *string
 
 Reference to the BackendAuthenticationConfig resource from the networksecurity.googleapis.com namespace. Can be used in authenticating TLS connections to the backend, as specified by the authenticationMode field. Can only be specified if authenticationMode is not NONE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#authentication_config ComputeBackendService#authentication_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#authentication_config ComputeBackendService#authentication_config}
 
 ---
 
@@ -5052,7 +5148,7 @@ Sni *string
 
 Server Name Indication - see RFC3546 section 3.1. If set, the load balancer sends this string as the SNI hostname in the TLS connection to the backend, and requires that this string match a Subject Alternative Name (SAN) in the backend's server certificate. With a Regional Internet NEG backend, if the SNI is specified here, the load balancer uses it regardless of whether the Regional Internet NEG is specified with FQDN or IP address and port.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#sni ComputeBackendService#sni}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#sni ComputeBackendService#sni}
 
 ---
 
@@ -5066,7 +5162,7 @@ SubjectAltNames interface{}
 
 subject_alt_names block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#subject_alt_names ComputeBackendService#subject_alt_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#subject_alt_names ComputeBackendService#subject_alt_names}
 
 ---
 
@@ -5075,7 +5171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNames.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 &computebackendservice.ComputeBackendServiceTlsSettingsSubjectAltNames {
 	DnsName: *string,
@@ -5102,7 +5198,7 @@ DnsName *string
 
 The SAN specified as a DNS Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#dns_name ComputeBackendService#dns_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#dns_name ComputeBackendService#dns_name}
 
 ---
 
@@ -5116,7 +5212,7 @@ UniformResourceIdentifier *string
 
 The SAN specified as a URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_backend_service#uniform_resource_identifier ComputeBackendService#uniform_resource_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_backend_service#uniform_resource_identifier ComputeBackendService#uniform_resource_identifier}
 
 ---
 
@@ -5127,7 +5223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceBackendCustomMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeBackendServiceBackendCustomMetricsList
 ```
@@ -5287,7 +5383,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendCustomMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceBackendCustomMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeBackendServiceBackendCustomMetricsOutputReference
 ```
@@ -5627,7 +5723,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceBackendList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeBackendServiceBackendList
 ```
@@ -5787,7 +5883,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceBackendOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceBackendOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeBackendServiceBackendOutputReference
 ```
@@ -6437,7 +6533,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList
 ```
@@ -6597,7 +6693,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference
 ```
@@ -6886,7 +6982,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference
 ```
@@ -7338,7 +7434,7 @@ func InternalValue() ComputeBackendServiceCdnPolicyCacheKeyPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceCdnPolicyNegativeCachingPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeBackendServiceCdnPolicyNegativeCachingPolicyList
 ```
@@ -7498,7 +7594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference
 ```
@@ -7823,7 +7919,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCdnPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceCdnPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceCdnPolicyOutputReference
 ```
@@ -8430,7 +8526,7 @@ func InternalValue() ComputeBackendServiceCdnPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCircuitBreakersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceCircuitBreakersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceCircuitBreakersOutputReference
 ```
@@ -8824,7 +8920,7 @@ func InternalValue() ComputeBackendServiceCircuitBreakers
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceConsistentHashHttpCookieOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceConsistentHashHttpCookieOutputReference
 ```
@@ -9173,7 +9269,7 @@ func InternalValue() ComputeBackendServiceConsistentHashHttpCookie
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashHttpCookieTtlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceConsistentHashHttpCookieTtlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceConsistentHashHttpCookieTtlOutputReference
 ```
@@ -9473,7 +9569,7 @@ func InternalValue() ComputeBackendServiceConsistentHashHttpCookieTtl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceConsistentHashOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceConsistentHashOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceConsistentHashOutputReference
 ```
@@ -9822,7 +9918,7 @@ func InternalValue() ComputeBackendServiceConsistentHash
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceCustomMetricsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeBackendServiceCustomMetricsList
 ```
@@ -9982,7 +10078,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceCustomMetricsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceCustomMetricsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeBackendServiceCustomMetricsOutputReference
 ```
@@ -10293,7 +10389,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceIapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceIapOutputReference
 ```
@@ -10633,7 +10729,7 @@ func InternalValue() ComputeBackendServiceIap
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference
 ```
@@ -10933,7 +11029,7 @@ func InternalValue() ComputeBackendServiceLocalityLbPoliciesCustomPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceLocalityLbPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeBackendServiceLocalityLbPoliciesList
 ```
@@ -11093,7 +11189,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceLocalityLbPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeBackendServiceLocalityLbPoliciesOutputReference
 ```
@@ -11444,7 +11540,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceLocalityLbPoliciesPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceLocalityLbPoliciesPolicyOutputReference
 ```
@@ -11715,7 +11811,7 @@ func InternalValue() ComputeBackendServiceLocalityLbPoliciesPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceLogConfigOutputReference
 ```
@@ -12080,7 +12176,7 @@ func InternalValue() ComputeBackendServiceLogConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceMaxStreamDurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceMaxStreamDurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceMaxStreamDurationOutputReference
 ```
@@ -12380,7 +12476,7 @@ func InternalValue() ComputeBackendServiceMaxStreamDuration
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceOutlierDetectionBaseEjectionTimeOutputReference
 ```
@@ -12680,7 +12776,7 @@ func InternalValue() ComputeBackendServiceOutlierDetectionBaseEjectionTime
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionIntervalOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceOutlierDetectionIntervalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceOutlierDetectionIntervalOutputReference
 ```
@@ -12980,7 +13076,7 @@ func InternalValue() ComputeBackendServiceOutlierDetectionInterval
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceOutlierDetectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceOutlierDetectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceOutlierDetectionOutputReference
 ```
@@ -13569,12 +13665,290 @@ func InternalValue() ComputeBackendServiceOutlierDetection
 ---
 
 
+### ComputeBackendServiceParamsOutputReference <a name="ComputeBackendServiceParamsOutputReference" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
+
+computebackendservice.NewComputeBackendServiceParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceParamsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.resetResourceManagerTags">ResetResourceManagerTags</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetResourceManagerTags` <a name="ResetResourceManagerTags" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.resetResourceManagerTags"></a>
+
+```go
+func ResetResourceManagerTags()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.property.resourceManagerTagsInput">ResourceManagerTagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.property.resourceManagerTags">ResourceManagerTags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParams">ComputeBackendServiceParams</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ResourceManagerTagsInput`<sup>Optional</sup> <a name="ResourceManagerTagsInput" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.property.resourceManagerTagsInput"></a>
+
+```go
+func ResourceManagerTagsInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `ResourceManagerTags`<sup>Required</sup> <a name="ResourceManagerTags" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.property.resourceManagerTags"></a>
+
+```go
+func ResourceManagerTags() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceParamsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ComputeBackendServiceParams
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeBackendService.ComputeBackendServiceParams">ComputeBackendServiceParams</a>
+
+---
+
+
 ### ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference <a name="ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference
 ```
@@ -13939,7 +14313,7 @@ func InternalValue() ComputeBackendServiceSecuritySettingsAwsV4Authentication
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceSecuritySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceSecuritySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceSecuritySettingsOutputReference
 ```
@@ -14288,7 +14662,7 @@ func InternalValue() ComputeBackendServiceSecuritySettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceStrongSessionAffinityCookieOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceStrongSessionAffinityCookieOutputReference
 ```
@@ -14637,7 +15011,7 @@ func InternalValue() ComputeBackendServiceStrongSessionAffinityCookie
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference
 ```
@@ -14937,7 +15311,7 @@ func InternalValue() ComputeBackendServiceStrongSessionAffinityCookieTtl
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceTimeoutsOutputReference
 ```
@@ -15273,7 +15647,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceTlsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceTlsSettingsOutputReference
 ```
@@ -15622,7 +15996,7 @@ func InternalValue() ComputeBackendServiceTlsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceTlsSettingsSubjectAltNamesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeBackendServiceTlsSettingsSubjectAltNamesList
 ```
@@ -15782,7 +16156,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeBackendService.ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computebackendservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computebackendservice"
 
 computebackendservice.NewComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeBackendServiceTlsSettingsSubjectAltNamesOutputReference
 ```

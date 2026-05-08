@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeAddresses <a name="DataGoogleComputeAddresses" id="@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_addresses google_compute_addresses}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_addresses google_compute_addresses}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeaddresses"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.NewDataGoogleComputeAddresses(scope Construct, id *string, config DataGoogleComputeAddressesConfig) DataGoogleComputeAddresses
 ```
@@ -326,7 +326,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeaddresses"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.DataGoogleComputeAddresses_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeaddresses"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.DataGoogleComputeAddresses_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecomputeaddresses.DataGoogleComputeAddresses_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeaddresses"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.DataGoogleComputeAddresses_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagooglecomputeaddresses.DataGoogleComputeAddresses_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddresses.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeaddresses"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.DataGoogleComputeAddresses_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataGoogleComputeAddresses
 
 The id of the existing DataGoogleComputeAddresses that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_addresses#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_addresses#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeaddresses"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeaddresses"
 
 &datagooglecomputeaddresses.DataGoogleComputeAddressesAddresses {
 
@@ -705,7 +705,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeaddresses"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeaddresses"
 
 &datagooglecomputeaddresses.DataGoogleComputeAddressesConfig {
 	Connection: interface{},
@@ -734,7 +734,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig.property.filter">Filter</a></code> | <code>*string</code> | Filter sets the optional parameter "filter": A filter expression that filters resources listed in the response. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_addresses#id DataGoogleComputeAddresses#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_addresses#id DataGoogleComputeAddresses#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig.property.project">Project</a></code> | <code>*string</code> | The google project in which addresses are listed. Defaults to provider's configuration if missing. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig.property.region">Region</a></code> | <code>*string</code> | Region that should be considered to search addresses. All regions are considered if missing. |
 
@@ -842,7 +842,7 @@ can include "AND" and "OR" expressions explicitly. For example: """
 (cpuPlatform = "Intel Skylake") OR (cpuPlatform = "Intel Broadwell")
 AND (scheduling.automaticRestart = true) """
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_addresses#filter DataGoogleComputeAddresses#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_addresses#filter DataGoogleComputeAddresses#filter}
 
 ---
 
@@ -854,7 +854,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_addresses#id DataGoogleComputeAddresses#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_addresses#id DataGoogleComputeAddresses#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -871,7 +871,7 @@ Project *string
 
 The google project in which addresses are listed. Defaults to provider's configuration if missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_addresses#project DataGoogleComputeAddresses#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_addresses#project DataGoogleComputeAddresses#project}
 
 ---
 
@@ -885,7 +885,7 @@ Region *string
 
 Region that should be considered to search addresses. All regions are considered if missing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_addresses#region DataGoogleComputeAddresses#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_addresses#region DataGoogleComputeAddresses#region}
 
 ---
 
@@ -896,7 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeaddresses"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.NewDataGoogleComputeAddressesAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeAddressesAddressesList
 ```
@@ -1045,7 +1045,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeaddresses"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.NewDataGoogleComputeAddressesAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeAddressesAddressesOutputReference
 ```
@@ -1272,6 +1272,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference.property.addressType">AddressType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference.property.prefixLength">PrefixLength</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference.property.status">Status</a></code> | <code>*string</code> | *No description.* |
@@ -1340,6 +1341,16 @@ func Name() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PrefixLength`<sup>Required</sup> <a name="PrefixLength" id="@cdktn/provider-google.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference.property.prefixLength"></a>
+
+```go
+func PrefixLength() *f64
+```
+
+- *Type:* *f64
 
 ---
 

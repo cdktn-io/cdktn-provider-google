@@ -4,12 +4,12 @@
 
 ### ComputeVpnTunnel <a name="ComputeVpnTunnel" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
 
 computevpntunnel.NewComputeVpnTunnel(scope Construct, id *string, config ComputeVpnTunnelConfig) ComputeVpnTunnel
 ```
@@ -74,12 +74,16 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.putCipherSuite">PutCipherSuite</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.putParams">PutParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetCipherSuite">ResetCipherSuite</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetIkeVersion">ResetIkeVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetLocalTrafficSelector">ResetLocalTrafficSelector</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetParams">ResetParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetPeerExternalGateway">ResetPeerExternalGateway</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetPeerExternalGatewayInterface">ResetPeerExternalGatewayInterface</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetPeerGcpGateway">ResetPeerGcpGateway</a></code> | *No description.* |
@@ -88,6 +92,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetRemoteTrafficSelector">ResetRemoteTrafficSelector</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetRouter">ResetRouter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetSharedSecret">ResetSharedSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetSharedSecretWo">ResetSharedSecretWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetSharedSecretWoVersion">ResetSharedSecretWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetTargetVpnGateway">ResetTargetVpnGateway</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetVpnGateway">ResetVpnGateway</a></code> | *No description.* |
@@ -404,6 +411,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutCipherSuite` <a name="PutCipherSuite" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.putCipherSuite"></a>
+
+```go
+func PutCipherSuite(value ComputeVpnTunnelCipherSuite)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.putCipherSuite.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite">ComputeVpnTunnelCipherSuite</a>
+
+---
+
+##### `PutParams` <a name="PutParams" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.putParams"></a>
+
+```go
+func PutParams(value ComputeVpnTunnelParams)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.putParams.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams">ComputeVpnTunnelParams</a>
+
+---
+
 ##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.putTimeouts"></a>
 
 ```go
@@ -415,6 +446,12 @@ func PutTimeouts(value ComputeVpnTunnelTimeouts)
 - *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeouts">ComputeVpnTunnelTimeouts</a>
 
 ---
+
+##### `ResetCipherSuite` <a name="ResetCipherSuite" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetCipherSuite"></a>
+
+```go
+func ResetCipherSuite()
+```
 
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetDescription"></a>
 
@@ -444,6 +481,12 @@ func ResetLabels()
 
 ```go
 func ResetLocalTrafficSelector()
+```
+
+##### `ResetParams` <a name="ResetParams" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetParams"></a>
+
+```go
+func ResetParams()
 ```
 
 ##### `ResetPeerExternalGateway` <a name="ResetPeerExternalGateway" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetPeerExternalGateway"></a>
@@ -494,6 +537,24 @@ func ResetRemoteTrafficSelector()
 func ResetRouter()
 ```
 
+##### `ResetSharedSecret` <a name="ResetSharedSecret" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetSharedSecret"></a>
+
+```go
+func ResetSharedSecret()
+```
+
+##### `ResetSharedSecretWo` <a name="ResetSharedSecretWo" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetSharedSecretWo"></a>
+
+```go
+func ResetSharedSecretWo()
+```
+
+##### `ResetSharedSecretWoVersion` <a name="ResetSharedSecretWoVersion" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetSharedSecretWoVersion"></a>
+
+```go
+func ResetSharedSecretWoVersion()
+```
+
 ##### `ResetTargetVpnGateway` <a name="ResetTargetVpnGateway" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.resetTargetVpnGateway"></a>
 
 ```go
@@ -532,7 +593,7 @@ func ResetVpnGatewayInterface()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
 
 computevpntunnel.ComputeVpnTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -564,7 +625,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
 
 computevpntunnel.ComputeVpnTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -578,7 +639,7 @@ computevpntunnel.ComputeVpnTunnel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
 
 computevpntunnel.ComputeVpnTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -592,7 +653,7 @@ computevpntunnel.ComputeVpnTunnel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
 
 computevpntunnel.ComputeVpnTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -621,7 +682,7 @@ The construct id used in the generated config for the ComputeVpnTunnel to import
 
 The id of the existing ComputeVpnTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,21 +712,25 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.cipherSuite">CipherSuite</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference">ComputeVpnTunnelCipherSuiteOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.creationTimestamp">CreationTimestamp</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.detailedStatus">DetailedStatus</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.effectiveLabels">EffectiveLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.labelFingerprint">LabelFingerprint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference">ComputeVpnTunnelParamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.sharedSecretHash">SharedSecretHash</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeoutsOutputReference">ComputeVpnTunnelTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.tunnelId">TunnelId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.cipherSuiteInput">CipherSuiteInput</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite">ComputeVpnTunnelCipherSuite</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.ikeVersionInput">IkeVersionInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.localTrafficSelectorInput">LocalTrafficSelectorInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.paramsInput">ParamsInput</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams">ComputeVpnTunnelParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.peerExternalGatewayInput">PeerExternalGatewayInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.peerExternalGatewayInterfaceInput">PeerExternalGatewayInterfaceInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.peerGcpGatewayInput">PeerGcpGatewayInput</a></code> | <code>*string</code> | *No description.* |
@@ -675,6 +740,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.remoteTrafficSelectorInput">RemoteTrafficSelectorInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.routerInput">RouterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.sharedSecretInput">SharedSecretInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.sharedSecretWoInput">SharedSecretWoInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.sharedSecretWoVersionInput">SharedSecretWoVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.targetVpnGatewayInput">TargetVpnGatewayInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.vpnGatewayInput">VpnGatewayInput</a></code> | <code>*string</code> | *No description.* |
@@ -694,6 +761,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.remoteTrafficSelector">RemoteTrafficSelector</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.router">Router</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.sharedSecret">SharedSecret</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.sharedSecretWo">SharedSecretWo</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.sharedSecretWoVersion">SharedSecretWoVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.targetVpnGateway">TargetVpnGateway</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.vpnGateway">VpnGateway</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.vpnGatewayInterface">VpnGatewayInterface</a></code> | <code>*f64</code> | *No description.* |
@@ -842,6 +911,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `CipherSuite`<sup>Required</sup> <a name="CipherSuite" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.cipherSuite"></a>
+
+```go
+func CipherSuite() ComputeVpnTunnelCipherSuiteOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference">ComputeVpnTunnelCipherSuiteOutputReference</a>
+
+---
+
 ##### `CreationTimestamp`<sup>Required</sup> <a name="CreationTimestamp" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.creationTimestamp"></a>
 
 ```go
@@ -879,6 +958,16 @@ func LabelFingerprint() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Params`<sup>Required</sup> <a name="Params" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.params"></a>
+
+```go
+func Params() ComputeVpnTunnelParamsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference">ComputeVpnTunnelParamsOutputReference</a>
 
 ---
 
@@ -929,6 +1018,16 @@ func TunnelId() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `CipherSuiteInput`<sup>Optional</sup> <a name="CipherSuiteInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.cipherSuiteInput"></a>
+
+```go
+func CipherSuiteInput() ComputeVpnTunnelCipherSuite
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite">ComputeVpnTunnelCipherSuite</a>
 
 ---
 
@@ -989,6 +1088,16 @@ func NameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ParamsInput`<sup>Optional</sup> <a name="ParamsInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.paramsInput"></a>
+
+```go
+func ParamsInput() ComputeVpnTunnelParams
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams">ComputeVpnTunnelParams</a>
 
 ---
 
@@ -1076,6 +1185,26 @@ func RouterInput() *string
 
 ```go
 func SharedSecretInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SharedSecretWoInput`<sup>Optional</sup> <a name="SharedSecretWoInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.sharedSecretWoInput"></a>
+
+```go
+func SharedSecretWoInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SharedSecretWoVersionInput`<sup>Optional</sup> <a name="SharedSecretWoVersionInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.sharedSecretWoVersionInput"></a>
+
+```go
+func SharedSecretWoVersionInput() *string
 ```
 
 - *Type:* *string
@@ -1272,6 +1401,26 @@ func SharedSecret() *string
 
 ---
 
+##### `SharedSecretWo`<sup>Required</sup> <a name="SharedSecretWo" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.sharedSecretWo"></a>
+
+```go
+func SharedSecretWo() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SharedSecretWoVersion`<sup>Required</sup> <a name="SharedSecretWoVersion" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.sharedSecretWoVersion"></a>
+
+```go
+func SharedSecretWoVersion() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TargetVpnGateway`<sup>Required</sup> <a name="TargetVpnGateway" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnel.property.targetVpnGateway"></a>
 
 ```go
@@ -1322,12 +1471,210 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### ComputeVpnTunnelCipherSuite <a name="ComputeVpnTunnelCipherSuite" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+
+&computevpntunnel.ComputeVpnTunnelCipherSuite {
+	Phase1: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1,
+	Phase2: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite.property.phase1">Phase1</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1">ComputeVpnTunnelCipherSuitePhase1</a></code> | phase1 block. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite.property.phase2">Phase2</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2">ComputeVpnTunnelCipherSuitePhase2</a></code> | phase2 block. |
+
+---
+
+##### `Phase1`<sup>Optional</sup> <a name="Phase1" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite.property.phase1"></a>
+
+```go
+Phase1 ComputeVpnTunnelCipherSuitePhase1
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1">ComputeVpnTunnelCipherSuitePhase1</a>
+
+phase1 block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#phase1 ComputeVpnTunnel#phase1}
+
+---
+
+##### `Phase2`<sup>Optional</sup> <a name="Phase2" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite.property.phase2"></a>
+
+```go
+Phase2 ComputeVpnTunnelCipherSuitePhase2
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2">ComputeVpnTunnelCipherSuitePhase2</a>
+
+phase2 block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#phase2 ComputeVpnTunnel#phase2}
+
+---
+
+### ComputeVpnTunnelCipherSuitePhase1 <a name="ComputeVpnTunnelCipherSuitePhase1" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+
+&computevpntunnel.ComputeVpnTunnelCipherSuitePhase1 {
+	Dh: *[]*string,
+	Encryption: *[]*string,
+	Integrity: *[]*string,
+	Prf: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1.property.dh">Dh</a></code> | <code>*[]*string</code> | Diffie-Hellman groups. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1.property.encryption">Encryption</a></code> | <code>*[]*string</code> | Encryption algorithms. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1.property.integrity">Integrity</a></code> | <code>*[]*string</code> | Integrity algorithms. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1.property.prf">Prf</a></code> | <code>*[]*string</code> | Pseudo-random functions. |
+
+---
+
+##### `Dh`<sup>Optional</sup> <a name="Dh" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1.property.dh"></a>
+
+```go
+Dh *[]*string
+```
+
+- *Type:* *[]*string
+
+Diffie-Hellman groups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#dh ComputeVpnTunnel#dh}
+
+---
+
+##### `Encryption`<sup>Optional</sup> <a name="Encryption" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1.property.encryption"></a>
+
+```go
+Encryption *[]*string
+```
+
+- *Type:* *[]*string
+
+Encryption algorithms.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#encryption ComputeVpnTunnel#encryption}
+
+---
+
+##### `Integrity`<sup>Optional</sup> <a name="Integrity" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1.property.integrity"></a>
+
+```go
+Integrity *[]*string
+```
+
+- *Type:* *[]*string
+
+Integrity algorithms.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#integrity ComputeVpnTunnel#integrity}
+
+---
+
+##### `Prf`<sup>Optional</sup> <a name="Prf" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1.property.prf"></a>
+
+```go
+Prf *[]*string
+```
+
+- *Type:* *[]*string
+
+Pseudo-random functions.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#prf ComputeVpnTunnel#prf}
+
+---
+
+### ComputeVpnTunnelCipherSuitePhase2 <a name="ComputeVpnTunnelCipherSuitePhase2" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+
+&computevpntunnel.ComputeVpnTunnelCipherSuitePhase2 {
+	Encryption: *[]*string,
+	Integrity: *[]*string,
+	Pfs: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2.property.encryption">Encryption</a></code> | <code>*[]*string</code> | Encryption algorithms. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2.property.integrity">Integrity</a></code> | <code>*[]*string</code> | Integrity algorithms. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2.property.pfs">Pfs</a></code> | <code>*[]*string</code> | Perfect forward secrecy groups. |
+
+---
+
+##### `Encryption`<sup>Optional</sup> <a name="Encryption" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2.property.encryption"></a>
+
+```go
+Encryption *[]*string
+```
+
+- *Type:* *[]*string
+
+Encryption algorithms.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#encryption ComputeVpnTunnel#encryption}
+
+---
+
+##### `Integrity`<sup>Optional</sup> <a name="Integrity" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2.property.integrity"></a>
+
+```go
+Integrity *[]*string
+```
+
+- *Type:* *[]*string
+
+Integrity algorithms.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#integrity ComputeVpnTunnel#integrity}
+
+---
+
+##### `Pfs`<sup>Optional</sup> <a name="Pfs" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2.property.pfs"></a>
+
+```go
+Pfs *[]*string
+```
+
+- *Type:* *[]*string
+
+Perfect forward secrecy groups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#pfs ComputeVpnTunnel#pfs}
+
+---
+
 ### ComputeVpnTunnelConfig <a name="ComputeVpnTunnelConfig" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
 
 &computevpntunnel.ComputeVpnTunnelConfig {
 	Connection: interface{},
@@ -1338,12 +1685,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	SharedSecret: *string,
+	CipherSuite: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnTunnel.ComputeVpnTunnelCipherSuite,
 	Description: *string,
 	Id: *string,
 	IkeVersion: *f64,
 	Labels: *map[string]*string,
 	LocalTrafficSelector: *[]*string,
+	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnTunnel.ComputeVpnTunnelParams,
 	PeerExternalGateway: *string,
 	PeerExternalGatewayInterface: *f64,
 	PeerGcpGateway: *string,
@@ -1352,8 +1700,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel
 	Region: *string,
 	RemoteTrafficSelector: *[]*string,
 	Router: *string,
+	SharedSecret: *string,
+	SharedSecretWo: *string,
+	SharedSecretWoVersion: *string,
 	TargetVpnGateway: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeVpnTunnel.ComputeVpnTunnelTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeVpnTunnel.ComputeVpnTunnelTimeouts,
 	VpnGateway: *string,
 	VpnGatewayInterface: *f64,
 }
@@ -1371,20 +1722,24 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
-| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.sharedSecret">SharedSecret</a></code> | <code>*string</code> | Shared secret used to set the secure session between the Cloud VPN gateway and the peer VPN gateway. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.cipherSuite">CipherSuite</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite">ComputeVpnTunnelCipherSuite</a></code> | cipher_suite block. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#id ComputeVpnTunnel#id}. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#id ComputeVpnTunnel#id}. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.ikeVersion">IkeVersion</a></code> | <code>*f64</code> | IKE protocol version to use when establishing the VPN tunnel with peer VPN gateway. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels to apply to this VpnTunnel. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.localTrafficSelector">LocalTrafficSelector</a></code> | <code>*[]*string</code> | Local traffic selector to use when establishing the VPN tunnel with peer VPN gateway. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams">ComputeVpnTunnelParams</a></code> | params block. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.peerExternalGateway">PeerExternalGateway</a></code> | <code>*string</code> | URL of the peer side external VPN gateway to which this VPN tunnel is connected. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.peerExternalGatewayInterface">PeerExternalGatewayInterface</a></code> | <code>*f64</code> | The interface ID of the external VPN gateway to which this VPN tunnel is connected. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.peerGcpGateway">PeerGcpGateway</a></code> | <code>*string</code> | URL of the peer side HA GCP VPN gateway to which this VPN tunnel is connected. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.peerIp">PeerIp</a></code> | <code>*string</code> | IP address of the peer VPN gateway. Only IPv4 is supported. |
-| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#project ComputeVpnTunnel#project}. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#project ComputeVpnTunnel#project}. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.region">Region</a></code> | <code>*string</code> | The region where the tunnel is located. If unset, is set to the region of 'target_vpn_gateway'. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.remoteTrafficSelector">RemoteTrafficSelector</a></code> | <code>*[]*string</code> | Remote traffic selector to use when establishing the VPN tunnel with peer VPN gateway. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.router">Router</a></code> | <code>*string</code> | URL of router resource to be used for dynamic routing. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.sharedSecret">SharedSecret</a></code> | <code>*string</code> | Shared secret used to set the secure session between the Cloud VPN gateway and the peer VPN gateway. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.sharedSecretWo">SharedSecretWo</a></code> | <code>*string</code> | Shared secret used to set the secure session between the Cloud VPN gateway and the peer VPN gateway. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.sharedSecretWoVersion">SharedSecretWoVersion</a></code> | <code>*string</code> | Triggers update of 'shared_secret_wo' write-only. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.targetVpnGateway">TargetVpnGateway</a></code> | <code>*string</code> | URL of the Target VPN gateway with which this VPN tunnel is associated. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeouts">ComputeVpnTunnelTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.vpnGateway">VpnGateway</a></code> | <code>*string</code> | URL of the VPN gateway with which this VPN tunnel is associated. |
@@ -1480,21 +1835,21 @@ must be a lowercase letter, and all following characters must
 be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#name ComputeVpnTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#name ComputeVpnTunnel#name}
 
 ---
 
-##### `SharedSecret`<sup>Required</sup> <a name="SharedSecret" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.sharedSecret"></a>
+##### `CipherSuite`<sup>Optional</sup> <a name="CipherSuite" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.cipherSuite"></a>
 
 ```go
-SharedSecret *string
+CipherSuite ComputeVpnTunnelCipherSuite
 ```
 
-- *Type:* *string
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite">ComputeVpnTunnelCipherSuite</a>
 
-Shared secret used to set the secure session between the Cloud VPN gateway and the peer VPN gateway.
+cipher_suite block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#shared_secret ComputeVpnTunnel#shared_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#cipher_suite ComputeVpnTunnel#cipher_suite}
 
 ---
 
@@ -1508,7 +1863,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#description ComputeVpnTunnel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#description ComputeVpnTunnel#description}
 
 ---
 
@@ -1520,7 +1875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#id ComputeVpnTunnel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#id ComputeVpnTunnel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1539,7 +1894,7 @@ IKE protocol version to use when establishing the VPN tunnel with peer VPN gatew
 
 Acceptable IKE versions are 1 or 2. Default version is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#ike_version ComputeVpnTunnel#ike_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#ike_version ComputeVpnTunnel#ike_version}
 
 ---
 
@@ -1556,7 +1911,7 @@ Labels to apply to this VpnTunnel.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#labels ComputeVpnTunnel#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#labels ComputeVpnTunnel#labels}
 
 ---
 
@@ -1574,7 +1929,21 @@ The value should be a CIDR formatted string,
 for example '192.168.0.0/16'. The ranges should be disjoint.
 Only IPv4 is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#local_traffic_selector ComputeVpnTunnel#local_traffic_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#local_traffic_selector ComputeVpnTunnel#local_traffic_selector}
+
+---
+
+##### `Params`<sup>Optional</sup> <a name="Params" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.params"></a>
+
+```go
+Params ComputeVpnTunnelParams
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams">ComputeVpnTunnelParams</a>
+
+params block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#params ComputeVpnTunnel#params}
 
 ---
 
@@ -1588,7 +1957,7 @@ PeerExternalGateway *string
 
 URL of the peer side external VPN gateway to which this VPN tunnel is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#peer_external_gateway ComputeVpnTunnel#peer_external_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#peer_external_gateway ComputeVpnTunnel#peer_external_gateway}
 
 ---
 
@@ -1602,7 +1971,7 @@ PeerExternalGatewayInterface *f64
 
 The interface ID of the external VPN gateway to which this VPN tunnel is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#peer_external_gateway_interface ComputeVpnTunnel#peer_external_gateway_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#peer_external_gateway_interface ComputeVpnTunnel#peer_external_gateway_interface}
 
 ---
 
@@ -1620,7 +1989,7 @@ If provided, the VPN tunnel will automatically use the same vpn_gateway_interfac
 ID in the peer GCP VPN gateway.
 This field must reference a 'google_compute_ha_vpn_gateway' resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#peer_gcp_gateway ComputeVpnTunnel#peer_gcp_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#peer_gcp_gateway ComputeVpnTunnel#peer_gcp_gateway}
 
 ---
 
@@ -1634,7 +2003,7 @@ PeerIp *string
 
 IP address of the peer VPN gateway. Only IPv4 is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#peer_ip ComputeVpnTunnel#peer_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#peer_ip ComputeVpnTunnel#peer_ip}
 
 ---
 
@@ -1646,7 +2015,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#project ComputeVpnTunnel#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#project ComputeVpnTunnel#project}.
 
 ---
 
@@ -1660,7 +2029,7 @@ Region *string
 
 The region where the tunnel is located. If unset, is set to the region of 'target_vpn_gateway'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#region ComputeVpnTunnel#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#region ComputeVpnTunnel#region}
 
 ---
 
@@ -1678,7 +2047,7 @@ The value should be a CIDR formatted string,
 for example '192.168.0.0/16'. The ranges should be disjoint.
 Only IPv4 is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#remote_traffic_selector ComputeVpnTunnel#remote_traffic_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#remote_traffic_selector ComputeVpnTunnel#remote_traffic_selector}
 
 ---
 
@@ -1692,7 +2061,51 @@ Router *string
 
 URL of router resource to be used for dynamic routing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#router ComputeVpnTunnel#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#router ComputeVpnTunnel#router}
+
+---
+
+##### `SharedSecret`<sup>Optional</sup> <a name="SharedSecret" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.sharedSecret"></a>
+
+```go
+SharedSecret *string
+```
+
+- *Type:* *string
+
+Shared secret used to set the secure session between the Cloud VPN gateway and the peer VPN gateway.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#shared_secret ComputeVpnTunnel#shared_secret}
+
+---
+
+##### `SharedSecretWo`<sup>Optional</sup> <a name="SharedSecretWo" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.sharedSecretWo"></a>
+
+```go
+SharedSecretWo *string
+```
+
+- *Type:* *string
+
+Shared secret used to set the secure session between the Cloud VPN gateway and the peer VPN gateway.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#shared_secret_wo ComputeVpnTunnel#shared_secret_wo}
+
+---
+
+##### `SharedSecretWoVersion`<sup>Optional</sup> <a name="SharedSecretWoVersion" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelConfig.property.sharedSecretWoVersion"></a>
+
+```go
+SharedSecretWoVersion *string
+```
+
+- *Type:* *string
+
+Triggers update of 'shared_secret_wo' write-only.
+
+Increment this value when an update to 'shared_secret_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#shared_secret_wo_version ComputeVpnTunnel#shared_secret_wo_version}
 
 ---
 
@@ -1706,7 +2119,7 @@ TargetVpnGateway *string
 
 URL of the Target VPN gateway with which this VPN tunnel is associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#target_vpn_gateway ComputeVpnTunnel#target_vpn_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#target_vpn_gateway ComputeVpnTunnel#target_vpn_gateway}
 
 ---
 
@@ -1720,7 +2133,7 @@ Timeouts ComputeVpnTunnelTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#timeouts ComputeVpnTunnel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#timeouts ComputeVpnTunnel#timeouts}
 
 ---
 
@@ -1737,7 +2150,7 @@ URL of the VPN gateway with which this VPN tunnel is associated.
 This must be used if a High Availability VPN gateway resource is created.
 This field must reference a 'google_compute_ha_vpn_gateway' resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#vpn_gateway ComputeVpnTunnel#vpn_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#vpn_gateway ComputeVpnTunnel#vpn_gateway}
 
 ---
 
@@ -1751,7 +2164,45 @@ VpnGatewayInterface *f64
 
 The interface ID of the VPN gateway with which this VPN tunnel is associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#vpn_gateway_interface ComputeVpnTunnel#vpn_gateway_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#vpn_gateway_interface ComputeVpnTunnel#vpn_gateway_interface}
+
+---
+
+### ComputeVpnTunnelParams <a name="ComputeVpnTunnelParams" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+
+&computevpntunnel.ComputeVpnTunnelParams {
+	ResourceManagerTags: *map[string]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams.property.resourceManagerTags">ResourceManagerTags</a></code> | <code>*map[string]*string</code> | Resource manager tags to be bound to the Vpn Tunnel. |
+
+---
+
+##### `ResourceManagerTags`<sup>Optional</sup> <a name="ResourceManagerTags" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams.property.resourceManagerTags"></a>
+
+```go
+ResourceManagerTags *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Resource manager tags to be bound to the Vpn Tunnel.
+
+Tag keys and values have the
+same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+and values are in the format tagValues/456.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#resource_manager_tags ComputeVpnTunnel#resource_manager_tags}
 
 ---
 
@@ -1760,7 +2211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
 
 &computevpntunnel.ComputeVpnTunnelTimeouts {
 	Create: *string,
@@ -1773,9 +2224,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#create ComputeVpnTunnel#create}. |
-| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#delete ComputeVpnTunnel#delete}. |
-| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#update ComputeVpnTunnel#update}. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#create ComputeVpnTunnel#create}. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#delete ComputeVpnTunnel#delete}. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#update ComputeVpnTunnel#update}. |
 
 ---
 
@@ -1787,7 +2238,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#create ComputeVpnTunnel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#create ComputeVpnTunnel#create}.
 
 ---
 
@@ -1799,7 +2250,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#delete ComputeVpnTunnel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#delete ComputeVpnTunnel#delete}.
 
 ---
 
@@ -1811,18 +2262,1330 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#update ComputeVpnTunnel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#update ComputeVpnTunnel#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ComputeVpnTunnelCipherSuiteOutputReference <a name="ComputeVpnTunnelCipherSuiteOutputReference" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+
+computevpntunnel.NewComputeVpnTunnelCipherSuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnTunnelCipherSuiteOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.putPhase1">PutPhase1</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.putPhase2">PutPhase2</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.resetPhase1">ResetPhase1</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.resetPhase2">ResetPhase2</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutPhase1` <a name="PutPhase1" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.putPhase1"></a>
+
+```go
+func PutPhase1(value ComputeVpnTunnelCipherSuitePhase1)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.putPhase1.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1">ComputeVpnTunnelCipherSuitePhase1</a>
+
+---
+
+##### `PutPhase2` <a name="PutPhase2" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.putPhase2"></a>
+
+```go
+func PutPhase2(value ComputeVpnTunnelCipherSuitePhase2)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.putPhase2.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2">ComputeVpnTunnelCipherSuitePhase2</a>
+
+---
+
+##### `ResetPhase1` <a name="ResetPhase1" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.resetPhase1"></a>
+
+```go
+func ResetPhase1()
+```
+
+##### `ResetPhase2` <a name="ResetPhase2" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.resetPhase2"></a>
+
+```go
+func ResetPhase2()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.phase1">Phase1</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference">ComputeVpnTunnelCipherSuitePhase1OutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.phase2">Phase2</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference">ComputeVpnTunnelCipherSuitePhase2OutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.phase1Input">Phase1Input</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1">ComputeVpnTunnelCipherSuitePhase1</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.phase2Input">Phase2Input</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2">ComputeVpnTunnelCipherSuitePhase2</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite">ComputeVpnTunnelCipherSuite</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Phase1`<sup>Required</sup> <a name="Phase1" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.phase1"></a>
+
+```go
+func Phase1() ComputeVpnTunnelCipherSuitePhase1OutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference">ComputeVpnTunnelCipherSuitePhase1OutputReference</a>
+
+---
+
+##### `Phase2`<sup>Required</sup> <a name="Phase2" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.phase2"></a>
+
+```go
+func Phase2() ComputeVpnTunnelCipherSuitePhase2OutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference">ComputeVpnTunnelCipherSuitePhase2OutputReference</a>
+
+---
+
+##### `Phase1Input`<sup>Optional</sup> <a name="Phase1Input" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.phase1Input"></a>
+
+```go
+func Phase1Input() ComputeVpnTunnelCipherSuitePhase1
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1">ComputeVpnTunnelCipherSuitePhase1</a>
+
+---
+
+##### `Phase2Input`<sup>Optional</sup> <a name="Phase2Input" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.phase2Input"></a>
+
+```go
+func Phase2Input() ComputeVpnTunnelCipherSuitePhase2
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2">ComputeVpnTunnelCipherSuitePhase2</a>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuiteOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ComputeVpnTunnelCipherSuite
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuite">ComputeVpnTunnelCipherSuite</a>
+
+---
+
+
+### ComputeVpnTunnelCipherSuitePhase1OutputReference <a name="ComputeVpnTunnelCipherSuitePhase1OutputReference" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+
+computevpntunnel.NewComputeVpnTunnelCipherSuitePhase1OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnTunnelCipherSuitePhase1OutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.resetDh">ResetDh</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.resetEncryption">ResetEncryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.resetIntegrity">ResetIntegrity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.resetPrf">ResetPrf</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDh` <a name="ResetDh" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.resetDh"></a>
+
+```go
+func ResetDh()
+```
+
+##### `ResetEncryption` <a name="ResetEncryption" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.resetEncryption"></a>
+
+```go
+func ResetEncryption()
+```
+
+##### `ResetIntegrity` <a name="ResetIntegrity" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.resetIntegrity"></a>
+
+```go
+func ResetIntegrity()
+```
+
+##### `ResetPrf` <a name="ResetPrf" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.resetPrf"></a>
+
+```go
+func ResetPrf()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.dhInput">DhInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.encryptionInput">EncryptionInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.integrityInput">IntegrityInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.prfInput">PrfInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.dh">Dh</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.encryption">Encryption</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.integrity">Integrity</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.prf">Prf</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1">ComputeVpnTunnelCipherSuitePhase1</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DhInput`<sup>Optional</sup> <a name="DhInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.dhInput"></a>
+
+```go
+func DhInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `EncryptionInput`<sup>Optional</sup> <a name="EncryptionInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.encryptionInput"></a>
+
+```go
+func EncryptionInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `IntegrityInput`<sup>Optional</sup> <a name="IntegrityInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.integrityInput"></a>
+
+```go
+func IntegrityInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `PrfInput`<sup>Optional</sup> <a name="PrfInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.prfInput"></a>
+
+```go
+func PrfInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Dh`<sup>Required</sup> <a name="Dh" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.dh"></a>
+
+```go
+func Dh() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Encryption`<sup>Required</sup> <a name="Encryption" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.encryption"></a>
+
+```go
+func Encryption() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Integrity`<sup>Required</sup> <a name="Integrity" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.integrity"></a>
+
+```go
+func Integrity() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Prf`<sup>Required</sup> <a name="Prf" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.prf"></a>
+
+```go
+func Prf() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1OutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ComputeVpnTunnelCipherSuitePhase1
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase1">ComputeVpnTunnelCipherSuitePhase1</a>
+
+---
+
+
+### ComputeVpnTunnelCipherSuitePhase2OutputReference <a name="ComputeVpnTunnelCipherSuitePhase2OutputReference" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+
+computevpntunnel.NewComputeVpnTunnelCipherSuitePhase2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnTunnelCipherSuitePhase2OutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.resetEncryption">ResetEncryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.resetIntegrity">ResetIntegrity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.resetPfs">ResetPfs</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetEncryption` <a name="ResetEncryption" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.resetEncryption"></a>
+
+```go
+func ResetEncryption()
+```
+
+##### `ResetIntegrity` <a name="ResetIntegrity" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.resetIntegrity"></a>
+
+```go
+func ResetIntegrity()
+```
+
+##### `ResetPfs` <a name="ResetPfs" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.resetPfs"></a>
+
+```go
+func ResetPfs()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.encryptionInput">EncryptionInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.integrityInput">IntegrityInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.pfsInput">PfsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.encryption">Encryption</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.integrity">Integrity</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.pfs">Pfs</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2">ComputeVpnTunnelCipherSuitePhase2</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EncryptionInput`<sup>Optional</sup> <a name="EncryptionInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.encryptionInput"></a>
+
+```go
+func EncryptionInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `IntegrityInput`<sup>Optional</sup> <a name="IntegrityInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.integrityInput"></a>
+
+```go
+func IntegrityInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `PfsInput`<sup>Optional</sup> <a name="PfsInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.pfsInput"></a>
+
+```go
+func PfsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Encryption`<sup>Required</sup> <a name="Encryption" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.encryption"></a>
+
+```go
+func Encryption() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Integrity`<sup>Required</sup> <a name="Integrity" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.integrity"></a>
+
+```go
+func Integrity() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Pfs`<sup>Required</sup> <a name="Pfs" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.pfs"></a>
+
+```go
+func Pfs() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2OutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ComputeVpnTunnelCipherSuitePhase2
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelCipherSuitePhase2">ComputeVpnTunnelCipherSuitePhase2</a>
+
+---
+
+
+### ComputeVpnTunnelParamsOutputReference <a name="ComputeVpnTunnelParamsOutputReference" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
+
+computevpntunnel.NewComputeVpnTunnelParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnTunnelParamsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.resetResourceManagerTags">ResetResourceManagerTags</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetResourceManagerTags` <a name="ResetResourceManagerTags" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.resetResourceManagerTags"></a>
+
+```go
+func ResetResourceManagerTags()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.property.resourceManagerTagsInput">ResourceManagerTagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.property.resourceManagerTags">ResourceManagerTags</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams">ComputeVpnTunnelParams</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ResourceManagerTagsInput`<sup>Optional</sup> <a name="ResourceManagerTagsInput" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.property.resourceManagerTagsInput"></a>
+
+```go
+func ResourceManagerTagsInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `ResourceManagerTags`<sup>Required</sup> <a name="ResourceManagerTags" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.property.resourceManagerTags"></a>
+
+```go
+func ResourceManagerTags() *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParamsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ComputeVpnTunnelParams
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelParams">ComputeVpnTunnelParams</a>
+
+---
+
 
 ### ComputeVpnTunnelTimeoutsOutputReference <a name="ComputeVpnTunnelTimeoutsOutputReference" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeoutsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeVpnTunnel.ComputeVpnTunnelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computevpntunnel"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computevpntunnel"
 
 computevpntunnel.NewComputeVpnTunnelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeVpnTunnelTimeoutsOutputReference
 ```

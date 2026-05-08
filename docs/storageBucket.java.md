@@ -4,7 +4,7 @@
 
 ### StorageBucket <a name="StorageBucket" id="@cdktn/provider-google.storageBucket.StorageBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket google_storage_bucket}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket google_storage_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer"></a>
 
@@ -67,9 +67,9 @@ StorageBucket.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.defaultEventBasedHold">defaultEventBasedHold</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether or not to automatically apply an eventBasedHold to new objects added to the bucket. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.enableObjectRetention">enableObjectRetention</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.encryption">encryption</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | encryption block. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.forceDestroy">forceDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When deleting a bucket, this boolean option will delete all contained objects, or anywhereCaches (if any). |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.forceDestroy">forceDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, before deleting a bucket, delete all objects within the bucket, or Anywhere Caches caching data for that bucket. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.hierarchicalNamespace">hierarchicalNamespace</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | hierarchical_namespace block. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#id StorageBucket#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#id StorageBucket#id}. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.ipFilter">ipFilter</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | ip_filter block. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A set of key/value label pairs to assign to the bucket. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.lifecycleRule">lifecycleRule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>></code> | lifecycle_rule block. |
@@ -154,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 The Google Cloud Storage location or region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#location StorageBucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#location StorageBucket#location}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#name StorageBucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#name StorageBucket#name}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 autoclass block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#autoclass StorageBucket#autoclass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#autoclass StorageBucket#autoclass}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#cors StorageBucket#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#cors StorageBucket#cors}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_placement_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#custom_placement_config StorageBucket#custom_placement_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#custom_placement_config StorageBucket#custom_placement_config}
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether or not to automatically apply an eventBasedHold to new objects added to the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#default_event_based_hold StorageBucket#default_event_based_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#default_event_based_hold StorageBucket#default_event_based_hold}
 
 ---
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#enable_object_retention StorageBucket#enable_object_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#enable_object_retention StorageBucket#enable_object_retention}
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#encryption StorageBucket#encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#encryption StorageBucket#encryption}
 
 ---
 
@@ -232,11 +232,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-When deleting a bucket, this boolean option will delete all contained objects, or anywhereCaches (if any).
+When true, before deleting a bucket, delete all objects within the bucket, or Anywhere Caches caching data for that bucket.
 
-If you try to delete a bucket that contains objects or anywhereCaches, Terraform will fail that run, deleting anywhereCaches may take 80 minutes to complete.
+Otherwise, buckets with objects/caches will fail. Anywhere Cache requires additional permissions to interact with and will be ignored when those are not present, attempting to delete anyways. This may result in the objects in the bucket getting destroyed but not the bucket itself if there is a cache in use with the bucket. Force deletion may take a long time to delete buckets with lots of objects or with any Anywhere Caches (80m+).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#force_destroy StorageBucket#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#force_destroy StorageBucket#force_destroy}
 
 ---
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 hierarchical_namespace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#hierarchical_namespace StorageBucket#hierarchical_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#hierarchical_namespace StorageBucket#hierarchical_namespace}
 
 ---
 
@@ -254,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#id StorageBucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#id StorageBucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -267,7 +267,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ip_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#ip_filter StorageBucket#ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#ip_filter StorageBucket#ip_filter}
 
 ---
 
@@ -277,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A set of key/value label pairs to assign to the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#labels StorageBucket#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#labels StorageBucket#labels}
 
 ---
 
@@ -287,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 lifecycle_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#lifecycle_rule StorageBucket#lifecycle_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#lifecycle_rule StorageBucket#lifecycle_rule}
 
 ---
 
@@ -297,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 logging block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#logging StorageBucket#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#logging StorageBucket#logging}
 
 ---
 
@@ -309,7 +309,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#project StorageBucket#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#project StorageBucket#project}
 
 ---
 
@@ -319,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Prevents public access to a bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#public_access_prevention StorageBucket#public_access_prevention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#public_access_prevention StorageBucket#public_access_prevention}
 
 ---
 
@@ -329,7 +329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enables Requester Pays on a storage bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#requester_pays StorageBucket#requester_pays}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#requester_pays StorageBucket#requester_pays}
 
 ---
 
@@ -339,7 +339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#retention_policy StorageBucket#retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#retention_policy StorageBucket#retention_policy}
 
 ---
 
@@ -351,7 +351,7 @@ Specifies the RPO setting of bucket.
 
 If set 'ASYNC_TURBO', The Turbo Replication will be enabled for the dual-region bucket. Value 'DEFAULT' will set RPO setting to default. Turbo Replication is only for buckets in dual-regions.See the docs for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#rpo StorageBucket#rpo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#rpo StorageBucket#rpo}
 
 ---
 
@@ -361,7 +361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 soft_delete_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#soft_delete_policy StorageBucket#soft_delete_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#soft_delete_policy StorageBucket#soft_delete_policy}
 
 ---
 
@@ -371,7 +371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#storage_class StorageBucket#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#storage_class StorageBucket#storage_class}
 
 ---
 
@@ -381,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#timeouts StorageBucket#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#timeouts StorageBucket#timeouts}
 
 ---
 
@@ -391,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enables uniform bucket-level access on a bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#uniform_bucket_level_access StorageBucket#uniform_bucket_level_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#uniform_bucket_level_access StorageBucket#uniform_bucket_level_access}
 
 ---
 
@@ -401,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 versioning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#versioning StorageBucket#versioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#versioning StorageBucket#versioning}
 
 ---
 
@@ -411,7 +411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 website block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#website StorageBucket#website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#website StorageBucket#website}
 
 ---
 
@@ -1197,7 +1197,7 @@ The construct id used in the generated config for the StorageBucket to import.
 
 The id of the existing StorageBucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2073,7 +2073,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 While set to true, autoclass automatically transitions objects in your bucket to appropriate storage classes based on each object's access pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#enabled StorageBucket#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#enabled StorageBucket#enabled}
 
 ---
 
@@ -2089,7 +2089,7 @@ The storage class that objects in the bucket eventually transition to if they ar
 
 Supported values include: NEARLINE, ARCHIVE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#terminal_storage_class StorageBucket#terminal_storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#terminal_storage_class StorageBucket#terminal_storage_class}
 
 ---
 
@@ -2156,9 +2156,9 @@ StorageBucketConfig.builder()
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.defaultEventBasedHold">defaultEventBasedHold</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether or not to automatically apply an eventBasedHold to new objects added to the bucket. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.enableObjectRetention">enableObjectRetention</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.encryption">encryption</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | encryption block. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.forceDestroy">forceDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When deleting a bucket, this boolean option will delete all contained objects, or anywhereCaches (if any). |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.forceDestroy">forceDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, before deleting a bucket, delete all objects within the bucket, or Anywhere Caches caching data for that bucket. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.hierarchicalNamespace">hierarchicalNamespace</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | hierarchical_namespace block. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#id StorageBucket#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#id StorageBucket#id}. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.ipFilter">ipFilter</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | ip_filter block. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A set of key/value label pairs to assign to the bucket. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.lifecycleRule">lifecycleRule</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>></code> | lifecycle_rule block. |
@@ -2257,7 +2257,7 @@ public java.lang.String getLocation();
 
 The Google Cloud Storage location or region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#location StorageBucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#location StorageBucket#location}
 
 ---
 
@@ -2271,7 +2271,7 @@ public java.lang.String getName();
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#name StorageBucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#name StorageBucket#name}
 
 ---
 
@@ -2285,7 +2285,7 @@ public StorageBucketAutoclass getAutoclass();
 
 autoclass block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#autoclass StorageBucket#autoclass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#autoclass StorageBucket#autoclass}
 
 ---
 
@@ -2299,7 +2299,7 @@ public IResolvable|java.util.List<StorageBucketCors> getCors();
 
 cors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#cors StorageBucket#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#cors StorageBucket#cors}
 
 ---
 
@@ -2313,7 +2313,7 @@ public StorageBucketCustomPlacementConfig getCustomPlacementConfig();
 
 custom_placement_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#custom_placement_config StorageBucket#custom_placement_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#custom_placement_config StorageBucket#custom_placement_config}
 
 ---
 
@@ -2327,7 +2327,7 @@ public java.lang.Boolean|IResolvable getDefaultEventBasedHold();
 
 Whether or not to automatically apply an eventBasedHold to new objects added to the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#default_event_based_hold StorageBucket#default_event_based_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#default_event_based_hold StorageBucket#default_event_based_hold}
 
 ---
 
@@ -2341,7 +2341,7 @@ public java.lang.Boolean|IResolvable getEnableObjectRetention();
 
 Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#enable_object_retention StorageBucket#enable_object_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#enable_object_retention StorageBucket#enable_object_retention}
 
 ---
 
@@ -2355,7 +2355,7 @@ public StorageBucketEncryption getEncryption();
 
 encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#encryption StorageBucket#encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#encryption StorageBucket#encryption}
 
 ---
 
@@ -2367,11 +2367,11 @@ public java.lang.Boolean|IResolvable getForceDestroy();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-When deleting a bucket, this boolean option will delete all contained objects, or anywhereCaches (if any).
+When true, before deleting a bucket, delete all objects within the bucket, or Anywhere Caches caching data for that bucket.
 
-If you try to delete a bucket that contains objects or anywhereCaches, Terraform will fail that run, deleting anywhereCaches may take 80 minutes to complete.
+Otherwise, buckets with objects/caches will fail. Anywhere Cache requires additional permissions to interact with and will be ignored when those are not present, attempting to delete anyways. This may result in the objects in the bucket getting destroyed but not the bucket itself if there is a cache in use with the bucket. Force deletion may take a long time to delete buckets with lots of objects or with any Anywhere Caches (80m+).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#force_destroy StorageBucket#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#force_destroy StorageBucket#force_destroy}
 
 ---
 
@@ -2385,7 +2385,7 @@ public StorageBucketHierarchicalNamespace getHierarchicalNamespace();
 
 hierarchical_namespace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#hierarchical_namespace StorageBucket#hierarchical_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#hierarchical_namespace StorageBucket#hierarchical_namespace}
 
 ---
 
@@ -2397,7 +2397,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#id StorageBucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#id StorageBucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2414,7 +2414,7 @@ public StorageBucketIpFilter getIpFilter();
 
 ip_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#ip_filter StorageBucket#ip_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#ip_filter StorageBucket#ip_filter}
 
 ---
 
@@ -2428,7 +2428,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 A set of key/value label pairs to assign to the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#labels StorageBucket#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#labels StorageBucket#labels}
 
 ---
 
@@ -2442,7 +2442,7 @@ public IResolvable|java.util.List<StorageBucketLifecycleRule> getLifecycleRule()
 
 lifecycle_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#lifecycle_rule StorageBucket#lifecycle_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#lifecycle_rule StorageBucket#lifecycle_rule}
 
 ---
 
@@ -2456,7 +2456,7 @@ public StorageBucketLogging getLogging();
 
 logging block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#logging StorageBucket#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#logging StorageBucket#logging}
 
 ---
 
@@ -2472,7 +2472,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#project StorageBucket#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#project StorageBucket#project}
 
 ---
 
@@ -2486,7 +2486,7 @@ public java.lang.String getPublicAccessPrevention();
 
 Prevents public access to a bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#public_access_prevention StorageBucket#public_access_prevention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#public_access_prevention StorageBucket#public_access_prevention}
 
 ---
 
@@ -2500,7 +2500,7 @@ public java.lang.Boolean|IResolvable getRequesterPays();
 
 Enables Requester Pays on a storage bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#requester_pays StorageBucket#requester_pays}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#requester_pays StorageBucket#requester_pays}
 
 ---
 
@@ -2514,7 +2514,7 @@ public StorageBucketRetentionPolicy getRetentionPolicy();
 
 retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#retention_policy StorageBucket#retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#retention_policy StorageBucket#retention_policy}
 
 ---
 
@@ -2530,7 +2530,7 @@ Specifies the RPO setting of bucket.
 
 If set 'ASYNC_TURBO', The Turbo Replication will be enabled for the dual-region bucket. Value 'DEFAULT' will set RPO setting to default. Turbo Replication is only for buckets in dual-regions.See the docs for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#rpo StorageBucket#rpo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#rpo StorageBucket#rpo}
 
 ---
 
@@ -2544,7 +2544,7 @@ public StorageBucketSoftDeletePolicy getSoftDeletePolicy();
 
 soft_delete_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#soft_delete_policy StorageBucket#soft_delete_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#soft_delete_policy StorageBucket#soft_delete_policy}
 
 ---
 
@@ -2558,7 +2558,7 @@ public java.lang.String getStorageClass();
 
 The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#storage_class StorageBucket#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#storage_class StorageBucket#storage_class}
 
 ---
 
@@ -2572,7 +2572,7 @@ public StorageBucketTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#timeouts StorageBucket#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#timeouts StorageBucket#timeouts}
 
 ---
 
@@ -2586,7 +2586,7 @@ public java.lang.Boolean|IResolvable getUniformBucketLevelAccess();
 
 Enables uniform bucket-level access on a bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#uniform_bucket_level_access StorageBucket#uniform_bucket_level_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#uniform_bucket_level_access StorageBucket#uniform_bucket_level_access}
 
 ---
 
@@ -2600,7 +2600,7 @@ public StorageBucketVersioning getVersioning();
 
 versioning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#versioning StorageBucket#versioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#versioning StorageBucket#versioning}
 
 ---
 
@@ -2614,7 +2614,7 @@ public StorageBucketWebsite getWebsite();
 
 website block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#website StorageBucket#website}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#website StorageBucket#website}
 
 ---
 
@@ -2654,7 +2654,7 @@ public java.lang.Number getMaxAgeSeconds();
 
 The value, in seconds, to return in the Access-Control-Max-Age header used in preflight responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#max_age_seconds StorageBucket#max_age_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#max_age_seconds StorageBucket#max_age_seconds}
 
 ---
 
@@ -2668,7 +2668,7 @@ public java.util.List<java.lang.String> getMethod();
 
 The list of HTTP methods on which to include CORS response headers, (GET, OPTIONS, POST, etc) Note: "*" is permitted in the list of methods, and means "any method".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#method StorageBucket#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#method StorageBucket#method}
 
 ---
 
@@ -2684,7 +2684,7 @@ The list of Origins eligible to receive CORS response headers.
 
 Note: "*" is permitted in the list of origins, and means "any Origin".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#origin StorageBucket#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#origin StorageBucket#origin}
 
 ---
 
@@ -2698,7 +2698,7 @@ public java.util.List<java.lang.String> getResponseHeader();
 
 The list of HTTP headers other than the simple response headers to give permission for the user-agent to share across domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#response_header StorageBucket#response_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#response_header StorageBucket#response_header}
 
 ---
 
@@ -2734,7 +2734,7 @@ The list of individual regions that comprise a dual-region bucket.
 
 See the docs for a list of acceptable regions. Note: If any of the data_locations changes, it will recreate the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#data_locations StorageBucket#data_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#data_locations StorageBucket#data_locations}
 
 ---
 
@@ -2746,7 +2746,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import io.cdktn.providers.google.storage_bucket.StorageBucketEncryption;
 
 StorageBucketEncryption.builder()
-    .defaultKmsKeyName(java.lang.String)
+//  .customerManagedEncryptionEnforcementConfig(StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig)
+//  .customerSuppliedEncryptionEnforcementConfig(StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig)
+//  .defaultKmsKeyName(java.lang.String)
+//  .googleManagedEncryptionEnforcementConfig(StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig)
     .build();
 ```
 
@@ -2754,11 +2757,42 @@ StorageBucketEncryption.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption.property.customerManagedEncryptionEnforcementConfig">customerManagedEncryptionEnforcementConfig</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig</a></code> | customer_managed_encryption_enforcement_config block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption.property.customerSuppliedEncryptionEnforcementConfig">customerSuppliedEncryptionEnforcementConfig</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig</a></code> | customer_supplied_encryption_enforcement_config block. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption.property.defaultKmsKeyName">defaultKmsKeyName</a></code> | <code>java.lang.String</code> | A Cloud KMS key that will be used to encrypt objects inserted into this bucket, if no encryption method is specified. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption.property.googleManagedEncryptionEnforcementConfig">googleManagedEncryptionEnforcementConfig</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig">StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig</a></code> | google_managed_encryption_enforcement_config block. |
 
 ---
 
-##### `defaultKmsKeyName`<sup>Required</sup> <a name="defaultKmsKeyName" id="@cdktn/provider-google.storageBucket.StorageBucketEncryption.property.defaultKmsKeyName"></a>
+##### `customerManagedEncryptionEnforcementConfig`<sup>Optional</sup> <a name="customerManagedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryption.property.customerManagedEncryptionEnforcementConfig"></a>
+
+```java
+public StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig getCustomerManagedEncryptionEnforcementConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig</a>
+
+customer_managed_encryption_enforcement_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#customer_managed_encryption_enforcement_config StorageBucket#customer_managed_encryption_enforcement_config}
+
+---
+
+##### `customerSuppliedEncryptionEnforcementConfig`<sup>Optional</sup> <a name="customerSuppliedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryption.property.customerSuppliedEncryptionEnforcementConfig"></a>
+
+```java
+public StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig getCustomerSuppliedEncryptionEnforcementConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig</a>
+
+customer_supplied_encryption_enforcement_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#customer_supplied_encryption_enforcement_config StorageBucket#customer_supplied_encryption_enforcement_config}
+
+---
+
+##### `defaultKmsKeyName`<sup>Optional</sup> <a name="defaultKmsKeyName" id="@cdktn/provider-google.storageBucket.StorageBucketEncryption.property.defaultKmsKeyName"></a>
 
 ```java
 public java.lang.String getDefaultKmsKeyName();
@@ -2770,7 +2804,129 @@ A Cloud KMS key that will be used to encrypt objects inserted into this bucket, 
 
 You must pay attention to whether the crypto key is available in the location that this bucket is created in. See the docs for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#default_kms_key_name StorageBucket#default_kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#default_kms_key_name StorageBucket#default_kms_key_name}
+
+---
+
+##### `googleManagedEncryptionEnforcementConfig`<sup>Optional</sup> <a name="googleManagedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryption.property.googleManagedEncryptionEnforcementConfig"></a>
+
+```java
+public StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig getGoogleManagedEncryptionEnforcementConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig">StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig</a>
+
+google_managed_encryption_enforcement_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#google_managed_encryption_enforcement_config StorageBucket#google_managed_encryption_enforcement_config}
+
+---
+
+### StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig <a name="StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_bucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig;
+
+StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig.builder()
+    .restrictionMode(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Whether CMEK is restricted for new objects within the bucket. |
+
+---
+
+##### `restrictionMode`<sup>Required</sup> <a name="restrictionMode" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig.property.restrictionMode"></a>
+
+```java
+public java.lang.String getRestrictionMode();
+```
+
+- *Type:* java.lang.String
+
+Whether CMEK is restricted for new objects within the bucket.
+
+If FullyRestricted, new objects can't be created using CMEK encryption. If NotRestricted or unset, creation of new objects with CMEK encryption is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#restriction_mode StorageBucket#restriction_mode}
+
+---
+
+### StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig <a name="StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_bucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig;
+
+StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig.builder()
+    .restrictionMode(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Whether CSEK is restricted for new objects within the bucket. |
+
+---
+
+##### `restrictionMode`<sup>Required</sup> <a name="restrictionMode" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig.property.restrictionMode"></a>
+
+```java
+public java.lang.String getRestrictionMode();
+```
+
+- *Type:* java.lang.String
+
+Whether CSEK is restricted for new objects within the bucket.
+
+If FullyRestricted, new objects can't be created using CSEK encryption. If NotRestricted or unset, creation of new objects with CSEK encryption is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#restriction_mode StorageBucket#restriction_mode}
+
+---
+
+### StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig <a name="StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_bucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig;
+
+StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig.builder()
+    .restrictionMode(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | Whether GMEK is restricted for new objects within the bucket. |
+
+---
+
+##### `restrictionMode`<sup>Required</sup> <a name="restrictionMode" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig.property.restrictionMode"></a>
+
+```java
+public java.lang.String getRestrictionMode();
+```
+
+- *Type:* java.lang.String
+
+Whether GMEK is restricted for new objects within the bucket.
+
+If FullyRestricted, new objects can't be created using GMEK encryption. If NotRestricted or unset, creation of new objects with GMEK encryption is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#restriction_mode StorageBucket#restriction_mode}
 
 ---
 
@@ -2804,7 +2960,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Set this field true to organize bucket with logical file system structure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#enabled StorageBucket#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#enabled StorageBucket#enabled}
 
 ---
 
@@ -2846,7 +3002,7 @@ public java.lang.String getMode();
 
 The mode of the IP filter. Valid values are 'Enabled' and 'Disabled'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#mode StorageBucket#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#mode StorageBucket#mode}
 
 ---
 
@@ -2860,7 +3016,7 @@ public java.lang.Boolean|IResolvable getAllowAllServiceAgentAccess();
 
 Whether to allow all service agents to access the bucket regardless of the IP filter configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#allow_all_service_agent_access StorageBucket#allow_all_service_agent_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#allow_all_service_agent_access StorageBucket#allow_all_service_agent_access}
 
 ---
 
@@ -2874,7 +3030,7 @@ public java.lang.Boolean|IResolvable getAllowCrossOrgVpcs();
 
 Whether to allow cross-org VPCs in the bucket's IP filter configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#allow_cross_org_vpcs StorageBucket#allow_cross_org_vpcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#allow_cross_org_vpcs StorageBucket#allow_cross_org_vpcs}
 
 ---
 
@@ -2888,7 +3044,7 @@ public StorageBucketIpFilterPublicNetworkSource getPublicNetworkSource();
 
 public_network_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#public_network_source StorageBucket#public_network_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#public_network_source StorageBucket#public_network_source}
 
 ---
 
@@ -2902,7 +3058,7 @@ public IResolvable|java.util.List<StorageBucketIpFilterVpcNetworkSources> getVpc
 
 vpc_network_sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#vpc_network_sources StorageBucket#vpc_network_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#vpc_network_sources StorageBucket#vpc_network_sources}
 
 ---
 
@@ -2936,7 +3092,7 @@ public java.util.List<java.lang.String> getAllowedIpCidrRanges();
 
 The list of public IPv4, IPv6 cidr ranges that are allowed to access the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#allowed_ip_cidr_ranges StorageBucket#allowed_ip_cidr_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#allowed_ip_cidr_ranges StorageBucket#allowed_ip_cidr_ranges}
 
 ---
 
@@ -2972,7 +3128,7 @@ public java.util.List<java.lang.String> getAllowedIpCidrRanges();
 
 The list of public or private IPv4 and IPv6 CIDR ranges that can access the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#allowed_ip_cidr_ranges StorageBucket#allowed_ip_cidr_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#allowed_ip_cidr_ranges StorageBucket#allowed_ip_cidr_ranges}
 
 ---
 
@@ -2986,7 +3142,7 @@ public java.lang.String getNetwork();
 
 Name of the network. Format: projects/{PROJECT_ID}/global/networks/{NETWORK_NAME}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#network StorageBucket#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#network StorageBucket#network}
 
 ---
 
@@ -3022,7 +3178,7 @@ public StorageBucketLifecycleRuleAction getAction();
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#action StorageBucket#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#action StorageBucket#action}
 
 ---
 
@@ -3036,7 +3192,7 @@ public StorageBucketLifecycleRuleCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#condition StorageBucket#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#condition StorageBucket#condition}
 
 ---
 
@@ -3072,7 +3228,7 @@ public java.lang.String getType();
 
 The type of the action of this Lifecycle Rule. Supported values include: Delete, SetStorageClass and AbortIncompleteMultipartUpload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#type StorageBucket#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#type StorageBucket#type}
 
 ---
 
@@ -3086,7 +3242,7 @@ public java.lang.String getStorageClass();
 
 The target Storage Class of objects affected by this Lifecycle Rule. Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#storage_class StorageBucket#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#storage_class StorageBucket#storage_class}
 
 ---
 
@@ -3148,7 +3304,7 @@ public java.lang.Number getAge();
 
 Minimum age of an object in days to satisfy this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#age StorageBucket#age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#age StorageBucket#age}
 
 ---
 
@@ -3162,7 +3318,7 @@ public java.lang.String getCreatedBefore();
 
 Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#created_before StorageBucket#created_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#created_before StorageBucket#created_before}
 
 ---
 
@@ -3176,7 +3332,7 @@ public java.lang.String getCustomTimeBefore();
 
 Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#custom_time_before StorageBucket#custom_time_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#custom_time_before StorageBucket#custom_time_before}
 
 ---
 
@@ -3190,7 +3346,7 @@ public java.lang.Number getDaysSinceCustomTime();
 
 Number of days elapsed since the user-specified timestamp set on an object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#days_since_custom_time StorageBucket#days_since_custom_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#days_since_custom_time StorageBucket#days_since_custom_time}
 
 ---
 
@@ -3204,7 +3360,7 @@ public java.lang.Number getDaysSinceNoncurrentTime();
 
 Number of days elapsed since the noncurrent timestamp of an object. This 										condition is relevant only for versioned objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#days_since_noncurrent_time StorageBucket#days_since_noncurrent_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#days_since_noncurrent_time StorageBucket#days_since_noncurrent_time}
 
 ---
 
@@ -3218,7 +3374,7 @@ public java.util.List<java.lang.String> getMatchesPrefix();
 
 One or more matching name prefixes to satisfy this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#matches_prefix StorageBucket#matches_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#matches_prefix StorageBucket#matches_prefix}
 
 ---
 
@@ -3232,7 +3388,7 @@ public java.util.List<java.lang.String> getMatchesStorageClass();
 
 Storage Class of objects to satisfy this condition. Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE, STANDARD, DURABLE_REDUCED_AVAILABILITY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#matches_storage_class StorageBucket#matches_storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#matches_storage_class StorageBucket#matches_storage_class}
 
 ---
 
@@ -3246,7 +3402,7 @@ public java.util.List<java.lang.String> getMatchesSuffix();
 
 One or more matching name suffixes to satisfy this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#matches_suffix StorageBucket#matches_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#matches_suffix StorageBucket#matches_suffix}
 
 ---
 
@@ -3260,7 +3416,7 @@ public java.lang.String getNoncurrentTimeBefore();
 
 Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#noncurrent_time_before StorageBucket#noncurrent_time_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#noncurrent_time_before StorageBucket#noncurrent_time_before}
 
 ---
 
@@ -3274,7 +3430,7 @@ public java.lang.Number getNumNewerVersions();
 
 Relevant only for versioned objects. The number of newer versions of an object to satisfy this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#num_newer_versions StorageBucket#num_newer_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#num_newer_versions StorageBucket#num_newer_versions}
 
 ---
 
@@ -3290,7 +3446,7 @@ While set true, age value will be sent in the request even for zero value of the
 
 This field is only useful for setting 0 value to the age field. It can be used alone or together with age.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#send_age_if_zero StorageBucket#send_age_if_zero}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#send_age_if_zero StorageBucket#send_age_if_zero}
 
 ---
 
@@ -3306,7 +3462,7 @@ While set true, days_since_custom_time value will be sent in the request even fo
 
 This field is only useful for setting 0 value to the days_since_custom_time field. It can be used alone or together with days_since_custom_time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#send_days_since_custom_time_if_zero StorageBucket#send_days_since_custom_time_if_zero}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#send_days_since_custom_time_if_zero StorageBucket#send_days_since_custom_time_if_zero}
 
 ---
 
@@ -3322,7 +3478,7 @@ While set true, days_since_noncurrent_time value will be sent in the request eve
 
 This field is only useful for setting 0 value to the days_since_noncurrent_time field. It can be used alone or together with days_since_noncurrent_time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#send_days_since_noncurrent_time_if_zero StorageBucket#send_days_since_noncurrent_time_if_zero}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#send_days_since_noncurrent_time_if_zero StorageBucket#send_days_since_noncurrent_time_if_zero}
 
 ---
 
@@ -3338,7 +3494,7 @@ While set true, num_newer_versions value will be sent in the request even for ze
 
 This field is only useful for setting 0 value to the num_newer_versions field. It can be used alone or together with num_newer_versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#send_num_newer_versions_if_zero StorageBucket#send_num_newer_versions_if_zero}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#send_num_newer_versions_if_zero StorageBucket#send_num_newer_versions_if_zero}
 
 ---
 
@@ -3352,7 +3508,7 @@ public java.lang.String getWithState();
 
 Match to live and/or archived objects. Unversioned buckets have only live objects. Supported values include: "LIVE", "ARCHIVED", "ANY".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#with_state StorageBucket#with_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#with_state StorageBucket#with_state}
 
 ---
 
@@ -3388,7 +3544,7 @@ public java.lang.String getLogBucket();
 
 The bucket that will receive log objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#log_bucket StorageBucket#log_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#log_bucket StorageBucket#log_bucket}
 
 ---
 
@@ -3404,7 +3560,7 @@ The object prefix for log objects.
 
 If it's not provided, by default Google Cloud Storage sets this to this bucket's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#log_object_prefix StorageBucket#log_object_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#log_object_prefix StorageBucket#log_object_prefix}
 
 ---
 
@@ -3416,7 +3572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import io.cdktn.providers.google.storage_bucket.StorageBucketRetentionPolicy;
 
 StorageBucketRetentionPolicy.builder()
-    .retentionPeriod(java.lang.Number)
+    .retentionPeriod(java.lang.String)
 //  .isLocked(java.lang.Boolean|IResolvable)
     .build();
 ```
@@ -3425,7 +3581,7 @@ StorageBucketRetentionPolicy.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.property.retentionPeriod">retentionPeriod</a></code> | <code>java.lang.Number</code> | The period of time, in seconds, that objects in the bucket must be retained and cannot be deleted, overwritten, or archived. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.property.retentionPeriod">retentionPeriod</a></code> | <code>java.lang.String</code> | The period of time, in seconds, that objects in the bucket must be retained and cannot be deleted, overwritten, or archived. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.property.isLocked">isLocked</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to true, the bucket will be locked and permanently restrict edits to the bucket's retention policy. |
 
 ---
@@ -3433,16 +3589,16 @@ StorageBucketRetentionPolicy.builder()
 ##### `retentionPeriod`<sup>Required</sup> <a name="retentionPeriod" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.property.retentionPeriod"></a>
 
 ```java
-public java.lang.Number getRetentionPeriod();
+public java.lang.String getRetentionPeriod();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.String
 
 The period of time, in seconds, that objects in the bucket must be retained and cannot be deleted, overwritten, or archived.
 
 The value must be less than 3,155,760,000 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#retention_period StorageBucket#retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#retention_period StorageBucket#retention_period}
 
 ---
 
@@ -3458,7 +3614,7 @@ If set to true, the bucket will be locked and permanently restrict edits to the 
 
 Caution: Locking a bucket is an irreversible action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#is_locked StorageBucket#is_locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#is_locked StorageBucket#is_locked}
 
 ---
 
@@ -3494,7 +3650,7 @@ The duration in seconds that soft-deleted objects in the bucket will be retained
 
 Default value is 604800.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#retention_duration_seconds StorageBucket#retention_duration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#retention_duration_seconds StorageBucket#retention_duration_seconds}
 
 ---
 
@@ -3516,9 +3672,9 @@ StorageBucketTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#create StorageBucket#create}. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#read StorageBucket#read}. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#update StorageBucket#update}. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#create StorageBucket#create}. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.read">read</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#read StorageBucket#read}. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#update StorageBucket#update}. |
 
 ---
 
@@ -3530,7 +3686,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#create StorageBucket#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#create StorageBucket#create}.
 
 ---
 
@@ -3542,7 +3698,7 @@ public java.lang.String getRead();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#read StorageBucket#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#read StorageBucket#read}.
 
 ---
 
@@ -3554,7 +3710,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#update StorageBucket#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#update StorageBucket#update}.
 
 ---
 
@@ -3588,7 +3744,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 While set to true, versioning is fully enabled for this bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#enabled StorageBucket#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#enabled StorageBucket#enabled}
 
 ---
 
@@ -3624,7 +3780,7 @@ public java.lang.String getMainPageSuffix();
 
 Behaves as the bucket's directory index where missing objects are treated as potential directories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#main_page_suffix StorageBucket#main_page_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#main_page_suffix StorageBucket#main_page_suffix}
 
 ---
 
@@ -3638,7 +3794,7 @@ public java.lang.String getNotFoundPage();
 
 The custom object to return when a requested resource is not found.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#not_found_page StorageBucket#not_found_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket#not_found_page StorageBucket#not_found_page}
 
 ---
 
@@ -4758,6 +4914,852 @@ public StorageBucketCustomPlacementConfig getInternalValue();
 ---
 
 
+### StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference <a name="StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_bucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference;
+
+new StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.effectiveTime">effectiveTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.restrictionModeInput">restrictionModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `effectiveTime`<sup>Required</sup> <a name="effectiveTime" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.effectiveTime"></a>
+
+```java
+public java.lang.String getEffectiveTime();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `restrictionModeInput`<sup>Optional</sup> <a name="restrictionModeInput" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.restrictionModeInput"></a>
+
+```java
+public java.lang.String getRestrictionModeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `restrictionMode`<sup>Required</sup> <a name="restrictionMode" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.restrictionMode"></a>
+
+```java
+public java.lang.String getRestrictionMode();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference.property.internalValue"></a>
+
+```java
+public StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig</a>
+
+---
+
+
+### StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference <a name="StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_bucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference;
+
+new StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.effectiveTime">effectiveTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.restrictionModeInput">restrictionModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `effectiveTime`<sup>Required</sup> <a name="effectiveTime" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.effectiveTime"></a>
+
+```java
+public java.lang.String getEffectiveTime();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `restrictionModeInput`<sup>Optional</sup> <a name="restrictionModeInput" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.restrictionModeInput"></a>
+
+```java
+public java.lang.String getRestrictionModeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `restrictionMode`<sup>Required</sup> <a name="restrictionMode" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.restrictionMode"></a>
+
+```java
+public java.lang.String getRestrictionMode();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference.property.internalValue"></a>
+
+```java
+public StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig</a>
+
+---
+
+
+### StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference <a name="StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.storage_bucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference;
+
+new StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.effectiveTime">effectiveTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.restrictionModeInput">restrictionModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.restrictionMode">restrictionMode</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig">StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `effectiveTime`<sup>Required</sup> <a name="effectiveTime" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.effectiveTime"></a>
+
+```java
+public java.lang.String getEffectiveTime();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `restrictionModeInput`<sup>Optional</sup> <a name="restrictionModeInput" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.restrictionModeInput"></a>
+
+```java
+public java.lang.String getRestrictionModeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `restrictionMode`<sup>Required</sup> <a name="restrictionMode" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.restrictionMode"></a>
+
+```java
+public java.lang.String getRestrictionMode();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference.property.internalValue"></a>
+
+```java
+public StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig">StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig</a>
+
+---
+
+
 ### StorageBucketEncryptionOutputReference <a name="StorageBucketEncryptionOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer"></a>
@@ -4808,6 +5810,13 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.putCustomerManagedEncryptionEnforcementConfig">putCustomerManagedEncryptionEnforcementConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.putCustomerSuppliedEncryptionEnforcementConfig">putCustomerSuppliedEncryptionEnforcementConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.putGoogleManagedEncryptionEnforcementConfig">putGoogleManagedEncryptionEnforcementConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resetCustomerManagedEncryptionEnforcementConfig">resetCustomerManagedEncryptionEnforcementConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resetCustomerSuppliedEncryptionEnforcementConfig">resetCustomerSuppliedEncryptionEnforcementConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resetDefaultKmsKeyName">resetDefaultKmsKeyName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resetGoogleManagedEncryptionEnforcementConfig">resetGoogleManagedEncryptionEnforcementConfig</a></code> | *No description.* |
 
 ---
 
@@ -4961,6 +5970,66 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putCustomerManagedEncryptionEnforcementConfig` <a name="putCustomerManagedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.putCustomerManagedEncryptionEnforcementConfig"></a>
+
+```java
+public void putCustomerManagedEncryptionEnforcementConfig(StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.putCustomerManagedEncryptionEnforcementConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig</a>
+
+---
+
+##### `putCustomerSuppliedEncryptionEnforcementConfig` <a name="putCustomerSuppliedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.putCustomerSuppliedEncryptionEnforcementConfig"></a>
+
+```java
+public void putCustomerSuppliedEncryptionEnforcementConfig(StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.putCustomerSuppliedEncryptionEnforcementConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig</a>
+
+---
+
+##### `putGoogleManagedEncryptionEnforcementConfig` <a name="putGoogleManagedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.putGoogleManagedEncryptionEnforcementConfig"></a>
+
+```java
+public void putGoogleManagedEncryptionEnforcementConfig(StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.putGoogleManagedEncryptionEnforcementConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig">StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig</a>
+
+---
+
+##### `resetCustomerManagedEncryptionEnforcementConfig` <a name="resetCustomerManagedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resetCustomerManagedEncryptionEnforcementConfig"></a>
+
+```java
+public void resetCustomerManagedEncryptionEnforcementConfig()
+```
+
+##### `resetCustomerSuppliedEncryptionEnforcementConfig` <a name="resetCustomerSuppliedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resetCustomerSuppliedEncryptionEnforcementConfig"></a>
+
+```java
+public void resetCustomerSuppliedEncryptionEnforcementConfig()
+```
+
+##### `resetDefaultKmsKeyName` <a name="resetDefaultKmsKeyName" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resetDefaultKmsKeyName"></a>
+
+```java
+public void resetDefaultKmsKeyName()
+```
+
+##### `resetGoogleManagedEncryptionEnforcementConfig` <a name="resetGoogleManagedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resetGoogleManagedEncryptionEnforcementConfig"></a>
+
+```java
+public void resetGoogleManagedEncryptionEnforcementConfig()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4968,7 +6037,13 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.customerManagedEncryptionEnforcementConfig">customerManagedEncryptionEnforcementConfig</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference">StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.customerSuppliedEncryptionEnforcementConfig">customerSuppliedEncryptionEnforcementConfig</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference">StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.googleManagedEncryptionEnforcementConfig">googleManagedEncryptionEnforcementConfig</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference">StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.customerManagedEncryptionEnforcementConfigInput">customerManagedEncryptionEnforcementConfigInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.customerSuppliedEncryptionEnforcementConfigInput">customerSuppliedEncryptionEnforcementConfigInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.defaultKmsKeyNameInput">defaultKmsKeyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.googleManagedEncryptionEnforcementConfigInput">googleManagedEncryptionEnforcementConfigInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig">StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.defaultKmsKeyName">defaultKmsKeyName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | *No description.* |
 
@@ -4998,6 +6073,56 @@ public java.lang.String getFqn();
 
 ---
 
+##### `customerManagedEncryptionEnforcementConfig`<sup>Required</sup> <a name="customerManagedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.customerManagedEncryptionEnforcementConfig"></a>
+
+```java
+public StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference getCustomerManagedEncryptionEnforcementConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference">StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference</a>
+
+---
+
+##### `customerSuppliedEncryptionEnforcementConfig`<sup>Required</sup> <a name="customerSuppliedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.customerSuppliedEncryptionEnforcementConfig"></a>
+
+```java
+public StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference getCustomerSuppliedEncryptionEnforcementConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference">StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference</a>
+
+---
+
+##### `googleManagedEncryptionEnforcementConfig`<sup>Required</sup> <a name="googleManagedEncryptionEnforcementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.googleManagedEncryptionEnforcementConfig"></a>
+
+```java
+public StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference getGoogleManagedEncryptionEnforcementConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference">StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference</a>
+
+---
+
+##### `customerManagedEncryptionEnforcementConfigInput`<sup>Optional</sup> <a name="customerManagedEncryptionEnforcementConfigInput" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.customerManagedEncryptionEnforcementConfigInput"></a>
+
+```java
+public StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig getCustomerManagedEncryptionEnforcementConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig</a>
+
+---
+
+##### `customerSuppliedEncryptionEnforcementConfigInput`<sup>Optional</sup> <a name="customerSuppliedEncryptionEnforcementConfigInput" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.customerSuppliedEncryptionEnforcementConfigInput"></a>
+
+```java
+public StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig getCustomerSuppliedEncryptionEnforcementConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig">StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig</a>
+
+---
+
 ##### `defaultKmsKeyNameInput`<sup>Optional</sup> <a name="defaultKmsKeyNameInput" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.defaultKmsKeyNameInput"></a>
 
 ```java
@@ -5005,6 +6130,16 @@ public java.lang.String getDefaultKmsKeyNameInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `googleManagedEncryptionEnforcementConfigInput`<sup>Optional</sup> <a name="googleManagedEncryptionEnforcementConfigInput" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.googleManagedEncryptionEnforcementConfigInput"></a>
+
+```java
+public StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig getGoogleManagedEncryptionEnforcementConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig">StorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig</a>
 
 ---
 
@@ -8454,9 +9589,9 @@ public void resetIsLocked()
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLockedInput">isLockedInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriodInput">retentionPeriodInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriodInput">retentionPeriodInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLocked">isLocked</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriod">retentionPeriod</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriod">retentionPeriod</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | *No description.* |
 
 ---
@@ -8498,10 +9633,10 @@ public java.lang.Boolean|IResolvable getIsLockedInput();
 ##### `retentionPeriodInput`<sup>Optional</sup> <a name="retentionPeriodInput" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriodInput"></a>
 
 ```java
-public java.lang.Number getRetentionPeriodInput();
+public java.lang.String getRetentionPeriodInput();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.String
 
 ---
 
@@ -8518,10 +9653,10 @@ public java.lang.Boolean|IResolvable getIsLocked();
 ##### `retentionPeriod`<sup>Required</sup> <a name="retentionPeriod" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriod"></a>
 
 ```java
-public java.lang.Number getRetentionPeriod();
+public java.lang.String getRetentionPeriod();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.String
 
 ---
 

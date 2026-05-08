@@ -4,7 +4,7 @@
 
 ### SecurityposturePostureDeployment <a name="SecurityposturePostureDeployment" id="@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment google_securityposture_posture_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment google_securityposture_posture_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeployment.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the SecurityposturePostureDepl
 
 The id of the existing SecurityposturePostureDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1060,7 +1060,7 @@ new SecurityposturePostureDeploymentConfig {
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.postureRevisionId">PostureRevisionId</a></code> | <code>string</code> | Revision_id the posture which needs to be deployed. |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.targetResource">TargetResource</a></code> | <code>string</code> | The resource on which the posture should be deployed. This can be in one of the following formats: projects/{project_number}, folders/{folder_number}, organizations/{organization_id}. |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.description">Description</a></code> | <code>string</code> | Description of the posture deployment. |
-| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#id SecurityposturePostureDeployment#id}. |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#id SecurityposturePostureDeployment#id}. |
 | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts">SecurityposturePostureDeploymentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1145,7 +1145,7 @@ public string Location { get; set; }
 
 The location of the resource, eg. global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#location SecurityposturePostureDeployment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#location SecurityposturePostureDeployment#location}
 
 ---
 
@@ -1159,7 +1159,7 @@ public string Parent { get; set; }
 
 The parent of the resource, an organization. Format should be 'organizations/{organization_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#parent SecurityposturePostureDeployment#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#parent SecurityposturePostureDeployment#parent}
 
 ---
 
@@ -1173,7 +1173,7 @@ public string PostureDeploymentId { get; set; }
 
 ID of the posture deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#posture_deployment_id SecurityposturePostureDeployment#posture_deployment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#posture_deployment_id SecurityposturePostureDeployment#posture_deployment_id}
 
 ---
 
@@ -1187,7 +1187,7 @@ public string PostureId { get; set; }
 
 Relative name of the posture which needs to be deployed. It should be in the format:   organizations/{organization_id}/locations/{location}/postures/{posture_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#posture_id SecurityposturePostureDeployment#posture_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#posture_id SecurityposturePostureDeployment#posture_id}
 
 ---
 
@@ -1201,7 +1201,7 @@ public string PostureRevisionId { get; set; }
 
 Revision_id the posture which needs to be deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#posture_revision_id SecurityposturePostureDeployment#posture_revision_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#posture_revision_id SecurityposturePostureDeployment#posture_revision_id}
 
 ---
 
@@ -1215,7 +1215,7 @@ public string TargetResource { get; set; }
 
 The resource on which the posture should be deployed. This can be in one of the following formats: projects/{project_number}, folders/{folder_number}, organizations/{organization_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#target_resource SecurityposturePostureDeployment#target_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#target_resource SecurityposturePostureDeployment#target_resource}
 
 ---
 
@@ -1229,7 +1229,7 @@ public string Description { get; set; }
 
 Description of the posture deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#description SecurityposturePostureDeployment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#description SecurityposturePostureDeployment#description}
 
 ---
 
@@ -1241,7 +1241,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#id SecurityposturePostureDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#id SecurityposturePostureDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1258,7 +1258,7 @@ public SecurityposturePostureDeploymentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#timeouts SecurityposturePostureDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#timeouts SecurityposturePostureDeployment#timeouts}
 
 ---
 
@@ -1280,9 +1280,9 @@ new SecurityposturePostureDeploymentTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#create SecurityposturePostureDeployment#create}. |
-| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#delete SecurityposturePostureDeployment#delete}. |
-| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#update SecurityposturePostureDeployment#update}. |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#create SecurityposturePostureDeployment#create}. |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#delete SecurityposturePostureDeployment#delete}. |
+| <code><a href="#@cdktn/provider-google.securityposturePostureDeployment.SecurityposturePostureDeploymentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#update SecurityposturePostureDeployment#update}. |
 
 ---
 
@@ -1294,7 +1294,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#create SecurityposturePostureDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#create SecurityposturePostureDeployment#create}.
 
 ---
 
@@ -1306,7 +1306,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#delete SecurityposturePostureDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#delete SecurityposturePostureDeployment#delete}.
 
 ---
 
@@ -1318,7 +1318,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/securityposture_posture_deployment#update SecurityposturePostureDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/securityposture_posture_deployment#update SecurityposturePostureDeployment#update}.
 
 ---
 

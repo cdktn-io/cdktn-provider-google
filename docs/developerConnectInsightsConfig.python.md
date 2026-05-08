@@ -4,7 +4,7 @@
 
 ### DeveloperConnectInsightsConfig <a name="DeveloperConnectInsightsConfig" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config google_developer_connect_insights_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config google_developer_connect_insights_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer"></a>
 
@@ -21,14 +21,15 @@ developerConnectInsightsConfig.DeveloperConnectInsightsConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  app_hub_application: str,
   insights_config_id: str,
   location: str,
   annotations: typing.Mapping[str] = None,
+  app_hub_application: str = None,
   artifact_configs: IResolvable | typing.List[DeveloperConnectInsightsConfigArtifactConfigs] = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
   project: str = None,
+  target_projects: DeveloperConnectInsightsConfigTargetProjects = None,
   timeouts: DeveloperConnectInsightsConfigTimeouts = None
 )
 ```
@@ -44,14 +45,15 @@ developerConnectInsightsConfig.DeveloperConnectInsightsConfig(
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.appHubApplication">app_hub_application</a></code> | <code>str</code> | The name of the App Hub Application. Format: projects/{project}/locations/{location}/applications/{application}. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.insightsConfigId">insights_config_id</a></code> | <code>str</code> | ID of the requesting InsightsConfig. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.location">location</a></code> | <code>str</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | User specified annotations. See https://google.aip.dev/148#annotations for more details such as format and size limitations. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.appHubApplication">app_hub_application</a></code> | <code>str</code> | The name of the App Hub Application. Format: projects/{project}/locations/{location}/applications/{application}. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.artifactConfigs">artifact_configs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigs">DeveloperConnectInsightsConfigArtifactConfigs</a>]</code> | artifact_configs block. |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Set of labels associated with an InsightsConfig. |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.targetProjects">target_projects</a></code> | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects">DeveloperConnectInsightsConfigTargetProjects</a></code> | target_projects block. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts">DeveloperConnectInsightsConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,23 +118,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `app_hub_application`<sup>Required</sup> <a name="app_hub_application" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.appHubApplication"></a>
-
-- *Type:* str
-
-The name of the App Hub Application. Format: projects/{project}/locations/{location}/applications/{application}.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#app_hub_application DeveloperConnectInsightsConfig#app_hub_application}
-
----
-
 ##### `insights_config_id`<sup>Required</sup> <a name="insights_config_id" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.insightsConfigId"></a>
 
 - *Type:* str
 
 ID of the requesting InsightsConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#insights_config_id DeveloperConnectInsightsConfig#insights_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#insights_config_id DeveloperConnectInsightsConfig#insights_config_id}
 
 ---
 
@@ -142,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#location DeveloperConnectInsightsConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#location DeveloperConnectInsightsConfig#location}
 
 ---
 
@@ -155,7 +147,17 @@ User specified annotations. See https://google.aip.dev/148#annotations for more 
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#annotations DeveloperConnectInsightsConfig#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#annotations DeveloperConnectInsightsConfig#annotations}
+
+---
+
+##### `app_hub_application`<sup>Optional</sup> <a name="app_hub_application" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.appHubApplication"></a>
+
+- *Type:* str
+
+The name of the App Hub Application. Format: projects/{project}/locations/{location}/applications/{application}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#app_hub_application DeveloperConnectInsightsConfig#app_hub_application}
 
 ---
 
@@ -165,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 artifact_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#artifact_configs DeveloperConnectInsightsConfig#artifact_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#artifact_configs DeveloperConnectInsightsConfig#artifact_configs}
 
 ---
 
@@ -173,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +191,7 @@ Set of labels associated with an InsightsConfig.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#labels DeveloperConnectInsightsConfig#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#labels DeveloperConnectInsightsConfig#labels}
 
 ---
 
@@ -197,7 +199,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}.
+
+---
+
+##### `target_projects`<sup>Optional</sup> <a name="target_projects" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer.parameter.targetProjects"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects">DeveloperConnectInsightsConfigTargetProjects</a>
+
+target_projects block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#target_projects DeveloperConnectInsightsConfig#target_projects}
 
 ---
 
@@ -207,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#timeouts DeveloperConnectInsightsConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#timeouts DeveloperConnectInsightsConfig#timeouts}
 
 ---
 
@@ -240,12 +252,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.putArtifactConfigs">put_artifact_configs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.putTargetProjects">put_target_projects</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetAnnotations">reset_annotations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetAppHubApplication">reset_app_hub_application</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetArtifactConfigs">reset_artifact_configs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetTargetProjects">reset_target_projects</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -612,6 +627,24 @@ def put_artifact_configs(
 
 ---
 
+##### `put_target_projects` <a name="put_target_projects" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.putTargetProjects"></a>
+
+```python
+def put_target_projects(
+  project_ids: typing.List[str] = None
+) -> None
+```
+
+###### `project_ids`<sup>Optional</sup> <a name="project_ids" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.putTargetProjects.parameter.projectIds"></a>
+
+- *Type:* typing.List[str]
+
+The project IDs. Format {project}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#project_ids DeveloperConnectInsightsConfig#project_ids}
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.putTimeouts"></a>
 
 ```python
@@ -626,7 +659,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#create DeveloperConnectInsightsConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#create DeveloperConnectInsightsConfig#create}.
 
 ---
 
@@ -634,7 +667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#delete DeveloperConnectInsightsConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#delete DeveloperConnectInsightsConfig#delete}.
 
 ---
 
@@ -642,7 +675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#update DeveloperConnectInsightsConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#update DeveloperConnectInsightsConfig#update}.
 
 ---
 
@@ -650,6 +683,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_annotations() -> None
+```
+
+##### `reset_app_hub_application` <a name="reset_app_hub_application" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetAppHubApplication"></a>
+
+```python
+def reset_app_hub_application() -> None
 ```
 
 ##### `reset_artifact_configs` <a name="reset_artifact_configs" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetArtifactConfigs"></a>
@@ -674,6 +713,12 @@ def reset_labels() -> None
 
 ```python
 def reset_project() -> None
+```
+
+##### `reset_target_projects` <a name="reset_target_projects" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetTargetProjects"></a>
+
+```python
+def reset_target_projects() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.resetTimeouts"></a>
@@ -796,7 +841,7 @@ The construct id used in the generated config for the DeveloperConnectInsightsCo
 
 The id of the existing DeveloperConnectInsightsConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,6 +880,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.reconciling">reconciling</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.runtimeConfigs">runtime_configs</a></code> | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsList">DeveloperConnectInsightsConfigRuntimeConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.state">state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.targetProjects">target_projects</a></code> | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference">DeveloperConnectInsightsConfigTargetProjectsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeoutsOutputReference">DeveloperConnectInsightsConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
@@ -846,6 +892,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.targetProjectsInput">target_projects_input</a></code> | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects">DeveloperConnectInsightsConfigTargetProjects</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts">DeveloperConnectInsightsConfigTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.appHubApplication">app_hub_application</a></code> | <code>str</code> | *No description.* |
@@ -1089,6 +1136,16 @@ state: str
 
 ---
 
+##### `target_projects`<sup>Required</sup> <a name="target_projects" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.targetProjects"></a>
+
+```python
+target_projects: DeveloperConnectInsightsConfigTargetProjectsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference">DeveloperConnectInsightsConfigTargetProjectsOutputReference</a>
+
+---
+
 ##### `terraform_labels`<sup>Required</sup> <a name="terraform_labels" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.terraformLabels"></a>
 
 ```python
@@ -1196,6 +1253,16 @@ project_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `target_projects_input`<sup>Optional</sup> <a name="target_projects_input" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.property.targetProjectsInput"></a>
+
+```python
+target_projects_input: DeveloperConnectInsightsConfigTargetProjects
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects">DeveloperConnectInsightsConfigTargetProjects</a>
 
 ---
 
@@ -1333,7 +1400,7 @@ google_artifact_analysis: DeveloperConnectInsightsConfigArtifactConfigsGoogleArt
 
 google_artifact_analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#google_artifact_analysis DeveloperConnectInsightsConfig#google_artifact_analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#google_artifact_analysis DeveloperConnectInsightsConfig#google_artifact_analysis}
 
 ---
 
@@ -1347,7 +1414,7 @@ google_artifact_registry: DeveloperConnectInsightsConfigArtifactConfigsGoogleArt
 
 google_artifact_registry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#google_artifact_registry DeveloperConnectInsightsConfig#google_artifact_registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#google_artifact_registry DeveloperConnectInsightsConfig#google_artifact_registry}
 
 ---
 
@@ -1365,7 +1432,7 @@ e.g. 'us-docker.pkg.dev/my-project/my-repo/image'.
 The URI does not include the tag / digest because it captures a lineage of
 artifacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#uri DeveloperConnectInsightsConfig#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#uri DeveloperConnectInsightsConfig#uri}
 
 ---
 
@@ -1399,7 +1466,7 @@ project_id: str
 
 The project id of the project where the provenance is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
 
 ---
 
@@ -1435,7 +1502,7 @@ artifact_registry_package: str
 
 The name of the artifact registry package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#artifact_registry_package DeveloperConnectInsightsConfig#artifact_registry_package}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#artifact_registry_package DeveloperConnectInsightsConfig#artifact_registry_package}
 
 ---
 
@@ -1449,7 +1516,7 @@ project_id: str
 
 The host project of Artifact Registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
 
 ---
 
@@ -1468,14 +1535,15 @@ developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  app_hub_application: str,
   insights_config_id: str,
   location: str,
   annotations: typing.Mapping[str] = None,
+  app_hub_application: str = None,
   artifact_configs: IResolvable | typing.List[DeveloperConnectInsightsConfigArtifactConfigs] = None,
   id: str = None,
   labels: typing.Mapping[str] = None,
   project: str = None,
+  target_projects: DeveloperConnectInsightsConfigTargetProjects = None,
   timeouts: DeveloperConnectInsightsConfigTimeouts = None
 )
 ```
@@ -1491,14 +1559,15 @@ developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig(
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.appHubApplication">app_hub_application</a></code> | <code>str</code> | The name of the App Hub Application. Format: projects/{project}/locations/{location}/applications/{application}. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.insightsConfigId">insights_config_id</a></code> | <code>str</code> | ID of the requesting InsightsConfig. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.location">location</a></code> | <code>str</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | User specified annotations. See https://google.aip.dev/148#annotations for more details such as format and size limitations. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.appHubApplication">app_hub_application</a></code> | <code>str</code> | The name of the App Hub Application. Format: projects/{project}/locations/{location}/applications/{application}. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.artifactConfigs">artifact_configs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigs">DeveloperConnectInsightsConfigArtifactConfigs</a>]</code> | artifact_configs block. |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Set of labels associated with an InsightsConfig. |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.targetProjects">target_projects</a></code> | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects">DeveloperConnectInsightsConfigTargetProjects</a></code> | target_projects block. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts">DeveloperConnectInsightsConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1573,20 +1642,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `app_hub_application`<sup>Required</sup> <a name="app_hub_application" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.appHubApplication"></a>
-
-```python
-app_hub_application: str
-```
-
-- *Type:* str
-
-The name of the App Hub Application. Format: projects/{project}/locations/{location}/applications/{application}.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#app_hub_application DeveloperConnectInsightsConfig#app_hub_application}
-
----
-
 ##### `insights_config_id`<sup>Required</sup> <a name="insights_config_id" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.insightsConfigId"></a>
 
 ```python
@@ -1597,7 +1652,7 @@ insights_config_id: str
 
 ID of the requesting InsightsConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#insights_config_id DeveloperConnectInsightsConfig#insights_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#insights_config_id DeveloperConnectInsightsConfig#insights_config_id}
 
 ---
 
@@ -1611,7 +1666,7 @@ location: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#location DeveloperConnectInsightsConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#location DeveloperConnectInsightsConfig#location}
 
 ---
 
@@ -1628,7 +1683,21 @@ User specified annotations. See https://google.aip.dev/148#annotations for more 
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#annotations DeveloperConnectInsightsConfig#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#annotations DeveloperConnectInsightsConfig#annotations}
+
+---
+
+##### `app_hub_application`<sup>Optional</sup> <a name="app_hub_application" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.appHubApplication"></a>
+
+```python
+app_hub_application: str
+```
+
+- *Type:* str
+
+The name of the App Hub Application. Format: projects/{project}/locations/{location}/applications/{application}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#app_hub_application DeveloperConnectInsightsConfig#app_hub_application}
 
 ---
 
@@ -1642,7 +1711,7 @@ artifact_configs: IResolvable | typing.List[DeveloperConnectInsightsConfigArtifa
 
 artifact_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#artifact_configs DeveloperConnectInsightsConfig#artifact_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#artifact_configs DeveloperConnectInsightsConfig#artifact_configs}
 
 ---
 
@@ -1654,7 +1723,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1674,7 +1743,7 @@ Set of labels associated with an InsightsConfig.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#labels DeveloperConnectInsightsConfig#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#labels DeveloperConnectInsightsConfig#labels}
 
 ---
 
@@ -1686,7 +1755,21 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}.
+
+---
+
+##### `target_projects`<sup>Optional</sup> <a name="target_projects" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.targetProjects"></a>
+
+```python
+target_projects: DeveloperConnectInsightsConfigTargetProjects
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects">DeveloperConnectInsightsConfigTargetProjects</a>
+
+target_projects block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#target_projects DeveloperConnectInsightsConfig#target_projects}
 
 ---
 
@@ -1700,7 +1783,7 @@ timeouts: DeveloperConnectInsightsConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#timeouts DeveloperConnectInsightsConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#timeouts DeveloperConnectInsightsConfig#timeouts}
 
 ---
 
@@ -1759,6 +1842,40 @@ developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWo
 ```
 
 
+### DeveloperConnectInsightsConfigTargetProjects <a name="DeveloperConnectInsightsConfigTargetProjects" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects.Initializer"></a>
+
+```python
+from cdktn_provider_google import developer_connect_insights_config
+
+developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects(
+  project_ids: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects.property.projectIds">project_ids</a></code> | <code>typing.List[str]</code> | The project IDs. Format {project}. |
+
+---
+
+##### `project_ids`<sup>Optional</sup> <a name="project_ids" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects.property.projectIds"></a>
+
+```python
+project_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The project IDs. Format {project}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#project_ids DeveloperConnectInsightsConfig#project_ids}
+
+---
+
 ### DeveloperConnectInsightsConfigTimeouts <a name="DeveloperConnectInsightsConfigTimeouts" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.Initializer"></a>
@@ -1777,9 +1894,9 @@ developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#create DeveloperConnectInsightsConfig#create}. |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#delete DeveloperConnectInsightsConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#update DeveloperConnectInsightsConfig#update}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#create DeveloperConnectInsightsConfig#create}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#delete DeveloperConnectInsightsConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#update DeveloperConnectInsightsConfig#update}. |
 
 ---
 
@@ -1791,7 +1908,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#create DeveloperConnectInsightsConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#create DeveloperConnectInsightsConfig#create}.
 
 ---
 
@@ -1803,7 +1920,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#delete DeveloperConnectInsightsConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#delete DeveloperConnectInsightsConfig#delete}.
 
 ---
 
@@ -1815,7 +1932,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#update DeveloperConnectInsightsConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#update DeveloperConnectInsightsConfig#update}.
 
 ---
 
@@ -2872,7 +2989,7 @@ def put_google_artifact_analysis(
 
 The project id of the project where the provenance is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
 
 ---
 
@@ -2891,7 +3008,7 @@ def put_google_artifact_registry(
 
 The name of the artifact registry package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#artifact_registry_package DeveloperConnectInsightsConfig#artifact_registry_package}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#artifact_registry_package DeveloperConnectInsightsConfig#artifact_registry_package}
 
 ---
 
@@ -2901,7 +3018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The host project of Artifact Registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
 
 ---
 
@@ -5439,6 +5556,309 @@ internal_value: DeveloperConnectInsightsConfigRuntimeConfigs
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigs">DeveloperConnectInsightsConfigRuntimeConfigs</a>
+
+---
+
+
+### DeveloperConnectInsightsConfigTargetProjectsOutputReference <a name="DeveloperConnectInsightsConfigTargetProjectsOutputReference" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import developer_connect_insights_config
+
+developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.resetProjectIds">reset_project_ids</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_project_ids` <a name="reset_project_ids" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.resetProjectIds"></a>
+
+```python
+def reset_project_ids() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.property.projectIdsInput">project_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.property.projectIds">project_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects">DeveloperConnectInsightsConfigTargetProjects</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_ids_input`<sup>Optional</sup> <a name="project_ids_input" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.property.projectIdsInput"></a>
+
+```python
+project_ids_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `project_ids`<sup>Required</sup> <a name="project_ids" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.property.projectIds"></a>
+
+```python
+project_ids: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DeveloperConnectInsightsConfigTargetProjects
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects">DeveloperConnectInsightsConfigTargetProjects</a>
 
 ---
 

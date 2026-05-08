@@ -4,12 +4,12 @@
 
 ### DataGoogleVpcAccessConnector <a name="DataGoogleVpcAccessConnector" id="@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vpc_access_connector google_vpc_access_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vpc_access_connector google_vpc_access_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevpcaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevpcaccessconnector"
 
 datagooglevpcaccessconnector.NewDataGoogleVpcAccessConnector(scope Construct, id *string, config DataGoogleVpcAccessConnectorConfig) DataGoogleVpcAccessConnector
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevpcaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevpcaccessconnector"
 
 datagooglevpcaccessconnector.DataGoogleVpcAccessConnector_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevpcaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevpcaccessconnector"
 
 datagooglevpcaccessconnector.DataGoogleVpcAccessConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglevpcaccessconnector.DataGoogleVpcAccessConnector_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevpcaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevpcaccessconnector"
 
 datagooglevpcaccessconnector.DataGoogleVpcAccessConnector_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglevpcaccessconnector.DataGoogleVpcAccessConnector_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevpcaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevpcaccessconnector"
 
 datagooglevpcaccessconnector.DataGoogleVpcAccessConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleVpcAccessConnect
 
 The id of the existing DataGoogleVpcAccessConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vpc_access_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vpc_access_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevpcaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevpcaccessconnector"
 
 &datagooglevpcaccessconnector.DataGoogleVpcAccessConnectorConfig {
 	Connection: interface{},
@@ -824,8 +824,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevpcacc
 | <code><a href="#@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig.property.name">Name</a></code> | <code>*string</code> | The name of the resource (Max 25 characters). |
-| <code><a href="#@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vpc_access_connector#id DataGoogleVpcAccessConnector#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vpc_access_connector#project DataGoogleVpcAccessConnector#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vpc_access_connector#id DataGoogleVpcAccessConnector#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vpc_access_connector#project DataGoogleVpcAccessConnector#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorConfig.property.region">Region</a></code> | <code>*string</code> | Region where the VPC Access connector resides. If it is not provided, the provider region is used. |
 
 ---
@@ -910,7 +910,7 @@ Name *string
 
 The name of the resource (Max 25 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vpc_access_connector#name DataGoogleVpcAccessConnector#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vpc_access_connector#name DataGoogleVpcAccessConnector#name}
 
 ---
 
@@ -922,7 +922,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vpc_access_connector#id DataGoogleVpcAccessConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vpc_access_connector#id DataGoogleVpcAccessConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -937,7 +937,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vpc_access_connector#project DataGoogleVpcAccessConnector#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vpc_access_connector#project DataGoogleVpcAccessConnector#project}.
 
 ---
 
@@ -951,7 +951,7 @@ Region *string
 
 Region where the VPC Access connector resides. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vpc_access_connector#region DataGoogleVpcAccessConnector#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vpc_access_connector#region DataGoogleVpcAccessConnector#region}
 
 ---
 
@@ -960,7 +960,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevpcaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevpcaccessconnector"
 
 &datagooglevpcaccessconnector.DataGoogleVpcAccessConnectorSubnet {
 
@@ -975,7 +975,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevpcacc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevpcaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevpcaccessconnector"
 
 datagooglevpcaccessconnector.NewDataGoogleVpcAccessConnectorSubnetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVpcAccessConnectorSubnetList
 ```
@@ -1124,7 +1124,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVpcAccessConnector.DataGoogleVpcAccessConnectorSubnetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglevpcaccessconnector"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglevpcaccessconnector"
 
 datagooglevpcaccessconnector.NewDataGoogleVpcAccessConnectorSubnetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVpcAccessConnectorSubnetOutputReference
 ```

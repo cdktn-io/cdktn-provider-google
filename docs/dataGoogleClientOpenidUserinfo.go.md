@@ -4,12 +4,12 @@
 
 ### DataGoogleClientOpenidUserinfo <a name="DataGoogleClientOpenidUserinfo" id="@cdktn/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/client_openid_userinfo google_client_openid_userinfo}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/client_openid_userinfo google_client_openid_userinfo}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientopeniduserinfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.NewDataGoogleClientOpenidUserinfo(scope Construct, id *string, config DataGoogleClientOpenidUserinfoConfig) DataGoogleClientOpenidUserinfo
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientopeniduserinfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientopeniduserinfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientopeniduserinfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientopeniduserinfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataGoogleClientOpenidUser
 
 The id of the existing DataGoogleClientOpenidUserinfo that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/client_openid_userinfo#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/client_openid_userinfo#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,7 +587,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientopeniduserinfo"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientopeniduserinfo"
 
 &datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfoConfig {
 	Connection: interface{},

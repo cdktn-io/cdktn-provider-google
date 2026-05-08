@@ -4,12 +4,12 @@
 
 ### SpannerDatabaseIamPolicy <a name="SpannerDatabaseIamPolicy" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy google_spanner_database_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy google_spanner_database_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 spannerdatabaseiampolicy.NewSpannerDatabaseIamPolicy(scope Construct, id *string, config SpannerDatabaseIamPolicyConfig) SpannerDatabaseIamPolicy
 ```
@@ -414,7 +414,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 spannerdatabaseiampolicy.SpannerDatabaseIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the SpannerDatabaseIamPolicy t
 
 The id of the existing SpannerDatabaseIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerdatabaseiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerdatabaseiampolicy"
 
 &spannerdatabaseiampolicy.SpannerDatabaseIamPolicyConfig {
 	Connection: interface{},
@@ -853,11 +853,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerdatabasei
 | <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy#database SpannerDatabaseIamPolicy#database}. |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy#instance SpannerDatabaseIamPolicy#instance}. |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy#policy_data SpannerDatabaseIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy#id SpannerDatabaseIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy#project SpannerDatabaseIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy#database SpannerDatabaseIamPolicy#database}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy#instance SpannerDatabaseIamPolicy#instance}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy#policy_data SpannerDatabaseIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy#id SpannerDatabaseIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.spannerDatabaseIamPolicy.SpannerDatabaseIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy#project SpannerDatabaseIamPolicy#project}. |
 
 ---
 
@@ -939,7 +939,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy#database SpannerDatabaseIamPolicy#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy#database SpannerDatabaseIamPolicy#database}.
 
 ---
 
@@ -951,7 +951,7 @@ Instance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy#instance SpannerDatabaseIamPolicy#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy#instance SpannerDatabaseIamPolicy#instance}.
 
 ---
 
@@ -963,7 +963,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy#policy_data SpannerDatabaseIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy#policy_data SpannerDatabaseIamPolicy#policy_data}.
 
 ---
 
@@ -975,7 +975,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy#id SpannerDatabaseIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy#id SpannerDatabaseIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -990,7 +990,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_database_iam_policy#project SpannerDatabaseIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_database_iam_policy#project SpannerDatabaseIamPolicy#project}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### PubsubSchema <a name="PubsubSchema" id="@cdktn/provider-google.pubsubSchema.PubsubSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema google_pubsub_schema}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema google_pubsub_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubSchema.PubsubSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/pubsubschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschema"
 
 pubsubschema.NewPubsubSchema(scope Construct, id *string, config PubsubSchemaConfig) PubsubSchema
 ```
@@ -448,7 +448,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.pubsubSchema.PubsubSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/pubsubschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschema"
 
 pubsubschema.PubsubSchema_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.pubsubSchema.PubsubSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/pubsubschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschema"
 
 pubsubschema.PubsubSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ pubsubschema.PubsubSchema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.pubsubSchema.PubsubSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/pubsubschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschema"
 
 pubsubschema.PubsubSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ pubsubschema.PubsubSchema_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.pubsubSchema.PubsubSchema.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/pubsubschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschema"
 
 pubsubschema.PubsubSchema_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the PubsubSchema to import.
 
 The id of the existing PubsubSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/pubsubschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschema"
 
 &pubsubschema.PubsubSchemaConfig {
 	Connection: interface{},
@@ -883,7 +883,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/pubsubschema"
 	Definition: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.pubsubSchema.PubsubSchemaTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.pubsubSchema.PubsubSchemaTimeouts,
 	Type: *string,
 }
 ```
@@ -901,8 +901,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/pubsubschema"
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.name">Name</a></code> | <code>*string</code> | The ID to use for the schema, which will become the final component of the schema's resource name. |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.definition">Definition</a></code> | <code>*string</code> | The definition of the schema. |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#id PubsubSchema#id}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#project PubsubSchema#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#id PubsubSchema#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#project PubsubSchema#project}. |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts">PubsubSchemaTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.type">Type</a></code> | <code>*string</code> | The type of the schema definition Default value: "TYPE_UNSPECIFIED" Possible values: ["TYPE_UNSPECIFIED", "PROTOCOL_BUFFER", "AVRO"]. |
 
@@ -988,7 +988,7 @@ Name *string
 
 The ID to use for the schema, which will become the final component of the schema's resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#name PubsubSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#name PubsubSchema#name}
 
 ---
 
@@ -1009,7 +1009,7 @@ A schema can only have up to 20 revisions, so updates that fail with an
 error indicating that the limit has been reached require manually
 [deleting old revisions](https://cloud.google.com/pubsub/docs/delete-schema-revision).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#definition PubsubSchema#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#definition PubsubSchema#definition}
 
 ---
 
@@ -1021,7 +1021,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#id PubsubSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#id PubsubSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1036,7 +1036,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#project PubsubSchema#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#project PubsubSchema#project}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Timeouts PubsubSchemaTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#timeouts PubsubSchema#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#timeouts PubsubSchema#timeouts}
 
 ---
 
@@ -1064,7 +1064,7 @@ Type *string
 
 The type of the schema definition Default value: "TYPE_UNSPECIFIED" Possible values: ["TYPE_UNSPECIFIED", "PROTOCOL_BUFFER", "AVRO"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#type PubsubSchema#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#type PubsubSchema#type}
 
 ---
 
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/pubsubschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschema"
 
 &pubsubschema.PubsubSchemaTimeouts {
 	Create: *string,
@@ -1086,9 +1086,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/pubsubschema"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#create PubsubSchema#create}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#delete PubsubSchema#delete}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#update PubsubSchema#update}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#create PubsubSchema#create}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#delete PubsubSchema#delete}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#update PubsubSchema#update}. |
 
 ---
 
@@ -1100,7 +1100,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#create PubsubSchema#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#create PubsubSchema#create}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#delete PubsubSchema#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#delete PubsubSchema#delete}.
 
 ---
 
@@ -1124,7 +1124,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/pubsub_schema#update PubsubSchema#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/pubsub_schema#update PubsubSchema#update}.
 
 ---
 
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/pubsubschema"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/pubsubschema"
 
 pubsubschema.NewPubsubSchemaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PubsubSchemaTimeoutsOutputReference
 ```

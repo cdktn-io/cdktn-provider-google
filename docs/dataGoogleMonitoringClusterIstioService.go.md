@@ -4,12 +4,12 @@
 
 ### DataGoogleMonitoringClusterIstioService <a name="DataGoogleMonitoringClusterIstioService" id="@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_cluster_istio_service google_monitoring_cluster_istio_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/monitoring_cluster_istio_service google_monitoring_cluster_istio_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringclusteristioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.NewDataGoogleMonitoringClusterIstioService(scope Construct, id *string, config DataGoogleMonitoringClusterIstioServiceConfig) DataGoogleMonitoringClusterIstioService
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringclusteristioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringclusteristioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringclusteristioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringclusteristioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleMonitoringCluste
 
 The id of the existing DataGoogleMonitoringClusterIstioService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_cluster_istio_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/monitoring_cluster_istio_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringclusteristioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringclusteristioservice"
 
 &datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioServiceConfig {
 	Connection: interface{},
@@ -800,8 +800,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonito
 | <code><a href="#@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceConfig.property.location">Location</a></code> | <code>*string</code> | The location of the Kubernetes cluster in which this Istio service is defined. |
 | <code><a href="#@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | The name of the Istio service underlying this service. |
 | <code><a href="#@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceConfig.property.serviceNamespace">ServiceNamespace</a></code> | <code>*string</code> | The namespace of the Istio service underlying this service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_cluster_istio_service#id DataGoogleMonitoringClusterIstioService#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_cluster_istio_service#project DataGoogleMonitoringClusterIstioService#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/monitoring_cluster_istio_service#id DataGoogleMonitoringClusterIstioService#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/monitoring_cluster_istio_service#project DataGoogleMonitoringClusterIstioService#project}. |
 
 ---
 
@@ -887,7 +887,7 @@ The name of the Kubernetes cluster in which this Istio service is defined.
 
 Corresponds to the clusterName resource label in k8s_cluster resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_cluster_istio_service#cluster_name DataGoogleMonitoringClusterIstioService#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/monitoring_cluster_istio_service#cluster_name DataGoogleMonitoringClusterIstioService#cluster_name}
 
 ---
 
@@ -903,7 +903,7 @@ The location of the Kubernetes cluster in which this Istio service is defined.
 
 Corresponds to the location resource label in k8s_cluster resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_cluster_istio_service#location DataGoogleMonitoringClusterIstioService#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/monitoring_cluster_istio_service#location DataGoogleMonitoringClusterIstioService#location}
 
 ---
 
@@ -919,7 +919,7 @@ The name of the Istio service underlying this service.
 
 Corresponds to the destination_service_name metric label in Istio metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_cluster_istio_service#service_name DataGoogleMonitoringClusterIstioService#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/monitoring_cluster_istio_service#service_name DataGoogleMonitoringClusterIstioService#service_name}
 
 ---
 
@@ -935,7 +935,7 @@ The namespace of the Istio service underlying this service.
 
 Corresponds to the destination_service_namespace metric label in Istio metrics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_cluster_istio_service#service_namespace DataGoogleMonitoringClusterIstioService#service_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/monitoring_cluster_istio_service#service_namespace DataGoogleMonitoringClusterIstioService#service_namespace}
 
 ---
 
@@ -947,7 +947,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_cluster_istio_service#id DataGoogleMonitoringClusterIstioService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/monitoring_cluster_istio_service#id DataGoogleMonitoringClusterIstioService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -962,7 +962,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/monitoring_cluster_istio_service#project DataGoogleMonitoringClusterIstioService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/monitoring_cluster_istio_service#project DataGoogleMonitoringClusterIstioService#project}.
 
 ---
 
@@ -971,7 +971,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringclusteristioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringclusteristioservice"
 
 &datagooglemonitoringclusteristioservice.DataGoogleMonitoringClusterIstioServiceTelemetry {
 
@@ -986,7 +986,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonito
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringclusteristioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.NewDataGoogleMonitoringClusterIstioServiceTelemetryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMonitoringClusterIstioServiceTelemetryList
 ```
@@ -1135,7 +1135,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMonitoringClusterIstioService.DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglemonitoringclusteristioservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglemonitoringclusteristioservice"
 
 datagooglemonitoringclusteristioservice.NewDataGoogleMonitoringClusterIstioServiceTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMonitoringClusterIstioServiceTelemetryOutputReference
 ```

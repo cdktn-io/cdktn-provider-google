@@ -4,7 +4,7 @@
 
 ### ComputeSnapshot <a name="ComputeSnapshot" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot google_compute_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot google_compute_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.Initializer"></a>
 
@@ -83,7 +83,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetSnapshotEncryptionKey">resetSnapshotEncryptionKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetSnapshotType">resetSnapshotType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetSourceDisk">resetSourceDisk</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetSourceDiskEncryptionKey">resetSourceDiskEncryptionKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetSourceInstantSnapshot">resetSourceInstantSnapshot</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetStorageLocations">resetStorageLocations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetZone">resetZone</a></code> | *No description.* |
@@ -471,10 +474,28 @@ public resetProject(): void
 public resetSnapshotEncryptionKey(): void
 ```
 
+##### `resetSnapshotType` <a name="resetSnapshotType" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetSnapshotType"></a>
+
+```typescript
+public resetSnapshotType(): void
+```
+
+##### `resetSourceDisk` <a name="resetSourceDisk" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetSourceDisk"></a>
+
+```typescript
+public resetSourceDisk(): void
+```
+
 ##### `resetSourceDiskEncryptionKey` <a name="resetSourceDiskEncryptionKey" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetSourceDiskEncryptionKey"></a>
 
 ```typescript
 public resetSourceDiskEncryptionKey(): void
+```
+
+##### `resetSourceInstantSnapshot` <a name="resetSourceInstantSnapshot" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetSourceInstantSnapshot"></a>
+
+```typescript
+public resetSourceInstantSnapshot(): void
 ```
 
 ##### `resetStorageLocations` <a name="resetStorageLocations" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.resetStorageLocations"></a>
@@ -598,7 +619,7 @@ The construct id used in the generated config for the ComputeSnapshot to import.
 
 The id of the existing ComputeSnapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,8 +668,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.snapshotEncryptionKeyInput">snapshotEncryptionKeyInput</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKey">ComputeSnapshotSnapshotEncryptionKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.snapshotTypeInput">snapshotTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.sourceDiskEncryptionKeyInput">sourceDiskEncryptionKeyInput</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotSourceDiskEncryptionKey">ComputeSnapshotSourceDiskEncryptionKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.sourceDiskInput">sourceDiskInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.sourceInstantSnapshotInput">sourceInstantSnapshotInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.storageLocationsInput">storageLocationsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotTimeouts">ComputeSnapshotTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.zoneInput">zoneInput</a></code> | <code>string</code> | *No description.* |
@@ -658,7 +681,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.snapshotType">snapshotType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.sourceDisk">sourceDisk</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.sourceInstantSnapshot">sourceInstantSnapshot</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.storageLocations">storageLocations</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.zone">zone</a></code> | <code>string</code> | *No description.* |
 
@@ -996,6 +1021,16 @@ public readonly snapshotEncryptionKeyInput: ComputeSnapshotSnapshotEncryptionKey
 
 ---
 
+##### `snapshotTypeInput`<sup>Optional</sup> <a name="snapshotTypeInput" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.snapshotTypeInput"></a>
+
+```typescript
+public readonly snapshotTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sourceDiskEncryptionKeyInput`<sup>Optional</sup> <a name="sourceDiskEncryptionKeyInput" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.sourceDiskEncryptionKeyInput"></a>
 
 ```typescript
@@ -1010,6 +1045,16 @@ public readonly sourceDiskEncryptionKeyInput: ComputeSnapshotSourceDiskEncryptio
 
 ```typescript
 public readonly sourceDiskInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceInstantSnapshotInput`<sup>Optional</sup> <a name="sourceInstantSnapshotInput" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.sourceInstantSnapshotInput"></a>
+
+```typescript
+public readonly sourceInstantSnapshotInput: string;
 ```
 
 - *Type:* string
@@ -1106,10 +1151,30 @@ public readonly project: string;
 
 ---
 
+##### `snapshotType`<sup>Required</sup> <a name="snapshotType" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.snapshotType"></a>
+
+```typescript
+public readonly snapshotType: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sourceDisk`<sup>Required</sup> <a name="sourceDisk" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.sourceDisk"></a>
 
 ```typescript
 public readonly sourceDisk: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceInstantSnapshot`<sup>Required</sup> <a name="sourceInstantSnapshot" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshot.property.sourceInstantSnapshot"></a>
+
+```typescript
+public readonly sourceInstantSnapshot: string;
 ```
 
 - *Type:* string
@@ -1178,14 +1243,16 @@ const computeSnapshotConfig: computeSnapshot.ComputeSnapshotConfig = { ... }
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.name">name</a></code> | <code>string</code> | Name of the resource; |
-| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.sourceDisk">sourceDisk</a></code> | <code>string</code> | A reference to the disk used to create this snapshot. |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.chainName">chainName</a></code> | <code>string</code> | Creates the new snapshot in the snapshot chain labeled with the specified name. |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#id ComputeSnapshot#id}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#id ComputeSnapshot#id}. |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels to apply to this Snapshot. |
-| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#project ComputeSnapshot#project}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#project ComputeSnapshot#project}. |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.snapshotEncryptionKey">snapshotEncryptionKey</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotSnapshotEncryptionKey">ComputeSnapshotSnapshotEncryptionKey</a></code> | snapshot_encryption_key block. |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.snapshotType">snapshotType</a></code> | <code>string</code> | Indicates the type of the snapshot. Possible values: ["ARCHIVE", "STANDARD"]. |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.sourceDisk">sourceDisk</a></code> | <code>string</code> | A reference to the disk used to create this snapshot. |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.sourceDiskEncryptionKey">sourceDiskEncryptionKey</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotSourceDiskEncryptionKey">ComputeSnapshotSourceDiskEncryptionKey</a></code> | source_disk_encryption_key block. |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.sourceInstantSnapshot">sourceInstantSnapshot</a></code> | <code>string</code> | A reference to the instant snapshot used to create this snapshot. |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.storageLocations">storageLocations</a></code> | <code>string[]</code> | Cloud Storage bucket storage location of the snapshot (regional or multi-regional). |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotTimeouts">ComputeSnapshotTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.zone">zone</a></code> | <code>string</code> | A reference to the zone where the disk is hosted. |
@@ -1280,21 +1347,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#name ComputeSnapshot#name}
-
----
-
-##### `sourceDisk`<sup>Required</sup> <a name="sourceDisk" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.sourceDisk"></a>
-
-```typescript
-public readonly sourceDisk: string;
-```
-
-- *Type:* string
-
-A reference to the disk used to create this snapshot.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#source_disk ComputeSnapshot#source_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#name ComputeSnapshot#name}
 
 ---
 
@@ -1314,7 +1367,7 @@ service owners who needs to create separate snapshot chains, for
 example, for chargeback tracking.  When you describe your snapshot
 resource, this field is visible only if it has a non-empty value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#chain_name ComputeSnapshot#chain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#chain_name ComputeSnapshot#chain_name}
 
 ---
 
@@ -1328,7 +1381,7 @@ public readonly description: string;
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#description ComputeSnapshot#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#description ComputeSnapshot#description}
 
 ---
 
@@ -1340,7 +1393,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#id ComputeSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#id ComputeSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1360,7 +1413,7 @@ Labels to apply to this Snapshot.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#labels ComputeSnapshot#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#labels ComputeSnapshot#labels}
 
 ---
 
@@ -1372,7 +1425,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#project ComputeSnapshot#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#project ComputeSnapshot#project}.
 
 ---
 
@@ -1386,7 +1439,35 @@ public readonly snapshotEncryptionKey: ComputeSnapshotSnapshotEncryptionKey;
 
 snapshot_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#snapshot_encryption_key ComputeSnapshot#snapshot_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#snapshot_encryption_key ComputeSnapshot#snapshot_encryption_key}
+
+---
+
+##### `snapshotType`<sup>Optional</sup> <a name="snapshotType" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.snapshotType"></a>
+
+```typescript
+public readonly snapshotType: string;
+```
+
+- *Type:* string
+
+Indicates the type of the snapshot. Possible values: ["ARCHIVE", "STANDARD"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#snapshot_type ComputeSnapshot#snapshot_type}
+
+---
+
+##### `sourceDisk`<sup>Optional</sup> <a name="sourceDisk" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.sourceDisk"></a>
+
+```typescript
+public readonly sourceDisk: string;
+```
+
+- *Type:* string
+
+A reference to the disk used to create this snapshot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#source_disk ComputeSnapshot#source_disk}
 
 ---
 
@@ -1400,7 +1481,21 @@ public readonly sourceDiskEncryptionKey: ComputeSnapshotSourceDiskEncryptionKey;
 
 source_disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#source_disk_encryption_key ComputeSnapshot#source_disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#source_disk_encryption_key ComputeSnapshot#source_disk_encryption_key}
+
+---
+
+##### `sourceInstantSnapshot`<sup>Optional</sup> <a name="sourceInstantSnapshot" id="@cdktn/provider-google.computeSnapshot.ComputeSnapshotConfig.property.sourceInstantSnapshot"></a>
+
+```typescript
+public readonly sourceInstantSnapshot: string;
+```
+
+- *Type:* string
+
+A reference to the instant snapshot used to create this snapshot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#source_instant_snapshot ComputeSnapshot#source_instant_snapshot}
 
 ---
 
@@ -1414,7 +1509,7 @@ public readonly storageLocations: string[];
 
 Cloud Storage bucket storage location of the snapshot (regional or multi-regional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#storage_locations ComputeSnapshot#storage_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#storage_locations ComputeSnapshot#storage_locations}
 
 ---
 
@@ -1428,7 +1523,7 @@ public readonly timeouts: ComputeSnapshotTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#timeouts ComputeSnapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#timeouts ComputeSnapshot#timeouts}
 
 ---
 
@@ -1442,7 +1537,7 @@ public readonly zone: string;
 
 A reference to the zone where the disk is hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#zone ComputeSnapshot#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#zone ComputeSnapshot#zone}
 
 ---
 
@@ -1477,7 +1572,7 @@ public readonly kmsKeySelfLink: string;
 
 The name of the encryption key that is stored in Google Cloud KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#kms_key_self_link ComputeSnapshot#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#kms_key_self_link ComputeSnapshot#kms_key_self_link}
 
 ---
 
@@ -1493,7 +1588,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#kms_key_service_account ComputeSnapshot#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#kms_key_service_account ComputeSnapshot#kms_key_service_account}
 
 ---
 
@@ -1507,7 +1602,7 @@ public readonly rawKey: string;
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#raw_key ComputeSnapshot#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#raw_key ComputeSnapshot#raw_key}
 
 ---
 
@@ -1521,7 +1616,7 @@ public readonly rsaEncryptedKey: string;
 
 Specifies an encryption key stored in Google Cloud KMS, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#rsa_encrypted_key ComputeSnapshot#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#rsa_encrypted_key ComputeSnapshot#rsa_encrypted_key}
 
 ---
 
@@ -1556,7 +1651,7 @@ public readonly kmsKeySelfLink: string;
 
 The name of the encryption key that is stored in Google Cloud KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#kms_key_self_link ComputeSnapshot#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#kms_key_self_link ComputeSnapshot#kms_key_self_link}
 
 ---
 
@@ -1572,7 +1667,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#kms_key_service_account ComputeSnapshot#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#kms_key_service_account ComputeSnapshot#kms_key_service_account}
 
 ---
 
@@ -1586,7 +1681,7 @@ public readonly rawKey: string;
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#raw_key ComputeSnapshot#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#raw_key ComputeSnapshot#raw_key}
 
 ---
 
@@ -1600,7 +1695,7 @@ public readonly rsaEncryptedKey: string;
 
 Specifies an encryption key stored in Google Cloud KMS, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#rsa_encrypted_key ComputeSnapshot#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#rsa_encrypted_key ComputeSnapshot#rsa_encrypted_key}
 
 ---
 
@@ -1618,9 +1713,9 @@ const computeSnapshotTimeouts: computeSnapshot.ComputeSnapshotTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#create ComputeSnapshot#create}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#delete ComputeSnapshot#delete}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#update ComputeSnapshot#update}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#create ComputeSnapshot#create}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#delete ComputeSnapshot#delete}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshot.ComputeSnapshotTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#update ComputeSnapshot#update}. |
 
 ---
 
@@ -1632,7 +1727,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#create ComputeSnapshot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#create ComputeSnapshot#create}.
 
 ---
 
@@ -1644,7 +1739,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#delete ComputeSnapshot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#delete ComputeSnapshot#delete}.
 
 ---
 
@@ -1656,7 +1751,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot#update ComputeSnapshot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot#update ComputeSnapshot#update}.
 
 ---
 

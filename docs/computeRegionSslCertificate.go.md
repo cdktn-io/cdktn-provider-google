@@ -4,12 +4,12 @@
 
 ### ComputeRegionSslCertificate <a name="ComputeRegionSslCertificate" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate google_compute_region_ssl_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate google_compute_region_ssl_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslcertificate"
 
 computeregionsslcertificate.NewComputeRegionSslCertificate(scope Construct, id *string, config ComputeRegionSslCertificateConfig) ComputeRegionSslCertificate
 ```
@@ -79,6 +79,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetNamePrefix">ResetNamePrefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetPrivateKey">ResetPrivateKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetPrivateKeyWo">ResetPrivateKeyWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetPrivateKeyWoVersion">ResetPrivateKeyWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -430,6 +433,24 @@ func ResetName()
 func ResetNamePrefix()
 ```
 
+##### `ResetPrivateKey` <a name="ResetPrivateKey" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetPrivateKey"></a>
+
+```go
+func ResetPrivateKey()
+```
+
+##### `ResetPrivateKeyWo` <a name="ResetPrivateKeyWo" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetPrivateKeyWo"></a>
+
+```go
+func ResetPrivateKeyWo()
+```
+
+##### `ResetPrivateKeyWoVersion` <a name="ResetPrivateKeyWoVersion" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetPrivateKeyWoVersion"></a>
+
+```go
+func ResetPrivateKeyWoVersion()
+```
+
 ##### `ResetProject` <a name="ResetProject" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.resetProject"></a>
 
 ```go
@@ -462,7 +483,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslcertificate"
 
 computeregionsslcertificate.ComputeRegionSslCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslcertificate"
 
 computeregionsslcertificate.ComputeRegionSslCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +529,7 @@ computeregionsslcertificate.ComputeRegionSslCertificate_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslcertificate"
 
 computeregionsslcertificate.ComputeRegionSslCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +543,7 @@ computeregionsslcertificate.ComputeRegionSslCertificate_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslcertificate"
 
 computeregionsslcertificate.ComputeRegionSslCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -551,7 +572,7 @@ The construct id used in the generated config for the ComputeRegionSslCertificat
 
 The id of the existing ComputeRegionSslCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -592,6 +613,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.namePrefixInput">NamePrefixInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.privateKeyInput">PrivateKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.privateKeyWoInput">PrivateKeyWoInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.privateKeyWoVersionInput">PrivateKeyWoVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -601,6 +624,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.privateKey">PrivateKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.privateKeyWo">PrivateKeyWo</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.privateKeyWoVersion">PrivateKeyWoVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.project">Project</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
@@ -858,6 +883,26 @@ func PrivateKeyInput() *string
 
 ---
 
+##### `PrivateKeyWoInput`<sup>Optional</sup> <a name="PrivateKeyWoInput" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.privateKeyWoInput"></a>
+
+```go
+func PrivateKeyWoInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrivateKeyWoVersionInput`<sup>Optional</sup> <a name="PrivateKeyWoVersionInput" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.privateKeyWoVersionInput"></a>
+
+```go
+func PrivateKeyWoVersionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.projectInput"></a>
 
 ```go
@@ -948,6 +993,26 @@ func PrivateKey() *string
 
 ---
 
+##### `PrivateKeyWo`<sup>Required</sup> <a name="PrivateKeyWo" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.privateKeyWo"></a>
+
+```go
+func PrivateKeyWo() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PrivateKeyWoVersion`<sup>Required</sup> <a name="PrivateKeyWoVersion" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.privateKeyWoVersion"></a>
+
+```go
+func PrivateKeyWoVersion() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Project`<sup>Required</sup> <a name="Project" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificate.property.project"></a>
 
 ```go
@@ -993,7 +1058,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslcertificate"
 
 &computeregionsslcertificate.ComputeRegionSslCertificateConfig {
 	Connection: interface{},
@@ -1004,14 +1069,16 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionssl
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Certificate: *string,
-	PrivateKey: *string,
 	Description: *string,
 	Id: *string,
 	Name: *string,
 	NamePrefix: *string,
+	PrivateKey: *string,
+	PrivateKeyWo: *string,
+	PrivateKeyWoVersion: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts,
 }
 ```
 
@@ -1027,12 +1094,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionssl
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.certificate">Certificate</a></code> | <code>*string</code> | The certificate in PEM format. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | The write-only private key in PEM format. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.namePrefix">NamePrefix</a></code> | <code>*string</code> | Creates a unique name beginning with the specified prefix. Conflicts with name. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | The write-only private key in PEM format. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.privateKeyWo">PrivateKeyWo</a></code> | <code>*string</code> | The write-only private key in PEM format. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.privateKeyWoVersion">PrivateKeyWoVersion</a></code> | <code>*string</code> | Triggers update of 'private_key_wo' write-only. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.region">Region</a></code> | <code>*string</code> | The Region in which the created regional ssl certificate should reside. |
 | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts">ComputeRegionSslCertificateTimeouts</a></code> | timeouts block. |
 
@@ -1121,21 +1190,7 @@ The certificate in PEM format.
 The certificate chain must be no greater than 5 certs long.
 The chain must include at least one intermediate cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#certificate ComputeRegionSslCertificate#certificate}
-
----
-
-##### `PrivateKey`<sup>Required</sup> <a name="PrivateKey" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.privateKey"></a>
-
-```go
-PrivateKey *string
-```
-
-- *Type:* *string
-
-The write-only private key in PEM format.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#private_key ComputeRegionSslCertificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#certificate ComputeRegionSslCertificate#certificate}
 
 ---
 
@@ -1149,7 +1204,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#description ComputeRegionSslCertificate#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#description ComputeRegionSslCertificate#description}
 
 ---
 
@@ -1161,7 +1216,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#id ComputeRegionSslCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1188,7 +1243,7 @@ character, which cannot be a dash.
 
 These are in the same namespace as the managed SSL certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#name ComputeRegionSslCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#name ComputeRegionSslCertificate#name}
 
 ---
 
@@ -1202,7 +1257,51 @@ NamePrefix *string
 
 Creates a unique name beginning with the specified prefix. Conflicts with name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#name_prefix ComputeRegionSslCertificate#name_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#name_prefix ComputeRegionSslCertificate#name_prefix}
+
+---
+
+##### `PrivateKey`<sup>Optional</sup> <a name="PrivateKey" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.privateKey"></a>
+
+```go
+PrivateKey *string
+```
+
+- *Type:* *string
+
+The write-only private key in PEM format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#private_key ComputeRegionSslCertificate#private_key}
+
+---
+
+##### `PrivateKeyWo`<sup>Optional</sup> <a name="PrivateKeyWo" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.privateKeyWo"></a>
+
+```go
+PrivateKeyWo *string
+```
+
+- *Type:* *string
+
+The write-only private key in PEM format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#private_key_wo ComputeRegionSslCertificate#private_key_wo}
+
+---
+
+##### `PrivateKeyWoVersion`<sup>Optional</sup> <a name="PrivateKeyWoVersion" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateConfig.property.privateKeyWoVersion"></a>
+
+```go
+PrivateKeyWoVersion *string
+```
+
+- *Type:* *string
+
+Triggers update of 'private_key_wo' write-only.
+
+Increment this value when an update to 'private_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#private_key_wo_version ComputeRegionSslCertificate#private_key_wo_version}
 
 ---
 
@@ -1214,7 +1313,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#project ComputeRegionSslCertificate#project}.
 
 ---
 
@@ -1230,7 +1329,7 @@ The Region in which the created regional ssl certificate should reside.
 
 If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#region ComputeRegionSslCertificate#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#region ComputeRegionSslCertificate#region}
 
 ---
 
@@ -1244,7 +1343,7 @@ Timeouts ComputeRegionSslCertificateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#timeouts ComputeRegionSslCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#timeouts ComputeRegionSslCertificate#timeouts}
 
 ---
 
@@ -1253,7 +1352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslcertificate"
 
 &computeregionsslcertificate.ComputeRegionSslCertificateTimeouts {
 	Create: *string,
@@ -1265,8 +1364,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionssl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#create ComputeRegionSslCertificate#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#delete ComputeRegionSslCertificate#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#create ComputeRegionSslCertificate#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#delete ComputeRegionSslCertificate#delete}. |
 
 ---
 
@@ -1278,7 +1377,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#create ComputeRegionSslCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#create ComputeRegionSslCertificate#create}.
 
 ---
 
@@ -1290,7 +1389,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_ssl_certificate#delete ComputeRegionSslCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_ssl_certificate#delete ComputeRegionSslCertificate#delete}.
 
 ---
 
@@ -1301,7 +1400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionSslCertificate.ComputeRegionSslCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeregionsslcertificate"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeregionsslcertificate"
 
 computeregionsslcertificate.NewComputeRegionSslCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionSslCertificateTimeoutsOutputReference
 ```

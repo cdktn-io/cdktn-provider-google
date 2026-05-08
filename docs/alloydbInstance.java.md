@@ -4,7 +4,7 @@
 
 ### AlloydbInstance <a name="AlloydbInstance" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance google_alloydb_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance google_alloydb_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer"></a>
 
@@ -26,6 +26,7 @@ AlloydbInstance.Builder.create(Construct scope, java.lang.String id)
 //  .annotations(java.util.Map<java.lang.String, java.lang.String>)
 //  .availabilityType(java.lang.String)
 //  .clientConnectionConfig(AlloydbInstanceClientConnectionConfig)
+//  .connectionPoolConfig(AlloydbInstanceConnectionPoolConfig)
 //  .databaseFlags(java.util.Map<java.lang.String, java.lang.String>)
 //  .displayName(java.lang.String)
 //  .gceZone(java.lang.String)
@@ -58,10 +59,11 @@ AlloydbInstance.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.annotations">annotations</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Annotations to allow client tools to store small amount of arbitrary data. This is distinct from labels. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.availabilityType">availabilityType</a></code> | <code>java.lang.String</code> | 'Availability type of an Instance. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.clientConnectionConfig">clientConnectionConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig">AlloydbInstanceClientConnectionConfig</a></code> | client_connection_config block. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.connectionPoolConfig">connectionPoolConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a></code> | connection_pool_config block. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.databaseFlags">databaseFlags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Database flags. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | User-settable and human-readable display name for the Instance. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.gceZone">gceZone</a></code> | <code>java.lang.String</code> | The Compute Engine zone that the instance should serve from, per https://cloud.google.com/compute/docs/regions-zones This can ONLY be specified for ZONAL instances. If present for a REGIONAL instance, an error will be thrown. If this is absent for a ZONAL instance, instance is created in a random zone with available capacity. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#id AlloydbInstance#id}. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#id AlloydbInstance#id}. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User-defined labels for the alloydb instance. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.machineConfig">machineConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfig">AlloydbInstanceMachineConfig</a></code> | machine_config block. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.networkConfig">networkConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig">AlloydbInstanceNetworkConfig</a></code> | network_config block. |
@@ -138,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 Identifies the alloydb cluster. Must be in the format 'projects/{project}/locations/{location}/clusters/{cluster_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#cluster AlloydbInstance#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#cluster AlloydbInstance#cluster}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the alloydb instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#instance_id AlloydbInstance#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#instance_id AlloydbInstance#instance_id}
 
 ---
 
@@ -165,7 +167,7 @@ If the instance type is SECONDARY, the terraform delete instance operation does 
 Use deletion_policy = "FORCE" in the associated secondary cluster and delete the cluster forcefully to delete the secondary cluster as well its associated secondary instance.
 Users can undo the delete secondary instance action by importing the deleted secondary instance by calling terraform import. Possible values: ["PRIMARY", "READ_POOL", "SECONDARY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#instance_type AlloydbInstance#instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#instance_type AlloydbInstance#instance_type}
 
 ---
 
@@ -184,7 +186,7 @@ example, a read pool instance should be stopped before stopping primary
 etc.). Please refer to the API documentation for more details.
 Possible values are: 'ACTIVATION_POLICY_UNSPECIFIED', 'ALWAYS', 'NEVER'.' Possible values: ["ACTIVATION_POLICY_UNSPECIFIED", "ALWAYS", "NEVER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#activation_policy AlloydbInstance#activation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#activation_policy AlloydbInstance#activation_policy}
 
 ---
 
@@ -197,7 +199,7 @@ Annotations to allow client tools to store small amount of arbitrary data. This 
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#annotations AlloydbInstance#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#annotations AlloydbInstance#annotations}
 
 ---
 
@@ -214,7 +216,7 @@ Read pools of size 1 can only have zonal availability. Read pools with a node co
 can have regional availability (nodes are present in 2 or more zones in a region).
 Possible values are: 'AVAILABILITY_TYPE_UNSPECIFIED', 'ZONAL', 'REGIONAL'.' Possible values: ["AVAILABILITY_TYPE_UNSPECIFIED", "ZONAL", "REGIONAL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#availability_type AlloydbInstance#availability_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#availability_type AlloydbInstance#availability_type}
 
 ---
 
@@ -224,7 +226,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 client_connection_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#client_connection_config AlloydbInstance#client_connection_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#client_connection_config AlloydbInstance#client_connection_config}
+
+---
+
+##### `connectionPoolConfig`<sup>Optional</sup> <a name="connectionPoolConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.Initializer.parameter.connectionPoolConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a>
+
+connection_pool_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#connection_pool_config AlloydbInstance#connection_pool_config}
 
 ---
 
@@ -236,7 +248,7 @@ Database flags.
 
 Set at instance level. * They are copied from primary instance on read instance creation. * Read instances can set new or override existing flags that are relevant for reads, e.g. for enabling columnar cache on a read instance. Flags set on read instance may or may not be present on primary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#database_flags AlloydbInstance#database_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#database_flags AlloydbInstance#database_flags}
 
 ---
 
@@ -246,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-settable and human-readable display name for the Instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#display_name AlloydbInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#display_name AlloydbInstance#display_name}
 
 ---
 
@@ -256,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Compute Engine zone that the instance should serve from, per https://cloud.google.com/compute/docs/regions-zones This can ONLY be specified for ZONAL instances. If present for a REGIONAL instance, an error will be thrown. If this is absent for a ZONAL instance, instance is created in a random zone with available capacity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#gce_zone AlloydbInstance#gce_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#gce_zone AlloydbInstance#gce_zone}
 
 ---
 
@@ -264,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#id AlloydbInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#id AlloydbInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -280,7 +292,7 @@ User-defined labels for the alloydb instance.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#labels AlloydbInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#labels AlloydbInstance#labels}
 
 ---
 
@@ -290,7 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 machine_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#machine_config AlloydbInstance#machine_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#machine_config AlloydbInstance#machine_config}
 
 ---
 
@@ -300,7 +312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#network_config AlloydbInstance#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#network_config AlloydbInstance#network_config}
 
 ---
 
@@ -310,7 +322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 psc_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#psc_instance_config AlloydbInstance#psc_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#psc_instance_config AlloydbInstance#psc_instance_config}
 
 ---
 
@@ -320,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 query_insights_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#query_insights_config AlloydbInstance#query_insights_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#query_insights_config AlloydbInstance#query_insights_config}
 
 ---
 
@@ -330,7 +342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 read_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#read_pool_config AlloydbInstance#read_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#read_pool_config AlloydbInstance#read_pool_config}
 
 ---
 
@@ -340,7 +352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#timeouts AlloydbInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#timeouts AlloydbInstance#timeouts}
 
 ---
 
@@ -373,6 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.putClientConnectionConfig">putClientConnectionConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.putConnectionPoolConfig">putConnectionPoolConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.putMachineConfig">putMachineConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.putNetworkConfig">putNetworkConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.putPscInstanceConfig">putPscInstanceConfig</a></code> | *No description.* |
@@ -383,6 +396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetAnnotations">resetAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetAvailabilityType">resetAvailabilityType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetClientConnectionConfig">resetClientConnectionConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetConnectionPoolConfig">resetConnectionPoolConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetDatabaseFlags">resetDatabaseFlags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetDisplayName">resetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetGceZone">resetGceZone</a></code> | *No description.* |
@@ -720,6 +734,18 @@ public void putClientConnectionConfig(AlloydbInstanceClientConnectionConfig valu
 
 ---
 
+##### `putConnectionPoolConfig` <a name="putConnectionPoolConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.putConnectionPoolConfig"></a>
+
+```java
+public void putConnectionPoolConfig(AlloydbInstanceConnectionPoolConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.putConnectionPoolConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a>
+
+---
+
 ##### `putMachineConfig` <a name="putMachineConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.putMachineConfig"></a>
 
 ```java
@@ -814,6 +840,12 @@ public void resetAvailabilityType()
 
 ```java
 public void resetClientConnectionConfig()
+```
+
+##### `resetConnectionPoolConfig` <a name="resetConnectionPoolConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetConnectionPoolConfig"></a>
+
+```java
+public void resetConnectionPoolConfig()
 ```
 
 ##### `resetDatabaseFlags` <a name="resetDatabaseFlags" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.resetDatabaseFlags"></a>
@@ -985,7 +1017,7 @@ The construct id used in the generated config for the AlloydbInstance to import.
 
 The id of the existing AlloydbInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1016,6 +1048,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.clientConnectionConfig">clientConnectionConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference">AlloydbInstanceClientConnectionConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.connectionPoolConfig">connectionPoolConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference">AlloydbInstanceConnectionPoolConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.effectiveAnnotations">effectiveAnnotations</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.effectiveLabels">effectiveLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
@@ -1039,6 +1072,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.availabilityTypeInput">availabilityTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.clientConnectionConfigInput">clientConnectionConfigInput</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig">AlloydbInstanceClientConnectionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.clusterInput">clusterInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.connectionPoolConfigInput">connectionPoolConfigInput</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.databaseFlagsInput">databaseFlagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.gceZoneInput">gceZoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1215,6 +1249,16 @@ public AlloydbInstanceClientConnectionConfigOutputReference getClientConnectionC
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigOutputReference">AlloydbInstanceClientConnectionConfigOutputReference</a>
+
+---
+
+##### `connectionPoolConfig`<sup>Required</sup> <a name="connectionPoolConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.connectionPoolConfig"></a>
+
+```java
+public AlloydbInstanceConnectionPoolConfigOutputReference getConnectionPoolConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference">AlloydbInstanceConnectionPoolConfigOutputReference</a>
 
 ---
 
@@ -1445,6 +1489,16 @@ public java.lang.String getClusterInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `connectionPoolConfigInput`<sup>Optional</sup> <a name="connectionPoolConfigInput" id="@cdktn/provider-google.alloydbInstance.AlloydbInstance.property.connectionPoolConfigInput"></a>
+
+```java
+public AlloydbInstanceConnectionPoolConfig getConnectionPoolConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a>
 
 ---
 
@@ -1740,7 +1794,7 @@ public java.lang.Boolean|IResolvable getRequireConnectors();
 
 Configuration to enforce connectors only (ex: AuthProxy) connections to the database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#require_connectors AlloydbInstance#require_connectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#require_connectors AlloydbInstance#require_connectors}
 
 ---
 
@@ -1754,7 +1808,7 @@ public AlloydbInstanceClientConnectionConfigSslConfig getSslConfig();
 
 ssl_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#ssl_config AlloydbInstance#ssl_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#ssl_config AlloydbInstance#ssl_config}
 
 ---
 
@@ -1788,7 +1842,7 @@ public java.lang.String getSslMode();
 
 SSL mode. Specifies client-server SSL/TLS connection behavior. Possible values: ["ENCRYPTED_ONLY", "ALLOW_UNENCRYPTED_AND_ENCRYPTED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#ssl_mode AlloydbInstance#ssl_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#ssl_mode AlloydbInstance#ssl_mode}
 
 ---
 
@@ -1814,6 +1868,7 @@ AlloydbInstanceConfig.builder()
 //  .annotations(java.util.Map<java.lang.String, java.lang.String>)
 //  .availabilityType(java.lang.String)
 //  .clientConnectionConfig(AlloydbInstanceClientConnectionConfig)
+//  .connectionPoolConfig(AlloydbInstanceConnectionPoolConfig)
 //  .databaseFlags(java.util.Map<java.lang.String, java.lang.String>)
 //  .displayName(java.lang.String)
 //  .gceZone(java.lang.String)
@@ -1846,10 +1901,11 @@ AlloydbInstanceConfig.builder()
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.annotations">annotations</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Annotations to allow client tools to store small amount of arbitrary data. This is distinct from labels. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.availabilityType">availabilityType</a></code> | <code>java.lang.String</code> | 'Availability type of an Instance. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.clientConnectionConfig">clientConnectionConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfig">AlloydbInstanceClientConnectionConfig</a></code> | client_connection_config block. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.connectionPoolConfig">connectionPoolConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a></code> | connection_pool_config block. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.databaseFlags">databaseFlags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Database flags. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | User-settable and human-readable display name for the Instance. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.gceZone">gceZone</a></code> | <code>java.lang.String</code> | The Compute Engine zone that the instance should serve from, per https://cloud.google.com/compute/docs/regions-zones This can ONLY be specified for ZONAL instances. If present for a REGIONAL instance, an error will be thrown. If this is absent for a ZONAL instance, instance is created in a random zone with available capacity. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#id AlloydbInstance#id}. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#id AlloydbInstance#id}. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User-defined labels for the alloydb instance. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.machineConfig">machineConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceMachineConfig">AlloydbInstanceMachineConfig</a></code> | machine_config block. |
 | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.networkConfig">networkConfig</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceNetworkConfig">AlloydbInstanceNetworkConfig</a></code> | network_config block. |
@@ -1940,7 +1996,7 @@ public java.lang.String getCluster();
 
 Identifies the alloydb cluster. Must be in the format 'projects/{project}/locations/{location}/clusters/{cluster_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#cluster AlloydbInstance#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#cluster AlloydbInstance#cluster}
 
 ---
 
@@ -1954,7 +2010,7 @@ public java.lang.String getInstanceId();
 
 The ID of the alloydb instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#instance_id AlloydbInstance#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#instance_id AlloydbInstance#instance_id}
 
 ---
 
@@ -1975,7 +2031,7 @@ If the instance type is SECONDARY, the terraform delete instance operation does 
 Use deletion_policy = "FORCE" in the associated secondary cluster and delete the cluster forcefully to delete the secondary cluster as well its associated secondary instance.
 Users can undo the delete secondary instance action by importing the deleted secondary instance by calling terraform import. Possible values: ["PRIMARY", "READ_POOL", "SECONDARY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#instance_type AlloydbInstance#instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#instance_type AlloydbInstance#instance_type}
 
 ---
 
@@ -1998,7 +2054,7 @@ example, a read pool instance should be stopped before stopping primary
 etc.). Please refer to the API documentation for more details.
 Possible values are: 'ACTIVATION_POLICY_UNSPECIFIED', 'ALWAYS', 'NEVER'.' Possible values: ["ACTIVATION_POLICY_UNSPECIFIED", "ALWAYS", "NEVER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#activation_policy AlloydbInstance#activation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#activation_policy AlloydbInstance#activation_policy}
 
 ---
 
@@ -2015,7 +2071,7 @@ Annotations to allow client tools to store small amount of arbitrary data. This 
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#annotations AlloydbInstance#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#annotations AlloydbInstance#annotations}
 
 ---
 
@@ -2036,7 +2092,7 @@ Read pools of size 1 can only have zonal availability. Read pools with a node co
 can have regional availability (nodes are present in 2 or more zones in a region).
 Possible values are: 'AVAILABILITY_TYPE_UNSPECIFIED', 'ZONAL', 'REGIONAL'.' Possible values: ["AVAILABILITY_TYPE_UNSPECIFIED", "ZONAL", "REGIONAL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#availability_type AlloydbInstance#availability_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#availability_type AlloydbInstance#availability_type}
 
 ---
 
@@ -2050,7 +2106,21 @@ public AlloydbInstanceClientConnectionConfig getClientConnectionConfig();
 
 client_connection_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#client_connection_config AlloydbInstance#client_connection_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#client_connection_config AlloydbInstance#client_connection_config}
+
+---
+
+##### `connectionPoolConfig`<sup>Optional</sup> <a name="connectionPoolConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConfig.property.connectionPoolConfig"></a>
+
+```java
+public AlloydbInstanceConnectionPoolConfig getConnectionPoolConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a>
+
+connection_pool_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#connection_pool_config AlloydbInstance#connection_pool_config}
 
 ---
 
@@ -2066,7 +2136,7 @@ Database flags.
 
 Set at instance level. * They are copied from primary instance on read instance creation. * Read instances can set new or override existing flags that are relevant for reads, e.g. for enabling columnar cache on a read instance. Flags set on read instance may or may not be present on primary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#database_flags AlloydbInstance#database_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#database_flags AlloydbInstance#database_flags}
 
 ---
 
@@ -2080,7 +2150,7 @@ public java.lang.String getDisplayName();
 
 User-settable and human-readable display name for the Instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#display_name AlloydbInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#display_name AlloydbInstance#display_name}
 
 ---
 
@@ -2094,7 +2164,7 @@ public java.lang.String getGceZone();
 
 The Compute Engine zone that the instance should serve from, per https://cloud.google.com/compute/docs/regions-zones This can ONLY be specified for ZONAL instances. If present for a REGIONAL instance, an error will be thrown. If this is absent for a ZONAL instance, instance is created in a random zone with available capacity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#gce_zone AlloydbInstance#gce_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#gce_zone AlloydbInstance#gce_zone}
 
 ---
 
@@ -2106,7 +2176,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#id AlloydbInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#id AlloydbInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2126,7 +2196,7 @@ User-defined labels for the alloydb instance.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#labels AlloydbInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#labels AlloydbInstance#labels}
 
 ---
 
@@ -2140,7 +2210,7 @@ public AlloydbInstanceMachineConfig getMachineConfig();
 
 machine_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#machine_config AlloydbInstance#machine_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#machine_config AlloydbInstance#machine_config}
 
 ---
 
@@ -2154,7 +2224,7 @@ public AlloydbInstanceNetworkConfig getNetworkConfig();
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#network_config AlloydbInstance#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#network_config AlloydbInstance#network_config}
 
 ---
 
@@ -2168,7 +2238,7 @@ public AlloydbInstancePscInstanceConfig getPscInstanceConfig();
 
 psc_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#psc_instance_config AlloydbInstance#psc_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#psc_instance_config AlloydbInstance#psc_instance_config}
 
 ---
 
@@ -2182,7 +2252,7 @@ public AlloydbInstanceQueryInsightsConfig getQueryInsightsConfig();
 
 query_insights_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#query_insights_config AlloydbInstance#query_insights_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#query_insights_config AlloydbInstance#query_insights_config}
 
 ---
 
@@ -2196,7 +2266,7 @@ public AlloydbInstanceReadPoolConfig getReadPoolConfig();
 
 read_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#read_pool_config AlloydbInstance#read_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#read_pool_config AlloydbInstance#read_pool_config}
 
 ---
 
@@ -2210,7 +2280,66 @@ public AlloydbInstanceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#timeouts AlloydbInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#timeouts AlloydbInstance#timeouts}
+
+---
+
+### AlloydbInstanceConnectionPoolConfig <a name="AlloydbInstanceConnectionPoolConfig" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.alloydb_instance.AlloydbInstanceConnectionPoolConfig;
+
+AlloydbInstanceConnectionPoolConfig.builder()
+    .enabled(java.lang.Boolean|IResolvable)
+//  .flags(java.util.Map<java.lang.String, java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether to enabled Managed Connection Pool. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig.property.flags">flags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Flags for configuring managed connection pooling when it is enabled. |
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Whether to enabled Managed Connection Pool.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#enabled AlloydbInstance#enabled}
+
+---
+
+##### `flags`<sup>Optional</sup> <a name="flags" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig.property.flags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getFlags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+Flags for configuring managed connection pooling when it is enabled.
+
+These flags will only be set if 'connection_pool_config.enabled' is
+true.
+Please see
+https://cloud.google.com/alloydb/docs/configure-managed-connection-pooling#configuration-options
+for a comprehensive list of flags that can be set. To specify the flags
+in Terraform, please remove the "connection-pooling-" prefix and use
+underscores instead of dashes in the name. For example,
+"connection-pooling-pool-mode" would be "pool_mode".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#flags AlloydbInstance#flags}
 
 ---
 
@@ -2246,7 +2375,7 @@ public java.lang.Number getCpuCount();
 
 The number of CPU's in the VM instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#cpu_count AlloydbInstance#cpu_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#cpu_count AlloydbInstance#cpu_count}
 
 ---
 
@@ -2260,7 +2389,7 @@ public java.lang.String getMachineType();
 
 Machine type of the VM instance. E.g. "n2-highmem-4", "n2-highmem-8", "c4a-highmem-4-lssd". 'cpu_count' must match the number of vCPUs in the machine type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#machine_type AlloydbInstance#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#machine_type AlloydbInstance#machine_type}
 
 ---
 
@@ -2303,7 +2432,7 @@ Name of the allocated IP range for the private IP AlloyDB instance, for example:
 If set, the instance IPs will be created from this allocated range and will override the IP range used by the parent cluster.
 The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#allocated_ip_range_override AlloydbInstance#allocated_ip_range_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#allocated_ip_range_override AlloydbInstance#allocated_ip_range_override}
 
 ---
 
@@ -2317,7 +2446,7 @@ public IResolvable|java.util.List<AlloydbInstanceNetworkConfigAuthorizedExternal
 
 authorized_external_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#authorized_external_networks AlloydbInstance#authorized_external_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#authorized_external_networks AlloydbInstance#authorized_external_networks}
 
 ---
 
@@ -2331,7 +2460,7 @@ public java.lang.Boolean|IResolvable getEnableOutboundPublicIp();
 
 Enabling outbound public ip for the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#enable_outbound_public_ip AlloydbInstance#enable_outbound_public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#enable_outbound_public_ip AlloydbInstance#enable_outbound_public_ip}
 
 ---
 
@@ -2349,7 +2478,7 @@ If a user wishes to disable this,
 please also clear the list of the authorized external networks set on
 the same instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#enable_public_ip AlloydbInstance#enable_public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#enable_public_ip AlloydbInstance#enable_public_ip}
 
 ---
 
@@ -2383,7 +2512,7 @@ public java.lang.String getCidrRange();
 
 CIDR range for one authorized network of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#cidr_range AlloydbInstance#cidr_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#cidr_range AlloydbInstance#cidr_range}
 
 ---
 
@@ -2423,7 +2552,7 @@ List of consumer projects that are allowed to create PSC endpoints to service-at
 
 These should be specified as project numbers only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#allowed_consumer_projects AlloydbInstance#allowed_consumer_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#allowed_consumer_projects AlloydbInstance#allowed_consumer_projects}
 
 ---
 
@@ -2437,7 +2566,7 @@ public IResolvable|java.util.List<AlloydbInstancePscInstanceConfigPscAutoConnect
 
 psc_auto_connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#psc_auto_connections AlloydbInstance#psc_auto_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#psc_auto_connections AlloydbInstance#psc_auto_connections}
 
 ---
 
@@ -2451,7 +2580,7 @@ public IResolvable|java.util.List<AlloydbInstancePscInstanceConfigPscInterfaceCo
 
 psc_interface_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#psc_interface_configs AlloydbInstance#psc_interface_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#psc_interface_configs AlloydbInstance#psc_interface_configs}
 
 ---
 
@@ -2491,7 +2620,7 @@ The consumer network might be hosted a different project than the
 consumer project. The API expects the consumer project specified to be
 the project ID (and not the project number)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#consumer_network AlloydbInstance#consumer_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#consumer_network AlloydbInstance#consumer_network}
 
 ---
 
@@ -2508,7 +2637,7 @@ The consumer project to which the PSC service automation endpoint will be create
 The API expects the consumer project to be the project ID(
 and not the project number).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#consumer_project AlloydbInstance#consumer_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#consumer_project AlloydbInstance#consumer_project}
 
 ---
 
@@ -2545,7 +2674,7 @@ The network attachment resource created in the consumer project to which the PSC
 This is of the format: "projects/${CONSUMER_PROJECT}/regions/${REGION}/networkAttachments/${NETWORK_ATTACHMENT_NAME}".
 The network attachment must be in the same region as the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#network_attachment_resource AlloydbInstance#network_attachment_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#network_attachment_resource AlloydbInstance#network_attachment_resource}
 
 ---
 
@@ -2587,7 +2716,7 @@ Number of query execution plans captured by Insights per minute for all queries 
 
 The default value is 5. Any integer between 0 and 20 is considered valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#query_plans_per_minute AlloydbInstance#query_plans_per_minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#query_plans_per_minute AlloydbInstance#query_plans_per_minute}
 
 ---
 
@@ -2601,7 +2730,7 @@ public java.lang.Number getQueryStringLength();
 
 Query string length. The default value is 1024. Any integer between 256 and 4500 is considered valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#query_string_length AlloydbInstance#query_string_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#query_string_length AlloydbInstance#query_string_length}
 
 ---
 
@@ -2615,7 +2744,7 @@ public java.lang.Boolean|IResolvable getRecordApplicationTags();
 
 Record application tags for an instance. This flag is turned "on" by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#record_application_tags AlloydbInstance#record_application_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#record_application_tags AlloydbInstance#record_application_tags}
 
 ---
 
@@ -2629,7 +2758,7 @@ public java.lang.Boolean|IResolvable getRecordClientAddress();
 
 Record client address for an instance. Client address is PII information. This flag is turned "on" by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#record_client_address AlloydbInstance#record_client_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#record_client_address AlloydbInstance#record_client_address}
 
 ---
 
@@ -2663,7 +2792,7 @@ public java.lang.Number getNodeCount();
 
 Read capacity, i.e. number of nodes in a read pool instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#node_count AlloydbInstance#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#node_count AlloydbInstance#node_count}
 
 ---
 
@@ -2685,9 +2814,9 @@ AlloydbInstanceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#create AlloydbInstance#create}. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#delete AlloydbInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#update AlloydbInstance#update}. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#create AlloydbInstance#create}. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#delete AlloydbInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#update AlloydbInstance#update}. |
 
 ---
 
@@ -2699,7 +2828,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#create AlloydbInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#create AlloydbInstance#create}.
 
 ---
 
@@ -2711,7 +2840,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#delete AlloydbInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#delete AlloydbInstance#delete}.
 
 ---
 
@@ -2723,7 +2852,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_instance#update AlloydbInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_instance#update AlloydbInstance#update}.
 
 ---
 
@@ -3323,6 +3452,317 @@ public AlloydbInstanceClientConnectionConfigSslConfig getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceClientConnectionConfigSslConfig">AlloydbInstanceClientConnectionConfigSslConfig</a>
+
+---
+
+
+### AlloydbInstanceConnectionPoolConfigOutputReference <a name="AlloydbInstanceConnectionPoolConfigOutputReference" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.alloydb_instance.AlloydbInstanceConnectionPoolConfigOutputReference;
+
+new AlloydbInstanceConnectionPoolConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.resetFlags">resetFlags</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetFlags` <a name="resetFlags" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.resetFlags"></a>
+
+```java
+public void resetFlags()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.poolerCount">poolerCount</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.flagsInput">flagsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.flags">flags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `poolerCount`<sup>Required</sup> <a name="poolerCount" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.poolerCount"></a>
+
+```java
+public java.lang.Number getPoolerCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.enabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `flagsInput`<sup>Optional</sup> <a name="flagsInput" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.flagsInput"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getFlagsInput();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.enabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `flags`<sup>Required</sup> <a name="flags" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.flags"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getFlags();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfigOutputReference.property.internalValue"></a>
+
+```java
+public AlloydbInstanceConnectionPoolConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.alloydbInstance.AlloydbInstanceConnectionPoolConfig">AlloydbInstanceConnectionPoolConfig</a>
 
 ---
 

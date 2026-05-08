@@ -1,0 +1,3060 @@
+# `dataplexEntryLink` Submodule <a name="`dataplexEntryLink` Submodule" id="@cdktn/provider-google.dataplexEntryLink"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### DataplexEntryLink <a name="DataplexEntryLink" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink"></a>
+
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link google_dataplex_entry_link}.
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+new dataplexEntryLink.DataplexEntryLink(scope: Construct, id: string, config: DataplexEntryLinkConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig">DataplexEntryLinkConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig">DataplexEntryLinkConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.with">with</a></code> | Applies one or more mixins to this construct. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.putAspects">putAspects</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.putEntryReferences">putEntryReferences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.resetAspects">resetAspects</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.with"></a>
+
+```typescript
+public with(mixins: ...IMixin[]): IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.with.parameter.mixins"></a>
+
+- *Type:* ...constructs.IMixin[]
+
+The mixins to apply.
+
+---
+
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.toHclTerraform"></a>
+
+```typescript
+public toHclTerraform(): any
+```
+
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.addMoveTarget"></a>
+
+```typescript
+public addMoveTarget(moveTarget: string): void
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The string move target that will correspond to this resource.
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.hasResourceMove"></a>
+
+```typescript
+public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
+```
+
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.importFrom"></a>
+
+```typescript
+public importFrom(id: string, provider?: TerraformProvider): void
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.importFrom.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.importFrom.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.moveFromId"></a>
+
+```typescript
+public moveFromId(id: string): void
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.moveTo"></a>
+
+```typescript
+public moveTo(moveTarget: string, index?: string | number): void
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.moveTo.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.moveTo.parameter.index"></a>
+
+- *Type:* string | number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.moveToId"></a>
+
+```typescript
+public moveToId(id: string): void
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `putAspects` <a name="putAspects" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.putAspects"></a>
+
+```typescript
+public putAspects(value: IResolvable | DataplexEntryLinkAspects[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.putAspects.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects">DataplexEntryLinkAspects</a>[]
+
+---
+
+##### `putEntryReferences` <a name="putEntryReferences" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.putEntryReferences"></a>
+
+```typescript
+public putEntryReferences(value: IResolvable | DataplexEntryLinkEntryReferences[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.putEntryReferences.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences">DataplexEntryLinkEntryReferences</a>[]
+
+---
+
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value: DataplexEntryLinkTimeouts): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts">DataplexEntryLinkTimeouts</a>
+
+---
+
+##### `resetAspects` <a name="resetAspects" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.resetAspects"></a>
+
+```typescript
+public resetAspects(): void
+```
+
+##### `resetId` <a name="resetId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.resetProject"></a>
+
+```typescript
+public resetProject(): void
+```
+
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a DataplexEntryLink resource upon running "cdktn plan <stack-name>". |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isConstruct"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+dataplexEntryLink.DataplexEntryLink.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isTerraformElement"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+dataplexEntryLink.DataplexEntryLink.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isTerraformResource"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+dataplexEntryLink.DataplexEntryLink.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.generateConfigForImport"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+dataplexEntryLink.DataplexEntryLink.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTN code for importing a DataplexEntryLink resource upon running "cdktn plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataplexEntryLink to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataplexEntryLink that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+? Optional instance of the provider where the DataplexEntryLink to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.aspects">aspects</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList">DataplexEntryLinkAspectsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryReferences">entryReferences</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList">DataplexEntryLinkEntryReferencesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference">DataplexEntryLinkTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.aspectsInput">aspectsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects">DataplexEntryLinkAspects</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryGroupIdInput">entryGroupIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryLinkIdInput">entryLinkIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryLinkTypeInput">entryLinkTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryReferencesInput">entryReferencesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences">DataplexEntryLinkEntryReferences</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts">DataplexEntryLinkTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryGroupId">entryGroupId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryLinkId">entryLinkId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryLinkType">entryLinkType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.location">location</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.project">project</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktn.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.connection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.count"></a>
+
+```typescript
+public readonly count: number | TerraformCount;
+```
+
+- *Type:* number | cdktn.TerraformCount
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
+```
+
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `aspects`<sup>Required</sup> <a name="aspects" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.aspects"></a>
+
+```typescript
+public readonly aspects: DataplexEntryLinkAspectsList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList">DataplexEntryLinkAspectsList</a>
+
+---
+
+##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.createTime"></a>
+
+```typescript
+public readonly createTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `entryReferences`<sup>Required</sup> <a name="entryReferences" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryReferences"></a>
+
+```typescript
+public readonly entryReferences: DataplexEntryLinkEntryReferencesList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList">DataplexEntryLinkEntryReferencesList</a>
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: DataplexEntryLinkTimeoutsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference">DataplexEntryLinkTimeoutsOutputReference</a>
+
+---
+
+##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.updateTime"></a>
+
+```typescript
+public readonly updateTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `aspectsInput`<sup>Optional</sup> <a name="aspectsInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.aspectsInput"></a>
+
+```typescript
+public readonly aspectsInput: IResolvable | DataplexEntryLinkAspects[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects">DataplexEntryLinkAspects</a>[]
+
+---
+
+##### `entryGroupIdInput`<sup>Optional</sup> <a name="entryGroupIdInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryGroupIdInput"></a>
+
+```typescript
+public readonly entryGroupIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `entryLinkIdInput`<sup>Optional</sup> <a name="entryLinkIdInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryLinkIdInput"></a>
+
+```typescript
+public readonly entryLinkIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `entryLinkTypeInput`<sup>Optional</sup> <a name="entryLinkTypeInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryLinkTypeInput"></a>
+
+```typescript
+public readonly entryLinkTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `entryReferencesInput`<sup>Optional</sup> <a name="entryReferencesInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryReferencesInput"></a>
+
+```typescript
+public readonly entryReferencesInput: IResolvable | DataplexEntryLinkEntryReferences[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences">DataplexEntryLinkEntryReferences</a>[]
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `locationInput`<sup>Optional</sup> <a name="locationInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.locationInput"></a>
+
+```typescript
+public readonly locationInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: IResolvable | DataplexEntryLinkTimeouts;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts">DataplexEntryLinkTimeouts</a>
+
+---
+
+##### `entryGroupId`<sup>Required</sup> <a name="entryGroupId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryGroupId"></a>
+
+```typescript
+public readonly entryGroupId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `entryLinkId`<sup>Required</sup> <a name="entryLinkId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryLinkId"></a>
+
+```typescript
+public readonly entryLinkId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `entryLinkType`<sup>Required</sup> <a name="entryLinkType" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.entryLinkType"></a>
+
+```typescript
+public readonly entryLinkType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.location"></a>
+
+```typescript
+public readonly location: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLink.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### DataplexEntryLinkAspects <a name="DataplexEntryLinkAspects" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+const dataplexEntryLinkAspects: dataplexEntryLink.DataplexEntryLinkAspects = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects.property.aspect">aspect</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect">DataplexEntryLinkAspectsAspect</a></code> | aspect block. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects.property.aspectKey">aspectKey</a></code> | <code>string</code> | The map keys of the Aspects which the service should modify. |
+
+---
+
+##### `aspect`<sup>Required</sup> <a name="aspect" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects.property.aspect"></a>
+
+```typescript
+public readonly aspect: DataplexEntryLinkAspectsAspect;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect">DataplexEntryLinkAspectsAspect</a>
+
+aspect block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#aspect DataplexEntryLink#aspect}
+
+---
+
+##### `aspectKey`<sup>Required</sup> <a name="aspectKey" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects.property.aspectKey"></a>
+
+```typescript
+public readonly aspectKey: string;
+```
+
+- *Type:* string
+
+The map keys of the Aspects which the service should modify.
+
+It should be the aspect type reference in the format '{project_number}.{location_id}.{aspect_type_id}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#aspect_key DataplexEntryLink#aspect_key}
+
+---
+
+### DataplexEntryLinkAspectsAspect <a name="DataplexEntryLinkAspectsAspect" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+const dataplexEntryLinkAspectsAspect: dataplexEntryLink.DataplexEntryLinkAspectsAspect = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect.property.data">data</a></code> | <code>string</code> | The content of the aspect in JSON form, according to its aspect type schema. |
+
+---
+
+##### `data`<sup>Required</sup> <a name="data" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect.property.data"></a>
+
+```typescript
+public readonly data: string;
+```
+
+- *Type:* string
+
+The content of the aspect in JSON form, according to its aspect type schema.
+
+The maximum size of the field is 120KB (encoded as UTF-8).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#data DataplexEntryLink#data}
+
+---
+
+### DataplexEntryLinkConfig <a name="DataplexEntryLinkConfig" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+const dataplexEntryLinkConfig: dataplexEntryLink.DataplexEntryLinkConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.entryGroupId">entryGroupId</a></code> | <code>string</code> | The id of the entry group this entry link is in. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.entryLinkId">entryLinkId</a></code> | <code>string</code> | The id of the entry link to create. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.entryLinkType">entryLinkType</a></code> | <code>string</code> | Relative resource name of the Entry Link Type used to create this Entry Link. For example: projects/dataplex-types/locations/global/entryLinkTypes/definition. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.entryReferences">entryReferences</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences">DataplexEntryLinkEntryReferences</a>[]</code> | entry_references block. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.location">location</a></code> | <code>string</code> | The location for the entry. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.aspects">aspects</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects">DataplexEntryLinkAspects</a>[]</code> | aspects block. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#id DataplexEntryLink#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#project DataplexEntryLink#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts">DataplexEntryLinkTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.connection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.count"></a>
+
+```typescript
+public readonly count: number | TerraformCount;
+```
+
+- *Type:* number | cdktn.TerraformCount
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktn.ITerraformDependable[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
+```
+
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `entryGroupId`<sup>Required</sup> <a name="entryGroupId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.entryGroupId"></a>
+
+```typescript
+public readonly entryGroupId: string;
+```
+
+- *Type:* string
+
+The id of the entry group this entry link is in.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#entry_group_id DataplexEntryLink#entry_group_id}
+
+---
+
+##### `entryLinkId`<sup>Required</sup> <a name="entryLinkId" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.entryLinkId"></a>
+
+```typescript
+public readonly entryLinkId: string;
+```
+
+- *Type:* string
+
+The id of the entry link to create.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#entry_link_id DataplexEntryLink#entry_link_id}
+
+---
+
+##### `entryLinkType`<sup>Required</sup> <a name="entryLinkType" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.entryLinkType"></a>
+
+```typescript
+public readonly entryLinkType: string;
+```
+
+- *Type:* string
+
+Relative resource name of the Entry Link Type used to create this Entry Link. For example: projects/dataplex-types/locations/global/entryLinkTypes/definition.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#entry_link_type DataplexEntryLink#entry_link_type}
+
+---
+
+##### `entryReferences`<sup>Required</sup> <a name="entryReferences" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.entryReferences"></a>
+
+```typescript
+public readonly entryReferences: IResolvable | DataplexEntryLinkEntryReferences[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences">DataplexEntryLinkEntryReferences</a>[]
+
+entry_references block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#entry_references DataplexEntryLink#entry_references}
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.location"></a>
+
+```typescript
+public readonly location: string;
+```
+
+- *Type:* string
+
+The location for the entry.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#location DataplexEntryLink#location}
+
+---
+
+##### `aspects`<sup>Optional</sup> <a name="aspects" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.aspects"></a>
+
+```typescript
+public readonly aspects: IResolvable | DataplexEntryLinkAspects[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects">DataplexEntryLinkAspects</a>[]
+
+aspects block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#aspects DataplexEntryLink#aspects}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#id DataplexEntryLink#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#project DataplexEntryLink#project}.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: DataplexEntryLinkTimeouts;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts">DataplexEntryLinkTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#timeouts DataplexEntryLink#timeouts}
+
+---
+
+### DataplexEntryLinkEntryReferences <a name="DataplexEntryLinkEntryReferences" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+const dataplexEntryLinkEntryReferences: dataplexEntryLink.DataplexEntryLinkEntryReferences = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences.property.name">name</a></code> | <code>string</code> | The relative resource name of the referenced Entry, of the form: projects/{project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id}/entries/{entry_id}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences.property.path">path</a></code> | <code>string</code> | The path in the Entry that is referenced in the Entry Link. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences.property.type">type</a></code> | <code>string</code> | The reference type of the Entry. Possible values: ["SOURCE", "TARGET"]. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The relative resource name of the referenced Entry, of the form: projects/{project_id_or_number}/locations/{location_id}/entryGroups/{entry_group_id}/entries/{entry_id}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#name DataplexEntryLink#name}
+
+---
+
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences.property.path"></a>
+
+```typescript
+public readonly path: string;
+```
+
+- *Type:* string
+
+The path in the Entry that is referenced in the Entry Link.
+
+Empty path denotes that the Entry itself is referenced in the Entry Link.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#path DataplexEntryLink#path}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+The reference type of the Entry. Possible values: ["SOURCE", "TARGET"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#type DataplexEntryLink#type}
+
+---
+
+### DataplexEntryLinkTimeouts <a name="DataplexEntryLinkTimeouts" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+const dataplexEntryLinkTimeouts: dataplexEntryLink.DataplexEntryLinkTimeouts = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#create DataplexEntryLink#create}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#delete DataplexEntryLink#delete}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#update DataplexEntryLink#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#create DataplexEntryLink#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#delete DataplexEntryLink#delete}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_entry_link#update DataplexEntryLink#update}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DataplexEntryLinkAspectsAspectOutputReference <a name="DataplexEntryLinkAspectsAspectOutputReference" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+new dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.aspectType">aspectType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.dataInput">dataInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.data">data</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect">DataplexEntryLinkAspectsAspect</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `aspectType`<sup>Required</sup> <a name="aspectType" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.aspectType"></a>
+
+```typescript
+public readonly aspectType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.createTime"></a>
+
+```typescript
+public readonly createTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.path"></a>
+
+```typescript
+public readonly path: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.updateTime"></a>
+
+```typescript
+public readonly updateTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dataInput`<sup>Optional</sup> <a name="dataInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.dataInput"></a>
+
+```typescript
+public readonly dataInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `data`<sup>Required</sup> <a name="data" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.data"></a>
+
+```typescript
+public readonly data: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataplexEntryLinkAspectsAspect;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect">DataplexEntryLinkAspectsAspect</a>
+
+---
+
+
+### DataplexEntryLinkAspectsList <a name="DataplexEntryLinkAspectsList" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+new dataplexEntryLink.DataplexEntryLinkAspectsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.get"></a>
+
+```typescript
+public get(index: number): DataplexEntryLinkAspectsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects">DataplexEntryLinkAspects</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DataplexEntryLinkAspects[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects">DataplexEntryLinkAspects</a>[]
+
+---
+
+
+### DataplexEntryLinkAspectsOutputReference <a name="DataplexEntryLinkAspectsOutputReference" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+new dataplexEntryLink.DataplexEntryLinkAspectsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.putAspect">putAspect</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAspect` <a name="putAspect" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.putAspect"></a>
+
+```typescript
+public putAspect(value: DataplexEntryLinkAspectsAspect): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.putAspect.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect">DataplexEntryLinkAspectsAspect</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.aspect">aspect</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference">DataplexEntryLinkAspectsAspectOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.aspectInput">aspectInput</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect">DataplexEntryLinkAspectsAspect</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.aspectKeyInput">aspectKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.aspectKey">aspectKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects">DataplexEntryLinkAspects</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `aspect`<sup>Required</sup> <a name="aspect" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.aspect"></a>
+
+```typescript
+public readonly aspect: DataplexEntryLinkAspectsAspectOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspectOutputReference">DataplexEntryLinkAspectsAspectOutputReference</a>
+
+---
+
+##### `aspectInput`<sup>Optional</sup> <a name="aspectInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.aspectInput"></a>
+
+```typescript
+public readonly aspectInput: DataplexEntryLinkAspectsAspect;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsAspect">DataplexEntryLinkAspectsAspect</a>
+
+---
+
+##### `aspectKeyInput`<sup>Optional</sup> <a name="aspectKeyInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.aspectKeyInput"></a>
+
+```typescript
+public readonly aspectKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `aspectKey`<sup>Required</sup> <a name="aspectKey" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.aspectKey"></a>
+
+```typescript
+public readonly aspectKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspectsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DataplexEntryLinkAspects;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkAspects">DataplexEntryLinkAspects</a>
+
+---
+
+
+### DataplexEntryLinkEntryReferencesList <a name="DataplexEntryLinkEntryReferencesList" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+new dataplexEntryLink.DataplexEntryLinkEntryReferencesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.get"></a>
+
+```typescript
+public get(index: number): DataplexEntryLinkEntryReferencesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences">DataplexEntryLinkEntryReferences</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DataplexEntryLinkEntryReferences[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences">DataplexEntryLinkEntryReferences</a>[]
+
+---
+
+
+### DataplexEntryLinkEntryReferencesOutputReference <a name="DataplexEntryLinkEntryReferencesOutputReference" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+new dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.resetPath">resetPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.resetType">resetType</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPath` <a name="resetPath" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.resetPath"></a>
+
+```typescript
+public resetPath(): void
+```
+
+##### `resetType` <a name="resetType" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.resetType"></a>
+
+```typescript
+public resetType(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.pathInput">pathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences">DataplexEntryLinkEntryReferences</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pathInput`<sup>Optional</sup> <a name="pathInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.pathInput"></a>
+
+```typescript
+public readonly pathInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.typeInput"></a>
+
+```typescript
+public readonly typeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.path"></a>
+
+```typescript
+public readonly path: string;
+```
+
+- *Type:* string
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.type"></a>
+
+```typescript
+public readonly type: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferencesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DataplexEntryLinkEntryReferences;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkEntryReferences">DataplexEntryLinkEntryReferences</a>
+
+---
+
+
+### DataplexEntryLinkTimeoutsOutputReference <a name="DataplexEntryLinkTimeoutsOutputReference" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { dataplexEntryLink } from '@cdktn/provider-google'
+
+new dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate(): void
+```
+
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.resetDelete"></a>
+
+```typescript
+public resetDelete(): void
+```
+
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts">DataplexEntryLinkTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.deleteInput"></a>
+
+```typescript
+public readonly deleteInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* string
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* string
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DataplexEntryLinkTimeouts;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dataplexEntryLink.DataplexEntryLinkTimeouts">DataplexEntryLinkTimeouts</a>
+
+---
+
+
+

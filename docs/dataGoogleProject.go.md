@@ -4,12 +4,12 @@
 
 ### DataGoogleProject <a name="DataGoogleProject" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project google_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project google_project}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleproject"
 
 datagoogleproject.NewDataGoogleProject(scope Construct, id *string, config DataGoogleProjectConfig) DataGoogleProject
 ```
@@ -312,7 +312,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleproject"
 
 datagoogleproject.DataGoogleProject_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleproject"
 
 datagoogleproject.DataGoogleProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleproject.DataGoogleProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleproject"
 
 datagoogleproject.DataGoogleProject_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleproject.DataGoogleProject_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleproject"
 
 datagoogleproject.DataGoogleProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleProject to impor
 
 The id of the existing DataGoogleProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleproject"
 
 &datagoogleproject.DataGoogleProjectConfig {
 	Connection: interface{},
@@ -770,7 +770,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleprojec
 | <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project#id DataGoogleProject#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project#id DataGoogleProject#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The project ID. Changing this forces a new project to be created. |
 
 ---
@@ -853,7 +853,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project#id DataGoogleProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project#id DataGoogleProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -870,7 +870,7 @@ ProjectId *string
 
 The project ID. Changing this forces a new project to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project#project_id DataGoogleProject#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/project#project_id DataGoogleProject#project_id}
 
 ---
 

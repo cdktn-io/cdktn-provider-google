@@ -4,7 +4,7 @@
 
 ### StorageInsightsDatasetConfig <a name="StorageInsightsDatasetConfig" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config google_storage_insights_dataset_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config google_storage_insights_dataset_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer"></a>
 
@@ -23,6 +23,7 @@ StorageInsightsDatasetConfig.Builder.create(Construct scope, java.lang.String id
     .identity(StorageInsightsDatasetConfigIdentity)
     .location(java.lang.String)
     .retentionPeriodDays(java.lang.Number)
+//  .activityDataRetentionPeriodDays(java.lang.Number)
 //  .description(java.lang.String)
 //  .excludeCloudStorageBuckets(StorageInsightsDatasetConfigExcludeCloudStorageBuckets)
 //  .excludeCloudStorageLocations(StorageInsightsDatasetConfigExcludeCloudStorageLocations)
@@ -55,17 +56,18 @@ StorageInsightsDatasetConfig.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIdentity">StorageInsightsDatasetConfigIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of the DatasetConfig. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.retentionPeriodDays">retentionPeriodDays</a></code> | <code>java.lang.Number</code> | Number of days of history that must be retained. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.activityDataRetentionPeriodDays">activityDataRetentionPeriodDays</a></code> | <code>java.lang.Number</code> | Number of days of activity data that must be retained. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | An optional user-provided description for the dataset configuration with a maximum length of 256 characters. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.excludeCloudStorageBuckets">excludeCloudStorageBuckets</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets">StorageInsightsDatasetConfigExcludeCloudStorageBuckets</a></code> | exclude_cloud_storage_buckets block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.excludeCloudStorageLocations">excludeCloudStorageLocations</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageLocations">StorageInsightsDatasetConfigExcludeCloudStorageLocations</a></code> | exclude_cloud_storage_locations block. |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.includeCloudStorageBuckets">includeCloudStorageBuckets</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBuckets">StorageInsightsDatasetConfigIncludeCloudStorageBuckets</a></code> | include_cloud_storage_buckets block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.includeCloudStorageLocations">includeCloudStorageLocations</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageLocations">StorageInsightsDatasetConfigIncludeCloudStorageLocations</a></code> | include_cloud_storage_locations block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.includeNewlyCreatedBuckets">includeNewlyCreatedBuckets</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to true, the request includes all the newly created buckets in the dataset that meet the inclusion and exclusion rules. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.linkDataset">linkDataset</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | A boolean terraform only flag to link/unlink dataset. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.organizationNumber">organizationNumber</a></code> | <code>java.lang.String</code> | Organization resource ID that the source projects should belong to. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.organizationScope">organizationScope</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Defines the options for providing a source organization for the DatasetConfig. |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.sourceFolders">sourceFolders</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFolders">StorageInsightsDatasetConfigSourceFolders</a></code> | source_folders block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.sourceProjects">sourceProjects</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjects">StorageInsightsDatasetConfigSourceProjects</a></code> | source_projects block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts">StorageInsightsDatasetConfigTimeouts</a></code> | timeouts block. |
@@ -138,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 The user-defined ID of the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#dataset_config_id StorageInsightsDatasetConfig#dataset_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#dataset_config_id StorageInsightsDatasetConfig#dataset_config_id}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#identity StorageInsightsDatasetConfig#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#identity StorageInsightsDatasetConfig#identity}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location of the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#location StorageInsightsDatasetConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#location StorageInsightsDatasetConfig#location}
 
 ---
 
@@ -168,7 +170,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Number of days of history that must be retained.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#retention_period_days StorageInsightsDatasetConfig#retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#retention_period_days StorageInsightsDatasetConfig#retention_period_days}
+
+---
+
+##### `activityDataRetentionPeriodDays`<sup>Optional</sup> <a name="activityDataRetentionPeriodDays" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer.parameter.activityDataRetentionPeriodDays"></a>
+
+- *Type:* java.lang.Number
+
+Number of days of activity data that must be retained.
+
+If not specified, retentionPeriodDays will be used. Set to 0 to turn off the activity data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#activity_data_retention_period_days StorageInsightsDatasetConfig#activity_data_retention_period_days}
 
 ---
 
@@ -178,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional user-provided description for the dataset configuration with a maximum length of 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#description StorageInsightsDatasetConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#description StorageInsightsDatasetConfig#description}
 
 ---
 
@@ -188,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 exclude_cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_buckets StorageInsightsDatasetConfig#exclude_cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_buckets StorageInsightsDatasetConfig#exclude_cloud_storage_buckets}
 
 ---
 
@@ -198,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 exclude_cloud_storage_locations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_locations StorageInsightsDatasetConfig#exclude_cloud_storage_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_locations StorageInsightsDatasetConfig#exclude_cloud_storage_locations}
 
 ---
 
@@ -206,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -219,7 +233,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 include_cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#include_cloud_storage_buckets StorageInsightsDatasetConfig#include_cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#include_cloud_storage_buckets StorageInsightsDatasetConfig#include_cloud_storage_buckets}
 
 ---
 
@@ -229,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 include_cloud_storage_locations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#include_cloud_storage_locations StorageInsightsDatasetConfig#include_cloud_storage_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#include_cloud_storage_locations StorageInsightsDatasetConfig#include_cloud_storage_locations}
 
 ---
 
@@ -239,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to true, the request includes all the newly created buckets in the dataset that meet the inclusion and exclusion rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#include_newly_created_buckets StorageInsightsDatasetConfig#include_newly_created_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#include_newly_created_buckets StorageInsightsDatasetConfig#include_newly_created_buckets}
 
 ---
 
@@ -253,7 +267,7 @@ Setting this field to true while creation will automatically link the created da
 -> **Note** A dataset config resource can only be destroyed once it is unlinked,
 so users must set this field to false to unlink the dataset and destroy the dataset config resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#link_dataset StorageInsightsDatasetConfig#link_dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#link_dataset StorageInsightsDatasetConfig#link_dataset}
 
 ---
 
@@ -265,7 +279,7 @@ Organization resource ID that the source projects should belong to.
 
 Projects that do not belong to the provided organization are not considered when creating the dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#organization_number StorageInsightsDatasetConfig#organization_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#organization_number StorageInsightsDatasetConfig#organization_number}
 
 ---
 
@@ -275,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines the options for providing a source organization for the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#organization_scope StorageInsightsDatasetConfig#organization_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#organization_scope StorageInsightsDatasetConfig#organization_scope}
 
 ---
 
@@ -283,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}.
 
 ---
 
@@ -293,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_folders block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#source_folders StorageInsightsDatasetConfig#source_folders}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#source_folders StorageInsightsDatasetConfig#source_folders}
 
 ---
 
@@ -303,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_projects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#source_projects StorageInsightsDatasetConfig#source_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#source_projects StorageInsightsDatasetConfig#source_projects}
 
 ---
 
@@ -313,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#timeouts StorageInsightsDatasetConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#timeouts StorageInsightsDatasetConfig#timeouts}
 
 ---
 
@@ -353,6 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.putSourceFolders">putSourceFolders</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.putSourceProjects">putSourceProjects</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.resetActivityDataRetentionPeriodDays">resetActivityDataRetentionPeriodDays</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.resetExcludeCloudStorageBuckets">resetExcludeCloudStorageBuckets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.resetExcludeCloudStorageLocations">resetExcludeCloudStorageLocations</a></code> | *No description.* |
@@ -777,6 +792,12 @@ public void putTimeouts(StorageInsightsDatasetConfigTimeouts value)
 
 ---
 
+##### `resetActivityDataRetentionPeriodDays` <a name="resetActivityDataRetentionPeriodDays" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.resetActivityDataRetentionPeriodDays"></a>
+
+```java
+public void resetActivityDataRetentionPeriodDays()
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.resetDescription"></a>
 
 ```java
@@ -964,7 +985,7 @@ The construct id used in the generated config for the StorageInsightsDatasetConf
 
 The id of the existing StorageInsightsDatasetConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1008,6 +1029,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeoutsOutputReference">StorageInsightsDatasetConfigTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.uid">uid</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.activityDataRetentionPeriodDaysInput">activityDataRetentionPeriodDaysInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.datasetConfigIdInput">datasetConfigIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.excludeCloudStorageBucketsInput">excludeCloudStorageBucketsInput</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets">StorageInsightsDatasetConfigExcludeCloudStorageBuckets</a></code> | *No description.* |
@@ -1026,6 +1048,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.sourceFoldersInput">sourceFoldersInput</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFolders">StorageInsightsDatasetConfigSourceFolders</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.sourceProjectsInput">sourceProjectsInput</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjects">StorageInsightsDatasetConfigSourceProjects</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts">StorageInsightsDatasetConfigTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.activityDataRetentionPeriodDays">activityDataRetentionPeriodDays</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.datasetConfigId">datasetConfigId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1321,6 +1344,16 @@ public java.lang.String getUpdateTime();
 
 ---
 
+##### `activityDataRetentionPeriodDaysInput`<sup>Optional</sup> <a name="activityDataRetentionPeriodDaysInput" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.activityDataRetentionPeriodDaysInput"></a>
+
+```java
+public java.lang.Number getActivityDataRetentionPeriodDaysInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `datasetConfigIdInput`<sup>Optional</sup> <a name="datasetConfigIdInput" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.datasetConfigIdInput"></a>
 
 ```java
@@ -1501,6 +1534,16 @@ public IResolvable|StorageInsightsDatasetConfigTimeouts getTimeoutsInput();
 
 ---
 
+##### `activityDataRetentionPeriodDays`<sup>Required</sup> <a name="activityDataRetentionPeriodDays" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.activityDataRetentionPeriodDays"></a>
+
+```java
+public java.lang.Number getActivityDataRetentionPeriodDays();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `datasetConfigId`<sup>Required</sup> <a name="datasetConfigId" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.property.datasetConfigId"></a>
 
 ```java
@@ -1640,6 +1683,7 @@ StorageInsightsDatasetConfigConfig.builder()
     .identity(StorageInsightsDatasetConfigIdentity)
     .location(java.lang.String)
     .retentionPeriodDays(java.lang.Number)
+//  .activityDataRetentionPeriodDays(java.lang.Number)
 //  .description(java.lang.String)
 //  .excludeCloudStorageBuckets(StorageInsightsDatasetConfigExcludeCloudStorageBuckets)
 //  .excludeCloudStorageLocations(StorageInsightsDatasetConfigExcludeCloudStorageLocations)
@@ -1672,17 +1716,18 @@ StorageInsightsDatasetConfigConfig.builder()
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIdentity">StorageInsightsDatasetConfigIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of the DatasetConfig. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.retentionPeriodDays">retentionPeriodDays</a></code> | <code>java.lang.Number</code> | Number of days of history that must be retained. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.activityDataRetentionPeriodDays">activityDataRetentionPeriodDays</a></code> | <code>java.lang.Number</code> | Number of days of activity data that must be retained. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.description">description</a></code> | <code>java.lang.String</code> | An optional user-provided description for the dataset configuration with a maximum length of 256 characters. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.excludeCloudStorageBuckets">excludeCloudStorageBuckets</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets">StorageInsightsDatasetConfigExcludeCloudStorageBuckets</a></code> | exclude_cloud_storage_buckets block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.excludeCloudStorageLocations">excludeCloudStorageLocations</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageLocations">StorageInsightsDatasetConfigExcludeCloudStorageLocations</a></code> | exclude_cloud_storage_locations block. |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.includeCloudStorageBuckets">includeCloudStorageBuckets</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBuckets">StorageInsightsDatasetConfigIncludeCloudStorageBuckets</a></code> | include_cloud_storage_buckets block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.includeCloudStorageLocations">includeCloudStorageLocations</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageLocations">StorageInsightsDatasetConfigIncludeCloudStorageLocations</a></code> | include_cloud_storage_locations block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.includeNewlyCreatedBuckets">includeNewlyCreatedBuckets</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to true, the request includes all the newly created buckets in the dataset that meet the inclusion and exclusion rules. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.linkDataset">linkDataset</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | A boolean terraform only flag to link/unlink dataset. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.organizationNumber">organizationNumber</a></code> | <code>java.lang.String</code> | Organization resource ID that the source projects should belong to. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.organizationScope">organizationScope</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Defines the options for providing a source organization for the DatasetConfig. |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.sourceFolders">sourceFolders</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFolders">StorageInsightsDatasetConfigSourceFolders</a></code> | source_folders block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.sourceProjects">sourceProjects</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjects">StorageInsightsDatasetConfigSourceProjects</a></code> | source_projects block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts">StorageInsightsDatasetConfigTimeouts</a></code> | timeouts block. |
@@ -1769,7 +1814,7 @@ public java.lang.String getDatasetConfigId();
 
 The user-defined ID of the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#dataset_config_id StorageInsightsDatasetConfig#dataset_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#dataset_config_id StorageInsightsDatasetConfig#dataset_config_id}
 
 ---
 
@@ -1783,7 +1828,7 @@ public StorageInsightsDatasetConfigIdentity getIdentity();
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#identity StorageInsightsDatasetConfig#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#identity StorageInsightsDatasetConfig#identity}
 
 ---
 
@@ -1797,7 +1842,7 @@ public java.lang.String getLocation();
 
 The location of the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#location StorageInsightsDatasetConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#location StorageInsightsDatasetConfig#location}
 
 ---
 
@@ -1811,7 +1856,23 @@ public java.lang.Number getRetentionPeriodDays();
 
 Number of days of history that must be retained.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#retention_period_days StorageInsightsDatasetConfig#retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#retention_period_days StorageInsightsDatasetConfig#retention_period_days}
+
+---
+
+##### `activityDataRetentionPeriodDays`<sup>Optional</sup> <a name="activityDataRetentionPeriodDays" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.activityDataRetentionPeriodDays"></a>
+
+```java
+public java.lang.Number getActivityDataRetentionPeriodDays();
+```
+
+- *Type:* java.lang.Number
+
+Number of days of activity data that must be retained.
+
+If not specified, retentionPeriodDays will be used. Set to 0 to turn off the activity data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#activity_data_retention_period_days StorageInsightsDatasetConfig#activity_data_retention_period_days}
 
 ---
 
@@ -1825,7 +1886,7 @@ public java.lang.String getDescription();
 
 An optional user-provided description for the dataset configuration with a maximum length of 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#description StorageInsightsDatasetConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#description StorageInsightsDatasetConfig#description}
 
 ---
 
@@ -1839,7 +1900,7 @@ public StorageInsightsDatasetConfigExcludeCloudStorageBuckets getExcludeCloudSto
 
 exclude_cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_buckets StorageInsightsDatasetConfig#exclude_cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_buckets StorageInsightsDatasetConfig#exclude_cloud_storage_buckets}
 
 ---
 
@@ -1853,7 +1914,7 @@ public StorageInsightsDatasetConfigExcludeCloudStorageLocations getExcludeCloudS
 
 exclude_cloud_storage_locations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_locations StorageInsightsDatasetConfig#exclude_cloud_storage_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_locations StorageInsightsDatasetConfig#exclude_cloud_storage_locations}
 
 ---
 
@@ -1865,7 +1926,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1882,7 +1943,7 @@ public StorageInsightsDatasetConfigIncludeCloudStorageBuckets getIncludeCloudSto
 
 include_cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#include_cloud_storage_buckets StorageInsightsDatasetConfig#include_cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#include_cloud_storage_buckets StorageInsightsDatasetConfig#include_cloud_storage_buckets}
 
 ---
 
@@ -1896,7 +1957,7 @@ public StorageInsightsDatasetConfigIncludeCloudStorageLocations getIncludeCloudS
 
 include_cloud_storage_locations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#include_cloud_storage_locations StorageInsightsDatasetConfig#include_cloud_storage_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#include_cloud_storage_locations StorageInsightsDatasetConfig#include_cloud_storage_locations}
 
 ---
 
@@ -1910,7 +1971,7 @@ public java.lang.Boolean|IResolvable getIncludeNewlyCreatedBuckets();
 
 If set to true, the request includes all the newly created buckets in the dataset that meet the inclusion and exclusion rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#include_newly_created_buckets StorageInsightsDatasetConfig#include_newly_created_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#include_newly_created_buckets StorageInsightsDatasetConfig#include_newly_created_buckets}
 
 ---
 
@@ -1928,7 +1989,7 @@ Setting this field to true while creation will automatically link the created da
 -> **Note** A dataset config resource can only be destroyed once it is unlinked,
 so users must set this field to false to unlink the dataset and destroy the dataset config resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#link_dataset StorageInsightsDatasetConfig#link_dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#link_dataset StorageInsightsDatasetConfig#link_dataset}
 
 ---
 
@@ -1944,7 +2005,7 @@ Organization resource ID that the source projects should belong to.
 
 Projects that do not belong to the provided organization are not considered when creating the dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#organization_number StorageInsightsDatasetConfig#organization_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#organization_number StorageInsightsDatasetConfig#organization_number}
 
 ---
 
@@ -1958,7 +2019,7 @@ public java.lang.Boolean|IResolvable getOrganizationScope();
 
 Defines the options for providing a source organization for the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#organization_scope StorageInsightsDatasetConfig#organization_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#organization_scope StorageInsightsDatasetConfig#organization_scope}
 
 ---
 
@@ -1970,7 +2031,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}.
 
 ---
 
@@ -1984,7 +2045,7 @@ public StorageInsightsDatasetConfigSourceFolders getSourceFolders();
 
 source_folders block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#source_folders StorageInsightsDatasetConfig#source_folders}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#source_folders StorageInsightsDatasetConfig#source_folders}
 
 ---
 
@@ -1998,7 +2059,7 @@ public StorageInsightsDatasetConfigSourceProjects getSourceProjects();
 
 source_projects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#source_projects StorageInsightsDatasetConfig#source_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#source_projects StorageInsightsDatasetConfig#source_projects}
 
 ---
 
@@ -2012,7 +2073,7 @@ public StorageInsightsDatasetConfigTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#timeouts StorageInsightsDatasetConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#timeouts StorageInsightsDatasetConfig#timeouts}
 
 ---
 
@@ -2046,7 +2107,7 @@ public IResolvable|java.util.List<StorageInsightsDatasetConfigExcludeCloudStorag
 
 cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#cloud_storage_buckets StorageInsightsDatasetConfig#cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#cloud_storage_buckets StorageInsightsDatasetConfig#cloud_storage_buckets}
 
 ---
 
@@ -2084,7 +2145,7 @@ The list of cloud storage bucket names to exclude in the DatasetConfig.
 
 Exactly one of the bucket_name and bucket_prefix_regex should be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#bucket_name StorageInsightsDatasetConfig#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#bucket_name StorageInsightsDatasetConfig#bucket_name}
 
 ---
 
@@ -2101,7 +2162,7 @@ The list of regex patterns for bucket names matching the regex.
 Regex should follow the syntax specified in google/re2 on GitHub.
 Exactly one of the bucket_name and bucket_prefix_regex should be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#bucket_prefix_regex StorageInsightsDatasetConfig#bucket_prefix_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#bucket_prefix_regex StorageInsightsDatasetConfig#bucket_prefix_regex}
 
 ---
 
@@ -2135,7 +2196,7 @@ public java.util.List<java.lang.String> getLocations();
 
 The list of cloud storage locations to exclude in the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#locations StorageInsightsDatasetConfig#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#locations StorageInsightsDatasetConfig#locations}
 
 ---
 
@@ -2169,7 +2230,7 @@ public java.lang.String getType();
 
 Type of identity to use for the DatasetConfig. Possible values: ["IDENTITY_TYPE_PER_CONFIG", "IDENTITY_TYPE_PER_PROJECT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#type StorageInsightsDatasetConfig#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#type StorageInsightsDatasetConfig#type}
 
 ---
 
@@ -2203,7 +2264,7 @@ public IResolvable|java.util.List<StorageInsightsDatasetConfigIncludeCloudStorag
 
 cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#cloud_storage_buckets StorageInsightsDatasetConfig#cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#cloud_storage_buckets StorageInsightsDatasetConfig#cloud_storage_buckets}
 
 ---
 
@@ -2241,7 +2302,7 @@ The list of cloud storage bucket names to include in the DatasetConfig.
 
 Exactly one of the bucket_name and bucket_prefix_regex should be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#bucket_name StorageInsightsDatasetConfig#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#bucket_name StorageInsightsDatasetConfig#bucket_name}
 
 ---
 
@@ -2258,7 +2319,7 @@ The list of regex patterns for bucket names matching the regex.
 Regex should follow the syntax specified in google/re2 on GitHub.
 Exactly one of the bucket_name and bucket_prefix_regex should be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#bucket_prefix_regex StorageInsightsDatasetConfig#bucket_prefix_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#bucket_prefix_regex StorageInsightsDatasetConfig#bucket_prefix_regex}
 
 ---
 
@@ -2292,7 +2353,7 @@ public java.util.List<java.lang.String> getLocations();
 
 The list of cloud storage locations to include in the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#locations StorageInsightsDatasetConfig#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#locations StorageInsightsDatasetConfig#locations}
 
 ---
 
@@ -2338,7 +2399,7 @@ public java.util.List<java.lang.String> getFolderNumbers();
 
 The list of folder numbers to include in the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#folder_numbers StorageInsightsDatasetConfig#folder_numbers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#folder_numbers StorageInsightsDatasetConfig#folder_numbers}
 
 ---
 
@@ -2372,7 +2433,7 @@ public java.util.List<java.lang.String> getProjectNumbers();
 
 The list of project numbers to include in the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#project_numbers StorageInsightsDatasetConfig#project_numbers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#project_numbers StorageInsightsDatasetConfig#project_numbers}
 
 ---
 
@@ -2394,9 +2455,9 @@ StorageInsightsDatasetConfigTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#create StorageInsightsDatasetConfig#create}. |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#delete StorageInsightsDatasetConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#update StorageInsightsDatasetConfig#update}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#create StorageInsightsDatasetConfig#create}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#delete StorageInsightsDatasetConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#update StorageInsightsDatasetConfig#update}. |
 
 ---
 
@@ -2408,7 +2469,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#create StorageInsightsDatasetConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#create StorageInsightsDatasetConfig#create}.
 
 ---
 
@@ -2420,7 +2481,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#delete StorageInsightsDatasetConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#delete StorageInsightsDatasetConfig#delete}.
 
 ---
 
@@ -2432,7 +2493,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_dataset_config#update StorageInsightsDatasetConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_dataset_config#update StorageInsightsDatasetConfig#update}.
 
 ---
 

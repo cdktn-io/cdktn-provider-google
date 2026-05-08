@@ -4,7 +4,7 @@
 
 ### IamWorkforcePoolProvider <a name="IamWorkforcePoolProvider" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider google_iam_workforce_pool_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.putExtendedAttributesOauth2Client">putExtendedAttributesOauth2Client</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.putExtraAttributesOauth2Client">putExtraAttributesOauth2Client</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.putOidc">putOidc</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.putSaml">putSaml</a></code> | *No description.* |
@@ -81,12 +82,15 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetAttributeCondition">resetAttributeCondition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetAttributeMapping">resetAttributeMapping</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetDetailedAuditLogging">resetDetailedAuditLogging</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetDisabled">resetDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetDisplayName">resetDisplayName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetExtendedAttributesOauth2Client">resetExtendedAttributesOauth2Client</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetExtraAttributesOauth2Client">resetExtraAttributesOauth2Client</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetOidc">resetOidc</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetSaml">resetSaml</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetScimUsage">resetScimUsage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -400,6 +404,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putExtendedAttributesOauth2Client` <a name="putExtendedAttributesOauth2Client" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.putExtendedAttributesOauth2Client"></a>
+
+```typescript
+public putExtendedAttributesOauth2Client(value: IamWorkforcePoolProviderExtendedAttributesOauth2Client): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.putExtendedAttributesOauth2Client.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client">IamWorkforcePoolProviderExtendedAttributesOauth2Client</a>
+
+---
+
 ##### `putExtraAttributesOauth2Client` <a name="putExtraAttributesOauth2Client" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.putExtraAttributesOauth2Client"></a>
 
 ```typescript
@@ -466,6 +482,12 @@ public resetAttributeMapping(): void
 public resetDescription(): void
 ```
 
+##### `resetDetailedAuditLogging` <a name="resetDetailedAuditLogging" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetDetailedAuditLogging"></a>
+
+```typescript
+public resetDetailedAuditLogging(): void
+```
+
 ##### `resetDisabled` <a name="resetDisabled" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetDisabled"></a>
 
 ```typescript
@@ -476,6 +498,12 @@ public resetDisabled(): void
 
 ```typescript
 public resetDisplayName(): void
+```
+
+##### `resetExtendedAttributesOauth2Client` <a name="resetExtendedAttributesOauth2Client" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetExtendedAttributesOauth2Client"></a>
+
+```typescript
+public resetExtendedAttributesOauth2Client(): void
 ```
 
 ##### `resetExtraAttributesOauth2Client` <a name="resetExtraAttributesOauth2Client" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetExtraAttributesOauth2Client"></a>
@@ -500,6 +528,12 @@ public resetOidc(): void
 
 ```typescript
 public resetSaml(): void
+```
+
+##### `resetScimUsage` <a name="resetScimUsage" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetScimUsage"></a>
+
+```typescript
+public resetScimUsage(): void
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.resetTimeouts"></a>
@@ -611,7 +645,7 @@ The construct id used in the generated config for the IamWorkforcePoolProvider t
 
 The id of the existing IamWorkforcePoolProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,6 +675,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.extendedAttributesOauth2Client">extendedAttributesOauth2Client</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference">IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.extraAttributesOauth2Client">extraAttributesOauth2Client</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference">IamWorkforcePoolProviderExtraAttributesOauth2ClientOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.oidc">oidc</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidcOutputReference">IamWorkforcePoolProviderOidcOutputReference</a></code> | *No description.* |
@@ -650,24 +685,29 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.attributeConditionInput">attributeConditionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.attributeMappingInput">attributeMappingInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.detailedAuditLoggingInput">detailedAuditLoggingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.extendedAttributesOauth2ClientInput">extendedAttributesOauth2ClientInput</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client">IamWorkforcePoolProviderExtendedAttributesOauth2Client</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.extraAttributesOauth2ClientInput">extraAttributesOauth2ClientInput</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2Client">IamWorkforcePoolProviderExtraAttributesOauth2Client</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.oidcInput">oidcInput</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidc">IamWorkforcePoolProviderOidc</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.providerIdInput">providerIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.samlInput">samlInput</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderSaml">IamWorkforcePoolProviderSaml</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.scimUsageInput">scimUsageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts">IamWorkforcePoolProviderTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.workforcePoolIdInput">workforcePoolIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.attributeCondition">attributeCondition</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.attributeMapping">attributeMapping</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.detailedAuditLogging">detailedAuditLogging</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.providerId">providerId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.scimUsage">scimUsage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.workforcePoolId">workforcePoolId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -814,6 +854,16 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `extendedAttributesOauth2Client`<sup>Required</sup> <a name="extendedAttributesOauth2Client" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.extendedAttributesOauth2Client"></a>
+
+```typescript
+public readonly extendedAttributesOauth2Client: IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference">IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference</a>
+
+---
+
 ##### `extraAttributesOauth2Client`<sup>Required</sup> <a name="extraAttributesOauth2Client" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.extraAttributesOauth2Client"></a>
 
 ```typescript
@@ -904,6 +954,16 @@ public readonly descriptionInput: string;
 
 ---
 
+##### `detailedAuditLoggingInput`<sup>Optional</sup> <a name="detailedAuditLoggingInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.detailedAuditLoggingInput"></a>
+
+```typescript
+public readonly detailedAuditLoggingInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `disabledInput`<sup>Optional</sup> <a name="disabledInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.disabledInput"></a>
 
 ```typescript
@@ -921,6 +981,16 @@ public readonly displayNameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `extendedAttributesOauth2ClientInput`<sup>Optional</sup> <a name="extendedAttributesOauth2ClientInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.extendedAttributesOauth2ClientInput"></a>
+
+```typescript
+public readonly extendedAttributesOauth2ClientInput: IamWorkforcePoolProviderExtendedAttributesOauth2Client;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client">IamWorkforcePoolProviderExtendedAttributesOauth2Client</a>
 
 ---
 
@@ -984,6 +1054,16 @@ public readonly samlInput: IamWorkforcePoolProviderSaml;
 
 ---
 
+##### `scimUsageInput`<sup>Optional</sup> <a name="scimUsageInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.scimUsageInput"></a>
+
+```typescript
+public readonly scimUsageInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.timeoutsInput"></a>
 
 ```typescript
@@ -1034,6 +1114,16 @@ public readonly description: string;
 
 ---
 
+##### `detailedAuditLogging`<sup>Required</sup> <a name="detailedAuditLogging" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.detailedAuditLogging"></a>
+
+```typescript
+public readonly detailedAuditLogging: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `disabled`<sup>Required</sup> <a name="disabled" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.disabled"></a>
 
 ```typescript
@@ -1078,6 +1168,16 @@ public readonly location: string;
 
 ```typescript
 public readonly providerId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scimUsage`<sup>Required</sup> <a name="scimUsage" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProvider.property.scimUsage"></a>
+
+```typescript
+public readonly scimUsage: string;
 ```
 
 - *Type:* string
@@ -1138,15 +1238,18 @@ const iamWorkforcePoolProviderConfig: iamWorkforcePoolProvider.IamWorkforcePoolP
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.location">location</a></code> | <code>string</code> | The location for the resource. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.providerId">providerId</a></code> | <code>string</code> | The ID for the provider, which becomes the final component of the resource name. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.workforcePoolId">workforcePoolId</a></code> | <code>string</code> | The ID to use for the pool, which becomes the final component of the resource name. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.attributeCondition">attributeCondition</a></code> | <code>string</code> | A [Common Expression Language](https://opensource.google/projects/cel) expression, in plain text, to restrict what otherwise valid authentication credentials issued by the provider should not be accepted. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.attributeCondition">attributeCondition</a></code> | <code>string</code> | A [Common Expression Language](https://github.com/google/cel-spec) expression, in plain text, to restrict what otherwise valid authentication credentials issued by the provider should not be accepted. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.attributeMapping">attributeMapping</a></code> | <code>{[ key: string ]: string}</code> | Maps attributes from the authentication credentials issued by an external identity provider to Google Cloud attributes, such as 'subject' and 'segment'. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.description">description</a></code> | <code>string</code> | A user-specified description of the provider. Cannot exceed 256 characters. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.detailedAuditLogging">detailedAuditLogging</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, populates additional debug information in Cloud Audit Logs for this provider. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the provider is disabled. You cannot use a disabled provider to exchange tokens. However, existing tokens still grant access. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.displayName">displayName</a></code> | <code>string</code> | A user-specified display name for the provider. Cannot exceed 32 characters. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.extendedAttributesOauth2Client">extendedAttributesOauth2Client</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client">IamWorkforcePoolProviderExtendedAttributesOauth2Client</a></code> | extended_attributes_oauth2_client block. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.extraAttributesOauth2Client">extraAttributesOauth2Client</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2Client">IamWorkforcePoolProviderExtraAttributesOauth2Client</a></code> | extra_attributes_oauth2_client block. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.oidc">oidc</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderOidc">IamWorkforcePoolProviderOidc</a></code> | oidc block. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.saml">saml</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderSaml">IamWorkforcePoolProviderSaml</a></code> | saml block. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.scimUsage">scimUsage</a></code> | <code>string</code> | Agentspace only. Specifies whether the workforce identity pool provider uses SCIM-managed groups instead of the 'google.groups' attribute mapping for authorization checks. |
 | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts">IamWorkforcePoolProviderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1231,7 +1334,7 @@ public readonly location: string;
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#location IamWorkforcePoolProvider#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#location IamWorkforcePoolProvider#location}
 
 ---
 
@@ -1248,7 +1351,7 @@ The ID for the provider, which becomes the final component of the resource name.
 This value must be 4-32 characters, and may contain the characters [a-z0-9-].
 The prefix 'gcp-' is reserved for use by Google, and may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#provider_id IamWorkforcePoolProvider#provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#provider_id IamWorkforcePoolProvider#provider_id}
 
 ---
 
@@ -1266,7 +1369,7 @@ The IDs must be a globally unique string of 6 to 63 lowercase letters, digits, o
 It must start with a letter, and cannot have a trailing hyphen.
 The prefix 'gcp-' is reserved for use by Google, and may not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#workforce_pool_id IamWorkforcePoolProvider#workforce_pool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#workforce_pool_id IamWorkforcePoolProvider#workforce_pool_id}
 
 ---
 
@@ -1278,7 +1381,7 @@ public readonly attributeCondition: string;
 
 - *Type:* string
 
-A [Common Expression Language](https://opensource.google/projects/cel) expression, in plain text, to restrict what otherwise valid authentication credentials issued by the provider should not be accepted.
+A [Common Expression Language](https://github.com/google/cel-spec) expression, in plain text, to restrict what otherwise valid authentication credentials issued by the provider should not be accepted.
 
 The expression must output a boolean representing whether to allow the federation.
 
@@ -1296,7 +1399,7 @@ The following example shows how to only allow credentials with a mapped 'google.
 "'admins' in google.groups"
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#attribute_condition IamWorkforcePoolProvider#attribute_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#attribute_condition IamWorkforcePoolProvider#attribute_condition}
 
 ---
 
@@ -1339,7 +1442,7 @@ to Google Cloud resources. For example:
   * 'attribute.{custom_attribute}':
     'principalSet://iam.googleapis.com/locations/{location}/workforcePools/{pool}/attribute.{custom_attribute}/{value}'
 
-Each value must be a [Common Expression Language](https://opensource.google/projects/cel)
+Each value must be a [Common Expression Language](https://github.com/google/cel-spec)
 function that maps an identity provider credential to the normalized attribute specified
 by the corresponding map key.
 
@@ -1359,7 +1462,7 @@ on a Google token:
 An object containing a list of '"key": value' pairs.
 Example: '{ "name": "wrench", "mass": "1.3kg", "count": "3" }'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#attribute_mapping IamWorkforcePoolProvider#attribute_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#attribute_mapping IamWorkforcePoolProvider#attribute_mapping}
 
 ---
 
@@ -1373,7 +1476,23 @@ public readonly description: string;
 
 A user-specified description of the provider. Cannot exceed 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#description IamWorkforcePoolProvider#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#description IamWorkforcePoolProvider#description}
+
+---
+
+##### `detailedAuditLogging`<sup>Optional</sup> <a name="detailedAuditLogging" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.detailedAuditLogging"></a>
+
+```typescript
+public readonly detailedAuditLogging: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+If true, populates additional debug information in Cloud Audit Logs for this provider.
+
+Logged attribute mappings and values can be found in 'sts.googleapis.com' data access logs. Default value is false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#detailed_audit_logging IamWorkforcePoolProvider#detailed_audit_logging}
 
 ---
 
@@ -1387,7 +1506,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether the provider is disabled. You cannot use a disabled provider to exchange tokens. However, existing tokens still grant access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#disabled IamWorkforcePoolProvider#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#disabled IamWorkforcePoolProvider#disabled}
 
 ---
 
@@ -1401,7 +1520,21 @@ public readonly displayName: string;
 
 A user-specified display name for the provider. Cannot exceed 32 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#display_name IamWorkforcePoolProvider#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#display_name IamWorkforcePoolProvider#display_name}
+
+---
+
+##### `extendedAttributesOauth2Client`<sup>Optional</sup> <a name="extendedAttributesOauth2Client" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.extendedAttributesOauth2Client"></a>
+
+```typescript
+public readonly extendedAttributesOauth2Client: IamWorkforcePoolProviderExtendedAttributesOauth2Client;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client">IamWorkforcePoolProviderExtendedAttributesOauth2Client</a>
+
+extended_attributes_oauth2_client block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#extended_attributes_oauth2_client IamWorkforcePoolProvider#extended_attributes_oauth2_client}
 
 ---
 
@@ -1415,7 +1548,7 @@ public readonly extraAttributesOauth2Client: IamWorkforcePoolProviderExtraAttrib
 
 extra_attributes_oauth2_client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#extra_attributes_oauth2_client IamWorkforcePoolProvider#extra_attributes_oauth2_client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#extra_attributes_oauth2_client IamWorkforcePoolProvider#extra_attributes_oauth2_client}
 
 ---
 
@@ -1427,7 +1560,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#id IamWorkforcePoolProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1444,7 +1577,7 @@ public readonly oidc: IamWorkforcePoolProviderOidc;
 
 oidc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#oidc IamWorkforcePoolProvider#oidc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#oidc IamWorkforcePoolProvider#oidc}
 
 ---
 
@@ -1458,7 +1591,28 @@ public readonly saml: IamWorkforcePoolProviderSaml;
 
 saml block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#saml IamWorkforcePoolProvider#saml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#saml IamWorkforcePoolProvider#saml}
+
+---
+
+##### `scimUsage`<sup>Optional</sup> <a name="scimUsage" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderConfig.property.scimUsage"></a>
+
+```typescript
+public readonly scimUsage: string;
+```
+
+- *Type:* string
+
+Agentspace only. Specifies whether the workforce identity pool provider uses SCIM-managed groups instead of the 'google.groups' attribute mapping for authorization checks.
+
+The 'scimUsage' and 'extendedAttributesOauth2Client' fields are
+mutually exclusive. A request that enables both fields on the same
+workforce identity pool provider will produce an error.
+* SCIM_USAGE_UNSPECIFIED: Default behaviour
+* ENABLED_FOR_GROUPS: Use SCIM-managed groups instead of the 'google.groups'
+  attribute mapping for authorization checks Possible values: ["SCIM_USAGE_UNSPECIFIED", "ENABLED_FOR_GROUPS"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#scim_usage IamWorkforcePoolProvider#scim_usage}
 
 ---
 
@@ -1472,7 +1626,210 @@ public readonly timeouts: IamWorkforcePoolProviderTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#timeouts IamWorkforcePoolProvider#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#timeouts IamWorkforcePoolProvider#timeouts}
+
+---
+
+### IamWorkforcePoolProviderExtendedAttributesOauth2Client <a name="IamWorkforcePoolProviderExtendedAttributesOauth2Client" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client.Initializer"></a>
+
+```typescript
+import { iamWorkforcePoolProvider } from '@cdktn/provider-google'
+
+const iamWorkforcePoolProviderExtendedAttributesOauth2Client: iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client.property.attributesType">attributesType</a></code> | <code>string</code> | Represents the IdP and type of claims that should be fetched. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client.property.clientId">clientId</a></code> | <code>string</code> | The OAuth 2.0 client ID for retrieving extended attributes from the identity provider. Required to get the Access Token using client credentials grant flow. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client.property.clientSecret">clientSecret</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret</a></code> | client_secret block. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client.property.issuerUri">issuerUri</a></code> | <code>string</code> | The OIDC identity provider's issuer URI. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client.property.queryParameters">queryParameters</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters">IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters</a></code> | query_parameters block. |
+
+---
+
+##### `attributesType`<sup>Required</sup> <a name="attributesType" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client.property.attributesType"></a>
+
+```typescript
+public readonly attributesType: string;
+```
+
+- *Type:* string
+
+Represents the IdP and type of claims that should be fetched.
+
+* AZURE_AD_GROUPS_ID:  Used to get the user's group claims from the Azure AD identity provider
+using configuration provided in ExtendedAttributesOAuth2Client and 'id'
+property of the 'microsoft.graph.group' object is used for claim mapping. See
+https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0#properties
+for more details on 'microsoft.graph.group' properties. The
+group IDs obtained from Azure AD are present in 'assertion.groups' for
+OIDC providers and 'assertion.attributes.groups' for SAML providers for
+attribute mapping. Possible values: ["AZURE_AD_GROUPS_ID"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#attributes_type IamWorkforcePoolProvider#attributes_type}
+
+---
+
+##### `clientId`<sup>Required</sup> <a name="clientId" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client.property.clientId"></a>
+
+```typescript
+public readonly clientId: string;
+```
+
+- *Type:* string
+
+The OAuth 2.0 client ID for retrieving extended attributes from the identity provider. Required to get the Access Token using client credentials grant flow.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#client_id IamWorkforcePoolProvider#client_id}
+
+---
+
+##### `clientSecret`<sup>Required</sup> <a name="clientSecret" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client.property.clientSecret"></a>
+
+```typescript
+public readonly clientSecret: IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret</a>
+
+client_secret block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#client_secret IamWorkforcePoolProvider#client_secret}
+
+---
+
+##### `issuerUri`<sup>Required</sup> <a name="issuerUri" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client.property.issuerUri"></a>
+
+```typescript
+public readonly issuerUri: string;
+```
+
+- *Type:* string
+
+The OIDC identity provider's issuer URI.
+
+Must be a valid URI using the 'https' scheme. Required to get the OIDC discovery document.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#issuer_uri IamWorkforcePoolProvider#issuer_uri}
+
+---
+
+##### `queryParameters`<sup>Optional</sup> <a name="queryParameters" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client.property.queryParameters"></a>
+
+```typescript
+public readonly queryParameters: IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters">IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters</a>
+
+query_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#query_parameters IamWorkforcePoolProvider#query_parameters}
+
+---
+
+### IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret <a name="IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret.Initializer"></a>
+
+```typescript
+import { iamWorkforcePoolProvider } from '@cdktn/provider-google'
+
+const iamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret: iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret.property.value">value</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue</a></code> | value block. |
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret.property.value"></a>
+
+```typescript
+public readonly value: IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue</a>
+
+value block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#value IamWorkforcePoolProvider#value}
+
+---
+
+### IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue <a name="IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.Initializer"></a>
+
+```typescript
+import { iamWorkforcePoolProvider } from '@cdktn/provider-google'
+
+const iamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue: iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.property.plainText">plainText</a></code> | <code>string</code> | The plain text of the client secret value. |
+
+---
+
+##### `plainText`<sup>Required</sup> <a name="plainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue.property.plainText"></a>
+
+```typescript
+public readonly plainText: string;
+```
+
+- *Type:* string
+
+The plain text of the client secret value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#plain_text IamWorkforcePoolProvider#plain_text}
+
+---
+
+### IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters <a name="IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters.Initializer"></a>
+
+```typescript
+import { iamWorkforcePoolProvider } from '@cdktn/provider-google'
+
+const iamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters: iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters.property.filter">filter</a></code> | <code>string</code> | The filter used to request specific records from IdP. |
+
+---
+
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters.property.filter"></a>
+
+```typescript
+public readonly filter: string;
+```
+
+- *Type:* string
+
+The filter used to request specific records from IdP.
+
+In case of attributes type as AZURE_AD_GROUPS_ID, it represents the
+filter used to request specific groups for users from IdP. By default, all of the groups associated with the user are fetched. The
+groups should be security enabled. See https://learn.microsoft.com/en-us/graph/search-query-parameter for more details.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#filter IamWorkforcePoolProvider#filter}
 
 ---
 
@@ -1519,9 +1876,17 @@ https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0#
 for more details on 'microsoft.graph.group' properties. The
 group IDs obtained from Azure AD are present in 'assertion.groups' for
 OIDC providers and 'assertion.attributes.groups' for SAML providers for
-attribute mapping. Possible values: ["AZURE_AD_GROUPS_MAIL", "AZURE_AD_GROUPS_ID"]
+attribute mapping.
+* AZURE_AD_GROUPS_DISPLAY_NAME: Used to get the user's group claims from the Azure AD identity provider
+using configuration provided in ExtraAttributesOAuth2Client and 'displayName' property
+of the 'microsoft.graph.group' object is used for claim mapping. See
+https://learn.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0#properties
+for more details on 'microsoft.graph.group' properties. The
+group displayNames obtained from Azure AD are present in 'assertion.groups' for
+OIDC providers and 'assertion.attributes.groups' for SAML providers for
+attribute mapping. Possible values: ["AZURE_AD_GROUPS_MAIL", "AZURE_AD_GROUPS_ID", "AZURE_AD_GROUPS_DISPLAY_NAME"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#attributes_type IamWorkforcePoolProvider#attributes_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#attributes_type IamWorkforcePoolProvider#attributes_type}
 
 ---
 
@@ -1535,7 +1900,7 @@ public readonly clientId: string;
 
 The OAuth 2.0 client ID for retrieving extra attributes from the identity provider. Required to get the Access Token using client credentials grant flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#client_id IamWorkforcePoolProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#client_id IamWorkforcePoolProvider#client_id}
 
 ---
 
@@ -1549,7 +1914,7 @@ public readonly clientSecret: IamWorkforcePoolProviderExtraAttributesOauth2Clien
 
 client_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#client_secret IamWorkforcePoolProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#client_secret IamWorkforcePoolProvider#client_secret}
 
 ---
 
@@ -1565,7 +1930,7 @@ The OIDC identity provider's issuer URI.
 
 Must be a valid URI using the 'https' scheme. Required to get the OIDC discovery document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#issuer_uri IamWorkforcePoolProvider#issuer_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#issuer_uri IamWorkforcePoolProvider#issuer_uri}
 
 ---
 
@@ -1579,7 +1944,7 @@ public readonly queryParameters: IamWorkforcePoolProviderExtraAttributesOauth2Cl
 
 query_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#query_parameters IamWorkforcePoolProvider#query_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#query_parameters IamWorkforcePoolProvider#query_parameters}
 
 ---
 
@@ -1611,7 +1976,7 @@ public readonly value: IamWorkforcePoolProviderExtraAttributesOauth2ClientClient
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#value IamWorkforcePoolProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#value IamWorkforcePoolProvider#value}
 
 ---
 
@@ -1643,7 +2008,7 @@ public readonly plainText: string;
 
 The plain text of the client secret value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#plain_text IamWorkforcePoolProvider#plain_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#plain_text IamWorkforcePoolProvider#plain_text}
 
 ---
 
@@ -1675,11 +2040,13 @@ public readonly filter: string;
 
 The filter used to request specific records from IdP.
 
-In case of attributes type as AZURE_AD_GROUPS_MAIL and AZURE_AD_GROUPS_ID, it represents the
-filter used to request specific groups for users from IdP. By default, all of the groups associated with the user are fetched. The
-groups should be security enabled. See https://learn.microsoft.com/en-us/graph/search-query-parameter for more details.
+In case of attributes type as AZURE_AD_GROUPS_MAIL,
+AZURE_AD_GROUPS_ID and AZURE_AD_GROUPS_DISPLAY_NAME, it represents the filter used to request specific
+groups for users from IdP. By default, all of the groups associated with the user are fetched. The groups
+should be security enabled. See https://learn.microsoft.com/en-us/graph/search-query-parameter for more
+details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#filter IamWorkforcePoolProvider#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#filter IamWorkforcePoolProvider#filter}
 
 ---
 
@@ -1715,7 +2082,7 @@ public readonly clientId: string;
 
 The client ID. Must match the audience claim of the JWT issued by the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#client_id IamWorkforcePoolProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#client_id IamWorkforcePoolProvider#client_id}
 
 ---
 
@@ -1729,7 +2096,7 @@ public readonly issuerUri: string;
 
 The OIDC issuer URI. Must be a valid URI using the 'https' scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#issuer_uri IamWorkforcePoolProvider#issuer_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#issuer_uri IamWorkforcePoolProvider#issuer_uri}
 
 ---
 
@@ -1743,7 +2110,7 @@ public readonly clientSecret: IamWorkforcePoolProviderOidcClientSecret;
 
 client_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#client_secret IamWorkforcePoolProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#client_secret IamWorkforcePoolProvider#client_secret}
 
 ---
 
@@ -1781,7 +2148,7 @@ the following fields:
 }
 ```
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#jwks_json IamWorkforcePoolProvider#jwks_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#jwks_json IamWorkforcePoolProvider#jwks_json}
 
 ---
 
@@ -1795,7 +2162,7 @@ public readonly webSsoConfig: IamWorkforcePoolProviderOidcWebSsoConfig;
 
 web_sso_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#web_sso_config IamWorkforcePoolProvider#web_sso_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#web_sso_config IamWorkforcePoolProvider#web_sso_config}
 
 ---
 
@@ -1827,7 +2194,7 @@ public readonly value: IamWorkforcePoolProviderOidcClientSecretValue;
 
 value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#value IamWorkforcePoolProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#value IamWorkforcePoolProvider#value}
 
 ---
 
@@ -1859,7 +2226,7 @@ public readonly plainText: string;
 
 The plain text of the client secret value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#plain_text IamWorkforcePoolProvider#plain_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#plain_text IamWorkforcePoolProvider#plain_text}
 
 ---
 
@@ -1896,7 +2263,7 @@ The behavior for how OIDC Claims are included in the 'assertion' object used for
 * MERGE_USER_INFO_OVER_ID_TOKEN_CLAIMS: Merge the UserInfo Endpoint Claims with ID Token Claims, preferring UserInfo Claim Values for the same Claim Name. This option is available only for the Authorization Code Flow.
 * ONLY_ID_TOKEN_CLAIMS: Only include ID Token Claims. Possible values: ["MERGE_USER_INFO_OVER_ID_TOKEN_CLAIMS", "ONLY_ID_TOKEN_CLAIMS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#assertion_claims_behavior IamWorkforcePoolProvider#assertion_claims_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#assertion_claims_behavior IamWorkforcePoolProvider#assertion_claims_behavior}
 
 ---
 
@@ -1914,7 +2281,7 @@ The 'CODE' Response Type is recommended to avoid the Implicit Flow, for security
 * CODE: The 'response_type=code' selection uses the Authorization Code Flow for web sign-in. Requires a configured client secret.
 * ID_TOKEN: The 'response_type=id_token' selection uses the Implicit Flow for web sign-in. Possible values: ["CODE", "ID_TOKEN"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#response_type IamWorkforcePoolProvider#response_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#response_type IamWorkforcePoolProvider#response_type}
 
 ---
 
@@ -1931,7 +2298,7 @@ Additional scopes to request for in the OIDC authentication request on top of sc
 By default, the 'openid', 'profile' and 'email' scopes that are supported by the identity provider are requested.
 Each additional scope may be at most 256 characters. A maximum of 10 additional scopes may be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#additional_scopes IamWorkforcePoolProvider#additional_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#additional_scopes IamWorkforcePoolProvider#additional_scopes}
 
 ---
 
@@ -1978,7 +2345,7 @@ When updating the provider's metadata xml, at least one non-expired signing key
 must overlap with the existing metadata. This requirement is skipped if there are
 no non-expired signing keys present in the existing metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#idp_metadata_xml IamWorkforcePoolProvider#idp_metadata_xml}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#idp_metadata_xml IamWorkforcePoolProvider#idp_metadata_xml}
 
 ---
 
@@ -1996,9 +2363,9 @@ const iamWorkforcePoolProviderTimeouts: iamWorkforcePoolProvider.IamWorkforcePoo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#create IamWorkforcePoolProvider#create}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#delete IamWorkforcePoolProvider#delete}. |
-| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#update IamWorkforcePoolProvider#update}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#create IamWorkforcePoolProvider#create}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#delete IamWorkforcePoolProvider#delete}. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#update IamWorkforcePoolProvider#update}. |
 
 ---
 
@@ -2010,7 +2377,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#create IamWorkforcePoolProvider#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#create IamWorkforcePoolProvider#create}.
 
 ---
 
@@ -2022,7 +2389,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#delete IamWorkforcePoolProvider#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#delete IamWorkforcePoolProvider#delete}.
 
 ---
 
@@ -2034,11 +2401,1254 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_workforce_pool_provider#update IamWorkforcePoolProvider#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_workforce_pool_provider#update IamWorkforcePoolProvider#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference <a name="IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.Initializer"></a>
+
+```typescript
+import { iamWorkforcePoolProvider } from '@cdktn/provider-google'
+
+new iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.putValue">putValue</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.resetValue">resetValue</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putValue` <a name="putValue" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.putValue"></a>
+
+```typescript
+public putValue(value: IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.putValue.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue</a>
+
+---
+
+##### `resetValue` <a name="resetValue" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.resetValue"></a>
+
+```typescript
+public resetValue(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.property.value">value</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.property.valueInput">valueInput</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.property.value"></a>
+
+```typescript
+public readonly value: IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference</a>
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.property.valueInput"></a>
+
+```typescript
+public readonly valueInput: IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret</a>
+
+---
+
+
+### IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference <a name="IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.Initializer"></a>
+
+```typescript
+import { iamWorkforcePoolProvider } from '@cdktn/provider-google'
+
+new iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.thumbprint">thumbprint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextInput">plainTextInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainText">plainText</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `thumbprint`<sup>Required</sup> <a name="thumbprint" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.thumbprint"></a>
+
+```typescript
+public readonly thumbprint: string;
+```
+
+- *Type:* string
+
+---
+
+##### `plainTextInput`<sup>Optional</sup> <a name="plainTextInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainTextInput"></a>
+
+```typescript
+public readonly plainTextInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `plainText`<sup>Required</sup> <a name="plainText" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.plainText"></a>
+
+```typescript
+public readonly plainText: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValueOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretValue</a>
+
+---
+
+
+### IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference <a name="IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.Initializer"></a>
+
+```typescript
+import { iamWorkforcePoolProvider } from '@cdktn/provider-google'
+
+new iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.putClientSecret">putClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.putQueryParameters">putQueryParameters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.resetQueryParameters">resetQueryParameters</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putClientSecret` <a name="putClientSecret" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.putClientSecret"></a>
+
+```typescript
+public putClientSecret(value: IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.putClientSecret.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret</a>
+
+---
+
+##### `putQueryParameters` <a name="putQueryParameters" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.putQueryParameters"></a>
+
+```typescript
+public putQueryParameters(value: IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.putQueryParameters.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters">IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters</a>
+
+---
+
+##### `resetQueryParameters` <a name="resetQueryParameters" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.resetQueryParameters"></a>
+
+```typescript
+public resetQueryParameters(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.clientSecret">clientSecret</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.queryParameters">queryParameters</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference">IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.attributesTypeInput">attributesTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.clientIdInput">clientIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.clientSecretInput">clientSecretInput</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.issuerUriInput">issuerUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.queryParametersInput">queryParametersInput</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters">IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.attributesType">attributesType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.issuerUri">issuerUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client">IamWorkforcePoolProviderExtendedAttributesOauth2Client</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientSecret`<sup>Required</sup> <a name="clientSecret" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.clientSecret"></a>
+
+```typescript
+public readonly clientSecret: IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecretOutputReference</a>
+
+---
+
+##### `queryParameters`<sup>Required</sup> <a name="queryParameters" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.queryParameters"></a>
+
+```typescript
+public readonly queryParameters: IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference">IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference</a>
+
+---
+
+##### `attributesTypeInput`<sup>Optional</sup> <a name="attributesTypeInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.attributesTypeInput"></a>
+
+```typescript
+public readonly attributesTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientIdInput`<sup>Optional</sup> <a name="clientIdInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.clientIdInput"></a>
+
+```typescript
+public readonly clientIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientSecretInput`<sup>Optional</sup> <a name="clientSecretInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.clientSecretInput"></a>
+
+```typescript
+public readonly clientSecretInput: IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret">IamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret</a>
+
+---
+
+##### `issuerUriInput`<sup>Optional</sup> <a name="issuerUriInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.issuerUriInput"></a>
+
+```typescript
+public readonly issuerUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `queryParametersInput`<sup>Optional</sup> <a name="queryParametersInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.queryParametersInput"></a>
+
+```typescript
+public readonly queryParametersInput: IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters">IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters</a>
+
+---
+
+##### `attributesType`<sup>Required</sup> <a name="attributesType" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.attributesType"></a>
+
+```typescript
+public readonly attributesType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientId`<sup>Required</sup> <a name="clientId" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.clientId"></a>
+
+```typescript
+public readonly clientId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `issuerUri`<sup>Required</sup> <a name="issuerUri" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.issuerUri"></a>
+
+```typescript
+public readonly issuerUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IamWorkforcePoolProviderExtendedAttributesOauth2Client;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2Client">IamWorkforcePoolProviderExtendedAttributesOauth2Client</a>
+
+---
+
+
+### IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference <a name="IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.Initializer"></a>
+
+```typescript
+import { iamWorkforcePoolProvider } from '@cdktn/provider-google'
+
+new iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.resetFilter">resetFilter</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetFilter` <a name="resetFilter" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.resetFilter"></a>
+
+```typescript
+public resetFilter(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.property.filterInput">filterInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.property.filter">filter</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters">IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `filterInput`<sup>Optional</sup> <a name="filterInput" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.property.filterInput"></a>
+
+```typescript
+public readonly filterInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.property.filter"></a>
+
+```typescript
+public readonly filter: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParametersOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters">IamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters</a>
+
+---
+
 
 ### IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference <a name="IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference" id="@cdktn/provider-google.iamWorkforcePoolProvider.IamWorkforcePoolProviderExtraAttributesOauth2ClientClientSecretOutputReference"></a>
 

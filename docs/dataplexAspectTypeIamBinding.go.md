@@ -4,12 +4,12 @@
 
 ### DataplexAspectTypeIamBinding <a name="DataplexAspectTypeIamBinding" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding google_dataplex_aspect_type_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding google_dataplex_aspect_type_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.NewDataplexAspectTypeIamBinding(scope Construct, id *string, config DataplexAspectTypeIamBindingConfig) DataplexAspectTypeIamBinding
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.DataplexAspectTypeIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DataplexAspectTypeIamBindi
 
 The id of the existing DataplexAspectTypeIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexaspecttypeiambinding"
 
 &dataplexaspecttypeiambinding.DataplexAspectTypeIamBindingCondition {
 	Expression: *string,
@@ -908,9 +908,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspectty
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#expression DataplexAspectTypeIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#title DataplexAspectTypeIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#description DataplexAspectTypeIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#expression DataplexAspectTypeIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#title DataplexAspectTypeIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#description DataplexAspectTypeIamBinding#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#expression DataplexAspectTypeIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#expression DataplexAspectTypeIamBinding#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#title DataplexAspectTypeIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#title DataplexAspectTypeIamBinding#title}.
 
 ---
 
@@ -946,7 +946,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#description DataplexAspectTypeIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#description DataplexAspectTypeIamBinding#description}.
 
 ---
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexaspecttypeiambinding"
 
 &dataplexaspecttypeiambinding.DataplexAspectTypeIamBindingConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspectty
 	AspectTypeId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -986,13 +986,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspectty
 | <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.aspectTypeId">AspectTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#aspect_type_id DataplexAspectTypeIamBinding#aspect_type_id}. |
-| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#members DataplexAspectTypeIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#role DataplexAspectTypeIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.aspectTypeId">AspectTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#aspect_type_id DataplexAspectTypeIamBinding#aspect_type_id}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#members DataplexAspectTypeIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#role DataplexAspectTypeIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingCondition">DataplexAspectTypeIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#id DataplexAspectTypeIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#location DataplexAspectTypeIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#project DataplexAspectTypeIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#id DataplexAspectTypeIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#location DataplexAspectTypeIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#project DataplexAspectTypeIamBinding#project}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ AspectTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#aspect_type_id DataplexAspectTypeIamBinding#aspect_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#aspect_type_id DataplexAspectTypeIamBinding#aspect_type_id}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#members DataplexAspectTypeIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#members DataplexAspectTypeIamBinding#members}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#role DataplexAspectTypeIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#role DataplexAspectTypeIamBinding#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Condition DataplexAspectTypeIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#condition DataplexAspectTypeIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#condition DataplexAspectTypeIamBinding#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#id DataplexAspectTypeIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#id DataplexAspectTypeIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#location DataplexAspectTypeIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#location DataplexAspectTypeIamBinding#location}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type_iam_binding#project DataplexAspectTypeIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type_iam_binding#project DataplexAspectTypeIamBinding#project}.
 
 ---
 
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexAspectTypeIamBinding.DataplexAspectTypeIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexaspecttypeiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexaspecttypeiambinding"
 
 dataplexaspecttypeiambinding.NewDataplexAspectTypeIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexAspectTypeIamBindingConditionOutputReference
 ```

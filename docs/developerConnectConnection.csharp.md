@@ -4,7 +4,7 @@
 
 ### DeveloperConnectConnection <a name="DeveloperConnectConnection" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection google_developer_connect_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection google_developer_connect_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.Initializer"></a>
 
@@ -81,6 +81,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.putGithubEnterpriseConfig">PutGithubEnterpriseConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.putGitlabConfig">PutGitlabConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.putGitlabEnterpriseConfig">PutGitlabEnterpriseConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.putHttpConfig">PutHttpConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.resetAnnotations">ResetAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.resetBitbucketCloudConfig">ResetBitbucketCloudConfig</a></code> | *No description.* |
@@ -92,6 +93,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.resetGithubEnterpriseConfig">ResetGithubEnterpriseConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.resetGitlabConfig">ResetGitlabConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.resetGitlabEnterpriseConfig">ResetGitlabEnterpriseConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.resetHttpConfig">ResetHttpConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.resetProject">ResetProject</a></code> | *No description.* |
@@ -492,6 +494,18 @@ private void PutGitlabEnterpriseConfig(DeveloperConnectConnectionGitlabEnterpris
 
 ---
 
+##### `PutHttpConfig` <a name="PutHttpConfig" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.putHttpConfig"></a>
+
+```csharp
+private void PutHttpConfig(DeveloperConnectConnectionHttpConfig Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.putHttpConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig">DeveloperConnectConnectionHttpConfig</a>
+
+---
+
 ##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.putTimeouts"></a>
 
 ```csharp
@@ -562,6 +576,12 @@ private void ResetGitlabConfig()
 
 ```csharp
 private void ResetGitlabEnterpriseConfig()
+```
+
+##### `ResetHttpConfig` <a name="ResetHttpConfig" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.resetHttpConfig"></a>
+
+```csharp
+private void ResetHttpConfig()
 ```
 
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.resetId"></a>
@@ -691,7 +711,7 @@ The construct id used in the generated config for the DeveloperConnectConnection
 
 The id of the existing DeveloperConnectConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -732,6 +752,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.githubEnterpriseConfig">GithubEnterpriseConfig</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigOutputReference">DeveloperConnectConnectionGithubEnterpriseConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.gitlabConfig">GitlabConfig</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigOutputReference">DeveloperConnectConnectionGitlabConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.gitlabEnterpriseConfig">GitlabEnterpriseConfig</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference">DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.httpConfig">HttpConfig</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference">DeveloperConnectConnectionHttpConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.installationState">InstallationState</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionInstallationStateList">DeveloperConnectConnectionInstallationStateList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.reconciling">Reconciling</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
@@ -750,6 +771,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.githubEnterpriseConfigInput">GithubEnterpriseConfigInput</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfig">DeveloperConnectConnectionGithubEnterpriseConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.gitlabConfigInput">GitlabConfigInput</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfig">DeveloperConnectConnectionGitlabConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.gitlabEnterpriseConfigInput">GitlabEnterpriseConfigInput</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfig">DeveloperConnectConnectionGitlabEnterpriseConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.httpConfigInput">HttpConfigInput</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig">DeveloperConnectConnectionHttpConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.locationInput">LocationInput</a></code> | <code>string</code> | *No description.* |
@@ -1018,6 +1040,16 @@ public DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference GitlabEnt
 
 ---
 
+##### `HttpConfig`<sup>Required</sup> <a name="HttpConfig" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.httpConfig"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigOutputReference HttpConfig { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference">DeveloperConnectConnectionHttpConfigOutputReference</a>
+
+---
+
 ##### `InstallationState`<sup>Required</sup> <a name="InstallationState" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.installationState"></a>
 
 ```csharp
@@ -1195,6 +1227,16 @@ public DeveloperConnectConnectionGitlabEnterpriseConfig GitlabEnterpriseConfigIn
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfig">DeveloperConnectConnectionGitlabEnterpriseConfig</a>
+
+---
+
+##### `HttpConfigInput`<sup>Optional</sup> <a name="HttpConfigInput" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection.property.httpConfigInput"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfig HttpConfigInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig">DeveloperConnectConnectionHttpConfig</a>
 
 ---
 
@@ -1384,7 +1426,7 @@ public DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredential Author
 
 authorizer_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#authorizer_credential DeveloperConnectConnection#authorizer_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#authorizer_credential DeveloperConnectConnection#authorizer_credential}
 
 ---
 
@@ -1398,7 +1440,7 @@ public DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredential Re
 
 read_authorizer_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#read_authorizer_credential DeveloperConnectConnection#read_authorizer_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#read_authorizer_credential DeveloperConnectConnection#read_authorizer_credential}
 
 ---
 
@@ -1416,7 +1458,7 @@ Immutable. SecretManager resource containing the webhook secret used to verify w
 events, formatted as 'projects/* /secrets/* /versions/*'. This is used to
 validate and create webhooks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#webhook_secret_secret_version DeveloperConnectConnection#webhook_secret_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#webhook_secret_secret_version DeveloperConnectConnection#webhook_secret_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1432,7 +1474,7 @@ public string Workspace { get; set; }
 
 Required. The Bitbucket Cloud Workspace ID to be connected to Google Cloud Platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#workspace DeveloperConnectConnection#workspace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#workspace DeveloperConnectConnection#workspace}
 
 ---
 
@@ -1466,7 +1508,7 @@ public string UserTokenSecretVersion { get; set; }
 
 Required. A SecretManager resource containing the user token that authorizes the Developer Connect connection. Format: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1502,7 +1544,7 @@ public string UserTokenSecretVersion { get; set; }
 
 Required. A SecretManager resource containing the user token that authorizes the Developer Connect connection. Format: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1548,7 +1590,7 @@ public DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredential A
 
 authorizer_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#authorizer_credential DeveloperConnectConnection#authorizer_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#authorizer_credential DeveloperConnectConnection#authorizer_credential}
 
 ---
 
@@ -1562,7 +1604,7 @@ public string HostUri { get; set; }
 
 Required. The URI of the Bitbucket Data Center host this connection is for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#host_uri DeveloperConnectConnection#host_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#host_uri DeveloperConnectConnection#host_uri}
 
 ---
 
@@ -1576,7 +1618,7 @@ public DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredenti
 
 read_authorizer_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#read_authorizer_credential DeveloperConnectConnection#read_authorizer_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#read_authorizer_credential DeveloperConnectConnection#read_authorizer_credential}
 
 ---
 
@@ -1594,7 +1636,7 @@ Immutable. SecretManager resource containing the webhook secret used to verify w
 events, formatted as 'projects/* /secrets/* /versions/*'. This is used to
 validate webhooks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#webhook_secret_secret_version DeveloperConnectConnection#webhook_secret_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#webhook_secret_secret_version DeveloperConnectConnection#webhook_secret_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1610,7 +1652,7 @@ public DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfig
 
 service_directory_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#service_directory_config DeveloperConnectConnection#service_directory_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#service_directory_config DeveloperConnectConnection#service_directory_config}
 
 ---
 
@@ -1624,7 +1666,7 @@ public string SslCaCertificate { get; set; }
 
 Optional. SSL certificate authority to trust when making requests to Bitbucket Data Center.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#ssl_ca_certificate DeveloperConnectConnection#ssl_ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#ssl_ca_certificate DeveloperConnectConnection#ssl_ca_certificate}
 
 ---
 
@@ -1658,7 +1700,7 @@ public string UserTokenSecretVersion { get; set; }
 
 Required. A SecretManager resource containing the user token that authorizes the Developer Connect connection. Format: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1694,7 +1736,7 @@ public string UserTokenSecretVersion { get; set; }
 
 Required. A SecretManager resource containing the user token that authorizes the Developer Connect connection. Format: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1730,7 +1772,7 @@ public string Service { get; set; }
 
 Required. The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#service DeveloperConnectConnection#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#service DeveloperConnectConnection#service}
 
 ---
 
@@ -1761,6 +1803,7 @@ new DeveloperConnectConnectionConfig {
     DeveloperConnectConnectionGithubEnterpriseConfig GithubEnterpriseConfig = null,
     DeveloperConnectConnectionGitlabConfig GitlabConfig = null,
     DeveloperConnectConnectionGitlabEnterpriseConfig GitlabEnterpriseConfig = null,
+    DeveloperConnectConnectionHttpConfig HttpConfig = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
     string Project = null,
@@ -1791,9 +1834,10 @@ new DeveloperConnectConnectionConfig {
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.property.githubEnterpriseConfig">GithubEnterpriseConfig</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfig">DeveloperConnectConnectionGithubEnterpriseConfig</a></code> | github_enterprise_config block. |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.property.gitlabConfig">GitlabConfig</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfig">DeveloperConnectConnectionGitlabConfig</a></code> | gitlab_config block. |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.property.gitlabEnterpriseConfig">GitlabEnterpriseConfig</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfig">DeveloperConnectConnectionGitlabEnterpriseConfig</a></code> | gitlab_enterprise_config block. |
-| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#id DeveloperConnectConnection#id}. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.property.httpConfig">HttpConfig</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig">DeveloperConnectConnectionHttpConfig</a></code> | http_config block. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#id DeveloperConnectConnection#id}. |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Optional. Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#project DeveloperConnectConnection#project}. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#project DeveloperConnectConnection#project}. |
 | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeouts">DeveloperConnectConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1878,7 +1922,7 @@ public string ConnectionId { get; set; }
 
 Required. Id of the requesting object If auto-generating Id server-side, remove this field and connection_id from the method_signature of Create RPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#connection_id DeveloperConnectConnection#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#connection_id DeveloperConnectConnection#connection_id}
 
 ---
 
@@ -1892,7 +1936,7 @@ public string Location { get; set; }
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#location DeveloperConnectConnection#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#location DeveloperConnectConnection#location}
 
 ---
 
@@ -1909,7 +1953,7 @@ Optional. Allows clients to store small amounts of arbitrary data.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#annotations DeveloperConnectConnection#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#annotations DeveloperConnectConnection#annotations}
 
 ---
 
@@ -1923,7 +1967,7 @@ public DeveloperConnectConnectionBitbucketCloudConfig BitbucketCloudConfig { get
 
 bitbucket_cloud_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#bitbucket_cloud_config DeveloperConnectConnection#bitbucket_cloud_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#bitbucket_cloud_config DeveloperConnectConnection#bitbucket_cloud_config}
 
 ---
 
@@ -1937,7 +1981,7 @@ public DeveloperConnectConnectionBitbucketDataCenterConfig BitbucketDataCenterCo
 
 bitbucket_data_center_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#bitbucket_data_center_config DeveloperConnectConnection#bitbucket_data_center_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#bitbucket_data_center_config DeveloperConnectConnection#bitbucket_data_center_config}
 
 ---
 
@@ -1951,7 +1995,7 @@ public DeveloperConnectConnectionCryptoKeyConfig CryptoKeyConfig { get; set; }
 
 crypto_key_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#crypto_key_config DeveloperConnectConnection#crypto_key_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#crypto_key_config DeveloperConnectConnection#crypto_key_config}
 
 ---
 
@@ -1969,7 +2013,7 @@ If disabled is set to true, functionality is disabled for this connection.
 Repository based API methods and webhooks processing for repositories in
 this connection will be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#disabled DeveloperConnectConnection#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#disabled DeveloperConnectConnection#disabled}
 
 ---
 
@@ -1987,7 +2031,7 @@ This checksum is computed by the server based on the value of other
 fields, and may be sent on update and delete requests to ensure the
 client has an up-to-date value before proceeding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#etag DeveloperConnectConnection#etag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#etag DeveloperConnectConnection#etag}
 
 ---
 
@@ -2001,7 +2045,7 @@ public DeveloperConnectConnectionGithubConfig GithubConfig { get; set; }
 
 github_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#github_config DeveloperConnectConnection#github_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#github_config DeveloperConnectConnection#github_config}
 
 ---
 
@@ -2015,7 +2059,7 @@ public DeveloperConnectConnectionGithubEnterpriseConfig GithubEnterpriseConfig {
 
 github_enterprise_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#github_enterprise_config DeveloperConnectConnection#github_enterprise_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#github_enterprise_config DeveloperConnectConnection#github_enterprise_config}
 
 ---
 
@@ -2029,7 +2073,7 @@ public DeveloperConnectConnectionGitlabConfig GitlabConfig { get; set; }
 
 gitlab_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#gitlab_config DeveloperConnectConnection#gitlab_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#gitlab_config DeveloperConnectConnection#gitlab_config}
 
 ---
 
@@ -2043,7 +2087,21 @@ public DeveloperConnectConnectionGitlabEnterpriseConfig GitlabEnterpriseConfig {
 
 gitlab_enterprise_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#gitlab_enterprise_config DeveloperConnectConnection#gitlab_enterprise_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#gitlab_enterprise_config DeveloperConnectConnection#gitlab_enterprise_config}
+
+---
+
+##### `HttpConfig`<sup>Optional</sup> <a name="HttpConfig" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig.property.httpConfig"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfig HttpConfig { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig">DeveloperConnectConnectionHttpConfig</a>
+
+http_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#http_config DeveloperConnectConnection#http_config}
 
 ---
 
@@ -2055,7 +2113,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#id DeveloperConnectConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#id DeveloperConnectConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2075,7 +2133,7 @@ Optional. Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#labels DeveloperConnectConnection#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#labels DeveloperConnectConnection#labels}
 
 ---
 
@@ -2087,7 +2145,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#project DeveloperConnectConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#project DeveloperConnectConnection#project}.
 
 ---
 
@@ -2101,7 +2159,7 @@ public DeveloperConnectConnectionTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#timeouts DeveloperConnectConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#timeouts DeveloperConnectConnection#timeouts}
 
 ---
 
@@ -2139,7 +2197,7 @@ The name of the key which is used to encrypt/decrypt customer data. For key
 in Cloud KMS, the key should be in the format of
 'projects/* /locations/* /keyRings/* /cryptoKeys/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#key_reference DeveloperConnectConnection#key_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#key_reference DeveloperConnectConnection#key_reference}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2179,7 +2237,7 @@ public string GithubApp { get; set; }
 
 Required. Immutable. The GitHub Application that was installed to the GitHub user or organization. Possible values: GIT_HUB_APP_UNSPECIFIED DEVELOPER_CONNECT FIREBASE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#github_app DeveloperConnectConnection#github_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#github_app DeveloperConnectConnection#github_app}
 
 ---
 
@@ -2193,7 +2251,7 @@ public string AppInstallationId { get; set; }
 
 Optional. GitHub App installation id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#app_installation_id DeveloperConnectConnection#app_installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#app_installation_id DeveloperConnectConnection#app_installation_id}
 
 ---
 
@@ -2207,7 +2265,7 @@ public DeveloperConnectConnectionGithubConfigAuthorizerCredential AuthorizerCred
 
 authorizer_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#authorizer_credential DeveloperConnectConnection#authorizer_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#authorizer_credential DeveloperConnectConnection#authorizer_credential}
 
 ---
 
@@ -2241,7 +2299,7 @@ public string OauthTokenSecretVersion { get; set; }
 
 Required. A SecretManager resource containing the OAuth token that authorizes the connection. Format: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#oauth_token_secret_version DeveloperConnectConnection#oauth_token_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#oauth_token_secret_version DeveloperConnectConnection#oauth_token_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2289,7 +2347,7 @@ public string HostUri { get; set; }
 
 Required. The URI of the GitHub Enterprise host this connection is for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#host_uri DeveloperConnectConnection#host_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#host_uri DeveloperConnectConnection#host_uri}
 
 ---
 
@@ -2303,7 +2361,7 @@ public string AppId { get; set; }
 
 Optional. ID of the GitHub App created from the manifest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#app_id DeveloperConnectConnection#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#app_id DeveloperConnectConnection#app_id}
 
 ---
 
@@ -2317,7 +2375,7 @@ public string AppInstallationId { get; set; }
 
 Optional. ID of the installation of the GitHub App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#app_installation_id DeveloperConnectConnection#app_installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#app_installation_id DeveloperConnectConnection#app_installation_id}
 
 ---
 
@@ -2331,7 +2389,7 @@ public string PrivateKeySecretVersion { get; set; }
 
 Optional. SecretManager resource containing the private key of the GitHub App, formatted as 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#private_key_secret_version DeveloperConnectConnection#private_key_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#private_key_secret_version DeveloperConnectConnection#private_key_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2347,7 +2405,7 @@ public DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig Se
 
 service_directory_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#service_directory_config DeveloperConnectConnection#service_directory_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#service_directory_config DeveloperConnectConnection#service_directory_config}
 
 ---
 
@@ -2361,7 +2419,7 @@ public string SslCaCertificate { get; set; }
 
 Optional. SSL certificate to use for requests to GitHub Enterprise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#ssl_ca_certificate DeveloperConnectConnection#ssl_ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#ssl_ca_certificate DeveloperConnectConnection#ssl_ca_certificate}
 
 ---
 
@@ -2375,7 +2433,7 @@ public string WebhookSecretSecretVersion { get; set; }
 
 Optional. SecretManager resource containing the webhook secret of the GitHub App, formatted as 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#webhook_secret_secret_version DeveloperConnectConnection#webhook_secret_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#webhook_secret_secret_version DeveloperConnectConnection#webhook_secret_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2411,7 +2469,7 @@ public string Service { get; set; }
 
 Required. The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#service DeveloperConnectConnection#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#service DeveloperConnectConnection#service}
 
 ---
 
@@ -2449,7 +2507,7 @@ public DeveloperConnectConnectionGitlabConfigAuthorizerCredential AuthorizerCred
 
 authorizer_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#authorizer_credential DeveloperConnectConnection#authorizer_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#authorizer_credential DeveloperConnectConnection#authorizer_credential}
 
 ---
 
@@ -2463,7 +2521,7 @@ public DeveloperConnectConnectionGitlabConfigReadAuthorizerCredential ReadAuthor
 
 read_authorizer_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#read_authorizer_credential DeveloperConnectConnection#read_authorizer_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#read_authorizer_credential DeveloperConnectConnection#read_authorizer_credential}
 
 ---
 
@@ -2481,7 +2539,7 @@ Immutable. SecretManager resource containing the webhook secret of a GitLab proj
 formatted as 'projects/* /secrets/* /versions/*'. This is used to validate
 webhooks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#webhook_secret_secret_version DeveloperConnectConnection#webhook_secret_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#webhook_secret_secret_version DeveloperConnectConnection#webhook_secret_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2517,7 +2575,7 @@ public string UserTokenSecretVersion { get; set; }
 
 Required. A SecretManager resource containing the user token that authorizes the Developer Connect connection. Format: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2553,7 +2611,7 @@ public string UserTokenSecretVersion { get; set; }
 
 Required. A SecretManager resource containing the user token that authorizes the Developer Connect connection. Format: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2599,7 +2657,7 @@ public DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential Auth
 
 authorizer_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#authorizer_credential DeveloperConnectConnection#authorizer_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#authorizer_credential DeveloperConnectConnection#authorizer_credential}
 
 ---
 
@@ -2613,7 +2671,7 @@ public string HostUri { get; set; }
 
 Required. The URI of the GitLab Enterprise host this connection is for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#host_uri DeveloperConnectConnection#host_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#host_uri DeveloperConnectConnection#host_uri}
 
 ---
 
@@ -2627,7 +2685,7 @@ public DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential 
 
 read_authorizer_credential block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#read_authorizer_credential DeveloperConnectConnection#read_authorizer_credential}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#read_authorizer_credential DeveloperConnectConnection#read_authorizer_credential}
 
 ---
 
@@ -2645,7 +2703,7 @@ Immutable. SecretManager resource containing the webhook secret of a GitLab proj
 formatted as 'projects/* /secrets/* /versions/*'. This is used to validate
 webhooks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#webhook_secret_secret_version DeveloperConnectConnection#webhook_secret_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#webhook_secret_secret_version DeveloperConnectConnection#webhook_secret_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2661,7 +2719,7 @@ public DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig Se
 
 service_directory_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#service_directory_config DeveloperConnectConnection#service_directory_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#service_directory_config DeveloperConnectConnection#service_directory_config}
 
 ---
 
@@ -2675,7 +2733,7 @@ public string SslCaCertificate { get; set; }
 
 Optional. SSL Certificate Authority certificate to use for requests to GitLab Enterprise instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#ssl_ca_certificate DeveloperConnectConnection#ssl_ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#ssl_ca_certificate DeveloperConnectConnection#ssl_ca_certificate}
 
 ---
 
@@ -2709,7 +2767,7 @@ public string UserTokenSecretVersion { get; set; }
 
 Required. A SecretManager resource containing the user token that authorizes the Developer Connect connection. Format: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2745,7 +2803,7 @@ public string UserTokenSecretVersion { get; set; }
 
 Required. A SecretManager resource containing the user token that authorizes the Developer Connect connection. Format: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#user_token_secret_version DeveloperConnectConnection#user_token_secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2781,7 +2839,223 @@ public string Service { get; set; }
 
 Required. The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#service DeveloperConnectConnection#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#service DeveloperConnectConnection#service}
+
+---
+
+### DeveloperConnectConnectionHttpConfig <a name="DeveloperConnectConnectionHttpConfig" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DeveloperConnectConnectionHttpConfig {
+    string HostUri,
+    DeveloperConnectConnectionHttpConfigBasicAuthentication BasicAuthentication = null,
+    DeveloperConnectConnectionHttpConfigBearerTokenAuthentication BearerTokenAuthentication = null,
+    DeveloperConnectConnectionHttpConfigServiceDirectoryConfig ServiceDirectoryConfig = null,
+    string SslCaCertificate = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.property.hostUri">HostUri</a></code> | <code>string</code> | The service provider's https endpoint. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.property.basicAuthentication">BasicAuthentication</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication">DeveloperConnectConnectionHttpConfigBasicAuthentication</a></code> | basic_authentication block. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.property.bearerTokenAuthentication">BearerTokenAuthentication</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication">DeveloperConnectConnectionHttpConfigBearerTokenAuthentication</a></code> | bearer_token_authentication block. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.property.serviceDirectoryConfig">ServiceDirectoryConfig</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig">DeveloperConnectConnectionHttpConfigServiceDirectoryConfig</a></code> | service_directory_config block. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.property.sslCaCertificate">SslCaCertificate</a></code> | <code>string</code> | The SSL certificate to use for requests to the HTTP service provider. |
+
+---
+
+##### `HostUri`<sup>Required</sup> <a name="HostUri" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.property.hostUri"></a>
+
+```csharp
+public string HostUri { get; set; }
+```
+
+- *Type:* string
+
+The service provider's https endpoint.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#host_uri DeveloperConnectConnection#host_uri}
+
+---
+
+##### `BasicAuthentication`<sup>Optional</sup> <a name="BasicAuthentication" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.property.basicAuthentication"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigBasicAuthentication BasicAuthentication { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication">DeveloperConnectConnectionHttpConfigBasicAuthentication</a>
+
+basic_authentication block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#basic_authentication DeveloperConnectConnection#basic_authentication}
+
+---
+
+##### `BearerTokenAuthentication`<sup>Optional</sup> <a name="BearerTokenAuthentication" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.property.bearerTokenAuthentication"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigBearerTokenAuthentication BearerTokenAuthentication { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication">DeveloperConnectConnectionHttpConfigBearerTokenAuthentication</a>
+
+bearer_token_authentication block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#bearer_token_authentication DeveloperConnectConnection#bearer_token_authentication}
+
+---
+
+##### `ServiceDirectoryConfig`<sup>Optional</sup> <a name="ServiceDirectoryConfig" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.property.serviceDirectoryConfig"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigServiceDirectoryConfig ServiceDirectoryConfig { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig">DeveloperConnectConnectionHttpConfigServiceDirectoryConfig</a>
+
+service_directory_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#service_directory_config DeveloperConnectConnection#service_directory_config}
+
+---
+
+##### `SslCaCertificate`<sup>Optional</sup> <a name="SslCaCertificate" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig.property.sslCaCertificate"></a>
+
+```csharp
+public string SslCaCertificate { get; set; }
+```
+
+- *Type:* string
+
+The SSL certificate to use for requests to the HTTP service provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#ssl_ca_certificate DeveloperConnectConnection#ssl_ca_certificate}
+
+---
+
+### DeveloperConnectConnectionHttpConfigBasicAuthentication <a name="DeveloperConnectConnectionHttpConfigBasicAuthentication" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DeveloperConnectConnectionHttpConfigBasicAuthentication {
+    string Username,
+    string PasswordSecretVersion = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication.property.username">Username</a></code> | <code>string</code> | The username to authenticate as. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication.property.passwordSecretVersion">PasswordSecretVersion</a></code> | <code>string</code> | The password SecretManager secret version to authenticate as. |
+
+---
+
+##### `Username`<sup>Required</sup> <a name="Username" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication.property.username"></a>
+
+```csharp
+public string Username { get; set; }
+```
+
+- *Type:* string
+
+The username to authenticate as.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#username DeveloperConnectConnection#username}
+
+---
+
+##### `PasswordSecretVersion`<sup>Optional</sup> <a name="PasswordSecretVersion" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication.property.passwordSecretVersion"></a>
+
+```csharp
+public string PasswordSecretVersion { get; set; }
+```
+
+- *Type:* string
+
+The password SecretManager secret version to authenticate as.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#password_secret_version DeveloperConnectConnection#password_secret_version}
+
+---
+
+### DeveloperConnectConnectionHttpConfigBearerTokenAuthentication <a name="DeveloperConnectConnectionHttpConfigBearerTokenAuthentication" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DeveloperConnectConnectionHttpConfigBearerTokenAuthentication {
+    string TokenSecretVersion = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication.property.tokenSecretVersion">TokenSecretVersion</a></code> | <code>string</code> | The token SecretManager secret version to authenticate as. |
+
+---
+
+##### `TokenSecretVersion`<sup>Optional</sup> <a name="TokenSecretVersion" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication.property.tokenSecretVersion"></a>
+
+```csharp
+public string TokenSecretVersion { get; set; }
+```
+
+- *Type:* string
+
+The token SecretManager secret version to authenticate as.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#token_secret_version DeveloperConnectConnection#token_secret_version}
+
+---
+
+### DeveloperConnectConnectionHttpConfigServiceDirectoryConfig <a name="DeveloperConnectConnectionHttpConfigServiceDirectoryConfig" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DeveloperConnectConnectionHttpConfigServiceDirectoryConfig {
+    string Service
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig.property.service">Service</a></code> | <code>string</code> | The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}. |
+
+---
+
+##### `Service`<sup>Required</sup> <a name="Service" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig.property.service"></a>
+
+```csharp
+public string Service { get; set; }
+```
+
+- *Type:* string
+
+The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#service DeveloperConnectConnection#service}
 
 ---
 
@@ -2816,9 +3090,9 @@ new DeveloperConnectConnectionTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#create DeveloperConnectConnection#create}. |
-| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#delete DeveloperConnectConnection#delete}. |
-| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#update DeveloperConnectConnection#update}. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#create DeveloperConnectConnection#create}. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#delete DeveloperConnectConnection#delete}. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#update DeveloperConnectConnection#update}. |
 
 ---
 
@@ -2830,7 +3104,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#create DeveloperConnectConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#create DeveloperConnectConnection#create}.
 
 ---
 
@@ -2842,7 +3116,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#delete DeveloperConnectConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#delete DeveloperConnectConnection#delete}.
 
 ---
 
@@ -2854,7 +3128,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/developer_connect_connection#update DeveloperConnectConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/developer_connect_connection#update DeveloperConnectConnection#update}.
 
 ---
 
@@ -8916,6 +9190,1281 @@ public DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig In
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig">DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig</a>
+
+---
+
+
+### DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference <a name="DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.resetPasswordSecretVersion">ResetPasswordSecretVersion</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetPasswordSecretVersion` <a name="ResetPasswordSecretVersion" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.resetPasswordSecretVersion"></a>
+
+```csharp
+private void ResetPasswordSecretVersion()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.passwordSecretVersionInput">PasswordSecretVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.passwordSecretVersion">PasswordSecretVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.username">Username</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication">DeveloperConnectConnectionHttpConfigBasicAuthentication</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PasswordSecretVersionInput`<sup>Optional</sup> <a name="PasswordSecretVersionInput" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.passwordSecretVersionInput"></a>
+
+```csharp
+public string PasswordSecretVersionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `UsernameInput`<sup>Optional</sup> <a name="UsernameInput" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.usernameInput"></a>
+
+```csharp
+public string UsernameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PasswordSecretVersion`<sup>Required</sup> <a name="PasswordSecretVersion" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.passwordSecretVersion"></a>
+
+```csharp
+public string PasswordSecretVersion { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Username`<sup>Required</sup> <a name="Username" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.username"></a>
+
+```csharp
+public string Username { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference.property.internalValue"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigBasicAuthentication InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication">DeveloperConnectConnectionHttpConfigBasicAuthentication</a>
+
+---
+
+
+### DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference <a name="DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.resetTokenSecretVersion">ResetTokenSecretVersion</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetTokenSecretVersion` <a name="ResetTokenSecretVersion" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.resetTokenSecretVersion"></a>
+
+```csharp
+private void ResetTokenSecretVersion()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.property.tokenSecretVersionInput">TokenSecretVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.property.tokenSecretVersion">TokenSecretVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication">DeveloperConnectConnectionHttpConfigBearerTokenAuthentication</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TokenSecretVersionInput`<sup>Optional</sup> <a name="TokenSecretVersionInput" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.property.tokenSecretVersionInput"></a>
+
+```csharp
+public string TokenSecretVersionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TokenSecretVersion`<sup>Required</sup> <a name="TokenSecretVersion" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.property.tokenSecretVersion"></a>
+
+```csharp
+public string TokenSecretVersion { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference.property.internalValue"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigBearerTokenAuthentication InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication">DeveloperConnectConnectionHttpConfigBearerTokenAuthentication</a>
+
+---
+
+
+### DeveloperConnectConnectionHttpConfigOutputReference <a name="DeveloperConnectConnectionHttpConfigOutputReference" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DeveloperConnectConnectionHttpConfigOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.putBasicAuthentication">PutBasicAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.putBearerTokenAuthentication">PutBearerTokenAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.putServiceDirectoryConfig">PutServiceDirectoryConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.resetBasicAuthentication">ResetBasicAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.resetBearerTokenAuthentication">ResetBearerTokenAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.resetServiceDirectoryConfig">ResetServiceDirectoryConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.resetSslCaCertificate">ResetSslCaCertificate</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutBasicAuthentication` <a name="PutBasicAuthentication" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.putBasicAuthentication"></a>
+
+```csharp
+private void PutBasicAuthentication(DeveloperConnectConnectionHttpConfigBasicAuthentication Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.putBasicAuthentication.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication">DeveloperConnectConnectionHttpConfigBasicAuthentication</a>
+
+---
+
+##### `PutBearerTokenAuthentication` <a name="PutBearerTokenAuthentication" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.putBearerTokenAuthentication"></a>
+
+```csharp
+private void PutBearerTokenAuthentication(DeveloperConnectConnectionHttpConfigBearerTokenAuthentication Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.putBearerTokenAuthentication.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication">DeveloperConnectConnectionHttpConfigBearerTokenAuthentication</a>
+
+---
+
+##### `PutServiceDirectoryConfig` <a name="PutServiceDirectoryConfig" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.putServiceDirectoryConfig"></a>
+
+```csharp
+private void PutServiceDirectoryConfig(DeveloperConnectConnectionHttpConfigServiceDirectoryConfig Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.putServiceDirectoryConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig">DeveloperConnectConnectionHttpConfigServiceDirectoryConfig</a>
+
+---
+
+##### `ResetBasicAuthentication` <a name="ResetBasicAuthentication" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.resetBasicAuthentication"></a>
+
+```csharp
+private void ResetBasicAuthentication()
+```
+
+##### `ResetBearerTokenAuthentication` <a name="ResetBearerTokenAuthentication" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.resetBearerTokenAuthentication"></a>
+
+```csharp
+private void ResetBearerTokenAuthentication()
+```
+
+##### `ResetServiceDirectoryConfig` <a name="ResetServiceDirectoryConfig" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.resetServiceDirectoryConfig"></a>
+
+```csharp
+private void ResetServiceDirectoryConfig()
+```
+
+##### `ResetSslCaCertificate` <a name="ResetSslCaCertificate" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.resetSslCaCertificate"></a>
+
+```csharp
+private void ResetSslCaCertificate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.basicAuthentication">BasicAuthentication</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference">DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.bearerTokenAuthentication">BearerTokenAuthentication</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference">DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.serviceDirectoryConfig">ServiceDirectoryConfig</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference">DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.basicAuthenticationInput">BasicAuthenticationInput</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication">DeveloperConnectConnectionHttpConfigBasicAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.bearerTokenAuthenticationInput">BearerTokenAuthenticationInput</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication">DeveloperConnectConnectionHttpConfigBearerTokenAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.hostUriInput">HostUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.serviceDirectoryConfigInput">ServiceDirectoryConfigInput</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig">DeveloperConnectConnectionHttpConfigServiceDirectoryConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.sslCaCertificateInput">SslCaCertificateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.hostUri">HostUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.sslCaCertificate">SslCaCertificate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig">DeveloperConnectConnectionHttpConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BasicAuthentication`<sup>Required</sup> <a name="BasicAuthentication" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.basicAuthentication"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference BasicAuthentication { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference">DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference</a>
+
+---
+
+##### `BearerTokenAuthentication`<sup>Required</sup> <a name="BearerTokenAuthentication" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.bearerTokenAuthentication"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference BearerTokenAuthentication { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference">DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference</a>
+
+---
+
+##### `ServiceDirectoryConfig`<sup>Required</sup> <a name="ServiceDirectoryConfig" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.serviceDirectoryConfig"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference ServiceDirectoryConfig { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference">DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference</a>
+
+---
+
+##### `BasicAuthenticationInput`<sup>Optional</sup> <a name="BasicAuthenticationInput" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.basicAuthenticationInput"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigBasicAuthentication BasicAuthenticationInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication">DeveloperConnectConnectionHttpConfigBasicAuthentication</a>
+
+---
+
+##### `BearerTokenAuthenticationInput`<sup>Optional</sup> <a name="BearerTokenAuthenticationInput" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.bearerTokenAuthenticationInput"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigBearerTokenAuthentication BearerTokenAuthenticationInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication">DeveloperConnectConnectionHttpConfigBearerTokenAuthentication</a>
+
+---
+
+##### `HostUriInput`<sup>Optional</sup> <a name="HostUriInput" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.hostUriInput"></a>
+
+```csharp
+public string HostUriInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ServiceDirectoryConfigInput`<sup>Optional</sup> <a name="ServiceDirectoryConfigInput" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.serviceDirectoryConfigInput"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigServiceDirectoryConfig ServiceDirectoryConfigInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig">DeveloperConnectConnectionHttpConfigServiceDirectoryConfig</a>
+
+---
+
+##### `SslCaCertificateInput`<sup>Optional</sup> <a name="SslCaCertificateInput" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.sslCaCertificateInput"></a>
+
+```csharp
+public string SslCaCertificateInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `HostUri`<sup>Required</sup> <a name="HostUri" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.hostUri"></a>
+
+```csharp
+public string HostUri { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SslCaCertificate`<sup>Required</sup> <a name="SslCaCertificate" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.sslCaCertificate"></a>
+
+```csharp
+public string SslCaCertificate { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference.property.internalValue"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfig InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig">DeveloperConnectConnectionHttpConfig</a>
+
+---
+
+
+### DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference <a name="DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.property.serviceInput">ServiceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.property.service">Service</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig">DeveloperConnectConnectionHttpConfigServiceDirectoryConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ServiceInput`<sup>Optional</sup> <a name="ServiceInput" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.property.serviceInput"></a>
+
+```csharp
+public string ServiceInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Service`<sup>Required</sup> <a name="Service" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.property.service"></a>
+
+```csharp
+public string Service { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference.property.internalValue"></a>
+
+```csharp
+public DeveloperConnectConnectionHttpConfigServiceDirectoryConfig InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig">DeveloperConnectConnectionHttpConfigServiceDirectoryConfig</a>
 
 ---
 

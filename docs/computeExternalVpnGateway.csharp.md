@@ -4,7 +4,7 @@
 
 ### ComputeExternalVpnGateway <a name="ComputeExternalVpnGateway" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway google_compute_external_vpn_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.Initializer"></a>
 
@@ -75,11 +75,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.putInterface">PutInterface</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.putParams">PutParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.resetInterface">ResetInterface</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.resetLabels">ResetLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.resetParams">ResetParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.resetRedundancyType">ResetRedundancyType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -407,6 +409,18 @@ private void PutInterface(IResolvable|ComputeExternalVpnGatewayInterface[] Value
 
 ---
 
+##### `PutParams` <a name="PutParams" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.putParams"></a>
+
+```csharp
+private void PutParams(ComputeExternalVpnGatewayParams Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.putParams.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams">ComputeExternalVpnGatewayParams</a>
+
+---
+
 ##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.putTimeouts"></a>
 
 ```csharp
@@ -441,6 +455,12 @@ private void ResetInterface()
 
 ```csharp
 private void ResetLabels()
+```
+
+##### `ResetParams` <a name="ResetParams" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.resetParams"></a>
+
+```csharp
+private void ResetParams()
 ```
 
 ##### `ResetProject` <a name="ResetProject" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.resetProject"></a>
@@ -564,7 +584,7 @@ The construct id used in the generated config for the ComputeExternalVpnGateway 
 
 The id of the existing ComputeExternalVpnGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -597,6 +617,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.effectiveLabels">EffectiveLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.interface">Interface</a></code> | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceList">ComputeExternalVpnGatewayInterfaceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.labelFingerprint">LabelFingerprint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference">ComputeExternalVpnGatewayParamsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.selfLink">SelfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeoutsOutputReference">ComputeExternalVpnGatewayTimeoutsOutputReference</a></code> | *No description.* |
@@ -605,6 +626,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.interfaceInput">InterfaceInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterface">ComputeExternalVpnGatewayInterface</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.labelsInput">LabelsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.paramsInput">ParamsInput</a></code> | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams">ComputeExternalVpnGatewayParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.redundancyTypeInput">RedundancyTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts">ComputeExternalVpnGatewayTimeouts</a></code> | *No description.* |
@@ -789,6 +811,16 @@ public string LabelFingerprint { get; }
 
 ---
 
+##### `Params`<sup>Required</sup> <a name="Params" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.params"></a>
+
+```csharp
+public ComputeExternalVpnGatewayParamsOutputReference Params { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference">ComputeExternalVpnGatewayParamsOutputReference</a>
+
+---
+
 ##### `SelfLink`<sup>Required</sup> <a name="SelfLink" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.selfLink"></a>
 
 ```csharp
@@ -866,6 +898,16 @@ public string NameInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `ParamsInput`<sup>Optional</sup> <a name="ParamsInput" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway.property.paramsInput"></a>
+
+```csharp
+public ComputeExternalVpnGatewayParams ParamsInput { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams">ComputeExternalVpnGatewayParams</a>
 
 ---
 
@@ -999,6 +1041,7 @@ new ComputeExternalVpnGatewayConfig {
     string Id = null,
     IResolvable|ComputeExternalVpnGatewayInterface[] Interface = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
+    ComputeExternalVpnGatewayParams Params = null,
     string Project = null,
     string RedundancyType = null,
     ComputeExternalVpnGatewayTimeouts Timeouts = null
@@ -1018,10 +1061,11 @@ new ComputeExternalVpnGatewayConfig {
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.name">Name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.description">Description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#id ComputeExternalVpnGateway#id}. |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#id ComputeExternalVpnGateway#id}. |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.interface">Interface</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterface">ComputeExternalVpnGatewayInterface</a>[]</code> | interface block. |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Labels for the external VPN gateway resource. |
-| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#project ComputeExternalVpnGateway#project}. |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams">ComputeExternalVpnGatewayParams</a></code> | params block. |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#project ComputeExternalVpnGateway#project}. |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.redundancyType">RedundancyType</a></code> | <code>string</code> | Indicates the redundancy type of this external VPN gateway Possible values: ["FOUR_IPS_REDUNDANCY", "SINGLE_IP_INTERNALLY_REDUNDANT", "TWO_IPS_REDUNDANCY"]. |
 | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts">ComputeExternalVpnGatewayTimeouts</a></code> | timeouts block. |
 
@@ -1115,7 +1159,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#name ComputeExternalVpnGateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#name ComputeExternalVpnGateway#name}
 
 ---
 
@@ -1129,7 +1173,7 @@ public string Description { get; set; }
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#description ComputeExternalVpnGateway#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#description ComputeExternalVpnGateway#description}
 
 ---
 
@@ -1141,7 +1185,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#id ComputeExternalVpnGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#id ComputeExternalVpnGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1158,7 +1202,7 @@ public IResolvable|ComputeExternalVpnGatewayInterface[] Interface { get; set; }
 
 interface block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#interface ComputeExternalVpnGateway#interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#interface ComputeExternalVpnGateway#interface}
 
 ---
 
@@ -1175,7 +1219,21 @@ Labels for the external VPN gateway resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#labels ComputeExternalVpnGateway#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#labels ComputeExternalVpnGateway#labels}
+
+---
+
+##### `Params`<sup>Optional</sup> <a name="Params" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig.property.params"></a>
+
+```csharp
+public ComputeExternalVpnGatewayParams Params { get; set; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams">ComputeExternalVpnGatewayParams</a>
+
+params block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#params ComputeExternalVpnGateway#params}
 
 ---
 
@@ -1187,7 +1245,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#project ComputeExternalVpnGateway#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#project ComputeExternalVpnGateway#project}.
 
 ---
 
@@ -1201,7 +1259,7 @@ public string RedundancyType { get; set; }
 
 Indicates the redundancy type of this external VPN gateway Possible values: ["FOUR_IPS_REDUNDANCY", "SINGLE_IP_INTERNALLY_REDUNDANT", "TWO_IPS_REDUNDANCY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#redundancy_type ComputeExternalVpnGateway#redundancy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#redundancy_type ComputeExternalVpnGateway#redundancy_type}
 
 ---
 
@@ -1215,7 +1273,7 @@ public ComputeExternalVpnGatewayTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#timeouts ComputeExternalVpnGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#timeouts ComputeExternalVpnGateway#timeouts}
 
 ---
 
@@ -1260,7 +1318,7 @@ of this external VPN gateway
 * '0, 1 - TWO_IPS_REDUNDANCY'
 * '0, 1, 2, 3 - FOUR_IPS_REDUNDANCY'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#id ComputeExternalVpnGateway#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#id ComputeExternalVpnGateway#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1281,7 +1339,7 @@ Only IPv4 is supported. This IP address can be either from
 your on-premise gateway or another Cloud provider's VPN gateway,
 it cannot be an IP address from Google Compute Engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#ip_address ComputeExternalVpnGateway#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#ip_address ComputeExternalVpnGateway#ip_address}
 
 ---
 
@@ -1302,7 +1360,45 @@ Engine. Must specify an IPv6 address (not IPV4-mapped) using any format
 described in RFC 4291 (e.g. 2001:db8:0:0:2d9:51:0:0). The output format
 is RFC 5952 format (e.g. 2001:db8::2d9:51:0:0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#ipv6_address ComputeExternalVpnGateway#ipv6_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#ipv6_address ComputeExternalVpnGateway#ipv6_address}
+
+---
+
+### ComputeExternalVpnGatewayParams <a name="ComputeExternalVpnGatewayParams" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeExternalVpnGatewayParams {
+    System.Collections.Generic.IDictionary<string, string> ResourceManagerTags = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams.property.resourceManagerTags">ResourceManagerTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Resource manager tags to be bound to the ExternalVpnGateway. |
+
+---
+
+##### `ResourceManagerTags`<sup>Optional</sup> <a name="ResourceManagerTags" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams.property.resourceManagerTags"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ResourceManagerTags { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+Resource manager tags to be bound to the ExternalVpnGateway.
+
+Tag keys and values have the
+same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+and values are in the format tagValues/456.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#resource_manager_tags ComputeExternalVpnGateway#resource_manager_tags}
 
 ---
 
@@ -1324,9 +1420,9 @@ new ComputeExternalVpnGatewayTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#create ComputeExternalVpnGateway#create}. |
-| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#delete ComputeExternalVpnGateway#delete}. |
-| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#update ComputeExternalVpnGateway#update}. |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#create ComputeExternalVpnGateway#create}. |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#delete ComputeExternalVpnGateway#delete}. |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#update ComputeExternalVpnGateway#update}. |
 
 ---
 
@@ -1338,7 +1434,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#create ComputeExternalVpnGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#create ComputeExternalVpnGateway#create}.
 
 ---
 
@@ -1350,7 +1446,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#delete ComputeExternalVpnGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#delete ComputeExternalVpnGateway#delete}.
 
 ---
 
@@ -1362,7 +1458,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_external_vpn_gateway#update ComputeExternalVpnGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_external_vpn_gateway#update ComputeExternalVpnGateway#update}.
 
 ---
 
@@ -1878,6 +1974,284 @@ public IResolvable|ComputeExternalVpnGatewayInterface InternalValue { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterface">ComputeExternalVpnGatewayInterface</a>
+
+---
+
+
+### ComputeExternalVpnGatewayParamsOutputReference <a name="ComputeExternalVpnGatewayParamsOutputReference" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.Initializer"></a>
+
+```csharp
+using Io.Cdktn.Providers.Google;
+
+new ComputeExternalVpnGatewayParamsOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>Io.Cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* Io.Cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.resetResourceManagerTags">ResetResourceManagerTags</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* Io.Cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetResourceManagerTags` <a name="ResetResourceManagerTags" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.resetResourceManagerTags"></a>
+
+```csharp
+private void ResetResourceManagerTags()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.property.resourceManagerTagsInput">ResourceManagerTagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.property.resourceManagerTags">ResourceManagerTags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams">ComputeExternalVpnGatewayParams</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ResourceManagerTagsInput`<sup>Optional</sup> <a name="ResourceManagerTagsInput" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.property.resourceManagerTagsInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ResourceManagerTagsInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `ResourceManagerTags`<sup>Required</sup> <a name="ResourceManagerTags" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.property.resourceManagerTags"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ResourceManagerTags { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference.property.internalValue"></a>
+
+```csharp
+public ComputeExternalVpnGatewayParams InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams">ComputeExternalVpnGatewayParams</a>
 
 ---
 

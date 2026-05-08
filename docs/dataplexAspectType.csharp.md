@@ -4,7 +4,7 @@
 
 ### DataplexAspectType <a name="DataplexAspectType" id="@cdktn/provider-google.dataplexAspectType.DataplexAspectType"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type google_dataplex_aspect_type}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type google_dataplex_aspect_type}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexAspectType.DataplexAspectType.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.resetAspectTypeId">ResetAspectTypeId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.resetDataClassification">ResetDataClassification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.resetId">ResetId</a></code> | *No description.* |
@@ -414,6 +415,12 @@ private void PutTimeouts(DataplexAspectTypeTimeouts Value)
 private void ResetAspectTypeId()
 ```
 
+##### `ResetDataClassification` <a name="ResetDataClassification" id="@cdktn/provider-google.dataplexAspectType.DataplexAspectType.resetDataClassification"></a>
+
+```csharp
+private void ResetDataClassification()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.dataplexAspectType.DataplexAspectType.resetDescription"></a>
 
 ```csharp
@@ -565,7 +572,7 @@ The construct id used in the generated config for the DataplexAspectType to impo
 
 The id of the existing DataplexAspectType that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -604,6 +611,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.uid">Uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.aspectTypeIdInput">AspectTypeIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.dataClassificationInput">DataClassificationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -613,6 +621,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeTimeouts">DataplexAspectTypeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.aspectTypeId">AspectTypeId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.dataClassification">DataClassification</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -855,6 +864,16 @@ public string AspectTypeIdInput { get; }
 
 ---
 
+##### `DataClassificationInput`<sup>Optional</sup> <a name="DataClassificationInput" id="@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.dataClassificationInput"></a>
+
+```csharp
+public string DataClassificationInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.descriptionInput"></a>
 
 ```csharp
@@ -939,6 +958,16 @@ public IResolvable|DataplexAspectTypeTimeouts TimeoutsInput { get; }
 
 ```csharp
 public string AspectTypeId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DataClassification`<sup>Required</sup> <a name="DataClassification" id="@cdktn/provider-google.dataplexAspectType.DataplexAspectType.property.dataClassification"></a>
+
+```csharp
+public string DataClassification { get; }
 ```
 
 - *Type:* string
@@ -1051,6 +1080,7 @@ new DataplexAspectTypeConfig {
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string AspectTypeId = null,
+    string DataClassification = null,
     string Description = null,
     string DisplayName = null,
     string Id = null,
@@ -1074,13 +1104,14 @@ new DataplexAspectTypeConfig {
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.aspectTypeId">AspectTypeId</a></code> | <code>string</code> | The aspect type id of the aspect type. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.dataClassification">DataClassification</a></code> | <code>string</code> | Classifies the data stored by the aspect. |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.description">Description</a></code> | <code>string</code> | Description of the AspectType. |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.displayName">DisplayName</a></code> | <code>string</code> | User friendly display name. |
-| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#id DataplexAspectType#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#id DataplexAspectType#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | User-defined labels for the AspectType. |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.location">Location</a></code> | <code>string</code> | The location where aspect type will be created in. |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.metadataTemplate">MetadataTemplate</a></code> | <code>string</code> | MetadataTemplate of the Aspect. |
-| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#project DataplexAspectType#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#project DataplexAspectType#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeTimeouts">DataplexAspectTypeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1165,7 +1196,25 @@ public string AspectTypeId { get; set; }
 
 The aspect type id of the aspect type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#aspect_type_id DataplexAspectType#aspect_type_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#aspect_type_id DataplexAspectType#aspect_type_id}
+
+---
+
+##### `DataClassification`<sup>Optional</sup> <a name="DataClassification" id="@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeConfig.property.dataClassification"></a>
+
+```csharp
+public string DataClassification { get; set; }
+```
+
+- *Type:* string
+
+Classifies the data stored by the aspect.
+
+'DATA_CLASSIFICATION_UNSPECIFIED' denotes that the aspect contains only metadata
+while 'METADATA_AND_DATA' indicates data derived content.
+<br><br> Possible values: ["DATA_CLASSIFICATION_UNSPECIFIED", "METADATA_AND_DATA"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#data_classification DataplexAspectType#data_classification}
 
 ---
 
@@ -1179,7 +1228,7 @@ public string Description { get; set; }
 
 Description of the AspectType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#description DataplexAspectType#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#description DataplexAspectType#description}
 
 ---
 
@@ -1193,7 +1242,7 @@ public string DisplayName { get; set; }
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#display_name DataplexAspectType#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#display_name DataplexAspectType#display_name}
 
 ---
 
@@ -1205,7 +1254,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#id DataplexAspectType#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#id DataplexAspectType#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1225,7 +1274,7 @@ User-defined labels for the AspectType.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#labels DataplexAspectType#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#labels DataplexAspectType#labels}
 
 ---
 
@@ -1239,7 +1288,7 @@ public string Location { get; set; }
 
 The location where aspect type will be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#location DataplexAspectType#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#location DataplexAspectType#location}
 
 ---
 
@@ -1253,7 +1302,7 @@ public string MetadataTemplate { get; set; }
 
 MetadataTemplate of the Aspect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#metadata_template DataplexAspectType#metadata_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#metadata_template DataplexAspectType#metadata_template}
 
 ---
 
@@ -1265,7 +1314,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#project DataplexAspectType#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#project DataplexAspectType#project}.
 
 ---
 
@@ -1279,7 +1328,7 @@ public DataplexAspectTypeTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#timeouts DataplexAspectType#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#timeouts DataplexAspectType#timeouts}
 
 ---
 
@@ -1301,9 +1350,9 @@ new DataplexAspectTypeTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#create DataplexAspectType#create}. |
-| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#delete DataplexAspectType#delete}. |
-| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#update DataplexAspectType#update}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#create DataplexAspectType#create}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#delete DataplexAspectType#delete}. |
+| <code><a href="#@cdktn/provider-google.dataplexAspectType.DataplexAspectTypeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#update DataplexAspectType#update}. |
 
 ---
 
@@ -1315,7 +1364,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#create DataplexAspectType#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#create DataplexAspectType#create}.
 
 ---
 
@@ -1327,7 +1376,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#delete DataplexAspectType#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#delete DataplexAspectType#delete}.
 
 ---
 
@@ -1339,7 +1388,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_aspect_type#update DataplexAspectType#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_aspect_type#update DataplexAspectType#update}.
 
 ---
 

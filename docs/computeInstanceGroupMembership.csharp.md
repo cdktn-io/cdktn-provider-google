@@ -4,7 +4,7 @@
 
 ### ComputeInstanceGroupMembership <a name="ComputeInstanceGroupMembership" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership google_compute_instance_group_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembership.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ComputeInstanceGroupMember
 
 The id of the existing ComputeInstanceGroupMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -894,8 +894,8 @@ new ComputeInstanceGroupMembershipConfig {
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.instance">Instance</a></code> | <code>string</code> | An instance being added to the InstanceGroup. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.instanceGroup">InstanceGroup</a></code> | <code>string</code> | Represents an Instance Group resource name that the instance belongs to. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts">ComputeInstanceGroupMembershipTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipConfig.property.zone">Zone</a></code> | <code>string</code> | A reference to the zone where the instance group resides. |
 
@@ -981,7 +981,7 @@ public string Instance { get; set; }
 
 An instance being added to the InstanceGroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#instance ComputeInstanceGroupMembership#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#instance ComputeInstanceGroupMembership#instance}
 
 ---
 
@@ -995,7 +995,7 @@ public string InstanceGroup { get; set; }
 
 Represents an Instance Group resource name that the instance belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#instance_group ComputeInstanceGroupMembership#instance_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#instance_group ComputeInstanceGroupMembership#instance_group}
 
 ---
 
@@ -1007,7 +1007,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#id ComputeInstanceGroupMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1022,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#project ComputeInstanceGroupMembership#project}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public ComputeInstanceGroupMembershipTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#timeouts ComputeInstanceGroupMembership#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#timeouts ComputeInstanceGroupMembership#timeouts}
 
 ---
 
@@ -1050,7 +1050,7 @@ public string Zone { get; set; }
 
 A reference to the zone where the instance group resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#zone ComputeInstanceGroupMembership#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#zone ComputeInstanceGroupMembership#zone}
 
 ---
 
@@ -1071,8 +1071,8 @@ new ComputeInstanceGroupMembershipTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#create ComputeInstanceGroupMembership#create}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#delete ComputeInstanceGroupMembership#delete}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#create ComputeInstanceGroupMembership#create}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupMembership.ComputeInstanceGroupMembershipTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#delete ComputeInstanceGroupMembership#delete}. |
 
 ---
 
@@ -1084,7 +1084,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#create ComputeInstanceGroupMembership#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#create ComputeInstanceGroupMembership#create}.
 
 ---
 
@@ -1096,7 +1096,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_group_membership#delete ComputeInstanceGroupMembership#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_group_membership#delete ComputeInstanceGroupMembership#delete}.
 
 ---
 

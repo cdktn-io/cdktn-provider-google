@@ -4,12 +4,12 @@
 
 ### BackupDrServiceConfig <a name="BackupDrServiceConfig" id="@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config google_backup_dr_service_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config google_backup_dr_service_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/backupdrserviceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrserviceconfig"
 
 backupdrserviceconfig.NewBackupDrServiceConfig(scope Construct, id *string, config BackupDrServiceConfigConfig) BackupDrServiceConfig
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/backupdrserviceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrserviceconfig"
 
 backupdrserviceconfig.BackupDrServiceConfig_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/backupdrserviceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrserviceconfig"
 
 backupdrserviceconfig.BackupDrServiceConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ backupdrserviceconfig.BackupDrServiceConfig_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/backupdrserviceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrserviceconfig"
 
 backupdrserviceconfig.BackupDrServiceConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ backupdrserviceconfig.BackupDrServiceConfig_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/backupdrserviceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrserviceconfig"
 
 backupdrserviceconfig.BackupDrServiceConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the BackupDrServiceConfig to i
 
 The id of the existing BackupDrServiceConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/backupdrserviceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrserviceconfig"
 
 &backupdrserviceconfig.BackupDrServiceConfigConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/backupdrservicec
 	ResourceType: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.backupDrServiceConfig.BackupDrServiceConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.backupDrServiceConfig.BackupDrServiceConfigTimeouts,
 }
 ```
 
@@ -864,8 +864,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/backupdrservicec
 | <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.location">Location</a></code> | <code>*string</code> | The location in which the Service config is to be initialized. |
 | <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.resourceType">ResourceType</a></code> | <code>*string</code> | The resource type to which the default service config will be applied. |
-| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#id BackupDrServiceConfig#id}. |
-| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#project BackupDrServiceConfig#project}. |
+| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#id BackupDrServiceConfig#id}. |
+| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#project BackupDrServiceConfig#project}. |
 | <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeouts">BackupDrServiceConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -950,7 +950,7 @@ Location *string
 
 The location in which the Service config is to be initialized.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#location BackupDrServiceConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#location BackupDrServiceConfig#location}
 
 ---
 
@@ -964,7 +964,7 @@ ResourceType *string
 
 The resource type to which the default service config will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#resource_type BackupDrServiceConfig#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#resource_type BackupDrServiceConfig#resource_type}
 
 ---
 
@@ -976,7 +976,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#id BackupDrServiceConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#id BackupDrServiceConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +991,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#project BackupDrServiceConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#project BackupDrServiceConfig#project}.
 
 ---
 
@@ -1005,7 +1005,7 @@ Timeouts BackupDrServiceConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#timeouts BackupDrServiceConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#timeouts BackupDrServiceConfig#timeouts}
 
 ---
 
@@ -1014,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/backupdrserviceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrserviceconfig"
 
 &backupdrserviceconfig.BackupDrServiceConfigTimeouts {
 	Create: *string,
@@ -1026,8 +1026,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/backupdrservicec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#create BackupDrServiceConfig#create}. |
-| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#delete BackupDrServiceConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#create BackupDrServiceConfig#create}. |
+| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#delete BackupDrServiceConfig#delete}. |
 
 ---
 
@@ -1039,7 +1039,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#create BackupDrServiceConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#create BackupDrServiceConfig#create}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/backup_dr_service_config#delete BackupDrServiceConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#delete BackupDrServiceConfig#delete}.
 
 ---
 
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/backupdrserviceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/backupdrserviceconfig"
 
 backupdrserviceconfig.NewBackupDrServiceConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BackupDrServiceConfigTimeoutsOutputReference
 ```

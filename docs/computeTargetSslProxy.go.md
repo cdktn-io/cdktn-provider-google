@@ -4,12 +4,12 @@
 
 ### ComputeTargetSslProxy <a name="ComputeTargetSslProxy" id="@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy google_compute_target_ssl_proxy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy google_compute_target_ssl_proxy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetsslproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetsslproxy"
 
 computetargetsslproxy.NewComputeTargetSslProxy(scope Construct, id *string, config ComputeTargetSslProxyConfig) ComputeTargetSslProxy
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetsslproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetsslproxy"
 
 computetargetsslproxy.ComputeTargetSslProxy_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetsslproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetsslproxy"
 
 computetargetsslproxy.ComputeTargetSslProxy_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ computetargetsslproxy.ComputeTargetSslProxy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetsslproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetsslproxy"
 
 computetargetsslproxy.ComputeTargetSslProxy_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ computetargetsslproxy.ComputeTargetSslProxy_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetsslproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetsslproxy"
 
 computetargetsslproxy.ComputeTargetSslProxy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -558,7 +558,7 @@ The construct id used in the generated config for the ComputeTargetSslProxy to i
 
 The id of the existing ComputeTargetSslProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1011,7 +1011,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetsslproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetsslproxy"
 
 &computetargetsslproxy.ComputeTargetSslProxyConfig {
 	Connection: interface{},
@@ -1030,7 +1030,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetssl
 	ProxyHeader: *string,
 	SslCertificates: *[]*string,
 	SslPolicy: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeTargetSslProxy.ComputeTargetSslProxyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeTargetSslProxy.ComputeTargetSslProxyTimeouts,
 }
 ```
 
@@ -1049,8 +1049,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetssl
 | <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig.property.certificateMap">CertificateMap</a></code> | <code>*string</code> | A reference to the CertificateMap resource uri that identifies a certificate map associated with the given target proxy. |
 | <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#id ComputeTargetSslProxy#id}. |
-| <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#project ComputeTargetSslProxy#project}. |
+| <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#id ComputeTargetSslProxy#id}. |
+| <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#project ComputeTargetSslProxy#project}. |
 | <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig.property.proxyHeader">ProxyHeader</a></code> | <code>*string</code> | Specifies the type of proxy header to append before sending data to the backend. |
 | <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig.property.sslCertificates">SslCertificates</a></code> | <code>*[]*string</code> | A list of SslCertificate resources that are used to authenticate connections between users and the load balancer. |
 | <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyConfig.property.sslPolicy">SslPolicy</a></code> | <code>*string</code> | A reference to the SslPolicy resource that will be associated with the TargetSslProxy resource. |
@@ -1138,7 +1138,7 @@ BackendService *string
 
 A reference to the BackendService resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#backend_service ComputeTargetSslProxy#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#backend_service ComputeTargetSslProxy#backend_service}
 
 ---
 
@@ -1160,7 +1160,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#name ComputeTargetSslProxy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#name ComputeTargetSslProxy#name}
 
 ---
 
@@ -1177,7 +1177,7 @@ A reference to the CertificateMap resource uri that identifies a certificate map
 This field can only be set for global target proxies.
 Accepted format is '//certificatemanager.googleapis.com/projects/{project}/locations/{location}/certificateMaps/{resourceName}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#certificate_map ComputeTargetSslProxy#certificate_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#certificate_map ComputeTargetSslProxy#certificate_map}
 
 ---
 
@@ -1191,7 +1191,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#description ComputeTargetSslProxy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#description ComputeTargetSslProxy#description}
 
 ---
 
@@ -1203,7 +1203,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#id ComputeTargetSslProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#id ComputeTargetSslProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1218,7 +1218,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#project ComputeTargetSslProxy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#project ComputeTargetSslProxy#project}.
 
 ---
 
@@ -1234,7 +1234,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#proxy_header ComputeTargetSslProxy#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#proxy_header ComputeTargetSslProxy#proxy_header}
 
 ---
 
@@ -1251,7 +1251,7 @@ A list of SslCertificate resources that are used to authenticate connections bet
 At least one
 SSL certificate must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#ssl_certificates ComputeTargetSslProxy#ssl_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#ssl_certificates ComputeTargetSslProxy#ssl_certificates}
 
 ---
 
@@ -1268,7 +1268,7 @@ A reference to the SslPolicy resource that will be associated with the TargetSsl
 If not set, the TargetSslProxy
 resource will not have any SSL policy configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#ssl_policy ComputeTargetSslProxy#ssl_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#ssl_policy ComputeTargetSslProxy#ssl_policy}
 
 ---
 
@@ -1282,7 +1282,7 @@ Timeouts ComputeTargetSslProxyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#timeouts ComputeTargetSslProxy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#timeouts ComputeTargetSslProxy#timeouts}
 
 ---
 
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetsslproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetsslproxy"
 
 &computetargetsslproxy.ComputeTargetSslProxyTimeouts {
 	Create: *string,
@@ -1304,9 +1304,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetssl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#create ComputeTargetSslProxy#create}. |
-| <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#delete ComputeTargetSslProxy#delete}. |
-| <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#update ComputeTargetSslProxy#update}. |
+| <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#create ComputeTargetSslProxy#create}. |
+| <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#delete ComputeTargetSslProxy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#update ComputeTargetSslProxy#update}. |
 
 ---
 
@@ -1318,7 +1318,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#create ComputeTargetSslProxy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#create ComputeTargetSslProxy#create}.
 
 ---
 
@@ -1330,7 +1330,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#delete ComputeTargetSslProxy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#delete ComputeTargetSslProxy#delete}.
 
 ---
 
@@ -1342,7 +1342,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_target_ssl_proxy#update ComputeTargetSslProxy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_target_ssl_proxy#update ComputeTargetSslProxy#update}.
 
 ---
 
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeTargetSslProxy.ComputeTargetSslProxyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computetargetsslproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computetargetsslproxy"
 
 computetargetsslproxy.NewComputeTargetSslProxyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeTargetSslProxyTimeoutsOutputReference
 ```

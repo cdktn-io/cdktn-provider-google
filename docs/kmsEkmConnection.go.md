@@ -4,12 +4,12 @@
 
 ### KmsEkmConnection <a name="KmsEkmConnection" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection google_kms_ekm_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection google_kms_ekm_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 kmsekmconnection.NewKmsEkmConnection(scope Construct, id *string, config KmsEkmConnectionConfig) KmsEkmConnection
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 kmsekmconnection.KmsEkmConnection_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 kmsekmconnection.KmsEkmConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ kmsekmconnection.KmsEkmConnection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 kmsekmconnection.KmsEkmConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ kmsekmconnection.KmsEkmConnection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 kmsekmconnection.KmsEkmConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -557,7 +557,7 @@ The construct id used in the generated config for the KmsEkmConnection to import
 
 The id of the existing KmsEkmConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 &kmsekmconnection.KmsEkmConnectionConfig {
 	Connection: interface{},
@@ -984,7 +984,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection
 	Id: *string,
 	KeyManagementMode: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.kmsEkmConnection.KmsEkmConnectionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.kmsEkmConnection.KmsEkmConnectionTimeouts,
 }
 ```
 
@@ -1004,9 +1004,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.serviceResolvers">ServiceResolvers</a></code> | <code>interface{}</code> | service_resolvers block. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.cryptoSpacePath">CryptoSpacePath</a></code> | <code>*string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.etag">Etag</a></code> | <code>*string</code> | Optional. Etag of the currently stored EkmConnection. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#id KmsEkmConnection#id}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#id KmsEkmConnection#id}. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.keyManagementMode">KeyManagementMode</a></code> | <code>*string</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#project KmsEkmConnection#project}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#project KmsEkmConnection#project}. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts">KmsEkmConnectionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1091,7 +1091,7 @@ Location *string
 
 The location for the EkmConnection. A full list of valid locations can be found by running 'gcloud kms locations list'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#location KmsEkmConnection#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#location KmsEkmConnection#location}
 
 ---
 
@@ -1105,7 +1105,7 @@ Name *string
 
 The resource name for the EkmConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#name KmsEkmConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#name KmsEkmConnection#name}
 
 ---
 
@@ -1119,7 +1119,7 @@ ServiceResolvers interface{}
 
 service_resolvers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#service_resolvers KmsEkmConnection#service_resolvers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#service_resolvers KmsEkmConnection#service_resolvers}
 
 ---
 
@@ -1135,7 +1135,7 @@ Optional.
 
 Identifies the EKM Crypto Space that this EkmConnection maps to. Note: This field is required if KeyManagementMode is CLOUD_KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#crypto_space_path KmsEkmConnection#crypto_space_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#crypto_space_path KmsEkmConnection#crypto_space_path}
 
 ---
 
@@ -1149,7 +1149,7 @@ Etag *string
 
 Optional. Etag of the currently stored EkmConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#etag KmsEkmConnection#etag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#etag KmsEkmConnection#etag}
 
 ---
 
@@ -1161,7 +1161,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#id KmsEkmConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#id KmsEkmConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1180,7 +1180,7 @@ Optional.
 
 Describes who can perform control plane operations on the EKM. If unset, this defaults to MANUAL Default value: "MANUAL" Possible values: ["MANUAL", "CLOUD_KMS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#key_management_mode KmsEkmConnection#key_management_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#key_management_mode KmsEkmConnection#key_management_mode}
 
 ---
 
@@ -1192,7 +1192,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#project KmsEkmConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#project KmsEkmConnection#project}.
 
 ---
 
@@ -1206,7 +1206,7 @@ Timeouts KmsEkmConnectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#timeouts KmsEkmConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#timeouts KmsEkmConnection#timeouts}
 
 ---
 
@@ -1215,7 +1215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 &kmsekmconnection.KmsEkmConnectionServiceResolvers {
 	Hostname: *string,
@@ -1246,7 +1246,7 @@ Hostname *string
 
 Required. The hostname of the EKM replica used at TLS and HTTP layers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#hostname KmsEkmConnection#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#hostname KmsEkmConnection#hostname}
 
 ---
 
@@ -1260,7 +1260,7 @@ ServerCertificates interface{}
 
 server_certificates block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#server_certificates KmsEkmConnection#server_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#server_certificates KmsEkmConnection#server_certificates}
 
 ---
 
@@ -1276,7 +1276,7 @@ Required.
 
 The resource name of the Service Directory service pointing to an EKM replica, in the format projects/* /locations/* /namespaces/* /services/*
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#service_directory_service KmsEkmConnection#service_directory_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#service_directory_service KmsEkmConnection#service_directory_service}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1294,7 +1294,7 @@ Optional.
 
 The filter applied to the endpoints of the resolved service. If no filter is specified, all endpoints will be considered. An endpoint will be chosen arbitrarily from the filtered list for each request. For endpoint filter syntax and examples, see https://cloud.google.com/service-directory/docs/reference/rpc/google.cloud.servicedirectory.v1#resolveservicerequest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#endpoint_filter KmsEkmConnection#endpoint_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#endpoint_filter KmsEkmConnection#endpoint_filter}
 
 ---
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 &kmsekmconnection.KmsEkmConnectionServiceResolversServerCertificates {
 	RawDer: *string,
@@ -1330,7 +1330,7 @@ RawDer *string
 
 Required. The raw certificate bytes in DER format. A base64-encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#raw_der KmsEkmConnection#raw_der}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#raw_der KmsEkmConnection#raw_der}
 
 ---
 
@@ -1344,7 +1344,7 @@ SubjectAlternativeDnsNames *[]*string
 
 Output only. The subject Alternative DNS names. Only present if parsed is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#subject_alternative_dns_names KmsEkmConnection#subject_alternative_dns_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#subject_alternative_dns_names KmsEkmConnection#subject_alternative_dns_names}
 
 ---
 
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 &kmsekmconnection.KmsEkmConnectionTimeouts {
 	Create: *string,
@@ -1366,9 +1366,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#create KmsEkmConnection#create}. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#delete KmsEkmConnection#delete}. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#update KmsEkmConnection#update}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#create KmsEkmConnection#create}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#delete KmsEkmConnection#delete}. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#update KmsEkmConnection#update}. |
 
 ---
 
@@ -1380,7 +1380,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#create KmsEkmConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#create KmsEkmConnection#create}.
 
 ---
 
@@ -1392,7 +1392,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#delete KmsEkmConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#delete KmsEkmConnection#delete}.
 
 ---
 
@@ -1404,7 +1404,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#update KmsEkmConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_ekm_connection#update KmsEkmConnection#update}.
 
 ---
 
@@ -1415,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 kmsekmconnection.NewKmsEkmConnectionServiceResolversList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KmsEkmConnectionServiceResolversList
 ```
@@ -1575,7 +1575,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 kmsekmconnection.NewKmsEkmConnectionServiceResolversOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KmsEkmConnectionServiceResolversOutputReference
 ```
@@ -1950,7 +1950,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 kmsekmconnection.NewKmsEkmConnectionServiceResolversServerCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KmsEkmConnectionServiceResolversServerCertificatesList
 ```
@@ -2110,7 +2110,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 kmsekmconnection.NewKmsEkmConnectionServiceResolversServerCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KmsEkmConnectionServiceResolversServerCertificatesOutputReference
 ```
@@ -2505,7 +2505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/kmsekmconnection"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmsekmconnection"
 
 kmsekmconnection.NewKmsEkmConnectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KmsEkmConnectionTimeoutsOutputReference
 ```

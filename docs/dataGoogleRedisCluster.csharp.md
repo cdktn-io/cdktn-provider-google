@@ -4,7 +4,7 @@
 
 ### DataGoogleRedisCluster <a name="DataGoogleRedisCluster" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster google_redis_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster google_redis_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleRedisCluster to 
 
 The id of the existing DataGoogleRedisCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -436,18 +436,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.allowFewerZonesDeployment">AllowFewerZonesDeployment</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.authorizationMode">AuthorizationMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.automatedBackupConfig">AutomatedBackupConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterAutomatedBackupConfigList">DataGoogleRedisClusterAutomatedBackupConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.availableMaintenanceVersions">AvailableMaintenanceVersions</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.backupCollection">BackupCollection</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.createTime">CreateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.crossClusterReplicationConfig">CrossClusterReplicationConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterCrossClusterReplicationConfigList">DataGoogleRedisClusterCrossClusterReplicationConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.deletionProtectionEnabled">DeletionProtectionEnabled</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.discoveryEndpoints">DiscoveryEndpoints</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpointsList">DataGoogleRedisClusterDiscoveryEndpointsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.effectiveLabels">EffectiveLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.effectiveMaintenanceVersion">EffectiveMaintenanceVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.gcsSource">GcsSource</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterGcsSourceList">DataGoogleRedisClusterGcsSourceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.kmsKey">KmsKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.labels">Labels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.maintenancePolicy">MaintenancePolicy</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenancePolicyList">DataGoogleRedisClusterMaintenancePolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.maintenanceSchedule">MaintenanceSchedule</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenanceScheduleList">DataGoogleRedisClusterMaintenanceScheduleList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.maintenanceVersion">MaintenanceVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.managedBackupSource">ManagedBackupSource</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterManagedBackupSourceList">DataGoogleRedisClusterManagedBackupSourceList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.managedServerCa">ManagedServerCa</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterManagedServerCaList">DataGoogleRedisClusterManagedServerCaList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.nodeType">NodeType</a></code> | <code>string</code> | *No description.* |
@@ -458,10 +462,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.pscServiceAttachments">PscServiceAttachments</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterPscServiceAttachmentsList">DataGoogleRedisClusterPscServiceAttachmentsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.redisConfigs">RedisConfigs</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.replicaCount">ReplicaCount</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.serverCaMode">ServerCaMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.serverCaPool">ServerCaPool</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.shardCount">ShardCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.sizeGb">SizeGb</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.state">State</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.stateInfo">StateInfo</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterStateInfoList">DataGoogleRedisClusterStateInfoList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.transitEncryptionMode">TransitEncryptionMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.uid">Uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.zoneDistributionConfig">ZoneDistributionConfig</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterZoneDistributionConfigList">DataGoogleRedisClusterZoneDistributionConfigList</a></code> | *No description.* |
@@ -598,16 +605,6 @@ public TerraformProvider Provider { get; }
 
 ---
 
-##### `AllowFewerZonesDeployment`<sup>Required</sup> <a name="AllowFewerZonesDeployment" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.allowFewerZonesDeployment"></a>
-
-```csharp
-public IResolvable AllowFewerZonesDeployment { get; }
-```
-
-- *Type:* Io.Cdktn.IResolvable
-
----
-
 ##### `AuthorizationMode`<sup>Required</sup> <a name="AuthorizationMode" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.authorizationMode"></a>
 
 ```csharp
@@ -625,6 +622,16 @@ public DataGoogleRedisClusterAutomatedBackupConfigList AutomatedBackupConfig { g
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterAutomatedBackupConfigList">DataGoogleRedisClusterAutomatedBackupConfigList</a>
+
+---
+
+##### `AvailableMaintenanceVersions`<sup>Required</sup> <a name="AvailableMaintenanceVersions" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.availableMaintenanceVersions"></a>
+
+```csharp
+public string[] AvailableMaintenanceVersions { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -678,6 +685,26 @@ public DataGoogleRedisClusterDiscoveryEndpointsList DiscoveryEndpoints { get; }
 
 ---
 
+##### `EffectiveLabels`<sup>Required</sup> <a name="EffectiveLabels" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.effectiveLabels"></a>
+
+```csharp
+public StringMap EffectiveLabels { get; }
+```
+
+- *Type:* Io.Cdktn.StringMap
+
+---
+
+##### `EffectiveMaintenanceVersion`<sup>Required</sup> <a name="EffectiveMaintenanceVersion" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.effectiveMaintenanceVersion"></a>
+
+```csharp
+public string EffectiveMaintenanceVersion { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `GcsSource`<sup>Required</sup> <a name="GcsSource" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.gcsSource"></a>
 
 ```csharp
@@ -698,6 +725,16 @@ public string KmsKey { get; }
 
 ---
 
+##### `Labels`<sup>Required</sup> <a name="Labels" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.labels"></a>
+
+```csharp
+public StringMap Labels { get; }
+```
+
+- *Type:* Io.Cdktn.StringMap
+
+---
+
 ##### `MaintenancePolicy`<sup>Required</sup> <a name="MaintenancePolicy" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.maintenancePolicy"></a>
 
 ```csharp
@@ -715,6 +752,16 @@ public DataGoogleRedisClusterMaintenanceScheduleList MaintenanceSchedule { get; 
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterMaintenanceScheduleList">DataGoogleRedisClusterMaintenanceScheduleList</a>
+
+---
+
+##### `MaintenanceVersion`<sup>Required</sup> <a name="MaintenanceVersion" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.maintenanceVersion"></a>
+
+```csharp
+public string MaintenanceVersion { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -818,6 +865,26 @@ public double ReplicaCount { get; }
 
 ---
 
+##### `ServerCaMode`<sup>Required</sup> <a name="ServerCaMode" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.serverCaMode"></a>
+
+```csharp
+public string ServerCaMode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ServerCaPool`<sup>Required</sup> <a name="ServerCaPool" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.serverCaPool"></a>
+
+```csharp
+public string ServerCaPool { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `ShardCount`<sup>Required</sup> <a name="ShardCount" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.shardCount"></a>
 
 ```csharp
@@ -855,6 +922,16 @@ public DataGoogleRedisClusterStateInfoList StateInfo { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterStateInfoList">DataGoogleRedisClusterStateInfoList</a>
+
+---
+
+##### `TerraformLabels`<sup>Required</sup> <a name="TerraformLabels" id="@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisCluster.property.terraformLabels"></a>
+
+```csharp
+public StringMap TerraformLabels { get; }
+```
+
+- *Type:* Io.Cdktn.StringMap
 
 ---
 
@@ -1061,8 +1138,8 @@ new DataGoogleRedisClusterConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.name">Name</a></code> | <code>string</code> | Unique name of the resource in this scope including project and location using the form: projects/{projectId}/locations/{locationId}/clusters/{clusterId}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterConfig.property.region">Region</a></code> | <code>string</code> | The name of the region of the Redis cluster. |
 
 ---
@@ -1147,7 +1224,7 @@ public string Name { get; set; }
 
 Unique name of the resource in this scope including project and location using the form: projects/{projectId}/locations/{locationId}/clusters/{clusterId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#name DataGoogleRedisCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#name DataGoogleRedisCluster#name}
 
 ---
 
@@ -1159,7 +1236,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1174,7 +1251,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}.
 
 ---
 
@@ -1188,7 +1265,7 @@ public string Region { get; set; }
 
 The name of the region of the Redis cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#region DataGoogleRedisCluster#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#region DataGoogleRedisCluster#region}
 
 ---
 

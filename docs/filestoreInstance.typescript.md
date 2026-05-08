@@ -4,7 +4,7 @@
 
 ### FilestoreInstance <a name="FilestoreInstance" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance google_filestore_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance google_filestore_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.putDirectoryServices">putDirectoryServices</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.putFileShares">putFileShares</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.putInitialReplication">putInitialReplication</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.putNetworks">putNetworks</a></code> | *No description.* |
@@ -82,6 +83,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.resetDeletionProtectionEnabled">resetDeletionProtectionEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.resetDeletionProtectionReason">resetDeletionProtectionReason</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.resetDesiredReplicaState">resetDesiredReplicaState</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.resetDirectoryServices">resetDirectoryServices</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.resetInitialReplication">resetInitialReplication</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.resetKmsKeyName">resetKmsKeyName</a></code> | *No description.* |
@@ -405,6 +408,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putDirectoryServices` <a name="putDirectoryServices" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.putDirectoryServices"></a>
+
+```typescript
+public putDirectoryServices(value: FilestoreInstanceDirectoryServices): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.putDirectoryServices.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices">FilestoreInstanceDirectoryServices</a>
+
+---
+
 ##### `putFileShares` <a name="putFileShares" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.putFileShares"></a>
 
 ```typescript
@@ -481,6 +496,18 @@ public resetDeletionProtectionReason(): void
 
 ```typescript
 public resetDescription(): void
+```
+
+##### `resetDesiredReplicaState` <a name="resetDesiredReplicaState" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.resetDesiredReplicaState"></a>
+
+```typescript
+public resetDesiredReplicaState(): void
+```
+
+##### `resetDirectoryServices` <a name="resetDirectoryServices" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.resetDirectoryServices"></a>
+
+```typescript
+public resetDirectoryServices(): void
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.resetId"></a>
@@ -652,7 +679,7 @@ The construct id used in the generated config for the FilestoreInstance to impor
 
 The id of the existing FilestoreInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -683,6 +710,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.directoryServices">directoryServices</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference">FilestoreInstanceDirectoryServicesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.effectiveReplication">effectiveReplication</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplicationList">FilestoreInstanceEffectiveReplicationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.etag">etag</a></code> | <code>string</code> | *No description.* |
@@ -695,6 +723,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.deletionProtectionEnabledInput">deletionProtectionEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.deletionProtectionReasonInput">deletionProtectionReasonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.desiredReplicaStateInput">desiredReplicaStateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.directoryServicesInput">directoryServicesInput</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices">FilestoreInstanceDirectoryServices</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.fileSharesInput">fileSharesInput</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileShares">FilestoreInstanceFileShares</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.initialReplicationInput">initialReplicationInput</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceInitialReplication">FilestoreInstanceInitialReplication</a></code> | *No description.* |
@@ -713,6 +743,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.deletionProtectionEnabled">deletionProtectionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.deletionProtectionReason">deletionProtectionReason</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.desiredReplicaState">desiredReplicaState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.kmsKeyName">kmsKeyName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -878,6 +909,16 @@ public readonly createTime: string;
 
 ---
 
+##### `directoryServices`<sup>Required</sup> <a name="directoryServices" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.directoryServices"></a>
+
+```typescript
+public readonly directoryServices: FilestoreInstanceDirectoryServicesOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference">FilestoreInstanceDirectoryServicesOutputReference</a>
+
+---
+
 ##### `effectiveLabels`<sup>Required</sup> <a name="effectiveLabels" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.effectiveLabels"></a>
 
 ```typescript
@@ -995,6 +1036,26 @@ public readonly descriptionInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `desiredReplicaStateInput`<sup>Optional</sup> <a name="desiredReplicaStateInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.desiredReplicaStateInput"></a>
+
+```typescript
+public readonly desiredReplicaStateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `directoryServicesInput`<sup>Optional</sup> <a name="directoryServicesInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.directoryServicesInput"></a>
+
+```typescript
+public readonly directoryServicesInput: FilestoreInstanceDirectoryServices;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices">FilestoreInstanceDirectoryServices</a>
 
 ---
 
@@ -1178,6 +1239,16 @@ public readonly description: string;
 
 ---
 
+##### `desiredReplicaState`<sup>Required</sup> <a name="desiredReplicaState" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.desiredReplicaState"></a>
+
+```typescript
+public readonly desiredReplicaState: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.filestoreInstance.FilestoreInstance.property.id"></a>
 
 ```typescript
@@ -1326,13 +1397,15 @@ const filestoreInstanceConfig: filestoreInstance.FilestoreInstanceConfig = { ...
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.deletionProtectionEnabled">deletionProtectionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates whether the instance is protected against deletion. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.deletionProtectionReason">deletionProtectionReason</a></code> | <code>string</code> | The reason for enabling deletion protection. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.description">description</a></code> | <code>string</code> | A description of the instance. |
-| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#id FilestoreInstance#id}. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.desiredReplicaState">desiredReplicaState</a></code> | <code>string</code> | The desired_replica_state field controls the state of a replica. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.directoryServices">directoryServices</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices">FilestoreInstanceDirectoryServices</a></code> | directory_services block. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#id FilestoreInstance#id}. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.initialReplication">initialReplication</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceInitialReplication">FilestoreInstanceInitialReplication</a></code> | initial_replication block. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.kmsKeyName">kmsKeyName</a></code> | <code>string</code> | KMS key name used for data encryption. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Resource labels to represent user-provided metadata. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.location">location</a></code> | <code>string</code> | The name of the location of the instance. This can be a region for ENTERPRISE tier instances. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.performanceConfig">performanceConfig</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstancePerformanceConfig">FilestoreInstancePerformanceConfig</a></code> | performance_config block. |
-| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#project FilestoreInstance#project}. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#project FilestoreInstance#project}. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.protocol">protocol</a></code> | <code>string</code> | Either NFSv3, for using NFS version 3 as file sharing protocol, or NFSv4.1, for using NFS version 4.1 as file sharing protocol. NFSv4.1 can be used with HIGH_SCALE_SSD, ZONAL, REGIONAL and ENTERPRISE. The default is NFSv3. Default value: "NFS_V3" Possible values: ["NFS_V3", "NFS_V4_1"]. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | A map of resource manager tags. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceTimeouts">FilestoreInstanceTimeouts</a></code> | timeouts block. |
@@ -1420,7 +1493,7 @@ public readonly fileShares: FilestoreInstanceFileShares;
 
 file_shares block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#file_shares FilestoreInstance#file_shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#file_shares FilestoreInstance#file_shares}
 
 ---
 
@@ -1434,7 +1507,7 @@ public readonly name: string;
 
 The resource name of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#name FilestoreInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#name FilestoreInstance#name}
 
 ---
 
@@ -1448,7 +1521,7 @@ public readonly networks: IResolvable | FilestoreInstanceNetworks[];
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#networks FilestoreInstance#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#networks FilestoreInstance#networks}
 
 ---
 
@@ -1462,7 +1535,7 @@ public readonly tier: string;
 
 The service tier of the instance. Possible values include: STANDARD, PREMIUM, BASIC_HDD, BASIC_SSD, HIGH_SCALE_SSD, ZONAL, REGIONAL and ENTERPRISE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#tier FilestoreInstance#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#tier FilestoreInstance#tier}
 
 ---
 
@@ -1476,7 +1549,7 @@ public readonly deletionProtectionEnabled: boolean | IResolvable;
 
 Indicates whether the instance is protected against deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#deletion_protection_enabled FilestoreInstance#deletion_protection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#deletion_protection_enabled FilestoreInstance#deletion_protection_enabled}
 
 ---
 
@@ -1490,7 +1563,7 @@ public readonly deletionProtectionReason: string;
 
 The reason for enabling deletion protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#deletion_protection_reason FilestoreInstance#deletion_protection_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#deletion_protection_reason FilestoreInstance#deletion_protection_reason}
 
 ---
 
@@ -1504,7 +1577,37 @@ public readonly description: string;
 
 A description of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#description FilestoreInstance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#description FilestoreInstance#description}
+
+---
+
+##### `desiredReplicaState`<sup>Optional</sup> <a name="desiredReplicaState" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.desiredReplicaState"></a>
+
+```typescript
+public readonly desiredReplicaState: string;
+```
+
+- *Type:* string
+
+The desired_replica_state field controls the state of a replica.
+
+Terraform will attempt to make the actual state of the replica match the desired state. Default value: "READY" Possible values: ["PAUSED", "READY"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#desired_replica_state FilestoreInstance#desired_replica_state}
+
+---
+
+##### `directoryServices`<sup>Optional</sup> <a name="directoryServices" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceConfig.property.directoryServices"></a>
+
+```typescript
+public readonly directoryServices: FilestoreInstanceDirectoryServices;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices">FilestoreInstanceDirectoryServices</a>
+
+directory_services block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#directory_services FilestoreInstance#directory_services}
 
 ---
 
@@ -1516,7 +1619,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#id FilestoreInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#id FilestoreInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1533,7 +1636,7 @@ public readonly initialReplication: FilestoreInstanceInitialReplication;
 
 initial_replication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#initial_replication FilestoreInstance#initial_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#initial_replication FilestoreInstance#initial_replication}
 
 ---
 
@@ -1547,7 +1650,7 @@ public readonly kmsKeyName: string;
 
 KMS key name used for data encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#kms_key_name FilestoreInstance#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#kms_key_name FilestoreInstance#kms_key_name}
 
 ---
 
@@ -1564,7 +1667,7 @@ Resource labels to represent user-provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#labels FilestoreInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#labels FilestoreInstance#labels}
 
 ---
 
@@ -1578,7 +1681,7 @@ public readonly location: string;
 
 The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#location FilestoreInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#location FilestoreInstance#location}
 
 ---
 
@@ -1592,7 +1695,7 @@ public readonly performanceConfig: FilestoreInstancePerformanceConfig;
 
 performance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#performance_config FilestoreInstance#performance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#performance_config FilestoreInstance#performance_config}
 
 ---
 
@@ -1604,7 +1707,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#project FilestoreInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#project FilestoreInstance#project}.
 
 ---
 
@@ -1618,7 +1721,7 @@ public readonly protocol: string;
 
 Either NFSv3, for using NFS version 3 as file sharing protocol, or NFSv4.1, for using NFS version 4.1 as file sharing protocol. NFSv4.1 can be used with HIGH_SCALE_SSD, ZONAL, REGIONAL and ENTERPRISE. The default is NFSv3. Default value: "NFS_V3" Possible values: ["NFS_V3", "NFS_V4_1"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#protocol FilestoreInstance#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#protocol FilestoreInstance#protocol}
 
 ---
 
@@ -1642,7 +1745,7 @@ at create time and modifying this field after creation
 will trigger recreation. To apply tags to an existing
 resource, see the 'google_tags_tag_value' resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#tags FilestoreInstance#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#tags FilestoreInstance#tags}
 
 ---
 
@@ -1656,7 +1759,7 @@ public readonly timeouts: FilestoreInstanceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#timeouts FilestoreInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#timeouts FilestoreInstance#timeouts}
 
 ---
 
@@ -1670,7 +1773,130 @@ public readonly zone: string;
 
 The name of the Filestore zone of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#zone FilestoreInstance#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#zone FilestoreInstance#zone}
+
+---
+
+### FilestoreInstanceDirectoryServices <a name="FilestoreInstanceDirectoryServices" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices.Initializer"></a>
+
+```typescript
+import { filestoreInstance } from '@cdktn/provider-google'
+
+const filestoreInstanceDirectoryServices: filestoreInstance.FilestoreInstanceDirectoryServices = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices.property.ldap">ldap</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap">FilestoreInstanceDirectoryServicesLdap</a></code> | ldap block. |
+
+---
+
+##### `ldap`<sup>Optional</sup> <a name="ldap" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices.property.ldap"></a>
+
+```typescript
+public readonly ldap: FilestoreInstanceDirectoryServicesLdap;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap">FilestoreInstanceDirectoryServicesLdap</a>
+
+ldap block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#ldap FilestoreInstance#ldap}
+
+---
+
+### FilestoreInstanceDirectoryServicesLdap <a name="FilestoreInstanceDirectoryServicesLdap" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap.Initializer"></a>
+
+```typescript
+import { filestoreInstance } from '@cdktn/provider-google'
+
+const filestoreInstanceDirectoryServicesLdap: filestoreInstance.FilestoreInstanceDirectoryServicesLdap = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap.property.domain">domain</a></code> | <code>string</code> | The LDAP domain name in the format of 'my-domain.com'. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap.property.servers">servers</a></code> | <code>string[]</code> | The servers names are used for specifying the LDAP servers names. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap.property.groupsOu">groupsOu</a></code> | <code>string</code> | The groups Organizational Unit (OU) is optional. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap.property.usersOu">usersOu</a></code> | <code>string</code> | The users Organizational Unit (OU) is optional. |
+
+---
+
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap.property.domain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* string
+
+The LDAP domain name in the format of 'my-domain.com'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#domain FilestoreInstance#domain}
+
+---
+
+##### `servers`<sup>Required</sup> <a name="servers" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap.property.servers"></a>
+
+```typescript
+public readonly servers: string[];
+```
+
+- *Type:* string[]
+
+The servers names are used for specifying the LDAP servers names.
+
+The LDAP servers names can come with two formats:
+1. DNS name, for example: 'ldap.example1.com', 'ldap.example2.com'.
+2. IP address, for example: '10.0.0.1', '10.0.0.2', '10.0.0.3'.
+All servers names must be in the same format: either all DNS names or all
+IP addresses.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#servers FilestoreInstance#servers}
+
+---
+
+##### `groupsOu`<sup>Optional</sup> <a name="groupsOu" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap.property.groupsOu"></a>
+
+```typescript
+public readonly groupsOu: string;
+```
+
+- *Type:* string
+
+The groups Organizational Unit (OU) is optional.
+
+This parameter is a hint
+to allow faster lookup in the LDAP namespace. In case that this parameter
+is not provided, Filestore instance will query the whole LDAP namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#groups_ou FilestoreInstance#groups_ou}
+
+---
+
+##### `usersOu`<sup>Optional</sup> <a name="usersOu" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap.property.usersOu"></a>
+
+```typescript
+public readonly usersOu: string;
+```
+
+- *Type:* string
+
+The users Organizational Unit (OU) is optional.
+
+This parameter is a hint
+to allow faster lookup in the LDAP namespace. In case that this parameter
+is not provided, Filestore instance will query the whole LDAP namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#users_ou FilestoreInstance#users_ou}
 
 ---
 
@@ -1714,6 +1940,7 @@ const filestoreInstanceFileShares: filestoreInstance.FilestoreInstanceFileShares
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileShares.property.name">name</a></code> | <code>string</code> | The name of the fileshare (16 characters or less). |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileShares.property.nfsExportOptions">nfsExportOptions</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions">FilestoreInstanceFileSharesNfsExportOptions</a>[]</code> | nfs_export_options block. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileShares.property.sourceBackup">sourceBackup</a></code> | <code>string</code> | The resource name of the backup, in the format projects/{projectId}/locations/{locationId}/backups/{backupId}, that this file share has been restored from. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileShares.property.sourceBackupdrBackup">sourceBackupdrBackup</a></code> | <code>string</code> | The resource name of the BackupDR backup, in the format 'projects/{project_id}/locations/{location_id}/backupVaults/{backupvault_id}/dataSources/{datasource_id}/backups/{backup_id}', that this file share has been restored from. |
 
 ---
 
@@ -1730,7 +1957,7 @@ File share capacity in GiB.
 This must be at least 1024 GiB
 for the standard tier, or 2560 GiB for the premium tier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#capacity_gb FilestoreInstance#capacity_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#capacity_gb FilestoreInstance#capacity_gb}
 
 ---
 
@@ -1744,7 +1971,7 @@ public readonly name: string;
 
 The name of the fileshare (16 characters or less).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#name FilestoreInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#name FilestoreInstance#name}
 
 ---
 
@@ -1758,7 +1985,7 @@ public readonly nfsExportOptions: IResolvable | FilestoreInstanceFileSharesNfsEx
 
 nfs_export_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#nfs_export_options FilestoreInstance#nfs_export_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#nfs_export_options FilestoreInstance#nfs_export_options}
 
 ---
 
@@ -1772,7 +1999,21 @@ public readonly sourceBackup: string;
 
 The resource name of the backup, in the format projects/{projectId}/locations/{locationId}/backups/{backupId}, that this file share has been restored from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#source_backup FilestoreInstance#source_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#source_backup FilestoreInstance#source_backup}
+
+---
+
+##### `sourceBackupdrBackup`<sup>Optional</sup> <a name="sourceBackupdrBackup" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileShares.property.sourceBackupdrBackup"></a>
+
+```typescript
+public readonly sourceBackupdrBackup: string;
+```
+
+- *Type:* string
+
+The resource name of the BackupDR backup, in the format 'projects/{project_id}/locations/{location_id}/backupVaults/{backupvault_id}/dataSources/{datasource_id}/backups/{backup_id}', that this file share has been restored from.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#source_backupdr_backup FilestoreInstance#source_backupdr_backup}
 
 ---
 
@@ -1794,6 +2035,7 @@ const filestoreInstanceFileSharesNfsExportOptions: filestoreInstance.FilestoreIn
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions.property.anonGid">anonGid</a></code> | <code>number</code> | An integer representing the anonymous group id with a default value of 65534. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions.property.anonUid">anonUid</a></code> | <code>number</code> | An integer representing the anonymous user id with a default value of 65534. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions.property.ipRanges">ipRanges</a></code> | <code>string[]</code> | List of either IPv4 addresses, or ranges in CIDR notation which may mount the file share. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions.property.network">network</a></code> | <code>string</code> | The source VPC network for 'ip_ranges'. Required for instances using Private Service Connect, optional otherwise. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions.property.squashMode">squashMode</a></code> | <code>string</code> | Either NO_ROOT_SQUASH, for allowing root access on the exported directory, or ROOT_SQUASH, for not allowing root access. |
 
 ---
@@ -1810,7 +2052,7 @@ Either READ_ONLY, for allowing only read requests on the exported directory, or 
 
 The default is READ_WRITE. Default value: "READ_WRITE" Possible values: ["READ_ONLY", "READ_WRITE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#access_mode FilestoreInstance#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#access_mode FilestoreInstance#access_mode}
 
 ---
 
@@ -1827,7 +2069,7 @@ An integer representing the anonymous group id with a default value of 65534.
 Anon_gid may only be set with squashMode of ROOT_SQUASH. An error will be returned
 if this field is specified for other squashMode settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#anon_gid FilestoreInstance#anon_gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#anon_gid FilestoreInstance#anon_gid}
 
 ---
 
@@ -1844,7 +2086,7 @@ An integer representing the anonymous user id with a default value of 65534.
 Anon_uid may only be set with squashMode of ROOT_SQUASH. An error will be returned
 if this field is specified for other squashMode settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#anon_uid FilestoreInstance#anon_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#anon_uid FilestoreInstance#anon_uid}
 
 ---
 
@@ -1861,7 +2103,21 @@ List of either IPv4 addresses, or ranges in CIDR notation which may mount the fi
 Overlapping IP ranges are not allowed, both within and across NfsExportOptions. An error will be returned.
 The limit is 64 IP ranges/addresses for each FileShareConfig among all NfsExportOptions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#ip_ranges FilestoreInstance#ip_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#ip_ranges FilestoreInstance#ip_ranges}
+
+---
+
+##### `network`<sup>Optional</sup> <a name="network" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions.property.network"></a>
+
+```typescript
+public readonly network: string;
+```
+
+- *Type:* string
+
+The source VPC network for 'ip_ranges'. Required for instances using Private Service Connect, optional otherwise.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#network FilestoreInstance#network}
 
 ---
 
@@ -1877,7 +2133,7 @@ Either NO_ROOT_SQUASH, for allowing root access on the exported directory, or RO
 
 The default is NO_ROOT_SQUASH. Default value: "NO_ROOT_SQUASH" Possible values: ["NO_ROOT_SQUASH", "ROOT_SQUASH"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#squash_mode FilestoreInstance#squash_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#squash_mode FilestoreInstance#squash_mode}
 
 ---
 
@@ -1910,7 +2166,7 @@ public readonly replicas: IResolvable | FilestoreInstanceInitialReplicationRepli
 
 replicas block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#replicas FilestoreInstance#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#replicas FilestoreInstance#replicas}
 
 ---
 
@@ -1924,7 +2180,7 @@ public readonly role: string;
 
 The replication role. Default value: "STANDBY" Possible values: ["ROLE_UNSPECIFIED", "ACTIVE", "STANDBY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#role FilestoreInstance#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#role FilestoreInstance#role}
 
 ---
 
@@ -1956,7 +2212,7 @@ public readonly peerInstance: string;
 
 The peer instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#peer_instance FilestoreInstance#peer_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#peer_instance FilestoreInstance#peer_instance}
 
 ---
 
@@ -1977,6 +2233,7 @@ const filestoreInstanceNetworks: filestoreInstance.FilestoreInstanceNetworks = {
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworks.property.modes">modes</a></code> | <code>string[]</code> | IP versions for which the instance has IP addresses assigned. Possible values: ["ADDRESS_MODE_UNSPECIFIED", "MODE_IPV4", "MODE_IPV6"]. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworks.property.network">network</a></code> | <code>string</code> | The name of the GCE VPC network to which the instance is connected. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworks.property.connectMode">connectMode</a></code> | <code>string</code> | The network connect mode of the Filestore instance. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworks.property.pscConfig">pscConfig</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig">FilestoreInstanceNetworksPscConfig</a></code> | psc_config block. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworks.property.reservedIpRange">reservedIpRange</a></code> | <code>string</code> | A /29 CIDR block that identifies the range of IP addresses reserved for this instance. |
 
 ---
@@ -1991,7 +2248,7 @@ public readonly modes: string[];
 
 IP versions for which the instance has IP addresses assigned. Possible values: ["ADDRESS_MODE_UNSPECIFIED", "MODE_IPV4", "MODE_IPV6"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#modes FilestoreInstance#modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#modes FilestoreInstance#modes}
 
 ---
 
@@ -2005,7 +2262,7 @@ public readonly network: string;
 
 The name of the GCE VPC network to which the instance is connected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#network FilestoreInstance#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#network FilestoreInstance#network}
 
 ---
 
@@ -2022,7 +2279,21 @@ The network connect mode of the Filestore instance.
 If not provided, the connect mode defaults to
 DIRECT_PEERING. Default value: "DIRECT_PEERING" Possible values: ["DIRECT_PEERING", "PRIVATE_SERVICE_ACCESS", "PRIVATE_SERVICE_CONNECT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#connect_mode FilestoreInstance#connect_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#connect_mode FilestoreInstance#connect_mode}
+
+---
+
+##### `pscConfig`<sup>Optional</sup> <a name="pscConfig" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworks.property.pscConfig"></a>
+
+```typescript
+public readonly pscConfig: FilestoreInstanceNetworksPscConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig">FilestoreInstanceNetworksPscConfig</a>
+
+psc_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#psc_config FilestoreInstance#psc_config}
 
 ---
 
@@ -2036,7 +2307,43 @@ public readonly reservedIpRange: string;
 
 A /29 CIDR block that identifies the range of IP addresses reserved for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#reserved_ip_range FilestoreInstance#reserved_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#reserved_ip_range FilestoreInstance#reserved_ip_range}
+
+---
+
+### FilestoreInstanceNetworksPscConfig <a name="FilestoreInstanceNetworksPscConfig" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig.Initializer"></a>
+
+```typescript
+import { filestoreInstance } from '@cdktn/provider-google'
+
+const filestoreInstanceNetworksPscConfig: filestoreInstance.FilestoreInstanceNetworksPscConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig.property.endpointProject">endpointProject</a></code> | <code>string</code> | Consumer service project in which the Private Service Connect endpoint would be set up. |
+
+---
+
+##### `endpointProject`<sup>Optional</sup> <a name="endpointProject" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig.property.endpointProject"></a>
+
+```typescript
+public readonly endpointProject: string;
+```
+
+- *Type:* string
+
+Consumer service project in which the Private Service Connect endpoint would be set up.
+
+This is optional, and only relevant in case the network
+is a shared VPC. If this is not specified, the endpoint would be set up
+in the VPC host project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#endpoint_project FilestoreInstance#endpoint_project}
 
 ---
 
@@ -2069,7 +2376,7 @@ public readonly fixedIops: FilestoreInstancePerformanceConfigFixedIops;
 
 fixed_iops block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#fixed_iops FilestoreInstance#fixed_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#fixed_iops FilestoreInstance#fixed_iops}
 
 ---
 
@@ -2083,7 +2390,7 @@ public readonly iopsPerTb: FilestoreInstancePerformanceConfigIopsPerTb;
 
 iops_per_tb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#iops_per_tb FilestoreInstance#iops_per_tb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#iops_per_tb FilestoreInstance#iops_per_tb}
 
 ---
 
@@ -2115,7 +2422,7 @@ public readonly maxIops: number;
 
 The number of IOPS to provision for the instance. max_iops must be in multiple of 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#max_iops FilestoreInstance#max_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#max_iops FilestoreInstance#max_iops}
 
 ---
 
@@ -2151,7 +2458,7 @@ The instance max IOPS
 will be changed dynamically based on the instance
 capacity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#max_iops_per_tb FilestoreInstance#max_iops_per_tb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#max_iops_per_tb FilestoreInstance#max_iops_per_tb}
 
 ---
 
@@ -2169,9 +2476,9 @@ const filestoreInstanceTimeouts: filestoreInstance.FilestoreInstanceTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#create FilestoreInstance#create}. |
-| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#delete FilestoreInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#update FilestoreInstance#update}. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#create FilestoreInstance#create}. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#delete FilestoreInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#update FilestoreInstance#update}. |
 
 ---
 
@@ -2183,7 +2490,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#create FilestoreInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#create FilestoreInstance#create}.
 
 ---
 
@@ -2195,7 +2502,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#delete FilestoreInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#delete FilestoreInstance#delete}.
 
 ---
 
@@ -2207,11 +2514,653 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#update FilestoreInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#update FilestoreInstance#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### FilestoreInstanceDirectoryServicesLdapOutputReference <a name="FilestoreInstanceDirectoryServicesLdapOutputReference" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.Initializer"></a>
+
+```typescript
+import { filestoreInstance } from '@cdktn/provider-google'
+
+new filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.resetGroupsOu">resetGroupsOu</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.resetUsersOu">resetUsersOu</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetGroupsOu` <a name="resetGroupsOu" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.resetGroupsOu"></a>
+
+```typescript
+public resetGroupsOu(): void
+```
+
+##### `resetUsersOu` <a name="resetUsersOu" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.resetUsersOu"></a>
+
+```typescript
+public resetUsersOu(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.domainInput">domainInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.groupsOuInput">groupsOuInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.serversInput">serversInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.usersOuInput">usersOuInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.domain">domain</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.groupsOu">groupsOu</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.servers">servers</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.usersOu">usersOu</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap">FilestoreInstanceDirectoryServicesLdap</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `domainInput`<sup>Optional</sup> <a name="domainInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.domainInput"></a>
+
+```typescript
+public readonly domainInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `groupsOuInput`<sup>Optional</sup> <a name="groupsOuInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.groupsOuInput"></a>
+
+```typescript
+public readonly groupsOuInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serversInput`<sup>Optional</sup> <a name="serversInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.serversInput"></a>
+
+```typescript
+public readonly serversInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `usersOuInput`<sup>Optional</sup> <a name="usersOuInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.usersOuInput"></a>
+
+```typescript
+public readonly usersOuInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.domain"></a>
+
+```typescript
+public readonly domain: string;
+```
+
+- *Type:* string
+
+---
+
+##### `groupsOu`<sup>Required</sup> <a name="groupsOu" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.groupsOu"></a>
+
+```typescript
+public readonly groupsOu: string;
+```
+
+- *Type:* string
+
+---
+
+##### `servers`<sup>Required</sup> <a name="servers" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.servers"></a>
+
+```typescript
+public readonly servers: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `usersOu`<sup>Required</sup> <a name="usersOu" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.usersOu"></a>
+
+```typescript
+public readonly usersOu: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: FilestoreInstanceDirectoryServicesLdap;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap">FilestoreInstanceDirectoryServicesLdap</a>
+
+---
+
+
+### FilestoreInstanceDirectoryServicesOutputReference <a name="FilestoreInstanceDirectoryServicesOutputReference" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.Initializer"></a>
+
+```typescript
+import { filestoreInstance } from '@cdktn/provider-google'
+
+new filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.putLdap">putLdap</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.resetLdap">resetLdap</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putLdap` <a name="putLdap" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.putLdap"></a>
+
+```typescript
+public putLdap(value: FilestoreInstanceDirectoryServicesLdap): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.putLdap.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap">FilestoreInstanceDirectoryServicesLdap</a>
+
+---
+
+##### `resetLdap` <a name="resetLdap" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.resetLdap"></a>
+
+```typescript
+public resetLdap(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.property.ldap">ldap</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference">FilestoreInstanceDirectoryServicesLdapOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.property.ldapInput">ldapInput</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap">FilestoreInstanceDirectoryServicesLdap</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices">FilestoreInstanceDirectoryServices</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ldap`<sup>Required</sup> <a name="ldap" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.property.ldap"></a>
+
+```typescript
+public readonly ldap: FilestoreInstanceDirectoryServicesLdapOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdapOutputReference">FilestoreInstanceDirectoryServicesLdapOutputReference</a>
+
+---
+
+##### `ldapInput`<sup>Optional</sup> <a name="ldapInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.property.ldapInput"></a>
+
+```typescript
+public readonly ldapInput: FilestoreInstanceDirectoryServicesLdap;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesLdap">FilestoreInstanceDirectoryServicesLdap</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServicesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: FilestoreInstanceDirectoryServices;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceDirectoryServices">FilestoreInstanceDirectoryServices</a>
+
+---
+
 
 ### FilestoreInstanceEffectiveReplicationList <a name="FilestoreInstanceEffectiveReplicationList" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceEffectiveReplicationList"></a>
 
@@ -3343,6 +4292,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.resetAnonGid">resetAnonGid</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.resetAnonUid">resetAnonUid</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.resetIpRanges">resetIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.resetNetwork">resetNetwork</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.resetSquashMode">resetSquashMode</a></code> | *No description.* |
 
 ---
@@ -3521,6 +4471,12 @@ public resetAnonUid(): void
 public resetIpRanges(): void
 ```
 
+##### `resetNetwork` <a name="resetNetwork" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.resetNetwork"></a>
+
+```typescript
+public resetNetwork(): void
+```
+
 ##### `resetSquashMode` <a name="resetSquashMode" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.resetSquashMode"></a>
 
 ```typescript
@@ -3538,11 +4494,13 @@ public resetSquashMode(): void
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.anonGidInput">anonGidInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.anonUidInput">anonUidInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.ipRangesInput">ipRangesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.squashModeInput">squashModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.accessMode">accessMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.anonGid">anonGid</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.anonUid">anonUid</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.ipRanges">ipRanges</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.network">network</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.squashMode">squashMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions">FilestoreInstanceFileSharesNfsExportOptions</a></code> | *No description.* |
 
@@ -3612,6 +4570,16 @@ public readonly ipRangesInput: string[];
 
 ---
 
+##### `networkInput`<sup>Optional</sup> <a name="networkInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.networkInput"></a>
+
+```typescript
+public readonly networkInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `squashModeInput`<sup>Optional</sup> <a name="squashModeInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.squashModeInput"></a>
 
 ```typescript
@@ -3659,6 +4627,16 @@ public readonly ipRanges: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptionsOutputReference.property.network"></a>
+
+```typescript
+public readonly network: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -3736,6 +4714,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.putNfsExportOptions">putNfsExportOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.resetNfsExportOptions">resetNfsExportOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.resetSourceBackup">resetSourceBackup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.resetSourceBackupdrBackup">resetSourceBackupdrBackup</a></code> | *No description.* |
 
 ---
 
@@ -3913,6 +4892,12 @@ public resetNfsExportOptions(): void
 public resetSourceBackup(): void
 ```
 
+##### `resetSourceBackupdrBackup` <a name="resetSourceBackupdrBackup" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.resetSourceBackupdrBackup"></a>
+
+```typescript
+public resetSourceBackupdrBackup(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3924,10 +4909,12 @@ public resetSourceBackup(): void
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.capacityGbInput">capacityGbInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.nfsExportOptionsInput">nfsExportOptionsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesNfsExportOptions">FilestoreInstanceFileSharesNfsExportOptions</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.sourceBackupdrBackupInput">sourceBackupdrBackupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.sourceBackupInput">sourceBackupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.capacityGb">capacityGb</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.sourceBackup">sourceBackup</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.sourceBackupdrBackup">sourceBackupdrBackup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileShares">FilestoreInstanceFileShares</a></code> | *No description.* |
 
 ---
@@ -3996,6 +4983,16 @@ public readonly nfsExportOptionsInput: IResolvable | FilestoreInstanceFileShares
 
 ---
 
+##### `sourceBackupdrBackupInput`<sup>Optional</sup> <a name="sourceBackupdrBackupInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.sourceBackupdrBackupInput"></a>
+
+```typescript
+public readonly sourceBackupdrBackupInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sourceBackupInput`<sup>Optional</sup> <a name="sourceBackupInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.sourceBackupInput"></a>
 
 ```typescript
@@ -4030,6 +5027,16 @@ public readonly name: string;
 
 ```typescript
 public readonly sourceBackup: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceBackupdrBackup`<sup>Required</sup> <a name="sourceBackupdrBackup" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceFileSharesOutputReference.property.sourceBackupdrBackup"></a>
+
+```typescript
+public readonly sourceBackupdrBackup: string;
 ```
 
 - *Type:* string
@@ -5044,7 +6051,9 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.putPscConfig">putPscConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.resetConnectMode">resetConnectMode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.resetPscConfig">resetPscConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.resetReservedIpRange">resetReservedIpRange</a></code> | *No description.* |
 
 ---
@@ -5199,10 +6208,28 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putPscConfig` <a name="putPscConfig" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.putPscConfig"></a>
+
+```typescript
+public putPscConfig(value: FilestoreInstanceNetworksPscConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.putPscConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig">FilestoreInstanceNetworksPscConfig</a>
+
+---
+
 ##### `resetConnectMode` <a name="resetConnectMode" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.resetConnectMode"></a>
 
 ```typescript
 public resetConnectMode(): void
+```
+
+##### `resetPscConfig` <a name="resetPscConfig" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.resetPscConfig"></a>
+
+```typescript
+public resetPscConfig(): void
 ```
 
 ##### `resetReservedIpRange` <a name="resetReservedIpRange" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.resetReservedIpRange"></a>
@@ -5219,9 +6246,11 @@ public resetReservedIpRange(): void
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.ipAddresses">ipAddresses</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.pscConfig">pscConfig</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference">FilestoreInstanceNetworksPscConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.connectModeInput">connectModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.modesInput">modesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.pscConfigInput">pscConfigInput</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig">FilestoreInstanceNetworksPscConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.reservedIpRangeInput">reservedIpRangeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.connectMode">connectMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.modes">modes</a></code> | <code>string[]</code> | *No description.* |
@@ -5265,6 +6294,16 @@ public readonly ipAddresses: string[];
 
 ---
 
+##### `pscConfig`<sup>Required</sup> <a name="pscConfig" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.pscConfig"></a>
+
+```typescript
+public readonly pscConfig: FilestoreInstanceNetworksPscConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference">FilestoreInstanceNetworksPscConfigOutputReference</a>
+
+---
+
 ##### `connectModeInput`<sup>Optional</sup> <a name="connectModeInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.connectModeInput"></a>
 
 ```typescript
@@ -5292,6 +6331,16 @@ public readonly networkInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `pscConfigInput`<sup>Optional</sup> <a name="pscConfigInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksOutputReference.property.pscConfigInput"></a>
+
+```typescript
+public readonly pscConfigInput: FilestoreInstanceNetworksPscConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig">FilestoreInstanceNetworksPscConfig</a>
 
 ---
 
@@ -5352,6 +6401,284 @@ public readonly internalValue: IResolvable | FilestoreInstanceNetworks;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworks">FilestoreInstanceNetworks</a>
+
+---
+
+
+### FilestoreInstanceNetworksPscConfigOutputReference <a name="FilestoreInstanceNetworksPscConfigOutputReference" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.Initializer"></a>
+
+```typescript
+import { filestoreInstance } from '@cdktn/provider-google'
+
+new filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.resetEndpointProject">resetEndpointProject</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEndpointProject` <a name="resetEndpointProject" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.resetEndpointProject"></a>
+
+```typescript
+public resetEndpointProject(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.property.endpointProjectInput">endpointProjectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.property.endpointProject">endpointProject</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig">FilestoreInstanceNetworksPscConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `endpointProjectInput`<sup>Optional</sup> <a name="endpointProjectInput" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.property.endpointProjectInput"></a>
+
+```typescript
+public readonly endpointProjectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `endpointProject`<sup>Required</sup> <a name="endpointProject" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.property.endpointProject"></a>
+
+```typescript
+public readonly endpointProject: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: FilestoreInstanceNetworksPscConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.filestoreInstance.FilestoreInstanceNetworksPscConfig">FilestoreInstanceNetworksPscConfig</a>
 
 ---
 

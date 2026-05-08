@@ -4,7 +4,7 @@
 
 ### SqlUser <a name="SqlUser" id="@cdktn/provider-google.sqlUser.SqlUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user google_sql_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user google_sql_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlUser.SqlUser.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.putPasswordPolicy">putPasswordPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.resetDatabaseRoles">resetDatabaseRoles</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.resetHost">resetHost</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.resetId">resetId</a></code> | *No description.* |
@@ -422,6 +423,12 @@ public putTimeouts(value: SqlUserTimeouts): void
 
 ---
 
+##### `resetDatabaseRoles` <a name="resetDatabaseRoles" id="@cdktn/provider-google.sqlUser.SqlUser.resetDatabaseRoles"></a>
+
+```typescript
+public resetDatabaseRoles(): void
+```
+
 ##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.sqlUser.SqlUser.resetDeletionPolicy"></a>
 
 ```typescript
@@ -585,7 +592,7 @@ The construct id used in the generated config for the SqlUser to import.
 
 The id of the existing SqlUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -615,9 +622,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.iamEmail">iamEmail</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.passwordPolicy">passwordPolicy</a></code> | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserPasswordPolicyOutputReference">SqlUserPasswordPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.sqlServerUserDetails">sqlServerUserDetails</a></code> | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserSqlServerUserDetailsList">SqlUserSqlServerUserDetailsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeoutsOutputReference">SqlUserTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.databaseRolesInput">databaseRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.hostInput">hostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
@@ -630,6 +639,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts">SqlUserTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.databaseRoles">databaseRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.host">host</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUser.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -785,6 +795,16 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `iamEmail`<sup>Required</sup> <a name="iamEmail" id="@cdktn/provider-google.sqlUser.SqlUser.property.iamEmail"></a>
+
+```typescript
+public readonly iamEmail: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `passwordPolicy`<sup>Required</sup> <a name="passwordPolicy" id="@cdktn/provider-google.sqlUser.SqlUser.property.passwordPolicy"></a>
 
 ```typescript
@@ -812,6 +832,16 @@ public readonly timeouts: SqlUserTimeoutsOutputReference;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.sqlUser.SqlUserTimeoutsOutputReference">SqlUserTimeoutsOutputReference</a>
+
+---
+
+##### `databaseRolesInput`<sup>Optional</sup> <a name="databaseRolesInput" id="@cdktn/provider-google.sqlUser.SqlUser.property.databaseRolesInput"></a>
+
+```typescript
+public readonly databaseRolesInput: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -932,6 +962,16 @@ public readonly typeInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `databaseRoles`<sup>Required</sup> <a name="databaseRoles" id="@cdktn/provider-google.sqlUser.SqlUser.property.databaseRoles"></a>
+
+```typescript
+public readonly databaseRoles: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1078,9 +1118,10 @@ const sqlUserConfig: sqlUser.SqlUserConfig = { ... }
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.instance">instance</a></code> | <code>string</code> | The name of the Cloud SQL instance. Changing this forces a new resource to be created. |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.name">name</a></code> | <code>string</code> | The name of the user. Changing this forces a new resource to be created. |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.databaseRoles">databaseRoles</a></code> | <code>string[]</code> | A list of database roles to be assigned to the user. |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | The deletion policy for the user. |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.host">host</a></code> | <code>string</code> | The host the user can connect from. |
-| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#id SqlUser#id}. |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#id SqlUser#id}. |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.password">password</a></code> | <code>string</code> | The password for the user. |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.passwordPolicy">passwordPolicy</a></code> | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserPasswordPolicy">SqlUserPasswordPolicy</a></code> | password_policy block. |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.passwordWo">passwordWo</a></code> | <code>string</code> | The password for the user. |
@@ -1171,7 +1212,7 @@ public readonly instance: string;
 
 The name of the Cloud SQL instance. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#instance SqlUser#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#instance SqlUser#instance}
 
 ---
 
@@ -1185,7 +1226,23 @@ public readonly name: string;
 
 The name of the user. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#name SqlUser#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#name SqlUser#name}
+
+---
+
+##### `databaseRoles`<sup>Optional</sup> <a name="databaseRoles" id="@cdktn/provider-google.sqlUser.SqlUserConfig.property.databaseRoles"></a>
+
+```typescript
+public readonly databaseRoles: string[];
+```
+
+- *Type:* string[]
+
+A list of database roles to be assigned to the user.
+
+This option is only available for MySQL and PostgreSQL instances.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#database_roles SqlUser#database_roles}
 
 ---
 
@@ -1203,7 +1260,7 @@ Setting ABANDON allows the resource
 				to be abandoned rather than deleted. This is useful for Postgres, where users cannot be deleted from the API if they
 				have been granted SQL roles. Possible values are: "ABANDON".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#deletion_policy SqlUser#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#deletion_policy SqlUser#deletion_policy}
 
 ---
 
@@ -1219,7 +1276,7 @@ The host the user can connect from.
 
 This is only supported for MySQL instances. Don't set this field for PostgreSQL instances. Can be an IP address. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#host SqlUser#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#host SqlUser#host}
 
 ---
 
@@ -1231,7 +1288,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#id SqlUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#id SqlUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1251,7 +1308,7 @@ The password for the user.
 Can be updated. For Postgres instances this is a Required field, unless type is set to
 				either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#password SqlUser#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#password SqlUser#password}
 
 ---
 
@@ -1265,7 +1322,7 @@ public readonly passwordPolicy: SqlUserPasswordPolicy;
 
 password_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#password_policy SqlUser#password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#password_policy SqlUser#password_policy}
 
 ---
 
@@ -1282,7 +1339,7 @@ The password for the user.
 Can be updated. For Postgres instances this is a Required field, unless type is set to
 				either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#password_wo SqlUser#password_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#password_wo SqlUser#password_wo}
 
 ---
 
@@ -1296,7 +1353,7 @@ public readonly passwordWoVersion: number;
 
 The version of the password_wo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#password_wo_version SqlUser#password_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#password_wo_version SqlUser#password_wo_version}
 
 ---
 
@@ -1312,7 +1369,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#project SqlUser#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#project SqlUser#project}
 
 ---
 
@@ -1326,7 +1383,7 @@ public readonly timeouts: SqlUserTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#timeouts SqlUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#timeouts SqlUser#timeouts}
 
 ---
 
@@ -1343,7 +1400,7 @@ The user type.
 It determines the method to authenticate the user during login.
 				The default is the database's built-in user type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#type SqlUser#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#type SqlUser#type}
 
 ---
 
@@ -1378,7 +1435,7 @@ public readonly allowedFailedAttempts: number;
 
 Number of failed attempts allowed before the user get locked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#allowed_failed_attempts SqlUser#allowed_failed_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#allowed_failed_attempts SqlUser#allowed_failed_attempts}
 
 ---
 
@@ -1392,7 +1449,7 @@ public readonly enableFailedAttemptsCheck: boolean | IResolvable;
 
 If true, the check that will lock user after too many failed login attempts will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#enable_failed_attempts_check SqlUser#enable_failed_attempts_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#enable_failed_attempts_check SqlUser#enable_failed_attempts_check}
 
 ---
 
@@ -1408,7 +1465,7 @@ If true, the user must specify the current password before changing the password
 
 This flag is supported only for MySQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#enable_password_verification SqlUser#enable_password_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#enable_password_verification SqlUser#enable_password_verification}
 
 ---
 
@@ -1422,7 +1479,7 @@ public readonly passwordExpirationDuration: string;
 
 Password expiration duration with one week grace period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#password_expiration_duration SqlUser#password_expiration_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#password_expiration_duration SqlUser#password_expiration_duration}
 
 ---
 
@@ -1462,9 +1519,9 @@ const sqlUserTimeouts: sqlUser.SqlUserTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#create SqlUser#create}. |
-| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#delete SqlUser#delete}. |
-| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#update SqlUser#update}. |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#create SqlUser#create}. |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#delete SqlUser#delete}. |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#update SqlUser#update}. |
 
 ---
 
@@ -1476,7 +1533,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#create SqlUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#create SqlUser#create}.
 
 ---
 
@@ -1488,7 +1545,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#delete SqlUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#delete SqlUser#delete}.
 
 ---
 
@@ -1500,7 +1557,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_user#update SqlUser#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_user#update SqlUser#update}.
 
 ---
 

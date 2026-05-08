@@ -4,7 +4,7 @@
 
 ### NetappStoragePool <a name="NetappStoragePool" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool google_netapp_storage_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool google_netapp_storage_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer"></a>
 
@@ -30,15 +30,21 @@ netappStoragePool.NetappStoragePool(
   allow_auto_tiering: bool | IResolvable = None,
   custom_performance_enabled: bool | IResolvable = None,
   description: str = None,
+  enable_hot_tier_auto_resize: bool | IResolvable = None,
+  hot_tier_size_gib: str = None,
   id: str = None,
   kms_config: str = None,
   labels: typing.Mapping[str] = None,
   ldap_enabled: bool | IResolvable = None,
+  mode: str = None,
   project: str = None,
+  qos_type: str = None,
   replica_zone: str = None,
+  scale_type: str = None,
   timeouts: NetappStoragePoolTimeouts = None,
   total_iops: str = None,
   total_throughput_mibps: str = None,
+  type: str = None,
   zone: str = None
 )
 ```
@@ -63,15 +69,21 @@ netappStoragePool.NetappStoragePool(
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.allowAutoTiering">allow_auto_tiering</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.customPerformanceEnabled">custom_performance_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. True if using Independent Scaling of capacity and performance (Hyperdisk). Default is false. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#id NetappStoragePool#id}. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.enableHotTierAutoResize">enable_hot_tier_auto_resize</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag indicating that the hot-tier threshold will be auto-increased by 10% of the hot-tier when it hits 100%. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.hotTierSizeGib">hot_tier_size_gib</a></code> | <code>str</code> | Total hot tier capacity for the Storage Pool. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#id NetappStoragePool#id}. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.kmsConfig">kms_config</a></code> | <code>str</code> | Specifies the CMEK policy to be used for volume encryption. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.ldapEnabled">ldap_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled, the volumes uses Active Directory as LDAP name service for UID/GID lookups. |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#project NetappStoragePool#project}. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.mode">mode</a></code> | <code>str</code> | Mode of the storage pool. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#project NetappStoragePool#project}. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.qosType">qos_type</a></code> | <code>str</code> | QoS (Quality of Service) type of the storage pool. Possible values are: AUTO, MANUAL. Possible values: ["QOS_TYPE_UNSPECIFIED", "AUTO", "MANUAL"]. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.replicaZone">replica_zone</a></code> | <code>str</code> | Specifies the replica zone for regional Flex pools. 'zone' and 'replica_zone' values can be swapped to initiate a [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones). |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.scaleType">scale_type</a></code> | <code>str</code> | The scale type of the storage pool. Defaults to 'SCALE_TYPE_DEFAULT' if not specified. Possible values: ["SCALE_TYPE_UNSPECIFIED", "SCALE_TYPE_DEFAULT", "SCALE_TYPE_SCALEOUT"]. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.totalIops">total_iops</a></code> | <code>str</code> | Optional. Custom Performance Total IOPS of the pool If not provided, it will be calculated based on the totalThroughputMibps. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.totalThroughputMibps">total_throughput_mibps</a></code> | <code>str</code> | Optional. Custom Performance Total Throughput of the pool (in MiB/s). |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of the storage pool. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.zone">zone</a></code> | <code>str</code> | Specifies the active zone for regional Flex pools. |
 
 ---
@@ -142,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 Capacity of the storage pool (in GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#capacity_gib NetappStoragePool#capacity_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#capacity_gib NetappStoragePool#capacity_gib}
 
 ---
 
@@ -152,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the location. For zonal Flex pools specify a zone name, in all other cases a region name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#location NetappStoragePool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#location NetappStoragePool#location}
 
 ---
 
@@ -162,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource name of the storage pool. Needs to be unique per location/region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#name NetappStoragePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#name NetappStoragePool#name}
 
 ---
 
@@ -172,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 VPC network name with format: 'projects/{{project}}/global/networks/{{network}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#network NetappStoragePool#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#network NetappStoragePool#network}
 
 ---
 
@@ -182,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Service level of the storage pool. Possible values: ["PREMIUM", "EXTREME", "STANDARD", "FLEX"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#service_level NetappStoragePool#service_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#service_level NetappStoragePool#service_level}
 
 ---
 
@@ -195,7 +207,7 @@ Specifies the Active Directory policy to be used.
 Format: 'projects/{{project}}/locations/{{location}}/activeDirectories/{{name}}'.
 The policy needs to be in the same location as the storage pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#active_directory NetappStoragePool#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#active_directory NetappStoragePool#active_directory}
 
 ---
 
@@ -208,7 +220,7 @@ Optional.
 True if the storage pool supports Auto Tiering enabled volumes. Default is false.
 Auto-tiering can be enabled after storage pool creation but it can't be disabled once enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#allow_auto_tiering NetappStoragePool#allow_auto_tiering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#allow_auto_tiering NetappStoragePool#allow_auto_tiering}
 
 ---
 
@@ -218,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. True if using Independent Scaling of capacity and performance (Hyperdisk). Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#custom_performance_enabled NetappStoragePool#custom_performance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#custom_performance_enabled NetappStoragePool#custom_performance_enabled}
 
 ---
 
@@ -228,7 +240,33 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#description NetappStoragePool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#description NetappStoragePool#description}
+
+---
+
+##### `enable_hot_tier_auto_resize`<sup>Optional</sup> <a name="enable_hot_tier_auto_resize" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.enableHotTierAutoResize"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Flag indicating that the hot-tier threshold will be auto-increased by 10% of the hot-tier when it hits 100%.
+
+Default is true.
+The increment will kick in only if the new size after increment is still less than or equal to storage pool size.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#enable_hot_tier_auto_resize NetappStoragePool#enable_hot_tier_auto_resize}
+
+---
+
+##### `hot_tier_size_gib`<sup>Optional</sup> <a name="hot_tier_size_gib" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.hotTierSizeGib"></a>
+
+- *Type:* str
+
+Total hot tier capacity for the Storage Pool.
+
+It is applicable only to Flex service level.
+It should be less than the minimum storage pool size and cannot be more than the current storage pool size. It cannot be decreased once set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#hot_tier_size_gib NetappStoragePool#hot_tier_size_gib}
 
 ---
 
@@ -236,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#id NetappStoragePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#id NetappStoragePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -252,7 +290,7 @@ Specifies the CMEK policy to be used for volume encryption.
 Format: 'projects/{{project}}/locations/{{location}}/kmsConfigs/{{name}}'.
 The policy needs to be in the same location as the storage pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#kms_config NetappStoragePool#kms_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#kms_config NetappStoragePool#kms_config}
 
 ---
 
@@ -265,7 +303,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#labels NetappStoragePool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#labels NetappStoragePool#labels}
 
 ---
 
@@ -278,7 +316,21 @@ When enabled, the volumes uses Active Directory as LDAP name service for UID/GID
 Required to enable extended group support for NFSv3,
 using security identifiers for NFSv4.1 or principal names for kerberized NFSv4.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#ldap_enabled NetappStoragePool#ldap_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#ldap_enabled NetappStoragePool#ldap_enabled}
+
+---
+
+##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.mode"></a>
+
+- *Type:* str
+
+Mode of the storage pool.
+
+The operational mode of the storage pool. ONTAP mode enables operations
+via ONTAP Mode APIs, while DEFAULT mode enables operations via NetApp Volumes APIs.
+If not specified during creation, the mode defaults to DEFAULT. Possible values: ["MODE_UNSPECIFIED", "DEFAULT", "ONTAP"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#mode NetappStoragePool#mode}
 
 ---
 
@@ -286,7 +338,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#project NetappStoragePool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#project NetappStoragePool#project}.
+
+---
+
+##### `qos_type`<sup>Optional</sup> <a name="qos_type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.qosType"></a>
+
+- *Type:* str
+
+QoS (Quality of Service) type of the storage pool. Possible values are: AUTO, MANUAL. Possible values: ["QOS_TYPE_UNSPECIFIED", "AUTO", "MANUAL"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#qos_type NetappStoragePool#qos_type}
 
 ---
 
@@ -296,7 +358,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the replica zone for regional Flex pools. 'zone' and 'replica_zone' values can be swapped to initiate a [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#replica_zone NetappStoragePool#replica_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#replica_zone NetappStoragePool#replica_zone}
+
+---
+
+##### `scale_type`<sup>Optional</sup> <a name="scale_type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.scaleType"></a>
+
+- *Type:* str
+
+The scale type of the storage pool. Defaults to 'SCALE_TYPE_DEFAULT' if not specified. Possible values: ["SCALE_TYPE_UNSPECIFIED", "SCALE_TYPE_DEFAULT", "SCALE_TYPE_SCALEOUT"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#scale_type NetappStoragePool#scale_type}
 
 ---
 
@@ -306,7 +378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#timeouts NetappStoragePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#timeouts NetappStoragePool#timeouts}
 
 ---
 
@@ -316,7 +388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. Custom Performance Total IOPS of the pool If not provided, it will be calculated based on the totalThroughputMibps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#total_iops NetappStoragePool#total_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#total_iops NetappStoragePool#total_iops}
 
 ---
 
@@ -326,7 +398,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. Custom Performance Total Throughput of the pool (in MiB/s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#total_throughput_mibps NetappStoragePool#total_throughput_mibps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#total_throughput_mibps NetappStoragePool#total_throughput_mibps}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.Initializer.parameter.type"></a>
+
+- *Type:* str
+
+Type of the storage pool.
+
+This field is used to control whether the pool supports FILE based volumes only or UNIFIED (both FILE and BLOCK) volumes.
+If not specified during creation, it defaults to FILE. Possible values: ["STORAGE_POOL_TYPE_UNSPECIFIED", "FILE", "UNIFIED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#type NetappStoragePool#type}
 
 ---
 
@@ -340,7 +425,7 @@ Specifies the active zone for regional Flex pools.
 [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones).
 If you want to create a zonal Flex pool, specify a zone name for 'location' and omit 'zone'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#zone NetappStoragePool#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#zone NetappStoragePool#zone}
 
 ---
 
@@ -377,15 +462,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetAllowAutoTiering">reset_allow_auto_tiering</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetCustomPerformanceEnabled">reset_custom_performance_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetEnableHotTierAutoResize">reset_enable_hot_tier_auto_resize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetHotTierSizeGib">reset_hot_tier_size_gib</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetKmsConfig">reset_kms_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetLdapEnabled">reset_ldap_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetMode">reset_mode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetQosType">reset_qos_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetReplicaZone">reset_replica_zone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetScaleType">reset_scale_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetTotalIops">reset_total_iops</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetTotalThroughputMibps">reset_total_throughput_mibps</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetType">reset_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetZone">reset_zone</a></code> | *No description.* |
 
 ---
@@ -752,7 +843,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#create NetappStoragePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#create NetappStoragePool#create}.
 
 ---
 
@@ -760,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#delete NetappStoragePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#delete NetappStoragePool#delete}.
 
 ---
 
@@ -768,7 +859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#update NetappStoragePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#update NetappStoragePool#update}.
 
 ---
 
@@ -796,6 +887,18 @@ def reset_custom_performance_enabled() -> None
 def reset_description() -> None
 ```
 
+##### `reset_enable_hot_tier_auto_resize` <a name="reset_enable_hot_tier_auto_resize" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetEnableHotTierAutoResize"></a>
+
+```python
+def reset_enable_hot_tier_auto_resize() -> None
+```
+
+##### `reset_hot_tier_size_gib` <a name="reset_hot_tier_size_gib" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetHotTierSizeGib"></a>
+
+```python
+def reset_hot_tier_size_gib() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetId"></a>
 
 ```python
@@ -820,16 +923,34 @@ def reset_labels() -> None
 def reset_ldap_enabled() -> None
 ```
 
+##### `reset_mode` <a name="reset_mode" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetMode"></a>
+
+```python
+def reset_mode() -> None
+```
+
 ##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetProject"></a>
 
 ```python
 def reset_project() -> None
 ```
 
+##### `reset_qos_type` <a name="reset_qos_type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetQosType"></a>
+
+```python
+def reset_qos_type() -> None
+```
+
 ##### `reset_replica_zone` <a name="reset_replica_zone" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetReplicaZone"></a>
 
 ```python
 def reset_replica_zone() -> None
+```
+
+##### `reset_scale_type` <a name="reset_scale_type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetScaleType"></a>
+
+```python
+def reset_scale_type() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetTimeouts"></a>
@@ -848,6 +969,12 @@ def reset_total_iops() -> None
 
 ```python
 def reset_total_throughput_mibps() -> None
+```
+
+##### `reset_type` <a name="reset_type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetType"></a>
+
+```python
+def reset_type() -> None
 ```
 
 ##### `reset_zone` <a name="reset_zone" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.resetZone"></a>
@@ -970,7 +1097,7 @@ The construct id used in the generated config for the NetappStoragePool to impor
 
 The id of the existing NetappStoragePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1000,8 +1127,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.availableThroughputMibps">available_throughput_mibps</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.coldTierSizeUsedGib">cold_tier_size_used_gib</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.encryptionType">encryption_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.hotTierSizeUsedGib">hot_tier_size_used_gib</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference">NetappStoragePoolTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.volumeCapacityGib">volume_capacity_gib</a></code> | <code>str</code> | *No description.* |
@@ -1011,37 +1141,49 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.capacityGibInput">capacity_gib_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.customPerformanceEnabledInput">custom_performance_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.enableHotTierAutoResizeInput">enable_hot_tier_auto_resize_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.hotTierSizeGibInput">hot_tier_size_gib_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.kmsConfigInput">kms_config_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.ldapEnabledInput">ldap_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.qosTypeInput">qos_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.replicaZoneInput">replica_zone_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.scaleTypeInput">scale_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.serviceLevelInput">service_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.totalIopsInput">total_iops_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.totalThroughputMibpsInput">total_throughput_mibps_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.zoneInput">zone_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.activeDirectory">active_directory</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.allowAutoTiering">allow_auto_tiering</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.capacityGib">capacity_gib</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.customPerformanceEnabled">custom_performance_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.enableHotTierAutoResize">enable_hot_tier_auto_resize</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.hotTierSizeGib">hot_tier_size_gib</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.kmsConfig">kms_config</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.ldapEnabled">ldap_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.mode">mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.network">network</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.qosType">qos_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.replicaZone">replica_zone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.scaleType">scale_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.serviceLevel">service_level</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.totalIops">total_iops</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.totalThroughputMibps">total_throughput_mibps</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.zone">zone</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1188,6 +1330,26 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `available_throughput_mibps`<sup>Required</sup> <a name="available_throughput_mibps" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.availableThroughputMibps"></a>
+
+```python
+available_throughput_mibps: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `cold_tier_size_used_gib`<sup>Required</sup> <a name="cold_tier_size_used_gib" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.coldTierSizeUsedGib"></a>
+
+```python
+cold_tier_size_used_gib: str
+```
+
+- *Type:* str
+
+---
+
 ##### `effective_labels`<sup>Required</sup> <a name="effective_labels" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.effectiveLabels"></a>
 
 ```python
@@ -1202,6 +1364,16 @@ effective_labels: StringMap
 
 ```python
 encryption_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `hot_tier_size_used_gib`<sup>Required</sup> <a name="hot_tier_size_used_gib" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.hotTierSizeUsedGib"></a>
+
+```python
+hot_tier_size_used_gib: str
 ```
 
 - *Type:* str
@@ -1298,6 +1470,26 @@ description_input: str
 
 ---
 
+##### `enable_hot_tier_auto_resize_input`<sup>Optional</sup> <a name="enable_hot_tier_auto_resize_input" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.enableHotTierAutoResizeInput"></a>
+
+```python
+enable_hot_tier_auto_resize_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `hot_tier_size_gib_input`<sup>Optional</sup> <a name="hot_tier_size_gib_input" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.hotTierSizeGibInput"></a>
+
+```python
+hot_tier_size_gib_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.idInput"></a>
 
 ```python
@@ -1348,6 +1540,16 @@ location_input: str
 
 ---
 
+##### `mode_input`<sup>Optional</sup> <a name="mode_input" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.modeInput"></a>
+
+```python
+mode_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.nameInput"></a>
 
 ```python
@@ -1378,10 +1580,30 @@ project_input: str
 
 ---
 
+##### `qos_type_input`<sup>Optional</sup> <a name="qos_type_input" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.qosTypeInput"></a>
+
+```python
+qos_type_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `replica_zone_input`<sup>Optional</sup> <a name="replica_zone_input" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.replicaZoneInput"></a>
 
 ```python
 replica_zone_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `scale_type_input`<sup>Optional</sup> <a name="scale_type_input" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.scaleTypeInput"></a>
+
+```python
+scale_type_input: str
 ```
 
 - *Type:* str
@@ -1422,6 +1644,16 @@ total_iops_input: str
 
 ```python
 total_throughput_mibps_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.typeInput"></a>
+
+```python
+type_input: str
 ```
 
 - *Type:* str
@@ -1488,6 +1720,26 @@ description: str
 
 ---
 
+##### `enable_hot_tier_auto_resize`<sup>Required</sup> <a name="enable_hot_tier_auto_resize" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.enableHotTierAutoResize"></a>
+
+```python
+enable_hot_tier_auto_resize: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `hot_tier_size_gib`<sup>Required</sup> <a name="hot_tier_size_gib" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.hotTierSizeGib"></a>
+
+```python
+hot_tier_size_gib: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.id"></a>
 
 ```python
@@ -1538,6 +1790,16 @@ location: str
 
 ---
 
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.mode"></a>
+
+```python
+mode: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.name"></a>
 
 ```python
@@ -1568,10 +1830,30 @@ project: str
 
 ---
 
+##### `qos_type`<sup>Required</sup> <a name="qos_type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.qosType"></a>
+
+```python
+qos_type: str
+```
+
+- *Type:* str
+
+---
+
 ##### `replica_zone`<sup>Required</sup> <a name="replica_zone" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.replicaZone"></a>
 
 ```python
 replica_zone: str
+```
+
+- *Type:* str
+
+---
+
+##### `scale_type`<sup>Required</sup> <a name="scale_type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.scaleType"></a>
+
+```python
+scale_type: str
 ```
 
 - *Type:* str
@@ -1602,6 +1884,16 @@ total_iops: str
 
 ```python
 total_throughput_mibps: str
+```
+
+- *Type:* str
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePool.property.type"></a>
+
+```python
+type: str
 ```
 
 - *Type:* str
@@ -1662,15 +1954,21 @@ netappStoragePool.NetappStoragePoolConfig(
   allow_auto_tiering: bool | IResolvable = None,
   custom_performance_enabled: bool | IResolvable = None,
   description: str = None,
+  enable_hot_tier_auto_resize: bool | IResolvable = None,
+  hot_tier_size_gib: str = None,
   id: str = None,
   kms_config: str = None,
   labels: typing.Mapping[str] = None,
   ldap_enabled: bool | IResolvable = None,
+  mode: str = None,
   project: str = None,
+  qos_type: str = None,
   replica_zone: str = None,
+  scale_type: str = None,
   timeouts: NetappStoragePoolTimeouts = None,
   total_iops: str = None,
   total_throughput_mibps: str = None,
+  type: str = None,
   zone: str = None
 )
 ```
@@ -1695,15 +1993,21 @@ netappStoragePool.NetappStoragePoolConfig(
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.allowAutoTiering">allow_auto_tiering</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.customPerformanceEnabled">custom_performance_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. True if using Independent Scaling of capacity and performance (Hyperdisk). Default is false. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#id NetappStoragePool#id}. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.enableHotTierAutoResize">enable_hot_tier_auto_resize</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag indicating that the hot-tier threshold will be auto-increased by 10% of the hot-tier when it hits 100%. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.hotTierSizeGib">hot_tier_size_gib</a></code> | <code>str</code> | Total hot tier capacity for the Storage Pool. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#id NetappStoragePool#id}. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.kmsConfig">kms_config</a></code> | <code>str</code> | Specifies the CMEK policy to be used for volume encryption. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.ldapEnabled">ldap_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled, the volumes uses Active Directory as LDAP name service for UID/GID lookups. |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#project NetappStoragePool#project}. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.mode">mode</a></code> | <code>str</code> | Mode of the storage pool. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#project NetappStoragePool#project}. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.qosType">qos_type</a></code> | <code>str</code> | QoS (Quality of Service) type of the storage pool. Possible values are: AUTO, MANUAL. Possible values: ["QOS_TYPE_UNSPECIFIED", "AUTO", "MANUAL"]. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.replicaZone">replica_zone</a></code> | <code>str</code> | Specifies the replica zone for regional Flex pools. 'zone' and 'replica_zone' values can be swapped to initiate a [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones). |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.scaleType">scale_type</a></code> | <code>str</code> | The scale type of the storage pool. Defaults to 'SCALE_TYPE_DEFAULT' if not specified. Possible values: ["SCALE_TYPE_UNSPECIFIED", "SCALE_TYPE_DEFAULT", "SCALE_TYPE_SCALEOUT"]. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts">NetappStoragePoolTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.totalIops">total_iops</a></code> | <code>str</code> | Optional. Custom Performance Total IOPS of the pool If not provided, it will be calculated based on the totalThroughputMibps. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.totalThroughputMibps">total_throughput_mibps</a></code> | <code>str</code> | Optional. Custom Performance Total Throughput of the pool (in MiB/s). |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.type">type</a></code> | <code>str</code> | Type of the storage pool. |
 | <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.zone">zone</a></code> | <code>str</code> | Specifies the active zone for regional Flex pools. |
 
 ---
@@ -1788,7 +2092,7 @@ capacity_gib: str
 
 Capacity of the storage pool (in GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#capacity_gib NetappStoragePool#capacity_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#capacity_gib NetappStoragePool#capacity_gib}
 
 ---
 
@@ -1802,7 +2106,7 @@ location: str
 
 Name of the location. For zonal Flex pools specify a zone name, in all other cases a region name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#location NetappStoragePool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#location NetappStoragePool#location}
 
 ---
 
@@ -1816,7 +2120,7 @@ name: str
 
 The resource name of the storage pool. Needs to be unique per location/region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#name NetappStoragePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#name NetappStoragePool#name}
 
 ---
 
@@ -1830,7 +2134,7 @@ network: str
 
 VPC network name with format: 'projects/{{project}}/global/networks/{{network}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#network NetappStoragePool#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#network NetappStoragePool#network}
 
 ---
 
@@ -1844,7 +2148,7 @@ service_level: str
 
 Service level of the storage pool. Possible values: ["PREMIUM", "EXTREME", "STANDARD", "FLEX"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#service_level NetappStoragePool#service_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#service_level NetappStoragePool#service_level}
 
 ---
 
@@ -1861,7 +2165,7 @@ Specifies the Active Directory policy to be used.
 Format: 'projects/{{project}}/locations/{{location}}/activeDirectories/{{name}}'.
 The policy needs to be in the same location as the storage pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#active_directory NetappStoragePool#active_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#active_directory NetappStoragePool#active_directory}
 
 ---
 
@@ -1878,7 +2182,7 @@ Optional.
 True if the storage pool supports Auto Tiering enabled volumes. Default is false.
 Auto-tiering can be enabled after storage pool creation but it can't be disabled once enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#allow_auto_tiering NetappStoragePool#allow_auto_tiering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#allow_auto_tiering NetappStoragePool#allow_auto_tiering}
 
 ---
 
@@ -1892,7 +2196,7 @@ custom_performance_enabled: bool | IResolvable
 
 Optional. True if using Independent Scaling of capacity and performance (Hyperdisk). Default is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#custom_performance_enabled NetappStoragePool#custom_performance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#custom_performance_enabled NetappStoragePool#custom_performance_enabled}
 
 ---
 
@@ -1906,7 +2210,41 @@ description: str
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#description NetappStoragePool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#description NetappStoragePool#description}
+
+---
+
+##### `enable_hot_tier_auto_resize`<sup>Optional</sup> <a name="enable_hot_tier_auto_resize" id="@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.enableHotTierAutoResize"></a>
+
+```python
+enable_hot_tier_auto_resize: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Flag indicating that the hot-tier threshold will be auto-increased by 10% of the hot-tier when it hits 100%.
+
+Default is true.
+The increment will kick in only if the new size after increment is still less than or equal to storage pool size.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#enable_hot_tier_auto_resize NetappStoragePool#enable_hot_tier_auto_resize}
+
+---
+
+##### `hot_tier_size_gib`<sup>Optional</sup> <a name="hot_tier_size_gib" id="@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.hotTierSizeGib"></a>
+
+```python
+hot_tier_size_gib: str
+```
+
+- *Type:* str
+
+Total hot tier capacity for the Storage Pool.
+
+It is applicable only to Flex service level.
+It should be less than the minimum storage pool size and cannot be more than the current storage pool size. It cannot be decreased once set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#hot_tier_size_gib NetappStoragePool#hot_tier_size_gib}
 
 ---
 
@@ -1918,7 +2256,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#id NetappStoragePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#id NetappStoragePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1938,7 +2276,7 @@ Specifies the CMEK policy to be used for volume encryption.
 Format: 'projects/{{project}}/locations/{{location}}/kmsConfigs/{{name}}'.
 The policy needs to be in the same location as the storage pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#kms_config NetappStoragePool#kms_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#kms_config NetappStoragePool#kms_config}
 
 ---
 
@@ -1955,7 +2293,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#labels NetappStoragePool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#labels NetappStoragePool#labels}
 
 ---
 
@@ -1972,7 +2310,25 @@ When enabled, the volumes uses Active Directory as LDAP name service for UID/GID
 Required to enable extended group support for NFSv3,
 using security identifiers for NFSv4.1 or principal names for kerberized NFSv4.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#ldap_enabled NetappStoragePool#ldap_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#ldap_enabled NetappStoragePool#ldap_enabled}
+
+---
+
+##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.mode"></a>
+
+```python
+mode: str
+```
+
+- *Type:* str
+
+Mode of the storage pool.
+
+The operational mode of the storage pool. ONTAP mode enables operations
+via ONTAP Mode APIs, while DEFAULT mode enables operations via NetApp Volumes APIs.
+If not specified during creation, the mode defaults to DEFAULT. Possible values: ["MODE_UNSPECIFIED", "DEFAULT", "ONTAP"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#mode NetappStoragePool#mode}
 
 ---
 
@@ -1984,7 +2340,21 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#project NetappStoragePool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#project NetappStoragePool#project}.
+
+---
+
+##### `qos_type`<sup>Optional</sup> <a name="qos_type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.qosType"></a>
+
+```python
+qos_type: str
+```
+
+- *Type:* str
+
+QoS (Quality of Service) type of the storage pool. Possible values are: AUTO, MANUAL. Possible values: ["QOS_TYPE_UNSPECIFIED", "AUTO", "MANUAL"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#qos_type NetappStoragePool#qos_type}
 
 ---
 
@@ -1998,7 +2368,21 @@ replica_zone: str
 
 Specifies the replica zone for regional Flex pools. 'zone' and 'replica_zone' values can be swapped to initiate a [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#replica_zone NetappStoragePool#replica_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#replica_zone NetappStoragePool#replica_zone}
+
+---
+
+##### `scale_type`<sup>Optional</sup> <a name="scale_type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.scaleType"></a>
+
+```python
+scale_type: str
+```
+
+- *Type:* str
+
+The scale type of the storage pool. Defaults to 'SCALE_TYPE_DEFAULT' if not specified. Possible values: ["SCALE_TYPE_UNSPECIFIED", "SCALE_TYPE_DEFAULT", "SCALE_TYPE_SCALEOUT"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#scale_type NetappStoragePool#scale_type}
 
 ---
 
@@ -2012,7 +2396,7 @@ timeouts: NetappStoragePoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#timeouts NetappStoragePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#timeouts NetappStoragePool#timeouts}
 
 ---
 
@@ -2026,7 +2410,7 @@ total_iops: str
 
 Optional. Custom Performance Total IOPS of the pool If not provided, it will be calculated based on the totalThroughputMibps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#total_iops NetappStoragePool#total_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#total_iops NetappStoragePool#total_iops}
 
 ---
 
@@ -2040,7 +2424,24 @@ total_throughput_mibps: str
 
 Optional. Custom Performance Total Throughput of the pool (in MiB/s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#total_throughput_mibps NetappStoragePool#total_throughput_mibps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#total_throughput_mibps NetappStoragePool#total_throughput_mibps}
+
+---
+
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig.property.type"></a>
+
+```python
+type: str
+```
+
+- *Type:* str
+
+Type of the storage pool.
+
+This field is used to control whether the pool supports FILE based volumes only or UNIFIED (both FILE and BLOCK) volumes.
+If not specified during creation, it defaults to FILE. Possible values: ["STORAGE_POOL_TYPE_UNSPECIFIED", "FILE", "UNIFIED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#type NetappStoragePool#type}
 
 ---
 
@@ -2058,7 +2459,7 @@ Specifies the active zone for regional Flex pools.
 [zone switch](https://cloud.google.com/netapp/volumes/docs/configure-and-use/storage-pools/edit-or-delete-storage-pool#switch_active_and_replica_zones).
 If you want to create a zonal Flex pool, specify a zone name for 'location' and omit 'zone'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#zone NetappStoragePool#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#zone NetappStoragePool#zone}
 
 ---
 
@@ -2080,9 +2481,9 @@ netappStoragePool.NetappStoragePoolTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#create NetappStoragePool#create}. |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#delete NetappStoragePool#delete}. |
-| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#update NetappStoragePool#update}. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#create NetappStoragePool#create}. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#delete NetappStoragePool#delete}. |
+| <code><a href="#@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#update NetappStoragePool#update}. |
 
 ---
 
@@ -2094,7 +2495,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#create NetappStoragePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#create NetappStoragePool#create}.
 
 ---
 
@@ -2106,7 +2507,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#delete NetappStoragePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#delete NetappStoragePool#delete}.
 
 ---
 
@@ -2118,7 +2519,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_storage_pool#update NetappStoragePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_storage_pool#update NetappStoragePool#update}.
 
 ---
 

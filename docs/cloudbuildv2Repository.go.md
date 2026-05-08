@@ -4,12 +4,12 @@
 
 ### Cloudbuildv2Repository <a name="Cloudbuildv2Repository" id="@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2Repository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository google_cloudbuildv2_repository}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository google_cloudbuildv2_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2Repository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildv2repository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2repository"
 
 cloudbuildv2repository.NewCloudbuildv2Repository(scope Construct, id *string, config Cloudbuildv2RepositoryConfig) Cloudbuildv2Repository
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2Repository.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildv2repository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2repository"
 
 cloudbuildv2repository.Cloudbuildv2Repository_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2Repository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildv2repository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2repository"
 
 cloudbuildv2repository.Cloudbuildv2Repository_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ cloudbuildv2repository.Cloudbuildv2Repository_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2Repository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildv2repository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2repository"
 
 cloudbuildv2repository.Cloudbuildv2Repository_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ cloudbuildv2repository.Cloudbuildv2Repository_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2Repository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildv2repository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2repository"
 
 cloudbuildv2repository.Cloudbuildv2Repository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the Cloudbuildv2Repository to 
 
 The id of the existing Cloudbuildv2Repository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildv2repository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2repository"
 
 &cloudbuildv2repository.Cloudbuildv2RepositoryConfig {
 	Connection: interface{},
@@ -974,7 +974,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildv2repo
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudbuildv2Repository.Cloudbuildv2RepositoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudbuildv2Repository.Cloudbuildv2RepositoryTimeouts,
 }
 ```
 
@@ -993,9 +993,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildv2repo
 | <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryConfig.property.parentConnection">ParentConnection</a></code> | <code>*string</code> | The connection for the resource. |
 | <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryConfig.property.remoteUri">RemoteUri</a></code> | <code>*string</code> | Required. Git Clone HTTPS URI. |
 | <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryConfig.property.annotations">Annotations</a></code> | <code>*map[string]*string</code> | Allows clients to store small amounts of arbitrary data. |
-| <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#id Cloudbuildv2Repository#id}. |
+| <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#id Cloudbuildv2Repository#id}. |
 | <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryConfig.property.location">Location</a></code> | <code>*string</code> | The location for the resource. |
-| <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#project Cloudbuildv2Repository#project}. |
+| <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#project Cloudbuildv2Repository#project}. |
 | <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryTimeouts">Cloudbuildv2RepositoryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1080,7 +1080,7 @@ Name *string
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#name Cloudbuildv2Repository#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#name Cloudbuildv2Repository#name}
 
 ---
 
@@ -1094,7 +1094,7 @@ ParentConnection *string
 
 The connection for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#parent_connection Cloudbuildv2Repository#parent_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#parent_connection Cloudbuildv2Repository#parent_connection}
 
 ---
 
@@ -1108,7 +1108,7 @@ RemoteUri *string
 
 Required. Git Clone HTTPS URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#remote_uri Cloudbuildv2Repository#remote_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#remote_uri Cloudbuildv2Repository#remote_uri}
 
 ---
 
@@ -1125,7 +1125,7 @@ Allows clients to store small amounts of arbitrary data.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#annotations Cloudbuildv2Repository#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#annotations Cloudbuildv2Repository#annotations}
 
 ---
 
@@ -1137,7 +1137,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#id Cloudbuildv2Repository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#id Cloudbuildv2Repository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1154,7 +1154,7 @@ Location *string
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#location Cloudbuildv2Repository#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#location Cloudbuildv2Repository#location}
 
 ---
 
@@ -1166,7 +1166,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#project Cloudbuildv2Repository#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#project Cloudbuildv2Repository#project}.
 
 ---
 
@@ -1180,7 +1180,7 @@ Timeouts Cloudbuildv2RepositoryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#timeouts Cloudbuildv2Repository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#timeouts Cloudbuildv2Repository#timeouts}
 
 ---
 
@@ -1189,7 +1189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildv2repository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2repository"
 
 &cloudbuildv2repository.Cloudbuildv2RepositoryTimeouts {
 	Create: *string,
@@ -1201,8 +1201,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildv2repo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#create Cloudbuildv2Repository#create}. |
-| <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#delete Cloudbuildv2Repository#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#create Cloudbuildv2Repository#create}. |
+| <code><a href="#@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#delete Cloudbuildv2Repository#delete}. |
 
 ---
 
@@ -1214,7 +1214,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#create Cloudbuildv2Repository#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#create Cloudbuildv2Repository#create}.
 
 ---
 
@@ -1226,7 +1226,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudbuildv2_repository#delete Cloudbuildv2Repository#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudbuildv2_repository#delete Cloudbuildv2Repository#delete}.
 
 ---
 
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudbuildv2Repository.Cloudbuildv2RepositoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudbuildv2repository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudbuildv2repository"
 
 cloudbuildv2repository.NewCloudbuildv2RepositoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) Cloudbuildv2RepositoryTimeoutsOutputReference
 ```

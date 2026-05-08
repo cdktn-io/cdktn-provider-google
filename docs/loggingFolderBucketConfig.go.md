@@ -4,12 +4,12 @@
 
 ### LoggingFolderBucketConfig <a name="LoggingFolderBucketConfig" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config google_logging_folder_bucket_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config google_logging_folder_bucket_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingfolderbucketconfig"
 
 loggingfolderbucketconfig.NewLoggingFolderBucketConfig(scope Construct, id *string, config LoggingFolderBucketConfigConfig) LoggingFolderBucketConfig
 ```
@@ -461,7 +461,7 @@ func ResetRetentionDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingfolderbucketconfig"
 
 loggingfolderbucketconfig.LoggingFolderBucketConfig_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingfolderbucketconfig"
 
 loggingfolderbucketconfig.LoggingFolderBucketConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ loggingfolderbucketconfig.LoggingFolderBucketConfig_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingfolderbucketconfig"
 
 loggingfolderbucketconfig.LoggingFolderBucketConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ loggingfolderbucketconfig.LoggingFolderBucketConfig_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingfolderbucketconfig"
 
 loggingfolderbucketconfig.LoggingFolderBucketConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the LoggingFolderBucketConfig 
 
 The id of the existing LoggingFolderBucketConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -948,7 +948,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingfolderbucketconfig"
 
 &loggingfolderbucketconfig.LoggingFolderBucketConfigCmekSettings {
 	KmsKeyName: *string,
@@ -979,7 +979,7 @@ To enable CMEK for the bucket, set this field to a valid kmsKeyName for which th
 The Cloud KMS key used by the bucket can be updated by changing the kmsKeyName to a new valid key name. Encryption operations that are in progress will be completed with the key that was in use when they started. Decryption operations will be completed using the key that was used at the time of encryption unless access to that key has been revoked.
 See [Enabling CMEK for Logging Buckets](https://cloud.google.com/logging/docs/routing/managed-encryption-storage) for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#kms_key_name LoggingFolderBucketConfig#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#kms_key_name LoggingFolderBucketConfig#kms_key_name}
 
 ---
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingfolderbucketconfig"
 
 &loggingfolderbucketconfig.LoggingFolderBucketConfigConfig {
 	Connection: interface{},
@@ -1001,7 +1001,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbuc
 	BucketId: *string,
 	Folder: *string,
 	Location: *string,
-	CmekSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettings,
+	CmekSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettings,
 	Description: *string,
 	Id: *string,
 	IndexConfigs: interface{},
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbuc
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.location">Location</a></code> | <code>*string</code> | The location of the bucket. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.cmekSettings">CmekSettings</a></code> | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettings">LoggingFolderBucketConfigCmekSettings</a></code> | cmek_settings block. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.description">Description</a></code> | <code>*string</code> | An optional description for this bucket. |
-| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#id LoggingFolderBucketConfig#id}. |
+| <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#id LoggingFolderBucketConfig#id}. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.indexConfigs">IndexConfigs</a></code> | <code>interface{}</code> | index_configs block. |
 | <code><a href="#@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigConfig.property.retentionDays">RetentionDays</a></code> | <code>*f64</code> | Logs will be retained by default for this amount of time, after which they will automatically be deleted. |
 
@@ -1111,7 +1111,7 @@ BucketId *string
 
 The name of the logging bucket. Logging automatically creates two log buckets: _Required and _Default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#bucket_id LoggingFolderBucketConfig#bucket_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#bucket_id LoggingFolderBucketConfig#bucket_id}
 
 ---
 
@@ -1125,7 +1125,7 @@ Folder *string
 
 The parent resource that contains the logging bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#folder LoggingFolderBucketConfig#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#folder LoggingFolderBucketConfig#folder}
 
 ---
 
@@ -1139,7 +1139,7 @@ Location *string
 
 The location of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#location LoggingFolderBucketConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#location LoggingFolderBucketConfig#location}
 
 ---
 
@@ -1153,7 +1153,7 @@ CmekSettings LoggingFolderBucketConfigCmekSettings
 
 cmek_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#cmek_settings LoggingFolderBucketConfig#cmek_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#cmek_settings LoggingFolderBucketConfig#cmek_settings}
 
 ---
 
@@ -1167,7 +1167,7 @@ Description *string
 
 An optional description for this bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#description LoggingFolderBucketConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#description LoggingFolderBucketConfig#description}
 
 ---
 
@@ -1179,7 +1179,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#id LoggingFolderBucketConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#id LoggingFolderBucketConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1196,7 +1196,7 @@ IndexConfigs interface{}
 
 index_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#index_configs LoggingFolderBucketConfig#index_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#index_configs LoggingFolderBucketConfig#index_configs}
 
 ---
 
@@ -1212,7 +1212,7 @@ Logs will be retained by default for this amount of time, after which they will 
 
 The minimum retention period is 1 day. If this value is set to zero at bucket creation time, the default time of 30 days will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#retention_days LoggingFolderBucketConfig#retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#retention_days LoggingFolderBucketConfig#retention_days}
 
 ---
 
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingfolderbucketconfig"
 
 &loggingfolderbucketconfig.LoggingFolderBucketConfigIndexConfigs {
 	FieldPath: *string,
@@ -1248,7 +1248,7 @@ FieldPath *string
 
 The LogEntry field path to index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#field_path LoggingFolderBucketConfig#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#field_path LoggingFolderBucketConfig#field_path}
 
 ---
 
@@ -1265,7 +1265,7 @@ The type of data in this index Note that some paths are automatically indexed, a
 See [indexing documentation](https://cloud.google.com/logging/docs/view/advanced-queries#indexed-fields) for details.
 For example: jsonPayload.request.status
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_folder_bucket_config#type LoggingFolderBucketConfig#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_folder_bucket_config#type LoggingFolderBucketConfig#type}
 
 ---
 
@@ -1276,7 +1276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigCmekSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingfolderbucketconfig"
 
 loggingfolderbucketconfig.NewLoggingFolderBucketConfigCmekSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoggingFolderBucketConfigCmekSettingsOutputReference
 ```
@@ -1580,7 +1580,7 @@ func InternalValue() LoggingFolderBucketConfigCmekSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingfolderbucketconfig"
 
 loggingfolderbucketconfig.NewLoggingFolderBucketConfigIndexConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoggingFolderBucketConfigIndexConfigsList
 ```
@@ -1740,7 +1740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingFolderBucketConfig.LoggingFolderBucketConfigIndexConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/loggingfolderbucketconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/loggingfolderbucketconfig"
 
 loggingfolderbucketconfig.NewLoggingFolderBucketConfigIndexConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoggingFolderBucketConfigIndexConfigsOutputReference
 ```

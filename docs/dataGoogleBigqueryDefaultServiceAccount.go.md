@@ -4,12 +4,12 @@
 
 ### DataGoogleBigqueryDefaultServiceAccount <a name="DataGoogleBigqueryDefaultServiceAccount" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account google_bigquery_default_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_default_service_account google_bigquery_default_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydefaultserviceaccount"
 
 datagooglebigquerydefaultserviceaccount.NewDataGoogleBigqueryDefaultServiceAccount(scope Construct, id *string, config DataGoogleBigqueryDefaultServiceAccountConfig) DataGoogleBigqueryDefaultServiceAccount
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydefaultserviceaccount"
 
 datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydefaultserviceaccount"
 
 datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydefaultserviceaccount"
 
 datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydefaultserviceaccount"
 
 datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleBigqueryDefaultS
 
 The id of the existing DataGoogleBigqueryDefaultServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_default_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydefaultserviceaccount"
 
 &datagooglebigquerydefaultserviceaccount.DataGoogleBigqueryDefaultServiceAccountConfig {
 	Connection: interface{},
@@ -671,8 +671,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigque
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#id DataGoogleBigqueryDefaultServiceAccount#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#project DataGoogleBigqueryDefaultServiceAccount#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_default_service_account#id DataGoogleBigqueryDefaultServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_default_service_account#project DataGoogleBigqueryDefaultServiceAccount#project}. |
 
 ---
 
@@ -754,7 +754,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#id DataGoogleBigqueryDefaultServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_default_service_account#id DataGoogleBigqueryDefaultServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -769,7 +769,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#project DataGoogleBigqueryDefaultServiceAccount#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_default_service_account#project DataGoogleBigqueryDefaultServiceAccount#project}.
 
 ---
 

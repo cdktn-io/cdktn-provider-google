@@ -4,7 +4,7 @@
 
 ### ComputeRegionNetworkEndpoint <a name="ComputeRegionNetworkEndpoint" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint google_compute_region_network_endpoint}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint google_compute_region_network_endpoint}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer"></a>
 
@@ -23,8 +23,10 @@ computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   port: typing.Union[int, float],
   region_network_endpoint_group: str,
+  client_destination_port: typing.Union[int, float] = None,
   fqdn: str = None,
   id: str = None,
+  instance: str = None,
   ip_address: str = None,
   project: str = None,
   region: str = None,
@@ -45,10 +47,12 @@ computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint(
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | Port number of network endpoint. |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.regionNetworkEndpointGroup">region_network_endpoint_group</a></code> | <code>str</code> | The network endpoint group this endpoint is part of. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.clientDestinationPort">client_destination_port</a></code> | <code>typing.Union[int, float]</code> | Client destination port for the 'GCE_VM_IP_PORTMAP' NEG. |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.fqdn">fqdn</a></code> | <code>str</code> | Fully qualified domain name of network endpoint. |
-| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#id ComputeRegionNetworkEndpoint#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#id ComputeRegionNetworkEndpoint#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.instance">instance</a></code> | <code>str</code> | The name for a specific VM instance that the IP address belongs to. |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.ipAddress">ip_address</a></code> | <code>str</code> | IPv4 address external endpoint. |
-| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#project ComputeRegionNetworkEndpoint#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#project ComputeRegionNetworkEndpoint#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where the containing network endpoint group is located. |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeouts">ComputeRegionNetworkEndpointTimeouts</a></code> | timeouts block. |
 
@@ -120,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Port number of network endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#port ComputeRegionNetworkEndpoint#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#port ComputeRegionNetworkEndpoint#port}
 
 ---
 
@@ -130,7 +134,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The network endpoint group this endpoint is part of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#region_network_endpoint_group ComputeRegionNetworkEndpoint#region_network_endpoint_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#region_network_endpoint_group ComputeRegionNetworkEndpoint#region_network_endpoint_group}
+
+---
+
+##### `client_destination_port`<sup>Optional</sup> <a name="client_destination_port" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.clientDestinationPort"></a>
+
+- *Type:* typing.Union[int, float]
+
+Client destination port for the 'GCE_VM_IP_PORTMAP' NEG.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#client_destination_port ComputeRegionNetworkEndpoint#client_destination_port}
 
 ---
 
@@ -142,7 +156,7 @@ Fully qualified domain name of network endpoint.
 
 This can only be specified when network_endpoint_type of the NEG is INTERNET_FQDN_PORT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#fqdn ComputeRegionNetworkEndpoint#fqdn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#fqdn ComputeRegionNetworkEndpoint#fqdn}
 
 ---
 
@@ -150,10 +164,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#id ComputeRegionNetworkEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#id ComputeRegionNetworkEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `instance`<sup>Optional</sup> <a name="instance" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.Initializer.parameter.instance"></a>
+
+- *Type:* str
+
+The name for a specific VM instance that the IP address belongs to.
+
+This is required for network endpoints of type GCE_VM_IP_PORTMAP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#instance ComputeRegionNetworkEndpoint#instance}
 
 ---
 
@@ -165,7 +191,7 @@ IPv4 address external endpoint.
 
 This can only be specified when network_endpoint_type of the NEG is INTERNET_IP_PORT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#ip_address ComputeRegionNetworkEndpoint#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#ip_address ComputeRegionNetworkEndpoint#ip_address}
 
 ---
 
@@ -173,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#project ComputeRegionNetworkEndpoint#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#project ComputeRegionNetworkEndpoint#project}.
 
 ---
 
@@ -183,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region where the containing network endpoint group is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#region ComputeRegionNetworkEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#region ComputeRegionNetworkEndpoint#region}
 
 ---
 
@@ -193,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#timeouts ComputeRegionNetworkEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#timeouts ComputeRegionNetworkEndpoint#timeouts}
 
 ---
 
@@ -226,8 +252,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.resetClientDestinationPort">reset_client_destination_port</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.resetFqdn">reset_fqdn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.resetInstance">reset_instance</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.resetIpAddress">reset_ip_address</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.resetRegion">reset_region</a></code> | *No description.* |
@@ -596,7 +624,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#create ComputeRegionNetworkEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#create ComputeRegionNetworkEndpoint#create}.
 
 ---
 
@@ -604,9 +632,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#delete ComputeRegionNetworkEndpoint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#delete ComputeRegionNetworkEndpoint#delete}.
 
 ---
+
+##### `reset_client_destination_port` <a name="reset_client_destination_port" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.resetClientDestinationPort"></a>
+
+```python
+def reset_client_destination_port() -> None
+```
 
 ##### `reset_fqdn` <a name="reset_fqdn" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.resetFqdn"></a>
 
@@ -618,6 +652,12 @@ def reset_fqdn() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_instance` <a name="reset_instance" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.resetInstance"></a>
+
+```python
+def reset_instance() -> None
 ```
 
 ##### `reset_ip_address` <a name="reset_ip_address" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.resetIpAddress"></a>
@@ -758,7 +798,7 @@ The construct id used in the generated config for the ComputeRegionNetworkEndpoi
 
 The id of the existing ComputeRegionNetworkEndpoint that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -790,16 +830,20 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.networkEndpointId">network_endpoint_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeoutsOutputReference">ComputeRegionNetworkEndpointTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.clientDestinationPortInput">client_destination_port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.fqdnInput">fqdn_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.instanceInput">instance_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.ipAddressInput">ip_address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.regionNetworkEndpointGroupInput">region_network_endpoint_group_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeouts">ComputeRegionNetworkEndpointTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.clientDestinationPort">client_destination_port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.fqdn">fqdn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.instance">instance</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.ipAddress">ip_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -970,6 +1014,16 @@ timeouts: ComputeRegionNetworkEndpointTimeoutsOutputReference
 
 ---
 
+##### `client_destination_port_input`<sup>Optional</sup> <a name="client_destination_port_input" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.clientDestinationPortInput"></a>
+
+```python
+client_destination_port_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `fqdn_input`<sup>Optional</sup> <a name="fqdn_input" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.fqdnInput"></a>
 
 ```python
@@ -984,6 +1038,16 @@ fqdn_input: str
 
 ```python
 id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `instance_input`<sup>Optional</sup> <a name="instance_input" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.instanceInput"></a>
+
+```python
+instance_input: str
 ```
 
 - *Type:* str
@@ -1050,6 +1114,16 @@ timeouts_input: IResolvable | ComputeRegionNetworkEndpointTimeouts
 
 ---
 
+##### `client_destination_port`<sup>Required</sup> <a name="client_destination_port" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.clientDestinationPort"></a>
+
+```python
+client_destination_port: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `fqdn`<sup>Required</sup> <a name="fqdn" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.fqdn"></a>
 
 ```python
@@ -1064,6 +1138,16 @@ fqdn: str
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `instance`<sup>Required</sup> <a name="instance" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpoint.property.instance"></a>
+
+```python
+instance: str
 ```
 
 - *Type:* str
@@ -1157,8 +1241,10 @@ computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   port: typing.Union[int, float],
   region_network_endpoint_group: str,
+  client_destination_port: typing.Union[int, float] = None,
   fqdn: str = None,
   id: str = None,
+  instance: str = None,
   ip_address: str = None,
   project: str = None,
   region: str = None,
@@ -1179,10 +1265,12 @@ computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig(
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Port number of network endpoint. |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.regionNetworkEndpointGroup">region_network_endpoint_group</a></code> | <code>str</code> | The network endpoint group this endpoint is part of. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.clientDestinationPort">client_destination_port</a></code> | <code>typing.Union[int, float]</code> | Client destination port for the 'GCE_VM_IP_PORTMAP' NEG. |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.fqdn">fqdn</a></code> | <code>str</code> | Fully qualified domain name of network endpoint. |
-| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#id ComputeRegionNetworkEndpoint#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#id ComputeRegionNetworkEndpoint#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.instance">instance</a></code> | <code>str</code> | The name for a specific VM instance that the IP address belongs to. |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.ipAddress">ip_address</a></code> | <code>str</code> | IPv4 address external endpoint. |
-| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#project ComputeRegionNetworkEndpoint#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#project ComputeRegionNetworkEndpoint#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.region">region</a></code> | <code>str</code> | Region where the containing network endpoint group is located. |
 | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeouts">ComputeRegionNetworkEndpointTimeouts</a></code> | timeouts block. |
 
@@ -1268,7 +1356,7 @@ port: typing.Union[int, float]
 
 Port number of network endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#port ComputeRegionNetworkEndpoint#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#port ComputeRegionNetworkEndpoint#port}
 
 ---
 
@@ -1282,7 +1370,21 @@ region_network_endpoint_group: str
 
 The network endpoint group this endpoint is part of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#region_network_endpoint_group ComputeRegionNetworkEndpoint#region_network_endpoint_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#region_network_endpoint_group ComputeRegionNetworkEndpoint#region_network_endpoint_group}
+
+---
+
+##### `client_destination_port`<sup>Optional</sup> <a name="client_destination_port" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.clientDestinationPort"></a>
+
+```python
+client_destination_port: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Client destination port for the 'GCE_VM_IP_PORTMAP' NEG.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#client_destination_port ComputeRegionNetworkEndpoint#client_destination_port}
 
 ---
 
@@ -1298,7 +1400,7 @@ Fully qualified domain name of network endpoint.
 
 This can only be specified when network_endpoint_type of the NEG is INTERNET_FQDN_PORT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#fqdn ComputeRegionNetworkEndpoint#fqdn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#fqdn ComputeRegionNetworkEndpoint#fqdn}
 
 ---
 
@@ -1310,10 +1412,26 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#id ComputeRegionNetworkEndpoint#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#id ComputeRegionNetworkEndpoint#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `instance`<sup>Optional</sup> <a name="instance" id="@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointConfig.property.instance"></a>
+
+```python
+instance: str
+```
+
+- *Type:* str
+
+The name for a specific VM instance that the IP address belongs to.
+
+This is required for network endpoints of type GCE_VM_IP_PORTMAP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#instance ComputeRegionNetworkEndpoint#instance}
 
 ---
 
@@ -1329,7 +1447,7 @@ IPv4 address external endpoint.
 
 This can only be specified when network_endpoint_type of the NEG is INTERNET_IP_PORT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#ip_address ComputeRegionNetworkEndpoint#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#ip_address ComputeRegionNetworkEndpoint#ip_address}
 
 ---
 
@@ -1341,7 +1459,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#project ComputeRegionNetworkEndpoint#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#project ComputeRegionNetworkEndpoint#project}.
 
 ---
 
@@ -1355,7 +1473,7 @@ region: str
 
 Region where the containing network endpoint group is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#region ComputeRegionNetworkEndpoint#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#region ComputeRegionNetworkEndpoint#region}
 
 ---
 
@@ -1369,7 +1487,7 @@ timeouts: ComputeRegionNetworkEndpointTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#timeouts ComputeRegionNetworkEndpoint#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#timeouts ComputeRegionNetworkEndpoint#timeouts}
 
 ---
 
@@ -1390,8 +1508,8 @@ computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#create ComputeRegionNetworkEndpoint#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#delete ComputeRegionNetworkEndpoint#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#create ComputeRegionNetworkEndpoint#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionNetworkEndpoint.ComputeRegionNetworkEndpointTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#delete ComputeRegionNetworkEndpoint#delete}. |
 
 ---
 
@@ -1403,7 +1521,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#create ComputeRegionNetworkEndpoint#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#create ComputeRegionNetworkEndpoint#create}.
 
 ---
 
@@ -1415,7 +1533,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_network_endpoint#delete ComputeRegionNetworkEndpoint#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_network_endpoint#delete ComputeRegionNetworkEndpoint#delete}.
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### DataGoogleGkeHubFeatureIamPolicy <a name="DataGoogleGkeHubFeatureIamPolicy" id="@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglegkehubfeatureiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeatureiampolicy"
 
 datagooglegkehubfeatureiampolicy.NewDataGoogleGkeHubFeatureIamPolicy(scope Construct, id *string, config DataGoogleGkeHubFeatureIamPolicyConfig) DataGoogleGkeHubFeatureIamPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglegkehubfeatureiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeatureiampolicy"
 
 datagooglegkehubfeatureiampolicy.DataGoogleGkeHubFeatureIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglegkehubfeatureiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeatureiampolicy"
 
 datagooglegkehubfeatureiampolicy.DataGoogleGkeHubFeatureIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglegkehubfeatureiampolicy.DataGoogleGkeHubFeatureIamPolicy_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglegkehubfeatureiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeatureiampolicy"
 
 datagooglegkehubfeatureiampolicy.DataGoogleGkeHubFeatureIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglegkehubfeatureiampolicy.DataGoogleGkeHubFeatureIamPolicy_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglegkehubfeatureiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeatureiampolicy"
 
 datagooglegkehubfeatureiampolicy.DataGoogleGkeHubFeatureIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleGkeHubFeatureIam
 
 The id of the existing DataGoogleGkeHubFeatureIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_feature_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/gke_hub_feature_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglegkehubfeatureiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglegkehubfeatureiampolicy"
 
 &datagooglegkehubfeatureiampolicy.DataGoogleGkeHubFeatureIamPolicyConfig {
 	Connection: interface{},
@@ -724,10 +724,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglegkehub
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_feature_iam_policy#name DataGoogleGkeHubFeatureIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_feature_iam_policy#id DataGoogleGkeHubFeatureIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_feature_iam_policy#location DataGoogleGkeHubFeatureIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_feature_iam_policy#project DataGoogleGkeHubFeatureIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/gke_hub_feature_iam_policy#name DataGoogleGkeHubFeatureIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/gke_hub_feature_iam_policy#id DataGoogleGkeHubFeatureIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/gke_hub_feature_iam_policy#location DataGoogleGkeHubFeatureIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubFeatureIamPolicy.DataGoogleGkeHubFeatureIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/gke_hub_feature_iam_policy#project DataGoogleGkeHubFeatureIamPolicy#project}. |
 
 ---
 
@@ -809,7 +809,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_feature_iam_policy#name DataGoogleGkeHubFeatureIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/gke_hub_feature_iam_policy#name DataGoogleGkeHubFeatureIamPolicy#name}.
 
 ---
 
@@ -821,7 +821,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_feature_iam_policy#id DataGoogleGkeHubFeatureIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/gke_hub_feature_iam_policy#id DataGoogleGkeHubFeatureIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -836,7 +836,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_feature_iam_policy#location DataGoogleGkeHubFeatureIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/gke_hub_feature_iam_policy#location DataGoogleGkeHubFeatureIamPolicy#location}.
 
 ---
 
@@ -848,7 +848,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/gke_hub_feature_iam_policy#project DataGoogleGkeHubFeatureIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/gke_hub_feature_iam_policy#project DataGoogleGkeHubFeatureIamPolicy#project}.
 
 ---
 

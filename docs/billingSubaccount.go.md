@@ -4,12 +4,12 @@
 
 ### BillingSubaccount <a name="BillingSubaccount" id="@cdktn/provider-google.billingSubaccount.BillingSubaccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount google_billing_subaccount}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/billing_subaccount google_billing_subaccount}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.billingSubaccount.BillingSubaccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/billingsubaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingsubaccount"
 
 billingsubaccount.NewBillingSubaccount(scope Construct, id *string, config BillingSubaccountConfig) BillingSubaccount
 ```
@@ -414,7 +414,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.billingSubaccount.BillingSubaccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/billingsubaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingsubaccount"
 
 billingsubaccount.BillingSubaccount_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.billingSubaccount.BillingSubaccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/billingsubaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingsubaccount"
 
 billingsubaccount.BillingSubaccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ billingsubaccount.BillingSubaccount_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.billingSubaccount.BillingSubaccount.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/billingsubaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingsubaccount"
 
 billingsubaccount.BillingSubaccount_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ billingsubaccount.BillingSubaccount_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.billingSubaccount.BillingSubaccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/billingsubaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingsubaccount"
 
 billingsubaccount.BillingSubaccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the BillingSubaccount to impor
 
 The id of the existing BillingSubaccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/billing_subaccount#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/billingsubaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/billingsubaccount"
 
 &billingsubaccount.BillingSubaccountConfig {
 	Connection: interface{},
@@ -852,10 +852,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/billingsubaccoun
 | <code><a href="#@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount#display_name BillingSubaccount#display_name}. |
-| <code><a href="#@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.property.masterBillingAccount">MasterBillingAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount#master_billing_account BillingSubaccount#master_billing_account}. |
-| <code><a href="#@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount#deletion_policy BillingSubaccount#deletion_policy}. |
-| <code><a href="#@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount#id BillingSubaccount#id}. |
+| <code><a href="#@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/billing_subaccount#display_name BillingSubaccount#display_name}. |
+| <code><a href="#@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.property.masterBillingAccount">MasterBillingAccount</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/billing_subaccount#master_billing_account BillingSubaccount#master_billing_account}. |
+| <code><a href="#@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/billing_subaccount#deletion_policy BillingSubaccount#deletion_policy}. |
+| <code><a href="#@cdktn/provider-google.billingSubaccount.BillingSubaccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/billing_subaccount#id BillingSubaccount#id}. |
 
 ---
 
@@ -937,7 +937,7 @@ DisplayName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount#display_name BillingSubaccount#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/billing_subaccount#display_name BillingSubaccount#display_name}.
 
 ---
 
@@ -949,7 +949,7 @@ MasterBillingAccount *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount#master_billing_account BillingSubaccount#master_billing_account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/billing_subaccount#master_billing_account BillingSubaccount#master_billing_account}.
 
 ---
 
@@ -961,7 +961,7 @@ DeletionPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount#deletion_policy BillingSubaccount#deletion_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/billing_subaccount#deletion_policy BillingSubaccount#deletion_policy}.
 
 ---
 
@@ -973,7 +973,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/billing_subaccount#id BillingSubaccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/billing_subaccount#id BillingSubaccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

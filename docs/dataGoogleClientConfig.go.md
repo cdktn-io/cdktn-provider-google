@@ -4,12 +4,12 @@
 
 ### DataGoogleClientConfig <a name="DataGoogleClientConfig" id="@cdktn/provider-google.dataGoogleClientConfig.DataGoogleClientConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/client_config google_client_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/client_config google_client_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleClientConfig.DataGoogleClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientconfig"
 
 datagoogleclientconfig.NewDataGoogleClientConfig(scope Construct, id *string, config DataGoogleClientConfigConfig) DataGoogleClientConfig
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleClientConfig.DataGoogleClientConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientconfig"
 
 datagoogleclientconfig.DataGoogleClientConfig_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleClientConfig.DataGoogleClientConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientconfig"
 
 datagoogleclientconfig.DataGoogleClientConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datagoogleclientconfig.DataGoogleClientConfig_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleClientConfig.DataGoogleClientConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientconfig"
 
 datagoogleclientconfig.DataGoogleClientConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleclientconfig.DataGoogleClientConfig_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleClientConfig.DataGoogleClientConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientconfig"
 
 datagoogleclientconfig.DataGoogleClientConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataGoogleClientConfig to 
 
 The id of the existing DataGoogleClientConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/client_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/client_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleClientConfig.DataGoogleClientConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleclientconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleclientconfig"
 
 &datagoogleclientconfig.DataGoogleClientConfigConfig {
 	Connection: interface{},

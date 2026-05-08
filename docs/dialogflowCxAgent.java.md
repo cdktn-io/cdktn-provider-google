@@ -4,7 +4,7 @@
 
 ### DialogflowCxAgent <a name="DialogflowCxAgent" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent google_dialogflow_cx_agent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent google_dialogflow_cx_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer"></a>
 
@@ -24,17 +24,23 @@ DialogflowCxAgent.Builder.create(Construct scope, java.lang.String id)
     .location(java.lang.String)
     .timeZone(java.lang.String)
 //  .advancedSettings(DialogflowCxAgentAdvancedSettings)
+//  .answerFeedbackSettings(DialogflowCxAgentAnswerFeedbackSettings)
 //  .avatarUri(java.lang.String)
+//  .clientCertificateSettings(DialogflowCxAgentClientCertificateSettings)
 //  .deleteChatEngineOnDestroy(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
+//  .enableMultiLanguageTraining(java.lang.Boolean|IResolvable)
 //  .enableSpellCorrection(java.lang.Boolean|IResolvable)
 //  .enableStackdriverLogging(java.lang.Boolean|IResolvable)
 //  .genAppBuilderSettings(DialogflowCxAgentGenAppBuilderSettings)
 //  .gitIntegrationSettings(DialogflowCxAgentGitIntegrationSettings)
 //  .id(java.lang.String)
+//  .locked(java.lang.Boolean|IResolvable)
+//  .personalizationSettings(DialogflowCxAgentPersonalizationSettings)
 //  .project(java.lang.String)
 //  .securitySettings(java.lang.String)
 //  .speechToTextSettings(DialogflowCxAgentSpeechToTextSettings)
+//  .startPlaybook(java.lang.String)
 //  .supportedLanguageCodes(java.util.List<java.lang.String>)
 //  .textToSpeechSettings(DialogflowCxAgentTextToSpeechSettings)
 //  .timeouts(DialogflowCxAgentTimeouts)
@@ -57,17 +63,23 @@ DialogflowCxAgent.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The name of the location this agent is located in. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.timeZone">timeZone</a></code> | <code>java.lang.String</code> | The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.advancedSettings">advancedSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettings">DialogflowCxAgentAdvancedSettings</a></code> | advanced_settings block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.answerFeedbackSettings">answerFeedbackSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings">DialogflowCxAgentAnswerFeedbackSettings</a></code> | answer_feedback_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.avatarUri">avatarUri</a></code> | <code>java.lang.String</code> | The URI of the agent's avatar. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.clientCertificateSettings">clientCertificateSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings">DialogflowCxAgentClientCertificateSettings</a></code> | client_certificate_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.deleteChatEngineOnDestroy">deleteChatEngineOnDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to 'true', Terraform will delete the chat engine associated with the agent when the agent is destroyed. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.enableMultiLanguageTraining">enableMultiLanguageTraining</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enable training multi-lingual models for this agent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.enableSpellCorrection">enableSpellCorrection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates if automatic spell correction is enabled in detect intent requests. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.enableStackdriverLogging">enableStackdriverLogging</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Determines whether this agent should log conversation queries. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.genAppBuilderSettings">genAppBuilderSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettings">DialogflowCxAgentGenAppBuilderSettings</a></code> | gen_app_builder_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.gitIntegrationSettings">gitIntegrationSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettings">DialogflowCxAgentGitIntegrationSettings</a></code> | git_integration_settings block. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#id DialogflowCxAgent#id}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#project DialogflowCxAgent#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#id DialogflowCxAgent#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.locked">locked</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates whether the agent is locked for changes. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.personalizationSettings">personalizationSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings">DialogflowCxAgentPersonalizationSettings</a></code> | personalization_settings block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#project DialogflowCxAgent#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.securitySettings">securitySettings</a></code> | <code>java.lang.String</code> | Name of the SecuritySettings reference for the agent. Format: projects/<Project ID>/locations/<Location ID>/securitySettings/<Security Settings ID>. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.speechToTextSettings">speechToTextSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings">DialogflowCxAgentSpeechToTextSettings</a></code> | speech_to_text_settings block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.startPlaybook">startPlaybook</a></code> | <code>java.lang.String</code> | Name of the start playbook in this agent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.supportedLanguageCodes">supportedLanguageCodes</a></code> | <code>java.util.List<java.lang.String></code> | The list of all languages supported by this agent (except for the default_language_code). |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.textToSpeechSettings">textToSpeechSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettings">DialogflowCxAgentTextToSpeechSettings</a></code> | text_to_speech_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts">DialogflowCxAgentTimeouts</a></code> | timeouts block. |
@@ -143,7 +155,7 @@ The default language of the agent as a language tag.
 [See Language Support](https://cloud.google.com/dialogflow/cx/docs/reference/language)
 for a list of the currently supported language codes. This field cannot be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#default_language_code DialogflowCxAgent#default_language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#default_language_code DialogflowCxAgent#default_language_code}
 
 ---
 
@@ -153,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The human-readable name of the agent, unique within the location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#display_name DialogflowCxAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#display_name DialogflowCxAgent#display_name}
 
 ---
 
@@ -167,7 +179,7 @@ The name of the location this agent is located in.
 This is a one time step but at the moment you can only [configure location settings](https://cloud.google.com/dialogflow/cx/docs/concept/region#location-settings) via the Dialogflow CX console.
 Another options is to use global location so you don't need to manually configure location settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#location DialogflowCxAgent#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#location DialogflowCxAgent#location}
 
 ---
 
@@ -177,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#time_zone DialogflowCxAgent#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#time_zone DialogflowCxAgent#time_zone}
 
 ---
 
@@ -187,7 +199,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 advanced_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#advanced_settings DialogflowCxAgent#advanced_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#advanced_settings DialogflowCxAgent#advanced_settings}
+
+---
+
+##### `answerFeedbackSettings`<sup>Optional</sup> <a name="answerFeedbackSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.answerFeedbackSettings"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings">DialogflowCxAgentAnswerFeedbackSettings</a>
+
+answer_feedback_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#answer_feedback_settings DialogflowCxAgent#answer_feedback_settings}
 
 ---
 
@@ -199,7 +221,17 @@ The URI of the agent's avatar.
 
 Avatars are used throughout the Dialogflow console and in the self-hosted Web Demo integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#avatar_uri DialogflowCxAgent#avatar_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#avatar_uri DialogflowCxAgent#avatar_uri}
+
+---
+
+##### `clientCertificateSettings`<sup>Optional</sup> <a name="clientCertificateSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.clientCertificateSettings"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings">DialogflowCxAgentClientCertificateSettings</a>
+
+client_certificate_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#client_certificate_settings DialogflowCxAgent#client_certificate_settings}
 
 ---
 
@@ -223,7 +255,7 @@ or a [page](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projec
 or the 'dataStoreSpec' field of a [tool](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.tools#resource:-tool).
 The ID of the implicitly created engine is stored in the 'genAppBuilderSettings' field of the [agent](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents#resource:-agent).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#delete_chat_engine_on_destroy DialogflowCxAgent#delete_chat_engine_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#delete_chat_engine_on_destroy DialogflowCxAgent#delete_chat_engine_on_destroy}
 
 ---
 
@@ -233,7 +265,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#description DialogflowCxAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#description DialogflowCxAgent#description}
+
+---
+
+##### `enableMultiLanguageTraining`<sup>Optional</sup> <a name="enableMultiLanguageTraining" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.enableMultiLanguageTraining"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Enable training multi-lingual models for this agent.
+
+These models will be trained on all the languages supported by the agent.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enable_multi_language_training DialogflowCxAgent#enable_multi_language_training}
 
 ---
 
@@ -243,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates if automatic spell correction is enabled in detect intent requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#enable_spell_correction DialogflowCxAgent#enable_spell_correction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enable_spell_correction DialogflowCxAgent#enable_spell_correction}
 
 ---
 
@@ -253,7 +297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Determines whether this agent should log conversation queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#enable_stackdriver_logging DialogflowCxAgent#enable_stackdriver_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enable_stackdriver_logging DialogflowCxAgent#enable_stackdriver_logging}
 
 ---
 
@@ -263,7 +307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 gen_app_builder_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#gen_app_builder_settings DialogflowCxAgent#gen_app_builder_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#gen_app_builder_settings DialogflowCxAgent#gen_app_builder_settings}
 
 ---
 
@@ -273,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 git_integration_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#git_integration_settings DialogflowCxAgent#git_integration_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#git_integration_settings DialogflowCxAgent#git_integration_settings}
 
 ---
 
@@ -281,10 +325,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#id DialogflowCxAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#id DialogflowCxAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.locked"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Indicates whether the agent is locked for changes.
+
+If the agent is locked, modifications to the agent will be rejected except for [agents.restore][].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#locked DialogflowCxAgent#locked}
+
+---
+
+##### `personalizationSettings`<sup>Optional</sup> <a name="personalizationSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.personalizationSettings"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings">DialogflowCxAgentPersonalizationSettings</a>
+
+personalization_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#personalization_settings DialogflowCxAgent#personalization_settings}
 
 ---
 
@@ -292,7 +358,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#project DialogflowCxAgent#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#project DialogflowCxAgent#project}.
 
 ---
 
@@ -302,7 +368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the SecuritySettings reference for the agent. Format: projects/<Project ID>/locations/<Location ID>/securitySettings/<Security Settings ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#security_settings DialogflowCxAgent#security_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#security_settings DialogflowCxAgent#security_settings}
 
 ---
 
@@ -312,7 +378,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 speech_to_text_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#speech_to_text_settings DialogflowCxAgent#speech_to_text_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#speech_to_text_settings DialogflowCxAgent#speech_to_text_settings}
+
+---
+
+##### `startPlaybook`<sup>Optional</sup> <a name="startPlaybook" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.Initializer.parameter.startPlaybook"></a>
+
+- *Type:* java.lang.String
+
+Name of the start playbook in this agent.
+
+A start playbook will be automatically created when the agent is created, and can only be deleted by deleting the agent. Format: **projects/<ProjectID>/locations/<LocationID>/agents/<AgentID>/playbooks/<PlaybookID>**. Currently only the default playbook with id "00000000-0000-0000-0000-000000000000" is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#start_playbook DialogflowCxAgent#start_playbook}
 
 ---
 
@@ -322,7 +400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of all languages supported by this agent (except for the default_language_code).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#supported_language_codes DialogflowCxAgent#supported_language_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#supported_language_codes DialogflowCxAgent#supported_language_codes}
 
 ---
 
@@ -332,7 +410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 text_to_speech_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#text_to_speech_settings DialogflowCxAgent#text_to_speech_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#text_to_speech_settings DialogflowCxAgent#text_to_speech_settings}
 
 ---
 
@@ -342,7 +420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#timeouts DialogflowCxAgent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#timeouts DialogflowCxAgent#timeouts}
 
 ---
 
@@ -375,23 +453,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putAdvancedSettings">putAdvancedSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putAnswerFeedbackSettings">putAnswerFeedbackSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putClientCertificateSettings">putClientCertificateSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putGenAppBuilderSettings">putGenAppBuilderSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putGitIntegrationSettings">putGitIntegrationSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putPersonalizationSettings">putPersonalizationSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putSpeechToTextSettings">putSpeechToTextSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putTextToSpeechSettings">putTextToSpeechSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetAdvancedSettings">resetAdvancedSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetAnswerFeedbackSettings">resetAnswerFeedbackSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetAvatarUri">resetAvatarUri</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetClientCertificateSettings">resetClientCertificateSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetDeleteChatEngineOnDestroy">resetDeleteChatEngineOnDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetEnableMultiLanguageTraining">resetEnableMultiLanguageTraining</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetEnableSpellCorrection">resetEnableSpellCorrection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetEnableStackdriverLogging">resetEnableStackdriverLogging</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetGenAppBuilderSettings">resetGenAppBuilderSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetGitIntegrationSettings">resetGitIntegrationSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetLocked">resetLocked</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetPersonalizationSettings">resetPersonalizationSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetSecuritySettings">resetSecuritySettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetSpeechToTextSettings">resetSpeechToTextSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetStartPlaybook">resetStartPlaybook</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetSupportedLanguageCodes">resetSupportedLanguageCodes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetTextToSpeechSettings">resetTextToSpeechSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -721,6 +808,30 @@ public void putAdvancedSettings(DialogflowCxAgentAdvancedSettings value)
 
 ---
 
+##### `putAnswerFeedbackSettings` <a name="putAnswerFeedbackSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putAnswerFeedbackSettings"></a>
+
+```java
+public void putAnswerFeedbackSettings(DialogflowCxAgentAnswerFeedbackSettings value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putAnswerFeedbackSettings.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings">DialogflowCxAgentAnswerFeedbackSettings</a>
+
+---
+
+##### `putClientCertificateSettings` <a name="putClientCertificateSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putClientCertificateSettings"></a>
+
+```java
+public void putClientCertificateSettings(DialogflowCxAgentClientCertificateSettings value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putClientCertificateSettings.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings">DialogflowCxAgentClientCertificateSettings</a>
+
+---
+
 ##### `putGenAppBuilderSettings` <a name="putGenAppBuilderSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putGenAppBuilderSettings"></a>
 
 ```java
@@ -742,6 +853,18 @@ public void putGitIntegrationSettings(DialogflowCxAgentGitIntegrationSettings va
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putGitIntegrationSettings.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettings">DialogflowCxAgentGitIntegrationSettings</a>
+
+---
+
+##### `putPersonalizationSettings` <a name="putPersonalizationSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putPersonalizationSettings"></a>
+
+```java
+public void putPersonalizationSettings(DialogflowCxAgentPersonalizationSettings value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.putPersonalizationSettings.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings">DialogflowCxAgentPersonalizationSettings</a>
 
 ---
 
@@ -787,10 +910,22 @@ public void putTimeouts(DialogflowCxAgentTimeouts value)
 public void resetAdvancedSettings()
 ```
 
+##### `resetAnswerFeedbackSettings` <a name="resetAnswerFeedbackSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetAnswerFeedbackSettings"></a>
+
+```java
+public void resetAnswerFeedbackSettings()
+```
+
 ##### `resetAvatarUri` <a name="resetAvatarUri" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetAvatarUri"></a>
 
 ```java
 public void resetAvatarUri()
+```
+
+##### `resetClientCertificateSettings` <a name="resetClientCertificateSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetClientCertificateSettings"></a>
+
+```java
+public void resetClientCertificateSettings()
 ```
 
 ##### `resetDeleteChatEngineOnDestroy` <a name="resetDeleteChatEngineOnDestroy" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetDeleteChatEngineOnDestroy"></a>
@@ -803,6 +938,12 @@ public void resetDeleteChatEngineOnDestroy()
 
 ```java
 public void resetDescription()
+```
+
+##### `resetEnableMultiLanguageTraining` <a name="resetEnableMultiLanguageTraining" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetEnableMultiLanguageTraining"></a>
+
+```java
+public void resetEnableMultiLanguageTraining()
 ```
 
 ##### `resetEnableSpellCorrection` <a name="resetEnableSpellCorrection" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetEnableSpellCorrection"></a>
@@ -835,6 +976,18 @@ public void resetGitIntegrationSettings()
 public void resetId()
 ```
 
+##### `resetLocked` <a name="resetLocked" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetLocked"></a>
+
+```java
+public void resetLocked()
+```
+
+##### `resetPersonalizationSettings` <a name="resetPersonalizationSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetPersonalizationSettings"></a>
+
+```java
+public void resetPersonalizationSettings()
+```
+
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetProject"></a>
 
 ```java
@@ -851,6 +1004,12 @@ public void resetSecuritySettings()
 
 ```java
 public void resetSpeechToTextSettings()
+```
+
+##### `resetStartPlaybook` <a name="resetStartPlaybook" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetStartPlaybook"></a>
+
+```java
+public void resetStartPlaybook()
 ```
 
 ##### `resetSupportedLanguageCodes` <a name="resetSupportedLanguageCodes" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.resetSupportedLanguageCodes"></a>
@@ -974,7 +1133,7 @@ The construct id used in the generated config for the DialogflowCxAgent to impor
 
 The id of the existing DialogflowCxAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1005,28 +1164,39 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.advancedSettings">advancedSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference">DialogflowCxAgentAdvancedSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.answerFeedbackSettings">answerFeedbackSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference">DialogflowCxAgentAnswerFeedbackSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.clientCertificateSettings">clientCertificateSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference">DialogflowCxAgentClientCertificateSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.genAppBuilderSettings">genAppBuilderSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference">DialogflowCxAgentGenAppBuilderSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.gitIntegrationSettings">gitIntegrationSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsOutputReference">DialogflowCxAgentGitIntegrationSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.personalizationSettings">personalizationSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference">DialogflowCxAgentPersonalizationSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.satisfiesPzi">satisfiesPzi</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.satisfiesPzs">satisfiesPzs</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.speechToTextSettings">speechToTextSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference">DialogflowCxAgentSpeechToTextSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.startFlow">startFlow</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.textToSpeechSettings">textToSpeechSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettingsOutputReference">DialogflowCxAgentTextToSpeechSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference">DialogflowCxAgentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.advancedSettingsInput">advancedSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettings">DialogflowCxAgentAdvancedSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.answerFeedbackSettingsInput">answerFeedbackSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings">DialogflowCxAgentAnswerFeedbackSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.avatarUriInput">avatarUriInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.clientCertificateSettingsInput">clientCertificateSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings">DialogflowCxAgentClientCertificateSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.defaultLanguageCodeInput">defaultLanguageCodeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.deleteChatEngineOnDestroyInput">deleteChatEngineOnDestroyInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableMultiLanguageTrainingInput">enableMultiLanguageTrainingInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableSpellCorrectionInput">enableSpellCorrectionInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableStackdriverLoggingInput">enableStackdriverLoggingInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.genAppBuilderSettingsInput">genAppBuilderSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettings">DialogflowCxAgentGenAppBuilderSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.gitIntegrationSettingsInput">gitIntegrationSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettings">DialogflowCxAgentGitIntegrationSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.lockedInput">lockedInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.personalizationSettingsInput">personalizationSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings">DialogflowCxAgentPersonalizationSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.securitySettingsInput">securitySettingsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.speechToTextSettingsInput">speechToTextSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings">DialogflowCxAgentSpeechToTextSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.startPlaybookInput">startPlaybookInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.supportedLanguageCodesInput">supportedLanguageCodesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.textToSpeechSettingsInput">textToSpeechSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettings">DialogflowCxAgentTextToSpeechSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts">DialogflowCxAgentTimeouts</a></code> | *No description.* |
@@ -1036,12 +1206,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.deleteChatEngineOnDestroy">deleteChatEngineOnDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableMultiLanguageTraining">enableMultiLanguageTraining</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableSpellCorrection">enableSpellCorrection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableStackdriverLogging">enableStackdriverLogging</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.locked">locked</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.securitySettings">securitySettings</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.startPlaybook">startPlaybook</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.supportedLanguageCodes">supportedLanguageCodes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.timeZone">timeZone</a></code> | <code>java.lang.String</code> | *No description.* |
 
@@ -1199,6 +1372,26 @@ public DialogflowCxAgentAdvancedSettingsOutputReference getAdvancedSettings();
 
 ---
 
+##### `answerFeedbackSettings`<sup>Required</sup> <a name="answerFeedbackSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.answerFeedbackSettings"></a>
+
+```java
+public DialogflowCxAgentAnswerFeedbackSettingsOutputReference getAnswerFeedbackSettings();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference">DialogflowCxAgentAnswerFeedbackSettingsOutputReference</a>
+
+---
+
+##### `clientCertificateSettings`<sup>Required</sup> <a name="clientCertificateSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.clientCertificateSettings"></a>
+
+```java
+public DialogflowCxAgentClientCertificateSettingsOutputReference getClientCertificateSettings();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference">DialogflowCxAgentClientCertificateSettingsOutputReference</a>
+
+---
+
 ##### `genAppBuilderSettings`<sup>Required</sup> <a name="genAppBuilderSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.genAppBuilderSettings"></a>
 
 ```java
@@ -1226,6 +1419,36 @@ public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `personalizationSettings`<sup>Required</sup> <a name="personalizationSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.personalizationSettings"></a>
+
+```java
+public DialogflowCxAgentPersonalizationSettingsOutputReference getPersonalizationSettings();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference">DialogflowCxAgentPersonalizationSettingsOutputReference</a>
+
+---
+
+##### `satisfiesPzi`<sup>Required</sup> <a name="satisfiesPzi" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.satisfiesPzi"></a>
+
+```java
+public IResolvable getSatisfiesPzi();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
+
+---
+
+##### `satisfiesPzs`<sup>Required</sup> <a name="satisfiesPzs" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.satisfiesPzs"></a>
+
+```java
+public IResolvable getSatisfiesPzs();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -1279,6 +1502,16 @@ public DialogflowCxAgentAdvancedSettings getAdvancedSettingsInput();
 
 ---
 
+##### `answerFeedbackSettingsInput`<sup>Optional</sup> <a name="answerFeedbackSettingsInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.answerFeedbackSettingsInput"></a>
+
+```java
+public DialogflowCxAgentAnswerFeedbackSettings getAnswerFeedbackSettingsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings">DialogflowCxAgentAnswerFeedbackSettings</a>
+
+---
+
 ##### `avatarUriInput`<sup>Optional</sup> <a name="avatarUriInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.avatarUriInput"></a>
 
 ```java
@@ -1286,6 +1519,16 @@ public java.lang.String getAvatarUriInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `clientCertificateSettingsInput`<sup>Optional</sup> <a name="clientCertificateSettingsInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.clientCertificateSettingsInput"></a>
+
+```java
+public DialogflowCxAgentClientCertificateSettings getClientCertificateSettingsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings">DialogflowCxAgentClientCertificateSettings</a>
 
 ---
 
@@ -1326,6 +1569,16 @@ public java.lang.String getDisplayNameInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `enableMultiLanguageTrainingInput`<sup>Optional</sup> <a name="enableMultiLanguageTrainingInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableMultiLanguageTrainingInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableMultiLanguageTrainingInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -1389,6 +1642,26 @@ public java.lang.String getLocationInput();
 
 ---
 
+##### `lockedInput`<sup>Optional</sup> <a name="lockedInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.lockedInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getLockedInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `personalizationSettingsInput`<sup>Optional</sup> <a name="personalizationSettingsInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.personalizationSettingsInput"></a>
+
+```java
+public DialogflowCxAgentPersonalizationSettings getPersonalizationSettingsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings">DialogflowCxAgentPersonalizationSettings</a>
+
+---
+
 ##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.projectInput"></a>
 
 ```java
@@ -1416,6 +1689,16 @@ public DialogflowCxAgentSpeechToTextSettings getSpeechToTextSettingsInput();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings">DialogflowCxAgentSpeechToTextSettings</a>
+
+---
+
+##### `startPlaybookInput`<sup>Optional</sup> <a name="startPlaybookInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.startPlaybookInput"></a>
+
+```java
+public java.lang.String getStartPlaybookInput();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1509,6 +1792,16 @@ public java.lang.String getDisplayName();
 
 ---
 
+##### `enableMultiLanguageTraining`<sup>Required</sup> <a name="enableMultiLanguageTraining" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableMultiLanguageTraining"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableMultiLanguageTraining();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `enableSpellCorrection`<sup>Required</sup> <a name="enableSpellCorrection" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.enableSpellCorrection"></a>
 
 ```java
@@ -1549,6 +1842,16 @@ public java.lang.String getLocation();
 
 ---
 
+##### `locked`<sup>Required</sup> <a name="locked" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.locked"></a>
+
+```java
+public java.lang.Boolean|IResolvable getLocked();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.project"></a>
 
 ```java
@@ -1563,6 +1866,16 @@ public java.lang.String getProject();
 
 ```java
 public java.lang.String getSecuritySettings();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `startPlaybook`<sup>Required</sup> <a name="startPlaybook" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent.property.startPlaybook"></a>
+
+```java
+public java.lang.String getStartPlaybook();
 ```
 
 - *Type:* java.lang.String
@@ -1645,7 +1958,7 @@ public DialogflowCxAgentAdvancedSettingsAudioExportGcsDestination getAudioExport
 
 audio_export_gcs_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#audio_export_gcs_destination DialogflowCxAgent#audio_export_gcs_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#audio_export_gcs_destination DialogflowCxAgent#audio_export_gcs_destination}
 
 ---
 
@@ -1659,7 +1972,7 @@ public DialogflowCxAgentAdvancedSettingsDtmfSettings getDtmfSettings();
 
 dtmf_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#dtmf_settings DialogflowCxAgent#dtmf_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#dtmf_settings DialogflowCxAgent#dtmf_settings}
 
 ---
 
@@ -1673,7 +1986,7 @@ public DialogflowCxAgentAdvancedSettingsLoggingSettings getLoggingSettings();
 
 logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#logging_settings DialogflowCxAgent#logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#logging_settings DialogflowCxAgent#logging_settings}
 
 ---
 
@@ -1687,7 +2000,7 @@ public DialogflowCxAgentAdvancedSettingsSpeechSettings getSpeechSettings();
 
 speech_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#speech_settings DialogflowCxAgent#speech_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#speech_settings DialogflowCxAgent#speech_settings}
 
 ---
 
@@ -1724,7 +2037,7 @@ The Google Cloud Storage URI for the exported objects.
 Whether a full object name, or just a prefix, its usage depends on the Dialogflow operation.
 Format: gs://bucket/object-name-or-prefix
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#uri DialogflowCxAgent#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#uri DialogflowCxAgent#uri}
 
 ---
 
@@ -1764,7 +2077,7 @@ If true, incoming audio is processed for DTMF (dual tone multi frequency) events
 
 For example, if the caller presses a button on their telephone keypad and DTMF processing is enabled, Dialogflow will detect the event (e.g. a "3" was pressed) in the incoming audio and pass the event to the bot to drive business logic (e.g. when 3 is pressed, return the account balance).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#enabled DialogflowCxAgent#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enabled DialogflowCxAgent#enabled}
 
 ---
 
@@ -1778,7 +2091,7 @@ public java.lang.String getFinishDigit();
 
 The digit that terminates a DTMF digit sequence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#finish_digit DialogflowCxAgent#finish_digit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#finish_digit DialogflowCxAgent#finish_digit}
 
 ---
 
@@ -1792,7 +2105,7 @@ public java.lang.Number getMaxDigits();
 
 Max length of DTMF digits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#max_digits DialogflowCxAgent#max_digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#max_digits DialogflowCxAgent#max_digits}
 
 ---
 
@@ -1830,7 +2143,7 @@ public java.lang.Boolean|IResolvable getEnableConsentBasedRedaction();
 
 Enables consent-based end-user input redaction, if true, a pre-defined session parameter **$session.params.conversation-redaction** will be used to determine if the utterance should be redacted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#enable_consent_based_redaction DialogflowCxAgent#enable_consent_based_redaction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enable_consent_based_redaction DialogflowCxAgent#enable_consent_based_redaction}
 
 ---
 
@@ -1844,7 +2157,7 @@ public java.lang.Boolean|IResolvable getEnableInteractionLogging();
 
 Enables DF Interaction logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#enable_interaction_logging DialogflowCxAgent#enable_interaction_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enable_interaction_logging DialogflowCxAgent#enable_interaction_logging}
 
 ---
 
@@ -1858,7 +2171,7 @@ public java.lang.Boolean|IResolvable getEnableStackdriverLogging();
 
 Enables Google Cloud Logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#enable_stackdriver_logging DialogflowCxAgent#enable_stackdriver_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enable_stackdriver_logging DialogflowCxAgent#enable_stackdriver_logging}
 
 ---
 
@@ -1898,7 +2211,7 @@ public java.lang.Number getEndpointerSensitivity();
 
 Sensitivity of the speech model that detects the end of speech. Scale from 0 to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#endpointer_sensitivity DialogflowCxAgent#endpointer_sensitivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#endpointer_sensitivity DialogflowCxAgent#endpointer_sensitivity}
 
 ---
 
@@ -1915,7 +2228,7 @@ Mapping from language to Speech-to-Text model.
 The mapped Speech-to-Text model will be selected for requests from its corresponding language. For more information, see [Speech models](https://cloud.google.com/dialogflow/cx/docs/concept/speech-models).
 An object containing a list of **"key": value** pairs. Example: **{ "name": "wrench", "mass": "1.3kg", "count": "3" }**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#models DialogflowCxAgent#models}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#models DialogflowCxAgent#models}
 
 ---
 
@@ -1929,7 +2242,7 @@ public java.lang.String getNoSpeechTimeout();
 
 Timeout before detecting no speech. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#no_speech_timeout DialogflowCxAgent#no_speech_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#no_speech_timeout DialogflowCxAgent#no_speech_timeout}
 
 ---
 
@@ -1943,7 +2256,109 @@ public java.lang.Boolean|IResolvable getUseTimeoutBasedEndpointing();
 
 Use timeout based endpointing, interpreting endpointer sensitivity as seconds of timeout value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#use_timeout_based_endpointing DialogflowCxAgent#use_timeout_based_endpointing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#use_timeout_based_endpointing DialogflowCxAgent#use_timeout_based_endpointing}
+
+---
+
+### DialogflowCxAgentAnswerFeedbackSettings <a name="DialogflowCxAgentAnswerFeedbackSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.dialogflow_cx_agent.DialogflowCxAgentAnswerFeedbackSettings;
+
+DialogflowCxAgentAnswerFeedbackSettings.builder()
+//  .enableAnswerFeedback(java.lang.Boolean|IResolvable)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings.property.enableAnswerFeedback">enableAnswerFeedback</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If enabled, end users will be able to provide [answer feedback](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.sessions/submitAnswerFeedback#body.AnswerFeedback) to Dialogflow responses. Feature works only if interaction logging is enabled in the Dialogflow agent. |
+
+---
+
+##### `enableAnswerFeedback`<sup>Optional</sup> <a name="enableAnswerFeedback" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings.property.enableAnswerFeedback"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableAnswerFeedback();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If enabled, end users will be able to provide [answer feedback](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.sessions/submitAnswerFeedback#body.AnswerFeedback) to Dialogflow responses. Feature works only if interaction logging is enabled in the Dialogflow agent.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enable_answer_feedback DialogflowCxAgent#enable_answer_feedback}
+
+---
+
+### DialogflowCxAgentClientCertificateSettings <a name="DialogflowCxAgentClientCertificateSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.dialogflow_cx_agent.DialogflowCxAgentClientCertificateSettings;
+
+DialogflowCxAgentClientCertificateSettings.builder()
+    .privateKey(java.lang.String)
+    .sslCertificate(java.lang.String)
+//  .passphrase(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | The name of the SecretManager secret version resource storing the private key encoded in PEM format. Format: **projects/{project}/secrets/{secret}/versions/{version}**. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings.property.sslCertificate">sslCertificate</a></code> | <code>java.lang.String</code> | The ssl certificate encoded in PEM format. This string must include the begin header and end footer lines. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings.property.passphrase">passphrase</a></code> | <code>java.lang.String</code> | The name of the SecretManager secret version resource storing the passphrase. |
+
+---
+
+##### `privateKey`<sup>Required</sup> <a name="privateKey" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings.property.privateKey"></a>
+
+```java
+public java.lang.String getPrivateKey();
+```
+
+- *Type:* java.lang.String
+
+The name of the SecretManager secret version resource storing the private key encoded in PEM format. Format: **projects/{project}/secrets/{secret}/versions/{version}**.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#private_key DialogflowCxAgent#private_key}
+
+---
+
+##### `sslCertificate`<sup>Required</sup> <a name="sslCertificate" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings.property.sslCertificate"></a>
+
+```java
+public java.lang.String getSslCertificate();
+```
+
+- *Type:* java.lang.String
+
+The ssl certificate encoded in PEM format. This string must include the begin header and end footer lines.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#ssl_certificate DialogflowCxAgent#ssl_certificate}
+
+---
+
+##### `passphrase`<sup>Optional</sup> <a name="passphrase" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings.property.passphrase"></a>
+
+```java
+public java.lang.String getPassphrase();
+```
+
+- *Type:* java.lang.String
+
+The name of the SecretManager secret version resource storing the passphrase.
+
+'passphrase' should be left unset if the private key is not encrypted. Format: **projects/{project}/secrets/{secret}/versions/{version}**
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#passphrase DialogflowCxAgent#passphrase}
 
 ---
 
@@ -1967,17 +2382,23 @@ DialogflowCxAgentConfig.builder()
     .location(java.lang.String)
     .timeZone(java.lang.String)
 //  .advancedSettings(DialogflowCxAgentAdvancedSettings)
+//  .answerFeedbackSettings(DialogflowCxAgentAnswerFeedbackSettings)
 //  .avatarUri(java.lang.String)
+//  .clientCertificateSettings(DialogflowCxAgentClientCertificateSettings)
 //  .deleteChatEngineOnDestroy(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
+//  .enableMultiLanguageTraining(java.lang.Boolean|IResolvable)
 //  .enableSpellCorrection(java.lang.Boolean|IResolvable)
 //  .enableStackdriverLogging(java.lang.Boolean|IResolvable)
 //  .genAppBuilderSettings(DialogflowCxAgentGenAppBuilderSettings)
 //  .gitIntegrationSettings(DialogflowCxAgentGitIntegrationSettings)
 //  .id(java.lang.String)
+//  .locked(java.lang.Boolean|IResolvable)
+//  .personalizationSettings(DialogflowCxAgentPersonalizationSettings)
 //  .project(java.lang.String)
 //  .securitySettings(java.lang.String)
 //  .speechToTextSettings(DialogflowCxAgentSpeechToTextSettings)
+//  .startPlaybook(java.lang.String)
 //  .supportedLanguageCodes(java.util.List<java.lang.String>)
 //  .textToSpeechSettings(DialogflowCxAgentTextToSpeechSettings)
 //  .timeouts(DialogflowCxAgentTimeouts)
@@ -2000,17 +2421,23 @@ DialogflowCxAgentConfig.builder()
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.location">location</a></code> | <code>java.lang.String</code> | The name of the location this agent is located in. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.timeZone">timeZone</a></code> | <code>java.lang.String</code> | The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.advancedSettings">advancedSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettings">DialogflowCxAgentAdvancedSettings</a></code> | advanced_settings block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.answerFeedbackSettings">answerFeedbackSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings">DialogflowCxAgentAnswerFeedbackSettings</a></code> | answer_feedback_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.avatarUri">avatarUri</a></code> | <code>java.lang.String</code> | The URI of the agent's avatar. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.clientCertificateSettings">clientCertificateSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings">DialogflowCxAgentClientCertificateSettings</a></code> | client_certificate_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.deleteChatEngineOnDestroy">deleteChatEngineOnDestroy</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to 'true', Terraform will delete the chat engine associated with the agent when the agent is destroyed. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.enableMultiLanguageTraining">enableMultiLanguageTraining</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Enable training multi-lingual models for this agent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.enableSpellCorrection">enableSpellCorrection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates if automatic spell correction is enabled in detect intent requests. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.enableStackdriverLogging">enableStackdriverLogging</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Determines whether this agent should log conversation queries. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.genAppBuilderSettings">genAppBuilderSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettings">DialogflowCxAgentGenAppBuilderSettings</a></code> | gen_app_builder_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.gitIntegrationSettings">gitIntegrationSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettings">DialogflowCxAgentGitIntegrationSettings</a></code> | git_integration_settings block. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#id DialogflowCxAgent#id}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#project DialogflowCxAgent#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#id DialogflowCxAgent#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.locked">locked</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates whether the agent is locked for changes. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.personalizationSettings">personalizationSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings">DialogflowCxAgentPersonalizationSettings</a></code> | personalization_settings block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#project DialogflowCxAgent#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.securitySettings">securitySettings</a></code> | <code>java.lang.String</code> | Name of the SecuritySettings reference for the agent. Format: projects/<Project ID>/locations/<Location ID>/securitySettings/<Security Settings ID>. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.speechToTextSettings">speechToTextSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings">DialogflowCxAgentSpeechToTextSettings</a></code> | speech_to_text_settings block. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.startPlaybook">startPlaybook</a></code> | <code>java.lang.String</code> | Name of the start playbook in this agent. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.supportedLanguageCodes">supportedLanguageCodes</a></code> | <code>java.util.List<java.lang.String></code> | The list of all languages supported by this agent (except for the default_language_code). |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.textToSpeechSettings">textToSpeechSettings</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettings">DialogflowCxAgentTextToSpeechSettings</a></code> | text_to_speech_settings block. |
 | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts">DialogflowCxAgentTimeouts</a></code> | timeouts block. |
@@ -2100,7 +2527,7 @@ The default language of the agent as a language tag.
 [See Language Support](https://cloud.google.com/dialogflow/cx/docs/reference/language)
 for a list of the currently supported language codes. This field cannot be updated after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#default_language_code DialogflowCxAgent#default_language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#default_language_code DialogflowCxAgent#default_language_code}
 
 ---
 
@@ -2114,7 +2541,7 @@ public java.lang.String getDisplayName();
 
 The human-readable name of the agent, unique within the location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#display_name DialogflowCxAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#display_name DialogflowCxAgent#display_name}
 
 ---
 
@@ -2132,7 +2559,7 @@ The name of the location this agent is located in.
 This is a one time step but at the moment you can only [configure location settings](https://cloud.google.com/dialogflow/cx/docs/concept/region#location-settings) via the Dialogflow CX console.
 Another options is to use global location so you don't need to manually configure location settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#location DialogflowCxAgent#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#location DialogflowCxAgent#location}
 
 ---
 
@@ -2146,7 +2573,7 @@ public java.lang.String getTimeZone();
 
 The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#time_zone DialogflowCxAgent#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#time_zone DialogflowCxAgent#time_zone}
 
 ---
 
@@ -2160,7 +2587,21 @@ public DialogflowCxAgentAdvancedSettings getAdvancedSettings();
 
 advanced_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#advanced_settings DialogflowCxAgent#advanced_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#advanced_settings DialogflowCxAgent#advanced_settings}
+
+---
+
+##### `answerFeedbackSettings`<sup>Optional</sup> <a name="answerFeedbackSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.answerFeedbackSettings"></a>
+
+```java
+public DialogflowCxAgentAnswerFeedbackSettings getAnswerFeedbackSettings();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings">DialogflowCxAgentAnswerFeedbackSettings</a>
+
+answer_feedback_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#answer_feedback_settings DialogflowCxAgent#answer_feedback_settings}
 
 ---
 
@@ -2176,7 +2617,21 @@ The URI of the agent's avatar.
 
 Avatars are used throughout the Dialogflow console and in the self-hosted Web Demo integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#avatar_uri DialogflowCxAgent#avatar_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#avatar_uri DialogflowCxAgent#avatar_uri}
+
+---
+
+##### `clientCertificateSettings`<sup>Optional</sup> <a name="clientCertificateSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.clientCertificateSettings"></a>
+
+```java
+public DialogflowCxAgentClientCertificateSettings getClientCertificateSettings();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings">DialogflowCxAgentClientCertificateSettings</a>
+
+client_certificate_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#client_certificate_settings DialogflowCxAgent#client_certificate_settings}
 
 ---
 
@@ -2204,7 +2659,7 @@ or a [page](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projec
 or the 'dataStoreSpec' field of a [tool](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.tools#resource:-tool).
 The ID of the implicitly created engine is stored in the 'genAppBuilderSettings' field of the [agent](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents#resource:-agent).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#delete_chat_engine_on_destroy DialogflowCxAgent#delete_chat_engine_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#delete_chat_engine_on_destroy DialogflowCxAgent#delete_chat_engine_on_destroy}
 
 ---
 
@@ -2218,7 +2673,23 @@ public java.lang.String getDescription();
 
 The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#description DialogflowCxAgent#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#description DialogflowCxAgent#description}
+
+---
+
+##### `enableMultiLanguageTraining`<sup>Optional</sup> <a name="enableMultiLanguageTraining" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.enableMultiLanguageTraining"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableMultiLanguageTraining();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Enable training multi-lingual models for this agent.
+
+These models will be trained on all the languages supported by the agent.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enable_multi_language_training DialogflowCxAgent#enable_multi_language_training}
 
 ---
 
@@ -2232,7 +2703,7 @@ public java.lang.Boolean|IResolvable getEnableSpellCorrection();
 
 Indicates if automatic spell correction is enabled in detect intent requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#enable_spell_correction DialogflowCxAgent#enable_spell_correction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enable_spell_correction DialogflowCxAgent#enable_spell_correction}
 
 ---
 
@@ -2246,7 +2717,7 @@ public java.lang.Boolean|IResolvable getEnableStackdriverLogging();
 
 Determines whether this agent should log conversation queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#enable_stackdriver_logging DialogflowCxAgent#enable_stackdriver_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enable_stackdriver_logging DialogflowCxAgent#enable_stackdriver_logging}
 
 ---
 
@@ -2260,7 +2731,7 @@ public DialogflowCxAgentGenAppBuilderSettings getGenAppBuilderSettings();
 
 gen_app_builder_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#gen_app_builder_settings DialogflowCxAgent#gen_app_builder_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#gen_app_builder_settings DialogflowCxAgent#gen_app_builder_settings}
 
 ---
 
@@ -2274,7 +2745,7 @@ public DialogflowCxAgentGitIntegrationSettings getGitIntegrationSettings();
 
 git_integration_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#git_integration_settings DialogflowCxAgent#git_integration_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#git_integration_settings DialogflowCxAgent#git_integration_settings}
 
 ---
 
@@ -2286,10 +2757,40 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#id DialogflowCxAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#id DialogflowCxAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.locked"></a>
+
+```java
+public java.lang.Boolean|IResolvable getLocked();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Indicates whether the agent is locked for changes.
+
+If the agent is locked, modifications to the agent will be rejected except for [agents.restore][].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#locked DialogflowCxAgent#locked}
+
+---
+
+##### `personalizationSettings`<sup>Optional</sup> <a name="personalizationSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.personalizationSettings"></a>
+
+```java
+public DialogflowCxAgentPersonalizationSettings getPersonalizationSettings();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings">DialogflowCxAgentPersonalizationSettings</a>
+
+personalization_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#personalization_settings DialogflowCxAgent#personalization_settings}
 
 ---
 
@@ -2301,7 +2802,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#project DialogflowCxAgent#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#project DialogflowCxAgent#project}.
 
 ---
 
@@ -2315,7 +2816,7 @@ public java.lang.String getSecuritySettings();
 
 Name of the SecuritySettings reference for the agent. Format: projects/<Project ID>/locations/<Location ID>/securitySettings/<Security Settings ID>.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#security_settings DialogflowCxAgent#security_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#security_settings DialogflowCxAgent#security_settings}
 
 ---
 
@@ -2329,7 +2830,23 @@ public DialogflowCxAgentSpeechToTextSettings getSpeechToTextSettings();
 
 speech_to_text_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#speech_to_text_settings DialogflowCxAgent#speech_to_text_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#speech_to_text_settings DialogflowCxAgent#speech_to_text_settings}
+
+---
+
+##### `startPlaybook`<sup>Optional</sup> <a name="startPlaybook" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig.property.startPlaybook"></a>
+
+```java
+public java.lang.String getStartPlaybook();
+```
+
+- *Type:* java.lang.String
+
+Name of the start playbook in this agent.
+
+A start playbook will be automatically created when the agent is created, and can only be deleted by deleting the agent. Format: **projects/<ProjectID>/locations/<LocationID>/agents/<AgentID>/playbooks/<PlaybookID>**. Currently only the default playbook with id "00000000-0000-0000-0000-000000000000" is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#start_playbook DialogflowCxAgent#start_playbook}
 
 ---
 
@@ -2343,7 +2860,7 @@ public java.util.List<java.lang.String> getSupportedLanguageCodes();
 
 The list of all languages supported by this agent (except for the default_language_code).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#supported_language_codes DialogflowCxAgent#supported_language_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#supported_language_codes DialogflowCxAgent#supported_language_codes}
 
 ---
 
@@ -2357,7 +2874,7 @@ public DialogflowCxAgentTextToSpeechSettings getTextToSpeechSettings();
 
 text_to_speech_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#text_to_speech_settings DialogflowCxAgent#text_to_speech_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#text_to_speech_settings DialogflowCxAgent#text_to_speech_settings}
 
 ---
 
@@ -2371,7 +2888,7 @@ public DialogflowCxAgentTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#timeouts DialogflowCxAgent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#timeouts DialogflowCxAgent#timeouts}
 
 ---
 
@@ -2407,7 +2924,7 @@ The full name of the Gen App Builder engine related to this agent if there is on
 
 Format: projects/{Project ID}/locations/{Location ID}/collections/{Collection ID}/engines/{Engine ID}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#engine DialogflowCxAgent#engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#engine DialogflowCxAgent#engine}
 
 ---
 
@@ -2441,7 +2958,7 @@ public DialogflowCxAgentGitIntegrationSettingsGithubSettings getGithubSettings()
 
 github_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#github_settings DialogflowCxAgent#github_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#github_settings DialogflowCxAgent#github_settings}
 
 ---
 
@@ -2483,7 +3000,7 @@ public java.lang.String getAccessToken();
 
 The access token used to authenticate the access to the GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#access_token DialogflowCxAgent#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#access_token DialogflowCxAgent#access_token}
 
 ---
 
@@ -2497,7 +3014,7 @@ public java.util.List<java.lang.String> getBranches();
 
 A list of branches configured to be used from Dialogflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#branches DialogflowCxAgent#branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#branches DialogflowCxAgent#branches}
 
 ---
 
@@ -2511,7 +3028,7 @@ public java.lang.String getDisplayName();
 
 The unique repository display name for the GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#display_name DialogflowCxAgent#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#display_name DialogflowCxAgent#display_name}
 
 ---
 
@@ -2525,7 +3042,7 @@ public java.lang.String getRepositoryUri();
 
 The GitHub repository URI related to the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#repository_uri DialogflowCxAgent#repository_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#repository_uri DialogflowCxAgent#repository_uri}
 
 ---
 
@@ -2539,7 +3056,47 @@ public java.lang.String getTrackingBranch();
 
 The branch of the GitHub repository tracked for this agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#tracking_branch DialogflowCxAgent#tracking_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#tracking_branch DialogflowCxAgent#tracking_branch}
+
+---
+
+### DialogflowCxAgentPersonalizationSettings <a name="DialogflowCxAgentPersonalizationSettings" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.dialogflow_cx_agent.DialogflowCxAgentPersonalizationSettings;
+
+DialogflowCxAgentPersonalizationSettings.builder()
+//  .defaultEndUserMetadata(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings.property.defaultEndUserMetadata">defaultEndUserMetadata</a></code> | <code>java.lang.String</code> | Default end user metadata, used when processing DetectIntent requests. |
+
+---
+
+##### `defaultEndUserMetadata`<sup>Optional</sup> <a name="defaultEndUserMetadata" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings.property.defaultEndUserMetadata"></a>
+
+```java
+public java.lang.String getDefaultEndUserMetadata();
+```
+
+- *Type:* java.lang.String
+
+Default end user metadata, used when processing DetectIntent requests.
+
+Recommended to be filled as a template instead of hard-coded value, for example { "age": "$session.params.age" }.
+The data will be merged with the [QueryParameters.end_user_metadata](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/QueryParameters#FIELDS.end_user_metadata)
+in [DetectIntentRequest.query_params](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents.sessions/detectIntent#body.request_body.FIELDS.query_params) during query processing.
+
+This field uses JSON data as a string. The value provided must be a valid JSON representation documented in [Struct](https://protobuf.dev/reference/protobuf/google.protobuf/#struct).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#default_end_user_metadata DialogflowCxAgent#default_end_user_metadata}
 
 ---
 
@@ -2573,7 +3130,7 @@ public java.lang.Boolean|IResolvable getEnableSpeechAdaptation();
 
 Whether to use speech adaptation for speech recognition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#enable_speech_adaptation DialogflowCxAgent#enable_speech_adaptation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#enable_speech_adaptation DialogflowCxAgent#enable_speech_adaptation}
 
 ---
 
@@ -2607,7 +3164,7 @@ public java.lang.String getSynthesizeSpeechConfigs();
 
 Configuration of how speech should be synthesized, mapping from [language](https://cloud.google.com/dialogflow/cx/docs/reference/language) to [SynthesizeSpeechConfig](https://cloud.google.com/dialogflow/cx/docs/reference/rest/v3/projects.locations.agents#synthesizespeechconfig). These settings affect: * The phone gateway synthesize configuration set via Agent.text_to_speech_settings. * How speech is synthesized when invoking session APIs. 'Agent.text_to_speech_settings' only applies if 'OutputAudioConfig.synthesize_speech_config' is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#synthesize_speech_configs DialogflowCxAgent#synthesize_speech_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#synthesize_speech_configs DialogflowCxAgent#synthesize_speech_configs}
 
 ---
 
@@ -2629,9 +3186,9 @@ DialogflowCxAgentTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#create DialogflowCxAgent#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#delete DialogflowCxAgent#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#update DialogflowCxAgent#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#create DialogflowCxAgent#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#delete DialogflowCxAgent#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#update DialogflowCxAgent#update}. |
 
 ---
 
@@ -2643,7 +3200,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#create DialogflowCxAgent#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#create DialogflowCxAgent#create}.
 
 ---
 
@@ -2655,7 +3212,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#delete DialogflowCxAgent#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#delete DialogflowCxAgent#delete}.
 
 ---
 
@@ -2667,7 +3224,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dialogflow_cx_agent#update DialogflowCxAgent#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dialogflow_cx_agent#update DialogflowCxAgent#update}.
 
 ---
 
@@ -4405,6 +4962,606 @@ public DialogflowCxAgentAdvancedSettingsSpeechSettings getInternalValue();
 ---
 
 
+### DialogflowCxAgentAnswerFeedbackSettingsOutputReference <a name="DialogflowCxAgentAnswerFeedbackSettingsOutputReference" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.dialogflow_cx_agent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference;
+
+new DialogflowCxAgentAnswerFeedbackSettingsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.resetEnableAnswerFeedback">resetEnableAnswerFeedback</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEnableAnswerFeedback` <a name="resetEnableAnswerFeedback" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.resetEnableAnswerFeedback"></a>
+
+```java
+public void resetEnableAnswerFeedback()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.property.enableAnswerFeedbackInput">enableAnswerFeedbackInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.property.enableAnswerFeedback">enableAnswerFeedback</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings">DialogflowCxAgentAnswerFeedbackSettings</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `enableAnswerFeedbackInput`<sup>Optional</sup> <a name="enableAnswerFeedbackInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.property.enableAnswerFeedbackInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableAnswerFeedbackInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `enableAnswerFeedback`<sup>Required</sup> <a name="enableAnswerFeedback" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.property.enableAnswerFeedback"></a>
+
+```java
+public java.lang.Boolean|IResolvable getEnableAnswerFeedback();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference.property.internalValue"></a>
+
+```java
+public DialogflowCxAgentAnswerFeedbackSettings getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings">DialogflowCxAgentAnswerFeedbackSettings</a>
+
+---
+
+
+### DialogflowCxAgentClientCertificateSettingsOutputReference <a name="DialogflowCxAgentClientCertificateSettingsOutputReference" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.dialogflow_cx_agent.DialogflowCxAgentClientCertificateSettingsOutputReference;
+
+new DialogflowCxAgentClientCertificateSettingsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.resetPassphrase">resetPassphrase</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPassphrase` <a name="resetPassphrase" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.resetPassphrase"></a>
+
+```java
+public void resetPassphrase()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.passphraseInput">passphraseInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.privateKeyInput">privateKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.sslCertificateInput">sslCertificateInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.passphrase">passphrase</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.privateKey">privateKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.sslCertificate">sslCertificate</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings">DialogflowCxAgentClientCertificateSettings</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `passphraseInput`<sup>Optional</sup> <a name="passphraseInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.passphraseInput"></a>
+
+```java
+public java.lang.String getPassphraseInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `privateKeyInput`<sup>Optional</sup> <a name="privateKeyInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.privateKeyInput"></a>
+
+```java
+public java.lang.String getPrivateKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sslCertificateInput`<sup>Optional</sup> <a name="sslCertificateInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.sslCertificateInput"></a>
+
+```java
+public java.lang.String getSslCertificateInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `passphrase`<sup>Required</sup> <a name="passphrase" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.passphrase"></a>
+
+```java
+public java.lang.String getPassphrase();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `privateKey`<sup>Required</sup> <a name="privateKey" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.privateKey"></a>
+
+```java
+public java.lang.String getPrivateKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `sslCertificate`<sup>Required</sup> <a name="sslCertificate" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.sslCertificate"></a>
+
+```java
+public java.lang.String getSslCertificate();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference.property.internalValue"></a>
+
+```java
+public DialogflowCxAgentClientCertificateSettings getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings">DialogflowCxAgentClientCertificateSettings</a>
+
+---
+
+
 ### DialogflowCxAgentGenAppBuilderSettingsOutputReference <a name="DialogflowCxAgentGenAppBuilderSettingsOutputReference" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference.Initializer"></a>
@@ -5357,6 +6514,284 @@ public DialogflowCxAgentGitIntegrationSettings getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettings">DialogflowCxAgentGitIntegrationSettings</a>
+
+---
+
+
+### DialogflowCxAgentPersonalizationSettingsOutputReference <a name="DialogflowCxAgentPersonalizationSettingsOutputReference" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.dialogflow_cx_agent.DialogflowCxAgentPersonalizationSettingsOutputReference;
+
+new DialogflowCxAgentPersonalizationSettingsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.resetDefaultEndUserMetadata">resetDefaultEndUserMetadata</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetDefaultEndUserMetadata` <a name="resetDefaultEndUserMetadata" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.resetDefaultEndUserMetadata"></a>
+
+```java
+public void resetDefaultEndUserMetadata()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.property.defaultEndUserMetadataInput">defaultEndUserMetadataInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.property.defaultEndUserMetadata">defaultEndUserMetadata</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings">DialogflowCxAgentPersonalizationSettings</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultEndUserMetadataInput`<sup>Optional</sup> <a name="defaultEndUserMetadataInput" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.property.defaultEndUserMetadataInput"></a>
+
+```java
+public java.lang.String getDefaultEndUserMetadataInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultEndUserMetadata`<sup>Required</sup> <a name="defaultEndUserMetadata" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.property.defaultEndUserMetadata"></a>
+
+```java
+public java.lang.String getDefaultEndUserMetadata();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference.property.internalValue"></a>
+
+```java
+public DialogflowCxAgentPersonalizationSettings getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings">DialogflowCxAgentPersonalizationSettings</a>
 
 ---
 

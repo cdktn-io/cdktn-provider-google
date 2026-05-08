@@ -4,7 +4,7 @@
 
 ### NetappVolume <a name="NetappVolume" id="@cdktn/provider-google.netappVolume.NetappVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume google_netapp_volume}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume google_netapp_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer"></a>
 
@@ -25,9 +25,10 @@ netappVolume.NetappVolume(
   location: str,
   name: str,
   protocols: typing.List[str],
-  share_name: str,
   storage_pool: str,
   backup_config: NetappVolumeBackupConfig = None,
+  block_devices: IResolvable | typing.List[NetappVolumeBlockDevices] = None,
+  cache_parameters: NetappVolumeCacheParameters = None,
   deletion_policy: str = None,
   description: str = None,
   export_policy: NetappVolumeExportPolicy = None,
@@ -36,14 +37,17 @@ netappVolume.NetappVolume(
   kerberos_enabled: bool | IResolvable = None,
   labels: typing.Mapping[str] = None,
   large_capacity: bool | IResolvable = None,
+  large_capacity_config: NetappVolumeLargeCapacityConfig = None,
   multiple_endpoints: bool | IResolvable = None,
   project: str = None,
   restore_parameters: NetappVolumeRestoreParameters = None,
   restricted_actions: typing.List[str] = None,
   security_style: str = None,
+  share_name: str = None,
   smb_settings: typing.List[str] = None,
   snapshot_directory: bool | IResolvable = None,
   snapshot_policy: NetappVolumeSnapshotPolicy = None,
+  throughput_mibps: typing.Union[int, float] = None,
   tiering_policy: NetappVolumeTieringPolicy = None,
   timeouts: NetappVolumeTimeouts = None,
   unix_permissions: str = None
@@ -65,25 +69,29 @@ netappVolume.NetappVolume(
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.location">location</a></code> | <code>str</code> | Name of the pool location. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the volume. Needs to be unique per location. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.protocols">protocols</a></code> | <code>typing.List[str]</code> | The protocol of the volume. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.shareName">share_name</a></code> | <code>str</code> | Share name (SMB) or export path (NFS) of the volume. Needs to be unique per location. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.storagePool">storage_pool</a></code> | <code>str</code> | Name of the storage pool to create the volume in. Pool needs enough spare capacity to accommodate the volume. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.backupConfig">backup_config</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfig">NetappVolumeBackupConfig</a></code> | backup_config block. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.blockDevices">block_devices</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices">NetappVolumeBlockDevices</a>]</code> | block_devices block. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.cacheParameters">cache_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters">NetappVolumeCacheParameters</a></code> | cache_parameters block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Policy to determine if the volume should be deleted forcefully. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.exportPolicy">export_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicy">NetappVolumeExportPolicy</a></code> | export_policy block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.hybridReplicationParameters">hybrid_replication_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters">NetappVolumeHybridReplicationParameters</a></code> | hybrid_replication_parameters block. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#id NetappVolume#id}. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#id NetappVolume#id}. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.kerberosEnabled">kerberos_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p). |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.largeCapacity">large_capacity</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. Flag indicating if the volume will be a large capacity volume or a regular volume. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.largeCapacityConfig">large_capacity_config</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig">NetappVolumeLargeCapacityConfig</a></code> | large_capacity_config block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.multipleEndpoints">multiple_endpoints</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#project NetappVolume#project}. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#project NetappVolume#project}. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.restoreParameters">restore_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeRestoreParameters">NetappVolumeRestoreParameters</a></code> | restore_parameters block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.restrictedActions">restricted_actions</a></code> | <code>typing.List[str]</code> | List of actions that are restricted on this volume. Possible values: ["DELETE"]. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.securityStyle">security_style</a></code> | <code>str</code> | Security Style of the Volume. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.shareName">share_name</a></code> | <code>str</code> | Share name (SMB) or export path (NFS) of the volume. Needs to be unique per location. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.smbSettings">smb_settings</a></code> | <code>typing.List[str]</code> | Settings for volumes with SMB access. Possible values: ["ENCRYPT_DATA", "BROWSABLE", "CHANGE_NOTIFY", "NON_BROWSABLE", "OPLOCKS", "SHOW_SNAPSHOT", "SHOW_PREVIOUS_VERSIONS", "ACCESS_BASED_ENUMERATION", "CONTINUOUSLY_AVAILABLE"]. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.snapshotDirectory">snapshot_directory</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.snapshotPolicy">snapshot_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy">NetappVolumeSnapshotPolicy</a></code> | snapshot_policy block. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.throughputMibps">throughput_mibps</a></code> | <code>typing.Union[int, float]</code> | Optional. Custom Performance Total Throughput of the pool (in MiB/s). |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.tieringPolicy">tiering_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy">NetappVolumeTieringPolicy</a></code> | tiering_policy block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.unixPermissions">unix_permissions</a></code> | <code>str</code> | Unix permission the mount point will be created with. Default is 0770. Applicable for UNIX security style volumes only. |
@@ -156,7 +164,7 @@ Must be unique amongst siblings in the same scope
 
 Capacity of the volume (in GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#capacity_gib NetappVolume#capacity_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#capacity_gib NetappVolume#capacity_gib}
 
 ---
 
@@ -168,7 +176,7 @@ Name of the pool location.
 
 Usually a region name, expect for some STANDARD service level pools which require a zone name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#location NetappVolume#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#location NetappVolume#location}
 
 ---
 
@@ -178,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the volume. Needs to be unique per location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#name NetappVolume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#name NetappVolume#name}
 
 ---
 
@@ -188,19 +196,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The protocol of the volume.
 
-Allowed combinations are '['NFSV3']', '['NFSV4']', '['SMB']', '['NFSV3', 'NFSV4']', '['SMB', 'NFSV3']' and '['SMB', 'NFSV4']'. Possible values: ["NFSV3", "NFSV4", "SMB"]
+Allowed combinations are '['NFSV3']', '['NFSV4']', '['SMB']', '['NFSV3', 'NFSV4']', '['SMB', 'NFSV3']' and '['SMB', 'NFSV4']'. Possible values: ["NFSV3", "NFSV4", "SMB", "ISCSI"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#protocols NetappVolume#protocols}
-
----
-
-##### `share_name`<sup>Required</sup> <a name="share_name" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.shareName"></a>
-
-- *Type:* str
-
-Share name (SMB) or export path (NFS) of the volume. Needs to be unique per location.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#share_name NetappVolume#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#protocols NetappVolume#protocols}
 
 ---
 
@@ -210,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the storage pool to create the volume in. Pool needs enough spare capacity to accommodate the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#storage_pool NetappVolume#storage_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#storage_pool NetappVolume#storage_pool}
 
 ---
 
@@ -220,7 +218,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 backup_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#backup_config NetappVolume#backup_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#backup_config NetappVolume#backup_config}
+
+---
+
+##### `block_devices`<sup>Optional</sup> <a name="block_devices" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.blockDevices"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices">NetappVolumeBlockDevices</a>]
+
+block_devices block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#block_devices NetappVolume#block_devices}
+
+---
+
+##### `cache_parameters`<sup>Optional</sup> <a name="cache_parameters" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.cacheParameters"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters">NetappVolumeCacheParameters</a>
+
+cache_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#cache_parameters NetappVolume#cache_parameters}
 
 ---
 
@@ -234,7 +252,7 @@ Volumes may have nested snapshot resources. Deleting such a volume will fail.
 Setting this parameter to FORCE will delete volumes including nested snapshots.
 Possible values: DEFAULT, FORCE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#deletion_policy NetappVolume#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#deletion_policy NetappVolume#deletion_policy}
 
 ---
 
@@ -244,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#description NetappVolume#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#description NetappVolume#description}
 
 ---
 
@@ -254,7 +272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 export_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#export_policy NetappVolume#export_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#export_policy NetappVolume#export_policy}
 
 ---
 
@@ -264,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 hybrid_replication_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#hybrid_replication_parameters NetappVolume#hybrid_replication_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hybrid_replication_parameters NetappVolume#hybrid_replication_parameters}
 
 ---
 
@@ -272,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#id NetappVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#id NetappVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -285,7 +303,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#kerberos_enabled NetappVolume#kerberos_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#kerberos_enabled NetappVolume#kerberos_enabled}
 
 ---
 
@@ -298,7 +316,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#labels NetappVolume#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#labels NetappVolume#labels}
 
 ---
 
@@ -308,7 +326,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. Flag indicating if the volume will be a large capacity volume or a regular volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#large_capacity NetappVolume#large_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#large_capacity NetappVolume#large_capacity}
+
+---
+
+##### `large_capacity_config`<sup>Optional</sup> <a name="large_capacity_config" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.largeCapacityConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig">NetappVolumeLargeCapacityConfig</a>
+
+large_capacity_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#large_capacity_config NetappVolume#large_capacity_config}
 
 ---
 
@@ -321,7 +349,7 @@ Optional.
 Flag indicating if the volume will have an IP address per node for volumes supporting multiple IP endpoints.
 Only the volume with largeCapacity will be allowed to have multiple endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#multiple_endpoints NetappVolume#multiple_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#multiple_endpoints NetappVolume#multiple_endpoints}
 
 ---
 
@@ -329,7 +357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#project NetappVolume#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#project NetappVolume#project}.
 
 ---
 
@@ -339,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 restore_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#restore_parameters NetappVolume#restore_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#restore_parameters NetappVolume#restore_parameters}
 
 ---
 
@@ -349,7 +377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of actions that are restricted on this volume. Possible values: ["DELETE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#restricted_actions NetappVolume#restricted_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#restricted_actions NetappVolume#restricted_actions}
 
 ---
 
@@ -362,7 +390,17 @@ Security Style of the Volume.
 Use UNIX to use UNIX or NFSV4 ACLs for file permissions.
 Use NTFS to use NTFS ACLs for file permissions. Can only be set for volumes which use SMB together with NFS as protocol. Possible values: ["NTFS", "UNIX"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#security_style NetappVolume#security_style}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#security_style NetappVolume#security_style}
+
+---
+
+##### `share_name`<sup>Optional</sup> <a name="share_name" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.shareName"></a>
+
+- *Type:* str
+
+Share name (SMB) or export path (NFS) of the volume. Needs to be unique per location.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#share_name NetappVolume#share_name}
 
 ---
 
@@ -372,7 +410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Settings for volumes with SMB access. Possible values: ["ENCRYPT_DATA", "BROWSABLE", "CHANGE_NOTIFY", "NON_BROWSABLE", "OPLOCKS", "SHOW_SNAPSHOT", "SHOW_PREVIOUS_VERSIONS", "ACCESS_BASED_ENUMERATION", "CONTINUOUSLY_AVAILABLE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#smb_settings NetappVolume#smb_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#smb_settings NetappVolume#smb_settings}
 
 ---
 
@@ -382,7 +420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshot_directory NetappVolume#snapshot_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshot_directory NetappVolume#snapshot_directory}
 
 ---
 
@@ -392,7 +430,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 snapshot_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshot_policy NetappVolume#snapshot_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshot_policy NetappVolume#snapshot_policy}
+
+---
+
+##### `throughput_mibps`<sup>Optional</sup> <a name="throughput_mibps" id="@cdktn/provider-google.netappVolume.NetappVolume.Initializer.parameter.throughputMibps"></a>
+
+- *Type:* typing.Union[int, float]
+
+Optional. Custom Performance Total Throughput of the pool (in MiB/s).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#throughput_mibps NetappVolume#throughput_mibps}
 
 ---
 
@@ -402,7 +450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tiering_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#tiering_policy NetappVolume#tiering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#tiering_policy NetappVolume#tiering_policy}
 
 ---
 
@@ -412,7 +460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#timeouts NetappVolume#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#timeouts NetappVolume#timeouts}
 
 ---
 
@@ -422,7 +470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Unix permission the mount point will be created with. Default is 0770. Applicable for UNIX security style volumes only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#unix_permissions NetappVolume#unix_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#unix_permissions NetappVolume#unix_permissions}
 
 ---
 
@@ -455,13 +503,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.putBackupConfig">put_backup_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.putBlockDevices">put_block_devices</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.putCacheParameters">put_cache_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.putExportPolicy">put_export_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.putHybridReplicationParameters">put_hybrid_replication_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.putLargeCapacityConfig">put_large_capacity_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.putRestoreParameters">put_restore_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.putSnapshotPolicy">put_snapshot_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.putTieringPolicy">put_tiering_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetBackupConfig">reset_backup_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetBlockDevices">reset_block_devices</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetCacheParameters">reset_cache_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetExportPolicy">reset_export_policy</a></code> | *No description.* |
@@ -470,14 +523,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetKerberosEnabled">reset_kerberos_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetLargeCapacity">reset_large_capacity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetLargeCapacityConfig">reset_large_capacity_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetMultipleEndpoints">reset_multiple_endpoints</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetRestoreParameters">reset_restore_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetRestrictedActions">reset_restricted_actions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetSecurityStyle">reset_security_style</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetShareName">reset_share_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetSmbSettings">reset_smb_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetSnapshotDirectory">reset_snapshot_directory</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetSnapshotPolicy">reset_snapshot_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetThroughputMibps">reset_throughput_mibps</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetTieringPolicy">reset_tiering_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.resetUnixPermissions">reset_unix_permissions</a></code> | *No description.* |
@@ -848,7 +904,7 @@ def put_backup_config(
 
 Specify a single backup policy ID for scheduled backups. Format: 'projects/{{projectId}}/locations/{{location}}/backupPolicies/{{backupPolicyName}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#backup_policies NetappVolume#backup_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#backup_policies NetappVolume#backup_policies}
 
 ---
 
@@ -858,7 +914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the backup vault to use. A backup vault is reqired to create manual or scheduled backups. Format: 'projects/{{projectId}}/locations/{{location}}/backupVaults/{{backupVaultName}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#backup_vault NetappVolume#backup_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#backup_vault NetappVolume#backup_vault}
 
 ---
 
@@ -868,7 +924,107 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 When set to true, scheduled backup is enabled on the volume. Omit if no backup_policy is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#scheduled_backup_enabled NetappVolume#scheduled_backup_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#scheduled_backup_enabled NetappVolume#scheduled_backup_enabled}
+
+---
+
+##### `put_block_devices` <a name="put_block_devices" id="@cdktn/provider-google.netappVolume.NetappVolume.putBlockDevices"></a>
+
+```python
+def put_block_devices(
+  value: IResolvable | typing.List[NetappVolumeBlockDevices]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.netappVolume.NetappVolume.putBlockDevices.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices">NetappVolumeBlockDevices</a>]
+
+---
+
+##### `put_cache_parameters` <a name="put_cache_parameters" id="@cdktn/provider-google.netappVolume.NetappVolume.putCacheParameters"></a>
+
+```python
+def put_cache_parameters(
+  cache_config: NetappVolumeCacheParametersCacheConfig = None,
+  enable_global_file_lock: bool | IResolvable = None,
+  peer_cluster_name: str = None,
+  peering_command_expiry_time: str = None,
+  peer_ip_addresses: typing.List[str] = None,
+  peer_svm_name: str = None,
+  peer_volume_name: str = None
+) -> None
+```
+
+###### `cache_config`<sup>Optional</sup> <a name="cache_config" id="@cdktn/provider-google.netappVolume.NetappVolume.putCacheParameters.parameter.cacheConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig">NetappVolumeCacheParametersCacheConfig</a>
+
+cache_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#cache_config NetappVolume#cache_config}
+
+---
+
+###### `enable_global_file_lock`<sup>Optional</sup> <a name="enable_global_file_lock" id="@cdktn/provider-google.netappVolume.NetappVolume.putCacheParameters.parameter.enableGlobalFileLock"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Optional. Field indicating whether cache volume as global file lock enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#enable_global_file_lock NetappVolume#enable_global_file_lock}
+
+---
+
+###### `peer_cluster_name`<sup>Optional</sup> <a name="peer_cluster_name" id="@cdktn/provider-google.netappVolume.NetappVolume.putCacheParameters.parameter.peerClusterName"></a>
+
+- *Type:* str
+
+Required. Name of the origin volume's ONTAP cluster.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_cluster_name NetappVolume#peer_cluster_name}
+
+---
+
+###### `peering_command_expiry_time`<sup>Optional</sup> <a name="peering_command_expiry_time" id="@cdktn/provider-google.netappVolume.NetappVolume.putCacheParameters.parameter.peeringCommandExpiryTime"></a>
+
+- *Type:* str
+
+Optional.
+
+Expiration time for the peering command to be executed on user's ONTAP. A timestamp in RFC3339 UTC "Zulu" format. Examples: "2023-06-22T09:13:01.617Z".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peering_command_expiry_time NetappVolume#peering_command_expiry_time}
+
+---
+
+###### `peer_ip_addresses`<sup>Optional</sup> <a name="peer_ip_addresses" id="@cdktn/provider-google.netappVolume.NetappVolume.putCacheParameters.parameter.peerIpAddresses"></a>
+
+- *Type:* typing.List[str]
+
+Required. List of IC LIF addresses of the origin volume's ONTAP cluster.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_ip_addresses NetappVolume#peer_ip_addresses}
+
+---
+
+###### `peer_svm_name`<sup>Optional</sup> <a name="peer_svm_name" id="@cdktn/provider-google.netappVolume.NetappVolume.putCacheParameters.parameter.peerSvmName"></a>
+
+- *Type:* str
+
+Required. Name of the origin volume's SVM.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_svm_name NetappVolume#peer_svm_name}
+
+---
+
+###### `peer_volume_name`<sup>Optional</sup> <a name="peer_volume_name" id="@cdktn/provider-google.netappVolume.NetappVolume.putCacheParameters.parameter.peerVolumeName"></a>
+
+- *Type:* str
+
+Required. Name of the origin volume for the cache volume.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_volume_name NetappVolume#peer_volume_name}
 
 ---
 
@@ -886,7 +1042,7 @@ def put_export_policy(
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#rules NetappVolume#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#rules NetappVolume#rules}
 
 ---
 
@@ -896,12 +1052,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 def put_hybrid_replication_parameters(
   cluster_location: str = None,
   description: str = None,
+  hybrid_replication_type: str = None,
   labels: typing.Mapping[str] = None,
+  large_volume_constituent_count: typing.Union[int, float] = None,
   peer_cluster_name: str = None,
-  peer_ip_addresses: str = None,
+  peer_ip_addresses: typing.List[str] = None,
   peer_svm_name: str = None,
   peer_volume_name: str = None,
-  replication: str = None
+  replication: str = None,
+  replication_schedule: str = None
 ) -> None
 ```
 
@@ -909,11 +1068,9 @@ def put_hybrid_replication_parameters(
 
 - *Type:* str
 
-Optional.
+Optional. Name of source cluster location associated with the replication. This is a free-form field for display purposes only.
 
-Name of source cluster location associated with the Hybrid replication. This is a free-form field for the display purpose only.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#cluster_location NetappVolume#cluster_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#cluster_location NetappVolume#cluster_location}
 
 ---
 
@@ -923,7 +1080,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. Description of the replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#description NetappVolume#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#description NetappVolume#description}
+
+---
+
+###### `hybrid_replication_type`<sup>Optional</sup> <a name="hybrid_replication_type" id="@cdktn/provider-google.netappVolume.NetappVolume.putHybridReplicationParameters.parameter.hybridReplicationType"></a>
+
+- *Type:* str
+
+Optional.
+
+Type of the hybrid replication. Use 'MIGRATION' to create a volume migration
+and 'ONPREM_REPLICATION' to create an external replication.
+Other values are read-only. 'REVERSE_ONPREM_REPLICATION' is used to represent an external
+replication which got reversed. Default is 'MIGRATION'. Possible values: ["MIGRATION", "CONTINUOUS_REPLICATION", "ONPREM_REPLICATION", "REVERSE_ONPREM_REPLICATION"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hybrid_replication_type NetappVolume#hybrid_replication_type}
 
 ---
 
@@ -936,7 +1108,19 @@ Optional.
 Labels to be added to the replication as the key value pairs.
 An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#labels NetappVolume#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#labels NetappVolume#labels}
+
+---
+
+###### `large_volume_constituent_count`<sup>Optional</sup> <a name="large_volume_constituent_count" id="@cdktn/provider-google.netappVolume.NetappVolume.putHybridReplicationParameters.parameter.largeVolumeConstituentCount"></a>
+
+- *Type:* typing.Union[int, float]
+
+Optional.
+
+If the source is a FlexGroup volume, this field needs to match the number of constituents in the FlexGroup.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#large_volume_constituent_count NetappVolume#large_volume_constituent_count}
 
 ---
 
@@ -944,19 +1128,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Required. Name of the user's local source cluster to be peered with the destination cluster.
+Required. Name of the ONTAP source cluster to be peered with NetApp Volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#peer_cluster_name NetappVolume#peer_cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_cluster_name NetappVolume#peer_cluster_name}
 
 ---
 
 ###### `peer_ip_addresses`<sup>Optional</sup> <a name="peer_ip_addresses" id="@cdktn/provider-google.netappVolume.NetappVolume.putHybridReplicationParameters.parameter.peerIpAddresses"></a>
 
-- *Type:* str
+- *Type:* typing.List[str]
 
-Required. List of node ip addresses to be peered with.
+Required. List of all intercluster LIF IP addresses of the ONTAP source cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#peer_ip_addresses NetappVolume#peer_ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_ip_addresses NetappVolume#peer_ip_addresses}
 
 ---
 
@@ -964,9 +1148,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Required. Name of the user's local source vserver svm to be peered with the destination vserver svm.
+Required. Name of the ONTAP source vserver SVM to be peered with NetApp Volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#peer_svm_name NetappVolume#peer_svm_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_svm_name NetappVolume#peer_svm_name}
 
 ---
 
@@ -974,9 +1158,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Required. Name of the user's local source volume to be peered with the destination volume.
+Required. Name of the ONTAP source volume to be replicated to NetApp Volumes destination volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#peer_volume_name NetappVolume#peer_volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_volume_name NetappVolume#peer_volume_name}
 
 ---
 
@@ -986,7 +1170,35 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Required. Desired name for the replication of this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#replication NetappVolume#replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#replication NetappVolume#replication}
+
+---
+
+###### `replication_schedule`<sup>Optional</sup> <a name="replication_schedule" id="@cdktn/provider-google.netappVolume.NetappVolume.putHybridReplicationParameters.parameter.replicationSchedule"></a>
+
+- *Type:* str
+
+Optional. Replication Schedule for the replication created. Possible values: ["EVERY_10_MINUTES", "HOURLY", "DAILY"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#replication_schedule NetappVolume#replication_schedule}
+
+---
+
+##### `put_large_capacity_config` <a name="put_large_capacity_config" id="@cdktn/provider-google.netappVolume.NetappVolume.putLargeCapacityConfig"></a>
+
+```python
+def put_large_capacity_config(
+  constituent_count: typing.Union[int, float] = None
+) -> None
+```
+
+###### `constituent_count`<sup>Optional</sup> <a name="constituent_count" id="@cdktn/provider-google.netappVolume.NetappVolume.putLargeCapacityConfig.parameter.constituentCount"></a>
+
+- *Type:* typing.Union[int, float]
+
+The number of internal constituents (e.g., FlexVols) for this large volume. The minimum number of constituents is 2.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#constituent_count NetappVolume#constituent_count}
 
 ---
 
@@ -1005,7 +1217,7 @@ def put_restore_parameters(
 
 Full name of the backup to use for creating this volume. 'source_snapshot' and 'source_backup' cannot be used simultaneously. Format: 'projects/{{project}}/locations/{{location}}/backupVaults/{{backupVaultId}}/backups/{{backup}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#source_backup NetappVolume#source_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#source_backup NetappVolume#source_backup}
 
 ---
 
@@ -1015,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Full name of the snapshot to use for creating this volume. 'source_snapshot' and 'source_backup' cannot be used simultaneously. Format: 'projects/{{project}}/locations/{{location}}/volumes/{{volume}}/snapshots/{{snapshot}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#source_snapshot NetappVolume#source_snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#source_snapshot NetappVolume#source_snapshot}
 
 ---
 
@@ -1037,7 +1249,7 @@ def put_snapshot_policy(
 
 daily_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#daily_schedule NetappVolume#daily_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#daily_schedule NetappVolume#daily_schedule}
 
 ---
 
@@ -1050,7 +1262,7 @@ Enables automated snapshot creation according to defined schedule.
 Default is false.
 To disable automatic snapshot creation you have to remove the whole snapshot_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#enabled NetappVolume#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#enabled NetappVolume#enabled}
 
 ---
 
@@ -1060,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 hourly_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#hourly_schedule NetappVolume#hourly_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hourly_schedule NetappVolume#hourly_schedule}
 
 ---
 
@@ -1070,7 +1282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 monthly_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#monthly_schedule NetappVolume#monthly_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#monthly_schedule NetappVolume#monthly_schedule}
 
 ---
 
@@ -1080,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 weekly_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#weekly_schedule NetappVolume#weekly_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#weekly_schedule NetappVolume#weekly_schedule}
 
 ---
 
@@ -1089,6 +1301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ```python
 def put_tiering_policy(
   cooling_threshold_days: typing.Union[int, float] = None,
+  hot_tier_bypass_mode_enabled: bool | IResolvable = None,
   tier_action: str = None
 ) -> None
 ```
@@ -1102,7 +1315,17 @@ Optional.
 Time in days to mark the volume's data block as cold and make it eligible for tiering, can be range from 2-183.
 Default is 31.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#cooling_threshold_days NetappVolume#cooling_threshold_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#cooling_threshold_days NetappVolume#cooling_threshold_days}
+
+---
+
+###### `hot_tier_bypass_mode_enabled`<sup>Optional</sup> <a name="hot_tier_bypass_mode_enabled" id="@cdktn/provider-google.netappVolume.NetappVolume.putTieringPolicy.parameter.hotTierBypassModeEnabled"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Optional. Flag indicating that the hot tier bypass mode is enabled. Default is false. Only applicable to Flex service level.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hot_tier_bypass_mode_enabled NetappVolume#hot_tier_bypass_mode_enabled}
 
 ---
 
@@ -1114,7 +1337,7 @@ Optional.
 
 Flag indicating if the volume has tiering policy enable/pause. Default is PAUSED. Default value: "PAUSED" Possible values: ["ENABLED", "PAUSED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#tier_action NetappVolume#tier_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#tier_action NetappVolume#tier_action}
 
 ---
 
@@ -1132,7 +1355,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#create NetappVolume#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#create NetappVolume#create}.
 
 ---
 
@@ -1140,7 +1363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#delete NetappVolume#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#delete NetappVolume#delete}.
 
 ---
 
@@ -1148,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#update NetappVolume#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#update NetappVolume#update}.
 
 ---
 
@@ -1156,6 +1379,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_backup_config() -> None
+```
+
+##### `reset_block_devices` <a name="reset_block_devices" id="@cdktn/provider-google.netappVolume.NetappVolume.resetBlockDevices"></a>
+
+```python
+def reset_block_devices() -> None
+```
+
+##### `reset_cache_parameters` <a name="reset_cache_parameters" id="@cdktn/provider-google.netappVolume.NetappVolume.resetCacheParameters"></a>
+
+```python
+def reset_cache_parameters() -> None
 ```
 
 ##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.netappVolume.NetappVolume.resetDeletionPolicy"></a>
@@ -1206,6 +1441,12 @@ def reset_labels() -> None
 def reset_large_capacity() -> None
 ```
 
+##### `reset_large_capacity_config` <a name="reset_large_capacity_config" id="@cdktn/provider-google.netappVolume.NetappVolume.resetLargeCapacityConfig"></a>
+
+```python
+def reset_large_capacity_config() -> None
+```
+
 ##### `reset_multiple_endpoints` <a name="reset_multiple_endpoints" id="@cdktn/provider-google.netappVolume.NetappVolume.resetMultipleEndpoints"></a>
 
 ```python
@@ -1236,6 +1477,12 @@ def reset_restricted_actions() -> None
 def reset_security_style() -> None
 ```
 
+##### `reset_share_name` <a name="reset_share_name" id="@cdktn/provider-google.netappVolume.NetappVolume.resetShareName"></a>
+
+```python
+def reset_share_name() -> None
+```
+
 ##### `reset_smb_settings` <a name="reset_smb_settings" id="@cdktn/provider-google.netappVolume.NetappVolume.resetSmbSettings"></a>
 
 ```python
@@ -1252,6 +1499,12 @@ def reset_snapshot_directory() -> None
 
 ```python
 def reset_snapshot_policy() -> None
+```
+
+##### `reset_throughput_mibps` <a name="reset_throughput_mibps" id="@cdktn/provider-google.netappVolume.NetappVolume.resetThroughputMibps"></a>
+
+```python
+def reset_throughput_mibps() -> None
 ```
 
 ##### `reset_tiering_policy` <a name="reset_tiering_policy" id="@cdktn/provider-google.netappVolume.NetappVolume.resetTieringPolicy"></a>
@@ -1386,7 +1639,7 @@ The construct id used in the generated config for the NetappVolume to import.
 
 The id of the existing NetappVolume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1418,14 +1671,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.activeDirectory">active_directory</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.backupConfig">backup_config</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfigOutputReference">NetappVolumeBackupConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.blockDevices">block_devices</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList">NetappVolumeBlockDevicesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.cacheParameters">cache_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference">NetappVolumeCacheParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.coldTierSizeGib">cold_tier_size_gib</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.encryptionType">encryption_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.exportPolicy">export_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyOutputReference">NetappVolumeExportPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.hasReplication">has_replication</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.hotTierSizeUsedGib">hot_tier_size_used_gib</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.hybridReplicationParameters">hybrid_replication_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference">NetappVolumeHybridReplicationParametersOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.kmsConfig">kms_config</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.largeCapacityConfig">large_capacity_config</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference">NetappVolumeLargeCapacityConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.ldapEnabled">ldap_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.mountOptions">mount_options</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsList">NetappVolumeMountOptionsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.network">network</a></code> | <code>str</code> | *No description.* |
@@ -1442,6 +1699,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.usedGib">used_gib</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.zone">zone</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.backupConfigInput">backup_config_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfig">NetappVolumeBackupConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.blockDevicesInput">block_devices_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices">NetappVolumeBlockDevices</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.cacheParametersInput">cache_parameters_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters">NetappVolumeCacheParameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.capacityGibInput">capacity_gib_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
@@ -1450,6 +1709,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.kerberosEnabledInput">kerberos_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.largeCapacityConfigInput">large_capacity_config_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig">NetappVolumeLargeCapacityConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.largeCapacityInput">large_capacity_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.multipleEndpointsInput">multiple_endpoints_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -1464,6 +1724,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.snapshotDirectoryInput">snapshot_directory_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.snapshotPolicyInput">snapshot_policy_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy">NetappVolumeSnapshotPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.storagePoolInput">storage_pool_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.throughputMibpsInput">throughput_mibps_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.tieringPolicyInput">tiering_policy_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy">NetappVolumeTieringPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.unixPermissionsInput">unix_permissions_input</a></code> | <code>str</code> | *No description.* |
@@ -1485,6 +1746,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.smbSettings">smb_settings</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.snapshotDirectory">snapshot_directory</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.storagePool">storage_pool</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.throughputMibps">throughput_mibps</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolume.property.unixPermissions">unix_permissions</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1651,6 +1913,26 @@ backup_config: NetappVolumeBackupConfigOutputReference
 
 ---
 
+##### `block_devices`<sup>Required</sup> <a name="block_devices" id="@cdktn/provider-google.netappVolume.NetappVolume.property.blockDevices"></a>
+
+```python
+block_devices: NetappVolumeBlockDevicesList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList">NetappVolumeBlockDevicesList</a>
+
+---
+
+##### `cache_parameters`<sup>Required</sup> <a name="cache_parameters" id="@cdktn/provider-google.netappVolume.NetappVolume.property.cacheParameters"></a>
+
+```python
+cache_parameters: NetappVolumeCacheParametersOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference">NetappVolumeCacheParametersOutputReference</a>
+
+---
+
 ##### `cold_tier_size_gib`<sup>Required</sup> <a name="cold_tier_size_gib" id="@cdktn/provider-google.netappVolume.NetappVolume.property.coldTierSizeGib"></a>
 
 ```python
@@ -1711,6 +1993,16 @@ has_replication: IResolvable
 
 ---
 
+##### `hot_tier_size_used_gib`<sup>Required</sup> <a name="hot_tier_size_used_gib" id="@cdktn/provider-google.netappVolume.NetappVolume.property.hotTierSizeUsedGib"></a>
+
+```python
+hot_tier_size_used_gib: str
+```
+
+- *Type:* str
+
+---
+
 ##### `hybrid_replication_parameters`<sup>Required</sup> <a name="hybrid_replication_parameters" id="@cdktn/provider-google.netappVolume.NetappVolume.property.hybridReplicationParameters"></a>
 
 ```python
@@ -1728,6 +2020,16 @@ kms_config: str
 ```
 
 - *Type:* str
+
+---
+
+##### `large_capacity_config`<sup>Required</sup> <a name="large_capacity_config" id="@cdktn/provider-google.netappVolume.NetappVolume.property.largeCapacityConfig"></a>
+
+```python
+large_capacity_config: NetappVolumeLargeCapacityConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference">NetappVolumeLargeCapacityConfigOutputReference</a>
 
 ---
 
@@ -1891,6 +2193,26 @@ backup_config_input: NetappVolumeBackupConfig
 
 ---
 
+##### `block_devices_input`<sup>Optional</sup> <a name="block_devices_input" id="@cdktn/provider-google.netappVolume.NetappVolume.property.blockDevicesInput"></a>
+
+```python
+block_devices_input: IResolvable | typing.List[NetappVolumeBlockDevices]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices">NetappVolumeBlockDevices</a>]
+
+---
+
+##### `cache_parameters_input`<sup>Optional</sup> <a name="cache_parameters_input" id="@cdktn/provider-google.netappVolume.NetappVolume.property.cacheParametersInput"></a>
+
+```python
+cache_parameters_input: NetappVolumeCacheParameters
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters">NetappVolumeCacheParameters</a>
+
+---
+
 ##### `capacity_gib_input`<sup>Optional</sup> <a name="capacity_gib_input" id="@cdktn/provider-google.netappVolume.NetappVolume.property.capacityGibInput"></a>
 
 ```python
@@ -1968,6 +2290,16 @@ labels_input: typing.Mapping[str]
 ```
 
 - *Type:* typing.Mapping[str]
+
+---
+
+##### `large_capacity_config_input`<sup>Optional</sup> <a name="large_capacity_config_input" id="@cdktn/provider-google.netappVolume.NetappVolume.property.largeCapacityConfigInput"></a>
+
+```python
+large_capacity_config_input: NetappVolumeLargeCapacityConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig">NetappVolumeLargeCapacityConfig</a>
 
 ---
 
@@ -2108,6 +2440,16 @@ storage_pool_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `throughput_mibps_input`<sup>Optional</sup> <a name="throughput_mibps_input" id="@cdktn/provider-google.netappVolume.NetappVolume.property.throughputMibpsInput"></a>
+
+```python
+throughput_mibps_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -2321,6 +2663,16 @@ storage_pool: str
 
 ---
 
+##### `throughput_mibps`<sup>Required</sup> <a name="throughput_mibps" id="@cdktn/provider-google.netappVolume.NetappVolume.property.throughputMibps"></a>
+
+```python
+throughput_mibps: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `unix_permissions`<sup>Required</sup> <a name="unix_permissions" id="@cdktn/provider-google.netappVolume.NetappVolume.property.unixPermissions"></a>
 
 ```python
@@ -2385,7 +2737,7 @@ backup_policies: typing.List[str]
 
 Specify a single backup policy ID for scheduled backups. Format: 'projects/{{projectId}}/locations/{{location}}/backupPolicies/{{backupPolicyName}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#backup_policies NetappVolume#backup_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#backup_policies NetappVolume#backup_policies}
 
 ---
 
@@ -2399,7 +2751,7 @@ backup_vault: str
 
 ID of the backup vault to use. A backup vault is reqired to create manual or scheduled backups. Format: 'projects/{{projectId}}/locations/{{location}}/backupVaults/{{backupVaultName}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#backup_vault NetappVolume#backup_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#backup_vault NetappVolume#backup_vault}
 
 ---
 
@@ -2413,7 +2765,254 @@ scheduled_backup_enabled: bool | IResolvable
 
 When set to true, scheduled backup is enabled on the volume. Omit if no backup_policy is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#scheduled_backup_enabled NetappVolume#scheduled_backup_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#scheduled_backup_enabled NetappVolume#scheduled_backup_enabled}
+
+---
+
+### NetappVolumeBlockDevices <a name="NetappVolumeBlockDevices" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices.Initializer"></a>
+
+```python
+from cdktn_provider_google import netapp_volume
+
+netappVolume.NetappVolumeBlockDevices(
+  os_type: str,
+  host_groups: typing.List[str] = None,
+  name: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices.property.osType">os_type</a></code> | <code>str</code> | The OS type of the volume. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices.property.hostGroups">host_groups</a></code> | <code>typing.List[str]</code> | A list of host groups that identify hosts that can mount the block volume. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices.property.name">name</a></code> | <code>str</code> | User-defined name for the block device, unique within the Volume. |
+
+---
+
+##### `os_type`<sup>Required</sup> <a name="os_type" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices.property.osType"></a>
+
+```python
+os_type: str
+```
+
+- *Type:* str
+
+The OS type of the volume.
+
+This field can't be changed after the block device is created. Possible values: ["LINUX", "WINDOWS", "ESXI"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#os_type NetappVolume#os_type}
+
+---
+
+##### `host_groups`<sup>Optional</sup> <a name="host_groups" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices.property.hostGroups"></a>
+
+```python
+host_groups: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+A list of host groups that identify hosts that can mount the block volume.
+
+Format:
+'projects/{project_id}/locations/{location}/hostGroups/{host_group_id}'
+This field can be updated after the block device is created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#host_groups NetappVolume#host_groups}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+User-defined name for the block device, unique within the Volume.
+
+In case
+no user input is provided, name will be autogenerated in the backend.
+The name must meet the following requirements:
+
+* Be between 1 and 255 characters long.
+* Contain only uppercase or lowercase letters (A-Z, a-z), numbers (0-9),
+  and the following special characters: "-", "_", "}", "{", ".".
+* Spaces are not allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#name NetappVolume#name}
+
+---
+
+### NetappVolumeCacheParameters <a name="NetappVolumeCacheParameters" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.Initializer"></a>
+
+```python
+from cdktn_provider_google import netapp_volume
+
+netappVolume.NetappVolumeCacheParameters(
+  cache_config: NetappVolumeCacheParametersCacheConfig = None,
+  enable_global_file_lock: bool | IResolvable = None,
+  peer_cluster_name: str = None,
+  peering_command_expiry_time: str = None,
+  peer_ip_addresses: typing.List[str] = None,
+  peer_svm_name: str = None,
+  peer_volume_name: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.cacheConfig">cache_config</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig">NetappVolumeCacheParametersCacheConfig</a></code> | cache_config block. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.enableGlobalFileLock">enable_global_file_lock</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. Field indicating whether cache volume as global file lock enabled. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.peerClusterName">peer_cluster_name</a></code> | <code>str</code> | Required. Name of the origin volume's ONTAP cluster. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.peeringCommandExpiryTime">peering_command_expiry_time</a></code> | <code>str</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.peerIpAddresses">peer_ip_addresses</a></code> | <code>typing.List[str]</code> | Required. List of IC LIF addresses of the origin volume's ONTAP cluster. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.peerSvmName">peer_svm_name</a></code> | <code>str</code> | Required. Name of the origin volume's SVM. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.peerVolumeName">peer_volume_name</a></code> | <code>str</code> | Required. Name of the origin volume for the cache volume. |
+
+---
+
+##### `cache_config`<sup>Optional</sup> <a name="cache_config" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.cacheConfig"></a>
+
+```python
+cache_config: NetappVolumeCacheParametersCacheConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig">NetappVolumeCacheParametersCacheConfig</a>
+
+cache_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#cache_config NetappVolume#cache_config}
+
+---
+
+##### `enable_global_file_lock`<sup>Optional</sup> <a name="enable_global_file_lock" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.enableGlobalFileLock"></a>
+
+```python
+enable_global_file_lock: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Optional. Field indicating whether cache volume as global file lock enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#enable_global_file_lock NetappVolume#enable_global_file_lock}
+
+---
+
+##### `peer_cluster_name`<sup>Optional</sup> <a name="peer_cluster_name" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.peerClusterName"></a>
+
+```python
+peer_cluster_name: str
+```
+
+- *Type:* str
+
+Required. Name of the origin volume's ONTAP cluster.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_cluster_name NetappVolume#peer_cluster_name}
+
+---
+
+##### `peering_command_expiry_time`<sup>Optional</sup> <a name="peering_command_expiry_time" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.peeringCommandExpiryTime"></a>
+
+```python
+peering_command_expiry_time: str
+```
+
+- *Type:* str
+
+Optional.
+
+Expiration time for the peering command to be executed on user's ONTAP. A timestamp in RFC3339 UTC "Zulu" format. Examples: "2023-06-22T09:13:01.617Z".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peering_command_expiry_time NetappVolume#peering_command_expiry_time}
+
+---
+
+##### `peer_ip_addresses`<sup>Optional</sup> <a name="peer_ip_addresses" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.peerIpAddresses"></a>
+
+```python
+peer_ip_addresses: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Required. List of IC LIF addresses of the origin volume's ONTAP cluster.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_ip_addresses NetappVolume#peer_ip_addresses}
+
+---
+
+##### `peer_svm_name`<sup>Optional</sup> <a name="peer_svm_name" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.peerSvmName"></a>
+
+```python
+peer_svm_name: str
+```
+
+- *Type:* str
+
+Required. Name of the origin volume's SVM.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_svm_name NetappVolume#peer_svm_name}
+
+---
+
+##### `peer_volume_name`<sup>Optional</sup> <a name="peer_volume_name" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters.property.peerVolumeName"></a>
+
+```python
+peer_volume_name: str
+```
+
+- *Type:* str
+
+Required. Name of the origin volume for the cache volume.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_volume_name NetappVolume#peer_volume_name}
+
+---
+
+### NetappVolumeCacheParametersCacheConfig <a name="NetappVolumeCacheParametersCacheConfig" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig.Initializer"></a>
+
+```python
+from cdktn_provider_google import netapp_volume
+
+netappVolume.NetappVolumeCacheParametersCacheConfig(
+  cifs_change_notify_enabled: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig.property.cifsChangeNotifyEnabled">cifs_change_notify_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. Flag indicating whether a CIFS change notification is enabled for the FlexCache volume. |
+
+---
+
+##### `cifs_change_notify_enabled`<sup>Optional</sup> <a name="cifs_change_notify_enabled" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig.property.cifsChangeNotifyEnabled"></a>
+
+```python
+cifs_change_notify_enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Optional. Flag indicating whether a CIFS change notification is enabled for the FlexCache volume.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#cifs_change_notify_enabled NetappVolume#cifs_change_notify_enabled}
 
 ---
 
@@ -2436,9 +3035,10 @@ netappVolume.NetappVolumeConfig(
   location: str,
   name: str,
   protocols: typing.List[str],
-  share_name: str,
   storage_pool: str,
   backup_config: NetappVolumeBackupConfig = None,
+  block_devices: IResolvable | typing.List[NetappVolumeBlockDevices] = None,
+  cache_parameters: NetappVolumeCacheParameters = None,
   deletion_policy: str = None,
   description: str = None,
   export_policy: NetappVolumeExportPolicy = None,
@@ -2447,14 +3047,17 @@ netappVolume.NetappVolumeConfig(
   kerberos_enabled: bool | IResolvable = None,
   labels: typing.Mapping[str] = None,
   large_capacity: bool | IResolvable = None,
+  large_capacity_config: NetappVolumeLargeCapacityConfig = None,
   multiple_endpoints: bool | IResolvable = None,
   project: str = None,
   restore_parameters: NetappVolumeRestoreParameters = None,
   restricted_actions: typing.List[str] = None,
   security_style: str = None,
+  share_name: str = None,
   smb_settings: typing.List[str] = None,
   snapshot_directory: bool | IResolvable = None,
   snapshot_policy: NetappVolumeSnapshotPolicy = None,
+  throughput_mibps: typing.Union[int, float] = None,
   tiering_policy: NetappVolumeTieringPolicy = None,
   timeouts: NetappVolumeTimeouts = None,
   unix_permissions: str = None
@@ -2476,25 +3079,29 @@ netappVolume.NetappVolumeConfig(
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.location">location</a></code> | <code>str</code> | Name of the pool location. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.name">name</a></code> | <code>str</code> | The name of the volume. Needs to be unique per location. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.protocols">protocols</a></code> | <code>typing.List[str]</code> | The protocol of the volume. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.shareName">share_name</a></code> | <code>str</code> | Share name (SMB) or export path (NFS) of the volume. Needs to be unique per location. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.storagePool">storage_pool</a></code> | <code>str</code> | Name of the storage pool to create the volume in. Pool needs enough spare capacity to accommodate the volume. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.backupConfig">backup_config</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfig">NetappVolumeBackupConfig</a></code> | backup_config block. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.blockDevices">block_devices</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices">NetappVolumeBlockDevices</a>]</code> | block_devices block. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.cacheParameters">cache_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters">NetappVolumeCacheParameters</a></code> | cache_parameters block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Policy to determine if the volume should be deleted forcefully. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.exportPolicy">export_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicy">NetappVolumeExportPolicy</a></code> | export_policy block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.hybridReplicationParameters">hybrid_replication_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters">NetappVolumeHybridReplicationParameters</a></code> | hybrid_replication_parameters block. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#id NetappVolume#id}. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#id NetappVolume#id}. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.kerberosEnabled">kerberos_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p). |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.largeCapacity">large_capacity</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. Flag indicating if the volume will be a large capacity volume or a regular volume. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.largeCapacityConfig">large_capacity_config</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig">NetappVolumeLargeCapacityConfig</a></code> | large_capacity_config block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.multipleEndpoints">multiple_endpoints</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#project NetappVolume#project}. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#project NetappVolume#project}. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.restoreParameters">restore_parameters</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeRestoreParameters">NetappVolumeRestoreParameters</a></code> | restore_parameters block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.restrictedActions">restricted_actions</a></code> | <code>typing.List[str]</code> | List of actions that are restricted on this volume. Possible values: ["DELETE"]. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.securityStyle">security_style</a></code> | <code>str</code> | Security Style of the Volume. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.shareName">share_name</a></code> | <code>str</code> | Share name (SMB) or export path (NFS) of the volume. Needs to be unique per location. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.smbSettings">smb_settings</a></code> | <code>typing.List[str]</code> | Settings for volumes with SMB access. Possible values: ["ENCRYPT_DATA", "BROWSABLE", "CHANGE_NOTIFY", "NON_BROWSABLE", "OPLOCKS", "SHOW_SNAPSHOT", "SHOW_PREVIOUS_VERSIONS", "ACCESS_BASED_ENUMERATION", "CONTINUOUSLY_AVAILABLE"]. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.snapshotDirectory">snapshot_directory</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.snapshotPolicy">snapshot_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeSnapshotPolicy">NetappVolumeSnapshotPolicy</a></code> | snapshot_policy block. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.throughputMibps">throughput_mibps</a></code> | <code>typing.Union[int, float]</code> | Optional. Custom Performance Total Throughput of the pool (in MiB/s). |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.tieringPolicy">tiering_policy</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy">NetappVolumeTieringPolicy</a></code> | tiering_policy block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.unixPermissions">unix_permissions</a></code> | <code>str</code> | Unix permission the mount point will be created with. Default is 0770. Applicable for UNIX security style volumes only. |
@@ -2581,7 +3188,7 @@ capacity_gib: str
 
 Capacity of the volume (in GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#capacity_gib NetappVolume#capacity_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#capacity_gib NetappVolume#capacity_gib}
 
 ---
 
@@ -2597,7 +3204,7 @@ Name of the pool location.
 
 Usually a region name, expect for some STANDARD service level pools which require a zone name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#location NetappVolume#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#location NetappVolume#location}
 
 ---
 
@@ -2611,7 +3218,7 @@ name: str
 
 The name of the volume. Needs to be unique per location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#name NetappVolume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#name NetappVolume#name}
 
 ---
 
@@ -2625,23 +3232,9 @@ protocols: typing.List[str]
 
 The protocol of the volume.
 
-Allowed combinations are '['NFSV3']', '['NFSV4']', '['SMB']', '['NFSV3', 'NFSV4']', '['SMB', 'NFSV3']' and '['SMB', 'NFSV4']'. Possible values: ["NFSV3", "NFSV4", "SMB"]
+Allowed combinations are '['NFSV3']', '['NFSV4']', '['SMB']', '['NFSV3', 'NFSV4']', '['SMB', 'NFSV3']' and '['SMB', 'NFSV4']'. Possible values: ["NFSV3", "NFSV4", "SMB", "ISCSI"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#protocols NetappVolume#protocols}
-
----
-
-##### `share_name`<sup>Required</sup> <a name="share_name" id="@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.shareName"></a>
-
-```python
-share_name: str
-```
-
-- *Type:* str
-
-Share name (SMB) or export path (NFS) of the volume. Needs to be unique per location.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#share_name NetappVolume#share_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#protocols NetappVolume#protocols}
 
 ---
 
@@ -2655,7 +3248,7 @@ storage_pool: str
 
 Name of the storage pool to create the volume in. Pool needs enough spare capacity to accommodate the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#storage_pool NetappVolume#storage_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#storage_pool NetappVolume#storage_pool}
 
 ---
 
@@ -2669,7 +3262,35 @@ backup_config: NetappVolumeBackupConfig
 
 backup_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#backup_config NetappVolume#backup_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#backup_config NetappVolume#backup_config}
+
+---
+
+##### `block_devices`<sup>Optional</sup> <a name="block_devices" id="@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.blockDevices"></a>
+
+```python
+block_devices: IResolvable | typing.List[NetappVolumeBlockDevices]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices">NetappVolumeBlockDevices</a>]
+
+block_devices block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#block_devices NetappVolume#block_devices}
+
+---
+
+##### `cache_parameters`<sup>Optional</sup> <a name="cache_parameters" id="@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.cacheParameters"></a>
+
+```python
+cache_parameters: NetappVolumeCacheParameters
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters">NetappVolumeCacheParameters</a>
+
+cache_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#cache_parameters NetappVolume#cache_parameters}
 
 ---
 
@@ -2687,7 +3308,7 @@ Volumes may have nested snapshot resources. Deleting such a volume will fail.
 Setting this parameter to FORCE will delete volumes including nested snapshots.
 Possible values: DEFAULT, FORCE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#deletion_policy NetappVolume#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#deletion_policy NetappVolume#deletion_policy}
 
 ---
 
@@ -2701,7 +3322,7 @@ description: str
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#description NetappVolume#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#description NetappVolume#description}
 
 ---
 
@@ -2715,7 +3336,7 @@ export_policy: NetappVolumeExportPolicy
 
 export_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#export_policy NetappVolume#export_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#export_policy NetappVolume#export_policy}
 
 ---
 
@@ -2729,7 +3350,7 @@ hybrid_replication_parameters: NetappVolumeHybridReplicationParameters
 
 hybrid_replication_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#hybrid_replication_parameters NetappVolume#hybrid_replication_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hybrid_replication_parameters NetappVolume#hybrid_replication_parameters}
 
 ---
 
@@ -2741,7 +3362,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#id NetappVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#id NetappVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2758,7 +3379,7 @@ kerberos_enabled: bool | IResolvable
 
 Flag indicating if the volume is a kerberos volume or not, export policy rules control kerberos security modes (krb5, krb5i, krb5p).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#kerberos_enabled NetappVolume#kerberos_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#kerberos_enabled NetappVolume#kerberos_enabled}
 
 ---
 
@@ -2775,7 +3396,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#labels NetappVolume#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#labels NetappVolume#labels}
 
 ---
 
@@ -2789,7 +3410,21 @@ large_capacity: bool | IResolvable
 
 Optional. Flag indicating if the volume will be a large capacity volume or a regular volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#large_capacity NetappVolume#large_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#large_capacity NetappVolume#large_capacity}
+
+---
+
+##### `large_capacity_config`<sup>Optional</sup> <a name="large_capacity_config" id="@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.largeCapacityConfig"></a>
+
+```python
+large_capacity_config: NetappVolumeLargeCapacityConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig">NetappVolumeLargeCapacityConfig</a>
+
+large_capacity_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#large_capacity_config NetappVolume#large_capacity_config}
 
 ---
 
@@ -2806,7 +3441,7 @@ Optional.
 Flag indicating if the volume will have an IP address per node for volumes supporting multiple IP endpoints.
 Only the volume with largeCapacity will be allowed to have multiple endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#multiple_endpoints NetappVolume#multiple_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#multiple_endpoints NetappVolume#multiple_endpoints}
 
 ---
 
@@ -2818,7 +3453,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#project NetappVolume#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#project NetappVolume#project}.
 
 ---
 
@@ -2832,7 +3467,7 @@ restore_parameters: NetappVolumeRestoreParameters
 
 restore_parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#restore_parameters NetappVolume#restore_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#restore_parameters NetappVolume#restore_parameters}
 
 ---
 
@@ -2846,7 +3481,7 @@ restricted_actions: typing.List[str]
 
 List of actions that are restricted on this volume. Possible values: ["DELETE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#restricted_actions NetappVolume#restricted_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#restricted_actions NetappVolume#restricted_actions}
 
 ---
 
@@ -2863,7 +3498,21 @@ Security Style of the Volume.
 Use UNIX to use UNIX or NFSV4 ACLs for file permissions.
 Use NTFS to use NTFS ACLs for file permissions. Can only be set for volumes which use SMB together with NFS as protocol. Possible values: ["NTFS", "UNIX"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#security_style NetappVolume#security_style}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#security_style NetappVolume#security_style}
+
+---
+
+##### `share_name`<sup>Optional</sup> <a name="share_name" id="@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.shareName"></a>
+
+```python
+share_name: str
+```
+
+- *Type:* str
+
+Share name (SMB) or export path (NFS) of the volume. Needs to be unique per location.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#share_name NetappVolume#share_name}
 
 ---
 
@@ -2877,7 +3526,7 @@ smb_settings: typing.List[str]
 
 Settings for volumes with SMB access. Possible values: ["ENCRYPT_DATA", "BROWSABLE", "CHANGE_NOTIFY", "NON_BROWSABLE", "OPLOCKS", "SHOW_SNAPSHOT", "SHOW_PREVIOUS_VERSIONS", "ACCESS_BASED_ENUMERATION", "CONTINUOUSLY_AVAILABLE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#smb_settings NetappVolume#smb_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#smb_settings NetappVolume#smb_settings}
 
 ---
 
@@ -2891,7 +3540,7 @@ snapshot_directory: bool | IResolvable
 
 If enabled, a NFS volume will contain a read-only .snapshot directory which provides access to each of the volume's snapshots. Will enable "Previous Versions" support for SMB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshot_directory NetappVolume#snapshot_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshot_directory NetappVolume#snapshot_directory}
 
 ---
 
@@ -2905,7 +3554,21 @@ snapshot_policy: NetappVolumeSnapshotPolicy
 
 snapshot_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshot_policy NetappVolume#snapshot_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshot_policy NetappVolume#snapshot_policy}
+
+---
+
+##### `throughput_mibps`<sup>Optional</sup> <a name="throughput_mibps" id="@cdktn/provider-google.netappVolume.NetappVolumeConfig.property.throughputMibps"></a>
+
+```python
+throughput_mibps: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Optional. Custom Performance Total Throughput of the pool (in MiB/s).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#throughput_mibps NetappVolume#throughput_mibps}
 
 ---
 
@@ -2919,7 +3582,7 @@ tiering_policy: NetappVolumeTieringPolicy
 
 tiering_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#tiering_policy NetappVolume#tiering_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#tiering_policy NetappVolume#tiering_policy}
 
 ---
 
@@ -2933,7 +3596,7 @@ timeouts: NetappVolumeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#timeouts NetappVolume#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#timeouts NetappVolume#timeouts}
 
 ---
 
@@ -2947,7 +3610,7 @@ unix_permissions: str
 
 Unix permission the mount point will be created with. Default is 0770. Applicable for UNIX security style volumes only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#unix_permissions NetappVolume#unix_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#unix_permissions NetappVolume#unix_permissions}
 
 ---
 
@@ -2981,7 +3644,7 @@ rules: IResolvable | typing.List[NetappVolumeExportPolicyRules]
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#rules NetappVolume#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#rules NetappVolume#rules}
 
 ---
 
@@ -2995,6 +3658,7 @@ from cdktn_provider_google import netapp_volume
 netappVolume.NetappVolumeExportPolicyRules(
   access_type: str = None,
   allowed_clients: str = None,
+  anon_uid: typing.Union[int, float] = None,
   has_root_access: str = None,
   kerberos5_i_read_only: bool | IResolvable = None,
   kerberos5_i_read_write: bool | IResolvable = None,
@@ -3003,7 +3667,8 @@ netappVolume.NetappVolumeExportPolicyRules(
   kerberos5_read_only: bool | IResolvable = None,
   kerberos5_read_write: bool | IResolvable = None,
   nfsv3: bool | IResolvable = None,
-  nfsv4: bool | IResolvable = None
+  nfsv4: bool | IResolvable = None,
+  squash_mode: str = None
 )
 ```
 
@@ -3013,6 +3678,7 @@ netappVolume.NetappVolumeExportPolicyRules(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.accessType">access_type</a></code> | <code>str</code> | Defines the access type for clients matching the 'allowedClients' specification. Possible values: ["READ_ONLY", "READ_WRITE", "READ_NONE"]. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.allowedClients">allowed_clients</a></code> | <code>str</code> | Defines the client ingress specification (allowed clients) as a comma separated list with IPv4 CIDRs or IPv4 host addresses. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.anonUid">anon_uid</a></code> | <code>typing.Union[int, float]</code> | An integer representing the anonymous user ID. Range is 0 to 4294967295. Required when 'squash_mode' is 'ALL_SQUASH'. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.hasRootAccess">has_root_access</a></code> | <code>str</code> | If enabled, the root user (UID = 0) of the specified clients doesn't get mapped to nobody (UID = 65534). |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5IReadOnly">kerberos5_i_read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled (true) the rule defines a read only access for clients matching the 'allowedClients' specification. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5IReadWrite">kerberos5_i_read_write</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification. |
@@ -3022,6 +3688,7 @@ netappVolume.NetappVolumeExportPolicyRules(
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.kerberos5ReadWrite">kerberos5_read_write</a></code> | <code>bool \| cdktn.IResolvable</code> | If enabled (true) the rule defines read and write access for clients matching the 'allowedClients' specification. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.nfsv3">nfsv3</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable to apply the export rule to NFSV3 clients. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.nfsv4">nfsv4</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable to apply the export rule to NFSV4.1 clients. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.squashMode">squash_mode</a></code> | <code>str</code> | SquashMode defines how remote user privileges are restricted when accessing an NFS export. |
 
 ---
 
@@ -3035,7 +3702,7 @@ access_type: str
 
 Defines the access type for clients matching the 'allowedClients' specification. Possible values: ["READ_ONLY", "READ_WRITE", "READ_NONE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#access_type NetappVolume#access_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#access_type NetappVolume#access_type}
 
 ---
 
@@ -3049,7 +3716,21 @@ allowed_clients: str
 
 Defines the client ingress specification (allowed clients) as a comma separated list with IPv4 CIDRs or IPv4 host addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#allowed_clients NetappVolume#allowed_clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#allowed_clients NetappVolume#allowed_clients}
+
+---
+
+##### `anon_uid`<sup>Optional</sup> <a name="anon_uid" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.anonUid"></a>
+
+```python
+anon_uid: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+An integer representing the anonymous user ID. Range is 0 to 4294967295. Required when 'squash_mode' is 'ALL_SQUASH'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#anon_uid NetappVolume#anon_uid}
 
 ---
 
@@ -3064,8 +3745,9 @@ has_root_access: str
 If enabled, the root user (UID = 0) of the specified clients doesn't get mapped to nobody (UID = 65534).
 
 This is also known as no_root_squash.
+Use either squash_mode or has_root_access, but never both at the same time. These parameters are mutually exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#has_root_access NetappVolume#has_root_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#has_root_access NetappVolume#has_root_access}
 
 ---
 
@@ -3081,7 +3763,7 @@ If enabled (true) the rule defines a read only access for clients matching the '
 
 It enables nfs clients to mount using 'integrity' kerberos security mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#kerberos5i_read_only NetappVolume#kerberos5i_read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#kerberos5i_read_only NetappVolume#kerberos5i_read_only}
 
 ---
 
@@ -3097,7 +3779,7 @@ If enabled (true) the rule defines read and write access for clients matching th
 
 It enables nfs clients to mount using 'integrity' kerberos security mode. The 'kerberos5iReadOnly' value is ignored if this is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#kerberos5i_read_write NetappVolume#kerberos5i_read_write}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#kerberos5i_read_write NetappVolume#kerberos5i_read_write}
 
 ---
 
@@ -3113,7 +3795,7 @@ If enabled (true) the rule defines a read only access for clients matching the '
 
 It enables nfs clients to mount using 'privacy' kerberos security mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#kerberos5p_read_only NetappVolume#kerberos5p_read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#kerberos5p_read_only NetappVolume#kerberos5p_read_only}
 
 ---
 
@@ -3129,7 +3811,7 @@ If enabled (true) the rule defines read and write access for clients matching th
 
 It enables nfs clients to mount using 'privacy' kerberos security mode. The 'kerberos5pReadOnly' value is ignored if this is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#kerberos5p_read_write NetappVolume#kerberos5p_read_write}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#kerberos5p_read_write NetappVolume#kerberos5p_read_write}
 
 ---
 
@@ -3145,7 +3827,7 @@ If enabled (true) the rule defines a read only access for clients matching the '
 
 It enables nfs clients to mount using 'authentication' kerberos security mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#kerberos5_read_only NetappVolume#kerberos5_read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#kerberos5_read_only NetappVolume#kerberos5_read_only}
 
 ---
 
@@ -3161,7 +3843,7 @@ If enabled (true) the rule defines read and write access for clients matching th
 
 It enables nfs clients to mount using 'authentication' kerberos security mode. The 'kerberos5ReadOnly' value is ignored if this is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#kerberos5_read_write NetappVolume#kerberos5_read_write}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#kerberos5_read_write NetappVolume#kerberos5_read_write}
 
 ---
 
@@ -3175,7 +3857,7 @@ nfsv3: bool | IResolvable
 
 Enable to apply the export rule to NFSV3 clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#nfsv3 NetappVolume#nfsv3}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#nfsv3 NetappVolume#nfsv3}
 
 ---
 
@@ -3189,7 +3871,24 @@ nfsv4: bool | IResolvable
 
 Enable to apply the export rule to NFSV4.1 clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#nfsv4 NetappVolume#nfsv4}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#nfsv4 NetappVolume#nfsv4}
+
+---
+
+##### `squash_mode`<sup>Optional</sup> <a name="squash_mode" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules.property.squashMode"></a>
+
+```python
+squash_mode: str
+```
+
+- *Type:* str
+
+SquashMode defines how remote user privileges are restricted when accessing an NFS export.
+
+It controls how the user identities (like root) are mapped to anonymous users to limit access and enforce security.
+Use either squash_mode or has_root_access, but never both at the same time. These parameters are mutually exclusive. Possible values: ["SQUASH_MODE_UNSPECIFIED", "NO_ROOT_SQUASH", "ROOT_SQUASH", "ALL_SQUASH"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#squash_mode NetappVolume#squash_mode}
 
 ---
 
@@ -3203,12 +3902,15 @@ from cdktn_provider_google import netapp_volume
 netappVolume.NetappVolumeHybridReplicationParameters(
   cluster_location: str = None,
   description: str = None,
+  hybrid_replication_type: str = None,
   labels: typing.Mapping[str] = None,
+  large_volume_constituent_count: typing.Union[int, float] = None,
   peer_cluster_name: str = None,
-  peer_ip_addresses: str = None,
+  peer_ip_addresses: typing.List[str] = None,
   peer_svm_name: str = None,
   peer_volume_name: str = None,
-  replication: str = None
+  replication: str = None,
+  replication_schedule: str = None
 )
 ```
 
@@ -3216,14 +3918,17 @@ netappVolume.NetappVolumeHybridReplicationParameters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.clusterLocation">cluster_location</a></code> | <code>str</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.clusterLocation">cluster_location</a></code> | <code>str</code> | Optional. Name of source cluster location associated with the replication. This is a free-form field for display purposes only. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.description">description</a></code> | <code>str</code> | Optional. Description of the replication. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.hybridReplicationType">hybrid_replication_type</a></code> | <code>str</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.peerClusterName">peer_cluster_name</a></code> | <code>str</code> | Required. Name of the user's local source cluster to be peered with the destination cluster. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.peerIpAddresses">peer_ip_addresses</a></code> | <code>str</code> | Required. List of node ip addresses to be peered with. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.peerSvmName">peer_svm_name</a></code> | <code>str</code> | Required. Name of the user's local source vserver svm to be peered with the destination vserver svm. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.peerVolumeName">peer_volume_name</a></code> | <code>str</code> | Required. Name of the user's local source volume to be peered with the destination volume. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.largeVolumeConstituentCount">large_volume_constituent_count</a></code> | <code>typing.Union[int, float]</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.peerClusterName">peer_cluster_name</a></code> | <code>str</code> | Required. Name of the ONTAP source cluster to be peered with NetApp Volumes. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.peerIpAddresses">peer_ip_addresses</a></code> | <code>typing.List[str]</code> | Required. List of all intercluster LIF IP addresses of the ONTAP source cluster. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.peerSvmName">peer_svm_name</a></code> | <code>str</code> | Required. Name of the ONTAP source vserver SVM to be peered with NetApp Volumes. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.peerVolumeName">peer_volume_name</a></code> | <code>str</code> | Required. Name of the ONTAP source volume to be replicated to NetApp Volumes destination volume. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.replication">replication</a></code> | <code>str</code> | Required. Desired name for the replication of this volume. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.replicationSchedule">replication_schedule</a></code> | <code>str</code> | Optional. Replication Schedule for the replication created. Possible values: ["EVERY_10_MINUTES", "HOURLY", "DAILY"]. |
 
 ---
 
@@ -3235,11 +3940,9 @@ cluster_location: str
 
 - *Type:* str
 
-Optional.
+Optional. Name of source cluster location associated with the replication. This is a free-form field for display purposes only.
 
-Name of source cluster location associated with the Hybrid replication. This is a free-form field for the display purpose only.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#cluster_location NetappVolume#cluster_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#cluster_location NetappVolume#cluster_location}
 
 ---
 
@@ -3253,7 +3956,26 @@ description: str
 
 Optional. Description of the replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#description NetappVolume#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#description NetappVolume#description}
+
+---
+
+##### `hybrid_replication_type`<sup>Optional</sup> <a name="hybrid_replication_type" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.hybridReplicationType"></a>
+
+```python
+hybrid_replication_type: str
+```
+
+- *Type:* str
+
+Optional.
+
+Type of the hybrid replication. Use 'MIGRATION' to create a volume migration
+and 'ONPREM_REPLICATION' to create an external replication.
+Other values are read-only. 'REVERSE_ONPREM_REPLICATION' is used to represent an external
+replication which got reversed. Default is 'MIGRATION'. Possible values: ["MIGRATION", "CONTINUOUS_REPLICATION", "ONPREM_REPLICATION", "REVERSE_ONPREM_REPLICATION"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hybrid_replication_type NetappVolume#hybrid_replication_type}
 
 ---
 
@@ -3270,7 +3992,23 @@ Optional.
 Labels to be added to the replication as the key value pairs.
 An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#labels NetappVolume#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#labels NetappVolume#labels}
+
+---
+
+##### `large_volume_constituent_count`<sup>Optional</sup> <a name="large_volume_constituent_count" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.largeVolumeConstituentCount"></a>
+
+```python
+large_volume_constituent_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Optional.
+
+If the source is a FlexGroup volume, this field needs to match the number of constituents in the FlexGroup.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#large_volume_constituent_count NetappVolume#large_volume_constituent_count}
 
 ---
 
@@ -3282,23 +4020,23 @@ peer_cluster_name: str
 
 - *Type:* str
 
-Required. Name of the user's local source cluster to be peered with the destination cluster.
+Required. Name of the ONTAP source cluster to be peered with NetApp Volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#peer_cluster_name NetappVolume#peer_cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_cluster_name NetappVolume#peer_cluster_name}
 
 ---
 
 ##### `peer_ip_addresses`<sup>Optional</sup> <a name="peer_ip_addresses" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.peerIpAddresses"></a>
 
 ```python
-peer_ip_addresses: str
+peer_ip_addresses: typing.List[str]
 ```
 
-- *Type:* str
+- *Type:* typing.List[str]
 
-Required. List of node ip addresses to be peered with.
+Required. List of all intercluster LIF IP addresses of the ONTAP source cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#peer_ip_addresses NetappVolume#peer_ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_ip_addresses NetappVolume#peer_ip_addresses}
 
 ---
 
@@ -3310,9 +4048,9 @@ peer_svm_name: str
 
 - *Type:* str
 
-Required. Name of the user's local source vserver svm to be peered with the destination vserver svm.
+Required. Name of the ONTAP source vserver SVM to be peered with NetApp Volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#peer_svm_name NetappVolume#peer_svm_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_svm_name NetappVolume#peer_svm_name}
 
 ---
 
@@ -3324,9 +4062,9 @@ peer_volume_name: str
 
 - *Type:* str
 
-Required. Name of the user's local source volume to be peered with the destination volume.
+Required. Name of the ONTAP source volume to be replicated to NetApp Volumes destination volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#peer_volume_name NetappVolume#peer_volume_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#peer_volume_name NetappVolume#peer_volume_name}
 
 ---
 
@@ -3340,7 +4078,55 @@ replication: str
 
 Required. Desired name for the replication of this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#replication NetappVolume#replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#replication NetappVolume#replication}
+
+---
+
+##### `replication_schedule`<sup>Optional</sup> <a name="replication_schedule" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters.property.replicationSchedule"></a>
+
+```python
+replication_schedule: str
+```
+
+- *Type:* str
+
+Optional. Replication Schedule for the replication created. Possible values: ["EVERY_10_MINUTES", "HOURLY", "DAILY"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#replication_schedule NetappVolume#replication_schedule}
+
+---
+
+### NetappVolumeLargeCapacityConfig <a name="NetappVolumeLargeCapacityConfig" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig.Initializer"></a>
+
+```python
+from cdktn_provider_google import netapp_volume
+
+netappVolume.NetappVolumeLargeCapacityConfig(
+  constituent_count: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig.property.constituentCount">constituent_count</a></code> | <code>typing.Union[int, float]</code> | The number of internal constituents (e.g., FlexVols) for this large volume. The minimum number of constituents is 2. |
+
+---
+
+##### `constituent_count`<sup>Optional</sup> <a name="constituent_count" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig.property.constituentCount"></a>
+
+```python
+constituent_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The number of internal constituents (e.g., FlexVols) for this large volume. The minimum number of constituents is 2.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#constituent_count NetappVolume#constituent_count}
 
 ---
 
@@ -3387,7 +4173,7 @@ source_backup: str
 
 Full name of the backup to use for creating this volume. 'source_snapshot' and 'source_backup' cannot be used simultaneously. Format: 'projects/{{project}}/locations/{{location}}/backupVaults/{{backupVaultId}}/backups/{{backup}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#source_backup NetappVolume#source_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#source_backup NetappVolume#source_backup}
 
 ---
 
@@ -3401,7 +4187,7 @@ source_snapshot: str
 
 Full name of the snapshot to use for creating this volume. 'source_snapshot' and 'source_backup' cannot be used simultaneously. Format: 'projects/{{project}}/locations/{{location}}/volumes/{{volume}}/snapshots/{{snapshot}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#source_snapshot NetappVolume#source_snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#source_snapshot NetappVolume#source_snapshot}
 
 ---
 
@@ -3443,7 +4229,7 @@ daily_schedule: NetappVolumeSnapshotPolicyDailySchedule
 
 daily_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#daily_schedule NetappVolume#daily_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#daily_schedule NetappVolume#daily_schedule}
 
 ---
 
@@ -3460,7 +4246,7 @@ Enables automated snapshot creation according to defined schedule.
 Default is false.
 To disable automatic snapshot creation you have to remove the whole snapshot_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#enabled NetappVolume#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#enabled NetappVolume#enabled}
 
 ---
 
@@ -3474,7 +4260,7 @@ hourly_schedule: NetappVolumeSnapshotPolicyHourlySchedule
 
 hourly_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#hourly_schedule NetappVolume#hourly_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hourly_schedule NetappVolume#hourly_schedule}
 
 ---
 
@@ -3488,7 +4274,7 @@ monthly_schedule: NetappVolumeSnapshotPolicyMonthlySchedule
 
 monthly_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#monthly_schedule NetappVolume#monthly_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#monthly_schedule NetappVolume#monthly_schedule}
 
 ---
 
@@ -3502,7 +4288,7 @@ weekly_schedule: NetappVolumeSnapshotPolicyWeeklySchedule
 
 weekly_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#weekly_schedule NetappVolume#weekly_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#weekly_schedule NetappVolume#weekly_schedule}
 
 ---
 
@@ -3540,7 +4326,7 @@ snapshots_to_keep: typing.Union[int, float]
 
 The maximum number of snapshots to keep for the daily schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
 
 ---
 
@@ -3554,7 +4340,7 @@ hour: typing.Union[int, float]
 
 Set the hour to create the snapshot (0-23), defaults to midnight (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#hour NetappVolume#hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hour NetappVolume#hour}
 
 ---
 
@@ -3568,7 +4354,7 @@ minute: typing.Union[int, float]
 
 Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#minute NetappVolume#minute}
 
 ---
 
@@ -3604,7 +4390,7 @@ snapshots_to_keep: typing.Union[int, float]
 
 The maximum number of snapshots to keep for the hourly schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
 
 ---
 
@@ -3618,7 +4404,7 @@ minute: typing.Union[int, float]
 
 Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#minute NetappVolume#minute}
 
 ---
 
@@ -3658,7 +4444,7 @@ snapshots_to_keep: typing.Union[int, float]
 
 The maximum number of snapshots to keep for the monthly schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
 
 ---
 
@@ -3674,7 +4460,7 @@ Set the day or days of the month to make a snapshot (1-31).
 
 Accepts a comma separated number of days. Defaults to '1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#days_of_month NetappVolume#days_of_month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#days_of_month NetappVolume#days_of_month}
 
 ---
 
@@ -3688,7 +4474,7 @@ hour: typing.Union[int, float]
 
 Set the hour to create the snapshot (0-23), defaults to midnight (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#hour NetappVolume#hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hour NetappVolume#hour}
 
 ---
 
@@ -3702,7 +4488,7 @@ minute: typing.Union[int, float]
 
 Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#minute NetappVolume#minute}
 
 ---
 
@@ -3742,7 +4528,7 @@ snapshots_to_keep: typing.Union[int, float]
 
 The maximum number of snapshots to keep for the weekly schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
 
 ---
 
@@ -3758,7 +4544,7 @@ Set the day or days of the week to make a snapshot.
 
 Accepts a comma separated days of the week. Defaults to 'Sunday'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#day NetappVolume#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#day NetappVolume#day}
 
 ---
 
@@ -3772,7 +4558,7 @@ hour: typing.Union[int, float]
 
 Set the hour to create the snapshot (0-23), defaults to midnight (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#hour NetappVolume#hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hour NetappVolume#hour}
 
 ---
 
@@ -3786,7 +4572,7 @@ minute: typing.Union[int, float]
 
 Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#minute NetappVolume#minute}
 
 ---
 
@@ -3799,6 +4585,7 @@ from cdktn_provider_google import netapp_volume
 
 netappVolume.NetappVolumeTieringPolicy(
   cooling_threshold_days: typing.Union[int, float] = None,
+  hot_tier_bypass_mode_enabled: bool | IResolvable = None,
   tier_action: str = None
 )
 ```
@@ -3808,6 +4595,7 @@ netappVolume.NetappVolumeTieringPolicy(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy.property.coolingThresholdDays">cooling_threshold_days</a></code> | <code>typing.Union[int, float]</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy.property.hotTierBypassModeEnabled">hot_tier_bypass_mode_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Optional. Flag indicating that the hot tier bypass mode is enabled. Default is false. Only applicable to Flex service level. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy.property.tierAction">tier_action</a></code> | <code>str</code> | Optional. |
 
 ---
@@ -3825,7 +4613,21 @@ Optional.
 Time in days to mark the volume's data block as cold and make it eligible for tiering, can be range from 2-183.
 Default is 31.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#cooling_threshold_days NetappVolume#cooling_threshold_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#cooling_threshold_days NetappVolume#cooling_threshold_days}
+
+---
+
+##### `hot_tier_bypass_mode_enabled`<sup>Optional</sup> <a name="hot_tier_bypass_mode_enabled" id="@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy.property.hotTierBypassModeEnabled"></a>
+
+```python
+hot_tier_bypass_mode_enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Optional. Flag indicating that the hot tier bypass mode is enabled. Default is false. Only applicable to Flex service level.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hot_tier_bypass_mode_enabled NetappVolume#hot_tier_bypass_mode_enabled}
 
 ---
 
@@ -3841,7 +4643,7 @@ Optional.
 
 Flag indicating if the volume has tiering policy enable/pause. Default is PAUSED. Default value: "PAUSED" Possible values: ["ENABLED", "PAUSED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#tier_action NetappVolume#tier_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#tier_action NetappVolume#tier_action}
 
 ---
 
@@ -3863,9 +4665,9 @@ netappVolume.NetappVolumeTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#create NetappVolume#create}. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#delete NetappVolume#delete}. |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#update NetappVolume#update}. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#create NetappVolume#create}. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#delete NetappVolume#delete}. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#update NetappVolume#update}. |
 
 ---
 
@@ -3877,7 +4679,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#create NetappVolume#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#create NetappVolume#create}.
 
 ---
 
@@ -3889,7 +4691,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#delete NetappVolume#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#delete NetappVolume#delete}.
 
 ---
 
@@ -3901,7 +4703,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#update NetappVolume#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#update NetappVolume#update}.
 
 ---
 
@@ -4264,6 +5066,1415 @@ internal_value: NetappVolumeBackupConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeBackupConfig">NetappVolumeBackupConfig</a>
+
+---
+
+
+### NetappVolumeBlockDevicesList <a name="NetappVolumeBlockDevicesList" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.Initializer"></a>
+
+```python
+from cdktn_provider_google import netapp_volume
+
+netappVolume.NetappVolumeBlockDevicesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> NetappVolumeBlockDevicesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices">NetappVolumeBlockDevices</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[NetappVolumeBlockDevices]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices">NetappVolumeBlockDevices</a>]
+
+---
+
+
+### NetappVolumeBlockDevicesOutputReference <a name="NetappVolumeBlockDevicesOutputReference" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import netapp_volume
+
+netappVolume.NetappVolumeBlockDevicesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.resetHostGroups">reset_host_groups</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.resetName">reset_name</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_host_groups` <a name="reset_host_groups" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.resetHostGroups"></a>
+
+```python
+def reset_host_groups() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.identifier">identifier</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.sizeGib">size_gib</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.hostGroupsInput">host_groups_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.osTypeInput">os_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.hostGroups">host_groups</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.osType">os_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices">NetappVolumeBlockDevices</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.identifier"></a>
+
+```python
+identifier: str
+```
+
+- *Type:* str
+
+---
+
+##### `size_gib`<sup>Required</sup> <a name="size_gib" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.sizeGib"></a>
+
+```python
+size_gib: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `host_groups_input`<sup>Optional</sup> <a name="host_groups_input" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.hostGroupsInput"></a>
+
+```python
+host_groups_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `os_type_input`<sup>Optional</sup> <a name="os_type_input" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.osTypeInput"></a>
+
+```python
+os_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `host_groups`<sup>Required</sup> <a name="host_groups" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.hostGroups"></a>
+
+```python
+host_groups: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `os_type`<sup>Required</sup> <a name="os_type" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.osType"></a>
+
+```python
+os_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.netappVolume.NetappVolumeBlockDevicesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | NetappVolumeBlockDevices
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.netappVolume.NetappVolumeBlockDevices">NetappVolumeBlockDevices</a>
+
+---
+
+
+### NetappVolumeCacheParametersCacheConfigOutputReference <a name="NetappVolumeCacheParametersCacheConfigOutputReference" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import netapp_volume
+
+netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.resetCifsChangeNotifyEnabled">reset_cifs_change_notify_enabled</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cifs_change_notify_enabled` <a name="reset_cifs_change_notify_enabled" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.resetCifsChangeNotifyEnabled"></a>
+
+```python
+def reset_cifs_change_notify_enabled() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.property.cifsChangeNotifyEnabledInput">cifs_change_notify_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.property.cifsChangeNotifyEnabled">cifs_change_notify_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig">NetappVolumeCacheParametersCacheConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cifs_change_notify_enabled_input`<sup>Optional</sup> <a name="cifs_change_notify_enabled_input" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.property.cifsChangeNotifyEnabledInput"></a>
+
+```python
+cifs_change_notify_enabled_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `cifs_change_notify_enabled`<sup>Required</sup> <a name="cifs_change_notify_enabled" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.property.cifsChangeNotifyEnabled"></a>
+
+```python
+cifs_change_notify_enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: NetappVolumeCacheParametersCacheConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig">NetappVolumeCacheParametersCacheConfig</a>
+
+---
+
+
+### NetappVolumeCacheParametersOutputReference <a name="NetappVolumeCacheParametersOutputReference" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import netapp_volume
+
+netappVolume.NetappVolumeCacheParametersOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.putCacheConfig">put_cache_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetCacheConfig">reset_cache_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetEnableGlobalFileLock">reset_enable_global_file_lock</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetPeerClusterName">reset_peer_cluster_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetPeeringCommandExpiryTime">reset_peering_command_expiry_time</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetPeerIpAddresses">reset_peer_ip_addresses</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetPeerSvmName">reset_peer_svm_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetPeerVolumeName">reset_peer_volume_name</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_cache_config` <a name="put_cache_config" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.putCacheConfig"></a>
+
+```python
+def put_cache_config(
+  cifs_change_notify_enabled: bool | IResolvable = None
+) -> None
+```
+
+###### `cifs_change_notify_enabled`<sup>Optional</sup> <a name="cifs_change_notify_enabled" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.putCacheConfig.parameter.cifsChangeNotifyEnabled"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Optional. Flag indicating whether a CIFS change notification is enabled for the FlexCache volume.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#cifs_change_notify_enabled NetappVolume#cifs_change_notify_enabled}
+
+---
+
+##### `reset_cache_config` <a name="reset_cache_config" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetCacheConfig"></a>
+
+```python
+def reset_cache_config() -> None
+```
+
+##### `reset_enable_global_file_lock` <a name="reset_enable_global_file_lock" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetEnableGlobalFileLock"></a>
+
+```python
+def reset_enable_global_file_lock() -> None
+```
+
+##### `reset_peer_cluster_name` <a name="reset_peer_cluster_name" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetPeerClusterName"></a>
+
+```python
+def reset_peer_cluster_name() -> None
+```
+
+##### `reset_peering_command_expiry_time` <a name="reset_peering_command_expiry_time" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetPeeringCommandExpiryTime"></a>
+
+```python
+def reset_peering_command_expiry_time() -> None
+```
+
+##### `reset_peer_ip_addresses` <a name="reset_peer_ip_addresses" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetPeerIpAddresses"></a>
+
+```python
+def reset_peer_ip_addresses() -> None
+```
+
+##### `reset_peer_svm_name` <a name="reset_peer_svm_name" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetPeerSvmName"></a>
+
+```python
+def reset_peer_svm_name() -> None
+```
+
+##### `reset_peer_volume_name` <a name="reset_peer_volume_name" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.resetPeerVolumeName"></a>
+
+```python
+def reset_peer_volume_name() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.cacheConfig">cache_config</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference">NetappVolumeCacheParametersCacheConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.cacheState">cache_state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.command">command</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.passphrase">passphrase</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.stateDetails">state_details</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.cacheConfigInput">cache_config_input</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig">NetappVolumeCacheParametersCacheConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.enableGlobalFileLockInput">enable_global_file_lock_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerClusterNameInput">peer_cluster_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peeringCommandExpiryTimeInput">peering_command_expiry_time_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerIpAddressesInput">peer_ip_addresses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerSvmNameInput">peer_svm_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerVolumeNameInput">peer_volume_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.enableGlobalFileLock">enable_global_file_lock</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerClusterName">peer_cluster_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peeringCommandExpiryTime">peering_command_expiry_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerIpAddresses">peer_ip_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerSvmName">peer_svm_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerVolumeName">peer_volume_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters">NetappVolumeCacheParameters</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cache_config`<sup>Required</sup> <a name="cache_config" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.cacheConfig"></a>
+
+```python
+cache_config: NetappVolumeCacheParametersCacheConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfigOutputReference">NetappVolumeCacheParametersCacheConfigOutputReference</a>
+
+---
+
+##### `cache_state`<sup>Required</sup> <a name="cache_state" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.cacheState"></a>
+
+```python
+cache_state: str
+```
+
+- *Type:* str
+
+---
+
+##### `command`<sup>Required</sup> <a name="command" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.command"></a>
+
+```python
+command: str
+```
+
+- *Type:* str
+
+---
+
+##### `passphrase`<sup>Required</sup> <a name="passphrase" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.passphrase"></a>
+
+```python
+passphrase: str
+```
+
+- *Type:* str
+
+---
+
+##### `state_details`<sup>Required</sup> <a name="state_details" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.stateDetails"></a>
+
+```python
+state_details: str
+```
+
+- *Type:* str
+
+---
+
+##### `cache_config_input`<sup>Optional</sup> <a name="cache_config_input" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.cacheConfigInput"></a>
+
+```python
+cache_config_input: NetappVolumeCacheParametersCacheConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersCacheConfig">NetappVolumeCacheParametersCacheConfig</a>
+
+---
+
+##### `enable_global_file_lock_input`<sup>Optional</sup> <a name="enable_global_file_lock_input" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.enableGlobalFileLockInput"></a>
+
+```python
+enable_global_file_lock_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `peer_cluster_name_input`<sup>Optional</sup> <a name="peer_cluster_name_input" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerClusterNameInput"></a>
+
+```python
+peer_cluster_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `peering_command_expiry_time_input`<sup>Optional</sup> <a name="peering_command_expiry_time_input" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peeringCommandExpiryTimeInput"></a>
+
+```python
+peering_command_expiry_time_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `peer_ip_addresses_input`<sup>Optional</sup> <a name="peer_ip_addresses_input" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerIpAddressesInput"></a>
+
+```python
+peer_ip_addresses_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `peer_svm_name_input`<sup>Optional</sup> <a name="peer_svm_name_input" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerSvmNameInput"></a>
+
+```python
+peer_svm_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `peer_volume_name_input`<sup>Optional</sup> <a name="peer_volume_name_input" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerVolumeNameInput"></a>
+
+```python
+peer_volume_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `enable_global_file_lock`<sup>Required</sup> <a name="enable_global_file_lock" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.enableGlobalFileLock"></a>
+
+```python
+enable_global_file_lock: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `peer_cluster_name`<sup>Required</sup> <a name="peer_cluster_name" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerClusterName"></a>
+
+```python
+peer_cluster_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `peering_command_expiry_time`<sup>Required</sup> <a name="peering_command_expiry_time" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peeringCommandExpiryTime"></a>
+
+```python
+peering_command_expiry_time: str
+```
+
+- *Type:* str
+
+---
+
+##### `peer_ip_addresses`<sup>Required</sup> <a name="peer_ip_addresses" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerIpAddresses"></a>
+
+```python
+peer_ip_addresses: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `peer_svm_name`<sup>Required</sup> <a name="peer_svm_name" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerSvmName"></a>
+
+```python
+peer_svm_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `peer_volume_name`<sup>Required</sup> <a name="peer_volume_name" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.peerVolumeName"></a>
+
+```python
+peer_volume_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.netappVolume.NetappVolumeCacheParametersOutputReference.property.internalValue"></a>
+
+```python
+internal_value: NetappVolumeCacheParameters
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeCacheParameters">NetappVolumeCacheParameters</a>
 
 ---
 
@@ -4824,6 +7035,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetAccessType">reset_access_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetAllowedClients">reset_allowed_clients</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetAnonUid">reset_anon_uid</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetHasRootAccess">reset_has_root_access</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetKerberos5IReadOnly">reset_kerberos5_i_read_only</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetKerberos5IReadWrite">reset_kerberos5_i_read_write</a></code> | *No description.* |
@@ -4833,6 +7045,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetKerberos5ReadWrite">reset_kerberos5_read_write</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetNfsv3">reset_nfsv3</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetNfsv4">reset_nfsv4</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetSquashMode">reset_squash_mode</a></code> | *No description.* |
 
 ---
 
@@ -5020,6 +7233,12 @@ def reset_access_type() -> None
 def reset_allowed_clients() -> None
 ```
 
+##### `reset_anon_uid` <a name="reset_anon_uid" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetAnonUid"></a>
+
+```python
+def reset_anon_uid() -> None
+```
+
 ##### `reset_has_root_access` <a name="reset_has_root_access" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetHasRootAccess"></a>
 
 ```python
@@ -5074,6 +7293,12 @@ def reset_nfsv3() -> None
 def reset_nfsv4() -> None
 ```
 
+##### `reset_squash_mode` <a name="reset_squash_mode" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.resetSquashMode"></a>
+
+```python
+def reset_squash_mode() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -5083,6 +7308,7 @@ def reset_nfsv4() -> None
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.accessTypeInput">access_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.allowedClientsInput">allowed_clients_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.anonUidInput">anon_uid_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.hasRootAccessInput">has_root_access_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadOnlyInput">kerberos5_i_read_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadWriteInput">kerberos5_i_read_write_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -5092,8 +7318,10 @@ def reset_nfsv4() -> None
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5ReadWriteInput">kerberos5_read_write_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv3Input">nfsv3_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv4Input">nfsv4_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.squashModeInput">squash_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.accessType">access_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.allowedClients">allowed_clients</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.anonUid">anon_uid</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.hasRootAccess">has_root_access</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadOnly">kerberos5_i_read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5IReadWrite">kerberos5_i_read_write</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -5103,6 +7331,7 @@ def reset_nfsv4() -> None
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.kerberos5ReadWrite">kerberos5_read_write</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv3">nfsv3</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.nfsv4">nfsv4</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.squashMode">squash_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRules">NetappVolumeExportPolicyRules</a></code> | *No description.* |
 
 ---
@@ -5148,6 +7377,16 @@ allowed_clients_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `anon_uid_input`<sup>Optional</sup> <a name="anon_uid_input" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.anonUidInput"></a>
+
+```python
+anon_uid_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -5241,6 +7480,16 @@ nfsv4_input: bool | IResolvable
 
 ---
 
+##### `squash_mode_input`<sup>Optional</sup> <a name="squash_mode_input" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.squashModeInput"></a>
+
+```python
+squash_mode_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `access_type`<sup>Required</sup> <a name="access_type" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.accessType"></a>
 
 ```python
@@ -5258,6 +7507,16 @@ allowed_clients: str
 ```
 
 - *Type:* str
+
+---
+
+##### `anon_uid`<sup>Required</sup> <a name="anon_uid" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.anonUid"></a>
+
+```python
+anon_uid: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -5351,6 +7610,16 @@ nfsv4: bool | IResolvable
 
 ---
 
+##### `squash_mode`<sup>Required</sup> <a name="squash_mode" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.squashMode"></a>
+
+```python
+squash_mode: str
+```
+
+- *Type:* str
+
+---
+
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.netappVolume.NetappVolumeExportPolicyRulesOutputReference.property.internalValue"></a>
 
 ```python
@@ -5417,12 +7686,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetClusterLocation">reset_cluster_location</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetHybridReplicationType">reset_hybrid_replication_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetLabels">reset_labels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetLargeVolumeConstituentCount">reset_large_volume_constituent_count</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetPeerClusterName">reset_peer_cluster_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetPeerIpAddresses">reset_peer_ip_addresses</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetPeerSvmName">reset_peer_svm_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetPeerVolumeName">reset_peer_volume_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetReplication">reset_replication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetReplicationSchedule">reset_replication_schedule</a></code> | *No description.* |
 
 ---
 
@@ -5610,10 +7882,22 @@ def reset_cluster_location() -> None
 def reset_description() -> None
 ```
 
+##### `reset_hybrid_replication_type` <a name="reset_hybrid_replication_type" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetHybridReplicationType"></a>
+
+```python
+def reset_hybrid_replication_type() -> None
+```
+
 ##### `reset_labels` <a name="reset_labels" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetLabels"></a>
 
 ```python
 def reset_labels() -> None
+```
+
+##### `reset_large_volume_constituent_count` <a name="reset_large_volume_constituent_count" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetLargeVolumeConstituentCount"></a>
+
+```python
+def reset_large_volume_constituent_count() -> None
 ```
 
 ##### `reset_peer_cluster_name` <a name="reset_peer_cluster_name" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetPeerClusterName"></a>
@@ -5646,6 +7930,12 @@ def reset_peer_volume_name() -> None
 def reset_replication() -> None
 ```
 
+##### `reset_replication_schedule` <a name="reset_replication_schedule" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.resetReplicationSchedule"></a>
+
+```python
+def reset_replication_schedule() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -5655,20 +7945,26 @@ def reset_replication() -> None
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.clusterLocationInput">cluster_location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.hybridReplicationTypeInput">hybrid_replication_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.largeVolumeConstituentCountInput">large_volume_constituent_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerClusterNameInput">peer_cluster_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerIpAddressesInput">peer_ip_addresses_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerIpAddressesInput">peer_ip_addresses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerSvmNameInput">peer_svm_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerVolumeNameInput">peer_volume_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.replicationInput">replication_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.replicationScheduleInput">replication_schedule_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.clusterLocation">cluster_location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.hybridReplicationType">hybrid_replication_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.largeVolumeConstituentCount">large_volume_constituent_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerClusterName">peer_cluster_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerIpAddresses">peer_ip_addresses</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerIpAddresses">peer_ip_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerSvmName">peer_svm_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerVolumeName">peer_volume_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.replication">replication</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.replicationSchedule">replication_schedule</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters">NetappVolumeHybridReplicationParameters</a></code> | *No description.* |
 
 ---
@@ -5717,6 +8013,16 @@ description_input: str
 
 ---
 
+##### `hybrid_replication_type_input`<sup>Optional</sup> <a name="hybrid_replication_type_input" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.hybridReplicationTypeInput"></a>
+
+```python
+hybrid_replication_type_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.labelsInput"></a>
 
 ```python
@@ -5724,6 +8030,16 @@ labels_input: typing.Mapping[str]
 ```
 
 - *Type:* typing.Mapping[str]
+
+---
+
+##### `large_volume_constituent_count_input`<sup>Optional</sup> <a name="large_volume_constituent_count_input" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.largeVolumeConstituentCountInput"></a>
+
+```python
+large_volume_constituent_count_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -5740,10 +8056,10 @@ peer_cluster_name_input: str
 ##### `peer_ip_addresses_input`<sup>Optional</sup> <a name="peer_ip_addresses_input" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerIpAddressesInput"></a>
 
 ```python
-peer_ip_addresses_input: str
+peer_ip_addresses_input: typing.List[str]
 ```
 
-- *Type:* str
+- *Type:* typing.List[str]
 
 ---
 
@@ -5777,6 +8093,16 @@ replication_input: str
 
 ---
 
+##### `replication_schedule_input`<sup>Optional</sup> <a name="replication_schedule_input" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.replicationScheduleInput"></a>
+
+```python
+replication_schedule_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `cluster_location`<sup>Required</sup> <a name="cluster_location" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.clusterLocation"></a>
 
 ```python
@@ -5797,6 +8123,16 @@ description: str
 
 ---
 
+##### `hybrid_replication_type`<sup>Required</sup> <a name="hybrid_replication_type" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.hybridReplicationType"></a>
+
+```python
+hybrid_replication_type: str
+```
+
+- *Type:* str
+
+---
+
 ##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.labels"></a>
 
 ```python
@@ -5804,6 +8140,16 @@ labels: typing.Mapping[str]
 ```
 
 - *Type:* typing.Mapping[str]
+
+---
+
+##### `large_volume_constituent_count`<sup>Required</sup> <a name="large_volume_constituent_count" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.largeVolumeConstituentCount"></a>
+
+```python
+large_volume_constituent_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -5820,10 +8166,10 @@ peer_cluster_name: str
 ##### `peer_ip_addresses`<sup>Required</sup> <a name="peer_ip_addresses" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.peerIpAddresses"></a>
 
 ```python
-peer_ip_addresses: str
+peer_ip_addresses: typing.List[str]
 ```
 
-- *Type:* str
+- *Type:* typing.List[str]
 
 ---
 
@@ -5857,6 +8203,16 @@ replication: str
 
 ---
 
+##### `replication_schedule`<sup>Required</sup> <a name="replication_schedule" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.replicationSchedule"></a>
+
+```python
+replication_schedule: str
+```
+
+- *Type:* str
+
+---
+
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParametersOutputReference.property.internalValue"></a>
 
 ```python
@@ -5864,6 +8220,309 @@ internal_value: NetappVolumeHybridReplicationParameters
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeHybridReplicationParameters">NetappVolumeHybridReplicationParameters</a>
+
+---
+
+
+### NetappVolumeLargeCapacityConfigOutputReference <a name="NetappVolumeLargeCapacityConfigOutputReference" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import netapp_volume
+
+netappVolume.NetappVolumeLargeCapacityConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.resetConstituentCount">reset_constituent_count</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_constituent_count` <a name="reset_constituent_count" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.resetConstituentCount"></a>
+
+```python
+def reset_constituent_count() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.property.constituentCountInput">constituent_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.property.constituentCount">constituent_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig">NetappVolumeLargeCapacityConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `constituent_count_input`<sup>Optional</sup> <a name="constituent_count_input" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.property.constituentCountInput"></a>
+
+```python
+constituent_count_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `constituent_count`<sup>Required</sup> <a name="constituent_count" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.property.constituentCount"></a>
+
+```python
+constituent_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: NetappVolumeLargeCapacityConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.netappVolume.NetappVolumeLargeCapacityConfig">NetappVolumeLargeCapacityConfig</a>
 
 ---
 
@@ -6285,6 +8944,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.property.export">export</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.property.exportFull">export_full</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.property.instructions">instructions</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.property.ipAddress">ip_address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.property.protocol">protocol</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeMountOptions">NetappVolumeMountOptions</a></code> | *No description.* |
 
@@ -6338,6 +8998,16 @@ export_full: str
 
 ```python
 instructions: str
+```
+
+- *Type:* str
+
+---
+
+##### `ip_address`<sup>Required</sup> <a name="ip_address" id="@cdktn/provider-google.netappVolume.NetappVolumeMountOptionsOutputReference.property.ipAddress"></a>
+
+```python
+ip_address: str
 ```
 
 - *Type:* str
@@ -8012,7 +10682,7 @@ def put_daily_schedule(
 
 The maximum number of snapshots to keep for the daily schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
 
 ---
 
@@ -8022,7 +10692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set the hour to create the snapshot (0-23), defaults to midnight (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#hour NetappVolume#hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hour NetappVolume#hour}
 
 ---
 
@@ -8032,7 +10702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#minute NetappVolume#minute}
 
 ---
 
@@ -8051,7 +10721,7 @@ def put_hourly_schedule(
 
 The maximum number of snapshots to keep for the hourly schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
 
 ---
 
@@ -8061,7 +10731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#minute NetappVolume#minute}
 
 ---
 
@@ -8082,7 +10752,7 @@ def put_monthly_schedule(
 
 The maximum number of snapshots to keep for the monthly schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
 
 ---
 
@@ -8094,7 +10764,7 @@ Set the day or days of the month to make a snapshot (1-31).
 
 Accepts a comma separated number of days. Defaults to '1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#days_of_month NetappVolume#days_of_month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#days_of_month NetappVolume#days_of_month}
 
 ---
 
@@ -8104,7 +10774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set the hour to create the snapshot (0-23), defaults to midnight (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#hour NetappVolume#hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hour NetappVolume#hour}
 
 ---
 
@@ -8114,7 +10784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#minute NetappVolume#minute}
 
 ---
 
@@ -8135,7 +10805,7 @@ def put_weekly_schedule(
 
 The maximum number of snapshots to keep for the weekly schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#snapshots_to_keep NetappVolume#snapshots_to_keep}
 
 ---
 
@@ -8147,7 +10817,7 @@ Set the day or days of the week to make a snapshot.
 
 Accepts a comma separated days of the week. Defaults to 'Sunday'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#day NetappVolume#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#day NetappVolume#day}
 
 ---
 
@@ -8157,7 +10827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set the hour to create the snapshot (0-23), defaults to midnight (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#hour NetappVolume#hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#hour NetappVolume#hour}
 
 ---
 
@@ -8167,7 +10837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set the minute of the hour to create the snapshot (0-59), defaults to the top of the hour (0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_volume#minute NetappVolume#minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_volume#minute NetappVolume#minute}
 
 ---
 
@@ -8794,6 +11464,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.resetCoolingThresholdDays">reset_cooling_threshold_days</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.resetHotTierBypassModeEnabled">reset_hot_tier_bypass_mode_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.resetTierAction">reset_tier_action</a></code> | *No description.* |
 
 ---
@@ -8976,6 +11647,12 @@ Returns a reversible string representation.
 def reset_cooling_threshold_days() -> None
 ```
 
+##### `reset_hot_tier_bypass_mode_enabled` <a name="reset_hot_tier_bypass_mode_enabled" id="@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.resetHotTierBypassModeEnabled"></a>
+
+```python
+def reset_hot_tier_bypass_mode_enabled() -> None
+```
+
 ##### `reset_tier_action` <a name="reset_tier_action" id="@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.resetTierAction"></a>
 
 ```python
@@ -8990,8 +11667,10 @@ def reset_tier_action() -> None
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.coolingThresholdDaysInput">cooling_threshold_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.hotTierBypassModeEnabledInput">hot_tier_bypass_mode_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.tierActionInput">tier_action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.coolingThresholdDays">cooling_threshold_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.hotTierBypassModeEnabled">hot_tier_bypass_mode_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.tierAction">tier_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicy">NetappVolumeTieringPolicy</a></code> | *No description.* |
 
@@ -9031,6 +11710,16 @@ cooling_threshold_days_input: typing.Union[int, float]
 
 ---
 
+##### `hot_tier_bypass_mode_enabled_input`<sup>Optional</sup> <a name="hot_tier_bypass_mode_enabled_input" id="@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.hotTierBypassModeEnabledInput"></a>
+
+```python
+hot_tier_bypass_mode_enabled_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `tier_action_input`<sup>Optional</sup> <a name="tier_action_input" id="@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.tierActionInput"></a>
 
 ```python
@@ -9048,6 +11737,16 @@ cooling_threshold_days: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `hot_tier_bypass_mode_enabled`<sup>Required</sup> <a name="hot_tier_bypass_mode_enabled" id="@cdktn/provider-google.netappVolume.NetappVolumeTieringPolicyOutputReference.property.hotTierBypassModeEnabled"></a>
+
+```python
+hot_tier_bypass_mode_enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 

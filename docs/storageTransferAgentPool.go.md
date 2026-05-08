@@ -4,12 +4,12 @@
 
 ### StorageTransferAgentPool <a name="StorageTransferAgentPool" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool google_storage_transfer_agent_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransferagentpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagetransferagentpool"
 
 storagetransferagentpool.NewStorageTransferAgentPool(scope Construct, id *string, config StorageTransferAgentPoolConfig) StorageTransferAgentPool
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransferagentpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagetransferagentpool"
 
 storagetransferagentpool.StorageTransferAgentPool_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransferagentpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagetransferagentpool"
 
 storagetransferagentpool.StorageTransferAgentPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ storagetransferagentpool.StorageTransferAgentPool_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransferagentpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagetransferagentpool"
 
 storagetransferagentpool.StorageTransferAgentPool_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ storagetransferagentpool.StorageTransferAgentPool_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransferagentpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagetransferagentpool"
 
 storagetransferagentpool.StorageTransferAgentPool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the StorageTransferAgentPool t
 
 The id of the existing StorageTransferAgentPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransferagentpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagetransferagentpool"
 
 &storagetransferagentpool.StorageTransferAgentPoolBandwidthLimit {
 	LimitMbps: *string,
@@ -918,7 +918,7 @@ LimitMbps *string
 
 Bandwidth rate in megabytes per second, distributed across all the agents in the pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#limit_mbps StorageTransferAgentPool#limit_mbps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#limit_mbps StorageTransferAgentPool#limit_mbps}
 
 ---
 
@@ -927,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransferagentpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagetransferagentpool"
 
 &storagetransferagentpool.StorageTransferAgentPoolConfig {
 	Connection: interface{},
@@ -938,11 +938,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransfera
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	BandwidthLimit: github.com/cdktn-io/cdktn-provider-google-go/google/v18.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimit,
+	BandwidthLimit: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimit,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.storageTransferAgentPool.StorageTransferAgentPoolTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageTransferAgentPool.StorageTransferAgentPoolTimeouts,
 }
 ```
 
@@ -960,8 +960,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransfera
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.name">Name</a></code> | <code>*string</code> | The ID of the agent pool to create. |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.bandwidthLimit">BandwidthLimit</a></code> | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimit">StorageTransferAgentPoolBandwidthLimit</a></code> | bandwidth_limit block. |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Specifies the client-specified AgentPool description. |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}. |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}. |
 | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts">StorageTransferAgentPoolTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1057,7 +1057,7 @@ The agentPoolId must meet the following requirements:
 
 As expressed by the regular expression: ^(?!goog)[a-z](%5Ba-z0-9-._~%5D*%5Ba-z0-9%5D)?$.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#name StorageTransferAgentPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#name StorageTransferAgentPool#name}
 
 ---
 
@@ -1071,7 +1071,7 @@ BandwidthLimit StorageTransferAgentPoolBandwidthLimit
 
 bandwidth_limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#bandwidth_limit StorageTransferAgentPool#bandwidth_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#bandwidth_limit StorageTransferAgentPool#bandwidth_limit}
 
 ---
 
@@ -1085,7 +1085,7 @@ DisplayName *string
 
 Specifies the client-specified AgentPool description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#display_name StorageTransferAgentPool#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#display_name StorageTransferAgentPool#display_name}
 
 ---
 
@@ -1097,7 +1097,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#id StorageTransferAgentPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1112,7 +1112,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#project StorageTransferAgentPool#project}.
 
 ---
 
@@ -1126,7 +1126,7 @@ Timeouts StorageTransferAgentPoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#timeouts StorageTransferAgentPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#timeouts StorageTransferAgentPool#timeouts}
 
 ---
 
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransferagentpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagetransferagentpool"
 
 &storagetransferagentpool.StorageTransferAgentPoolTimeouts {
 	Create: *string,
@@ -1148,9 +1148,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransfera
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#create StorageTransferAgentPool#create}. |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#delete StorageTransferAgentPool#delete}. |
-| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#update StorageTransferAgentPool#update}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#create StorageTransferAgentPool#create}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#delete StorageTransferAgentPool#delete}. |
+| <code><a href="#@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#update StorageTransferAgentPool#update}. |
 
 ---
 
@@ -1162,7 +1162,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#create StorageTransferAgentPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#create StorageTransferAgentPool#create}.
 
 ---
 
@@ -1174,7 +1174,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#delete StorageTransferAgentPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#delete StorageTransferAgentPool#delete}.
 
 ---
 
@@ -1186,7 +1186,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_agent_pool#update StorageTransferAgentPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_agent_pool#update StorageTransferAgentPool#update}.
 
 ---
 
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolBandwidthLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransferagentpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagetransferagentpool"
 
 storagetransferagentpool.NewStorageTransferAgentPoolBandwidthLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferAgentPoolBandwidthLimitOutputReference
 ```
@@ -1468,7 +1468,7 @@ func InternalValue() StorageTransferAgentPoolBandwidthLimit
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferAgentPool.StorageTransferAgentPoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagetransferagentpool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagetransferagentpool"
 
 storagetransferagentpool.NewStorageTransferAgentPoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferAgentPoolTimeoutsOutputReference
 ```

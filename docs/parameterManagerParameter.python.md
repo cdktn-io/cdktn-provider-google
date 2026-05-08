@@ -4,7 +4,7 @@
 
 ### ParameterManagerParameter <a name="ParameterManagerParameter" id="@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter google_parameter_manager_parameter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter google_parameter_manager_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter.Initializer"></a>
 
@@ -44,10 +44,10 @@ parameterManagerParameter.ParameterManagerParameter(
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter.Initializer.parameter.parameterId">parameter_id</a></code> | <code>str</code> | This must be unique within the project. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter.Initializer.parameter.format">format</a></code> | <code>str</code> | The format type of the parameter resource. Default value: "UNFORMATTED" Possible values: ["UNFORMATTED", "YAML", "JSON"]. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#id ParameterManagerParameter#id}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#id ParameterManagerParameter#id}. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter.Initializer.parameter.kmsKey">kms_key</a></code> | <code>str</code> | The resource name of the Cloud KMS CryptoKey used to encrypt parameter version payload. Format 'projects/{{project}}/locations/global/keyRings/{{key_ring}}/cryptoKeys/{{crypto_key}}'. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels assigned to this Parameter. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#project ParameterManagerParameter#project}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#project ParameterManagerParameter#project}. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameter.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterTimeouts">ParameterManagerParameterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 This must be unique within the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#parameter_id ParameterManagerParameter#parameter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#parameter_id ParameterManagerParameter#parameter_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The format type of the parameter resource. Default value: "UNFORMATTED" Possible values: ["UNFORMATTED", "YAML", "JSON"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#format ParameterManagerParameter#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#format ParameterManagerParameter#format}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#id ParameterManagerParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#id ParameterManagerParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The resource name of the Cloud KMS CryptoKey used to encrypt parameter version payload. Format 'projects/{{project}}/locations/global/keyRings/{{key_ring}}/cryptoKeys/{{crypto_key}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#kms_key ParameterManagerParameter#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#kms_key ParameterManagerParameter#kms_key}
 
 ---
 
@@ -173,7 +173,7 @@ An object containing a list of "key": value pairs. Example:
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#labels ParameterManagerParameter#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#labels ParameterManagerParameter#labels}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#project ParameterManagerParameter#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#project ParameterManagerParameter#project}.
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#timeouts ParameterManagerParameter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#timeouts ParameterManagerParameter#timeouts}
 
 ---
 
@@ -595,7 +595,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#create ParameterManagerParameter#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#create ParameterManagerParameter#create}.
 
 ---
 
@@ -603,7 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#delete ParameterManagerParameter#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#delete ParameterManagerParameter#delete}.
 
 ---
 
@@ -611,7 +611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#update ParameterManagerParameter#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#update ParameterManagerParameter#update}.
 
 ---
 
@@ -765,7 +765,7 @@ The construct id used in the generated config for the ParameterManagerParameter 
 
 The id of the existing ParameterManagerParameter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1218,10 +1218,10 @@ parameterManagerParameter.ParameterManagerParameterConfig(
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterConfig.property.parameterId">parameter_id</a></code> | <code>str</code> | This must be unique within the project. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterConfig.property.format">format</a></code> | <code>str</code> | The format type of the parameter resource. Default value: "UNFORMATTED" Possible values: ["UNFORMATTED", "YAML", "JSON"]. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#id ParameterManagerParameter#id}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#id ParameterManagerParameter#id}. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterConfig.property.kmsKey">kms_key</a></code> | <code>str</code> | The resource name of the Cloud KMS CryptoKey used to encrypt parameter version payload. Format 'projects/{{project}}/locations/global/keyRings/{{key_ring}}/cryptoKeys/{{crypto_key}}'. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels assigned to this Parameter. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#project ParameterManagerParameter#project}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#project ParameterManagerParameter#project}. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterTimeouts">ParameterManagerParameterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1306,7 +1306,7 @@ parameter_id: str
 
 This must be unique within the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#parameter_id ParameterManagerParameter#parameter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#parameter_id ParameterManagerParameter#parameter_id}
 
 ---
 
@@ -1320,7 +1320,7 @@ format: str
 
 The format type of the parameter resource. Default value: "UNFORMATTED" Possible values: ["UNFORMATTED", "YAML", "JSON"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#format ParameterManagerParameter#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#format ParameterManagerParameter#format}
 
 ---
 
@@ -1332,7 +1332,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#id ParameterManagerParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#id ParameterManagerParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1349,7 +1349,7 @@ kms_key: str
 
 The resource name of the Cloud KMS CryptoKey used to encrypt parameter version payload. Format 'projects/{{project}}/locations/global/keyRings/{{key_ring}}/cryptoKeys/{{crypto_key}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#kms_key ParameterManagerParameter#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#kms_key ParameterManagerParameter#kms_key}
 
 ---
 
@@ -1377,7 +1377,7 @@ An object containing a list of "key": value pairs. Example:
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#labels ParameterManagerParameter#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#labels ParameterManagerParameter#labels}
 
 ---
 
@@ -1389,7 +1389,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#project ParameterManagerParameter#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#project ParameterManagerParameter#project}.
 
 ---
 
@@ -1403,7 +1403,7 @@ timeouts: ParameterManagerParameterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#timeouts ParameterManagerParameter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#timeouts ParameterManagerParameter#timeouts}
 
 ---
 
@@ -1436,9 +1436,9 @@ parameterManagerParameter.ParameterManagerParameterTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#create ParameterManagerParameter#create}. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#delete ParameterManagerParameter#delete}. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#update ParameterManagerParameter#update}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#create ParameterManagerParameter#create}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#delete ParameterManagerParameter#delete}. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameter.ParameterManagerParameterTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#update ParameterManagerParameter#update}. |
 
 ---
 
@@ -1450,7 +1450,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#create ParameterManagerParameter#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#create ParameterManagerParameter#create}.
 
 ---
 
@@ -1462,7 +1462,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#delete ParameterManagerParameter#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#delete ParameterManagerParameter#delete}.
 
 ---
 
@@ -1474,7 +1474,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter#update ParameterManagerParameter#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/parameter_manager_parameter#update ParameterManagerParameter#update}.
 
 ---
 

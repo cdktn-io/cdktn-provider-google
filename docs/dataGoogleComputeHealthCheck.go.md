@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeHealthCheck <a name="DataGoogleComputeHealthCheck" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_health_check google_compute_health_check}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_health_check google_compute_health_check}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheck(scope Construct, id *string, config DataGoogleComputeHealthCheckConfig) DataGoogleComputeHealthCheck
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.DataGoogleComputeHealthCheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleComputeHealthChe
 
 The id of the existing DataGoogleComputeHealthCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_health_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_health_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -433,6 +433,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.property.creationTimestamp">CreationTimestamp</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.property.grpcHealthCheck">GrpcHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheckList">DataGoogleComputeHealthCheckGrpcHealthCheckList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.property.grpcTlsHealthCheck">GrpcTlsHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList">DataGoogleComputeHealthCheckGrpcTlsHealthCheckList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.property.healthyThreshold">HealthyThreshold</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.property.http2HealthCheck">Http2HealthCheck</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttp2HealthCheckList">DataGoogleComputeHealthCheckHttp2HealthCheckList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.property.httpHealthCheck">HttpHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpHealthCheckList">DataGoogleComputeHealthCheckHttpHealthCheckList</a></code> | *No description.* |
@@ -613,6 +614,16 @@ func GrpcHealthCheck() DataGoogleComputeHealthCheckGrpcHealthCheckList
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheckList">DataGoogleComputeHealthCheckGrpcHealthCheckList</a>
+
+---
+
+##### `GrpcTlsHealthCheck`<sup>Required</sup> <a name="GrpcTlsHealthCheck" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheck.property.grpcTlsHealthCheck"></a>
+
+```go
+func GrpcTlsHealthCheck() DataGoogleComputeHealthCheckGrpcTlsHealthCheckList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList">DataGoogleComputeHealthCheckGrpcTlsHealthCheckList</a>
 
 ---
 
@@ -821,7 +832,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckConfig {
 	Connection: interface{},
@@ -849,8 +860,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_health_check#id DataGoogleComputeHealthCheck#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_health_check#project DataGoogleComputeHealthCheck#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_health_check#id DataGoogleComputeHealthCheck#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_health_check#project DataGoogleComputeHealthCheck#project}. |
 
 ---
 
@@ -942,7 +953,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_health_check#name DataGoogleComputeHealthCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_health_check#name DataGoogleComputeHealthCheck#name}
 
 ---
 
@@ -954,7 +965,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_health_check#id DataGoogleComputeHealthCheck#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_health_check#id DataGoogleComputeHealthCheck#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -969,7 +980,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_health_check#project DataGoogleComputeHealthCheck#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_health_check#project DataGoogleComputeHealthCheck#project}.
 
 ---
 
@@ -978,9 +989,22 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckGrpcHealthCheck {
+
+}
+```
+
+
+### DataGoogleComputeHealthCheckGrpcTlsHealthCheck <a name="DataGoogleComputeHealthCheckGrpcTlsHealthCheck" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheck"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheck.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
+
+&datagooglecomputehealthcheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheck {
 
 }
 ```
@@ -991,7 +1015,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttp2HealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckHttp2HealthCheck {
 
@@ -1004,7 +1028,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckHttpHealthCheck {
 
@@ -1017,7 +1041,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpsHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckHttpsHealthCheck {
 
@@ -1030,7 +1054,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckLogConfig {
 
@@ -1043,7 +1067,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckSslHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckSslHealthCheck {
 
@@ -1056,7 +1080,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckTcpHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 &datagooglecomputehealthcheck.DataGoogleComputeHealthCheckTcpHealthCheck {
 
@@ -1071,7 +1095,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckGrpcHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckGrpcHealthCheckList
 ```
@@ -1220,7 +1244,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckGrpcHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckGrpcHealthCheckOutputReference
 ```
@@ -1526,12 +1550,461 @@ func InternalValue() DataGoogleComputeHealthCheckGrpcHealthCheck
 ---
 
 
+### DataGoogleComputeHealthCheckGrpcTlsHealthCheckList <a name="DataGoogleComputeHealthCheckGrpcTlsHealthCheckList" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
+
+datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckGrpcTlsHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckGrpcTlsHealthCheckList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.get"></a>
+
+```go
+func Get(index *f64) DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference <a name="DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
+
+datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.grpcServiceName">GrpcServiceName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.portSpecification">PortSpecification</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheck">DataGoogleComputeHealthCheckGrpcTlsHealthCheck</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `GrpcServiceName`<sup>Required</sup> <a name="GrpcServiceName" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.grpcServiceName"></a>
+
+```go
+func GrpcServiceName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Port`<sup>Required</sup> <a name="Port" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.port"></a>
+
+```go
+func Port() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `PortSpecification`<sup>Required</sup> <a name="PortSpecification" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.portSpecification"></a>
+
+```go
+func PortSpecification() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheckOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataGoogleComputeHealthCheckGrpcTlsHealthCheck
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckGrpcTlsHealthCheck">DataGoogleComputeHealthCheckGrpcTlsHealthCheck</a>
+
+---
+
+
 ### DataGoogleComputeHealthCheckHttp2HealthCheckList <a name="DataGoogleComputeHealthCheckHttp2HealthCheckList" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttp2HealthCheckList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttp2HealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttp2HealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckHttp2HealthCheckList
 ```
@@ -1680,7 +2153,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttp2HealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttp2HealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckHttp2HealthCheckOutputReference
 ```
@@ -2024,7 +2497,7 @@ func InternalValue() DataGoogleComputeHealthCheckHttp2HealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttpHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckHttpHealthCheckList
 ```
@@ -2173,7 +2646,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttpHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckHttpHealthCheckOutputReference
 ```
@@ -2517,7 +2990,7 @@ func InternalValue() DataGoogleComputeHealthCheckHttpHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpsHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttpsHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckHttpsHealthCheckList
 ```
@@ -2666,7 +3139,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckHttpsHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckHttpsHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckHttpsHealthCheckOutputReference
 ```
@@ -3010,7 +3483,7 @@ func InternalValue() DataGoogleComputeHealthCheckHttpsHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckLogConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckLogConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckLogConfigList
 ```
@@ -3159,7 +3632,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckLogConfigOutputReference
 ```
@@ -3437,7 +3910,7 @@ func InternalValue() DataGoogleComputeHealthCheckLogConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckSslHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckSslHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckSslHealthCheckList
 ```
@@ -3586,7 +4059,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckSslHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckSslHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckSslHealthCheckOutputReference
 ```
@@ -3919,7 +4392,7 @@ func InternalValue() DataGoogleComputeHealthCheckSslHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckTcpHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckTcpHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeHealthCheckTcpHealthCheckList
 ```
@@ -4068,7 +4541,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeHealthCheck.DataGoogleComputeHealthCheckTcpHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputehealthcheck"
 
 datagooglecomputehealthcheck.NewDataGoogleComputeHealthCheckTcpHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeHealthCheckTcpHealthCheckOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### EventarcTrigger <a name="EventarcTrigger" id="@cdktn/provider-google.eventarcTrigger.EventarcTrigger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger google_eventarc_trigger}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger google_eventarc_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.eventarcTrigger.EventarcTrigger.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.putDestination">putDestination</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.putMatchingCriteria">putMatchingCriteria</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.putRetryPolicy">putRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.putTransport">putTransport</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.resetChannel">resetChannel</a></code> | *No description.* |
@@ -83,6 +84,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.resetRetryPolicy">resetRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.resetServiceAccount">resetServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.resetTransport">resetTransport</a></code> | *No description.* |
@@ -422,6 +424,18 @@ public putMatchingCriteria(value: IResolvable | EventarcTriggerMatchingCriteria[
 
 ---
 
+##### `putRetryPolicy` <a name="putRetryPolicy" id="@cdktn/provider-google.eventarcTrigger.EventarcTrigger.putRetryPolicy"></a>
+
+```typescript
+public putRetryPolicy(value: EventarcTriggerRetryPolicy): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.eventarcTrigger.EventarcTrigger.putRetryPolicy.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy">EventarcTriggerRetryPolicy</a>
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.eventarcTrigger.EventarcTrigger.putTimeouts"></a>
 
 ```typescript
@@ -474,6 +488,12 @@ public resetLabels(): void
 
 ```typescript
 public resetProject(): void
+```
+
+##### `resetRetryPolicy` <a name="resetRetryPolicy" id="@cdktn/provider-google.eventarcTrigger.EventarcTrigger.resetRetryPolicy"></a>
+
+```typescript
+public resetRetryPolicy(): void
 ```
 
 ##### `resetServiceAccount` <a name="resetServiceAccount" id="@cdktn/provider-google.eventarcTrigger.EventarcTrigger.resetServiceAccount"></a>
@@ -597,7 +617,7 @@ The construct id used in the generated config for the EventarcTrigger to import.
 
 The id of the existing EventarcTrigger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -633,6 +653,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.etag">etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.matchingCriteria">matchingCriteria</a></code> | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaList">EventarcTriggerMatchingCriteriaList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.retryPolicy">retryPolicy</a></code> | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference">EventarcTriggerRetryPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTimeoutsOutputReference">EventarcTriggerTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.transport">transport</a></code> | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTransportOutputReference">EventarcTriggerTransportOutputReference</a></code> | *No description.* |
@@ -647,6 +668,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.matchingCriteriaInput">matchingCriteriaInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteria">EventarcTriggerMatchingCriteria</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.retryPolicyInput">retryPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy">EventarcTriggerRetryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.serviceAccountInput">serviceAccountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTimeouts">EventarcTriggerTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.transportInput">transportInput</a></code> | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTransport">EventarcTriggerTransport</a></code> | *No description.* |
@@ -863,6 +885,16 @@ public readonly matchingCriteria: EventarcTriggerMatchingCriteriaList;
 
 ---
 
+##### `retryPolicy`<sup>Required</sup> <a name="retryPolicy" id="@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.retryPolicy"></a>
+
+```typescript
+public readonly retryPolicy: EventarcTriggerRetryPolicyOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference">EventarcTriggerRetryPolicyOutputReference</a>
+
+---
+
 ##### `terraformLabels`<sup>Required</sup> <a name="terraformLabels" id="@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.terraformLabels"></a>
 
 ```typescript
@@ -1000,6 +1032,16 @@ public readonly projectInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `retryPolicyInput`<sup>Optional</sup> <a name="retryPolicyInput" id="@cdktn/provider-google.eventarcTrigger.EventarcTrigger.property.retryPolicyInput"></a>
+
+```typescript
+public readonly retryPolicyInput: EventarcTriggerRetryPolicy;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy">EventarcTriggerRetryPolicy</a>
 
 ---
 
@@ -1160,9 +1202,10 @@ const eventarcTriggerConfig: eventarcTrigger.EventarcTriggerConfig = { ... }
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.name">name</a></code> | <code>string</code> | Required. The resource name of the trigger. Must be unique within the location on the project. |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.channel">channel</a></code> | <code>string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.eventDataContentType">eventDataContentType</a></code> | <code>string</code> | Optional. |
-| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#id EventarcTrigger#id}. |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#id EventarcTrigger#id}. |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Optional. User labels attached to the triggers that can be used to group resources. |
-| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#project EventarcTrigger#project}. |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#project EventarcTrigger#project}. |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.retryPolicy">retryPolicy</a></code> | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy">EventarcTriggerRetryPolicy</a></code> | retry_policy block. |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTimeouts">EventarcTriggerTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.transport">transport</a></code> | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTransport">EventarcTriggerTransport</a></code> | transport block. |
@@ -1249,7 +1292,7 @@ public readonly destination: EventarcTriggerDestination;
 
 destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#destination EventarcTrigger#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#destination EventarcTrigger#destination}
 
 ---
 
@@ -1263,7 +1306,7 @@ public readonly location: string;
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#location EventarcTrigger#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#location EventarcTrigger#location}
 
 ---
 
@@ -1277,7 +1320,7 @@ public readonly matchingCriteria: IResolvable | EventarcTriggerMatchingCriteria[
 
 matching_criteria block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#matching_criteria EventarcTrigger#matching_criteria}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#matching_criteria EventarcTrigger#matching_criteria}
 
 ---
 
@@ -1291,7 +1334,7 @@ public readonly name: string;
 
 Required. The resource name of the trigger. Must be unique within the location on the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#name EventarcTrigger#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#name EventarcTrigger#name}
 
 ---
 
@@ -1307,7 +1350,7 @@ Optional.
 
 The name of the channel associated with the trigger in 'projects/{project}/locations/{location}/channels/{channel}' format. You must provide a channel to receive events from Eventarc SaaS partners.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#channel EventarcTrigger#channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#channel EventarcTrigger#channel}
 
 ---
 
@@ -1323,7 +1366,7 @@ Optional.
 
 EventDataContentType specifies the type of payload in MIME format that is expected from the CloudEvent data field. This is set to 'application/json' if the value is not defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#event_data_content_type EventarcTrigger#event_data_content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#event_data_content_type EventarcTrigger#event_data_content_type}
 
 ---
 
@@ -1335,7 +1378,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#id EventarcTrigger#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#id EventarcTrigger#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1355,7 +1398,7 @@ Optional. User labels attached to the triggers that can be used to group resourc
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#labels EventarcTrigger#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#labels EventarcTrigger#labels}
 
 ---
 
@@ -1367,7 +1410,21 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#project EventarcTrigger#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#project EventarcTrigger#project}.
+
+---
+
+##### `retryPolicy`<sup>Optional</sup> <a name="retryPolicy" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig.property.retryPolicy"></a>
+
+```typescript
+public readonly retryPolicy: EventarcTriggerRetryPolicy;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy">EventarcTriggerRetryPolicy</a>
+
+retry_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#retry_policy EventarcTrigger#retry_policy}
 
 ---
 
@@ -1383,7 +1440,7 @@ Optional.
 
 The IAM service account email associated with the trigger. The service account represents the identity of the trigger. The principal who calls this API must have 'iam.serviceAccounts.actAs' permission in the service account. See https://cloud.google.com/iam/docs/understanding-service-accounts#sa_common for more information. For Cloud Run destinations, this service account is used to generate identity tokens when invoking the service. See https://cloud.google.com/run/docs/triggering/pubsub-push#create-service-account for information on how to invoke authenticated Cloud Run services. In order to create Audit Log triggers, the service account should also have 'roles/eventarc.eventReceiver' IAM role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#service_account EventarcTrigger#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#service_account EventarcTrigger#service_account}
 
 ---
 
@@ -1397,7 +1454,7 @@ public readonly timeouts: EventarcTriggerTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#timeouts EventarcTrigger#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#timeouts EventarcTrigger#timeouts}
 
 ---
 
@@ -1411,7 +1468,7 @@ public readonly transport: EventarcTriggerTransport;
 
 transport block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#transport EventarcTrigger#transport}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#transport EventarcTrigger#transport}
 
 ---
 
@@ -1447,7 +1504,7 @@ public readonly cloudRunService: EventarcTriggerDestinationCloudRunService;
 
 cloud_run_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#cloud_run_service EventarcTrigger#cloud_run_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#cloud_run_service EventarcTrigger#cloud_run_service}
 
 ---
 
@@ -1461,7 +1518,7 @@ public readonly gke: EventarcTriggerDestinationGke;
 
 gke block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#gke EventarcTrigger#gke}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#gke EventarcTrigger#gke}
 
 ---
 
@@ -1475,7 +1532,7 @@ public readonly httpEndpoint: EventarcTriggerDestinationHttpEndpoint;
 
 http_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#http_endpoint EventarcTrigger#http_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#http_endpoint EventarcTrigger#http_endpoint}
 
 ---
 
@@ -1489,7 +1546,7 @@ public readonly networkConfig: EventarcTriggerDestinationNetworkConfig;
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#network_config EventarcTrigger#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#network_config EventarcTrigger#network_config}
 
 ---
 
@@ -1505,7 +1562,7 @@ The resource name of the Workflow whose Executions are triggered by the events.
 
 The Workflow resource should be deployed in the same project as the trigger. Format: 'projects/{project}/locations/{location}/workflows/{workflow}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#workflow EventarcTrigger#workflow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#workflow EventarcTrigger#workflow}
 
 ---
 
@@ -1541,7 +1598,7 @@ Required.
 
 The name of the Cloud Run service being addressed. See https://cloud.google.com/run/docs/reference/rest/v1/namespaces.services. Only services located in the same project of the trigger object can be addressed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#service EventarcTrigger#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#service EventarcTrigger#service}
 
 ---
 
@@ -1557,7 +1614,7 @@ Optional.
 
 The relative path on the Cloud Run service the events should be sent to. The value must conform to the definition of URI path segment (section 3.3 of RFC2396). Examples: "/route", "route", "route/subroute".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#path EventarcTrigger#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#path EventarcTrigger#path}
 
 ---
 
@@ -1571,7 +1628,7 @@ public readonly region: string;
 
 Required. The region the Cloud Run service is deployed in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#region EventarcTrigger#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#region EventarcTrigger#region}
 
 ---
 
@@ -1609,7 +1666,7 @@ Required.
 
 The name of the cluster the GKE service is running in. The cluster must be running in the same project as the trigger being created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#cluster EventarcTrigger#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#cluster EventarcTrigger#cluster}
 
 ---
 
@@ -1625,7 +1682,7 @@ Required.
 
 The name of the Google Compute Engine in which the cluster resides, which can either be compute zone (for example, us-central1-a) for the zonal clusters or region (for example, us-central1) for regional clusters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#location EventarcTrigger#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#location EventarcTrigger#location}
 
 ---
 
@@ -1639,7 +1696,7 @@ public readonly namespace: string;
 
 Required. The namespace the GKE service is running in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#namespace EventarcTrigger#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#namespace EventarcTrigger#namespace}
 
 ---
 
@@ -1653,7 +1710,7 @@ public readonly service: string;
 
 Required. Name of the GKE service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#service EventarcTrigger#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#service EventarcTrigger#service}
 
 ---
 
@@ -1669,7 +1726,7 @@ Optional.
 
 The relative path on the GKE service the events should be sent to. The value must conform to the definition of a URI path segment (section 3.3 of RFC2396). Examples: "/route", "route", "route/subroute".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#path EventarcTrigger#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#path EventarcTrigger#path}
 
 ---
 
@@ -1703,7 +1760,7 @@ Required.
 
 The URI of the HTTP enpdoint. The value must be a RFC2396 URI string. Examples: 'http://10.10.10.8:80/route', 'http://svc.us-central1.p.local:8080/'. Only HTTP and HTTPS protocols are supported. The host can be either a static IP addressable from the VPC specified by the network config, or an internal DNS hostname of the service resolvable via Cloud DNS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#uri EventarcTrigger#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#uri EventarcTrigger#uri}
 
 ---
 
@@ -1735,7 +1792,7 @@ public readonly networkAttachment: string;
 
 Required. Name of the NetworkAttachment that allows access to the destination VPC. Format: 'projects/{PROJECT_ID}/regions/{REGION}/networkAttachments/{NETWORK_ATTACHMENT_NAME}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#network_attachment EventarcTrigger#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#network_attachment EventarcTrigger#network_attachment}
 
 ---
 
@@ -1771,7 +1828,7 @@ Required.
 
 The name of a CloudEvents attribute. Currently, only a subset of attributes are supported for filtering. All triggers MUST provide a filter for the 'type' attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#attribute EventarcTrigger#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#attribute EventarcTrigger#attribute}
 
 ---
 
@@ -1785,7 +1842,7 @@ public readonly value: string;
 
 Required. The value for the attribute. See https://cloud.google.com/eventarc/docs/creating-triggers#trigger-gcloud for available values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#value EventarcTrigger#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#value EventarcTrigger#value}
 
 ---
 
@@ -1801,7 +1858,39 @@ Optional.
 
 The operator used for matching the events with the value of the filter. If not specified, only events that have an exact key-value pair specified in the filter are matched. The only allowed value is 'match-path-pattern'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#operator EventarcTrigger#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#operator EventarcTrigger#operator}
+
+---
+
+### EventarcTriggerRetryPolicy <a name="EventarcTriggerRetryPolicy" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy.Initializer"></a>
+
+```typescript
+import { eventarcTrigger } from '@cdktn/provider-google'
+
+const eventarcTriggerRetryPolicy: eventarcTrigger.EventarcTriggerRetryPolicy = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy.property.maxAttempts">maxAttempts</a></code> | <code>number</code> | The maximum number of delivery attempts for any message. The only valid value is 1. |
+
+---
+
+##### `maxAttempts`<sup>Optional</sup> <a name="maxAttempts" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy.property.maxAttempts"></a>
+
+```typescript
+public readonly maxAttempts: number;
+```
+
+- *Type:* number
+
+The maximum number of delivery attempts for any message. The only valid value is 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#max_attempts EventarcTrigger#max_attempts}
 
 ---
 
@@ -1819,9 +1908,9 @@ const eventarcTriggerTimeouts: eventarcTrigger.EventarcTriggerTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#create EventarcTrigger#create}. |
-| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#delete EventarcTrigger#delete}. |
-| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#update EventarcTrigger#update}. |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#create EventarcTrigger#create}. |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#delete EventarcTrigger#delete}. |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#update EventarcTrigger#update}. |
 
 ---
 
@@ -1833,7 +1922,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#create EventarcTrigger#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#create EventarcTrigger#create}.
 
 ---
 
@@ -1845,7 +1934,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#delete EventarcTrigger#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#delete EventarcTrigger#delete}.
 
 ---
 
@@ -1857,7 +1946,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#update EventarcTrigger#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#update EventarcTrigger#update}.
 
 ---
 
@@ -1889,7 +1978,7 @@ public readonly pubsub: EventarcTriggerTransportPubsub;
 
 pubsub block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#pubsub EventarcTrigger#pubsub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#pubsub EventarcTrigger#pubsub}
 
 ---
 
@@ -1923,7 +2012,7 @@ Optional.
 
 The name of the Pub/Sub topic created and managed by Eventarc system as a transport for the event delivery. Format: 'projects/{PROJECT_ID}/topics/{TOPIC_NAME}. You may set an existing topic for triggers of the type google.cloud.pubsub.topic.v1.messagePublished' only. The topic you provide here will not be deleted by Eventarc at trigger deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_trigger#topic EventarcTrigger#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_trigger#topic EventarcTrigger#topic}
 
 ---
 
@@ -4119,6 +4208,284 @@ public readonly internalValue: IResolvable | EventarcTriggerMatchingCriteria;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteria">EventarcTriggerMatchingCriteria</a>
+
+---
+
+
+### EventarcTriggerRetryPolicyOutputReference <a name="EventarcTriggerRetryPolicyOutputReference" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.Initializer"></a>
+
+```typescript
+import { eventarcTrigger } from '@cdktn/provider-google'
+
+new eventarcTrigger.EventarcTriggerRetryPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.resetMaxAttempts">resetMaxAttempts</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetMaxAttempts` <a name="resetMaxAttempts" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.resetMaxAttempts"></a>
+
+```typescript
+public resetMaxAttempts(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.property.maxAttemptsInput">maxAttemptsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.property.maxAttempts">maxAttempts</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy">EventarcTriggerRetryPolicy</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `maxAttemptsInput`<sup>Optional</sup> <a name="maxAttemptsInput" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.property.maxAttemptsInput"></a>
+
+```typescript
+public readonly maxAttemptsInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxAttempts`<sup>Required</sup> <a name="maxAttempts" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.property.maxAttempts"></a>
+
+```typescript
+public readonly maxAttempts: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: EventarcTriggerRetryPolicy;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy">EventarcTriggerRetryPolicy</a>
 
 ---
 

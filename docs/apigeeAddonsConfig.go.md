@@ -4,12 +4,12 @@
 
 ### ApigeeAddonsConfig <a name="ApigeeAddonsConfig" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config google_apigee_addons_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config google_apigee_addons_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfig(scope Construct, id *string, config ApigeeAddonsConfigConfig) ApigeeAddonsConfig
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.ApigeeAddonsConfig_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.ApigeeAddonsConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ apigeeaddonsconfig.ApigeeAddonsConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.ApigeeAddonsConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ apigeeaddonsconfig.ApigeeAddonsConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.ApigeeAddonsConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the ApigeeAddonsConfig to impo
 
 The id of the existing ApigeeAddonsConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,14 +824,14 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfig {
-	AdvancedApiOpsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig,
-	ApiSecurityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfig,
-	ConnectorsPlatformConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig,
-	IntegrationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfig,
-	MonetizationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfig,
+	AdvancedApiOpsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig,
+	ApiSecurityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfig,
+	ConnectorsPlatformConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig,
+	IntegrationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfig,
+	MonetizationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfig,
 }
 ```
 
@@ -857,7 +857,7 @@ AdvancedApiOpsConfig ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig
 
 advanced_api_ops_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#advanced_api_ops_config ApigeeAddonsConfig#advanced_api_ops_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#advanced_api_ops_config ApigeeAddonsConfig#advanced_api_ops_config}
 
 ---
 
@@ -871,7 +871,7 @@ ApiSecurityConfig ApigeeAddonsConfigAddonsConfigApiSecurityConfig
 
 api_security_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#api_security_config ApigeeAddonsConfig#api_security_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#api_security_config ApigeeAddonsConfig#api_security_config}
 
 ---
 
@@ -885,7 +885,7 @@ ConnectorsPlatformConfig ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig
 
 connectors_platform_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#connectors_platform_config ApigeeAddonsConfig#connectors_platform_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#connectors_platform_config ApigeeAddonsConfig#connectors_platform_config}
 
 ---
 
@@ -899,7 +899,7 @@ IntegrationConfig ApigeeAddonsConfigAddonsConfigIntegrationConfig
 
 integration_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#integration_config ApigeeAddonsConfig#integration_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#integration_config ApigeeAddonsConfig#integration_config}
 
 ---
 
@@ -913,7 +913,7 @@ MonetizationConfig ApigeeAddonsConfigAddonsConfigMonetizationConfig
 
 monetization_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#monetization_config ApigeeAddonsConfig#monetization_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#monetization_config ApigeeAddonsConfig#monetization_config}
 
 ---
 
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig {
 	Enabled: interface{},
@@ -947,7 +947,7 @@ Enabled interface{}
 
 Flag that specifies whether the Advanced API Ops add-on is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
 
 ---
 
@@ -956,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfig {
 	Enabled: interface{},
@@ -981,7 +981,7 @@ Enabled interface{}
 
 Flag that specifies whether the API security add-on is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
 
 ---
 
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig {
 	Enabled: interface{},
@@ -1015,7 +1015,7 @@ Enabled interface{}
 
 Flag that specifies whether the Connectors Platform add-on is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
 
 ---
 
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfigIntegrationConfig {
 	Enabled: interface{},
@@ -1049,7 +1049,7 @@ Enabled interface{}
 
 Flag that specifies whether the Integration add-on is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
 
 ---
 
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigAddonsConfigMonetizationConfig {
 	Enabled: interface{},
@@ -1083,7 +1083,7 @@ Enabled interface{}
 
 Flag that specifies whether the Monetization add-on is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#enabled ApigeeAddonsConfig#enabled}
 
 ---
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigConfig {
 	Connection: interface{},
@@ -1103,9 +1103,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconf
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Org: *string,
-	AddonsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfig,
+	AddonsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfig,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts,
 }
 ```
 
@@ -1122,7 +1122,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconf
 | <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigConfig.property.org">Org</a></code> | <code>*string</code> | Name of the Apigee organization. |
 | <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigConfig.property.addonsConfig">AddonsConfig</a></code> | <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfig">ApigeeAddonsConfigAddonsConfig</a></code> | addons_config block. |
-| <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#id ApigeeAddonsConfig#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#id ApigeeAddonsConfig#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts">ApigeeAddonsConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1207,7 +1207,7 @@ Org *string
 
 Name of the Apigee organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#org ApigeeAddonsConfig#org}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#org ApigeeAddonsConfig#org}
 
 ---
 
@@ -1221,7 +1221,7 @@ AddonsConfig ApigeeAddonsConfigAddonsConfig
 
 addons_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#addons_config ApigeeAddonsConfig#addons_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#addons_config ApigeeAddonsConfig#addons_config}
 
 ---
 
@@ -1233,7 +1233,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#id ApigeeAddonsConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#id ApigeeAddonsConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1250,7 +1250,7 @@ Timeouts ApigeeAddonsConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#timeouts ApigeeAddonsConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#timeouts ApigeeAddonsConfig#timeouts}
 
 ---
 
@@ -1259,7 +1259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 &apigeeaddonsconfig.ApigeeAddonsConfigTimeouts {
 	Create: *string,
@@ -1272,9 +1272,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#create ApigeeAddonsConfig#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#delete ApigeeAddonsConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#update ApigeeAddonsConfig#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#create ApigeeAddonsConfig#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#delete ApigeeAddonsConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#update ApigeeAddonsConfig#update}. |
 
 ---
 
@@ -1286,7 +1286,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#create ApigeeAddonsConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#create ApigeeAddonsConfig#create}.
 
 ---
 
@@ -1298,7 +1298,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#delete ApigeeAddonsConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#delete ApigeeAddonsConfig#delete}.
 
 ---
 
@@ -1310,7 +1310,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_addons_config#update ApigeeAddonsConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_addons_config#update ApigeeAddonsConfig#update}.
 
 ---
 
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfigOutputReference
 ```
@@ -1599,7 +1599,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfigAdvancedApiOpsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigApiSecurityConfigOutputReference
 ```
@@ -1888,7 +1888,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfigApiSecurityConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference
 ```
@@ -2177,7 +2177,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigIntegrationConfigOutputReference
 ```
@@ -2455,7 +2455,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfigIntegrationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference
 ```
@@ -2733,7 +2733,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfigMonetizationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigAddonsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigAddonsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigAddonsConfigOutputReference
 ```
@@ -3192,7 +3192,7 @@ func InternalValue() ApigeeAddonsConfigAddonsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeAddonsConfig.ApigeeAddonsConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeeaddonsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeeaddonsconfig"
 
 apigeeaddonsconfig.NewApigeeAddonsConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeAddonsConfigTimeoutsOutputReference
 ```

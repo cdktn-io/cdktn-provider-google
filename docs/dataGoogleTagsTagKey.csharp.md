@@ -4,7 +4,7 @@
 
 ### DataGoogleTagsTagKey <a name="DataGoogleTagsTagKey" id="@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_key google_tags_tag_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_key google_tags_tag_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataGoogleTagsTagKey to im
 
 The id of the existing DataGoogleTagsTagKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -415,6 +415,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.property.forEach">ForEach</a></code> | <code>Io.Cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.property.allowedValuesRegex">AllowedValuesRegex</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.property.createTime">CreateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -547,6 +548,16 @@ public TerraformProvider Provider { get; }
 ```
 
 - *Type:* Io.Cdktn.TerraformProvider
+
+---
+
+##### `AllowedValuesRegex`<sup>Required</sup> <a name="AllowedValuesRegex" id="@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKey.property.allowedValuesRegex"></a>
+
+```csharp
+public string AllowedValuesRegex { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -701,8 +712,8 @@ new DataGoogleTagsTagKeyConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.shortName">ShortName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagKey.DataGoogleTagsTagKeyConfig.property.shortName">ShortName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}. |
 
 ---
 
@@ -784,7 +795,7 @@ public string Parent { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_key#parent DataGoogleTagsTagKey#parent}.
 
 ---
 
@@ -796,7 +807,7 @@ public string ShortName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/tags_tag_key#short_name DataGoogleTagsTagKey#short_name}.
 
 ---
 
