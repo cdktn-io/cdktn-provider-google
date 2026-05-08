@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleServiceAccountKeyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#id DataGoogleServiceAccountKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key#id DataGoogleServiceAccountKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#name DataGoogleServiceAccountKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key#name DataGoogleServiceAccountKey#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#project DataGoogleServiceAccountKey#project}
-  */
-  readonly project?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#public_key_type DataGoogleServiceAccountKey#public_key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key#public_key_type DataGoogleServiceAccountKey#public_key_type}
   */
   readonly publicKeyType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key google_service_account_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key google_service_account_key}
 */
 export class DataGoogleServiceAccountKey extends cdktn.TerraformDataSource {
 
@@ -50,7 +46,7 @@ export class DataGoogleServiceAccountKey extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleServiceAccountKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleServiceAccountKey to import
-  * @param importFromId The id of the existing DataGoogleServiceAccountKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleServiceAccountKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleServiceAccountKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -62,7 +58,7 @@ export class DataGoogleServiceAccountKey extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key google_service_account_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key google_service_account_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,8 +69,8 @@ export class DataGoogleServiceAccountKey extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_service_account_key',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -86,7 +82,6 @@ export class DataGoogleServiceAccountKey extends cdktn.TerraformDataSource {
     });
     this._id = config.id;
     this._name = config.name;
-    this._project = config.project;
     this._publicKeyType = config.publicKeyType;
   }
 
@@ -128,22 +123,6 @@ export class DataGoogleServiceAccountKey extends cdktn.TerraformDataSource {
     return this._name;
   }
 
-  // project - computed: false, optional: true, required: false
-  private _project?: string; 
-  public get project() {
-    return this.getStringAttribute('project');
-  }
-  public set project(value: string) {
-    this._project = value;
-  }
-  public resetProject() {
-    this._project = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get projectInput() {
-    return this._project;
-  }
-
   // public_key - computed: true, optional: false, required: false
   public get publicKey() {
     return this.getStringAttribute('public_key');
@@ -173,7 +152,6 @@ export class DataGoogleServiceAccountKey extends cdktn.TerraformDataSource {
     return {
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
-      project: cdktn.stringToTerraform(this._project),
       public_key_type: cdktn.stringToTerraform(this._publicKeyType),
     };
   }
@@ -188,12 +166,6 @@ export class DataGoogleServiceAccountKey extends cdktn.TerraformDataSource {
       },
       name: {
         value: cdktn.stringToHclTerraform(this._name),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      project: {
-        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

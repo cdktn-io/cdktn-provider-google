@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,18 @@ export interface ComputePacketMirroringConfig extends cdktn.TerraformMetaArgumen
   /**
   * A human-readable description of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#description ComputePacketMirroring#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#description ComputePacketMirroring#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#id ComputePacketMirroring#id}
+  * Indicates whether or not this packet mirroring takes effect. If set to FALSE, this packet mirroring
+  * policy will not be enforced on the network. The default is TRUE. Possible values: ["TRUE", "FALSE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#enable ComputePacketMirroring#enable}
+  */
+  readonly enable?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#id ComputePacketMirroring#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +35,7 @@ export interface ComputePacketMirroringConfig extends cdktn.TerraformMetaArgumen
   /**
   * The name of the packet mirroring rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#name ComputePacketMirroring#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#name ComputePacketMirroring#name}
   */
   readonly name: string;
   /**
@@ -36,48 +43,48 @@ export interface ComputePacketMirroringConfig extends cdktn.TerraformMetaArgumen
   * used to break ties in the case of two rules that apply to
   * the same instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#priority ComputePacketMirroring#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#priority ComputePacketMirroring#priority}
   */
   readonly priority?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#project ComputePacketMirroring#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#project ComputePacketMirroring#project}
   */
   readonly project?: string;
   /**
   * The Region in which the created address should reside.
   * If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#region ComputePacketMirroring#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#region ComputePacketMirroring#region}
   */
   readonly region?: string;
   /**
   * collector_ilb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#collector_ilb ComputePacketMirroring#collector_ilb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#collector_ilb ComputePacketMirroring#collector_ilb}
   */
   readonly collectorIlb: ComputePacketMirroringCollectorIlb;
   /**
   * filter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#filter ComputePacketMirroring#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#filter ComputePacketMirroring#filter}
   */
   readonly filter?: ComputePacketMirroringFilter;
   /**
   * mirrored_resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#mirrored_resources ComputePacketMirroring#mirrored_resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#mirrored_resources ComputePacketMirroring#mirrored_resources}
   */
   readonly mirroredResources: ComputePacketMirroringMirroredResources;
   /**
   * network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#network ComputePacketMirroring#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#network ComputePacketMirroring#network}
   */
   readonly network: ComputePacketMirroringNetwork;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#timeouts ComputePacketMirroring#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#timeouts ComputePacketMirroring#timeouts}
   */
   readonly timeouts?: ComputePacketMirroringTimeouts;
 }
@@ -85,7 +92,7 @@ export interface ComputePacketMirroringCollectorIlb {
   /**
   * The URL of the forwarding rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
   */
   readonly url: string;
 }
@@ -169,19 +176,19 @@ export interface ComputePacketMirroringFilter {
   * IP CIDR ranges that apply as a filter on the source (ingress) or
   * destination (egress) IP in the IP header. Only IPv4 is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#cidr_ranges ComputePacketMirroring#cidr_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#cidr_ranges ComputePacketMirroring#cidr_ranges}
   */
   readonly cidrRanges?: string[];
   /**
   * Direction of traffic to mirror. Default value: "BOTH" Possible values: ["INGRESS", "EGRESS", "BOTH"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#direction ComputePacketMirroring#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#direction ComputePacketMirroring#direction}
   */
   readonly direction?: string;
   /**
   * Possible IP protocols including tcp, udp, icmp and esp
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#ip_protocols ComputePacketMirroring#ip_protocols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#ip_protocols ComputePacketMirroring#ip_protocols}
   */
   readonly ipProtocols?: string[];
 }
@@ -325,7 +332,7 @@ export interface ComputePacketMirroringMirroredResourcesInstances {
   /**
   * The URL of the instances where this rule should be active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
   */
   readonly url: string;
 }
@@ -440,7 +447,7 @@ export interface ComputePacketMirroringMirroredResourcesSubnetworks {
   /**
   * The URL of the subnetwork where this rule should be active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
   */
   readonly url: string;
 }
@@ -555,19 +562,19 @@ export interface ComputePacketMirroringMirroredResources {
   /**
   * All instances with these tags will be mirrored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#tags ComputePacketMirroring#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#tags ComputePacketMirroring#tags}
   */
   readonly tags?: string[];
   /**
   * instances block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#instances ComputePacketMirroring#instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#instances ComputePacketMirroring#instances}
   */
   readonly instances?: ComputePacketMirroringMirroredResourcesInstances[] | cdktn.IResolvable;
   /**
   * subnetworks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#subnetworks ComputePacketMirroring#subnetworks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#subnetworks ComputePacketMirroring#subnetworks}
   */
   readonly subnetworks?: ComputePacketMirroringMirroredResourcesSubnetworks[] | cdktn.IResolvable;
 }
@@ -600,13 +607,13 @@ export function computePacketMirroringMirroredResourcesToHclTerraform(struct?: C
     instances: {
       value: cdktn.listMapperHcl(computePacketMirroringMirroredResourcesInstancesToHclTerraform, true)(struct!.instances),
       isBlock: true,
-      type: "list",
+      type: "set",
       storageClassType: "ComputePacketMirroringMirroredResourcesInstancesList",
     },
     subnetworks: {
       value: cdktn.listMapperHcl(computePacketMirroringMirroredResourcesSubnetworksToHclTerraform, true)(struct!.subnetworks),
       isBlock: true,
-      type: "list",
+      type: "set",
       storageClassType: "ComputePacketMirroringMirroredResourcesSubnetworksList",
     },
   };
@@ -676,7 +683,7 @@ export class ComputePacketMirroringMirroredResourcesOutputReference extends cdkt
   }
 
   // instances - computed: false, optional: true, required: false
-  private _instances = new ComputePacketMirroringMirroredResourcesInstancesList(this, "instances", false);
+  private _instances = new ComputePacketMirroringMirroredResourcesInstancesList(this, "instances", true);
   public get instances() {
     return this._instances;
   }
@@ -692,7 +699,7 @@ export class ComputePacketMirroringMirroredResourcesOutputReference extends cdkt
   }
 
   // subnetworks - computed: false, optional: true, required: false
-  private _subnetworks = new ComputePacketMirroringMirroredResourcesSubnetworksList(this, "subnetworks", false);
+  private _subnetworks = new ComputePacketMirroringMirroredResourcesSubnetworksList(this, "subnetworks", true);
   public get subnetworks() {
     return this._subnetworks;
   }
@@ -711,7 +718,7 @@ export interface ComputePacketMirroringNetwork {
   /**
   * The full self_link URL of the network where this rule is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#url ComputePacketMirroring#url}
   */
   readonly url: string;
 }
@@ -792,15 +799,15 @@ export class ComputePacketMirroringNetworkOutputReference extends cdktn.ComplexO
 }
 export interface ComputePacketMirroringTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#create ComputePacketMirroring#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#create ComputePacketMirroring#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#delete ComputePacketMirroring#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#delete ComputePacketMirroring#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#update ComputePacketMirroring#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#update ComputePacketMirroring#update}
   */
   readonly update?: string;
 }
@@ -952,7 +959,7 @@ export class ComputePacketMirroringTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring}
 */
 export class ComputePacketMirroring extends cdktn.TerraformResource {
 
@@ -968,7 +975,7 @@ export class ComputePacketMirroring extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputePacketMirroring resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputePacketMirroring to import
-  * @param importFromId The id of the existing ComputePacketMirroring that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputePacketMirroring that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputePacketMirroring to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -980,7 +987,7 @@ export class ComputePacketMirroring extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_packet_mirroring google_compute_packet_mirroring} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -991,8 +998,8 @@ export class ComputePacketMirroring extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_packet_mirroring',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1003,6 +1010,7 @@ export class ComputePacketMirroring extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._description = config.description;
+    this._enable = config.enable;
     this._id = config.id;
     this._name = config.name;
     this._priority = config.priority;
@@ -1033,6 +1041,22 @@ export class ComputePacketMirroring extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // enable - computed: true, optional: true, required: false
+  private _enable?: string; 
+  public get enable() {
+    return this.getStringAttribute('enable');
+  }
+  public set enable(value: string) {
+    this._enable = value;
+  }
+  public resetEnable() {
+    this._enable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableInput() {
+    return this._enable;
   }
 
   // id - computed: true, optional: true, required: false
@@ -1190,6 +1214,7 @@ export class ComputePacketMirroring extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktn.stringToTerraform(this._description),
+      enable: cdktn.stringToTerraform(this._enable),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       priority: cdktn.numberToTerraform(this._priority),
@@ -1207,6 +1232,12 @@ export class ComputePacketMirroring extends cdktn.TerraformResource {
     const attrs = {
       description: {
         value: cdktn.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enable: {
+        value: cdktn.stringToHclTerraform(this._enable),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

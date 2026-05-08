@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_backup_plan
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/backup_dr_backup_plan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataGoogleBackupDrBackupPlanConfig extends cdktn.TerraformMetaA
   /**
   * The ID of the backup plan
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_backup_plan#backup_plan_id DataGoogleBackupDrBackupPlan#backup_plan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/backup_dr_backup_plan#backup_plan_id DataGoogleBackupDrBackupPlan#backup_plan_id}
   */
   readonly backupPlanId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_backup_plan#id DataGoogleBackupDrBackupPlan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/backup_dr_backup_plan#id DataGoogleBackupDrBackupPlan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,11 +28,11 @@ export interface DataGoogleBackupDrBackupPlanConfig extends cdktn.TerraformMetaA
   /**
   * The location for the backup plan
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_backup_plan#location DataGoogleBackupDrBackupPlan#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/backup_dr_backup_plan#location DataGoogleBackupDrBackupPlan#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_backup_plan#project DataGoogleBackupDrBackupPlan#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/backup_dr_backup_plan#project DataGoogleBackupDrBackupPlan#project}
   */
   readonly project?: string;
 }
@@ -394,9 +394,84 @@ export class DataGoogleBackupDrBackupPlanBackupRulesList extends cdktn.ComplexLi
     return new DataGoogleBackupDrBackupPlanBackupRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleBackupDrBackupPlanDiskBackupPlanProperties {
+}
+
+export function dataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesToTerraform(struct?: DataGoogleBackupDrBackupPlanDiskBackupPlanProperties): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesToHclTerraform(struct?: DataGoogleBackupDrBackupPlanDiskBackupPlanProperties): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleBackupDrBackupPlanDiskBackupPlanProperties | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleBackupDrBackupPlanDiskBackupPlanProperties | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // guest_flush - computed: true, optional: false, required: false
+  public get guestFlush() {
+    return this.getBooleanAttribute('guest_flush');
+  }
+}
+
+export class DataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference {
+    return new DataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan}
 */
 export class DataGoogleBackupDrBackupPlan extends cdktn.TerraformDataSource {
 
@@ -412,7 +487,7 @@ export class DataGoogleBackupDrBackupPlan extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleBackupDrBackupPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleBackupDrBackupPlan to import
-  * @param importFromId The id of the existing DataGoogleBackupDrBackupPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_backup_plan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleBackupDrBackupPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/backup_dr_backup_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleBackupDrBackupPlan to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -424,7 +499,7 @@ export class DataGoogleBackupDrBackupPlan extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/backup_dr_backup_plan google_backup_dr_backup_plan} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -435,8 +510,8 @@ export class DataGoogleBackupDrBackupPlan extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_backup_dr_backup_plan',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -495,6 +570,12 @@ export class DataGoogleBackupDrBackupPlan extends cdktn.TerraformDataSource {
     return this.getStringAttribute('description');
   }
 
+  // disk_backup_plan_properties - computed: true, optional: false, required: false
+  private _diskBackupPlanProperties = new DataGoogleBackupDrBackupPlanDiskBackupPlanPropertiesList(this, "disk_backup_plan_properties", false);
+  public get diskBackupPlanProperties() {
+    return this._diskBackupPlanProperties;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -529,6 +610,11 @@ export class DataGoogleBackupDrBackupPlan extends cdktn.TerraformDataSource {
     return this.getNumberAttribute('log_retention_days');
   }
 
+  // max_custom_on_demand_retention_days - computed: true, optional: false, required: false
+  public get maxCustomOnDemandRetentionDays() {
+    return this.getNumberAttribute('max_custom_on_demand_retention_days');
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -553,6 +639,11 @@ export class DataGoogleBackupDrBackupPlan extends cdktn.TerraformDataSource {
   // resource_type - computed: true, optional: false, required: false
   public get resourceType() {
     return this.getStringAttribute('resource_type');
+  }
+
+  // supported_resource_types - computed: true, optional: false, required: false
+  public get supportedResourceTypes() {
+    return this.getListAttribute('supported_resource_types');
   }
 
   // update_time - computed: true, optional: false, required: false

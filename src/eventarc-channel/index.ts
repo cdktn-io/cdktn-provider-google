@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,58 +15,67 @@ export interface EventarcChannelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt their event data. It must match the pattern 'projects/* /locations/* /keyRings/* /cryptoKeys/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#crypto_key_name EventarcChannel#crypto_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#crypto_key_name EventarcChannel#crypto_key_name}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly cryptoKeyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#id EventarcChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#id EventarcChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * User-defined labels for the channel.
+  * 
+  * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+  * Please refer to the field 'effective_labels' for all of the labels present on the resource.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#labels EventarcChannel#labels}
+  */
+  readonly labels?: { [key: string]: string };
+  /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#location EventarcChannel#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#location EventarcChannel#location}
   */
   readonly location: string;
   /**
   * The resource name of the channel. Must be unique within the location on the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#name EventarcChannel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#name EventarcChannel#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#project EventarcChannel#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#project EventarcChannel#project}
   */
   readonly project?: string;
   /**
   * The name of the event provider (e.g. Eventarc SaaS partner) associated with the channel. This provider will be granted permissions to publish events to the channel. Format: 'projects/{project}/locations/{location}/providers/{provider_id}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#third_party_provider EventarcChannel#third_party_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#third_party_provider EventarcChannel#third_party_provider}
   */
   readonly thirdPartyProvider?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#timeouts EventarcChannel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#timeouts EventarcChannel#timeouts}
   */
   readonly timeouts?: EventarcChannelTimeouts;
 }
 export interface EventarcChannelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#create EventarcChannel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#create EventarcChannel#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#delete EventarcChannel#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#delete EventarcChannel#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#update EventarcChannel#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#update EventarcChannel#update}
   */
   readonly update?: string;
 }
@@ -218,7 +227,7 @@ export class EventarcChannelTimeoutsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel google_eventarc_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel google_eventarc_channel}
 */
 export class EventarcChannel extends cdktn.TerraformResource {
 
@@ -234,7 +243,7 @@ export class EventarcChannel extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a EventarcChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EventarcChannel to import
-  * @param importFromId The id of the existing EventarcChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EventarcChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EventarcChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -246,7 +255,7 @@ export class EventarcChannel extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/eventarc_channel google_eventarc_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/eventarc_channel google_eventarc_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -257,8 +266,8 @@ export class EventarcChannel extends cdktn.TerraformResource {
       terraformResourceType: 'google_eventarc_channel',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -270,6 +279,7 @@ export class EventarcChannel extends cdktn.TerraformResource {
     });
     this._cryptoKeyName = config.cryptoKeyName;
     this._id = config.id;
+    this._labels = config.labels;
     this._location = config.location;
     this._name = config.name;
     this._project = config.project;
@@ -307,6 +317,12 @@ export class EventarcChannel extends cdktn.TerraformResource {
     return this._cryptoKeyName;
   }
 
+  // effective_labels - computed: true, optional: false, required: false
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
+  public get effectiveLabels() {
+    return this._effectiveLabels;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -321,6 +337,22 @@ export class EventarcChannel extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // labels - computed: false, optional: true, required: false
+  private _labels?: { [key: string]: string }; 
+  public get labels() {
+    return this.getStringMapAttribute('labels');
+  }
+  public set labels(value: { [key: string]: string }) {
+    this._labels = value;
+  }
+  public resetLabels() {
+    this._labels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelsInput() {
+    return this._labels;
   }
 
   // location - computed: false, optional: false, required: true
@@ -375,6 +407,12 @@ export class EventarcChannel extends cdktn.TerraformResource {
     return this.getStringAttribute('state');
   }
 
+  // terraform_labels - computed: true, optional: false, required: false
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
+  public get terraformLabels() {
+    return this._terraformLabels;
+  }
+
   // third_party_provider - computed: false, optional: true, required: false
   private _thirdPartyProvider?: string; 
   public get thirdPartyProvider() {
@@ -425,6 +463,7 @@ export class EventarcChannel extends cdktn.TerraformResource {
     return {
       crypto_key_name: cdktn.stringToTerraform(this._cryptoKeyName),
       id: cdktn.stringToTerraform(this._id),
+      labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
       location: cdktn.stringToTerraform(this._location),
       name: cdktn.stringToTerraform(this._name),
       project: cdktn.stringToTerraform(this._project),
@@ -446,6 +485,12 @@ export class EventarcChannel extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      labels: {
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
       location: {
         value: cdktn.stringToHclTerraform(this._location),

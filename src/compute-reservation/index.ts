@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,22 +16,15 @@ export interface ComputeReservationConfig extends cdktn.TerraformMetaArguments {
   * Absolute time in future when the reservation will be auto-deleted by Compute Engine. Timestamp is represented in RFC3339 text format.
   * Cannot be used with delete_after_duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#delete_at_time ComputeReservation#delete_at_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#delete_at_time ComputeReservation#delete_at_time}
   */
   readonly deleteAtTime?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#description ComputeReservation#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#description ComputeReservation#description}
   */
   readonly description?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#id ComputeReservation#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
   /**
   * Name of the resource. Provided by the client when the resource is
   * created. The name must be 1-63 characters long, and comply with
@@ -41,11 +34,11 @@ export interface ComputeReservationConfig extends cdktn.TerraformMetaArguments {
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#name ComputeReservation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#name ComputeReservation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#project ComputeReservation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#project ComputeReservation#project}
   */
   readonly project?: string;
   /**
@@ -53,57 +46,537 @@ export interface ComputeReservationConfig extends cdktn.TerraformMetaArguments {
   * consume this reservation. Otherwise, it can be consumed by VMs with
   * affinity for any reservation. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#specific_reservation_required ComputeReservation#specific_reservation_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#specific_reservation_required ComputeReservation#specific_reservation_required}
   */
   readonly specificReservationRequired?: boolean | cdktn.IResolvable;
   /**
   * The zone where the reservation is made.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#zone ComputeReservation#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#zone ComputeReservation#zone}
   */
   readonly zone: string;
   /**
   * delete_after_duration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#delete_after_duration ComputeReservation#delete_after_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#delete_after_duration ComputeReservation#delete_after_duration}
   */
   readonly deleteAfterDuration?: ComputeReservationDeleteAfterDuration;
   /**
   * reservation_sharing_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#reservation_sharing_policy ComputeReservation#reservation_sharing_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#reservation_sharing_policy ComputeReservation#reservation_sharing_policy}
   */
   readonly reservationSharingPolicy?: ComputeReservationReservationSharingPolicy;
   /**
   * share_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#share_settings ComputeReservation#share_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#share_settings ComputeReservation#share_settings}
   */
   readonly shareSettings?: ComputeReservationShareSettings;
   /**
   * specific_reservation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#specific_reservation ComputeReservation#specific_reservation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#specific_reservation ComputeReservation#specific_reservation}
   */
   readonly specificReservation: ComputeReservationSpecificReservation;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#timeouts ComputeReservation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#timeouts ComputeReservation#timeouts}
   */
   readonly timeouts?: ComputeReservationTimeouts;
+}
+export interface ComputeReservationResourceStatusHealthInfo {
+}
+
+export function computeReservationResourceStatusHealthInfoToTerraform(struct?: ComputeReservationResourceStatusHealthInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function computeReservationResourceStatusHealthInfoToHclTerraform(struct?: ComputeReservationResourceStatusHealthInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ComputeReservationResourceStatusHealthInfoOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeReservationResourceStatusHealthInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeReservationResourceStatusHealthInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // degraded_block_count - computed: true, optional: false, required: false
+  public get degradedBlockCount() {
+    return this.getNumberAttribute('degraded_block_count');
+  }
+
+  // health_status - computed: true, optional: false, required: false
+  public get healthStatus() {
+    return this.getStringAttribute('health_status');
+  }
+
+  // healthy_block_count - computed: true, optional: false, required: false
+  public get healthyBlockCount() {
+    return this.getNumberAttribute('healthy_block_count');
+  }
+}
+
+export class ComputeReservationResourceStatusHealthInfoList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeReservationResourceStatusHealthInfoOutputReference {
+    return new ComputeReservationResourceStatusHealthInfoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance {
+}
+
+export function computeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceToTerraform(struct?: ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function computeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceToHclTerraform(struct?: ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // can_reschedule - computed: true, optional: false, required: false
+  public get canReschedule() {
+    return this.getBooleanAttribute('can_reschedule');
+  }
+
+  // latest_window_start_time - computed: true, optional: false, required: false
+  public get latestWindowStartTime() {
+    return this.getStringAttribute('latest_window_start_time');
+  }
+
+  // maintenance_on_shutdown - computed: true, optional: false, required: false
+  public get maintenanceOnShutdown() {
+    return this.getBooleanAttribute('maintenance_on_shutdown');
+  }
+
+  // maintenance_reasons - computed: true, optional: false, required: false
+  public get maintenanceReasons() {
+    return this.getListAttribute('maintenance_reasons');
+  }
+
+  // maintenance_status - computed: true, optional: false, required: false
+  public get maintenanceStatus() {
+    return this.getStringAttribute('maintenance_status');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // window_end_time - computed: true, optional: false, required: false
+  public get windowEndTime() {
+    return this.getStringAttribute('window_end_time');
+  }
+
+  // window_start_time - computed: true, optional: false, required: false
+  public get windowStartTime() {
+    return this.getStringAttribute('window_start_time');
+  }
+}
+
+export class ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference {
+    return new ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ComputeReservationResourceStatusReservationMaintenance {
+}
+
+export function computeReservationResourceStatusReservationMaintenanceToTerraform(struct?: ComputeReservationResourceStatusReservationMaintenance): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function computeReservationResourceStatusReservationMaintenanceToHclTerraform(struct?: ComputeReservationResourceStatusReservationMaintenance): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ComputeReservationResourceStatusReservationMaintenanceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeReservationResourceStatusReservationMaintenance | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeReservationResourceStatusReservationMaintenance | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // instance_maintenance_ongoing_count - computed: true, optional: false, required: false
+  public get instanceMaintenanceOngoingCount() {
+    return this.getNumberAttribute('instance_maintenance_ongoing_count');
+  }
+
+  // instance_maintenance_pending_count - computed: true, optional: false, required: false
+  public get instanceMaintenancePendingCount() {
+    return this.getNumberAttribute('instance_maintenance_pending_count');
+  }
+
+  // maintenance_ongoing_count - computed: true, optional: false, required: false
+  public get maintenanceOngoingCount() {
+    return this.getNumberAttribute('maintenance_ongoing_count');
+  }
+
+  // maintenance_pending_count - computed: true, optional: false, required: false
+  public get maintenancePendingCount() {
+    return this.getNumberAttribute('maintenance_pending_count');
+  }
+
+  // scheduling_type - computed: true, optional: false, required: false
+  public get schedulingType() {
+    return this.getStringAttribute('scheduling_type');
+  }
+
+  // subblock_infra_maintenance_ongoing_count - computed: true, optional: false, required: false
+  public get subblockInfraMaintenanceOngoingCount() {
+    return this.getNumberAttribute('subblock_infra_maintenance_ongoing_count');
+  }
+
+  // subblock_infra_maintenance_pending_count - computed: true, optional: false, required: false
+  public get subblockInfraMaintenancePendingCount() {
+    return this.getNumberAttribute('subblock_infra_maintenance_pending_count');
+  }
+
+  // upcoming_group_maintenance - computed: true, optional: false, required: false
+  private _upcomingGroupMaintenance = new ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceList(this, "upcoming_group_maintenance", false);
+  public get upcomingGroupMaintenance() {
+    return this._upcomingGroupMaintenance;
+  }
+}
+
+export class ComputeReservationResourceStatusReservationMaintenanceList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeReservationResourceStatusReservationMaintenanceOutputReference {
+    return new ComputeReservationResourceStatusReservationMaintenanceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ComputeReservationResourceStatusSpecificSkuAllocation {
+}
+
+export function computeReservationResourceStatusSpecificSkuAllocationToTerraform(struct?: ComputeReservationResourceStatusSpecificSkuAllocation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function computeReservationResourceStatusSpecificSkuAllocationToHclTerraform(struct?: ComputeReservationResourceStatusSpecificSkuAllocation): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ComputeReservationResourceStatusSpecificSkuAllocationOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeReservationResourceStatusSpecificSkuAllocation | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeReservationResourceStatusSpecificSkuAllocation | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // source_instance_template_id - computed: true, optional: false, required: false
+  public get sourceInstanceTemplateId() {
+    return this.getStringAttribute('source_instance_template_id');
+  }
+
+  // utilizations - computed: true, optional: false, required: false
+  private _utilizations = new cdktn.StringMap(this, "utilizations");
+  public get utilizations() {
+    return this._utilizations;
+  }
+}
+
+export class ComputeReservationResourceStatusSpecificSkuAllocationList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeReservationResourceStatusSpecificSkuAllocationOutputReference {
+    return new ComputeReservationResourceStatusSpecificSkuAllocationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ComputeReservationResourceStatus {
+}
+
+export function computeReservationResourceStatusToTerraform(struct?: ComputeReservationResourceStatus): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function computeReservationResourceStatusToHclTerraform(struct?: ComputeReservationResourceStatus): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class ComputeReservationResourceStatusOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeReservationResourceStatus | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeReservationResourceStatus | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // health_info - computed: true, optional: false, required: false
+  private _healthInfo = new ComputeReservationResourceStatusHealthInfoList(this, "health_info", false);
+  public get healthInfo() {
+    return this._healthInfo;
+  }
+
+  // reservation_block_count - computed: true, optional: false, required: false
+  public get reservationBlockCount() {
+    return this.getNumberAttribute('reservation_block_count');
+  }
+
+  // reservation_maintenance - computed: true, optional: false, required: false
+  private _reservationMaintenance = new ComputeReservationResourceStatusReservationMaintenanceList(this, "reservation_maintenance", false);
+  public get reservationMaintenance() {
+    return this._reservationMaintenance;
+  }
+
+  // specific_sku_allocation - computed: true, optional: false, required: false
+  private _specificSkuAllocation = new ComputeReservationResourceStatusSpecificSkuAllocationList(this, "specific_sku_allocation", false);
+  public get specificSkuAllocation() {
+    return this._specificSkuAllocation;
+  }
+}
+
+export class ComputeReservationResourceStatusList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeReservationResourceStatusOutputReference {
+    return new ComputeReservationResourceStatusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface ComputeReservationDeleteAfterDuration {
   /**
   * Number of nanoseconds for the auto-delete duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#nanos ComputeReservation#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#nanos ComputeReservation#nanos}
   */
   readonly nanos?: number;
   /**
   * Number of seconds for the auto-delete duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#seconds ComputeReservation#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#seconds ComputeReservation#seconds}
   */
   readonly seconds?: string;
 }
@@ -218,7 +691,7 @@ export interface ComputeReservationReservationSharingPolicy {
   /**
   * Sharing config for all Google Cloud services. Possible values: ["ALLOW_ALL", "DISALLOW_ALL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#service_share_type ComputeReservation#service_share_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#service_share_type ComputeReservation#service_share_type}
   */
   readonly serviceShareType?: string;
 }
@@ -302,7 +775,7 @@ export class ComputeReservationReservationSharingPolicyOutputReference extends c
 }
 export interface ComputeReservationShareSettingsProjectMap {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#id ComputeReservation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#id ComputeReservation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -311,7 +784,7 @@ export interface ComputeReservationShareSettingsProjectMap {
   /**
   * The project id/number, should be same as the key of this project config in the project map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#project_id ComputeReservation#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#project_id ComputeReservation#project_id}
   */
   readonly projectId?: string;
 }
@@ -455,13 +928,13 @@ export interface ComputeReservationShareSettings {
   /**
   * Type of sharing for this shared-reservation Possible values: ["LOCAL", "SPECIFIC_PROJECTS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#share_type ComputeReservation#share_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#share_type ComputeReservation#share_type}
   */
   readonly shareType?: string;
   /**
   * project_map block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#project_map ComputeReservation#project_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#project_map ComputeReservation#project_map}
   */
   readonly projectMap?: ComputeReservationShareSettingsProjectMap[] | cdktn.IResolvable;
 }
@@ -577,7 +1050,7 @@ export interface ComputeReservationSpecificReservationInstancePropertiesGuestAcc
   * The number of the guest accelerator cards exposed to
   * this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#accelerator_count ComputeReservation#accelerator_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#accelerator_count ComputeReservation#accelerator_count}
   */
   readonly acceleratorCount: number;
   /**
@@ -587,7 +1060,7 @@ export interface ComputeReservationSpecificReservationInstancePropertiesGuestAcc
   * 
   * If you are creating an instance template, specify only the accelerator name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#accelerator_type ComputeReservation#accelerator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#accelerator_type ComputeReservation#accelerator_type}
   */
   readonly acceleratorType: string;
 }
@@ -728,13 +1201,13 @@ export interface ComputeReservationSpecificReservationInstancePropertiesLocalSsd
   /**
   * The size of the disk in base-2 GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#disk_size_gb ComputeReservation#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#disk_size_gb ComputeReservation#disk_size_gb}
   */
   readonly diskSizeGb: number;
   /**
   * The disk interface to use for attaching this disk. Default value: "SCSI" Possible values: ["SCSI", "NVME"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#interface ComputeReservation#interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#interface ComputeReservation#interface}
   */
   readonly interface?: string;
 }
@@ -878,7 +1351,7 @@ export interface ComputeReservationSpecificReservationInstanceProperties {
   /**
   * The name of the machine type to reserve.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#machine_type ComputeReservation#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#machine_type ComputeReservation#machine_type}
   */
   readonly machineType: string;
   /**
@@ -887,19 +1360,19 @@ export interface ComputeReservationSpecificReservationInstanceProperties {
   * the CPU platform availability reference](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform#availablezones)
   * for information on available CPU platforms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#min_cpu_platform ComputeReservation#min_cpu_platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#min_cpu_platform ComputeReservation#min_cpu_platform}
   */
   readonly minCpuPlatform?: string;
   /**
   * guest_accelerators block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#guest_accelerators ComputeReservation#guest_accelerators}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#guest_accelerators ComputeReservation#guest_accelerators}
   */
   readonly guestAccelerators?: ComputeReservationSpecificReservationInstancePropertiesGuestAccelerators[] | cdktn.IResolvable;
   /**
   * local_ssds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#local_ssds ComputeReservation#local_ssds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#local_ssds ComputeReservation#local_ssds}
   */
   readonly localSsds?: ComputeReservationSpecificReservationInstancePropertiesLocalSsds[] | cdktn.IResolvable;
 }
@@ -1004,6 +1477,11 @@ export class ComputeReservationSpecificReservationInstancePropertiesOutputRefere
     }
   }
 
+  // location_hint - computed: true, optional: false, required: false
+  public get locationHint() {
+    return this.getStringAttribute('location_hint');
+  }
+
   // machine_type - computed: false, optional: false, required: true
   private _machineType?: string; 
   public get machineType() {
@@ -1069,20 +1547,20 @@ export interface ComputeReservationSpecificReservation {
   /**
   * The number of resources that are allocated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#count ComputeReservation#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#count ComputeReservation#count}
   */
   readonly count: number;
   /**
   * Specifies the instance template to create the reservation. If you use this field, you must exclude the
   * instanceProperties field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#source_instance_template ComputeReservation#source_instance_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#source_instance_template ComputeReservation#source_instance_template}
   */
   readonly sourceInstanceTemplate?: string;
   /**
   * instance_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#instance_properties ComputeReservation#instance_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#instance_properties ComputeReservation#instance_properties}
   */
   readonly instanceProperties?: ComputeReservationSpecificReservationInstanceProperties;
 }
@@ -1174,6 +1652,11 @@ export class ComputeReservationSpecificReservationOutputReference extends cdktn.
     }
   }
 
+  // assured_count - computed: true, optional: false, required: false
+  public get assuredCount() {
+    return this.getNumberAttribute('assured_count');
+  }
+
   // count - computed: false, optional: false, required: true
   private _count?: number; 
   public get count() {
@@ -1226,15 +1709,15 @@ export class ComputeReservationSpecificReservationOutputReference extends cdktn.
 }
 export interface ComputeReservationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#create ComputeReservation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#create ComputeReservation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#delete ComputeReservation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#delete ComputeReservation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#update ComputeReservation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#update ComputeReservation#update}
   */
   readonly update?: string;
 }
@@ -1386,7 +1869,7 @@ export class ComputeReservationTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation google_compute_reservation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation google_compute_reservation}
 */
 export class ComputeReservation extends cdktn.TerraformResource {
 
@@ -1402,7 +1885,7 @@ export class ComputeReservation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeReservation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeReservation to import
-  * @param importFromId The id of the existing ComputeReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeReservation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1414,7 +1897,7 @@ export class ComputeReservation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_reservation google_compute_reservation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_reservation google_compute_reservation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1425,8 +1908,8 @@ export class ComputeReservation extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_reservation',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1438,7 +1921,6 @@ export class ComputeReservation extends cdktn.TerraformResource {
     });
     this._deleteAtTime = config.deleteAtTime;
     this._description = config.description;
-    this._id = config.id;
     this._name = config.name;
     this._project = config.project;
     this._specificReservationRequired = config.specificReservationRequired;
@@ -1453,6 +1935,11 @@ export class ComputeReservation extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // block_names - computed: true, optional: false, required: false
+  public get blockNames() {
+    return this.getListAttribute('block_names');
+  }
 
   // commitment - computed: true, optional: false, required: false
   public get commitment() {
@@ -1496,20 +1983,19 @@ export class ComputeReservation extends cdktn.TerraformResource {
     return this._description;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
+
+  // kind - computed: true, optional: false, required: false
+  public get kind() {
+    return this.getStringAttribute('kind');
   }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
+
+  // linked_commitments - computed: true, optional: false, required: false
+  public get linkedCommitments() {
+    return this.getListAttribute('linked_commitments');
   }
 
   // name - computed: false, optional: false, required: true
@@ -1539,6 +2025,22 @@ export class ComputeReservation extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
+  }
+
+  // reservation_block_count - computed: true, optional: false, required: false
+  public get reservationBlockCount() {
+    return this.getNumberAttribute('reservation_block_count');
+  }
+
+  // resource_status - computed: true, optional: false, required: false
+  private _resourceStatus = new ComputeReservationResourceStatusList(this, "resource_status", false);
+  public get resourceStatus() {
+    return this._resourceStatus;
+  }
+
+  // satisfies_pzs - computed: true, optional: false, required: false
+  public get satisfiesPzs() {
+    return this.getBooleanAttribute('satisfies_pzs');
   }
 
   // self_link - computed: true, optional: false, required: false
@@ -1665,7 +2167,6 @@ export class ComputeReservation extends cdktn.TerraformResource {
     return {
       delete_at_time: cdktn.stringToTerraform(this._deleteAtTime),
       description: cdktn.stringToTerraform(this._description),
-      id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       project: cdktn.stringToTerraform(this._project),
       specific_reservation_required: cdktn.booleanToTerraform(this._specificReservationRequired),
@@ -1688,12 +2189,6 @@ export class ComputeReservation extends cdktn.TerraformResource {
       },
       description: {
         value: cdktn.stringToHclTerraform(this._description),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

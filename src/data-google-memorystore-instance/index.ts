@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/memorystore_instance
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/memorystore_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleMemorystoreInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/memorystore_instance#id DataGoogleMemorystoreInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/memorystore_instance#id DataGoogleMemorystoreInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,17 +31,17 @@ export interface DataGoogleMemorystoreInstanceConfig extends cdktn.TerraformMeta
   * * Must not end with a hyphen
   * * Must be unique within a location
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/memorystore_instance#instance_id DataGoogleMemorystoreInstance#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/memorystore_instance#instance_id DataGoogleMemorystoreInstance#instance_id}
   */
   readonly instanceId: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. See documentation for resource type 'memorystore.googleapis.com/CertificateAuthority'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/memorystore_instance#location DataGoogleMemorystoreInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/memorystore_instance#location DataGoogleMemorystoreInstance#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/memorystore_instance#project DataGoogleMemorystoreInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/memorystore_instance#project DataGoogleMemorystoreInstance#project}
   */
   readonly project?: string;
 }
@@ -2692,7 +2692,7 @@ export class DataGoogleMemorystoreInstanceZoneDistributionConfigList extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/memorystore_instance google_memorystore_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/memorystore_instance google_memorystore_instance}
 */
 export class DataGoogleMemorystoreInstance extends cdktn.TerraformDataSource {
 
@@ -2708,7 +2708,7 @@ export class DataGoogleMemorystoreInstance extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleMemorystoreInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleMemorystoreInstance to import
-  * @param importFromId The id of the existing DataGoogleMemorystoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/memorystore_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleMemorystoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/memorystore_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleMemorystoreInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2720,7 +2720,7 @@ export class DataGoogleMemorystoreInstance extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/memorystore_instance google_memorystore_instance} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/memorystore_instance google_memorystore_instance} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2731,8 +2731,8 @@ export class DataGoogleMemorystoreInstance extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_memorystore_instance',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2752,11 +2752,6 @@ export class DataGoogleMemorystoreInstance extends cdktn.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // allow_fewer_zones_deployment - computed: true, optional: false, required: false
-  public get allowFewerZonesDeployment() {
-    return this.getBooleanAttribute('allow_fewer_zones_deployment');
-  }
-
   // authorization_mode - computed: true, optional: false, required: false
   public get authorizationMode() {
     return this.getStringAttribute('authorization_mode');
@@ -2766,6 +2761,11 @@ export class DataGoogleMemorystoreInstance extends cdktn.TerraformDataSource {
   private _automatedBackupConfig = new DataGoogleMemorystoreInstanceAutomatedBackupConfigList(this, "automated_backup_config", false);
   public get automatedBackupConfig() {
     return this._automatedBackupConfig;
+  }
+
+  // available_maintenance_versions - computed: true, optional: false, required: false
+  public get availableMaintenanceVersions() {
+    return this.getListAttribute('available_maintenance_versions');
   }
 
   // backup_collection - computed: true, optional: false, required: false
@@ -2811,6 +2811,11 @@ export class DataGoogleMemorystoreInstance extends cdktn.TerraformDataSource {
   private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
   public get effectiveLabels() {
     return this._effectiveLabels;
+  }
+
+  // effective_maintenance_version - computed: true, optional: false, required: false
+  public get effectiveMaintenanceVersion() {
+    return this.getStringAttribute('effective_maintenance_version');
   }
 
   // endpoints - computed: true, optional: false, required: false
@@ -2904,6 +2909,11 @@ export class DataGoogleMemorystoreInstance extends cdktn.TerraformDataSource {
     return this._maintenanceSchedule;
   }
 
+  // maintenance_version - computed: true, optional: false, required: false
+  public get maintenanceVersion() {
+    return this.getStringAttribute('maintenance_version');
+  }
+
   // managed_backup_source - computed: true, optional: false, required: false
   private _managedBackupSource = new DataGoogleMemorystoreInstanceManagedBackupSourceList(this, "managed_backup_source", false);
   public get managedBackupSource() {
@@ -2974,6 +2984,16 @@ export class DataGoogleMemorystoreInstance extends cdktn.TerraformDataSource {
   // replica_count - computed: true, optional: false, required: false
   public get replicaCount() {
     return this.getNumberAttribute('replica_count');
+  }
+
+  // server_ca_mode - computed: true, optional: false, required: false
+  public get serverCaMode() {
+    return this.getStringAttribute('server_ca_mode');
+  }
+
+  // server_ca_pool - computed: true, optional: false, required: false
+  public get serverCaPool() {
+    return this.getStringAttribute('server_ca_pool');
   }
 
   // shard_count - computed: true, optional: false, required: false

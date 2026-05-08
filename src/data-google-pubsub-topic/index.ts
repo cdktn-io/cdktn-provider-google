@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_topic
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_topic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGooglePubsubTopicConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_topic#id DataGooglePubsubTopic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,11 +22,11 @@ export interface DataGooglePubsubTopicConfig extends cdktn.TerraformMetaArgument
   /**
   * Name of the topic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_topic#name DataGooglePubsubTopic#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_topic#project DataGooglePubsubTopic#project}
   */
   readonly project?: string;
 }
@@ -989,6 +989,168 @@ export class DataGooglePubsubTopicMessageStoragePolicyList extends cdktn.Complex
     return new DataGooglePubsubTopicMessageStoragePolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInference {
+}
+
+export function dataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceToTerraform(struct?: DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInference): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceToHclTerraform(struct?: DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInference): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInference | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInference | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // parameters - computed: true, optional: false, required: false
+  private _parameters = new cdktn.StringMap(this, "parameters");
+  public get parameters() {
+    return this._parameters;
+  }
+}
+
+export class DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference {
+    return new DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGooglePubsubTopicMessageTransformsAiInference {
+}
+
+export function dataGooglePubsubTopicMessageTransformsAiInferenceToTerraform(struct?: DataGooglePubsubTopicMessageTransformsAiInference): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGooglePubsubTopicMessageTransformsAiInferenceToHclTerraform(struct?: DataGooglePubsubTopicMessageTransformsAiInference): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGooglePubsubTopicMessageTransformsAiInferenceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGooglePubsubTopicMessageTransformsAiInference | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGooglePubsubTopicMessageTransformsAiInference | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // endpoint - computed: true, optional: false, required: false
+  public get endpoint() {
+    return this.getStringAttribute('endpoint');
+  }
+
+  // service_account_email - computed: true, optional: false, required: false
+  public get serviceAccountEmail() {
+    return this.getStringAttribute('service_account_email');
+  }
+
+  // unstructured_inference - computed: true, optional: false, required: false
+  private _unstructuredInference = new DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceList(this, "unstructured_inference", false);
+  public get unstructuredInference() {
+    return this._unstructuredInference;
+  }
+}
+
+export class DataGooglePubsubTopicMessageTransformsAiInferenceList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGooglePubsubTopicMessageTransformsAiInferenceOutputReference {
+    return new DataGooglePubsubTopicMessageTransformsAiInferenceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGooglePubsubTopicMessageTransformsJavascriptUdf {
 }
 
@@ -1120,6 +1282,12 @@ export class DataGooglePubsubTopicMessageTransformsOutputReference extends cdktn
     }
   }
 
+  // ai_inference - computed: true, optional: false, required: false
+  private _aiInference = new DataGooglePubsubTopicMessageTransformsAiInferenceList(this, "ai_inference", false);
+  public get aiInference() {
+    return this._aiInference;
+  }
+
   // disabled - computed: true, optional: false, required: false
   public get disabled() {
     return this.getBooleanAttribute('disabled');
@@ -1232,7 +1400,7 @@ export class DataGooglePubsubTopicSchemaSettingsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_topic google_pubsub_topic}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_topic google_pubsub_topic}
 */
 export class DataGooglePubsubTopic extends cdktn.TerraformDataSource {
 
@@ -1248,7 +1416,7 @@ export class DataGooglePubsubTopic extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGooglePubsubTopic resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGooglePubsubTopic to import
-  * @param importFromId The id of the existing DataGooglePubsubTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_topic#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGooglePubsubTopic that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_topic#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGooglePubsubTopic to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1260,7 +1428,7 @@ export class DataGooglePubsubTopic extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/pubsub_topic google_pubsub_topic} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/pubsub_topic google_pubsub_topic} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1271,8 +1439,8 @@ export class DataGooglePubsubTopic extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_pubsub_topic',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1380,6 +1548,12 @@ export class DataGooglePubsubTopic extends cdktn.TerraformDataSource {
   private _schemaSettings = new DataGooglePubsubTopicSchemaSettingsList(this, "schema_settings", false);
   public get schemaSettings() {
     return this._schemaSettings;
+  }
+
+  // tags - computed: true, optional: false, required: false
+  private _tags = new cdktn.StringMap(this, "tags");
+  public get tags() {
+    return this._tags;
   }
 
   // terraform_labels - computed: true, optional: false, required: false

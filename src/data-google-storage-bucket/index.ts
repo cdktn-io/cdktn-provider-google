@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_bucket
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleStorageBucketConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_bucket#id DataGoogleStorageBucket#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket#id DataGoogleStorageBucket#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataGoogleStorageBucketConfig extends cdktn.TerraformMetaArgume
   /**
   * The name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_bucket#name DataGoogleStorageBucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket#name DataGoogleStorageBucket#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_bucket#project DataGoogleStorageBucket#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket#project DataGoogleStorageBucket#project}
   */
   readonly project?: string;
 }
@@ -277,6 +277,246 @@ export class DataGoogleStorageBucketCustomPlacementConfigList extends cdktn.Comp
     return new DataGoogleStorageBucketCustomPlacementConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig {
+}
+
+export function dataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigToTerraform(struct?: DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigToHclTerraform(struct?: DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // effective_time - computed: true, optional: false, required: false
+  public get effectiveTime() {
+    return this.getStringAttribute('effective_time');
+  }
+
+  // restriction_mode - computed: true, optional: false, required: false
+  public get restrictionMode() {
+    return this.getStringAttribute('restriction_mode');
+  }
+}
+
+export class DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference {
+    return new DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig {
+}
+
+export function dataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigToTerraform(struct?: DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigToHclTerraform(struct?: DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // effective_time - computed: true, optional: false, required: false
+  public get effectiveTime() {
+    return this.getStringAttribute('effective_time');
+  }
+
+  // restriction_mode - computed: true, optional: false, required: false
+  public get restrictionMode() {
+    return this.getStringAttribute('restriction_mode');
+  }
+}
+
+export class DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference {
+    return new DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig {
+}
+
+export function dataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigToTerraform(struct?: DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigToHclTerraform(struct?: DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // effective_time - computed: true, optional: false, required: false
+  public get effectiveTime() {
+    return this.getStringAttribute('effective_time');
+  }
+
+  // restriction_mode - computed: true, optional: false, required: false
+  public get restrictionMode() {
+    return this.getStringAttribute('restriction_mode');
+  }
+}
+
+export class DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference {
+    return new DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleStorageBucketEncryption {
 }
 
@@ -328,9 +568,27 @@ export class DataGoogleStorageBucketEncryptionOutputReference extends cdktn.Comp
     }
   }
 
+  // customer_managed_encryption_enforcement_config - computed: true, optional: false, required: false
+  private _customerManagedEncryptionEnforcementConfig = new DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigList(this, "customer_managed_encryption_enforcement_config", false);
+  public get customerManagedEncryptionEnforcementConfig() {
+    return this._customerManagedEncryptionEnforcementConfig;
+  }
+
+  // customer_supplied_encryption_enforcement_config - computed: true, optional: false, required: false
+  private _customerSuppliedEncryptionEnforcementConfig = new DataGoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigList(this, "customer_supplied_encryption_enforcement_config", false);
+  public get customerSuppliedEncryptionEnforcementConfig() {
+    return this._customerSuppliedEncryptionEnforcementConfig;
+  }
+
   // default_kms_key_name - computed: true, optional: false, required: false
   public get defaultKmsKeyName() {
     return this.getStringAttribute('default_kms_key_name');
+  }
+
+  // google_managed_encryption_enforcement_config - computed: true, optional: false, required: false
+  private _googleManagedEncryptionEnforcementConfig = new DataGoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigList(this, "google_managed_encryption_enforcement_config", false);
+  public get googleManagedEncryptionEnforcementConfig() {
+    return this._googleManagedEncryptionEnforcementConfig;
   }
 }
 
@@ -1124,7 +1382,7 @@ export class DataGoogleStorageBucketRetentionPolicyOutputReference extends cdktn
 
   // retention_period - computed: true, optional: false, required: false
   public get retentionPeriod() {
-    return this.getNumberAttribute('retention_period');
+    return this.getStringAttribute('retention_period');
   }
 }
 
@@ -1383,7 +1641,7 @@ export class DataGoogleStorageBucketWebsiteList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_bucket google_storage_bucket}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket google_storage_bucket}
 */
 export class DataGoogleStorageBucket extends cdktn.TerraformDataSource {
 
@@ -1399,7 +1657,7 @@ export class DataGoogleStorageBucket extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleStorageBucket resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleStorageBucket to import
-  * @param importFromId The id of the existing DataGoogleStorageBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleStorageBucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleStorageBucket to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1411,7 +1669,7 @@ export class DataGoogleStorageBucket extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket google_storage_bucket} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1422,8 +1680,8 @@ export class DataGoogleStorageBucket extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_storage_bucket',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

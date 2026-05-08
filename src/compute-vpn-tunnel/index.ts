@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ComputeVpnTunnelConfig extends cdktn.TerraformMetaArguments {
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#description ComputeVpnTunnel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#description ComputeVpnTunnel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#id ComputeVpnTunnel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#id ComputeVpnTunnel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +30,7 @@ export interface ComputeVpnTunnelConfig extends cdktn.TerraformMetaArguments {
   * peer VPN gateway.
   * Acceptable IKE versions are 1 or 2. Default version is 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#ike_version ComputeVpnTunnel#ike_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#ike_version ComputeVpnTunnel#ike_version}
   */
   readonly ikeVersion?: number;
   /**
@@ -39,7 +39,7 @@ export interface ComputeVpnTunnelConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#labels ComputeVpnTunnel#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#labels ComputeVpnTunnel#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -48,7 +48,7 @@ export interface ComputeVpnTunnelConfig extends cdktn.TerraformMetaArguments {
   * for example '192.168.0.0/16'. The ranges should be disjoint.
   * Only IPv4 is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#local_traffic_selector ComputeVpnTunnel#local_traffic_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#local_traffic_selector ComputeVpnTunnel#local_traffic_selector}
   */
   readonly localTrafficSelector?: string[];
   /**
@@ -60,19 +60,19 @@ export interface ComputeVpnTunnelConfig extends cdktn.TerraformMetaArguments {
   * be a dash, lowercase letter, or digit,
   * except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#name ComputeVpnTunnel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#name ComputeVpnTunnel#name}
   */
   readonly name: string;
   /**
   * URL of the peer side external VPN gateway to which this VPN tunnel is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#peer_external_gateway ComputeVpnTunnel#peer_external_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#peer_external_gateway ComputeVpnTunnel#peer_external_gateway}
   */
   readonly peerExternalGateway?: string;
   /**
   * The interface ID of the external VPN gateway to which this VPN tunnel is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#peer_external_gateway_interface ComputeVpnTunnel#peer_external_gateway_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#peer_external_gateway_interface ComputeVpnTunnel#peer_external_gateway_interface}
   */
   readonly peerExternalGatewayInterface?: number;
   /**
@@ -81,23 +81,23 @@ export interface ComputeVpnTunnelConfig extends cdktn.TerraformMetaArguments {
   * ID in the peer GCP VPN gateway.
   * This field must reference a 'google_compute_ha_vpn_gateway' resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#peer_gcp_gateway ComputeVpnTunnel#peer_gcp_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#peer_gcp_gateway ComputeVpnTunnel#peer_gcp_gateway}
   */
   readonly peerGcpGateway?: string;
   /**
   * IP address of the peer VPN gateway. Only IPv4 is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#peer_ip ComputeVpnTunnel#peer_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#peer_ip ComputeVpnTunnel#peer_ip}
   */
   readonly peerIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#project ComputeVpnTunnel#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#project ComputeVpnTunnel#project}
   */
   readonly project?: string;
   /**
   * The region where the tunnel is located. If unset, is set to the region of 'target_vpn_gateway'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#region ComputeVpnTunnel#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#region ComputeVpnTunnel#region}
   */
   readonly region?: string;
   /**
@@ -106,27 +106,40 @@ export interface ComputeVpnTunnelConfig extends cdktn.TerraformMetaArguments {
   * for example '192.168.0.0/16'. The ranges should be disjoint.
   * Only IPv4 is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#remote_traffic_selector ComputeVpnTunnel#remote_traffic_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#remote_traffic_selector ComputeVpnTunnel#remote_traffic_selector}
   */
   readonly remoteTrafficSelector?: string[];
   /**
   * URL of router resource to be used for dynamic routing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#router ComputeVpnTunnel#router}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#router ComputeVpnTunnel#router}
   */
   readonly router?: string;
   /**
   * Shared secret used to set the secure session between the Cloud VPN
   * gateway and the peer VPN gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#shared_secret ComputeVpnTunnel#shared_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#shared_secret ComputeVpnTunnel#shared_secret}
   */
-  readonly sharedSecret: string;
+  readonly sharedSecret?: string;
+  /**
+  * Shared secret used to set the secure session between the Cloud VPN
+  * gateway and the peer VPN gateway.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#shared_secret_wo ComputeVpnTunnel#shared_secret_wo}
+  */
+  readonly sharedSecretWo?: string;
+  /**
+  * Triggers update of 'shared_secret_wo' write-only. Increment this value when an update to 'shared_secret_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#shared_secret_wo_version ComputeVpnTunnel#shared_secret_wo_version}
+  */
+  readonly sharedSecretWoVersion?: string;
   /**
   * URL of the Target VPN gateway with which this VPN tunnel is
   * associated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#target_vpn_gateway ComputeVpnTunnel#target_vpn_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#target_vpn_gateway ComputeVpnTunnel#target_vpn_gateway}
   */
   readonly targetVpnGateway?: string;
   /**
@@ -134,33 +147,601 @@ export interface ComputeVpnTunnelConfig extends cdktn.TerraformMetaArguments {
   * This must be used if a High Availability VPN gateway resource is created.
   * This field must reference a 'google_compute_ha_vpn_gateway' resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#vpn_gateway ComputeVpnTunnel#vpn_gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#vpn_gateway ComputeVpnTunnel#vpn_gateway}
   */
   readonly vpnGateway?: string;
   /**
   * The interface ID of the VPN gateway with which this VPN tunnel is associated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#vpn_gateway_interface ComputeVpnTunnel#vpn_gateway_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#vpn_gateway_interface ComputeVpnTunnel#vpn_gateway_interface}
   */
   readonly vpnGatewayInterface?: number;
   /**
+  * cipher_suite block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#cipher_suite ComputeVpnTunnel#cipher_suite}
+  */
+  readonly cipherSuite?: ComputeVpnTunnelCipherSuite;
+  /**
+  * params block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#params ComputeVpnTunnel#params}
+  */
+  readonly params?: ComputeVpnTunnelParams;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#timeouts ComputeVpnTunnel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#timeouts ComputeVpnTunnel#timeouts}
   */
   readonly timeouts?: ComputeVpnTunnelTimeouts;
 }
+export interface ComputeVpnTunnelCipherSuitePhase1 {
+  /**
+  * Diffie-Hellman groups.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#dh ComputeVpnTunnel#dh}
+  */
+  readonly dh?: string[];
+  /**
+  * Encryption algorithms.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#encryption ComputeVpnTunnel#encryption}
+  */
+  readonly encryption?: string[];
+  /**
+  * Integrity algorithms.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#integrity ComputeVpnTunnel#integrity}
+  */
+  readonly integrity?: string[];
+  /**
+  * Pseudo-random functions.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#prf ComputeVpnTunnel#prf}
+  */
+  readonly prf?: string[];
+}
+
+export function computeVpnTunnelCipherSuitePhase1ToTerraform(struct?: ComputeVpnTunnelCipherSuitePhase1OutputReference | ComputeVpnTunnelCipherSuitePhase1): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dh: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dh),
+    encryption: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.encryption),
+    integrity: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.integrity),
+    prf: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.prf),
+  }
+}
+
+
+export function computeVpnTunnelCipherSuitePhase1ToHclTerraform(struct?: ComputeVpnTunnelCipherSuitePhase1OutputReference | ComputeVpnTunnelCipherSuitePhase1): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dh: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dh),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    encryption: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.encryption),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    integrity: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.integrity),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    prf: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.prf),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeVpnTunnelCipherSuitePhase1OutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeVpnTunnelCipherSuitePhase1 | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dh !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dh = this._dh;
+    }
+    if (this._encryption !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encryption = this._encryption;
+    }
+    if (this._integrity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integrity = this._integrity;
+    }
+    if (this._prf !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prf = this._prf;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeVpnTunnelCipherSuitePhase1 | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dh = undefined;
+      this._encryption = undefined;
+      this._integrity = undefined;
+      this._prf = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dh = value.dh;
+      this._encryption = value.encryption;
+      this._integrity = value.integrity;
+      this._prf = value.prf;
+    }
+  }
+
+  // dh - computed: false, optional: true, required: false
+  private _dh?: string[]; 
+  public get dh() {
+    return this.getListAttribute('dh');
+  }
+  public set dh(value: string[]) {
+    this._dh = value;
+  }
+  public resetDh() {
+    this._dh = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dhInput() {
+    return this._dh;
+  }
+
+  // encryption - computed: false, optional: true, required: false
+  private _encryption?: string[]; 
+  public get encryption() {
+    return this.getListAttribute('encryption');
+  }
+  public set encryption(value: string[]) {
+    this._encryption = value;
+  }
+  public resetEncryption() {
+    this._encryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionInput() {
+    return this._encryption;
+  }
+
+  // integrity - computed: false, optional: true, required: false
+  private _integrity?: string[]; 
+  public get integrity() {
+    return this.getListAttribute('integrity');
+  }
+  public set integrity(value: string[]) {
+    this._integrity = value;
+  }
+  public resetIntegrity() {
+    this._integrity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integrityInput() {
+    return this._integrity;
+  }
+
+  // prf - computed: false, optional: true, required: false
+  private _prf?: string[]; 
+  public get prf() {
+    return this.getListAttribute('prf');
+  }
+  public set prf(value: string[]) {
+    this._prf = value;
+  }
+  public resetPrf() {
+    this._prf = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prfInput() {
+    return this._prf;
+  }
+}
+export interface ComputeVpnTunnelCipherSuitePhase2 {
+  /**
+  * Encryption algorithms.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#encryption ComputeVpnTunnel#encryption}
+  */
+  readonly encryption?: string[];
+  /**
+  * Integrity algorithms.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#integrity ComputeVpnTunnel#integrity}
+  */
+  readonly integrity?: string[];
+  /**
+  * Perfect forward secrecy groups.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#pfs ComputeVpnTunnel#pfs}
+  */
+  readonly pfs?: string[];
+}
+
+export function computeVpnTunnelCipherSuitePhase2ToTerraform(struct?: ComputeVpnTunnelCipherSuitePhase2OutputReference | ComputeVpnTunnelCipherSuitePhase2): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    encryption: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.encryption),
+    integrity: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.integrity),
+    pfs: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.pfs),
+  }
+}
+
+
+export function computeVpnTunnelCipherSuitePhase2ToHclTerraform(struct?: ComputeVpnTunnelCipherSuitePhase2OutputReference | ComputeVpnTunnelCipherSuitePhase2): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    encryption: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.encryption),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    integrity: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.integrity),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    pfs: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.pfs),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeVpnTunnelCipherSuitePhase2OutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeVpnTunnelCipherSuitePhase2 | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._encryption !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.encryption = this._encryption;
+    }
+    if (this._integrity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integrity = this._integrity;
+    }
+    if (this._pfs !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pfs = this._pfs;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeVpnTunnelCipherSuitePhase2 | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._encryption = undefined;
+      this._integrity = undefined;
+      this._pfs = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._encryption = value.encryption;
+      this._integrity = value.integrity;
+      this._pfs = value.pfs;
+    }
+  }
+
+  // encryption - computed: false, optional: true, required: false
+  private _encryption?: string[]; 
+  public get encryption() {
+    return this.getListAttribute('encryption');
+  }
+  public set encryption(value: string[]) {
+    this._encryption = value;
+  }
+  public resetEncryption() {
+    this._encryption = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionInput() {
+    return this._encryption;
+  }
+
+  // integrity - computed: false, optional: true, required: false
+  private _integrity?: string[]; 
+  public get integrity() {
+    return this.getListAttribute('integrity');
+  }
+  public set integrity(value: string[]) {
+    this._integrity = value;
+  }
+  public resetIntegrity() {
+    this._integrity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integrityInput() {
+    return this._integrity;
+  }
+
+  // pfs - computed: false, optional: true, required: false
+  private _pfs?: string[]; 
+  public get pfs() {
+    return this.getListAttribute('pfs');
+  }
+  public set pfs(value: string[]) {
+    this._pfs = value;
+  }
+  public resetPfs() {
+    this._pfs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pfsInput() {
+    return this._pfs;
+  }
+}
+export interface ComputeVpnTunnelCipherSuite {
+  /**
+  * phase1 block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#phase1 ComputeVpnTunnel#phase1}
+  */
+  readonly phase1?: ComputeVpnTunnelCipherSuitePhase1;
+  /**
+  * phase2 block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#phase2 ComputeVpnTunnel#phase2}
+  */
+  readonly phase2?: ComputeVpnTunnelCipherSuitePhase2;
+}
+
+export function computeVpnTunnelCipherSuiteToTerraform(struct?: ComputeVpnTunnelCipherSuiteOutputReference | ComputeVpnTunnelCipherSuite): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    phase1: computeVpnTunnelCipherSuitePhase1ToTerraform(struct!.phase1),
+    phase2: computeVpnTunnelCipherSuitePhase2ToTerraform(struct!.phase2),
+  }
+}
+
+
+export function computeVpnTunnelCipherSuiteToHclTerraform(struct?: ComputeVpnTunnelCipherSuiteOutputReference | ComputeVpnTunnelCipherSuite): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    phase1: {
+      value: computeVpnTunnelCipherSuitePhase1ToHclTerraform(struct!.phase1),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ComputeVpnTunnelCipherSuitePhase1List",
+    },
+    phase2: {
+      value: computeVpnTunnelCipherSuitePhase2ToHclTerraform(struct!.phase2),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ComputeVpnTunnelCipherSuitePhase2List",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeVpnTunnelCipherSuiteOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeVpnTunnelCipherSuite | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._phase1?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phase1 = this._phase1?.internalValue;
+    }
+    if (this._phase2?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phase2 = this._phase2?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeVpnTunnelCipherSuite | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._phase1.internalValue = undefined;
+      this._phase2.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._phase1.internalValue = value.phase1;
+      this._phase2.internalValue = value.phase2;
+    }
+  }
+
+  // phase1 - computed: false, optional: true, required: false
+  private _phase1 = new ComputeVpnTunnelCipherSuitePhase1OutputReference(this, "phase1");
+  public get phase1() {
+    return this._phase1;
+  }
+  public putPhase1(value: ComputeVpnTunnelCipherSuitePhase1) {
+    this._phase1.internalValue = value;
+  }
+  public resetPhase1() {
+    this._phase1.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phase1Input() {
+    return this._phase1.internalValue;
+  }
+
+  // phase2 - computed: false, optional: true, required: false
+  private _phase2 = new ComputeVpnTunnelCipherSuitePhase2OutputReference(this, "phase2");
+  public get phase2() {
+    return this._phase2;
+  }
+  public putPhase2(value: ComputeVpnTunnelCipherSuitePhase2) {
+    this._phase2.internalValue = value;
+  }
+  public resetPhase2() {
+    this._phase2.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phase2Input() {
+    return this._phase2.internalValue;
+  }
+}
+export interface ComputeVpnTunnelParams {
+  /**
+  * Resource manager tags to be bound to the Vpn Tunnel. Tag keys and values have the
+  * same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+  * and values are in the format tagValues/456.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#resource_manager_tags ComputeVpnTunnel#resource_manager_tags}
+  */
+  readonly resourceManagerTags?: { [key: string]: string };
+}
+
+export function computeVpnTunnelParamsToTerraform(struct?: ComputeVpnTunnelParamsOutputReference | ComputeVpnTunnelParams): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    resource_manager_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.resourceManagerTags),
+  }
+}
+
+
+export function computeVpnTunnelParamsToHclTerraform(struct?: ComputeVpnTunnelParamsOutputReference | ComputeVpnTunnelParams): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_manager_tags: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.resourceManagerTags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeVpnTunnelParamsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeVpnTunnelParams | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceManagerTags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceManagerTags = this._resourceManagerTags;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeVpnTunnelParams | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._resourceManagerTags = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._resourceManagerTags = value.resourceManagerTags;
+    }
+  }
+
+  // resource_manager_tags - computed: false, optional: true, required: false
+  private _resourceManagerTags?: { [key: string]: string }; 
+  public get resourceManagerTags() {
+    return this.getStringMapAttribute('resource_manager_tags');
+  }
+  public set resourceManagerTags(value: { [key: string]: string }) {
+    this._resourceManagerTags = value;
+  }
+  public resetResourceManagerTags() {
+    this._resourceManagerTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceManagerTagsInput() {
+    return this._resourceManagerTags;
+  }
+}
 export interface ComputeVpnTunnelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#create ComputeVpnTunnel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#create ComputeVpnTunnel#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#delete ComputeVpnTunnel#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#delete ComputeVpnTunnel#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#update ComputeVpnTunnel#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#update ComputeVpnTunnel#update}
   */
   readonly update?: string;
 }
@@ -312,7 +893,7 @@ export class ComputeVpnTunnelTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel}
 */
 export class ComputeVpnTunnel extends cdktn.TerraformResource {
 
@@ -328,7 +909,7 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeVpnTunnel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeVpnTunnel to import
-  * @param importFromId The id of the existing ComputeVpnTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeVpnTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeVpnTunnel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -340,7 +921,7 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_vpn_tunnel google_compute_vpn_tunnel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -351,8 +932,8 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_vpn_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -377,9 +958,13 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
     this._remoteTrafficSelector = config.remoteTrafficSelector;
     this._router = config.router;
     this._sharedSecret = config.sharedSecret;
+    this._sharedSecretWo = config.sharedSecretWo;
+    this._sharedSecretWoVersion = config.sharedSecretWoVersion;
     this._targetVpnGateway = config.targetVpnGateway;
     this._vpnGateway = config.vpnGateway;
     this._vpnGatewayInterface = config.vpnGatewayInterface;
+    this._cipherSuite.internalValue = config.cipherSuite;
+    this._params.internalValue = config.params;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -634,13 +1219,16 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
     return this.getStringAttribute('self_link');
   }
 
-  // shared_secret - computed: false, optional: false, required: true
+  // shared_secret - computed: false, optional: true, required: false
   private _sharedSecret?: string; 
   public get sharedSecret() {
     return this.getStringAttribute('shared_secret');
   }
   public set sharedSecret(value: string) {
     this._sharedSecret = value;
+  }
+  public resetSharedSecret() {
+    this._sharedSecret = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get sharedSecretInput() {
@@ -650,6 +1238,38 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
   // shared_secret_hash - computed: true, optional: false, required: false
   public get sharedSecretHash() {
     return this.getStringAttribute('shared_secret_hash');
+  }
+
+  // shared_secret_wo - computed: false, optional: true, required: false
+  private _sharedSecretWo?: string; 
+  public get sharedSecretWo() {
+    return this.getStringAttribute('shared_secret_wo');
+  }
+  public set sharedSecretWo(value: string) {
+    this._sharedSecretWo = value;
+  }
+  public resetSharedSecretWo() {
+    this._sharedSecretWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharedSecretWoInput() {
+    return this._sharedSecretWo;
+  }
+
+  // shared_secret_wo_version - computed: false, optional: true, required: false
+  private _sharedSecretWoVersion?: string; 
+  public get sharedSecretWoVersion() {
+    return this.getStringAttribute('shared_secret_wo_version');
+  }
+  public set sharedSecretWoVersion(value: string) {
+    this._sharedSecretWoVersion = value;
+  }
+  public resetSharedSecretWoVersion() {
+    this._sharedSecretWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sharedSecretWoVersionInput() {
+    return this._sharedSecretWoVersion;
   }
 
   // target_vpn_gateway - computed: false, optional: true, required: false
@@ -711,6 +1331,38 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
     return this._vpnGatewayInterface;
   }
 
+  // cipher_suite - computed: false, optional: true, required: false
+  private _cipherSuite = new ComputeVpnTunnelCipherSuiteOutputReference(this, "cipher_suite");
+  public get cipherSuite() {
+    return this._cipherSuite;
+  }
+  public putCipherSuite(value: ComputeVpnTunnelCipherSuite) {
+    this._cipherSuite.internalValue = value;
+  }
+  public resetCipherSuite() {
+    this._cipherSuite.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cipherSuiteInput() {
+    return this._cipherSuite.internalValue;
+  }
+
+  // params - computed: false, optional: true, required: false
+  private _params = new ComputeVpnTunnelParamsOutputReference(this, "params");
+  public get params() {
+    return this._params;
+  }
+  public putParams(value: ComputeVpnTunnelParams) {
+    this._params.internalValue = value;
+  }
+  public resetParams() {
+    this._params.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get paramsInput() {
+    return this._params.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new ComputeVpnTunnelTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -748,9 +1400,13 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
       remote_traffic_selector: cdktn.listMapper(cdktn.stringToTerraform, false)(this._remoteTrafficSelector),
       router: cdktn.stringToTerraform(this._router),
       shared_secret: cdktn.stringToTerraform(this._sharedSecret),
+      shared_secret_wo: cdktn.stringToTerraform(this._sharedSecretWo),
+      shared_secret_wo_version: cdktn.stringToTerraform(this._sharedSecretWoVersion),
       target_vpn_gateway: cdktn.stringToTerraform(this._targetVpnGateway),
       vpn_gateway: cdktn.stringToTerraform(this._vpnGateway),
       vpn_gateway_interface: cdktn.numberToTerraform(this._vpnGatewayInterface),
+      cipher_suite: computeVpnTunnelCipherSuiteToTerraform(this._cipherSuite.internalValue),
+      params: computeVpnTunnelParamsToTerraform(this._params.internalValue),
       timeouts: computeVpnTunnelTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -847,6 +1503,18 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      shared_secret_wo: {
+        value: cdktn.stringToHclTerraform(this._sharedSecretWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      shared_secret_wo_version: {
+        value: cdktn.stringToHclTerraform(this._sharedSecretWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       target_vpn_gateway: {
         value: cdktn.stringToHclTerraform(this._targetVpnGateway),
         isBlock: false,
@@ -864,6 +1532,18 @@ export class ComputeVpnTunnel extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      cipher_suite: {
+        value: computeVpnTunnelCipherSuiteToHclTerraform(this._cipherSuite.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ComputeVpnTunnelCipherSuiteList",
+      },
+      params: {
+        value: computeVpnTunnelParamsToHclTerraform(this._params.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ComputeVpnTunnelParamsList",
       },
       timeouts: {
         value: computeVpnTunnelTimeoutsToHclTerraform(this._timeouts.internalValue),

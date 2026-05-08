@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ColabRuntimeTemplateConfig extends cdktn.TerraformMetaArguments
   /**
   * The description of the Runtime Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#description ColabRuntimeTemplate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#description ColabRuntimeTemplate#description}
   */
   readonly description?: string;
   /**
   * Required. The display name of the Runtime Template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#display_name ColabRuntimeTemplate#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#display_name ColabRuntimeTemplate#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#id ColabRuntimeTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#id ColabRuntimeTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,83 +37,83 @@ export interface ColabRuntimeTemplateConfig extends cdktn.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#labels ColabRuntimeTemplate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#labels ColabRuntimeTemplate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the resource: https://cloud.google.com/colab/docs/locations
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#location ColabRuntimeTemplate#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#location ColabRuntimeTemplate#location}
   */
   readonly location: string;
   /**
   * The resource name of the Runtime Template
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#name ColabRuntimeTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#name ColabRuntimeTemplate#name}
   */
   readonly name?: string;
   /**
   * Applies the given Compute Engine tags to the runtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#network_tags ColabRuntimeTemplate#network_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#network_tags ColabRuntimeTemplate#network_tags}
   */
   readonly networkTags?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#project ColabRuntimeTemplate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#project ColabRuntimeTemplate#project}
   */
   readonly project?: string;
   /**
   * data_persistent_disk_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#data_persistent_disk_spec ColabRuntimeTemplate#data_persistent_disk_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#data_persistent_disk_spec ColabRuntimeTemplate#data_persistent_disk_spec}
   */
   readonly dataPersistentDiskSpec?: ColabRuntimeTemplateDataPersistentDiskSpec;
   /**
   * encryption_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#encryption_spec ColabRuntimeTemplate#encryption_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#encryption_spec ColabRuntimeTemplate#encryption_spec}
   */
   readonly encryptionSpec?: ColabRuntimeTemplateEncryptionSpec;
   /**
   * euc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#euc_config ColabRuntimeTemplate#euc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#euc_config ColabRuntimeTemplate#euc_config}
   */
   readonly eucConfig?: ColabRuntimeTemplateEucConfig;
   /**
   * idle_shutdown_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#idle_shutdown_config ColabRuntimeTemplate#idle_shutdown_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#idle_shutdown_config ColabRuntimeTemplate#idle_shutdown_config}
   */
   readonly idleShutdownConfig?: ColabRuntimeTemplateIdleShutdownConfig;
   /**
   * machine_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#machine_spec ColabRuntimeTemplate#machine_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#machine_spec ColabRuntimeTemplate#machine_spec}
   */
   readonly machineSpec?: ColabRuntimeTemplateMachineSpec;
   /**
   * network_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#network_spec ColabRuntimeTemplate#network_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#network_spec ColabRuntimeTemplate#network_spec}
   */
   readonly networkSpec?: ColabRuntimeTemplateNetworkSpec;
   /**
   * shielded_vm_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#shielded_vm_config ColabRuntimeTemplate#shielded_vm_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#shielded_vm_config ColabRuntimeTemplate#shielded_vm_config}
   */
   readonly shieldedVmConfig?: ColabRuntimeTemplateShieldedVmConfig;
   /**
   * software_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#software_config ColabRuntimeTemplate#software_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#software_config ColabRuntimeTemplate#software_config}
   */
   readonly softwareConfig?: ColabRuntimeTemplateSoftwareConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#timeouts ColabRuntimeTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#timeouts ColabRuntimeTemplate#timeouts}
   */
   readonly timeouts?: ColabRuntimeTemplateTimeouts;
 }
@@ -121,13 +121,13 @@ export interface ColabRuntimeTemplateDataPersistentDiskSpec {
   /**
   * The disk size of the runtime in GB. If specified, the diskType must also be specified. The minimum size is 10GB and the maximum is 65536GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#disk_size_gb ColabRuntimeTemplate#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#disk_size_gb ColabRuntimeTemplate#disk_size_gb}
   */
   readonly diskSizeGb?: string;
   /**
   * The type of the persistent disk.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#disk_type ColabRuntimeTemplate#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#disk_type ColabRuntimeTemplate#disk_type}
   */
   readonly diskType?: string;
 }
@@ -242,7 +242,7 @@ export interface ColabRuntimeTemplateEncryptionSpec {
   /**
   * The Cloud KMS encryption key (customer-managed encryption key) used to protect the runtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#kms_key_name ColabRuntimeTemplate#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#kms_key_name ColabRuntimeTemplate#kms_key_name}
   */
   readonly kmsKeyName?: string;
 }
@@ -328,7 +328,7 @@ export interface ColabRuntimeTemplateEucConfig {
   /**
   * Disable end user credential access for the runtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#euc_disabled ColabRuntimeTemplate#euc_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#euc_disabled ColabRuntimeTemplate#euc_disabled}
   */
   readonly eucDisabled?: boolean | cdktn.IResolvable;
 }
@@ -414,7 +414,7 @@ export interface ColabRuntimeTemplateIdleShutdownConfig {
   /**
   * The duration after which the runtime is automatically shut down. An input of 0s disables the idle shutdown feature, and a valid range is [10m, 24h].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#idle_timeout ColabRuntimeTemplate#idle_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#idle_timeout ColabRuntimeTemplate#idle_timeout}
   */
   readonly idleTimeout?: string;
 }
@@ -500,19 +500,19 @@ export interface ColabRuntimeTemplateMachineSpec {
   /**
   * The number of accelerators used by the runtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#accelerator_count ColabRuntimeTemplate#accelerator_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#accelerator_count ColabRuntimeTemplate#accelerator_count}
   */
   readonly acceleratorCount?: number;
   /**
   * The type of hardware accelerator used by the runtime. If specified, acceleratorCount must also be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#accelerator_type ColabRuntimeTemplate#accelerator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#accelerator_type ColabRuntimeTemplate#accelerator_type}
   */
   readonly acceleratorType?: string;
   /**
   * The Compute Engine machine type selected for the runtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#machine_type ColabRuntimeTemplate#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#machine_type ColabRuntimeTemplate#machine_type}
   */
   readonly machineType?: string;
 }
@@ -656,19 +656,19 @@ export interface ColabRuntimeTemplateNetworkSpec {
   /**
   * Enable public internet access for the runtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#enable_internet_access ColabRuntimeTemplate#enable_internet_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#enable_internet_access ColabRuntimeTemplate#enable_internet_access}
   */
   readonly enableInternetAccess?: boolean | cdktn.IResolvable;
   /**
   * The name of the VPC that this runtime is in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#network ColabRuntimeTemplate#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#network ColabRuntimeTemplate#network}
   */
   readonly network?: string;
   /**
   * The name of the subnetwork that this runtime is in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#subnetwork ColabRuntimeTemplate#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#subnetwork ColabRuntimeTemplate#subnetwork}
   */
   readonly subnetwork?: string;
 }
@@ -812,7 +812,7 @@ export interface ColabRuntimeTemplateShieldedVmConfig {
   /**
   * Enables secure boot for the runtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#enable_secure_boot ColabRuntimeTemplate#enable_secure_boot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#enable_secure_boot ColabRuntimeTemplate#enable_secure_boot}
   */
   readonly enableSecureBoot?: boolean | cdktn.IResolvable;
 }
@@ -894,17 +894,103 @@ export class ColabRuntimeTemplateShieldedVmConfigOutputReference extends cdktn.C
     return this._enableSecureBoot;
   }
 }
+export interface ColabRuntimeTemplateSoftwareConfigColabImage {
+  /**
+  * The release name of the NotebookRuntime Colab image, e.g. "py310". If not specified, detault to the latest release.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#release_name ColabRuntimeTemplate#release_name}
+  */
+  readonly releaseName?: string;
+}
+
+export function colabRuntimeTemplateSoftwareConfigColabImageToTerraform(struct?: ColabRuntimeTemplateSoftwareConfigColabImageOutputReference | ColabRuntimeTemplateSoftwareConfigColabImage): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    release_name: cdktn.stringToTerraform(struct!.releaseName),
+  }
+}
+
+
+export function colabRuntimeTemplateSoftwareConfigColabImageToHclTerraform(struct?: ColabRuntimeTemplateSoftwareConfigColabImageOutputReference | ColabRuntimeTemplateSoftwareConfigColabImage): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    release_name: {
+      value: cdktn.stringToHclTerraform(struct!.releaseName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ColabRuntimeTemplateSoftwareConfigColabImageOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ColabRuntimeTemplateSoftwareConfigColabImage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._releaseName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.releaseName = this._releaseName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ColabRuntimeTemplateSoftwareConfigColabImage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._releaseName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._releaseName = value.releaseName;
+    }
+  }
+
+  // release_name - computed: true, optional: true, required: false
+  private _releaseName?: string; 
+  public get releaseName() {
+    return this.getStringAttribute('release_name');
+  }
+  public set releaseName(value: string) {
+    this._releaseName = value;
+  }
+  public resetReleaseName() {
+    this._releaseName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get releaseNameInput() {
+    return this._releaseName;
+  }
+}
 export interface ColabRuntimeTemplateSoftwareConfigEnv {
   /**
   * Name of the environment variable. Must be a valid C identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#name ColabRuntimeTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#name ColabRuntimeTemplate#name}
   */
   readonly name?: string;
   /**
   * Variables that reference a $(VAR_NAME) are expanded using the previous defined environment variables in the container and any service environment variables. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#value ColabRuntimeTemplate#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#value ColabRuntimeTemplate#value}
   */
   readonly value?: string;
 }
@@ -1051,19 +1137,19 @@ export interface ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfig {
   /**
   * Post startup script to run after runtime is started.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#post_startup_script ColabRuntimeTemplate#post_startup_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#post_startup_script ColabRuntimeTemplate#post_startup_script}
   */
   readonly postStartupScript?: string;
   /**
   * Post startup script behavior that defines download and execution behavior. Possible values: ["RUN_ONCE", "RUN_EVERY_START", "DOWNLOAD_AND_RUN_EVERY_START"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#post_startup_script_behavior ColabRuntimeTemplate#post_startup_script_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#post_startup_script_behavior ColabRuntimeTemplate#post_startup_script_behavior}
   */
   readonly postStartupScriptBehavior?: string;
   /**
   * Post startup script url to download. Example: https://bucket/script.sh.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#post_startup_script_url ColabRuntimeTemplate#post_startup_script_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#post_startup_script_url ColabRuntimeTemplate#post_startup_script_url}
   */
   readonly postStartupScriptUrl?: string;
 }
@@ -1205,15 +1291,21 @@ export class ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfigOutputRefe
 }
 export interface ColabRuntimeTemplateSoftwareConfig {
   /**
+  * colab_image block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#colab_image ColabRuntimeTemplate#colab_image}
+  */
+  readonly colabImage?: ColabRuntimeTemplateSoftwareConfigColabImage;
+  /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#env ColabRuntimeTemplate#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#env ColabRuntimeTemplate#env}
   */
   readonly env?: ColabRuntimeTemplateSoftwareConfigEnv[] | cdktn.IResolvable;
   /**
   * post_startup_script_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#post_startup_script_config ColabRuntimeTemplate#post_startup_script_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#post_startup_script_config ColabRuntimeTemplate#post_startup_script_config}
   */
   readonly postStartupScriptConfig?: ColabRuntimeTemplateSoftwareConfigPostStartupScriptConfig;
 }
@@ -1224,6 +1316,7 @@ export function colabRuntimeTemplateSoftwareConfigToTerraform(struct?: ColabRunt
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    colab_image: colabRuntimeTemplateSoftwareConfigColabImageToTerraform(struct!.colabImage),
     env: cdktn.listMapper(colabRuntimeTemplateSoftwareConfigEnvToTerraform, true)(struct!.env),
     post_startup_script_config: colabRuntimeTemplateSoftwareConfigPostStartupScriptConfigToTerraform(struct!.postStartupScriptConfig),
   }
@@ -1236,6 +1329,12 @@ export function colabRuntimeTemplateSoftwareConfigToHclTerraform(struct?: ColabR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    colab_image: {
+      value: colabRuntimeTemplateSoftwareConfigColabImageToHclTerraform(struct!.colabImage),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ColabRuntimeTemplateSoftwareConfigColabImageList",
+    },
     env: {
       value: cdktn.listMapperHcl(colabRuntimeTemplateSoftwareConfigEnvToHclTerraform, true)(struct!.env),
       isBlock: true,
@@ -1268,6 +1367,10 @@ export class ColabRuntimeTemplateSoftwareConfigOutputReference extends cdktn.Com
   public get internalValue(): ColabRuntimeTemplateSoftwareConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._colabImage?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.colabImage = this._colabImage?.internalValue;
+    }
     if (this._env?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.env = this._env?.internalValue;
@@ -1282,14 +1385,32 @@ export class ColabRuntimeTemplateSoftwareConfigOutputReference extends cdktn.Com
   public set internalValue(value: ColabRuntimeTemplateSoftwareConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._colabImage.internalValue = undefined;
       this._env.internalValue = undefined;
       this._postStartupScriptConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._colabImage.internalValue = value.colabImage;
       this._env.internalValue = value.env;
       this._postStartupScriptConfig.internalValue = value.postStartupScriptConfig;
     }
+  }
+
+  // colab_image - computed: false, optional: true, required: false
+  private _colabImage = new ColabRuntimeTemplateSoftwareConfigColabImageOutputReference(this, "colab_image");
+  public get colabImage() {
+    return this._colabImage;
+  }
+  public putColabImage(value: ColabRuntimeTemplateSoftwareConfigColabImage) {
+    this._colabImage.internalValue = value;
+  }
+  public resetColabImage() {
+    this._colabImage.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get colabImageInput() {
+    return this._colabImage.internalValue;
   }
 
   // env - computed: false, optional: true, required: false
@@ -1326,15 +1447,15 @@ export class ColabRuntimeTemplateSoftwareConfigOutputReference extends cdktn.Com
 }
 export interface ColabRuntimeTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#create ColabRuntimeTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#create ColabRuntimeTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#delete ColabRuntimeTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#delete ColabRuntimeTemplate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#update ColabRuntimeTemplate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#update ColabRuntimeTemplate#update}
   */
   readonly update?: string;
 }
@@ -1486,7 +1607,7 @@ export class ColabRuntimeTemplateTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template google_colab_runtime_template}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template google_colab_runtime_template}
 */
 export class ColabRuntimeTemplate extends cdktn.TerraformResource {
 
@@ -1502,7 +1623,7 @@ export class ColabRuntimeTemplate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ColabRuntimeTemplate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ColabRuntimeTemplate to import
-  * @param importFromId The id of the existing ColabRuntimeTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ColabRuntimeTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ColabRuntimeTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1514,7 +1635,7 @@ export class ColabRuntimeTemplate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_runtime_template google_colab_runtime_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_runtime_template google_colab_runtime_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1525,8 +1646,8 @@ export class ColabRuntimeTemplate extends cdktn.TerraformResource {
       terraformResourceType: 'google_colab_runtime_template',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

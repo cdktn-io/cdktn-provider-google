@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface VertexAiFeatureOnlineStoreConfig extends cdktn.TerraformMetaArg
   /**
   * If set to true, any FeatureViews and Features for this FeatureOnlineStore will also be deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#force_destroy VertexAiFeatureOnlineStore#force_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#force_destroy VertexAiFeatureOnlineStore#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#id VertexAiFeatureOnlineStore#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#id VertexAiFeatureOnlineStore#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,47 +31,53 @@ export interface VertexAiFeatureOnlineStoreConfig extends cdktn.TerraformMetaArg
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#labels VertexAiFeatureOnlineStore#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#labels VertexAiFeatureOnlineStore#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The resource name of the Feature Online Store. This value may be up to 60 characters, and valid characters are [a-z0-9_]. The first character cannot be a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#name VertexAiFeatureOnlineStore#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#name VertexAiFeatureOnlineStore#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#project VertexAiFeatureOnlineStore#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#project VertexAiFeatureOnlineStore#project}
   */
   readonly project?: string;
   /**
   * The region of feature online store. eg us-central1
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#region VertexAiFeatureOnlineStore#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#region VertexAiFeatureOnlineStore#region}
   */
   readonly region?: string;
   /**
   * bigtable block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#bigtable VertexAiFeatureOnlineStore#bigtable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#bigtable VertexAiFeatureOnlineStore#bigtable}
   */
   readonly bigtable?: VertexAiFeatureOnlineStoreBigtable;
   /**
   * dedicated_serving_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#dedicated_serving_endpoint VertexAiFeatureOnlineStore#dedicated_serving_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#dedicated_serving_endpoint VertexAiFeatureOnlineStore#dedicated_serving_endpoint}
   */
   readonly dedicatedServingEndpoint?: VertexAiFeatureOnlineStoreDedicatedServingEndpoint;
   /**
+  * encryption_spec block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#encryption_spec VertexAiFeatureOnlineStore#encryption_spec}
+  */
+  readonly encryptionSpec?: VertexAiFeatureOnlineStoreEncryptionSpec;
+  /**
   * optimized block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#optimized VertexAiFeatureOnlineStore#optimized}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#optimized VertexAiFeatureOnlineStore#optimized}
   */
   readonly optimized?: VertexAiFeatureOnlineStoreOptimized;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#timeouts VertexAiFeatureOnlineStore#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#timeouts VertexAiFeatureOnlineStore#timeouts}
   */
   readonly timeouts?: VertexAiFeatureOnlineStoreTimeouts;
 }
@@ -79,19 +85,19 @@ export interface VertexAiFeatureOnlineStoreBigtableAutoScaling {
   /**
   * A percentage of the cluster's CPU capacity. Can be from 10% to 80%. When a cluster's CPU utilization exceeds the target that you have set, Bigtable immediately adds nodes to the cluster. When CPU utilization is substantially lower than the target, Bigtable removes nodes. If not set will default to 50%.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#cpu_utilization_target VertexAiFeatureOnlineStore#cpu_utilization_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#cpu_utilization_target VertexAiFeatureOnlineStore#cpu_utilization_target}
   */
   readonly cpuUtilizationTarget?: number;
   /**
   * The maximum number of nodes to scale up to. Must be greater than or equal to minNodeCount, and less than or equal to 10 times of 'minNodeCount'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#max_node_count VertexAiFeatureOnlineStore#max_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#max_node_count VertexAiFeatureOnlineStore#max_node_count}
   */
   readonly maxNodeCount: number;
   /**
   * The minimum number of nodes to scale down to. Must be greater than or equal to 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#min_node_count VertexAiFeatureOnlineStore#min_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#min_node_count VertexAiFeatureOnlineStore#min_node_count}
   */
   readonly minNodeCount: number;
 }
@@ -227,9 +233,21 @@ export class VertexAiFeatureOnlineStoreBigtableAutoScalingOutputReference extend
 }
 export interface VertexAiFeatureOnlineStoreBigtable {
   /**
+  * Optional. If true, enable direct access to the Bigtable instance.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#enable_direct_bigtable_access VertexAiFeatureOnlineStore#enable_direct_bigtable_access}
+  */
+  readonly enableDirectBigtableAccess?: boolean | cdktn.IResolvable;
+  /**
+  * The zone where the Bigtable instance will be created.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#zone VertexAiFeatureOnlineStore#zone}
+  */
+  readonly zone?: string;
+  /**
   * auto_scaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#auto_scaling VertexAiFeatureOnlineStore#auto_scaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#auto_scaling VertexAiFeatureOnlineStore#auto_scaling}
   */
   readonly autoScaling: VertexAiFeatureOnlineStoreBigtableAutoScaling;
 }
@@ -240,6 +258,8 @@ export function vertexAiFeatureOnlineStoreBigtableToTerraform(struct?: VertexAiF
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    enable_direct_bigtable_access: cdktn.booleanToTerraform(struct!.enableDirectBigtableAccess),
+    zone: cdktn.stringToTerraform(struct!.zone),
     auto_scaling: vertexAiFeatureOnlineStoreBigtableAutoScalingToTerraform(struct!.autoScaling),
   }
 }
@@ -251,6 +271,18 @@ export function vertexAiFeatureOnlineStoreBigtableToHclTerraform(struct?: Vertex
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    enable_direct_bigtable_access: {
+      value: cdktn.booleanToHclTerraform(struct!.enableDirectBigtableAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    zone: {
+      value: cdktn.stringToHclTerraform(struct!.zone),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     auto_scaling: {
       value: vertexAiFeatureOnlineStoreBigtableAutoScalingToHclTerraform(struct!.autoScaling),
       isBlock: true,
@@ -277,6 +309,14 @@ export class VertexAiFeatureOnlineStoreBigtableOutputReference extends cdktn.Com
   public get internalValue(): VertexAiFeatureOnlineStoreBigtable | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._enableDirectBigtableAccess !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableDirectBigtableAccess = this._enableDirectBigtableAccess;
+    }
+    if (this._zone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zone = this._zone;
+    }
     if (this._autoScaling?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.autoScaling = this._autoScaling?.internalValue;
@@ -287,12 +327,48 @@ export class VertexAiFeatureOnlineStoreBigtableOutputReference extends cdktn.Com
   public set internalValue(value: VertexAiFeatureOnlineStoreBigtable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._enableDirectBigtableAccess = undefined;
+      this._zone = undefined;
       this._autoScaling.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableDirectBigtableAccess = value.enableDirectBigtableAccess;
+      this._zone = value.zone;
       this._autoScaling.internalValue = value.autoScaling;
     }
+  }
+
+  // enable_direct_bigtable_access - computed: false, optional: true, required: false
+  private _enableDirectBigtableAccess?: boolean | cdktn.IResolvable; 
+  public get enableDirectBigtableAccess() {
+    return this.getBooleanAttribute('enable_direct_bigtable_access');
+  }
+  public set enableDirectBigtableAccess(value: boolean | cdktn.IResolvable) {
+    this._enableDirectBigtableAccess = value;
+  }
+  public resetEnableDirectBigtableAccess() {
+    this._enableDirectBigtableAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableDirectBigtableAccessInput() {
+    return this._enableDirectBigtableAccess;
+  }
+
+  // zone - computed: true, optional: true, required: false
+  private _zone?: string; 
+  public get zone() {
+    return this.getStringAttribute('zone');
+  }
+  public set zone(value: string) {
+    this._zone = value;
+  }
+  public resetZone() {
+    this._zone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zoneInput() {
+    return this._zone;
   }
 
   // auto_scaling - computed: false, optional: false, required: true
@@ -312,13 +388,13 @@ export interface VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServic
   /**
   * If set to true, customers will use private service connection to send request. Otherwise, the connection will set to public endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#enable_private_service_connect VertexAiFeatureOnlineStore#enable_private_service_connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#enable_private_service_connect VertexAiFeatureOnlineStore#enable_private_service_connect}
   */
   readonly enablePrivateServiceConnect: boolean | cdktn.IResolvable;
   /**
   * A list of Projects from which the forwarding rule will target the service attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#project_allowlist VertexAiFeatureOnlineStore#project_allowlist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#project_allowlist VertexAiFeatureOnlineStore#project_allowlist}
   */
   readonly projectAllowlist?: string[];
 }
@@ -430,7 +506,7 @@ export interface VertexAiFeatureOnlineStoreDedicatedServingEndpoint {
   /**
   * private_service_connect_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#private_service_connect_config VertexAiFeatureOnlineStore#private_service_connect_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#private_service_connect_config VertexAiFeatureOnlineStore#private_service_connect_config}
   */
   readonly privateServiceConnectConfig?: VertexAiFeatureOnlineStoreDedicatedServingEndpointPrivateServiceConnectConfig;
 }
@@ -522,6 +598,89 @@ export class VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference e
     return this._privateServiceConnectConfig.internalValue;
   }
 }
+export interface VertexAiFeatureOnlineStoreEncryptionSpec {
+  /**
+  * The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the compute resource is created.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#kms_key_name VertexAiFeatureOnlineStore#kms_key_name}
+  */
+  readonly kmsKeyName: string;
+}
+
+export function vertexAiFeatureOnlineStoreEncryptionSpecToTerraform(struct?: VertexAiFeatureOnlineStoreEncryptionSpecOutputReference | VertexAiFeatureOnlineStoreEncryptionSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+  }
+}
+
+
+export function vertexAiFeatureOnlineStoreEncryptionSpecToHclTerraform(struct?: VertexAiFeatureOnlineStoreEncryptionSpecOutputReference | VertexAiFeatureOnlineStoreEncryptionSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VertexAiFeatureOnlineStoreEncryptionSpecOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VertexAiFeatureOnlineStoreEncryptionSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsKeyName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyName = this._kmsKeyName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VertexAiFeatureOnlineStoreEncryptionSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kmsKeyName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kmsKeyName = value.kmsKeyName;
+    }
+  }
+
+  // kms_key_name - computed: false, optional: false, required: true
+  private _kmsKeyName?: string; 
+  public get kmsKeyName() {
+    return this.getStringAttribute('kms_key_name');
+  }
+  public set kmsKeyName(value: string) {
+    this._kmsKeyName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyNameInput() {
+    return this._kmsKeyName;
+  }
+}
 export interface VertexAiFeatureOnlineStoreOptimized {
 }
 
@@ -573,15 +732,15 @@ export class VertexAiFeatureOnlineStoreOptimizedOutputReference extends cdktn.Co
 }
 export interface VertexAiFeatureOnlineStoreTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#create VertexAiFeatureOnlineStore#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#create VertexAiFeatureOnlineStore#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#delete VertexAiFeatureOnlineStore#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#delete VertexAiFeatureOnlineStore#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#update VertexAiFeatureOnlineStore#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#update VertexAiFeatureOnlineStore#update}
   */
   readonly update?: string;
 }
@@ -733,7 +892,7 @@ export class VertexAiFeatureOnlineStoreTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store}
 */
 export class VertexAiFeatureOnlineStore extends cdktn.TerraformResource {
 
@@ -749,7 +908,7 @@ export class VertexAiFeatureOnlineStore extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VertexAiFeatureOnlineStore resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiFeatureOnlineStore to import
-  * @param importFromId The id of the existing VertexAiFeatureOnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiFeatureOnlineStore that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiFeatureOnlineStore to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -761,7 +920,7 @@ export class VertexAiFeatureOnlineStore extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_feature_online_store google_vertex_ai_feature_online_store} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -772,8 +931,8 @@ export class VertexAiFeatureOnlineStore extends cdktn.TerraformResource {
       terraformResourceType: 'google_vertex_ai_feature_online_store',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -791,6 +950,7 @@ export class VertexAiFeatureOnlineStore extends cdktn.TerraformResource {
     this._region = config.region;
     this._bigtable.internalValue = config.bigtable;
     this._dedicatedServingEndpoint.internalValue = config.dedicatedServingEndpoint;
+    this._encryptionSpec.internalValue = config.encryptionSpec;
     this._optimized.internalValue = config.optimized;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -956,6 +1116,22 @@ export class VertexAiFeatureOnlineStore extends cdktn.TerraformResource {
     return this._dedicatedServingEndpoint.internalValue;
   }
 
+  // encryption_spec - computed: false, optional: true, required: false
+  private _encryptionSpec = new VertexAiFeatureOnlineStoreEncryptionSpecOutputReference(this, "encryption_spec");
+  public get encryptionSpec() {
+    return this._encryptionSpec;
+  }
+  public putEncryptionSpec(value: VertexAiFeatureOnlineStoreEncryptionSpec) {
+    this._encryptionSpec.internalValue = value;
+  }
+  public resetEncryptionSpec() {
+    this._encryptionSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionSpecInput() {
+    return this._encryptionSpec.internalValue;
+  }
+
   // optimized - computed: false, optional: true, required: false
   private _optimized = new VertexAiFeatureOnlineStoreOptimizedOutputReference(this, "optimized");
   public get optimized() {
@@ -1002,6 +1178,7 @@ export class VertexAiFeatureOnlineStore extends cdktn.TerraformResource {
       region: cdktn.stringToTerraform(this._region),
       bigtable: vertexAiFeatureOnlineStoreBigtableToTerraform(this._bigtable.internalValue),
       dedicated_serving_endpoint: vertexAiFeatureOnlineStoreDedicatedServingEndpointToTerraform(this._dedicatedServingEndpoint.internalValue),
+      encryption_spec: vertexAiFeatureOnlineStoreEncryptionSpecToTerraform(this._encryptionSpec.internalValue),
       optimized: vertexAiFeatureOnlineStoreOptimizedToTerraform(this._optimized.internalValue),
       timeouts: vertexAiFeatureOnlineStoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1056,6 +1233,12 @@ export class VertexAiFeatureOnlineStore extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "VertexAiFeatureOnlineStoreDedicatedServingEndpointList",
+      },
+      encryption_spec: {
+        value: vertexAiFeatureOnlineStoreEncryptionSpecToHclTerraform(this._encryptionSpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VertexAiFeatureOnlineStoreEncryptionSpecList",
       },
       optimized: {
         value: vertexAiFeatureOnlineStoreOptimizedToHclTerraform(this._optimized.internalValue),

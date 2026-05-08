@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleVmwareengineClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster#id DataGoogleVmwareengineCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataGoogleVmwareengineClusterConfig extends cdktn.TerraformMeta
   /**
   * The ID of the Cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
   */
   readonly name: string;
   /**
@@ -30,7 +30,7 @@ export interface DataGoogleVmwareengineClusterConfig extends cdktn.TerraformMeta
   * Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
   * For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
   */
   readonly parent: string;
 }
@@ -468,6 +468,202 @@ export class DataGoogleVmwareengineClusterAutoscalingSettingsList extends cdktn.
     return new DataGoogleVmwareengineClusterAutoscalingSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork {
+}
+
+export function dataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkToTerraform(struct?: DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkToHclTerraform(struct?: DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetwork | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // connection_count - computed: true, optional: false, required: false
+  public get connectionCount() {
+    return this.getNumberAttribute('connection_count');
+  }
+
+  // mtu - computed: true, optional: false, required: false
+  public get mtu() {
+    return this.getNumberAttribute('mtu');
+  }
+
+  // network_peering - computed: true, optional: false, required: false
+  public get networkPeering() {
+    return this.getStringAttribute('network_peering');
+  }
+
+  // subnet - computed: true, optional: false, required: false
+  public get subnet() {
+    return this.getStringAttribute('subnet');
+  }
+}
+
+export class DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference {
+    return new DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleVmwareengineClusterDatastoreMountConfig {
+}
+
+export function dataGoogleVmwareengineClusterDatastoreMountConfigToTerraform(struct?: DataGoogleVmwareengineClusterDatastoreMountConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleVmwareengineClusterDatastoreMountConfigToHclTerraform(struct?: DataGoogleVmwareengineClusterDatastoreMountConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleVmwareengineClusterDatastoreMountConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleVmwareengineClusterDatastoreMountConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // access_mode - computed: true, optional: false, required: false
+  public get accessMode() {
+    return this.getStringAttribute('access_mode');
+  }
+
+  // datastore - computed: true, optional: false, required: false
+  public get datastore() {
+    return this.getStringAttribute('datastore');
+  }
+
+  // datastore_network - computed: true, optional: false, required: false
+  private _datastoreNetwork = new DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList(this, "datastore_network", false);
+  public get datastoreNetwork() {
+    return this._datastoreNetwork;
+  }
+
+  // file_share - computed: true, optional: false, required: false
+  public get fileShare() {
+    return this.getStringAttribute('file_share');
+  }
+
+  // ignore_colocation - computed: true, optional: false, required: false
+  public get ignoreColocation() {
+    return this.getBooleanAttribute('ignore_colocation');
+  }
+
+  // nfs_version - computed: true, optional: false, required: false
+  public get nfsVersion() {
+    return this.getStringAttribute('nfs_version');
+  }
+
+  // servers - computed: true, optional: false, required: false
+  public get servers() {
+    return this.getListAttribute('servers');
+  }
+}
+
+export class DataGoogleVmwareengineClusterDatastoreMountConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference {
+    return new DataGoogleVmwareengineClusterDatastoreMountConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleVmwareengineClusterNodeTypeConfigs {
 }
 
@@ -555,7 +751,7 @@ export class DataGoogleVmwareengineClusterNodeTypeConfigsList extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster}
 */
 export class DataGoogleVmwareengineCluster extends cdktn.TerraformDataSource {
 
@@ -571,7 +767,7 @@ export class DataGoogleVmwareengineCluster extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleVmwareengineCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleVmwareengineCluster to import
-  * @param importFromId The id of the existing DataGoogleVmwareengineCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleVmwareengineCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleVmwareengineCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -583,7 +779,7 @@ export class DataGoogleVmwareengineCluster extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/vmwareengine_cluster google_vmwareengine_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -594,8 +790,8 @@ export class DataGoogleVmwareengineCluster extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_vmwareengine_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -618,6 +814,17 @@ export class DataGoogleVmwareengineCluster extends cdktn.TerraformDataSource {
   private _autoscalingSettings = new DataGoogleVmwareengineClusterAutoscalingSettingsList(this, "autoscaling_settings", false);
   public get autoscalingSettings() {
     return this._autoscalingSettings;
+  }
+
+  // create_time - computed: true, optional: false, required: false
+  public get createTime() {
+    return this.getStringAttribute('create_time');
+  }
+
+  // datastore_mount_config - computed: true, optional: false, required: false
+  private _datastoreMountConfig = new DataGoogleVmwareengineClusterDatastoreMountConfigList(this, "datastore_mount_config", false);
+  public get datastoreMountConfig() {
+    return this._datastoreMountConfig;
   }
 
   // id - computed: true, optional: true, required: false
@@ -681,6 +888,11 @@ export class DataGoogleVmwareengineCluster extends cdktn.TerraformDataSource {
   // uid - computed: true, optional: false, required: false
   public get uid() {
     return this.getStringAttribute('uid');
+  }
+
+  // update_time - computed: true, optional: false, required: false
+  public get updateTime() {
+    return this.getStringAttribute('update_time');
   }
 
   // =========

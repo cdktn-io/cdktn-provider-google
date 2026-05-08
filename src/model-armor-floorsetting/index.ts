@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ModelArmorFloorsettingConfig extends cdktn.TerraformMetaArgumen
   /**
   * Floor Settings enforcement status.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#enable_floor_setting_enforcement ModelArmorFloorsetting#enable_floor_setting_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#enable_floor_setting_enforcement ModelArmorFloorsetting#enable_floor_setting_enforcement}
   */
   readonly enableFloorSettingEnforcement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#id ModelArmorFloorsetting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#id ModelArmorFloorsetting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface ModelArmorFloorsettingConfig extends cdktn.TerraformMetaArgumen
   /**
   * List of integrated services for which the floor setting is applicable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#integrated_services ModelArmorFloorsetting#integrated_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#integrated_services ModelArmorFloorsetting#integrated_services}
   */
   readonly integratedServices?: string[];
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#location ModelArmorFloorsetting#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#location ModelArmorFloorsetting#location}
   */
   readonly location: string;
   /**
@@ -44,31 +44,37 @@ export interface ModelArmorFloorsettingConfig extends cdktn.TerraformMetaArgumen
   * * 'folders/{folder}'
   * * 'organizations/{organizationId}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#parent ModelArmorFloorsetting#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#parent ModelArmorFloorsetting#parent}
   */
   readonly parent: string;
   /**
   * ai_platform_floor_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#ai_platform_floor_setting ModelArmorFloorsetting#ai_platform_floor_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#ai_platform_floor_setting ModelArmorFloorsetting#ai_platform_floor_setting}
   */
   readonly aiPlatformFloorSetting?: ModelArmorFloorsettingAiPlatformFloorSetting;
   /**
   * filter_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#filter_config ModelArmorFloorsetting#filter_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#filter_config ModelArmorFloorsetting#filter_config}
   */
   readonly filterConfig: ModelArmorFloorsettingFilterConfig;
   /**
   * floor_setting_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#floor_setting_metadata ModelArmorFloorsetting#floor_setting_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#floor_setting_metadata ModelArmorFloorsetting#floor_setting_metadata}
   */
   readonly floorSettingMetadata?: ModelArmorFloorsettingFloorSettingMetadata;
   /**
+  * google_mcp_server_floor_setting block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#google_mcp_server_floor_setting ModelArmorFloorsetting#google_mcp_server_floor_setting}
+  */
+  readonly googleMcpServerFloorSetting?: ModelArmorFloorsettingGoogleMcpServerFloorSetting;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#timeouts ModelArmorFloorsetting#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#timeouts ModelArmorFloorsetting#timeouts}
   */
   readonly timeouts?: ModelArmorFloorsettingTimeouts;
 }
@@ -76,21 +82,21 @@ export interface ModelArmorFloorsettingAiPlatformFloorSetting {
   /**
   * If true, log Model Armor filter results to Cloud Logging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#enable_cloud_logging ModelArmorFloorsetting#enable_cloud_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#enable_cloud_logging ModelArmorFloorsetting#enable_cloud_logging}
   */
   readonly enableCloudLogging?: boolean | cdktn.IResolvable;
   /**
   * If true, Model Armor filters will be run in inspect and block mode.
   * Requests that trip Model Armor filters will be blocked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#inspect_and_block ModelArmorFloorsetting#inspect_and_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#inspect_and_block ModelArmorFloorsetting#inspect_and_block}
   */
   readonly inspectAndBlock?: boolean | cdktn.IResolvable;
   /**
   * If true, Model Armor filters will be run in inspect only mode. No action
   * will be taken on the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#inspect_only ModelArmorFloorsetting#inspect_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#inspect_only ModelArmorFloorsetting#inspect_only}
   */
   readonly inspectOnly?: boolean | cdktn.IResolvable;
 }
@@ -237,7 +243,7 @@ export interface ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettings {
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#filter_enforcement ModelArmorFloorsetting#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#filter_enforcement ModelArmorFloorsetting#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -326,7 +332,7 @@ export interface ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettings 
   * MEDIUM_AND_ABOVE
   * HIGH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#confidence_level ModelArmorFloorsetting#confidence_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#confidence_level ModelArmorFloorsetting#confidence_level}
   */
   readonly confidenceLevel?: string;
   /**
@@ -336,7 +342,7 @@ export interface ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettings 
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#filter_enforcement ModelArmorFloorsetting#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#filter_enforcement ModelArmorFloorsetting#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -454,7 +460,7 @@ export interface ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters {
   * MEDIUM_AND_ABOVE
   * HIGH
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#confidence_level ModelArmorFloorsetting#confidence_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#confidence_level ModelArmorFloorsetting#confidence_level}
   */
   readonly confidenceLevel?: string;
   /**
@@ -464,7 +470,7 @@ export interface ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters {
   * HARASSMENT
   * DANGEROUS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#filter_type ModelArmorFloorsetting#filter_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#filter_type ModelArmorFloorsetting#filter_type}
   */
   readonly filterType: string;
 }
@@ -608,7 +614,7 @@ export interface ModelArmorFloorsettingFilterConfigRaiSettings {
   /**
   * rai_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#rai_filters ModelArmorFloorsetting#rai_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#rai_filters ModelArmorFloorsetting#rai_filters}
   */
   readonly raiFilters: ModelArmorFloorsettingFilterConfigRaiSettingsRaiFilters[] | cdktn.IResolvable;
 }
@@ -700,7 +706,7 @@ export interface ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfig {
   * e.g.
   * 'projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#deidentify_template ModelArmorFloorsetting#deidentify_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#deidentify_template ModelArmorFloorsetting#deidentify_template}
   */
   readonly deidentifyTemplate?: string;
   /**
@@ -714,7 +720,7 @@ export interface ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfig {
   * e.g:-
   * 'projects/{project}/locations/{location}/inspectTemplates/{inspect_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#inspect_template ModelArmorFloorsetting#inspect_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#inspect_template ModelArmorFloorsetting#inspect_template}
   */
   readonly inspectTemplate?: string;
 }
@@ -833,7 +839,7 @@ export interface ModelArmorFloorsettingFilterConfigSdpSettingsBasicConfig {
   * ENABLED
   * DISABLED
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#filter_enforcement ModelArmorFloorsetting#filter_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#filter_enforcement ModelArmorFloorsetting#filter_enforcement}
   */
   readonly filterEnforcement?: string;
 }
@@ -919,13 +925,13 @@ export interface ModelArmorFloorsettingFilterConfigSdpSettings {
   /**
   * advanced_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#advanced_config ModelArmorFloorsetting#advanced_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#advanced_config ModelArmorFloorsetting#advanced_config}
   */
   readonly advancedConfig?: ModelArmorFloorsettingFilterConfigSdpSettingsAdvancedConfig;
   /**
   * basic_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#basic_config ModelArmorFloorsetting#basic_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#basic_config ModelArmorFloorsetting#basic_config}
   */
   readonly basicConfig?: ModelArmorFloorsettingFilterConfigSdpSettingsBasicConfig;
 }
@@ -1040,25 +1046,25 @@ export interface ModelArmorFloorsettingFilterConfig {
   /**
   * malicious_uri_filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#malicious_uri_filter_settings ModelArmorFloorsetting#malicious_uri_filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#malicious_uri_filter_settings ModelArmorFloorsetting#malicious_uri_filter_settings}
   */
   readonly maliciousUriFilterSettings?: ModelArmorFloorsettingFilterConfigMaliciousUriFilterSettings;
   /**
   * pi_and_jailbreak_filter_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#pi_and_jailbreak_filter_settings ModelArmorFloorsetting#pi_and_jailbreak_filter_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#pi_and_jailbreak_filter_settings ModelArmorFloorsetting#pi_and_jailbreak_filter_settings}
   */
   readonly piAndJailbreakFilterSettings?: ModelArmorFloorsettingFilterConfigPiAndJailbreakFilterSettings;
   /**
   * rai_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#rai_settings ModelArmorFloorsetting#rai_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#rai_settings ModelArmorFloorsetting#rai_settings}
   */
   readonly raiSettings?: ModelArmorFloorsettingFilterConfigRaiSettings;
   /**
   * sdp_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#sdp_settings ModelArmorFloorsetting#sdp_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#sdp_settings ModelArmorFloorsetting#sdp_settings}
   */
   readonly sdpSettings?: ModelArmorFloorsettingFilterConfigSdpSettings;
 }
@@ -1231,7 +1237,7 @@ export interface ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetectio
   /**
   * If true, multi language detection will be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#enable_multi_language_detection ModelArmorFloorsetting#enable_multi_language_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#enable_multi_language_detection ModelArmorFloorsetting#enable_multi_language_detection}
   */
   readonly enableMultiLanguageDetection: boolean | cdktn.IResolvable;
 }
@@ -1314,7 +1320,7 @@ export interface ModelArmorFloorsettingFloorSettingMetadata {
   /**
   * multi_language_detection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#multi_language_detection ModelArmorFloorsetting#multi_language_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#multi_language_detection ModelArmorFloorsetting#multi_language_detection}
   */
   readonly multiLanguageDetection?: ModelArmorFloorsettingFloorSettingMetadataMultiLanguageDetection;
 }
@@ -1396,17 +1402,175 @@ export class ModelArmorFloorsettingFloorSettingMetadataOutputReference extends c
     return this._multiLanguageDetection.internalValue;
   }
 }
+export interface ModelArmorFloorsettingGoogleMcpServerFloorSetting {
+  /**
+  * If true, log Model Armor filter results to Cloud Logging.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#enable_cloud_logging ModelArmorFloorsetting#enable_cloud_logging}
+  */
+  readonly enableCloudLogging?: boolean | cdktn.IResolvable;
+  /**
+  * If true, Model Armor filters will be run in inspect and block mode.
+  * Requests that trip Model Armor filters will be blocked.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#inspect_and_block ModelArmorFloorsetting#inspect_and_block}
+  */
+  readonly inspectAndBlock?: boolean | cdktn.IResolvable;
+  /**
+  * If true, Model Armor filters will be run in inspect only mode. No action
+  * will be taken on the request.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#inspect_only ModelArmorFloorsetting#inspect_only}
+  */
+  readonly inspectOnly?: boolean | cdktn.IResolvable;
+}
+
+export function modelArmorFloorsettingGoogleMcpServerFloorSettingToTerraform(struct?: ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference | ModelArmorFloorsettingGoogleMcpServerFloorSetting): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable_cloud_logging: cdktn.booleanToTerraform(struct!.enableCloudLogging),
+    inspect_and_block: cdktn.booleanToTerraform(struct!.inspectAndBlock),
+    inspect_only: cdktn.booleanToTerraform(struct!.inspectOnly),
+  }
+}
+
+
+export function modelArmorFloorsettingGoogleMcpServerFloorSettingToHclTerraform(struct?: ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference | ModelArmorFloorsettingGoogleMcpServerFloorSetting): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_cloud_logging: {
+      value: cdktn.booleanToHclTerraform(struct!.enableCloudLogging),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    inspect_and_block: {
+      value: cdktn.booleanToHclTerraform(struct!.inspectAndBlock),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    inspect_only: {
+      value: cdktn.booleanToHclTerraform(struct!.inspectOnly),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ModelArmorFloorsettingGoogleMcpServerFloorSetting | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enableCloudLogging !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableCloudLogging = this._enableCloudLogging;
+    }
+    if (this._inspectAndBlock !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inspectAndBlock = this._inspectAndBlock;
+    }
+    if (this._inspectOnly !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.inspectOnly = this._inspectOnly;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ModelArmorFloorsettingGoogleMcpServerFloorSetting | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enableCloudLogging = undefined;
+      this._inspectAndBlock = undefined;
+      this._inspectOnly = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableCloudLogging = value.enableCloudLogging;
+      this._inspectAndBlock = value.inspectAndBlock;
+      this._inspectOnly = value.inspectOnly;
+    }
+  }
+
+  // enable_cloud_logging - computed: false, optional: true, required: false
+  private _enableCloudLogging?: boolean | cdktn.IResolvable; 
+  public get enableCloudLogging() {
+    return this.getBooleanAttribute('enable_cloud_logging');
+  }
+  public set enableCloudLogging(value: boolean | cdktn.IResolvable) {
+    this._enableCloudLogging = value;
+  }
+  public resetEnableCloudLogging() {
+    this._enableCloudLogging = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableCloudLoggingInput() {
+    return this._enableCloudLogging;
+  }
+
+  // inspect_and_block - computed: false, optional: true, required: false
+  private _inspectAndBlock?: boolean | cdktn.IResolvable; 
+  public get inspectAndBlock() {
+    return this.getBooleanAttribute('inspect_and_block');
+  }
+  public set inspectAndBlock(value: boolean | cdktn.IResolvable) {
+    this._inspectAndBlock = value;
+  }
+  public resetInspectAndBlock() {
+    this._inspectAndBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inspectAndBlockInput() {
+    return this._inspectAndBlock;
+  }
+
+  // inspect_only - computed: false, optional: true, required: false
+  private _inspectOnly?: boolean | cdktn.IResolvable; 
+  public get inspectOnly() {
+    return this.getBooleanAttribute('inspect_only');
+  }
+  public set inspectOnly(value: boolean | cdktn.IResolvable) {
+    this._inspectOnly = value;
+  }
+  public resetInspectOnly() {
+    this._inspectOnly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inspectOnlyInput() {
+    return this._inspectOnly;
+  }
+}
 export interface ModelArmorFloorsettingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#create ModelArmorFloorsetting#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#create ModelArmorFloorsetting#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#delete ModelArmorFloorsetting#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#delete ModelArmorFloorsetting#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#update ModelArmorFloorsetting#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#update ModelArmorFloorsetting#update}
   */
   readonly update?: string;
 }
@@ -1558,7 +1722,7 @@ export class ModelArmorFloorsettingTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting google_model_armor_floorsetting}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting google_model_armor_floorsetting}
 */
 export class ModelArmorFloorsetting extends cdktn.TerraformResource {
 
@@ -1574,7 +1738,7 @@ export class ModelArmorFloorsetting extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ModelArmorFloorsetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ModelArmorFloorsetting to import
-  * @param importFromId The id of the existing ModelArmorFloorsetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ModelArmorFloorsetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ModelArmorFloorsetting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1586,7 +1750,7 @@ export class ModelArmorFloorsetting extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/model_armor_floorsetting google_model_armor_floorsetting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/model_armor_floorsetting google_model_armor_floorsetting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1597,8 +1761,8 @@ export class ModelArmorFloorsetting extends cdktn.TerraformResource {
       terraformResourceType: 'google_model_armor_floorsetting',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1616,6 +1780,7 @@ export class ModelArmorFloorsetting extends cdktn.TerraformResource {
     this._aiPlatformFloorSetting.internalValue = config.aiPlatformFloorSetting;
     this._filterConfig.internalValue = config.filterConfig;
     this._floorSettingMetadata.internalValue = config.floorSettingMetadata;
+    this._googleMcpServerFloorSetting.internalValue = config.googleMcpServerFloorSetting;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1757,6 +1922,22 @@ export class ModelArmorFloorsetting extends cdktn.TerraformResource {
     return this._floorSettingMetadata.internalValue;
   }
 
+  // google_mcp_server_floor_setting - computed: false, optional: true, required: false
+  private _googleMcpServerFloorSetting = new ModelArmorFloorsettingGoogleMcpServerFloorSettingOutputReference(this, "google_mcp_server_floor_setting");
+  public get googleMcpServerFloorSetting() {
+    return this._googleMcpServerFloorSetting;
+  }
+  public putGoogleMcpServerFloorSetting(value: ModelArmorFloorsettingGoogleMcpServerFloorSetting) {
+    this._googleMcpServerFloorSetting.internalValue = value;
+  }
+  public resetGoogleMcpServerFloorSetting() {
+    this._googleMcpServerFloorSetting.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get googleMcpServerFloorSettingInput() {
+    return this._googleMcpServerFloorSetting.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new ModelArmorFloorsettingTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1787,6 +1968,7 @@ export class ModelArmorFloorsetting extends cdktn.TerraformResource {
       ai_platform_floor_setting: modelArmorFloorsettingAiPlatformFloorSettingToTerraform(this._aiPlatformFloorSetting.internalValue),
       filter_config: modelArmorFloorsettingFilterConfigToTerraform(this._filterConfig.internalValue),
       floor_setting_metadata: modelArmorFloorsettingFloorSettingMetadataToTerraform(this._floorSettingMetadata.internalValue),
+      google_mcp_server_floor_setting: modelArmorFloorsettingGoogleMcpServerFloorSettingToTerraform(this._googleMcpServerFloorSetting.internalValue),
       timeouts: modelArmorFloorsettingTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1840,6 +2022,12 @@ export class ModelArmorFloorsetting extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "ModelArmorFloorsettingFloorSettingMetadataList",
+      },
+      google_mcp_server_floor_setting: {
+        value: modelArmorFloorsettingGoogleMcpServerFloorSettingToHclTerraform(this._googleMcpServerFloorSetting.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ModelArmorFloorsettingGoogleMcpServerFloorSettingList",
       },
       timeouts: {
         value: modelArmorFloorsettingTimeoutsToHclTerraform(this._timeouts.internalValue),

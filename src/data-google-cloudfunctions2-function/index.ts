@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions2_function
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions2_function
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleCloudfunctions2FunctionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions2_function#id DataGoogleCloudfunctions2Function#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions2_function#id DataGoogleCloudfunctions2Function#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,20 +22,20 @@ export interface DataGoogleCloudfunctions2FunctionConfig extends cdktn.Terraform
   /**
   * The location of this cloud function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions2_function#location DataGoogleCloudfunctions2Function#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions2_function#location DataGoogleCloudfunctions2Function#location}
   */
   readonly location: string;
   /**
   * A user-defined name of the function. Function names must
   * be unique globally and match pattern 'projects/* /locations/* /functions/*'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions2_function#name DataGoogleCloudfunctions2Function#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions2_function#name DataGoogleCloudfunctions2Function#name}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions2_function#project DataGoogleCloudfunctions2Function#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions2_function#project DataGoogleCloudfunctions2Function#project}
   */
   readonly project?: string;
 }
@@ -771,6 +771,91 @@ export class DataGoogleCloudfunctions2FunctionEventTriggerList extends cdktn.Com
     return new DataGoogleCloudfunctions2FunctionEventTriggerOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface {
+}
+
+export function dataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceToTerraform(struct?: DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceToHclTerraform(struct?: DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // network - computed: true, optional: false, required: false
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+
+  // subnetwork - computed: true, optional: false, required: false
+  public get subnetwork() {
+    return this.getStringAttribute('subnetwork');
+  }
+
+  // tags - computed: true, optional: false, required: false
+  public get tags() {
+    return this.getListAttribute('tags');
+  }
+}
+
+export class DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference {
+    return new DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariables {
 }
 
@@ -1103,6 +1188,17 @@ export class DataGoogleCloudfunctions2FunctionServiceConfigOutputReference exten
     return this.getStringAttribute('binary_authorization_policy');
   }
 
+  // direct_vpc_egress - computed: true, optional: false, required: false
+  public get directVpcEgress() {
+    return this.getStringAttribute('direct_vpc_egress');
+  }
+
+  // direct_vpc_network_interface - computed: true, optional: false, required: false
+  private _directVpcNetworkInterface = new DataGoogleCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceList(this, "direct_vpc_network_interface", false);
+  public get directVpcNetworkInterface() {
+    return this._directVpcNetworkInterface;
+  }
+
   // environment_variables - computed: true, optional: false, required: false
   private _environmentVariables = new cdktn.StringMap(this, "environment_variables");
   public get environmentVariables() {
@@ -1197,7 +1293,7 @@ export class DataGoogleCloudfunctions2FunctionServiceConfigList extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function}
 */
 export class DataGoogleCloudfunctions2Function extends cdktn.TerraformDataSource {
 
@@ -1213,7 +1309,7 @@ export class DataGoogleCloudfunctions2Function extends cdktn.TerraformDataSource
   * Generates CDKTN code for importing a DataGoogleCloudfunctions2Function resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCloudfunctions2Function to import
-  * @param importFromId The id of the existing DataGoogleCloudfunctions2Function that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions2_function#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleCloudfunctions2Function that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions2_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCloudfunctions2Function to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1225,7 +1321,7 @@ export class DataGoogleCloudfunctions2Function extends cdktn.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/cloudfunctions2_function google_cloudfunctions2_function} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1236,8 +1332,8 @@ export class DataGoogleCloudfunctions2Function extends cdktn.TerraformDataSource
       terraformResourceType: 'google_cloudfunctions2_function',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

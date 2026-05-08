@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_autokey_config
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface KmsAutokeyConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * The folder for which to retrieve config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_autokey_config#folder KmsAutokeyConfig#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config#folder KmsAutokeyConfig#folder}
   */
   readonly folder: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_autokey_config#id KmsAutokeyConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config#id KmsAutokeyConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,27 +30,33 @@ export interface KmsAutokeyConfigConfig extends cdktn.TerraformMetaArguments {
   * CryptoKey for any new KeyHandle the Developer creates. Should have the form
   * 'projects/<project_id_or_number>'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_autokey_config#key_project KmsAutokeyConfig#key_project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config#key_project KmsAutokeyConfig#key_project}
   */
   readonly keyProject?: string;
   /**
+  * How Autokey determines which project to use when provisioning CMEK keys. Possible values: ["DEDICATED_KEY_PROJECT", "RESOURCE_PROJECT", "DISABLED"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config#key_project_resolution_mode KmsAutokeyConfig#key_project_resolution_mode}
+  */
+  readonly keyProjectResolutionMode?: string;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_autokey_config#timeouts KmsAutokeyConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config#timeouts KmsAutokeyConfig#timeouts}
   */
   readonly timeouts?: KmsAutokeyConfigTimeouts;
 }
 export interface KmsAutokeyConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_autokey_config#create KmsAutokeyConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config#create KmsAutokeyConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_autokey_config#delete KmsAutokeyConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config#delete KmsAutokeyConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_autokey_config#update KmsAutokeyConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config#update KmsAutokeyConfig#update}
   */
   readonly update?: string;
 }
@@ -202,7 +208,7 @@ export class KmsAutokeyConfigTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_autokey_config google_kms_autokey_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config google_kms_autokey_config}
 */
 export class KmsAutokeyConfig extends cdktn.TerraformResource {
 
@@ -218,7 +224,7 @@ export class KmsAutokeyConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KmsAutokeyConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmsAutokeyConfig to import
-  * @param importFromId The id of the existing KmsAutokeyConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_autokey_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KmsAutokeyConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmsAutokeyConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -230,7 +236,7 @@ export class KmsAutokeyConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_autokey_config google_kms_autokey_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/kms_autokey_config google_kms_autokey_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -241,8 +247,8 @@ export class KmsAutokeyConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_kms_autokey_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -255,6 +261,7 @@ export class KmsAutokeyConfig extends cdktn.TerraformResource {
     this._folder = config.folder;
     this._id = config.id;
     this._keyProject = config.keyProject;
+    this._keyProjectResolutionMode = config.keyProjectResolutionMode;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -312,6 +319,22 @@ export class KmsAutokeyConfig extends cdktn.TerraformResource {
     return this._keyProject;
   }
 
+  // key_project_resolution_mode - computed: false, optional: true, required: false
+  private _keyProjectResolutionMode?: string; 
+  public get keyProjectResolutionMode() {
+    return this.getStringAttribute('key_project_resolution_mode');
+  }
+  public set keyProjectResolutionMode(value: string) {
+    this._keyProjectResolutionMode = value;
+  }
+  public resetKeyProjectResolutionMode() {
+    this._keyProjectResolutionMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyProjectResolutionModeInput() {
+    return this._keyProjectResolutionMode;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new KmsAutokeyConfigTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -337,6 +360,7 @@ export class KmsAutokeyConfig extends cdktn.TerraformResource {
       folder: cdktn.stringToTerraform(this._folder),
       id: cdktn.stringToTerraform(this._id),
       key_project: cdktn.stringToTerraform(this._keyProject),
+      key_project_resolution_mode: cdktn.stringToTerraform(this._keyProjectResolutionMode),
       timeouts: kmsAutokeyConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -357,6 +381,12 @@ export class KmsAutokeyConfig extends cdktn.TerraformResource {
       },
       key_project: {
         value: cdktn.stringToHclTerraform(this._keyProject),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      key_project_resolution_mode: {
+        value: cdktn.stringToHclTerraform(this._keyProjectResolutionMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

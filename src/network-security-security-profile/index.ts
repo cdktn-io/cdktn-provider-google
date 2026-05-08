@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface NetworkSecuritySecurityProfileConfig extends cdktn.TerraformMet
   /**
   * An optional description of the security profile. The Max length is 512 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#description NetworkSecuritySecurityProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#description NetworkSecuritySecurityProfile#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#id NetworkSecuritySecurityProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#id NetworkSecuritySecurityProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,66 +32,72 @@ export interface NetworkSecuritySecurityProfileConfig extends cdktn.TerraformMet
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#labels NetworkSecuritySecurityProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#labels NetworkSecuritySecurityProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the security profile.
   * The default value is 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#location NetworkSecuritySecurityProfile#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#location NetworkSecuritySecurityProfile#location}
   */
   readonly location?: string;
   /**
   * The name of the security profile resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#name NetworkSecuritySecurityProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#name NetworkSecuritySecurityProfile#name}
   */
   readonly name: string;
   /**
   * The name of the parent this security profile belongs to.
   * Format: organizations/{organization_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#parent NetworkSecuritySecurityProfile#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#parent NetworkSecuritySecurityProfile#parent}
   */
   readonly parent?: string;
   /**
-  * The type of security profile. Possible values: ["THREAT_PREVENTION", "CUSTOM_MIRRORING", "CUSTOM_INTERCEPT"]
+  * The type of security profile. Possible values: ["THREAT_PREVENTION", "URL_FILTERING", "CUSTOM_MIRRORING", "CUSTOM_INTERCEPT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#type NetworkSecuritySecurityProfile#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#type NetworkSecuritySecurityProfile#type}
   */
   readonly type: string;
   /**
   * custom_intercept_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#custom_intercept_profile NetworkSecuritySecurityProfile#custom_intercept_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#custom_intercept_profile NetworkSecuritySecurityProfile#custom_intercept_profile}
   */
   readonly customInterceptProfile?: NetworkSecuritySecurityProfileCustomInterceptProfile;
   /**
   * custom_mirroring_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#custom_mirroring_profile NetworkSecuritySecurityProfile#custom_mirroring_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#custom_mirroring_profile NetworkSecuritySecurityProfile#custom_mirroring_profile}
   */
   readonly customMirroringProfile?: NetworkSecuritySecurityProfileCustomMirroringProfile;
   /**
   * threat_prevention_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#threat_prevention_profile NetworkSecuritySecurityProfile#threat_prevention_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#threat_prevention_profile NetworkSecuritySecurityProfile#threat_prevention_profile}
   */
   readonly threatPreventionProfile?: NetworkSecuritySecurityProfileThreatPreventionProfile;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#timeouts NetworkSecuritySecurityProfile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#timeouts NetworkSecuritySecurityProfile#timeouts}
   */
   readonly timeouts?: NetworkSecuritySecurityProfileTimeouts;
+  /**
+  * url_filtering_profile block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#url_filtering_profile NetworkSecuritySecurityProfile#url_filtering_profile}
+  */
+  readonly urlFilteringProfile?: NetworkSecuritySecurityProfileUrlFilteringProfile;
 }
 export interface NetworkSecuritySecurityProfileCustomInterceptProfile {
   /**
   * The Intercept Endpoint Group to which matching traffic should be intercepted.
   * Format: projects/{project_id}/locations/global/interceptEndpointGroups/{endpoint_group_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#intercept_endpoint_group NetworkSecuritySecurityProfile#intercept_endpoint_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#intercept_endpoint_group NetworkSecuritySecurityProfile#intercept_endpoint_group}
   */
   readonly interceptEndpointGroup: string;
 }
@@ -172,10 +178,21 @@ export class NetworkSecuritySecurityProfileCustomInterceptProfileOutputReference
 }
 export interface NetworkSecuritySecurityProfileCustomMirroringProfile {
   /**
-  * The Mirroring Endpoint Group to which matching traffic should be mirrored.
+  * The target downstream Mirroring Deployment Groups.
+  * This field is used for Packet Broker mirroring endpoint groups to specify
+  * the deployment groups that the packet should be mirrored to by the broker.
+  * Format: projects/{project_id}/locations/global/mirroringDeploymentGroups/{deployment_group_id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#mirroring_deployment_groups NetworkSecuritySecurityProfile#mirroring_deployment_groups}
+  */
+  readonly mirroringDeploymentGroups?: string[];
+  /**
+  * The target Mirroring Endpoint Group.
+  * When a mirroring rule with this security profile attached matches a packet,
+  * a replica will be mirrored to the location-local target in this group.
   * Format: projects/{project_id}/locations/global/mirroringEndpointGroups/{endpoint_group_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#mirroring_endpoint_group NetworkSecuritySecurityProfile#mirroring_endpoint_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#mirroring_endpoint_group NetworkSecuritySecurityProfile#mirroring_endpoint_group}
   */
   readonly mirroringEndpointGroup: string;
 }
@@ -186,6 +203,7 @@ export function networkSecuritySecurityProfileCustomMirroringProfileToTerraform(
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    mirroring_deployment_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.mirroringDeploymentGroups),
     mirroring_endpoint_group: cdktn.stringToTerraform(struct!.mirroringEndpointGroup),
   }
 }
@@ -197,6 +215,12 @@ export function networkSecuritySecurityProfileCustomMirroringProfileToHclTerrafo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    mirroring_deployment_groups: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.mirroringDeploymentGroups),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
     mirroring_endpoint_group: {
       value: cdktn.stringToHclTerraform(struct!.mirroringEndpointGroup),
       isBlock: false,
@@ -223,6 +247,10 @@ export class NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference
   public get internalValue(): NetworkSecuritySecurityProfileCustomMirroringProfile | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._mirroringDeploymentGroups !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mirroringDeploymentGroups = this._mirroringDeploymentGroups;
+    }
     if (this._mirroringEndpointGroup !== undefined) {
       hasAnyValues = true;
       internalValueResult.mirroringEndpointGroup = this._mirroringEndpointGroup;
@@ -233,12 +261,30 @@ export class NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference
   public set internalValue(value: NetworkSecuritySecurityProfileCustomMirroringProfile | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._mirroringDeploymentGroups = undefined;
       this._mirroringEndpointGroup = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._mirroringDeploymentGroups = value.mirroringDeploymentGroups;
       this._mirroringEndpointGroup = value.mirroringEndpointGroup;
     }
+  }
+
+  // mirroring_deployment_groups - computed: false, optional: true, required: false
+  private _mirroringDeploymentGroups?: string[]; 
+  public get mirroringDeploymentGroups() {
+    return this.getListAttribute('mirroring_deployment_groups');
+  }
+  public set mirroringDeploymentGroups(value: string[]) {
+    this._mirroringDeploymentGroups = value;
+  }
+  public resetMirroringDeploymentGroups() {
+    this._mirroringDeploymentGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mirroringDeploymentGroupsInput() {
+    return this._mirroringDeploymentGroups;
   }
 
   // mirroring_endpoint_group - computed: false, optional: false, required: true
@@ -253,18 +299,23 @@ export class NetworkSecuritySecurityProfileCustomMirroringProfileOutputReference
   public get mirroringEndpointGroupInput() {
     return this._mirroringEndpointGroup;
   }
+
+  // mirroring_endpoint_group_type - computed: true, optional: false, required: false
+  public get mirroringEndpointGroupType() {
+    return this.getStringAttribute('mirroring_endpoint_group_type');
+  }
 }
 export interface NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides {
   /**
   * Threat action override. For some threat types, only a subset of actions applies. Possible values: ["ALERT", "ALLOW", "DEFAULT_ACTION", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
   */
   readonly action: string;
   /**
   * Required protocol to match. Possible values: ["SMTP", "SMB", "POP3", "IMAP", "HTTP2", "HTTP", "FTP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#protocol NetworkSecuritySecurityProfile#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#protocol NetworkSecuritySecurityProfile#protocol}
   */
   readonly protocol: string;
 }
@@ -405,13 +456,13 @@ export interface NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOv
   /**
   * Threat action override. Possible values: ["ALERT", "ALLOW", "DEFAULT_ACTION", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
   */
   readonly action: string;
   /**
   * Severity level to match. Possible values: ["CRITICAL", "HIGH", "INFORMATIONAL", "LOW", "MEDIUM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#severity NetworkSecuritySecurityProfile#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#severity NetworkSecuritySecurityProfile#severity}
   */
   readonly severity: string;
 }
@@ -552,13 +603,13 @@ export interface NetworkSecuritySecurityProfileThreatPreventionProfileThreatOver
   /**
   * Threat action. Possible values: ["ALERT", "ALLOW", "DEFAULT_ACTION", "DENY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#action NetworkSecuritySecurityProfile#action}
   */
   readonly action: string;
   /**
   * Vendor-specific ID of a threat to override.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#threat_id NetworkSecuritySecurityProfile#threat_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#threat_id NetworkSecuritySecurityProfile#threat_id}
   */
   readonly threatId: string;
 }
@@ -704,19 +755,19 @@ export interface NetworkSecuritySecurityProfileThreatPreventionProfile {
   /**
   * antivirus_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#antivirus_overrides NetworkSecuritySecurityProfile#antivirus_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#antivirus_overrides NetworkSecuritySecurityProfile#antivirus_overrides}
   */
   readonly antivirusOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverrides[] | cdktn.IResolvable;
   /**
   * severity_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#severity_overrides NetworkSecuritySecurityProfile#severity_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#severity_overrides NetworkSecuritySecurityProfile#severity_overrides}
   */
   readonly severityOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileSeverityOverrides[] | cdktn.IResolvable;
   /**
   * threat_overrides block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#threat_overrides NetworkSecuritySecurityProfile#threat_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#threat_overrides NetworkSecuritySecurityProfile#threat_overrides}
   */
   readonly threatOverrides?: NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverrides[] | cdktn.IResolvable;
 }
@@ -858,15 +909,15 @@ export class NetworkSecuritySecurityProfileThreatPreventionProfileOutputReferenc
 }
 export interface NetworkSecuritySecurityProfileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#create NetworkSecuritySecurityProfile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#create NetworkSecuritySecurityProfile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#delete NetworkSecuritySecurityProfile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#delete NetworkSecuritySecurityProfile#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#update NetworkSecuritySecurityProfile#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#update NetworkSecuritySecurityProfile#update}
   */
   readonly update?: string;
 }
@@ -1016,9 +1067,280 @@ export class NetworkSecuritySecurityProfileTimeoutsOutputReference extends cdktn
     return this._update;
   }
 }
+export interface NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters {
+  /**
+  * The action to take when the filter is applied. Possible values: ["ALLOW", "DENY"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#filtering_action NetworkSecuritySecurityProfile#filtering_action}
+  */
+  readonly filteringAction: string;
+  /**
+  * The priority of the filter within the URL filtering profile.
+  * Must be an integer from 0 and 2147483647, inclusive. Lower integers indicate higher priorities.
+  * The priority of a filter must be unique within a URL filtering profile.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#priority NetworkSecuritySecurityProfile#priority}
+  */
+  readonly priority: number;
+  /**
+  * A list of domain matcher strings that a domain name gets compared with to determine if the filter is applicable.
+  * A domain name must match with at least one of the strings in the list for a filter to be applicable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#urls NetworkSecuritySecurityProfile#urls}
+  */
+  readonly urls?: string[];
+}
+
+export function networkSecuritySecurityProfileUrlFilteringProfileUrlFiltersToTerraform(struct?: NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    filtering_action: cdktn.stringToTerraform(struct!.filteringAction),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    urls: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.urls),
+  }
+}
+
+
+export function networkSecuritySecurityProfileUrlFilteringProfileUrlFiltersToHclTerraform(struct?: NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    filtering_action: {
+      value: cdktn.stringToHclTerraform(struct!.filteringAction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    priority: {
+      value: cdktn.numberToHclTerraform(struct!.priority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    urls: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.urls),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._filteringAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filteringAction = this._filteringAction;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._urls !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.urls = this._urls;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._filteringAction = undefined;
+      this._priority = undefined;
+      this._urls = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._filteringAction = value.filteringAction;
+      this._priority = value.priority;
+      this._urls = value.urls;
+    }
+  }
+
+  // filtering_action - computed: false, optional: false, required: true
+  private _filteringAction?: string; 
+  public get filteringAction() {
+    return this.getStringAttribute('filtering_action');
+  }
+  public set filteringAction(value: string) {
+    this._filteringAction = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filteringActionInput() {
+    return this._filteringAction;
+  }
+
+  // priority - computed: false, optional: false, required: true
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // urls - computed: false, optional: true, required: false
+  private _urls?: string[]; 
+  public get urls() {
+    return this.getListAttribute('urls');
+  }
+  public set urls(value: string[]) {
+    this._urls = value;
+  }
+  public resetUrls() {
+    this._urls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlsInput() {
+    return this._urls;
+  }
+}
+
+export class NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList extends cdktn.ComplexList {
+  public internalValue? : NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference {
+    return new NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface NetworkSecuritySecurityProfileUrlFilteringProfile {
+  /**
+  * url_filters block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#url_filters NetworkSecuritySecurityProfile#url_filters}
+  */
+  readonly urlFilters?: NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters[] | cdktn.IResolvable;
+}
+
+export function networkSecuritySecurityProfileUrlFilteringProfileToTerraform(struct?: NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference | NetworkSecuritySecurityProfileUrlFilteringProfile): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    url_filters: cdktn.listMapper(networkSecuritySecurityProfileUrlFilteringProfileUrlFiltersToTerraform, true)(struct!.urlFilters),
+  }
+}
+
+
+export function networkSecuritySecurityProfileUrlFilteringProfileToHclTerraform(struct?: NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference | NetworkSecuritySecurityProfileUrlFilteringProfile): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    url_filters: {
+      value: cdktn.listMapperHcl(networkSecuritySecurityProfileUrlFilteringProfileUrlFiltersToHclTerraform, true)(struct!.urlFilters),
+      isBlock: true,
+      type: "set",
+      storageClassType: "NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecuritySecurityProfileUrlFilteringProfile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._urlFilters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.urlFilters = this._urlFilters?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecuritySecurityProfileUrlFilteringProfile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._urlFilters.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._urlFilters.internalValue = value.urlFilters;
+    }
+  }
+
+  // url_filters - computed: false, optional: true, required: false
+  private _urlFilters = new NetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList(this, "url_filters", true);
+  public get urlFilters() {
+    return this._urlFilters;
+  }
+  public putUrlFilters(value: NetworkSecuritySecurityProfileUrlFilteringProfileUrlFilters[] | cdktn.IResolvable) {
+    this._urlFilters.internalValue = value;
+  }
+  public resetUrlFilters() {
+    this._urlFilters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlFiltersInput() {
+    return this._urlFilters.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile google_network_security_security_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile google_network_security_security_profile}
 */
 export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
 
@@ -1034,7 +1356,7 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkSecuritySecurityProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecuritySecurityProfile to import
-  * @param importFromId The id of the existing NetworkSecuritySecurityProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecuritySecurityProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecuritySecurityProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1046,7 +1368,7 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_security_profile google_network_security_security_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1057,8 +1379,8 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_security_security_profile',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1079,6 +1401,7 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
     this._customMirroringProfile.internalValue = config.customMirroringProfile;
     this._threatPreventionProfile.internalValue = config.threatPreventionProfile;
     this._timeouts.internalValue = config.timeouts;
+    this._urlFilteringProfile.internalValue = config.urlFilteringProfile;
   }
 
   // ==========
@@ -1287,6 +1610,22 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // url_filtering_profile - computed: false, optional: true, required: false
+  private _urlFilteringProfile = new NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference(this, "url_filtering_profile");
+  public get urlFilteringProfile() {
+    return this._urlFilteringProfile;
+  }
+  public putUrlFilteringProfile(value: NetworkSecuritySecurityProfileUrlFilteringProfile) {
+    this._urlFilteringProfile.internalValue = value;
+  }
+  public resetUrlFilteringProfile() {
+    this._urlFilteringProfile.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlFilteringProfileInput() {
+    return this._urlFilteringProfile.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1304,6 +1643,7 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
       custom_mirroring_profile: networkSecuritySecurityProfileCustomMirroringProfileToTerraform(this._customMirroringProfile.internalValue),
       threat_prevention_profile: networkSecuritySecurityProfileThreatPreventionProfileToTerraform(this._threatPreventionProfile.internalValue),
       timeouts: networkSecuritySecurityProfileTimeoutsToTerraform(this._timeouts.internalValue),
+      url_filtering_profile: networkSecuritySecurityProfileUrlFilteringProfileToTerraform(this._urlFilteringProfile.internalValue),
     };
   }
 
@@ -1374,6 +1714,12 @@ export class NetworkSecuritySecurityProfile extends cdktn.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "NetworkSecuritySecurityProfileTimeouts",
+      },
+      url_filtering_profile: {
+        value: networkSecuritySecurityProfileUrlFilteringProfileToHclTerraform(this._urlFilteringProfile.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkSecuritySecurityProfileUrlFilteringProfileList",
       },
     };
 

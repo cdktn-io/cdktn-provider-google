@@ -7,7 +7,7 @@ const { CdktnProviderProject } = require("@cdktn/provider-project");
 
 const project = new CdktnProviderProject({
   useCustomGithubRunner: true,
-  terraformProvider: "hashicorp/google@~> 6.50.0",
+  terraformProvider: "hashicorp/google@~> 7.0",
   cdktnVersion: "^0.23.0",
   constructsVersion: "^10.6.0",
   minNodeVersion: "20.16.0",

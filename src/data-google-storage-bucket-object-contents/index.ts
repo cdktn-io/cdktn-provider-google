@@ -1,0 +1,318 @@
+/**
+ * Copyright IBM Corp. 2021, 2026
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket_object_contents
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktn from 'cdktn';
+
+// Configuration
+
+export interface DataGoogleStorageBucketObjectContentsConfig extends cdktn.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket_object_contents#bucket DataGoogleStorageBucketObjectContents#bucket}
+  */
+  readonly bucket: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket_object_contents#id DataGoogleStorageBucketObjectContents#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket_object_contents#match_glob DataGoogleStorageBucketObjectContents#match_glob}
+  */
+  readonly matchGlob?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket_object_contents#prefix DataGoogleStorageBucketObjectContents#prefix}
+  */
+  readonly prefix?: string;
+}
+export interface DataGoogleStorageBucketObjectContentsBucketObjects {
+}
+
+export function dataGoogleStorageBucketObjectContentsBucketObjectsToTerraform(struct?: DataGoogleStorageBucketObjectContentsBucketObjects): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleStorageBucketObjectContentsBucketObjectsToHclTerraform(struct?: DataGoogleStorageBucketObjectContentsBucketObjects): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleStorageBucketObjectContentsBucketObjectsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleStorageBucketObjectContentsBucketObjects | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleStorageBucketObjectContentsBucketObjects | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // content - computed: true, optional: false, required: false
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+
+  // content_base64 - computed: true, optional: false, required: false
+  public get contentBase64() {
+    return this.getStringAttribute('content_base64');
+  }
+
+  // content_base64sha512 - computed: true, optional: false, required: false
+  public get contentBase64Sha512() {
+    return this.getStringAttribute('content_base64sha512');
+  }
+
+  // content_hexsha512 - computed: true, optional: false, required: false
+  public get contentHexsha512() {
+    return this.getStringAttribute('content_hexsha512');
+  }
+
+  // content_type - computed: true, optional: false, required: false
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+
+  // media_link - computed: true, optional: false, required: false
+  public get mediaLink() {
+    return this.getStringAttribute('media_link');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // self_link - computed: true, optional: false, required: false
+  public get selfLink() {
+    return this.getStringAttribute('self_link');
+  }
+}
+
+export class DataGoogleStorageBucketObjectContentsBucketObjectsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleStorageBucketObjectContentsBucketObjectsOutputReference {
+    return new DataGoogleStorageBucketObjectContentsBucketObjectsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket_object_contents google_storage_bucket_object_contents}
+*/
+export class DataGoogleStorageBucketObjectContents extends cdktn.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "google_storage_bucket_object_contents";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTN code for importing a DataGoogleStorageBucketObjectContents resource upon running "cdktn plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataGoogleStorageBucketObjectContents to import
+  * @param importFromId The id of the existing DataGoogleStorageBucketObjectContents that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket_object_contents#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataGoogleStorageBucketObjectContents to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "google_storage_bucket_object_contents", importId: importFromId, provider });
+      }
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_bucket_object_contents google_storage_bucket_object_contents} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataGoogleStorageBucketObjectContentsConfig
+  */
+  public constructor(scope: Construct, id: string, config: DataGoogleStorageBucketObjectContentsConfig) {
+    super(scope, id, {
+      terraformResourceType: 'google_storage_bucket_object_contents',
+      terraformGeneratorMetadata: {
+        providerName: 'google',
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._bucket = config.bucket;
+    this._id = config.id;
+    this._matchGlob = config.matchGlob;
+    this._prefix = config.prefix;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // bucket - computed: false, optional: false, required: true
+  private _bucket?: string; 
+  public get bucket() {
+    return this.getStringAttribute('bucket');
+  }
+  public set bucket(value: string) {
+    this._bucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket;
+  }
+
+  // bucket_objects - computed: true, optional: false, required: false
+  private _bucketObjects = new DataGoogleStorageBucketObjectContentsBucketObjectsList(this, "bucket_objects", false);
+  public get bucketObjects() {
+    return this._bucketObjects;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // match_glob - computed: false, optional: true, required: false
+  private _matchGlob?: string; 
+  public get matchGlob() {
+    return this.getStringAttribute('match_glob');
+  }
+  public set matchGlob(value: string) {
+    this._matchGlob = value;
+  }
+  public resetMatchGlob() {
+    this._matchGlob = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchGlobInput() {
+    return this._matchGlob;
+  }
+
+  // prefix - computed: false, optional: true, required: false
+  private _prefix?: string; 
+  public get prefix() {
+    return this.getStringAttribute('prefix');
+  }
+  public set prefix(value: string) {
+    this._prefix = value;
+  }
+  public resetPrefix() {
+    this._prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixInput() {
+    return this._prefix;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      bucket: cdktn.stringToTerraform(this._bucket),
+      id: cdktn.stringToTerraform(this._id),
+      match_glob: cdktn.stringToTerraform(this._matchGlob),
+      prefix: cdktn.stringToTerraform(this._prefix),
+    };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      bucket: {
+        value: cdktn.stringToHclTerraform(this._bucket),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktn.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      match_glob: {
+        value: cdktn.stringToHclTerraform(this._matchGlob),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      prefix: {
+        value: cdktn.stringToHclTerraform(this._prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
+}

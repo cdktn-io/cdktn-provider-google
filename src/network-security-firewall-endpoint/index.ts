@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface NetworkSecurityFirewallEndpointConfig extends cdktn.TerraformMe
   /**
   * Project to bill on endpoint uptime usage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint#billing_project_id NetworkSecurityFirewallEndpoint#billing_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#billing_project_id NetworkSecurityFirewallEndpoint#billing_project_id}
   */
   readonly billingProjectId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint#id NetworkSecurityFirewallEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#id NetworkSecurityFirewallEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,46 +32,138 @@ export interface NetworkSecurityFirewallEndpointConfig extends cdktn.TerraformMe
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint#labels NetworkSecurityFirewallEndpoint#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#labels NetworkSecurityFirewallEndpoint#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location (zone) of the firewall endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint#location NetworkSecurityFirewallEndpoint#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#location NetworkSecurityFirewallEndpoint#location}
   */
   readonly location: string;
   /**
   * The name of the firewall endpoint resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint#name NetworkSecurityFirewallEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#name NetworkSecurityFirewallEndpoint#name}
   */
   readonly name: string;
   /**
   * The name of the parent this firewall endpoint belongs to.
   * Format: organizations/{organization_id}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint#parent NetworkSecurityFirewallEndpoint#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#parent NetworkSecurityFirewallEndpoint#parent}
   */
   readonly parent: string;
   /**
+  * endpoint_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#endpoint_settings NetworkSecurityFirewallEndpoint#endpoint_settings}
+  */
+  readonly endpointSettings?: NetworkSecurityFirewallEndpointEndpointSettings;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint#timeouts NetworkSecurityFirewallEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#timeouts NetworkSecurityFirewallEndpoint#timeouts}
   */
   readonly timeouts?: NetworkSecurityFirewallEndpointTimeouts;
 }
+export interface NetworkSecurityFirewallEndpointEndpointSettings {
+  /**
+  * Indicates whether Jumbo Frames are enabled for the firewall endpoint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#jumbo_frames_enabled NetworkSecurityFirewallEndpoint#jumbo_frames_enabled}
+  */
+  readonly jumboFramesEnabled?: boolean | cdktn.IResolvable;
+}
+
+export function networkSecurityFirewallEndpointEndpointSettingsToTerraform(struct?: NetworkSecurityFirewallEndpointEndpointSettingsOutputReference | NetworkSecurityFirewallEndpointEndpointSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    jumbo_frames_enabled: cdktn.booleanToTerraform(struct!.jumboFramesEnabled),
+  }
+}
+
+
+export function networkSecurityFirewallEndpointEndpointSettingsToHclTerraform(struct?: NetworkSecurityFirewallEndpointEndpointSettingsOutputReference | NetworkSecurityFirewallEndpointEndpointSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    jumbo_frames_enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.jumboFramesEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class NetworkSecurityFirewallEndpointEndpointSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkSecurityFirewallEndpointEndpointSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._jumboFramesEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jumboFramesEnabled = this._jumboFramesEnabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkSecurityFirewallEndpointEndpointSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._jumboFramesEnabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._jumboFramesEnabled = value.jumboFramesEnabled;
+    }
+  }
+
+  // jumbo_frames_enabled - computed: false, optional: true, required: false
+  private _jumboFramesEnabled?: boolean | cdktn.IResolvable; 
+  public get jumboFramesEnabled() {
+    return this.getBooleanAttribute('jumbo_frames_enabled');
+  }
+  public set jumboFramesEnabled(value: boolean | cdktn.IResolvable) {
+    this._jumboFramesEnabled = value;
+  }
+  public resetJumboFramesEnabled() {
+    this._jumboFramesEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jumboFramesEnabledInput() {
+    return this._jumboFramesEnabled;
+  }
+}
 export interface NetworkSecurityFirewallEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint#create NetworkSecurityFirewallEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#create NetworkSecurityFirewallEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint#delete NetworkSecurityFirewallEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#delete NetworkSecurityFirewallEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint#update NetworkSecurityFirewallEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#update NetworkSecurityFirewallEndpoint#update}
   */
   readonly update?: string;
 }
@@ -223,7 +315,7 @@ export class NetworkSecurityFirewallEndpointTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint}
 */
 export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
 
@@ -239,7 +331,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkSecurityFirewallEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityFirewallEndpoint to import
-  * @param importFromId The id of the existing NetworkSecurityFirewallEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityFirewallEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityFirewallEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -251,7 +343,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -262,8 +354,8 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_security_firewall_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -279,6 +371,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
     this._location = config.location;
     this._name = config.name;
     this._parent = config.parent;
+    this._endpointSettings.internalValue = config.endpointSettings;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -412,6 +505,22 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
     return this.getStringAttribute('update_time');
   }
 
+  // endpoint_settings - computed: false, optional: true, required: false
+  private _endpointSettings = new NetworkSecurityFirewallEndpointEndpointSettingsOutputReference(this, "endpoint_settings");
+  public get endpointSettings() {
+    return this._endpointSettings;
+  }
+  public putEndpointSettings(value: NetworkSecurityFirewallEndpointEndpointSettings) {
+    this._endpointSettings.internalValue = value;
+  }
+  public resetEndpointSettings() {
+    this._endpointSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointSettingsInput() {
+    return this._endpointSettings.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new NetworkSecurityFirewallEndpointTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -440,6 +549,7 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
       location: cdktn.stringToTerraform(this._location),
       name: cdktn.stringToTerraform(this._name),
       parent: cdktn.stringToTerraform(this._parent),
+      endpoint_settings: networkSecurityFirewallEndpointEndpointSettingsToTerraform(this._endpointSettings.internalValue),
       timeouts: networkSecurityFirewallEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -481,6 +591,12 @@ export class NetworkSecurityFirewallEndpoint extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      endpoint_settings: {
+        value: networkSecurityFirewallEndpointEndpointSettingsToHclTerraform(this._endpointSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkSecurityFirewallEndpointEndpointSettingsList",
       },
       timeouts: {
         value: networkSecurityFirewallEndpointTimeoutsToHclTerraform(this._timeouts.internalValue),

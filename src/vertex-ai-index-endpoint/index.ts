@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface VertexAiIndexEndpointConfig extends cdktn.TerraformMetaArgument
   /**
   * The description of the Index.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#description VertexAiIndexEndpoint#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#description VertexAiIndexEndpoint#description}
   */
   readonly description?: string;
   /**
   * The display name of the Index. The name can be up to 128 characters long and can consist of any UTF-8 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#display_name VertexAiIndexEndpoint#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#display_name VertexAiIndexEndpoint#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#id VertexAiIndexEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#id VertexAiIndexEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -37,7 +37,7 @@ export interface VertexAiIndexEndpointConfig extends cdktn.TerraformMetaArgument
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#labels VertexAiIndexEndpoint#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#labels VertexAiIndexEndpoint#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -46,51 +46,293 @@ export interface VertexAiIndexEndpointConfig extends cdktn.TerraformMetaArgument
   * [Format](https://cloud.google.com/compute/docs/reference/rest/v1/networks/insert): 'projects/{project}/global/networks/{network}'.
   * Where '{project}' is a project number, as in '12345', and '{network}' is network name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#network VertexAiIndexEndpoint#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#network VertexAiIndexEndpoint#network}
   */
   readonly network?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#project VertexAiIndexEndpoint#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#project VertexAiIndexEndpoint#project}
   */
   readonly project?: string;
   /**
   * If true, the deployed index will be accessible through public endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#public_endpoint_enabled VertexAiIndexEndpoint#public_endpoint_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#public_endpoint_enabled VertexAiIndexEndpoint#public_endpoint_enabled}
   */
   readonly publicEndpointEnabled?: boolean | cdktn.IResolvable;
   /**
   * The region of the index endpoint. eg us-central1
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#region VertexAiIndexEndpoint#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#region VertexAiIndexEndpoint#region}
   */
   readonly region?: string;
   /**
+  * encryption_spec block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#encryption_spec VertexAiIndexEndpoint#encryption_spec}
+  */
+  readonly encryptionSpec?: VertexAiIndexEndpointEncryptionSpec;
+  /**
   * private_service_connect_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#private_service_connect_config VertexAiIndexEndpoint#private_service_connect_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#private_service_connect_config VertexAiIndexEndpoint#private_service_connect_config}
   */
   readonly privateServiceConnectConfig?: VertexAiIndexEndpointPrivateServiceConnectConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#timeouts VertexAiIndexEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#timeouts VertexAiIndexEndpoint#timeouts}
   */
   readonly timeouts?: VertexAiIndexEndpointTimeouts;
+}
+export interface VertexAiIndexEndpointEncryptionSpec {
+  /**
+  * Required. The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. Has the form: 'projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key'. The key needs to be in the same region as where the compute resource is created.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#kms_key_name VertexAiIndexEndpoint#kms_key_name}
+  */
+  readonly kmsKeyName: string;
+}
+
+export function vertexAiIndexEndpointEncryptionSpecToTerraform(struct?: VertexAiIndexEndpointEncryptionSpecOutputReference | VertexAiIndexEndpointEncryptionSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+  }
+}
+
+
+export function vertexAiIndexEndpointEncryptionSpecToHclTerraform(struct?: VertexAiIndexEndpointEncryptionSpecOutputReference | VertexAiIndexEndpointEncryptionSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VertexAiIndexEndpointEncryptionSpecOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VertexAiIndexEndpointEncryptionSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsKeyName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyName = this._kmsKeyName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VertexAiIndexEndpointEncryptionSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kmsKeyName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kmsKeyName = value.kmsKeyName;
+    }
+  }
+
+  // kms_key_name - computed: false, optional: false, required: true
+  private _kmsKeyName?: string; 
+  public get kmsKeyName() {
+    return this.getStringAttribute('kms_key_name');
+  }
+  public set kmsKeyName(value: string) {
+    this._kmsKeyName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyNameInput() {
+    return this._kmsKeyName;
+  }
+}
+export interface VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigs {
+  /**
+  * The full name of the Google Compute Engine [network](https://cloud.google.com/compute/docs/networks-and-firewalls#networks). [Format](https://cloud.google.com/compute/docs/reference/rest/v1/networks/get): projects/{project}/global/networks/{network}.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#network VertexAiIndexEndpoint#network}
+  */
+  readonly network: string;
+  /**
+  * Project id used to create forwarding rule.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#project_id VertexAiIndexEndpoint#project_id}
+  */
+  readonly projectId: string;
+}
+
+export function vertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsToTerraform(struct?: VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    network: cdktn.stringToTerraform(struct!.network),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
+  }
+}
+
+
+export function vertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsToHclTerraform(struct?: VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    network: {
+      value: cdktn.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    project_id: {
+      value: cdktn.stringToHclTerraform(struct!.projectId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigs | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
+    if (this._projectId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectId = this._projectId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigs | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._network = undefined;
+      this._projectId = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._network = value.network;
+      this._projectId = value.projectId;
+    }
+  }
+
+  // network - computed: false, optional: false, required: true
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+
+  // project_id - computed: false, optional: false, required: true
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+}
+
+export class VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsList extends cdktn.ComplexList {
+  public internalValue? : VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigs[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference {
+    return new VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface VertexAiIndexEndpointPrivateServiceConnectConfig {
   /**
   * If set to true, the IndexEndpoint is created without private service access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#enable_private_service_connect VertexAiIndexEndpoint#enable_private_service_connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#enable_private_service_connect VertexAiIndexEndpoint#enable_private_service_connect}
   */
   readonly enablePrivateServiceConnect: boolean | cdktn.IResolvable;
   /**
   * A list of Projects from which the forwarding rule will target the service attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#project_allowlist VertexAiIndexEndpoint#project_allowlist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#project_allowlist VertexAiIndexEndpoint#project_allowlist}
   */
   readonly projectAllowlist?: string[];
+  /**
+  * psc_automation_configs block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#psc_automation_configs VertexAiIndexEndpoint#psc_automation_configs}
+  */
+  readonly pscAutomationConfigs?: VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigs[] | cdktn.IResolvable;
 }
 
 export function vertexAiIndexEndpointPrivateServiceConnectConfigToTerraform(struct?: VertexAiIndexEndpointPrivateServiceConnectConfigOutputReference | VertexAiIndexEndpointPrivateServiceConnectConfig): any {
@@ -101,6 +343,7 @@ export function vertexAiIndexEndpointPrivateServiceConnectConfigToTerraform(stru
   return {
     enable_private_service_connect: cdktn.booleanToTerraform(struct!.enablePrivateServiceConnect),
     project_allowlist: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.projectAllowlist),
+    psc_automation_configs: cdktn.listMapper(vertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsToTerraform, true)(struct!.pscAutomationConfigs),
   }
 }
 
@@ -122,6 +365,12 @@ export function vertexAiIndexEndpointPrivateServiceConnectConfigToHclTerraform(s
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
+    },
+    psc_automation_configs: {
+      value: cdktn.listMapperHcl(vertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsToHclTerraform, true)(struct!.pscAutomationConfigs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsList",
     },
   };
 
@@ -151,6 +400,10 @@ export class VertexAiIndexEndpointPrivateServiceConnectConfigOutputReference ext
       hasAnyValues = true;
       internalValueResult.projectAllowlist = this._projectAllowlist;
     }
+    if (this._pscAutomationConfigs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pscAutomationConfigs = this._pscAutomationConfigs?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -159,11 +412,13 @@ export class VertexAiIndexEndpointPrivateServiceConnectConfigOutputReference ext
       this.isEmptyObject = false;
       this._enablePrivateServiceConnect = undefined;
       this._projectAllowlist = undefined;
+      this._pscAutomationConfigs.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enablePrivateServiceConnect = value.enablePrivateServiceConnect;
       this._projectAllowlist = value.projectAllowlist;
+      this._pscAutomationConfigs.internalValue = value.pscAutomationConfigs;
     }
   }
 
@@ -195,18 +450,34 @@ export class VertexAiIndexEndpointPrivateServiceConnectConfigOutputReference ext
   public get projectAllowlistInput() {
     return this._projectAllowlist;
   }
+
+  // psc_automation_configs - computed: false, optional: true, required: false
+  private _pscAutomationConfigs = new VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsList(this, "psc_automation_configs", false);
+  public get pscAutomationConfigs() {
+    return this._pscAutomationConfigs;
+  }
+  public putPscAutomationConfigs(value: VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigs[] | cdktn.IResolvable) {
+    this._pscAutomationConfigs.internalValue = value;
+  }
+  public resetPscAutomationConfigs() {
+    this._pscAutomationConfigs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscAutomationConfigsInput() {
+    return this._pscAutomationConfigs.internalValue;
+  }
 }
 export interface VertexAiIndexEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#create VertexAiIndexEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#create VertexAiIndexEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#delete VertexAiIndexEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#delete VertexAiIndexEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#update VertexAiIndexEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#update VertexAiIndexEndpoint#update}
   */
   readonly update?: string;
 }
@@ -358,7 +629,7 @@ export class VertexAiIndexEndpointTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint}
 */
 export class VertexAiIndexEndpoint extends cdktn.TerraformResource {
 
@@ -374,7 +645,7 @@ export class VertexAiIndexEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VertexAiIndexEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiIndexEndpoint to import
-  * @param importFromId The id of the existing VertexAiIndexEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiIndexEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiIndexEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -386,7 +657,7 @@ export class VertexAiIndexEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index_endpoint google_vertex_ai_index_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -397,8 +668,8 @@ export class VertexAiIndexEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'google_vertex_ai_index_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -416,6 +687,7 @@ export class VertexAiIndexEndpoint extends cdktn.TerraformResource {
     this._project = config.project;
     this._publicEndpointEnabled = config.publicEndpointEnabled;
     this._region = config.region;
+    this._encryptionSpec.internalValue = config.encryptionSpec;
     this._privateServiceConnectConfig.internalValue = config.privateServiceConnectConfig;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -586,6 +858,22 @@ export class VertexAiIndexEndpoint extends cdktn.TerraformResource {
     return this.getStringAttribute('update_time');
   }
 
+  // encryption_spec - computed: false, optional: true, required: false
+  private _encryptionSpec = new VertexAiIndexEndpointEncryptionSpecOutputReference(this, "encryption_spec");
+  public get encryptionSpec() {
+    return this._encryptionSpec;
+  }
+  public putEncryptionSpec(value: VertexAiIndexEndpointEncryptionSpec) {
+    this._encryptionSpec.internalValue = value;
+  }
+  public resetEncryptionSpec() {
+    this._encryptionSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionSpecInput() {
+    return this._encryptionSpec.internalValue;
+  }
+
   // private_service_connect_config - computed: false, optional: true, required: false
   private _privateServiceConnectConfig = new VertexAiIndexEndpointPrivateServiceConnectConfigOutputReference(this, "private_service_connect_config");
   public get privateServiceConnectConfig() {
@@ -632,6 +920,7 @@ export class VertexAiIndexEndpoint extends cdktn.TerraformResource {
       project: cdktn.stringToTerraform(this._project),
       public_endpoint_enabled: cdktn.booleanToTerraform(this._publicEndpointEnabled),
       region: cdktn.stringToTerraform(this._region),
+      encryption_spec: vertexAiIndexEndpointEncryptionSpecToTerraform(this._encryptionSpec.internalValue),
       private_service_connect_config: vertexAiIndexEndpointPrivateServiceConnectConfigToTerraform(this._privateServiceConnectConfig.internalValue),
       timeouts: vertexAiIndexEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -686,6 +975,12 @@ export class VertexAiIndexEndpoint extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      encryption_spec: {
+        value: vertexAiIndexEndpointEncryptionSpecToHclTerraform(this._encryptionSpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VertexAiIndexEndpointEncryptionSpecList",
       },
       private_service_connect_config: {
         value: vertexAiIndexEndpointPrivateServiceConnectConfigToHclTerraform(this._privateServiceConnectConfig.internalValue),

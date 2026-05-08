@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,7 +17,7 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   * functional and can carry traffic. When set to false, no packets can be carried over the
   * interconnect and no BGP routes are exchanged over it. By default, the status is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#admin_enabled ComputeInterconnect#admin_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#admin_enabled ComputeInterconnect#admin_enabled}
   */
   readonly adminEnabled?: boolean | cdktn.IResolvable;
   /**
@@ -25,17 +25,17 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   * crossconnect. This field is required for Dedicated and Partner Interconnect, should not be specified
   * for cross-cloud interconnect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#customer_name ComputeInterconnect#customer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#customer_name ComputeInterconnect#customer_name}
   */
   readonly customerName?: string;
   /**
   * An optional description of this resource. Provide this property when you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#description ComputeInterconnect#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#description ComputeInterconnect#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#id ComputeInterconnect#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,7 +47,7 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   *   - PARTNER: A partner-managed interconnection shared between customers though a partner.
   *   - DEDICATED: A dedicated physical interconnection with the customer. Possible values: ["DEDICATED", "PARTNER", "IT_PRIVATE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#interconnect_type ComputeInterconnect#interconnect_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#interconnect_type ComputeInterconnect#interconnect_type}
   */
   readonly interconnectType: string;
   /**
@@ -58,7 +58,7 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#labels ComputeInterconnect#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#labels ComputeInterconnect#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -68,21 +68,21 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   *   - LINK_TYPE_ETHERNET_100G_LR: A 100G Ethernet with LR optics.
   *   - LINK_TYPE_ETHERNET_400G_LR4: A 400G Ethernet with LR4 optics Possible values: ["LINK_TYPE_ETHERNET_10G_LR", "LINK_TYPE_ETHERNET_100G_LR", "LINK_TYPE_ETHERNET_400G_LR4"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#link_type ComputeInterconnect#link_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#link_type ComputeInterconnect#link_type}
   */
   readonly linkType: string;
   /**
   * URL of the InterconnectLocation object that represents where this connection is to be provisioned.
   * Specifies the location inside Google's Networks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#location ComputeInterconnect#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#location ComputeInterconnect#location}
   */
   readonly location: string;
   /**
   * Enable or disable MACsec on this Interconnect connection.
   * MACsec enablement fails if the MACsec object is not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#macsec_enabled ComputeInterconnect#macsec_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#macsec_enabled ComputeInterconnect#macsec_enabled}
   */
   readonly macsecEnabled?: boolean | cdktn.IResolvable;
   /**
@@ -92,7 +92,7 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   * character must be a lowercase letter, and all following characters must be a dash,
   * lowercase letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
   */
   readonly name: string;
   /**
@@ -102,46 +102,53 @@ export interface ComputeInterconnectConfig extends cdktn.TerraformMetaArguments 
   * This field is required for users who sign up for Cloud Interconnect using workforce identity
   * federation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#noc_contact_email ComputeInterconnect#noc_contact_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#noc_contact_email ComputeInterconnect#noc_contact_email}
   */
   readonly nocContactEmail?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#project ComputeInterconnect#project}
   */
   readonly project?: string;
   /**
   * Indicates that this is a Cross-Cloud Interconnect. This field specifies the location outside
   * of Google's network that the interconnect is connected to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#remote_location ComputeInterconnect#remote_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#remote_location ComputeInterconnect#remote_location}
   */
   readonly remoteLocation?: string;
   /**
-  * interconnects.list of features requested for this Interconnect connection. Options: IF_MACSEC (
-  * If specified then the connection is created on MACsec capable hardware ports. If not
-  * specified, the default value is false, which allocates non-MACsec capable ports first if
-  * available). Note that MACSEC is still technically allowed for compatibility reasons, but it
-  * does not work with the API, and will be removed in an upcoming major version. Possible values: ["MACSEC", "CROSS_SITE_NETWORK", "IF_MACSEC"]
+  * List of features to request for this Interconnect connection. This field is only applicable during Interconnect creation and cannot be modified later.
+  * Possible values include:
+  * - 'IF_MACSEC': Provisions the connection on hardware ports that support MACsec (Media Access Control Security). If not specified, the system may allocate non-MACsec capable ports if available.
+  * - 'IF_L2_FORWARDING': Provisions the connection for Layer 2 (L2) traffic forwarding. If not specified, the connection defaults to Layer 3 (L3) traffic forwarding.
+  * - 'IF_CROSS_SITE_NETWORK': Provisions the connection exclusively for Cross-Site Networking.
+  * Note: 'MACSEC' is a legacy value for compatibility reasons and has the same effect as 'IF_MACSEC'. 'IF_MACSEC' is preferred. Possible values: ["MACSEC", "CROSS_SITE_NETWORK", "IF_MACSEC", "IF_L2_FORWARDING"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#requested_features ComputeInterconnect#requested_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#requested_features ComputeInterconnect#requested_features}
   */
   readonly requestedFeatures?: string[];
   /**
   * Target number of physical links in the link bundle, as requested by the customer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#requested_link_count ComputeInterconnect#requested_link_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#requested_link_count ComputeInterconnect#requested_link_count}
   */
   readonly requestedLinkCount: number;
   /**
   * macsec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#macsec ComputeInterconnect#macsec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#macsec ComputeInterconnect#macsec}
   */
   readonly macsec?: ComputeInterconnectMacsec;
   /**
+  * params block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#params ComputeInterconnect#params}
+  */
+  readonly params?: ComputeInterconnectParams;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#timeouts ComputeInterconnect#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#timeouts ComputeInterconnect#timeouts}
   */
   readonly timeouts?: ComputeInterconnectTimeouts;
 }
@@ -348,7 +355,7 @@ export interface ComputeInterconnectMacsecPreSharedKeys {
   * connection is configured with a must-secure security policy that drops all traffic
   * if the MKA session cannot be established with your router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
   */
   readonly failOpen?: boolean | cdktn.IResolvable;
   /**
@@ -358,7 +365,7 @@ export interface ComputeInterconnectMacsecPreSharedKeys {
   *  must be a lowercase letter, and all following characters must be a dash, lowercase
   *  letter, or digit, except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#name ComputeInterconnect#name}
   */
   readonly name: string;
   /**
@@ -368,7 +375,7 @@ export interface ComputeInterconnectMacsecPreSharedKeys {
   * be in increasing order. The start times of two consecutive keys must be at least 6
   * hours apart.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#start_time ComputeInterconnect#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#start_time ComputeInterconnect#start_time}
   */
   readonly startTime?: string;
 }
@@ -545,13 +552,13 @@ export interface ComputeInterconnectMacsec {
   * connection is configured with a must-secure security policy that drops all traffic
   * if the MKA session cannot be established with your router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#fail_open ComputeInterconnect#fail_open}
   */
   readonly failOpen?: boolean | cdktn.IResolvable;
   /**
   * pre_shared_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#pre_shared_keys ComputeInterconnect#pre_shared_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#pre_shared_keys ComputeInterconnect#pre_shared_keys}
   */
   readonly preSharedKeys: ComputeInterconnectMacsecPreSharedKeys[] | cdktn.IResolvable;
 }
@@ -659,17 +666,105 @@ export class ComputeInterconnectMacsecOutputReference extends cdktn.ComplexObjec
     return this._preSharedKeys.internalValue;
   }
 }
+export interface ComputeInterconnectParams {
+  /**
+  * Resource manager tags to be bound to the interconnect. Tag keys and values have the
+  * same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+  * and values are in the format tagValues/456.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#resource_manager_tags ComputeInterconnect#resource_manager_tags}
+  */
+  readonly resourceManagerTags?: { [key: string]: string };
+}
+
+export function computeInterconnectParamsToTerraform(struct?: ComputeInterconnectParamsOutputReference | ComputeInterconnectParams): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    resource_manager_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.resourceManagerTags),
+  }
+}
+
+
+export function computeInterconnectParamsToHclTerraform(struct?: ComputeInterconnectParamsOutputReference | ComputeInterconnectParams): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_manager_tags: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.resourceManagerTags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeInterconnectParamsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeInterconnectParams | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceManagerTags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceManagerTags = this._resourceManagerTags;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeInterconnectParams | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._resourceManagerTags = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._resourceManagerTags = value.resourceManagerTags;
+    }
+  }
+
+  // resource_manager_tags - computed: false, optional: true, required: false
+  private _resourceManagerTags?: { [key: string]: string }; 
+  public get resourceManagerTags() {
+    return this.getStringMapAttribute('resource_manager_tags');
+  }
+  public set resourceManagerTags(value: { [key: string]: string }) {
+    this._resourceManagerTags = value;
+  }
+  public resetResourceManagerTags() {
+    this._resourceManagerTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceManagerTagsInput() {
+    return this._resourceManagerTags;
+  }
+}
 export interface ComputeInterconnectTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#create ComputeInterconnect#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#delete ComputeInterconnect#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#update ComputeInterconnect#update}
   */
   readonly update?: string;
 }
@@ -821,7 +916,7 @@ export class ComputeInterconnectTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect google_compute_interconnect}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect google_compute_interconnect}
 */
 export class ComputeInterconnect extends cdktn.TerraformResource {
 
@@ -837,7 +932,7 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeInterconnect resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeInterconnect to import
-  * @param importFromId The id of the existing ComputeInterconnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeInterconnect that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeInterconnect to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -849,7 +944,7 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect google_compute_interconnect} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect google_compute_interconnect} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -860,8 +955,8 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_interconnect',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -887,6 +982,7 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
     this._requestedFeatures = config.requestedFeatures;
     this._requestedLinkCount = config.requestedLinkCount;
     this._macsec.internalValue = config.macsec;
+    this._params.internalValue = config.params;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1203,6 +1299,11 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
     return this._terraformLabels;
   }
 
+  // wire_groups - computed: true, optional: false, required: false
+  public get wireGroups() {
+    return this.getListAttribute('wire_groups');
+  }
+
   // macsec - computed: false, optional: true, required: false
   private _macsec = new ComputeInterconnectMacsecOutputReference(this, "macsec");
   public get macsec() {
@@ -1217,6 +1318,22 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get macsecInput() {
     return this._macsec.internalValue;
+  }
+
+  // params - computed: false, optional: true, required: false
+  private _params = new ComputeInterconnectParamsOutputReference(this, "params");
+  public get params() {
+    return this._params;
+  }
+  public putParams(value: ComputeInterconnectParams) {
+    this._params.internalValue = value;
+  }
+  public resetParams() {
+    this._params.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get paramsInput() {
+    return this._params.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1257,6 +1374,7 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
       requested_features: cdktn.listMapper(cdktn.stringToTerraform, false)(this._requestedFeatures),
       requested_link_count: cdktn.numberToTerraform(this._requestedLinkCount),
       macsec: computeInterconnectMacsecToTerraform(this._macsec.internalValue),
+      params: computeInterconnectParamsToTerraform(this._params.internalValue),
       timeouts: computeInterconnectTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1358,6 +1476,12 @@ export class ComputeInterconnect extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "ComputeInterconnectMacsecList",
+      },
+      params: {
+        value: computeInterconnectParamsToHclTerraform(this._params.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ComputeInterconnectParamsList",
       },
       timeouts: {
         value: computeInterconnectTimeoutsToHclTerraform(this._timeouts.internalValue),

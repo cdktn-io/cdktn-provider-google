@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_notification
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,50 +15,43 @@ export interface StorageNotificationConfig extends cdktn.TerraformMetaArguments 
   /**
   * The name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification#bucket StorageNotification#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_notification#bucket StorageNotification#bucket}
   */
   readonly bucket: string;
   /**
-  *  A set of key/value attribute pairs to attach to each Cloud Pub/Sub message published for this notification subscription
+  * A set of key/value attribute pairs to attach to each Cloud Pub/Sub message published for this notification subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification#custom_attributes StorageNotification#custom_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_notification#custom_attributes StorageNotification#custom_attributes}
   */
   readonly customAttributes?: { [key: string]: string };
   /**
   * List of event type filters for this notification config. If not specified, Cloud Storage will send notifications for all event types. The valid types are: "OBJECT_FINALIZE", "OBJECT_METADATA_UPDATE", "OBJECT_DELETE", "OBJECT_ARCHIVE"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification#event_types StorageNotification#event_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_notification#event_types StorageNotification#event_types}
   */
   readonly eventTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification#id StorageNotification#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Specifies a prefix path filter for this notification config. Cloud Storage will only send notifications for objects in this bucket whose names begin with the specified prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification#object_name_prefix StorageNotification#object_name_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_notification#object_name_prefix StorageNotification#object_name_prefix}
   */
   readonly objectNamePrefix?: string;
   /**
   * The desired content of the Payload. One of "JSON_API_V1" or "NONE".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification#payload_format StorageNotification#payload_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_notification#payload_format StorageNotification#payload_format}
   */
   readonly payloadFormat: string;
   /**
-  * The Cloud Pub/Sub topic to which this subscription publishes. Expects either the  topic name, assumed to belong to the default GCP provider project, or the project-level name,  i.e. projects/my-gcp-project/topics/my-topic or my-topic. If the project is not set in the provider, you will need to use the project-level name.
+  * The Cloud Pub/Sub topic to which this subscription publishes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification#topic StorageNotification#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_notification#topic StorageNotification#topic}
   */
   readonly topic: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification google_storage_notification}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_notification google_storage_notification}
 */
 export class StorageNotification extends cdktn.TerraformResource {
 
@@ -74,7 +67,7 @@ export class StorageNotification extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageNotification resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageNotification to import
-  * @param importFromId The id of the existing StorageNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_notification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageNotification to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -86,7 +79,7 @@ export class StorageNotification extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_notification google_storage_notification} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_notification google_storage_notification} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,8 +90,8 @@ export class StorageNotification extends cdktn.TerraformResource {
       terraformResourceType: 'google_storage_notification',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -111,7 +104,6 @@ export class StorageNotification extends cdktn.TerraformResource {
     this._bucket = config.bucket;
     this._customAttributes = config.customAttributes;
     this._eventTypes = config.eventTypes;
-    this._id = config.id;
     this._objectNamePrefix = config.objectNamePrefix;
     this._payloadFormat = config.payloadFormat;
     this._topic = config.topic;
@@ -166,20 +158,9 @@ export class StorageNotification extends cdktn.TerraformResource {
     return this._eventTypes;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // notification_id - computed: true, optional: false, required: false
@@ -243,7 +224,6 @@ export class StorageNotification extends cdktn.TerraformResource {
       bucket: cdktn.stringToTerraform(this._bucket),
       custom_attributes: cdktn.hashMapper(cdktn.stringToTerraform)(this._customAttributes),
       event_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._eventTypes),
-      id: cdktn.stringToTerraform(this._id),
       object_name_prefix: cdktn.stringToTerraform(this._objectNamePrefix),
       payload_format: cdktn.stringToTerraform(this._payloadFormat),
       topic: cdktn.stringToTerraform(this._topic),
@@ -269,12 +249,6 @@ export class StorageNotification extends cdktn.TerraformResource {
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
-      },
-      id: {
-        value: cdktn.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
       object_name_prefix: {
         value: cdktn.stringToHclTerraform(this._objectNamePrefix),
