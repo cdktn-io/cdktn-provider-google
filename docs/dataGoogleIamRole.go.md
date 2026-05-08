@@ -4,12 +4,12 @@
 
 ### DataGoogleIamRole <a name="DataGoogleIamRole" id="@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_role google_iam_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_role google_iam_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleiamrole"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiamrole"
 
 datagoogleiamrole.NewDataGoogleIamRole(scope Construct, id *string, config DataGoogleIamRoleConfig) DataGoogleIamRole
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleiamrole"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiamrole"
 
 datagoogleiamrole.DataGoogleIamRole_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleiamrole"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiamrole"
 
 datagoogleiamrole.DataGoogleIamRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagoogleiamrole.DataGoogleIamRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleiamrole"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiamrole"
 
 datagoogleiamrole.DataGoogleIamRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleiamrole.DataGoogleIamRole_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleiamrole"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiamrole"
 
 datagoogleiamrole.DataGoogleIamRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleIamRole to impor
 
 The id of the existing DataGoogleIamRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleiamrole"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleiamrole"
 
 &datagoogleiamrole.DataGoogleIamRoleConfig {
 	Connection: interface{},
@@ -675,8 +675,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleiamrol
 | <code><a href="#@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRoleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRoleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_role#name DataGoogleIamRole#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_role#id DataGoogleIamRole#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRoleConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_role#name DataGoogleIamRole#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamRole.DataGoogleIamRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_role#id DataGoogleIamRole#id}. |
 
 ---
 
@@ -758,7 +758,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_role#name DataGoogleIamRole#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_role#name DataGoogleIamRole#name}.
 
 ---
 
@@ -770,7 +770,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/iam_role#id DataGoogleIamRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_role#id DataGoogleIamRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

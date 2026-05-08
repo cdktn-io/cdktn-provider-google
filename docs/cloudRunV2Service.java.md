@@ -4,7 +4,7 @@
 
 ### CloudRunV2Service <a name="CloudRunV2Service" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer"></a>
 
@@ -28,13 +28,16 @@ CloudRunV2Service.Builder.create(Construct scope, java.lang.String id)
 //  .client(java.lang.String)
 //  .clientVersion(java.lang.String)
 //  .customAudiences(java.util.List<java.lang.String>)
+//  .defaultUriDisabled(java.lang.Boolean|IResolvable)
 //  .deletionProtection(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
+//  .iapEnabled(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .ingress(java.lang.String)
 //  .invokerIamDisabled(java.lang.Boolean|IResolvable)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .launchStage(java.lang.String)
+//  .multiRegionSettings(CloudRunV2ServiceMultiRegionSettings)
 //  .project(java.lang.String)
 //  .scaling(CloudRunV2ServiceScaling)
 //  .timeouts(CloudRunV2ServiceTimeouts)
@@ -62,14 +65,17 @@ CloudRunV2Service.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.client">client</a></code> | <code>java.lang.String</code> | Arbitrary identifier for the API client. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.clientVersion">clientVersion</a></code> | <code>java.lang.String</code> | Arbitrary version identifier for the API client. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.customAudiences">customAudiences</a></code> | <code>java.util.List<java.lang.String></code> | One or more custom audiences that you want this service to support. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.defaultUriDisabled">defaultUriDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Disables public resolution of the default URI of this service. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the service. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | User-provided description of the Service. This field currently has a 512-character limit. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.iapEnabled">iapEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Used to enable/disable IAP for the cloud-run service. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.ingress">ingress</a></code> | <code>java.lang.String</code> | Provides the ingress settings for this Service. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.invokerIamDisabled">invokerIamDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Disables IAM permission check for run.routes.invoke for callers of this service. For more information, visit https://cloud.google.com/run/docs/securing/managing-access#invoker_check. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Unstructured key value map that can be used to organize and categorize objects. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.launchStage">launchStage</a></code> | <code>java.lang.String</code> | The launch stage as defined by [Google Cloud Platform Launch Stages](https://cloud.google.com/products#product-launch-stages). Cloud Run supports ALPHA, BETA, and GA. If no value is specified, GA is assumed. Set the launch stage to a preview stage on input to allow use of preview features in that stage. On read (or output), describes whether the resource uses preview features. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.multiRegionSettings">multiRegionSettings</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings">CloudRunV2ServiceMultiRegionSettings</a></code> | multi_region_settings block. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.scaling">scaling</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling">CloudRunV2ServiceScaling</a></code> | scaling block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts">CloudRunV2ServiceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.traffic">traffic</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTraffic">CloudRunV2ServiceTraffic</a>></code> | traffic block. |
@@ -142,7 +148,7 @@ Must be unique amongst siblings in the same scope
 
 The location of the cloud run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#location CloudRunV2Service#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#location CloudRunV2Service#location}
 
 ---
 
@@ -152,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -162,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#template CloudRunV2Service#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#template CloudRunV2Service#template}
 
 ---
 
@@ -182,7 +188,7 @@ This field follows Kubernetes annotations' namespacing, limits, and rules.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
 
 ---
 
@@ -192,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 binary_authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#binary_authorization CloudRunV2Service#binary_authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#binary_authorization CloudRunV2Service#binary_authorization}
 
 ---
 
@@ -202,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 build_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#build_config CloudRunV2Service#build_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#build_config CloudRunV2Service#build_config}
 
 ---
 
@@ -212,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Arbitrary identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#client CloudRunV2Service#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#client CloudRunV2Service#client}
 
 ---
 
@@ -222,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Arbitrary version identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#client_version CloudRunV2Service#client_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#client_version CloudRunV2Service#client_version}
 
 ---
 
@@ -235,7 +241,17 @@ One or more custom audiences that you want this service to support.
 Specify each custom audience as the full URL in a string. The custom audiences are encoded in the token and used to authenticate requests.
 For more information, see https://cloud.google.com/run/docs/configuring/custom-audiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#custom_audiences CloudRunV2Service#custom_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#custom_audiences CloudRunV2Service#custom_audiences}
+
+---
+
+##### `defaultUriDisabled`<sup>Optional</sup> <a name="defaultUriDisabled" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.defaultUriDisabled"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Disables public resolution of the default URI of this service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#default_uri_disabled CloudRunV2Service#default_uri_disabled}
 
 ---
 
@@ -252,7 +268,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the service will fail.
 When the field is set to false, deleting the service is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#deletion_protection CloudRunV2Service#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#deletion_protection CloudRunV2Service#deletion_protection}
 
 ---
 
@@ -262,7 +278,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-provided description of the Service. This field currently has a 512-character limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#description CloudRunV2Service#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#description CloudRunV2Service#description}
+
+---
+
+##### `iapEnabled`<sup>Optional</sup> <a name="iapEnabled" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.iapEnabled"></a>
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Used to enable/disable IAP for the cloud-run service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#iap_enabled CloudRunV2Service#iap_enabled}
 
 ---
 
@@ -270,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -285,7 +311,7 @@ Provides the ingress settings for this Service.
 
 On output, returns the currently observed ingress settings, or INGRESS_TRAFFIC_UNSPECIFIED if no revision is active. Possible values: ["INGRESS_TRAFFIC_ALL", "INGRESS_TRAFFIC_INTERNAL_ONLY", "INGRESS_TRAFFIC_INTERNAL_LOAD_BALANCER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#ingress CloudRunV2Service#ingress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#ingress CloudRunV2Service#ingress}
 
 ---
 
@@ -295,7 +321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Disables IAM permission check for run.routes.invoke for callers of this service. For more information, visit https://cloud.google.com/run/docs/securing/managing-access#invoker_check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#invoker_iam_disabled CloudRunV2Service#invoker_iam_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#invoker_iam_disabled CloudRunV2Service#invoker_iam_disabled}
 
 ---
 
@@ -306,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 Unstructured key value map that can be used to organize and categorize objects.
 
 User-provided labels are shared with Google's billing system, so they can be used to filter, or break down billing charges by team, component,
-environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
 
 Cloud Run API v2 does not support labels with  'run.googleapis.com', 'cloud.googleapis.com', 'serving.knative.dev', or 'autoscaling.knative.dev' namespaces, and they will be rejected.
 All system labels in v1 now have a corresponding field in v2 Service.
@@ -314,7 +340,7 @@ All system labels in v1 now have a corresponding field in v2 Service.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#labels CloudRunV2Service#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#labels CloudRunV2Service#labels}
 
 ---
 
@@ -326,7 +352,17 @@ The launch stage as defined by [Google Cloud Platform Launch Stages](https://clo
 
 For example, if ALPHA is provided as input, but only BETA and GA-level features are used, this field will be BETA on output. Possible values: ["UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#launch_stage CloudRunV2Service#launch_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#launch_stage CloudRunV2Service#launch_stage}
+
+---
+
+##### `multiRegionSettings`<sup>Optional</sup> <a name="multiRegionSettings" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer.parameter.multiRegionSettings"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings">CloudRunV2ServiceMultiRegionSettings</a>
+
+multi_region_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#multi_region_settings CloudRunV2Service#multi_region_settings}
 
 ---
 
@@ -334,7 +370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}.
 
 ---
 
@@ -344,7 +380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#scaling CloudRunV2Service#scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#scaling CloudRunV2Service#scaling}
 
 ---
 
@@ -354,7 +390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#timeouts CloudRunV2Service#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#timeouts CloudRunV2Service#timeouts}
 
 ---
 
@@ -364,7 +400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 traffic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#traffic CloudRunV2Service#traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#traffic CloudRunV2Service#traffic}
 
 ---
 
@@ -398,6 +434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.putBinaryAuthorization">putBinaryAuthorization</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.putBuildConfig">putBuildConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.putMultiRegionSettings">putMultiRegionSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.putScaling">putScaling</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.putTemplate">putTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.putTimeouts">putTimeouts</a></code> | *No description.* |
@@ -408,13 +445,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetClient">resetClient</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetClientVersion">resetClientVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetCustomAudiences">resetCustomAudiences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetDefaultUriDisabled">resetDefaultUriDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetDeletionProtection">resetDeletionProtection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetIapEnabled">resetIapEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetIngress">resetIngress</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetInvokerIamDisabled">resetInvokerIamDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetLaunchStage">resetLaunchStage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetMultiRegionSettings">resetMultiRegionSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetScaling">resetScaling</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -757,6 +797,18 @@ public void putBuildConfig(CloudRunV2ServiceBuildConfig value)
 
 ---
 
+##### `putMultiRegionSettings` <a name="putMultiRegionSettings" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.putMultiRegionSettings"></a>
+
+```java
+public void putMultiRegionSettings(CloudRunV2ServiceMultiRegionSettings value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.putMultiRegionSettings.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings">CloudRunV2ServiceMultiRegionSettings</a>
+
+---
+
 ##### `putScaling` <a name="putScaling" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.putScaling"></a>
 
 ```java
@@ -841,6 +893,12 @@ public void resetClientVersion()
 public void resetCustomAudiences()
 ```
 
+##### `resetDefaultUriDisabled` <a name="resetDefaultUriDisabled" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetDefaultUriDisabled"></a>
+
+```java
+public void resetDefaultUriDisabled()
+```
+
 ##### `resetDeletionProtection` <a name="resetDeletionProtection" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetDeletionProtection"></a>
 
 ```java
@@ -851,6 +909,12 @@ public void resetDeletionProtection()
 
 ```java
 public void resetDescription()
+```
+
+##### `resetIapEnabled` <a name="resetIapEnabled" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetIapEnabled"></a>
+
+```java
+public void resetIapEnabled()
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetId"></a>
@@ -881,6 +945,12 @@ public void resetLabels()
 
 ```java
 public void resetLaunchStage()
+```
+
+##### `resetMultiRegionSettings` <a name="resetMultiRegionSettings" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetMultiRegionSettings"></a>
+
+```java
+public void resetMultiRegionSettings()
 ```
 
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.resetProject"></a>
@@ -1010,7 +1080,7 @@ The construct id used in the generated config for the CloudRunV2Service to impor
 
 The id of the existing CloudRunV2Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1054,6 +1124,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.lastModifier">lastModifier</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.latestCreatedRevision">latestCreatedRevision</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.latestReadyRevision">latestReadyRevision</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.multiRegionSettings">multiRegionSettings</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference">CloudRunV2ServiceMultiRegionSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.observedGeneration">observedGeneration</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.reconciling">reconciling</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.scaling">scaling</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference">CloudRunV2ServiceScalingOutputReference</a></code> | *No description.* |
@@ -1073,14 +1144,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.clientInput">clientInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.clientVersionInput">clientVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.customAudiencesInput">customAudiencesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.defaultUriDisabledInput">defaultUriDisabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.iapEnabledInput">iapEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.ingressInput">ingressInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.invokerIamDisabledInput">invokerIamDisabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.launchStageInput">launchStageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.multiRegionSettingsInput">multiRegionSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings">CloudRunV2ServiceMultiRegionSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.scalingInput">scalingInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling">CloudRunV2ServiceScaling</a></code> | *No description.* |
@@ -1091,8 +1165,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.client">client</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.clientVersion">clientVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.customAudiences">customAudiences</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.defaultUriDisabled">defaultUriDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.iapEnabled">iapEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.ingress">ingress</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.invokerIamDisabled">invokerIamDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -1386,6 +1462,16 @@ public java.lang.String getLatestReadyRevision();
 
 ---
 
+##### `multiRegionSettings`<sup>Required</sup> <a name="multiRegionSettings" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.multiRegionSettings"></a>
+
+```java
+public CloudRunV2ServiceMultiRegionSettingsOutputReference getMultiRegionSettings();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference">CloudRunV2ServiceMultiRegionSettingsOutputReference</a>
+
+---
+
 ##### `observedGeneration`<sup>Required</sup> <a name="observedGeneration" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.observedGeneration"></a>
 
 ```java
@@ -1576,6 +1662,16 @@ public java.util.List<java.lang.String> getCustomAudiencesInput();
 
 ---
 
+##### `defaultUriDisabledInput`<sup>Optional</sup> <a name="defaultUriDisabledInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.defaultUriDisabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDefaultUriDisabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `deletionProtectionInput`<sup>Optional</sup> <a name="deletionProtectionInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.deletionProtectionInput"></a>
 
 ```java
@@ -1593,6 +1689,16 @@ public java.lang.String getDescriptionInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `iapEnabledInput`<sup>Optional</sup> <a name="iapEnabledInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.iapEnabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIapEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -1653,6 +1759,16 @@ public java.lang.String getLocationInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `multiRegionSettingsInput`<sup>Optional</sup> <a name="multiRegionSettingsInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.multiRegionSettingsInput"></a>
+
+```java
+public CloudRunV2ServiceMultiRegionSettings getMultiRegionSettingsInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings">CloudRunV2ServiceMultiRegionSettings</a>
 
 ---
 
@@ -1756,6 +1872,16 @@ public java.util.List<java.lang.String> getCustomAudiences();
 
 ---
 
+##### `defaultUriDisabled`<sup>Required</sup> <a name="defaultUriDisabled" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.defaultUriDisabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDefaultUriDisabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `deletionProtection`<sup>Required</sup> <a name="deletionProtection" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.deletionProtection"></a>
 
 ```java
@@ -1773,6 +1899,16 @@ public java.lang.String getDescription();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `iapEnabled`<sup>Required</sup> <a name="iapEnabled" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.property.iapEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIapEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -1912,7 +2048,7 @@ If present, indicates to use Breakglass using this justification.
 
 If useDefault is False, then it must be empty. For more information on breakglass, see https://cloud.google.com/binary-authorization/docs/using-breakglass
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#breakglass_justification CloudRunV2Service#breakglass_justification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#breakglass_justification CloudRunV2Service#breakglass_justification}
 
 ---
 
@@ -1926,7 +2062,7 @@ public java.lang.String getPolicy();
 
 The path to a binary authorization policy. Format: projects/{project}/platforms/cloudRun/{policy-name}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#policy CloudRunV2Service#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#policy CloudRunV2Service#policy}
 
 ---
 
@@ -1940,7 +2076,7 @@ public java.lang.Boolean|IResolvable getUseDefault();
 
 If True, indicates to use the default project's binary authorization policy. If False, binary authorization will be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#use_default CloudRunV2Service#use_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#use_default CloudRunV2Service#use_default}
 
 ---
 
@@ -1988,7 +2124,7 @@ public java.lang.String getBaseImage();
 
 The base image used to build the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#base_image CloudRunV2Service#base_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#base_image CloudRunV2Service#base_image}
 
 ---
 
@@ -2002,7 +2138,7 @@ public java.lang.Boolean|IResolvable getEnableAutomaticUpdates();
 
 Sets whether the function will receive automatic base image updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#enable_automatic_updates CloudRunV2Service#enable_automatic_updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#enable_automatic_updates CloudRunV2Service#enable_automatic_updates}
 
 ---
 
@@ -2016,7 +2152,7 @@ public java.util.Map<java.lang.String, java.lang.String> getEnvironmentVariables
 
 User-provided build-time environment variables for the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#environment_variables CloudRunV2Service#environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#environment_variables CloudRunV2Service#environment_variables}
 
 ---
 
@@ -2032,7 +2168,7 @@ The name of the function (as defined in source code) that will be executed.
 
 Defaults to the resource name suffix, if not specified. For backward compatibility, if function with given name is not found, then the system will try to use function named "function".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#function_target CloudRunV2Service#function_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#function_target CloudRunV2Service#function_target}
 
 ---
 
@@ -2046,7 +2182,7 @@ public java.lang.String getImageUri();
 
 Artifact Registry URI to store the built image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#image_uri CloudRunV2Service#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#image_uri CloudRunV2Service#image_uri}
 
 ---
 
@@ -2060,7 +2196,7 @@ public java.lang.String getServiceAccount();
 
 Service account to be used for building the container. The format of this field is 'projects/{projectId}/serviceAccounts/{serviceAccountEmail}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#service_account CloudRunV2Service#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#service_account CloudRunV2Service#service_account}
 
 ---
 
@@ -2074,7 +2210,7 @@ public java.lang.String getSourceLocation();
 
 The Cloud Storage bucket URI where the function source code is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#source_location CloudRunV2Service#source_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#source_location CloudRunV2Service#source_location}
 
 ---
 
@@ -2090,7 +2226,7 @@ Name of the Cloud Build Custom Worker Pool that should be used to build the Clou
 
 The format of this field is 'projects/{project}/locations/{region}/workerPools/{workerPool}' where {project} and {region} are the project id and region respectively where the worker pool is defined and {workerPool} is the short name of the worker pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#worker_pool CloudRunV2Service#worker_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#worker_pool CloudRunV2Service#worker_pool}
 
 ---
 
@@ -2130,13 +2266,16 @@ CloudRunV2ServiceConfig.builder()
 //  .client(java.lang.String)
 //  .clientVersion(java.lang.String)
 //  .customAudiences(java.util.List<java.lang.String>)
+//  .defaultUriDisabled(java.lang.Boolean|IResolvable)
 //  .deletionProtection(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
+//  .iapEnabled(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .ingress(java.lang.String)
 //  .invokerIamDisabled(java.lang.Boolean|IResolvable)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .launchStage(java.lang.String)
+//  .multiRegionSettings(CloudRunV2ServiceMultiRegionSettings)
 //  .project(java.lang.String)
 //  .scaling(CloudRunV2ServiceScaling)
 //  .timeouts(CloudRunV2ServiceTimeouts)
@@ -2164,14 +2303,17 @@ CloudRunV2ServiceConfig.builder()
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.client">client</a></code> | <code>java.lang.String</code> | Arbitrary identifier for the API client. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.clientVersion">clientVersion</a></code> | <code>java.lang.String</code> | Arbitrary version identifier for the API client. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.customAudiences">customAudiences</a></code> | <code>java.util.List<java.lang.String></code> | One or more custom audiences that you want this service to support. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.defaultUriDisabled">defaultUriDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Disables public resolution of the default URI of this service. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the service. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.description">description</a></code> | <code>java.lang.String</code> | User-provided description of the Service. This field currently has a 512-character limit. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.iapEnabled">iapEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Used to enable/disable IAP for the cloud-run service. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.ingress">ingress</a></code> | <code>java.lang.String</code> | Provides the ingress settings for this Service. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.invokerIamDisabled">invokerIamDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Disables IAM permission check for run.routes.invoke for callers of this service. For more information, visit https://cloud.google.com/run/docs/securing/managing-access#invoker_check. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Unstructured key value map that can be used to organize and categorize objects. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.launchStage">launchStage</a></code> | <code>java.lang.String</code> | The launch stage as defined by [Google Cloud Platform Launch Stages](https://cloud.google.com/products#product-launch-stages). Cloud Run supports ALPHA, BETA, and GA. If no value is specified, GA is assumed. Set the launch stage to a preview stage on input to allow use of preview features in that stage. On read (or output), describes whether the resource uses preview features. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.multiRegionSettings">multiRegionSettings</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings">CloudRunV2ServiceMultiRegionSettings</a></code> | multi_region_settings block. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.scaling">scaling</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling">CloudRunV2ServiceScaling</a></code> | scaling block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts">CloudRunV2ServiceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.traffic">traffic</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTraffic">CloudRunV2ServiceTraffic</a>></code> | traffic block. |
@@ -2258,7 +2400,7 @@ public java.lang.String getLocation();
 
 The location of the cloud run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#location CloudRunV2Service#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#location CloudRunV2Service#location}
 
 ---
 
@@ -2272,7 +2414,7 @@ public java.lang.String getName();
 
 Name of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -2286,7 +2428,7 @@ public CloudRunV2ServiceTemplate getTemplate();
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#template CloudRunV2Service#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#template CloudRunV2Service#template}
 
 ---
 
@@ -2310,7 +2452,7 @@ This field follows Kubernetes annotations' namespacing, limits, and rules.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
 
 ---
 
@@ -2324,7 +2466,7 @@ public CloudRunV2ServiceBinaryAuthorization getBinaryAuthorization();
 
 binary_authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#binary_authorization CloudRunV2Service#binary_authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#binary_authorization CloudRunV2Service#binary_authorization}
 
 ---
 
@@ -2338,7 +2480,7 @@ public CloudRunV2ServiceBuildConfig getBuildConfig();
 
 build_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#build_config CloudRunV2Service#build_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#build_config CloudRunV2Service#build_config}
 
 ---
 
@@ -2352,7 +2494,7 @@ public java.lang.String getClient();
 
 Arbitrary identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#client CloudRunV2Service#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#client CloudRunV2Service#client}
 
 ---
 
@@ -2366,7 +2508,7 @@ public java.lang.String getClientVersion();
 
 Arbitrary version identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#client_version CloudRunV2Service#client_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#client_version CloudRunV2Service#client_version}
 
 ---
 
@@ -2383,7 +2525,21 @@ One or more custom audiences that you want this service to support.
 Specify each custom audience as the full URL in a string. The custom audiences are encoded in the token and used to authenticate requests.
 For more information, see https://cloud.google.com/run/docs/configuring/custom-audiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#custom_audiences CloudRunV2Service#custom_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#custom_audiences CloudRunV2Service#custom_audiences}
+
+---
+
+##### `defaultUriDisabled`<sup>Optional</sup> <a name="defaultUriDisabled" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.defaultUriDisabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getDefaultUriDisabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Disables public resolution of the default URI of this service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#default_uri_disabled CloudRunV2Service#default_uri_disabled}
 
 ---
 
@@ -2404,7 +2560,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the service will fail.
 When the field is set to false, deleting the service is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#deletion_protection CloudRunV2Service#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#deletion_protection CloudRunV2Service#deletion_protection}
 
 ---
 
@@ -2418,7 +2574,21 @@ public java.lang.String getDescription();
 
 User-provided description of the Service. This field currently has a 512-character limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#description CloudRunV2Service#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#description CloudRunV2Service#description}
+
+---
+
+##### `iapEnabled`<sup>Optional</sup> <a name="iapEnabled" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.iapEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getIapEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Used to enable/disable IAP for the cloud-run service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#iap_enabled CloudRunV2Service#iap_enabled}
 
 ---
 
@@ -2430,7 +2600,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2449,7 +2619,7 @@ Provides the ingress settings for this Service.
 
 On output, returns the currently observed ingress settings, or INGRESS_TRAFFIC_UNSPECIFIED if no revision is active. Possible values: ["INGRESS_TRAFFIC_ALL", "INGRESS_TRAFFIC_INTERNAL_ONLY", "INGRESS_TRAFFIC_INTERNAL_LOAD_BALANCER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#ingress CloudRunV2Service#ingress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#ingress CloudRunV2Service#ingress}
 
 ---
 
@@ -2463,7 +2633,7 @@ public java.lang.Boolean|IResolvable getInvokerIamDisabled();
 
 Disables IAM permission check for run.routes.invoke for callers of this service. For more information, visit https://cloud.google.com/run/docs/securing/managing-access#invoker_check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#invoker_iam_disabled CloudRunV2Service#invoker_iam_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#invoker_iam_disabled CloudRunV2Service#invoker_iam_disabled}
 
 ---
 
@@ -2478,7 +2648,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 Unstructured key value map that can be used to organize and categorize objects.
 
 User-provided labels are shared with Google's billing system, so they can be used to filter, or break down billing charges by team, component,
-environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
 
 Cloud Run API v2 does not support labels with  'run.googleapis.com', 'cloud.googleapis.com', 'serving.knative.dev', or 'autoscaling.knative.dev' namespaces, and they will be rejected.
 All system labels in v1 now have a corresponding field in v2 Service.
@@ -2486,7 +2656,7 @@ All system labels in v1 now have a corresponding field in v2 Service.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#labels CloudRunV2Service#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#labels CloudRunV2Service#labels}
 
 ---
 
@@ -2502,7 +2672,21 @@ The launch stage as defined by [Google Cloud Platform Launch Stages](https://clo
 
 For example, if ALPHA is provided as input, but only BETA and GA-level features are used, this field will be BETA on output. Possible values: ["UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#launch_stage CloudRunV2Service#launch_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#launch_stage CloudRunV2Service#launch_stage}
+
+---
+
+##### `multiRegionSettings`<sup>Optional</sup> <a name="multiRegionSettings" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.multiRegionSettings"></a>
+
+```java
+public CloudRunV2ServiceMultiRegionSettings getMultiRegionSettings();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings">CloudRunV2ServiceMultiRegionSettings</a>
+
+multi_region_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#multi_region_settings CloudRunV2Service#multi_region_settings}
 
 ---
 
@@ -2514,7 +2698,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}.
 
 ---
 
@@ -2528,7 +2712,7 @@ public CloudRunV2ServiceScaling getScaling();
 
 scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#scaling CloudRunV2Service#scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#scaling CloudRunV2Service#scaling}
 
 ---
 
@@ -2542,7 +2726,7 @@ public CloudRunV2ServiceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#timeouts CloudRunV2Service#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#timeouts CloudRunV2Service#timeouts}
 
 ---
 
@@ -2556,7 +2740,41 @@ public IResolvable|java.util.List<CloudRunV2ServiceTraffic> getTraffic();
 
 traffic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#traffic CloudRunV2Service#traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#traffic CloudRunV2Service#traffic}
+
+---
+
+### CloudRunV2ServiceMultiRegionSettings <a name="CloudRunV2ServiceMultiRegionSettings" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.cloud_run_v2_service.CloudRunV2ServiceMultiRegionSettings;
+
+CloudRunV2ServiceMultiRegionSettings.builder()
+//  .regions(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings.property.regions">regions</a></code> | <code>java.util.List<java.lang.String></code> | The list of regions to deploy the multi-region Service. |
+
+---
+
+##### `regions`<sup>Optional</sup> <a name="regions" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings.property.regions"></a>
+
+```java
+public java.util.List<java.lang.String> getRegions();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The list of regions to deploy the multi-region Service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#regions CloudRunV2Service#regions}
 
 ---
 
@@ -2569,6 +2787,7 @@ import io.cdktn.providers.google.cloud_run_v2_service.CloudRunV2ServiceScaling;
 
 CloudRunV2ServiceScaling.builder()
 //  .manualInstanceCount(java.lang.Number)
+//  .maxInstanceCount(java.lang.Number)
 //  .minInstanceCount(java.lang.Number)
 //  .scalingMode(java.lang.String)
     .build();
@@ -2579,6 +2798,7 @@ CloudRunV2ServiceScaling.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling.property.manualInstanceCount">manualInstanceCount</a></code> | <code>java.lang.Number</code> | Total instance count for the service in manual scaling mode. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling.property.maxInstanceCount">maxInstanceCount</a></code> | <code>java.lang.Number</code> | Combined maximum number of instances for all revisions receiving traffic. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling.property.minInstanceCount">minInstanceCount</a></code> | <code>java.lang.Number</code> | Minimum number of instances for the service, to be divided among all revisions receiving traffic. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling.property.scalingMode">scalingMode</a></code> | <code>java.lang.String</code> | The [scaling mode](https://cloud.google.com/run/docs/reference/rest/v2/projects.locations.services#scalingmode) for the service. Possible values: ["AUTOMATIC", "MANUAL"]. |
 
@@ -2596,7 +2816,21 @@ Total instance count for the service in manual scaling mode.
 
 This number of instances is divided among all revisions with specified traffic based on the percent of traffic they are receiving.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#manual_instance_count CloudRunV2Service#manual_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#manual_instance_count CloudRunV2Service#manual_instance_count}
+
+---
+
+##### `maxInstanceCount`<sup>Optional</sup> <a name="maxInstanceCount" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling.property.maxInstanceCount"></a>
+
+```java
+public java.lang.Number getMaxInstanceCount();
+```
+
+- *Type:* java.lang.Number
+
+Combined maximum number of instances for all revisions receiving traffic.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#max_instance_count CloudRunV2Service#max_instance_count}
 
 ---
 
@@ -2610,7 +2844,7 @@ public java.lang.Number getMinInstanceCount();
 
 Minimum number of instances for the service, to be divided among all revisions receiving traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#min_instance_count CloudRunV2Service#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#min_instance_count CloudRunV2Service#min_instance_count}
 
 ---
 
@@ -2624,7 +2858,7 @@ public java.lang.String getScalingMode();
 
 The [scaling mode](https://cloud.google.com/run/docs/reference/rest/v2/projects.locations.services#scalingmode) for the service. Possible values: ["AUTOMATIC", "MANUAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#scaling_mode CloudRunV2Service#scaling_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#scaling_mode CloudRunV2Service#scaling_mode}
 
 ---
 
@@ -2641,6 +2875,7 @@ CloudRunV2ServiceTemplate.builder()
 //  .encryptionKey(java.lang.String)
 //  .executionEnvironment(java.lang.String)
 //  .gpuZonalRedundancyDisabled(java.lang.Boolean|IResolvable)
+//  .healthCheckDisabled(java.lang.Boolean|IResolvable)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .maxInstanceRequestConcurrency(java.lang.Number)
 //  .nodeSelector(CloudRunV2ServiceTemplateNodeSelector)
@@ -2663,6 +2898,7 @@ CloudRunV2ServiceTemplate.builder()
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplate.property.encryptionKey">encryptionKey</a></code> | <code>java.lang.String</code> | A reference to a customer managed encryption key (CMEK) to use to encrypt this container image. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplate.property.executionEnvironment">executionEnvironment</a></code> | <code>java.lang.String</code> | The sandbox environment to host this Revision. Possible values: ["EXECUTION_ENVIRONMENT_GEN1", "EXECUTION_ENVIRONMENT_GEN2"]. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplate.property.gpuZonalRedundancyDisabled">gpuZonalRedundancyDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | True if GPU zonal redundancy is disabled on this revision. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplate.property.healthCheckDisabled">healthCheckDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Disables health checking containers during deployment. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplate.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Unstructured key value map that can be used to organize and categorize objects. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplate.property.maxInstanceRequestConcurrency">maxInstanceRequestConcurrency</a></code> | <code>java.lang.Number</code> | Sets the maximum number of requests that each serving instance can receive. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplate.property.nodeSelector">nodeSelector</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateNodeSelector">CloudRunV2ServiceTemplateNodeSelector</a></code> | node_selector block. |
@@ -2693,7 +2929,7 @@ All system annotations in v1 now have a corresponding field in v2 RevisionTempla
 
 This field follows Kubernetes annotations' namespacing, limits, and rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
 
 ---
 
@@ -2707,7 +2943,7 @@ public IResolvable|java.util.List<CloudRunV2ServiceTemplateContainers> getContai
 
 containers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#containers CloudRunV2Service#containers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#containers CloudRunV2Service#containers}
 
 ---
 
@@ -2723,7 +2959,7 @@ A reference to a customer managed encryption key (CMEK) to use to encrypt this c
 
 For more information, go to https://cloud.google.com/run/docs/securing/using-cmek
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#encryption_key CloudRunV2Service#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#encryption_key CloudRunV2Service#encryption_key}
 
 ---
 
@@ -2737,7 +2973,7 @@ public java.lang.String getExecutionEnvironment();
 
 The sandbox environment to host this Revision. Possible values: ["EXECUTION_ENVIRONMENT_GEN1", "EXECUTION_ENVIRONMENT_GEN2"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#execution_environment CloudRunV2Service#execution_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#execution_environment CloudRunV2Service#execution_environment}
 
 ---
 
@@ -2751,7 +2987,21 @@ public java.lang.Boolean|IResolvable getGpuZonalRedundancyDisabled();
 
 True if GPU zonal redundancy is disabled on this revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#gpu_zonal_redundancy_disabled CloudRunV2Service#gpu_zonal_redundancy_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#gpu_zonal_redundancy_disabled CloudRunV2Service#gpu_zonal_redundancy_disabled}
+
+---
+
+##### `healthCheckDisabled`<sup>Optional</sup> <a name="healthCheckDisabled" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplate.property.healthCheckDisabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getHealthCheckDisabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+Disables health checking containers during deployment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#health_check_disabled CloudRunV2Service#health_check_disabled}
 
 ---
 
@@ -2766,12 +3016,12 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 Unstructured key value map that can be used to organize and categorize objects.
 
 User-provided labels are shared with Google's billing system, so they can be used to filter, or break down billing charges by team, component, environment, state, etc.
-For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
 
 Cloud Run API v2 does not support labels with 'run.googleapis.com', 'cloud.googleapis.com', 'serving.knative.dev', or 'autoscaling.knative.dev' namespaces, and they will be rejected.
 All system labels in v1 now have a corresponding field in v2 RevisionTemplate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#labels CloudRunV2Service#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#labels CloudRunV2Service#labels}
 
 ---
 
@@ -2787,7 +3037,7 @@ Sets the maximum number of requests that each serving instance can receive.
 
 If not specified or 0, defaults to 80 when requested CPU >= 1 and defaults to 1 when requested CPU < 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#max_instance_request_concurrency CloudRunV2Service#max_instance_request_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#max_instance_request_concurrency CloudRunV2Service#max_instance_request_concurrency}
 
 ---
 
@@ -2801,7 +3051,7 @@ public CloudRunV2ServiceTemplateNodeSelector getNodeSelector();
 
 node_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#node_selector CloudRunV2Service#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#node_selector CloudRunV2Service#node_selector}
 
 ---
 
@@ -2817,7 +3067,7 @@ The unique name for the revision.
 
 If this field is omitted, it will be automatically generated based on the Service name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#revision CloudRunV2Service#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#revision CloudRunV2Service#revision}
 
 ---
 
@@ -2831,7 +3081,7 @@ public CloudRunV2ServiceTemplateScaling getScaling();
 
 scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#scaling CloudRunV2Service#scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#scaling CloudRunV2Service#scaling}
 
 ---
 
@@ -2847,7 +3097,7 @@ Email address of the IAM service account associated with the revision of the ser
 
 The service account represents the identity of the running revision, and determines what permissions the revision has. If not provided, the revision will use the project's default service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#service_account CloudRunV2Service#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#service_account CloudRunV2Service#service_account}
 
 ---
 
@@ -2861,7 +3111,7 @@ public java.lang.Boolean|IResolvable getSessionAffinity();
 
 Enables session affinity. For more information, go to https://cloud.google.com/run/docs/configuring/session-affinity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#session_affinity CloudRunV2Service#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#session_affinity CloudRunV2Service#session_affinity}
 
 ---
 
@@ -2877,7 +3127,7 @@ Max allowed time for an instance to respond to a request.
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#timeout CloudRunV2Service#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#timeout CloudRunV2Service#timeout}
 
 ---
 
@@ -2891,7 +3141,7 @@ public IResolvable|java.util.List<CloudRunV2ServiceTemplateVolumes> getVolumes()
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#volumes CloudRunV2Service#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#volumes CloudRunV2Service#volumes}
 
 ---
 
@@ -2905,7 +3155,7 @@ public CloudRunV2ServiceTemplateVpcAccess getVpcAccess();
 
 vpc_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#vpc_access CloudRunV2Service#vpc_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#vpc_access CloudRunV2Service#vpc_access}
 
 ---
 
@@ -2926,6 +3176,7 @@ CloudRunV2ServiceTemplateContainers.builder()
 //  .livenessProbe(CloudRunV2ServiceTemplateContainersLivenessProbe)
 //  .name(java.lang.String)
 //  .ports(CloudRunV2ServiceTemplateContainersPorts)
+//  .readinessProbe(CloudRunV2ServiceTemplateContainersReadinessProbe)
 //  .resources(CloudRunV2ServiceTemplateContainersResources)
 //  .startupProbe(CloudRunV2ServiceTemplateContainersStartupProbe)
 //  .volumeMounts(IResolvable|java.util.List<CloudRunV2ServiceTemplateContainersVolumeMounts>)
@@ -2946,6 +3197,7 @@ CloudRunV2ServiceTemplateContainers.builder()
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainers.property.livenessProbe">livenessProbe</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbe">CloudRunV2ServiceTemplateContainersLivenessProbe</a></code> | liveness_probe block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainers.property.name">name</a></code> | <code>java.lang.String</code> | Name of the container specified as a DNS_LABEL. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainers.property.ports">ports</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPorts">CloudRunV2ServiceTemplateContainersPorts</a></code> | ports block. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainers.property.readinessProbe">readinessProbe</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe">CloudRunV2ServiceTemplateContainersReadinessProbe</a></code> | readiness_probe block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainers.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResources">CloudRunV2ServiceTemplateContainersResources</a></code> | resources block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainers.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbe">CloudRunV2ServiceTemplateContainersStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainers.property.volumeMounts">volumeMounts</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMounts">CloudRunV2ServiceTemplateContainersVolumeMounts</a>></code> | volume_mounts block. |
@@ -2963,7 +3215,7 @@ public java.lang.String getImage();
 
 URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#image CloudRunV2Service#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#image CloudRunV2Service#image}
 
 ---
 
@@ -2979,7 +3231,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references are not supported in Cloud Run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#args CloudRunV2Service#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#args CloudRunV2Service#args}
 
 ---
 
@@ -2993,7 +3245,7 @@ public java.lang.String getBaseImageUri();
 
 Base image for this container. If set, it indicates that the service is enrolled into automatic base image update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#base_image_uri CloudRunV2Service#base_image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#base_image_uri CloudRunV2Service#base_image_uri}
 
 ---
 
@@ -3009,7 +3261,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#command CloudRunV2Service#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#command CloudRunV2Service#command}
 
 ---
 
@@ -3025,7 +3277,7 @@ Containers which should be started before this container.
 
 If specified the container will wait to start until all containers with the listed names are healthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#depends_on CloudRunV2Service#depends_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#depends_on CloudRunV2Service#depends_on}
 
 ---
 
@@ -3039,7 +3291,7 @@ public IResolvable|java.util.List<CloudRunV2ServiceTemplateContainersEnv> getEnv
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#env CloudRunV2Service#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#env CloudRunV2Service#env}
 
 ---
 
@@ -3053,7 +3305,7 @@ public CloudRunV2ServiceTemplateContainersLivenessProbe getLivenessProbe();
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#liveness_probe CloudRunV2Service#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#liveness_probe CloudRunV2Service#liveness_probe}
 
 ---
 
@@ -3067,7 +3319,7 @@ public java.lang.String getName();
 
 Name of the container specified as a DNS_LABEL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -3081,7 +3333,21 @@ public CloudRunV2ServiceTemplateContainersPorts getPorts();
 
 ports block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#ports CloudRunV2Service#ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#ports CloudRunV2Service#ports}
+
+---
+
+##### `readinessProbe`<sup>Optional</sup> <a name="readinessProbe" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainers.property.readinessProbe"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbe getReadinessProbe();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe">CloudRunV2ServiceTemplateContainersReadinessProbe</a>
+
+readiness_probe block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#readiness_probe CloudRunV2Service#readiness_probe}
 
 ---
 
@@ -3095,7 +3361,7 @@ public CloudRunV2ServiceTemplateContainersResources getResources();
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#resources CloudRunV2Service#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#resources CloudRunV2Service#resources}
 
 ---
 
@@ -3109,7 +3375,7 @@ public CloudRunV2ServiceTemplateContainersStartupProbe getStartupProbe();
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#startup_probe CloudRunV2Service#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#startup_probe CloudRunV2Service#startup_probe}
 
 ---
 
@@ -3123,7 +3389,7 @@ public IResolvable|java.util.List<CloudRunV2ServiceTemplateContainersVolumeMount
 
 volume_mounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#volume_mounts CloudRunV2Service#volume_mounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#volume_mounts CloudRunV2Service#volume_mounts}
 
 ---
 
@@ -3139,7 +3405,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#working_dir CloudRunV2Service#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#working_dir CloudRunV2Service#working_dir}
 
 ---
 
@@ -3189,7 +3455,7 @@ public java.lang.String getName();
 
 Name of the environment variable. Must be a C_IDENTIFIER, and may not exceed 32768 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -3205,7 +3471,7 @@ Literal value of the environment variable.
 
 Defaults to "" and the maximum allowed length is 32768 characters. Variable references are not supported in Cloud Run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
 
 ---
 
@@ -3219,7 +3485,7 @@ public CloudRunV2ServiceTemplateContainersEnvValueSource getValueSource();
 
 value_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#value_source CloudRunV2Service#value_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#value_source CloudRunV2Service#value_source}
 
 ---
 
@@ -3253,7 +3519,7 @@ public CloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef getSecretKe
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#secret_key_ref CloudRunV2Service#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#secret_key_ref CloudRunV2Service#secret_key_ref}
 
 ---
 
@@ -3291,7 +3557,7 @@ The name of the secret in Cloud Secret Manager.
 
 Format: {secretName} if the secret is in the same project. projects/{project}/secrets/{secretName} if the secret is in a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
 
 ---
 
@@ -3307,7 +3573,7 @@ The Cloud Secret Manager secret version.
 
 Can be 'latest' for the latest value or an integer for a specific version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#version CloudRunV2Service#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#version CloudRunV2Service#version}
 
 ---
 
@@ -3355,7 +3621,7 @@ Minimum consecutive failures for the probe to be considered failed after having 
 
 Defaults to 3. Minimum value is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#failure_threshold CloudRunV2Service#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#failure_threshold CloudRunV2Service#failure_threshold}
 
 ---
 
@@ -3369,7 +3635,7 @@ public CloudRunV2ServiceTemplateContainersLivenessProbeGrpc getGrpc();
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#grpc CloudRunV2Service#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#grpc CloudRunV2Service#grpc}
 
 ---
 
@@ -3383,7 +3649,7 @@ public CloudRunV2ServiceTemplateContainersLivenessProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#http_get CloudRunV2Service#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#http_get CloudRunV2Service#http_get}
 
 ---
 
@@ -3399,7 +3665,7 @@ Number of seconds after the container has started before the probe is initiated.
 
 Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#initial_delay_seconds CloudRunV2Service#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#initial_delay_seconds CloudRunV2Service#initial_delay_seconds}
 
 ---
 
@@ -3415,7 +3681,7 @@ How often (in seconds) to perform the probe.
 
 Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#period_seconds CloudRunV2Service#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#period_seconds CloudRunV2Service#period_seconds}
 
 ---
 
@@ -3429,7 +3695,7 @@ public CloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket getTcpSocket();
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#tcp_socket CloudRunV2Service#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#tcp_socket CloudRunV2Service#tcp_socket}
 
 ---
 
@@ -3445,7 +3711,7 @@ Number of seconds after which the probe times out.
 
 Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#timeout_seconds CloudRunV2Service#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#timeout_seconds CloudRunV2Service#timeout_seconds}
 
 ---
 
@@ -3484,7 +3750,7 @@ Port number to access on the container.
 Number must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -3498,7 +3764,7 @@ public java.lang.String getService();
 
 The name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#service CloudRunV2Service#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#service CloudRunV2Service#service}
 
 ---
 
@@ -3536,7 +3802,7 @@ public IResolvable|java.util.List<CloudRunV2ServiceTemplateContainersLivenessPro
 
 http_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#http_headers CloudRunV2Service#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#http_headers CloudRunV2Service#http_headers}
 
 ---
 
@@ -3550,7 +3816,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server. Defaults to '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
 
 ---
 
@@ -3567,7 +3833,7 @@ Port number to access on the container.
 Number must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -3603,7 +3869,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -3617,7 +3883,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
 
 ---
 
@@ -3655,7 +3921,7 @@ Must be in the range 1 to 65535.
 If not specified, defaults to the exposed port of the container, which
 is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -3691,7 +3957,7 @@ public java.lang.Number getContainerPort();
 
 Port number the container listens on. This must be a valid TCP port number, 0 < containerPort < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#container_port CloudRunV2Service#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#container_port CloudRunV2Service#container_port}
 
 ---
 
@@ -3705,7 +3971,227 @@ public java.lang.String getName();
 
 If specified, used to specify which protocol to use. Allowed values are "http1" and "h2c".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+
+---
+
+### CloudRunV2ServiceTemplateContainersReadinessProbe <a name="CloudRunV2ServiceTemplateContainersReadinessProbe" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.cloud_run_v2_service.CloudRunV2ServiceTemplateContainersReadinessProbe;
+
+CloudRunV2ServiceTemplateContainersReadinessProbe.builder()
+//  .failureThreshold(java.lang.Number)
+//  .grpc(CloudRunV2ServiceTemplateContainersReadinessProbeGrpc)
+//  .httpGet(CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet)
+//  .periodSeconds(java.lang.Number)
+//  .successThreshold(java.lang.Number)
+//  .timeoutSeconds(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.failureThreshold">failureThreshold</a></code> | <code>java.lang.Number</code> | Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.grpc">grpc</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc">CloudRunV2ServiceTemplateContainersReadinessProbeGrpc</a></code> | grpc block. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.httpGet">httpGet</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet">CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet</a></code> | http_get block. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.periodSeconds">periodSeconds</a></code> | <code>java.lang.Number</code> | How often (in seconds) to perform the probe. Default to 10 seconds. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.successThreshold">successThreshold</a></code> | <code>java.lang.Number</code> | Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 2. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.timeoutSeconds">timeoutSeconds</a></code> | <code>java.lang.Number</code> | Number of seconds after which the probe times out. Defaults to 1 second. Must be smaller than period_seconds. |
+
+---
+
+##### `failureThreshold`<sup>Optional</sup> <a name="failureThreshold" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.failureThreshold"></a>
+
+```java
+public java.lang.Number getFailureThreshold();
+```
+
+- *Type:* java.lang.Number
+
+Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#failure_threshold CloudRunV2Service#failure_threshold}
+
+---
+
+##### `grpc`<sup>Optional</sup> <a name="grpc" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.grpc"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbeGrpc getGrpc();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc">CloudRunV2ServiceTemplateContainersReadinessProbeGrpc</a>
+
+grpc block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#grpc CloudRunV2Service#grpc}
+
+---
+
+##### `httpGet`<sup>Optional</sup> <a name="httpGet" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.httpGet"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet getHttpGet();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet">CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet</a>
+
+http_get block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#http_get CloudRunV2Service#http_get}
+
+---
+
+##### `periodSeconds`<sup>Optional</sup> <a name="periodSeconds" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.periodSeconds"></a>
+
+```java
+public java.lang.Number getPeriodSeconds();
+```
+
+- *Type:* java.lang.Number
+
+How often (in seconds) to perform the probe. Default to 10 seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#period_seconds CloudRunV2Service#period_seconds}
+
+---
+
+##### `successThreshold`<sup>Optional</sup> <a name="successThreshold" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.successThreshold"></a>
+
+```java
+public java.lang.Number getSuccessThreshold();
+```
+
+- *Type:* java.lang.Number
+
+Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 2.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#success_threshold CloudRunV2Service#success_threshold}
+
+---
+
+##### `timeoutSeconds`<sup>Optional</sup> <a name="timeoutSeconds" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe.property.timeoutSeconds"></a>
+
+```java
+public java.lang.Number getTimeoutSeconds();
+```
+
+- *Type:* java.lang.Number
+
+Number of seconds after which the probe times out. Defaults to 1 second. Must be smaller than period_seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#timeout_seconds CloudRunV2Service#timeout_seconds}
+
+---
+
+### CloudRunV2ServiceTemplateContainersReadinessProbeGrpc <a name="CloudRunV2ServiceTemplateContainersReadinessProbeGrpc" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.cloud_run_v2_service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc;
+
+CloudRunV2ServiceTemplateContainersReadinessProbeGrpc.builder()
+//  .port(java.lang.Number)
+//  .service(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc.property.port">port</a></code> | <code>java.lang.Number</code> | Port number to access on the container. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc.property.service">service</a></code> | <code>java.lang.String</code> | The name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC. |
+
+---
+
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc.property.port"></a>
+
+```java
+public java.lang.Number getPort();
+```
+
+- *Type:* java.lang.Number
+
+Port number to access on the container.
+
+Number must be in the range 1 to 65535.
+If not specified, defaults to the same value as container.ports[0].containerPort.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+
+---
+
+##### `service`<sup>Optional</sup> <a name="service" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc.property.service"></a>
+
+```java
+public java.lang.String getService();
+```
+
+- *Type:* java.lang.String
+
+The name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#service CloudRunV2Service#service}
+
+---
+
+### CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet <a name="CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.cloud_run_v2_service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet;
+
+CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet.builder()
+//  .path(java.lang.String)
+//  .port(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet.property.path">path</a></code> | <code>java.lang.String</code> | Path to access on the HTTP server. If set, it should not be empty string. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet.property.port">port</a></code> | <code>java.lang.Number</code> | Port number to access on the container. |
+
+---
+
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet.property.path"></a>
+
+```java
+public java.lang.String getPath();
+```
+
+- *Type:* java.lang.String
+
+Path to access on the HTTP server. If set, it should not be empty string.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
+
+---
+
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet.property.port"></a>
+
+```java
+public java.lang.Number getPort();
+```
+
+- *Type:* java.lang.Number
+
+Port number to access on the container.
+
+Number must be in the range 1 to 65535.
+If not specified, defaults to the same value as container.ports[0].containerPort.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -3728,7 +4214,7 @@ CloudRunV2ServiceTemplateContainersResources.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResources.property.cpuIdle">cpuIdle</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Determines whether CPU is only allocated during requests. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResources.property.limits">limits</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Only memory, CPU, and nvidia.com/gpu are supported. Use key 'cpu' for CPU limit, 'memory' for memory limit, 'nvidia.com/gpu' for gpu limit. Note: The only supported values for CPU are '1', '2', '4', and '8'. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the 'quantity' k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResources.property.limits">limits</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Only memory, CPU, and nvidia.com/gpu are supported. Use key 'cpu' for CPU limit, 'memory' for memory limit, 'nvidia.com/gpu' for gpu limit. Note: The only supported values for CPU are '1', '2', '4', '6' and '8'. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the 'quantity' k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResources.property.startupCpuBoost">startupCpuBoost</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Determines whether CPU should be boosted on startup of a new container instance above the requested CPU threshold, this can help reduce cold-start latency. |
 
 ---
@@ -3746,7 +4232,7 @@ Determines whether CPU is only allocated during requests.
 True by default if the parent 'resources' field is not set. However, if
 'resources' is set, this field must be explicitly set to true to preserve the default behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#cpu_idle CloudRunV2Service#cpu_idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#cpu_idle CloudRunV2Service#cpu_idle}
 
 ---
 
@@ -3758,9 +4244,9 @@ public java.util.Map<java.lang.String, java.lang.String> getLimits();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Only memory, CPU, and nvidia.com/gpu are supported. Use key 'cpu' for CPU limit, 'memory' for memory limit, 'nvidia.com/gpu' for gpu limit. Note: The only supported values for CPU are '1', '2', '4', and '8'. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the 'quantity' k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go.
+Only memory, CPU, and nvidia.com/gpu are supported. Use key 'cpu' for CPU limit, 'memory' for memory limit, 'nvidia.com/gpu' for gpu limit. Note: The only supported values for CPU are '1', '2', '4', '6' and '8'. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the 'quantity' k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#limits CloudRunV2Service#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#limits CloudRunV2Service#limits}
 
 ---
 
@@ -3774,7 +4260,7 @@ public java.lang.Boolean|IResolvable getStartupCpuBoost();
 
 Determines whether CPU should be boosted on startup of a new container instance above the requested CPU threshold, this can help reduce cold-start latency.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#startup_cpu_boost CloudRunV2Service#startup_cpu_boost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#startup_cpu_boost CloudRunV2Service#startup_cpu_boost}
 
 ---
 
@@ -3822,7 +4308,7 @@ Minimum consecutive failures for the probe to be considered failed after having 
 
 Defaults to 3. Minimum value is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#failure_threshold CloudRunV2Service#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#failure_threshold CloudRunV2Service#failure_threshold}
 
 ---
 
@@ -3836,7 +4322,7 @@ public CloudRunV2ServiceTemplateContainersStartupProbeGrpc getGrpc();
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#grpc CloudRunV2Service#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#grpc CloudRunV2Service#grpc}
 
 ---
 
@@ -3850,7 +4336,7 @@ public CloudRunV2ServiceTemplateContainersStartupProbeHttpGet getHttpGet();
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#http_get CloudRunV2Service#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#http_get CloudRunV2Service#http_get}
 
 ---
 
@@ -3866,7 +4352,7 @@ Number of seconds after the container has started before the probe is initiated.
 
 Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#initial_delay_seconds CloudRunV2Service#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#initial_delay_seconds CloudRunV2Service#initial_delay_seconds}
 
 ---
 
@@ -3882,7 +4368,7 @@ How often (in seconds) to perform the probe.
 
 Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#period_seconds CloudRunV2Service#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#period_seconds CloudRunV2Service#period_seconds}
 
 ---
 
@@ -3896,7 +4382,7 @@ public CloudRunV2ServiceTemplateContainersStartupProbeTcpSocket getTcpSocket();
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#tcp_socket CloudRunV2Service#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#tcp_socket CloudRunV2Service#tcp_socket}
 
 ---
 
@@ -3912,7 +4398,7 @@ Number of seconds after which the probe times out.
 
 Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#timeout_seconds CloudRunV2Service#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#timeout_seconds CloudRunV2Service#timeout_seconds}
 
 ---
 
@@ -3951,7 +4437,7 @@ Port number to access on the container.
 Number must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -3965,7 +4451,7 @@ public java.lang.String getService();
 
 The name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#service CloudRunV2Service#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#service CloudRunV2Service#service}
 
 ---
 
@@ -4003,7 +4489,7 @@ public IResolvable|java.util.List<CloudRunV2ServiceTemplateContainersStartupProb
 
 http_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#http_headers CloudRunV2Service#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#http_headers CloudRunV2Service#http_headers}
 
 ---
 
@@ -4017,7 +4503,7 @@ public java.lang.String getPath();
 
 Path to access on the HTTP server. Defaults to '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
 
 ---
 
@@ -4034,7 +4520,7 @@ Port number to access on the container.
 Must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -4070,7 +4556,7 @@ public java.lang.String getName();
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -4084,7 +4570,7 @@ public java.lang.String getValue();
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
 
 ---
 
@@ -4121,7 +4607,7 @@ Port number to access on the container.
 Must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -4135,6 +4621,7 @@ import io.cdktn.providers.google.cloud_run_v2_service.CloudRunV2ServiceTemplateC
 CloudRunV2ServiceTemplateContainersVolumeMounts.builder()
     .mountPath(java.lang.String)
     .name(java.lang.String)
+//  .subPath(java.lang.String)
     .build();
 ```
 
@@ -4144,6 +4631,7 @@ CloudRunV2ServiceTemplateContainersVolumeMounts.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMounts.property.mountPath">mountPath</a></code> | <code>java.lang.String</code> | Path within the container at which the volume should be mounted. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMounts.property.name">name</a></code> | <code>java.lang.String</code> | This must match the Name of a Volume. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMounts.property.subPath">subPath</a></code> | <code>java.lang.String</code> | Path within the volume from which the container's volume should be mounted. |
 
 ---
 
@@ -4159,7 +4647,7 @@ Path within the container at which the volume should be mounted.
 
 Must not contain ':'. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#mount_path CloudRunV2Service#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#mount_path CloudRunV2Service#mount_path}
 
 ---
 
@@ -4173,7 +4661,21 @@ public java.lang.String getName();
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+
+---
+
+##### `subPath`<sup>Optional</sup> <a name="subPath" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMounts.property.subPath"></a>
+
+```java
+public java.lang.String getSubPath();
+```
+
+- *Type:* java.lang.String
+
+Path within the volume from which the container's volume should be mounted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#sub_path CloudRunV2Service#sub_path}
 
 ---
 
@@ -4207,7 +4709,7 @@ public java.lang.String getAccelerator();
 
 The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#accelerator CloudRunV2Service#accelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#accelerator CloudRunV2Service#accelerator}
 
 ---
 
@@ -4246,7 +4748,7 @@ Maximum number of serving instances that this resource should have.
 Must not be less than minimum instance count. If absent, Cloud Run will calculate
 a default value based on the project's available container instances quota in the region and specified instance size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#max_instance_count CloudRunV2Service#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#max_instance_count CloudRunV2Service#max_instance_count}
 
 ---
 
@@ -4262,7 +4764,7 @@ Minimum number of serving instances that this resource should have.
 
 Defaults to 0. Must not be greater than maximum instance count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#min_instance_count CloudRunV2Service#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#min_instance_count CloudRunV2Service#min_instance_count}
 
 ---
 
@@ -4306,7 +4808,7 @@ public java.lang.String getName();
 
 Volume's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -4320,7 +4822,7 @@ public CloudRunV2ServiceTemplateVolumesCloudSqlInstance getCloudSqlInstance();
 
 cloud_sql_instance block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#cloud_sql_instance CloudRunV2Service#cloud_sql_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#cloud_sql_instance CloudRunV2Service#cloud_sql_instance}
 
 ---
 
@@ -4334,7 +4836,7 @@ public CloudRunV2ServiceTemplateVolumesEmptyDir getEmptyDir();
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#empty_dir CloudRunV2Service#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#empty_dir CloudRunV2Service#empty_dir}
 
 ---
 
@@ -4348,7 +4850,7 @@ public CloudRunV2ServiceTemplateVolumesGcs getGcs();
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#gcs CloudRunV2Service#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#gcs CloudRunV2Service#gcs}
 
 ---
 
@@ -4362,7 +4864,7 @@ public CloudRunV2ServiceTemplateVolumesNfs getNfs();
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#nfs CloudRunV2Service#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#nfs CloudRunV2Service#nfs}
 
 ---
 
@@ -4376,7 +4878,7 @@ public CloudRunV2ServiceTemplateVolumesSecret getSecret();
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
 
 ---
 
@@ -4410,7 +4912,7 @@ public java.util.List<java.lang.String> getInstances();
 
 The Cloud SQL instance connection names, as can be found in https://console.cloud.google.com/sql/instances. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run. Format: {project}:{location}:{instance}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#instances CloudRunV2Service#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#instances CloudRunV2Service#instances}
 
 ---
 
@@ -4431,7 +4933,7 @@ CloudRunV2ServiceTemplateVolumesEmptyDir.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesEmptyDir.property.medium">medium</a></code> | <code>java.lang.String</code> | The different types of medium supported for EmptyDir. Default value: "MEMORY" Possible values: ["MEMORY"]. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesEmptyDir.property.medium">medium</a></code> | <code>java.lang.String</code> | The different types of medium supported for EmptyDir. Default value: "MEMORY" Possible values: ["MEMORY", "DISK"]. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesEmptyDir.property.sizeLimit">sizeLimit</a></code> | <code>java.lang.String</code> | Limit on the storage usable by this EmptyDir volume. |
 
 ---
@@ -4444,9 +4946,9 @@ public java.lang.String getMedium();
 
 - *Type:* java.lang.String
 
-The different types of medium supported for EmptyDir. Default value: "MEMORY" Possible values: ["MEMORY"].
+The different types of medium supported for EmptyDir. Default value: "MEMORY" Possible values: ["MEMORY", "DISK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#medium CloudRunV2Service#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#medium CloudRunV2Service#medium}
 
 ---
 
@@ -4462,7 +4964,7 @@ Limit on the storage usable by this EmptyDir volume.
 
 The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. This field's values are of the 'Quantity' k8s type: https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/quantity/. The default is nil which means that the limit is undefined. More info: https://kubernetes.io/docs/concepts/storage/volumes/#emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#size_limit CloudRunV2Service#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#size_limit CloudRunV2Service#size_limit}
 
 ---
 
@@ -4475,6 +4977,7 @@ import io.cdktn.providers.google.cloud_run_v2_service.CloudRunV2ServiceTemplateV
 
 CloudRunV2ServiceTemplateVolumesGcs.builder()
     .bucket(java.lang.String)
+//  .mountOptions(java.util.List<java.lang.String>)
 //  .readOnly(java.lang.Boolean|IResolvable)
     .build();
 ```
@@ -4484,6 +4987,7 @@ CloudRunV2ServiceTemplateVolumesGcs.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcs.property.bucket">bucket</a></code> | <code>java.lang.String</code> | GCS Bucket name. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcs.property.mountOptions">mountOptions</a></code> | <code>java.util.List<java.lang.String></code> | A list of flags to pass to the gcsfuse command for configuring this volume. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcs.property.readOnly">readOnly</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, mount the GCS bucket as read-only. |
 
 ---
@@ -4498,7 +5002,23 @@ public java.lang.String getBucket();
 
 GCS Bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#bucket CloudRunV2Service#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#bucket CloudRunV2Service#bucket}
+
+---
+
+##### `mountOptions`<sup>Optional</sup> <a name="mountOptions" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcs.property.mountOptions"></a>
+
+```java
+public java.util.List<java.lang.String> getMountOptions();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+A list of flags to pass to the gcsfuse command for configuring this volume.
+
+Flags should be passed without leading dashes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#mount_options CloudRunV2Service#mount_options}
 
 ---
 
@@ -4512,7 +5032,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 If true, mount the GCS bucket as read-only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#read_only CloudRunV2Service#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#read_only CloudRunV2Service#read_only}
 
 ---
 
@@ -4550,7 +5070,7 @@ public java.lang.String getPath();
 
 Path that is exported by the NFS server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
 
 ---
 
@@ -4564,7 +5084,7 @@ public java.lang.String getServer();
 
 Hostname or IP address of the NFS server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#server CloudRunV2Service#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#server CloudRunV2Service#server}
 
 ---
 
@@ -4578,7 +5098,7 @@ public java.lang.Boolean|IResolvable getReadOnly();
 
 If true, mount the NFS volume as read only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#read_only CloudRunV2Service#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#read_only CloudRunV2Service#read_only}
 
 ---
 
@@ -4618,7 +5138,7 @@ The name of the secret in Cloud Secret Manager.
 
 Format: {secret} if the secret is in the same project. projects/{project}/secrets/{secret} if the secret is in a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
 
 ---
 
@@ -4634,7 +5154,7 @@ Integer representation of mode bits to use on created files by default.
 
 Must be a value between 0000 and 0777 (octal), defaulting to 0444. Directories within the path are not affected by this setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#default_mode CloudRunV2Service#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#default_mode CloudRunV2Service#default_mode}
 
 ---
 
@@ -4648,7 +5168,7 @@ public IResolvable|java.util.List<CloudRunV2ServiceTemplateVolumesSecretItems> g
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#items CloudRunV2Service#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#items CloudRunV2Service#items}
 
 ---
 
@@ -4686,7 +5206,7 @@ public java.lang.String getPath();
 
 The relative path of the secret in the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
 
 ---
 
@@ -4702,7 +5222,7 @@ Integer octal mode bits to use on this file, must be a value between 01 and 0777
 
 If 0 or not set, the Volume's default mode will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#mode CloudRunV2Service#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#mode CloudRunV2Service#mode}
 
 ---
 
@@ -4718,7 +5238,7 @@ The Cloud Secret Manager secret version.
 
 Can be 'latest' for the latest value or an integer for a specific version
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#version CloudRunV2Service#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#version CloudRunV2Service#version}
 
 ---
 
@@ -4756,7 +5276,7 @@ public java.lang.String getConnector();
 
 VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#connector CloudRunV2Service#connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#connector CloudRunV2Service#connector}
 
 ---
 
@@ -4770,7 +5290,7 @@ public java.lang.String getEgress();
 
 Traffic VPC egress settings. Possible values: ["ALL_TRAFFIC", "PRIVATE_RANGES_ONLY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#egress CloudRunV2Service#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#egress CloudRunV2Service#egress}
 
 ---
 
@@ -4784,7 +5304,7 @@ public IResolvable|java.util.List<CloudRunV2ServiceTemplateVpcAccessNetworkInter
 
 network_interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#network_interfaces CloudRunV2Service#network_interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#network_interfaces CloudRunV2Service#network_interfaces}
 
 ---
 
@@ -4826,7 +5346,7 @@ At least one of network or subnetwork must be specified. If both
 network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If network is not specified, it will be
 looked up from the subnetwork.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#network CloudRunV2Service#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#network CloudRunV2Service#network}
 
 ---
 
@@ -4844,7 +5364,7 @@ At least one of network or subnetwork must be specified. If both
 network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the
 subnetwork with the same name with the network will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#subnetwork CloudRunV2Service#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#subnetwork CloudRunV2Service#subnetwork}
 
 ---
 
@@ -4858,7 +5378,7 @@ public java.util.List<java.lang.String> getTags();
 
 Network tags applied to this Cloud Run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#tags CloudRunV2Service#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#tags CloudRunV2Service#tags}
 
 ---
 
@@ -4892,9 +5412,9 @@ CloudRunV2ServiceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#create CloudRunV2Service#create}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#delete CloudRunV2Service#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#update CloudRunV2Service#update}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#create CloudRunV2Service#create}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#delete CloudRunV2Service#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#update CloudRunV2Service#update}. |
 
 ---
 
@@ -4906,7 +5426,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#create CloudRunV2Service#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#create CloudRunV2Service#create}.
 
 ---
 
@@ -4918,7 +5438,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#delete CloudRunV2Service#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#delete CloudRunV2Service#delete}.
 
 ---
 
@@ -4930,7 +5450,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#update CloudRunV2Service#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#update CloudRunV2Service#update}.
 
 ---
 
@@ -4970,7 +5490,7 @@ public java.lang.Number getPercent();
 
 Specifies percent of the traffic to this Revision. This defaults to zero if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#percent CloudRunV2Service#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#percent CloudRunV2Service#percent}
 
 ---
 
@@ -4984,7 +5504,7 @@ public java.lang.String getRevision();
 
 Revision to which to send this portion of traffic, if traffic allocation is by revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#revision CloudRunV2Service#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#revision CloudRunV2Service#revision}
 
 ---
 
@@ -4998,7 +5518,7 @@ public java.lang.String getTag();
 
 Indicates a string to be part of the URI to exclusively reference this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#tag CloudRunV2Service#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#tag CloudRunV2Service#tag}
 
 ---
 
@@ -5012,7 +5532,7 @@ public java.lang.String getType();
 
 The allocation type for this traffic target. Possible values: ["TRAFFIC_TARGET_ALLOCATION_TYPE_LATEST", "TRAFFIC_TARGET_ALLOCATION_TYPE_REVISION"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_service#type CloudRunV2Service#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#type CloudRunV2Service#type}
 
 ---
 
@@ -6362,6 +6882,295 @@ public CloudRunV2ServiceConditions getInternalValue();
 ---
 
 
+### CloudRunV2ServiceMultiRegionSettingsOutputReference <a name="CloudRunV2ServiceMultiRegionSettingsOutputReference" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.cloud_run_v2_service.CloudRunV2ServiceMultiRegionSettingsOutputReference;
+
+new CloudRunV2ServiceMultiRegionSettingsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.resetRegions">resetRegions</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetRegions` <a name="resetRegions" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.resetRegions"></a>
+
+```java
+public void resetRegions()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.multiRegionId">multiRegionId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.regionsInput">regionsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.regions">regions</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings">CloudRunV2ServiceMultiRegionSettings</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `multiRegionId`<sup>Required</sup> <a name="multiRegionId" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.multiRegionId"></a>
+
+```java
+public java.lang.String getMultiRegionId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `regionsInput`<sup>Optional</sup> <a name="regionsInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.regionsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getRegionsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `regions`<sup>Required</sup> <a name="regions" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.regions"></a>
+
+```java
+public java.util.List<java.lang.String> getRegions();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettingsOutputReference.property.internalValue"></a>
+
+```java
+public CloudRunV2ServiceMultiRegionSettings getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings">CloudRunV2ServiceMultiRegionSettings</a>
+
+---
+
+
 ### CloudRunV2ServiceScalingOutputReference <a name="CloudRunV2ServiceScalingOutputReference" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.Initializer"></a>
@@ -6413,6 +7222,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.resetManualInstanceCount">resetManualInstanceCount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.resetMaxInstanceCount">resetMaxInstanceCount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.resetMinInstanceCount">resetMinInstanceCount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.resetScalingMode">resetScalingMode</a></code> | *No description.* |
 
@@ -6574,6 +7384,12 @@ Returns a reversible string representation.
 public void resetManualInstanceCount()
 ```
 
+##### `resetMaxInstanceCount` <a name="resetMaxInstanceCount" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.resetMaxInstanceCount"></a>
+
+```java
+public void resetMaxInstanceCount()
+```
+
 ##### `resetMinInstanceCount` <a name="resetMinInstanceCount" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.resetMinInstanceCount"></a>
 
 ```java
@@ -6594,9 +7410,11 @@ public void resetScalingMode()
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.manualInstanceCountInput">manualInstanceCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.maxInstanceCountInput">maxInstanceCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.minInstanceCountInput">minInstanceCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.scalingModeInput">scalingModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.manualInstanceCount">manualInstanceCount</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.maxInstanceCount">maxInstanceCount</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.minInstanceCount">minInstanceCount</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.scalingMode">scalingMode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling">CloudRunV2ServiceScaling</a></code> | *No description.* |
@@ -6637,6 +7455,16 @@ public java.lang.Number getManualInstanceCountInput();
 
 ---
 
+##### `maxInstanceCountInput`<sup>Optional</sup> <a name="maxInstanceCountInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.maxInstanceCountInput"></a>
+
+```java
+public java.lang.Number getMaxInstanceCountInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `minInstanceCountInput`<sup>Optional</sup> <a name="minInstanceCountInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.minInstanceCountInput"></a>
 
 ```java
@@ -6661,6 +7489,16 @@ public java.lang.String getScalingModeInput();
 
 ```java
 public java.lang.Number getManualInstanceCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `maxInstanceCount`<sup>Required</sup> <a name="maxInstanceCount" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScalingOutputReference.property.maxInstanceCount"></a>
+
+```java
+public java.lang.Number getMaxInstanceCount();
 ```
 
 - *Type:* java.lang.Number
@@ -10374,6 +11212,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.putEnv">putEnv</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.putLivenessProbe">putLivenessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.putPorts">putPorts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.putReadinessProbe">putReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.putResources">putResources</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.putStartupProbe">putStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.putVolumeMounts">putVolumeMounts</a></code> | *No description.* |
@@ -10385,6 +11224,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.resetLivenessProbe">resetLivenessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.resetPorts">resetPorts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.resetReadinessProbe">resetReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.resetResources">resetResources</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.resetStartupProbe">resetStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.resetVolumeMounts">resetVolumeMounts</a></code> | *No description.* |
@@ -10578,6 +11418,18 @@ public void putPorts(CloudRunV2ServiceTemplateContainersPorts value)
 
 ---
 
+##### `putReadinessProbe` <a name="putReadinessProbe" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.putReadinessProbe"></a>
+
+```java
+public void putReadinessProbe(CloudRunV2ServiceTemplateContainersReadinessProbe value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.putReadinessProbe.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe">CloudRunV2ServiceTemplateContainersReadinessProbe</a>
+
+---
+
 ##### `putResources` <a name="putResources" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.putResources"></a>
 
 ```java
@@ -10662,6 +11514,12 @@ public void resetName()
 public void resetPorts()
 ```
 
+##### `resetReadinessProbe` <a name="resetReadinessProbe" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.resetReadinessProbe"></a>
+
+```java
+public void resetReadinessProbe()
+```
+
 ##### `resetResources` <a name="resetResources" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.resetResources"></a>
 
 ```java
@@ -10697,6 +11555,7 @@ public void resetWorkingDir()
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.env">env</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersEnvList">CloudRunV2ServiceTemplateContainersEnvList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.livenessProbe">livenessProbe</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference">CloudRunV2ServiceTemplateContainersLivenessProbeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.ports">ports</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsOutputReference">CloudRunV2ServiceTemplateContainersPortsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.readinessProbe">readinessProbe</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference">CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResourcesOutputReference">CloudRunV2ServiceTemplateContainersResourcesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbeOutputReference">CloudRunV2ServiceTemplateContainersStartupProbeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.volumeMounts">volumeMounts</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsList">CloudRunV2ServiceTemplateContainersVolumeMountsList</a></code> | *No description.* |
@@ -10709,6 +11568,7 @@ public void resetWorkingDir()
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.livenessProbeInput">livenessProbeInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersLivenessProbe">CloudRunV2ServiceTemplateContainersLivenessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.portsInput">portsInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPorts">CloudRunV2ServiceTemplateContainersPorts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.readinessProbeInput">readinessProbeInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe">CloudRunV2ServiceTemplateContainersReadinessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.resourcesInput">resourcesInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersResources">CloudRunV2ServiceTemplateContainersResources</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersStartupProbe">CloudRunV2ServiceTemplateContainersStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.volumeMountsInput">volumeMountsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMounts">CloudRunV2ServiceTemplateContainersVolumeMounts</a>></code> | *No description.* |
@@ -10785,6 +11645,16 @@ public CloudRunV2ServiceTemplateContainersPortsOutputReference getPorts();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsOutputReference">CloudRunV2ServiceTemplateContainersPortsOutputReference</a>
+
+---
+
+##### `readinessProbe`<sup>Required</sup> <a name="readinessProbe" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.readinessProbe"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference getReadinessProbe();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference">CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference</a>
 
 ---
 
@@ -10905,6 +11775,16 @@ public CloudRunV2ServiceTemplateContainersPorts getPortsInput();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPorts">CloudRunV2ServiceTemplateContainersPorts</a>
+
+---
+
+##### `readinessProbeInput`<sup>Optional</sup> <a name="readinessProbeInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersOutputReference.property.readinessProbeInput"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbe getReadinessProbeInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe">CloudRunV2ServiceTemplateContainersReadinessProbe</a>
 
 ---
 
@@ -11332,6 +12212,1069 @@ public CloudRunV2ServiceTemplateContainersPorts getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPorts">CloudRunV2ServiceTemplateContainersPorts</a>
+
+---
+
+
+### CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference <a name="CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.cloud_run_v2_service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference;
+
+new CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.resetPort">resetPort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.resetService">resetService</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPort` <a name="resetPort" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.resetPort"></a>
+
+```java
+public void resetPort()
+```
+
+##### `resetService` <a name="resetService" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.resetService"></a>
+
+```java
+public void resetService()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.portInput">portInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.serviceInput">serviceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.port">port</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.service">service</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc">CloudRunV2ServiceTemplateContainersReadinessProbeGrpc</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `portInput`<sup>Optional</sup> <a name="portInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.portInput"></a>
+
+```java
+public java.lang.Number getPortInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `serviceInput`<sup>Optional</sup> <a name="serviceInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.serviceInput"></a>
+
+```java
+public java.lang.String getServiceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `port`<sup>Required</sup> <a name="port" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.port"></a>
+
+```java
+public java.lang.Number getPort();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `service`<sup>Required</sup> <a name="service" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.service"></a>
+
+```java
+public java.lang.String getService();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference.property.internalValue"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbeGrpc getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc">CloudRunV2ServiceTemplateContainersReadinessProbeGrpc</a>
+
+---
+
+
+### CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference <a name="CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.cloud_run_v2_service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference;
+
+new CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.resetPath">resetPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.resetPort">resetPort</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPath` <a name="resetPath" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.resetPath"></a>
+
+```java
+public void resetPath()
+```
+
+##### `resetPort` <a name="resetPort" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.resetPort"></a>
+
+```java
+public void resetPort()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.pathInput">pathInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.portInput">portInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.path">path</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.port">port</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet">CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `pathInput`<sup>Optional</sup> <a name="pathInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.pathInput"></a>
+
+```java
+public java.lang.String getPathInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `portInput`<sup>Optional</sup> <a name="portInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.portInput"></a>
+
+```java
+public java.lang.Number getPortInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.path"></a>
+
+```java
+public java.lang.String getPath();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `port`<sup>Required</sup> <a name="port" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.port"></a>
+
+```java
+public java.lang.Number getPort();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference.property.internalValue"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet">CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet</a>
+
+---
+
+
+### CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference <a name="CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.cloud_run_v2_service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference;
+
+new CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.putGrpc">putGrpc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.putHttpGet">putHttpGet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetFailureThreshold">resetFailureThreshold</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetGrpc">resetGrpc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetHttpGet">resetHttpGet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetPeriodSeconds">resetPeriodSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetSuccessThreshold">resetSuccessThreshold</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetTimeoutSeconds">resetTimeoutSeconds</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putGrpc` <a name="putGrpc" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.putGrpc"></a>
+
+```java
+public void putGrpc(CloudRunV2ServiceTemplateContainersReadinessProbeGrpc value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.putGrpc.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc">CloudRunV2ServiceTemplateContainersReadinessProbeGrpc</a>
+
+---
+
+##### `putHttpGet` <a name="putHttpGet" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.putHttpGet"></a>
+
+```java
+public void putHttpGet(CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.putHttpGet.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet">CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet</a>
+
+---
+
+##### `resetFailureThreshold` <a name="resetFailureThreshold" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetFailureThreshold"></a>
+
+```java
+public void resetFailureThreshold()
+```
+
+##### `resetGrpc` <a name="resetGrpc" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetGrpc"></a>
+
+```java
+public void resetGrpc()
+```
+
+##### `resetHttpGet` <a name="resetHttpGet" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetHttpGet"></a>
+
+```java
+public void resetHttpGet()
+```
+
+##### `resetPeriodSeconds` <a name="resetPeriodSeconds" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetPeriodSeconds"></a>
+
+```java
+public void resetPeriodSeconds()
+```
+
+##### `resetSuccessThreshold` <a name="resetSuccessThreshold" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetSuccessThreshold"></a>
+
+```java
+public void resetSuccessThreshold()
+```
+
+##### `resetTimeoutSeconds` <a name="resetTimeoutSeconds" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.resetTimeoutSeconds"></a>
+
+```java
+public void resetTimeoutSeconds()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.grpc">grpc</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference">CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.httpGet">httpGet</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference">CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.failureThresholdInput">failureThresholdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.grpcInput">grpcInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc">CloudRunV2ServiceTemplateContainersReadinessProbeGrpc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.httpGetInput">httpGetInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet">CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.periodSecondsInput">periodSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.successThresholdInput">successThresholdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.timeoutSecondsInput">timeoutSecondsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.failureThreshold">failureThreshold</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.periodSeconds">periodSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.successThreshold">successThreshold</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.timeoutSeconds">timeoutSeconds</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe">CloudRunV2ServiceTemplateContainersReadinessProbe</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `grpc`<sup>Required</sup> <a name="grpc" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.grpc"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference getGrpc();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference">CloudRunV2ServiceTemplateContainersReadinessProbeGrpcOutputReference</a>
+
+---
+
+##### `httpGet`<sup>Required</sup> <a name="httpGet" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.httpGet"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference getHttpGet();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference">CloudRunV2ServiceTemplateContainersReadinessProbeHttpGetOutputReference</a>
+
+---
+
+##### `failureThresholdInput`<sup>Optional</sup> <a name="failureThresholdInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.failureThresholdInput"></a>
+
+```java
+public java.lang.Number getFailureThresholdInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `grpcInput`<sup>Optional</sup> <a name="grpcInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.grpcInput"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbeGrpc getGrpcInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeGrpc">CloudRunV2ServiceTemplateContainersReadinessProbeGrpc</a>
+
+---
+
+##### `httpGetInput`<sup>Optional</sup> <a name="httpGetInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.httpGetInput"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet getHttpGetInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet">CloudRunV2ServiceTemplateContainersReadinessProbeHttpGet</a>
+
+---
+
+##### `periodSecondsInput`<sup>Optional</sup> <a name="periodSecondsInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.periodSecondsInput"></a>
+
+```java
+public java.lang.Number getPeriodSecondsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `successThresholdInput`<sup>Optional</sup> <a name="successThresholdInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.successThresholdInput"></a>
+
+```java
+public java.lang.Number getSuccessThresholdInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `timeoutSecondsInput`<sup>Optional</sup> <a name="timeoutSecondsInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.timeoutSecondsInput"></a>
+
+```java
+public java.lang.Number getTimeoutSecondsInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `failureThreshold`<sup>Required</sup> <a name="failureThreshold" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.failureThreshold"></a>
+
+```java
+public java.lang.Number getFailureThreshold();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `periodSeconds`<sup>Required</sup> <a name="periodSeconds" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.periodSeconds"></a>
+
+```java
+public java.lang.Number getPeriodSeconds();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `successThreshold`<sup>Required</sup> <a name="successThreshold" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.successThreshold"></a>
+
+```java
+public java.lang.Number getSuccessThreshold();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `timeoutSeconds`<sup>Required</sup> <a name="timeoutSeconds" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.timeoutSeconds"></a>
+
+```java
+public java.lang.Number getTimeoutSeconds();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbeOutputReference.property.internalValue"></a>
+
+```java
+public CloudRunV2ServiceTemplateContainersReadinessProbe getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersReadinessProbe">CloudRunV2ServiceTemplateContainersReadinessProbe</a>
 
 ---
 
@@ -13803,6 +15746,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.resetSubPath">resetSubPath</a></code> | *No description.* |
 
 ---
 
@@ -13956,6 +15900,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetSubPath` <a name="resetSubPath" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.resetSubPath"></a>
+
+```java
+public void resetSubPath()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -13965,8 +15915,10 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.property.mountPathInput">mountPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.property.subPathInput">subPathInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.property.mountPath">mountPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.property.subPath">subPath</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMounts">CloudRunV2ServiceTemplateContainersVolumeMounts</a></code> | *No description.* |
 
 ---
@@ -14015,6 +15967,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `subPathInput`<sup>Optional</sup> <a name="subPathInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.property.subPathInput"></a>
+
+```java
+public java.lang.String getSubPathInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `mountPath`<sup>Required</sup> <a name="mountPath" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.property.mountPath"></a>
 
 ```java
@@ -14029,6 +15991,16 @@ public java.lang.String getMountPath();
 
 ```java
 public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `subPath`<sup>Required</sup> <a name="subPath" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.property.subPath"></a>
+
+```java
+public java.lang.String getSubPath();
 ```
 
 - *Type:* java.lang.String
@@ -14377,6 +16349,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.resetEncryptionKey">resetEncryptionKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.resetExecutionEnvironment">resetExecutionEnvironment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.resetGpuZonalRedundancyDisabled">resetGpuZonalRedundancyDisabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.resetHealthCheckDisabled">resetHealthCheckDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.resetMaxInstanceRequestConcurrency">resetMaxInstanceRequestConcurrency</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.resetNodeSelector">resetNodeSelector</a></code> | *No description.* |
@@ -14630,6 +16603,12 @@ public void resetExecutionEnvironment()
 public void resetGpuZonalRedundancyDisabled()
 ```
 
+##### `resetHealthCheckDisabled` <a name="resetHealthCheckDisabled" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.resetHealthCheckDisabled"></a>
+
+```java
+public void resetHealthCheckDisabled()
+```
+
 ##### `resetLabels` <a name="resetLabels" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.resetLabels"></a>
 
 ```java
@@ -14707,6 +16686,7 @@ public void resetVpcAccess()
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.encryptionKeyInput">encryptionKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.executionEnvironmentInput">executionEnvironmentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.gpuZonalRedundancyDisabledInput">gpuZonalRedundancyDisabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.healthCheckDisabledInput">healthCheckDisabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.maxInstanceRequestConcurrencyInput">maxInstanceRequestConcurrencyInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.nodeSelectorInput">nodeSelectorInput</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateNodeSelector">CloudRunV2ServiceTemplateNodeSelector</a></code> | *No description.* |
@@ -14721,6 +16701,7 @@ public void resetVpcAccess()
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.encryptionKey">encryptionKey</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.executionEnvironment">executionEnvironment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.gpuZonalRedundancyDisabled">gpuZonalRedundancyDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.healthCheckDisabled">healthCheckDisabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.maxInstanceRequestConcurrency">maxInstanceRequestConcurrency</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.revision">revision</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -14849,6 +16830,16 @@ public java.lang.String getExecutionEnvironmentInput();
 
 ```java
 public java.lang.Boolean|IResolvable getGpuZonalRedundancyDisabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `healthCheckDisabledInput`<sup>Optional</sup> <a name="healthCheckDisabledInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.healthCheckDisabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getHealthCheckDisabledInput();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
@@ -14989,6 +16980,16 @@ public java.lang.String getExecutionEnvironment();
 
 ```java
 public java.lang.Boolean|IResolvable getGpuZonalRedundancyDisabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `healthCheckDisabled`<sup>Required</sup> <a name="healthCheckDisabled" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateOutputReference.property.healthCheckDisabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getHealthCheckDisabled();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
@@ -16008,6 +18009,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.resetMountOptions">resetMountOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.resetReadOnly">resetReadOnly</a></code> | *No description.* |
 
 ---
@@ -16162,6 +18164,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetMountOptions` <a name="resetMountOptions" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.resetMountOptions"></a>
+
+```java
+public void resetMountOptions()
+```
+
 ##### `resetReadOnly` <a name="resetReadOnly" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.resetReadOnly"></a>
 
 ```java
@@ -16176,8 +18184,10 @@ public void resetReadOnly()
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.bucketInput">bucketInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.mountOptionsInput">mountOptionsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.readOnlyInput">readOnlyInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.bucket">bucket</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.mountOptions">mountOptions</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.readOnly">readOnly</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcs">CloudRunV2ServiceTemplateVolumesGcs</a></code> | *No description.* |
 
@@ -16217,6 +18227,16 @@ public java.lang.String getBucketInput();
 
 ---
 
+##### `mountOptionsInput`<sup>Optional</sup> <a name="mountOptionsInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.mountOptionsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getMountOptionsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `readOnlyInput`<sup>Optional</sup> <a name="readOnlyInput" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.readOnlyInput"></a>
 
 ```java
@@ -16234,6 +18254,16 @@ public java.lang.String getBucket();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `mountOptions`<sup>Required</sup> <a name="mountOptions" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateVolumesGcsOutputReference.property.mountOptions"></a>
+
+```java
+public java.util.List<java.lang.String> getMountOptions();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,11 +16,11 @@ export interface NetworkSecurityMirroringEndpointGroupConfig extends cdktn.Terra
   * User-provided description of the endpoint group.
   * Used as additional context for the endpoint group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#description NetworkSecurityMirroringEndpointGroup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#description NetworkSecurityMirroringEndpointGroup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#id NetworkSecurityMirroringEndpointGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#id NetworkSecurityMirroringEndpointGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,13 +32,13 @@ export interface NetworkSecurityMirroringEndpointGroupConfig extends cdktn.Terra
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#labels NetworkSecurityMirroringEndpointGroup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#labels NetworkSecurityMirroringEndpointGroup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The cloud location of the endpoint group, currently restricted to 'global'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#location NetworkSecurityMirroringEndpointGroup#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#location NetworkSecurityMirroringEndpointGroup#location}
   */
   readonly location: string;
   /**
@@ -46,24 +46,43 @@ export interface NetworkSecurityMirroringEndpointGroupConfig extends cdktn.Terra
   * 'projects/123456789/locations/global/mirroringDeploymentGroups/my-dg'.
   * See https://google.aip.dev/124.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#mirroring_deployment_group NetworkSecurityMirroringEndpointGroup#mirroring_deployment_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#mirroring_deployment_group NetworkSecurityMirroringEndpointGroup#mirroring_deployment_group}
   */
-  readonly mirroringDeploymentGroup: string;
+  readonly mirroringDeploymentGroup?: string;
+  /**
+  * A list of the deployment groups that this BROKER endpoint group is
+  * connected to, for example:
+  * 'projects/123456789/locations/global/mirroringDeploymentGroups/my-dg'.
+  * See https://google.aip.dev/124.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#mirroring_deployment_groups NetworkSecurityMirroringEndpointGroup#mirroring_deployment_groups}
+  */
+  readonly mirroringDeploymentGroups?: string[];
   /**
   * The ID to use for the endpoint group, which will become the final component
   * of the endpoint group's resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#mirroring_endpoint_group_id NetworkSecurityMirroringEndpointGroup#mirroring_endpoint_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#mirroring_endpoint_group_id NetworkSecurityMirroringEndpointGroup#mirroring_endpoint_group_id}
   */
   readonly mirroringEndpointGroupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#project NetworkSecurityMirroringEndpointGroup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#project NetworkSecurityMirroringEndpointGroup#project}
   */
   readonly project?: string;
   /**
+  * The type of the endpoint group.
+  * If left unspecified, defaults to DIRECT.
+  * Possible values:
+  * DIRECT
+  * BROKER
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#type NetworkSecurityMirroringEndpointGroup#type}
+  */
+  readonly type?: string;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#timeouts NetworkSecurityMirroringEndpointGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#timeouts NetworkSecurityMirroringEndpointGroup#timeouts}
   */
   readonly timeouts?: NetworkSecurityMirroringEndpointGroupTimeouts;
 }
@@ -315,15 +334,15 @@ export class NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsList 
 }
 export interface NetworkSecurityMirroringEndpointGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#create NetworkSecurityMirroringEndpointGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#create NetworkSecurityMirroringEndpointGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#delete NetworkSecurityMirroringEndpointGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#delete NetworkSecurityMirroringEndpointGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#update NetworkSecurityMirroringEndpointGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#update NetworkSecurityMirroringEndpointGroup#update}
   */
   readonly update?: string;
 }
@@ -475,7 +494,7 @@ export class NetworkSecurityMirroringEndpointGroupTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group}
 */
 export class NetworkSecurityMirroringEndpointGroup extends cdktn.TerraformResource {
 
@@ -491,7 +510,7 @@ export class NetworkSecurityMirroringEndpointGroup extends cdktn.TerraformResour
   * Generates CDKTN code for importing a NetworkSecurityMirroringEndpointGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkSecurityMirroringEndpointGroup to import
-  * @param importFromId The id of the existing NetworkSecurityMirroringEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkSecurityMirroringEndpointGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkSecurityMirroringEndpointGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -503,7 +522,7 @@ export class NetworkSecurityMirroringEndpointGroup extends cdktn.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -514,8 +533,8 @@ export class NetworkSecurityMirroringEndpointGroup extends cdktn.TerraformResour
       terraformResourceType: 'google_network_security_mirroring_endpoint_group',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -530,8 +549,10 @@ export class NetworkSecurityMirroringEndpointGroup extends cdktn.TerraformResour
     this._labels = config.labels;
     this._location = config.location;
     this._mirroringDeploymentGroup = config.mirroringDeploymentGroup;
+    this._mirroringDeploymentGroups = config.mirroringDeploymentGroups;
     this._mirroringEndpointGroupId = config.mirroringEndpointGroupId;
     this._project = config.project;
+    this._type = config.type;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -623,7 +644,7 @@ export class NetworkSecurityMirroringEndpointGroup extends cdktn.TerraformResour
     return this._location;
   }
 
-  // mirroring_deployment_group - computed: false, optional: false, required: true
+  // mirroring_deployment_group - computed: false, optional: true, required: false
   private _mirroringDeploymentGroup?: string; 
   public get mirroringDeploymentGroup() {
     return this.getStringAttribute('mirroring_deployment_group');
@@ -631,9 +652,28 @@ export class NetworkSecurityMirroringEndpointGroup extends cdktn.TerraformResour
   public set mirroringDeploymentGroup(value: string) {
     this._mirroringDeploymentGroup = value;
   }
+  public resetMirroringDeploymentGroup() {
+    this._mirroringDeploymentGroup = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get mirroringDeploymentGroupInput() {
     return this._mirroringDeploymentGroup;
+  }
+
+  // mirroring_deployment_groups - computed: false, optional: true, required: false
+  private _mirroringDeploymentGroups?: string[]; 
+  public get mirroringDeploymentGroups() {
+    return this.getListAttribute('mirroring_deployment_groups');
+  }
+  public set mirroringDeploymentGroups(value: string[]) {
+    this._mirroringDeploymentGroups = value;
+  }
+  public resetMirroringDeploymentGroups() {
+    this._mirroringDeploymentGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mirroringDeploymentGroupsInput() {
+    return this._mirroringDeploymentGroups;
   }
 
   // mirroring_endpoint_group_id - computed: false, optional: false, required: true
@@ -686,6 +726,22 @@ export class NetworkSecurityMirroringEndpointGroup extends cdktn.TerraformResour
     return this._terraformLabels;
   }
 
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
   // update_time - computed: true, optional: false, required: false
   public get updateTime() {
     return this.getStringAttribute('update_time');
@@ -718,8 +774,10 @@ export class NetworkSecurityMirroringEndpointGroup extends cdktn.TerraformResour
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
       location: cdktn.stringToTerraform(this._location),
       mirroring_deployment_group: cdktn.stringToTerraform(this._mirroringDeploymentGroup),
+      mirroring_deployment_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._mirroringDeploymentGroups),
       mirroring_endpoint_group_id: cdktn.stringToTerraform(this._mirroringEndpointGroupId),
       project: cdktn.stringToTerraform(this._project),
+      type: cdktn.stringToTerraform(this._type),
       timeouts: networkSecurityMirroringEndpointGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -756,6 +814,12 @@ export class NetworkSecurityMirroringEndpointGroup extends cdktn.TerraformResour
         type: "simple",
         storageClassType: "string",
       },
+      mirroring_deployment_groups: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._mirroringDeploymentGroups),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       mirroring_endpoint_group_id: {
         value: cdktn.stringToHclTerraform(this._mirroringEndpointGroupId),
         isBlock: false,
@@ -764,6 +828,12 @@ export class NetworkSecurityMirroringEndpointGroup extends cdktn.TerraformResour
       },
       project: {
         value: cdktn.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

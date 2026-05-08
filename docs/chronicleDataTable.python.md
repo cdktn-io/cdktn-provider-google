@@ -1,0 +1,3200 @@
+# `chronicleDataTable` Submodule <a name="`chronicleDataTable` Submodule" id="@cdktn/provider-google.chronicleDataTable"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### ChronicleDataTable <a name="ChronicleDataTable" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable"></a>
+
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table google_chronicle_data_table}.
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTable(
+  scope: Construct,
+  id: str,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  data_table_id: str,
+  description: str,
+  instance: str,
+  location: str,
+  column_info: IResolvable | typing.List[ChronicleDataTableColumnInfo] = None,
+  deletion_policy: str = None,
+  id: str = None,
+  project: str = None,
+  row_time_to_live: str = None,
+  scope_info: ChronicleDataTableScopeInfo = None,
+  timeouts: ChronicleDataTableTimeouts = None
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.dataTableId">data_table_id</a></code> | <code>str</code> | The ID to use for the data table. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.description">description</a></code> | <code>str</code> | A user-provided description of the data table. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.instance">instance</a></code> | <code>str</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.location">location</a></code> | <code>str</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.columnInfo">column_info</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo">ChronicleDataTableColumnInfo</a>]</code> | column_info block. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | The policy governing the deletion of the data table. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#id ChronicleDataTable#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#project ChronicleDataTable#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.rowTimeToLive">row_time_to_live</a></code> | <code>str</code> | User-provided TTL of the data table. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.scopeInfo">scope_info</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo">ChronicleDataTableScopeInfo</a></code> | scope_info block. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts">ChronicleDataTableTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.connection"></a>
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.count"></a>
+
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.dependsOn"></a>
+
+- *Type:* typing.List[cdktn.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.forEach"></a>
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `data_table_id`<sup>Required</sup> <a name="data_table_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.dataTableId"></a>
+
+- *Type:* str
+
+The ID to use for the data table.
+
+This is also the display name for
+the data table. It must satisfy the following requirements:
+
+* Starts with letter.
+* Contains only letters, numbers and underscore.
+* Must be unique and has length < 256.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#data_table_id ChronicleDataTable#data_table_id}
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.description"></a>
+
+- *Type:* str
+
+A user-provided description of the data table.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#description ChronicleDataTable#description}
+
+---
+
+##### `instance`<sup>Required</sup> <a name="instance" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.instance"></a>
+
+- *Type:* str
+
+Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#instance ChronicleDataTable#instance}
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.location"></a>
+
+- *Type:* str
+
+Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#location ChronicleDataTable#location}
+
+---
+
+##### `column_info`<sup>Optional</sup> <a name="column_info" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.columnInfo"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo">ChronicleDataTableColumnInfo</a>]
+
+column_info block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#column_info ChronicleDataTable#column_info}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+The policy governing the deletion of the data table.
+
+If set to 'FORCE', allows the deletion of the data table even if it contains rows.
+If set to 'DEFAULT',or if the field is omitted, the data table must be empty before it can be deleted.
+Possible values: DEFAULT, FORCE
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#deletion_policy ChronicleDataTable#deletion_policy}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#id ChronicleDataTable#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.project"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#project ChronicleDataTable#project}.
+
+---
+
+##### `row_time_to_live`<sup>Optional</sup> <a name="row_time_to_live" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.rowTimeToLive"></a>
+
+- *Type:* str
+
+User-provided TTL of the data table.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#row_time_to_live ChronicleDataTable#row_time_to_live}
+
+---
+
+##### `scope_info`<sup>Optional</sup> <a name="scope_info" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.scopeInfo"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo">ChronicleDataTableScopeInfo</a>
+
+scope_info block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#scope_info ChronicleDataTable#scope_info}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts">ChronicleDataTableTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#timeouts ChronicleDataTable#timeouts}
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.with">with</a></code> | Applies one or more mixins to this construct. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.putColumnInfo">put_column_info</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.putScopeInfo">put_scope_info</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetColumnInfo">reset_column_info</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetRowTimeToLive">reset_row_time_to_live</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetScopeInfo">reset_scope_info</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.with"></a>
+
+```python
+def with(
+  mixins: *IMixin
+) -> IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.with.parameter.mixins"></a>
+
+- *Type:* *constructs.IMixin
+
+The mixins to apply.
+
+---
+
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.addOverride"></a>
+
+```python
+def add_override(
+  path: str,
+  value: typing.Any
+) -> None
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.addOverride.parameter.path"></a>
+
+- *Type:* str
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.addOverride.parameter.value"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.overrideLogicalId"></a>
+
+```python
+def override_logical_id(
+  new_logical_id: str
+) -> None
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* str
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetOverrideLogicalId"></a>
+
+```python
+def reset_override_logical_id() -> None
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.toHclTerraform"></a>
+
+```python
+def to_hcl_terraform() -> typing.Any
+```
+
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.toMetadata"></a>
+
+```python
+def to_metadata() -> typing.Any
+```
+
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.toTerraform"></a>
+
+```python
+def to_terraform() -> typing.Any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.addMoveTarget"></a>
+
+```python
+def add_move_target(
+  move_target: str
+) -> None
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* str
+
+The string move target that will correspond to this resource.
+
+---
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.hasResourceMove"></a>
+
+```python
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
+```
+
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.importFrom"></a>
+
+```python
+def import_from(
+  id: str,
+  provider: TerraformProvider = None
+) -> None
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.importFrom.parameter.id"></a>
+
+- *Type:* str
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.importFrom.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.moveFromId"></a>
+
+```python
+def move_from_id(
+  id: str
+) -> None
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.moveFromId.parameter.id"></a>
+
+- *Type:* str
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.moveTo"></a>
+
+```python
+def move_to(
+  move_target: str,
+  index: str | typing.Union[int, float] = None
+) -> None
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.moveTo.parameter.moveTarget"></a>
+
+- *Type:* str
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.moveTo.parameter.index"></a>
+
+- *Type:* str | typing.Union[int, float]
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.moveToId"></a>
+
+```python
+def move_to_id(
+  id: str
+) -> None
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.moveToId.parameter.id"></a>
+
+- *Type:* str
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `put_column_info` <a name="put_column_info" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.putColumnInfo"></a>
+
+```python
+def put_column_info(
+  value: IResolvable | typing.List[ChronicleDataTableColumnInfo]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.putColumnInfo.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo">ChronicleDataTableColumnInfo</a>]
+
+---
+
+##### `put_scope_info` <a name="put_scope_info" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.putScopeInfo"></a>
+
+```python
+def put_scope_info(
+  data_access_scopes: typing.List[str]
+) -> None
+```
+
+###### `data_access_scopes`<sup>Required</sup> <a name="data_access_scopes" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.putScopeInfo.parameter.dataAccessScopes"></a>
+
+- *Type:* typing.List[str]
+
+Contains the list of scope names of the data table.
+
+If the list is empty,
+the data table is treated as unscoped. The scope names should be
+full resource names and should be of the format:
+"projects/{project}/locations/{location}/instances/{instance}/dataAccessScopes/{scope_name}"
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#data_access_scopes ChronicleDataTable#data_access_scopes}
+
+---
+
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.putTimeouts"></a>
+
+```python
+def put_timeouts(
+  create: str = None,
+  delete: str = None,
+  update: str = None
+) -> None
+```
+
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.putTimeouts.parameter.create"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#create ChronicleDataTable#create}.
+
+---
+
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.putTimeouts.parameter.delete"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#delete ChronicleDataTable#delete}.
+
+---
+
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.putTimeouts.parameter.update"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#update ChronicleDataTable#update}.
+
+---
+
+##### `reset_column_info` <a name="reset_column_info" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetColumnInfo"></a>
+
+```python
+def reset_column_info() -> None
+```
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
+
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetId"></a>
+
+```python
+def reset_id() -> None
+```
+
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetProject"></a>
+
+```python
+def reset_project() -> None
+```
+
+##### `reset_row_time_to_live` <a name="reset_row_time_to_live" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetRowTimeToLive"></a>
+
+```python
+def reset_row_time_to_live() -> None
+```
+
+##### `reset_scope_info` <a name="reset_scope_info" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetScopeInfo"></a>
+
+```python
+def reset_scope_info() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.resetTimeouts"></a>
+
+```python
+def reset_timeouts() -> None
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ChronicleDataTable resource upon running "cdktn plan <stack-name>". |
+
+---
+
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isConstruct"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTable.is_construct(
+  x: typing.Any
+)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isConstruct.parameter.x"></a>
+
+- *Type:* typing.Any
+
+Any object.
+
+---
+
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isTerraformElement"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTable.is_terraform_element(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isTerraformElement.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isTerraformResource"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTable.is_terraform_resource(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isTerraformResource.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.generateConfigForImport"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTable.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTN code for importing a ChronicleDataTable resource upon running "cdktn plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the ChronicleDataTable to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing ChronicleDataTable that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+? Optional instance of the provider where the ChronicleDataTable to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.approximateRowCount">approximate_row_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.columnInfo">column_info</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList">ChronicleDataTableColumnInfoList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.dataTableUuid">data_table_uuid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.rowTimeToLiveUpdateTime">row_time_to_live_update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.ruleAssociationsCount">rule_associations_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.rules">rules</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.scopeInfo">scope_info</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference">ChronicleDataTableScopeInfoOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference">ChronicleDataTableTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.updateSource">update_source</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.columnInfoInput">column_info_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo">ChronicleDataTableColumnInfo</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.dataTableIdInput">data_table_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.instanceInput">instance_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.rowTimeToLiveInput">row_time_to_live_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.scopeInfoInput">scope_info_input</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo">ChronicleDataTableScopeInfo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts">ChronicleDataTableTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.dataTableId">data_table_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.instance">instance</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.rowTimeToLive">row_time_to_live</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.node"></a>
+
+```python
+node: Node
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.cdktfStack"></a>
+
+```python
+cdktf_stack: TerraformStack
+```
+
+- *Type:* cdktn.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.friendlyUniqueId"></a>
+
+```python
+friendly_unique_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.terraformMetaArguments"></a>
+
+```python
+terraform_meta_arguments: typing.Mapping[typing.Any]
+```
+
+- *Type:* typing.Mapping[typing.Any]
+
+---
+
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.terraformResourceType"></a>
+
+```python
+terraform_resource_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.terraformGeneratorMetadata"></a>
+
+```python
+terraform_generator_metadata: TerraformProviderGeneratorMetadata
+```
+
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.connection"></a>
+
+```python
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
+```
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.count"></a>
+
+```python
+count: typing.Union[int, float] | TerraformCount
+```
+
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.provisioners"></a>
+
+```python
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
+```
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `approximate_row_count`<sup>Required</sup> <a name="approximate_row_count" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.approximateRowCount"></a>
+
+```python
+approximate_row_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `column_info`<sup>Required</sup> <a name="column_info" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.columnInfo"></a>
+
+```python
+column_info: ChronicleDataTableColumnInfoList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList">ChronicleDataTableColumnInfoList</a>
+
+---
+
+##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.createTime"></a>
+
+```python
+create_time: str
+```
+
+- *Type:* str
+
+---
+
+##### `data_table_uuid`<sup>Required</sup> <a name="data_table_uuid" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.dataTableUuid"></a>
+
+```python
+data_table_uuid: str
+```
+
+- *Type:* str
+
+---
+
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.displayName"></a>
+
+```python
+display_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `row_time_to_live_update_time`<sup>Required</sup> <a name="row_time_to_live_update_time" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.rowTimeToLiveUpdateTime"></a>
+
+```python
+row_time_to_live_update_time: str
+```
+
+- *Type:* str
+
+---
+
+##### `rule_associations_count`<sup>Required</sup> <a name="rule_associations_count" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.ruleAssociationsCount"></a>
+
+```python
+rule_associations_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `rules`<sup>Required</sup> <a name="rules" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.rules"></a>
+
+```python
+rules: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `scope_info`<sup>Required</sup> <a name="scope_info" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.scopeInfo"></a>
+
+```python
+scope_info: ChronicleDataTableScopeInfoOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference">ChronicleDataTableScopeInfoOutputReference</a>
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.timeouts"></a>
+
+```python
+timeouts: ChronicleDataTableTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference">ChronicleDataTableTimeoutsOutputReference</a>
+
+---
+
+##### `update_source`<sup>Required</sup> <a name="update_source" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.updateSource"></a>
+
+```python
+update_source: str
+```
+
+- *Type:* str
+
+---
+
+##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.updateTime"></a>
+
+```python
+update_time: str
+```
+
+- *Type:* str
+
+---
+
+##### `column_info_input`<sup>Optional</sup> <a name="column_info_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.columnInfoInput"></a>
+
+```python
+column_info_input: IResolvable | typing.List[ChronicleDataTableColumnInfo]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo">ChronicleDataTableColumnInfo</a>]
+
+---
+
+##### `data_table_id_input`<sup>Optional</sup> <a name="data_table_id_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.dataTableIdInput"></a>
+
+```python
+data_table_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.descriptionInput"></a>
+
+```python
+description_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.idInput"></a>
+
+```python
+id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `instance_input`<sup>Optional</sup> <a name="instance_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.instanceInput"></a>
+
+```python
+instance_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.locationInput"></a>
+
+```python
+location_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.projectInput"></a>
+
+```python
+project_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `row_time_to_live_input`<sup>Optional</sup> <a name="row_time_to_live_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.rowTimeToLiveInput"></a>
+
+```python
+row_time_to_live_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `scope_info_input`<sup>Optional</sup> <a name="scope_info_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.scopeInfoInput"></a>
+
+```python
+scope_info_input: ChronicleDataTableScopeInfo
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo">ChronicleDataTableScopeInfo</a>
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.timeoutsInput"></a>
+
+```python
+timeouts_input: IResolvable | ChronicleDataTableTimeouts
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts">ChronicleDataTableTimeouts</a>
+
+---
+
+##### `data_table_id`<sup>Required</sup> <a name="data_table_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.dataTableId"></a>
+
+```python
+data_table_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `instance`<sup>Required</sup> <a name="instance" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.instance"></a>
+
+```python
+instance: str
+```
+
+- *Type:* str
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.location"></a>
+
+```python
+location: str
+```
+
+- *Type:* str
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.project"></a>
+
+```python
+project: str
+```
+
+- *Type:* str
+
+---
+
+##### `row_time_to_live`<sup>Required</sup> <a name="row_time_to_live" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.rowTimeToLive"></a>
+
+```python
+row_time_to_live: str
+```
+
+- *Type:* str
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.property.tfResourceType"></a>
+
+```python
+tfResourceType: str
+```
+
+- *Type:* str
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### ChronicleDataTableColumnInfo <a name="ChronicleDataTableColumnInfo" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTableColumnInfo(
+  column_index: typing.Union[int, float],
+  original_column: str,
+  column_type: str = None,
+  key_column: bool | IResolvable = None,
+  mapped_column_path: str = None,
+  repeated_values: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.columnIndex">column_index</a></code> | <code>typing.Union[int, float]</code> | Column Index. 0,1,2... |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.originalColumn">original_column</a></code> | <code>str</code> | Original column name of the Data Table (present in the CSV header in case of creation of data tables using file uploads). |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.columnType">column_type</a></code> | <code>str</code> | Column type can be STRING, CIDR (Ex- 10.1.1.0/24), REGEX Possible values: STRING REGEX CIDR NUMBER Possible values: ["STRING", "REGEX", "CIDR", "NUMBER"]. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.keyColumn">key_column</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to include this column in the calculation of the row ID. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.mappedColumnPath">mapped_column_path</a></code> | <code>str</code> | Entity proto field path that the column is mapped to. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.repeatedValues">repeated_values</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the column is a repeated values column. |
+
+---
+
+##### `column_index`<sup>Required</sup> <a name="column_index" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.columnIndex"></a>
+
+```python
+column_index: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Column Index. 0,1,2...
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#column_index ChronicleDataTable#column_index}
+
+---
+
+##### `original_column`<sup>Required</sup> <a name="original_column" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.originalColumn"></a>
+
+```python
+original_column: str
+```
+
+- *Type:* str
+
+Original column name of the Data Table (present in the CSV header in case of creation of data tables using file uploads).
+
+It must satisfy the
+following requirements:
+
+* Starts with letter.
+* Contains only letters, numbers and underscore.
+* Must be unique and has length < 256
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#original_column ChronicleDataTable#original_column}
+
+---
+
+##### `column_type`<sup>Optional</sup> <a name="column_type" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.columnType"></a>
+
+```python
+column_type: str
+```
+
+- *Type:* str
+
+Column type can be STRING, CIDR (Ex- 10.1.1.0/24), REGEX Possible values: STRING REGEX CIDR NUMBER Possible values: ["STRING", "REGEX", "CIDR", "NUMBER"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#column_type ChronicleDataTable#column_type}
+
+---
+
+##### `key_column`<sup>Optional</sup> <a name="key_column" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.keyColumn"></a>
+
+```python
+key_column: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to include this column in the calculation of the row ID.
+
+If no columns have key_column = true, all columns will be included in the
+calculation of the row ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#key_column ChronicleDataTable#key_column}
+
+---
+
+##### `mapped_column_path`<sup>Optional</sup> <a name="mapped_column_path" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.mappedColumnPath"></a>
+
+```python
+mapped_column_path: str
+```
+
+- *Type:* str
+
+Entity proto field path that the column is mapped to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#mapped_column_path ChronicleDataTable#mapped_column_path}
+
+---
+
+##### `repeated_values`<sup>Optional</sup> <a name="repeated_values" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.property.repeatedValues"></a>
+
+```python
+repeated_values: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether the column is a repeated values column.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#repeated_values ChronicleDataTable#repeated_values}
+
+---
+
+### ChronicleDataTableConfig <a name="ChronicleDataTableConfig" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTableConfig(
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  data_table_id: str,
+  description: str,
+  instance: str,
+  location: str,
+  column_info: IResolvable | typing.List[ChronicleDataTableColumnInfo] = None,
+  deletion_policy: str = None,
+  id: str = None,
+  project: str = None,
+  row_time_to_live: str = None,
+  scope_info: ChronicleDataTableScopeInfo = None,
+  timeouts: ChronicleDataTableTimeouts = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.dataTableId">data_table_id</a></code> | <code>str</code> | The ID to use for the data table. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.description">description</a></code> | <code>str</code> | A user-provided description of the data table. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.instance">instance</a></code> | <code>str</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.location">location</a></code> | <code>str</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.columnInfo">column_info</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo">ChronicleDataTableColumnInfo</a>]</code> | column_info block. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | The policy governing the deletion of the data table. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#id ChronicleDataTable#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#project ChronicleDataTable#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.rowTimeToLive">row_time_to_live</a></code> | <code>str</code> | User-provided TTL of the data table. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.scopeInfo">scope_info</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo">ChronicleDataTableScopeInfo</a></code> | scope_info block. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts">ChronicleDataTableTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.connection"></a>
+
+```python
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
+```
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.count"></a>
+
+```python
+count: typing.Union[int, float] | TerraformCount
+```
+
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[ITerraformDependable]
+```
+
+- *Type:* typing.List[cdktn.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.provisioners"></a>
+
+```python
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
+```
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `data_table_id`<sup>Required</sup> <a name="data_table_id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.dataTableId"></a>
+
+```python
+data_table_id: str
+```
+
+- *Type:* str
+
+The ID to use for the data table.
+
+This is also the display name for
+the data table. It must satisfy the following requirements:
+
+* Starts with letter.
+* Contains only letters, numbers and underscore.
+* Must be unique and has length < 256.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#data_table_id ChronicleDataTable#data_table_id}
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+A user-provided description of the data table.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#description ChronicleDataTable#description}
+
+---
+
+##### `instance`<sup>Required</sup> <a name="instance" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.instance"></a>
+
+```python
+instance: str
+```
+
+- *Type:* str
+
+Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#instance ChronicleDataTable#instance}
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.location"></a>
+
+```python
+location: str
+```
+
+- *Type:* str
+
+Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#location ChronicleDataTable#location}
+
+---
+
+##### `column_info`<sup>Optional</sup> <a name="column_info" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.columnInfo"></a>
+
+```python
+column_info: IResolvable | typing.List[ChronicleDataTableColumnInfo]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo">ChronicleDataTableColumnInfo</a>]
+
+column_info block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#column_info ChronicleDataTable#column_info}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+The policy governing the deletion of the data table.
+
+If set to 'FORCE', allows the deletion of the data table even if it contains rows.
+If set to 'DEFAULT',or if the field is omitted, the data table must be empty before it can be deleted.
+Possible values: DEFAULT, FORCE
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#deletion_policy ChronicleDataTable#deletion_policy}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#id ChronicleDataTable#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.project"></a>
+
+```python
+project: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#project ChronicleDataTable#project}.
+
+---
+
+##### `row_time_to_live`<sup>Optional</sup> <a name="row_time_to_live" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.rowTimeToLive"></a>
+
+```python
+row_time_to_live: str
+```
+
+- *Type:* str
+
+User-provided TTL of the data table.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#row_time_to_live ChronicleDataTable#row_time_to_live}
+
+---
+
+##### `scope_info`<sup>Optional</sup> <a name="scope_info" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.scopeInfo"></a>
+
+```python
+scope_info: ChronicleDataTableScopeInfo
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo">ChronicleDataTableScopeInfo</a>
+
+scope_info block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#scope_info ChronicleDataTable#scope_info}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.timeouts"></a>
+
+```python
+timeouts: ChronicleDataTableTimeouts
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts">ChronicleDataTableTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#timeouts ChronicleDataTable#timeouts}
+
+---
+
+### ChronicleDataTableScopeInfo <a name="ChronicleDataTableScopeInfo" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTableScopeInfo(
+  data_access_scopes: typing.List[str]
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo.property.dataAccessScopes">data_access_scopes</a></code> | <code>typing.List[str]</code> | Contains the list of scope names of the data table. |
+
+---
+
+##### `data_access_scopes`<sup>Required</sup> <a name="data_access_scopes" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo.property.dataAccessScopes"></a>
+
+```python
+data_access_scopes: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Contains the list of scope names of the data table.
+
+If the list is empty,
+the data table is treated as unscoped. The scope names should be
+full resource names and should be of the format:
+"projects/{project}/locations/{location}/instances/{instance}/dataAccessScopes/{scope_name}"
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#data_access_scopes ChronicleDataTable#data_access_scopes}
+
+---
+
+### ChronicleDataTableTimeouts <a name="ChronicleDataTableTimeouts" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTableTimeouts(
+  create: str = None,
+  delete: str = None,
+  update: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#create ChronicleDataTable#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#delete ChronicleDataTable#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#update ChronicleDataTable#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#create ChronicleDataTable#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#delete ChronicleDataTable#delete}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/chronicle_data_table#update ChronicleDataTable#update}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### ChronicleDataTableColumnInfoList <a name="ChronicleDataTableColumnInfoList" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTableColumnInfoList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ChronicleDataTableColumnInfoOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo">ChronicleDataTableColumnInfo</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[ChronicleDataTableColumnInfo]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo">ChronicleDataTableColumnInfo</a>]
+
+---
+
+
+### ChronicleDataTableColumnInfoOutputReference <a name="ChronicleDataTableColumnInfoOutputReference" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTableColumnInfoOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.resetColumnType">reset_column_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.resetKeyColumn">reset_key_column</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.resetMappedColumnPath">reset_mapped_column_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.resetRepeatedValues">reset_repeated_values</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_column_type` <a name="reset_column_type" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.resetColumnType"></a>
+
+```python
+def reset_column_type() -> None
+```
+
+##### `reset_key_column` <a name="reset_key_column" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.resetKeyColumn"></a>
+
+```python
+def reset_key_column() -> None
+```
+
+##### `reset_mapped_column_path` <a name="reset_mapped_column_path" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.resetMappedColumnPath"></a>
+
+```python
+def reset_mapped_column_path() -> None
+```
+
+##### `reset_repeated_values` <a name="reset_repeated_values" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.resetRepeatedValues"></a>
+
+```python
+def reset_repeated_values() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.columnIndexInput">column_index_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.columnTypeInput">column_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.keyColumnInput">key_column_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.mappedColumnPathInput">mapped_column_path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.originalColumnInput">original_column_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.repeatedValuesInput">repeated_values_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.columnIndex">column_index</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.columnType">column_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.keyColumn">key_column</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.mappedColumnPath">mapped_column_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.originalColumn">original_column</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.repeatedValues">repeated_values</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo">ChronicleDataTableColumnInfo</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `column_index_input`<sup>Optional</sup> <a name="column_index_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.columnIndexInput"></a>
+
+```python
+column_index_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `column_type_input`<sup>Optional</sup> <a name="column_type_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.columnTypeInput"></a>
+
+```python
+column_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_column_input`<sup>Optional</sup> <a name="key_column_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.keyColumnInput"></a>
+
+```python
+key_column_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `mapped_column_path_input`<sup>Optional</sup> <a name="mapped_column_path_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.mappedColumnPathInput"></a>
+
+```python
+mapped_column_path_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `original_column_input`<sup>Optional</sup> <a name="original_column_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.originalColumnInput"></a>
+
+```python
+original_column_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `repeated_values_input`<sup>Optional</sup> <a name="repeated_values_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.repeatedValuesInput"></a>
+
+```python
+repeated_values_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `column_index`<sup>Required</sup> <a name="column_index" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.columnIndex"></a>
+
+```python
+column_index: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `column_type`<sup>Required</sup> <a name="column_type" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.columnType"></a>
+
+```python
+column_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_column`<sup>Required</sup> <a name="key_column" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.keyColumn"></a>
+
+```python
+key_column: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `mapped_column_path`<sup>Required</sup> <a name="mapped_column_path" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.mappedColumnPath"></a>
+
+```python
+mapped_column_path: str
+```
+
+- *Type:* str
+
+---
+
+##### `original_column`<sup>Required</sup> <a name="original_column" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.originalColumn"></a>
+
+```python
+original_column: str
+```
+
+- *Type:* str
+
+---
+
+##### `repeated_values`<sup>Required</sup> <a name="repeated_values" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.repeatedValues"></a>
+
+```python
+repeated_values: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | ChronicleDataTableColumnInfo
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo">ChronicleDataTableColumnInfo</a>
+
+---
+
+
+### ChronicleDataTableScopeInfoOutputReference <a name="ChronicleDataTableScopeInfoOutputReference" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTableScopeInfoOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.property.dataAccessScopesInput">data_access_scopes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.property.dataAccessScopes">data_access_scopes</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo">ChronicleDataTableScopeInfo</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `data_access_scopes_input`<sup>Optional</sup> <a name="data_access_scopes_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.property.dataAccessScopesInput"></a>
+
+```python
+data_access_scopes_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `data_access_scopes`<sup>Required</sup> <a name="data_access_scopes" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.property.dataAccessScopes"></a>
+
+```python
+data_access_scopes: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ChronicleDataTableScopeInfo
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo">ChronicleDataTableScopeInfo</a>
+
+---
+
+
+### ChronicleDataTableTimeoutsOutputReference <a name="ChronicleDataTableTimeoutsOutputReference" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_data_table
+
+chronicleDataTable.ChronicleDataTableTimeoutsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.resetCreate"></a>
+
+```python
+def reset_create() -> None
+```
+
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.resetDelete"></a>
+
+```python
+def reset_delete() -> None
+```
+
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.resetUpdate"></a>
+
+```python
+def reset_update() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts">ChronicleDataTableTimeouts</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.createInput"></a>
+
+```python
+create_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.deleteInput"></a>
+
+```python
+delete_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.updateInput"></a>
+
+```python
+update_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | ChronicleDataTableTimeouts
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts">ChronicleDataTableTimeouts</a>
+
+---
+
+
+

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface MonitoringNotificationChannelConfig extends cdktn.TerraformMeta
   /**
   * An optional human-readable description of this notification channel. This description may provide additional details, beyond the display name, for the channel. This may not exceed 1024 Unicode characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#description MonitoringNotificationChannel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#description MonitoringNotificationChannel#description}
   */
   readonly description?: string;
   /**
   * An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique name in order to make it easier to identify the channels in your project, though this is not enforced. The display name is limited to 512 Unicode characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#display_name MonitoringNotificationChannel#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#display_name MonitoringNotificationChannel#display_name}
   */
   readonly displayName?: string;
   /**
   * Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of notifications to a particular channel without removing the channel from all alerting policies that reference the channel. This is a more convenient approach when the change is temporary and you want to receive notifications from the same set of alerting policies on the channel at some point in the future.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#enabled MonitoringNotificationChannel#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#enabled MonitoringNotificationChannel#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
@@ -37,11 +37,11 @@ export interface MonitoringNotificationChannelConfig extends cdktn.TerraformMeta
   * referenced by an existing alerting policy will fail to be
   * deleted in a delete operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#force_delete MonitoringNotificationChannel#force_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#force_delete MonitoringNotificationChannel#force_delete}
   */
   readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#id MonitoringNotificationChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#id MonitoringNotificationChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,35 +56,35 @@ export interface MonitoringNotificationChannelConfig extends cdktn.TerraformMeta
   * determine if there are upstream changes to these fields. They can also be configured via
   * the sensitive_labels block, but cannot be configured in both places.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#labels MonitoringNotificationChannel#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#labels MonitoringNotificationChannel#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#project MonitoringNotificationChannel#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#project MonitoringNotificationChannel#project}
   */
   readonly project?: string;
   /**
   * The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.notificationChannelDescriptors/list to get the list of valid values such as "email", "slack", etc...
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#type MonitoringNotificationChannel#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#type MonitoringNotificationChannel#type}
   */
   readonly type: string;
   /**
   * User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema, unlike the labels field. This field is intended to be used for organizing and identifying the NotificationChannel objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes, whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must begin with a letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#user_labels MonitoringNotificationChannel#user_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#user_labels MonitoringNotificationChannel#user_labels}
   */
   readonly userLabels?: { [key: string]: string };
   /**
   * sensitive_labels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#sensitive_labels MonitoringNotificationChannel#sensitive_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#sensitive_labels MonitoringNotificationChannel#sensitive_labels}
   */
   readonly sensitiveLabels?: MonitoringNotificationChannelSensitiveLabels;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#timeouts MonitoringNotificationChannel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#timeouts MonitoringNotificationChannel#timeouts}
   */
   readonly timeouts?: MonitoringNotificationChannelTimeouts;
 }
@@ -92,21 +92,57 @@ export interface MonitoringNotificationChannelSensitiveLabels {
   /**
   * An authorization token for a notification channel. Channel types that support this field include: slack
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#auth_token MonitoringNotificationChannel#auth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#auth_token MonitoringNotificationChannel#auth_token}
   */
   readonly authToken?: string;
   /**
+  * An authorization token for a notification channel. Channel types that support this field include: slack
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#auth_token_wo MonitoringNotificationChannel#auth_token_wo}
+  */
+  readonly authTokenWo?: string;
+  /**
+  * Triggers update of 'auth_token_wo' write-only. Increment this value when an update to 'auth_token_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#auth_token_wo_version MonitoringNotificationChannel#auth_token_wo_version}
+  */
+  readonly authTokenWoVersion?: string;
+  /**
   * An password for a notification channel. Channel types that support this field include: webhook_basicauth
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#password MonitoringNotificationChannel#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#password MonitoringNotificationChannel#password}
   */
   readonly password?: string;
   /**
+  * An password for a notification channel. Channel types that support this field include: webhook_basicauth
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#password_wo MonitoringNotificationChannel#password_wo}
+  */
+  readonly passwordWo?: string;
+  /**
+  * Triggers update of 'password_wo' write-only. Increment this value when an update to 'password_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#password_wo_version MonitoringNotificationChannel#password_wo_version}
+  */
+  readonly passwordWoVersion?: string;
+  /**
   * An servicekey token for a notification channel. Channel types that support this field include: pagerduty
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#service_key MonitoringNotificationChannel#service_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#service_key MonitoringNotificationChannel#service_key}
   */
   readonly serviceKey?: string;
+  /**
+  * An servicekey token for a notification channel. Channel types that support this field include: pagerduty
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#service_key_wo MonitoringNotificationChannel#service_key_wo}
+  */
+  readonly serviceKeyWo?: string;
+  /**
+  * Triggers update of 'service_key_wo' write-only. Increment this value when an update to 'service_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#service_key_wo_version MonitoringNotificationChannel#service_key_wo_version}
+  */
+  readonly serviceKeyWoVersion?: string;
 }
 
 export function monitoringNotificationChannelSensitiveLabelsToTerraform(struct?: MonitoringNotificationChannelSensitiveLabelsOutputReference | MonitoringNotificationChannelSensitiveLabels): any {
@@ -116,8 +152,14 @@ export function monitoringNotificationChannelSensitiveLabelsToTerraform(struct?:
   }
   return {
     auth_token: cdktn.stringToTerraform(struct!.authToken),
+    auth_token_wo: cdktn.stringToTerraform(struct!.authTokenWo),
+    auth_token_wo_version: cdktn.stringToTerraform(struct!.authTokenWoVersion),
     password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.stringToTerraform(struct!.passwordWoVersion),
     service_key: cdktn.stringToTerraform(struct!.serviceKey),
+    service_key_wo: cdktn.stringToTerraform(struct!.serviceKeyWo),
+    service_key_wo_version: cdktn.stringToTerraform(struct!.serviceKeyWoVersion),
   }
 }
 
@@ -134,14 +176,50 @@ export function monitoringNotificationChannelSensitiveLabelsToHclTerraform(struc
       type: "simple",
       storageClassType: "string",
     },
+    auth_token_wo: {
+      value: cdktn.stringToHclTerraform(struct!.authTokenWo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_token_wo_version: {
+      value: cdktn.stringToHclTerraform(struct!.authTokenWoVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password: {
       value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
+    password_wo: {
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    password_wo_version: {
+      value: cdktn.stringToHclTerraform(struct!.passwordWoVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     service_key: {
       value: cdktn.stringToHclTerraform(struct!.serviceKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_key_wo: {
+      value: cdktn.stringToHclTerraform(struct!.serviceKeyWo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    service_key_wo_version: {
+      value: cdktn.stringToHclTerraform(struct!.serviceKeyWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -170,13 +248,37 @@ export class MonitoringNotificationChannelSensitiveLabelsOutputReference extends
       hasAnyValues = true;
       internalValueResult.authToken = this._authToken;
     }
+    if (this._authTokenWo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authTokenWo = this._authTokenWo;
+    }
+    if (this._authTokenWoVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authTokenWoVersion = this._authTokenWoVersion;
+    }
     if (this._password !== undefined) {
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordWo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordWo = this._passwordWo;
+    }
+    if (this._passwordWoVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordWoVersion = this._passwordWoVersion;
+    }
     if (this._serviceKey !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceKey = this._serviceKey;
+    }
+    if (this._serviceKeyWo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceKeyWo = this._serviceKeyWo;
+    }
+    if (this._serviceKeyWoVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceKeyWoVersion = this._serviceKeyWoVersion;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -185,14 +287,26 @@ export class MonitoringNotificationChannelSensitiveLabelsOutputReference extends
     if (value === undefined) {
       this.isEmptyObject = false;
       this._authToken = undefined;
+      this._authTokenWo = undefined;
+      this._authTokenWoVersion = undefined;
       this._password = undefined;
+      this._passwordWo = undefined;
+      this._passwordWoVersion = undefined;
       this._serviceKey = undefined;
+      this._serviceKeyWo = undefined;
+      this._serviceKeyWoVersion = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._authToken = value.authToken;
+      this._authTokenWo = value.authTokenWo;
+      this._authTokenWoVersion = value.authTokenWoVersion;
       this._password = value.password;
+      this._passwordWo = value.passwordWo;
+      this._passwordWoVersion = value.passwordWoVersion;
       this._serviceKey = value.serviceKey;
+      this._serviceKeyWo = value.serviceKeyWo;
+      this._serviceKeyWoVersion = value.serviceKeyWoVersion;
     }
   }
 
@@ -212,6 +326,38 @@ export class MonitoringNotificationChannelSensitiveLabelsOutputReference extends
     return this._authToken;
   }
 
+  // auth_token_wo - computed: false, optional: true, required: false
+  private _authTokenWo?: string; 
+  public get authTokenWo() {
+    return this.getStringAttribute('auth_token_wo');
+  }
+  public set authTokenWo(value: string) {
+    this._authTokenWo = value;
+  }
+  public resetAuthTokenWo() {
+    this._authTokenWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authTokenWoInput() {
+    return this._authTokenWo;
+  }
+
+  // auth_token_wo_version - computed: false, optional: true, required: false
+  private _authTokenWoVersion?: string; 
+  public get authTokenWoVersion() {
+    return this.getStringAttribute('auth_token_wo_version');
+  }
+  public set authTokenWoVersion(value: string) {
+    this._authTokenWoVersion = value;
+  }
+  public resetAuthTokenWoVersion() {
+    this._authTokenWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authTokenWoVersionInput() {
+    return this._authTokenWoVersion;
+  }
+
   // password - computed: false, optional: true, required: false
   private _password?: string; 
   public get password() {
@@ -226,6 +372,38 @@ export class MonitoringNotificationChannelSensitiveLabelsOutputReference extends
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
     return this._password;
+  }
+
+  // password_wo - computed: false, optional: true, required: false
+  private _passwordWo?: string; 
+  public get passwordWo() {
+    return this.getStringAttribute('password_wo');
+  }
+  public set passwordWo(value: string) {
+    this._passwordWo = value;
+  }
+  public resetPasswordWo() {
+    this._passwordWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordWoInput() {
+    return this._passwordWo;
+  }
+
+  // password_wo_version - computed: false, optional: true, required: false
+  private _passwordWoVersion?: string; 
+  public get passwordWoVersion() {
+    return this.getStringAttribute('password_wo_version');
+  }
+  public set passwordWoVersion(value: string) {
+    this._passwordWoVersion = value;
+  }
+  public resetPasswordWoVersion() {
+    this._passwordWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordWoVersionInput() {
+    return this._passwordWoVersion;
   }
 
   // service_key - computed: false, optional: true, required: false
@@ -243,18 +421,50 @@ export class MonitoringNotificationChannelSensitiveLabelsOutputReference extends
   public get serviceKeyInput() {
     return this._serviceKey;
   }
+
+  // service_key_wo - computed: false, optional: true, required: false
+  private _serviceKeyWo?: string; 
+  public get serviceKeyWo() {
+    return this.getStringAttribute('service_key_wo');
+  }
+  public set serviceKeyWo(value: string) {
+    this._serviceKeyWo = value;
+  }
+  public resetServiceKeyWo() {
+    this._serviceKeyWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceKeyWoInput() {
+    return this._serviceKeyWo;
+  }
+
+  // service_key_wo_version - computed: false, optional: true, required: false
+  private _serviceKeyWoVersion?: string; 
+  public get serviceKeyWoVersion() {
+    return this.getStringAttribute('service_key_wo_version');
+  }
+  public set serviceKeyWoVersion(value: string) {
+    this._serviceKeyWoVersion = value;
+  }
+  public resetServiceKeyWoVersion() {
+    this._serviceKeyWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceKeyWoVersionInput() {
+    return this._serviceKeyWoVersion;
+  }
 }
 export interface MonitoringNotificationChannelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#create MonitoringNotificationChannel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#create MonitoringNotificationChannel#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#delete MonitoringNotificationChannel#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#delete MonitoringNotificationChannel#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#update MonitoringNotificationChannel#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#update MonitoringNotificationChannel#update}
   */
   readonly update?: string;
 }
@@ -406,7 +616,7 @@ export class MonitoringNotificationChannelTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel google_monitoring_notification_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel google_monitoring_notification_channel}
 */
 export class MonitoringNotificationChannel extends cdktn.TerraformResource {
 
@@ -422,7 +632,7 @@ export class MonitoringNotificationChannel extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MonitoringNotificationChannel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitoringNotificationChannel to import
-  * @param importFromId The id of the existing MonitoringNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitoringNotificationChannel that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitoringNotificationChannel to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -434,7 +644,7 @@ export class MonitoringNotificationChannel extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_notification_channel google_monitoring_notification_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_notification_channel google_monitoring_notification_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -445,8 +655,8 @@ export class MonitoringNotificationChannel extends cdktn.TerraformResource {
       terraformResourceType: 'google_monitoring_notification_channel',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

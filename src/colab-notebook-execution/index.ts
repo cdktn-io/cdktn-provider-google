@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface ColabNotebookExecutionConfig extends cdktn.TerraformMetaArgumen
   /**
   * Required. The display name of the Notebook Execution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#display_name ColabNotebookExecution#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#display_name ColabNotebookExecution#display_name}
   */
   readonly displayName: string;
   /**
   * Max running time of the execution job in seconds (default 86400s / 24 hrs).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#execution_timeout ColabNotebookExecution#execution_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#execution_timeout ColabNotebookExecution#execution_timeout}
   */
   readonly executionTimeout?: string;
   /**
   * The user email to run the execution as.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#execution_user ColabNotebookExecution#execution_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#execution_user ColabNotebookExecution#execution_user}
   */
   readonly executionUser?: string;
   /**
   * The Cloud Storage location to upload the result to. Format:'gs://bucket-name'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#gcs_output_uri ColabNotebookExecution#gcs_output_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#gcs_output_uri ColabNotebookExecution#gcs_output_uri}
   */
   readonly gcsOutputUri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#id ColabNotebookExecution#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#id ColabNotebookExecution#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,67 +46,662 @@ export interface ColabNotebookExecutionConfig extends cdktn.TerraformMetaArgumen
   /**
   * The location for the resource: https://cloud.google.com/colab/docs/locations
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#location ColabNotebookExecution#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#location ColabNotebookExecution#location}
   */
   readonly location: string;
   /**
   * User specified ID for the Notebook Execution Job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#notebook_execution_job_id ColabNotebookExecution#notebook_execution_job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#notebook_execution_job_id ColabNotebookExecution#notebook_execution_job_id}
   */
   readonly notebookExecutionJobId?: string;
   /**
   * The NotebookRuntimeTemplate to source compute configuration from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#notebook_runtime_template_resource_name ColabNotebookExecution#notebook_runtime_template_resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#notebook_runtime_template_resource_name ColabNotebookExecution#notebook_runtime_template_resource_name}
   */
   readonly notebookRuntimeTemplateResourceName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#project ColabNotebookExecution#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#project ColabNotebookExecution#project}
   */
   readonly project?: string;
   /**
   * The service account to run the execution as.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#service_account ColabNotebookExecution#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#service_account ColabNotebookExecution#service_account}
   */
   readonly serviceAccount?: string;
   /**
+  * custom_environment_spec block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#custom_environment_spec ColabNotebookExecution#custom_environment_spec}
+  */
+  readonly customEnvironmentSpec?: ColabNotebookExecutionCustomEnvironmentSpec;
+  /**
   * dataform_repository_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#dataform_repository_source ColabNotebookExecution#dataform_repository_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#dataform_repository_source ColabNotebookExecution#dataform_repository_source}
   */
   readonly dataformRepositorySource?: ColabNotebookExecutionDataformRepositorySource;
   /**
   * direct_notebook_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#direct_notebook_source ColabNotebookExecution#direct_notebook_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#direct_notebook_source ColabNotebookExecution#direct_notebook_source}
   */
   readonly directNotebookSource?: ColabNotebookExecutionDirectNotebookSource;
   /**
   * gcs_notebook_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#gcs_notebook_source ColabNotebookExecution#gcs_notebook_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#gcs_notebook_source ColabNotebookExecution#gcs_notebook_source}
   */
   readonly gcsNotebookSource?: ColabNotebookExecutionGcsNotebookSource;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#timeouts ColabNotebookExecution#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#timeouts ColabNotebookExecution#timeouts}
   */
   readonly timeouts?: ColabNotebookExecutionTimeouts;
+}
+export interface ColabNotebookExecutionCustomEnvironmentSpecMachineSpec {
+  /**
+  * The number of accelerators used by the runtime.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#accelerator_count ColabNotebookExecution#accelerator_count}
+  */
+  readonly acceleratorCount?: number;
+  /**
+  * The type of hardware accelerator used by the runtime. If specified, acceleratorCount must also be specified.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#accelerator_type ColabNotebookExecution#accelerator_type}
+  */
+  readonly acceleratorType?: string;
+  /**
+  * The Compute Engine machine type selected for the runtime.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#machine_type ColabNotebookExecution#machine_type}
+  */
+  readonly machineType?: string;
+}
+
+export function colabNotebookExecutionCustomEnvironmentSpecMachineSpecToTerraform(struct?: ColabNotebookExecutionCustomEnvironmentSpecMachineSpecOutputReference | ColabNotebookExecutionCustomEnvironmentSpecMachineSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    accelerator_count: cdktn.numberToTerraform(struct!.acceleratorCount),
+    accelerator_type: cdktn.stringToTerraform(struct!.acceleratorType),
+    machine_type: cdktn.stringToTerraform(struct!.machineType),
+  }
+}
+
+
+export function colabNotebookExecutionCustomEnvironmentSpecMachineSpecToHclTerraform(struct?: ColabNotebookExecutionCustomEnvironmentSpecMachineSpecOutputReference | ColabNotebookExecutionCustomEnvironmentSpecMachineSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    accelerator_count: {
+      value: cdktn.numberToHclTerraform(struct!.acceleratorCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    accelerator_type: {
+      value: cdktn.stringToHclTerraform(struct!.acceleratorType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    machine_type: {
+      value: cdktn.stringToHclTerraform(struct!.machineType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ColabNotebookExecutionCustomEnvironmentSpecMachineSpecOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ColabNotebookExecutionCustomEnvironmentSpecMachineSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceleratorCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorCount = this._acceleratorCount;
+    }
+    if (this._acceleratorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorType = this._acceleratorType;
+    }
+    if (this._machineType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.machineType = this._machineType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ColabNotebookExecutionCustomEnvironmentSpecMachineSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._acceleratorCount = undefined;
+      this._acceleratorType = undefined;
+      this._machineType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._acceleratorCount = value.acceleratorCount;
+      this._acceleratorType = value.acceleratorType;
+      this._machineType = value.machineType;
+    }
+  }
+
+  // accelerator_count - computed: false, optional: true, required: false
+  private _acceleratorCount?: number; 
+  public get acceleratorCount() {
+    return this.getNumberAttribute('accelerator_count');
+  }
+  public set acceleratorCount(value: number) {
+    this._acceleratorCount = value;
+  }
+  public resetAcceleratorCount() {
+    this._acceleratorCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorCountInput() {
+    return this._acceleratorCount;
+  }
+
+  // accelerator_type - computed: false, optional: true, required: false
+  private _acceleratorType?: string; 
+  public get acceleratorType() {
+    return this.getStringAttribute('accelerator_type');
+  }
+  public set acceleratorType(value: string) {
+    this._acceleratorType = value;
+  }
+  public resetAcceleratorType() {
+    this._acceleratorType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTypeInput() {
+    return this._acceleratorType;
+  }
+
+  // machine_type - computed: false, optional: true, required: false
+  private _machineType?: string; 
+  public get machineType() {
+    return this.getStringAttribute('machine_type');
+  }
+  public set machineType(value: string) {
+    this._machineType = value;
+  }
+  public resetMachineType() {
+    this._machineType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get machineTypeInput() {
+    return this._machineType;
+  }
+}
+export interface ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec {
+  /**
+  * Enable public internet access for the runtime.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#enable_internet_access ColabNotebookExecution#enable_internet_access}
+  */
+  readonly enableInternetAccess?: boolean | cdktn.IResolvable;
+  /**
+  * The name of the VPC that this runtime is in.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#network ColabNotebookExecution#network}
+  */
+  readonly network?: string;
+  /**
+  * The name of the subnetwork that this runtime is in.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#subnetwork ColabNotebookExecution#subnetwork}
+  */
+  readonly subnetwork?: string;
+}
+
+export function colabNotebookExecutionCustomEnvironmentSpecNetworkSpecToTerraform(struct?: ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference | ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable_internet_access: cdktn.booleanToTerraform(struct!.enableInternetAccess),
+    network: cdktn.stringToTerraform(struct!.network),
+    subnetwork: cdktn.stringToTerraform(struct!.subnetwork),
+  }
+}
+
+
+export function colabNotebookExecutionCustomEnvironmentSpecNetworkSpecToHclTerraform(struct?: ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference | ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enable_internet_access: {
+      value: cdktn.booleanToHclTerraform(struct!.enableInternetAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    network: {
+      value: cdktn.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnetwork: {
+      value: cdktn.stringToHclTerraform(struct!.subnetwork),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enableInternetAccess !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableInternetAccess = this._enableInternetAccess;
+    }
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
+    if (this._subnetwork !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetwork = this._subnetwork;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enableInternetAccess = undefined;
+      this._network = undefined;
+      this._subnetwork = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableInternetAccess = value.enableInternetAccess;
+      this._network = value.network;
+      this._subnetwork = value.subnetwork;
+    }
+  }
+
+  // enable_internet_access - computed: false, optional: true, required: false
+  private _enableInternetAccess?: boolean | cdktn.IResolvable; 
+  public get enableInternetAccess() {
+    return this.getBooleanAttribute('enable_internet_access');
+  }
+  public set enableInternetAccess(value: boolean | cdktn.IResolvable) {
+    this._enableInternetAccess = value;
+  }
+  public resetEnableInternetAccess() {
+    this._enableInternetAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableInternetAccessInput() {
+    return this._enableInternetAccess;
+  }
+
+  // network - computed: false, optional: true, required: false
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  public resetNetwork() {
+    this._network = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+
+  // subnetwork - computed: false, optional: true, required: false
+  private _subnetwork?: string; 
+  public get subnetwork() {
+    return this.getStringAttribute('subnetwork');
+  }
+  public set subnetwork(value: string) {
+    this._subnetwork = value;
+  }
+  public resetSubnetwork() {
+    this._subnetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetworkInput() {
+    return this._subnetwork;
+  }
+}
+export interface ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec {
+  /**
+  * The disk size of the runtime in GB. If specified, the diskType must also be specified. The minimum size is 10GB and the maximum is 65536GB.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#disk_size_gb ColabNotebookExecution#disk_size_gb}
+  */
+  readonly diskSizeGb?: string;
+  /**
+  * The type of the persistent disk.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#disk_type ColabNotebookExecution#disk_type}
+  */
+  readonly diskType?: string;
+}
+
+export function colabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecToTerraform(struct?: ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference | ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    disk_size_gb: cdktn.stringToTerraform(struct!.diskSizeGb),
+    disk_type: cdktn.stringToTerraform(struct!.diskType),
+  }
+}
+
+
+export function colabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecToHclTerraform(struct?: ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference | ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disk_size_gb: {
+      value: cdktn.stringToHclTerraform(struct!.diskSizeGb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    disk_type: {
+      value: cdktn.stringToHclTerraform(struct!.diskType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._diskSizeGb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskSizeGb = this._diskSizeGb;
+    }
+    if (this._diskType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskType = this._diskType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._diskSizeGb = undefined;
+      this._diskType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._diskSizeGb = value.diskSizeGb;
+      this._diskType = value.diskType;
+    }
+  }
+
+  // disk_size_gb - computed: false, optional: true, required: false
+  private _diskSizeGb?: string; 
+  public get diskSizeGb() {
+    return this.getStringAttribute('disk_size_gb');
+  }
+  public set diskSizeGb(value: string) {
+    this._diskSizeGb = value;
+  }
+  public resetDiskSizeGb() {
+    this._diskSizeGb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskSizeGbInput() {
+    return this._diskSizeGb;
+  }
+
+  // disk_type - computed: false, optional: true, required: false
+  private _diskType?: string; 
+  public get diskType() {
+    return this.getStringAttribute('disk_type');
+  }
+  public set diskType(value: string) {
+    this._diskType = value;
+  }
+  public resetDiskType() {
+    this._diskType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskTypeInput() {
+    return this._diskType;
+  }
+}
+export interface ColabNotebookExecutionCustomEnvironmentSpec {
+  /**
+  * machine_spec block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#machine_spec ColabNotebookExecution#machine_spec}
+  */
+  readonly machineSpec?: ColabNotebookExecutionCustomEnvironmentSpecMachineSpec;
+  /**
+  * network_spec block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#network_spec ColabNotebookExecution#network_spec}
+  */
+  readonly networkSpec?: ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec;
+  /**
+  * persistent_disk_spec block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#persistent_disk_spec ColabNotebookExecution#persistent_disk_spec}
+  */
+  readonly persistentDiskSpec?: ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec;
+}
+
+export function colabNotebookExecutionCustomEnvironmentSpecToTerraform(struct?: ColabNotebookExecutionCustomEnvironmentSpecOutputReference | ColabNotebookExecutionCustomEnvironmentSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    machine_spec: colabNotebookExecutionCustomEnvironmentSpecMachineSpecToTerraform(struct!.machineSpec),
+    network_spec: colabNotebookExecutionCustomEnvironmentSpecNetworkSpecToTerraform(struct!.networkSpec),
+    persistent_disk_spec: colabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecToTerraform(struct!.persistentDiskSpec),
+  }
+}
+
+
+export function colabNotebookExecutionCustomEnvironmentSpecToHclTerraform(struct?: ColabNotebookExecutionCustomEnvironmentSpecOutputReference | ColabNotebookExecutionCustomEnvironmentSpec): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    machine_spec: {
+      value: colabNotebookExecutionCustomEnvironmentSpecMachineSpecToHclTerraform(struct!.machineSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ColabNotebookExecutionCustomEnvironmentSpecMachineSpecList",
+    },
+    network_spec: {
+      value: colabNotebookExecutionCustomEnvironmentSpecNetworkSpecToHclTerraform(struct!.networkSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecList",
+    },
+    persistent_disk_spec: {
+      value: colabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecToHclTerraform(struct!.persistentDiskSpec),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ColabNotebookExecutionCustomEnvironmentSpecOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ColabNotebookExecutionCustomEnvironmentSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._machineSpec?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.machineSpec = this._machineSpec?.internalValue;
+    }
+    if (this._networkSpec?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkSpec = this._networkSpec?.internalValue;
+    }
+    if (this._persistentDiskSpec?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.persistentDiskSpec = this._persistentDiskSpec?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ColabNotebookExecutionCustomEnvironmentSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._machineSpec.internalValue = undefined;
+      this._networkSpec.internalValue = undefined;
+      this._persistentDiskSpec.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._machineSpec.internalValue = value.machineSpec;
+      this._networkSpec.internalValue = value.networkSpec;
+      this._persistentDiskSpec.internalValue = value.persistentDiskSpec;
+    }
+  }
+
+  // machine_spec - computed: false, optional: true, required: false
+  private _machineSpec = new ColabNotebookExecutionCustomEnvironmentSpecMachineSpecOutputReference(this, "machine_spec");
+  public get machineSpec() {
+    return this._machineSpec;
+  }
+  public putMachineSpec(value: ColabNotebookExecutionCustomEnvironmentSpecMachineSpec) {
+    this._machineSpec.internalValue = value;
+  }
+  public resetMachineSpec() {
+    this._machineSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get machineSpecInput() {
+    return this._machineSpec.internalValue;
+  }
+
+  // network_spec - computed: false, optional: true, required: false
+  private _networkSpec = new ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference(this, "network_spec");
+  public get networkSpec() {
+    return this._networkSpec;
+  }
+  public putNetworkSpec(value: ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec) {
+    this._networkSpec.internalValue = value;
+  }
+  public resetNetworkSpec() {
+    this._networkSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkSpecInput() {
+    return this._networkSpec.internalValue;
+  }
+
+  // persistent_disk_spec - computed: false, optional: true, required: false
+  private _persistentDiskSpec = new ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference(this, "persistent_disk_spec");
+  public get persistentDiskSpec() {
+    return this._persistentDiskSpec;
+  }
+  public putPersistentDiskSpec(value: ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec) {
+    this._persistentDiskSpec.internalValue = value;
+  }
+  public resetPersistentDiskSpec() {
+    this._persistentDiskSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get persistentDiskSpecInput() {
+    return this._persistentDiskSpec.internalValue;
+  }
 }
 export interface ColabNotebookExecutionDataformRepositorySource {
   /**
   * The commit SHA to read repository with. If unset, the file will be read at HEAD.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#commit_sha ColabNotebookExecution#commit_sha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#commit_sha ColabNotebookExecution#commit_sha}
   */
   readonly commitSha?: string;
   /**
   * The resource name of the Dataform Repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#dataform_repository_resource_name ColabNotebookExecution#dataform_repository_resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#dataform_repository_resource_name ColabNotebookExecution#dataform_repository_resource_name}
   */
   readonly dataformRepositoryResourceName: string;
 }
@@ -218,7 +813,7 @@ export interface ColabNotebookExecutionDirectNotebookSource {
   /**
   * The base64-encoded contents of the input notebook file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#content ColabNotebookExecution#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#content ColabNotebookExecution#content}
   */
   readonly content: string;
 }
@@ -301,13 +896,13 @@ export interface ColabNotebookExecutionGcsNotebookSource {
   /**
   * The version of the Cloud Storage object to read. If unset, the current version of the object is read. See https://cloud.google.com/storage/docs/metadata#generation-number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#generation ColabNotebookExecution#generation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#generation ColabNotebookExecution#generation}
   */
   readonly generation?: string;
   /**
   * The Cloud Storage uri pointing to the ipynb file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#uri ColabNotebookExecution#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#uri ColabNotebookExecution#uri}
   */
   readonly uri: string;
 }
@@ -417,11 +1012,11 @@ export class ColabNotebookExecutionGcsNotebookSourceOutputReference extends cdkt
 }
 export interface ColabNotebookExecutionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#create ColabNotebookExecution#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#create ColabNotebookExecution#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#delete ColabNotebookExecution#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#delete ColabNotebookExecution#delete}
   */
   readonly delete?: string;
 }
@@ -544,7 +1139,7 @@ export class ColabNotebookExecutionTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution google_colab_notebook_execution}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution google_colab_notebook_execution}
 */
 export class ColabNotebookExecution extends cdktn.TerraformResource {
 
@@ -560,7 +1155,7 @@ export class ColabNotebookExecution extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ColabNotebookExecution resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ColabNotebookExecution to import
-  * @param importFromId The id of the existing ColabNotebookExecution that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ColabNotebookExecution that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ColabNotebookExecution to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -572,7 +1167,7 @@ export class ColabNotebookExecution extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/colab_notebook_execution google_colab_notebook_execution} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/colab_notebook_execution google_colab_notebook_execution} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -583,8 +1178,8 @@ export class ColabNotebookExecution extends cdktn.TerraformResource {
       terraformResourceType: 'google_colab_notebook_execution',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -604,6 +1199,7 @@ export class ColabNotebookExecution extends cdktn.TerraformResource {
     this._notebookRuntimeTemplateResourceName = config.notebookRuntimeTemplateResourceName;
     this._project = config.project;
     this._serviceAccount = config.serviceAccount;
+    this._customEnvironmentSpec.internalValue = config.customEnvironmentSpec;
     this._dataformRepositorySource.internalValue = config.dataformRepositorySource;
     this._directNotebookSource.internalValue = config.directNotebookSource;
     this._gcsNotebookSource.internalValue = config.gcsNotebookSource;
@@ -765,6 +1361,22 @@ export class ColabNotebookExecution extends cdktn.TerraformResource {
     return this._serviceAccount;
   }
 
+  // custom_environment_spec - computed: false, optional: true, required: false
+  private _customEnvironmentSpec = new ColabNotebookExecutionCustomEnvironmentSpecOutputReference(this, "custom_environment_spec");
+  public get customEnvironmentSpec() {
+    return this._customEnvironmentSpec;
+  }
+  public putCustomEnvironmentSpec(value: ColabNotebookExecutionCustomEnvironmentSpec) {
+    this._customEnvironmentSpec.internalValue = value;
+  }
+  public resetCustomEnvironmentSpec() {
+    this._customEnvironmentSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customEnvironmentSpecInput() {
+    return this._customEnvironmentSpec.internalValue;
+  }
+
   // dataform_repository_source - computed: false, optional: true, required: false
   private _dataformRepositorySource = new ColabNotebookExecutionDataformRepositorySourceOutputReference(this, "dataform_repository_source");
   public get dataformRepositorySource() {
@@ -845,6 +1457,7 @@ export class ColabNotebookExecution extends cdktn.TerraformResource {
       notebook_runtime_template_resource_name: cdktn.stringToTerraform(this._notebookRuntimeTemplateResourceName),
       project: cdktn.stringToTerraform(this._project),
       service_account: cdktn.stringToTerraform(this._serviceAccount),
+      custom_environment_spec: colabNotebookExecutionCustomEnvironmentSpecToTerraform(this._customEnvironmentSpec.internalValue),
       dataform_repository_source: colabNotebookExecutionDataformRepositorySourceToTerraform(this._dataformRepositorySource.internalValue),
       direct_notebook_source: colabNotebookExecutionDirectNotebookSourceToTerraform(this._directNotebookSource.internalValue),
       gcs_notebook_source: colabNotebookExecutionGcsNotebookSourceToTerraform(this._gcsNotebookSource.internalValue),
@@ -913,6 +1526,12 @@ export class ColabNotebookExecution extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      custom_environment_spec: {
+        value: colabNotebookExecutionCustomEnvironmentSpecToHclTerraform(this._customEnvironmentSpec.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ColabNotebookExecutionCustomEnvironmentSpecList",
       },
       dataform_repository_source: {
         value: colabNotebookExecutionDataformRepositorySourceToHclTerraform(this._dataformRepositorySource.internalValue),

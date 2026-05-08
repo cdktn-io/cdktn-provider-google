@@ -4,7 +4,7 @@
 
 ### DataGoogleServiceAccountKey <a name="DataGoogleServiceAccountKey" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key google_service_account_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key google_service_account_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.Initializer"></a>
 
@@ -69,7 +69,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.resetPublicKeyType">ResetPublicKeyType</a></code> | *No description.* |
 
 ---
@@ -293,12 +292,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
-##### `ResetProject` <a name="ResetProject" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.resetProject"></a>
-
-```csharp
-private void ResetProject()
-```
-
 ##### `ResetPublicKeyType` <a name="ResetPublicKeyType" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.resetPublicKeyType"></a>
 
 ```csharp
@@ -408,7 +401,7 @@ The construct id used in the generated config for the DataGoogleServiceAccountKe
 
 The id of the existing DataGoogleServiceAccountKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -440,11 +433,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.publicKey">PublicKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.publicKeyTypeInput">PublicKeyTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.project">Project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.publicKeyType">PublicKeyType</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -611,16 +602,6 @@ public string NameInput { get; }
 
 ---
 
-##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.projectInput"></a>
-
-```csharp
-public string ProjectInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `PublicKeyTypeInput`<sup>Optional</sup> <a name="PublicKeyTypeInput" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.publicKeyTypeInput"></a>
 
 ```csharp
@@ -645,16 +626,6 @@ public string Id { get; }
 
 ```csharp
 public string Name { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Project`<sup>Required</sup> <a name="Project" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.property.project"></a>
-
-```csharp
-public string Project { get; }
 ```
 
 - *Type:* string
@@ -708,7 +679,6 @@ new DataGoogleServiceAccountKeyConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
     string Id = null,
-    string Project = null,
     string PublicKeyType = null
 };
 ```
@@ -724,10 +694,9 @@ new DataGoogleServiceAccountKeyConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#name DataGoogleServiceAccountKey#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#id DataGoogleServiceAccountKey#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#project DataGoogleServiceAccountKey#project}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.property.publicKeyType">PublicKeyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#public_key_type DataGoogleServiceAccountKey#public_key_type}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key#name DataGoogleServiceAccountKey#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key#id DataGoogleServiceAccountKey#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.property.publicKeyType">PublicKeyType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key#public_key_type DataGoogleServiceAccountKey#public_key_type}. |
 
 ---
 
@@ -809,7 +778,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#name DataGoogleServiceAccountKey#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key#name DataGoogleServiceAccountKey#name}.
 
 ---
 
@@ -821,22 +790,10 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#id DataGoogleServiceAccountKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key#id DataGoogleServiceAccountKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.property.project"></a>
-
-```csharp
-public string Project { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#project DataGoogleServiceAccountKey#project}.
 
 ---
 
@@ -848,7 +805,7 @@ public string PublicKeyType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account_key#public_key_type DataGoogleServiceAccountKey#public_key_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/service_account_key#public_key_type DataGoogleServiceAccountKey#public_key_type}.
 
 ---
 

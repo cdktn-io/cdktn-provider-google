@@ -4,12 +4,12 @@
 
 ### PublicCaExternalAccountKey <a name="PublicCaExternalAccountKey" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key google_public_ca_external_account_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key google_public_ca_external_account_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.NewPublicCaExternalAccountKey(scope Construct, id *string, config PublicCaExternalAccountKeyConfig) PublicCaExternalAccountKey
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.PublicCaExternalAccountKey_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.PublicCaExternalAccountKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ publiccaexternalaccountkey.PublicCaExternalAccountKey_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.PublicCaExternalAccountKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ publiccaexternalaccountkey.PublicCaExternalAccountKey_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.PublicCaExternalAccountKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the PublicCaExternalAccountKey
 
 The id of the existing PublicCaExternalAccountKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -563,6 +563,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.property.b64MacKey">B64MacKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.property.b64UrlMacKey">B64UrlMacKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.property.keyId">KeyId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.property.macKey">MacKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeoutsOutputReference">PublicCaExternalAccountKeyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -747,6 +748,16 @@ func KeyId() *string
 
 ---
 
+##### `MacKey`<sup>Required</sup> <a name="MacKey" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.property.macKey"></a>
+
+```go
+func MacKey() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKey.property.name"></a>
 
 ```go
@@ -862,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/publiccaexternalaccountkey"
 
 &publiccaexternalaccountkey.PublicCaExternalAccountKeyConfig {
 	Connection: interface{},
@@ -875,7 +886,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternal
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeouts,
 }
 ```
 
@@ -890,9 +901,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternal
 | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#id PublicCaExternalAccountKey#id}. |
+| <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key#id PublicCaExternalAccountKey#id}. |
 | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyConfig.property.location">Location</a></code> | <code>*string</code> | Location for the externalAccountKey. Currently only 'global' is supported. |
-| <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#project PublicCaExternalAccountKey#project}. |
+| <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key#project PublicCaExternalAccountKey#project}. |
 | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeouts">PublicCaExternalAccountKeyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -975,7 +986,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#id PublicCaExternalAccountKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key#id PublicCaExternalAccountKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -992,7 +1003,7 @@ Location *string
 
 Location for the externalAccountKey. Currently only 'global' is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#location PublicCaExternalAccountKey#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key#location PublicCaExternalAccountKey#location}
 
 ---
 
@@ -1004,7 +1015,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#project PublicCaExternalAccountKey#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key#project PublicCaExternalAccountKey#project}.
 
 ---
 
@@ -1018,7 +1029,7 @@ Timeouts PublicCaExternalAccountKeyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#timeouts PublicCaExternalAccountKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key#timeouts PublicCaExternalAccountKey#timeouts}
 
 ---
 
@@ -1027,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/publiccaexternalaccountkey"
 
 &publiccaexternalaccountkey.PublicCaExternalAccountKeyTimeouts {
 	Create: *string,
@@ -1039,8 +1050,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#create PublicCaExternalAccountKey#create}. |
-| <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#delete PublicCaExternalAccountKey#delete}. |
+| <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key#create PublicCaExternalAccountKey#create}. |
+| <code><a href="#@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key#delete PublicCaExternalAccountKey#delete}. |
 
 ---
 
@@ -1052,7 +1063,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#create PublicCaExternalAccountKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key#create PublicCaExternalAccountKey#create}.
 
 ---
 
@@ -1064,7 +1075,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/public_ca_external_account_key#delete PublicCaExternalAccountKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/public_ca_external_account_key#delete PublicCaExternalAccountKey#delete}.
 
 ---
 
@@ -1075,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.publicCaExternalAccountKey.PublicCaExternalAccountKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/publiccaexternalaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/publiccaexternalaccountkey"
 
 publiccaexternalaccountkey.NewPublicCaExternalAccountKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PublicCaExternalAccountKeyTimeoutsOutputReference
 ```

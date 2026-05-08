@@ -4,12 +4,12 @@
 
 ### ProjectIamMember <a name="ProjectIamMember" id="@cdktn/provider-google.projectIamMember.ProjectIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member google_project_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member google_project_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectIamMember.ProjectIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiammember"
 
 projectiammember.NewProjectIamMember(scope Construct, id *string, config ProjectIamMemberConfig) ProjectIamMember
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.projectIamMember.ProjectIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiammember"
 
 projectiammember.ProjectIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.projectIamMember.ProjectIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiammember"
 
 projectiammember.ProjectIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ projectiammember.ProjectIamMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.projectIamMember.ProjectIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiammember"
 
 projectiammember.ProjectIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ projectiammember.ProjectIamMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.projectIamMember.ProjectIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiammember"
 
 projectiammember.ProjectIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ProjectIamMember to import
 
 The id of the existing ProjectIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectIamMember.ProjectIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiammember"
 
 &projectiammember.ProjectIamMemberCondition {
 	Expression: *string,
@@ -850,9 +850,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiammember
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#expression ProjectIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#title ProjectIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#description ProjectIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#expression ProjectIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#title ProjectIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#description ProjectIamMember#description}. |
 
 ---
 
@@ -864,7 +864,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#expression ProjectIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#expression ProjectIamMember#expression}.
 
 ---
 
@@ -876,7 +876,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#title ProjectIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#title ProjectIamMember#title}.
 
 ---
 
@@ -888,7 +888,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#description ProjectIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#description ProjectIamMember#description}.
 
 ---
 
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiammember"
 
 &projectiammember.ProjectIamMemberConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiammember
 	Member: *string,
 	Project: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.projectIamMember.ProjectIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.projectIamMember.ProjectIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -926,11 +926,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiammember
 | <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#member ProjectIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#project ProjectIamMember#project}. |
-| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#role ProjectIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#member ProjectIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#project ProjectIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#role ProjectIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberCondition">ProjectIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#id ProjectIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.projectIamMember.ProjectIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#id ProjectIamMember#id}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#member ProjectIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#member ProjectIamMember#member}.
 
 ---
 
@@ -1024,7 +1024,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#project ProjectIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#project ProjectIamMember#project}.
 
 ---
 
@@ -1036,7 +1036,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#role ProjectIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#role ProjectIamMember#role}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Condition ProjectIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#condition ProjectIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#condition ProjectIamMember#condition}
 
 ---
 
@@ -1062,7 +1062,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_member#id ProjectIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_member#id ProjectIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectIamMember.ProjectIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiammember"
 
 projectiammember.NewProjectIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectIamMemberConditionOutputReference
 ```

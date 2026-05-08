@@ -4,12 +4,12 @@
 
 ### ComputePublicAdvertisedPrefix <a name="ComputePublicAdvertisedPrefix" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix google_compute_public_advertised_prefix}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.NewComputePublicAdvertisedPrefix(scope Construct, id *string, config ComputePublicAdvertisedPrefixConfig) ComputePublicAdvertisedPrefix
 ```
@@ -76,7 +76,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.resetDnsVerificationIp">ResetDnsVerificationIp</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.resetIpv6AccessType">ResetIpv6AccessType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.resetPdpScope">ResetPdpScope</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -410,10 +412,22 @@ func PutTimeouts(value ComputePublicAdvertisedPrefixTimeouts)
 func ResetDescription()
 ```
 
+##### `ResetDnsVerificationIp` <a name="ResetDnsVerificationIp" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.resetDnsVerificationIp"></a>
+
+```go
+func ResetDnsVerificationIp()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.resetId"></a>
 
 ```go
 func ResetId()
+```
+
+##### `ResetIpv6AccessType` <a name="ResetIpv6AccessType" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.resetIpv6AccessType"></a>
+
+```go
+func ResetIpv6AccessType()
 ```
 
 ##### `ResetPdpScope` <a name="ResetPdpScope" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.resetPdpScope"></a>
@@ -448,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +508,7 @@ computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +522,7 @@ computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.ComputePublicAdvertisedPrefix_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +551,7 @@ The construct id used in the generated config for the ComputePublicAdvertisedPre
 
 The id of the existing ComputePublicAdvertisedPrefix that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -574,6 +588,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.dnsVerificationIpInput">DnsVerificationIpInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.ipCidrRangeInput">IpCidrRangeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.ipv6AccessTypeInput">Ipv6AccessTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.pdpScopeInput">PdpScopeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
@@ -582,6 +597,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.dnsVerificationIp">DnsVerificationIp</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.ipCidrRange">IpCidrRange</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.ipv6AccessType">Ipv6AccessType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.pdpScope">PdpScope</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.project">Project</a></code> | <code>*string</code> | *No description.* |
@@ -800,6 +816,16 @@ func IpCidrRangeInput() *string
 
 ---
 
+##### `Ipv6AccessTypeInput`<sup>Optional</sup> <a name="Ipv6AccessTypeInput" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.ipv6AccessTypeInput"></a>
+
+```go
+func Ipv6AccessTypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.nameInput"></a>
 
 ```go
@@ -880,6 +906,16 @@ func IpCidrRange() *string
 
 ---
 
+##### `Ipv6AccessType`<sup>Required</sup> <a name="Ipv6AccessType" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.ipv6AccessType"></a>
+
+```go
+func Ipv6AccessType() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefix.property.name"></a>
 
 ```go
@@ -935,7 +971,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepublicadvertisedprefix"
 
 &computepublicadvertisedprefix.ComputePublicAdvertisedPrefixConfig {
 	Connection: interface{},
@@ -945,14 +981,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadv
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	DnsVerificationIp: *string,
 	IpCidrRange: *string,
 	Name: *string,
 	Description: *string,
+	DnsVerificationIp: *string,
 	Id: *string,
+	Ipv6AccessType: *string,
 	PdpScope: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts,
 }
 ```
 
@@ -967,13 +1004,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadv
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.dnsVerificationIp">DnsVerificationIp</a></code> | <code>*string</code> | The IPv4 address to be used for reverse DNS verification. |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.ipCidrRange">IpCidrRange</a></code> | <code>*string</code> | The address range, in CIDR format, represented by this public advertised prefix. |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#id ComputePublicAdvertisedPrefix#id}. |
+| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.dnsVerificationIp">DnsVerificationIp</a></code> | <code>*string</code> | The IPv4 address to be used for reverse DNS verification. |
+| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#id ComputePublicAdvertisedPrefix#id}. |
+| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.ipv6AccessType">Ipv6AccessType</a></code> | <code>*string</code> | The internet access type for IPv6 Public Advertised Prefixes. |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.pdpScope">PdpScope</a></code> | <code>*string</code> | Specifies how child public delegated prefix will be scoped. |
-| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#project ComputePublicAdvertisedPrefix#project}. |
+| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#project ComputePublicAdvertisedPrefix#project}. |
 | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts">ComputePublicAdvertisedPrefixTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1048,20 +1086,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `DnsVerificationIp`<sup>Required</sup> <a name="DnsVerificationIp" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.dnsVerificationIp"></a>
-
-```go
-DnsVerificationIp *string
-```
-
-- *Type:* *string
-
-The IPv4 address to be used for reverse DNS verification.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#dns_verification_ip ComputePublicAdvertisedPrefix#dns_verification_ip}
-
----
-
 ##### `IpCidrRange`<sup>Required</sup> <a name="IpCidrRange" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.ipCidrRange"></a>
 
 ```go
@@ -1072,7 +1096,7 @@ IpCidrRange *string
 
 The address range, in CIDR format, represented by this public advertised prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#ip_cidr_range ComputePublicAdvertisedPrefix#ip_cidr_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#ip_cidr_range ComputePublicAdvertisedPrefix#ip_cidr_range}
 
 ---
 
@@ -1093,7 +1117,7 @@ which means the first character must be a lowercase letter, and all
 following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#name ComputePublicAdvertisedPrefix#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#name ComputePublicAdvertisedPrefix#name}
 
 ---
 
@@ -1107,7 +1131,21 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#description ComputePublicAdvertisedPrefix#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#description ComputePublicAdvertisedPrefix#description}
+
+---
+
+##### `DnsVerificationIp`<sup>Optional</sup> <a name="DnsVerificationIp" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.dnsVerificationIp"></a>
+
+```go
+DnsVerificationIp *string
+```
+
+- *Type:* *string
+
+The IPv4 address to be used for reverse DNS verification.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#dns_verification_ip ComputePublicAdvertisedPrefix#dns_verification_ip}
 
 ---
 
@@ -1119,10 +1157,33 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#id ComputePublicAdvertisedPrefix#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#id ComputePublicAdvertisedPrefix#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Ipv6AccessType`<sup>Optional</sup> <a name="Ipv6AccessType" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixConfig.property.ipv6AccessType"></a>
+
+```go
+Ipv6AccessType *string
+```
+
+- *Type:* *string
+
+The internet access type for IPv6 Public Advertised Prefixes.
+
+It can be
+set to one of following:
+
+* EXTERNAL: Default access type. The prefix will be announced to the
+  internet. All children PDPs will have access type as EXTERNAL.
+* INTERNAL: The prefix won’t be announced to the internet. Prefix will
+  be used privately within Google Cloud. All children PDPs will have
+  access type as INTERNAL. Possible values: ["EXTERNAL", "INTERNAL"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#ipv6_access_type ComputePublicAdvertisedPrefix#ipv6_access_type}
 
 ---
 
@@ -1144,7 +1205,7 @@ must be one of: GLOBAL, REGIONAL
 * GLOBAL: The public delegated prefix is global only. The provisioning
   will take ~4 weeks. Possible values: ["GLOBAL", "REGIONAL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#pdp_scope ComputePublicAdvertisedPrefix#pdp_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#pdp_scope ComputePublicAdvertisedPrefix#pdp_scope}
 
 ---
 
@@ -1156,7 +1217,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#project ComputePublicAdvertisedPrefix#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#project ComputePublicAdvertisedPrefix#project}.
 
 ---
 
@@ -1170,7 +1231,7 @@ Timeouts ComputePublicAdvertisedPrefixTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#timeouts ComputePublicAdvertisedPrefix#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#timeouts ComputePublicAdvertisedPrefix#timeouts}
 
 ---
 
@@ -1179,7 +1240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepublicadvertisedprefix"
 
 &computepublicadvertisedprefix.ComputePublicAdvertisedPrefixTimeouts {
 	Create: *string,
@@ -1191,8 +1252,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadv
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#create ComputePublicAdvertisedPrefix#create}. |
-| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#delete ComputePublicAdvertisedPrefix#delete}. |
+| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#create ComputePublicAdvertisedPrefix#create}. |
+| <code><a href="#@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#delete ComputePublicAdvertisedPrefix#delete}. |
 
 ---
 
@@ -1204,7 +1265,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#create ComputePublicAdvertisedPrefix#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#create ComputePublicAdvertisedPrefix#create}.
 
 ---
 
@@ -1216,7 +1277,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_public_advertised_prefix#delete ComputePublicAdvertisedPrefix#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_public_advertised_prefix#delete ComputePublicAdvertisedPrefix#delete}.
 
 ---
 
@@ -1227,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePublicAdvertisedPrefix.ComputePublicAdvertisedPrefixTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computepublicadvertisedprefix"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computepublicadvertisedprefix"
 
 computepublicadvertisedprefix.NewComputePublicAdvertisedPrefixTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputePublicAdvertisedPrefixTimeoutsOutputReference
 ```

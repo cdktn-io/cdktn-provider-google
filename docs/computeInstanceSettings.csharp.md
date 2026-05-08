@@ -4,7 +4,7 @@
 
 ### ComputeInstanceSettings <a name="ComputeInstanceSettings" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings google_compute_instance_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings google_compute_instance_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettings.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the ComputeInstanceSettings to
 
 The id of the existing ComputeInstanceSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -894,9 +894,9 @@ new ComputeInstanceSettingsConfig {
 | <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsConfig.property.zone">Zone</a></code> | <code>string</code> | A reference to the zone where the machine resides. |
-| <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#id ComputeInstanceSettings#id}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#id ComputeInstanceSettings#id}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsMetadata">ComputeInstanceSettingsMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#project ComputeInstanceSettings#project}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#project ComputeInstanceSettings#project}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsTimeouts">ComputeInstanceSettingsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -981,7 +981,7 @@ public string Zone { get; set; }
 
 A reference to the zone where the machine resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#zone ComputeInstanceSettings#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#zone ComputeInstanceSettings#zone}
 
 ---
 
@@ -993,7 +993,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#id ComputeInstanceSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#id ComputeInstanceSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1010,7 +1010,7 @@ public ComputeInstanceSettingsMetadata Metadata { get; set; }
 
 metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#metadata ComputeInstanceSettings#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#metadata ComputeInstanceSettings#metadata}
 
 ---
 
@@ -1022,7 +1022,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#project ComputeInstanceSettings#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#project ComputeInstanceSettings#project}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public ComputeInstanceSettingsTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#timeouts ComputeInstanceSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#timeouts ComputeInstanceSettings#timeouts}
 
 ---
 
@@ -1070,7 +1070,7 @@ public System.Collections.Generic.IDictionary<string, string> Items { get; set; 
 
 A metadata key/value items map. The total size of all keys and values must be less than 512KB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#items ComputeInstanceSettings#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#items ComputeInstanceSettings#items}
 
 ---
 
@@ -1092,9 +1092,9 @@ new ComputeInstanceSettingsTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#create ComputeInstanceSettings#create}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#delete ComputeInstanceSettings#delete}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#update ComputeInstanceSettings#update}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#create ComputeInstanceSettings#create}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#delete ComputeInstanceSettings#delete}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceSettings.ComputeInstanceSettingsTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#update ComputeInstanceSettings#update}. |
 
 ---
 
@@ -1106,7 +1106,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#create ComputeInstanceSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#create ComputeInstanceSettings#create}.
 
 ---
 
@@ -1118,7 +1118,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#delete ComputeInstanceSettings#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#delete ComputeInstanceSettings#delete}.
 
 ---
 
@@ -1130,7 +1130,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_settings#update ComputeInstanceSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_settings#update ComputeInstanceSettings#update}.
 
 ---
 

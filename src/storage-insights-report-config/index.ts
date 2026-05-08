@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,17 @@ export interface StorageInsightsReportConfigConfig extends cdktn.TerraformMetaAr
   /**
   * The editable display name of the inventory report configuration. Has a limit of 256 characters. Can be empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#display_name StorageInsightsReportConfig#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#display_name StorageInsightsReportConfig#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#id StorageInsightsReportConfig#id}
+  * If set, all the inventory report details associated with this report configuration are deleted.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#force_destroy StorageInsightsReportConfig#force_destroy}
+  */
+  readonly forceDestroy?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#id StorageInsightsReportConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,41 +35,41 @@ export interface StorageInsightsReportConfigConfig extends cdktn.TerraformMetaAr
   * The location of the ReportConfig. The source and destination buckets specified in the ReportConfig
   * must be in the same location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#location StorageInsightsReportConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#location StorageInsightsReportConfig#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#project StorageInsightsReportConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#project StorageInsightsReportConfig#project}
   */
   readonly project?: string;
   /**
   * csv_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#csv_options StorageInsightsReportConfig#csv_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#csv_options StorageInsightsReportConfig#csv_options}
   */
   readonly csvOptions?: StorageInsightsReportConfigCsvOptions;
   /**
   * frequency_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#frequency_options StorageInsightsReportConfig#frequency_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#frequency_options StorageInsightsReportConfig#frequency_options}
   */
   readonly frequencyOptions?: StorageInsightsReportConfigFrequencyOptions;
   /**
   * object_metadata_report_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#object_metadata_report_options StorageInsightsReportConfig#object_metadata_report_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#object_metadata_report_options StorageInsightsReportConfig#object_metadata_report_options}
   */
   readonly objectMetadataReportOptions?: StorageInsightsReportConfigObjectMetadataReportOptions;
   /**
   * parquet_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#parquet_options StorageInsightsReportConfig#parquet_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#parquet_options StorageInsightsReportConfig#parquet_options}
   */
   readonly parquetOptions?: StorageInsightsReportConfigParquetOptions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#timeouts StorageInsightsReportConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#timeouts StorageInsightsReportConfig#timeouts}
   */
   readonly timeouts?: StorageInsightsReportConfigTimeouts;
 }
@@ -71,19 +77,19 @@ export interface StorageInsightsReportConfigCsvOptions {
   /**
   * The delimiter used to separate the fields in the inventory report CSV file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#delimiter StorageInsightsReportConfig#delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#delimiter StorageInsightsReportConfig#delimiter}
   */
   readonly delimiter?: string;
   /**
   * The boolean that indicates whether or not headers are included in the inventory report CSV file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#header_required StorageInsightsReportConfig#header_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#header_required StorageInsightsReportConfig#header_required}
   */
   readonly headerRequired?: boolean | cdktn.IResolvable;
   /**
   * The character used to separate the records in the inventory report CSV file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#record_separator StorageInsightsReportConfig#record_separator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#record_separator StorageInsightsReportConfig#record_separator}
   */
   readonly recordSeparator?: string;
 }
@@ -227,19 +233,19 @@ export interface StorageInsightsReportConfigFrequencyOptionsEndDate {
   /**
   * The day of the month to stop generating inventory reports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#day StorageInsightsReportConfig#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#day StorageInsightsReportConfig#day}
   */
   readonly day: number;
   /**
   * The month to stop generating inventory reports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#month StorageInsightsReportConfig#month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#month StorageInsightsReportConfig#month}
   */
   readonly month: number;
   /**
   * The year to stop generating inventory reports
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#year StorageInsightsReportConfig#year}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#year StorageInsightsReportConfig#year}
   */
   readonly year: number;
 }
@@ -374,19 +380,19 @@ export interface StorageInsightsReportConfigFrequencyOptionsStartDate {
   /**
   * The day of the month to start generating inventory reports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#day StorageInsightsReportConfig#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#day StorageInsightsReportConfig#day}
   */
   readonly day: number;
   /**
   * The month to start generating inventory reports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#month StorageInsightsReportConfig#month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#month StorageInsightsReportConfig#month}
   */
   readonly month: number;
   /**
   * The year to start generating inventory reports
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#year StorageInsightsReportConfig#year}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#year StorageInsightsReportConfig#year}
   */
   readonly year: number;
 }
@@ -521,19 +527,19 @@ export interface StorageInsightsReportConfigFrequencyOptions {
   /**
   * The frequency in which inventory reports are generated. Values are DAILY or WEEKLY. Possible values: ["DAILY", "WEEKLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#frequency StorageInsightsReportConfig#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#frequency StorageInsightsReportConfig#frequency}
   */
   readonly frequency: string;
   /**
   * end_date block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#end_date StorageInsightsReportConfig#end_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#end_date StorageInsightsReportConfig#end_date}
   */
   readonly endDate: StorageInsightsReportConfigFrequencyOptionsEndDate;
   /**
   * start_date block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#start_date StorageInsightsReportConfig#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#start_date StorageInsightsReportConfig#start_date}
   */
   readonly startDate: StorageInsightsReportConfigFrequencyOptionsStartDate;
 }
@@ -668,13 +674,13 @@ export interface StorageInsightsReportConfigObjectMetadataReportOptionsStorageDe
   /**
   * The destination bucket that stores the generated inventory reports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#bucket StorageInsightsReportConfig#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#bucket StorageInsightsReportConfig#bucket}
   */
   readonly bucket: string;
   /**
   * The path within the destination bucket to store generated inventory reports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#destination_path StorageInsightsReportConfig#destination_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#destination_path StorageInsightsReportConfig#destination_path}
   */
   readonly destinationPath?: string;
 }
@@ -786,7 +792,7 @@ export interface StorageInsightsReportConfigObjectMetadataReportOptionsStorageFi
   /**
   * The filter to use when specifying which bucket to generate inventory reports for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#bucket StorageInsightsReportConfig#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#bucket StorageInsightsReportConfig#bucket}
   */
   readonly bucket?: string;
 }
@@ -872,19 +878,19 @@ export interface StorageInsightsReportConfigObjectMetadataReportOptions {
   /**
   * The metadata fields included in an inventory report.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#metadata_fields StorageInsightsReportConfig#metadata_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#metadata_fields StorageInsightsReportConfig#metadata_fields}
   */
   readonly metadataFields: string[];
   /**
   * storage_destination_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#storage_destination_options StorageInsightsReportConfig#storage_destination_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#storage_destination_options StorageInsightsReportConfig#storage_destination_options}
   */
   readonly storageDestinationOptions: StorageInsightsReportConfigObjectMetadataReportOptionsStorageDestinationOptions;
   /**
   * storage_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#storage_filters StorageInsightsReportConfig#storage_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#storage_filters StorageInsightsReportConfig#storage_filters}
   */
   readonly storageFilters?: StorageInsightsReportConfigObjectMetadataReportOptionsStorageFilters;
 }
@@ -1069,15 +1075,15 @@ export class StorageInsightsReportConfigParquetOptionsOutputReference extends cd
 }
 export interface StorageInsightsReportConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#create StorageInsightsReportConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#create StorageInsightsReportConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#delete StorageInsightsReportConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#delete StorageInsightsReportConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#update StorageInsightsReportConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#update StorageInsightsReportConfig#update}
   */
   readonly update?: string;
 }
@@ -1229,7 +1235,7 @@ export class StorageInsightsReportConfigTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config google_storage_insights_report_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config google_storage_insights_report_config}
 */
 export class StorageInsightsReportConfig extends cdktn.TerraformResource {
 
@@ -1245,7 +1251,7 @@ export class StorageInsightsReportConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageInsightsReportConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageInsightsReportConfig to import
-  * @param importFromId The id of the existing StorageInsightsReportConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageInsightsReportConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageInsightsReportConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1257,7 +1263,7 @@ export class StorageInsightsReportConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_insights_report_config google_storage_insights_report_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_insights_report_config google_storage_insights_report_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1268,8 +1274,8 @@ export class StorageInsightsReportConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_storage_insights_report_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1280,6 +1286,7 @@ export class StorageInsightsReportConfig extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._displayName = config.displayName;
+    this._forceDestroy = config.forceDestroy;
     this._id = config.id;
     this._location = config.location;
     this._project = config.project;
@@ -1308,6 +1315,22 @@ export class StorageInsightsReportConfig extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
     return this._displayName;
+  }
+
+  // force_destroy - computed: false, optional: true, required: false
+  private _forceDestroy?: boolean | cdktn.IResolvable; 
+  public get forceDestroy() {
+    return this.getBooleanAttribute('force_destroy');
+  }
+  public set forceDestroy(value: boolean | cdktn.IResolvable) {
+    this._forceDestroy = value;
+  }
+  public resetForceDestroy() {
+    this._forceDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceDestroyInput() {
+    return this._forceDestroy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -1447,6 +1470,7 @@ export class StorageInsightsReportConfig extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       display_name: cdktn.stringToTerraform(this._displayName),
+      force_destroy: cdktn.booleanToTerraform(this._forceDestroy),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
       project: cdktn.stringToTerraform(this._project),
@@ -1465,6 +1489,12 @@ export class StorageInsightsReportConfig extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      force_destroy: {
+        value: cdktn.booleanToHclTerraform(this._forceDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       id: {
         value: cdktn.stringToHclTerraform(this._id),

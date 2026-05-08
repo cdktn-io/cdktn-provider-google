@@ -4,12 +4,12 @@
 
 ### DataGoogleBigqueryDatasets <a name="DataGoogleBigqueryDatasets" id="@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_datasets google_bigquery_datasets}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_datasets google_bigquery_datasets}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydatasets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatasets"
 
 datagooglebigquerydatasets.NewDataGoogleBigqueryDatasets(scope Construct, id *string, config DataGoogleBigqueryDatasetsConfig) DataGoogleBigqueryDatasets
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasets.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydatasets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatasets"
 
 datagooglebigquerydatasets.DataGoogleBigqueryDatasets_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydatasets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatasets"
 
 datagooglebigquerydatasets.DataGoogleBigqueryDatasets_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglebigquerydatasets.DataGoogleBigqueryDatasets_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydatasets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatasets"
 
 datagooglebigquerydatasets.DataGoogleBigqueryDatasets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglebigquerydatasets.DataGoogleBigqueryDatasets_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydatasets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatasets"
 
 datagooglebigquerydatasets.DataGoogleBigqueryDatasets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleBigqueryDatasets
 
 The id of the existing DataGoogleBigqueryDatasets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_datasets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_datasets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasetsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydatasets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatasets"
 
 &datagooglebigquerydatasets.DataGoogleBigqueryDatasetsConfig {
 	Connection: interface{},
@@ -660,7 +660,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigque
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasetsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasetsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasetsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasetsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_datasets#id DataGoogleBigqueryDatasets#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasetsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_datasets#id DataGoogleBigqueryDatasets#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasetsConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project in which the datasets are located. |
 
 ---
@@ -743,7 +743,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_datasets#id DataGoogleBigqueryDatasets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_datasets#id DataGoogleBigqueryDatasets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -762,7 +762,7 @@ The ID of the project in which the datasets are located.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_datasets#project DataGoogleBigqueryDatasets#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/bigquery_datasets#project DataGoogleBigqueryDatasets#project}
 
 ---
 
@@ -771,7 +771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasetsDatasets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydatasets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatasets"
 
 &datagooglebigquerydatasets.DataGoogleBigqueryDatasetsDatasets {
 
@@ -786,7 +786,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigque
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasetsDatasetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydatasets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatasets"
 
 datagooglebigquerydatasets.NewDataGoogleBigqueryDatasetsDatasetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBigqueryDatasetsDatasetsList
 ```
@@ -935,7 +935,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDatasets.DataGoogleBigqueryDatasetsDatasetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglebigquerydatasets"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglebigquerydatasets"
 
 datagooglebigquerydatasets.NewDataGoogleBigqueryDatasetsDatasetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBigqueryDatasetsDatasetsOutputReference
 ```

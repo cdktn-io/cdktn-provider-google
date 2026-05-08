@@ -4,7 +4,7 @@
 
 ### ComputeRegionHealthCheck <a name="ComputeRegionHealthCheck" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check google_compute_region_health_check}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check google_compute_region_health_check}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.putGrpcHealthCheck">putGrpcHealthCheck</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.putGrpcTlsHealthCheck">putGrpcTlsHealthCheck</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.putHttp2HealthCheck">putHttp2HealthCheck</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.putHttpHealthCheck">putHttpHealthCheck</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.putHttpsHealthCheck">putHttpsHealthCheck</a></code> | *No description.* |
@@ -85,6 +86,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.resetCheckIntervalSec">resetCheckIntervalSec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.resetGrpcHealthCheck">resetGrpcHealthCheck</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.resetGrpcTlsHealthCheck">resetGrpcTlsHealthCheck</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.resetHealthyThreshold">resetHealthyThreshold</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.resetHttp2HealthCheck">resetHttp2HealthCheck</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.resetHttpHealthCheck">resetHttpHealthCheck</a></code> | *No description.* |
@@ -422,6 +424,18 @@ public putGrpcHealthCheck(value: ComputeRegionHealthCheckGrpcHealthCheck): void
 
 ---
 
+##### `putGrpcTlsHealthCheck` <a name="putGrpcTlsHealthCheck" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.putGrpcTlsHealthCheck"></a>
+
+```typescript
+public putGrpcTlsHealthCheck(value: ComputeRegionHealthCheckGrpcTlsHealthCheck): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.putGrpcTlsHealthCheck.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck">ComputeRegionHealthCheckGrpcTlsHealthCheck</a>
+
+---
+
 ##### `putHttp2HealthCheck` <a name="putHttp2HealthCheck" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.putHttp2HealthCheck"></a>
 
 ```typescript
@@ -522,6 +536,12 @@ public resetDescription(): void
 
 ```typescript
 public resetGrpcHealthCheck(): void
+```
+
+##### `resetGrpcTlsHealthCheck` <a name="resetGrpcTlsHealthCheck" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.resetGrpcTlsHealthCheck"></a>
+
+```typescript
+public resetGrpcTlsHealthCheck(): void
 ```
 
 ##### `resetHealthyThreshold` <a name="resetHealthyThreshold" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.resetHealthyThreshold"></a>
@@ -705,7 +725,7 @@ The construct id used in the generated config for the ComputeRegionHealthCheck t
 
 The id of the existing ComputeRegionHealthCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -737,6 +757,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.creationTimestamp">creationTimestamp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.grpcHealthCheck">grpcHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheckOutputReference">ComputeRegionHealthCheckGrpcHealthCheckOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.grpcTlsHealthCheck">grpcTlsHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference">ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.healthCheckId">healthCheckId</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.http2HealthCheck">http2HealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttp2HealthCheckOutputReference">ComputeRegionHealthCheckHttp2HealthCheckOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.httpHealthCheck">httpHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpHealthCheckOutputReference">ComputeRegionHealthCheckHttpHealthCheckOutputReference</a></code> | *No description.* |
@@ -750,6 +771,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.checkIntervalSecInput">checkIntervalSecInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.grpcHealthCheckInput">grpcHealthCheckInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheck">ComputeRegionHealthCheckGrpcHealthCheck</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.grpcTlsHealthCheckInput">grpcTlsHealthCheckInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck">ComputeRegionHealthCheckGrpcTlsHealthCheck</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.healthyThresholdInput">healthyThresholdInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.http2HealthCheckInput">http2HealthCheckInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttp2HealthCheck">ComputeRegionHealthCheckHttp2HealthCheck</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.httpHealthCheckInput">httpHealthCheckInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpHealthCheck">ComputeRegionHealthCheckHttpHealthCheck</a></code> | *No description.* |
@@ -938,6 +960,16 @@ public readonly grpcHealthCheck: ComputeRegionHealthCheckGrpcHealthCheckOutputRe
 
 ---
 
+##### `grpcTlsHealthCheck`<sup>Required</sup> <a name="grpcTlsHealthCheck" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.grpcTlsHealthCheck"></a>
+
+```typescript
+public readonly grpcTlsHealthCheck: ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference">ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference</a>
+
+---
+
 ##### `healthCheckId`<sup>Required</sup> <a name="healthCheckId" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.healthCheckId"></a>
 
 ```typescript
@@ -1065,6 +1097,16 @@ public readonly grpcHealthCheckInput: ComputeRegionHealthCheckGrpcHealthCheck;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheck">ComputeRegionHealthCheckGrpcHealthCheck</a>
+
+---
+
+##### `grpcTlsHealthCheckInput`<sup>Optional</sup> <a name="grpcTlsHealthCheckInput" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheck.property.grpcTlsHealthCheckInput"></a>
+
+```typescript
+public readonly grpcTlsHealthCheckInput: ComputeRegionHealthCheckGrpcTlsHealthCheck;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck">ComputeRegionHealthCheckGrpcTlsHealthCheck</a>
 
 ---
 
@@ -1343,13 +1385,14 @@ const computeRegionHealthCheckConfig: computeRegionHealthCheck.ComputeRegionHeal
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.checkIntervalSec">checkIntervalSec</a></code> | <code>number</code> | How often (in seconds) to send a health check. The default value is 5 seconds. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.grpcHealthCheck">grpcHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheck">ComputeRegionHealthCheckGrpcHealthCheck</a></code> | grpc_health_check block. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.grpcTlsHealthCheck">grpcTlsHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck">ComputeRegionHealthCheckGrpcTlsHealthCheck</a></code> | grpc_tls_health_check block. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.healthyThreshold">healthyThreshold</a></code> | <code>number</code> | A so-far unhealthy instance will be marked healthy after this many consecutive successes. The default value is 2. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.http2HealthCheck">http2HealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttp2HealthCheck">ComputeRegionHealthCheckHttp2HealthCheck</a></code> | http2_health_check block. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.httpHealthCheck">httpHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpHealthCheck">ComputeRegionHealthCheckHttpHealthCheck</a></code> | http_health_check block. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.httpsHealthCheck">httpsHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckHttpsHealthCheck">ComputeRegionHealthCheckHttpsHealthCheck</a></code> | https_health_check block. |
-| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#id ComputeRegionHealthCheck#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#id ComputeRegionHealthCheck#id}. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.logConfig">logConfig</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckLogConfig">ComputeRegionHealthCheckLogConfig</a></code> | log_config block. |
-| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#project ComputeRegionHealthCheck#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#project ComputeRegionHealthCheck#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.region">region</a></code> | <code>string</code> | The Region in which the created health check should reside. If it is not provided, the provider region is used. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.sslHealthCheck">sslHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckSslHealthCheck">ComputeRegionHealthCheckSslHealthCheck</a></code> | ssl_health_check block. |
 | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.tcpHealthCheck">tcpHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckTcpHealthCheck">ComputeRegionHealthCheckTcpHealthCheck</a></code> | tcp_health_check block. |
@@ -1447,7 +1490,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#name ComputeRegionHealthCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#name ComputeRegionHealthCheck#name}
 
 ---
 
@@ -1461,7 +1504,7 @@ public readonly checkIntervalSec: number;
 
 How often (in seconds) to send a health check. The default value is 5 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#check_interval_sec ComputeRegionHealthCheck#check_interval_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#check_interval_sec ComputeRegionHealthCheck#check_interval_sec}
 
 ---
 
@@ -1475,7 +1518,7 @@ public readonly description: string;
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#description ComputeRegionHealthCheck#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#description ComputeRegionHealthCheck#description}
 
 ---
 
@@ -1489,7 +1532,21 @@ public readonly grpcHealthCheck: ComputeRegionHealthCheckGrpcHealthCheck;
 
 grpc_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#grpc_health_check ComputeRegionHealthCheck#grpc_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#grpc_health_check ComputeRegionHealthCheck#grpc_health_check}
+
+---
+
+##### `grpcTlsHealthCheck`<sup>Optional</sup> <a name="grpcTlsHealthCheck" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckConfig.property.grpcTlsHealthCheck"></a>
+
+```typescript
+public readonly grpcTlsHealthCheck: ComputeRegionHealthCheckGrpcTlsHealthCheck;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck">ComputeRegionHealthCheckGrpcTlsHealthCheck</a>
+
+grpc_tls_health_check block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#grpc_tls_health_check ComputeRegionHealthCheck#grpc_tls_health_check}
 
 ---
 
@@ -1503,7 +1560,7 @@ public readonly healthyThreshold: number;
 
 A so-far unhealthy instance will be marked healthy after this many consecutive successes. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#healthy_threshold ComputeRegionHealthCheck#healthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#healthy_threshold ComputeRegionHealthCheck#healthy_threshold}
 
 ---
 
@@ -1517,7 +1574,7 @@ public readonly http2HealthCheck: ComputeRegionHealthCheckHttp2HealthCheck;
 
 http2_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#http2_health_check ComputeRegionHealthCheck#http2_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#http2_health_check ComputeRegionHealthCheck#http2_health_check}
 
 ---
 
@@ -1531,7 +1588,7 @@ public readonly httpHealthCheck: ComputeRegionHealthCheckHttpHealthCheck;
 
 http_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#http_health_check ComputeRegionHealthCheck#http_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#http_health_check ComputeRegionHealthCheck#http_health_check}
 
 ---
 
@@ -1545,7 +1602,7 @@ public readonly httpsHealthCheck: ComputeRegionHealthCheckHttpsHealthCheck;
 
 https_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#https_health_check ComputeRegionHealthCheck#https_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#https_health_check ComputeRegionHealthCheck#https_health_check}
 
 ---
 
@@ -1557,7 +1614,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#id ComputeRegionHealthCheck#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#id ComputeRegionHealthCheck#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1574,7 +1631,7 @@ public readonly logConfig: ComputeRegionHealthCheckLogConfig;
 
 log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#log_config ComputeRegionHealthCheck#log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#log_config ComputeRegionHealthCheck#log_config}
 
 ---
 
@@ -1586,7 +1643,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#project ComputeRegionHealthCheck#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#project ComputeRegionHealthCheck#project}.
 
 ---
 
@@ -1600,7 +1657,7 @@ public readonly region: string;
 
 The Region in which the created health check should reside. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#region ComputeRegionHealthCheck#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#region ComputeRegionHealthCheck#region}
 
 ---
 
@@ -1614,7 +1671,7 @@ public readonly sslHealthCheck: ComputeRegionHealthCheckSslHealthCheck;
 
 ssl_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#ssl_health_check ComputeRegionHealthCheck#ssl_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#ssl_health_check ComputeRegionHealthCheck#ssl_health_check}
 
 ---
 
@@ -1628,7 +1685,7 @@ public readonly tcpHealthCheck: ComputeRegionHealthCheckTcpHealthCheck;
 
 tcp_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#tcp_health_check ComputeRegionHealthCheck#tcp_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#tcp_health_check ComputeRegionHealthCheck#tcp_health_check}
 
 ---
 
@@ -1642,7 +1699,7 @@ public readonly timeouts: ComputeRegionHealthCheckTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#timeouts ComputeRegionHealthCheck#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#timeouts ComputeRegionHealthCheck#timeouts}
 
 ---
 
@@ -1659,7 +1716,7 @@ How long (in seconds) to wait before claiming failure.
 The default value is 5 seconds.  It is invalid for timeoutSec to have
 greater value than checkIntervalSec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#timeout_sec ComputeRegionHealthCheck#timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#timeout_sec ComputeRegionHealthCheck#timeout_sec}
 
 ---
 
@@ -1673,7 +1730,7 @@ public readonly unhealthyThreshold: number;
 
 A so-far healthy instance will be marked unhealthy after this many consecutive failures. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#unhealthy_threshold ComputeRegionHealthCheck#unhealthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#unhealthy_threshold ComputeRegionHealthCheck#unhealthy_threshold}
 
 ---
 
@@ -1713,7 +1770,7 @@ The gRPC service name for the health check. The value of grpcServiceName has the
 
 The grpcServiceName can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#grpc_service_name ComputeRegionHealthCheck#grpc_service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#grpc_service_name ComputeRegionHealthCheck#grpc_service_name}
 
 ---
 
@@ -1730,7 +1787,7 @@ The port number for the health check request.
 Must be specified if portName and portSpecification are not set
 or if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
 
 ---
 
@@ -1744,7 +1801,7 @@ public readonly portName: string;
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -1770,7 +1827,87 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, gRPC health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
+
+---
+
+### ComputeRegionHealthCheckGrpcTlsHealthCheck <a name="ComputeRegionHealthCheckGrpcTlsHealthCheck" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck.Initializer"></a>
+
+```typescript
+import { computeRegionHealthCheck } from '@cdktn/provider-google'
+
+const computeRegionHealthCheckGrpcTlsHealthCheck: computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck.property.grpcServiceName">grpcServiceName</a></code> | <code>string</code> | The gRPC service name for the health check. The value of grpcServiceName has the following meanings by convention:. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck.property.port">port</a></code> | <code>number</code> | The port number for the health check request. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck.property.portSpecification">portSpecification</a></code> | <code>string</code> | Specifies how port is selected for health checking, can be one of the following values:. |
+
+---
+
+##### `grpcServiceName`<sup>Optional</sup> <a name="grpcServiceName" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck.property.grpcServiceName"></a>
+
+```typescript
+public readonly grpcServiceName: string;
+```
+
+- *Type:* string
+
+The gRPC service name for the health check. The value of grpcServiceName has the following meanings by convention:.
+
+* Empty serviceName means the overall status of all services at the backend.
+* Non-empty serviceName means the health of that gRPC service, as defined by the owner of the service.
+
+The grpcServiceName can only be ASCII.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#grpc_service_name ComputeRegionHealthCheck#grpc_service_name}
+
+---
+
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck.property.port"></a>
+
+```typescript
+public readonly port: number;
+```
+
+- *Type:* number
+
+The port number for the health check request.
+
+Must be specified if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
+
+---
+
+##### `portSpecification`<sup>Optional</sup> <a name="portSpecification" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck.property.portSpecification"></a>
+
+```typescript
+public readonly portSpecification: string;
+```
+
+- *Type:* string
+
+Specifies how port is selected for health checking, can be one of the following values:.
+
+* 'USE_FIXED_PORT': The port number in 'port' is used for health checking.
+
+  * 'USE_NAMED_PORT': Not supported for GRPC with TLS health checking.
+
+  * 'USE_SERVING_PORT': For NetworkEndpointGroup, the port specified for each
+  network endpoint is used for health checking. For other backends, the
+  port or named port specified in the Backend Service is used for health
+  checking.
+
+If not specified, gRPC health check follows behavior specified in the 'port' field. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -1811,7 +1948,7 @@ The value of the host header in the HTTP2 health check request.
 If left empty (default value), the public IP on behalf of which this health
 check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#host ComputeRegionHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#host ComputeRegionHealthCheck#host}
 
 ---
 
@@ -1825,7 +1962,7 @@ public readonly port: number;
 
 The TCP port number for the HTTP2 health check request. The default value is 443.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
 
 ---
 
@@ -1839,7 +1976,7 @@ public readonly portName: string;
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -1865,7 +2002,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, HTTP2 health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -1881,7 +2018,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#proxy_header ComputeRegionHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#proxy_header ComputeRegionHealthCheck#proxy_header}
 
 ---
 
@@ -1895,7 +2032,7 @@ public readonly requestPath: string;
 
 The request path of the HTTP2 health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#request_path ComputeRegionHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#request_path ComputeRegionHealthCheck#request_path}
 
 ---
 
@@ -1913,7 +2050,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#response ComputeRegionHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#response ComputeRegionHealthCheck#response}
 
 ---
 
@@ -1954,7 +2091,7 @@ The value of the host header in the HTTP health check request.
 If left empty (default value), the public IP on behalf of which this health
 check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#host ComputeRegionHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#host ComputeRegionHealthCheck#host}
 
 ---
 
@@ -1968,7 +2105,7 @@ public readonly port: number;
 
 The TCP port number for the HTTP health check request. The default value is 80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
 
 ---
 
@@ -1982,7 +2119,7 @@ public readonly portName: string;
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -2008,7 +2145,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, HTTP health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -2024,7 +2161,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#proxy_header ComputeRegionHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#proxy_header ComputeRegionHealthCheck#proxy_header}
 
 ---
 
@@ -2038,7 +2175,7 @@ public readonly requestPath: string;
 
 The request path of the HTTP health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#request_path ComputeRegionHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#request_path ComputeRegionHealthCheck#request_path}
 
 ---
 
@@ -2056,7 +2193,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#response ComputeRegionHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#response ComputeRegionHealthCheck#response}
 
 ---
 
@@ -2097,7 +2234,7 @@ The value of the host header in the HTTPS health check request.
 If left empty (default value), the public IP on behalf of which this health
 check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#host ComputeRegionHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#host ComputeRegionHealthCheck#host}
 
 ---
 
@@ -2111,7 +2248,7 @@ public readonly port: number;
 
 The TCP port number for the HTTPS health check request. The default value is 443.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
 
 ---
 
@@ -2125,7 +2262,7 @@ public readonly portName: string;
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -2151,7 +2288,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, HTTPS health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -2167,7 +2304,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#proxy_header ComputeRegionHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#proxy_header ComputeRegionHealthCheck#proxy_header}
 
 ---
 
@@ -2181,7 +2318,7 @@ public readonly requestPath: string;
 
 The request path of the HTTPS health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#request_path ComputeRegionHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#request_path ComputeRegionHealthCheck#request_path}
 
 ---
 
@@ -2199,7 +2336,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#response ComputeRegionHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#response ComputeRegionHealthCheck#response}
 
 ---
 
@@ -2234,7 +2371,7 @@ Indicates whether or not to export logs.
 This is false by default,
 which means no health check logging will be done.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#enable ComputeRegionHealthCheck#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#enable ComputeRegionHealthCheck#enable}
 
 ---
 
@@ -2271,7 +2408,7 @@ public readonly port: number;
 
 The TCP port number for the SSL health check request. The default value is 443.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
 
 ---
 
@@ -2285,7 +2422,7 @@ public readonly portName: string;
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -2311,7 +2448,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, SSL health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -2327,7 +2464,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#proxy_header ComputeRegionHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#proxy_header ComputeRegionHealthCheck#proxy_header}
 
 ---
 
@@ -2345,7 +2482,7 @@ If both request and response are
 empty, the connection establishment alone will indicate health. The request
 data can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#request ComputeRegionHealthCheck#request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#request ComputeRegionHealthCheck#request}
 
 ---
 
@@ -2363,7 +2500,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#response ComputeRegionHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#response ComputeRegionHealthCheck#response}
 
 ---
 
@@ -2400,7 +2537,7 @@ public readonly port: number;
 
 The TCP port number for the TCP health check request. The default value is 80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port ComputeRegionHealthCheck#port}
 
 ---
 
@@ -2414,7 +2551,7 @@ public readonly portName: string;
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_name ComputeRegionHealthCheck#port_name}
 
 ---
 
@@ -2440,7 +2577,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, TCP health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#port_specification ComputeRegionHealthCheck#port_specification}
 
 ---
 
@@ -2456,7 +2593,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#proxy_header ComputeRegionHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#proxy_header ComputeRegionHealthCheck#proxy_header}
 
 ---
 
@@ -2474,7 +2611,7 @@ If both request and response are
 empty, the connection establishment alone will indicate health. The request
 data can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#request ComputeRegionHealthCheck#request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#request ComputeRegionHealthCheck#request}
 
 ---
 
@@ -2492,7 +2629,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#response ComputeRegionHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#response ComputeRegionHealthCheck#response}
 
 ---
 
@@ -2510,9 +2647,9 @@ const computeRegionHealthCheckTimeouts: computeRegionHealthCheck.ComputeRegionHe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#create ComputeRegionHealthCheck#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#delete ComputeRegionHealthCheck#delete}. |
-| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#update ComputeRegionHealthCheck#update}. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#create ComputeRegionHealthCheck#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#delete ComputeRegionHealthCheck#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#update ComputeRegionHealthCheck#update}. |
 
 ---
 
@@ -2524,7 +2661,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#create ComputeRegionHealthCheck#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#create ComputeRegionHealthCheck#create}.
 
 ---
 
@@ -2536,7 +2673,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#delete ComputeRegionHealthCheck#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#delete ComputeRegionHealthCheck#delete}.
 
 ---
 
@@ -2548,7 +2685,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_health_check#update ComputeRegionHealthCheck#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_health_check#update ComputeRegionHealthCheck#update}.
 
 ---
 
@@ -2915,6 +3052,342 @@ public readonly internalValue: ComputeRegionHealthCheckGrpcHealthCheck;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheck">ComputeRegionHealthCheckGrpcHealthCheck</a>
+
+---
+
+
+### ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference <a name="ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.Initializer"></a>
+
+```typescript
+import { computeRegionHealthCheck } from '@cdktn/provider-google'
+
+new computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.resetGrpcServiceName">resetGrpcServiceName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.resetPort">resetPort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.resetPortSpecification">resetPortSpecification</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetGrpcServiceName` <a name="resetGrpcServiceName" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.resetGrpcServiceName"></a>
+
+```typescript
+public resetGrpcServiceName(): void
+```
+
+##### `resetPort` <a name="resetPort" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.resetPort"></a>
+
+```typescript
+public resetPort(): void
+```
+
+##### `resetPortSpecification` <a name="resetPortSpecification" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.resetPortSpecification"></a>
+
+```typescript
+public resetPortSpecification(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.grpcServiceNameInput">grpcServiceNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.portInput">portInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.portSpecificationInput">portSpecificationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.grpcServiceName">grpcServiceName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.port">port</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.portSpecification">portSpecification</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck">ComputeRegionHealthCheckGrpcTlsHealthCheck</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `grpcServiceNameInput`<sup>Optional</sup> <a name="grpcServiceNameInput" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.grpcServiceNameInput"></a>
+
+```typescript
+public readonly grpcServiceNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `portInput`<sup>Optional</sup> <a name="portInput" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.portInput"></a>
+
+```typescript
+public readonly portInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `portSpecificationInput`<sup>Optional</sup> <a name="portSpecificationInput" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.portSpecificationInput"></a>
+
+```typescript
+public readonly portSpecificationInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `grpcServiceName`<sup>Required</sup> <a name="grpcServiceName" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.grpcServiceName"></a>
+
+```typescript
+public readonly grpcServiceName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `port`<sup>Required</sup> <a name="port" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.port"></a>
+
+```typescript
+public readonly port: number;
+```
+
+- *Type:* number
+
+---
+
+##### `portSpecification`<sup>Required</sup> <a name="portSpecification" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.portSpecification"></a>
+
+```typescript
+public readonly portSpecification: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheckOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ComputeRegionHealthCheckGrpcTlsHealthCheck;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcTlsHealthCheck">ComputeRegionHealthCheckGrpcTlsHealthCheck</a>
 
 ---
 

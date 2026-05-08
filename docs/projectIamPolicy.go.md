@@ -4,12 +4,12 @@
 
 ### ProjectIamPolicy <a name="ProjectIamPolicy" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_policy google_project_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_policy google_project_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiampolicy"
 
 projectiampolicy.NewProjectIamPolicy(scope Construct, id *string, config ProjectIamPolicyConfig) ProjectIamPolicy
 ```
@@ -407,7 +407,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ projectiampolicy.ProjectIamPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ projectiampolicy.ProjectIamPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiampolicy"
 
 projectiampolicy.ProjectIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ProjectIamPolicy to import
 
 The id of the existing ProjectIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectIamPolicy.ProjectIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectiampolicy"
 
 &projectiampolicy.ProjectIamPolicyConfig {
 	Connection: interface{},
@@ -800,9 +800,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/projectiampolicy
 | <code><a href="#@cdktn/provider-google.projectIamPolicy.ProjectIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectIamPolicy.ProjectIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectIamPolicy.ProjectIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.projectIamPolicy.ProjectIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_policy#policy_data ProjectIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.projectIamPolicy.ProjectIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_policy#project ProjectIamPolicy#project}. |
-| <code><a href="#@cdktn/provider-google.projectIamPolicy.ProjectIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_policy#id ProjectIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.projectIamPolicy.ProjectIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_policy#policy_data ProjectIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.projectIamPolicy.ProjectIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_policy#project ProjectIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.projectIamPolicy.ProjectIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_policy#id ProjectIamPolicy#id}. |
 
 ---
 
@@ -884,7 +884,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_policy#policy_data ProjectIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_policy#policy_data ProjectIamPolicy#policy_data}.
 
 ---
 
@@ -896,7 +896,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_policy#project ProjectIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_policy#project ProjectIamPolicy#project}.
 
 ---
 
@@ -908,7 +908,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/project_iam_policy#id ProjectIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_iam_policy#id ProjectIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

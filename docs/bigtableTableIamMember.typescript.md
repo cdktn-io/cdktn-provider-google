@@ -4,7 +4,7 @@
 
 ### BigtableTableIamMember <a name="BigtableTableIamMember" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member google_bigtable_table_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member google_bigtable_table_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.Initializer"></a>
 
@@ -77,8 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.putCondition">putCondition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.resetCondition">resetCondition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.resetInstance">resetInstance</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.resetInstanceName">resetInstanceName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.resetProject">resetProject</a></code> | *No description.* |
 
 ---
@@ -416,18 +414,6 @@ public resetCondition(): void
 public resetId(): void
 ```
 
-##### `resetInstance` <a name="resetInstance" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.resetInstance"></a>
-
-```typescript
-public resetInstance(): void
-```
-
-##### `resetInstanceName` <a name="resetInstanceName" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.resetInstanceName"></a>
-
-```typescript
-public resetInstanceName(): void
-```
-
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.resetProject"></a>
 
 ```typescript
@@ -537,7 +523,7 @@ The construct id used in the generated config for the BigtableTableIamMember to 
 
 The id of the existing BigtableTableIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -571,14 +557,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.etag">etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.conditionInput">conditionInput</a></code> | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberCondition">BigtableTableIamMemberCondition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.instanceInput">instanceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.instanceNameInput">instanceNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.memberInput">memberInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.tableInput">tableInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.instance">instance</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.instanceName">instanceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.member">member</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -769,16 +753,6 @@ public readonly idInput: string;
 
 ---
 
-##### `instanceInput`<sup>Optional</sup> <a name="instanceInput" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.instanceInput"></a>
-
-```typescript
-public readonly instanceInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `instanceNameInput`<sup>Optional</sup> <a name="instanceNameInput" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.instanceNameInput"></a>
 
 ```typescript
@@ -833,16 +807,6 @@ public readonly tableInput: string;
 
 ```typescript
 public readonly id: string;
-```
-
-- *Type:* string
-
----
-
-##### `instance`<sup>Required</sup> <a name="instance" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMember.property.instance"></a>
-
-```typescript
-public readonly instance: string;
 ```
 
 - *Type:* string
@@ -933,9 +897,9 @@ const bigtableTableIamMemberCondition: bigtableTableIamMember.BigtableTableIamMe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#expression BigtableTableIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#title BigtableTableIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#description BigtableTableIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#expression BigtableTableIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#title BigtableTableIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#description BigtableTableIamMember#description}. |
 
 ---
 
@@ -947,7 +911,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#expression BigtableTableIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#expression BigtableTableIamMember#expression}.
 
 ---
 
@@ -959,7 +923,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#title BigtableTableIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#title BigtableTableIamMember#title}.
 
 ---
 
@@ -971,7 +935,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#description BigtableTableIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#description BigtableTableIamMember#description}.
 
 ---
 
@@ -996,14 +960,13 @@ const bigtableTableIamMemberConfig: bigtableTableIamMember.BigtableTableIamMembe
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#member BigtableTableIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#role BigtableTableIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.table">table</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#table BigtableTableIamMember#table}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.instanceName">instanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#instance_name BigtableTableIamMember#instance_name}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#member BigtableTableIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#role BigtableTableIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.table">table</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#table BigtableTableIamMember#table}. |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberCondition">BigtableTableIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#id BigtableTableIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.instance">instance</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#instance BigtableTableIamMember#instance}. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.instanceName">instanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#instance_name BigtableTableIamMember#instance_name}. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#project BigtableTableIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#id BigtableTableIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#project BigtableTableIamMember#project}. |
 
 ---
 
@@ -1077,6 +1040,18 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `instanceName`<sup>Required</sup> <a name="instanceName" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.instanceName"></a>
+
+```typescript
+public readonly instanceName: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#instance_name BigtableTableIamMember#instance_name}.
+
+---
+
 ##### `member`<sup>Required</sup> <a name="member" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.member"></a>
 
 ```typescript
@@ -1085,7 +1060,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#member BigtableTableIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#member BigtableTableIamMember#member}.
 
 ---
 
@@ -1097,7 +1072,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#role BigtableTableIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#role BigtableTableIamMember#role}.
 
 ---
 
@@ -1109,7 +1084,7 @@ public readonly table: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#table BigtableTableIamMember#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#table BigtableTableIamMember#table}.
 
 ---
 
@@ -1123,7 +1098,7 @@ public readonly condition: BigtableTableIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#condition BigtableTableIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#condition BigtableTableIamMember#condition}
 
 ---
 
@@ -1135,34 +1110,10 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#id BigtableTableIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#id BigtableTableIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `instance`<sup>Optional</sup> <a name="instance" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.instance"></a>
-
-```typescript
-public readonly instance: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#instance BigtableTableIamMember#instance}.
-
----
-
-##### `instanceName`<sup>Optional</sup> <a name="instanceName" id="@cdktn/provider-google.bigtableTableIamMember.BigtableTableIamMemberConfig.property.instanceName"></a>
-
-```typescript
-public readonly instanceName: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#instance_name BigtableTableIamMember#instance_name}.
 
 ---
 
@@ -1174,7 +1125,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#project BigtableTableIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#project BigtableTableIamMember#project}.
 
 ---
 

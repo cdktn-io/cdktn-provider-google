@@ -4,12 +4,12 @@
 
 ### SiteVerificationWebResource <a name="SiteVerificationWebResource" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource google_site_verification_web_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource google_site_verification_web_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationwebresource"
 
 siteverificationwebresource.NewSiteVerificationWebResource(scope Construct, id *string, config SiteVerificationWebResourceConfig) SiteVerificationWebResource
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationwebresource"
 
 siteverificationwebresource.SiteVerificationWebResource_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationwebresource"
 
 siteverificationwebresource.SiteVerificationWebResource_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ siteverificationwebresource.SiteVerificationWebResource_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationwebresource"
 
 siteverificationwebresource.SiteVerificationWebResource_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ siteverificationwebresource.SiteVerificationWebResource_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationwebresource"
 
 siteverificationwebresource.SiteVerificationWebResource_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -529,7 +529,7 @@ The construct id used in the generated config for the SiteVerificationWebResourc
 
 The id of the existing SiteVerificationWebResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationwebresource"
 
 &siteverificationwebresource.SiteVerificationWebResourceConfig {
 	Connection: interface{},
@@ -849,10 +849,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverification
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Site: github.com/cdktn-io/cdktn-provider-google-go/google/v18.siteVerificationWebResource.SiteVerificationWebResourceSite,
+	Site: github.com/cdktn-io/cdktn-provider-google-go/google/v19.siteVerificationWebResource.SiteVerificationWebResourceSite,
 	VerificationMethod: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.siteVerificationWebResource.SiteVerificationWebResourceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.siteVerificationWebResource.SiteVerificationWebResourceTimeouts,
 }
 ```
 
@@ -869,7 +869,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverification
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.site">Site</a></code> | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceSite">SiteVerificationWebResourceSite</a></code> | site block. |
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.verificationMethod">VerificationMethod</a></code> | <code>*string</code> | The verification method for the Site Verification system to use to verify this site or domain. |
-| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}. |
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts">SiteVerificationWebResourceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -954,7 +954,7 @@ Site SiteVerificationWebResourceSite
 
 site block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#site SiteVerificationWebResource#site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#site SiteVerificationWebResource#site}
 
 ---
 
@@ -970,7 +970,7 @@ The verification method for the Site Verification system to use to verify this s
 
 Possible values: ["ANALYTICS", "DNS_CNAME", "DNS_TXT", "FILE", "META", "TAG_MANAGER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#verification_method SiteVerificationWebResource#verification_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#verification_method SiteVerificationWebResource#verification_method}
 
 ---
 
@@ -982,7 +982,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -999,7 +999,7 @@ Timeouts SiteVerificationWebResourceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#timeouts SiteVerificationWebResource#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#timeouts SiteVerificationWebResource#timeouts}
 
 ---
 
@@ -1008,7 +1008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceSite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationwebresource"
 
 &siteverificationwebresource.SiteVerificationWebResourceSite {
 	Identifier: *string,
@@ -1038,7 +1038,7 @@ The site identifier.
 If the type is set to SITE, the identifier is a URL. If the type is
 set to INET_DOMAIN, the identifier is a domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#identifier SiteVerificationWebResource#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#identifier SiteVerificationWebResource#identifier}
 
 ---
 
@@ -1052,7 +1052,7 @@ Type *string
 
 The type of resource to be verified. Possible values: ["INET_DOMAIN", "SITE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#type SiteVerificationWebResource#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#type SiteVerificationWebResource#type}
 
 ---
 
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationwebresource"
 
 &siteverificationwebresource.SiteVerificationWebResourceTimeouts {
 	Create: *string,
@@ -1073,8 +1073,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverification
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#create SiteVerificationWebResource#create}. |
-| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#delete SiteVerificationWebResource#delete}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#create SiteVerificationWebResource#create}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#delete SiteVerificationWebResource#delete}. |
 
 ---
 
@@ -1086,7 +1086,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#create SiteVerificationWebResource#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#create SiteVerificationWebResource#create}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/site_verification_web_resource#delete SiteVerificationWebResource#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_web_resource#delete SiteVerificationWebResource#delete}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceSiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationwebresource"
 
 siteverificationwebresource.NewSiteVerificationWebResourceSiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SiteVerificationWebResourceSiteOutputReference
 ```
@@ -1402,7 +1402,7 @@ func InternalValue() SiteVerificationWebResourceSite
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/siteverificationwebresource"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/siteverificationwebresource"
 
 siteverificationwebresource.NewSiteVerificationWebResourceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SiteVerificationWebResourceTimeoutsOutputReference
 ```

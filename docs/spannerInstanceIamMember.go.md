@@ -4,12 +4,12 @@
 
 ### SpannerInstanceIamMember <a name="SpannerInstanceIamMember" id="@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member google_spanner_instance_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member google_spanner_instance_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstanceiammember"
 
 spannerinstanceiammember.NewSpannerInstanceIamMember(scope Construct, id *string, config SpannerInstanceIamMemberConfig) SpannerInstanceIamMember
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstanceiammember"
 
 spannerinstanceiammember.SpannerInstanceIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstanceiammember"
 
 spannerinstanceiammember.SpannerInstanceIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ spannerinstanceiammember.SpannerInstanceIamMember_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstanceiammember"
 
 spannerinstanceiammember.SpannerInstanceIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ spannerinstanceiammember.SpannerInstanceIamMember_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstanceiammember"
 
 spannerinstanceiammember.SpannerInstanceIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the SpannerInstanceIamMember t
 
 The id of the existing SpannerInstanceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstanceiammember"
 
 &spannerinstanceiammember.SpannerInstanceIamMemberCondition {
 	Expression: *string,
@@ -879,9 +879,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstancei
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#expression SpannerInstanceIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#title SpannerInstanceIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#description SpannerInstanceIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#expression SpannerInstanceIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#title SpannerInstanceIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#description SpannerInstanceIamMember#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#expression SpannerInstanceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#expression SpannerInstanceIamMember#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#title SpannerInstanceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#title SpannerInstanceIamMember#title}.
 
 ---
 
@@ -917,7 +917,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#description SpannerInstanceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#description SpannerInstanceIamMember#description}.
 
 ---
 
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstanceiammember"
 
 &spannerinstanceiammember.SpannerInstanceIamMemberConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstancei
 	Instance: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.spannerInstanceIamMember.SpannerInstanceIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.spannerInstanceIamMember.SpannerInstanceIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -956,12 +956,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstancei
 | <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#instance SpannerInstanceIamMember#instance}. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#member SpannerInstanceIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#role SpannerInstanceIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#instance SpannerInstanceIamMember#instance}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#member SpannerInstanceIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#role SpannerInstanceIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberCondition">SpannerInstanceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#id SpannerInstanceIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#project SpannerInstanceIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#id SpannerInstanceIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#project SpannerInstanceIamMember#project}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ Instance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#instance SpannerInstanceIamMember#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#instance SpannerInstanceIamMember#instance}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#member SpannerInstanceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#member SpannerInstanceIamMember#member}.
 
 ---
 
@@ -1067,7 +1067,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#role SpannerInstanceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#role SpannerInstanceIamMember#role}.
 
 ---
 
@@ -1081,7 +1081,7 @@ Condition SpannerInstanceIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#condition SpannerInstanceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#condition SpannerInstanceIamMember#condition}
 
 ---
 
@@ -1093,7 +1093,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#id SpannerInstanceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#id SpannerInstanceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1108,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/spanner_instance_iam_member#project SpannerInstanceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/spanner_instance_iam_member#project SpannerInstanceIamMember#project}.
 
 ---
 
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerInstanceIamMember.SpannerInstanceIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/spannerinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/spannerinstanceiammember"
 
 spannerinstanceiammember.NewSpannerInstanceIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpannerInstanceIamMemberConditionOutputReference
 ```

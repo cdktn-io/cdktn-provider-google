@@ -4,7 +4,7 @@
 
 ### StorageTransferJob <a name="StorageTransferJob" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job google_storage_transfer_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job google_storage_transfer_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.Initializer"></a>
 
@@ -88,6 +88,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.resetReplicationSpec">resetReplicationSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.resetSchedule">resetSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.resetServiceAccount">resetServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.resetStatus">resetStatus</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.resetTransferSpec">resetTransferSpec</a></code> | *No description.* |
 
@@ -522,6 +523,12 @@ public resetReplicationSpec(): void
 public resetSchedule(): void
 ```
 
+##### `resetServiceAccount` <a name="resetServiceAccount" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.resetServiceAccount"></a>
+
+```typescript
+public resetServiceAccount(): void
+```
+
 ##### `resetStatus` <a name="resetStatus" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.resetStatus"></a>
 
 ```typescript
@@ -637,7 +644,7 @@ The construct id used in the generated config for the StorageTransferJob to impo
 
 The id of the existing StorageTransferJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -685,12 +692,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.replicationSpecInput">replicationSpecInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpec">StorageTransferJobReplicationSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.scheduleInput">scheduleInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobSchedule">StorageTransferJobSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.serviceAccountInput">serviceAccountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.transferSpecInput">transferSpecInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec">StorageTransferJobTransferSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.status">status</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -1017,6 +1026,16 @@ public readonly scheduleInput: StorageTransferJobSchedule;
 
 ---
 
+##### `serviceAccountInput`<sup>Optional</sup> <a name="serviceAccountInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.serviceAccountInput"></a>
+
+```typescript
+public readonly serviceAccountInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `statusInput`<sup>Optional</sup> <a name="statusInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.statusInput"></a>
 
 ```typescript
@@ -1077,6 +1096,16 @@ public readonly project: string;
 
 ---
 
+##### `serviceAccount`<sup>Required</sup> <a name="serviceAccount" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.serviceAccount"></a>
+
+```typescript
+public readonly serviceAccount: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.property.status"></a>
 
 ```typescript
@@ -1130,13 +1159,14 @@ const storageTransferJobConfig: storageTransferJob.StorageTransferJobConfig = { 
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.description">description</a></code> | <code>string</code> | Unique description to identify the Transfer Job. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.eventStream">eventStream</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobEventStream">StorageTransferJobEventStream</a></code> | event_stream block. |
-| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#id StorageTransferJob#id}. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#id StorageTransferJob#id}. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.loggingConfig">loggingConfig</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobLoggingConfig">StorageTransferJobLoggingConfig</a></code> | logging_config block. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.name">name</a></code> | <code>string</code> | The name of the Transfer Job. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.notificationConfig">notificationConfig</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobNotificationConfig">StorageTransferJobNotificationConfig</a></code> | notification_config block. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.project">project</a></code> | <code>string</code> | The project in which the resource belongs. If it is not provided, the provider project is used. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.replicationSpec">replicationSpec</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpec">StorageTransferJobReplicationSpec</a></code> | replication_spec block. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobSchedule">StorageTransferJobSchedule</a></code> | schedule block. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | The user-managed service account to run the job. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.status">status</a></code> | <code>string</code> | Status of the job. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.transferSpec">transferSpec</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec">StorageTransferJobTransferSpec</a></code> | transfer_spec block. |
 
@@ -1222,7 +1252,7 @@ public readonly description: string;
 
 Unique description to identify the Transfer Job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#description StorageTransferJob#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#description StorageTransferJob#description}
 
 ---
 
@@ -1236,7 +1266,7 @@ public readonly eventStream: StorageTransferJobEventStream;
 
 event_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#event_stream StorageTransferJob#event_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#event_stream StorageTransferJob#event_stream}
 
 ---
 
@@ -1248,7 +1278,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#id StorageTransferJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#id StorageTransferJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1265,7 +1295,7 @@ public readonly loggingConfig: StorageTransferJobLoggingConfig;
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#logging_config StorageTransferJob#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#logging_config StorageTransferJob#logging_config}
 
 ---
 
@@ -1279,7 +1309,7 @@ public readonly name: string;
 
 The name of the Transfer Job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#name StorageTransferJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#name StorageTransferJob#name}
 
 ---
 
@@ -1293,7 +1323,7 @@ public readonly notificationConfig: StorageTransferJobNotificationConfig;
 
 notification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#notification_config StorageTransferJob#notification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#notification_config StorageTransferJob#notification_config}
 
 ---
 
@@ -1307,7 +1337,7 @@ public readonly project: string;
 
 The project in which the resource belongs. If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#project StorageTransferJob#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#project StorageTransferJob#project}
 
 ---
 
@@ -1321,7 +1351,7 @@ public readonly replicationSpec: StorageTransferJobReplicationSpec;
 
 replication_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#replication_spec StorageTransferJob#replication_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#replication_spec StorageTransferJob#replication_spec}
 
 ---
 
@@ -1335,7 +1365,23 @@ public readonly schedule: StorageTransferJobSchedule;
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#schedule StorageTransferJob#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#schedule StorageTransferJob#schedule}
+
+---
+
+##### `serviceAccount`<sup>Optional</sup> <a name="serviceAccount" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.serviceAccount"></a>
+
+```typescript
+public readonly serviceAccount: string;
+```
+
+- *Type:* string
+
+The user-managed service account to run the job.
+
+If this field is specified, the given service account is granted the necessary permissions to all applicable resources (e.g. GCS buckets) required by the job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#service_account StorageTransferJob#service_account}
 
 ---
 
@@ -1351,7 +1397,7 @@ Status of the job.
 
 Default: ENABLED. NOTE: The effect of the new job status takes place during a subsequent job run. For example, if you change the job status from ENABLED to DISABLED, and an operation spawned by the transfer is running, the status change would not affect the current operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#status StorageTransferJob#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#status StorageTransferJob#status}
 
 ---
 
@@ -1365,7 +1411,7 @@ public readonly transferSpec: StorageTransferJobTransferSpec;
 
 transfer_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#transfer_spec StorageTransferJob#transfer_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#transfer_spec StorageTransferJob#transfer_spec}
 
 ---
 
@@ -1399,7 +1445,7 @@ public readonly name: string;
 
 Specifies a unique name of the resource such as AWS SQS ARN in the form 'arn:aws:sqs:region:account_id:queue_name', or Pub/Sub subscription resource name in the form 'projects/{project}/subscriptions/{sub}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#name StorageTransferJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#name StorageTransferJob#name}
 
 ---
 
@@ -1415,7 +1461,7 @@ Specifies the data and time at which Storage Transfer Service stops listening fo
 
 After this time, any transfers in progress will complete, but no new transfers are initiated
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#event_stream_expiration_time StorageTransferJob#event_stream_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#event_stream_expiration_time StorageTransferJob#event_stream_expiration_time}
 
 ---
 
@@ -1431,7 +1477,7 @@ Specifies the date and time that Storage Transfer Service starts listening for e
 
 If no start time is specified or start time is in the past, Storage Transfer Service starts listening immediately
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#event_stream_start_time StorageTransferJob#event_stream_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#event_stream_start_time StorageTransferJob#event_stream_start_time}
 
 ---
 
@@ -1465,7 +1511,7 @@ public readonly enableOnPremGcsTransferLogs: boolean | IResolvable;
 
 For transfers with a PosixFilesystem source, this option enables the Cloud Storage transfer logs for this transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#enable_on_prem_gcs_transfer_logs StorageTransferJob#enable_on_prem_gcs_transfer_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#enable_on_prem_gcs_transfer_logs StorageTransferJob#enable_on_prem_gcs_transfer_logs}
 
 ---
 
@@ -1479,7 +1525,7 @@ public readonly logActions: string[];
 
 Specifies the actions to be logged. Not supported for transfers with PosifxFilesystem data sources; use enable_on_prem_gcs_transfer_logs instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#log_actions StorageTransferJob#log_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#log_actions StorageTransferJob#log_actions}
 
 ---
 
@@ -1493,7 +1539,7 @@ public readonly logActionStates: string[];
 
 States in which logActions are logged. Not supported for transfers with PosifxFilesystem data sources; use enable_on_prem_gcs_transfer_logs instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#log_action_states StorageTransferJob#log_action_states}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#log_action_states StorageTransferJob#log_action_states}
 
 ---
 
@@ -1527,7 +1573,7 @@ public readonly payloadFormat: string;
 
 The desired format of the notification message payloads. One of "NONE" or "JSON".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#payload_format StorageTransferJob#payload_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#payload_format StorageTransferJob#payload_format}
 
 ---
 
@@ -1541,7 +1587,7 @@ public readonly pubsubTopic: string;
 
 The Topic.name of the Pub/Sub topic to which to publish notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#pubsub_topic StorageTransferJob#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#pubsub_topic StorageTransferJob#pubsub_topic}
 
 ---
 
@@ -1557,7 +1603,7 @@ Event types for which a notification is desired.
 
 If empty, send notifications for all event types. The valid types are "TRANSFER_OPERATION_SUCCESS", "TRANSFER_OPERATION_FAILED", "TRANSFER_OPERATION_ABORTED".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#event_types StorageTransferJob#event_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#event_types StorageTransferJob#event_types}
 
 ---
 
@@ -1592,7 +1638,7 @@ public readonly gcsDataSink: StorageTransferJobReplicationSpecGcsDataSink;
 
 gcs_data_sink block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#gcs_data_sink StorageTransferJob#gcs_data_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#gcs_data_sink StorageTransferJob#gcs_data_sink}
 
 ---
 
@@ -1606,7 +1652,7 @@ public readonly gcsDataSource: StorageTransferJobReplicationSpecGcsDataSource;
 
 gcs_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#gcs_data_source StorageTransferJob#gcs_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#gcs_data_source StorageTransferJob#gcs_data_source}
 
 ---
 
@@ -1620,7 +1666,7 @@ public readonly objectConditions: StorageTransferJobReplicationSpecObjectConditi
 
 object_conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#object_conditions StorageTransferJob#object_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#object_conditions StorageTransferJob#object_conditions}
 
 ---
 
@@ -1634,7 +1680,7 @@ public readonly transferOptions: StorageTransferJobReplicationSpecTransferOption
 
 transfer_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#transfer_options StorageTransferJob#transfer_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#transfer_options StorageTransferJob#transfer_options}
 
 ---
 
@@ -1667,7 +1713,7 @@ public readonly bucketName: string;
 
 Google Cloud Storage bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
 
 ---
 
@@ -1681,7 +1727,9 @@ public readonly path: string;
 
 Google Cloud Storage path in bucket to transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Must be an empty string or full path name that ends with a '/'. This field is treated as an object prefix. As such, it should not begin with a '/'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -1714,7 +1762,7 @@ public readonly bucketName: string;
 
 Google Cloud Storage bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
 
 ---
 
@@ -1728,7 +1776,9 @@ public readonly path: string;
 
 Google Cloud Storage path in bucket to transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Must be an empty string or full path name that ends with a '/'. This field is treated as an object prefix. As such, it should not begin with a '/'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -1765,7 +1815,7 @@ public readonly excludePrefixes: string[];
 
 exclude_prefixes must follow the requirements described for include_prefixes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#exclude_prefixes StorageTransferJob#exclude_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#exclude_prefixes StorageTransferJob#exclude_prefixes}
 
 ---
 
@@ -1781,7 +1831,7 @@ If include_refixes is specified, objects that satisfy the object conditions must
 
 If include_prefixes is not specified, all objects except those that have names starting with one of the exclude_prefixes must satisfy the object conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#include_prefixes StorageTransferJob#include_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#include_prefixes StorageTransferJob#include_prefixes}
 
 ---
 
@@ -1797,7 +1847,7 @@ If specified, only objects with a "last modification time" before this timestamp
 
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#last_modified_before StorageTransferJob#last_modified_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#last_modified_before StorageTransferJob#last_modified_before}
 
 ---
 
@@ -1813,7 +1863,7 @@ If specified, only objects with a "last modification time" on or after this time
 
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#last_modified_since StorageTransferJob#last_modified_since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#last_modified_since StorageTransferJob#last_modified_since}
 
 ---
 
@@ -1827,7 +1877,7 @@ public readonly maxTimeElapsedSinceLastModification: string;
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#max_time_elapsed_since_last_modification StorageTransferJob#max_time_elapsed_since_last_modification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#max_time_elapsed_since_last_modification StorageTransferJob#max_time_elapsed_since_last_modification}
 
 ---
 
@@ -1841,7 +1891,7 @@ public readonly minTimeElapsedSinceLastModification: string;
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#min_time_elapsed_since_last_modification StorageTransferJob#min_time_elapsed_since_last_modification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#min_time_elapsed_since_last_modification StorageTransferJob#min_time_elapsed_since_last_modification}
 
 ---
 
@@ -1879,7 +1929,7 @@ Whether objects should be deleted from the source after they are transferred to 
 
 Note that this option and delete_objects_unique_in_sink are mutually exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#delete_objects_from_source_after_transfer StorageTransferJob#delete_objects_from_source_after_transfer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#delete_objects_from_source_after_transfer StorageTransferJob#delete_objects_from_source_after_transfer}
 
 ---
 
@@ -1895,7 +1945,7 @@ Whether objects that exist only in the sink should be deleted.
 
 Note that this option and delete_objects_from_source_after_transfer are mutually exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#delete_objects_unique_in_sink StorageTransferJob#delete_objects_unique_in_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#delete_objects_unique_in_sink StorageTransferJob#delete_objects_unique_in_sink}
 
 ---
 
@@ -1909,7 +1959,7 @@ public readonly metadataOptions: StorageTransferJobReplicationSpecTransferOption
 
 metadata_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#metadata_options StorageTransferJob#metadata_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#metadata_options StorageTransferJob#metadata_options}
 
 ---
 
@@ -1923,7 +1973,7 @@ public readonly overwriteObjectsAlreadyExistingInSink: boolean | IResolvable;
 
 Whether overwriting objects that already exist in the sink is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#overwrite_objects_already_existing_in_sink StorageTransferJob#overwrite_objects_already_existing_in_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#overwrite_objects_already_existing_in_sink StorageTransferJob#overwrite_objects_already_existing_in_sink}
 
 ---
 
@@ -1937,7 +1987,7 @@ public readonly overwriteWhen: string;
 
 When to overwrite objects that already exist in the sink. If not set, overwrite behavior is determined by overwriteObjectsAlreadyExistingInSink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#overwrite_when StorageTransferJob#overwrite_when}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#overwrite_when StorageTransferJob#overwrite_when}
 
 ---
 
@@ -1977,7 +2027,7 @@ public readonly acl: string;
 
 Specifies how each object's ACLs should be preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#acl StorageTransferJob#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#acl StorageTransferJob#acl}
 
 ---
 
@@ -1991,7 +2041,7 @@ public readonly gid: string;
 
 Specifies how each file's POSIX group ID (GID) attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#gid StorageTransferJob#gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#gid StorageTransferJob#gid}
 
 ---
 
@@ -2005,7 +2055,7 @@ public readonly kmsKey: string;
 
 Specifies how each object's Cloud KMS customer-managed encryption key (CMEK) is preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#kms_key StorageTransferJob#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#kms_key StorageTransferJob#kms_key}
 
 ---
 
@@ -2019,7 +2069,7 @@ public readonly mode: string;
 
 Specifies how each file's mode attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#mode StorageTransferJob#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#mode StorageTransferJob#mode}
 
 ---
 
@@ -2033,7 +2083,7 @@ public readonly storageClass: string;
 
 Specifies the storage class to set on objects being transferred to Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#storage_class StorageTransferJob#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#storage_class StorageTransferJob#storage_class}
 
 ---
 
@@ -2047,7 +2097,7 @@ public readonly symlink: string;
 
 Specifies how symlinks should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#symlink StorageTransferJob#symlink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#symlink StorageTransferJob#symlink}
 
 ---
 
@@ -2061,7 +2111,7 @@ public readonly temporaryHold: string;
 
 SSpecifies how each object's temporary hold status should be preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#temporary_hold StorageTransferJob#temporary_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#temporary_hold StorageTransferJob#temporary_hold}
 
 ---
 
@@ -2075,7 +2125,7 @@ public readonly timeCreated: string;
 
 Specifies how each object's timeCreated metadata is preserved for transfers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#time_created StorageTransferJob#time_created}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#time_created StorageTransferJob#time_created}
 
 ---
 
@@ -2089,7 +2139,7 @@ public readonly uid: string;
 
 Specifies how each file's POSIX user ID (UID) attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#uid StorageTransferJob#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#uid StorageTransferJob#uid}
 
 ---
 
@@ -2124,7 +2174,7 @@ public readonly scheduleStartDate: StorageTransferJobScheduleScheduleStartDate;
 
 schedule_start_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#schedule_start_date StorageTransferJob#schedule_start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#schedule_start_date StorageTransferJob#schedule_start_date}
 
 ---
 
@@ -2140,7 +2190,7 @@ Interval between the start of each scheduled transfer.
 
 If unspecified, the default value is 24 hours. This value may not be less than 1 hour. A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#repeat_interval StorageTransferJob#repeat_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#repeat_interval StorageTransferJob#repeat_interval}
 
 ---
 
@@ -2154,7 +2204,7 @@ public readonly scheduleEndDate: StorageTransferJobScheduleScheduleEndDate;
 
 schedule_end_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#schedule_end_date StorageTransferJob#schedule_end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#schedule_end_date StorageTransferJob#schedule_end_date}
 
 ---
 
@@ -2168,7 +2218,7 @@ public readonly startTimeOfDay: StorageTransferJobScheduleStartTimeOfDay;
 
 start_time_of_day block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#start_time_of_day StorageTransferJob#start_time_of_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#start_time_of_day StorageTransferJob#start_time_of_day}
 
 ---
 
@@ -2202,7 +2252,7 @@ public readonly day: number;
 
 Day of month. Must be from 1 to 31 and valid for the year and month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#day StorageTransferJob#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#day StorageTransferJob#day}
 
 ---
 
@@ -2216,7 +2266,7 @@ public readonly month: number;
 
 Month of year. Must be from 1 to 12.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#month StorageTransferJob#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#month StorageTransferJob#month}
 
 ---
 
@@ -2230,7 +2280,7 @@ public readonly year: number;
 
 Year of date. Must be from 1 to 9999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#year StorageTransferJob#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#year StorageTransferJob#year}
 
 ---
 
@@ -2264,7 +2314,7 @@ public readonly day: number;
 
 Day of month. Must be from 1 to 31 and valid for the year and month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#day StorageTransferJob#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#day StorageTransferJob#day}
 
 ---
 
@@ -2278,7 +2328,7 @@ public readonly month: number;
 
 Month of year. Must be from 1 to 12.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#month StorageTransferJob#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#month StorageTransferJob#month}
 
 ---
 
@@ -2292,7 +2342,7 @@ public readonly year: number;
 
 Year of date. Must be from 1 to 9999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#year StorageTransferJob#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#year StorageTransferJob#year}
 
 ---
 
@@ -2327,7 +2377,7 @@ public readonly hours: number;
 
 Hours of day in 24 hour format. Should be from 0 to 23.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#hours StorageTransferJob#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#hours StorageTransferJob#hours}
 
 ---
 
@@ -2341,7 +2391,7 @@ public readonly minutes: number;
 
 Minutes of hour of day. Must be from 0 to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#minutes StorageTransferJob#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#minutes StorageTransferJob#minutes}
 
 ---
 
@@ -2355,7 +2405,7 @@ public readonly nanos: number;
 
 Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#nanos StorageTransferJob#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#nanos StorageTransferJob#nanos}
 
 ---
 
@@ -2369,7 +2419,7 @@ public readonly seconds: number;
 
 Seconds of minutes of the time. Must normally be from 0 to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#seconds StorageTransferJob#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#seconds StorageTransferJob#seconds}
 
 ---
 
@@ -2387,6 +2437,7 @@ const storageTransferJobTransferSpec: storageTransferJob.StorageTransferJobTrans
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.property.awsS3CompatibleDataSource">awsS3CompatibleDataSource</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource">StorageTransferJobTransferSpecAwsS3CompatibleDataSource</a></code> | aws_s3_compatible_data_source block. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.property.awsS3DataSource">awsS3DataSource</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource">StorageTransferJobTransferSpecAwsS3DataSource</a></code> | aws_s3_data_source block. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.property.azureBlobStorageDataSource">azureBlobStorageDataSource</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSource">StorageTransferJobTransferSpecAzureBlobStorageDataSource</a></code> | azure_blob_storage_data_source block. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.property.gcsDataSink">gcsDataSink</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSink">StorageTransferJobTransferSpecGcsDataSink</a></code> | gcs_data_sink block. |
@@ -2398,7 +2449,22 @@ const storageTransferJobTransferSpec: storageTransferJob.StorageTransferJobTrans
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.property.posixDataSource">posixDataSource</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSource">StorageTransferJobTransferSpecPosixDataSource</a></code> | posix_data_source block. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.property.sinkAgentPoolName">sinkAgentPoolName</a></code> | <code>string</code> | Specifies the agent pool name associated with the posix data source. When unspecified, the default name is used. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.property.sourceAgentPoolName">sourceAgentPoolName</a></code> | <code>string</code> | Specifies the agent pool name associated with the posix data source. When unspecified, the default name is used. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.property.transferManifest">transferManifest</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest">StorageTransferJobTransferSpecTransferManifest</a></code> | transfer_manifest block. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.property.transferOptions">transferOptions</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptions">StorageTransferJobTransferSpecTransferOptions</a></code> | transfer_options block. |
+
+---
+
+##### `awsS3CompatibleDataSource`<sup>Optional</sup> <a name="awsS3CompatibleDataSource" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.property.awsS3CompatibleDataSource"></a>
+
+```typescript
+public readonly awsS3CompatibleDataSource: StorageTransferJobTransferSpecAwsS3CompatibleDataSource;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource">StorageTransferJobTransferSpecAwsS3CompatibleDataSource</a>
+
+aws_s3_compatible_data_source block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#aws_s3_compatible_data_source StorageTransferJob#aws_s3_compatible_data_source}
 
 ---
 
@@ -2412,7 +2478,7 @@ public readonly awsS3DataSource: StorageTransferJobTransferSpecAwsS3DataSource;
 
 aws_s3_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#aws_s3_data_source StorageTransferJob#aws_s3_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#aws_s3_data_source StorageTransferJob#aws_s3_data_source}
 
 ---
 
@@ -2426,7 +2492,7 @@ public readonly azureBlobStorageDataSource: StorageTransferJobTransferSpecAzureB
 
 azure_blob_storage_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#azure_blob_storage_data_source StorageTransferJob#azure_blob_storage_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#azure_blob_storage_data_source StorageTransferJob#azure_blob_storage_data_source}
 
 ---
 
@@ -2440,7 +2506,7 @@ public readonly gcsDataSink: StorageTransferJobTransferSpecGcsDataSink;
 
 gcs_data_sink block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#gcs_data_sink StorageTransferJob#gcs_data_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#gcs_data_sink StorageTransferJob#gcs_data_sink}
 
 ---
 
@@ -2454,7 +2520,7 @@ public readonly gcsDataSource: StorageTransferJobTransferSpecGcsDataSource;
 
 gcs_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#gcs_data_source StorageTransferJob#gcs_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#gcs_data_source StorageTransferJob#gcs_data_source}
 
 ---
 
@@ -2468,7 +2534,7 @@ public readonly hdfsDataSource: StorageTransferJobTransferSpecHdfsDataSource;
 
 hdfs_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#hdfs_data_source StorageTransferJob#hdfs_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#hdfs_data_source StorageTransferJob#hdfs_data_source}
 
 ---
 
@@ -2482,7 +2548,7 @@ public readonly httpDataSource: StorageTransferJobTransferSpecHttpDataSource;
 
 http_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#http_data_source StorageTransferJob#http_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#http_data_source StorageTransferJob#http_data_source}
 
 ---
 
@@ -2496,7 +2562,7 @@ public readonly objectConditions: StorageTransferJobTransferSpecObjectConditions
 
 object_conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#object_conditions StorageTransferJob#object_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#object_conditions StorageTransferJob#object_conditions}
 
 ---
 
@@ -2510,7 +2576,7 @@ public readonly posixDataSink: StorageTransferJobTransferSpecPosixDataSink;
 
 posix_data_sink block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#posix_data_sink StorageTransferJob#posix_data_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#posix_data_sink StorageTransferJob#posix_data_sink}
 
 ---
 
@@ -2524,7 +2590,7 @@ public readonly posixDataSource: StorageTransferJobTransferSpecPosixDataSource;
 
 posix_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#posix_data_source StorageTransferJob#posix_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#posix_data_source StorageTransferJob#posix_data_source}
 
 ---
 
@@ -2538,7 +2604,7 @@ public readonly sinkAgentPoolName: string;
 
 Specifies the agent pool name associated with the posix data source. When unspecified, the default name is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#sink_agent_pool_name StorageTransferJob#sink_agent_pool_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#sink_agent_pool_name StorageTransferJob#sink_agent_pool_name}
 
 ---
 
@@ -2552,7 +2618,21 @@ public readonly sourceAgentPoolName: string;
 
 Specifies the agent pool name associated with the posix data source. When unspecified, the default name is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#source_agent_pool_name StorageTransferJob#source_agent_pool_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#source_agent_pool_name StorageTransferJob#source_agent_pool_name}
+
+---
+
+##### `transferManifest`<sup>Optional</sup> <a name="transferManifest" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.property.transferManifest"></a>
+
+```typescript
+public readonly transferManifest: StorageTransferJobTransferSpecTransferManifest;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest">StorageTransferJobTransferSpecTransferManifest</a>
+
+transfer_manifest block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#transfer_manifest StorageTransferJob#transfer_manifest}
 
 ---
 
@@ -2566,7 +2646,184 @@ public readonly transferOptions: StorageTransferJobTransferSpecTransferOptions;
 
 transfer_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#transfer_options StorageTransferJob#transfer_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#transfer_options StorageTransferJob#transfer_options}
+
+---
+
+### StorageTransferJobTransferSpecAwsS3CompatibleDataSource <a name="StorageTransferJobTransferSpecAwsS3CompatibleDataSource" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.Initializer"></a>
+
+```typescript
+import { storageTransferJob } from '@cdktn/provider-google'
+
+const storageTransferJobTransferSpecAwsS3CompatibleDataSource: storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.property.bucketName">bucketName</a></code> | <code>string</code> | Name of the bucket. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.property.endpoint">endpoint</a></code> | <code>string</code> | Endpoint of the storage service. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.property.path">path</a></code> | <code>string</code> | Specifies the path to transfer objects. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.property.region">region</a></code> | <code>string</code> | Specifies the region to sign requests with. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.property.s3Metadata">s3Metadata</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata">StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata</a></code> | s3_metadata block. |
+
+---
+
+##### `bucketName`<sup>Required</sup> <a name="bucketName" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.property.bucketName"></a>
+
+```typescript
+public readonly bucketName: string;
+```
+
+- *Type:* string
+
+Name of the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+
+---
+
+##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.property.endpoint"></a>
+
+```typescript
+public readonly endpoint: string;
+```
+
+- *Type:* string
+
+Endpoint of the storage service.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#endpoint StorageTransferJob#endpoint}
+
+---
+
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.property.path"></a>
+
+```typescript
+public readonly path: string;
+```
+
+- *Type:* string
+
+Specifies the path to transfer objects.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+Specifies the region to sign requests with.
+
+This can be left blank if requests should be signed with an empty region.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#region StorageTransferJob#region}
+
+---
+
+##### `s3Metadata`<sup>Optional</sup> <a name="s3Metadata" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.property.s3Metadata"></a>
+
+```typescript
+public readonly s3Metadata: StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata">StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata</a>
+
+s3_metadata block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#s3_metadata StorageTransferJob#s3_metadata}
+
+---
+
+### StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata <a name="StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata.Initializer"></a>
+
+```typescript
+import { storageTransferJob } from '@cdktn/provider-google'
+
+const storageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata: storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata.property.authMethod">authMethod</a></code> | <code>string</code> | Authentication and authorization method used by the storage service. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata.property.listApi">listApi</a></code> | <code>string</code> | The Listing API to use for discovering objects. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata.property.protocol">protocol</a></code> | <code>string</code> | The network protocol of the agent. When not specified, the default value of NetworkProtocol NETWORK_PROTOCOL_HTTPS is used. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata.property.requestModel">requestModel</a></code> | <code>string</code> | API request model used to call the storage service. |
+
+---
+
+##### `authMethod`<sup>Optional</sup> <a name="authMethod" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata.property.authMethod"></a>
+
+```typescript
+public readonly authMethod: string;
+```
+
+- *Type:* string
+
+Authentication and authorization method used by the storage service.
+
+When not specified, Transfer Service will attempt to determine right auth method to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#auth_method StorageTransferJob#auth_method}
+
+---
+
+##### `listApi`<sup>Optional</sup> <a name="listApi" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata.property.listApi"></a>
+
+```typescript
+public readonly listApi: string;
+```
+
+- *Type:* string
+
+The Listing API to use for discovering objects.
+
+When not specified, Transfer Service will attempt to determine the right API to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#list_api StorageTransferJob#list_api}
+
+---
+
+##### `protocol`<sup>Optional</sup> <a name="protocol" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata.property.protocol"></a>
+
+```typescript
+public readonly protocol: string;
+```
+
+- *Type:* string
+
+The network protocol of the agent. When not specified, the default value of NetworkProtocol NETWORK_PROTOCOL_HTTPS is used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#protocol StorageTransferJob#protocol}
+
+---
+
+##### `requestModel`<sup>Optional</sup> <a name="requestModel" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata.property.requestModel"></a>
+
+```typescript
+public readonly requestModel: string;
+```
+
+- *Type:* string
+
+API request model used to call the storage service.
+
+When not specified, the default value of RequestModel REQUEST_MODEL_VIRTUAL_HOSTED_STYLE is used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#request_model StorageTransferJob#request_model}
 
 ---
 
@@ -2587,6 +2844,7 @@ const storageTransferJobTransferSpecAwsS3DataSource: storageTransferJob.StorageT
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource.property.bucketName">bucketName</a></code> | <code>string</code> | S3 Bucket name. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource.property.awsAccessKey">awsAccessKey</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey">StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey</a></code> | aws_access_key block. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource.property.cloudfrontDomain">cloudfrontDomain</a></code> | <code>string</code> | The CloudFront distribution domain name pointing to this bucket, to use when fetching. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource.property.credentialsSecret">credentialsSecret</a></code> | <code>string</code> | The Resource name of a secret in Secret Manager. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource.property.managedPrivateNetwork">managedPrivateNetwork</a></code> | <code>boolean \| cdktn.IResolvable</code> | Egress bytes over a Google-managed private network. This network is shared between other users of Storage Transfer Service. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource.property.path">path</a></code> | <code>string</code> | S3 Bucket path in bucket to transfer. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource.property.roleArn">roleArn</a></code> | <code>string</code> | The Amazon Resource Name (ARN) of the role to support temporary credentials via 'AssumeRoleWithWebIdentity'. |
@@ -2603,7 +2861,7 @@ public readonly bucketName: string;
 
 S3 Bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
 
 ---
 
@@ -2617,7 +2875,7 @@ public readonly awsAccessKey: StorageTransferJobTransferSpecAwsS3DataSourceAwsAc
 
 aws_access_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#aws_access_key StorageTransferJob#aws_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#aws_access_key StorageTransferJob#aws_access_key}
 
 ---
 
@@ -2633,7 +2891,23 @@ The CloudFront distribution domain name pointing to this bucket, to use when fet
 
 See [Transfer from S3 via CloudFront](https://cloud.google.com/storage-transfer/docs/s3-cloudfront) for more information. Format: https://{id}.cloudfront.net or any valid custom domain. Must begin with https://.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#cloudfront_domain StorageTransferJob#cloudfront_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#cloudfront_domain StorageTransferJob#cloudfront_domain}
+
+---
+
+##### `credentialsSecret`<sup>Optional</sup> <a name="credentialsSecret" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource.property.credentialsSecret"></a>
+
+```typescript
+public readonly credentialsSecret: string;
+```
+
+- *Type:* string
+
+The Resource name of a secret in Secret Manager.
+
+AWS credentials must be stored in Secret Manager in JSON format. If credentials_secret is specified, do not specify role_arn or aws_access_key. Format: projects/{projectNumber}/secrets/{secret_name}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#credentials_secret StorageTransferJob#credentials_secret}
 
 ---
 
@@ -2647,7 +2921,7 @@ public readonly managedPrivateNetwork: boolean | IResolvable;
 
 Egress bytes over a Google-managed private network. This network is shared between other users of Storage Transfer Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#managed_private_network StorageTransferJob#managed_private_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#managed_private_network StorageTransferJob#managed_private_network}
 
 ---
 
@@ -2661,7 +2935,7 @@ public readonly path: string;
 
 S3 Bucket path in bucket to transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -2677,7 +2951,7 @@ The Amazon Resource Name (ARN) of the role to support temporary credentials via 
 
 For more information about ARNs, see [IAM ARNs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns). When a role ARN is provided, Transfer Service fetches temporary credentials for the session using a 'AssumeRoleWithWebIdentity' call for the provided role using the [GoogleServiceAccount][] for this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#role_arn StorageTransferJob#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#role_arn StorageTransferJob#role_arn}
 
 ---
 
@@ -2710,7 +2984,7 @@ public readonly accessKeyId: string;
 
 AWS Key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#access_key_id StorageTransferJob#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#access_key_id StorageTransferJob#access_key_id}
 
 ---
 
@@ -2724,7 +2998,7 @@ public readonly secretAccessKey: string;
 
 AWS Secret Access Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#secret_access_key StorageTransferJob#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#secret_access_key StorageTransferJob#secret_access_key}
 
 ---
 
@@ -2761,7 +3035,7 @@ public readonly container: string;
 
 The container to transfer from the Azure Storage account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#container StorageTransferJob#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#container StorageTransferJob#container}
 
 ---
 
@@ -2775,7 +3049,7 @@ public readonly storageAccount: string;
 
 The name of the Azure Storage account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#storage_account StorageTransferJob#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#storage_account StorageTransferJob#storage_account}
 
 ---
 
@@ -2789,7 +3063,7 @@ public readonly azureCredentials: StorageTransferJobTransferSpecAzureBlobStorage
 
 azure_credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#azure_credentials StorageTransferJob#azure_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#azure_credentials StorageTransferJob#azure_credentials}
 
 ---
 
@@ -2805,7 +3079,7 @@ The Resource name of a secret in Secret Manager containing SAS Credentials in JS
 
 Service Agent must have permissions to access secret. If credentials_secret is specified, do not specify azure_credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#credentials_secret StorageTransferJob#credentials_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#credentials_secret StorageTransferJob#credentials_secret}
 
 ---
 
@@ -2819,7 +3093,7 @@ public readonly federatedIdentityConfig: StorageTransferJobTransferSpecAzureBlob
 
 federated_identity_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#federated_identity_config StorageTransferJob#federated_identity_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#federated_identity_config StorageTransferJob#federated_identity_config}
 
 ---
 
@@ -2835,7 +3109,7 @@ Root path to transfer objects.
 
 Must be an empty string or full path name that ends with a '/'. This field is treated as an object prefix. As such, it should generally not begin with a '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -2867,7 +3141,7 @@ public readonly sasToken: string;
 
 Azure shared access signature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#sas_token StorageTransferJob#sas_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#sas_token StorageTransferJob#sas_token}
 
 ---
 
@@ -2900,7 +3174,7 @@ public readonly clientId: string;
 
 The client (application) ID of the application with federated credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#client_id StorageTransferJob#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#client_id StorageTransferJob#client_id}
 
 ---
 
@@ -2914,7 +3188,7 @@ public readonly tenantId: string;
 
 The tenant (directory) ID of the application with federated credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#tenant_id StorageTransferJob#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#tenant_id StorageTransferJob#tenant_id}
 
 ---
 
@@ -2947,7 +3221,7 @@ public readonly bucketName: string;
 
 Google Cloud Storage bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
 
 ---
 
@@ -2961,7 +3235,9 @@ public readonly path: string;
 
 Google Cloud Storage path in bucket to transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Must be an empty string or full path name that ends with a '/'. This field is treated as an object prefix. As such, it should not begin with a '/'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -2994,7 +3270,7 @@ public readonly bucketName: string;
 
 Google Cloud Storage bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
 
 ---
 
@@ -3008,7 +3284,9 @@ public readonly path: string;
 
 Google Cloud Storage path in bucket to transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Must be an empty string or full path name that ends with a '/'. This field is treated as an object prefix. As such, it should not begin with a '/'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -3040,7 +3318,7 @@ public readonly path: string;
 
 Directory path to the filesystem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -3074,7 +3352,7 @@ The URL that points to the file that stores the object list entries.
 
 This file must allow public access. Currently, only URLs with HTTP and HTTPS schemes are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#list_url StorageTransferJob#list_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#list_url StorageTransferJob#list_url}
 
 ---
 
@@ -3111,7 +3389,7 @@ public readonly excludePrefixes: string[];
 
 exclude_prefixes must follow the requirements described for include_prefixes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#exclude_prefixes StorageTransferJob#exclude_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#exclude_prefixes StorageTransferJob#exclude_prefixes}
 
 ---
 
@@ -3127,7 +3405,7 @@ If include_refixes is specified, objects that satisfy the object conditions must
 
 If include_prefixes is not specified, all objects except those that have names starting with one of the exclude_prefixes must satisfy the object conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#include_prefixes StorageTransferJob#include_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#include_prefixes StorageTransferJob#include_prefixes}
 
 ---
 
@@ -3143,7 +3421,7 @@ If specified, only objects with a "last modification time" before this timestamp
 
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#last_modified_before StorageTransferJob#last_modified_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#last_modified_before StorageTransferJob#last_modified_before}
 
 ---
 
@@ -3159,7 +3437,7 @@ If specified, only objects with a "last modification time" on or after this time
 
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#last_modified_since StorageTransferJob#last_modified_since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#last_modified_since StorageTransferJob#last_modified_since}
 
 ---
 
@@ -3173,7 +3451,7 @@ public readonly maxTimeElapsedSinceLastModification: string;
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#max_time_elapsed_since_last_modification StorageTransferJob#max_time_elapsed_since_last_modification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#max_time_elapsed_since_last_modification StorageTransferJob#max_time_elapsed_since_last_modification}
 
 ---
 
@@ -3187,7 +3465,7 @@ public readonly minTimeElapsedSinceLastModification: string;
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#min_time_elapsed_since_last_modification StorageTransferJob#min_time_elapsed_since_last_modification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#min_time_elapsed_since_last_modification StorageTransferJob#min_time_elapsed_since_last_modification}
 
 ---
 
@@ -3219,7 +3497,7 @@ public readonly rootDirectory: string;
 
 Root directory path to the filesystem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#root_directory StorageTransferJob#root_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#root_directory StorageTransferJob#root_directory}
 
 ---
 
@@ -3251,7 +3529,39 @@ public readonly rootDirectory: string;
 
 Root directory path to the filesystem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#root_directory StorageTransferJob#root_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#root_directory StorageTransferJob#root_directory}
+
+---
+
+### StorageTransferJobTransferSpecTransferManifest <a name="StorageTransferJobTransferSpecTransferManifest" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest.Initializer"></a>
+
+```typescript
+import { storageTransferJob } from '@cdktn/provider-google'
+
+const storageTransferJobTransferSpecTransferManifest: storageTransferJob.StorageTransferJobTransferSpecTransferManifest = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest.property.location">location</a></code> | <code>string</code> | Cloud Storage path to the manifest CSV. |
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest.property.location"></a>
+
+```typescript
+public readonly location: string;
+```
+
+- *Type:* string
+
+Cloud Storage path to the manifest CSV.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#location StorageTransferJob#location}
 
 ---
 
@@ -3289,7 +3599,7 @@ Whether objects should be deleted from the source after they are transferred to 
 
 Note that this option and delete_objects_unique_in_sink are mutually exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#delete_objects_from_source_after_transfer StorageTransferJob#delete_objects_from_source_after_transfer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#delete_objects_from_source_after_transfer StorageTransferJob#delete_objects_from_source_after_transfer}
 
 ---
 
@@ -3305,7 +3615,7 @@ Whether objects that exist only in the sink should be deleted.
 
 Note that this option and delete_objects_from_source_after_transfer are mutually exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#delete_objects_unique_in_sink StorageTransferJob#delete_objects_unique_in_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#delete_objects_unique_in_sink StorageTransferJob#delete_objects_unique_in_sink}
 
 ---
 
@@ -3319,7 +3629,7 @@ public readonly metadataOptions: StorageTransferJobTransferSpecTransferOptionsMe
 
 metadata_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#metadata_options StorageTransferJob#metadata_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#metadata_options StorageTransferJob#metadata_options}
 
 ---
 
@@ -3333,7 +3643,7 @@ public readonly overwriteObjectsAlreadyExistingInSink: boolean | IResolvable;
 
 Whether overwriting objects that already exist in the sink is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#overwrite_objects_already_existing_in_sink StorageTransferJob#overwrite_objects_already_existing_in_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#overwrite_objects_already_existing_in_sink StorageTransferJob#overwrite_objects_already_existing_in_sink}
 
 ---
 
@@ -3347,7 +3657,7 @@ public readonly overwriteWhen: string;
 
 When to overwrite objects that already exist in the sink. If not set, overwrite behavior is determined by overwriteObjectsAlreadyExistingInSink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#overwrite_when StorageTransferJob#overwrite_when}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#overwrite_when StorageTransferJob#overwrite_when}
 
 ---
 
@@ -3387,7 +3697,7 @@ public readonly acl: string;
 
 Specifies how each object's ACLs should be preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#acl StorageTransferJob#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#acl StorageTransferJob#acl}
 
 ---
 
@@ -3401,7 +3711,7 @@ public readonly gid: string;
 
 Specifies how each file's POSIX group ID (GID) attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#gid StorageTransferJob#gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#gid StorageTransferJob#gid}
 
 ---
 
@@ -3415,7 +3725,7 @@ public readonly kmsKey: string;
 
 Specifies how each object's Cloud KMS customer-managed encryption key (CMEK) is preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#kms_key StorageTransferJob#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#kms_key StorageTransferJob#kms_key}
 
 ---
 
@@ -3429,7 +3739,7 @@ public readonly mode: string;
 
 Specifies how each file's mode attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#mode StorageTransferJob#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#mode StorageTransferJob#mode}
 
 ---
 
@@ -3443,7 +3753,7 @@ public readonly storageClass: string;
 
 Specifies the storage class to set on objects being transferred to Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#storage_class StorageTransferJob#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#storage_class StorageTransferJob#storage_class}
 
 ---
 
@@ -3457,7 +3767,7 @@ public readonly symlink: string;
 
 Specifies how symlinks should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#symlink StorageTransferJob#symlink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#symlink StorageTransferJob#symlink}
 
 ---
 
@@ -3471,7 +3781,7 @@ public readonly temporaryHold: string;
 
 SSpecifies how each object's temporary hold status should be preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#temporary_hold StorageTransferJob#temporary_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#temporary_hold StorageTransferJob#temporary_hold}
 
 ---
 
@@ -3485,7 +3795,7 @@ public readonly timeCreated: string;
 
 Specifies how each object's timeCreated metadata is preserved for transfers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#time_created StorageTransferJob#time_created}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#time_created StorageTransferJob#time_created}
 
 ---
 
@@ -3499,7 +3809,7 @@ public readonly uid: string;
 
 Specifies how each file's POSIX user ID (UID) attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_transfer_job#uid StorageTransferJob#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_transfer_job#uid StorageTransferJob#uid}
 
 ---
 
@@ -8213,6 +8523,764 @@ public readonly internalValue: StorageTransferJobScheduleStartTimeOfDay;
 ---
 
 
+### StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference <a name="StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.Initializer"></a>
+
+```typescript
+import { storageTransferJob } from '@cdktn/provider-google'
+
+new storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.putS3Metadata">putS3Metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.resetPath">resetPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.resetS3Metadata">resetS3Metadata</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putS3Metadata` <a name="putS3Metadata" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.putS3Metadata"></a>
+
+```typescript
+public putS3Metadata(value: StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.putS3Metadata.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata">StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata</a>
+
+---
+
+##### `resetPath` <a name="resetPath" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.resetPath"></a>
+
+```typescript
+public resetPath(): void
+```
+
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
+##### `resetS3Metadata` <a name="resetS3Metadata" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.resetS3Metadata"></a>
+
+```typescript
+public resetS3Metadata(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.s3Metadata">s3Metadata</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference">StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.bucketNameInput">bucketNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.endpointInput">endpointInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.pathInput">pathInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.s3MetadataInput">s3MetadataInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata">StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.bucketName">bucketName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.endpoint">endpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource">StorageTransferJobTransferSpecAwsS3CompatibleDataSource</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `s3Metadata`<sup>Required</sup> <a name="s3Metadata" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.s3Metadata"></a>
+
+```typescript
+public readonly s3Metadata: StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference">StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference</a>
+
+---
+
+##### `bucketNameInput`<sup>Optional</sup> <a name="bucketNameInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.bucketNameInput"></a>
+
+```typescript
+public readonly bucketNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `endpointInput`<sup>Optional</sup> <a name="endpointInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.endpointInput"></a>
+
+```typescript
+public readonly endpointInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pathInput`<sup>Optional</sup> <a name="pathInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.pathInput"></a>
+
+```typescript
+public readonly pathInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `s3MetadataInput`<sup>Optional</sup> <a name="s3MetadataInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.s3MetadataInput"></a>
+
+```typescript
+public readonly s3MetadataInput: StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata">StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata</a>
+
+---
+
+##### `bucketName`<sup>Required</sup> <a name="bucketName" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.bucketName"></a>
+
+```typescript
+public readonly bucketName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.endpoint"></a>
+
+```typescript
+public readonly endpoint: string;
+```
+
+- *Type:* string
+
+---
+
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.path"></a>
+
+```typescript
+public readonly path: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: StorageTransferJobTransferSpecAwsS3CompatibleDataSource;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource">StorageTransferJobTransferSpecAwsS3CompatibleDataSource</a>
+
+---
+
+
+### StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference <a name="StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.Initializer"></a>
+
+```typescript
+import { storageTransferJob } from '@cdktn/provider-google'
+
+new storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.resetAuthMethod">resetAuthMethod</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.resetListApi">resetListApi</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.resetProtocol">resetProtocol</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.resetRequestModel">resetRequestModel</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAuthMethod` <a name="resetAuthMethod" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.resetAuthMethod"></a>
+
+```typescript
+public resetAuthMethod(): void
+```
+
+##### `resetListApi` <a name="resetListApi" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.resetListApi"></a>
+
+```typescript
+public resetListApi(): void
+```
+
+##### `resetProtocol` <a name="resetProtocol" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.resetProtocol"></a>
+
+```typescript
+public resetProtocol(): void
+```
+
+##### `resetRequestModel` <a name="resetRequestModel" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.resetRequestModel"></a>
+
+```typescript
+public resetRequestModel(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.authMethodInput">authMethodInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.listApiInput">listApiInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.protocolInput">protocolInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.requestModelInput">requestModelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.authMethod">authMethod</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.listApi">listApi</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.protocol">protocol</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.requestModel">requestModel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata">StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authMethodInput`<sup>Optional</sup> <a name="authMethodInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.authMethodInput"></a>
+
+```typescript
+public readonly authMethodInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `listApiInput`<sup>Optional</sup> <a name="listApiInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.listApiInput"></a>
+
+```typescript
+public readonly listApiInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `protocolInput`<sup>Optional</sup> <a name="protocolInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.protocolInput"></a>
+
+```typescript
+public readonly protocolInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `requestModelInput`<sup>Optional</sup> <a name="requestModelInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.requestModelInput"></a>
+
+```typescript
+public readonly requestModelInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authMethod`<sup>Required</sup> <a name="authMethod" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.authMethod"></a>
+
+```typescript
+public readonly authMethod: string;
+```
+
+- *Type:* string
+
+---
+
+##### `listApi`<sup>Required</sup> <a name="listApi" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.listApi"></a>
+
+```typescript
+public readonly listApi: string;
+```
+
+- *Type:* string
+
+---
+
+##### `protocol`<sup>Required</sup> <a name="protocol" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.protocol"></a>
+
+```typescript
+public readonly protocol: string;
+```
+
+- *Type:* string
+
+---
+
+##### `requestModel`<sup>Required</sup> <a name="requestModel" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.requestModel"></a>
+
+```typescript
+public readonly requestModel: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata">StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata</a>
+
+---
+
+
 ### StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference <a name="StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference.Initializer"></a>
@@ -8559,6 +9627,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.putAwsAccessKey">putAwsAccessKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.resetAwsAccessKey">resetAwsAccessKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.resetCloudfrontDomain">resetCloudfrontDomain</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.resetCredentialsSecret">resetCredentialsSecret</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.resetManagedPrivateNetwork">resetManagedPrivateNetwork</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.resetPath">resetPath</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.resetRoleArn">resetRoleArn</a></code> | *No description.* |
@@ -8739,6 +9808,12 @@ public resetAwsAccessKey(): void
 public resetCloudfrontDomain(): void
 ```
 
+##### `resetCredentialsSecret` <a name="resetCredentialsSecret" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.resetCredentialsSecret"></a>
+
+```typescript
+public resetCredentialsSecret(): void
+```
+
 ##### `resetManagedPrivateNetwork` <a name="resetManagedPrivateNetwork" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.resetManagedPrivateNetwork"></a>
 
 ```typescript
@@ -8768,11 +9843,13 @@ public resetRoleArn(): void
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.awsAccessKeyInput">awsAccessKeyInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey">StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.bucketNameInput">bucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.cloudfrontDomainInput">cloudfrontDomainInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.credentialsSecretInput">credentialsSecretInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.managedPrivateNetworkInput">managedPrivateNetworkInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.pathInput">pathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.roleArnInput">roleArnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.bucketName">bucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.cloudfrontDomain">cloudfrontDomain</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.credentialsSecret">credentialsSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.managedPrivateNetwork">managedPrivateNetwork</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.roleArn">roleArn</a></code> | <code>string</code> | *No description.* |
@@ -8844,6 +9921,16 @@ public readonly cloudfrontDomainInput: string;
 
 ---
 
+##### `credentialsSecretInput`<sup>Optional</sup> <a name="credentialsSecretInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.credentialsSecretInput"></a>
+
+```typescript
+public readonly credentialsSecretInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `managedPrivateNetworkInput`<sup>Optional</sup> <a name="managedPrivateNetworkInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.managedPrivateNetworkInput"></a>
 
 ```typescript
@@ -8888,6 +9975,16 @@ public readonly bucketName: string;
 
 ```typescript
 public readonly cloudfrontDomain: string;
+```
+
+- *Type:* string
+
+---
+
+##### `credentialsSecret`<sup>Required</sup> <a name="credentialsSecret" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.property.credentialsSecret"></a>
+
+```typescript
+public readonly credentialsSecret: string;
 ```
 
 - *Type:* string
@@ -11549,6 +12646,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putAwsS3CompatibleDataSource">putAwsS3CompatibleDataSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putAwsS3DataSource">putAwsS3DataSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putAzureBlobStorageDataSource">putAzureBlobStorageDataSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putGcsDataSink">putGcsDataSink</a></code> | *No description.* |
@@ -11558,7 +12656,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putObjectConditions">putObjectConditions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putPosixDataSink">putPosixDataSink</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putPosixDataSource">putPosixDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putTransferManifest">putTransferManifest</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putTransferOptions">putTransferOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetAwsS3CompatibleDataSource">resetAwsS3CompatibleDataSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetAwsS3DataSource">resetAwsS3DataSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetAzureBlobStorageDataSource">resetAzureBlobStorageDataSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetGcsDataSink">resetGcsDataSink</a></code> | *No description.* |
@@ -11570,6 +12670,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetPosixDataSource">resetPosixDataSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetSinkAgentPoolName">resetSinkAgentPoolName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetSourceAgentPoolName">resetSourceAgentPoolName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetTransferManifest">resetTransferManifest</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetTransferOptions">resetTransferOptions</a></code> | *No description.* |
 
 ---
@@ -11724,6 +12825,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putAwsS3CompatibleDataSource` <a name="putAwsS3CompatibleDataSource" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putAwsS3CompatibleDataSource"></a>
+
+```typescript
+public putAwsS3CompatibleDataSource(value: StorageTransferJobTransferSpecAwsS3CompatibleDataSource): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putAwsS3CompatibleDataSource.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource">StorageTransferJobTransferSpecAwsS3CompatibleDataSource</a>
+
+---
+
 ##### `putAwsS3DataSource` <a name="putAwsS3DataSource" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putAwsS3DataSource"></a>
 
 ```typescript
@@ -11832,6 +12945,18 @@ public putPosixDataSource(value: StorageTransferJobTransferSpecPosixDataSource):
 
 ---
 
+##### `putTransferManifest` <a name="putTransferManifest" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putTransferManifest"></a>
+
+```typescript
+public putTransferManifest(value: StorageTransferJobTransferSpecTransferManifest): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putTransferManifest.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest">StorageTransferJobTransferSpecTransferManifest</a>
+
+---
+
 ##### `putTransferOptions` <a name="putTransferOptions" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.putTransferOptions"></a>
 
 ```typescript
@@ -11843,6 +12968,12 @@ public putTransferOptions(value: StorageTransferJobTransferSpecTransferOptions):
 - *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptions">StorageTransferJobTransferSpecTransferOptions</a>
 
 ---
+
+##### `resetAwsS3CompatibleDataSource` <a name="resetAwsS3CompatibleDataSource" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetAwsS3CompatibleDataSource"></a>
+
+```typescript
+public resetAwsS3CompatibleDataSource(): void
+```
 
 ##### `resetAwsS3DataSource` <a name="resetAwsS3DataSource" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetAwsS3DataSource"></a>
 
@@ -11910,6 +13041,12 @@ public resetSinkAgentPoolName(): void
 public resetSourceAgentPoolName(): void
 ```
 
+##### `resetTransferManifest` <a name="resetTransferManifest" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetTransferManifest"></a>
+
+```typescript
+public resetTransferManifest(): void
+```
+
 ##### `resetTransferOptions` <a name="resetTransferOptions" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.resetTransferOptions"></a>
 
 ```typescript
@@ -11923,6 +13060,7 @@ public resetTransferOptions(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.awsS3CompatibleDataSource">awsS3CompatibleDataSource</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference">StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.awsS3DataSource">awsS3DataSource</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference">StorageTransferJobTransferSpecAwsS3DataSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.azureBlobStorageDataSource">azureBlobStorageDataSource</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference">StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.gcsDataSink">gcsDataSink</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSinkOutputReference">StorageTransferJobTransferSpecGcsDataSinkOutputReference</a></code> | *No description.* |
@@ -11932,7 +13070,9 @@ public resetTransferOptions(): void
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.objectConditions">objectConditions</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecObjectConditionsOutputReference">StorageTransferJobTransferSpecObjectConditionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.posixDataSink">posixDataSink</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSinkOutputReference">StorageTransferJobTransferSpecPosixDataSinkOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.posixDataSource">posixDataSource</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSourceOutputReference">StorageTransferJobTransferSpecPosixDataSourceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.transferManifest">transferManifest</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference">StorageTransferJobTransferSpecTransferManifestOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.transferOptions">transferOptions</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsOutputReference">StorageTransferJobTransferSpecTransferOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.awsS3CompatibleDataSourceInput">awsS3CompatibleDataSourceInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource">StorageTransferJobTransferSpecAwsS3CompatibleDataSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.awsS3DataSourceInput">awsS3DataSourceInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource">StorageTransferJobTransferSpecAwsS3DataSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.azureBlobStorageDataSourceInput">azureBlobStorageDataSourceInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSource">StorageTransferJobTransferSpecAzureBlobStorageDataSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.gcsDataSinkInput">gcsDataSinkInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSink">StorageTransferJobTransferSpecGcsDataSink</a></code> | *No description.* |
@@ -11944,6 +13084,7 @@ public resetTransferOptions(): void
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.posixDataSourceInput">posixDataSourceInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSource">StorageTransferJobTransferSpecPosixDataSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.sinkAgentPoolNameInput">sinkAgentPoolNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.sourceAgentPoolNameInput">sourceAgentPoolNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.transferManifestInput">transferManifestInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest">StorageTransferJobTransferSpecTransferManifest</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.transferOptionsInput">transferOptionsInput</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptions">StorageTransferJobTransferSpecTransferOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.sinkAgentPoolName">sinkAgentPoolName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.sourceAgentPoolName">sourceAgentPoolName</a></code> | <code>string</code> | *No description.* |
@@ -11972,6 +13113,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `awsS3CompatibleDataSource`<sup>Required</sup> <a name="awsS3CompatibleDataSource" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.awsS3CompatibleDataSource"></a>
+
+```typescript
+public readonly awsS3CompatibleDataSource: StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference">StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference</a>
 
 ---
 
@@ -12065,6 +13216,16 @@ public readonly posixDataSource: StorageTransferJobTransferSpecPosixDataSourceOu
 
 ---
 
+##### `transferManifest`<sup>Required</sup> <a name="transferManifest" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.transferManifest"></a>
+
+```typescript
+public readonly transferManifest: StorageTransferJobTransferSpecTransferManifestOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference">StorageTransferJobTransferSpecTransferManifestOutputReference</a>
+
+---
+
 ##### `transferOptions`<sup>Required</sup> <a name="transferOptions" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.transferOptions"></a>
 
 ```typescript
@@ -12072,6 +13233,16 @@ public readonly transferOptions: StorageTransferJobTransferSpecTransferOptionsOu
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsOutputReference">StorageTransferJobTransferSpecTransferOptionsOutputReference</a>
+
+---
+
+##### `awsS3CompatibleDataSourceInput`<sup>Optional</sup> <a name="awsS3CompatibleDataSourceInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.awsS3CompatibleDataSourceInput"></a>
+
+```typescript
+public readonly awsS3CompatibleDataSourceInput: StorageTransferJobTransferSpecAwsS3CompatibleDataSource;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource">StorageTransferJobTransferSpecAwsS3CompatibleDataSource</a>
 
 ---
 
@@ -12182,6 +13353,16 @@ public readonly sourceAgentPoolNameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `transferManifestInput`<sup>Optional</sup> <a name="transferManifestInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.property.transferManifestInput"></a>
+
+```typescript
+public readonly transferManifestInput: StorageTransferJobTransferSpecTransferManifest;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest">StorageTransferJobTransferSpecTransferManifest</a>
 
 ---
 
@@ -12764,6 +13945,277 @@ public readonly internalValue: StorageTransferJobTransferSpecPosixDataSource;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSource">StorageTransferJobTransferSpecPosixDataSource</a>
+
+---
+
+
+### StorageTransferJobTransferSpecTransferManifestOutputReference <a name="StorageTransferJobTransferSpecTransferManifestOutputReference" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.Initializer"></a>
+
+```typescript
+import { storageTransferJob } from '@cdktn/provider-google'
+
+new storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.property.location">location</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest">StorageTransferJobTransferSpecTransferManifest</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `locationInput`<sup>Optional</sup> <a name="locationInput" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.property.locationInput"></a>
+
+```typescript
+public readonly locationInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.property.location"></a>
+
+```typescript
+public readonly location: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: StorageTransferJobTransferSpecTransferManifest;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest">StorageTransferJobTransferSpecTransferManifest</a>
 
 ---
 

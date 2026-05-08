@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,26 +20,26 @@ export interface ComputeRegionBackendServiceConfig extends cdktn.TerraformMetaAr
   * 
   * When the load balancing scheme is INTERNAL, this field is not used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#affinity_cookie_ttl_sec ComputeRegionBackendService#affinity_cookie_ttl_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#affinity_cookie_ttl_sec ComputeRegionBackendService#affinity_cookie_ttl_sec}
   */
   readonly affinityCookieTtlSec?: number;
   /**
   * Time for which instance will be drained (not accept new
   * connections, but still work to finish started).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#connection_draining_timeout_sec ComputeRegionBackendService#connection_draining_timeout_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#connection_draining_timeout_sec ComputeRegionBackendService#connection_draining_timeout_sec}
   */
   readonly connectionDrainingTimeoutSec?: number;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
   */
   readonly description?: string;
   /**
   * If true, enable Cloud CDN for this RegionBackendService.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enable_cdn ComputeRegionBackendService#enable_cdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enable_cdn ComputeRegionBackendService#enable_cdn}
   */
   readonly enableCdn?: boolean | cdktn.IResolvable;
   /**
@@ -50,11 +50,11 @@ export interface ComputeRegionBackendServiceConfig extends cdktn.TerraformMetaAr
   * A health check must be specified unless the backend service uses an internet
   * or serverless NEG as a backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#health_checks ComputeRegionBackendService#health_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#health_checks ComputeRegionBackendService#health_checks}
   */
   readonly healthChecks?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#id ComputeRegionBackendService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#id ComputeRegionBackendService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -63,16 +63,16 @@ export interface ComputeRegionBackendServiceConfig extends cdktn.TerraformMetaAr
   /**
   * Specifies preference of traffic to the backend (from the proxy and from the client for proxyless gRPC). Possible values: ["IPV4_ONLY", "PREFER_IPV6", "IPV6_ONLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#ip_address_selection_policy ComputeRegionBackendService#ip_address_selection_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#ip_address_selection_policy ComputeRegionBackendService#ip_address_selection_policy}
   */
   readonly ipAddressSelectionPolicy?: string;
   /**
   * Indicates what kind of load balancing this regional backend service
   * will be used for. A backend service created for one type of load
   * balancing cannot be used with the other(s). For more information, refer to
-  * [Choosing a load balancer](https://cloud.google.com/load-balancing/docs/backend-service). Default value: "INTERNAL" Possible values: ["EXTERNAL", "EXTERNAL_MANAGED", "INTERNAL", "INTERNAL_MANAGED"]
+  * [Choosing a load balancer](https://cloud.google.com/load-balancing/docs/backend-service). Default value: "INTERNAL" Possible values: ["EXTERNAL", "EXTERNAL_MANAGED", "INTERNAL", "INTERNAL_MANAGED", "INTERNAL_SELF_MANAGED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#load_balancing_scheme ComputeRegionBackendService#load_balancing_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#load_balancing_scheme ComputeRegionBackendService#load_balancing_scheme}
   */
   readonly loadBalancingScheme?: string;
   /**
@@ -140,7 +140,7 @@ export interface ComputeRegionBackendServiceConfig extends cdktn.TerraformMetaAr
   * by a URL map that is bound to target gRPC proxy that has validate_for_proxyless
   * field set to true. Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV", "WEIGHTED_MAGLEV", "WEIGHTED_ROUND_ROBIN"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#locality_lb_policy ComputeRegionBackendService#locality_lb_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#locality_lb_policy ComputeRegionBackendService#locality_lb_policy}
   */
   readonly localityLbPolicy?: string;
   /**
@@ -152,14 +152,16 @@ export interface ComputeRegionBackendServiceConfig extends cdktn.TerraformMetaAr
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
   */
   readonly name: string;
   /**
   * The URL of the network to which this backend service belongs.
-  * This field can only be specified when the load balancing scheme is set to INTERNAL.
+  * This field must be set for Internal Passthrough Network Load Balancers when the haPolicy is enabled, and for External Passthrough Network Load Balancers when the haPolicy fastIpMove is enabled.
+  * This field can only be specified when the load balancing scheme is set to INTERNAL, or when the load balancing scheme is set to EXTERNAL and haPolicy fastIpMove is enabled.
+  * Changes to this field force recreation of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#network ComputeRegionBackendService#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#network ComputeRegionBackendService#network}
   */
   readonly network?: string;
   /**
@@ -171,11 +173,11 @@ export interface ComputeRegionBackendServiceConfig extends cdktn.TerraformMetaAr
   * default of "http" if not given.
   * Must be omitted when the loadBalancingScheme is INTERNAL (Internal TCP/UDP Load Balancing).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#port_name ComputeRegionBackendService#port_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#port_name ComputeRegionBackendService#port_name}
   */
   readonly portName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#project ComputeRegionBackendService#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#project ComputeRegionBackendService#project}
   */
   readonly project?: string;
   /**
@@ -184,21 +186,27 @@ export interface ComputeRegionBackendServiceConfig extends cdktn.TerraformMetaAr
   * or GRPC. Refer to the documentation for the load balancers or for Traffic Director
   * for more information. Possible values: ["HTTP", "HTTPS", "HTTP2", "TCP", "SSL", "UDP", "GRPC", "UNSPECIFIED", "H2C"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#protocol ComputeRegionBackendService#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#protocol ComputeRegionBackendService#protocol}
   */
   readonly protocol?: string;
   /**
   * The Region in which the created backend service should reside.
   * If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#region ComputeRegionBackendService#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#region ComputeRegionBackendService#region}
   */
   readonly region?: string;
+  /**
+  * The security policy associated with this backend service.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#security_policy ComputeRegionBackendService#security_policy}
+  */
+  readonly securityPolicy?: string;
   /**
   * Type of session affinity to use. The default is NONE. Session affinity is
   * not applicable if the protocol is UDP. Possible values: ["NONE", "CLIENT_IP", "CLIENT_IP_PORT_PROTO", "CLIENT_IP_PROTO", "GENERATED_COOKIE", "HEADER_FIELD", "HTTP_COOKIE", "CLIENT_IP_NO_DESTINATION", "STRONG_COOKIE_AFFINITY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#session_affinity ComputeRegionBackendService#session_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#session_affinity ComputeRegionBackendService#session_affinity}
   */
   readonly sessionAffinity?: string;
   /**
@@ -207,95 +215,113 @@ export interface ComputeRegionBackendServiceConfig extends cdktn.TerraformMetaAr
   * The default is 30 seconds.
   * The full range of timeout values allowed goes from 1 through 2,147,483,647 seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#timeout_sec ComputeRegionBackendService#timeout_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#timeout_sec ComputeRegionBackendService#timeout_sec}
   */
   readonly timeoutSec?: number;
   /**
   * backend block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#backend ComputeRegionBackendService#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#backend ComputeRegionBackendService#backend}
   */
   readonly backend?: ComputeRegionBackendServiceBackend[] | cdktn.IResolvable;
   /**
   * cdn_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#cdn_policy ComputeRegionBackendService#cdn_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#cdn_policy ComputeRegionBackendService#cdn_policy}
   */
   readonly cdnPolicy?: ComputeRegionBackendServiceCdnPolicy;
   /**
   * circuit_breakers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#circuit_breakers ComputeRegionBackendService#circuit_breakers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#circuit_breakers ComputeRegionBackendService#circuit_breakers}
   */
   readonly circuitBreakers?: ComputeRegionBackendServiceCircuitBreakers;
   /**
   * consistent_hash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#consistent_hash ComputeRegionBackendService#consistent_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#consistent_hash ComputeRegionBackendService#consistent_hash}
   */
   readonly consistentHash?: ComputeRegionBackendServiceConsistentHash;
   /**
   * custom_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
   */
   readonly customMetrics?: ComputeRegionBackendServiceCustomMetrics[] | cdktn.IResolvable;
   /**
   * failover_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#failover_policy ComputeRegionBackendService#failover_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#failover_policy ComputeRegionBackendService#failover_policy}
   */
   readonly failoverPolicy?: ComputeRegionBackendServiceFailoverPolicy;
   /**
   * ha_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#ha_policy ComputeRegionBackendService#ha_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#ha_policy ComputeRegionBackendService#ha_policy}
   */
   readonly haPolicy?: ComputeRegionBackendServiceHaPolicy;
   /**
   * iap block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#iap ComputeRegionBackendService#iap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#iap ComputeRegionBackendService#iap}
   */
   readonly iap?: ComputeRegionBackendServiceIap;
   /**
   * log_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#log_config ComputeRegionBackendService#log_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#log_config ComputeRegionBackendService#log_config}
   */
   readonly logConfig?: ComputeRegionBackendServiceLogConfig;
   /**
+  * network_pass_through_lb_traffic_policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#network_pass_through_lb_traffic_policy ComputeRegionBackendService#network_pass_through_lb_traffic_policy}
+  */
+  readonly networkPassThroughLbTrafficPolicy?: ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy;
+  /**
   * outlier_detection block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#outlier_detection ComputeRegionBackendService#outlier_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#outlier_detection ComputeRegionBackendService#outlier_detection}
   */
   readonly outlierDetection?: ComputeRegionBackendServiceOutlierDetection;
   /**
+  * params block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#params ComputeRegionBackendService#params}
+  */
+  readonly params?: ComputeRegionBackendServiceParams;
+  /**
   * strong_session_affinity_cookie block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#strong_session_affinity_cookie ComputeRegionBackendService#strong_session_affinity_cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#strong_session_affinity_cookie ComputeRegionBackendService#strong_session_affinity_cookie}
   */
   readonly strongSessionAffinityCookie?: ComputeRegionBackendServiceStrongSessionAffinityCookie;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#timeouts ComputeRegionBackendService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#timeouts ComputeRegionBackendService#timeouts}
   */
   readonly timeouts?: ComputeRegionBackendServiceTimeouts;
+  /**
+  * tls_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#tls_settings ComputeRegionBackendService#tls_settings}
+  */
+  readonly tlsSettings?: ComputeRegionBackendServiceTlsSettings;
 }
 export interface ComputeRegionBackendServiceBackendCustomMetrics {
   /**
   * If true, the metric data is collected and reported to Cloud
   * Monitoring, but is not used for load balancing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#dry_run ComputeRegionBackendService#dry_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#dry_run ComputeRegionBackendService#dry_run}
   */
   readonly dryRun: boolean | cdktn.IResolvable;
   /**
   * Optional parameter to define a target utilization for the Custom Metrics
   * balancing mode. The valid range is <code>[0.0, 1.0]</code>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_utilization ComputeRegionBackendService#max_utilization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_utilization ComputeRegionBackendService#max_utilization}
   */
   readonly maxUtilization?: number;
   /**
@@ -309,7 +335,7 @@ export interface ComputeRegionBackendServiceBackendCustomMetrics {
   * loadBalancingScheme set to <code>EXTERNAL_MANAGED</code>,
   * <code>INTERNAL_MANAGED</code> <code>INTERNAL_SELF_MANAGED</code>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
   */
   readonly name: string;
 }
@@ -482,7 +508,7 @@ export interface ComputeRegionBackendServiceBackend {
   * See the [Backend Services Overview](https://cloud.google.com/load-balancing/docs/backend-service#balancing-mode)
   * for an explanation of load balancing modes. Default value: "UTILIZATION" Possible values: ["UTILIZATION", "RATE", "CONNECTION", "CUSTOM_METRICS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#balancing_mode ComputeRegionBackendService#balancing_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#balancing_mode ComputeRegionBackendService#balancing_mode}
   */
   readonly balancingMode?: string;
   /**
@@ -497,21 +523,21 @@ export interface ComputeRegionBackendServiceBackend {
   * A setting of 0 means the group is completely drained, offering
   * 0% of its available Capacity. Valid range is [0.0,1.0].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#capacity_scaler ComputeRegionBackendService#capacity_scaler}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#capacity_scaler ComputeRegionBackendService#capacity_scaler}
   */
   readonly capacityScaler?: number;
   /**
   * An optional description of this resource.
   * Provide this property when you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#description ComputeRegionBackendService#description}
   */
   readonly description?: string;
   /**
   * This field designates whether this is a failover backend. More
   * than one failover backend can be configured for a given RegionBackendService.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#failover ComputeRegionBackendService#failover}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#failover ComputeRegionBackendService#failover}
   */
   readonly failover?: boolean | cdktn.IResolvable;
   /**
@@ -536,7 +562,7 @@ export interface ComputeRegionBackendServiceBackend {
   * Group resource using the fully-qualified URL, rather than a
   * partial URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#group ComputeRegionBackendService#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#group ComputeRegionBackendService#group}
   */
   readonly group: string;
   /**
@@ -548,7 +574,7 @@ export interface ComputeRegionBackendServiceBackend {
   * of maxConnectionsPerInstance or maxConnectionsPerEndpoint,
   * as appropriate for group type, must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_connections ComputeRegionBackendService#max_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_connections ComputeRegionBackendService#max_connections}
   */
   readonly maxConnections?: number;
   /**
@@ -561,7 +587,7 @@ export interface ComputeRegionBackendServiceBackend {
   * CONNECTION mode, either maxConnections or
   * maxConnectionsPerEndpoint must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_connections_per_endpoint ComputeRegionBackendService#max_connections_per_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_connections_per_endpoint ComputeRegionBackendService#max_connections_per_endpoint}
   */
   readonly maxConnectionsPerEndpoint?: number;
   /**
@@ -574,7 +600,7 @@ export interface ComputeRegionBackendServiceBackend {
   * For CONNECTION mode, either maxConnections or
   * maxConnectionsPerInstance must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_connections_per_instance ComputeRegionBackendService#max_connections_per_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_connections_per_instance ComputeRegionBackendService#max_connections_per_instance}
   */
   readonly maxConnectionsPerInstance?: number;
   /**
@@ -586,7 +612,7 @@ export interface ComputeRegionBackendServiceBackend {
   * of maxRatePerInstance or maxRatePerEndpoint, as appropriate for
   * group type, must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_rate ComputeRegionBackendService#max_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_rate ComputeRegionBackendService#max_rate}
   */
   readonly maxRate?: number;
   /**
@@ -596,7 +622,7 @@ export interface ComputeRegionBackendServiceBackend {
   * either maxRate or maxRatePerEndpoint must be set. Cannot be set
   * for INTERNAL backend services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_rate_per_endpoint ComputeRegionBackendService#max_rate_per_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_rate_per_endpoint ComputeRegionBackendService#max_rate_per_endpoint}
   */
   readonly maxRatePerEndpoint?: number;
   /**
@@ -606,7 +632,7 @@ export interface ComputeRegionBackendServiceBackend {
   * either maxRate or maxRatePerInstance must be set. Cannot be set
   * for INTERNAL backend services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_rate_per_instance ComputeRegionBackendService#max_rate_per_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_rate_per_instance ComputeRegionBackendService#max_rate_per_instance}
   */
   readonly maxRatePerInstance?: number;
   /**
@@ -614,13 +640,13 @@ export interface ComputeRegionBackendServiceBackend {
   * CPU utilization target for the group. Valid range is [0.0, 1.0].
   * Cannot be set for INTERNAL backend services.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_utilization ComputeRegionBackendService#max_utilization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_utilization ComputeRegionBackendService#max_utilization}
   */
   readonly maxUtilization?: number;
   /**
   * custom_metrics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#custom_metrics ComputeRegionBackendService#custom_metrics}
   */
   readonly customMetrics?: ComputeRegionBackendServiceBackendCustomMetrics[] | cdktn.IResolvable;
 }
@@ -1083,19 +1109,19 @@ export interface ComputeRegionBackendServiceCdnPolicyCacheKeyPolicy {
   /**
   * If true requests to different hosts will be cached separately.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#include_host ComputeRegionBackendService#include_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#include_host ComputeRegionBackendService#include_host}
   */
   readonly includeHost?: boolean | cdktn.IResolvable;
   /**
   * Names of cookies to include in cache keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#include_named_cookies ComputeRegionBackendService#include_named_cookies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#include_named_cookies ComputeRegionBackendService#include_named_cookies}
   */
   readonly includeNamedCookies?: string[];
   /**
   * If true, http and https requests will be cached separately.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#include_protocol ComputeRegionBackendService#include_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#include_protocol ComputeRegionBackendService#include_protocol}
   */
   readonly includeProtocol?: boolean | cdktn.IResolvable;
   /**
@@ -1107,7 +1133,7 @@ export interface ComputeRegionBackendServiceCdnPolicyCacheKeyPolicy {
   * If false, the query string will be excluded from the cache
   * key entirely.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#include_query_string ComputeRegionBackendService#include_query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#include_query_string ComputeRegionBackendService#include_query_string}
   */
   readonly includeQueryString?: boolean | cdktn.IResolvable;
   /**
@@ -1118,7 +1144,7 @@ export interface ComputeRegionBackendServiceCdnPolicyCacheKeyPolicy {
   * '&' and '=' will be percent encoded and not treated as
   * delimiters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#query_string_blacklist ComputeRegionBackendService#query_string_blacklist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#query_string_blacklist ComputeRegionBackendService#query_string_blacklist}
   */
   readonly queryStringBlacklist?: string[];
   /**
@@ -1129,7 +1155,7 @@ export interface ComputeRegionBackendServiceCdnPolicyCacheKeyPolicy {
   * '&' and '=' will be percent encoded and not treated as
   * delimiters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#query_string_whitelist ComputeRegionBackendService#query_string_whitelist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#query_string_whitelist ComputeRegionBackendService#query_string_whitelist}
   */
   readonly queryStringWhitelist?: string[];
 }
@@ -1361,7 +1387,7 @@ export interface ComputeRegionBackendServiceCdnPolicyNegativeCachingPolicy {
   * The HTTP status code to define a TTL against. Only HTTP status codes 300, 301, 308, 404, 405, 410, 421, 451 and 501
   * can be specified as values, and you cannot specify a status code more than once.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#code ComputeRegionBackendService#code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#code ComputeRegionBackendService#code}
   */
   readonly code?: number;
 }
@@ -1480,38 +1506,38 @@ export interface ComputeRegionBackendServiceCdnPolicy {
   * Specifies the cache setting for all responses from this backend.
   * The possible values are: USE_ORIGIN_HEADERS, FORCE_CACHE_ALL and CACHE_ALL_STATIC Possible values: ["USE_ORIGIN_HEADERS", "FORCE_CACHE_ALL", "CACHE_ALL_STATIC"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#cache_mode ComputeRegionBackendService#cache_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#cache_mode ComputeRegionBackendService#cache_mode}
   */
   readonly cacheMode?: string;
   /**
   * Specifies the maximum allowed TTL for cached content served by this origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#client_ttl ComputeRegionBackendService#client_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#client_ttl ComputeRegionBackendService#client_ttl}
   */
   readonly clientTtl?: number;
   /**
   * Specifies the default TTL for cached content served by this origin for responses
   * that do not have an existing valid TTL (max-age or s-max-age).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#default_ttl ComputeRegionBackendService#default_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#default_ttl ComputeRegionBackendService#default_ttl}
   */
   readonly defaultTtl?: number;
   /**
   * Specifies the maximum allowed TTL for cached content served by this origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_ttl ComputeRegionBackendService#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_ttl ComputeRegionBackendService#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * Negative caching allows per-status code TTLs to be set, in order to apply fine-grained caching for common errors or redirects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#negative_caching ComputeRegionBackendService#negative_caching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#negative_caching ComputeRegionBackendService#negative_caching}
   */
   readonly negativeCaching?: boolean | cdktn.IResolvable;
   /**
   * Serve existing content from the cache (if available) when revalidating content with the origin, or when an error is encountered when refreshing the cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#serve_while_stale ComputeRegionBackendService#serve_while_stale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#serve_while_stale ComputeRegionBackendService#serve_while_stale}
   */
   readonly serveWhileStale?: number;
   /**
@@ -1526,19 +1552,19 @@ export interface ComputeRegionBackendServiceCdnPolicy {
   * existing Cache-Control header. The actual headers served in
   * responses will not be altered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#signed_url_cache_max_age_sec ComputeRegionBackendService#signed_url_cache_max_age_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#signed_url_cache_max_age_sec ComputeRegionBackendService#signed_url_cache_max_age_sec}
   */
   readonly signedUrlCacheMaxAgeSec?: number;
   /**
   * cache_key_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#cache_key_policy ComputeRegionBackendService#cache_key_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#cache_key_policy ComputeRegionBackendService#cache_key_policy}
   */
   readonly cacheKeyPolicy?: ComputeRegionBackendServiceCdnPolicyCacheKeyPolicy;
   /**
   * negative_caching_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#negative_caching_policy ComputeRegionBackendService#negative_caching_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#negative_caching_policy ComputeRegionBackendService#negative_caching_policy}
   */
   readonly negativeCachingPolicy?: ComputeRegionBackendServiceCdnPolicyNegativeCachingPolicy[] | cdktn.IResolvable;
 }
@@ -1857,21 +1883,21 @@ export interface ComputeRegionBackendServiceCircuitBreakers {
   * The maximum number of connections to the backend cluster.
   * Defaults to 1024.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_connections ComputeRegionBackendService#max_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_connections ComputeRegionBackendService#max_connections}
   */
   readonly maxConnections?: number;
   /**
   * The maximum number of pending requests to the backend cluster.
   * Defaults to 1024.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_pending_requests ComputeRegionBackendService#max_pending_requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_pending_requests ComputeRegionBackendService#max_pending_requests}
   */
   readonly maxPendingRequests?: number;
   /**
   * The maximum number of parallel requests to the backend cluster.
   * Defaults to 1024.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_requests ComputeRegionBackendService#max_requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_requests ComputeRegionBackendService#max_requests}
   */
   readonly maxRequests?: number;
   /**
@@ -1880,14 +1906,14 @@ export interface ComputeRegionBackendServiceCircuitBreakers {
   * not specified, there is no limit. Setting this parameter to 1
   * will effectively disable keep alive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_requests_per_connection ComputeRegionBackendService#max_requests_per_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_requests_per_connection ComputeRegionBackendService#max_requests_per_connection}
   */
   readonly maxRequestsPerConnection?: number;
   /**
   * The maximum number of parallel retries to the backend cluster.
   * Defaults to 3.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_retries ComputeRegionBackendService#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_retries ComputeRegionBackendService#max_retries}
   */
   readonly maxRetries?: number;
 }
@@ -2092,14 +2118,14 @@ export interface ComputeRegionBackendServiceConsistentHashHttpCookieTtl {
   * with a 0 seconds field and a positive nanos field. Must
   * be from 0 to 999,999,999 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
   * Must be from 0 to 315,576,000,000 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
   */
   readonly seconds: number;
 }
@@ -2211,19 +2237,19 @@ export interface ComputeRegionBackendServiceConsistentHashHttpCookie {
   /**
   * Name of the cookie.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
   */
   readonly name?: string;
   /**
   * Path to set for the cookie.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#path ComputeRegionBackendService#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#path ComputeRegionBackendService#path}
   */
   readonly path?: string;
   /**
   * ttl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#ttl ComputeRegionBackendService#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#ttl ComputeRegionBackendService#ttl}
   */
   readonly ttl?: ComputeRegionBackendServiceConsistentHashHttpCookieTtl;
 }
@@ -2368,7 +2394,7 @@ export interface ComputeRegionBackendServiceConsistentHash {
   * The hash based on the value of the specified header field.
   * This field is applicable if the sessionAffinity is set to HEADER_FIELD.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#http_header_name ComputeRegionBackendService#http_header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#http_header_name ComputeRegionBackendService#http_header_name}
   */
   readonly httpHeaderName?: string;
   /**
@@ -2379,13 +2405,13 @@ export interface ComputeRegionBackendServiceConsistentHash {
   * virtual node.
   * Defaults to 1024.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#minimum_ring_size ComputeRegionBackendService#minimum_ring_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#minimum_ring_size ComputeRegionBackendService#minimum_ring_size}
   */
   readonly minimumRingSize?: number;
   /**
   * http_cookie block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#http_cookie ComputeRegionBackendService#http_cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#http_cookie ComputeRegionBackendService#http_cookie}
   */
   readonly httpCookie?: ComputeRegionBackendServiceConsistentHashHttpCookie;
 }
@@ -2529,7 +2555,7 @@ export interface ComputeRegionBackendServiceCustomMetrics {
   /**
   * If true, the metric data is not used for load balancing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#dry_run ComputeRegionBackendService#dry_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#dry_run ComputeRegionBackendService#dry_run}
   */
   readonly dryRun: boolean | cdktn.IResolvable;
   /**
@@ -2543,7 +2569,7 @@ export interface ComputeRegionBackendServiceCustomMetrics {
   * loadBalancingScheme set to <code>EXTERNAL_MANAGED</code>,
   * <code>INTERNAL_MANAGED</code> <code>INTERNAL_SELF_MANAGED</code>.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
   */
   readonly name: string;
 }
@@ -2691,7 +2717,7 @@ export interface ComputeRegionBackendServiceFailoverPolicy {
   * This can be set to true only if the protocol is TCP.
   * The default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#disable_connection_drain_on_failover ComputeRegionBackendService#disable_connection_drain_on_failover}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#disable_connection_drain_on_failover ComputeRegionBackendService#disable_connection_drain_on_failover}
   */
   readonly disableConnectionDrainOnFailover?: boolean | cdktn.IResolvable;
   /**
@@ -2700,7 +2726,7 @@ export interface ComputeRegionBackendServiceFailoverPolicy {
   * set to false, new connections are sent across all VMs in the primary group.
   * The default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#drop_traffic_if_unhealthy ComputeRegionBackendService#drop_traffic_if_unhealthy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#drop_traffic_if_unhealthy ComputeRegionBackendService#drop_traffic_if_unhealthy}
   */
   readonly dropTrafficIfUnhealthy?: boolean | cdktn.IResolvable;
   /**
@@ -2713,7 +2739,7 @@ export interface ComputeRegionBackendServiceFailoverPolicy {
   * VMs with the best effort, or to all VMs when no VM is healthy.
   * This field is only used with l4 load balancing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#failover_ratio ComputeRegionBackendService#failover_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#failover_ratio ComputeRegionBackendService#failover_ratio}
   */
   readonly failoverRatio?: number;
 }
@@ -2858,7 +2884,7 @@ export interface ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpoint {
   * The name of the VM instance of the leader network endpoint. The instance must
   * already be attached to the NEG specified in the haPolicy.leader.backendGroup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#instance ComputeRegionBackendService#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#instance ComputeRegionBackendService#instance}
   */
   readonly instance?: string;
 }
@@ -2945,13 +2971,13 @@ export interface ComputeRegionBackendServiceHaPolicyLeader {
   * A fully-qualified URL of the zonal Network Endpoint Group (NEG) that the leader is
   * attached to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#backend_group ComputeRegionBackendService#backend_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#backend_group ComputeRegionBackendService#backend_group}
   */
   readonly backendGroup?: string;
   /**
   * network_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#network_endpoint ComputeRegionBackendService#network_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#network_endpoint ComputeRegionBackendService#network_endpoint}
   */
   readonly networkEndpoint?: ComputeRegionBackendServiceHaPolicyLeaderNetworkEndpoint;
 }
@@ -3079,13 +3105,13 @@ export interface ComputeRegionBackendServiceHaPolicy {
   *              forwarding rule IP address with that VM, and both new and in-flight packets
   *              are quickly delivered to that VM. Possible values: ["DISABLED", "GARP_RA"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#fast_ip_move ComputeRegionBackendService#fast_ip_move}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#fast_ip_move ComputeRegionBackendService#fast_ip_move}
   */
   readonly fastIpMove?: string;
   /**
   * leader block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#leader ComputeRegionBackendService#leader}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#leader ComputeRegionBackendService#leader}
   */
   readonly leader?: ComputeRegionBackendServiceHaPolicyLeader;
 }
@@ -3200,19 +3226,19 @@ export interface ComputeRegionBackendServiceIap {
   /**
   * Whether the serving infrastructure will authenticate and authorize all incoming requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enabled ComputeRegionBackendService#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enabled ComputeRegionBackendService#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * OAuth2 Client ID for IAP
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#oauth2_client_id ComputeRegionBackendService#oauth2_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#oauth2_client_id ComputeRegionBackendService#oauth2_client_id}
   */
   readonly oauth2ClientId?: string;
   /**
   * OAuth2 Client Secret for IAP
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#oauth2_client_secret ComputeRegionBackendService#oauth2_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#oauth2_client_secret ComputeRegionBackendService#oauth2_client_secret}
   */
   readonly oauth2ClientSecret?: string;
 }
@@ -3358,20 +3384,20 @@ export interface ComputeRegionBackendServiceLogConfig {
   /**
   * Whether to enable logging for the load balancer traffic served by this backend service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enable ComputeRegionBackendService#enable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enable ComputeRegionBackendService#enable}
   */
   readonly enable?: boolean | cdktn.IResolvable;
   /**
   * Specifies the fields to include in logging. This field can only be specified if logging is enabled for this backend service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#optional_fields ComputeRegionBackendService#optional_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#optional_fields ComputeRegionBackendService#optional_fields}
   */
   readonly optionalFields?: string[];
   /**
   * Specifies the optional logging mode for the load balancer traffic.
   * Supported values: INCLUDE_ALL_OPTIONAL, EXCLUDE_ALL_OPTIONAL, CUSTOM. Possible values: ["INCLUDE_ALL_OPTIONAL", "EXCLUDE_ALL_OPTIONAL", "CUSTOM"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#optional_mode ComputeRegionBackendService#optional_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#optional_mode ComputeRegionBackendService#optional_mode}
   */
   readonly optionalMode?: string;
   /**
@@ -3380,7 +3406,7 @@ export interface ComputeRegionBackendServiceLogConfig {
   * where 1.0 means all logged requests are reported and 0.0 means no logged requests are reported.
   * The default value is 1.0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#sample_rate ComputeRegionBackendService#sample_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#sample_rate ComputeRegionBackendService#sample_rate}
   */
   readonly sampleRate?: number;
 }
@@ -3549,20 +3575,231 @@ export class ComputeRegionBackendServiceLogConfigOutputReference extends cdktn.C
     return this._sampleRate;
   }
 }
+export interface ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity {
+  /**
+  * This field indicates whether zonal affinity is enabled or not. Default value: "ZONAL_AFFINITY_DISABLED" Possible values: ["ZONAL_AFFINITY_DISABLED", "ZONAL_AFFINITY_SPILL_CROSS_ZONE", "ZONAL_AFFINITY_STAY_WITHIN_ZONE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#spillover ComputeRegionBackendService#spillover}
+  */
+  readonly spillover?: string;
+  /**
+  * The value of the field must be in [0, 1]. When the ratio of the count of healthy backend endpoints in a zone
+  * to the count of backend endpoints in that same zone is equal to or above this threshold, the load balancer
+  * distributes new connections to all healthy endpoints in the local zone only. When the ratio of the count
+  * of healthy backend endpoints in a zone to the count of backend endpoints in that same zone is below this
+  * threshold, the load balancer distributes all new connections to all healthy endpoints across all zones.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#spillover_ratio ComputeRegionBackendService#spillover_ratio}
+  */
+  readonly spilloverRatio?: number;
+}
+
+export function computeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityToTerraform(struct?: ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference | ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    spillover: cdktn.stringToTerraform(struct!.spillover),
+    spillover_ratio: cdktn.numberToTerraform(struct!.spilloverRatio),
+  }
+}
+
+
+export function computeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityToHclTerraform(struct?: ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference | ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    spillover: {
+      value: cdktn.stringToHclTerraform(struct!.spillover),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    spillover_ratio: {
+      value: cdktn.numberToHclTerraform(struct!.spilloverRatio),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._spillover !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spillover = this._spillover;
+    }
+    if (this._spilloverRatio !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spilloverRatio = this._spilloverRatio;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._spillover = undefined;
+      this._spilloverRatio = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._spillover = value.spillover;
+      this._spilloverRatio = value.spilloverRatio;
+    }
+  }
+
+  // spillover - computed: false, optional: true, required: false
+  private _spillover?: string; 
+  public get spillover() {
+    return this.getStringAttribute('spillover');
+  }
+  public set spillover(value: string) {
+    this._spillover = value;
+  }
+  public resetSpillover() {
+    this._spillover = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spilloverInput() {
+    return this._spillover;
+  }
+
+  // spillover_ratio - computed: false, optional: true, required: false
+  private _spilloverRatio?: number; 
+  public get spilloverRatio() {
+    return this.getNumberAttribute('spillover_ratio');
+  }
+  public set spilloverRatio(value: number) {
+    this._spilloverRatio = value;
+  }
+  public resetSpilloverRatio() {
+    this._spilloverRatio = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spilloverRatioInput() {
+    return this._spilloverRatio;
+  }
+}
+export interface ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy {
+  /**
+  * zonal_affinity block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#zonal_affinity ComputeRegionBackendService#zonal_affinity}
+  */
+  readonly zonalAffinity?: ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity;
+}
+
+export function computeRegionBackendServiceNetworkPassThroughLbTrafficPolicyToTerraform(struct?: ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference | ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    zonal_affinity: computeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityToTerraform(struct!.zonalAffinity),
+  }
+}
+
+
+export function computeRegionBackendServiceNetworkPassThroughLbTrafficPolicyToHclTerraform(struct?: ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference | ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    zonal_affinity: {
+      value: computeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityToHclTerraform(struct!.zonalAffinity),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._zonalAffinity?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zonalAffinity = this._zonalAffinity?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._zonalAffinity.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._zonalAffinity.internalValue = value.zonalAffinity;
+    }
+  }
+
+  // zonal_affinity - computed: false, optional: true, required: false
+  private _zonalAffinity = new ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinityOutputReference(this, "zonal_affinity");
+  public get zonalAffinity() {
+    return this._zonalAffinity;
+  }
+  public putZonalAffinity(value: ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyZonalAffinity) {
+    this._zonalAffinity.internalValue = value;
+  }
+  public resetZonalAffinity() {
+    this._zonalAffinity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zonalAffinityInput() {
+    return this._zonalAffinity.internalValue;
+  }
+}
 export interface ComputeRegionBackendServiceOutlierDetectionBaseEjectionTime {
   /**
   * Span of time that's a fraction of a second at nanosecond resolution. Durations
   * less than one second are represented with a 0 'seconds' field and a positive
   * 'nanos' field. Must be from 0 to 999,999,999 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
   * inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
   */
   readonly seconds: number;
 }
@@ -3676,14 +3913,14 @@ export interface ComputeRegionBackendServiceOutlierDetectionInterval {
   * less than one second are represented with a 0 'seconds' field and a positive
   * 'nanos' field. Must be from 0 to 999,999,999 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second. Must be from 0 to 315,576,000,000
   * inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
   */
   readonly seconds: number;
 }
@@ -3797,7 +4034,7 @@ export interface ComputeRegionBackendServiceOutlierDetection {
   * backend host is accessed over HTTP, a 5xx return code qualifies as an error.
   * Defaults to 5.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#consecutive_errors ComputeRegionBackendService#consecutive_errors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#consecutive_errors ComputeRegionBackendService#consecutive_errors}
   */
   readonly consecutiveErrors?: number;
   /**
@@ -3805,7 +4042,7 @@ export interface ComputeRegionBackendServiceOutlierDetection {
   * errors that are mapped to one of those status codes) before a consecutive
   * gateway failure ejection occurs. Defaults to 5.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#consecutive_gateway_failure ComputeRegionBackendService#consecutive_gateway_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#consecutive_gateway_failure ComputeRegionBackendService#consecutive_gateway_failure}
   */
   readonly consecutiveGatewayFailure?: number;
   /**
@@ -3813,7 +4050,7 @@ export interface ComputeRegionBackendServiceOutlierDetection {
   * status is detected through consecutive 5xx. This setting can be used to disable
   * ejection or to ramp it up slowly. Defaults to 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enforcing_consecutive_errors ComputeRegionBackendService#enforcing_consecutive_errors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enforcing_consecutive_errors ComputeRegionBackendService#enforcing_consecutive_errors}
   */
   readonly enforcingConsecutiveErrors?: number;
   /**
@@ -3821,7 +4058,7 @@ export interface ComputeRegionBackendServiceOutlierDetection {
   * status is detected through consecutive gateway failures. This setting can be
   * used to disable ejection or to ramp it up slowly. Defaults to 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enforcing_consecutive_gateway_failure ComputeRegionBackendService#enforcing_consecutive_gateway_failure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enforcing_consecutive_gateway_failure ComputeRegionBackendService#enforcing_consecutive_gateway_failure}
   */
   readonly enforcingConsecutiveGatewayFailure?: number;
   /**
@@ -3829,14 +4066,14 @@ export interface ComputeRegionBackendServiceOutlierDetection {
   * status is detected through success rate statistics. This setting can be used to
   * disable ejection or to ramp it up slowly. Defaults to 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#enforcing_success_rate ComputeRegionBackendService#enforcing_success_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#enforcing_success_rate ComputeRegionBackendService#enforcing_success_rate}
   */
   readonly enforcingSuccessRate?: number;
   /**
   * Maximum percentage of hosts in the load balancing pool for the backend service
   * that can be ejected. Defaults to 10%.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#max_ejection_percent ComputeRegionBackendService#max_ejection_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#max_ejection_percent ComputeRegionBackendService#max_ejection_percent}
   */
   readonly maxEjectionPercent?: number;
   /**
@@ -3845,7 +4082,7 @@ export interface ComputeRegionBackendServiceOutlierDetection {
   * detection via success rate statistics is not performed for any host in the
   * cluster. Defaults to 5.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#success_rate_minimum_hosts ComputeRegionBackendService#success_rate_minimum_hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#success_rate_minimum_hosts ComputeRegionBackendService#success_rate_minimum_hosts}
   */
   readonly successRateMinimumHosts?: number;
   /**
@@ -3855,7 +4092,7 @@ export interface ComputeRegionBackendServiceOutlierDetection {
   * detection via success rate statistics is not performed for that host. Defaults
   * to 100.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#success_rate_request_volume ComputeRegionBackendService#success_rate_request_volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#success_rate_request_volume ComputeRegionBackendService#success_rate_request_volume}
   */
   readonly successRateRequestVolume?: number;
   /**
@@ -3866,19 +4103,19 @@ export interface ComputeRegionBackendServiceOutlierDetection {
   * by a thousand to get a double. That is, if the desired factor is 1.9, the
   * runtime value should be 1900. Defaults to 1900.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#success_rate_stdev_factor ComputeRegionBackendService#success_rate_stdev_factor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#success_rate_stdev_factor ComputeRegionBackendService#success_rate_stdev_factor}
   */
   readonly successRateStdevFactor?: number;
   /**
   * base_ejection_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#base_ejection_time ComputeRegionBackendService#base_ejection_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#base_ejection_time ComputeRegionBackendService#base_ejection_time}
   */
   readonly baseEjectionTime?: ComputeRegionBackendServiceOutlierDetectionBaseEjectionTime;
   /**
   * interval block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#interval ComputeRegionBackendService#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#interval ComputeRegionBackendService#interval}
   */
   readonly interval?: ComputeRegionBackendServiceOutlierDetectionInterval;
 }
@@ -4250,6 +4487,94 @@ export class ComputeRegionBackendServiceOutlierDetectionOutputReference extends 
     return this._interval.internalValue;
   }
 }
+export interface ComputeRegionBackendServiceParams {
+  /**
+  * Resource manager tags to be bound to the region backend service. Tag keys and values have the
+  * same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
+  * and values are in the format tagValues/456.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#resource_manager_tags ComputeRegionBackendService#resource_manager_tags}
+  */
+  readonly resourceManagerTags?: { [key: string]: string };
+}
+
+export function computeRegionBackendServiceParamsToTerraform(struct?: ComputeRegionBackendServiceParamsOutputReference | ComputeRegionBackendServiceParams): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    resource_manager_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.resourceManagerTags),
+  }
+}
+
+
+export function computeRegionBackendServiceParamsToHclTerraform(struct?: ComputeRegionBackendServiceParamsOutputReference | ComputeRegionBackendServiceParams): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    resource_manager_tags: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.resourceManagerTags),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeRegionBackendServiceParamsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeRegionBackendServiceParams | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceManagerTags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceManagerTags = this._resourceManagerTags;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeRegionBackendServiceParams | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._resourceManagerTags = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._resourceManagerTags = value.resourceManagerTags;
+    }
+  }
+
+  // resource_manager_tags - computed: false, optional: true, required: false
+  private _resourceManagerTags?: { [key: string]: string }; 
+  public get resourceManagerTags() {
+    return this.getStringMapAttribute('resource_manager_tags');
+  }
+  public set resourceManagerTags(value: { [key: string]: string }) {
+    this._resourceManagerTags = value;
+  }
+  public resetResourceManagerTags() {
+    this._resourceManagerTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceManagerTagsInput() {
+    return this._resourceManagerTags;
+  }
+}
 export interface ComputeRegionBackendServiceStrongSessionAffinityCookieTtl {
   /**
   * Span of time that's a fraction of a second at nanosecond
@@ -4257,14 +4582,14 @@ export interface ComputeRegionBackendServiceStrongSessionAffinityCookieTtl {
   * with a 0 seconds field and a positive nanos field. Must
   * be from 0 to 999,999,999 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#nanos ComputeRegionBackendService#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
   * Must be from 0 to 315,576,000,000 inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#seconds ComputeRegionBackendService#seconds}
   */
   readonly seconds: number;
 }
@@ -4376,19 +4701,19 @@ export interface ComputeRegionBackendServiceStrongSessionAffinityCookie {
   /**
   * Name of the cookie.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#name ComputeRegionBackendService#name}
   */
   readonly name?: string;
   /**
   * Path to set for the cookie.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#path ComputeRegionBackendService#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#path ComputeRegionBackendService#path}
   */
   readonly path?: string;
   /**
   * ttl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#ttl ComputeRegionBackendService#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#ttl ComputeRegionBackendService#ttl}
   */
   readonly ttl?: ComputeRegionBackendServiceStrongSessionAffinityCookieTtl;
 }
@@ -4530,15 +4855,15 @@ export class ComputeRegionBackendServiceStrongSessionAffinityCookieOutputReferen
 }
 export interface ComputeRegionBackendServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#create ComputeRegionBackendService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#create ComputeRegionBackendService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#delete ComputeRegionBackendService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#delete ComputeRegionBackendService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#update ComputeRegionBackendService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#update ComputeRegionBackendService#update}
   */
   readonly update?: string;
 }
@@ -4688,9 +5013,323 @@ export class ComputeRegionBackendServiceTimeoutsOutputReference extends cdktn.Co
     return this._update;
   }
 }
+export interface ComputeRegionBackendServiceTlsSettingsSubjectAltNames {
+  /**
+  * The SAN specified as a DNS Name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#dns_name ComputeRegionBackendService#dns_name}
+  */
+  readonly dnsName?: string;
+  /**
+  * The SAN specified as a URI.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#uniform_resource_identifier ComputeRegionBackendService#uniform_resource_identifier}
+  */
+  readonly uniformResourceIdentifier?: string;
+}
+
+export function computeRegionBackendServiceTlsSettingsSubjectAltNamesToTerraform(struct?: ComputeRegionBackendServiceTlsSettingsSubjectAltNames | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dns_name: cdktn.stringToTerraform(struct!.dnsName),
+    uniform_resource_identifier: cdktn.stringToTerraform(struct!.uniformResourceIdentifier),
+  }
+}
+
+
+export function computeRegionBackendServiceTlsSettingsSubjectAltNamesToHclTerraform(struct?: ComputeRegionBackendServiceTlsSettingsSubjectAltNames | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dns_name: {
+      value: cdktn.stringToHclTerraform(struct!.dnsName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    uniform_resource_identifier: {
+      value: cdktn.stringToHclTerraform(struct!.uniformResourceIdentifier),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ComputeRegionBackendServiceTlsSettingsSubjectAltNames | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dnsName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dnsName = this._dnsName;
+    }
+    if (this._uniformResourceIdentifier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uniformResourceIdentifier = this._uniformResourceIdentifier;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeRegionBackendServiceTlsSettingsSubjectAltNames | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dnsName = undefined;
+      this._uniformResourceIdentifier = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dnsName = value.dnsName;
+      this._uniformResourceIdentifier = value.uniformResourceIdentifier;
+    }
+  }
+
+  // dns_name - computed: false, optional: true, required: false
+  private _dnsName?: string; 
+  public get dnsName() {
+    return this.getStringAttribute('dns_name');
+  }
+  public set dnsName(value: string) {
+    this._dnsName = value;
+  }
+  public resetDnsName() {
+    this._dnsName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsNameInput() {
+    return this._dnsName;
+  }
+
+  // uniform_resource_identifier - computed: false, optional: true, required: false
+  private _uniformResourceIdentifier?: string; 
+  public get uniformResourceIdentifier() {
+    return this.getStringAttribute('uniform_resource_identifier');
+  }
+  public set uniformResourceIdentifier(value: string) {
+    this._uniformResourceIdentifier = value;
+  }
+  public resetUniformResourceIdentifier() {
+    this._uniformResourceIdentifier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uniformResourceIdentifierInput() {
+    return this._uniformResourceIdentifier;
+  }
+}
+
+export class ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList extends cdktn.ComplexList {
+  public internalValue? : ComputeRegionBackendServiceTlsSettingsSubjectAltNames[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference {
+    return new ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface ComputeRegionBackendServiceTlsSettings {
+  /**
+  * Reference to the BackendAuthenticationConfig resource from the networksecurity.googleapis.com namespace.
+  * Can be used in authenticating TLS connections to the backend, as specified by the authenticationMode field.
+  * Can only be specified if authenticationMode is not NONE.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#authentication_config ComputeRegionBackendService#authentication_config}
+  */
+  readonly authenticationConfig?: string;
+  /**
+  * Server Name Indication - see RFC3546 section 3.1. If set, the load balancer sends this string as the SNI hostname in the
+  * TLS connection to the backend, and requires that this string match a Subject Alternative Name (SAN) in the backend's
+  * server certificate. With a Regional Internet NEG backend, if the SNI is specified here, the load balancer uses it
+  * regardless of whether the Regional Internet NEG is specified with FQDN or IP address and port.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#sni ComputeRegionBackendService#sni}
+  */
+  readonly sni?: string;
+  /**
+  * subject_alt_names block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#subject_alt_names ComputeRegionBackendService#subject_alt_names}
+  */
+  readonly subjectAltNames?: ComputeRegionBackendServiceTlsSettingsSubjectAltNames[] | cdktn.IResolvable;
+}
+
+export function computeRegionBackendServiceTlsSettingsToTerraform(struct?: ComputeRegionBackendServiceTlsSettingsOutputReference | ComputeRegionBackendServiceTlsSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    authentication_config: cdktn.stringToTerraform(struct!.authenticationConfig),
+    sni: cdktn.stringToTerraform(struct!.sni),
+    subject_alt_names: cdktn.listMapper(computeRegionBackendServiceTlsSettingsSubjectAltNamesToTerraform, true)(struct!.subjectAltNames),
+  }
+}
+
+
+export function computeRegionBackendServiceTlsSettingsToHclTerraform(struct?: ComputeRegionBackendServiceTlsSettingsOutputReference | ComputeRegionBackendServiceTlsSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    authentication_config: {
+      value: cdktn.stringToHclTerraform(struct!.authenticationConfig),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sni: {
+      value: cdktn.stringToHclTerraform(struct!.sni),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subject_alt_names: {
+      value: cdktn.listMapperHcl(computeRegionBackendServiceTlsSettingsSubjectAltNamesToHclTerraform, true)(struct!.subjectAltNames),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeRegionBackendServiceTlsSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeRegionBackendServiceTlsSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authenticationConfig !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authenticationConfig = this._authenticationConfig;
+    }
+    if (this._sni !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sni = this._sni;
+    }
+    if (this._subjectAltNames?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subjectAltNames = this._subjectAltNames?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeRegionBackendServiceTlsSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._authenticationConfig = undefined;
+      this._sni = undefined;
+      this._subjectAltNames.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._authenticationConfig = value.authenticationConfig;
+      this._sni = value.sni;
+      this._subjectAltNames.internalValue = value.subjectAltNames;
+    }
+  }
+
+  // authentication_config - computed: false, optional: true, required: false
+  private _authenticationConfig?: string; 
+  public get authenticationConfig() {
+    return this.getStringAttribute('authentication_config');
+  }
+  public set authenticationConfig(value: string) {
+    this._authenticationConfig = value;
+  }
+  public resetAuthenticationConfig() {
+    this._authenticationConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authenticationConfigInput() {
+    return this._authenticationConfig;
+  }
+
+  // sni - computed: false, optional: true, required: false
+  private _sni?: string; 
+  public get sni() {
+    return this.getStringAttribute('sni');
+  }
+  public set sni(value: string) {
+    this._sni = value;
+  }
+  public resetSni() {
+    this._sni = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sniInput() {
+    return this._sni;
+  }
+
+  // subject_alt_names - computed: false, optional: true, required: false
+  private _subjectAltNames = new ComputeRegionBackendServiceTlsSettingsSubjectAltNamesList(this, "subject_alt_names", false);
+  public get subjectAltNames() {
+    return this._subjectAltNames;
+  }
+  public putSubjectAltNames(value: ComputeRegionBackendServiceTlsSettingsSubjectAltNames[] | cdktn.IResolvable) {
+    this._subjectAltNames.internalValue = value;
+  }
+  public resetSubjectAltNames() {
+    this._subjectAltNames.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subjectAltNamesInput() {
+    return this._subjectAltNames.internalValue;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service google_compute_region_backend_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service google_compute_region_backend_service}
 */
 export class ComputeRegionBackendService extends cdktn.TerraformResource {
 
@@ -4706,7 +5345,7 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeRegionBackendService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRegionBackendService to import
-  * @param importFromId The id of the existing ComputeRegionBackendService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeRegionBackendService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRegionBackendService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4718,7 +5357,7 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_backend_service google_compute_region_backend_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4729,8 +5368,8 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_region_backend_service',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -4755,6 +5394,7 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
     this._project = config.project;
     this._protocol = config.protocol;
     this._region = config.region;
+    this._securityPolicy = config.securityPolicy;
     this._sessionAffinity = config.sessionAffinity;
     this._timeoutSec = config.timeoutSec;
     this._backend.internalValue = config.backend;
@@ -4766,9 +5406,12 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
     this._haPolicy.internalValue = config.haPolicy;
     this._iap.internalValue = config.iap;
     this._logConfig.internalValue = config.logConfig;
+    this._networkPassThroughLbTrafficPolicy.internalValue = config.networkPassThroughLbTrafficPolicy;
     this._outlierDetection.internalValue = config.outlierDetection;
+    this._params.internalValue = config.params;
     this._strongSessionAffinityCookie.internalValue = config.strongSessionAffinityCookie;
     this._timeouts.internalValue = config.timeouts;
+    this._tlsSettings.internalValue = config.tlsSettings;
   }
 
   // ==========
@@ -5027,6 +5670,22 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
     return this._region;
   }
 
+  // security_policy - computed: false, optional: true, required: false
+  private _securityPolicy?: string; 
+  public get securityPolicy() {
+    return this.getStringAttribute('security_policy');
+  }
+  public set securityPolicy(value: string) {
+    this._securityPolicy = value;
+  }
+  public resetSecurityPolicy() {
+    this._securityPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityPolicyInput() {
+    return this._securityPolicy;
+  }
+
   // self_link - computed: true, optional: false, required: false
   public get selfLink() {
     return this.getStringAttribute('self_link');
@@ -5208,6 +5867,22 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
     return this._logConfig.internalValue;
   }
 
+  // network_pass_through_lb_traffic_policy - computed: false, optional: true, required: false
+  private _networkPassThroughLbTrafficPolicy = new ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference(this, "network_pass_through_lb_traffic_policy");
+  public get networkPassThroughLbTrafficPolicy() {
+    return this._networkPassThroughLbTrafficPolicy;
+  }
+  public putNetworkPassThroughLbTrafficPolicy(value: ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicy) {
+    this._networkPassThroughLbTrafficPolicy.internalValue = value;
+  }
+  public resetNetworkPassThroughLbTrafficPolicy() {
+    this._networkPassThroughLbTrafficPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkPassThroughLbTrafficPolicyInput() {
+    return this._networkPassThroughLbTrafficPolicy.internalValue;
+  }
+
   // outlier_detection - computed: false, optional: true, required: false
   private _outlierDetection = new ComputeRegionBackendServiceOutlierDetectionOutputReference(this, "outlier_detection");
   public get outlierDetection() {
@@ -5222,6 +5897,22 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get outlierDetectionInput() {
     return this._outlierDetection.internalValue;
+  }
+
+  // params - computed: false, optional: true, required: false
+  private _params = new ComputeRegionBackendServiceParamsOutputReference(this, "params");
+  public get params() {
+    return this._params;
+  }
+  public putParams(value: ComputeRegionBackendServiceParams) {
+    this._params.internalValue = value;
+  }
+  public resetParams() {
+    this._params.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get paramsInput() {
+    return this._params.internalValue;
   }
 
   // strong_session_affinity_cookie - computed: false, optional: true, required: false
@@ -5256,6 +5947,22 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // tls_settings - computed: false, optional: true, required: false
+  private _tlsSettings = new ComputeRegionBackendServiceTlsSettingsOutputReference(this, "tls_settings");
+  public get tlsSettings() {
+    return this._tlsSettings;
+  }
+  public putTlsSettings(value: ComputeRegionBackendServiceTlsSettings) {
+    this._tlsSettings.internalValue = value;
+  }
+  public resetTlsSettings() {
+    this._tlsSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsSettingsInput() {
+    return this._tlsSettings.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -5277,6 +5984,7 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
       project: cdktn.stringToTerraform(this._project),
       protocol: cdktn.stringToTerraform(this._protocol),
       region: cdktn.stringToTerraform(this._region),
+      security_policy: cdktn.stringToTerraform(this._securityPolicy),
       session_affinity: cdktn.stringToTerraform(this._sessionAffinity),
       timeout_sec: cdktn.numberToTerraform(this._timeoutSec),
       backend: cdktn.listMapper(computeRegionBackendServiceBackendToTerraform, true)(this._backend.internalValue),
@@ -5288,9 +5996,12 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
       ha_policy: computeRegionBackendServiceHaPolicyToTerraform(this._haPolicy.internalValue),
       iap: computeRegionBackendServiceIapToTerraform(this._iap.internalValue),
       log_config: computeRegionBackendServiceLogConfigToTerraform(this._logConfig.internalValue),
+      network_pass_through_lb_traffic_policy: computeRegionBackendServiceNetworkPassThroughLbTrafficPolicyToTerraform(this._networkPassThroughLbTrafficPolicy.internalValue),
       outlier_detection: computeRegionBackendServiceOutlierDetectionToTerraform(this._outlierDetection.internalValue),
+      params: computeRegionBackendServiceParamsToTerraform(this._params.internalValue),
       strong_session_affinity_cookie: computeRegionBackendServiceStrongSessionAffinityCookieToTerraform(this._strongSessionAffinityCookie.internalValue),
       timeouts: computeRegionBackendServiceTimeoutsToTerraform(this._timeouts.internalValue),
+      tls_settings: computeRegionBackendServiceTlsSettingsToTerraform(this._tlsSettings.internalValue),
     };
   }
 
@@ -5386,6 +6097,12 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      security_policy: {
+        value: cdktn.stringToHclTerraform(this._securityPolicy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       session_affinity: {
         value: cdktn.stringToHclTerraform(this._sessionAffinity),
         isBlock: false,
@@ -5452,11 +6169,23 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
         type: "list",
         storageClassType: "ComputeRegionBackendServiceLogConfigList",
       },
+      network_pass_through_lb_traffic_policy: {
+        value: computeRegionBackendServiceNetworkPassThroughLbTrafficPolicyToHclTerraform(this._networkPassThroughLbTrafficPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyList",
+      },
       outlier_detection: {
         value: computeRegionBackendServiceOutlierDetectionToHclTerraform(this._outlierDetection.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ComputeRegionBackendServiceOutlierDetectionList",
+      },
+      params: {
+        value: computeRegionBackendServiceParamsToHclTerraform(this._params.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ComputeRegionBackendServiceParamsList",
       },
       strong_session_affinity_cookie: {
         value: computeRegionBackendServiceStrongSessionAffinityCookieToHclTerraform(this._strongSessionAffinityCookie.internalValue),
@@ -5469,6 +6198,12 @@ export class ComputeRegionBackendService extends cdktn.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "ComputeRegionBackendServiceTimeouts",
+      },
+      tls_settings: {
+        value: computeRegionBackendServiceTlsSettingsToHclTerraform(this._tlsSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ComputeRegionBackendServiceTlsSettingsList",
       },
     };
 

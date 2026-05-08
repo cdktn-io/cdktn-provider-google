@@ -4,12 +4,12 @@
 
 ### MonitoringMonitoredProject <a name="MonitoringMonitoredProject" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_monitored_project google_monitoring_monitored_project}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_monitored_project google_monitoring_monitored_project}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringmonitoredproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringmonitoredproject"
 
 monitoringmonitoredproject.NewMonitoringMonitoredProject(scope Construct, id *string, config MonitoringMonitoredProjectConfig) MonitoringMonitoredProject
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringmonitoredproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringmonitoredproject"
 
 monitoringmonitoredproject.MonitoringMonitoredProject_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringmonitoredproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringmonitoredproject"
 
 monitoringmonitoredproject.MonitoringMonitoredProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ monitoringmonitoredproject.MonitoringMonitoredProject_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringmonitoredproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringmonitoredproject"
 
 monitoringmonitoredproject.MonitoringMonitoredProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ monitoringmonitoredproject.MonitoringMonitoredProject_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringmonitoredproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringmonitoredproject"
 
 monitoringmonitoredproject.MonitoringMonitoredProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the MonitoringMonitoredProject
 
 The id of the existing MonitoringMonitoredProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_monitored_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_monitored_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringmonitoredproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringmonitoredproject"
 
 &monitoringmonitoredproject.MonitoringMonitoredProjectConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringmonito
 	MetricsScope: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts,
 }
 ```
 
@@ -845,7 +845,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringmonito
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.metricsScope">MetricsScope</a></code> | <code>*string</code> | Required. The resource name of the existing Metrics Scope that will monitor this project. Example: locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}. |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.name">Name</a></code> | <code>*string</code> | Immutable. |
-| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}. |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}. |
 | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts">MonitoringMonitoredProjectTimeouts</a></code> | timeouts block. |
 
 ---
@@ -930,7 +930,7 @@ MetricsScope *string
 
 Required. The resource name of the existing Metrics Scope that will monitor this project. Example: locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_monitored_project#metrics_scope MonitoringMonitoredProject#metrics_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_monitored_project#metrics_scope MonitoringMonitoredProject#metrics_scope}
 
 ---
 
@@ -946,7 +946,7 @@ Immutable.
 
 The resource name of the 'MonitoredProject'. On input, the resource name includes the scoping project ID and monitored project ID. On output, it contains the equivalent project numbers. Example: 'locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}/projects/{MONITORED_PROJECT_ID_OR_NUMBER}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_monitored_project#name MonitoringMonitoredProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_monitored_project#name MonitoringMonitoredProject#name}
 
 ---
 
@@ -958,7 +958,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -975,7 +975,7 @@ Timeouts MonitoringMonitoredProjectTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_monitored_project#timeouts MonitoringMonitoredProject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_monitored_project#timeouts MonitoringMonitoredProject#timeouts}
 
 ---
 
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringmonitoredproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringmonitoredproject"
 
 &monitoringmonitoredproject.MonitoringMonitoredProjectTimeouts {
 	Create: *string,
@@ -996,8 +996,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringmonito
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_monitored_project#create MonitoringMonitoredProject#create}. |
-| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_monitored_project#delete MonitoringMonitoredProject#delete}. |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_monitored_project#create MonitoringMonitoredProject#create}. |
+| <code><a href="#@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_monitored_project#delete MonitoringMonitoredProject#delete}. |
 
 ---
 
@@ -1009,7 +1009,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_monitored_project#create MonitoringMonitoredProject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_monitored_project#create MonitoringMonitoredProject#create}.
 
 ---
 
@@ -1021,7 +1021,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/monitoring_monitored_project#delete MonitoringMonitoredProject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/monitoring_monitored_project#delete MonitoringMonitoredProject#delete}.
 
 ---
 
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringMonitoredProject.MonitoringMonitoredProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/monitoringmonitoredproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/monitoringmonitoredproject"
 
 monitoringmonitoredproject.NewMonitoringMonitoredProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringMonitoredProjectTimeoutsOutputReference
 ```

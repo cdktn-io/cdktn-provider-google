@@ -4,12 +4,12 @@
 
 ### IamProjectsPolicyBinding <a name="IamProjectsPolicyBinding" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding google_iam_projects_policy_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding google_iam_projects_policy_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 iamprojectspolicybinding.NewIamProjectsPolicyBinding(scope Construct, id *string, config IamProjectsPolicyBindingConfig) IamProjectsPolicyBinding
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 iamprojectspolicybinding.IamProjectsPolicyBinding_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 iamprojectspolicybinding.IamProjectsPolicyBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ iamprojectspolicybinding.IamProjectsPolicyBinding_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 iamprojectspolicybinding.IamProjectsPolicyBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ iamprojectspolicybinding.IamProjectsPolicyBinding_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 iamprojectspolicybinding.IamProjectsPolicyBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -577,7 +577,7 @@ The construct id used in the generated config for the IamProjectsPolicyBinding t
 
 The id of the existing IamProjectsPolicyBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1096,7 +1096,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 &iamprojectspolicybinding.IamProjectsPolicyBindingCondition {
 	Description: *string,
@@ -1129,7 +1129,7 @@ Optional.
 
 Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#description IamProjectsPolicyBinding#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#description IamProjectsPolicyBinding#description}
 
 ---
 
@@ -1143,7 +1143,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#expression IamProjectsPolicyBinding#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#expression IamProjectsPolicyBinding#expression}
 
 ---
 
@@ -1159,7 +1159,7 @@ Optional.
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#location IamProjectsPolicyBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#location IamProjectsPolicyBinding#location}
 
 ---
 
@@ -1175,7 +1175,7 @@ Optional.
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#title IamProjectsPolicyBinding#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#title IamProjectsPolicyBinding#title}
 
 ---
 
@@ -1184,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 &iamprojectspolicybinding.IamProjectsPolicyBindingConfig {
 	Connection: interface{},
@@ -1197,14 +1197,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolic
 	Location: *string,
 	Policy: *string,
 	PolicyBindingId: *string,
-	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iamProjectsPolicyBinding.IamProjectsPolicyBindingTarget,
+	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamProjectsPolicyBinding.IamProjectsPolicyBindingTarget,
 	Annotations: *map[string]*string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iamProjectsPolicyBinding.IamProjectsPolicyBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamProjectsPolicyBinding.IamProjectsPolicyBindingCondition,
 	DisplayName: *string,
 	Id: *string,
 	PolicyKind: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts,
 }
 ```
 
@@ -1226,9 +1226,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolic
 | <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig.property.annotations">Annotations</a></code> | <code>*map[string]*string</code> | Optional. User defined annotations. See https://google.aip.dev/148#annotations for more details such as format and size limitations. |
 | <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingCondition">IamProjectsPolicyBindingCondition</a></code> | condition block. |
 | <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. The description of the policy binding. Must be less than or equal to 63 characters. |
-| <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#id IamProjectsPolicyBinding#id}. |
+| <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#id IamProjectsPolicyBinding#id}. |
 | <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig.property.policyKind">PolicyKind</a></code> | <code>*string</code> | Immutable. |
-| <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#project IamProjectsPolicyBinding#project}. |
+| <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#project IamProjectsPolicyBinding#project}. |
 | <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts">IamProjectsPolicyBindingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1313,7 +1313,7 @@ Location *string
 
 The location of the Policy Binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#location IamProjectsPolicyBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#location IamProjectsPolicyBinding#location}
 
 ---
 
@@ -1329,7 +1329,7 @@ Required.
 
 Immutable. The resource name of the policy to be bound. The binding parent and policy must belong to the same Organization (or Project).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#policy IamProjectsPolicyBinding#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#policy IamProjectsPolicyBinding#policy}
 
 ---
 
@@ -1343,7 +1343,7 @@ PolicyBindingId *string
 
 The Policy Binding ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#policy_binding_id IamProjectsPolicyBinding#policy_binding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#policy_binding_id IamProjectsPolicyBinding#policy_binding_id}
 
 ---
 
@@ -1357,7 +1357,7 @@ Target IamProjectsPolicyBindingTarget
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#target IamProjectsPolicyBinding#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#target IamProjectsPolicyBinding#target}
 
 ---
 
@@ -1374,7 +1374,7 @@ Optional. User defined annotations. See https://google.aip.dev/148#annotations f
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#annotations IamProjectsPolicyBinding#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#annotations IamProjectsPolicyBinding#annotations}
 
 ---
 
@@ -1388,7 +1388,7 @@ Condition IamProjectsPolicyBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#condition IamProjectsPolicyBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#condition IamProjectsPolicyBinding#condition}
 
 ---
 
@@ -1402,7 +1402,7 @@ DisplayName *string
 
 Optional. The description of the policy binding. Must be less than or equal to 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#display_name IamProjectsPolicyBinding#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#display_name IamProjectsPolicyBinding#display_name}
 
 ---
 
@@ -1414,7 +1414,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#id IamProjectsPolicyBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#id IamProjectsPolicyBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1435,7 +1435,7 @@ The kind of the policy to attach in this binding. This
 field must be one of the following:  - Left empty (will be automatically set
 to the policy kind) - The input policy kind   Possible values:  POLICY_KIND_UNSPECIFIED PRINCIPAL_ACCESS_BOUNDARY ACCESS
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#policy_kind IamProjectsPolicyBinding#policy_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#policy_kind IamProjectsPolicyBinding#policy_kind}
 
 ---
 
@@ -1447,7 +1447,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#project IamProjectsPolicyBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#project IamProjectsPolicyBinding#project}.
 
 ---
 
@@ -1461,7 +1461,7 @@ Timeouts IamProjectsPolicyBindingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#timeouts IamProjectsPolicyBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#timeouts IamProjectsPolicyBinding#timeouts}
 
 ---
 
@@ -1470,7 +1470,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 &iamprojectspolicybinding.IamProjectsPolicyBindingTarget {
 	PrincipalSet: *string,
@@ -1505,7 +1505,7 @@ Examples for each one of the following supported principal set types:
 * Workload Identity Pool: '//iam.googleapis.com/projects/PROJECT_NUMBER/locations/LOCATION/workloadIdentityPools/WORKLOAD_POOL_ID'
   It must be parent by the policy binding's parent (the project).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#principal_set IamProjectsPolicyBinding#principal_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#principal_set IamProjectsPolicyBinding#principal_set}
 
 ---
 
@@ -1514,7 +1514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 &iamprojectspolicybinding.IamProjectsPolicyBindingTimeouts {
 	Create: *string,
@@ -1527,9 +1527,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#create IamProjectsPolicyBinding#create}. |
-| <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#delete IamProjectsPolicyBinding#delete}. |
-| <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#update IamProjectsPolicyBinding#update}. |
+| <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#create IamProjectsPolicyBinding#create}. |
+| <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#delete IamProjectsPolicyBinding#delete}. |
+| <code><a href="#@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#update IamProjectsPolicyBinding#update}. |
 
 ---
 
@@ -1541,7 +1541,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#create IamProjectsPolicyBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#create IamProjectsPolicyBinding#create}.
 
 ---
 
@@ -1553,7 +1553,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#delete IamProjectsPolicyBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#delete IamProjectsPolicyBinding#delete}.
 
 ---
 
@@ -1565,7 +1565,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iam_projects_policy_binding#update IamProjectsPolicyBinding#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iam_projects_policy_binding#update IamProjectsPolicyBinding#update}.
 
 ---
 
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 iamprojectspolicybinding.NewIamProjectsPolicyBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamProjectsPolicyBindingConditionOutputReference
 ```
@@ -1941,7 +1941,7 @@ func InternalValue() IamProjectsPolicyBindingCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 iamprojectspolicybinding.NewIamProjectsPolicyBindingTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamProjectsPolicyBindingTargetOutputReference
 ```
@@ -2219,7 +2219,7 @@ func InternalValue() IamProjectsPolicyBindingTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iamprojectspolicybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamprojectspolicybinding"
 
 iamprojectspolicybinding.NewIamProjectsPolicyBindingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamProjectsPolicyBindingTimeoutsOutputReference
 ```

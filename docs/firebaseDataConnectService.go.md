@@ -4,12 +4,12 @@
 
 ### FirebaseDataConnectService <a name="FirebaseDataConnectService" id="@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service google_firebase_data_connect_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service google_firebase_data_connect_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebasedataconnectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebasedataconnectservice"
 
 firebasedataconnectservice.NewFirebaseDataConnectService(scope Construct, id *string, config FirebaseDataConnectServiceConfig) FirebaseDataConnectService
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebasedataconnectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebasedataconnectservice"
 
 firebasedataconnectservice.FirebaseDataConnectService_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebasedataconnectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebasedataconnectservice"
 
 firebasedataconnectservice.FirebaseDataConnectService_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ firebasedataconnectservice.FirebaseDataConnectService_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebasedataconnectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebasedataconnectservice"
 
 firebasedataconnectservice.FirebaseDataConnectService_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ firebasedataconnectservice.FirebaseDataConnectService_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebasedataconnectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebasedataconnectservice"
 
 firebasedataconnectservice.FirebaseDataConnectService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -551,7 +551,7 @@ The construct id used in the generated config for the FirebaseDataConnectService
 
 The id of the existing FirebaseDataConnectService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1048,7 +1048,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebasedataconnectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebasedataconnectservice"
 
 &firebasedataconnectservice.FirebaseDataConnectServiceConfig {
 	Connection: interface{},
@@ -1066,7 +1066,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebasedataconn
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.firebaseDataConnectService.FirebaseDataConnectServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.firebaseDataConnectService.FirebaseDataConnectServiceTimeouts,
 }
 ```
 
@@ -1086,9 +1086,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebasedataconn
 | <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceConfig.property.annotations">Annotations</a></code> | <code>*map[string]*string</code> | Optional. Stores small amounts of arbitrary data. |
 | <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | The deletion policy for the database. |
 | <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. Mutable human-readable name. 63 character limit. |
-| <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#id FirebaseDataConnectService#id}. |
+| <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#id FirebaseDataConnectService#id}. |
 | <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Optional. Labels as key value pairs. |
-| <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#project FirebaseDataConnectService#project}. |
+| <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#project FirebaseDataConnectService#project}. |
 | <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceTimeouts">FirebaseDataConnectServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1173,7 +1173,7 @@ Location *string
 
 The region in which the service resides, e.g. "us-central1" or "asia-east1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#location FirebaseDataConnectService#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#location FirebaseDataConnectService#location}
 
 ---
 
@@ -1187,7 +1187,7 @@ ServiceId *string
 
 Required. The ID to use for the service, which will become the final component of the service's resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#service_id FirebaseDataConnectService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#service_id FirebaseDataConnectService#service_id}
 
 ---
 
@@ -1204,7 +1204,7 @@ Optional. Stores small amounts of arbitrary data.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#annotations FirebaseDataConnectService#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#annotations FirebaseDataConnectService#annotations}
 
 ---
 
@@ -1224,7 +1224,7 @@ the Service deletion will only succeed when no Schema or Connectors are
 present.
 Possible values: DEFAULT, FORCE
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#deletion_policy FirebaseDataConnectService#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#deletion_policy FirebaseDataConnectService#deletion_policy}
 
 ---
 
@@ -1238,7 +1238,7 @@ DisplayName *string
 
 Optional. Mutable human-readable name. 63 character limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#display_name FirebaseDataConnectService#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#display_name FirebaseDataConnectService#display_name}
 
 ---
 
@@ -1250,7 +1250,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#id FirebaseDataConnectService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#id FirebaseDataConnectService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1270,7 +1270,7 @@ Optional. Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#labels FirebaseDataConnectService#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#labels FirebaseDataConnectService#labels}
 
 ---
 
@@ -1282,7 +1282,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#project FirebaseDataConnectService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#project FirebaseDataConnectService#project}.
 
 ---
 
@@ -1296,7 +1296,7 @@ Timeouts FirebaseDataConnectServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#timeouts FirebaseDataConnectService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#timeouts FirebaseDataConnectService#timeouts}
 
 ---
 
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebasedataconnectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebasedataconnectservice"
 
 &firebasedataconnectservice.FirebaseDataConnectServiceTimeouts {
 	Create: *string,
@@ -1318,9 +1318,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebasedataconn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#create FirebaseDataConnectService#create}. |
-| <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#delete FirebaseDataConnectService#delete}. |
-| <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#update FirebaseDataConnectService#update}. |
+| <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#create FirebaseDataConnectService#create}. |
+| <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#delete FirebaseDataConnectService#delete}. |
+| <code><a href="#@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#update FirebaseDataConnectService#update}. |
 
 ---
 
@@ -1332,7 +1332,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#create FirebaseDataConnectService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#create FirebaseDataConnectService#create}.
 
 ---
 
@@ -1344,7 +1344,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#delete FirebaseDataConnectService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#delete FirebaseDataConnectService#delete}.
 
 ---
 
@@ -1356,7 +1356,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firebase_data_connect_service#update FirebaseDataConnectService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebase_data_connect_service#update FirebaseDataConnectService#update}.
 
 ---
 
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseDataConnectService.FirebaseDataConnectServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/firebasedataconnectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebasedataconnectservice"
 
 firebasedataconnectservice.NewFirebaseDataConnectServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseDataConnectServiceTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### VertexAiIndex <a name="VertexAiIndex" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index google_vertex_ai_index}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index google_vertex_ai_index}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.NewVertexAiIndex(scope Construct, id *string, config VertexAiIndexConfig) VertexAiIndex
 ```
@@ -74,13 +74,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putEncryptionSpec">PutEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putMetadata">PutMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetEncryptionSpec">ResetEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetIndexUpdateMethod">ResetIndexUpdateMethod</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetLabels">ResetLabels</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetMetadata">ResetMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -396,6 +397,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutEncryptionSpec` <a name="PutEncryptionSpec" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putEncryptionSpec"></a>
+
+```go
+func PutEncryptionSpec(value VertexAiIndexEncryptionSpec)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putEncryptionSpec.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a>
+
+---
+
 ##### `PutMetadata` <a name="PutMetadata" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.putMetadata"></a>
 
 ```go
@@ -426,6 +439,12 @@ func PutTimeouts(value VertexAiIndexTimeouts)
 func ResetDescription()
 ```
 
+##### `ResetEncryptionSpec` <a name="ResetEncryptionSpec" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetEncryptionSpec"></a>
+
+```go
+func ResetEncryptionSpec()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetId"></a>
 
 ```go
@@ -442,12 +461,6 @@ func ResetIndexUpdateMethod()
 
 ```go
 func ResetLabels()
-```
-
-##### `ResetMetadata` <a name="ResetMetadata" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetMetadata"></a>
-
-```go
-func ResetMetadata()
 ```
 
 ##### `ResetProject` <a name="ResetProject" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.resetProject"></a>
@@ -482,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.VertexAiIndex_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.VertexAiIndex_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +541,7 @@ vertexaiindex.VertexAiIndex_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.VertexAiIndex_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +555,7 @@ vertexaiindex.VertexAiIndex_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.VertexAiIndex_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -571,7 +584,7 @@ The construct id used in the generated config for the VertexAiIndex to import.
 
 The id of the existing VertexAiIndex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -604,6 +617,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.createTime">CreateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.deployedIndexes">DeployedIndexes</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesList">VertexAiIndexDeployedIndexesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.effectiveLabels">EffectiveLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.encryptionSpec">EncryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference">VertexAiIndexEncryptionSpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.indexStats">IndexStats</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexIndexStatsList">VertexAiIndexIndexStatsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference">VertexAiIndexMetadataOutputReference</a></code> | *No description.* |
@@ -614,6 +628,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.encryptionSpecInput">EncryptionSpecInput</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.indexUpdateMethodInput">IndexUpdateMethodInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -803,6 +818,16 @@ func EffectiveLabels() StringMap
 
 ---
 
+##### `EncryptionSpec`<sup>Required</sup> <a name="EncryptionSpec" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.encryptionSpec"></a>
+
+```go
+func EncryptionSpec() VertexAiIndexEncryptionSpecOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference">VertexAiIndexEncryptionSpecOutputReference</a>
+
+---
+
 ##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.etag"></a>
 
 ```go
@@ -900,6 +925,16 @@ func DisplayNameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `EncryptionSpecInput`<sup>Optional</sup> <a name="EncryptionSpecInput" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndex.property.encryptionSpecInput"></a>
+
+```go
+func EncryptionSpecInput() VertexAiIndexEncryptionSpec
+```
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a>
 
 ---
 
@@ -1068,7 +1103,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 &vertexaiindex.VertexAiIndexConfig {
 	Connection: interface{},
@@ -1079,14 +1114,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
+	Metadata: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiIndex.VertexAiIndexMetadata,
 	Description: *string,
+	EncryptionSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiIndex.VertexAiIndexEncryptionSpec,
 	Id: *string,
 	IndexUpdateMethod: *string,
 	Labels: *map[string]*string,
-	Metadata: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vertexAiIndex.VertexAiIndexMetadata,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vertexAiIndex.VertexAiIndexTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiIndex.VertexAiIndexTimeouts,
 }
 ```
 
@@ -1102,12 +1138,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the Index. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.description">Description</a></code> | <code>*string</code> | The description of the Index. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.encryptionSpec">EncryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a></code> | encryption_spec block. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.indexUpdateMethod">IndexUpdateMethod</a></code> | <code>*string</code> | The update method to use with this Index. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The labels with user-defined metadata to organize your Indexes. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.metadata">Metadata</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a></code> | metadata block. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.region">Region</a></code> | <code>*string</code> | The region of the index. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts">VertexAiIndexTimeouts</a></code> | timeouts block. |
 
@@ -1195,7 +1232,21 @@ The display name of the Index.
 
 The name can be up to 128 characters long and can consist of any UTF-8 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#display_name VertexAiIndex#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#display_name VertexAiIndex#display_name}
+
+---
+
+##### `Metadata`<sup>Required</sup> <a name="Metadata" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.metadata"></a>
+
+```go
+Metadata VertexAiIndexMetadata
+```
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a>
+
+metadata block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#metadata VertexAiIndex#metadata}
 
 ---
 
@@ -1209,7 +1260,21 @@ Description *string
 
 The description of the Index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#description VertexAiIndex#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#description VertexAiIndex#description}
+
+---
+
+##### `EncryptionSpec`<sup>Optional</sup> <a name="EncryptionSpec" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.encryptionSpec"></a>
+
+```go
+EncryptionSpec VertexAiIndexEncryptionSpec
+```
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a>
+
+encryption_spec block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#encryption_spec VertexAiIndex#encryption_spec}
 
 ---
 
@@ -1221,7 +1286,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#id VertexAiIndex#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1243,7 +1308,7 @@ The value must be the followings. If not set, BATCH_UPDATE will be used by defau
 * BATCH_UPDATE: user can call indexes.patch with files on Cloud Storage of datapoints to update.
 * STREAM_UPDATE: user can call indexes.upsertDatapoints/DeleteDatapoints to update the Index and the updates will be applied in corresponding DeployedIndexes in nearly real-time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#index_update_method VertexAiIndex#index_update_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#index_update_method VertexAiIndex#index_update_method}
 
 ---
 
@@ -1260,21 +1325,7 @@ The labels with user-defined metadata to organize your Indexes.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#labels VertexAiIndex#labels}
-
----
-
-##### `Metadata`<sup>Optional</sup> <a name="Metadata" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexConfig.property.metadata"></a>
-
-```go
-Metadata VertexAiIndexMetadata
-```
-
-- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata">VertexAiIndexMetadata</a>
-
-metadata block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#metadata VertexAiIndex#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#labels VertexAiIndex#labels}
 
 ---
 
@@ -1286,7 +1337,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#project VertexAiIndex#project}.
 
 ---
 
@@ -1300,7 +1351,7 @@ Region *string
 
 The region of the index. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#region VertexAiIndex#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#region VertexAiIndex#region}
 
 ---
 
@@ -1314,7 +1365,7 @@ Timeouts VertexAiIndexTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#timeouts VertexAiIndex#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#timeouts VertexAiIndex#timeouts}
 
 ---
 
@@ -1323,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 &vertexaiindex.VertexAiIndexDeployedIndexes {
 
@@ -1331,12 +1382,48 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
 ```
 
 
+### VertexAiIndexEncryptionSpec <a name="VertexAiIndexEncryptionSpec" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
+
+&vertexaiindex.VertexAiIndexEncryptionSpec {
+	KmsKeyName: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec.property.kmsKeyName">KmsKeyName</a></code> | <code>*string</code> | Required. |
+
+---
+
+##### `KmsKeyName`<sup>Required</sup> <a name="KmsKeyName" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec.property.kmsKeyName"></a>
+
+```go
+KmsKeyName *string
+```
+
+- *Type:* *string
+
+Required.
+
+The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. Has the form: 'projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key'. The key needs to be in the same region as where the compute resource is created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#kms_key_name VertexAiIndex#kms_key_name}
+
+---
+
 ### VertexAiIndexIndexStats <a name="VertexAiIndexIndexStats" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexIndexStats"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexIndexStats.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 &vertexaiindex.VertexAiIndexIndexStats {
 
@@ -1349,10 +1436,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 &vertexaiindex.VertexAiIndexMetadata {
-	Config: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vertexAiIndex.VertexAiIndexMetadataConfig,
+	Config: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiIndex.VertexAiIndexMetadataConfig,
 	ContentsDeltaUri: *string,
 	IsCompleteOverwrite: interface{},
 }
@@ -1368,7 +1455,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
 
 ---
 
-##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata.property.config"></a>
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadata.property.config"></a>
 
 ```go
 Config VertexAiIndexMetadataConfig
@@ -1378,7 +1465,7 @@ Config VertexAiIndexMetadataConfig
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#config VertexAiIndex#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#config VertexAiIndex#config}
 
 ---
 
@@ -1398,7 +1485,7 @@ Index field can be also updated as part of the same call.
 The expected structure and format of the files this URI points to is
 described at https://cloud.google.com/vertex-ai/docs/matching-engine/using-matching-engine#input-data-format
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#contents_delta_uri VertexAiIndex#contents_delta_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#contents_delta_uri VertexAiIndex#contents_delta_uri}
 
 ---
 
@@ -1412,7 +1499,7 @@ IsCompleteOverwrite interface{}
 
 If this field is set together with contentsDeltaUri when calling IndexService.UpdateIndex, then existing content of the Index will be replaced by the data from the contentsDeltaUri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#is_complete_overwrite VertexAiIndex#is_complete_overwrite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#is_complete_overwrite VertexAiIndex#is_complete_overwrite}
 
 ---
 
@@ -1421,11 +1508,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 &vertexaiindex.VertexAiIndexMetadataConfig {
 	Dimensions: *f64,
-	AlgorithmConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfig,
+	AlgorithmConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfig,
 	ApproximateNeighborsCount: *f64,
 	DistanceMeasureType: *string,
 	FeatureNormType: *string,
@@ -1456,7 +1543,7 @@ Dimensions *f64
 
 The number of dimensions of the input vectors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#dimensions VertexAiIndex#dimensions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#dimensions VertexAiIndex#dimensions}
 
 ---
 
@@ -1470,7 +1557,7 @@ AlgorithmConfig VertexAiIndexMetadataConfigAlgorithmConfig
 
 algorithm_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#algorithm_config VertexAiIndex#algorithm_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#algorithm_config VertexAiIndex#algorithm_config}
 
 ---
 
@@ -1488,7 +1575,7 @@ Exact reordering is a procedure where results returned by an
 approximate search algorithm are reordered via a more expensive distance computation.
 Required if tree-AH algorithm is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#approximate_neighbors_count VertexAiIndex#approximate_neighbors_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#approximate_neighbors_count VertexAiIndex#approximate_neighbors_count}
 
 ---
 
@@ -1509,7 +1596,7 @@ The value must be one of the followings:
 * COSINE_DISTANCE: Cosine Distance. Defined as 1 - cosine similarity.
 * DOT_PRODUCT_DISTANCE: Dot Product Distance. Defined as a negative of the dot product
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#distance_measure_type VertexAiIndex#distance_measure_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#distance_measure_type VertexAiIndex#distance_measure_type}
 
 ---
 
@@ -1528,7 +1615,7 @@ The value must be one of the followings:
 * UNIT_L2_NORM: Unit L2 normalization type
 * NONE: No normalization type is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#feature_norm_type VertexAiIndex#feature_norm_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#feature_norm_type VertexAiIndex#feature_norm_type}
 
 ---
 
@@ -1549,7 +1636,7 @@ The shard size must be specified when creating an index. The value must be one o
 * SHARD_SIZE_MEDIUM: Medium (20GB)
 * SHARD_SIZE_LARGE: Large (50GB)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#shard_size VertexAiIndex#shard_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#shard_size VertexAiIndex#shard_size}
 
 ---
 
@@ -1558,11 +1645,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 &vertexaiindex.VertexAiIndexMetadataConfigAlgorithmConfig {
-	BruteForceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig,
-	TreeAhConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig,
+	BruteForceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig,
+	TreeAhConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig,
 }
 ```
 
@@ -1585,7 +1672,7 @@ BruteForceConfig VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig
 
 brute_force_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#brute_force_config VertexAiIndex#brute_force_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#brute_force_config VertexAiIndex#brute_force_config}
 
 ---
 
@@ -1599,7 +1686,7 @@ TreeAhConfig VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig
 
 tree_ah_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#tree_ah_config VertexAiIndex#tree_ah_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#tree_ah_config VertexAiIndex#tree_ah_config}
 
 ---
 
@@ -1608,7 +1695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 &vertexaiindex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig {
 
@@ -1621,7 +1708,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 &vertexaiindex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig {
 	LeafNodeEmbeddingCount: *f64,
@@ -1648,7 +1735,7 @@ LeafNodeEmbeddingCount *f64
 
 Number of embeddings on each leaf node. The default value is 1000 if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#leaf_node_embedding_count VertexAiIndex#leaf_node_embedding_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#leaf_node_embedding_count VertexAiIndex#leaf_node_embedding_count}
 
 ---
 
@@ -1665,7 +1752,7 @@ The default percentage of leaf nodes that any query may be searched.
 Must be in
 range 1-100, inclusive. The default value is 10 (means 10%) if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#leaf_nodes_to_search_percent VertexAiIndex#leaf_nodes_to_search_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#leaf_nodes_to_search_percent VertexAiIndex#leaf_nodes_to_search_percent}
 
 ---
 
@@ -1674,7 +1761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 &vertexaiindex.VertexAiIndexTimeouts {
 	Create: *string,
@@ -1687,9 +1774,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#create VertexAiIndex#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#delete VertexAiIndex#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#update VertexAiIndex#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#create VertexAiIndex#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#delete VertexAiIndex#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#update VertexAiIndex#update}. |
 
 ---
 
@@ -1701,7 +1788,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#create VertexAiIndex#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#create VertexAiIndex#create}.
 
 ---
 
@@ -1713,7 +1800,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#delete VertexAiIndex#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#delete VertexAiIndex#delete}.
 
 ---
 
@@ -1725,7 +1812,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/vertex_ai_index#update VertexAiIndex#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/vertex_ai_index#update VertexAiIndex#update}.
 
 ---
 
@@ -1736,7 +1823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.NewVertexAiIndexDeployedIndexesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiIndexDeployedIndexesList
 ```
@@ -1885,7 +1972,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexDeployedIndexesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.NewVertexAiIndexDeployedIndexesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiIndexDeployedIndexesOutputReference
 ```
@@ -2169,12 +2256,283 @@ func InternalValue() VertexAiIndexDeployedIndexes
 ---
 
 
+### VertexAiIndexEncryptionSpecOutputReference <a name="VertexAiIndexEncryptionSpecOutputReference" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
+
+vertexaiindex.NewVertexAiIndexEncryptionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiIndexEncryptionSpecOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.kmsKeyNameInput">KmsKeyNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.kmsKeyName">KmsKeyName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `KmsKeyNameInput`<sup>Optional</sup> <a name="KmsKeyNameInput" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.kmsKeyNameInput"></a>
+
+```go
+func KmsKeyNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `KmsKeyName`<sup>Required</sup> <a name="KmsKeyName" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.kmsKeyName"></a>
+
+```go
+func KmsKeyName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpecOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() VertexAiIndexEncryptionSpec
+```
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexEncryptionSpec">VertexAiIndexEncryptionSpec</a>
+
+---
+
+
 ### VertexAiIndexIndexStatsList <a name="VertexAiIndexIndexStatsList" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexIndexStatsList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexIndexStatsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.NewVertexAiIndexIndexStatsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiIndexIndexStatsList
 ```
@@ -2323,7 +2681,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexIndexStatsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.NewVertexAiIndexIndexStatsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiIndexIndexStatsOutputReference
 ```
@@ -2612,7 +2970,7 @@ func InternalValue() VertexAiIndexIndexStats
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.NewVertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfigOutputReference
 ```
@@ -2861,7 +3219,7 @@ func InternalValue() VertexAiIndexMetadataConfigAlgorithmConfigBruteForceConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.NewVertexAiIndexMetadataConfigAlgorithmConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiIndexMetadataConfigAlgorithmConfigOutputReference
 ```
@@ -3194,7 +3552,7 @@ func InternalValue() VertexAiIndexMetadataConfigAlgorithmConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.NewVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigOutputReference
 ```
@@ -3501,7 +3859,7 @@ func InternalValue() VertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.NewVertexAiIndexMetadataConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiIndexMetadataConfigOutputReference
 ```
@@ -3930,7 +4288,7 @@ func InternalValue() VertexAiIndexMetadataConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.NewVertexAiIndexMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiIndexMetadataOutputReference
 ```
@@ -3976,7 +4334,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.putConfig">PutConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resetConfig">ResetConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resetContentsDeltaUri">ResetContentsDeltaUri</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resetIsCompleteOverwrite">ResetIsCompleteOverwrite</a></code> | *No description.* |
 
@@ -4144,12 +4501,6 @@ func PutConfig(value VertexAiIndexMetadataConfig)
 
 ---
 
-##### `ResetConfig` <a name="ResetConfig" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resetConfig"></a>
-
-```go
-func ResetConfig()
-```
-
 ##### `ResetContentsDeltaUri` <a name="ResetContentsDeltaUri" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexMetadataOutputReference.resetContentsDeltaUri"></a>
 
 ```go
@@ -4279,7 +4630,7 @@ func InternalValue() VertexAiIndexMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiIndex.VertexAiIndexTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/vertexaiindex"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/vertexaiindex"
 
 vertexaiindex.NewVertexAiIndexTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiIndexTimeoutsOutputReference
 ```

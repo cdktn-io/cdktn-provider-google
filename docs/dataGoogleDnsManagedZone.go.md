@@ -4,12 +4,12 @@
 
 ### DataGoogleDnsManagedZone <a name="DataGoogleDnsManagedZone" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_managed_zone google_dns_managed_zone}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_managed_zone google_dns_managed_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
 
 datagooglednsmanagedzone.NewDataGoogleDnsManagedZone(scope Construct, id *string, config DataGoogleDnsManagedZoneConfig) DataGoogleDnsManagedZone
 ```
@@ -305,7 +305,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
 
 datagooglednsmanagedzone.DataGoogleDnsManagedZone_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
 
 datagooglednsmanagedzone.DataGoogleDnsManagedZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglednsmanagedzone.DataGoogleDnsManagedZone_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
 
 datagooglednsmanagedzone.DataGoogleDnsManagedZone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglednsmanagedzone.DataGoogleDnsManagedZone_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
 
 datagooglednsmanagedzone.DataGoogleDnsManagedZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleDnsManagedZone t
 
 The id of the existing DataGoogleDnsManagedZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_managed_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_managed_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglednsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglednsmanagedzone"
 
 &datagooglednsmanagedzone.DataGoogleDnsManagedZoneConfig {
 	Connection: interface{},
@@ -708,8 +708,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglednsman
 | <code><a href="#@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZoneConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZoneConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZoneConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZoneConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_managed_zone#name DataGoogleDnsManagedZone#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZoneConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_managed_zone#project DataGoogleDnsManagedZone#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZoneConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_managed_zone#name DataGoogleDnsManagedZone#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDnsManagedZone.DataGoogleDnsManagedZoneConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_managed_zone#project DataGoogleDnsManagedZone#project}. |
 
 ---
 
@@ -791,7 +791,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_managed_zone#name DataGoogleDnsManagedZone#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_managed_zone#name DataGoogleDnsManagedZone#name}.
 
 ---
 
@@ -803,7 +803,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/dns_managed_zone#project DataGoogleDnsManagedZone#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/dns_managed_zone#project DataGoogleDnsManagedZone#project}.
 
 ---
 

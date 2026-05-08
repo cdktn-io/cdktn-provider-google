@@ -4,7 +4,7 @@
 
 ### NetworkServicesTlsRoute <a name="NetworkServicesTlsRoute" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route google_network_services_tls_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route google_network_services_tls_route}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer"></a>
 
@@ -26,8 +26,10 @@ networkServicesTlsRoute.NetworkServicesTlsRoute(
   description: str = None,
   gateways: typing.List[str] = None,
   id: str = None,
+  location: str = None,
   meshes: typing.List[str] = None,
   project: str = None,
+  target_proxies: typing.List[str] = None,
   timeouts: NetworkServicesTlsRouteTimeouts = None
 )
 ```
@@ -47,9 +49,11 @@ networkServicesTlsRoute.NetworkServicesTlsRoute(
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRules">NetworkServicesTlsRouteRules</a>]</code> | rules block. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.description">description</a></code> | <code>str</code> | A free-text description of the resource. Max length 1024 characters. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.gateways">gateways</a></code> | <code>typing.List[str]</code> | Gateways defines a list of gateways this TlsRoute is attached to, as one of the routing rules to route the requests served by the gateway. |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.location">location</a></code> | <code>str</code> | Location (region) of the TLS Route. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.meshes">meshes</a></code> | <code>typing.List[str]</code> | Meshes defines a list of meshes this TlsRoute is attached to, as one of the routing rules to route the requests served by the mesh. |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.targetProxies">target_proxies</a></code> | <code>typing.List[str]</code> | TargetProxies defines a list of target proxies this TlsRoute is attached to, as one of the routing rules to route the requests served by the load balancer. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts">NetworkServicesTlsRouteTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the TlsRoute resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#name NetworkServicesTlsRoute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#name NetworkServicesTlsRoute#name}
 
 ---
 
@@ -130,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#rules NetworkServicesTlsRoute#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#rules NetworkServicesTlsRoute#rules}
 
 ---
 
@@ -140,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#description NetworkServicesTlsRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#description NetworkServicesTlsRoute#description}
 
 ---
 
@@ -150,9 +154,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Gateways defines a list of gateways this TlsRoute is attached to, as one of the routing rules to route the requests served by the gateway.
 
-Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
+Each gateway reference should match the pattern: projects/* /locations/* /gateways/<gateway_name>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#gateways NetworkServicesTlsRoute#gateways}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#gateways NetworkServicesTlsRoute#gateways}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -162,10 +166,20 @@ Note: The above comment contained a comment block ending sequence (* followed by
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.location"></a>
+
+- *Type:* str
+
+Location (region) of the TLS Route.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#location NetworkServicesTlsRoute#location}
 
 ---
 
@@ -175,10 +189,10 @@ If you experience problems setting this value it might not be settable. Please t
 
 Meshes defines a list of meshes this TlsRoute is attached to, as one of the routing rules to route the requests served by the mesh.
 
-Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>
+Each mesh reference should match the pattern: projects/* /locations/* /meshes/<mesh_name>
 The attached Mesh should be of a type SIDECAR
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#meshes NetworkServicesTlsRoute#meshes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#meshes NetworkServicesTlsRoute#meshes}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -188,7 +202,21 @@ Note: The above comment contained a comment block ending sequence (* followed by
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}.
+
+---
+
+##### `target_proxies`<sup>Optional</sup> <a name="target_proxies" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.Initializer.parameter.targetProxies"></a>
+
+- *Type:* typing.List[str]
+
+TargetProxies defines a list of target proxies this TlsRoute is attached to, as one of the routing rules to route the requests served by the load balancer.
+
+Each target proxy reference should match the pattern: projects/* /locations/global/targetTcpProxies/<target_tcp_proxy_name>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#target_proxies NetworkServicesTlsRoute#target_proxies}
+
+Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
 ---
 
@@ -198,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#timeouts NetworkServicesTlsRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#timeouts NetworkServicesTlsRoute#timeouts}
 
 ---
 
@@ -235,8 +263,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetGateways">reset_gateways</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetLocation">reset_location</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetMeshes">reset_meshes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetTargetProxies">reset_target_proxies</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -617,7 +647,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}.
 
 ---
 
@@ -625,7 +655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}.
 
 ---
 
@@ -633,7 +663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}.
 
 ---
 
@@ -655,6 +685,12 @@ def reset_gateways() -> None
 def reset_id() -> None
 ```
 
+##### `reset_location` <a name="reset_location" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetLocation"></a>
+
+```python
+def reset_location() -> None
+```
+
 ##### `reset_meshes` <a name="reset_meshes" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetMeshes"></a>
 
 ```python
@@ -665,6 +701,12 @@ def reset_meshes() -> None
 
 ```python
 def reset_project() -> None
+```
+
+##### `reset_target_proxies` <a name="reset_target_proxies" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetTargetProxies"></a>
+
+```python
+def reset_target_proxies() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.resetTimeouts"></a>
@@ -787,7 +829,7 @@ The construct id used in the generated config for the NetworkServicesTlsRoute to
 
 The id of the existing NetworkServicesTlsRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -825,17 +867,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.gatewaysInput">gateways_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.meshesInput">meshes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.rulesInput">rules_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRules">NetworkServicesTlsRouteRules</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.targetProxiesInput">target_proxies_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts">NetworkServicesTlsRouteTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.gateways">gateways</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.meshes">meshes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.targetProxies">target_proxies</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
 
@@ -1061,6 +1107,16 @@ id_input: str
 
 ---
 
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.locationInput"></a>
+
+```python
+location_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `meshes_input`<sup>Optional</sup> <a name="meshes_input" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.meshesInput"></a>
 
 ```python
@@ -1098,6 +1154,16 @@ rules_input: IResolvable | typing.List[NetworkServicesTlsRouteRules]
 ```
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRules">NetworkServicesTlsRouteRules</a>]
+
+---
+
+##### `target_proxies_input`<sup>Optional</sup> <a name="target_proxies_input" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.targetProxiesInput"></a>
+
+```python
+target_proxies_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -1141,6 +1207,16 @@ id: str
 
 ---
 
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.location"></a>
+
+```python
+location: str
+```
+
+- *Type:* str
+
+---
+
 ##### `meshes`<sup>Required</sup> <a name="meshes" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.meshes"></a>
 
 ```python
@@ -1168,6 +1244,16 @@ project: str
 ```
 
 - *Type:* str
+
+---
+
+##### `target_proxies`<sup>Required</sup> <a name="target_proxies" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRoute.property.targetProxies"></a>
+
+```python
+target_proxies: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -1211,8 +1297,10 @@ networkServicesTlsRoute.NetworkServicesTlsRouteConfig(
   description: str = None,
   gateways: typing.List[str] = None,
   id: str = None,
+  location: str = None,
   meshes: typing.List[str] = None,
   project: str = None,
+  target_proxies: typing.List[str] = None,
   timeouts: NetworkServicesTlsRouteTimeouts = None
 )
 ```
@@ -1232,9 +1320,11 @@ networkServicesTlsRoute.NetworkServicesTlsRouteConfig(
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteRules">NetworkServicesTlsRouteRules</a>]</code> | rules block. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.description">description</a></code> | <code>str</code> | A free-text description of the resource. Max length 1024 characters. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.gateways">gateways</a></code> | <code>typing.List[str]</code> | Gateways defines a list of gateways this TlsRoute is attached to, as one of the routing rules to route the requests served by the gateway. |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.location">location</a></code> | <code>str</code> | Location (region) of the TLS Route. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.meshes">meshes</a></code> | <code>typing.List[str]</code> | Meshes defines a list of meshes this TlsRoute is attached to, as one of the routing rules to route the requests served by the mesh. |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.targetProxies">target_proxies</a></code> | <code>typing.List[str]</code> | TargetProxies defines a list of target proxies this TlsRoute is attached to, as one of the routing rules to route the requests served by the load balancer. |
 | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts">NetworkServicesTlsRouteTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1319,7 +1409,7 @@ name: str
 
 Name of the TlsRoute resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#name NetworkServicesTlsRoute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#name NetworkServicesTlsRoute#name}
 
 ---
 
@@ -1333,7 +1423,7 @@ rules: IResolvable | typing.List[NetworkServicesTlsRouteRules]
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#rules NetworkServicesTlsRoute#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#rules NetworkServicesTlsRoute#rules}
 
 ---
 
@@ -1347,7 +1437,7 @@ description: str
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#description NetworkServicesTlsRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#description NetworkServicesTlsRoute#description}
 
 ---
 
@@ -1361,9 +1451,9 @@ gateways: typing.List[str]
 
 Gateways defines a list of gateways this TlsRoute is attached to, as one of the routing rules to route the requests served by the gateway.
 
-Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
+Each gateway reference should match the pattern: projects/* /locations/* /gateways/<gateway_name>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#gateways NetworkServicesTlsRoute#gateways}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#gateways NetworkServicesTlsRoute#gateways}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1377,10 +1467,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#id NetworkServicesTlsRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.location"></a>
+
+```python
+location: str
+```
+
+- *Type:* str
+
+Location (region) of the TLS Route.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#location NetworkServicesTlsRoute#location}
 
 ---
 
@@ -1394,10 +1498,10 @@ meshes: typing.List[str]
 
 Meshes defines a list of meshes this TlsRoute is attached to, as one of the routing rules to route the requests served by the mesh.
 
-Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>
+Each mesh reference should match the pattern: projects/* /locations/* /meshes/<mesh_name>
 The attached Mesh should be of a type SIDECAR
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#meshes NetworkServicesTlsRoute#meshes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#meshes NetworkServicesTlsRoute#meshes}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1411,7 +1515,25 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#project NetworkServicesTlsRoute#project}.
+
+---
+
+##### `target_proxies`<sup>Optional</sup> <a name="target_proxies" id="@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteConfig.property.targetProxies"></a>
+
+```python
+target_proxies: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+TargetProxies defines a list of target proxies this TlsRoute is attached to, as one of the routing rules to route the requests served by the load balancer.
+
+Each target proxy reference should match the pattern: projects/* /locations/global/targetTcpProxies/<target_tcp_proxy_name>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#target_proxies NetworkServicesTlsRoute#target_proxies}
+
+Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
 ---
 
@@ -1425,7 +1547,7 @@ timeouts: NetworkServicesTlsRouteTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#timeouts NetworkServicesTlsRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#timeouts NetworkServicesTlsRoute#timeouts}
 
 ---
 
@@ -1461,7 +1583,7 @@ action: NetworkServicesTlsRouteRulesAction
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#action NetworkServicesTlsRoute#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#action NetworkServicesTlsRoute#action}
 
 ---
 
@@ -1475,7 +1597,7 @@ matches: IResolvable | typing.List[NetworkServicesTlsRouteRulesMatches]
 
 matches block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#matches NetworkServicesTlsRoute#matches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#matches NetworkServicesTlsRoute#matches}
 
 ---
 
@@ -1509,7 +1631,7 @@ destinations: IResolvable | typing.List[NetworkServicesTlsRouteRulesActionDestin
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#destinations NetworkServicesTlsRoute#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#destinations NetworkServicesTlsRoute#destinations}
 
 ---
 
@@ -1545,7 +1667,7 @@ service_name: str
 
 The URL of a BackendService to route traffic to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#service_name NetworkServicesTlsRoute#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#service_name NetworkServicesTlsRoute#service_name}
 
 ---
 
@@ -1559,7 +1681,7 @@ weight: typing.Union[int, float]
 
 Specifies the proportion of requests forwarded to the backend referenced by the serviceName field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#weight NetworkServicesTlsRoute#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#weight NetworkServicesTlsRoute#weight}
 
 ---
 
@@ -1597,7 +1719,7 @@ ALPN (Application-Layer Protocol Negotiation) to match against.
 
 Examples: "http/1.1", "h2". At least one of sniHost and alpn is required. Up to 5 alpns across all matches can be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#alpn NetworkServicesTlsRoute#alpn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#alpn NetworkServicesTlsRoute#alpn}
 
 ---
 
@@ -1614,7 +1736,7 @@ SNI (server name indicator) to match against.
 SNI will be matched against all wildcard domains, i.e. www.example.com will be first matched against www.example.com, then *.example.com, then *.com.
 Partial wildcards are not supported, and values like *w.example.com are invalid. At least one of sniHost and alpn is required. Up to 5 sni hosts across all matches can be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#sni_host NetworkServicesTlsRoute#sni_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#sni_host NetworkServicesTlsRoute#sni_host}
 
 ---
 
@@ -1636,9 +1758,9 @@ networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesTlsRoute.NetworkServicesTlsRouteTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}. |
 
 ---
 
@@ -1650,7 +1772,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#create NetworkServicesTlsRoute#create}.
 
 ---
 
@@ -1662,7 +1784,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#delete NetworkServicesTlsRoute#delete}.
 
 ---
 
@@ -1674,7 +1796,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#update NetworkServicesTlsRoute#update}.
 
 ---
 
@@ -3476,7 +3598,7 @@ def put_action(
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_tls_route#destinations NetworkServicesTlsRoute#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_tls_route#destinations NetworkServicesTlsRoute#destinations}
 
 ---
 

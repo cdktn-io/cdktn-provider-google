@@ -4,12 +4,12 @@
 
 ### DnsManagedZone <a name="DnsManagedZone" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone google_dns_managed_zone}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone google_dns_managed_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZone(scope Construct, id *string, config DnsManagedZoneConfig) DnsManagedZone
 ```
@@ -562,7 +562,7 @@ func ResetVisibility()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.DnsManagedZone_IsConstruct(x interface{}) *bool
 ```
@@ -594,7 +594,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.DnsManagedZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -608,7 +608,7 @@ dnsmanagedzone.DnsManagedZone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.DnsManagedZone_IsTerraformResource(x interface{}) *bool
 ```
@@ -622,7 +622,7 @@ dnsmanagedzone.DnsManagedZone_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.DnsManagedZone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -651,7 +651,7 @@ The construct id used in the generated config for the DnsManagedZone to import.
 
 The id of the existing DnsManagedZone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1214,7 +1214,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZoneCloudLoggingConfig {
 	EnableLogging: interface{},
@@ -1239,7 +1239,7 @@ EnableLogging interface{}
 
 If set, enable query logging for this ManagedZone. False by default, making logging opt-in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#enable_logging DnsManagedZone#enable_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#enable_logging DnsManagedZone#enable_logging}
 
 ---
 
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZoneConfig {
 	Connection: interface{},
@@ -1260,17 +1260,17 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
 	Provisioners: *[]interface{},
 	DnsName: *string,
 	Name: *string,
-	CloudLoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dnsManagedZone.DnsManagedZoneCloudLoggingConfig,
+	CloudLoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dnsManagedZone.DnsManagedZoneCloudLoggingConfig,
 	Description: *string,
-	DnssecConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dnsManagedZone.DnsManagedZoneDnssecConfig,
+	DnssecConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dnsManagedZone.DnsManagedZoneDnssecConfig,
 	ForceDestroy: interface{},
-	ForwardingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dnsManagedZone.DnsManagedZoneForwardingConfig,
+	ForwardingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dnsManagedZone.DnsManagedZoneForwardingConfig,
 	Id: *string,
 	Labels: *map[string]*string,
-	PeeringConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dnsManagedZone.DnsManagedZonePeeringConfig,
-	PrivateVisibilityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dnsManagedZone.DnsManagedZonePrivateVisibilityConfig,
+	PeeringConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dnsManagedZone.DnsManagedZonePeeringConfig,
+	PrivateVisibilityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dnsManagedZone.DnsManagedZonePrivateVisibilityConfig,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dnsManagedZone.DnsManagedZoneTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dnsManagedZone.DnsManagedZoneTimeouts,
 	Visibility: *string,
 }
 ```
@@ -1293,11 +1293,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.dnssecConfig">DnssecConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfig">DnsManagedZoneDnssecConfig</a></code> | dnssec_config block. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | Set this true to delete all records in the zone. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.forwardingConfig">ForwardingConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfig">DnsManagedZoneForwardingConfig</a></code> | forwarding_config block. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#id DnsManagedZone#id}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#id DnsManagedZone#id}. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | A set of key/value label pairs to assign to this ManagedZone. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.peeringConfig">PeeringConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfig">DnsManagedZonePeeringConfig</a></code> | peering_config block. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.privateVisibilityConfig">PrivateVisibilityConfig</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfig">DnsManagedZonePrivateVisibilityConfig</a></code> | private_visibility_config block. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#project DnsManagedZone#project}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#project DnsManagedZone#project}. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts">DnsManagedZoneTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneConfig.property.visibility">Visibility</a></code> | <code>*string</code> | The zone's visibility: public zones are exposed to the Internet, while private zones are visible only to Virtual Private Cloud resources. |
 
@@ -1383,7 +1383,7 @@ DnsName *string
 
 The DNS name of this managed zone, for instance "example.com.".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#dns_name DnsManagedZone#dns_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#dns_name DnsManagedZone#dns_name}
 
 ---
 
@@ -1397,7 +1397,7 @@ Name *string
 
 User assigned name for this resource. Must be unique within the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#name DnsManagedZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#name DnsManagedZone#name}
 
 ---
 
@@ -1411,7 +1411,7 @@ CloudLoggingConfig DnsManagedZoneCloudLoggingConfig
 
 cloud_logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#cloud_logging_config DnsManagedZone#cloud_logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#cloud_logging_config DnsManagedZone#cloud_logging_config}
 
 ---
 
@@ -1425,7 +1425,7 @@ Description *string
 
 A textual description field. Defaults to 'Managed by Terraform'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#description DnsManagedZone#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#description DnsManagedZone#description}
 
 ---
 
@@ -1439,7 +1439,7 @@ DnssecConfig DnsManagedZoneDnssecConfig
 
 dnssec_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#dnssec_config DnsManagedZone#dnssec_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#dnssec_config DnsManagedZone#dnssec_config}
 
 ---
 
@@ -1453,7 +1453,7 @@ ForceDestroy interface{}
 
 Set this true to delete all records in the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#force_destroy DnsManagedZone#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#force_destroy DnsManagedZone#force_destroy}
 
 ---
 
@@ -1467,7 +1467,7 @@ ForwardingConfig DnsManagedZoneForwardingConfig
 
 forwarding_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#forwarding_config DnsManagedZone#forwarding_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#forwarding_config DnsManagedZone#forwarding_config}
 
 ---
 
@@ -1479,7 +1479,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#id DnsManagedZone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#id DnsManagedZone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1499,7 +1499,7 @@ A set of key/value label pairs to assign to this ManagedZone.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#labels DnsManagedZone#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#labels DnsManagedZone#labels}
 
 ---
 
@@ -1513,7 +1513,7 @@ PeeringConfig DnsManagedZonePeeringConfig
 
 peering_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#peering_config DnsManagedZone#peering_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#peering_config DnsManagedZone#peering_config}
 
 ---
 
@@ -1527,7 +1527,7 @@ PrivateVisibilityConfig DnsManagedZonePrivateVisibilityConfig
 
 private_visibility_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#private_visibility_config DnsManagedZone#private_visibility_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#private_visibility_config DnsManagedZone#private_visibility_config}
 
 ---
 
@@ -1539,7 +1539,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#project DnsManagedZone#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#project DnsManagedZone#project}.
 
 ---
 
@@ -1553,7 +1553,7 @@ Timeouts DnsManagedZoneTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#timeouts DnsManagedZone#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#timeouts DnsManagedZone#timeouts}
 
 ---
 
@@ -1569,7 +1569,7 @@ The zone's visibility: public zones are exposed to the Internet, while private z
 
 Default value: "public" Possible values: ["private", "public"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#visibility DnsManagedZone#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#visibility DnsManagedZone#visibility}
 
 ---
 
@@ -1578,7 +1578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZoneDnssecConfig {
 	DefaultKeySpecs: interface{},
@@ -1609,7 +1609,7 @@ DefaultKeySpecs interface{}
 
 default_key_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#default_key_specs DnsManagedZone#default_key_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#default_key_specs DnsManagedZone#default_key_specs}
 
 ---
 
@@ -1623,7 +1623,7 @@ Kind *string
 
 Identifies what kind of resource this is.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#kind DnsManagedZone#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#kind DnsManagedZone#kind}
 
 ---
 
@@ -1639,7 +1639,7 @@ Specifies the mechanism used to provide authenticated denial-of-existence respon
 
 non_existence can only be updated when the state is 'off'. Possible values: ["nsec", "nsec3"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#non_existence DnsManagedZone#non_existence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#non_existence DnsManagedZone#non_existence}
 
 ---
 
@@ -1653,7 +1653,7 @@ State *string
 
 Specifies whether DNSSEC is enabled, and what mode it is in Possible values: ["off", "on", "transfer"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#state DnsManagedZone#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#state DnsManagedZone#state}
 
 ---
 
@@ -1662,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZoneDnssecConfigDefaultKeySpecs {
 	Algorithm: *string,
@@ -1693,7 +1693,7 @@ Algorithm *string
 
 String mnemonic specifying the DNSSEC algorithm of this key Possible values: ["ecdsap256sha256", "ecdsap384sha384", "rsasha1", "rsasha256", "rsasha512"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#algorithm DnsManagedZone#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#algorithm DnsManagedZone#algorithm}
 
 ---
 
@@ -1707,7 +1707,7 @@ KeyLength *f64
 
 Length of the keys in bits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#key_length DnsManagedZone#key_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#key_length DnsManagedZone#key_length}
 
 ---
 
@@ -1727,7 +1727,7 @@ resource record sets of type DNSKEY. Zone signing keys do
 not have the Secure Entry Point flag set and will be used
 to sign all other types of resource record sets. Possible values: ["keySigning", "zoneSigning"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#key_type DnsManagedZone#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#key_type DnsManagedZone#key_type}
 
 ---
 
@@ -1741,7 +1741,7 @@ Kind *string
 
 Identifies what kind of resource this is.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#kind DnsManagedZone#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#kind DnsManagedZone#kind}
 
 ---
 
@@ -1750,7 +1750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZoneForwardingConfig {
 	TargetNameServers: interface{},
@@ -1775,7 +1775,7 @@ TargetNameServers interface{}
 
 target_name_servers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#target_name_servers DnsManagedZone#target_name_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#target_name_servers DnsManagedZone#target_name_servers}
 
 ---
 
@@ -1784,12 +1784,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZoneForwardingConfigTargetNameServers {
 	DomainName: *string,
 	ForwardingPath: *string,
 	Ipv4Address: *string,
+	Ipv6Address: *string,
 }
 ```
 
@@ -1799,7 +1800,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers.property.domainName">DomainName</a></code> | <code>*string</code> | Fully qualified domain name for the forwarding target. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers.property.forwardingPath">ForwardingPath</a></code> | <code>*string</code> | Forwarding path for this TargetNameServer. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers.property.ipv4Address">Ipv4Address</a></code> | <code>*string</code> | IPv4 address of a target name server. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers.property.ipv4Address">Ipv4Address</a></code> | <code>*string</code> | IPv4 address of a target name server. Does not accept both fields (ipv4 & ipv6) being populated. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers.property.ipv6Address">Ipv6Address</a></code> | <code>*string</code> | IPv6 address of a target name server. Does not accept both fields (ipv4 & ipv6) being populated. |
 
 ---
 
@@ -1813,7 +1815,7 @@ DomainName *string
 
 Fully qualified domain name for the forwarding target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#domain_name DnsManagedZone#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#domain_name DnsManagedZone#domain_name}
 
 ---
 
@@ -1827,11 +1829,13 @@ ForwardingPath *string
 
 Forwarding path for this TargetNameServer.
 
-If unset or 'default' Cloud DNS will make forwarding
-decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
-to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
+If unset or 'default'
+Cloud DNS will make forwarding decision based on address ranges,
+i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
+to the Internet. When set to 'private', Cloud DNS will always
+send queries through VPC for this target. Possible values: ["default", "private"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#forwarding_path DnsManagedZone#forwarding_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#forwarding_path DnsManagedZone#forwarding_path}
 
 ---
 
@@ -1843,9 +1847,23 @@ Ipv4Address *string
 
 - *Type:* *string
 
-IPv4 address of a target name server.
+IPv4 address of a target name server. Does not accept both fields (ipv4 & ipv6) being populated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#ipv4_address DnsManagedZone#ipv4_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#ipv4_address DnsManagedZone#ipv4_address}
+
+---
+
+##### `Ipv6Address`<sup>Optional</sup> <a name="Ipv6Address" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServers.property.ipv6Address"></a>
+
+```go
+Ipv6Address *string
+```
+
+- *Type:* *string
+
+IPv6 address of a target name server. Does not accept both fields (ipv4 & ipv6) being populated.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#ipv6_address DnsManagedZone#ipv6_address}
 
 ---
 
@@ -1854,10 +1872,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZonePeeringConfig {
-	TargetNetwork: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetwork,
+	TargetNetwork: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetwork,
 }
 ```
 
@@ -1879,7 +1897,7 @@ TargetNetwork DnsManagedZonePeeringConfigTargetNetwork
 
 target_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#target_network DnsManagedZone#target_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#target_network DnsManagedZone#target_network}
 
 ---
 
@@ -1888,7 +1906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZonePeeringConfigTargetNetwork {
 	NetworkUrl: *string,
@@ -1916,7 +1934,7 @@ The id or fully qualified URL of the VPC network to forward queries to.
 This should be formatted like 'projects/{project}/global/networks/{network}' or
 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#network_url DnsManagedZone#network_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#network_url DnsManagedZone#network_url}
 
 ---
 
@@ -1925,7 +1943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZonePrivateVisibilityConfig {
 	GkeClusters: interface{},
@@ -1952,7 +1970,7 @@ GkeClusters interface{}
 
 gke_clusters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#gke_clusters DnsManagedZone#gke_clusters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#gke_clusters DnsManagedZone#gke_clusters}
 
 ---
 
@@ -1966,7 +1984,7 @@ Networks interface{}
 
 networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#networks DnsManagedZone#networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#networks DnsManagedZone#networks}
 
 ---
 
@@ -1975,7 +1993,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClusters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZonePrivateVisibilityConfigGkeClusters {
 	GkeClusterName: *string,
@@ -2003,7 +2021,7 @@ The resource name of the cluster to bind this ManagedZone to.
 This should be specified in the format like
 'projects/* /locations/* /clusters/*'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#gke_cluster_name DnsManagedZone#gke_cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#gke_cluster_name DnsManagedZone#gke_cluster_name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2014,7 +2032,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZonePrivateVisibilityConfigNetworks {
 	NetworkUrl: *string,
@@ -2039,7 +2057,7 @@ NetworkUrl *string
 
 The id or fully qualified URL of the VPC network to bind to. This should be formatted like 'projects/{project}/global/networks/{network}' or 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#network_url DnsManagedZone#network_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#network_url DnsManagedZone#network_url}
 
 ---
 
@@ -2048,7 +2066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 &dnsmanagedzone.DnsManagedZoneTimeouts {
 	Create: *string,
@@ -2061,9 +2079,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#create DnsManagedZone#create}. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#delete DnsManagedZone#delete}. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#update DnsManagedZone#update}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#create DnsManagedZone#create}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#delete DnsManagedZone#delete}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#update DnsManagedZone#update}. |
 
 ---
 
@@ -2075,7 +2093,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#create DnsManagedZone#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#create DnsManagedZone#create}.
 
 ---
 
@@ -2087,7 +2105,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#delete DnsManagedZone#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#delete DnsManagedZone#delete}.
 
 ---
 
@@ -2099,7 +2117,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dns_managed_zone#update DnsManagedZone#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dns_managed_zone#update DnsManagedZone#update}.
 
 ---
 
@@ -2110,7 +2128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneCloudLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZoneCloudLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsManagedZoneCloudLoggingConfigOutputReference
 ```
@@ -2381,7 +2399,7 @@ func InternalValue() DnsManagedZoneCloudLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZoneDnssecConfigDefaultKeySpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DnsManagedZoneDnssecConfigDefaultKeySpecsList
 ```
@@ -2541,7 +2559,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DnsManagedZoneDnssecConfigDefaultKeySpecsOutputReference
 ```
@@ -2924,7 +2942,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneDnssecConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZoneDnssecConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsManagedZoneDnssecConfigOutputReference
 ```
@@ -3302,7 +3320,7 @@ func InternalValue() DnsManagedZoneDnssecConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZoneForwardingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsManagedZoneForwardingConfigOutputReference
 ```
@@ -3586,7 +3604,7 @@ func InternalValue() DnsManagedZoneForwardingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZoneForwardingConfigTargetNameServersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DnsManagedZoneForwardingConfigTargetNameServersList
 ```
@@ -3746,7 +3764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZoneForwardingConfigTargetNameServersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DnsManagedZoneForwardingConfigTargetNameServersOutputReference
 ```
@@ -3812,6 +3830,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.resetDomainName">ResetDomainName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.resetForwardingPath">ResetForwardingPath</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.resetIpv4Address">ResetIpv4Address</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.resetIpv6Address">ResetIpv6Address</a></code> | *No description.* |
 
 ---
 
@@ -3983,6 +4002,12 @@ func ResetForwardingPath()
 func ResetIpv4Address()
 ```
 
+##### `ResetIpv6Address` <a name="ResetIpv6Address" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.resetIpv6Address"></a>
+
+```go
+func ResetIpv6Address()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3993,9 +4018,11 @@ func ResetIpv4Address()
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.domainNameInput">DomainNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.forwardingPathInput">ForwardingPathInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.ipv4AddressInput">Ipv4AddressInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.ipv6AddressInput">Ipv6AddressInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.domainName">DomainName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.forwardingPath">ForwardingPath</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.ipv4Address">Ipv4Address</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.ipv6Address">Ipv6Address</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
@@ -4054,6 +4081,16 @@ func Ipv4AddressInput() *string
 
 ---
 
+##### `Ipv6AddressInput`<sup>Optional</sup> <a name="Ipv6AddressInput" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.ipv6AddressInput"></a>
+
+```go
+func Ipv6AddressInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DomainName`<sup>Required</sup> <a name="DomainName" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.domainName"></a>
 
 ```go
@@ -4084,6 +4121,16 @@ func Ipv4Address() *string
 
 ---
 
+##### `Ipv6Address`<sup>Required</sup> <a name="Ipv6Address" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.ipv6Address"></a>
+
+```go
+func Ipv6Address() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneForwardingConfigTargetNameServersOutputReference.property.internalValue"></a>
 
 ```go
@@ -4100,7 +4147,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZonePeeringConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsManagedZonePeeringConfigOutputReference
 ```
@@ -4384,7 +4431,7 @@ func InternalValue() DnsManagedZonePeeringConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePeeringConfigTargetNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZonePeeringConfigTargetNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsManagedZonePeeringConfigTargetNetworkOutputReference
 ```
@@ -4655,7 +4702,7 @@ func InternalValue() DnsManagedZonePeeringConfigTargetNetwork
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZonePrivateVisibilityConfigGkeClustersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DnsManagedZonePrivateVisibilityConfigGkeClustersList
 ```
@@ -4815,7 +4862,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DnsManagedZonePrivateVisibilityConfigGkeClustersOutputReference
 ```
@@ -5104,7 +5151,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZonePrivateVisibilityConfigNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DnsManagedZonePrivateVisibilityConfigNetworksList
 ```
@@ -5264,7 +5311,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZonePrivateVisibilityConfigNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DnsManagedZonePrivateVisibilityConfigNetworksOutputReference
 ```
@@ -5553,7 +5600,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZonePrivateVisibilityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZonePrivateVisibilityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsManagedZonePrivateVisibilityConfigOutputReference
 ```
@@ -5886,7 +5933,7 @@ func InternalValue() DnsManagedZonePrivateVisibilityConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZone.DnsManagedZoneTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dnsmanagedzone"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dnsmanagedzone"
 
 dnsmanagedzone.NewDnsManagedZoneTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsManagedZoneTimeoutsOutputReference
 ```

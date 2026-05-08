@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_security_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_security_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeSecurityPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_security_policy#id DataGoogleComputeSecurityPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_security_policy#id DataGoogleComputeSecurityPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DataGoogleComputeSecurityPolicyConfig extends cdktn.TerraformMe
   /**
   * The name of the security policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_security_policy#name DataGoogleComputeSecurityPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_security_policy#name DataGoogleComputeSecurityPolicy#name}
   */
   readonly name?: string;
   /**
   * The project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_security_policy#project DataGoogleComputeSecurityPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_security_policy#project DataGoogleComputeSecurityPolicy#project}
   */
   readonly project?: string;
   /**
   * The URI of the created resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_security_policy#self_link DataGoogleComputeSecurityPolicy#self_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_security_policy#self_link DataGoogleComputeSecurityPolicy#self_link}
   */
   readonly selfLink?: string;
 }
@@ -541,6 +541,11 @@ export class DataGoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference
   // log_level - computed: true, optional: false, required: false
   public get logLevel() {
     return this.getStringAttribute('log_level');
+  }
+
+  // request_body_inspection_size - computed: true, optional: false, required: false
+  public get requestBodyInspectionSize() {
+    return this.getStringAttribute('request_body_inspection_size');
   }
 
   // user_ip_request_headers - computed: true, optional: false, required: false
@@ -2338,7 +2343,7 @@ export class DataGoogleComputeSecurityPolicyRuleList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_security_policy google_compute_security_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_security_policy google_compute_security_policy}
 */
 export class DataGoogleComputeSecurityPolicy extends cdktn.TerraformDataSource {
 
@@ -2354,7 +2359,7 @@ export class DataGoogleComputeSecurityPolicy extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleComputeSecurityPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeSecurityPolicy to import
-  * @param importFromId The id of the existing DataGoogleComputeSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_security_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_security_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeSecurityPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2366,7 +2371,7 @@ export class DataGoogleComputeSecurityPolicy extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_security_policy google_compute_security_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_security_policy google_compute_security_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2377,8 +2382,8 @@ export class DataGoogleComputeSecurityPolicy extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_compute_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2415,6 +2420,12 @@ export class DataGoogleComputeSecurityPolicy extends cdktn.TerraformDataSource {
     return this.getStringAttribute('description');
   }
 
+  // effective_labels - computed: true, optional: false, required: false
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
+  public get effectiveLabels() {
+    return this._effectiveLabels;
+  }
+
   // fingerprint - computed: true, optional: false, required: false
   public get fingerprint() {
     return this.getStringAttribute('fingerprint');
@@ -2434,6 +2445,17 @@ export class DataGoogleComputeSecurityPolicy extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // label_fingerprint - computed: true, optional: false, required: false
+  public get labelFingerprint() {
+    return this.getStringAttribute('label_fingerprint');
+  }
+
+  // labels - computed: true, optional: false, required: false
+  private _labels = new cdktn.StringMap(this, "labels");
+  public get labels() {
+    return this._labels;
   }
 
   // name - computed: false, optional: true, required: false
@@ -2494,6 +2516,12 @@ export class DataGoogleComputeSecurityPolicy extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get selfLinkInput() {
     return this._selfLink;
+  }
+
+  // terraform_labels - computed: true, optional: false, required: false
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
+  public get terraformLabels() {
+    return this._terraformLabels;
   }
 
   // type - computed: true, optional: false, required: false

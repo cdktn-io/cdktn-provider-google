@@ -4,7 +4,7 @@
 
 ### ComputeInstanceTemplateIamMember <a name="ComputeInstanceTemplateIamMember" id="@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member google_compute_instance_template_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member google_compute_instance_template_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer"></a>
 
@@ -41,12 +41,12 @@ computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember(
 | <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#member ComputeInstanceTemplateIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#name ComputeInstanceTemplateIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#role ComputeInstanceTemplateIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#member ComputeInstanceTemplateIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#name ComputeInstanceTemplateIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#role ComputeInstanceTemplateIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberCondition">ComputeInstanceTemplateIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#id ComputeInstanceTemplateIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#project ComputeInstanceTemplateIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#id ComputeInstanceTemplateIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#project ComputeInstanceTemplateIamMember#project}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#member ComputeInstanceTemplateIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#member ComputeInstanceTemplateIamMember#member}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#name ComputeInstanceTemplateIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#name ComputeInstanceTemplateIamMember#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#role ComputeInstanceTemplateIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#role ComputeInstanceTemplateIamMember#role}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#condition ComputeInstanceTemplateIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#condition ComputeInstanceTemplateIamMember#condition}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#id ComputeInstanceTemplateIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#id ComputeInstanceTemplateIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#project ComputeInstanceTemplateIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#project ComputeInstanceTemplateIamMember#project}.
 
 ---
 
@@ -560,7 +560,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#expression ComputeInstanceTemplateIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#expression ComputeInstanceTemplateIamMember#expression}.
 
 ---
 
@@ -568,7 +568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#title ComputeInstanceTemplateIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#title ComputeInstanceTemplateIamMember#title}.
 
 ---
 
@@ -576,7 +576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#description ComputeInstanceTemplateIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#description ComputeInstanceTemplateIamMember#description}.
 
 ---
 
@@ -712,7 +712,7 @@ The construct id used in the generated config for the ComputeInstanceTemplateIam
 
 The id of the existing ComputeInstanceTemplateIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1068,9 +1068,9 @@ computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#expression ComputeInstanceTemplateIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#title ComputeInstanceTemplateIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#description ComputeInstanceTemplateIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#expression ComputeInstanceTemplateIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#title ComputeInstanceTemplateIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#description ComputeInstanceTemplateIamMember#description}. |
 
 ---
 
@@ -1082,7 +1082,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#expression ComputeInstanceTemplateIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#expression ComputeInstanceTemplateIamMember#expression}.
 
 ---
 
@@ -1094,7 +1094,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#title ComputeInstanceTemplateIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#title ComputeInstanceTemplateIamMember#title}.
 
 ---
 
@@ -1106,7 +1106,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#description ComputeInstanceTemplateIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#description ComputeInstanceTemplateIamMember#description}.
 
 ---
 
@@ -1145,12 +1145,12 @@ computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig(
 | <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#member ComputeInstanceTemplateIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#name ComputeInstanceTemplateIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#role ComputeInstanceTemplateIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#member ComputeInstanceTemplateIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#name ComputeInstanceTemplateIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#role ComputeInstanceTemplateIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberCondition">ComputeInstanceTemplateIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#id ComputeInstanceTemplateIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#project ComputeInstanceTemplateIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#id ComputeInstanceTemplateIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceTemplateIamMember.ComputeInstanceTemplateIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#project ComputeInstanceTemplateIamMember#project}. |
 
 ---
 
@@ -1232,7 +1232,7 @@ member: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#member ComputeInstanceTemplateIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#member ComputeInstanceTemplateIamMember#member}.
 
 ---
 
@@ -1244,7 +1244,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#name ComputeInstanceTemplateIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#name ComputeInstanceTemplateIamMember#name}.
 
 ---
 
@@ -1256,7 +1256,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#role ComputeInstanceTemplateIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#role ComputeInstanceTemplateIamMember#role}.
 
 ---
 
@@ -1270,7 +1270,7 @@ condition: ComputeInstanceTemplateIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#condition ComputeInstanceTemplateIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#condition ComputeInstanceTemplateIamMember#condition}
 
 ---
 
@@ -1282,7 +1282,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#id ComputeInstanceTemplateIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#id ComputeInstanceTemplateIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1297,7 +1297,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_instance_template_iam_member#project ComputeInstanceTemplateIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_instance_template_iam_member#project ComputeInstanceTemplateIamMember#project}.
 
 ---
 

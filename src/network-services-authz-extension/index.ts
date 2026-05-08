@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface NetworkServicesAuthzExtensionConfig extends cdktn.TerraformMeta
   /**
   * The :authority header in the gRPC request sent from Envoy to the extension service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#authority NetworkServicesAuthzExtension#authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#authority NetworkServicesAuthzExtension#authority}
   */
-  readonly authority: string;
+  readonly authority?: string;
   /**
   * A human-readable description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#description NetworkServicesAuthzExtension#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#description NetworkServicesAuthzExtension#description}
   */
   readonly description?: string;
   /**
@@ -30,17 +30,17 @@ export interface NetworkServicesAuthzExtensionConfig extends cdktn.TerraformMeta
   * * If response headers have not been delivered to the downstream client, a generic 500 error is returned to the client. The error response can be tailored by configuring a custom error response in the load balancer.
   * * If response headers have been delivered, then the HTTP stream to the downstream client is reset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#fail_open NetworkServicesAuthzExtension#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#fail_open NetworkServicesAuthzExtension#fail_open}
   */
   readonly failOpen?: boolean | cdktn.IResolvable;
   /**
   * List of the HTTP headers to forward to the extension (from the client). If omitted, all headers are sent. Each element is a string indicating the header name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#forward_headers NetworkServicesAuthzExtension#forward_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#forward_headers NetworkServicesAuthzExtension#forward_headers}
   */
   readonly forwardHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#id NetworkServicesAuthzExtension#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#id NetworkServicesAuthzExtension#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,20 +53,21 @@ export interface NetworkServicesAuthzExtensionConfig extends cdktn.TerraformMeta
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#labels NetworkServicesAuthzExtension#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#labels NetworkServicesAuthzExtension#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * All backend services and forwarding rules referenced by this extension must share the same load balancing scheme.
-  * For more information, refer to [Backend services overview](https://cloud.google.com/load-balancing/docs/backend-service). Possible values: ["INTERNAL_MANAGED", "EXTERNAL_MANAGED"]
+  * Required when the service points to a backend service. All backend services and forwarding rules referenced by
+  * this extension must share the same load balancing scheme. For more information, refer to
+  * [Backend services overview](https://cloud.google.com/load-balancing/docs/backend-service). Possible values: ["INTERNAL_MANAGED", "EXTERNAL_MANAGED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#load_balancing_scheme NetworkServicesAuthzExtension#load_balancing_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#load_balancing_scheme NetworkServicesAuthzExtension#load_balancing_scheme}
   */
-  readonly loadBalancingScheme: string;
+  readonly loadBalancingScheme?: string;
   /**
   * The location of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#location NetworkServicesAuthzExtension#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#location NetworkServicesAuthzExtension#location}
   */
   readonly location: string;
   /**
@@ -74,57 +75,76 @@ export interface NetworkServicesAuthzExtensionConfig extends cdktn.TerraformMeta
   * 
   * {forwarding_rule_id} - substituted with the forwarding rule's fully qualified resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#metadata NetworkServicesAuthzExtension#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#metadata NetworkServicesAuthzExtension#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Identifier. Name of the AuthzExtension resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#name NetworkServicesAuthzExtension#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#name NetworkServicesAuthzExtension#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#project NetworkServicesAuthzExtension#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#project NetworkServicesAuthzExtension#project}
   */
   readonly project?: string;
   /**
-  * The reference to the service that runs the extension.
-  * To configure a callout extension, service must be a fully-qualified reference to a [backend service](https://cloud.google.com/compute/docs/reference/rest/v1/backendServices) in the format:
-  * https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/backendServices/{backendService} or https://www.googleapis.com/compute/v1/projects/{project}/global/backendServices/{backendService}.
+  * The service that runs the extension.
+  * The following values and formats are accepted:
+  * * 'iap.googleapis.com' when the policyProfile is set to REQUEST_AUTHZ
+  * * 'modelarmor.{{region}}.rep.googleapis.com' when the policyProfile is set to CONTENT_AUTHZ
+  * * A fully qualified domain name that can be resolved by the dataplane
+  * * Backend service resource URI of the form 'https://www.googleapis.com/compute/v1/projects/{{project}}/regions/{{region}}/backendServices/{{name}}' or 'https://www.googleapis.com/compute/v1/projects/{{project}}/global/backendServices/{{name}}}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#service NetworkServicesAuthzExtension#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#service NetworkServicesAuthzExtension#service}
   */
   readonly service: string;
   /**
   * Specifies the timeout for each individual message on the stream. The timeout must be between 10-10000 milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#timeout NetworkServicesAuthzExtension#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#timeout NetworkServicesAuthzExtension#timeout}
   */
   readonly timeout: string;
   /**
-  * The format of communication supported by the callout extension. Will be set to EXT_PROC_GRPC by the backend if no value is set. Possible values: ["WIRE_FORMAT_UNSPECIFIED", "EXT_PROC_GRPC"]
+  * The format of communication supported by the callout extension. Applicable only when the policyProfile is REQUEST_AUTHZ.
+  * This field is supported only for regional AuthzExtension resources. If not specified, the default value
+  * EXT_PROC_GRPC is used. Global AuthzExtension resources use the EXT_PROC_GRPC wire format.
+  * 
+  * Supported values:
+  * - WIRE_FORMAT_UNSPECIFIED:
+  *     No wire format is explicitly specified. The backend automatically
+  *     defaults this value to EXT_PROC_GRPC.
+  * - EXT_PROC_GRPC:
+  *     Uses Envoy's External Processing (ext_proc) gRPC API over a single
+  *     gRPC stream. The backend service must support HTTP/2 or H2C.
+  *     All supported events for a client request are sent over the same
+  *     gRPC stream. This is the default wire format.
+  * - EXT_AUTHZ_GRPC:
+  *     Uses Envoy's external authorization (ext_authz) gRPC API.
+  *     The backend service must support HTTP/2 or H2C.
+  *     This option is only supported for regional AuthzExtension resources. Possible values: ["WIRE_FORMAT_UNSPECIFIED", "EXT_PROC_GRPC", "EXT_AUTHZ_GRPC"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#wire_format NetworkServicesAuthzExtension#wire_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#wire_format NetworkServicesAuthzExtension#wire_format}
   */
   readonly wireFormat?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#timeouts NetworkServicesAuthzExtension#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#timeouts NetworkServicesAuthzExtension#timeouts}
   */
   readonly timeouts?: NetworkServicesAuthzExtensionTimeouts;
 }
 export interface NetworkServicesAuthzExtensionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#create NetworkServicesAuthzExtension#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#create NetworkServicesAuthzExtension#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#delete NetworkServicesAuthzExtension#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#delete NetworkServicesAuthzExtension#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#update NetworkServicesAuthzExtension#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#update NetworkServicesAuthzExtension#update}
   */
   readonly update?: string;
 }
@@ -276,7 +296,7 @@ export class NetworkServicesAuthzExtensionTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension google_network_services_authz_extension}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension google_network_services_authz_extension}
 */
 export class NetworkServicesAuthzExtension extends cdktn.TerraformResource {
 
@@ -292,7 +312,7 @@ export class NetworkServicesAuthzExtension extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkServicesAuthzExtension resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesAuthzExtension to import
-  * @param importFromId The id of the existing NetworkServicesAuthzExtension that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkServicesAuthzExtension that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesAuthzExtension to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -304,7 +324,7 @@ export class NetworkServicesAuthzExtension extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_authz_extension google_network_services_authz_extension} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_authz_extension google_network_services_authz_extension} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -315,8 +335,8 @@ export class NetworkServicesAuthzExtension extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_services_authz_extension',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -347,13 +367,16 @@ export class NetworkServicesAuthzExtension extends cdktn.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // authority - computed: false, optional: false, required: true
+  // authority - computed: false, optional: true, required: false
   private _authority?: string; 
   public get authority() {
     return this.getStringAttribute('authority');
   }
   public set authority(value: string) {
     this._authority = value;
+  }
+  public resetAuthority() {
+    this._authority = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get authorityInput() {
@@ -451,13 +474,16 @@ export class NetworkServicesAuthzExtension extends cdktn.TerraformResource {
     return this._labels;
   }
 
-  // load_balancing_scheme - computed: false, optional: false, required: true
+  // load_balancing_scheme - computed: false, optional: true, required: false
   private _loadBalancingScheme?: string; 
   public get loadBalancingScheme() {
     return this.getStringAttribute('load_balancing_scheme');
   }
   public set loadBalancingScheme(value: string) {
     this._loadBalancingScheme = value;
+  }
+  public resetLoadBalancingScheme() {
+    this._loadBalancingScheme = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get loadBalancingSchemeInput() {

@@ -4,12 +4,12 @@
 
 ### SccNotificationConfig <a name="SccNotificationConfig" id="@cdktn/provider-google.sccNotificationConfig.SccNotificationConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config google_scc_notification_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config google_scc_notification_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccNotificationConfig.SccNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccnotificationconfig"
 
 sccnotificationconfig.NewSccNotificationConfig(scope Construct, id *string, config SccNotificationConfigConfig) SccNotificationConfig
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sccNotificationConfig.SccNotificationConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccnotificationconfig"
 
 sccnotificationconfig.SccNotificationConfig_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sccNotificationConfig.SccNotificationConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccnotificationconfig"
 
 sccnotificationconfig.SccNotificationConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ sccnotificationconfig.SccNotificationConfig_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sccNotificationConfig.SccNotificationConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccnotificationconfig"
 
 sccnotificationconfig.SccNotificationConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ sccnotificationconfig.SccNotificationConfig_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sccNotificationConfig.SccNotificationConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccnotificationconfig"
 
 sccnotificationconfig.SccNotificationConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the SccNotificationConfig to i
 
 The id of the existing SccNotificationConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -912,7 +912,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccnotificationconfig"
 
 &sccnotificationconfig.SccNotificationConfigConfig {
 	Connection: interface{},
@@ -925,10 +925,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationc
 	ConfigId: *string,
 	Organization: *string,
 	PubsubTopic: *string,
-	StreamingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccNotificationConfig.SccNotificationConfigStreamingConfig,
+	StreamingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccNotificationConfig.SccNotificationConfigStreamingConfig,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccNotificationConfig.SccNotificationConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccNotificationConfig.SccNotificationConfigTimeouts,
 }
 ```
 
@@ -948,7 +948,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationc
 | <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigConfig.property.pubsubTopic">PubsubTopic</a></code> | <code>*string</code> | The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]". |
 | <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigConfig.property.streamingConfig">StreamingConfig</a></code> | <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigStreamingConfig">SccNotificationConfigStreamingConfig</a></code> | streaming_config block. |
 | <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigConfig.property.description">Description</a></code> | <code>*string</code> | The description of the notification config (max of 1024 characters). |
-| <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#id SccNotificationConfig#id}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#id SccNotificationConfig#id}. |
 | <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigTimeouts">SccNotificationConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1033,7 +1033,7 @@ ConfigId *string
 
 This must be unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#config_id SccNotificationConfig#config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#config_id SccNotificationConfig#config_id}
 
 ---
 
@@ -1047,7 +1047,7 @@ Organization *string
 
 The organization whose Cloud Security Command Center the Notification Config lives in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#organization SccNotificationConfig#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#organization SccNotificationConfig#organization}
 
 ---
 
@@ -1061,7 +1061,7 @@ PubsubTopic *string
 
 The Pub/Sub topic to send notifications to. Its format is "projects/[project_id]/topics/[topic]".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#pubsub_topic SccNotificationConfig#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#pubsub_topic SccNotificationConfig#pubsub_topic}
 
 ---
 
@@ -1075,7 +1075,7 @@ StreamingConfig SccNotificationConfigStreamingConfig
 
 streaming_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#streaming_config SccNotificationConfig#streaming_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#streaming_config SccNotificationConfig#streaming_config}
 
 ---
 
@@ -1089,7 +1089,7 @@ Description *string
 
 The description of the notification config (max of 1024 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#description SccNotificationConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#description SccNotificationConfig#description}
 
 ---
 
@@ -1101,7 +1101,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#id SccNotificationConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#id SccNotificationConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1118,7 +1118,7 @@ Timeouts SccNotificationConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#timeouts SccNotificationConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#timeouts SccNotificationConfig#timeouts}
 
 ---
 
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigStreamingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccnotificationconfig"
 
 &sccnotificationconfig.SccNotificationConfigStreamingConfig {
 	Filter: *string,
@@ -1177,7 +1177,7 @@ See
 [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 for information on how to write a filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#filter SccNotificationConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#filter SccNotificationConfig#filter}
 
 ---
 
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccnotificationconfig"
 
 &sccnotificationconfig.SccNotificationConfigTimeouts {
 	Create: *string,
@@ -1199,9 +1199,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#create SccNotificationConfig#create}. |
-| <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#delete SccNotificationConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#update SccNotificationConfig#update}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#create SccNotificationConfig#create}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#delete SccNotificationConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#update SccNotificationConfig#update}. |
 
 ---
 
@@ -1213,7 +1213,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#create SccNotificationConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#create SccNotificationConfig#create}.
 
 ---
 
@@ -1225,7 +1225,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#delete SccNotificationConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#delete SccNotificationConfig#delete}.
 
 ---
 
@@ -1237,7 +1237,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_notification_config#update SccNotificationConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_notification_config#update SccNotificationConfig#update}.
 
 ---
 
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigStreamingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccnotificationconfig"
 
 sccnotificationconfig.NewSccNotificationConfigStreamingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccNotificationConfigStreamingConfigOutputReference
 ```
@@ -1519,7 +1519,7 @@ func InternalValue() SccNotificationConfigStreamingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccNotificationConfig.SccNotificationConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccnotificationconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccnotificationconfig"
 
 sccnotificationconfig.NewSccNotificationConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccNotificationConfigTimeoutsOutputReference
 ```

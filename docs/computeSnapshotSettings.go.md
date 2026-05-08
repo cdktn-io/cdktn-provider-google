@@ -4,12 +4,12 @@
 
 ### ComputeSnapshotSettings <a name="ComputeSnapshotSettings" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings google_compute_snapshot_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 computesnapshotsettings.NewComputeSnapshotSettings(scope Construct, id *string, config ComputeSnapshotSettingsConfig) ComputeSnapshotSettings
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 computesnapshotsettings.ComputeSnapshotSettings_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 computesnapshotsettings.ComputeSnapshotSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ computesnapshotsettings.ComputeSnapshotSettings_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 computesnapshotsettings.ComputeSnapshotSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ computesnapshotsettings.ComputeSnapshotSettings_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 computesnapshotsettings.ComputeSnapshotSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the ComputeSnapshotSettings to
 
 The id of the existing ComputeSnapshotSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 &computesnapshotsettings.ComputeSnapshotSettingsConfig {
 	Connection: interface{},
@@ -834,10 +834,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshots
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	StorageLocation: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocation,
+	StorageLocation: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocation,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts,
 }
 ```
 
@@ -853,8 +853,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshots
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.storageLocation">StorageLocation</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocation">ComputeSnapshotSettingsStorageLocation</a></code> | storage_location block. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}. |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts">ComputeSnapshotSettingsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -939,7 +939,7 @@ StorageLocation ComputeSnapshotSettingsStorageLocation
 
 storage_location block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#storage_location ComputeSnapshotSettings#storage_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#storage_location ComputeSnapshotSettings#storage_location}
 
 ---
 
@@ -951,7 +951,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#id ComputeSnapshotSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -966,7 +966,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#project ComputeSnapshotSettings#project}.
 
 ---
 
@@ -980,7 +980,7 @@ Timeouts ComputeSnapshotSettingsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#timeouts ComputeSnapshotSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#timeouts ComputeSnapshotSettings#timeouts}
 
 ---
 
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 &computesnapshotsettings.ComputeSnapshotSettingsStorageLocation {
 	Policy: *string,
@@ -1016,7 +1016,7 @@ Policy *string
 
 The chosen location policy Possible values: ["NEAREST_MULTI_REGION", "LOCAL_REGION", "SPECIFIC_LOCATIONS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#policy ComputeSnapshotSettings#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#policy ComputeSnapshotSettings#policy}
 
 ---
 
@@ -1030,7 +1030,7 @@ Locations interface{}
 
 locations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#locations ComputeSnapshotSettings#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#locations ComputeSnapshotSettings#locations}
 
 ---
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 &computesnapshotsettings.ComputeSnapshotSettingsStorageLocationLocations {
 	Location: *string,
@@ -1051,7 +1051,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshots
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocations.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocations.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}. |
 | <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocations.property.name">Name</a></code> | <code>*string</code> | Name of the location. |
 
 ---
@@ -1064,7 +1064,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#location ComputeSnapshotSettings#location}.
 
 ---
 
@@ -1081,7 +1081,7 @@ Name of the location.
 It should be one of the Cloud Storage buckets.
 Only one location can be specified. (should match location)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#name ComputeSnapshotSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#name ComputeSnapshotSettings#name}
 
 ---
 
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 &computesnapshotsettings.ComputeSnapshotSettingsTimeouts {
 	Create: *string,
@@ -1103,9 +1103,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshots
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}. |
-| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}. |
+| <code><a href="#@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}. |
 
 ---
 
@@ -1117,7 +1117,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#create ComputeSnapshotSettings#create}.
 
 ---
 
@@ -1129,7 +1129,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#delete ComputeSnapshotSettings#delete}.
 
 ---
 
@@ -1141,7 +1141,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_snapshot_settings#update ComputeSnapshotSettings#update}.
 
 ---
 
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 computesnapshotsettings.NewComputeSnapshotSettingsStorageLocationLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeSnapshotSettingsStorageLocationLocationsList
 ```
@@ -1312,7 +1312,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 computesnapshotsettings.NewComputeSnapshotSettingsStorageLocationLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeSnapshotSettingsStorageLocationLocationsOutputReference
 ```
@@ -1623,7 +1623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsStorageLocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 computesnapshotsettings.NewComputeSnapshotSettingsStorageLocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeSnapshotSettingsStorageLocationOutputReference
 ```
@@ -1936,7 +1936,7 @@ func InternalValue() ComputeSnapshotSettingsStorageLocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSnapshotSettings.ComputeSnapshotSettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computesnapshotsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computesnapshotsettings"
 
 computesnapshotsettings.NewComputeSnapshotSettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeSnapshotSettingsTimeoutsOutputReference
 ```

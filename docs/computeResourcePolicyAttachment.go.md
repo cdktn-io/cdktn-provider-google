@@ -4,12 +4,12 @@
 
 ### ComputeResourcePolicyAttachment <a name="ComputeResourcePolicyAttachment" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment google_compute_resource_policy_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment google_compute_resource_policy_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.NewComputeResourcePolicyAttachment(scope Construct, id *string, config ComputeResourcePolicyAttachmentConfig) ComputeResourcePolicyAttachment
 ```
@@ -441,7 +441,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.ComputeResourcePolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.ComputeResourcePolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ computeresourcepolicyattachment.ComputeResourcePolicyAttachment_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.ComputeResourcePolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ computeresourcepolicyattachment.ComputeResourcePolicyAttachment_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.ComputeResourcePolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ComputeResourcePolicyAttac
 
 The id of the existing ComputeResourcePolicyAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 &computeresourcepolicyattachment.ComputeResourcePolicyAttachmentConfig {
 	Connection: interface{},
@@ -876,7 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeresourcep
 	Name: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts,
 	Zone: *string,
 }
 ```
@@ -894,8 +894,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeresourcep
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.instance">Instance</a></code> | <code>*string</code> | The name of the instance in which the resource policies are attached to. |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.name">Name</a></code> | <code>*string</code> | The resource policy to be attached to the instance for scheduling start/stop operations. Do not specify the self link. |
-| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}. |
-| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}. |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}. |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}. |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts">ComputeResourcePolicyAttachmentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentConfig.property.zone">Zone</a></code> | <code>*string</code> | A reference to the zone where the instance resides. |
 
@@ -981,7 +981,7 @@ Instance *string
 
 The name of the instance in which the resource policies are attached to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#instance ComputeResourcePolicyAttachment#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#instance ComputeResourcePolicyAttachment#instance}
 
 ---
 
@@ -995,7 +995,7 @@ Name *string
 
 The resource policy to be attached to the instance for scheduling start/stop operations. Do not specify the self link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#name ComputeResourcePolicyAttachment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#name ComputeResourcePolicyAttachment#name}
 
 ---
 
@@ -1007,7 +1007,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#id ComputeResourcePolicyAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1022,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#project ComputeResourcePolicyAttachment#project}.
 
 ---
 
@@ -1036,7 +1036,7 @@ Timeouts ComputeResourcePolicyAttachmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#timeouts ComputeResourcePolicyAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#timeouts ComputeResourcePolicyAttachment#timeouts}
 
 ---
 
@@ -1050,7 +1050,7 @@ Zone *string
 
 A reference to the zone where the instance resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#zone ComputeResourcePolicyAttachment#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#zone ComputeResourcePolicyAttachment#zone}
 
 ---
 
@@ -1059,7 +1059,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 &computeresourcepolicyattachment.ComputeResourcePolicyAttachmentTimeouts {
 	Create: *string,
@@ -1071,8 +1071,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeresourcep
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}. |
-| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}. |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}. |
+| <code><a href="#@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}. |
 
 ---
 
@@ -1084,7 +1084,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#create ComputeResourcePolicyAttachment#create}.
 
 ---
 
@@ -1096,7 +1096,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_resource_policy_attachment#delete ComputeResourcePolicyAttachment#delete}.
 
 ---
 
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeResourcePolicyAttachment.ComputeResourcePolicyAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeresourcepolicyattachment"
 
 computeresourcepolicyattachment.NewComputeResourcePolicyAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeResourcePolicyAttachmentTimeoutsOutputReference
 ```

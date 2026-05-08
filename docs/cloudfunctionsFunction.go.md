@@ -4,12 +4,12 @@
 
 ### CloudfunctionsFunction <a name="CloudfunctionsFunction" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunction"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function google_cloudfunctions_function}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function google_cloudfunctions_function}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunction(scope Construct, id *string, config CloudfunctionsFunctionConfig) CloudfunctionsFunction
 ```
@@ -722,7 +722,7 @@ func ResetVpcConnectorEgressSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunction.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.CloudfunctionsFunction_IsConstruct(x interface{}) *bool
 ```
@@ -754,7 +754,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunction.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.CloudfunctionsFunction_IsTerraformElement(x interface{}) *bool
 ```
@@ -768,7 +768,7 @@ cloudfunctionsfunction.CloudfunctionsFunction_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunction.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.CloudfunctionsFunction_IsTerraformResource(x interface{}) *bool
 ```
@@ -782,7 +782,7 @@ cloudfunctionsfunction.CloudfunctionsFunction_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunction.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.CloudfunctionsFunction_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -811,7 +811,7 @@ The construct id used in the generated config for the CloudfunctionsFunction to 
 
 The id of the existing CloudfunctionsFunction that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1825,7 +1825,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionAutomaticUpdatePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 &cloudfunctionsfunction.CloudfunctionsFunctionAutomaticUpdatePolicy {
 
@@ -1838,7 +1838,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfu
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 &cloudfunctionsfunction.CloudfunctionsFunctionConfig {
 	Connection: interface{},
@@ -1850,7 +1850,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfu
 	Provisioners: *[]interface{},
 	Name: *string,
 	Runtime: *string,
-	AutomaticUpdatePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudfunctionsFunction.CloudfunctionsFunctionAutomaticUpdatePolicy,
+	AutomaticUpdatePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudfunctionsFunction.CloudfunctionsFunctionAutomaticUpdatePolicy,
 	AvailableMemoryMb: *f64,
 	BuildEnvironmentVariables: *map[string]*string,
 	BuildServiceAccount: *string,
@@ -1860,7 +1860,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfu
 	DockerRepository: *string,
 	EntryPoint: *string,
 	EnvironmentVariables: *map[string]*string,
-	EventTrigger: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudfunctionsFunction.CloudfunctionsFunctionEventTrigger,
+	EventTrigger: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudfunctionsFunction.CloudfunctionsFunctionEventTrigger,
 	HttpsTriggerSecurityLevel: *string,
 	HttpsTriggerUrl: *string,
 	Id: *string,
@@ -1869,7 +1869,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfu
 	Labels: *map[string]*string,
 	MaxInstances: *f64,
 	MinInstances: *f64,
-	OnDeployUpdatePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudfunctionsFunction.CloudfunctionsFunctionOnDeployUpdatePolicy,
+	OnDeployUpdatePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudfunctionsFunction.CloudfunctionsFunctionOnDeployUpdatePolicy,
 	Project: *string,
 	Region: *string,
 	SecretEnvironmentVariables: interface{},
@@ -1877,9 +1877,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfu
 	ServiceAccountEmail: *string,
 	SourceArchiveBucket: *string,
 	SourceArchiveObject: *string,
-	SourceRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepository,
+	SourceRepository: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepository,
 	Timeout: *f64,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts,
 	TriggerHttp: interface{},
 	VpcConnector: *string,
 	VpcConnectorEgressSettings: *string,
@@ -1912,10 +1912,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfu
 | <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.eventTrigger">EventTrigger</a></code> | <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionEventTrigger">CloudfunctionsFunctionEventTrigger</a></code> | event_trigger block. |
 | <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.httpsTriggerSecurityLevel">HttpsTriggerSecurityLevel</a></code> | <code>*string</code> | The security level for the function. Defaults to SECURE_OPTIONAL. Valid only if trigger_http is used. |
 | <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.httpsTriggerUrl">HttpsTriggerUrl</a></code> | <code>*string</code> | URL which triggers function execution. Returned only if trigger_http is used. |
-| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#id CloudfunctionsFunction#id}. |
+| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#id CloudfunctionsFunction#id}. |
 | <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.ingressSettings">IngressSettings</a></code> | <code>*string</code> | String value that controls what traffic can reach the function. |
 | <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.kmsKeyName">KmsKeyName</a></code> | <code>*string</code> | Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt function resources. |
-| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements. |
+| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements. |
 | <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.maxInstances">MaxInstances</a></code> | <code>*f64</code> | The limit on the maximum number of function instances that may coexist at a given time. |
 | <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.minInstances">MinInstances</a></code> | <code>*f64</code> | The limit on the minimum number of function instances that may coexist at a given time. |
 | <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionConfig.property.onDeployUpdatePolicy">OnDeployUpdatePolicy</a></code> | <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionOnDeployUpdatePolicy">CloudfunctionsFunctionOnDeployUpdatePolicy</a></code> | on_deploy_update_policy block. |
@@ -2015,7 +2015,7 @@ Name *string
 
 A user-defined name of the function. Function names must be unique globally.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#name CloudfunctionsFunction#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#name CloudfunctionsFunction#name}
 
 ---
 
@@ -2029,7 +2029,7 @@ Runtime *string
 
 The runtime in which the function is going to run. Eg. "nodejs20", "python37", "go111".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#runtime CloudfunctionsFunction#runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#runtime CloudfunctionsFunction#runtime}
 
 ---
 
@@ -2043,7 +2043,7 @@ AutomaticUpdatePolicy CloudfunctionsFunctionAutomaticUpdatePolicy
 
 automatic_update_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#automatic_update_policy CloudfunctionsFunction#automatic_update_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#automatic_update_policy CloudfunctionsFunction#automatic_update_policy}
 
 ---
 
@@ -2057,7 +2057,7 @@ AvailableMemoryMb *f64
 
 Memory (in MB), available to the function. Default value is 256. Possible values include 128, 256, 512, 1024, etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#available_memory_mb CloudfunctionsFunction#available_memory_mb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#available_memory_mb CloudfunctionsFunction#available_memory_mb}
 
 ---
 
@@ -2071,7 +2071,7 @@ BuildEnvironmentVariables *map[string]*string
 
 A set of key/value environment variable pairs available during build time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#build_environment_variables CloudfunctionsFunction#build_environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#build_environment_variables CloudfunctionsFunction#build_environment_variables}
 
 ---
 
@@ -2085,7 +2085,7 @@ BuildServiceAccount *string
 
 The fully-qualified name of the service account to be used for the build step of deploying this function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#build_service_account CloudfunctionsFunction#build_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#build_service_account CloudfunctionsFunction#build_service_account}
 
 ---
 
@@ -2099,7 +2099,7 @@ BuildWorkerPool *string
 
 Name of the Cloud Build Custom Worker Pool that should be used to build the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#build_worker_pool CloudfunctionsFunction#build_worker_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#build_worker_pool CloudfunctionsFunction#build_worker_pool}
 
 ---
 
@@ -2113,7 +2113,7 @@ Description *string
 
 Description of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#description CloudfunctionsFunction#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#description CloudfunctionsFunction#description}
 
 ---
 
@@ -2127,7 +2127,7 @@ DockerRegistry *string
 
 Docker Registry to use for storing the function's Docker images. Allowed values are ARTIFACT_REGISTRY (default) and CONTAINER_REGISTRY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#docker_registry CloudfunctionsFunction#docker_registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#docker_registry CloudfunctionsFunction#docker_registry}
 
 ---
 
@@ -2143,7 +2143,7 @@ User managed repository created in Artifact Registry optionally with a customer 
 
 If specified, deployments will use Artifact Registry for storing images built with Cloud Build.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#docker_repository CloudfunctionsFunction#docker_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#docker_repository CloudfunctionsFunction#docker_repository}
 
 ---
 
@@ -2157,7 +2157,7 @@ EntryPoint *string
 
 Name of the function that will be executed when the Google Cloud Function is triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#entry_point CloudfunctionsFunction#entry_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#entry_point CloudfunctionsFunction#entry_point}
 
 ---
 
@@ -2171,7 +2171,7 @@ EnvironmentVariables *map[string]*string
 
 A set of key/value environment variable pairs to assign to the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#environment_variables CloudfunctionsFunction#environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#environment_variables CloudfunctionsFunction#environment_variables}
 
 ---
 
@@ -2185,7 +2185,7 @@ EventTrigger CloudfunctionsFunctionEventTrigger
 
 event_trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#event_trigger CloudfunctionsFunction#event_trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#event_trigger CloudfunctionsFunction#event_trigger}
 
 ---
 
@@ -2199,7 +2199,7 @@ HttpsTriggerSecurityLevel *string
 
 The security level for the function. Defaults to SECURE_OPTIONAL. Valid only if trigger_http is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#https_trigger_security_level CloudfunctionsFunction#https_trigger_security_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#https_trigger_security_level CloudfunctionsFunction#https_trigger_security_level}
 
 ---
 
@@ -2213,7 +2213,7 @@ HttpsTriggerUrl *string
 
 URL which triggers function execution. Returned only if trigger_http is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#https_trigger_url CloudfunctionsFunction#https_trigger_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#https_trigger_url CloudfunctionsFunction#https_trigger_url}
 
 ---
 
@@ -2225,7 +2225,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#id CloudfunctionsFunction#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#id CloudfunctionsFunction#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2244,7 +2244,7 @@ String value that controls what traffic can reach the function.
 
 Allowed values are ALLOW_ALL and ALLOW_INTERNAL_ONLY. Changes to this field will recreate the cloud function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#ingress_settings CloudfunctionsFunction#ingress_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#ingress_settings CloudfunctionsFunction#ingress_settings}
 
 ---
 
@@ -2258,7 +2258,7 @@ KmsKeyName *string
 
 Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt function resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#kms_key_name CloudfunctionsFunction#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#kms_key_name CloudfunctionsFunction#kms_key_name}
 
 ---
 
@@ -2270,12 +2270,12 @@ Labels *map[string]*string
 
 - *Type:* *map[string]*string
 
-A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.
+A set of key/value label pairs to assign to the function. Label keys must follow the requirements at https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements.
 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#labels CloudfunctionsFunction#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#labels CloudfunctionsFunction#labels}
 
 ---
 
@@ -2289,7 +2289,7 @@ MaxInstances *f64
 
 The limit on the maximum number of function instances that may coexist at a given time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#max_instances CloudfunctionsFunction#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#max_instances CloudfunctionsFunction#max_instances}
 
 ---
 
@@ -2303,7 +2303,7 @@ MinInstances *f64
 
 The limit on the minimum number of function instances that may coexist at a given time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#min_instances CloudfunctionsFunction#min_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#min_instances CloudfunctionsFunction#min_instances}
 
 ---
 
@@ -2317,7 +2317,7 @@ OnDeployUpdatePolicy CloudfunctionsFunctionOnDeployUpdatePolicy
 
 on_deploy_update_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#on_deploy_update_policy CloudfunctionsFunction#on_deploy_update_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#on_deploy_update_policy CloudfunctionsFunction#on_deploy_update_policy}
 
 ---
 
@@ -2331,7 +2331,7 @@ Project *string
 
 Project of the function. If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#project CloudfunctionsFunction#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#project CloudfunctionsFunction#project}
 
 ---
 
@@ -2345,7 +2345,7 @@ Region *string
 
 Region of function. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#region CloudfunctionsFunction#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#region CloudfunctionsFunction#region}
 
 ---
 
@@ -2359,7 +2359,7 @@ SecretEnvironmentVariables interface{}
 
 secret_environment_variables block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#secret_environment_variables CloudfunctionsFunction#secret_environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#secret_environment_variables CloudfunctionsFunction#secret_environment_variables}
 
 ---
 
@@ -2373,7 +2373,7 @@ SecretVolumes interface{}
 
 secret_volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#secret_volumes CloudfunctionsFunction#secret_volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#secret_volumes CloudfunctionsFunction#secret_volumes}
 
 ---
 
@@ -2387,7 +2387,7 @@ ServiceAccountEmail *string
 
 If provided, the self-provided service account to run the function with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#service_account_email CloudfunctionsFunction#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#service_account_email CloudfunctionsFunction#service_account_email}
 
 ---
 
@@ -2401,7 +2401,7 @@ SourceArchiveBucket *string
 
 The GCS bucket containing the zip archive which contains the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#source_archive_bucket CloudfunctionsFunction#source_archive_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#source_archive_bucket CloudfunctionsFunction#source_archive_bucket}
 
 ---
 
@@ -2415,7 +2415,7 @@ SourceArchiveObject *string
 
 The source archive object (file) in archive bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#source_archive_object CloudfunctionsFunction#source_archive_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#source_archive_object CloudfunctionsFunction#source_archive_object}
 
 ---
 
@@ -2429,7 +2429,7 @@ SourceRepository CloudfunctionsFunctionSourceRepository
 
 source_repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#source_repository CloudfunctionsFunction#source_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#source_repository CloudfunctionsFunction#source_repository}
 
 ---
 
@@ -2443,7 +2443,7 @@ Timeout *f64
 
 Timeout (in seconds) for the function. Default value is 60 seconds. Cannot be more than 540 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#timeout CloudfunctionsFunction#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#timeout CloudfunctionsFunction#timeout}
 
 ---
 
@@ -2457,7 +2457,7 @@ Timeouts CloudfunctionsFunctionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#timeouts CloudfunctionsFunction#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#timeouts CloudfunctionsFunction#timeouts}
 
 ---
 
@@ -2473,7 +2473,7 @@ Boolean variable.
 
 Any HTTP request (of a supported type) to the endpoint will trigger function execution. Supported HTTP request types are: POST, PUT, GET, DELETE, and OPTIONS. Endpoint is returned as https_trigger_url. Cannot be used with trigger_bucket and trigger_topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#trigger_http CloudfunctionsFunction#trigger_http}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#trigger_http CloudfunctionsFunction#trigger_http}
 
 ---
 
@@ -2489,7 +2489,7 @@ The VPC Network Connector that this cloud function can connect to.
 
 It can be either the fully-qualified URI, or the short name of the network connector resource. The format of this field is projects/* /locations/* /connectors/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#vpc_connector CloudfunctionsFunction#vpc_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#vpc_connector CloudfunctionsFunction#vpc_connector}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2507,7 +2507,7 @@ The egress settings for the connector, controlling what traffic is diverted thro
 
 Allowed values are ALL_TRAFFIC and PRIVATE_RANGES_ONLY. Defaults to PRIVATE_RANGES_ONLY. If unset, this field preserves the previously set value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#vpc_connector_egress_settings CloudfunctionsFunction#vpc_connector_egress_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#vpc_connector_egress_settings CloudfunctionsFunction#vpc_connector_egress_settings}
 
 ---
 
@@ -2516,12 +2516,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionEventTrigger.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 &cloudfunctionsfunction.CloudfunctionsFunctionEventTrigger {
 	EventType: *string,
 	Resource: *string,
-	FailurePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v18.cloudfunctionsFunction.CloudfunctionsFunctionEventTriggerFailurePolicy,
+	FailurePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v19.cloudfunctionsFunction.CloudfunctionsFunctionEventTriggerFailurePolicy,
 }
 ```
 
@@ -2547,7 +2547,7 @@ The type of event to observe.
 
 For example: "google.storage.object.finalize". See the documentation on calling Cloud Functions for a full reference of accepted triggers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#event_type CloudfunctionsFunction#event_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#event_type CloudfunctionsFunction#event_type}
 
 ---
 
@@ -2561,7 +2561,7 @@ Resource *string
 
 The name or partial URI of the resource from which to observe events. For example, "myBucket" or "projects/my-project/topics/my-topic".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#resource CloudfunctionsFunction#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#resource CloudfunctionsFunction#resource}
 
 ---
 
@@ -2575,7 +2575,7 @@ FailurePolicy CloudfunctionsFunctionEventTriggerFailurePolicy
 
 failure_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#failure_policy CloudfunctionsFunction#failure_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#failure_policy CloudfunctionsFunction#failure_policy}
 
 ---
 
@@ -2584,7 +2584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionEventTriggerFailurePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 &cloudfunctionsfunction.CloudfunctionsFunctionEventTriggerFailurePolicy {
 	Retry: interface{},
@@ -2609,7 +2609,7 @@ Retry interface{}
 
 Whether the function should be retried on failure. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#retry CloudfunctionsFunction#retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#retry CloudfunctionsFunction#retry}
 
 ---
 
@@ -2618,7 +2618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionOnDeployUpdatePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 &cloudfunctionsfunction.CloudfunctionsFunctionOnDeployUpdatePolicy {
 
@@ -2631,7 +2631,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfu
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 &cloudfunctionsfunction.CloudfunctionsFunctionSecretEnvironmentVariables {
 	Key: *string,
@@ -2662,7 +2662,7 @@ Key *string
 
 Name of the environment variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#key CloudfunctionsFunction#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#key CloudfunctionsFunction#key}
 
 ---
 
@@ -2676,7 +2676,7 @@ Secret *string
 
 ID of the secret in secret manager (not the full resource name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#secret CloudfunctionsFunction#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#secret CloudfunctionsFunction#secret}
 
 ---
 
@@ -2692,7 +2692,7 @@ Version of the secret (version number or the string "latest").
 
 It is recommended to use a numeric version for secret environment variables as any updates to the secret value is not reflected until new clones start.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#version CloudfunctionsFunction#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#version CloudfunctionsFunction#version}
 
 ---
 
@@ -2708,7 +2708,7 @@ Project identifier (due to a known limitation, only project number is supported 
 
 If not set, it will be populated with the function's project, assuming that the secret exists in the same project as of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#project_id CloudfunctionsFunction#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#project_id CloudfunctionsFunction#project_id}
 
 ---
 
@@ -2717,7 +2717,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 &cloudfunctionsfunction.CloudfunctionsFunctionSecretVolumes {
 	MountPath: *string,
@@ -2750,7 +2750,7 @@ The path within the container to mount the secret volume.
 
 For example, setting the mount_path as "/etc/secrets" would mount the secret value files under the "/etc/secrets" directory. This directory will also be completely shadowed and unavailable to mount any other secrets. Recommended mount paths: "/etc/secrets" Restricted mount paths: "/cloudsql", "/dev/log", "/pod", "/proc", "/var/log".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#mount_path CloudfunctionsFunction#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#mount_path CloudfunctionsFunction#mount_path}
 
 ---
 
@@ -2764,7 +2764,7 @@ Secret *string
 
 ID of the secret in secret manager (not the full resource name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#secret CloudfunctionsFunction#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#secret CloudfunctionsFunction#secret}
 
 ---
 
@@ -2780,7 +2780,7 @@ Project identifier (due to a known limitation, only project number is supported 
 
 If not set, it will be populated with the function's project, assuming that the secret exists in the same project as of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#project_id CloudfunctionsFunction#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#project_id CloudfunctionsFunction#project_id}
 
 ---
 
@@ -2794,7 +2794,7 @@ Versions interface{}
 
 versions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#versions CloudfunctionsFunction#versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#versions CloudfunctionsFunction#versions}
 
 ---
 
@@ -2803,7 +2803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 &cloudfunctionsfunction.CloudfunctionsFunctionSecretVolumesVersions {
 	Path: *string,
@@ -2832,7 +2832,7 @@ Relative path of the file under the mount path where the secret value for this v
 
 For example, setting the mount_path as "/etc/secrets" and path as "/secret_foo" would mount the secret value file at "/etc/secrets/secret_foo".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#path CloudfunctionsFunction#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#path CloudfunctionsFunction#path}
 
 ---
 
@@ -2848,7 +2848,7 @@ Version of the secret (version number or the string "latest").
 
 It is preferable to use "latest" version with secret volumes as secret value changes are reflected immediately.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#version CloudfunctionsFunction#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#version CloudfunctionsFunction#version}
 
 ---
 
@@ -2857,7 +2857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 &cloudfunctionsfunction.CloudfunctionsFunctionSourceRepository {
 	Url: *string,
@@ -2882,7 +2882,7 @@ Url *string
 
 The URL pointing to the hosted repository where the function is defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#url CloudfunctionsFunction#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#url CloudfunctionsFunction#url}
 
 ---
 
@@ -2891,7 +2891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 &cloudfunctionsfunction.CloudfunctionsFunctionTimeouts {
 	Create: *string,
@@ -2905,10 +2905,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#create CloudfunctionsFunction#create}. |
-| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#delete CloudfunctionsFunction#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#read CloudfunctionsFunction#read}. |
-| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#update CloudfunctionsFunction#update}. |
+| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#create CloudfunctionsFunction#create}. |
+| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#delete CloudfunctionsFunction#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#read CloudfunctionsFunction#read}. |
+| <code><a href="#@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#update CloudfunctionsFunction#update}. |
 
 ---
 
@@ -2920,7 +2920,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#create CloudfunctionsFunction#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#create CloudfunctionsFunction#create}.
 
 ---
 
@@ -2932,7 +2932,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#delete CloudfunctionsFunction#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#delete CloudfunctionsFunction#delete}.
 
 ---
 
@@ -2944,7 +2944,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#read CloudfunctionsFunction#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#read CloudfunctionsFunction#read}.
 
 ---
 
@@ -2956,7 +2956,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloudfunctions_function#update CloudfunctionsFunction#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloudfunctions_function#update CloudfunctionsFunction#update}.
 
 ---
 
@@ -2967,7 +2967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionAutomaticUpdatePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionAutomaticUpdatePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfunctionsFunctionAutomaticUpdatePolicyOutputReference
 ```
@@ -3216,7 +3216,7 @@ func InternalValue() CloudfunctionsFunctionAutomaticUpdatePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionEventTriggerFailurePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionEventTriggerFailurePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfunctionsFunctionEventTriggerFailurePolicyOutputReference
 ```
@@ -3487,7 +3487,7 @@ func InternalValue() CloudfunctionsFunctionEventTriggerFailurePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionEventTriggerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionEventTriggerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfunctionsFunctionEventTriggerOutputReference
 ```
@@ -3822,7 +3822,7 @@ func InternalValue() CloudfunctionsFunctionEventTrigger
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionOnDeployUpdatePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionOnDeployUpdatePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfunctionsFunctionOnDeployUpdatePolicyOutputReference
 ```
@@ -4082,7 +4082,7 @@ func InternalValue() CloudfunctionsFunctionOnDeployUpdatePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionSecretEnvironmentVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfunctionsFunctionSecretEnvironmentVariablesList
 ```
@@ -4242,7 +4242,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionSecretEnvironmentVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference
 ```
@@ -4604,7 +4604,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionSecretVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfunctionsFunctionSecretVolumesList
 ```
@@ -4764,7 +4764,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionSecretVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfunctionsFunctionSecretVolumesOutputReference
 ```
@@ -5146,7 +5146,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionSecretVolumesVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudfunctionsFunctionSecretVolumesVersionsList
 ```
@@ -5306,7 +5306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSecretVolumesVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionSecretVolumesVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudfunctionsFunctionSecretVolumesVersionsOutputReference
 ```
@@ -5617,7 +5617,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionSourceRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionSourceRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfunctionsFunctionSourceRepositoryOutputReference
 ```
@@ -5899,7 +5899,7 @@ func InternalValue() CloudfunctionsFunctionSourceRepository
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudfunctionsFunction.CloudfunctionsFunctionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/cloudfunctionsfunction"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/cloudfunctionsfunction"
 
 cloudfunctionsfunction.NewCloudfunctionsFunctionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudfunctionsFunctionTimeoutsOutputReference
 ```

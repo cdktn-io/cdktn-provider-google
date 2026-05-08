@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,35 +13,41 @@ import * as cdktn from 'cdktn';
 
 export interface ComputeSubnetworkConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Typically packets destined to IPs within the subnetwork range that do not match
+  * existing resources are dropped and prevented from leaving the VPC.
+  * Setting this field to true will allow these packets to match dynamic routes injected
+  * via BGP even if their destinations match existing subnet ranges.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#allow_subnet_cidr_routes_overlap ComputeSubnetwork#allow_subnet_cidr_routes_overlap}
+  */
+  readonly allowSubnetCidrRoutesOverlap?: boolean | cdktn.IResolvable;
+  /**
   * An optional description of this resource. Provide this property when
   * you create the resource. This field can be set only at resource
   * creation time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#description ComputeSubnetwork#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#description ComputeSubnetwork#description}
   */
   readonly description?: string;
   /**
-  * Whether to enable flow logging for this subnetwork. If this field is not explicitly set,
-  * it will not appear in get listings. If not set the default behavior is determined by the
-  * org policy, if there is no org policy specified, then it will default to disabled.
-  * This field isn't supported if the subnet purpose field is set to REGIONAL_MANAGED_PROXY.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#enable_flow_logs ComputeSubnetwork#enable_flow_logs}
-  */
-  readonly enableFlowLogs?: boolean | cdktn.IResolvable;
-  /**
   * The range of external IPv6 addresses that are owned by this subnetwork.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#external_ipv6_prefix ComputeSubnetwork#external_ipv6_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#external_ipv6_prefix ComputeSubnetwork#external_ipv6_prefix}
   */
   readonly externalIpv6Prefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#id ComputeSubnetwork#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#id ComputeSubnetwork#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * The internal IPv6 address range that is assigned to this subnetwork.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#internal_ipv6_prefix ComputeSubnetwork#internal_ipv6_prefix}
+  */
+  readonly internalIpv6Prefix?: string;
   /**
   * The range of internal addresses that are owned by this subnetwork.
   * Provide this property when you create the subnetwork. For example,
@@ -49,21 +55,21 @@ export interface ComputeSubnetworkConfig extends cdktn.TerraformMetaArguments {
   * non-overlapping within a network. Only IPv4 is supported.
   * Field is optional when 'reserved_internal_range' is defined, otherwise required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#ip_cidr_range ComputeSubnetwork#ip_cidr_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#ip_cidr_range ComputeSubnetwork#ip_cidr_range}
   */
   readonly ipCidrRange?: string;
   /**
   * Resource reference of a PublicDelegatedPrefix. The PDP must be a sub-PDP
-  * in EXTERNAL_IPV6_SUBNETWORK_CREATION mode.
-  * Use one of the following formats to specify a sub-PDP when creating an
-  * IPv6 NetLB forwarding rule using BYOIP:
+  * in EXTERNAL_IPV6_SUBNETWORK_CREATION or INTERNAL_IPV6_SUBNETWORK_CREATION
+  * mode. Use one of the following formats to specify a sub-PDP when creating
+  * a dual stack or IPv6-only subnetwork using BYOIP:
   * Full resource URL, as in:
   *   * 'https://www.googleapis.com/compute/v1/projects/{{projectId}}/regions/{{region}}/publicDelegatedPrefixes/{{sub-pdp-name}}'
   * Partial URL, as in:
   *   * 'projects/{{projectId}}/regions/region/publicDelegatedPrefixes/{{sub-pdp-name}}'
   *   * 'regions/{{region}}/publicDelegatedPrefixes/{{sub-pdp-name}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#ip_collection ComputeSubnetwork#ip_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#ip_collection ComputeSubnetwork#ip_collection}
   */
   readonly ipCollection?: string;
   /**
@@ -71,7 +77,7 @@ export interface ComputeSubnetworkConfig extends cdktn.TerraformMetaArguments {
   * or the first time the subnet is updated into IPV4_IPV6 dual stack. If the ipv6_type is EXTERNAL then this subnet
   * cannot enable direct path. Possible values: ["EXTERNAL", "INTERNAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#ipv6_access_type ComputeSubnetwork#ipv6_access_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#ipv6_access_type ComputeSubnetwork#ipv6_access_type}
   */
   readonly ipv6AccessType?: string;
   /**
@@ -83,35 +89,35 @@ export interface ComputeSubnetworkConfig extends cdktn.TerraformMetaArguments {
   * following characters must be a dash, lowercase letter, or digit,
   * except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#name ComputeSubnetwork#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#name ComputeSubnetwork#name}
   */
   readonly name: string;
   /**
   * The network this subnet belongs to.
   * Only networks that are in the distributed mode can have subnetworks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#network ComputeSubnetwork#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#network ComputeSubnetwork#network}
   */
   readonly network: string;
   /**
   * When enabled, VMs in this subnetwork without external IP addresses can
   * access Google APIs and services by using Private Google Access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#private_ip_google_access ComputeSubnetwork#private_ip_google_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#private_ip_google_access ComputeSubnetwork#private_ip_google_access}
   */
   readonly privateIpGoogleAccess?: boolean | cdktn.IResolvable;
   /**
   * The private IPv6 google access type for the VMs in this subnet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#private_ipv6_google_access ComputeSubnetwork#private_ipv6_google_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#private_ipv6_google_access ComputeSubnetwork#private_ipv6_google_access}
   */
   readonly privateIpv6GoogleAccess?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#project ComputeSubnetwork#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#project ComputeSubnetwork#project}
   */
   readonly project?: string;
   /**
-  * The purpose of the resource. This field can be either 'PRIVATE', 'REGIONAL_MANAGED_PROXY', 'GLOBAL_MANAGED_PROXY', 'PRIVATE_SERVICE_CONNECT', 'PEER_MIGRATION' or 'PRIVATE_NAT'([Beta](https://terraform.io/docs/providers/google/guides/provider_versions.html)).
+  * The purpose of the resource. This field can be either 'PRIVATE', 'REGIONAL_MANAGED_PROXY', 'GLOBAL_MANAGED_PROXY', 'PRIVATE_SERVICE_CONNECT', 'PEER_MIGRATION' or 'PRIVATE_NAT'([Beta](../guides/provider_versions.html.markdown)).
   * A subnet with purpose set to 'REGIONAL_MANAGED_PROXY' is a user-created subnetwork that is reserved for regional Envoy-based load balancers.
   * A subnetwork in a given region with purpose set to 'GLOBAL_MANAGED_PROXY' is a proxy-only subnet and is shared between all the cross-regional Envoy-based load balancers.
   * A subnetwork with purpose set to 'PRIVATE_SERVICE_CONNECT' reserves the subnet for hosting a Private Service Connect published service.
@@ -120,22 +126,28 @@ export interface ComputeSubnetworkConfig extends cdktn.TerraformMetaArguments {
   * Note that 'REGIONAL_MANAGED_PROXY' is the preferred setting for all regional Envoy load balancers.
   * If unspecified, the purpose defaults to 'PRIVATE'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#purpose ComputeSubnetwork#purpose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#purpose ComputeSubnetwork#purpose}
   */
   readonly purpose?: string;
   /**
   * The GCP region for this subnetwork.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#region ComputeSubnetwork#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#region ComputeSubnetwork#region}
   */
   readonly region?: string;
   /**
   * The ID of the reserved internal range. Must be prefixed with 'networkconnectivity.googleapis.com'
   * E.g. 'networkconnectivity.googleapis.com/projects/{project}/locations/global/internalRanges/{rangeId}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#reserved_internal_range ComputeSubnetwork#reserved_internal_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#reserved_internal_range ComputeSubnetwork#reserved_internal_range}
   */
   readonly reservedInternalRange?: string;
+  /**
+  * 'Configures subnet mask resolution for this subnetwork.' Possible values: ["ARP_ALL_RANGES", "ARP_PRIMARY_RANGE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#resolve_subnet_mask ComputeSubnetwork#resolve_subnet_mask}
+  */
+  readonly resolveSubnetMask?: string;
   /**
   * The role of subnetwork.
   * Currently, this field is only used when 'purpose' is 'REGIONAL_MANAGED_PROXY'.
@@ -143,7 +155,7 @@ export interface ComputeSubnetworkConfig extends cdktn.TerraformMetaArguments {
   * An 'ACTIVE' subnetwork is one that is currently being used for Envoy-based load balancers in a region.
   * A 'BACKUP' subnetwork is one that is ready to be promoted to 'ACTIVE' or is currently draining. Possible values: ["ACTIVE", "BACKUP"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#role ComputeSubnetwork#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#role ComputeSubnetwork#role}
   */
   readonly role?: string;
   /**
@@ -154,38 +166,38 @@ export interface ComputeSubnetworkConfig extends cdktn.TerraformMetaArguments {
   * empty list of secondary IP ranges to the API.
   * Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#send_secondary_ip_range_if_empty ComputeSubnetwork#send_secondary_ip_range_if_empty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#send_secondary_ip_range_if_empty ComputeSubnetwork#send_secondary_ip_range_if_empty}
   */
   readonly sendSecondaryIpRangeIfEmpty?: boolean | cdktn.IResolvable;
   /**
   * The stack type for this subnet to identify whether the IPv6 feature is enabled or not.
   * If not specified IPV4_ONLY will be used. Possible values: ["IPV4_ONLY", "IPV4_IPV6", "IPV6_ONLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#stack_type ComputeSubnetwork#stack_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#stack_type ComputeSubnetwork#stack_type}
   */
   readonly stackType?: string;
   /**
   * log_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#log_config ComputeSubnetwork#log_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#log_config ComputeSubnetwork#log_config}
   */
   readonly logConfig?: ComputeSubnetworkLogConfig;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#params ComputeSubnetwork#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#params ComputeSubnetwork#params}
   */
   readonly params?: ComputeSubnetworkParams;
   /**
   * secondary_ip_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#secondary_ip_range ComputeSubnetwork#secondary_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#secondary_ip_range ComputeSubnetwork#secondary_ip_range}
   */
   readonly secondaryIpRange?: ComputeSubnetworkSecondaryIpRange[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#timeouts ComputeSubnetwork#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#timeouts ComputeSubnetwork#timeouts}
   */
   readonly timeouts?: ComputeSubnetworkTimeouts;
 }
@@ -196,7 +208,7 @@ export interface ComputeSubnetworkLogConfig {
   * interval time will reduce the amount of generated flow logs for long
   * lasting connections. Default is an interval of 5 seconds per connection. Default value: "INTERVAL_5_SEC" Possible values: ["INTERVAL_5_SEC", "INTERVAL_30_SEC", "INTERVAL_1_MIN", "INTERVAL_5_MIN", "INTERVAL_10_MIN", "INTERVAL_15_MIN"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#aggregation_interval ComputeSubnetwork#aggregation_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#aggregation_interval ComputeSubnetwork#aggregation_interval}
   */
   readonly aggregationInterval?: string;
   /**
@@ -204,7 +216,7 @@ export interface ComputeSubnetworkLogConfig {
   * https://cloud.google.com/vpc/docs/flow-logs#filtering for details on how to format this field.
   * The default value is 'true', which evaluates to include everything.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#filter_expr ComputeSubnetwork#filter_expr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#filter_expr ComputeSubnetwork#filter_expr}
   */
   readonly filterExpr?: string;
   /**
@@ -214,7 +226,7 @@ export interface ComputeSubnetworkLogConfig {
   * reported and 0.0 means no logs are reported. Default is 0.5 which means
   * half of all collected logs are reported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#flow_sampling ComputeSubnetwork#flow_sampling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#flow_sampling ComputeSubnetwork#flow_sampling}
   */
   readonly flowSampling?: number;
   /**
@@ -222,14 +234,14 @@ export interface ComputeSubnetworkLogConfig {
   * Configures whether metadata fields should be added to the reported VPC
   * flow logs. Default value: "INCLUDE_ALL_METADATA" Possible values: ["EXCLUDE_ALL_METADATA", "INCLUDE_ALL_METADATA", "CUSTOM_METADATA"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#metadata ComputeSubnetwork#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#metadata ComputeSubnetwork#metadata}
   */
   readonly metadata?: string;
   /**
   * List of metadata fields that should be added to reported logs.
   * Can only be specified if VPC flow logs for this subnetwork is enabled and "metadata" is set to CUSTOM_METADATA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#metadata_fields ComputeSubnetwork#metadata_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#metadata_fields ComputeSubnetwork#metadata_fields}
   */
   readonly metadataFields?: string[];
 }
@@ -436,7 +448,7 @@ export interface ComputeSubnetworkParams {
   * set at create time and modifying this field after creation will trigger recreation.
   * To apply tags to an existing resource, see the google_tags_tag_binding resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#resource_manager_tags ComputeSubnetwork#resource_manager_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#resource_manager_tags ComputeSubnetwork#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
 }
@@ -526,7 +538,7 @@ export interface ComputeSubnetworkSecondaryIpRange {
   * secondary IP ranges within a network. Only IPv4 is supported.
   * Field is optional when 'reserved_internal_range' is defined, otherwise required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#ip_cidr_range ComputeSubnetwork#ip_cidr_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#ip_cidr_range ComputeSubnetwork#ip_cidr_range}
   */
   readonly ipCidrRange?: string;
   /**
@@ -535,14 +547,14 @@ export interface ComputeSubnetworkSecondaryIpRange {
   * be 1-63 characters long, and comply with RFC1035. The name
   * must be unique within the subnetwork.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#range_name ComputeSubnetwork#range_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#range_name ComputeSubnetwork#range_name}
   */
   readonly rangeName: string;
   /**
   * The ID of the reserved internal range. Must be prefixed with 'networkconnectivity.googleapis.com'
   * E.g. 'networkconnectivity.googleapis.com/projects/{project}/locations/global/internalRanges/{rangeId}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#reserved_internal_range ComputeSubnetwork#reserved_internal_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#reserved_internal_range ComputeSubnetwork#reserved_internal_range}
   */
   readonly reservedInternalRange?: string;
 }
@@ -713,15 +725,15 @@ export class ComputeSubnetworkSecondaryIpRangeList extends cdktn.ComplexList {
 }
 export interface ComputeSubnetworkTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#create ComputeSubnetwork#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#create ComputeSubnetwork#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#delete ComputeSubnetwork#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#delete ComputeSubnetwork#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#update ComputeSubnetwork#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#update ComputeSubnetwork#update}
   */
   readonly update?: string;
 }
@@ -873,7 +885,7 @@ export class ComputeSubnetworkTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork google_compute_subnetwork}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork google_compute_subnetwork}
 */
 export class ComputeSubnetwork extends cdktn.TerraformResource {
 
@@ -889,7 +901,7 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeSubnetwork resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeSubnetwork to import
-  * @param importFromId The id of the existing ComputeSubnetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeSubnetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeSubnetwork to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -901,7 +913,7 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_subnetwork google_compute_subnetwork} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -912,8 +924,8 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_subnetwork',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -923,10 +935,11 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._allowSubnetCidrRoutesOverlap = config.allowSubnetCidrRoutesOverlap;
     this._description = config.description;
-    this._enableFlowLogs = config.enableFlowLogs;
     this._externalIpv6Prefix = config.externalIpv6Prefix;
     this._id = config.id;
+    this._internalIpv6Prefix = config.internalIpv6Prefix;
     this._ipCidrRange = config.ipCidrRange;
     this._ipCollection = config.ipCollection;
     this._ipv6AccessType = config.ipv6AccessType;
@@ -938,6 +951,7 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
     this._purpose = config.purpose;
     this._region = config.region;
     this._reservedInternalRange = config.reservedInternalRange;
+    this._resolveSubnetMask = config.resolveSubnetMask;
     this._role = config.role;
     this._sendSecondaryIpRangeIfEmpty = config.sendSecondaryIpRangeIfEmpty;
     this._stackType = config.stackType;
@@ -950,6 +964,22 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allow_subnet_cidr_routes_overlap - computed: true, optional: true, required: false
+  private _allowSubnetCidrRoutesOverlap?: boolean | cdktn.IResolvable; 
+  public get allowSubnetCidrRoutesOverlap() {
+    return this.getBooleanAttribute('allow_subnet_cidr_routes_overlap');
+  }
+  public set allowSubnetCidrRoutesOverlap(value: boolean | cdktn.IResolvable) {
+    this._allowSubnetCidrRoutesOverlap = value;
+  }
+  public resetAllowSubnetCidrRoutesOverlap() {
+    this._allowSubnetCidrRoutesOverlap = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowSubnetCidrRoutesOverlapInput() {
+    return this._allowSubnetCidrRoutesOverlap;
+  }
 
   // creation_timestamp - computed: true, optional: false, required: false
   public get creationTimestamp() {
@@ -970,22 +1000,6 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
-  }
-
-  // enable_flow_logs - computed: true, optional: true, required: false
-  private _enableFlowLogs?: boolean | cdktn.IResolvable; 
-  public get enableFlowLogs() {
-    return this.getBooleanAttribute('enable_flow_logs');
-  }
-  public set enableFlowLogs(value: boolean | cdktn.IResolvable) {
-    this._enableFlowLogs = value;
-  }
-  public resetEnableFlowLogs() {
-    this._enableFlowLogs = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enableFlowLogsInput() {
-    return this._enableFlowLogs;
   }
 
   // external_ipv6_prefix - computed: true, optional: true, required: false
@@ -1030,9 +1044,20 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
     return this._id;
   }
 
-  // internal_ipv6_prefix - computed: true, optional: false, required: false
+  // internal_ipv6_prefix - computed: true, optional: true, required: false
+  private _internalIpv6Prefix?: string; 
   public get internalIpv6Prefix() {
     return this.getStringAttribute('internal_ipv6_prefix');
+  }
+  public set internalIpv6Prefix(value: string) {
+    this._internalIpv6Prefix = value;
+  }
+  public resetInternalIpv6Prefix() {
+    this._internalIpv6Prefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get internalIpv6PrefixInput() {
+    return this._internalIpv6Prefix;
   }
 
   // ip_cidr_range - computed: true, optional: true, required: false
@@ -1215,6 +1240,22 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
     return this._reservedInternalRange;
   }
 
+  // resolve_subnet_mask - computed: false, optional: true, required: false
+  private _resolveSubnetMask?: string; 
+  public get resolveSubnetMask() {
+    return this.getStringAttribute('resolve_subnet_mask');
+  }
+  public set resolveSubnetMask(value: string) {
+    this._resolveSubnetMask = value;
+  }
+  public resetResolveSubnetMask() {
+    this._resolveSubnetMask = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resolveSubnetMaskInput() {
+    return this._resolveSubnetMask;
+  }
+
   // role - computed: false, optional: true, required: false
   private _role?: string; 
   public get role() {
@@ -1348,10 +1389,11 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allow_subnet_cidr_routes_overlap: cdktn.booleanToTerraform(this._allowSubnetCidrRoutesOverlap),
       description: cdktn.stringToTerraform(this._description),
-      enable_flow_logs: cdktn.booleanToTerraform(this._enableFlowLogs),
       external_ipv6_prefix: cdktn.stringToTerraform(this._externalIpv6Prefix),
       id: cdktn.stringToTerraform(this._id),
+      internal_ipv6_prefix: cdktn.stringToTerraform(this._internalIpv6Prefix),
       ip_cidr_range: cdktn.stringToTerraform(this._ipCidrRange),
       ip_collection: cdktn.stringToTerraform(this._ipCollection),
       ipv6_access_type: cdktn.stringToTerraform(this._ipv6AccessType),
@@ -1363,6 +1405,7 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
       purpose: cdktn.stringToTerraform(this._purpose),
       region: cdktn.stringToTerraform(this._region),
       reserved_internal_range: cdktn.stringToTerraform(this._reservedInternalRange),
+      resolve_subnet_mask: cdktn.stringToTerraform(this._resolveSubnetMask),
       role: cdktn.stringToTerraform(this._role),
       send_secondary_ip_range_if_empty: cdktn.booleanToTerraform(this._sendSecondaryIpRangeIfEmpty),
       stack_type: cdktn.stringToTerraform(this._stackType),
@@ -1375,17 +1418,17 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      allow_subnet_cidr_routes_overlap: {
+        value: cdktn.booleanToHclTerraform(this._allowSubnetCidrRoutesOverlap),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       description: {
         value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      enable_flow_logs: {
-        value: cdktn.booleanToHclTerraform(this._enableFlowLogs),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
       },
       external_ipv6_prefix: {
         value: cdktn.stringToHclTerraform(this._externalIpv6Prefix),
@@ -1395,6 +1438,12 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
       },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      internal_ipv6_prefix: {
+        value: cdktn.stringToHclTerraform(this._internalIpv6Prefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1461,6 +1510,12 @@ export class ComputeSubnetwork extends cdktn.TerraformResource {
       },
       reserved_internal_range: {
         value: cdktn.stringToHclTerraform(this._reservedInternalRange),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      resolve_subnet_mask: {
+        value: cdktn.stringToHclTerraform(this._resolveSubnetMask),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -4,7 +4,7 @@
 
 ### LoggingLogViewIamBinding <a name="LoggingLogViewIamBinding" id="@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding google_logging_log_view_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding google_logging_log_view_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBinding.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the LoggingLogViewIamBinding t
 
 The id of the existing LoggingLogViewIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -923,9 +923,9 @@ new LoggingLogViewIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#expression LoggingLogViewIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#title LoggingLogViewIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#description LoggingLogViewIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#expression LoggingLogViewIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#title LoggingLogViewIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#description LoggingLogViewIamBinding#description}. |
 
 ---
 
@@ -937,7 +937,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#expression LoggingLogViewIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#expression LoggingLogViewIamBinding#expression}.
 
 ---
 
@@ -949,7 +949,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#title LoggingLogViewIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#title LoggingLogViewIamBinding#title}.
 
 ---
 
@@ -961,7 +961,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#description LoggingLogViewIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#description LoggingLogViewIamBinding#description}.
 
 ---
 
@@ -1002,14 +1002,14 @@ new LoggingLogViewIamBindingConfig {
 | <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#bucket LoggingLogViewIamBinding#bucket}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#members LoggingLogViewIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#name LoggingLogViewIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#parent LoggingLogViewIamBinding#parent}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#role LoggingLogViewIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#bucket LoggingLogViewIamBinding#bucket}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#members LoggingLogViewIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#name LoggingLogViewIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.parent">Parent</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#parent LoggingLogViewIamBinding#parent}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#role LoggingLogViewIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingCondition">LoggingLogViewIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#id LoggingLogViewIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#location LoggingLogViewIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#id LoggingLogViewIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.loggingLogViewIamBinding.LoggingLogViewIamBindingConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#location LoggingLogViewIamBinding#location}. |
 
 ---
 
@@ -1091,7 +1091,7 @@ public string Bucket { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#bucket LoggingLogViewIamBinding#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#bucket LoggingLogViewIamBinding#bucket}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#members LoggingLogViewIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#members LoggingLogViewIamBinding#members}.
 
 ---
 
@@ -1115,7 +1115,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#name LoggingLogViewIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#name LoggingLogViewIamBinding#name}.
 
 ---
 
@@ -1127,7 +1127,7 @@ public string Parent { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#parent LoggingLogViewIamBinding#parent}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#parent LoggingLogViewIamBinding#parent}.
 
 ---
 
@@ -1139,7 +1139,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#role LoggingLogViewIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#role LoggingLogViewIamBinding#role}.
 
 ---
 
@@ -1153,7 +1153,7 @@ public LoggingLogViewIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#condition LoggingLogViewIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#condition LoggingLogViewIamBinding#condition}
 
 ---
 
@@ -1165,7 +1165,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#id LoggingLogViewIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#id LoggingLogViewIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1180,7 +1180,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/logging_log_view_iam_binding#location LoggingLogViewIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/logging_log_view_iam_binding#location LoggingLogViewIamBinding#location}.
 
 ---
 

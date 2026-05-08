@@ -4,12 +4,12 @@
 
 ### StorageFolder <a name="StorageFolder" id="@cdktn/provider-google.storageFolder.StorageFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder google_storage_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder google_storage_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageFolder.StorageFolder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.NewStorageFolder(scope Construct, id *string, config StorageFolderConfig) StorageFolder
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageFolder.StorageFolder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.StorageFolder_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageFolder.StorageFolder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.StorageFolder_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ storagefolder.StorageFolder_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageFolder.StorageFolder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.StorageFolder_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ storagefolder.StorageFolder_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageFolder.StorageFolder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.StorageFolder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the StorageFolder to import.
 
 The id of the existing StorageFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageFolder.StorageFolderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 &storagefolder.StorageFolderConfig {
 	Connection: interface{},
@@ -891,7 +891,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagefolder"
 	Name: *string,
 	ForceDestroy: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.storageFolder.StorageFolderTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.storageFolder.StorageFolderTimeouts,
 }
 ```
 
@@ -909,7 +909,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagefolder"
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.bucket">Bucket</a></code> | <code>*string</code> | The name of the bucket that contains the folder. |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.name">Name</a></code> | <code>*string</code> | The name of the folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/', 'example@#/', 'a-b/d-f/'. |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.forceDestroy">ForceDestroy</a></code> | <code>interface{}</code> | If set to true, items within folder if any will be force destroyed. |
-| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#id StorageFolder#id}. |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#id StorageFolder#id}. |
 | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts">StorageFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -994,7 +994,7 @@ Bucket *string
 
 The name of the bucket that contains the folder.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#bucket StorageFolder#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#bucket StorageFolder#bucket}
 
 ---
 
@@ -1008,7 +1008,7 @@ Name *string
 
 The name of the folder expressed as a path. Must include trailing '/'. For example, 'example_dir/example_dir2/', 'example@#/', 'a-b/d-f/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#name StorageFolder#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#name StorageFolder#name}
 
 ---
 
@@ -1022,7 +1022,7 @@ ForceDestroy interface{}
 
 If set to true, items within folder if any will be force destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#force_destroy StorageFolder#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#force_destroy StorageFolder#force_destroy}
 
 ---
 
@@ -1034,7 +1034,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#id StorageFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#id StorageFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1051,7 +1051,7 @@ Timeouts StorageFolderTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#timeouts StorageFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#timeouts StorageFolder#timeouts}
 
 ---
 
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageFolder.StorageFolderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 &storagefolder.StorageFolderTimeouts {
 	Create: *string,
@@ -1073,9 +1073,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagefolder"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#create StorageFolder#create}. |
-| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#delete StorageFolder#delete}. |
-| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#update StorageFolder#update}. |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#create StorageFolder#create}. |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#delete StorageFolder#delete}. |
+| <code><a href="#@cdktn/provider-google.storageFolder.StorageFolderTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#update StorageFolder#update}. |
 
 ---
 
@@ -1087,7 +1087,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#create StorageFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#create StorageFolder#create}.
 
 ---
 
@@ -1099,7 +1099,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#delete StorageFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#delete StorageFolder#delete}.
 
 ---
 
@@ -1111,7 +1111,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_folder#update StorageFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_folder#update StorageFolder#update}.
 
 ---
 
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageFolder.StorageFolderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/storagefolder"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagefolder"
 
 storagefolder.NewStorageFolderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageFolderTimeoutsOutputReference
 ```

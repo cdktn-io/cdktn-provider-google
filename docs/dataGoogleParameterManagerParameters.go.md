@@ -4,12 +4,12 @@
 
 ### DataGoogleParameterManagerParameters <a name="DataGoogleParameterManagerParameters" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParameters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/parameter_manager_parameters google_parameter_manager_parameters}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/parameter_manager_parameters google_parameter_manager_parameters}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 datagoogleparametermanagerparameters.NewDataGoogleParameterManagerParameters(scope Construct, id *string, config DataGoogleParameterManagerParametersConfig) DataGoogleParameterManagerParameters
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParameters.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 datagoogleparametermanagerparameters.DataGoogleParameterManagerParameters_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParameters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 datagoogleparametermanagerparameters.DataGoogleParameterManagerParameters_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleparametermanagerparameters.DataGoogleParameterManagerParameters_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParameters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 datagoogleparametermanagerparameters.DataGoogleParameterManagerParameters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogleparametermanagerparameters.DataGoogleParameterManagerParameters_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParameters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 datagoogleparametermanagerparameters.DataGoogleParameterManagerParameters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleParameterManager
 
 The id of the existing DataGoogleParameterManagerParameters that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/parameter_manager_parameters#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/parameter_manager_parameters#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 &datagoogleparametermanagerparameters.DataGoogleParameterManagerParametersConfig {
 	Connection: interface{},
@@ -691,8 +691,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparame
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.filter">Filter</a></code> | <code>*string</code> | Filter string, adhering to the rules in List-operation filtering. |
-| <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/parameter_manager_parameters#id DataGoogleParameterManagerParameters#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/parameter_manager_parameters#project DataGoogleParameterManagerParameters#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/parameter_manager_parameters#id DataGoogleParameterManagerParameters#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/parameter_manager_parameters#project DataGoogleParameterManagerParameters#project}. |
 
 ---
 
@@ -779,7 +779,7 @@ Filter string, adhering to the rules in List-operation filtering.
 List only parameters matching the filter.
 If filter is empty, all parameters are listed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/parameter_manager_parameters#filter DataGoogleParameterManagerParameters#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/parameter_manager_parameters#filter DataGoogleParameterManagerParameters#filter}
 
 ---
 
@@ -791,7 +791,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/parameter_manager_parameters#id DataGoogleParameterManagerParameters#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/parameter_manager_parameters#id DataGoogleParameterManagerParameters#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -806,7 +806,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/parameter_manager_parameters#project DataGoogleParameterManagerParameters#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/parameter_manager_parameters#project DataGoogleParameterManagerParameters#project}.
 
 ---
 
@@ -815,7 +815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 &datagoogleparametermanagerparameters.DataGoogleParameterManagerParametersParameters {
 
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparame
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersPolicyMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 &datagoogleparametermanagerparameters.DataGoogleParameterManagerParametersParametersPolicyMember {
 
@@ -843,7 +843,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparame
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 datagoogleparametermanagerparameters.NewDataGoogleParameterManagerParametersParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleParameterManagerParametersParametersList
 ```
@@ -992,7 +992,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 datagoogleparametermanagerparameters.NewDataGoogleParameterManagerParametersParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleParameterManagerParametersParametersOutputReference
 ```
@@ -1380,7 +1380,7 @@ func InternalValue() DataGoogleParameterManagerParametersParameters
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersPolicyMemberList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 datagoogleparametermanagerparameters.NewDataGoogleParameterManagerParametersParametersPolicyMemberList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleParameterManagerParametersParametersPolicyMemberList
 ```
@@ -1529,7 +1529,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleParameterManagerParameters.DataGoogleParameterManagerParametersParametersPolicyMemberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleparametermanagerparameters"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleparametermanagerparameters"
 
 datagoogleparametermanagerparameters.NewDataGoogleParameterManagerParametersParametersPolicyMemberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleParameterManagerParametersParametersPolicyMemberOutputReference
 ```

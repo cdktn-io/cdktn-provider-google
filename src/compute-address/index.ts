@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,33 +17,46 @@ export interface ComputeAddressConfig extends cdktn.TerraformMetaArguments {
   * The IP address must be inside the specified subnetwork,
   * if any. Set by the API if undefined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#address ComputeAddress#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#address ComputeAddress#address}
   */
   readonly address?: string;
   /**
   * The type of address to reserve.
   * Note: if you set this argument's value as 'INTERNAL' you need to leave the 'network_tier' argument unset in that resource block. Default value: "EXTERNAL" Possible values: ["INTERNAL", "EXTERNAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#address_type ComputeAddress#address_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#address_type ComputeAddress#address_type}
   */
   readonly addressType?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#description ComputeAddress#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#description ComputeAddress#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#id ComputeAddress#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#id ComputeAddress#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * Reference to the source of external IPv4 addresses, like a PublicDelegatedPrefix(PDP) for BYOIP.
+  * The PDP must support enhanced IPv4 allocations.
+  * Use one of the following formats to specify a PDP when reserving an external IPv4 address using BYOIP.
+  * Full resource URL, as in:
+  *   * 'https://www.googleapis.com/compute/v1/projects/{{projectId}}/regions/{{region}}/publicDelegatedPrefixes/{{pdp-name}}'
+  * Partial URL, as in:
+  *   * 'projects/{{projectId}}/regions/region/publicDelegatedPrefixes/{{pdp-name}}'
+  *   * 'regions/{{region}}/publicDelegatedPrefixes/{{pdp-name}}'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#ip_collection ComputeAddress#ip_collection}
+  */
+  readonly ipCollection?: string;
+  /**
   * The IP Version that will be used by this address. The default value is 'IPV4'. Possible values: ["IPV4", "IPV6"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#ip_version ComputeAddress#ip_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#ip_version ComputeAddress#ip_version}
   */
   readonly ipVersion?: string;
   /**
@@ -51,7 +64,7 @@ export interface ComputeAddressConfig extends cdktn.TerraformMetaArguments {
   * used for deciding which type of endpoint this address can be used after
   * the external IPv6 address reservation. Possible values: ["VM", "NETLB"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#ipv6_endpoint_type ComputeAddress#ipv6_endpoint_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#ipv6_endpoint_type ComputeAddress#ipv6_endpoint_type}
   */
   readonly ipv6EndpointType?: string;
   /**
@@ -61,7 +74,7 @@ export interface ComputeAddressConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#labels ComputeAddress#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#labels ComputeAddress#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -72,7 +85,7 @@ export interface ComputeAddressConfig extends cdktn.TerraformMetaArguments {
   * following characters must be a dash, lowercase letter, or digit,
   * except the last character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#name ComputeAddress#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#name ComputeAddress#name}
   */
   readonly name: string;
   /**
@@ -80,7 +93,7 @@ export interface ComputeAddressConfig extends cdktn.TerraformMetaArguments {
   * can only be used with INTERNAL type with the VPC_PEERING and
   * IPSEC_INTERCONNECT purposes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#network ComputeAddress#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#network ComputeAddress#network}
   */
   readonly network?: string;
   /**
@@ -88,17 +101,17 @@ export interface ComputeAddressConfig extends cdktn.TerraformMetaArguments {
   * specified, it is assumed to be PREMIUM.
   * This argument should not be used when configuring Internal addresses, because [network tier cannot be set for internal traffic; it's always Premium](https://cloud.google.com/network-tiers/docs/overview). Possible values: ["PREMIUM", "STANDARD"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#network_tier ComputeAddress#network_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#network_tier ComputeAddress#network_tier}
   */
   readonly networkTier?: string;
   /**
   * The prefix length if the resource represents an IP range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#prefix_length ComputeAddress#prefix_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#prefix_length ComputeAddress#prefix_length}
   */
   readonly prefixLength?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#project ComputeAddress#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#project ComputeAddress#project}
   */
   readonly project?: string;
   /**
@@ -122,14 +135,14 @@ export interface ComputeAddressConfig extends cdktn.TerraformMetaArguments {
   * 
   * This should only be set when using an Internal address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#purpose ComputeAddress#purpose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#purpose ComputeAddress#purpose}
   */
   readonly purpose?: string;
   /**
   * The Region in which the created address should reside.
   * If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#region ComputeAddress#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#region ComputeAddress#region}
   */
   readonly region?: string;
   /**
@@ -138,27 +151,27 @@ export interface ComputeAddressConfig extends cdktn.TerraformMetaArguments {
   * This field can only be used with INTERNAL type with
   * GCE_ENDPOINT/DNS_RESOLVER purposes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#subnetwork ComputeAddress#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#subnetwork ComputeAddress#subnetwork}
   */
   readonly subnetwork?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#timeouts ComputeAddress#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#timeouts ComputeAddress#timeouts}
   */
   readonly timeouts?: ComputeAddressTimeouts;
 }
 export interface ComputeAddressTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#create ComputeAddress#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#create ComputeAddress#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#delete ComputeAddress#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#delete ComputeAddress#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#update ComputeAddress#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#update ComputeAddress#update}
   */
   readonly update?: string;
 }
@@ -310,7 +323,7 @@ export class ComputeAddressTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address google_compute_address}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address google_compute_address}
 */
 export class ComputeAddress extends cdktn.TerraformResource {
 
@@ -326,7 +339,7 @@ export class ComputeAddress extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeAddress resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeAddress to import
-  * @param importFromId The id of the existing ComputeAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeAddress to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -338,7 +351,7 @@ export class ComputeAddress extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_address google_compute_address} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_address google_compute_address} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -349,8 +362,8 @@ export class ComputeAddress extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_address',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -364,6 +377,7 @@ export class ComputeAddress extends cdktn.TerraformResource {
     this._addressType = config.addressType;
     this._description = config.description;
     this._id = config.id;
+    this._ipCollection = config.ipCollection;
     this._ipVersion = config.ipVersion;
     this._ipv6EndpointType = config.ipv6EndpointType;
     this._labels = config.labels;
@@ -455,6 +469,22 @@ export class ComputeAddress extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // ip_collection - computed: false, optional: true, required: false
+  private _ipCollection?: string; 
+  public get ipCollection() {
+    return this.getStringAttribute('ip_collection');
+  }
+  public set ipCollection(value: string) {
+    this._ipCollection = value;
+  }
+  public resetIpCollection() {
+    this._ipCollection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipCollectionInput() {
+    return this._ipCollection;
   }
 
   // ip_version - computed: false, optional: true, required: false
@@ -677,6 +707,7 @@ export class ComputeAddress extends cdktn.TerraformResource {
       address_type: cdktn.stringToTerraform(this._addressType),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
+      ip_collection: cdktn.stringToTerraform(this._ipCollection),
       ip_version: cdktn.stringToTerraform(this._ipVersion),
       ipv6_endpoint_type: cdktn.stringToTerraform(this._ipv6EndpointType),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
@@ -714,6 +745,12 @@ export class ComputeAddress extends cdktn.TerraformResource {
       },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ip_collection: {
+        value: cdktn.stringToHclTerraform(this._ipCollection),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

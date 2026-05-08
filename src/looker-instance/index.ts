@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,26 +17,38 @@ export interface LookerInstanceConfig extends cdktn.TerraformMetaArguments {
   * Note that the consumer network may be in a different GCP project than the consumer
   * project that is hosting the Looker Instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#consumer_network LookerInstance#consumer_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#consumer_network LookerInstance#consumer_network}
   */
   readonly consumerNetwork?: string;
+  /**
+  * Whether controlled egress is enabled on the Looker instance.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#controlled_egress_enabled LookerInstance#controlled_egress_enabled}
+  */
+  readonly controlledEgressEnabled?: boolean | cdktn.IResolvable;
   /**
   * Policy to determine if the cluster should be deleted forcefully.
   * If setting deletion_policy = "FORCE", the Looker instance will be deleted regardless
   * of its nested resources. If set to "DEFAULT", Looker instances that still have
   * nested resources will return an error. Possible values: DEFAULT, FORCE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#deletion_policy LookerInstance#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#deletion_policy LookerInstance#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * FIPS 140-2 Encryption enablement for Looker (Google Cloud Core).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#fips_enabled LookerInstance#fips_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#fips_enabled LookerInstance#fips_enabled}
   */
   readonly fipsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#id LookerInstance#id}
+  * Gemini enablement for Looker (Google Cloud Core).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#gemini_enabled LookerInstance#gemini_enabled}
+  */
+  readonly geminiEnabled?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#id LookerInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,7 +57,7 @@ export interface LookerInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * The ID of the instance or a fully qualified identifier for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#name LookerInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#name LookerInstance#name}
   */
   readonly name: string;
   /**
@@ -62,96 +74,108 @@ export interface LookerInstanceConfig extends cdktn.TerraformMetaArguments {
   * - LOOKER_CORE_TRIAL_ENTERPRISE: An enterprise trial edition of Looker (Google Cloud core) product.
   * - LOOKER_CORE_TRIAL_EMBED: An embed trial edition of Looker (Google Cloud core) product. Default value: "LOOKER_CORE_TRIAL" Possible values: ["LOOKER_CORE_TRIAL", "LOOKER_CORE_STANDARD", "LOOKER_CORE_STANDARD_ANNUAL", "LOOKER_CORE_ENTERPRISE_ANNUAL", "LOOKER_CORE_EMBED_ANNUAL", "LOOKER_CORE_NONPROD_STANDARD_ANNUAL", "LOOKER_CORE_NONPROD_ENTERPRISE_ANNUAL", "LOOKER_CORE_NONPROD_EMBED_ANNUAL", "LOOKER_CORE_TRIAL_STANDARD", "LOOKER_CORE_TRIAL_ENTERPRISE", "LOOKER_CORE_TRIAL_EMBED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#platform_edition LookerInstance#platform_edition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#platform_edition LookerInstance#platform_edition}
   */
   readonly platformEdition?: string;
   /**
   * Whether private IP is enabled on the Looker instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#private_ip_enabled LookerInstance#private_ip_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#private_ip_enabled LookerInstance#private_ip_enabled}
   */
   readonly privateIpEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#project LookerInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#project LookerInstance#project}
   */
   readonly project?: string;
   /**
   * Whether Public Service Connect (PSC) is enabled on the Looker instance
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#psc_enabled LookerInstance#psc_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#psc_enabled LookerInstance#psc_enabled}
   */
   readonly pscEnabled?: boolean | cdktn.IResolvable;
   /**
   * Whether public IP is enabled on the Looker instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#public_ip_enabled LookerInstance#public_ip_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#public_ip_enabled LookerInstance#public_ip_enabled}
   */
   readonly publicIpEnabled?: boolean | cdktn.IResolvable;
   /**
   * The name of the Looker region of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#region LookerInstance#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#region LookerInstance#region}
   */
   readonly region?: string;
   /**
   * Name of a reserved IP address range within the consumer network, to be used for
   * private service access connection. User may or may not specify this in a request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#reserved_range LookerInstance#reserved_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#reserved_range LookerInstance#reserved_range}
   */
   readonly reservedRange?: string;
   /**
   * admin_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#admin_settings LookerInstance#admin_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#admin_settings LookerInstance#admin_settings}
   */
   readonly adminSettings?: LookerInstanceAdminSettings;
   /**
+  * controlled_egress_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#controlled_egress_config LookerInstance#controlled_egress_config}
+  */
+  readonly controlledEgressConfig?: LookerInstanceControlledEgressConfig;
+  /**
   * custom_domain block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#custom_domain LookerInstance#custom_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#custom_domain LookerInstance#custom_domain}
   */
   readonly customDomain?: LookerInstanceCustomDomain;
   /**
   * deny_maintenance_period block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#deny_maintenance_period LookerInstance#deny_maintenance_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#deny_maintenance_period LookerInstance#deny_maintenance_period}
   */
   readonly denyMaintenancePeriod?: LookerInstanceDenyMaintenancePeriod;
   /**
   * encryption_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#encryption_config LookerInstance#encryption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#encryption_config LookerInstance#encryption_config}
   */
   readonly encryptionConfig?: LookerInstanceEncryptionConfig;
   /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#maintenance_window LookerInstance#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#maintenance_window LookerInstance#maintenance_window}
   */
   readonly maintenanceWindow?: LookerInstanceMaintenanceWindow;
   /**
   * oauth_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#oauth_config LookerInstance#oauth_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#oauth_config LookerInstance#oauth_config}
   */
   readonly oauthConfig: LookerInstanceOauthConfig;
   /**
+  * periodic_export_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#periodic_export_config LookerInstance#periodic_export_config}
+  */
+  readonly periodicExportConfig?: LookerInstancePeriodicExportConfig;
+  /**
   * psc_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#psc_config LookerInstance#psc_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#psc_config LookerInstance#psc_config}
   */
   readonly pscConfig?: LookerInstancePscConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#timeouts LookerInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#timeouts LookerInstance#timeouts}
   */
   readonly timeouts?: LookerInstanceTimeouts;
   /**
   * user_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#user_metadata LookerInstance#user_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#user_metadata LookerInstance#user_metadata}
   */
   readonly userMetadata?: LookerInstanceUserMetadata;
 }
@@ -164,7 +188,7 @@ export interface LookerInstanceAdminSettings {
   * means the value provided will be considered as the entire list and not an amendment to the
   * existing list of allowed email domains.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#allowed_email_domains LookerInstance#allowed_email_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#allowed_email_domains LookerInstance#allowed_email_domains}
   */
   readonly allowedEmailDomains?: string[];
 }
@@ -246,11 +270,133 @@ export class LookerInstanceAdminSettingsOutputReference extends cdktn.ComplexObj
     return this._allowedEmailDomains;
   }
 }
+export interface LookerInstanceControlledEgressConfig {
+  /**
+  * List of fully qualified domain names to be added to the allowlist for
+  * outbound traffic.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#egress_fqdns LookerInstance#egress_fqdns}
+  */
+  readonly egressFqdns?: string[];
+  /**
+  * Whether the Looker Marketplace is enabled.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#marketplace_enabled LookerInstance#marketplace_enabled}
+  */
+  readonly marketplaceEnabled?: boolean | cdktn.IResolvable;
+}
+
+export function lookerInstanceControlledEgressConfigToTerraform(struct?: LookerInstanceControlledEgressConfigOutputReference | LookerInstanceControlledEgressConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    egress_fqdns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.egressFqdns),
+    marketplace_enabled: cdktn.booleanToTerraform(struct!.marketplaceEnabled),
+  }
+}
+
+
+export function lookerInstanceControlledEgressConfigToHclTerraform(struct?: LookerInstanceControlledEgressConfigOutputReference | LookerInstanceControlledEgressConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    egress_fqdns: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.egressFqdns),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    marketplace_enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.marketplaceEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class LookerInstanceControlledEgressConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LookerInstanceControlledEgressConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._egressFqdns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.egressFqdns = this._egressFqdns;
+    }
+    if (this._marketplaceEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.marketplaceEnabled = this._marketplaceEnabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LookerInstanceControlledEgressConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._egressFqdns = undefined;
+      this._marketplaceEnabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._egressFqdns = value.egressFqdns;
+      this._marketplaceEnabled = value.marketplaceEnabled;
+    }
+  }
+
+  // egress_fqdns - computed: false, optional: true, required: false
+  private _egressFqdns?: string[]; 
+  public get egressFqdns() {
+    return this.getListAttribute('egress_fqdns');
+  }
+  public set egressFqdns(value: string[]) {
+    this._egressFqdns = value;
+  }
+  public resetEgressFqdns() {
+    this._egressFqdns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get egressFqdnsInput() {
+    return this._egressFqdns;
+  }
+
+  // marketplace_enabled - computed: false, optional: true, required: false
+  private _marketplaceEnabled?: boolean | cdktn.IResolvable; 
+  public get marketplaceEnabled() {
+    return this.getBooleanAttribute('marketplace_enabled');
+  }
+  public set marketplaceEnabled(value: boolean | cdktn.IResolvable) {
+    this._marketplaceEnabled = value;
+  }
+  public resetMarketplaceEnabled() {
+    this._marketplaceEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get marketplaceEnabledInput() {
+    return this._marketplaceEnabled;
+  }
+}
 export interface LookerInstanceCustomDomain {
   /**
   * Domain name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#domain LookerInstance#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#domain LookerInstance#domain}
   */
   readonly domain?: string;
 }
@@ -342,21 +488,21 @@ export interface LookerInstanceDenyMaintenancePeriodEndDate {
   * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0
   * to specify a year by itself or a year and month where the day isn't significant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#day LookerInstance#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#day LookerInstance#day}
   */
   readonly day?: number;
   /**
   * Month of a year. Must be from 1 to 12, or 0 to specify a year without a
   * month and day.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#month LookerInstance#month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#month LookerInstance#month}
   */
   readonly month?: number;
   /**
   * Year of the date. Must be from 1 to 9999, or 0 to specify a date without
   * a year.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#year LookerInstance#year}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#year LookerInstance#year}
   */
   readonly year?: number;
 }
@@ -501,21 +647,21 @@ export interface LookerInstanceDenyMaintenancePeriodStartDate {
   * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0
   * to specify a year by itself or a year and month where the day isn't significant.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#day LookerInstance#day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#day LookerInstance#day}
   */
   readonly day?: number;
   /**
   * Month of a year. Must be from 1 to 12, or 0 to specify a year without a
   * month and day.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#month LookerInstance#month}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#month LookerInstance#month}
   */
   readonly month?: number;
   /**
   * Year of the date. Must be from 1 to 9999, or 0 to specify a date without
   * a year.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#year LookerInstance#year}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#year LookerInstance#year}
   */
   readonly year?: number;
 }
@@ -659,25 +805,25 @@ export interface LookerInstanceDenyMaintenancePeriodTime {
   /**
   * Hours of day in 24 hour format. Should be from 0 to 23.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#hours LookerInstance#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#hours LookerInstance#hours}
   */
   readonly hours?: number;
   /**
   * Minutes of hour of day. Must be from 0 to 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#minutes LookerInstance#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#minutes LookerInstance#minutes}
   */
   readonly minutes?: number;
   /**
   * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#nanos LookerInstance#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#nanos LookerInstance#nanos}
   */
   readonly nanos?: number;
   /**
   * Seconds of minutes of the time. Must normally be from 0 to 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#seconds LookerInstance#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#seconds LookerInstance#seconds}
   */
   readonly seconds?: number;
 }
@@ -850,19 +996,19 @@ export interface LookerInstanceDenyMaintenancePeriod {
   /**
   * end_date block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#end_date LookerInstance#end_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#end_date LookerInstance#end_date}
   */
   readonly endDate: LookerInstanceDenyMaintenancePeriodEndDate;
   /**
   * start_date block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#start_date LookerInstance#start_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#start_date LookerInstance#start_date}
   */
   readonly startDate: LookerInstanceDenyMaintenancePeriodStartDate;
   /**
   * time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#time LookerInstance#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#time LookerInstance#time}
   */
   readonly time: LookerInstanceDenyMaintenancePeriodTime;
 }
@@ -997,7 +1143,7 @@ export interface LookerInstanceEncryptionConfig {
   /**
   * Name of the customer managed encryption key (CMEK) in KMS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#kms_key_name LookerInstance#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#kms_key_name LookerInstance#kms_key_name}
   */
   readonly kmsKeyName?: string;
 }
@@ -1093,25 +1239,25 @@ export interface LookerInstanceMaintenanceWindowStartTime {
   /**
   * Hours of day in 24 hour format. Should be from 0 to 23.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#hours LookerInstance#hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#hours LookerInstance#hours}
   */
   readonly hours?: number;
   /**
   * Minutes of hour of day. Must be from 0 to 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#minutes LookerInstance#minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#minutes LookerInstance#minutes}
   */
   readonly minutes?: number;
   /**
   * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#nanos LookerInstance#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#nanos LookerInstance#nanos}
   */
   readonly nanos?: number;
   /**
   * Seconds of minutes of the time. Must normally be from 0 to 59.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#seconds LookerInstance#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#seconds LookerInstance#seconds}
   */
   readonly seconds?: number;
 }
@@ -1292,13 +1438,13 @@ export interface LookerInstanceMaintenanceWindow {
   * - SATURDAY: Saturday
   * - SUNDAY: Sunday Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#day_of_week LookerInstance#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#day_of_week LookerInstance#day_of_week}
   */
   readonly dayOfWeek: string;
   /**
   * start_time block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#start_time LookerInstance#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#start_time LookerInstance#start_time}
   */
   readonly startTime: LookerInstanceMaintenanceWindowStartTime;
 }
@@ -1407,13 +1553,13 @@ export interface LookerInstanceOauthConfig {
   /**
   * The client ID for the Oauth config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#client_id LookerInstance#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#client_id LookerInstance#client_id}
   */
   readonly clientId: string;
   /**
   * The client secret for the Oauth config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#client_secret LookerInstance#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#client_secret LookerInstance#client_secret}
   */
   readonly clientSecret: string;
 }
@@ -1518,17 +1664,358 @@ export class LookerInstanceOauthConfigOutputReference extends cdktn.ComplexObjec
     return this._clientSecret;
   }
 }
+export interface LookerInstancePeriodicExportConfigStartTime {
+  /**
+  * Hours of day in 24 hour format. Should be from 0 to 23.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#hours LookerInstance#hours}
+  */
+  readonly hours?: number;
+  /**
+  * Minutes of hour of day. Must be from 0 to 59.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#minutes LookerInstance#minutes}
+  */
+  readonly minutes?: number;
+  /**
+  * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#nanos LookerInstance#nanos}
+  */
+  readonly nanos?: number;
+  /**
+  * Seconds of minutes of the time. Must normally be from 0 to 59.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#seconds LookerInstance#seconds}
+  */
+  readonly seconds?: number;
+}
+
+export function lookerInstancePeriodicExportConfigStartTimeToTerraform(struct?: LookerInstancePeriodicExportConfigStartTimeOutputReference | LookerInstancePeriodicExportConfigStartTime): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hours: cdktn.numberToTerraform(struct!.hours),
+    minutes: cdktn.numberToTerraform(struct!.minutes),
+    nanos: cdktn.numberToTerraform(struct!.nanos),
+    seconds: cdktn.numberToTerraform(struct!.seconds),
+  }
+}
+
+
+export function lookerInstancePeriodicExportConfigStartTimeToHclTerraform(struct?: LookerInstancePeriodicExportConfigStartTimeOutputReference | LookerInstancePeriodicExportConfigStartTime): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hours: {
+      value: cdktn.numberToHclTerraform(struct!.hours),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    minutes: {
+      value: cdktn.numberToHclTerraform(struct!.minutes),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    nanos: {
+      value: cdktn.numberToHclTerraform(struct!.nanos),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    seconds: {
+      value: cdktn.numberToHclTerraform(struct!.seconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class LookerInstancePeriodicExportConfigStartTimeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LookerInstancePeriodicExportConfigStartTime | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hours = this._hours;
+    }
+    if (this._minutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minutes = this._minutes;
+    }
+    if (this._nanos !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nanos = this._nanos;
+    }
+    if (this._seconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.seconds = this._seconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LookerInstancePeriodicExportConfigStartTime | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hours = undefined;
+      this._minutes = undefined;
+      this._nanos = undefined;
+      this._seconds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hours = value.hours;
+      this._minutes = value.minutes;
+      this._nanos = value.nanos;
+      this._seconds = value.seconds;
+    }
+  }
+
+  // hours - computed: false, optional: true, required: false
+  private _hours?: number; 
+  public get hours() {
+    return this.getNumberAttribute('hours');
+  }
+  public set hours(value: number) {
+    this._hours = value;
+  }
+  public resetHours() {
+    this._hours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hoursInput() {
+    return this._hours;
+  }
+
+  // minutes - computed: false, optional: true, required: false
+  private _minutes?: number; 
+  public get minutes() {
+    return this.getNumberAttribute('minutes');
+  }
+  public set minutes(value: number) {
+    this._minutes = value;
+  }
+  public resetMinutes() {
+    this._minutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minutesInput() {
+    return this._minutes;
+  }
+
+  // nanos - computed: false, optional: true, required: false
+  private _nanos?: number; 
+  public get nanos() {
+    return this.getNumberAttribute('nanos');
+  }
+  public set nanos(value: number) {
+    this._nanos = value;
+  }
+  public resetNanos() {
+    this._nanos = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nanosInput() {
+    return this._nanos;
+  }
+
+  // seconds - computed: false, optional: true, required: false
+  private _seconds?: number; 
+  public get seconds() {
+    return this.getNumberAttribute('seconds');
+  }
+  public set seconds(value: number) {
+    this._seconds = value;
+  }
+  public resetSeconds() {
+    this._seconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondsInput() {
+    return this._seconds;
+  }
+}
+export interface LookerInstancePeriodicExportConfig {
+  /**
+  * Cloud Storage bucket URI for periodic export.
+  * Format: gs://{bucket_name}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#gcs_uri LookerInstance#gcs_uri}
+  */
+  readonly gcsUri: string;
+  /**
+  * Name of the CMEK key in KMS.
+  * Format:
+  * projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#kms_key LookerInstance#kms_key}
+  */
+  readonly kmsKey: string;
+  /**
+  * start_time block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#start_time LookerInstance#start_time}
+  */
+  readonly startTime: LookerInstancePeriodicExportConfigStartTime;
+}
+
+export function lookerInstancePeriodicExportConfigToTerraform(struct?: LookerInstancePeriodicExportConfigOutputReference | LookerInstancePeriodicExportConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    gcs_uri: cdktn.stringToTerraform(struct!.gcsUri),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
+    start_time: lookerInstancePeriodicExportConfigStartTimeToTerraform(struct!.startTime),
+  }
+}
+
+
+export function lookerInstancePeriodicExportConfigToHclTerraform(struct?: LookerInstancePeriodicExportConfigOutputReference | LookerInstancePeriodicExportConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gcs_uri: {
+      value: cdktn.stringToHclTerraform(struct!.gcsUri),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key: {
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    start_time: {
+      value: lookerInstancePeriodicExportConfigStartTimeToHclTerraform(struct!.startTime),
+      isBlock: true,
+      type: "list",
+      storageClassType: "LookerInstancePeriodicExportConfigStartTimeList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class LookerInstancePeriodicExportConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): LookerInstancePeriodicExportConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._gcsUri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcsUri = this._gcsUri;
+    }
+    if (this._kmsKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKey = this._kmsKey;
+    }
+    if (this._startTime?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LookerInstancePeriodicExportConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._gcsUri = undefined;
+      this._kmsKey = undefined;
+      this._startTime.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._gcsUri = value.gcsUri;
+      this._kmsKey = value.kmsKey;
+      this._startTime.internalValue = value.startTime;
+    }
+  }
+
+  // gcs_uri - computed: false, optional: false, required: true
+  private _gcsUri?: string; 
+  public get gcsUri() {
+    return this.getStringAttribute('gcs_uri');
+  }
+  public set gcsUri(value: string) {
+    this._gcsUri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcsUriInput() {
+    return this._gcsUri;
+  }
+
+  // kms_key - computed: false, optional: false, required: true
+  private _kmsKey?: string; 
+  public get kmsKey() {
+    return this.getStringAttribute('kms_key');
+  }
+  public set kmsKey(value: string) {
+    this._kmsKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyInput() {
+    return this._kmsKey;
+  }
+
+  // start_time - computed: false, optional: false, required: true
+  private _startTime = new LookerInstancePeriodicExportConfigStartTimeOutputReference(this, "start_time");
+  public get startTime() {
+    return this._startTime;
+  }
+  public putStartTime(value: LookerInstancePeriodicExportConfigStartTime) {
+    this._startTime.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startTimeInput() {
+    return this._startTime.internalValue;
+  }
+}
 export interface LookerInstancePscConfigServiceAttachments {
   /**
   * Fully qualified domain name that will be used in the private DNS record created for the service attachment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#local_fqdn LookerInstance#local_fqdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#local_fqdn LookerInstance#local_fqdn}
   */
   readonly localFqdn?: string;
   /**
   * URI of the service attachment to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#target_service_attachment_uri LookerInstance#target_service_attachment_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#target_service_attachment_uri LookerInstance#target_service_attachment_uri}
   */
   readonly targetServiceAttachmentUri?: string;
 }
@@ -1680,13 +2167,13 @@ export interface LookerInstancePscConfig {
   /**
   * List of VPCs that are allowed ingress into the Looker instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#allowed_vpcs LookerInstance#allowed_vpcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#allowed_vpcs LookerInstance#allowed_vpcs}
   */
   readonly allowedVpcs?: string[];
   /**
   * service_attachments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#service_attachments LookerInstance#service_attachments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#service_attachments LookerInstance#service_attachments}
   */
   readonly serviceAttachments?: LookerInstancePscConfigServiceAttachments[] | cdktn.IResolvable;
 }
@@ -1804,15 +2291,15 @@ export class LookerInstancePscConfigOutputReference extends cdktn.ComplexObject 
 }
 export interface LookerInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#create LookerInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#create LookerInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#delete LookerInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#delete LookerInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#update LookerInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#update LookerInstance#update}
   */
   readonly update?: string;
 }
@@ -1966,19 +2453,19 @@ export interface LookerInstanceUserMetadata {
   /**
   * Number of additional Developer Users to allocate to the Looker Instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#additional_developer_user_count LookerInstance#additional_developer_user_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#additional_developer_user_count LookerInstance#additional_developer_user_count}
   */
   readonly additionalDeveloperUserCount?: number;
   /**
   * Number of additional Standard Users to allocate to the Looker Instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#additional_standard_user_count LookerInstance#additional_standard_user_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#additional_standard_user_count LookerInstance#additional_standard_user_count}
   */
   readonly additionalStandardUserCount?: number;
   /**
   * Number of additional Viewer Users to allocate to the Looker Instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#additional_viewer_user_count LookerInstance#additional_viewer_user_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#additional_viewer_user_count LookerInstance#additional_viewer_user_count}
   */
   readonly additionalViewerUserCount?: number;
 }
@@ -2120,7 +2607,7 @@ export class LookerInstanceUserMetadataOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance google_looker_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance google_looker_instance}
 */
 export class LookerInstance extends cdktn.TerraformResource {
 
@@ -2136,7 +2623,7 @@ export class LookerInstance extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LookerInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LookerInstance to import
-  * @param importFromId The id of the existing LookerInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LookerInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LookerInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2148,7 +2635,7 @@ export class LookerInstance extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/looker_instance google_looker_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/looker_instance google_looker_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2159,8 +2646,8 @@ export class LookerInstance extends cdktn.TerraformResource {
       terraformResourceType: 'google_looker_instance',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2171,8 +2658,10 @@ export class LookerInstance extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._consumerNetwork = config.consumerNetwork;
+    this._controlledEgressEnabled = config.controlledEgressEnabled;
     this._deletionPolicy = config.deletionPolicy;
     this._fipsEnabled = config.fipsEnabled;
+    this._geminiEnabled = config.geminiEnabled;
     this._id = config.id;
     this._name = config.name;
     this._platformEdition = config.platformEdition;
@@ -2183,11 +2672,13 @@ export class LookerInstance extends cdktn.TerraformResource {
     this._region = config.region;
     this._reservedRange = config.reservedRange;
     this._adminSettings.internalValue = config.adminSettings;
+    this._controlledEgressConfig.internalValue = config.controlledEgressConfig;
     this._customDomain.internalValue = config.customDomain;
     this._denyMaintenancePeriod.internalValue = config.denyMaintenancePeriod;
     this._encryptionConfig.internalValue = config.encryptionConfig;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
     this._oauthConfig.internalValue = config.oauthConfig;
+    this._periodicExportConfig.internalValue = config.periodicExportConfig;
     this._pscConfig.internalValue = config.pscConfig;
     this._timeouts.internalValue = config.timeouts;
     this._userMetadata.internalValue = config.userMetadata;
@@ -2211,6 +2702,22 @@ export class LookerInstance extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get consumerNetworkInput() {
     return this._consumerNetwork;
+  }
+
+  // controlled_egress_enabled - computed: false, optional: true, required: false
+  private _controlledEgressEnabled?: boolean | cdktn.IResolvable; 
+  public get controlledEgressEnabled() {
+    return this.getBooleanAttribute('controlled_egress_enabled');
+  }
+  public set controlledEgressEnabled(value: boolean | cdktn.IResolvable) {
+    this._controlledEgressEnabled = value;
+  }
+  public resetControlledEgressEnabled() {
+    this._controlledEgressEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get controlledEgressEnabledInput() {
+    return this._controlledEgressEnabled;
   }
 
   // create_time - computed: true, optional: false, required: false
@@ -2253,6 +2760,22 @@ export class LookerInstance extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get fipsEnabledInput() {
     return this._fipsEnabled;
+  }
+
+  // gemini_enabled - computed: false, optional: true, required: false
+  private _geminiEnabled?: boolean | cdktn.IResolvable; 
+  public get geminiEnabled() {
+    return this.getBooleanAttribute('gemini_enabled');
+  }
+  public set geminiEnabled(value: boolean | cdktn.IResolvable) {
+    this._geminiEnabled = value;
+  }
+  public resetGeminiEnabled() {
+    this._geminiEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get geminiEnabledInput() {
+    return this._geminiEnabled;
   }
 
   // id - computed: true, optional: true, required: false
@@ -2437,6 +2960,22 @@ export class LookerInstance extends cdktn.TerraformResource {
     return this._adminSettings.internalValue;
   }
 
+  // controlled_egress_config - computed: false, optional: true, required: false
+  private _controlledEgressConfig = new LookerInstanceControlledEgressConfigOutputReference(this, "controlled_egress_config");
+  public get controlledEgressConfig() {
+    return this._controlledEgressConfig;
+  }
+  public putControlledEgressConfig(value: LookerInstanceControlledEgressConfig) {
+    this._controlledEgressConfig.internalValue = value;
+  }
+  public resetControlledEgressConfig() {
+    this._controlledEgressConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get controlledEgressConfigInput() {
+    return this._controlledEgressConfig.internalValue;
+  }
+
   // custom_domain - computed: false, optional: true, required: false
   private _customDomain = new LookerInstanceCustomDomainOutputReference(this, "custom_domain");
   public get customDomain() {
@@ -2514,6 +3053,22 @@ export class LookerInstance extends cdktn.TerraformResource {
     return this._oauthConfig.internalValue;
   }
 
+  // periodic_export_config - computed: false, optional: true, required: false
+  private _periodicExportConfig = new LookerInstancePeriodicExportConfigOutputReference(this, "periodic_export_config");
+  public get periodicExportConfig() {
+    return this._periodicExportConfig;
+  }
+  public putPeriodicExportConfig(value: LookerInstancePeriodicExportConfig) {
+    this._periodicExportConfig.internalValue = value;
+  }
+  public resetPeriodicExportConfig() {
+    this._periodicExportConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get periodicExportConfigInput() {
+    return this._periodicExportConfig.internalValue;
+  }
+
   // psc_config - computed: false, optional: true, required: false
   private _pscConfig = new LookerInstancePscConfigOutputReference(this, "psc_config");
   public get pscConfig() {
@@ -2569,8 +3124,10 @@ export class LookerInstance extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       consumer_network: cdktn.stringToTerraform(this._consumerNetwork),
+      controlled_egress_enabled: cdktn.booleanToTerraform(this._controlledEgressEnabled),
       deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       fips_enabled: cdktn.booleanToTerraform(this._fipsEnabled),
+      gemini_enabled: cdktn.booleanToTerraform(this._geminiEnabled),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       platform_edition: cdktn.stringToTerraform(this._platformEdition),
@@ -2581,11 +3138,13 @@ export class LookerInstance extends cdktn.TerraformResource {
       region: cdktn.stringToTerraform(this._region),
       reserved_range: cdktn.stringToTerraform(this._reservedRange),
       admin_settings: lookerInstanceAdminSettingsToTerraform(this._adminSettings.internalValue),
+      controlled_egress_config: lookerInstanceControlledEgressConfigToTerraform(this._controlledEgressConfig.internalValue),
       custom_domain: lookerInstanceCustomDomainToTerraform(this._customDomain.internalValue),
       deny_maintenance_period: lookerInstanceDenyMaintenancePeriodToTerraform(this._denyMaintenancePeriod.internalValue),
       encryption_config: lookerInstanceEncryptionConfigToTerraform(this._encryptionConfig.internalValue),
       maintenance_window: lookerInstanceMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       oauth_config: lookerInstanceOauthConfigToTerraform(this._oauthConfig.internalValue),
+      periodic_export_config: lookerInstancePeriodicExportConfigToTerraform(this._periodicExportConfig.internalValue),
       psc_config: lookerInstancePscConfigToTerraform(this._pscConfig.internalValue),
       timeouts: lookerInstanceTimeoutsToTerraform(this._timeouts.internalValue),
       user_metadata: lookerInstanceUserMetadataToTerraform(this._userMetadata.internalValue),
@@ -2600,6 +3159,12 @@ export class LookerInstance extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      controlled_egress_enabled: {
+        value: cdktn.booleanToHclTerraform(this._controlledEgressEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       deletion_policy: {
         value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,
@@ -2608,6 +3173,12 @@ export class LookerInstance extends cdktn.TerraformResource {
       },
       fips_enabled: {
         value: cdktn.booleanToHclTerraform(this._fipsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      gemini_enabled: {
+        value: cdktn.booleanToHclTerraform(this._geminiEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -2672,6 +3243,12 @@ export class LookerInstance extends cdktn.TerraformResource {
         type: "list",
         storageClassType: "LookerInstanceAdminSettingsList",
       },
+      controlled_egress_config: {
+        value: lookerInstanceControlledEgressConfigToHclTerraform(this._controlledEgressConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LookerInstanceControlledEgressConfigList",
+      },
       custom_domain: {
         value: lookerInstanceCustomDomainToHclTerraform(this._customDomain.internalValue),
         isBlock: true,
@@ -2701,6 +3278,12 @@ export class LookerInstance extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "LookerInstanceOauthConfigList",
+      },
+      periodic_export_config: {
+        value: lookerInstancePeriodicExportConfigToHclTerraform(this._periodicExportConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "LookerInstancePeriodicExportConfigList",
       },
       psc_config: {
         value: lookerInstancePscConfigToHclTerraform(this._pscConfig.internalValue),

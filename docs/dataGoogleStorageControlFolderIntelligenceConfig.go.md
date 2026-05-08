@@ -4,12 +4,12 @@
 
 ### DataGoogleStorageControlFolderIntelligenceConfig <a name="DataGoogleStorageControlFolderIntelligenceConfig" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfig(scope Construct, id *string, config DataGoogleStorageControlFolderIntelligenceConfigConfig) DataGoogleStorageControlFolderIntelligenceConfig
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfig_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderI
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderI
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleStorageControlFo
 
 The id of the existing DataGoogleStorageControlFolderIntelligenceConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_control_folder_intelligence_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_control_folder_intelligence_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 &datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfigConfig {
 	Connection: interface{},
@@ -698,7 +698,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorag
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigConfig.property.name">Name</a></code> | <code>*string</code> | Identifier of the GCP Folder. For GCP Folder, this field can be folder number. |
-| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_control_folder_intelligence_config#id DataGoogleStorageControlFolderIntelligenceConfig#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_control_folder_intelligence_config#id DataGoogleStorageControlFolderIntelligenceConfig#id}. |
 
 ---
 
@@ -782,7 +782,7 @@ Name *string
 
 Identifier of the GCP Folder. For GCP Folder, this field can be folder number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_control_folder_intelligence_config#name DataGoogleStorageControlFolderIntelligenceConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_control_folder_intelligence_config#name DataGoogleStorageControlFolderIntelligenceConfig#name}
 
 ---
 
@@ -794,7 +794,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/storage_control_folder_intelligence_config#id DataGoogleStorageControlFolderIntelligenceConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/storage_control_folder_intelligence_config#id DataGoogleStorageControlFolderIntelligenceConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -806,7 +806,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigEffectiveIntelligenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 &datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfigEffectiveIntelligenceConfig {
 
@@ -819,7 +819,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 &datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfigFilter {
 
@@ -832,7 +832,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 &datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageBuckets {
 
@@ -845,7 +845,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 &datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocations {
 
@@ -858,7 +858,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 &datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageBuckets {
 
@@ -871,7 +871,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 &datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageLocations {
 
@@ -884,7 +884,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigTrialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 &datagooglestoragecontrolfolderintelligenceconfig.DataGoogleStorageControlFolderIntelligenceConfigTrialConfig {
 
@@ -899,7 +899,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestorag
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigEffectiveIntelligenceConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigEffectiveIntelligenceConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlFolderIntelligenceConfigEffectiveIntelligenceConfigList
 ```
@@ -1048,7 +1048,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigEffectiveIntelligenceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigEffectiveIntelligenceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlFolderIntelligenceConfigEffectiveIntelligenceConfigOutputReference
 ```
@@ -1337,7 +1337,7 @@ func InternalValue() DataGoogleStorageControlFolderIntelligenceConfigEffectiveIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageBucketsList
 ```
@@ -1486,7 +1486,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageBucketsOutputReference
 ```
@@ -1764,7 +1764,7 @@ func InternalValue() DataGoogleStorageControlFolderIntelligenceConfigFilterExclu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsList
 ```
@@ -1913,7 +1913,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference
 ```
@@ -2191,7 +2191,7 @@ func InternalValue() DataGoogleStorageControlFolderIntelligenceConfigFilterExclu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageBucketsList
 ```
@@ -2340,7 +2340,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageBucketsOutputReference
 ```
@@ -2618,7 +2618,7 @@ func InternalValue() DataGoogleStorageControlFolderIntelligenceConfigFilterInclu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsList
 ```
@@ -2767,7 +2767,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlFolderIntelligenceConfigFilterIncludedCloudStorageLocationsOutputReference
 ```
@@ -3045,7 +3045,7 @@ func InternalValue() DataGoogleStorageControlFolderIntelligenceConfigFilterInclu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigFilterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlFolderIntelligenceConfigFilterList
 ```
@@ -3194,7 +3194,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlFolderIntelligenceConfigFilterOutputReference
 ```
@@ -3505,7 +3505,7 @@ func InternalValue() DataGoogleStorageControlFolderIntelligenceConfigFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigTrialConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigTrialConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlFolderIntelligenceConfigTrialConfigList
 ```
@@ -3654,7 +3654,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlFolderIntelligenceConfig.DataGoogleStorageControlFolderIntelligenceConfigTrialConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglestoragecontrolfolderintelligenceconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglestoragecontrolfolderintelligenceconfig"
 
 datagooglestoragecontrolfolderintelligenceconfig.NewDataGoogleStorageControlFolderIntelligenceConfigTrialConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlFolderIntelligenceConfigTrialConfigOutputReference
 ```

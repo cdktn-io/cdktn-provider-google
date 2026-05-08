@@ -4,12 +4,12 @@
 
 ### ComputeInterconnectGroup <a name="ComputeInterconnectGroup" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group google_compute_interconnect_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group google_compute_interconnect_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroup(scope Construct, id *string, config ComputeInterconnectGroupConfig) ComputeInterconnectGroup
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.ComputeInterconnectGroup_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.ComputeInterconnectGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ computeinterconnectgroup.ComputeInterconnectGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.ComputeInterconnectGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ computeinterconnectgroup.ComputeInterconnectGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.ComputeInterconnectGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -563,7 +563,7 @@ The construct id used in the generated config for the ComputeInterconnectGroup t
 
 The id of the existing ComputeInterconnectGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -950,7 +950,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 &computeinterconnectgroup.ComputeInterconnectGroupConfig {
 	Connection: interface{},
@@ -960,13 +960,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconn
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Intent: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeInterconnectGroup.ComputeInterconnectGroupIntent,
+	Intent: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInterconnectGroup.ComputeInterconnectGroupIntent,
 	Name: *string,
 	Description: *string,
 	Id: *string,
 	Interconnects: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.computeInterconnectGroup.ComputeInterconnectGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.computeInterconnectGroup.ComputeInterconnectGroupTimeouts,
 }
 ```
 
@@ -984,9 +984,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconn
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.intent">Intent</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupIntent">ComputeInterconnectGroupIntent</a></code> | intent block. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.interconnects">Interconnects</a></code> | <code>interface{}</code> | interconnects block. |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts">ComputeInterconnectGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1071,7 +1071,7 @@ Intent ComputeInterconnectGroupIntent
 
 intent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#intent ComputeInterconnectGroup#intent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#intent ComputeInterconnectGroup#intent}
 
 ---
 
@@ -1091,7 +1091,7 @@ long and match the regular expression '[a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?' which
 character must be a lowercase letter, and all following characters must be a dash,
 lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}
 
 ---
 
@@ -1105,7 +1105,7 @@ Description *string
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#description ComputeInterconnectGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#description ComputeInterconnectGroup#description}
 
 ---
 
@@ -1117,7 +1117,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#id ComputeInterconnectGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1134,7 +1134,7 @@ Interconnects interface{}
 
 interconnects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#interconnects ComputeInterconnectGroup#interconnects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#interconnects ComputeInterconnectGroup#interconnects}
 
 ---
 
@@ -1146,7 +1146,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#project ComputeInterconnectGroup#project}.
 
 ---
 
@@ -1160,7 +1160,7 @@ Timeouts ComputeInterconnectGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#timeouts ComputeInterconnectGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#timeouts ComputeInterconnectGroup#timeouts}
 
 ---
 
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfigured.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 &computeinterconnectgroup.ComputeInterconnectGroupConfigured {
 
@@ -1182,7 +1182,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconn
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfiguredTopologyCapability.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 &computeinterconnectgroup.ComputeInterconnectGroupConfiguredTopologyCapability {
 
@@ -1195,7 +1195,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconn
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 &computeinterconnectgroup.ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockers {
 
@@ -1208,7 +1208,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconn
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupIntent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 &computeinterconnectgroup.ComputeInterconnectGroupIntent {
 	TopologyCapability: *string,
@@ -1235,7 +1235,7 @@ The reliability the user intends this group to be capable of, in terms of the In
 
 Possible values: ["PRODUCTION_NON_CRITICAL", "PRODUCTION_CRITICAL", "NO_SLA", "AVAILABILITY_SLA_UNSPECIFIED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#topology_capability ComputeInterconnectGroup#topology_capability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#topology_capability ComputeInterconnectGroup#topology_capability}
 
 ---
 
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnects.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 &computeinterconnectgroup.ComputeInterconnectGroupInterconnects {
 	Name: *string,
@@ -1256,7 +1256,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnects.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnects.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}. |
 | <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnects.property.interconnect">Interconnect</a></code> | <code>*string</code> | The URL of an Interconnect in this group. All Interconnects in the group are unique. |
 
 ---
@@ -1269,7 +1269,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#name ComputeInterconnectGroup#name}.
 
 ---
 
@@ -1283,7 +1283,7 @@ Interconnect *string
 
 The URL of an Interconnect in this group. All Interconnects in the group are unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#interconnect ComputeInterconnectGroup#interconnect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#interconnect ComputeInterconnectGroup#interconnect}
 
 ---
 
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 &computeinterconnectgroup.ComputeInterconnectGroupPhysicalStructure {
 
@@ -1305,7 +1305,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconn
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureMetros.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 &computeinterconnectgroup.ComputeInterconnectGroupPhysicalStructureMetros {
 
@@ -1318,7 +1318,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconn
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureMetrosFacilities.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 &computeinterconnectgroup.ComputeInterconnectGroupPhysicalStructureMetrosFacilities {
 
@@ -1331,7 +1331,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconn
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZones.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 &computeinterconnectgroup.ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZones {
 
@@ -1344,7 +1344,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconn
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 &computeinterconnectgroup.ComputeInterconnectGroupTimeouts {
 	Create: *string,
@@ -1357,9 +1357,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}. |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}. |
 
 ---
 
@@ -1371,7 +1371,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#create ComputeInterconnectGroup#create}.
 
 ---
 
@@ -1383,7 +1383,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#delete ComputeInterconnectGroup#delete}.
 
 ---
 
@@ -1395,7 +1395,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_interconnect_group#update ComputeInterconnectGroup#update}.
 
 ---
 
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfiguredList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupConfiguredList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInterconnectGroupConfiguredList
 ```
@@ -1555,7 +1555,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfiguredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupConfiguredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInterconnectGroupConfiguredOutputReference
 ```
@@ -1833,7 +1833,7 @@ func InternalValue() ComputeInterconnectGroupConfigured
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersList
 ```
@@ -1982,7 +1982,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersOutputReference
 ```
@@ -2326,7 +2326,7 @@ func InternalValue() ComputeInterconnectGroupConfiguredTopologyCapabilityIntende
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfiguredTopologyCapabilityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupConfiguredTopologyCapabilityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInterconnectGroupConfiguredTopologyCapabilityList
 ```
@@ -2475,7 +2475,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupConfiguredTopologyCapabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupConfiguredTopologyCapabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInterconnectGroupConfiguredTopologyCapabilityOutputReference
 ```
@@ -2764,7 +2764,7 @@ func InternalValue() ComputeInterconnectGroupConfiguredTopologyCapability
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupIntentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupIntentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInterconnectGroupIntentOutputReference
 ```
@@ -3042,7 +3042,7 @@ func InternalValue() ComputeInterconnectGroupIntent
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupInterconnectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInterconnectGroupInterconnectsList
 ```
@@ -3202,7 +3202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupInterconnectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupInterconnectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInterconnectGroupInterconnectsOutputReference
 ```
@@ -3520,7 +3520,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupPhysicalStructureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInterconnectGroupPhysicalStructureList
 ```
@@ -3669,7 +3669,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupPhysicalStructureMetrosFacilitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesList
 ```
@@ -3818,7 +3818,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReference
 ```
@@ -4107,7 +4107,7 @@ func InternalValue() ComputeInterconnectGroupPhysicalStructureMetrosFacilities
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesList
 ```
@@ -4256,7 +4256,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesOutputReference
 ```
@@ -4545,7 +4545,7 @@ func InternalValue() ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureMetrosList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupPhysicalStructureMetrosList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeInterconnectGroupPhysicalStructureMetrosList
 ```
@@ -4694,7 +4694,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureMetrosOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupPhysicalStructureMetrosOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInterconnectGroupPhysicalStructureMetrosOutputReference
 ```
@@ -4983,7 +4983,7 @@ func InternalValue() ComputeInterconnectGroupPhysicalStructureMetros
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupPhysicalStructureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupPhysicalStructureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeInterconnectGroupPhysicalStructureOutputReference
 ```
@@ -5261,7 +5261,7 @@ func InternalValue() ComputeInterconnectGroupPhysicalStructure
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInterconnectGroup.ComputeInterconnectGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/computeinterconnectgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinterconnectgroup"
 
 computeinterconnectgroup.NewComputeInterconnectGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInterconnectGroupTimeoutsOutputReference
 ```

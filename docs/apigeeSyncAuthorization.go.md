@@ -4,12 +4,12 @@
 
 ### ApigeeSyncAuthorization <a name="ApigeeSyncAuthorization" id="@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization google_apigee_sync_authorization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization google_apigee_sync_authorization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeesyncauthorization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesyncauthorization"
 
 apigeesyncauthorization.NewApigeeSyncAuthorization(scope Construct, id *string, config ApigeeSyncAuthorizationConfig) ApigeeSyncAuthorization
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeesyncauthorization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesyncauthorization"
 
 apigeesyncauthorization.ApigeeSyncAuthorization_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeesyncauthorization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesyncauthorization"
 
 apigeesyncauthorization.ApigeeSyncAuthorization_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ apigeesyncauthorization.ApigeeSyncAuthorization_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeesyncauthorization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesyncauthorization"
 
 apigeesyncauthorization.ApigeeSyncAuthorization_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ apigeesyncauthorization.ApigeeSyncAuthorization_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeesyncauthorization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesyncauthorization"
 
 apigeesyncauthorization.ApigeeSyncAuthorization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ApigeeSyncAuthorization to
 
 The id of the existing ApigeeSyncAuthorization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeesyncauthorization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesyncauthorization"
 
 &apigeesyncauthorization.ApigeeSyncAuthorizationConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeesyncauthor
 	Identities: *[]*string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts,
 }
 ```
 
@@ -845,7 +845,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeesyncauthor
 | <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationConfig.property.identities">Identities</a></code> | <code>*[]*string</code> | Array of service accounts to grant access to control plane resources, each specified using the following format: 'serviceAccount:service-account-name'. |
 | <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationConfig.property.name">Name</a></code> | <code>*string</code> | Name of the Apigee organization. |
-| <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#id ApigeeSyncAuthorization#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#id ApigeeSyncAuthorization#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts">ApigeeSyncAuthorizationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -936,7 +936,7 @@ You might specify multiple service accounts, for example, if you have multiple e
 
 The service accounts must have **Apigee Synchronizer Manager** role. See also [Create service accounts](https://cloud.google.com/apigee/docs/hybrid/v1.8/sa-about#create-the-service-accounts).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#identities ApigeeSyncAuthorization#identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#identities ApigeeSyncAuthorization#identities}
 
 ---
 
@@ -950,7 +950,7 @@ Name *string
 
 Name of the Apigee organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#name ApigeeSyncAuthorization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#name ApigeeSyncAuthorization#name}
 
 ---
 
@@ -962,7 +962,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#id ApigeeSyncAuthorization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#id ApigeeSyncAuthorization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -979,7 +979,7 @@ Timeouts ApigeeSyncAuthorizationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#timeouts ApigeeSyncAuthorization#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#timeouts ApigeeSyncAuthorization#timeouts}
 
 ---
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeesyncauthorization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesyncauthorization"
 
 &apigeesyncauthorization.ApigeeSyncAuthorizationTimeouts {
 	Create: *string,
@@ -1001,9 +1001,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeesyncauthor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#create ApigeeSyncAuthorization#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#delete ApigeeSyncAuthorization#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#update ApigeeSyncAuthorization#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#create ApigeeSyncAuthorization#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#delete ApigeeSyncAuthorization#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#update ApigeeSyncAuthorization#update}. |
 
 ---
 
@@ -1015,7 +1015,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#create ApigeeSyncAuthorization#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#create ApigeeSyncAuthorization#create}.
 
 ---
 
@@ -1027,7 +1027,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#delete ApigeeSyncAuthorization#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#delete ApigeeSyncAuthorization#delete}.
 
 ---
 
@@ -1039,7 +1039,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_sync_authorization#update ApigeeSyncAuthorization#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_sync_authorization#update ApigeeSyncAuthorization#update}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSyncAuthorization.ApigeeSyncAuthorizationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/apigeesyncauthorization"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/apigeesyncauthorization"
 
 apigeesyncauthorization.NewApigeeSyncAuthorizationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeSyncAuthorizationTimeoutsOutputReference
 ```

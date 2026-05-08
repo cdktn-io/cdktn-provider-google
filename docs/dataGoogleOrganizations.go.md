@@ -4,12 +4,12 @@
 
 ### DataGoogleOrganizations <a name="DataGoogleOrganizations" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organizations google_organizations}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/organizations google_organizations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleorganizations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizations"
 
 datagoogleorganizations.NewDataGoogleOrganizations(scope Construct, id *string, config DataGoogleOrganizationsConfig) DataGoogleOrganizations
 ```
@@ -312,7 +312,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleorganizations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizations"
 
 datagoogleorganizations.DataGoogleOrganizations_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleorganizations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizations"
 
 datagoogleorganizations.DataGoogleOrganizations_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleorganizations.DataGoogleOrganizations_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleorganizations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizations"
 
 datagoogleorganizations.DataGoogleOrganizations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleorganizations.DataGoogleOrganizations_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleorganizations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizations"
 
 datagoogleorganizations.DataGoogleOrganizations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleOrganizations to
 
 The id of the existing DataGoogleOrganizations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organizations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/organizations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleorganizations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizations"
 
 &datagoogleorganizations.DataGoogleOrganizationsConfig {
 	Connection: interface{},
@@ -660,8 +660,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleorgani
 | <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organizations#filter DataGoogleOrganizations#filter}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organizations#id DataGoogleOrganizations#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/organizations#filter DataGoogleOrganizations#filter}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/organizations#id DataGoogleOrganizations#id}. |
 
 ---
 
@@ -743,7 +743,7 @@ Filter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organizations#filter DataGoogleOrganizations#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/organizations#filter DataGoogleOrganizations#filter}.
 
 ---
 
@@ -755,7 +755,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/organizations#id DataGoogleOrganizations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/organizations#id DataGoogleOrganizations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -767,7 +767,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsOrganizations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleorganizations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizations"
 
 &datagoogleorganizations.DataGoogleOrganizationsOrganizations {
 
@@ -782,7 +782,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleorgani
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsOrganizationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleorganizations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizations"
 
 datagoogleorganizations.NewDataGoogleOrganizationsOrganizationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleOrganizationsOrganizationsList
 ```
@@ -931,7 +931,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOrganizations.DataGoogleOrganizationsOrganizationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagoogleorganizations"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagoogleorganizations"
 
 datagoogleorganizations.NewDataGoogleOrganizationsOrganizationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleOrganizationsOrganizationsOutputReference
 ```

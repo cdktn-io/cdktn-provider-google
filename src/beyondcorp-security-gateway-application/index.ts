@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,49 +18,55 @@ export interface BeyondcorpSecurityGatewayApplicationConfig extends cdktn.Terraf
   * * Must contain between 4-63 characters from '/a-z-/'.
   * * Must end with a number or letter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#application_id BeyondcorpSecurityGatewayApplication#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#application_id BeyondcorpSecurityGatewayApplication#application_id}
   */
   readonly applicationId: string;
   /**
   * Optional. An arbitrary user-provided name for the Application resource.
   * Cannot exceed 64 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#display_name BeyondcorpSecurityGatewayApplication#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#display_name BeyondcorpSecurityGatewayApplication#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#id BeyondcorpSecurityGatewayApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#id BeyondcorpSecurityGatewayApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#project BeyondcorpSecurityGatewayApplication#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#project BeyondcorpSecurityGatewayApplication#project}
   */
   readonly project?: string;
   /**
+  * Type of the external application. Possible values: ["PROXY_GATEWAY", "API_GATEWAY"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#schema BeyondcorpSecurityGatewayApplication#schema}
+  */
+  readonly schema?: string;
+  /**
   * ID of the Security Gateway resource this belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#security_gateway_id BeyondcorpSecurityGatewayApplication#security_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#security_gateway_id BeyondcorpSecurityGatewayApplication#security_gateway_id}
   */
   readonly securityGatewayId: string;
   /**
   * endpoint_matchers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#endpoint_matchers BeyondcorpSecurityGatewayApplication#endpoint_matchers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#endpoint_matchers BeyondcorpSecurityGatewayApplication#endpoint_matchers}
   */
-  readonly endpointMatchers: BeyondcorpSecurityGatewayApplicationEndpointMatchers[] | cdktn.IResolvable;
+  readonly endpointMatchers?: BeyondcorpSecurityGatewayApplicationEndpointMatchers[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#timeouts BeyondcorpSecurityGatewayApplication#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#timeouts BeyondcorpSecurityGatewayApplication#timeouts}
   */
   readonly timeouts?: BeyondcorpSecurityGatewayApplicationTimeouts;
   /**
   * upstreams block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#upstreams BeyondcorpSecurityGatewayApplication#upstreams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#upstreams BeyondcorpSecurityGatewayApplication#upstreams}
   */
   readonly upstreams?: BeyondcorpSecurityGatewayApplicationUpstreams[] | cdktn.IResolvable;
 }
@@ -68,15 +74,15 @@ export interface BeyondcorpSecurityGatewayApplicationEndpointMatchers {
   /**
   * Required. Hostname of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#hostname BeyondcorpSecurityGatewayApplication#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#hostname BeyondcorpSecurityGatewayApplication#hostname}
   */
   readonly hostname: string;
   /**
   * Optional. Ports of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#ports BeyondcorpSecurityGatewayApplication#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#ports BeyondcorpSecurityGatewayApplication#ports}
   */
-  readonly ports?: number[];
+  readonly ports: number[];
 }
 
 export function beyondcorpSecurityGatewayApplicationEndpointMatchersToTerraform(struct?: BeyondcorpSecurityGatewayApplicationEndpointMatchers | cdktn.IResolvable): any {
@@ -178,16 +184,13 @@ export class BeyondcorpSecurityGatewayApplicationEndpointMatchersOutputReference
     return this._hostname;
   }
 
-  // ports - computed: false, optional: true, required: false
+  // ports - computed: false, optional: false, required: true
   private _ports?: number[]; 
   public get ports() {
     return this.getNumberListAttribute('ports');
   }
   public set ports(value: number[]) {
     this._ports = value;
-  }
-  public resetPorts() {
-    this._ports = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get portsInput() {
@@ -216,15 +219,15 @@ export class BeyondcorpSecurityGatewayApplicationEndpointMatchersList extends cd
 }
 export interface BeyondcorpSecurityGatewayApplicationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#create BeyondcorpSecurityGatewayApplication#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#create BeyondcorpSecurityGatewayApplication#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#delete BeyondcorpSecurityGatewayApplication#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#delete BeyondcorpSecurityGatewayApplication#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#update BeyondcorpSecurityGatewayApplication#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#update BeyondcorpSecurityGatewayApplication#update}
   */
   readonly update?: string;
 }
@@ -378,7 +381,7 @@ export interface BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicy {
   /**
   * Required. List of regions where the application sends traffic to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#regions BeyondcorpSecurityGatewayApplication#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#regions BeyondcorpSecurityGatewayApplication#regions}
   */
   readonly regions: string[];
 }
@@ -457,12 +460,242 @@ export class BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyOutputRefe
     return this._regions;
   }
 }
+export interface BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints {
+  /**
+  * Hostname of the endpoint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#hostname BeyondcorpSecurityGatewayApplication#hostname}
+  */
+  readonly hostname: string;
+  /**
+  * Port of the endpoint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#port BeyondcorpSecurityGatewayApplication#port}
+  */
+  readonly port: number;
+}
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    port: cdktn.numberToTerraform(struct!.port),
+  }
+}
+
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    hostname: {
+      value: cdktn.stringToHclTerraform(struct!.hostname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktn.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hostname !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostname = this._hostname;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._hostname = undefined;
+      this._port = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._hostname = value.hostname;
+      this._port = value.port;
+    }
+  }
+
+  // hostname - computed: false, optional: false, required: true
+  private _hostname?: string; 
+  public get hostname() {
+    return this.getStringAttribute('hostname');
+  }
+  public set hostname(value: string) {
+    this._hostname = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameInput() {
+    return this._hostname;
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+}
+
+export class BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsList extends cdktn.ComplexList {
+  public internalValue? : BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsOutputReference {
+    return new BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface BeyondcorpSecurityGatewayApplicationUpstreamsExternal {
+  /**
+  * endpoints block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#endpoints BeyondcorpSecurityGatewayApplication#endpoints}
+  */
+  readonly endpoints: BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints[] | cdktn.IResolvable;
+}
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsExternalToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsExternal): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    endpoints: cdktn.listMapper(beyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsToTerraform, true)(struct!.endpoints),
+  }
+}
+
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsExternalToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsExternal): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoints: {
+      value: cdktn.listMapperHcl(beyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsToHclTerraform, true)(struct!.endpoints),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BeyondcorpSecurityGatewayApplicationUpstreamsExternal | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpoints?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpoints = this._endpoints?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BeyondcorpSecurityGatewayApplicationUpstreamsExternal | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._endpoints.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._endpoints.internalValue = value.endpoints;
+    }
+  }
+
+  // endpoints - computed: false, optional: false, required: true
+  private _endpoints = new BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpointsList(this, "endpoints", false);
+  public get endpoints() {
+    return this._endpoints;
+  }
+  public putEndpoints(value: BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints[] | cdktn.IResolvable) {
+    this._endpoints.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointsInput() {
+    return this._endpoints.internalValue;
+  }
+}
 export interface BeyondcorpSecurityGatewayApplicationUpstreamsNetwork {
   /**
   * Required. Network name is of the format:
   * 'projects/{project}/global/networks/{network}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#name BeyondcorpSecurityGatewayApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#name BeyondcorpSecurityGatewayApplication#name}
   */
   readonly name: string;
 }
@@ -541,19 +774,710 @@ export class BeyondcorpSecurityGatewayApplicationUpstreamsNetworkOutputReference
     return this._name;
   }
 }
+export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfo {
+  /**
+  * The output type of the delegated device info. Possible values: ["PROTOBUF", "JSON", "NONE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
+  */
+  readonly outputType?: string;
+}
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    output_type: cdktn.stringToTerraform(struct!.outputType),
+  }
+}
+
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    output_type: {
+      value: cdktn.stringToHclTerraform(struct!.outputType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._outputType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outputType = this._outputType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._outputType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._outputType = value.outputType;
+    }
+  }
+
+  // output_type - computed: false, optional: true, required: false
+  private _outputType?: string; 
+  public get outputType() {
+    return this.getStringAttribute('output_type');
+  }
+  public set outputType(value: string) {
+    this._outputType = value;
+  }
+  public resetOutputType() {
+    this._outputType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputTypeInput() {
+    return this._outputType;
+  }
+}
+export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfo {
+  /**
+  * The output type of the delegated group info. Possible values: ["PROTOBUF", "JSON", "NONE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
+  */
+  readonly outputType?: string;
+}
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    output_type: cdktn.stringToTerraform(struct!.outputType),
+  }
+}
+
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    output_type: {
+      value: cdktn.stringToHclTerraform(struct!.outputType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._outputType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outputType = this._outputType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._outputType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._outputType = value.outputType;
+    }
+  }
+
+  // output_type - computed: false, optional: true, required: false
+  private _outputType?: string; 
+  public get outputType() {
+    return this.getStringAttribute('output_type');
+  }
+  public set outputType(value: string) {
+    this._outputType = value;
+  }
+  public resetOutputType() {
+    this._outputType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputTypeInput() {
+    return this._outputType;
+  }
+}
+export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfo {
+  /**
+  * The output type of the delegated user info. Possible values: ["PROTOBUF", "JSON", "NONE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
+  */
+  readonly outputType?: string;
+}
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    output_type: cdktn.stringToTerraform(struct!.outputType),
+  }
+}
+
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    output_type: {
+      value: cdktn.stringToHclTerraform(struct!.outputType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._outputType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outputType = this._outputType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._outputType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._outputType = value.outputType;
+    }
+  }
+
+  // output_type - computed: false, optional: true, required: false
+  private _outputType?: string; 
+  public get outputType() {
+    return this.getStringAttribute('output_type');
+  }
+  public set outputType(value: string) {
+    this._outputType = value;
+  }
+  public resetOutputType() {
+    this._outputType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputTypeInput() {
+    return this._outputType;
+  }
+}
+export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeaders {
+  /**
+  * Default output type for all enabled headers. Possible values: ["PROTOBUF", "JSON", "NONE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#output_type BeyondcorpSecurityGatewayApplication#output_type}
+  */
+  readonly outputType?: string;
+  /**
+  * device_info block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#device_info BeyondcorpSecurityGatewayApplication#device_info}
+  */
+  readonly deviceInfo?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfo;
+  /**
+  * group_info block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#group_info BeyondcorpSecurityGatewayApplication#group_info}
+  */
+  readonly groupInfo?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfo;
+  /**
+  * user_info block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#user_info BeyondcorpSecurityGatewayApplication#user_info}
+  */
+  readonly userInfo?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfo;
+}
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeaders): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    output_type: cdktn.stringToTerraform(struct!.outputType),
+    device_info: beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoToTerraform(struct!.deviceInfo),
+    group_info: beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoToTerraform(struct!.groupInfo),
+    user_info: beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoToTerraform(struct!.userInfo),
+  }
+}
+
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeaders): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    output_type: {
+      value: cdktn.stringToHclTerraform(struct!.outputType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    device_info: {
+      value: beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoToHclTerraform(struct!.deviceInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoList",
+    },
+    group_info: {
+      value: beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoToHclTerraform(struct!.groupInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoList",
+    },
+    user_info: {
+      value: beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoToHclTerraform(struct!.userInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeaders | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._outputType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.outputType = this._outputType;
+    }
+    if (this._deviceInfo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceInfo = this._deviceInfo?.internalValue;
+    }
+    if (this._groupInfo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupInfo = this._groupInfo?.internalValue;
+    }
+    if (this._userInfo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userInfo = this._userInfo?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeaders | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._outputType = undefined;
+      this._deviceInfo.internalValue = undefined;
+      this._groupInfo.internalValue = undefined;
+      this._userInfo.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._outputType = value.outputType;
+      this._deviceInfo.internalValue = value.deviceInfo;
+      this._groupInfo.internalValue = value.groupInfo;
+      this._userInfo.internalValue = value.userInfo;
+    }
+  }
+
+  // output_type - computed: false, optional: true, required: false
+  private _outputType?: string; 
+  public get outputType() {
+    return this.getStringAttribute('output_type');
+  }
+  public set outputType(value: string) {
+    this._outputType = value;
+  }
+  public resetOutputType() {
+    this._outputType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get outputTypeInput() {
+    return this._outputType;
+  }
+
+  // device_info - computed: false, optional: true, required: false
+  private _deviceInfo = new BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfoOutputReference(this, "device_info");
+  public get deviceInfo() {
+    return this._deviceInfo;
+  }
+  public putDeviceInfo(value: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersDeviceInfo) {
+    this._deviceInfo.internalValue = value;
+  }
+  public resetDeviceInfo() {
+    this._deviceInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceInfoInput() {
+    return this._deviceInfo.internalValue;
+  }
+
+  // group_info - computed: false, optional: true, required: false
+  private _groupInfo = new BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfoOutputReference(this, "group_info");
+  public get groupInfo() {
+    return this._groupInfo;
+  }
+  public putGroupInfo(value: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersGroupInfo) {
+    this._groupInfo.internalValue = value;
+  }
+  public resetGroupInfo() {
+    this._groupInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInfoInput() {
+    return this._groupInfo.internalValue;
+  }
+
+  // user_info - computed: false, optional: true, required: false
+  private _userInfo = new BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfoOutputReference(this, "user_info");
+  public get userInfo() {
+    return this._userInfo;
+  }
+  public putUserInfo(value: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersUserInfo) {
+    this._userInfo.internalValue = value;
+  }
+  public resetUserInfo() {
+    this._userInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userInfoInput() {
+    return this._userInfo.internalValue;
+  }
+}
+export interface BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol {
+  /**
+  * The configuration for the proxy.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#allowed_client_headers BeyondcorpSecurityGatewayApplication#allowed_client_headers}
+  */
+  readonly allowedClientHeaders?: string[];
+  /**
+  * Client IP configuration. The client IP address is included if true.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#client_ip BeyondcorpSecurityGatewayApplication#client_ip}
+  */
+  readonly clientIp?: boolean | cdktn.IResolvable;
+  /**
+  * Gateway identity configuration. Possible values: ["RESOURCE_NAME"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#gateway_identity BeyondcorpSecurityGatewayApplication#gateway_identity}
+  */
+  readonly gatewayIdentity?: string;
+  /**
+  * Custom resource specific headers along with the values.
+  * The names should conform to RFC 9110:
+  * > Field names SHOULD constrain themselves to alphanumeric characters, "-",
+  *   and ".", and SHOULD begin with a letter.
+  * > Field values SHOULD contain only ASCII printable characters and tab.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#metadata_headers BeyondcorpSecurityGatewayApplication#metadata_headers}
+  */
+  readonly metadataHeaders?: { [key: string]: string };
+  /**
+  * contextual_headers block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#contextual_headers BeyondcorpSecurityGatewayApplication#contextual_headers}
+  */
+  readonly contextualHeaders?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeaders;
+}
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed_client_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedClientHeaders),
+    client_ip: cdktn.booleanToTerraform(struct!.clientIp),
+    gateway_identity: cdktn.stringToTerraform(struct!.gatewayIdentity),
+    metadata_headers: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.metadataHeaders),
+    contextual_headers: beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersToTerraform(struct!.contextualHeaders),
+  }
+}
+
+
+export function beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolToHclTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolOutputReference | BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed_client_headers: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedClientHeaders),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    client_ip: {
+      value: cdktn.booleanToHclTerraform(struct!.clientIp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    gateway_identity: {
+      value: cdktn.stringToHclTerraform(struct!.gatewayIdentity),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    metadata_headers: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.metadataHeaders),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    contextual_headers: {
+      value: beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersToHclTerraform(struct!.contextualHeaders),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedClientHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedClientHeaders = this._allowedClientHeaders;
+    }
+    if (this._clientIp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientIp = this._clientIp;
+    }
+    if (this._gatewayIdentity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gatewayIdentity = this._gatewayIdentity;
+    }
+    if (this._metadataHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metadataHeaders = this._metadataHeaders;
+    }
+    if (this._contextualHeaders?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contextualHeaders = this._contextualHeaders?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedClientHeaders = undefined;
+      this._clientIp = undefined;
+      this._gatewayIdentity = undefined;
+      this._metadataHeaders = undefined;
+      this._contextualHeaders.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedClientHeaders = value.allowedClientHeaders;
+      this._clientIp = value.clientIp;
+      this._gatewayIdentity = value.gatewayIdentity;
+      this._metadataHeaders = value.metadataHeaders;
+      this._contextualHeaders.internalValue = value.contextualHeaders;
+    }
+  }
+
+  // allowed_client_headers - computed: false, optional: true, required: false
+  private _allowedClientHeaders?: string[]; 
+  public get allowedClientHeaders() {
+    return this.getListAttribute('allowed_client_headers');
+  }
+  public set allowedClientHeaders(value: string[]) {
+    this._allowedClientHeaders = value;
+  }
+  public resetAllowedClientHeaders() {
+    this._allowedClientHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedClientHeadersInput() {
+    return this._allowedClientHeaders;
+  }
+
+  // client_ip - computed: false, optional: true, required: false
+  private _clientIp?: boolean | cdktn.IResolvable; 
+  public get clientIp() {
+    return this.getBooleanAttribute('client_ip');
+  }
+  public set clientIp(value: boolean | cdktn.IResolvable) {
+    this._clientIp = value;
+  }
+  public resetClientIp() {
+    this._clientIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientIpInput() {
+    return this._clientIp;
+  }
+
+  // gateway_identity - computed: false, optional: true, required: false
+  private _gatewayIdentity?: string; 
+  public get gatewayIdentity() {
+    return this.getStringAttribute('gateway_identity');
+  }
+  public set gatewayIdentity(value: string) {
+    this._gatewayIdentity = value;
+  }
+  public resetGatewayIdentity() {
+    this._gatewayIdentity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayIdentityInput() {
+    return this._gatewayIdentity;
+  }
+
+  // metadata_headers - computed: false, optional: true, required: false
+  private _metadataHeaders?: { [key: string]: string }; 
+  public get metadataHeaders() {
+    return this.getStringMapAttribute('metadata_headers');
+  }
+  public set metadataHeaders(value: { [key: string]: string }) {
+    this._metadataHeaders = value;
+  }
+  public resetMetadataHeaders() {
+    this._metadataHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metadataHeadersInput() {
+    return this._metadataHeaders;
+  }
+
+  // contextual_headers - computed: false, optional: true, required: false
+  private _contextualHeaders = new BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeadersOutputReference(this, "contextual_headers");
+  public get contextualHeaders() {
+    return this._contextualHeaders;
+  }
+  public putContextualHeaders(value: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolContextualHeaders) {
+    this._contextualHeaders.internalValue = value;
+  }
+  public resetContextualHeaders() {
+    this._contextualHeaders.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contextualHeadersInput() {
+    return this._contextualHeaders.internalValue;
+  }
+}
 export interface BeyondcorpSecurityGatewayApplicationUpstreams {
   /**
   * egress_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#egress_policy BeyondcorpSecurityGatewayApplication#egress_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#egress_policy BeyondcorpSecurityGatewayApplication#egress_policy}
   */
   readonly egressPolicy?: BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicy;
   /**
+  * external block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#external BeyondcorpSecurityGatewayApplication#external}
+  */
+  readonly external?: BeyondcorpSecurityGatewayApplicationUpstreamsExternal;
+  /**
   * network block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#network BeyondcorpSecurityGatewayApplication#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#network BeyondcorpSecurityGatewayApplication#network}
   */
   readonly network?: BeyondcorpSecurityGatewayApplicationUpstreamsNetwork;
+  /**
+  * proxy_protocol block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#proxy_protocol BeyondcorpSecurityGatewayApplication#proxy_protocol}
+  */
+  readonly proxyProtocol?: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol;
 }
 
 export function beyondcorpSecurityGatewayApplicationUpstreamsToTerraform(struct?: BeyondcorpSecurityGatewayApplicationUpstreams | cdktn.IResolvable): any {
@@ -563,7 +1487,9 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsToTerraform(struct?
   }
   return {
     egress_policy: beyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyToTerraform(struct!.egressPolicy),
+    external: beyondcorpSecurityGatewayApplicationUpstreamsExternalToTerraform(struct!.external),
     network: beyondcorpSecurityGatewayApplicationUpstreamsNetworkToTerraform(struct!.network),
+    proxy_protocol: beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolToTerraform(struct!.proxyProtocol),
   }
 }
 
@@ -580,11 +1506,23 @@ export function beyondcorpSecurityGatewayApplicationUpstreamsToHclTerraform(stru
       type: "list",
       storageClassType: "BeyondcorpSecurityGatewayApplicationUpstreamsEgressPolicyList",
     },
+    external: {
+      value: beyondcorpSecurityGatewayApplicationUpstreamsExternalToHclTerraform(struct!.external),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BeyondcorpSecurityGatewayApplicationUpstreamsExternalList",
+    },
     network: {
       value: beyondcorpSecurityGatewayApplicationUpstreamsNetworkToHclTerraform(struct!.network),
       isBlock: true,
       type: "list",
       storageClassType: "BeyondcorpSecurityGatewayApplicationUpstreamsNetworkList",
+    },
+    proxy_protocol: {
+      value: beyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolToHclTerraform(struct!.proxyProtocol),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolList",
     },
   };
 
@@ -616,9 +1554,17 @@ export class BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference extend
       hasAnyValues = true;
       internalValueResult.egressPolicy = this._egressPolicy?.internalValue;
     }
+    if (this._external?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.external = this._external?.internalValue;
+    }
     if (this._network?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.network = this._network?.internalValue;
+    }
+    if (this._proxyProtocol?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.proxyProtocol = this._proxyProtocol?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -628,7 +1574,9 @@ export class BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference extend
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._egressPolicy.internalValue = undefined;
+      this._external.internalValue = undefined;
       this._network.internalValue = undefined;
+      this._proxyProtocol.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -638,7 +1586,9 @@ export class BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference extend
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._egressPolicy.internalValue = value.egressPolicy;
+      this._external.internalValue = value.external;
       this._network.internalValue = value.network;
+      this._proxyProtocol.internalValue = value.proxyProtocol;
     }
   }
 
@@ -658,6 +1608,22 @@ export class BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference extend
     return this._egressPolicy.internalValue;
   }
 
+  // external - computed: false, optional: true, required: false
+  private _external = new BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference(this, "external");
+  public get external() {
+    return this._external;
+  }
+  public putExternal(value: BeyondcorpSecurityGatewayApplicationUpstreamsExternal) {
+    this._external.internalValue = value;
+  }
+  public resetExternal() {
+    this._external.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalInput() {
+    return this._external.internalValue;
+  }
+
   // network - computed: false, optional: true, required: false
   private _network = new BeyondcorpSecurityGatewayApplicationUpstreamsNetworkOutputReference(this, "network");
   public get network() {
@@ -672,6 +1638,22 @@ export class BeyondcorpSecurityGatewayApplicationUpstreamsOutputReference extend
   // Temporarily expose input value. Use with caution.
   public get networkInput() {
     return this._network.internalValue;
+  }
+
+  // proxy_protocol - computed: false, optional: true, required: false
+  private _proxyProtocol = new BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocolOutputReference(this, "proxy_protocol");
+  public get proxyProtocol() {
+    return this._proxyProtocol;
+  }
+  public putProxyProtocol(value: BeyondcorpSecurityGatewayApplicationUpstreamsProxyProtocol) {
+    this._proxyProtocol.internalValue = value;
+  }
+  public resetProxyProtocol() {
+    this._proxyProtocol.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get proxyProtocolInput() {
+    return this._proxyProtocol.internalValue;
   }
 }
 
@@ -696,7 +1678,7 @@ export class BeyondcorpSecurityGatewayApplicationUpstreamsList extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application}
 */
 export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResource {
 
@@ -712,7 +1694,7 @@ export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResourc
   * Generates CDKTN code for importing a BeyondcorpSecurityGatewayApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BeyondcorpSecurityGatewayApplication to import
-  * @param importFromId The id of the existing BeyondcorpSecurityGatewayApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BeyondcorpSecurityGatewayApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BeyondcorpSecurityGatewayApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -724,7 +1706,7 @@ export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/beyondcorp_security_gateway_application google_beyondcorp_security_gateway_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -735,8 +1717,8 @@ export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResourc
       terraformResourceType: 'google_beyondcorp_security_gateway_application',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -750,6 +1732,7 @@ export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResourc
     this._displayName = config.displayName;
     this._id = config.id;
     this._project = config.project;
+    this._schema = config.schema;
     this._securityGatewayId = config.securityGatewayId;
     this._endpointMatchers.internalValue = config.endpointMatchers;
     this._timeouts.internalValue = config.timeouts;
@@ -831,6 +1814,22 @@ export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResourc
     return this._project;
   }
 
+  // schema - computed: false, optional: true, required: false
+  private _schema?: string; 
+  public get schema() {
+    return this.getStringAttribute('schema');
+  }
+  public set schema(value: string) {
+    this._schema = value;
+  }
+  public resetSchema() {
+    this._schema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema;
+  }
+
   // security_gateway_id - computed: false, optional: false, required: true
   private _securityGatewayId?: string; 
   public get securityGatewayId() {
@@ -849,13 +1848,16 @@ export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResourc
     return this.getStringAttribute('update_time');
   }
 
-  // endpoint_matchers - computed: false, optional: false, required: true
+  // endpoint_matchers - computed: false, optional: true, required: false
   private _endpointMatchers = new BeyondcorpSecurityGatewayApplicationEndpointMatchersList(this, "endpoint_matchers", false);
   public get endpointMatchers() {
     return this._endpointMatchers;
   }
   public putEndpointMatchers(value: BeyondcorpSecurityGatewayApplicationEndpointMatchers[] | cdktn.IResolvable) {
     this._endpointMatchers.internalValue = value;
+  }
+  public resetEndpointMatchers() {
+    this._endpointMatchers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get endpointMatchersInput() {
@@ -904,6 +1906,7 @@ export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResourc
       display_name: cdktn.stringToTerraform(this._displayName),
       id: cdktn.stringToTerraform(this._id),
       project: cdktn.stringToTerraform(this._project),
+      schema: cdktn.stringToTerraform(this._schema),
       security_gateway_id: cdktn.stringToTerraform(this._securityGatewayId),
       endpoint_matchers: cdktn.listMapper(beyondcorpSecurityGatewayApplicationEndpointMatchersToTerraform, true)(this._endpointMatchers.internalValue),
       timeouts: beyondcorpSecurityGatewayApplicationTimeoutsToTerraform(this._timeouts.internalValue),
@@ -933,6 +1936,12 @@ export class BeyondcorpSecurityGatewayApplication extends cdktn.TerraformResourc
       },
       project: {
         value: cdktn.stringToHclTerraform(this._project),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      schema: {
+        value: cdktn.stringToHclTerraform(this._schema),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

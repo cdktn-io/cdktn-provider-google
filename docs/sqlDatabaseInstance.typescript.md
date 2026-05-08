@@ -4,7 +4,7 @@
 
 ### SqlDatabaseInstance <a name="SqlDatabaseInstance" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance google_sql_database_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance google_sql_database_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.Initializer"></a>
 
@@ -75,20 +75,24 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.putClone">putClone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.putPointInTimeRestoreContext">putPointInTimeRestoreContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.putReplicaConfiguration">putReplicaConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.putReplicationCluster">putReplicationCluster</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.putRestoreBackupContext">putRestoreBackupContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.putSettings">putSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetBackupdrBackup">resetBackupdrBackup</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetClone">resetClone</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetDeletionProtection">resetDeletionProtection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetEncryptionKeyName">resetEncryptionKeyName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetFinalBackupDescription">resetFinalBackupDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetInstanceType">resetInstanceType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetMaintenanceVersion">resetMaintenanceVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetMasterInstanceName">resetMasterInstanceName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetNodeCount">resetNodeCount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetPointInTimeRestoreContext">resetPointInTimeRestoreContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetRegion">resetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetReplicaConfiguration">resetReplicaConfiguration</a></code> | *No description.* |
@@ -96,6 +100,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetReplicationCluster">resetReplicationCluster</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetRestoreBackupContext">resetRestoreBackupContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetRootPassword">resetRootPassword</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetRootPasswordWo">resetRootPasswordWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetRootPasswordWoVersion">resetRootPasswordWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetSettings">resetSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -422,6 +428,18 @@ public putClone(value: SqlDatabaseInstanceClone): void
 
 ---
 
+##### `putPointInTimeRestoreContext` <a name="putPointInTimeRestoreContext" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.putPointInTimeRestoreContext"></a>
+
+```typescript
+public putPointInTimeRestoreContext(value: SqlDatabaseInstancePointInTimeRestoreContext): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.putPointInTimeRestoreContext.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext">SqlDatabaseInstancePointInTimeRestoreContext</a>
+
+---
+
 ##### `putReplicaConfiguration` <a name="putReplicaConfiguration" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.putReplicaConfiguration"></a>
 
 ```typescript
@@ -482,6 +500,12 @@ public putTimeouts(value: SqlDatabaseInstanceTimeouts): void
 
 ---
 
+##### `resetBackupdrBackup` <a name="resetBackupdrBackup" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetBackupdrBackup"></a>
+
+```typescript
+public resetBackupdrBackup(): void
+```
+
 ##### `resetClone` <a name="resetClone" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetClone"></a>
 
 ```typescript
@@ -498,6 +522,12 @@ public resetDeletionProtection(): void
 
 ```typescript
 public resetEncryptionKeyName(): void
+```
+
+##### `resetFinalBackupDescription` <a name="resetFinalBackupDescription" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetFinalBackupDescription"></a>
+
+```typescript
+public resetFinalBackupDescription(): void
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetId"></a>
@@ -534,6 +564,12 @@ public resetName(): void
 
 ```typescript
 public resetNodeCount(): void
+```
+
+##### `resetPointInTimeRestoreContext` <a name="resetPointInTimeRestoreContext" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetPointInTimeRestoreContext"></a>
+
+```typescript
+public resetPointInTimeRestoreContext(): void
 ```
 
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetProject"></a>
@@ -576,6 +612,18 @@ public resetRestoreBackupContext(): void
 
 ```typescript
 public resetRootPassword(): void
+```
+
+##### `resetRootPasswordWo` <a name="resetRootPasswordWo" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetRootPasswordWo"></a>
+
+```typescript
+public resetRootPasswordWo(): void
+```
+
+##### `resetRootPasswordWoVersion` <a name="resetRootPasswordWoVersion" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetRootPasswordWoVersion"></a>
+
+```typescript
+public resetRootPasswordWoVersion(): void
 ```
 
 ##### `resetSettings` <a name="resetSettings" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.resetSettings"></a>
@@ -693,7 +741,7 @@ The construct id used in the generated config for the SqlDatabaseInstance to imp
 
 The id of the existing SqlDatabaseInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,6 +778,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.dnsNames">dnsNames</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceDnsNamesList">SqlDatabaseInstanceDnsNamesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.firstIpAddress">firstIpAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.ipAddress">ipAddress</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddressList">SqlDatabaseInstanceIpAddressList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.pointInTimeRestoreContext">pointInTimeRestoreContext</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference">SqlDatabaseInstancePointInTimeRestoreContextOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.privateIpAddress">privateIpAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.pscServiceAttachmentLink">pscServiceAttachmentLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.publicIpAddress">publicIpAddress</a></code> | <code>string</code> | *No description.* |
@@ -741,16 +790,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.serviceAccountEmailAddress">serviceAccountEmailAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference">SqlDatabaseInstanceSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeoutsOutputReference">SqlDatabaseInstanceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.backupdrBackupInput">backupdrBackupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.cloneInput">cloneInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone">SqlDatabaseInstanceClone</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.databaseVersionInput">databaseVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.encryptionKeyNameInput">encryptionKeyNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.finalBackupDescriptionInput">finalBackupDescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.instanceTypeInput">instanceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.maintenanceVersionInput">maintenanceVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.masterInstanceNameInput">masterInstanceNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.nodeCountInput">nodeCountInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.pointInTimeRestoreContextInput">pointInTimeRestoreContextInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext">SqlDatabaseInstancePointInTimeRestoreContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.replicaConfigurationInput">replicaConfigurationInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration">SqlDatabaseInstanceReplicaConfiguration</a></code> | *No description.* |
@@ -758,11 +810,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.replicationClusterInput">replicationClusterInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationCluster">SqlDatabaseInstanceReplicationCluster</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.restoreBackupContextInput">restoreBackupContextInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContext">SqlDatabaseInstanceRestoreBackupContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordInput">rootPasswordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWoInput">rootPasswordWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWoVersionInput">rootPasswordWoVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.settingsInput">settingsInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings">SqlDatabaseInstanceSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.backupdrBackup">backupdrBackup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.databaseVersion">databaseVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.encryptionKeyName">encryptionKeyName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.finalBackupDescription">finalBackupDescription</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.instanceType">instanceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.maintenanceVersion">maintenanceVersion</a></code> | <code>string</code> | *No description.* |
@@ -773,6 +829,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.replicaNames">replicaNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPassword">rootPassword</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWo">rootPasswordWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWoVersion">rootPasswordWoVersion</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -988,6 +1046,16 @@ public readonly ipAddress: SqlDatabaseInstanceIpAddressList;
 
 ---
 
+##### `pointInTimeRestoreContext`<sup>Required</sup> <a name="pointInTimeRestoreContext" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.pointInTimeRestoreContext"></a>
+
+```typescript
+public readonly pointInTimeRestoreContext: SqlDatabaseInstancePointInTimeRestoreContextOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference">SqlDatabaseInstancePointInTimeRestoreContextOutputReference</a>
+
+---
+
 ##### `privateIpAddress`<sup>Required</sup> <a name="privateIpAddress" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.privateIpAddress"></a>
 
 ```typescript
@@ -1098,6 +1166,16 @@ public readonly timeouts: SqlDatabaseInstanceTimeoutsOutputReference;
 
 ---
 
+##### `backupdrBackupInput`<sup>Optional</sup> <a name="backupdrBackupInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.backupdrBackupInput"></a>
+
+```typescript
+public readonly backupdrBackupInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `cloneInput`<sup>Optional</sup> <a name="cloneInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.cloneInput"></a>
 
 ```typescript
@@ -1132,6 +1210,16 @@ public readonly deletionProtectionInput: boolean | IResolvable;
 
 ```typescript
 public readonly encryptionKeyNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `finalBackupDescriptionInput`<sup>Optional</sup> <a name="finalBackupDescriptionInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.finalBackupDescriptionInput"></a>
+
+```typescript
+public readonly finalBackupDescriptionInput: string;
 ```
 
 - *Type:* string
@@ -1195,6 +1283,16 @@ public readonly nodeCountInput: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `pointInTimeRestoreContextInput`<sup>Optional</sup> <a name="pointInTimeRestoreContextInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.pointInTimeRestoreContextInput"></a>
+
+```typescript
+public readonly pointInTimeRestoreContextInput: SqlDatabaseInstancePointInTimeRestoreContext;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext">SqlDatabaseInstancePointInTimeRestoreContext</a>
 
 ---
 
@@ -1268,6 +1366,26 @@ public readonly rootPasswordInput: string;
 
 ---
 
+##### `rootPasswordWoInput`<sup>Optional</sup> <a name="rootPasswordWoInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWoInput"></a>
+
+```typescript
+public readonly rootPasswordWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rootPasswordWoVersionInput`<sup>Optional</sup> <a name="rootPasswordWoVersionInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWoVersionInput"></a>
+
+```typescript
+public readonly rootPasswordWoVersionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `settingsInput`<sup>Optional</sup> <a name="settingsInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.settingsInput"></a>
 
 ```typescript
@@ -1285,6 +1403,16 @@ public readonly timeoutsInput: IResolvable | SqlDatabaseInstanceTimeouts;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a>
+
+---
+
+##### `backupdrBackup`<sup>Required</sup> <a name="backupdrBackup" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.backupdrBackup"></a>
+
+```typescript
+public readonly backupdrBackup: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1312,6 +1440,16 @@ public readonly deletionProtection: boolean | IResolvable;
 
 ```typescript
 public readonly encryptionKeyName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `finalBackupDescription`<sup>Required</sup> <a name="finalBackupDescription" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.finalBackupDescription"></a>
+
+```typescript
+public readonly finalBackupDescription: string;
 ```
 
 - *Type:* string
@@ -1418,6 +1556,26 @@ public readonly rootPassword: string;
 
 ---
 
+##### `rootPasswordWo`<sup>Required</sup> <a name="rootPasswordWo" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWo"></a>
+
+```typescript
+public readonly rootPasswordWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rootPasswordWoVersion`<sup>Required</sup> <a name="rootPasswordWoVersion" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstance.property.rootPasswordWoVersion"></a>
+
+```typescript
+public readonly rootPasswordWoVersion: string;
+```
+
+- *Type:* string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1457,6 +1615,8 @@ const sqlDatabaseInstanceClone: sqlDatabaseInstance.SqlDatabaseInstanceClone = {
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone.property.databaseNames">databaseNames</a></code> | <code>string[]</code> | (SQL Server only, use with point_in_time) clone only the specified databases from the source instance. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone.property.pointInTime">pointInTime</a></code> | <code>string</code> | The timestamp of the point in time that should be restored. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone.property.preferredZone">preferredZone</a></code> | <code>string</code> | (Point-in-time recovery for PostgreSQL only) Clone to an instance in the specified zone. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone.property.sourceInstanceDeletionTime">sourceInstanceDeletionTime</a></code> | <code>string</code> | The timestamp of when the source instance was deleted for a clone from a deleted instance. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone.property.sourceProject">sourceProject</a></code> | <code>string</code> | The project ID of the source project. |
 
 ---
 
@@ -1470,7 +1630,7 @@ public readonly sourceInstanceName: string;
 
 The name of the instance from which the point in time should be restored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#source_instance_name SqlDatabaseInstance#source_instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#source_instance_name SqlDatabaseInstance#source_instance_name}
 
 ---
 
@@ -1486,7 +1646,7 @@ The name of the allocated ip range for the private ip CloudSQL instance.
 
 For example: "google-managed-services-default". If set, the cloned instance ip will be created in the allocated range. The range name must comply with [RFC 1035](https://tools.ietf.org/html/rfc1035). Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#allocated_ip_range SqlDatabaseInstance#allocated_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#allocated_ip_range SqlDatabaseInstance#allocated_ip_range}
 
 ---
 
@@ -1502,7 +1662,7 @@ public readonly databaseNames: string[];
 
 Clone all databases if empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#database_names SqlDatabaseInstance#database_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#database_names SqlDatabaseInstance#database_names}
 
 ---
 
@@ -1516,7 +1676,7 @@ public readonly pointInTime: string;
 
 The timestamp of the point in time that should be restored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#point_in_time SqlDatabaseInstance#point_in_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#point_in_time SqlDatabaseInstance#point_in_time}
 
 ---
 
@@ -1532,7 +1692,35 @@ public readonly preferredZone: string;
 
 If no zone is specified, clone to the same zone as the source instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#preferred_zone SqlDatabaseInstance#preferred_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#preferred_zone SqlDatabaseInstance#preferred_zone}
+
+---
+
+##### `sourceInstanceDeletionTime`<sup>Optional</sup> <a name="sourceInstanceDeletionTime" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone.property.sourceInstanceDeletionTime"></a>
+
+```typescript
+public readonly sourceInstanceDeletionTime: string;
+```
+
+- *Type:* string
+
+The timestamp of when the source instance was deleted for a clone from a deleted instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#source_instance_deletion_time SqlDatabaseInstance#source_instance_deletion_time}
+
+---
+
+##### `sourceProject`<sup>Optional</sup> <a name="sourceProject" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone.property.sourceProject"></a>
+
+```typescript
+public readonly sourceProject: string;
+```
+
+- *Type:* string
+
+The project ID of the source project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#source_project SqlDatabaseInstance#source_project}
 
 ---
 
@@ -1557,16 +1745,19 @@ const sqlDatabaseInstanceConfig: sqlDatabaseInstance.SqlDatabaseInstanceConfig =
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.databaseVersion">databaseVersion</a></code> | <code>string</code> | The MySQL, PostgreSQL or SQL Server (beta) version to use. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.databaseVersion">databaseVersion</a></code> | <code>string</code> | The MySQL, PostgreSQL or SQL Server version to use. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.backupdrBackup">backupdrBackup</a></code> | <code>string</code> | The name of the BackupDR backup to restore from. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.clone">clone</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone">SqlDatabaseInstanceClone</a></code> | clone block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Used to block Terraform from deleting a SQL Instance. Defaults to true. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.encryptionKeyName">encryptionKeyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#encryption_key_name SqlDatabaseInstance#encryption_key_name}. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#id SqlDatabaseInstance#id}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.encryptionKeyName">encryptionKeyName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#encryption_key_name SqlDatabaseInstance#encryption_key_name}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.finalBackupDescription">finalBackupDescription</a></code> | <code>string</code> | The description of final backup if instance enable create final backup during instance deletion. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#id SqlDatabaseInstance#id}. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.instanceType">instanceType</a></code> | <code>string</code> | The type of the instance. See https://cloud.google.com/sql/docs/mysql/admin-api/rest/v1/instances#SqlInstanceType for supported values. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.maintenanceVersion">maintenanceVersion</a></code> | <code>string</code> | Maintenance version. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.masterInstanceName">masterInstanceName</a></code> | <code>string</code> | The name of the instance that will act as the master in the replication setup. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.name">name</a></code> | <code>string</code> | The name of the instance. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.nodeCount">nodeCount</a></code> | <code>number</code> | For a read pool instance, the number of nodes in the read pool. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.pointInTimeRestoreContext">pointInTimeRestoreContext</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext">SqlDatabaseInstancePointInTimeRestoreContext</a></code> | point_in_time_restore_context block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.project">project</a></code> | <code>string</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.region">region</a></code> | <code>string</code> | The region the instance will sit in. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.replicaConfiguration">replicaConfiguration</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration">SqlDatabaseInstanceReplicaConfiguration</a></code> | replica_configuration block. |
@@ -1574,6 +1765,8 @@ const sqlDatabaseInstanceConfig: sqlDatabaseInstance.SqlDatabaseInstanceConfig =
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.replicationCluster">replicationCluster</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicationCluster">SqlDatabaseInstanceReplicationCluster</a></code> | replication_cluster block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.restoreBackupContext">restoreBackupContext</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceRestoreBackupContext">SqlDatabaseInstanceRestoreBackupContext</a></code> | restore_backup_context block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.rootPassword">rootPassword</a></code> | <code>string</code> | Initial root password. Required for MS SQL Server. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.rootPasswordWo">rootPasswordWo</a></code> | <code>string</code> | Initial root password. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.rootPasswordWoVersion">rootPasswordWoVersion</a></code> | <code>string</code> | Triggers update of root_password_wo write-only. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments). |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings">SqlDatabaseInstanceSettings</a></code> | settings block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts">SqlDatabaseInstanceTimeouts</a></code> | timeouts block. |
 
@@ -1657,11 +1850,25 @@ public readonly databaseVersion: string;
 
 - *Type:* string
 
-The MySQL, PostgreSQL or SQL Server (beta) version to use.
+The MySQL, PostgreSQL or SQL Server version to use.
 
-Supported values include MYSQL_5_6, MYSQL_5_7, MYSQL_8_0, MYSQL_8_4, POSTGRES_9_6, POSTGRES_10, POSTGRES_11, POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, POSTGRES_16, POSTGRES_17, SQLSERVER_2017_STANDARD, SQLSERVER_2017_ENTERPRISE, SQLSERVER_2017_EXPRESS, SQLSERVER_2017_WEB. Database Version Policies includes an up-to-date reference of supported versions.
+Supported values include MYSQL_5_6, MYSQL_5_7, MYSQL_8_0, MYSQL_8_4, POSTGRES_9_6, POSTGRES_10, POSTGRES_11, POSTGRES_12, POSTGRES_13, POSTGRES_14, POSTGRES_15, POSTGRES_16, POSTGRES_17, POSTGRES_18, SQLSERVER_2022_STANDARD, SQLSERVER_2022_ENTERPRISE, SQLSERVER_2022_EXPRESS, SQLSERVER_2022_WEB, SQLSERVER_2025_STANDARD, SQLSERVER_2025_ENTERPRISE, SQLSERVER_2025_EXPRESS, SQLSERVER_2025_WEB. Database Version Policies includes an up-to-date reference of supported versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#database_version SqlDatabaseInstance#database_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#database_version SqlDatabaseInstance#database_version}
+
+---
+
+##### `backupdrBackup`<sup>Optional</sup> <a name="backupdrBackup" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.backupdrBackup"></a>
+
+```typescript
+public readonly backupdrBackup: string;
+```
+
+- *Type:* string
+
+The name of the BackupDR backup to restore from.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#backupdr_backup SqlDatabaseInstance#backupdr_backup}
 
 ---
 
@@ -1675,7 +1882,7 @@ public readonly clone: SqlDatabaseInstanceClone;
 
 clone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#clone SqlDatabaseInstance#clone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#clone SqlDatabaseInstance#clone}
 
 ---
 
@@ -1689,7 +1896,7 @@ public readonly deletionProtection: boolean | IResolvable;
 
 Used to block Terraform from deleting a SQL Instance. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#deletion_protection SqlDatabaseInstance#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#deletion_protection SqlDatabaseInstance#deletion_protection}
 
 ---
 
@@ -1701,7 +1908,21 @@ public readonly encryptionKeyName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#encryption_key_name SqlDatabaseInstance#encryption_key_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#encryption_key_name SqlDatabaseInstance#encryption_key_name}.
+
+---
+
+##### `finalBackupDescription`<sup>Optional</sup> <a name="finalBackupDescription" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.finalBackupDescription"></a>
+
+```typescript
+public readonly finalBackupDescription: string;
+```
+
+- *Type:* string
+
+The description of final backup if instance enable create final backup during instance deletion.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#final_backup_description SqlDatabaseInstance#final_backup_description}
 
 ---
 
@@ -1713,7 +1934,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#id SqlDatabaseInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#id SqlDatabaseInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1730,7 +1951,7 @@ public readonly instanceType: string;
 
 The type of the instance. See https://cloud.google.com/sql/docs/mysql/admin-api/rest/v1/instances#SqlInstanceType for supported values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#instance_type SqlDatabaseInstance#instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#instance_type SqlDatabaseInstance#instance_type}
 
 ---
 
@@ -1744,7 +1965,7 @@ public readonly maintenanceVersion: string;
 
 Maintenance version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#maintenance_version SqlDatabaseInstance#maintenance_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#maintenance_version SqlDatabaseInstance#maintenance_version}
 
 ---
 
@@ -1760,7 +1981,7 @@ The name of the instance that will act as the master in the replication setup.
 
 Note, this requires the master to have binary_log_enabled set, as well as existing backups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#master_instance_name SqlDatabaseInstance#master_instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#master_instance_name SqlDatabaseInstance#master_instance_name}
 
 ---
 
@@ -1776,7 +1997,7 @@ The name of the instance.
 
 If the name is left blank, Terraform will randomly generate one when the instance is first created. This is done because after a name is used, it cannot be reused for up to one week.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
 
 ---
 
@@ -1790,7 +2011,23 @@ public readonly nodeCount: number;
 
 For a read pool instance, the number of nodes in the read pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#node_count SqlDatabaseInstance#node_count}
+For read pools with auto scaling enabled, this field is read only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#node_count SqlDatabaseInstance#node_count}
+
+---
+
+##### `pointInTimeRestoreContext`<sup>Optional</sup> <a name="pointInTimeRestoreContext" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.pointInTimeRestoreContext"></a>
+
+```typescript
+public readonly pointInTimeRestoreContext: SqlDatabaseInstancePointInTimeRestoreContext;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext">SqlDatabaseInstancePointInTimeRestoreContext</a>
+
+point_in_time_restore_context block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#point_in_time_restore_context SqlDatabaseInstance#point_in_time_restore_context}
 
 ---
 
@@ -1806,7 +2043,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#project SqlDatabaseInstance#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#project SqlDatabaseInstance#project}
 
 ---
 
@@ -1822,7 +2059,7 @@ The region the instance will sit in.
 
 Note, Cloud SQL is not available in all regions. A valid region must be provided to use this resource. If a region is not provided in the resource definition, the provider region will be used instead, but this will be an apply-time error for instances if the provider region is not supported with Cloud SQL. If you choose not to provide the region argument for this resource, make sure you understand this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#region SqlDatabaseInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#region SqlDatabaseInstance#region}
 
 ---
 
@@ -1836,7 +2073,7 @@ public readonly replicaConfiguration: SqlDatabaseInstanceReplicaConfiguration;
 
 replica_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#replica_configuration SqlDatabaseInstance#replica_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#replica_configuration SqlDatabaseInstance#replica_configuration}
 
 ---
 
@@ -1850,7 +2087,7 @@ public readonly replicaNames: string[];
 
 The replicas of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#replica_names SqlDatabaseInstance#replica_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#replica_names SqlDatabaseInstance#replica_names}
 
 ---
 
@@ -1864,7 +2101,7 @@ public readonly replicationCluster: SqlDatabaseInstanceReplicationCluster;
 
 replication_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#replication_cluster SqlDatabaseInstance#replication_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#replication_cluster SqlDatabaseInstance#replication_cluster}
 
 ---
 
@@ -1878,7 +2115,7 @@ public readonly restoreBackupContext: SqlDatabaseInstanceRestoreBackupContext;
 
 restore_backup_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#restore_backup_context SqlDatabaseInstance#restore_backup_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#restore_backup_context SqlDatabaseInstance#restore_backup_context}
 
 ---
 
@@ -1892,7 +2129,38 @@ public readonly rootPassword: string;
 
 Initial root password. Required for MS SQL Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#root_password SqlDatabaseInstance#root_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#root_password SqlDatabaseInstance#root_password}
+
+---
+
+##### `rootPasswordWo`<sup>Optional</sup> <a name="rootPasswordWo" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.rootPasswordWo"></a>
+
+```typescript
+public readonly rootPasswordWo: string;
+```
+
+- *Type:* string
+
+Initial root password.
+
+Required for MS SQL Server.
+				Note: This property is write-only and will not be read from the API. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#root_password_wo SqlDatabaseInstance#root_password_wo}
+
+---
+
+##### `rootPasswordWoVersion`<sup>Optional</sup> <a name="rootPasswordWoVersion" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceConfig.property.rootPasswordWoVersion"></a>
+
+```typescript
+public readonly rootPasswordWoVersion: string;
+```
+
+- *Type:* string
+
+Triggers update of root_password_wo write-only. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#root_password_wo_version SqlDatabaseInstance#root_password_wo_version}
 
 ---
 
@@ -1906,7 +2174,7 @@ public readonly settings: SqlDatabaseInstanceSettings;
 
 settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#settings SqlDatabaseInstance#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#settings SqlDatabaseInstance#settings}
 
 ---
 
@@ -1920,7 +2188,7 @@ public readonly timeouts: SqlDatabaseInstanceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#timeouts SqlDatabaseInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#timeouts SqlDatabaseInstance#timeouts}
 
 ---
 
@@ -1945,6 +2213,117 @@ import { sqlDatabaseInstance } from '@cdktn/provider-google'
 const sqlDatabaseInstanceIpAddress: sqlDatabaseInstance.SqlDatabaseInstanceIpAddress = { ... }
 ```
 
+
+### SqlDatabaseInstancePointInTimeRestoreContext <a name="SqlDatabaseInstancePointInTimeRestoreContext" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.Initializer"></a>
+
+```typescript
+import { sqlDatabaseInstance } from '@cdktn/provider-google'
+
+const sqlDatabaseInstancePointInTimeRestoreContext: sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.datasource">datasource</a></code> | <code>string</code> | The Google Cloud Backup and Disaster Recovery Datasource URI. For example: "projects/my-project/locations/us-central1/datasources/my-datasource". |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.allocatedIpRange">allocatedIpRange</a></code> | <code>string</code> | The name of the allocated IP range for the internal IP Cloud SQL instance. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.pointInTime">pointInTime</a></code> | <code>string</code> | The date and time to which you want to restore the instance. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.preferredZone">preferredZone</a></code> | <code>string</code> | Point-in-time recovery of an instance to the specified zone. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.region">region</a></code> | <code>string</code> | The region of the target instance to restore to. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.targetInstance">targetInstance</a></code> | <code>string</code> | The name of the target instance to restore to. |
+
+---
+
+##### `datasource`<sup>Required</sup> <a name="datasource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.datasource"></a>
+
+```typescript
+public readonly datasource: string;
+```
+
+- *Type:* string
+
+The Google Cloud Backup and Disaster Recovery Datasource URI. For example: "projects/my-project/locations/us-central1/datasources/my-datasource".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#datasource SqlDatabaseInstance#datasource}
+
+---
+
+##### `allocatedIpRange`<sup>Optional</sup> <a name="allocatedIpRange" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.allocatedIpRange"></a>
+
+```typescript
+public readonly allocatedIpRange: string;
+```
+
+- *Type:* string
+
+The name of the allocated IP range for the internal IP Cloud SQL instance.
+
+For example: "google-managed-services-default". If you set this, then Cloud SQL creates the IP address for the cloned instance in the allocated range. This range must comply with [RFC 1035](https://tools.ietf.org/html/rfc1035) standards. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#allocated_ip_range SqlDatabaseInstance#allocated_ip_range}
+
+---
+
+##### `pointInTime`<sup>Optional</sup> <a name="pointInTime" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.pointInTime"></a>
+
+```typescript
+public readonly pointInTime: string;
+```
+
+- *Type:* string
+
+The date and time to which you want to restore the instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#point_in_time SqlDatabaseInstance#point_in_time}
+
+---
+
+##### `preferredZone`<sup>Optional</sup> <a name="preferredZone" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.preferredZone"></a>
+
+```typescript
+public readonly preferredZone: string;
+```
+
+- *Type:* string
+
+Point-in-time recovery of an instance to the specified zone.
+
+If no zone is specified, then clone to the same primary zone as the source instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#preferred_zone SqlDatabaseInstance#preferred_zone}
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+The region of the target instance to restore to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#region SqlDatabaseInstance#region}
+
+---
+
+##### `targetInstance`<sup>Optional</sup> <a name="targetInstance" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext.property.targetInstance"></a>
+
+```typescript
+public readonly targetInstance: string;
+```
+
+- *Type:* string
+
+The name of the target instance to restore to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#target_instance SqlDatabaseInstance#target_instance}
+
+---
 
 ### SqlDatabaseInstanceReplicaConfiguration <a name="SqlDatabaseInstanceReplicaConfiguration" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceReplicaConfiguration"></a>
 
@@ -1985,7 +2364,7 @@ public readonly caCertificate: string;
 
 PEM representation of the trusted CA's x509 certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#ca_certificate SqlDatabaseInstance#ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#ca_certificate SqlDatabaseInstance#ca_certificate}
 
 ---
 
@@ -2001,7 +2380,7 @@ Specifies if a SQL Server replica is a cascadable replica.
 
 A cascadable replica is a SQL Server cross region replica that supports replica(s) under it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#cascadable_replica SqlDatabaseInstance#cascadable_replica}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#cascadable_replica SqlDatabaseInstance#cascadable_replica}
 
 ---
 
@@ -2015,7 +2394,7 @@ public readonly clientCertificate: string;
 
 PEM representation of the replica's x509 certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#client_certificate SqlDatabaseInstance#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#client_certificate SqlDatabaseInstance#client_certificate}
 
 ---
 
@@ -2029,7 +2408,7 @@ public readonly clientKey: string;
 
 PEM representation of the replica's private key. The corresponding public key in encoded in the client_certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#client_key SqlDatabaseInstance#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#client_key SqlDatabaseInstance#client_key}
 
 ---
 
@@ -2043,7 +2422,7 @@ public readonly connectRetryInterval: number;
 
 The number of seconds between connect retries. MySQL's default is 60 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#connect_retry_interval SqlDatabaseInstance#connect_retry_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#connect_retry_interval SqlDatabaseInstance#connect_retry_interval}
 
 ---
 
@@ -2057,7 +2436,7 @@ public readonly dumpFilePath: string;
 
 Path to a SQL file in Google Cloud Storage from which replica instances are created. Format is gs://bucket/filename.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#dump_file_path SqlDatabaseInstance#dump_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#dump_file_path SqlDatabaseInstance#dump_file_path}
 
 ---
 
@@ -2073,7 +2452,7 @@ Specifies if the replica is the failover target.
 
 If the field is set to true the replica will be designated as a failover replica. If the master instance fails, the replica instance will be promoted as the new master instance. Not supported for Postgres
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#failover_target SqlDatabaseInstance#failover_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#failover_target SqlDatabaseInstance#failover_target}
 
 ---
 
@@ -2087,7 +2466,7 @@ public readonly masterHeartbeatPeriod: number;
 
 Time in ms between replication heartbeats.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#master_heartbeat_period SqlDatabaseInstance#master_heartbeat_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#master_heartbeat_period SqlDatabaseInstance#master_heartbeat_period}
 
 ---
 
@@ -2101,7 +2480,7 @@ public readonly password: string;
 
 Password for the replication connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#password SqlDatabaseInstance#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#password SqlDatabaseInstance#password}
 
 ---
 
@@ -2115,7 +2494,7 @@ public readonly sslCipher: string;
 
 Permissible ciphers for use in SSL encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#ssl_cipher SqlDatabaseInstance#ssl_cipher}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#ssl_cipher SqlDatabaseInstance#ssl_cipher}
 
 ---
 
@@ -2129,7 +2508,7 @@ public readonly username: string;
 
 Username for replication connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#username SqlDatabaseInstance#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#username SqlDatabaseInstance#username}
 
 ---
 
@@ -2143,7 +2522,7 @@ public readonly verifyServerCertificate: boolean | IResolvable;
 
 True if the master's common name value is checked during the SSL handshake.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#verify_server_certificate SqlDatabaseInstance#verify_server_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#verify_server_certificate SqlDatabaseInstance#verify_server_certificate}
 
 ---
 
@@ -2178,7 +2557,7 @@ If the instance is a primary instance, then this field identifies the disaster r
 
 The standard format of this field is "your-project:your-instance". You can also set this field to "your-instance", but cloud SQL backend will convert it to the aforementioned standard format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#failover_dr_replica_name SqlDatabaseInstance#failover_dr_replica_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#failover_dr_replica_name SqlDatabaseInstance#failover_dr_replica_name}
 
 ---
 
@@ -2194,7 +2573,7 @@ If set, this field indicates this instance has a private service access (PSA) DN
 
 If this instance is the primary, then the DNS endpoint points to this instance. After a switchover or replica failover operation, this DNS endpoint points to the promoted instance. This is a read-only field, returned to the user as information. This field can exist even if a standalone instance doesn't have a DR replica yet or the DR replica is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#psa_write_endpoint SqlDatabaseInstance#psa_write_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#psa_write_endpoint SqlDatabaseInstance#psa_write_endpoint}
 
 ---
 
@@ -2228,7 +2607,7 @@ public readonly backupRunId: number;
 
 The ID of the backup run to restore from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#backup_run_id SqlDatabaseInstance#backup_run_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#backup_run_id SqlDatabaseInstance#backup_run_id}
 
 ---
 
@@ -2242,7 +2621,7 @@ public readonly instanceId: string;
 
 The ID of the instance that the backup was taken from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#instance_id SqlDatabaseInstance#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#instance_id SqlDatabaseInstance#instance_id}
 
 ---
 
@@ -2256,7 +2635,7 @@ public readonly project: string;
 
 The full project ID of the source instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#project SqlDatabaseInstance#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#project SqlDatabaseInstance#project}
 
 ---
 
@@ -2289,11 +2668,13 @@ const sqlDatabaseInstanceSettings: sqlDatabaseInstance.SqlDatabaseInstanceSettin
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.activationPolicy">activationPolicy</a></code> | <code>string</code> | This specifies when the instance should be active. Can be either ALWAYS, NEVER or ON_DEMAND. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.activeDirectoryConfig">activeDirectoryConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsActiveDirectoryConfig">SqlDatabaseInstanceSettingsActiveDirectoryConfig</a></code> | active_directory_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.advancedMachineFeatures">advancedMachineFeatures</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsAdvancedMachineFeatures">SqlDatabaseInstanceSettingsAdvancedMachineFeatures</a></code> | advanced_machine_features block. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.autoUpgradeEnabled">autoUpgradeEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables Automatic Version Upgrade feature. Can be used with MySQL only. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.availabilityType">availabilityType</a></code> | <code>string</code> | The availability type of the Cloud SQL instance, high availability (REGIONAL) or single zone (ZONAL). |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.backupConfiguration">backupConfiguration</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration">SqlDatabaseInstanceSettingsBackupConfiguration</a></code> | backup_configuration block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.collation">collation</a></code> | <code>string</code> | The name of server instance collation. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.connectionPoolConfig">connectionPoolConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]</code> | connection_pool_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.connectorEnforcement">connectorEnforcement</a></code> | <code>string</code> | Enables the enforcement of Cloud SQL Auth Proxy or Cloud SQL connectors for all the connections. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.dataApiAccess">dataApiAccess</a></code> | <code>string</code> | Allows using ExecuteSql API to connect to the instance. Disallowed when unspecified. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.databaseFlags">databaseFlags</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]</code> | database_flags block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.dataCacheConfig">dataCacheConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfig">SqlDatabaseInstanceSettingsDataCacheConfig</a></code> | data_cache_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.deletionProtectionEnabled">deletionProtectionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Configuration to protect against accidental instance deletion. |
@@ -2305,12 +2686,15 @@ const sqlDatabaseInstanceSettings: sqlDatabaseInstance.SqlDatabaseInstanceSettin
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.edition">edition</a></code> | <code>string</code> | The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.enableDataplexIntegration">enableDataplexIntegration</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables Dataplex Integration. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.enableGoogleMlIntegration">enableGoogleMlIntegration</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables Vertex AI Integration. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.entraidConfig">entraidConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig">SqlDatabaseInstanceSettingsEntraidConfig</a></code> | entraid_config block. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.finalBackupConfig">finalBackupConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig">SqlDatabaseInstanceSettingsFinalBackupConfig</a></code> | final_backup_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.insightsConfig">insightsConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig">SqlDatabaseInstanceSettingsInsightsConfig</a></code> | insights_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.ipConfiguration">ipConfiguration</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration">SqlDatabaseInstanceSettingsIpConfiguration</a></code> | ip_configuration block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.locationPreference">locationPreference</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreference">SqlDatabaseInstanceSettingsLocationPreference</a></code> | location_preference block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindow">SqlDatabaseInstanceSettingsMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.passwordValidationPolicy">passwordValidationPolicy</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy">SqlDatabaseInstanceSettingsPasswordValidationPolicy</a></code> | password_validation_policy block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.pricingPlan">pricingPlan</a></code> | <code>string</code> | Pricing plan for this instance, can only be PER_USE. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.readPoolAutoScaleConfig">readPoolAutoScaleConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig</a></code> | read_pool_auto_scale_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.retainBackupsOnDelete">retainBackupsOnDelete</a></code> | <code>boolean \| cdktn.IResolvable</code> | When this parameter is set to true, Cloud SQL retains backups of the instance even after the instance is deleted. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.sqlServerAuditConfig">sqlServerAuditConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfig">SqlDatabaseInstanceSettingsSqlServerAuditConfig</a></code> | sql_server_audit_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.timeZone">timeZone</a></code> | <code>string</code> | The time_zone to be used by the database engine (supported only for SQL Server), in SQL Server timezone format. |
@@ -2330,7 +2714,7 @@ The machine type to use.
 
 See tiers for more details and supported versions. Postgres supports only shared-core machine types, and custom machine types such as db-custom-2-13312. See the Custom Machine Type Documentation to learn about specifying custom machine types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#tier SqlDatabaseInstance#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#tier SqlDatabaseInstance#tier}
 
 ---
 
@@ -2344,7 +2728,7 @@ public readonly activationPolicy: string;
 
 This specifies when the instance should be active. Can be either ALWAYS, NEVER or ON_DEMAND.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#activation_policy SqlDatabaseInstance#activation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#activation_policy SqlDatabaseInstance#activation_policy}
 
 ---
 
@@ -2358,7 +2742,7 @@ public readonly activeDirectoryConfig: SqlDatabaseInstanceSettingsActiveDirector
 
 active_directory_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#active_directory_config SqlDatabaseInstance#active_directory_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#active_directory_config SqlDatabaseInstance#active_directory_config}
 
 ---
 
@@ -2372,7 +2756,21 @@ public readonly advancedMachineFeatures: SqlDatabaseInstanceSettingsAdvancedMach
 
 advanced_machine_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#advanced_machine_features SqlDatabaseInstance#advanced_machine_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#advanced_machine_features SqlDatabaseInstance#advanced_machine_features}
+
+---
+
+##### `autoUpgradeEnabled`<sup>Optional</sup> <a name="autoUpgradeEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.autoUpgradeEnabled"></a>
+
+```typescript
+public readonly autoUpgradeEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Enables Automatic Version Upgrade feature. Can be used with MySQL only.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#auto_upgrade_enabled SqlDatabaseInstance#auto_upgrade_enabled}
 
 ---
 
@@ -2394,7 +2792,7 @@ is set to true. Defaults to ZONAL.
 For read pool instances, this field is read-only. The availability type is changed by specifying
 the number of nodes (node_count).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#availability_type SqlDatabaseInstance#availability_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#availability_type SqlDatabaseInstance#availability_type}
 
 ---
 
@@ -2408,7 +2806,7 @@ public readonly backupConfiguration: SqlDatabaseInstanceSettingsBackupConfigurat
 
 backup_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#backup_configuration SqlDatabaseInstance#backup_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#backup_configuration SqlDatabaseInstance#backup_configuration}
 
 ---
 
@@ -2422,7 +2820,7 @@ public readonly collation: string;
 
 The name of server instance collation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#collation SqlDatabaseInstance#collation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#collation SqlDatabaseInstance#collation}
 
 ---
 
@@ -2436,7 +2834,7 @@ public readonly connectionPoolConfig: IResolvable | SqlDatabaseInstanceSettingsC
 
 connection_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#connection_pool_config SqlDatabaseInstance#connection_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#connection_pool_config SqlDatabaseInstance#connection_pool_config}
 
 ---
 
@@ -2452,7 +2850,21 @@ Enables the enforcement of Cloud SQL Auth Proxy or Cloud SQL connectors for all 
 
 If enabled, all the direct connections are rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#connector_enforcement SqlDatabaseInstance#connector_enforcement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#connector_enforcement SqlDatabaseInstance#connector_enforcement}
+
+---
+
+##### `dataApiAccess`<sup>Optional</sup> <a name="dataApiAccess" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.dataApiAccess"></a>
+
+```typescript
+public readonly dataApiAccess: string;
+```
+
+- *Type:* string
+
+Allows using ExecuteSql API to connect to the instance. Disallowed when unspecified.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#data_api_access SqlDatabaseInstance#data_api_access}
 
 ---
 
@@ -2466,7 +2878,7 @@ public readonly databaseFlags: IResolvable | SqlDatabaseInstanceSettingsDatabase
 
 database_flags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#database_flags SqlDatabaseInstance#database_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#database_flags SqlDatabaseInstance#database_flags}
 
 ---
 
@@ -2480,7 +2892,7 @@ public readonly dataCacheConfig: SqlDatabaseInstanceSettingsDataCacheConfig;
 
 data_cache_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#data_cache_config SqlDatabaseInstance#data_cache_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#data_cache_config SqlDatabaseInstance#data_cache_config}
 
 ---
 
@@ -2494,7 +2906,7 @@ public readonly deletionProtectionEnabled: boolean | IResolvable;
 
 Configuration to protect against accidental instance deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#deletion_protection_enabled SqlDatabaseInstance#deletion_protection_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#deletion_protection_enabled SqlDatabaseInstance#deletion_protection_enabled}
 
 ---
 
@@ -2508,7 +2920,7 @@ public readonly denyMaintenancePeriod: SqlDatabaseInstanceSettingsDenyMaintenanc
 
 deny_maintenance_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#deny_maintenance_period SqlDatabaseInstance#deny_maintenance_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#deny_maintenance_period SqlDatabaseInstance#deny_maintenance_period}
 
 ---
 
@@ -2522,7 +2934,7 @@ public readonly diskAutoresize: boolean | IResolvable;
 
 Enables auto-resizing of the storage size. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#disk_autoresize SqlDatabaseInstance#disk_autoresize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#disk_autoresize SqlDatabaseInstance#disk_autoresize}
 
 ---
 
@@ -2538,7 +2950,7 @@ The maximum size, in GB, to which storage capacity can be automatically increase
 
 The default value is 0, which specifies that there is no limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#disk_autoresize_limit SqlDatabaseInstance#disk_autoresize_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#disk_autoresize_limit SqlDatabaseInstance#disk_autoresize_limit}
 
 ---
 
@@ -2554,7 +2966,7 @@ The size of data disk, in GB.
 
 Size of a running instance cannot be reduced but can be increased. The minimum value is 10GB for PD_SSD, PD_HDD and 20GB for HYPERDISK_BALANCED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#disk_size SqlDatabaseInstance#disk_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#disk_size SqlDatabaseInstance#disk_size}
 
 ---
 
@@ -2568,7 +2980,7 @@ public readonly diskType: string;
 
 The type of supported data disk is tier dependent and can be PD_SSD or PD_HDD or HYPERDISK_BALANCED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#disk_type SqlDatabaseInstance#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#disk_type SqlDatabaseInstance#disk_type}
 
 ---
 
@@ -2582,7 +2994,7 @@ public readonly edition: string;
 
 The edition of the instance, can be ENTERPRISE or ENTERPRISE_PLUS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#edition SqlDatabaseInstance#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#edition SqlDatabaseInstance#edition}
 
 ---
 
@@ -2596,7 +3008,7 @@ public readonly enableDataplexIntegration: boolean | IResolvable;
 
 Enables Dataplex Integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#enable_dataplex_integration SqlDatabaseInstance#enable_dataplex_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#enable_dataplex_integration SqlDatabaseInstance#enable_dataplex_integration}
 
 ---
 
@@ -2610,7 +3022,35 @@ public readonly enableGoogleMlIntegration: boolean | IResolvable;
 
 Enables Vertex AI Integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#enable_google_ml_integration SqlDatabaseInstance#enable_google_ml_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#enable_google_ml_integration SqlDatabaseInstance#enable_google_ml_integration}
+
+---
+
+##### `entraidConfig`<sup>Optional</sup> <a name="entraidConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.entraidConfig"></a>
+
+```typescript
+public readonly entraidConfig: SqlDatabaseInstanceSettingsEntraidConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig">SqlDatabaseInstanceSettingsEntraidConfig</a>
+
+entraid_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#entraid_config SqlDatabaseInstance#entraid_config}
+
+---
+
+##### `finalBackupConfig`<sup>Optional</sup> <a name="finalBackupConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.finalBackupConfig"></a>
+
+```typescript
+public readonly finalBackupConfig: SqlDatabaseInstanceSettingsFinalBackupConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig">SqlDatabaseInstanceSettingsFinalBackupConfig</a>
+
+final_backup_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#final_backup_config SqlDatabaseInstance#final_backup_config}
 
 ---
 
@@ -2624,7 +3064,7 @@ public readonly insightsConfig: SqlDatabaseInstanceSettingsInsightsConfig;
 
 insights_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#insights_config SqlDatabaseInstance#insights_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#insights_config SqlDatabaseInstance#insights_config}
 
 ---
 
@@ -2638,7 +3078,7 @@ public readonly ipConfiguration: SqlDatabaseInstanceSettingsIpConfiguration;
 
 ip_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#ip_configuration SqlDatabaseInstance#ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#ip_configuration SqlDatabaseInstance#ip_configuration}
 
 ---
 
@@ -2652,7 +3092,7 @@ public readonly locationPreference: SqlDatabaseInstanceSettingsLocationPreferenc
 
 location_preference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#location_preference SqlDatabaseInstance#location_preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#location_preference SqlDatabaseInstance#location_preference}
 
 ---
 
@@ -2666,7 +3106,7 @@ public readonly maintenanceWindow: SqlDatabaseInstanceSettingsMaintenanceWindow;
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#maintenance_window SqlDatabaseInstance#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#maintenance_window SqlDatabaseInstance#maintenance_window}
 
 ---
 
@@ -2680,7 +3120,7 @@ public readonly passwordValidationPolicy: SqlDatabaseInstanceSettingsPasswordVal
 
 password_validation_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#password_validation_policy SqlDatabaseInstance#password_validation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#password_validation_policy SqlDatabaseInstance#password_validation_policy}
 
 ---
 
@@ -2694,7 +3134,21 @@ public readonly pricingPlan: string;
 
 Pricing plan for this instance, can only be PER_USE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#pricing_plan SqlDatabaseInstance#pricing_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#pricing_plan SqlDatabaseInstance#pricing_plan}
+
+---
+
+##### `readPoolAutoScaleConfig`<sup>Optional</sup> <a name="readPoolAutoScaleConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettings.property.readPoolAutoScaleConfig"></a>
+
+```typescript
+public readonly readPoolAutoScaleConfig: SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig</a>
+
+read_pool_auto_scale_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#read_pool_auto_scale_config SqlDatabaseInstance#read_pool_auto_scale_config}
 
 ---
 
@@ -2710,7 +3164,7 @@ When this parameter is set to true, Cloud SQL retains backups of the instance ev
 
 The ON_DEMAND backup will be retained until customer deletes the backup or the project. The AUTOMATED backup will be retained based on the backups retention setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#retain_backups_on_delete SqlDatabaseInstance#retain_backups_on_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#retain_backups_on_delete SqlDatabaseInstance#retain_backups_on_delete}
 
 ---
 
@@ -2724,7 +3178,7 @@ public readonly sqlServerAuditConfig: SqlDatabaseInstanceSettingsSqlServerAuditC
 
 sql_server_audit_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#sql_server_audit_config SqlDatabaseInstance#sql_server_audit_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#sql_server_audit_config SqlDatabaseInstance#sql_server_audit_config}
 
 ---
 
@@ -2738,7 +3192,7 @@ public readonly timeZone: string;
 
 The time_zone to be used by the database engine (supported only for SQL Server), in SQL Server timezone format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#time_zone SqlDatabaseInstance#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#time_zone SqlDatabaseInstance#time_zone}
 
 ---
 
@@ -2752,7 +3206,7 @@ public readonly userLabels: {[ key: string ]: string};
 
 A set of key/value user label pairs to assign to the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#user_labels SqlDatabaseInstance#user_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#user_labels SqlDatabaseInstance#user_labels}
 
 ---
 
@@ -2784,7 +3238,7 @@ public readonly domain: string;
 
 Domain name of the Active Directory for SQL Server (e.g., mydomain.com).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#domain SqlDatabaseInstance#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#domain SqlDatabaseInstance#domain}
 
 ---
 
@@ -2816,7 +3270,7 @@ public readonly threadsPerCore: number;
 
 The number of threads per physical core. Can be 1 or 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#threads_per_core SqlDatabaseInstance#threads_per_core}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#threads_per_core SqlDatabaseInstance#threads_per_core}
 
 ---
 
@@ -2854,7 +3308,7 @@ public readonly backupRetentionSettings: SqlDatabaseInstanceSettingsBackupConfig
 
 backup_retention_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#backup_retention_settings SqlDatabaseInstance#backup_retention_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#backup_retention_settings SqlDatabaseInstance#backup_retention_settings}
 
 ---
 
@@ -2870,7 +3324,7 @@ True if binary logging is enabled.
 
 If settings.backup_configuration.enabled is false, this must be as well. Can only be used with MySQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#binary_log_enabled SqlDatabaseInstance#binary_log_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#binary_log_enabled SqlDatabaseInstance#binary_log_enabled}
 
 ---
 
@@ -2884,7 +3338,7 @@ public readonly enabled: boolean | IResolvable;
 
 True if backup configuration is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#enabled SqlDatabaseInstance#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#enabled SqlDatabaseInstance#enabled}
 
 ---
 
@@ -2898,7 +3352,7 @@ public readonly location: string;
 
 Location of the backup configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#location SqlDatabaseInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#location SqlDatabaseInstance#location}
 
 ---
 
@@ -2912,7 +3366,7 @@ public readonly pointInTimeRecoveryEnabled: boolean | IResolvable;
 
 True if Point-in-time recovery is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#point_in_time_recovery_enabled SqlDatabaseInstance#point_in_time_recovery_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#point_in_time_recovery_enabled SqlDatabaseInstance#point_in_time_recovery_enabled}
 
 ---
 
@@ -2926,7 +3380,7 @@ public readonly startTime: string;
 
 HH:MM format time indicating when backup configuration starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#start_time SqlDatabaseInstance#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#start_time SqlDatabaseInstance#start_time}
 
 ---
 
@@ -2942,7 +3396,7 @@ The number of days of transaction logs we retain for point in time restore, from
 
 (For PostgreSQL Enterprise Plus instances, from 1 to 35.)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#transaction_log_retention_days SqlDatabaseInstance#transaction_log_retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#transaction_log_retention_days SqlDatabaseInstance#transaction_log_retention_days}
 
 ---
 
@@ -2975,7 +3429,7 @@ public readonly retainedBackups: number;
 
 Number of backups to retain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#retained_backups SqlDatabaseInstance#retained_backups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#retained_backups SqlDatabaseInstance#retained_backups}
 
 ---
 
@@ -2989,7 +3443,7 @@ public readonly retentionUnit: string;
 
 The unit that 'retainedBackups' represents. Defaults to COUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#retention_unit SqlDatabaseInstance#retention_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#retention_unit SqlDatabaseInstance#retention_unit}
 
 ---
 
@@ -3022,7 +3476,7 @@ public readonly connectionPoolingEnabled: boolean | IResolvable;
 
 Whether Managed Connection Pool is enabled for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#connection_pooling_enabled SqlDatabaseInstance#connection_pooling_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#connection_pooling_enabled SqlDatabaseInstance#connection_pooling_enabled}
 
 ---
 
@@ -3036,7 +3490,7 @@ public readonly flags: IResolvable | SqlDatabaseInstanceSettingsConnectionPoolCo
 
 flags block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#flags SqlDatabaseInstance#flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#flags SqlDatabaseInstance#flags}
 
 ---
 
@@ -3069,7 +3523,7 @@ public readonly name: string;
 
 Name of the flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
 
 ---
 
@@ -3083,7 +3537,7 @@ public readonly value: string;
 
 Value of the flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}
 
 ---
 
@@ -3116,7 +3570,7 @@ public readonly name: string;
 
 Name of the flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}
 
 ---
 
@@ -3130,7 +3584,7 @@ public readonly value: string;
 
 Value of the flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}
 
 ---
 
@@ -3162,7 +3616,7 @@ public readonly dataCacheEnabled: boolean | IResolvable;
 
 Whether data cache is enabled for the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#data_cache_enabled SqlDatabaseInstance#data_cache_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#data_cache_enabled SqlDatabaseInstance#data_cache_enabled}
 
 ---
 
@@ -3198,7 +3652,7 @@ End date before which maintenance will not take place.
 
 The date is in format yyyy-mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#end_date SqlDatabaseInstance#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#end_date SqlDatabaseInstance#end_date}
 
 ---
 
@@ -3214,7 +3668,7 @@ Start date after which maintenance will not take place.
 
 The date is in format yyyy-mm-dd i.e., 2020-11-01, or mm-dd, i.e., 11-01
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#start_date SqlDatabaseInstance#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#start_date SqlDatabaseInstance#start_date}
 
 ---
 
@@ -3230,7 +3684,103 @@ Time in UTC when the "deny maintenance period" starts on start_date and ends on 
 
 The time is in format: HH:mm:SS, i.e., 00:00:00
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#time SqlDatabaseInstance#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#time SqlDatabaseInstance#time}
+
+---
+
+### SqlDatabaseInstanceSettingsEntraidConfig <a name="SqlDatabaseInstanceSettingsEntraidConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig.Initializer"></a>
+
+```typescript
+import { sqlDatabaseInstance } from '@cdktn/provider-google'
+
+const sqlDatabaseInstanceSettingsEntraidConfig: sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig.property.applicationId">applicationId</a></code> | <code>string</code> | The application ID for the Entra ID configuration. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig.property.tenantId">tenantId</a></code> | <code>string</code> | The tenant ID for the Entra ID configuration. |
+
+---
+
+##### `applicationId`<sup>Optional</sup> <a name="applicationId" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig.property.applicationId"></a>
+
+```typescript
+public readonly applicationId: string;
+```
+
+- *Type:* string
+
+The application ID for the Entra ID configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#application_id SqlDatabaseInstance#application_id}
+
+---
+
+##### `tenantId`<sup>Optional</sup> <a name="tenantId" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig.property.tenantId"></a>
+
+```typescript
+public readonly tenantId: string;
+```
+
+- *Type:* string
+
+The tenant ID for the Entra ID configuration.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#tenant_id SqlDatabaseInstance#tenant_id}
+
+---
+
+### SqlDatabaseInstanceSettingsFinalBackupConfig <a name="SqlDatabaseInstanceSettingsFinalBackupConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig.Initializer"></a>
+
+```typescript
+import { sqlDatabaseInstance } from '@cdktn/provider-google'
+
+const sqlDatabaseInstanceSettingsFinalBackupConfig: sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | When this parameter is set to true, the final backup is enabled for the instance. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig.property.retentionDays">retentionDays</a></code> | <code>number</code> | The number of days to retain the final backup after the instance deletion. |
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+When this parameter is set to true, the final backup is enabled for the instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#enabled SqlDatabaseInstance#enabled}
+
+---
+
+##### `retentionDays`<sup>Optional</sup> <a name="retentionDays" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig.property.retentionDays"></a>
+
+```typescript
+public readonly retentionDays: number;
+```
+
+- *Type:* number
+
+The number of days to retain the final backup after the instance deletion.
+
+The valid range is between 1 and 365. For instances managed by BackupDR, the valid range is between 1 day and 99 years. The final backup will be purged at (time_of_instance_deletion + retention_days).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#retention_days SqlDatabaseInstance#retention_days}
 
 ---
 
@@ -3248,11 +3798,26 @@ const sqlDatabaseInstanceSettingsInsightsConfig: sqlDatabaseInstance.SqlDatabase
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.enhancedQueryInsightsEnabled">enhancedQueryInsightsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if Enhanced Query Insights feature is enabled. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.queryInsightsEnabled">queryInsightsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if Query Insights feature is enabled. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.queryPlansPerMinute">queryPlansPerMinute</a></code> | <code>number</code> | Number of query execution plans captured by Insights per minute for all queries combined. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.queryStringLength">queryStringLength</a></code> | <code>number</code> | Maximum query length stored in bytes. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.recordApplicationTags">recordApplicationTags</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if Query Insights will record application tags from query when enabled. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.recordClientAddress">recordClientAddress</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if Query Insights will record client address when enabled. |
+
+---
+
+##### `enhancedQueryInsightsEnabled`<sup>Optional</sup> <a name="enhancedQueryInsightsEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig.property.enhancedQueryInsightsEnabled"></a>
+
+```typescript
+public readonly enhancedQueryInsightsEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+True if Enhanced Query Insights feature is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#enhanced_query_insights_enabled SqlDatabaseInstance#enhanced_query_insights_enabled}
 
 ---
 
@@ -3266,7 +3831,7 @@ public readonly queryInsightsEnabled: boolean | IResolvable;
 
 True if Query Insights feature is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#query_insights_enabled SqlDatabaseInstance#query_insights_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#query_insights_enabled SqlDatabaseInstance#query_insights_enabled}
 
 ---
 
@@ -3282,7 +3847,7 @@ Number of query execution plans captured by Insights per minute for all queries 
 
 Between 0 and 20. Default to 5. For Enterprise Plus instances, from 0 to 200.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#query_plans_per_minute SqlDatabaseInstance#query_plans_per_minute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#query_plans_per_minute SqlDatabaseInstance#query_plans_per_minute}
 
 ---
 
@@ -3296,9 +3861,9 @@ public readonly queryStringLength: number;
 
 Maximum query length stored in bytes.
 
-Between 256 and 4500. Default to 1024. For Enterprise Plus instances, from 1 to 1048576.
+Between 256 and 4500. Default to 1024. For Enterprise Plus instances, from 1024 to 100000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#query_string_length SqlDatabaseInstance#query_string_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#query_string_length SqlDatabaseInstance#query_string_length}
 
 ---
 
@@ -3312,7 +3877,7 @@ public readonly recordApplicationTags: boolean | IResolvable;
 
 True if Query Insights will record application tags from query when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#record_application_tags SqlDatabaseInstance#record_application_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#record_application_tags SqlDatabaseInstance#record_application_tags}
 
 ---
 
@@ -3326,7 +3891,7 @@ public readonly recordClientAddress: boolean | IResolvable;
 
 True if Query Insights will record client address when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#record_client_address SqlDatabaseInstance#record_client_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#record_client_address SqlDatabaseInstance#record_client_address}
 
 ---
 
@@ -3353,6 +3918,7 @@ const sqlDatabaseInstanceSettingsIpConfiguration: sqlDatabaseInstance.SqlDatabas
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.pscConfig">pscConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]</code> | psc_config block. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.serverCaMode">serverCaMode</a></code> | <code>string</code> | Specify how the server certificate's Certificate Authority is hosted. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.serverCaPool">serverCaPool</a></code> | <code>string</code> | The resource name of the server CA pool for an instance with "CUSTOMER_MANAGED_CAS_CA" as the "server_ca_mode". |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.serverCertificateRotationMode">serverCertificateRotationMode</a></code> | <code>string</code> | Settings for how the server certificate gets rotated. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.sslMode">sslMode</a></code> | <code>string</code> | Specify how SSL connection should be enforced in DB connections. |
 
 ---
@@ -3369,7 +3935,7 @@ The name of the allocated ip range for the private ip CloudSQL instance.
 
 For example: "google-managed-services-default". If set, the instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#allocated_ip_range SqlDatabaseInstance#allocated_ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#allocated_ip_range SqlDatabaseInstance#allocated_ip_range}
 
 ---
 
@@ -3383,7 +3949,7 @@ public readonly authorizedNetworks: IResolvable | SqlDatabaseInstanceSettingsIpC
 
 authorized_networks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#authorized_networks SqlDatabaseInstance#authorized_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#authorized_networks SqlDatabaseInstance#authorized_networks}
 
 ---
 
@@ -3397,7 +3963,7 @@ public readonly customSubjectAlternativeNames: string[];
 
 The custom subject alternative names for an instance with "CUSTOMER_MANAGED_CAS_CA" as the "server_ca_mode".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#custom_subject_alternative_names SqlDatabaseInstance#custom_subject_alternative_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#custom_subject_alternative_names SqlDatabaseInstance#custom_subject_alternative_names}
 
 ---
 
@@ -3413,7 +3979,7 @@ Whether Google Cloud services such as BigQuery are allowed to access data in thi
 
 SQLSERVER database type is not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#enable_private_path_for_google_cloud_services SqlDatabaseInstance#enable_private_path_for_google_cloud_services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#enable_private_path_for_google_cloud_services SqlDatabaseInstance#enable_private_path_for_google_cloud_services}
 
 ---
 
@@ -3429,7 +3995,7 @@ Whether this Cloud SQL instance should be assigned a public IPV4 address.
 
 At least ipv4_enabled must be enabled or a private_network must be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#ipv4_enabled SqlDatabaseInstance#ipv4_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#ipv4_enabled SqlDatabaseInstance#ipv4_enabled}
 
 ---
 
@@ -3445,7 +4011,7 @@ The VPC network from which the Cloud SQL instance is accessible for private IP.
 
 For example, projects/myProject/global/networks/default. Specifying a network enables private IP. At least ipv4_enabled must be enabled or a private_network must be configured. This setting can be updated, but it cannot be removed after it is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#private_network SqlDatabaseInstance#private_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#private_network SqlDatabaseInstance#private_network}
 
 ---
 
@@ -3459,7 +4025,7 @@ public readonly pscConfig: IResolvable | SqlDatabaseInstanceSettingsIpConfigurat
 
 psc_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#psc_config SqlDatabaseInstance#psc_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#psc_config SqlDatabaseInstance#psc_config}
 
 ---
 
@@ -3473,7 +4039,7 @@ public readonly serverCaMode: string;
 
 Specify how the server certificate's Certificate Authority is hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#server_ca_mode SqlDatabaseInstance#server_ca_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#server_ca_mode SqlDatabaseInstance#server_ca_mode}
 
 ---
 
@@ -3487,7 +4053,21 @@ public readonly serverCaPool: string;
 
 The resource name of the server CA pool for an instance with "CUSTOMER_MANAGED_CAS_CA" as the "server_ca_mode".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#server_ca_pool SqlDatabaseInstance#server_ca_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#server_ca_pool SqlDatabaseInstance#server_ca_pool}
+
+---
+
+##### `serverCertificateRotationMode`<sup>Optional</sup> <a name="serverCertificateRotationMode" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration.property.serverCertificateRotationMode"></a>
+
+```typescript
+public readonly serverCertificateRotationMode: string;
+```
+
+- *Type:* string
+
+Settings for how the server certificate gets rotated.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#server_certificate_rotation_mode SqlDatabaseInstance#server_certificate_rotation_mode}
 
 ---
 
@@ -3501,7 +4081,7 @@ public readonly sslMode: string;
 
 Specify how SSL connection should be enforced in DB connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#ssl_mode SqlDatabaseInstance#ssl_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#ssl_mode SqlDatabaseInstance#ssl_mode}
 
 ---
 
@@ -3519,9 +4099,9 @@ const sqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks: sqlDatabaseI
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.expirationTime">expirationTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#expiration_time SqlDatabaseInstance#expiration_time}. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.expirationTime">expirationTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#expiration_time SqlDatabaseInstance#expiration_time}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}. |
 
 ---
 
@@ -3533,7 +4113,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#value SqlDatabaseInstance#value}.
 
 ---
 
@@ -3545,7 +4125,7 @@ public readonly expirationTime: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#expiration_time SqlDatabaseInstance#expiration_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#expiration_time SqlDatabaseInstance#expiration_time}.
 
 ---
 
@@ -3557,7 +4137,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#name SqlDatabaseInstance#name}.
 
 ---
 
@@ -3594,7 +4174,7 @@ List of consumer projects that are allow-listed for PSC connections to this inst
 
 This instance can be connected to with PSC from any network in these projects. Each consumer project in this list may be represented by a project number (numeric) or by a project id (alphanumeric).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#allowed_consumer_projects SqlDatabaseInstance#allowed_consumer_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#allowed_consumer_projects SqlDatabaseInstance#allowed_consumer_projects}
 
 ---
 
@@ -3610,7 +4190,7 @@ Name of network attachment resource used to authorize a producer service to conn
 
 For example: "projects/myProject/regions/myRegion/networkAttachments/myNetworkAttachment". This is required to enable outbound connection on a PSC instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#network_attachment_uri SqlDatabaseInstance#network_attachment_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#network_attachment_uri SqlDatabaseInstance#network_attachment_uri}
 
 ---
 
@@ -3624,7 +4204,7 @@ public readonly pscAutoConnections: IResolvable | SqlDatabaseInstanceSettingsIpC
 
 psc_auto_connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#psc_auto_connections SqlDatabaseInstance#psc_auto_connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#psc_auto_connections SqlDatabaseInstance#psc_auto_connections}
 
 ---
 
@@ -3638,7 +4218,7 @@ public readonly pscEnabled: boolean | IResolvable;
 
 Whether PSC connectivity is enabled for this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#psc_enabled SqlDatabaseInstance#psc_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#psc_enabled SqlDatabaseInstance#psc_enabled}
 
 ---
 
@@ -3673,7 +4253,7 @@ The consumer network of this consumer endpoint.
 
 This must be a resource path that includes both the host project and the network name. The consumer host project of this network might be different from the consumer service project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#consumer_network SqlDatabaseInstance#consumer_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#consumer_network SqlDatabaseInstance#consumer_network}
 
 ---
 
@@ -3687,7 +4267,7 @@ public readonly consumerServiceProjectId: string;
 
 The project ID of consumer service project of this consumer endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#consumer_service_project_id SqlDatabaseInstance#consumer_service_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#consumer_service_project_id SqlDatabaseInstance#consumer_service_project_id}
 
 ---
 
@@ -3721,7 +4301,7 @@ public readonly followGaeApplication: string;
 
 A Google App Engine application whose zone to remain in. Must be in the same region as this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#follow_gae_application SqlDatabaseInstance#follow_gae_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#follow_gae_application SqlDatabaseInstance#follow_gae_application}
 
 ---
 
@@ -3735,7 +4315,7 @@ public readonly secondaryZone: string;
 
 The preferred Compute Engine zone for the secondary/failover.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#secondary_zone SqlDatabaseInstance#secondary_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#secondary_zone SqlDatabaseInstance#secondary_zone}
 
 ---
 
@@ -3749,7 +4329,7 @@ public readonly zone: string;
 
 The preferred compute engine zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#zone SqlDatabaseInstance#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#zone SqlDatabaseInstance#zone}
 
 ---
 
@@ -3783,7 +4363,7 @@ public readonly day: number;
 
 Day of week (1-7), starting on Monday.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#day SqlDatabaseInstance#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#day SqlDatabaseInstance#day}
 
 ---
 
@@ -3797,7 +4377,7 @@ public readonly hour: number;
 
 Hour of day (0-23), ignored if day not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#hour SqlDatabaseInstance#hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#hour SqlDatabaseInstance#hour}
 
 ---
 
@@ -3811,7 +4391,7 @@ public readonly updateTrack: string;
 
 Receive updates after one week (canary) or after two weeks (stable) or after five weeks (week5) of notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#update_track SqlDatabaseInstance#update_track}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#update_track SqlDatabaseInstance#update_track}
 
 ---
 
@@ -3848,7 +4428,7 @@ public readonly enablePasswordPolicy: boolean | IResolvable;
 
 Whether the password policy is enabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#enable_password_policy SqlDatabaseInstance#enable_password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#enable_password_policy SqlDatabaseInstance#enable_password_policy}
 
 ---
 
@@ -3862,7 +4442,7 @@ public readonly complexity: string;
 
 Password complexity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#complexity SqlDatabaseInstance#complexity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#complexity SqlDatabaseInstance#complexity}
 
 ---
 
@@ -3876,7 +4456,7 @@ public readonly disallowUsernameSubstring: boolean | IResolvable;
 
 Disallow username as a part of the password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#disallow_username_substring SqlDatabaseInstance#disallow_username_substring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#disallow_username_substring SqlDatabaseInstance#disallow_username_substring}
 
 ---
 
@@ -3890,7 +4470,7 @@ public readonly minLength: number;
 
 Minimum number of characters allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#min_length SqlDatabaseInstance#min_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#min_length SqlDatabaseInstance#min_length}
 
 ---
 
@@ -3904,7 +4484,7 @@ public readonly passwordChangeInterval: string;
 
 Minimum interval after which the password can be changed. This flag is only supported for PostgresSQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#password_change_interval SqlDatabaseInstance#password_change_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#password_change_interval SqlDatabaseInstance#password_change_interval}
 
 ---
 
@@ -3918,7 +4498,180 @@ public readonly reuseInterval: number;
 
 Number of previous passwords that cannot be reused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#reuse_interval SqlDatabaseInstance#reuse_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#reuse_interval SqlDatabaseInstance#reuse_interval}
+
+---
+
+### SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig <a name="SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.Initializer"></a>
+
+```typescript
+import { sqlDatabaseInstance } from '@cdktn/provider-google'
+
+const sqlDatabaseInstanceSettingsReadPoolAutoScaleConfig: sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.disableScaleIn">disableScaleIn</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if auto scale in is disabled. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | True if Read Pool Auto Scale is enabled. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.maxNodeCount">maxNodeCount</a></code> | <code>number</code> | Maximum number of nodes in the read pool. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.minNodeCount">minNodeCount</a></code> | <code>number</code> | Minimum number of nodes in the read pool. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.scaleInCooldownSeconds">scaleInCooldownSeconds</a></code> | <code>number</code> | The cooldown period for scale in operations. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.scaleOutCooldownSeconds">scaleOutCooldownSeconds</a></code> | <code>number</code> | The cooldown period for scale out operations. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.targetMetrics">targetMetrics</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics</a>[]</code> | target_metrics block. |
+
+---
+
+##### `disableScaleIn`<sup>Optional</sup> <a name="disableScaleIn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.disableScaleIn"></a>
+
+```typescript
+public readonly disableScaleIn: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+True if auto scale in is disabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#disable_scale_in SqlDatabaseInstance#disable_scale_in}
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+True if Read Pool Auto Scale is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#enabled SqlDatabaseInstance#enabled}
+
+---
+
+##### `maxNodeCount`<sup>Optional</sup> <a name="maxNodeCount" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.maxNodeCount"></a>
+
+```typescript
+public readonly maxNodeCount: number;
+```
+
+- *Type:* number
+
+Maximum number of nodes in the read pool.
+
+If set to lower than current node count, node count will be updated.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#max_node_count SqlDatabaseInstance#max_node_count}
+
+---
+
+##### `minNodeCount`<sup>Optional</sup> <a name="minNodeCount" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.minNodeCount"></a>
+
+```typescript
+public readonly minNodeCount: number;
+```
+
+- *Type:* number
+
+Minimum number of nodes in the read pool.
+
+If set to higher than current node count, node count will be updated.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#min_node_count SqlDatabaseInstance#min_node_count}
+
+---
+
+##### `scaleInCooldownSeconds`<sup>Optional</sup> <a name="scaleInCooldownSeconds" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.scaleInCooldownSeconds"></a>
+
+```typescript
+public readonly scaleInCooldownSeconds: number;
+```
+
+- *Type:* number
+
+The cooldown period for scale in operations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#scale_in_cooldown_seconds SqlDatabaseInstance#scale_in_cooldown_seconds}
+
+---
+
+##### `scaleOutCooldownSeconds`<sup>Optional</sup> <a name="scaleOutCooldownSeconds" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.scaleOutCooldownSeconds"></a>
+
+```typescript
+public readonly scaleOutCooldownSeconds: number;
+```
+
+- *Type:* number
+
+The cooldown period for scale out operations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#scale_out_cooldown_seconds SqlDatabaseInstance#scale_out_cooldown_seconds}
+
+---
+
+##### `targetMetrics`<sup>Optional</sup> <a name="targetMetrics" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig.property.targetMetrics"></a>
+
+```typescript
+public readonly targetMetrics: IResolvable | SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics</a>[]
+
+target_metrics block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#target_metrics SqlDatabaseInstance#target_metrics}
+
+---
+
+### SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics <a name="SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics.Initializer"></a>
+
+```typescript
+import { sqlDatabaseInstance } from '@cdktn/provider-google'
+
+const sqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics: sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics.property.metric">metric</a></code> | <code>string</code> | Metric name for Read Pool Auto Scale. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics.property.targetValue">targetValue</a></code> | <code>number</code> | Target value for Read Pool Auto Scale. |
+
+---
+
+##### `metric`<sup>Optional</sup> <a name="metric" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics.property.metric"></a>
+
+```typescript
+public readonly metric: string;
+```
+
+- *Type:* string
+
+Metric name for Read Pool Auto Scale.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#metric SqlDatabaseInstance#metric}
+
+---
+
+##### `targetValue`<sup>Optional</sup> <a name="targetValue" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics.property.targetValue"></a>
+
+```typescript
+public readonly targetValue: number;
+```
+
+- *Type:* number
+
+Target value for Read Pool Auto Scale.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#target_value SqlDatabaseInstance#target_value}
 
 ---
 
@@ -3952,7 +4705,7 @@ public readonly bucket: string;
 
 The name of the destination bucket (e.g., gs://mybucket).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#bucket SqlDatabaseInstance#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#bucket SqlDatabaseInstance#bucket}
 
 ---
 
@@ -3968,7 +4721,7 @@ How long to keep generated audit files.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#retention_interval SqlDatabaseInstance#retention_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#retention_interval SqlDatabaseInstance#retention_interval}
 
 ---
 
@@ -3984,7 +4737,7 @@ How often to upload generated audit files.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#upload_interval SqlDatabaseInstance#upload_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#upload_interval SqlDatabaseInstance#upload_interval}
 
 ---
 
@@ -4002,9 +4755,9 @@ const sqlDatabaseInstanceTimeouts: sqlDatabaseInstance.SqlDatabaseInstanceTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#create SqlDatabaseInstance#create}. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#delete SqlDatabaseInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#update SqlDatabaseInstance#update}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#create SqlDatabaseInstance#create}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#delete SqlDatabaseInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#update SqlDatabaseInstance#update}. |
 
 ---
 
@@ -4016,7 +4769,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#create SqlDatabaseInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#create SqlDatabaseInstance#create}.
 
 ---
 
@@ -4028,7 +4781,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#delete SqlDatabaseInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#delete SqlDatabaseInstance#delete}.
 
 ---
 
@@ -4040,7 +4793,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/sql_database_instance#update SqlDatabaseInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/sql_database_instance#update SqlDatabaseInstance#update}.
 
 ---
 
@@ -4100,6 +4853,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.resetDatabaseNames">resetDatabaseNames</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.resetPointInTime">resetPointInTime</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.resetPreferredZone">resetPreferredZone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.resetSourceInstanceDeletionTime">resetSourceInstanceDeletionTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.resetSourceProject">resetSourceProject</a></code> | *No description.* |
 
 ---
 
@@ -4277,6 +5032,18 @@ public resetPointInTime(): void
 public resetPreferredZone(): void
 ```
 
+##### `resetSourceInstanceDeletionTime` <a name="resetSourceInstanceDeletionTime" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.resetSourceInstanceDeletionTime"></a>
+
+```typescript
+public resetSourceInstanceDeletionTime(): void
+```
+
+##### `resetSourceProject` <a name="resetSourceProject" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.resetSourceProject"></a>
+
+```typescript
+public resetSourceProject(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4288,12 +5055,16 @@ public resetPreferredZone(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.databaseNamesInput">databaseNamesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.pointInTimeInput">pointInTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.preferredZoneInput">preferredZoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceInstanceDeletionTimeInput">sourceInstanceDeletionTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceInstanceNameInput">sourceInstanceNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceProjectInput">sourceProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.allocatedIpRange">allocatedIpRange</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.databaseNames">databaseNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.pointInTime">pointInTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.preferredZone">preferredZone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceInstanceDeletionTime">sourceInstanceDeletionTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceInstanceName">sourceInstanceName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceProject">sourceProject</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceClone">SqlDatabaseInstanceClone</a></code> | *No description.* |
 
 ---
@@ -4362,10 +5133,30 @@ public readonly preferredZoneInput: string;
 
 ---
 
+##### `sourceInstanceDeletionTimeInput`<sup>Optional</sup> <a name="sourceInstanceDeletionTimeInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceInstanceDeletionTimeInput"></a>
+
+```typescript
+public readonly sourceInstanceDeletionTimeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sourceInstanceNameInput`<sup>Optional</sup> <a name="sourceInstanceNameInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceInstanceNameInput"></a>
 
 ```typescript
 public readonly sourceInstanceNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceProjectInput`<sup>Optional</sup> <a name="sourceProjectInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceProjectInput"></a>
+
+```typescript
+public readonly sourceProjectInput: string;
 ```
 
 - *Type:* string
@@ -4412,10 +5203,30 @@ public readonly preferredZone: string;
 
 ---
 
+##### `sourceInstanceDeletionTime`<sup>Required</sup> <a name="sourceInstanceDeletionTime" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceInstanceDeletionTime"></a>
+
+```typescript
+public readonly sourceInstanceDeletionTime: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sourceInstanceName`<sup>Required</sup> <a name="sourceInstanceName" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceInstanceName"></a>
 
 ```typescript
 public readonly sourceInstanceName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sourceProject`<sup>Required</sup> <a name="sourceProject" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceCloneOutputReference.property.sourceProject"></a>
+
+```typescript
+public readonly sourceProject: string;
 ```
 
 - *Type:* string
@@ -5327,6 +6138,422 @@ public readonly internalValue: SqlDatabaseInstanceIpAddress;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceIpAddress">SqlDatabaseInstanceIpAddress</a>
+
+---
+
+
+### SqlDatabaseInstancePointInTimeRestoreContextOutputReference <a name="SqlDatabaseInstancePointInTimeRestoreContextOutputReference" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.Initializer"></a>
+
+```typescript
+import { sqlDatabaseInstance } from '@cdktn/provider-google'
+
+new sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resetAllocatedIpRange">resetAllocatedIpRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resetPointInTime">resetPointInTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resetPreferredZone">resetPreferredZone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resetTargetInstance">resetTargetInstance</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAllocatedIpRange` <a name="resetAllocatedIpRange" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resetAllocatedIpRange"></a>
+
+```typescript
+public resetAllocatedIpRange(): void
+```
+
+##### `resetPointInTime` <a name="resetPointInTime" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resetPointInTime"></a>
+
+```typescript
+public resetPointInTime(): void
+```
+
+##### `resetPreferredZone` <a name="resetPreferredZone" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resetPreferredZone"></a>
+
+```typescript
+public resetPreferredZone(): void
+```
+
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
+##### `resetTargetInstance` <a name="resetTargetInstance" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.resetTargetInstance"></a>
+
+```typescript
+public resetTargetInstance(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.allocatedIpRangeInput">allocatedIpRangeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.datasourceInput">datasourceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.pointInTimeInput">pointInTimeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.preferredZoneInput">preferredZoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.targetInstanceInput">targetInstanceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.allocatedIpRange">allocatedIpRange</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.datasource">datasource</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.pointInTime">pointInTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.preferredZone">preferredZone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.targetInstance">targetInstance</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext">SqlDatabaseInstancePointInTimeRestoreContext</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `allocatedIpRangeInput`<sup>Optional</sup> <a name="allocatedIpRangeInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.allocatedIpRangeInput"></a>
+
+```typescript
+public readonly allocatedIpRangeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `datasourceInput`<sup>Optional</sup> <a name="datasourceInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.datasourceInput"></a>
+
+```typescript
+public readonly datasourceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pointInTimeInput`<sup>Optional</sup> <a name="pointInTimeInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.pointInTimeInput"></a>
+
+```typescript
+public readonly pointInTimeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `preferredZoneInput`<sup>Optional</sup> <a name="preferredZoneInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.preferredZoneInput"></a>
+
+```typescript
+public readonly preferredZoneInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `targetInstanceInput`<sup>Optional</sup> <a name="targetInstanceInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.targetInstanceInput"></a>
+
+```typescript
+public readonly targetInstanceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `allocatedIpRange`<sup>Required</sup> <a name="allocatedIpRange" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.allocatedIpRange"></a>
+
+```typescript
+public readonly allocatedIpRange: string;
+```
+
+- *Type:* string
+
+---
+
+##### `datasource`<sup>Required</sup> <a name="datasource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.datasource"></a>
+
+```typescript
+public readonly datasource: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pointInTime`<sup>Required</sup> <a name="pointInTime" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.pointInTime"></a>
+
+```typescript
+public readonly pointInTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `preferredZone`<sup>Required</sup> <a name="preferredZone" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.preferredZone"></a>
+
+```typescript
+public readonly preferredZone: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+---
+
+##### `targetInstance`<sup>Required</sup> <a name="targetInstance" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.targetInstance"></a>
+
+```typescript
+public readonly targetInstance: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContextOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: SqlDatabaseInstancePointInTimeRestoreContext;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstancePointInTimeRestoreContext">SqlDatabaseInstancePointInTimeRestoreContext</a>
 
 ---
 
@@ -8168,6 +9395,7 @@ public resetTransactionLogRetentionDays(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.backupRetentionSettings">backupRetentionSettings</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference">SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.backupTier">backupTier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.backupRetentionSettingsInput">backupRetentionSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings">SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.binaryLogEnabledInput">binaryLogEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -8216,6 +9444,16 @@ public readonly backupRetentionSettings: SqlDatabaseInstanceSettingsBackupConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference">SqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference</a>
+
+---
+
+##### `backupTier`<sup>Required</sup> <a name="backupTier" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfigurationOutputReference.property.backupTier"></a>
+
+```typescript
+public readonly backupTier: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -10393,6 +11631,620 @@ public readonly internalValue: SqlDatabaseInstanceSettingsDenyMaintenancePeriod;
 ---
 
 
+### SqlDatabaseInstanceSettingsEntraidConfigOutputReference <a name="SqlDatabaseInstanceSettingsEntraidConfigOutputReference" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.Initializer"></a>
+
+```typescript
+import { sqlDatabaseInstance } from '@cdktn/provider-google'
+
+new sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.resetApplicationId">resetApplicationId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.resetTenantId">resetTenantId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetApplicationId` <a name="resetApplicationId" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.resetApplicationId"></a>
+
+```typescript
+public resetApplicationId(): void
+```
+
+##### `resetTenantId` <a name="resetTenantId" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.resetTenantId"></a>
+
+```typescript
+public resetTenantId(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.applicationIdInput">applicationIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.tenantIdInput">tenantIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.applicationId">applicationId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.tenantId">tenantId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig">SqlDatabaseInstanceSettingsEntraidConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `applicationIdInput`<sup>Optional</sup> <a name="applicationIdInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.applicationIdInput"></a>
+
+```typescript
+public readonly applicationIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tenantIdInput`<sup>Optional</sup> <a name="tenantIdInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.tenantIdInput"></a>
+
+```typescript
+public readonly tenantIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `applicationId`<sup>Required</sup> <a name="applicationId" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.applicationId"></a>
+
+```typescript
+public readonly applicationId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tenantId`<sup>Required</sup> <a name="tenantId" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.tenantId"></a>
+
+```typescript
+public readonly tenantId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: SqlDatabaseInstanceSettingsEntraidConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig">SqlDatabaseInstanceSettingsEntraidConfig</a>
+
+---
+
+
+### SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference <a name="SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.Initializer"></a>
+
+```typescript
+import { sqlDatabaseInstance } from '@cdktn/provider-google'
+
+new sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.resetRetentionDays">resetRetentionDays</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.resetEnabled"></a>
+
+```typescript
+public resetEnabled(): void
+```
+
+##### `resetRetentionDays` <a name="resetRetentionDays" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.resetRetentionDays"></a>
+
+```typescript
+public resetRetentionDays(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.retentionDaysInput">retentionDaysInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.retentionDays">retentionDays</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig">SqlDatabaseInstanceSettingsFinalBackupConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.enabledInput"></a>
+
+```typescript
+public readonly enabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `retentionDaysInput`<sup>Optional</sup> <a name="retentionDaysInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.retentionDaysInput"></a>
+
+```typescript
+public readonly retentionDaysInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `retentionDays`<sup>Required</sup> <a name="retentionDays" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.retentionDays"></a>
+
+```typescript
+public readonly retentionDays: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: SqlDatabaseInstanceSettingsFinalBackupConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig">SqlDatabaseInstanceSettingsFinalBackupConfig</a>
+
+---
+
+
 ### SqlDatabaseInstanceSettingsInsightsConfigOutputReference <a name="SqlDatabaseInstanceSettingsInsightsConfigOutputReference" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.Initializer"></a>
@@ -10443,6 +12295,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.resetEnhancedQueryInsightsEnabled">resetEnhancedQueryInsightsEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.resetQueryInsightsEnabled">resetQueryInsightsEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.resetQueryPlansPerMinute">resetQueryPlansPerMinute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.resetQueryStringLength">resetQueryStringLength</a></code> | *No description.* |
@@ -10601,6 +12454,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetEnhancedQueryInsightsEnabled` <a name="resetEnhancedQueryInsightsEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.resetEnhancedQueryInsightsEnabled"></a>
+
+```typescript
+public resetEnhancedQueryInsightsEnabled(): void
+```
+
 ##### `resetQueryInsightsEnabled` <a name="resetQueryInsightsEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.resetQueryInsightsEnabled"></a>
 
 ```typescript
@@ -10638,11 +12497,13 @@ public resetRecordClientAddress(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.enhancedQueryInsightsEnabledInput">enhancedQueryInsightsEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryInsightsEnabledInput">queryInsightsEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryPlansPerMinuteInput">queryPlansPerMinuteInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryStringLengthInput">queryStringLengthInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.recordApplicationTagsInput">recordApplicationTagsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.recordClientAddressInput">recordClientAddressInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.enhancedQueryInsightsEnabled">enhancedQueryInsightsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryInsightsEnabled">queryInsightsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryPlansPerMinute">queryPlansPerMinute</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.queryStringLength">queryStringLength</a></code> | <code>number</code> | *No description.* |
@@ -10673,6 +12534,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `enhancedQueryInsightsEnabledInput`<sup>Optional</sup> <a name="enhancedQueryInsightsEnabledInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.enhancedQueryInsightsEnabledInput"></a>
+
+```typescript
+public readonly enhancedQueryInsightsEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10720,6 +12591,16 @@ public readonly recordApplicationTagsInput: boolean | IResolvable;
 
 ```typescript
 public readonly recordClientAddressInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `enhancedQueryInsightsEnabled`<sup>Required</sup> <a name="enhancedQueryInsightsEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference.property.enhancedQueryInsightsEnabled"></a>
+
+```typescript
+public readonly enhancedQueryInsightsEnabled: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
@@ -11355,6 +13236,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.resetPscConfig">resetPscConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.resetServerCaMode">resetServerCaMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.resetServerCaPool">resetServerCaPool</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.resetServerCertificateRotationMode">resetServerCertificateRotationMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.resetSslMode">resetSslMode</a></code> | *No description.* |
 
 ---
@@ -11587,6 +13469,12 @@ public resetServerCaMode(): void
 public resetServerCaPool(): void
 ```
 
+##### `resetServerCertificateRotationMode` <a name="resetServerCertificateRotationMode" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.resetServerCertificateRotationMode"></a>
+
+```typescript
+public resetServerCertificateRotationMode(): void
+```
+
 ##### `resetSslMode` <a name="resetSslMode" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.resetSslMode"></a>
 
 ```typescript
@@ -11611,6 +13499,7 @@ public resetSslMode(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.pscConfigInput">pscConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfig">SqlDatabaseInstanceSettingsIpConfigurationPscConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCaModeInput">serverCaModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCaPoolInput">serverCaPoolInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCertificateRotationModeInput">serverCertificateRotationModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.sslModeInput">sslModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.allocatedIpRange">allocatedIpRange</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.customSubjectAlternativeNames">customSubjectAlternativeNames</a></code> | <code>string[]</code> | *No description.* |
@@ -11619,6 +13508,7 @@ public resetSslMode(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.privateNetwork">privateNetwork</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCaMode">serverCaMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCaPool">serverCaPool</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCertificateRotationMode">serverCertificateRotationMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.sslMode">sslMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration">SqlDatabaseInstanceSettingsIpConfiguration</a></code> | *No description.* |
 
@@ -11758,6 +13648,16 @@ public readonly serverCaPoolInput: string;
 
 ---
 
+##### `serverCertificateRotationModeInput`<sup>Optional</sup> <a name="serverCertificateRotationModeInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCertificateRotationModeInput"></a>
+
+```typescript
+public readonly serverCertificateRotationModeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sslModeInput`<sup>Optional</sup> <a name="sslModeInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.sslModeInput"></a>
 
 ```typescript
@@ -11832,6 +13732,16 @@ public readonly serverCaMode: string;
 
 ```typescript
 public readonly serverCaPool: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serverCertificateRotationMode`<sup>Required</sup> <a name="serverCertificateRotationMode" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference.property.serverCertificateRotationMode"></a>
+
+```typescript
+public readonly serverCertificateRotationMode: string;
 ```
 
 - *Type:* string
@@ -12810,6 +14720,9 @@ public resetConsumerServiceProjectId(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerNetworkStatus">consumerNetworkStatus</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.ipAddress">ipAddress</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerNetworkInput">consumerNetworkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerServiceProjectIdInput">consumerServiceProjectIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerNetwork">consumerNetwork</a></code> | <code>string</code> | *No description.* |
@@ -12836,6 +14749,36 @@ If this returns an empty array the stack will not be attached.
 
 ```typescript
 public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `consumerNetworkStatus`<sup>Required</sup> <a name="consumerNetworkStatus" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.consumerNetworkStatus"></a>
+
+```typescript
+public readonly consumerNetworkStatus: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ipAddress`<sup>Required</sup> <a name="ipAddress" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.ipAddress"></a>
+
+```typescript
+public readonly ipAddress: string;
+```
+
+- *Type:* string
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsOutputReference.property.status"></a>
+
+```typescript
+public readonly status: string;
 ```
 
 - *Type:* string
@@ -13622,20 +15565,25 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putDatabaseFlags">putDatabaseFlags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putDataCacheConfig">putDataCacheConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putDenyMaintenancePeriod">putDenyMaintenancePeriod</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putEntraidConfig">putEntraidConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putFinalBackupConfig">putFinalBackupConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putInsightsConfig">putInsightsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putIpConfiguration">putIpConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putLocationPreference">putLocationPreference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putMaintenanceWindow">putMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putPasswordValidationPolicy">putPasswordValidationPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putReadPoolAutoScaleConfig">putReadPoolAutoScaleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putSqlServerAuditConfig">putSqlServerAuditConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetActivationPolicy">resetActivationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetActiveDirectoryConfig">resetActiveDirectoryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetAdvancedMachineFeatures">resetAdvancedMachineFeatures</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetAutoUpgradeEnabled">resetAutoUpgradeEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetAvailabilityType">resetAvailabilityType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetBackupConfiguration">resetBackupConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetCollation">resetCollation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetConnectionPoolConfig">resetConnectionPoolConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetConnectorEnforcement">resetConnectorEnforcement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetDataApiAccess">resetDataApiAccess</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetDatabaseFlags">resetDatabaseFlags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetDataCacheConfig">resetDataCacheConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetDeletionProtectionEnabled">resetDeletionProtectionEnabled</a></code> | *No description.* |
@@ -13647,12 +15595,15 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetEdition">resetEdition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetEnableDataplexIntegration">resetEnableDataplexIntegration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetEnableGoogleMlIntegration">resetEnableGoogleMlIntegration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetEntraidConfig">resetEntraidConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetFinalBackupConfig">resetFinalBackupConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetInsightsConfig">resetInsightsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetIpConfiguration">resetIpConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetLocationPreference">resetLocationPreference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetMaintenanceWindow">resetMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetPasswordValidationPolicy">resetPasswordValidationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetPricingPlan">resetPricingPlan</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetReadPoolAutoScaleConfig">resetReadPoolAutoScaleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetRetainBackupsOnDelete">resetRetainBackupsOnDelete</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetSqlServerAuditConfig">resetSqlServerAuditConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetTimeZone">resetTimeZone</a></code> | *No description.* |
@@ -13894,6 +15845,30 @@ public putDenyMaintenancePeriod(value: SqlDatabaseInstanceSettingsDenyMaintenanc
 
 ---
 
+##### `putEntraidConfig` <a name="putEntraidConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putEntraidConfig"></a>
+
+```typescript
+public putEntraidConfig(value: SqlDatabaseInstanceSettingsEntraidConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putEntraidConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig">SqlDatabaseInstanceSettingsEntraidConfig</a>
+
+---
+
+##### `putFinalBackupConfig` <a name="putFinalBackupConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putFinalBackupConfig"></a>
+
+```typescript
+public putFinalBackupConfig(value: SqlDatabaseInstanceSettingsFinalBackupConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putFinalBackupConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig">SqlDatabaseInstanceSettingsFinalBackupConfig</a>
+
+---
+
 ##### `putInsightsConfig` <a name="putInsightsConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putInsightsConfig"></a>
 
 ```typescript
@@ -13954,6 +15929,18 @@ public putPasswordValidationPolicy(value: SqlDatabaseInstanceSettingsPasswordVal
 
 ---
 
+##### `putReadPoolAutoScaleConfig` <a name="putReadPoolAutoScaleConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putReadPoolAutoScaleConfig"></a>
+
+```typescript
+public putReadPoolAutoScaleConfig(value: SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putReadPoolAutoScaleConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig</a>
+
+---
+
 ##### `putSqlServerAuditConfig` <a name="putSqlServerAuditConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.putSqlServerAuditConfig"></a>
 
 ```typescript
@@ -13984,6 +15971,12 @@ public resetActiveDirectoryConfig(): void
 public resetAdvancedMachineFeatures(): void
 ```
 
+##### `resetAutoUpgradeEnabled` <a name="resetAutoUpgradeEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetAutoUpgradeEnabled"></a>
+
+```typescript
+public resetAutoUpgradeEnabled(): void
+```
+
 ##### `resetAvailabilityType` <a name="resetAvailabilityType" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetAvailabilityType"></a>
 
 ```typescript
@@ -14012,6 +16005,12 @@ public resetConnectionPoolConfig(): void
 
 ```typescript
 public resetConnectorEnforcement(): void
+```
+
+##### `resetDataApiAccess` <a name="resetDataApiAccess" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetDataApiAccess"></a>
+
+```typescript
+public resetDataApiAccess(): void
 ```
 
 ##### `resetDatabaseFlags` <a name="resetDatabaseFlags" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetDatabaseFlags"></a>
@@ -14080,6 +16079,18 @@ public resetEnableDataplexIntegration(): void
 public resetEnableGoogleMlIntegration(): void
 ```
 
+##### `resetEntraidConfig` <a name="resetEntraidConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetEntraidConfig"></a>
+
+```typescript
+public resetEntraidConfig(): void
+```
+
+##### `resetFinalBackupConfig` <a name="resetFinalBackupConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetFinalBackupConfig"></a>
+
+```typescript
+public resetFinalBackupConfig(): void
+```
+
 ##### `resetInsightsConfig` <a name="resetInsightsConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetInsightsConfig"></a>
 
 ```typescript
@@ -14114,6 +16125,12 @@ public resetPasswordValidationPolicy(): void
 
 ```typescript
 public resetPricingPlan(): void
+```
+
+##### `resetReadPoolAutoScaleConfig` <a name="resetReadPoolAutoScaleConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetReadPoolAutoScaleConfig"></a>
+
+```typescript
+public resetReadPoolAutoScaleConfig(): void
 ```
 
 ##### `resetRetainBackupsOnDelete` <a name="resetRetainBackupsOnDelete" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.resetRetainBackupsOnDelete"></a>
@@ -14155,21 +16172,26 @@ public resetUserLabels(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.dataCacheConfig">dataCacheConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference">SqlDatabaseInstanceSettingsDataCacheConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.denyMaintenancePeriod">denyMaintenancePeriod</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference">SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.effectiveAvailabilityType">effectiveAvailabilityType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.entraidConfig">entraidConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference">SqlDatabaseInstanceSettingsEntraidConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.finalBackupConfig">finalBackupConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference">SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.insightsConfig">insightsConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfigOutputReference">SqlDatabaseInstanceSettingsInsightsConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.ipConfiguration">ipConfiguration</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfigurationOutputReference">SqlDatabaseInstanceSettingsIpConfigurationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.locationPreference">locationPreference</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreferenceOutputReference">SqlDatabaseInstanceSettingsLocationPreferenceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference">SqlDatabaseInstanceSettingsMaintenanceWindowOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.passwordValidationPolicy">passwordValidationPolicy</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference">SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.readPoolAutoScaleConfig">readPoolAutoScaleConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.sqlServerAuditConfig">sqlServerAuditConfig</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference">SqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.version">version</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.activationPolicyInput">activationPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.activeDirectoryConfigInput">activeDirectoryConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsActiveDirectoryConfig">SqlDatabaseInstanceSettingsActiveDirectoryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.advancedMachineFeaturesInput">advancedMachineFeaturesInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsAdvancedMachineFeatures">SqlDatabaseInstanceSettingsAdvancedMachineFeatures</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.autoUpgradeEnabledInput">autoUpgradeEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.availabilityTypeInput">availabilityTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.backupConfigurationInput">backupConfigurationInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsBackupConfiguration">SqlDatabaseInstanceSettingsBackupConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.collationInput">collationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.connectionPoolConfigInput">connectionPoolConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsConnectionPoolConfig">SqlDatabaseInstanceSettingsConnectionPoolConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.connectorEnforcementInput">connectorEnforcementInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.dataApiAccessInput">dataApiAccessInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.databaseFlagsInput">databaseFlagsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDatabaseFlags">SqlDatabaseInstanceSettingsDatabaseFlags</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.dataCacheConfigInput">dataCacheConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfig">SqlDatabaseInstanceSettingsDataCacheConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.deletionProtectionEnabledInput">deletionProtectionEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -14181,21 +16203,26 @@ public resetUserLabels(): void
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.editionInput">editionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.enableDataplexIntegrationInput">enableDataplexIntegrationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.enableGoogleMlIntegrationInput">enableGoogleMlIntegrationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.entraidConfigInput">entraidConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig">SqlDatabaseInstanceSettingsEntraidConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.finalBackupConfigInput">finalBackupConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig">SqlDatabaseInstanceSettingsFinalBackupConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.insightsConfigInput">insightsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsInsightsConfig">SqlDatabaseInstanceSettingsInsightsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.ipConfigurationInput">ipConfigurationInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsIpConfiguration">SqlDatabaseInstanceSettingsIpConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.locationPreferenceInput">locationPreferenceInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsLocationPreference">SqlDatabaseInstanceSettingsLocationPreference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.maintenanceWindowInput">maintenanceWindowInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsMaintenanceWindow">SqlDatabaseInstanceSettingsMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.passwordValidationPolicyInput">passwordValidationPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy">SqlDatabaseInstanceSettingsPasswordValidationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.pricingPlanInput">pricingPlanInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.readPoolAutoScaleConfigInput">readPoolAutoScaleConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.retainBackupsOnDeleteInput">retainBackupsOnDeleteInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.sqlServerAuditConfigInput">sqlServerAuditConfigInput</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsSqlServerAuditConfig">SqlDatabaseInstanceSettingsSqlServerAuditConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.tierInput">tierInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.timeZoneInput">timeZoneInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.userLabelsInput">userLabelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.activationPolicy">activationPolicy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.autoUpgradeEnabled">autoUpgradeEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.availabilityType">availabilityType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.collation">collation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.connectorEnforcement">connectorEnforcement</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.dataApiAccess">dataApiAccess</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.deletionProtectionEnabled">deletionProtectionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskAutoresize">diskAutoresize</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.diskAutoresizeLimit">diskAutoresizeLimit</a></code> | <code>number</code> | *No description.* |
@@ -14317,6 +16344,26 @@ public readonly effectiveAvailabilityType: string;
 
 ---
 
+##### `entraidConfig`<sup>Required</sup> <a name="entraidConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.entraidConfig"></a>
+
+```typescript
+public readonly entraidConfig: SqlDatabaseInstanceSettingsEntraidConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfigOutputReference">SqlDatabaseInstanceSettingsEntraidConfigOutputReference</a>
+
+---
+
+##### `finalBackupConfig`<sup>Required</sup> <a name="finalBackupConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.finalBackupConfig"></a>
+
+```typescript
+public readonly finalBackupConfig: SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference">SqlDatabaseInstanceSettingsFinalBackupConfigOutputReference</a>
+
+---
+
 ##### `insightsConfig`<sup>Required</sup> <a name="insightsConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.insightsConfig"></a>
 
 ```typescript
@@ -14364,6 +16411,16 @@ public readonly passwordValidationPolicy: SqlDatabaseInstanceSettingsPasswordVal
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference">SqlDatabaseInstanceSettingsPasswordValidationPolicyOutputReference</a>
+
+---
+
+##### `readPoolAutoScaleConfig`<sup>Required</sup> <a name="readPoolAutoScaleConfig" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.readPoolAutoScaleConfig"></a>
+
+```typescript
+public readonly readPoolAutoScaleConfig: SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference</a>
 
 ---
 
@@ -14417,6 +16474,16 @@ public readonly advancedMachineFeaturesInput: SqlDatabaseInstanceSettingsAdvance
 
 ---
 
+##### `autoUpgradeEnabledInput`<sup>Optional</sup> <a name="autoUpgradeEnabledInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.autoUpgradeEnabledInput"></a>
+
+```typescript
+public readonly autoUpgradeEnabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `availabilityTypeInput`<sup>Optional</sup> <a name="availabilityTypeInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.availabilityTypeInput"></a>
 
 ```typescript
@@ -14461,6 +16528,16 @@ public readonly connectionPoolConfigInput: IResolvable | SqlDatabaseInstanceSett
 
 ```typescript
 public readonly connectorEnforcementInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dataApiAccessInput`<sup>Optional</sup> <a name="dataApiAccessInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.dataApiAccessInput"></a>
+
+```typescript
+public readonly dataApiAccessInput: string;
 ```
 
 - *Type:* string
@@ -14577,6 +16654,26 @@ public readonly enableGoogleMlIntegrationInput: boolean | IResolvable;
 
 ---
 
+##### `entraidConfigInput`<sup>Optional</sup> <a name="entraidConfigInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.entraidConfigInput"></a>
+
+```typescript
+public readonly entraidConfigInput: SqlDatabaseInstanceSettingsEntraidConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsEntraidConfig">SqlDatabaseInstanceSettingsEntraidConfig</a>
+
+---
+
+##### `finalBackupConfigInput`<sup>Optional</sup> <a name="finalBackupConfigInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.finalBackupConfigInput"></a>
+
+```typescript
+public readonly finalBackupConfigInput: SqlDatabaseInstanceSettingsFinalBackupConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsFinalBackupConfig">SqlDatabaseInstanceSettingsFinalBackupConfig</a>
+
+---
+
 ##### `insightsConfigInput`<sup>Optional</sup> <a name="insightsConfigInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.insightsConfigInput"></a>
 
 ```typescript
@@ -14634,6 +16731,16 @@ public readonly pricingPlanInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `readPoolAutoScaleConfigInput`<sup>Optional</sup> <a name="readPoolAutoScaleConfigInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.readPoolAutoScaleConfigInput"></a>
+
+```typescript
+public readonly readPoolAutoScaleConfigInput: SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig</a>
 
 ---
 
@@ -14697,6 +16804,16 @@ public readonly activationPolicy: string;
 
 ---
 
+##### `autoUpgradeEnabled`<sup>Required</sup> <a name="autoUpgradeEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.autoUpgradeEnabled"></a>
+
+```typescript
+public readonly autoUpgradeEnabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `availabilityType`<sup>Required</sup> <a name="availabilityType" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.availabilityType"></a>
 
 ```typescript
@@ -14721,6 +16838,16 @@ public readonly collation: string;
 
 ```typescript
 public readonly connectorEnforcement: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dataApiAccess`<sup>Required</sup> <a name="dataApiAccess" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsOutputReference.property.dataApiAccess"></a>
+
+```typescript
+public readonly dataApiAccess: string;
 ```
 
 - *Type:* string
@@ -15280,6 +17407,956 @@ public readonly internalValue: SqlDatabaseInstanceSettingsPasswordValidationPoli
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsPasswordValidationPolicy">SqlDatabaseInstanceSettingsPasswordValidationPolicy</a>
+
+---
+
+
+### SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference <a name="SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.Initializer"></a>
+
+```typescript
+import { sqlDatabaseInstance } from '@cdktn/provider-google'
+
+new sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.putTargetMetrics">putTargetMetrics</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetDisableScaleIn">resetDisableScaleIn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetMaxNodeCount">resetMaxNodeCount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetMinNodeCount">resetMinNodeCount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetScaleInCooldownSeconds">resetScaleInCooldownSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetScaleOutCooldownSeconds">resetScaleOutCooldownSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetTargetMetrics">resetTargetMetrics</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putTargetMetrics` <a name="putTargetMetrics" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.putTargetMetrics"></a>
+
+```typescript
+public putTargetMetrics(value: IResolvable | SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.putTargetMetrics.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics</a>[]
+
+---
+
+##### `resetDisableScaleIn` <a name="resetDisableScaleIn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetDisableScaleIn"></a>
+
+```typescript
+public resetDisableScaleIn(): void
+```
+
+##### `resetEnabled` <a name="resetEnabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetEnabled"></a>
+
+```typescript
+public resetEnabled(): void
+```
+
+##### `resetMaxNodeCount` <a name="resetMaxNodeCount" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetMaxNodeCount"></a>
+
+```typescript
+public resetMaxNodeCount(): void
+```
+
+##### `resetMinNodeCount` <a name="resetMinNodeCount" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetMinNodeCount"></a>
+
+```typescript
+public resetMinNodeCount(): void
+```
+
+##### `resetScaleInCooldownSeconds` <a name="resetScaleInCooldownSeconds" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetScaleInCooldownSeconds"></a>
+
+```typescript
+public resetScaleInCooldownSeconds(): void
+```
+
+##### `resetScaleOutCooldownSeconds` <a name="resetScaleOutCooldownSeconds" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetScaleOutCooldownSeconds"></a>
+
+```typescript
+public resetScaleOutCooldownSeconds(): void
+```
+
+##### `resetTargetMetrics` <a name="resetTargetMetrics" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.resetTargetMetrics"></a>
+
+```typescript
+public resetTargetMetrics(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.targetMetrics">targetMetrics</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.disableScaleInInput">disableScaleInInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.maxNodeCountInput">maxNodeCountInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.minNodeCountInput">minNodeCountInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.scaleInCooldownSecondsInput">scaleInCooldownSecondsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.scaleOutCooldownSecondsInput">scaleOutCooldownSecondsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.targetMetricsInput">targetMetricsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.disableScaleIn">disableScaleIn</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.maxNodeCount">maxNodeCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.minNodeCount">minNodeCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.scaleInCooldownSeconds">scaleInCooldownSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.scaleOutCooldownSeconds">scaleOutCooldownSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `targetMetrics`<sup>Required</sup> <a name="targetMetrics" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.targetMetrics"></a>
+
+```typescript
+public readonly targetMetrics: SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList</a>
+
+---
+
+##### `disableScaleInInput`<sup>Optional</sup> <a name="disableScaleInInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.disableScaleInInput"></a>
+
+```typescript
+public readonly disableScaleInInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.enabledInput"></a>
+
+```typescript
+public readonly enabledInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `maxNodeCountInput`<sup>Optional</sup> <a name="maxNodeCountInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.maxNodeCountInput"></a>
+
+```typescript
+public readonly maxNodeCountInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `minNodeCountInput`<sup>Optional</sup> <a name="minNodeCountInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.minNodeCountInput"></a>
+
+```typescript
+public readonly minNodeCountInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `scaleInCooldownSecondsInput`<sup>Optional</sup> <a name="scaleInCooldownSecondsInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.scaleInCooldownSecondsInput"></a>
+
+```typescript
+public readonly scaleInCooldownSecondsInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `scaleOutCooldownSecondsInput`<sup>Optional</sup> <a name="scaleOutCooldownSecondsInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.scaleOutCooldownSecondsInput"></a>
+
+```typescript
+public readonly scaleOutCooldownSecondsInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `targetMetricsInput`<sup>Optional</sup> <a name="targetMetricsInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.targetMetricsInput"></a>
+
+```typescript
+public readonly targetMetricsInput: IResolvable | SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics</a>[]
+
+---
+
+##### `disableScaleIn`<sup>Required</sup> <a name="disableScaleIn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.disableScaleIn"></a>
+
+```typescript
+public readonly disableScaleIn: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.enabled"></a>
+
+```typescript
+public readonly enabled: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `maxNodeCount`<sup>Required</sup> <a name="maxNodeCount" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.maxNodeCount"></a>
+
+```typescript
+public readonly maxNodeCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `minNodeCount`<sup>Required</sup> <a name="minNodeCount" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.minNodeCount"></a>
+
+```typescript
+public readonly minNodeCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `scaleInCooldownSeconds`<sup>Required</sup> <a name="scaleInCooldownSeconds" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.scaleInCooldownSeconds"></a>
+
+```typescript
+public readonly scaleInCooldownSeconds: number;
+```
+
+- *Type:* number
+
+---
+
+##### `scaleOutCooldownSeconds`<sup>Required</sup> <a name="scaleOutCooldownSeconds" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.scaleOutCooldownSeconds"></a>
+
+```typescript
+public readonly scaleOutCooldownSeconds: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfig</a>
+
+---
+
+
+### SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList <a name="SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.Initializer"></a>
+
+```typescript
+import { sqlDatabaseInstance } from '@cdktn/provider-google'
+
+new sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.get"></a>
+
+```typescript
+public get(index: number): SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics</a>[]
+
+---
+
+
+### SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference <a name="SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.Initializer"></a>
+
+```typescript
+import { sqlDatabaseInstance } from '@cdktn/provider-google'
+
+new sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.resetMetric">resetMetric</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.resetTargetValue">resetTargetValue</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetMetric` <a name="resetMetric" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.resetMetric"></a>
+
+```typescript
+public resetMetric(): void
+```
+
+##### `resetTargetValue` <a name="resetTargetValue" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.resetTargetValue"></a>
+
+```typescript
+public resetTargetValue(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.metricInput">metricInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.targetValueInput">targetValueInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.metric">metric</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.targetValue">targetValue</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `metricInput`<sup>Optional</sup> <a name="metricInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.metricInput"></a>
+
+```typescript
+public readonly metricInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `targetValueInput`<sup>Optional</sup> <a name="targetValueInput" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.targetValueInput"></a>
+
+```typescript
+public readonly targetValueInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `metric`<sup>Required</sup> <a name="metric" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.metric"></a>
+
+```typescript
+public readonly metric: string;
+```
+
+- *Type:* string
+
+---
+
+##### `targetValue`<sup>Required</sup> <a name="targetValue" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.targetValue"></a>
+
+```typescript
+public readonly targetValue: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics">SqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetrics</a>
 
 ---
 

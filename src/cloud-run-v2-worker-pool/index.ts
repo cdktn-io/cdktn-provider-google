@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -23,26 +23,26 @@ export interface CloudRunV2WorkerPoolConfig extends cdktn.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Arbitrary identifier for the API client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
   */
   readonly client?: string;
   /**
   * Arbitrary version identifier for the API client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
   */
   readonly clientVersion?: string;
   /**
   * One or more custom audiences that you want this worker pool to support. Specify each custom audience as the full URL in a string. The custom audiences are encoded in the token and used to authenticate requests.
   * For more information, see https://cloud.google.com/run/docs/configuring/custom-audiences.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#custom_audiences CloudRunV2WorkerPool#custom_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#custom_audiences CloudRunV2WorkerPool#custom_audiences}
   */
   readonly customAudiences?: string[];
   /**
@@ -53,17 +53,17 @@ export interface CloudRunV2WorkerPoolConfig extends cdktn.TerraformMetaArguments
   * or 'terraform destroy' that would delete the WorkerPool will fail.
   * When the field is set to false, deleting the WorkerPool is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#deletion_protection CloudRunV2WorkerPool#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#deletion_protection CloudRunV2WorkerPool#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
   * User-provided description of the WorkerPool. This field currently has a 512-character limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#description CloudRunV2WorkerPool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#description CloudRunV2WorkerPool#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -71,7 +71,7 @@ export interface CloudRunV2WorkerPoolConfig extends cdktn.TerraformMetaArguments
   readonly id?: string;
   /**
   * Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google's billing system, so they can be used to filter, or break down billing charges by team, component,
-  * environment, state, etc. For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+  * environment, state, etc. For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
   * 
   * Cloud Run API v2 does not support labels with  'run.googleapis.com', 'cloud.googleapis.com', 'serving.knative.dev', or 'autoscaling.knative.dev' namespaces, and they will be rejected.
   * All system labels in v1 now have a corresponding field in v2 WorkerPool.
@@ -79,7 +79,7 @@ export interface CloudRunV2WorkerPoolConfig extends cdktn.TerraformMetaArguments
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -88,53 +88,53 @@ export interface CloudRunV2WorkerPoolConfig extends cdktn.TerraformMetaArguments
   * 
   * For example, if ALPHA is provided as input, but only BETA and GA-level features are used, this field will be BETA on output. Possible values: ["UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#launch_stage CloudRunV2WorkerPool#launch_stage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#launch_stage CloudRunV2WorkerPool#launch_stage}
   */
   readonly launchStage?: string;
   /**
   * The location of the cloud run worker pool
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#location CloudRunV2WorkerPool#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#location CloudRunV2WorkerPool#location}
   */
   readonly location: string;
   /**
   * Name of the WorkerPool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}
   */
   readonly project?: string;
   /**
   * binary_authorization block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#binary_authorization CloudRunV2WorkerPool#binary_authorization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#binary_authorization CloudRunV2WorkerPool#binary_authorization}
   */
   readonly binaryAuthorization?: CloudRunV2WorkerPoolBinaryAuthorization;
   /**
   * instance_splits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#instance_splits CloudRunV2WorkerPool#instance_splits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#instance_splits CloudRunV2WorkerPool#instance_splits}
   */
   readonly instanceSplits?: CloudRunV2WorkerPoolInstanceSplits[] | cdktn.IResolvable;
   /**
   * scaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#scaling CloudRunV2WorkerPool#scaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#scaling CloudRunV2WorkerPool#scaling}
   */
   readonly scaling?: CloudRunV2WorkerPoolScaling;
   /**
   * template block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#template CloudRunV2WorkerPool#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#template CloudRunV2WorkerPool#template}
   */
   readonly template: CloudRunV2WorkerPoolTemplate;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#timeouts CloudRunV2WorkerPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#timeouts CloudRunV2WorkerPool#timeouts}
   */
   readonly timeouts?: CloudRunV2WorkerPoolTimeouts;
 }
@@ -447,19 +447,19 @@ export interface CloudRunV2WorkerPoolBinaryAuthorization {
   /**
   * If present, indicates to use Breakglass using this justification. If useDefault is False, then it must be empty. For more information on breakglass, see https://cloud.google.com/binary-authorization/docs/using-breakglass
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#breakglass_justification CloudRunV2WorkerPool#breakglass_justification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#breakglass_justification CloudRunV2WorkerPool#breakglass_justification}
   */
   readonly breakglassJustification?: string;
   /**
   * The path to a binary authorization policy. Format: projects/{project}/platforms/cloudRun/{policy-name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#policy CloudRunV2WorkerPool#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#policy CloudRunV2WorkerPool#policy}
   */
   readonly policy?: string;
   /**
   * If True, indicates to use the default project's binary authorization policy. If False, binary authorization will be disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#use_default CloudRunV2WorkerPool#use_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#use_default CloudRunV2WorkerPool#use_default}
   */
   readonly useDefault?: boolean | cdktn.IResolvable;
 }
@@ -603,19 +603,19 @@ export interface CloudRunV2WorkerPoolInstanceSplits {
   /**
   * Specifies percent of the instance split to this Revision. This defaults to zero if unspecified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#percent CloudRunV2WorkerPool#percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#percent CloudRunV2WorkerPool#percent}
   */
   readonly percent?: number;
   /**
   * Revision to which to assign this portion of instances, if split allocation is by revision.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
   */
   readonly revision?: string;
   /**
   * The allocation type for this instance split. Possible values: ["INSTANCE_SPLIT_ALLOCATION_TYPE_LATEST", "INSTANCE_SPLIT_ALLOCATION_TYPE_REVISION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#type CloudRunV2WorkerPool#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#type CloudRunV2WorkerPool#type}
   */
   readonly type?: string;
 }
@@ -791,25 +791,25 @@ export interface CloudRunV2WorkerPoolScaling {
   /**
   * The total number of instances in manual scaling mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#manual_instance_count CloudRunV2WorkerPool#manual_instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#manual_instance_count CloudRunV2WorkerPool#manual_instance_count}
   */
   readonly manualInstanceCount?: number;
   /**
   * The maximum count of instances distributed among revisions based on the specified instance split percentages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#max_instance_count CloudRunV2WorkerPool#max_instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#max_instance_count CloudRunV2WorkerPool#max_instance_count}
   */
   readonly maxInstanceCount?: number;
   /**
   * The minimum count of instances distributed among revisions based on the specified instance split percentages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#min_instance_count CloudRunV2WorkerPool#min_instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#min_instance_count CloudRunV2WorkerPool#min_instance_count}
   */
   readonly minInstanceCount?: number;
   /**
   * The scaling mode for the worker pool. It defaults to MANUAL. Possible values: ["AUTOMATIC", "MANUAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#scaling_mode CloudRunV2WorkerPool#scaling_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#scaling_mode CloudRunV2WorkerPool#scaling_mode}
   */
   readonly scalingMode?: string;
 }
@@ -982,13 +982,13 @@ export interface CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRe
   /**
   * The name of the secret in Cloud Secret Manager. Format: {secretName} if the secret is in the same project. projects/{project}/secrets/{secretName} if the secret is in a different project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
   */
   readonly secret: string;
   /**
   * The Cloud Secret Manager secret version. Can be 'latest' for the latest value or an integer for a specific version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
   */
   readonly version?: string;
 }
@@ -1100,7 +1100,7 @@ export interface CloudRunV2WorkerPoolTemplateContainersEnvValueSource {
   /**
   * secret_key_ref block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#secret_key_ref CloudRunV2WorkerPool#secret_key_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#secret_key_ref CloudRunV2WorkerPool#secret_key_ref}
   */
   readonly secretKeyRef?: CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRef;
 }
@@ -1186,19 +1186,19 @@ export interface CloudRunV2WorkerPoolTemplateContainersEnv {
   /**
   * Name of the environment variable. Must be a C_IDENTIFIER, and may not exceed 32768 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
   */
   readonly name: string;
   /**
   * Literal value of the environment variable. Defaults to "" and the maximum allowed length is 32768 characters. Variable references are not supported in Cloud Run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
   */
   readonly value?: string;
   /**
   * value_source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#value_source CloudRunV2WorkerPool#value_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#value_source CloudRunV2WorkerPool#value_source}
   */
   readonly valueSource?: CloudRunV2WorkerPoolTemplateContainersEnvValueSource;
 }
@@ -1367,11 +1367,788 @@ export class CloudRunV2WorkerPoolTemplateContainersEnvList extends cdktn.Complex
     return new CloudRunV2WorkerPoolTemplateContainersEnvOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpc {
+  /**
+  * Optional. Port number of the gRPC service. Number must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+  */
+  readonly port?: number;
+  /**
+  * Optional. Service is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md ). If this is not specified, the default behavior is defined by gRPC
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
+  */
+  readonly service?: string;
+}
+
+export function cloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpcToTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpcOutputReference | CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpc): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port: cdktn.numberToTerraform(struct!.port),
+    service: cdktn.stringToTerraform(struct!.service),
+  }
+}
+
+
+export function cloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpcToHclTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpcOutputReference | CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpc): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktn.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    service: {
+      value: cdktn.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpcOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpc | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpc | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._port = undefined;
+      this._service = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
+      this._service = value.service;
+    }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // service - computed: false, optional: true, required: false
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  public resetService() {
+    this._service = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+}
+export interface CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders {
+  /**
+  * Required. The header field name
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+  */
+  readonly port: number;
+  /**
+  * Optional. The header field value
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
+  */
+  readonly value?: string;
+}
+
+export function cloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersToTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference | CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port: cdktn.numberToTerraform(struct!.port),
+    value: cdktn.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function cloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersToHclTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference | CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktn.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    value: {
+      value: cdktn.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._port = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
+      this._value = value.value;
+    }
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGet {
+  /**
+  * Optional. Path to access on the HTTP server. Defaults to '/'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+  */
+  readonly path?: string;
+  /**
+  * Optional. Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+  */
+  readonly port?: number;
+  /**
+  * http_headers block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
+  */
+  readonly httpHeaders?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders;
+}
+
+export function cloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetToTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetOutputReference | CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGet): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.numberToTerraform(struct!.port),
+    http_headers: cloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersToTerraform(struct!.httpHeaders),
+  }
+}
+
+
+export function cloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetToHclTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetOutputReference | CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGet): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    path: {
+      value: cdktn.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktn.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    http_headers: {
+      value: cloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersToHclTerraform(struct!.httpHeaders),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGet | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._httpHeaders?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpHeaders = this._httpHeaders?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGet | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._path = undefined;
+      this._port = undefined;
+      this._httpHeaders.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._path = value.path;
+      this._port = value.port;
+      this._httpHeaders.internalValue = value.httpHeaders;
+    }
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // http_headers - computed: false, optional: true, required: false
+  private _httpHeaders = new CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference(this, "http_headers");
+  public get httpHeaders() {
+    return this._httpHeaders;
+  }
+  public putHttpHeaders(value: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders) {
+    this._httpHeaders.internalValue = value;
+  }
+  public resetHttpHeaders() {
+    this._httpHeaders.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpHeadersInput() {
+    return this._httpHeaders.internalValue;
+  }
+}
+export interface CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocket {
+  /**
+  * Optional. Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+  */
+  readonly port?: number;
+}
+
+export function cloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketToTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketOutputReference | CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocket): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port: cdktn.numberToTerraform(struct!.port),
+  }
+}
+
+
+export function cloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketToHclTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketOutputReference | CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocket): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktn.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocket | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocket | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._port = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
+    }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+}
+export interface CloudRunV2WorkerPoolTemplateContainersLivenessProbe {
+  /**
+  * Optional. Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
+  */
+  readonly failureThreshold?: number;
+  /**
+  * Optional. Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
+  */
+  readonly initialDelaySeconds?: number;
+  /**
+  * Optional. How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeout_seconds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
+  */
+  readonly periodSeconds?: number;
+  /**
+  * Optional. Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than period_seconds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
+  */
+  readonly timeoutSeconds?: number;
+  /**
+  * grpc block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
+  */
+  readonly grpc?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpc;
+  /**
+  * http_get block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
+  */
+  readonly httpGet?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGet;
+  /**
+  * tcp_socket block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
+  */
+  readonly tcpSocket?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocket;
+}
+
+export function cloudRunV2WorkerPoolTemplateContainersLivenessProbeToTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference | CloudRunV2WorkerPoolTemplateContainersLivenessProbe): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
+    initial_delay_seconds: cdktn.numberToTerraform(struct!.initialDelaySeconds),
+    period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
+    grpc: cloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpcToTerraform(struct!.grpc),
+    http_get: cloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetToTerraform(struct!.httpGet),
+    tcp_socket: cloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketToTerraform(struct!.tcpSocket),
+  }
+}
+
+
+export function cloudRunV2WorkerPoolTemplateContainersLivenessProbeToHclTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference | CloudRunV2WorkerPoolTemplateContainersLivenessProbe): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    failure_threshold: {
+      value: cdktn.numberToHclTerraform(struct!.failureThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    initial_delay_seconds: {
+      value: cdktn.numberToHclTerraform(struct!.initialDelaySeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    period_seconds: {
+      value: cdktn.numberToHclTerraform(struct!.periodSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    timeout_seconds: {
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    grpc: {
+      value: cloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpcToHclTerraform(struct!.grpc),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpcList",
+    },
+    http_get: {
+      value: cloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetToHclTerraform(struct!.httpGet),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetList",
+    },
+    tcp_socket: {
+      value: cloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketToHclTerraform(struct!.tcpSocket),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudRunV2WorkerPoolTemplateContainersLivenessProbe | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._failureThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failureThreshold = this._failureThreshold;
+    }
+    if (this._initialDelaySeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialDelaySeconds = this._initialDelaySeconds;
+    }
+    if (this._periodSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.periodSeconds = this._periodSeconds;
+    }
+    if (this._timeoutSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutSeconds = this._timeoutSeconds;
+    }
+    if (this._grpc?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.grpc = this._grpc?.internalValue;
+    }
+    if (this._httpGet?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpGet = this._httpGet?.internalValue;
+    }
+    if (this._tcpSocket?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tcpSocket = this._tcpSocket?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudRunV2WorkerPoolTemplateContainersLivenessProbe | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._failureThreshold = undefined;
+      this._initialDelaySeconds = undefined;
+      this._periodSeconds = undefined;
+      this._timeoutSeconds = undefined;
+      this._grpc.internalValue = undefined;
+      this._httpGet.internalValue = undefined;
+      this._tcpSocket.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._failureThreshold = value.failureThreshold;
+      this._initialDelaySeconds = value.initialDelaySeconds;
+      this._periodSeconds = value.periodSeconds;
+      this._timeoutSeconds = value.timeoutSeconds;
+      this._grpc.internalValue = value.grpc;
+      this._httpGet.internalValue = value.httpGet;
+      this._tcpSocket.internalValue = value.tcpSocket;
+    }
+  }
+
+  // failure_threshold - computed: false, optional: true, required: false
+  private _failureThreshold?: number; 
+  public get failureThreshold() {
+    return this.getNumberAttribute('failure_threshold');
+  }
+  public set failureThreshold(value: number) {
+    this._failureThreshold = value;
+  }
+  public resetFailureThreshold() {
+    this._failureThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failureThresholdInput() {
+    return this._failureThreshold;
+  }
+
+  // initial_delay_seconds - computed: false, optional: true, required: false
+  private _initialDelaySeconds?: number; 
+  public get initialDelaySeconds() {
+    return this.getNumberAttribute('initial_delay_seconds');
+  }
+  public set initialDelaySeconds(value: number) {
+    this._initialDelaySeconds = value;
+  }
+  public resetInitialDelaySeconds() {
+    this._initialDelaySeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialDelaySecondsInput() {
+    return this._initialDelaySeconds;
+  }
+
+  // period_seconds - computed: false, optional: true, required: false
+  private _periodSeconds?: number; 
+  public get periodSeconds() {
+    return this.getNumberAttribute('period_seconds');
+  }
+  public set periodSeconds(value: number) {
+    this._periodSeconds = value;
+  }
+  public resetPeriodSeconds() {
+    this._periodSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get periodSecondsInput() {
+    return this._periodSeconds;
+  }
+
+  // timeout_seconds - computed: false, optional: true, required: false
+  private _timeoutSeconds?: number; 
+  public get timeoutSeconds() {
+    return this.getNumberAttribute('timeout_seconds');
+  }
+  public set timeoutSeconds(value: number) {
+    this._timeoutSeconds = value;
+  }
+  public resetTimeoutSeconds() {
+    this._timeoutSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutSecondsInput() {
+    return this._timeoutSeconds;
+  }
+
+  // grpc - computed: false, optional: true, required: false
+  private _grpc = new CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpcOutputReference(this, "grpc");
+  public get grpc() {
+    return this._grpc;
+  }
+  public putGrpc(value: CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpc) {
+    this._grpc.internalValue = value;
+  }
+  public resetGrpc() {
+    this._grpc.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get grpcInput() {
+    return this._grpc.internalValue;
+  }
+
+  // http_get - computed: false, optional: true, required: false
+  private _httpGet = new CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetOutputReference(this, "http_get");
+  public get httpGet() {
+    return this._httpGet;
+  }
+  public putHttpGet(value: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGet) {
+    this._httpGet.internalValue = value;
+  }
+  public resetHttpGet() {
+    this._httpGet.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpGetInput() {
+    return this._httpGet.internalValue;
+  }
+
+  // tcp_socket - computed: false, optional: true, required: false
+  private _tcpSocket = new CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocketOutputReference(this, "tcp_socket");
+  public get tcpSocket() {
+    return this._tcpSocket;
+  }
+  public putTcpSocket(value: CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocket) {
+    this._tcpSocket.internalValue = value;
+  }
+  public resetTcpSocket() {
+    this._tcpSocket.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tcpSocketInput() {
+    return this._tcpSocket.internalValue;
+  }
+}
 export interface CloudRunV2WorkerPoolTemplateContainersResources {
   /**
-  * Only memory, CPU, and nvidia.com/gpu are supported. Use key 'cpu' for CPU limit, 'memory' for memory limit, 'nvidia.com/gpu' for gpu limit. Note: The only supported values for CPU are '1', '2', '4', and '8'. Setting 4 CPU requires at least 2Gi of memory. The values of the map is string form of the 'quantity' k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go
+  * Only memory, CPU, and nvidia.com/gpu are supported. Use key 'cpu' for CPU limit, 'memory' for memory limit, 'nvidia.com/gpu' for gpu limit. Note: The only supported values for CPU are '1', '2', '4', '6', and '8'. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the 'quantity' k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#limits CloudRunV2WorkerPool#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#limits CloudRunV2WorkerPool#limits}
   */
   readonly limits?: { [key: string]: string };
 }
@@ -1453,19 +2230,802 @@ export class CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference exte
     return this._limits;
   }
 }
+export interface CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpc {
+  /**
+  * Optional. Port number of the gRPC service. Number must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+  */
+  readonly port?: number;
+  /**
+  * Optional. Service is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md ). If this is not specified, the default behavior is defined by gRPC
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
+  */
+  readonly service?: string;
+}
+
+export function cloudRunV2WorkerPoolTemplateContainersStartupProbeGrpcToTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpcOutputReference | CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpc): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port: cdktn.numberToTerraform(struct!.port),
+    service: cdktn.stringToTerraform(struct!.service),
+  }
+}
+
+
+export function cloudRunV2WorkerPoolTemplateContainersStartupProbeGrpcToHclTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpcOutputReference | CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpc): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktn.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    service: {
+      value: cdktn.stringToHclTerraform(struct!.service),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpcOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpc | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpc | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._port = undefined;
+      this._service = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
+      this._service = value.service;
+    }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // service - computed: false, optional: true, required: false
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  public resetService() {
+    this._service = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+}
+export interface CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders {
+  /**
+  * Required. The header field name
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+  */
+  readonly port: number;
+  /**
+  * Optional. The header field value
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
+  */
+  readonly value?: string;
+}
+
+export function cloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersToTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference | CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port: cdktn.numberToTerraform(struct!.port),
+    value: cdktn.stringToTerraform(struct!.value),
+  }
+}
+
+
+export function cloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersToHclTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference | CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktn.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    value: {
+      value: cdktn.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._port = undefined;
+      this._value = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
+      this._value = value.value;
+    }
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+export interface CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGet {
+  /**
+  * Optional. Path to access on the HTTP server. Defaults to '/'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+  */
+  readonly path?: string;
+  /**
+  * Optional. Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+  */
+  readonly port?: number;
+  /**
+  * http_headers block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
+  */
+  readonly httpHeaders?: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders;
+}
+
+export function cloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetToTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetOutputReference | CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGet): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.numberToTerraform(struct!.port),
+    http_headers: cloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersToTerraform(struct!.httpHeaders),
+  }
+}
+
+
+export function cloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetToHclTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetOutputReference | CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGet): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    path: {
+      value: cdktn.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    port: {
+      value: cdktn.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    http_headers: {
+      value: cloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersToHclTerraform(struct!.httpHeaders),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGet | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._httpHeaders?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpHeaders = this._httpHeaders?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGet | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._path = undefined;
+      this._port = undefined;
+      this._httpHeaders.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._path = value.path;
+      this._port = value.port;
+      this._httpHeaders.internalValue = value.httpHeaders;
+    }
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // http_headers - computed: false, optional: true, required: false
+  private _httpHeaders = new CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference(this, "http_headers");
+  public get httpHeaders() {
+    return this._httpHeaders;
+  }
+  public putHttpHeaders(value: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders) {
+    this._httpHeaders.internalValue = value;
+  }
+  public resetHttpHeaders() {
+    this._httpHeaders.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpHeadersInput() {
+    return this._httpHeaders.internalValue;
+  }
+}
+export interface CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocket {
+  /**
+  * Optional. Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+  */
+  readonly port?: number;
+}
+
+export function cloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocketToTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocketOutputReference | CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocket): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port: cdktn.numberToTerraform(struct!.port),
+  }
+}
+
+
+export function cloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocketToHclTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocketOutputReference | CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocket): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    port: {
+      value: cdktn.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocketOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocket | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocket | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._port = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
+    }
+  }
+
+  // port - computed: false, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+}
+export interface CloudRunV2WorkerPoolTemplateContainersStartupProbe {
+  /**
+  * Optional. Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
+  */
+  readonly failureThreshold?: number;
+  /**
+  * Optional. Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
+  */
+  readonly initialDelaySeconds?: number;
+  /**
+  * Optional. How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeout_seconds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
+  */
+  readonly periodSeconds?: number;
+  /**
+  * Optional. Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than period_seconds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
+  */
+  readonly timeoutSeconds?: number;
+  /**
+  * grpc block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
+  */
+  readonly grpc?: CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpc;
+  /**
+  * http_get block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
+  */
+  readonly httpGet?: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGet;
+  /**
+  * tcp_socket block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
+  */
+  readonly tcpSocket?: CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocket;
+}
+
+export function cloudRunV2WorkerPoolTemplateContainersStartupProbeToTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersStartupProbeOutputReference | CloudRunV2WorkerPoolTemplateContainersStartupProbe): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    failure_threshold: cdktn.numberToTerraform(struct!.failureThreshold),
+    initial_delay_seconds: cdktn.numberToTerraform(struct!.initialDelaySeconds),
+    period_seconds: cdktn.numberToTerraform(struct!.periodSeconds),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
+    grpc: cloudRunV2WorkerPoolTemplateContainersStartupProbeGrpcToTerraform(struct!.grpc),
+    http_get: cloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetToTerraform(struct!.httpGet),
+    tcp_socket: cloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocketToTerraform(struct!.tcpSocket),
+  }
+}
+
+
+export function cloudRunV2WorkerPoolTemplateContainersStartupProbeToHclTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersStartupProbeOutputReference | CloudRunV2WorkerPoolTemplateContainersStartupProbe): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    failure_threshold: {
+      value: cdktn.numberToHclTerraform(struct!.failureThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    initial_delay_seconds: {
+      value: cdktn.numberToHclTerraform(struct!.initialDelaySeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    period_seconds: {
+      value: cdktn.numberToHclTerraform(struct!.periodSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    timeout_seconds: {
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    grpc: {
+      value: cloudRunV2WorkerPoolTemplateContainersStartupProbeGrpcToHclTerraform(struct!.grpc),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpcList",
+    },
+    http_get: {
+      value: cloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetToHclTerraform(struct!.httpGet),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetList",
+    },
+    tcp_socket: {
+      value: cloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocketToHclTerraform(struct!.tcpSocket),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocketList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CloudRunV2WorkerPoolTemplateContainersStartupProbeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CloudRunV2WorkerPoolTemplateContainersStartupProbe | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._failureThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failureThreshold = this._failureThreshold;
+    }
+    if (this._initialDelaySeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialDelaySeconds = this._initialDelaySeconds;
+    }
+    if (this._periodSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.periodSeconds = this._periodSeconds;
+    }
+    if (this._timeoutSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutSeconds = this._timeoutSeconds;
+    }
+    if (this._grpc?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.grpc = this._grpc?.internalValue;
+    }
+    if (this._httpGet?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpGet = this._httpGet?.internalValue;
+    }
+    if (this._tcpSocket?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tcpSocket = this._tcpSocket?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CloudRunV2WorkerPoolTemplateContainersStartupProbe | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._failureThreshold = undefined;
+      this._initialDelaySeconds = undefined;
+      this._periodSeconds = undefined;
+      this._timeoutSeconds = undefined;
+      this._grpc.internalValue = undefined;
+      this._httpGet.internalValue = undefined;
+      this._tcpSocket.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._failureThreshold = value.failureThreshold;
+      this._initialDelaySeconds = value.initialDelaySeconds;
+      this._periodSeconds = value.periodSeconds;
+      this._timeoutSeconds = value.timeoutSeconds;
+      this._grpc.internalValue = value.grpc;
+      this._httpGet.internalValue = value.httpGet;
+      this._tcpSocket.internalValue = value.tcpSocket;
+    }
+  }
+
+  // failure_threshold - computed: false, optional: true, required: false
+  private _failureThreshold?: number; 
+  public get failureThreshold() {
+    return this.getNumberAttribute('failure_threshold');
+  }
+  public set failureThreshold(value: number) {
+    this._failureThreshold = value;
+  }
+  public resetFailureThreshold() {
+    this._failureThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failureThresholdInput() {
+    return this._failureThreshold;
+  }
+
+  // initial_delay_seconds - computed: false, optional: true, required: false
+  private _initialDelaySeconds?: number; 
+  public get initialDelaySeconds() {
+    return this.getNumberAttribute('initial_delay_seconds');
+  }
+  public set initialDelaySeconds(value: number) {
+    this._initialDelaySeconds = value;
+  }
+  public resetInitialDelaySeconds() {
+    this._initialDelaySeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialDelaySecondsInput() {
+    return this._initialDelaySeconds;
+  }
+
+  // period_seconds - computed: false, optional: true, required: false
+  private _periodSeconds?: number; 
+  public get periodSeconds() {
+    return this.getNumberAttribute('period_seconds');
+  }
+  public set periodSeconds(value: number) {
+    this._periodSeconds = value;
+  }
+  public resetPeriodSeconds() {
+    this._periodSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get periodSecondsInput() {
+    return this._periodSeconds;
+  }
+
+  // timeout_seconds - computed: false, optional: true, required: false
+  private _timeoutSeconds?: number; 
+  public get timeoutSeconds() {
+    return this.getNumberAttribute('timeout_seconds');
+  }
+  public set timeoutSeconds(value: number) {
+    this._timeoutSeconds = value;
+  }
+  public resetTimeoutSeconds() {
+    this._timeoutSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutSecondsInput() {
+    return this._timeoutSeconds;
+  }
+
+  // grpc - computed: false, optional: true, required: false
+  private _grpc = new CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpcOutputReference(this, "grpc");
+  public get grpc() {
+    return this._grpc;
+  }
+  public putGrpc(value: CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpc) {
+    this._grpc.internalValue = value;
+  }
+  public resetGrpc() {
+    this._grpc.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get grpcInput() {
+    return this._grpc.internalValue;
+  }
+
+  // http_get - computed: false, optional: true, required: false
+  private _httpGet = new CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetOutputReference(this, "http_get");
+  public get httpGet() {
+    return this._httpGet;
+  }
+  public putHttpGet(value: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGet) {
+    this._httpGet.internalValue = value;
+  }
+  public resetHttpGet() {
+    this._httpGet.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpGetInput() {
+    return this._httpGet.internalValue;
+  }
+
+  // tcp_socket - computed: false, optional: true, required: false
+  private _tcpSocket = new CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocketOutputReference(this, "tcp_socket");
+  public get tcpSocket() {
+    return this._tcpSocket;
+  }
+  public putTcpSocket(value: CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocket) {
+    this._tcpSocket.internalValue = value;
+  }
+  public resetTcpSocket() {
+    this._tcpSocket.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tcpSocketInput() {
+    return this._tcpSocket.internalValue;
+  }
+}
 export interface CloudRunV2WorkerPoolTemplateContainersVolumeMounts {
   /**
   * Path within the container at which the volume should be mounted. Must not contain ':'. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#mount_path CloudRunV2WorkerPool#mount_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#mount_path CloudRunV2WorkerPool#mount_path}
   */
   readonly mountPath: string;
   /**
   * This must match the Name of a Volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
   */
   readonly name: string;
+  /**
+  * Path within the volume from which the container's volume should be mounted.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#sub_path CloudRunV2WorkerPool#sub_path}
+  */
+  readonly subPath?: string;
 }
 
 export function cloudRunV2WorkerPoolTemplateContainersVolumeMountsToTerraform(struct?: CloudRunV2WorkerPoolTemplateContainersVolumeMounts | cdktn.IResolvable): any {
@@ -1476,6 +3036,7 @@ export function cloudRunV2WorkerPoolTemplateContainersVolumeMountsToTerraform(st
   return {
     mount_path: cdktn.stringToTerraform(struct!.mountPath),
     name: cdktn.stringToTerraform(struct!.name),
+    sub_path: cdktn.stringToTerraform(struct!.subPath),
   }
 }
 
@@ -1494,6 +3055,12 @@ export function cloudRunV2WorkerPoolTemplateContainersVolumeMountsToHclTerraform
     },
     name: {
       value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sub_path: {
+      value: cdktn.stringToHclTerraform(struct!.subPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1532,6 +3099,10 @@ export class CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference e
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._subPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subPath = this._subPath;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1541,6 +3112,7 @@ export class CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference e
       this.resolvableValue = undefined;
       this._mountPath = undefined;
       this._name = undefined;
+      this._subPath = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1551,6 +3123,7 @@ export class CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference e
       this.resolvableValue = undefined;
       this._mountPath = value.mountPath;
       this._name = value.name;
+      this._subPath = value.subPath;
     }
   }
 
@@ -1579,6 +3152,22 @@ export class CloudRunV2WorkerPoolTemplateContainersVolumeMountsOutputReference e
   public get nameInput() {
     return this._name;
   }
+
+  // sub_path - computed: false, optional: true, required: false
+  private _subPath?: string; 
+  public get subPath() {
+    return this.getStringAttribute('sub_path');
+  }
+  public set subPath(value: string) {
+    this._subPath = value;
+  }
+  public resetSubPath() {
+    this._subPath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subPathInput() {
+    return this._subPath;
+  }
 }
 
 export class CloudRunV2WorkerPoolTemplateContainersVolumeMountsList extends cdktn.ComplexList {
@@ -1604,55 +3193,67 @@ export interface CloudRunV2WorkerPoolTemplateContainers {
   /**
   * Arguments to the entrypoint. The docker image's CMD is used if this is not provided. Variable references are not supported in Cloud Run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#args CloudRunV2WorkerPool#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#args CloudRunV2WorkerPool#args}
   */
   readonly args?: string[];
   /**
   * Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#command CloudRunV2WorkerPool#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#command CloudRunV2WorkerPool#command}
   */
   readonly command?: string[];
   /**
-  * Containers which should be started before this container. If specified the container will wait to start until all containers with the listed names are healthy.
+  * Names of the containers that must start before this container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#depends_on CloudRunV2WorkerPool#depends_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#depends_on CloudRunV2WorkerPool#depends_on}
   */
   readonly dependsOn?: string[];
   /**
   * URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#image CloudRunV2WorkerPool#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#image CloudRunV2WorkerPool#image}
   */
   readonly image: string;
   /**
   * Name of the container specified as a DNS_LABEL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
   */
   readonly name?: string;
   /**
   * Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#working_dir CloudRunV2WorkerPool#working_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#working_dir CloudRunV2WorkerPool#working_dir}
   */
   readonly workingDir?: string;
   /**
   * env block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#env CloudRunV2WorkerPool#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#env CloudRunV2WorkerPool#env}
   */
   readonly env?: CloudRunV2WorkerPoolTemplateContainersEnv[] | cdktn.IResolvable;
   /**
+  * liveness_probe block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#liveness_probe CloudRunV2WorkerPool#liveness_probe}
+  */
+  readonly livenessProbe?: CloudRunV2WorkerPoolTemplateContainersLivenessProbe;
+  /**
   * resources block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#resources CloudRunV2WorkerPool#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#resources CloudRunV2WorkerPool#resources}
   */
   readonly resources?: CloudRunV2WorkerPoolTemplateContainersResources;
   /**
+  * startup_probe block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#startup_probe CloudRunV2WorkerPool#startup_probe}
+  */
+  readonly startupProbe?: CloudRunV2WorkerPoolTemplateContainersStartupProbe;
+  /**
   * volume_mounts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#volume_mounts CloudRunV2WorkerPool#volume_mounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#volume_mounts CloudRunV2WorkerPool#volume_mounts}
   */
   readonly volumeMounts?: CloudRunV2WorkerPoolTemplateContainersVolumeMounts[] | cdktn.IResolvable;
 }
@@ -1670,7 +3271,9 @@ export function cloudRunV2WorkerPoolTemplateContainersToTerraform(struct?: Cloud
     name: cdktn.stringToTerraform(struct!.name),
     working_dir: cdktn.stringToTerraform(struct!.workingDir),
     env: cdktn.listMapper(cloudRunV2WorkerPoolTemplateContainersEnvToTerraform, true)(struct!.env),
+    liveness_probe: cloudRunV2WorkerPoolTemplateContainersLivenessProbeToTerraform(struct!.livenessProbe),
     resources: cloudRunV2WorkerPoolTemplateContainersResourcesToTerraform(struct!.resources),
+    startup_probe: cloudRunV2WorkerPoolTemplateContainersStartupProbeToTerraform(struct!.startupProbe),
     volume_mounts: cdktn.listMapper(cloudRunV2WorkerPoolTemplateContainersVolumeMountsToTerraform, true)(struct!.volumeMounts),
   }
 }
@@ -1724,11 +3327,23 @@ export function cloudRunV2WorkerPoolTemplateContainersToHclTerraform(struct?: Cl
       type: "set",
       storageClassType: "CloudRunV2WorkerPoolTemplateContainersEnvList",
     },
+    liveness_probe: {
+      value: cloudRunV2WorkerPoolTemplateContainersLivenessProbeToHclTerraform(struct!.livenessProbe),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudRunV2WorkerPoolTemplateContainersLivenessProbeList",
+    },
     resources: {
       value: cloudRunV2WorkerPoolTemplateContainersResourcesToHclTerraform(struct!.resources),
       isBlock: true,
       type: "list",
       storageClassType: "CloudRunV2WorkerPoolTemplateContainersResourcesList",
+    },
+    startup_probe: {
+      value: cloudRunV2WorkerPoolTemplateContainersStartupProbeToHclTerraform(struct!.startupProbe),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CloudRunV2WorkerPoolTemplateContainersStartupProbeList",
     },
     volume_mounts: {
       value: cdktn.listMapperHcl(cloudRunV2WorkerPoolTemplateContainersVolumeMountsToHclTerraform, true)(struct!.volumeMounts),
@@ -1790,9 +3405,17 @@ export class CloudRunV2WorkerPoolTemplateContainersOutputReference extends cdktn
       hasAnyValues = true;
       internalValueResult.env = this._env?.internalValue;
     }
+    if (this._livenessProbe?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.livenessProbe = this._livenessProbe?.internalValue;
+    }
     if (this._resources?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.resources = this._resources?.internalValue;
+    }
+    if (this._startupProbe?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startupProbe = this._startupProbe?.internalValue;
     }
     if (this._volumeMounts?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -1812,7 +3435,9 @@ export class CloudRunV2WorkerPoolTemplateContainersOutputReference extends cdktn
       this._name = undefined;
       this._workingDir = undefined;
       this._env.internalValue = undefined;
+      this._livenessProbe.internalValue = undefined;
       this._resources.internalValue = undefined;
+      this._startupProbe.internalValue = undefined;
       this._volumeMounts.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
@@ -1829,7 +3454,9 @@ export class CloudRunV2WorkerPoolTemplateContainersOutputReference extends cdktn
       this._name = value.name;
       this._workingDir = value.workingDir;
       this._env.internalValue = value.env;
+      this._livenessProbe.internalValue = value.livenessProbe;
       this._resources.internalValue = value.resources;
+      this._startupProbe.internalValue = value.startupProbe;
       this._volumeMounts.internalValue = value.volumeMounts;
     }
   }
@@ -1943,6 +3570,22 @@ export class CloudRunV2WorkerPoolTemplateContainersOutputReference extends cdktn
     return this._env.internalValue;
   }
 
+  // liveness_probe - computed: false, optional: true, required: false
+  private _livenessProbe = new CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference(this, "liveness_probe");
+  public get livenessProbe() {
+    return this._livenessProbe;
+  }
+  public putLivenessProbe(value: CloudRunV2WorkerPoolTemplateContainersLivenessProbe) {
+    this._livenessProbe.internalValue = value;
+  }
+  public resetLivenessProbe() {
+    this._livenessProbe.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get livenessProbeInput() {
+    return this._livenessProbe.internalValue;
+  }
+
   // resources - computed: false, optional: true, required: false
   private _resources = new CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference(this, "resources");
   public get resources() {
@@ -1957,6 +3600,22 @@ export class CloudRunV2WorkerPoolTemplateContainersOutputReference extends cdktn
   // Temporarily expose input value. Use with caution.
   public get resourcesInput() {
     return this._resources.internalValue;
+  }
+
+  // startup_probe - computed: false, optional: true, required: false
+  private _startupProbe = new CloudRunV2WorkerPoolTemplateContainersStartupProbeOutputReference(this, "startup_probe");
+  public get startupProbe() {
+    return this._startupProbe;
+  }
+  public putStartupProbe(value: CloudRunV2WorkerPoolTemplateContainersStartupProbe) {
+    this._startupProbe.internalValue = value;
+  }
+  public resetStartupProbe() {
+    this._startupProbe.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startupProbeInput() {
+    return this._startupProbe.internalValue;
   }
 
   // volume_mounts - computed: false, optional: true, required: false
@@ -1999,7 +3658,7 @@ export interface CloudRunV2WorkerPoolTemplateNodeSelector {
   /**
   * The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#accelerator CloudRunV2WorkerPool#accelerator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#accelerator CloudRunV2WorkerPool#accelerator}
   */
   readonly accelerator: string;
 }
@@ -2082,7 +3741,7 @@ export interface CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstance {
   /**
   * The Cloud SQL instance connection names, as can be found in https://console.cloud.google.com/sql/instances. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run. Format: {project}:{location}:{instance}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#instances CloudRunV2WorkerPool#instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#instances CloudRunV2WorkerPool#instances}
   */
   readonly instances?: string[];
 }
@@ -2166,15 +3825,15 @@ export class CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference 
 }
 export interface CloudRunV2WorkerPoolTemplateVolumesEmptyDir {
   /**
-  * The different types of medium supported for EmptyDir. Default value: "MEMORY" Possible values: ["MEMORY"]
+  * The different types of medium supported for EmptyDir. Default value: "MEMORY" Possible values: ["MEMORY", "DISK"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#medium CloudRunV2WorkerPool#medium}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#medium CloudRunV2WorkerPool#medium}
   */
   readonly medium?: string;
   /**
   * Limit on the storage usable by this EmptyDir volume. The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. This field's values are of the 'Quantity' k8s type: https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/quantity/. The default is nil which means that the limit is undefined. More info: https://kubernetes.io/docs/concepts/storage/volumes/#emptydir.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#size_limit CloudRunV2WorkerPool#size_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#size_limit CloudRunV2WorkerPool#size_limit}
   */
   readonly sizeLimit?: string;
 }
@@ -2289,13 +3948,20 @@ export interface CloudRunV2WorkerPoolTemplateVolumesGcs {
   /**
   * GCS Bucket name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#bucket CloudRunV2WorkerPool#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#bucket CloudRunV2WorkerPool#bucket}
   */
   readonly bucket: string;
   /**
+  * A list of flags to pass to the gcsfuse command for configuring this volume.
+  * Flags should be passed without leading dashes.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#mount_options CloudRunV2WorkerPool#mount_options}
+  */
+  readonly mountOptions?: string[];
+  /**
   * If true, mount the GCS bucket as read-only
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
   */
   readonly readOnly?: boolean | cdktn.IResolvable;
 }
@@ -2307,6 +3973,7 @@ export function cloudRunV2WorkerPoolTemplateVolumesGcsToTerraform(struct?: Cloud
   }
   return {
     bucket: cdktn.stringToTerraform(struct!.bucket),
+    mount_options: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.mountOptions),
     read_only: cdktn.booleanToTerraform(struct!.readOnly),
   }
 }
@@ -2323,6 +3990,12 @@ export function cloudRunV2WorkerPoolTemplateVolumesGcsToHclTerraform(struct?: Cl
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    mount_options: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.mountOptions),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
     },
     read_only: {
       value: cdktn.booleanToHclTerraform(struct!.readOnly),
@@ -2354,6 +4027,10 @@ export class CloudRunV2WorkerPoolTemplateVolumesGcsOutputReference extends cdktn
       hasAnyValues = true;
       internalValueResult.bucket = this._bucket;
     }
+    if (this._mountOptions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mountOptions = this._mountOptions;
+    }
     if (this._readOnly !== undefined) {
       hasAnyValues = true;
       internalValueResult.readOnly = this._readOnly;
@@ -2365,11 +4042,13 @@ export class CloudRunV2WorkerPoolTemplateVolumesGcsOutputReference extends cdktn
     if (value === undefined) {
       this.isEmptyObject = false;
       this._bucket = undefined;
+      this._mountOptions = undefined;
       this._readOnly = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._bucket = value.bucket;
+      this._mountOptions = value.mountOptions;
       this._readOnly = value.readOnly;
     }
   }
@@ -2385,6 +4064,22 @@ export class CloudRunV2WorkerPoolTemplateVolumesGcsOutputReference extends cdktn
   // Temporarily expose input value. Use with caution.
   public get bucketInput() {
     return this._bucket;
+  }
+
+  // mount_options - computed: false, optional: true, required: false
+  private _mountOptions?: string[]; 
+  public get mountOptions() {
+    return this.getListAttribute('mount_options');
+  }
+  public set mountOptions(value: string[]) {
+    this._mountOptions = value;
+  }
+  public resetMountOptions() {
+    this._mountOptions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mountOptionsInput() {
+    return this._mountOptions;
   }
 
   // read_only - computed: false, optional: true, required: false
@@ -2407,19 +4102,19 @@ export interface CloudRunV2WorkerPoolTemplateVolumesNfs {
   /**
   * Path that is exported by the NFS server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
   */
   readonly path: string;
   /**
   * If true, mount the NFS volume as read only
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
   */
   readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Hostname or IP address of the NFS server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#server CloudRunV2WorkerPool#server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#server CloudRunV2WorkerPool#server}
   */
   readonly server: string;
 }
@@ -2557,19 +4252,19 @@ export interface CloudRunV2WorkerPoolTemplateVolumesSecretItems {
   /**
   * Integer octal mode bits to use on this file, must be a value between 01 and 0777 (octal). If 0 or not set, the Volume's default mode will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#mode CloudRunV2WorkerPool#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#mode CloudRunV2WorkerPool#mode}
   */
   readonly mode?: number;
   /**
   * The relative path of the secret in the container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
   */
   readonly path: string;
   /**
   * The Cloud Secret Manager secret version. Can be 'latest' for the latest value or an integer for a specific version
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
   */
   readonly version?: string;
 }
@@ -2742,19 +4437,19 @@ export interface CloudRunV2WorkerPoolTemplateVolumesSecret {
   /**
   * Integer representation of mode bits to use on created files by default. Must be a value between 0000 and 0777 (octal), defaulting to 0444. Directories within the path are not affected by this setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#default_mode CloudRunV2WorkerPool#default_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#default_mode CloudRunV2WorkerPool#default_mode}
   */
   readonly defaultMode?: number;
   /**
   * The name of the secret in Cloud Secret Manager. Format: {secret} if the secret is in the same project. projects/{project}/secrets/{secret} if the secret is in a different project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
   */
   readonly secret: string;
   /**
   * items block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#items CloudRunV2WorkerPool#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#items CloudRunV2WorkerPool#items}
   */
   readonly items?: CloudRunV2WorkerPoolTemplateVolumesSecretItems[] | cdktn.IResolvable;
 }
@@ -2895,37 +4590,37 @@ export interface CloudRunV2WorkerPoolTemplateVolumes {
   /**
   * Volume's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
   */
   readonly name: string;
   /**
   * cloud_sql_instance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#cloud_sql_instance CloudRunV2WorkerPool#cloud_sql_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#cloud_sql_instance CloudRunV2WorkerPool#cloud_sql_instance}
   */
   readonly cloudSqlInstance?: CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstance;
   /**
   * empty_dir block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#empty_dir CloudRunV2WorkerPool#empty_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#empty_dir CloudRunV2WorkerPool#empty_dir}
   */
   readonly emptyDir?: CloudRunV2WorkerPoolTemplateVolumesEmptyDir;
   /**
   * gcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#gcs CloudRunV2WorkerPool#gcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#gcs CloudRunV2WorkerPool#gcs}
   */
   readonly gcs?: CloudRunV2WorkerPoolTemplateVolumesGcs;
   /**
   * nfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#nfs CloudRunV2WorkerPool#nfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#nfs CloudRunV2WorkerPool#nfs}
   */
   readonly nfs?: CloudRunV2WorkerPoolTemplateVolumesNfs;
   /**
   * secret block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
   */
   readonly secret?: CloudRunV2WorkerPoolTemplateVolumesSecret;
 }
@@ -3187,7 +4882,7 @@ export interface CloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfaces {
   * network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If network is not specified, it will be
   * looked up from the subnetwork.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#network CloudRunV2WorkerPool#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#network CloudRunV2WorkerPool#network}
   */
   readonly network?: string;
   /**
@@ -3195,13 +4890,13 @@ export interface CloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfaces {
   * network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the
   * subnetwork with the same name with the network will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#subnetwork CloudRunV2WorkerPool#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#subnetwork CloudRunV2WorkerPool#subnetwork}
   */
   readonly subnetwork?: string;
   /**
   * Network tags applied to this Cloud Run WorkerPool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#tags CloudRunV2WorkerPool#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#tags CloudRunV2WorkerPool#tags}
   */
   readonly tags?: string[];
 }
@@ -3375,15 +5070,21 @@ export class CloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfacesList extends 
 }
 export interface CloudRunV2WorkerPoolTemplateVpcAccess {
   /**
+  * VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#connector CloudRunV2WorkerPool#connector}
+  */
+  readonly connector?: string;
+  /**
   * Traffic VPC egress settings. Possible values: ["ALL_TRAFFIC", "PRIVATE_RANGES_ONLY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#egress CloudRunV2WorkerPool#egress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#egress CloudRunV2WorkerPool#egress}
   */
   readonly egress?: string;
   /**
   * network_interfaces block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#network_interfaces CloudRunV2WorkerPool#network_interfaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#network_interfaces CloudRunV2WorkerPool#network_interfaces}
   */
   readonly networkInterfaces?: CloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfaces[] | cdktn.IResolvable;
 }
@@ -3394,6 +5095,7 @@ export function cloudRunV2WorkerPoolTemplateVpcAccessToTerraform(struct?: CloudR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    connector: cdktn.stringToTerraform(struct!.connector),
     egress: cdktn.stringToTerraform(struct!.egress),
     network_interfaces: cdktn.listMapper(cloudRunV2WorkerPoolTemplateVpcAccessNetworkInterfacesToTerraform, true)(struct!.networkInterfaces),
   }
@@ -3406,6 +5108,12 @@ export function cloudRunV2WorkerPoolTemplateVpcAccessToHclTerraform(struct?: Clo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    connector: {
+      value: cdktn.stringToHclTerraform(struct!.connector),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     egress: {
       value: cdktn.stringToHclTerraform(struct!.egress),
       isBlock: false,
@@ -3438,6 +5146,10 @@ export class CloudRunV2WorkerPoolTemplateVpcAccessOutputReference extends cdktn.
   public get internalValue(): CloudRunV2WorkerPoolTemplateVpcAccess | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._connector !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connector = this._connector;
+    }
     if (this._egress !== undefined) {
       hasAnyValues = true;
       internalValueResult.egress = this._egress;
@@ -3452,14 +5164,32 @@ export class CloudRunV2WorkerPoolTemplateVpcAccessOutputReference extends cdktn.
   public set internalValue(value: CloudRunV2WorkerPoolTemplateVpcAccess | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._connector = undefined;
       this._egress = undefined;
       this._networkInterfaces.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._connector = value.connector;
       this._egress = value.egress;
       this._networkInterfaces.internalValue = value.networkInterfaces;
     }
+  }
+
+  // connector - computed: false, optional: true, required: false
+  private _connector?: string; 
+  public get connector() {
+    return this.getStringAttribute('connector');
+  }
+  public set connector(value: string) {
+    this._connector = value;
+  }
+  public resetConnector() {
+    this._connector = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectorInput() {
+    return this._connector;
   }
 
   // egress - computed: true, optional: true, required: false
@@ -3503,19 +5233,19 @@ export interface CloudRunV2WorkerPoolTemplate {
   * 
   * This field follows Kubernetes annotations' namespacing, limits, and rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * A reference to a customer managed encryption key (CMEK) to use to encrypt this container image. For more information, go to https://cloud.google.com/run/docs/securing/using-cmek
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#encryption_key CloudRunV2WorkerPool#encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#encryption_key CloudRunV2WorkerPool#encryption_key}
   */
   readonly encryptionKey?: string;
   /**
   * The action to take if the encryption key is revoked. Possible values: ["PREVENT_NEW", "SHUTDOWN"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_revocation_action CloudRunV2WorkerPool#encryption_key_revocation_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_revocation_action CloudRunV2WorkerPool#encryption_key_revocation_action}
   */
   readonly encryptionKeyRevocationAction?: string;
   /**
@@ -3523,59 +5253,59 @@ export interface CloudRunV2WorkerPoolTemplate {
   * 
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_shutdown_duration CloudRunV2WorkerPool#encryption_key_shutdown_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_shutdown_duration CloudRunV2WorkerPool#encryption_key_shutdown_duration}
   */
   readonly encryptionKeyShutdownDuration?: string;
   /**
   * True if GPU zonal redundancy is disabled on this revision.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#gpu_zonal_redundancy_disabled CloudRunV2WorkerPool#gpu_zonal_redundancy_disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#gpu_zonal_redundancy_disabled CloudRunV2WorkerPool#gpu_zonal_redundancy_disabled}
   */
   readonly gpuZonalRedundancyDisabled?: boolean | cdktn.IResolvable;
   /**
   * Unstructured key value map that can be used to organize and categorize objects. User-provided labels are shared with Google's billing system, so they can be used to filter, or break down billing charges by team, component, environment, state, etc.
-  * For more information, visit https://cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
+  * For more information, visit https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels or https://cloud.google.com/run/docs/configuring/labels.
   * 
   * Cloud Run API v2 does not support labels with 'run.googleapis.com', 'cloud.googleapis.com', 'serving.knative.dev', or 'autoscaling.knative.dev' namespaces, and they will be rejected.
   * All system labels in v1 now have a corresponding field in v2 WorkerPoolRevisionTemplate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The unique name for the revision. If this field is omitted, it will be automatically generated based on the WorkerPool name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
   */
   readonly revision?: string;
   /**
   * Email address of the IAM service account associated with the revision of the WorkerPool. The service account represents the identity of the running revision, and determines what permissions the revision has. If not provided, the revision will use the project's default service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#service_account CloudRunV2WorkerPool#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#service_account CloudRunV2WorkerPool#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * containers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#containers CloudRunV2WorkerPool#containers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#containers CloudRunV2WorkerPool#containers}
   */
   readonly containers?: CloudRunV2WorkerPoolTemplateContainers[] | cdktn.IResolvable;
   /**
   * node_selector block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#node_selector CloudRunV2WorkerPool#node_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#node_selector CloudRunV2WorkerPool#node_selector}
   */
   readonly nodeSelector?: CloudRunV2WorkerPoolTemplateNodeSelector;
   /**
   * volumes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#volumes CloudRunV2WorkerPool#volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#volumes CloudRunV2WorkerPool#volumes}
   */
   readonly volumes?: CloudRunV2WorkerPoolTemplateVolumes[] | cdktn.IResolvable;
   /**
   * vpc_access block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#vpc_access CloudRunV2WorkerPool#vpc_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#vpc_access CloudRunV2WorkerPool#vpc_access}
   */
   readonly vpcAccess?: CloudRunV2WorkerPoolTemplateVpcAccess;
 }
@@ -3978,15 +5708,15 @@ export class CloudRunV2WorkerPoolTemplateOutputReference extends cdktn.ComplexOb
 }
 export interface CloudRunV2WorkerPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}
   */
   readonly update?: string;
 }
@@ -4138,7 +5868,7 @@ export class CloudRunV2WorkerPoolTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}
 */
 export class CloudRunV2WorkerPool extends cdktn.TerraformResource {
 
@@ -4154,7 +5884,7 @@ export class CloudRunV2WorkerPool extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CloudRunV2WorkerPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudRunV2WorkerPool to import
-  * @param importFromId The id of the existing CloudRunV2WorkerPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudRunV2WorkerPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudRunV2WorkerPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4166,7 +5896,7 @@ export class CloudRunV2WorkerPool extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4177,8 +5907,8 @@ export class CloudRunV2WorkerPool extends cdktn.TerraformResource {
       terraformResourceType: 'google_cloud_run_v2_worker_pool',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

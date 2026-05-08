@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleRedisClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#id DataGoogleRedisCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,17 +23,17 @@ export interface DataGoogleRedisClusterConfig extends cdktn.TerraformMetaArgumen
   * Unique name of the resource in this scope including project and location using the form:
   * projects/{projectId}/locations/{locationId}/clusters/{clusterId}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#name DataGoogleRedisCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#name DataGoogleRedisCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#project DataGoogleRedisCluster#project}
   */
   readonly project?: string;
   /**
   * The name of the region of the Redis cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#region DataGoogleRedisCluster#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#region DataGoogleRedisCluster#region}
   */
   readonly region?: string;
 }
@@ -2308,7 +2308,7 @@ export class DataGoogleRedisClusterZoneDistributionConfigList extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster google_redis_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster google_redis_cluster}
 */
 export class DataGoogleRedisCluster extends cdktn.TerraformDataSource {
 
@@ -2324,7 +2324,7 @@ export class DataGoogleRedisCluster extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleRedisCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleRedisCluster to import
-  * @param importFromId The id of the existing DataGoogleRedisCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleRedisCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleRedisCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2336,7 +2336,7 @@ export class DataGoogleRedisCluster extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/redis_cluster google_redis_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2347,8 +2347,8 @@ export class DataGoogleRedisCluster extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_redis_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -2368,11 +2368,6 @@ export class DataGoogleRedisCluster extends cdktn.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // allow_fewer_zones_deployment - computed: true, optional: false, required: false
-  public get allowFewerZonesDeployment() {
-    return this.getBooleanAttribute('allow_fewer_zones_deployment');
-  }
-
   // authorization_mode - computed: true, optional: false, required: false
   public get authorizationMode() {
     return this.getStringAttribute('authorization_mode');
@@ -2382,6 +2377,11 @@ export class DataGoogleRedisCluster extends cdktn.TerraformDataSource {
   private _automatedBackupConfig = new DataGoogleRedisClusterAutomatedBackupConfigList(this, "automated_backup_config", false);
   public get automatedBackupConfig() {
     return this._automatedBackupConfig;
+  }
+
+  // available_maintenance_versions - computed: true, optional: false, required: false
+  public get availableMaintenanceVersions() {
+    return this.getListAttribute('available_maintenance_versions');
   }
 
   // backup_collection - computed: true, optional: false, required: false
@@ -2411,6 +2411,17 @@ export class DataGoogleRedisCluster extends cdktn.TerraformDataSource {
     return this._discoveryEndpoints;
   }
 
+  // effective_labels - computed: true, optional: false, required: false
+  private _effectiveLabels = new cdktn.StringMap(this, "effective_labels");
+  public get effectiveLabels() {
+    return this._effectiveLabels;
+  }
+
+  // effective_maintenance_version - computed: true, optional: false, required: false
+  public get effectiveMaintenanceVersion() {
+    return this.getStringAttribute('effective_maintenance_version');
+  }
+
   // gcs_source - computed: true, optional: false, required: false
   private _gcsSource = new DataGoogleRedisClusterGcsSourceList(this, "gcs_source", false);
   public get gcsSource() {
@@ -2438,6 +2449,12 @@ export class DataGoogleRedisCluster extends cdktn.TerraformDataSource {
     return this.getStringAttribute('kms_key');
   }
 
+  // labels - computed: true, optional: false, required: false
+  private _labels = new cdktn.StringMap(this, "labels");
+  public get labels() {
+    return this._labels;
+  }
+
   // maintenance_policy - computed: true, optional: false, required: false
   private _maintenancePolicy = new DataGoogleRedisClusterMaintenancePolicyList(this, "maintenance_policy", false);
   public get maintenancePolicy() {
@@ -2448,6 +2465,11 @@ export class DataGoogleRedisCluster extends cdktn.TerraformDataSource {
   private _maintenanceSchedule = new DataGoogleRedisClusterMaintenanceScheduleList(this, "maintenance_schedule", false);
   public get maintenanceSchedule() {
     return this._maintenanceSchedule;
+  }
+
+  // maintenance_version - computed: true, optional: false, required: false
+  public get maintenanceVersion() {
+    return this.getStringAttribute('maintenance_version');
   }
 
   // managed_backup_source - computed: true, optional: false, required: false
@@ -2552,6 +2574,16 @@ export class DataGoogleRedisCluster extends cdktn.TerraformDataSource {
     return this.getNumberAttribute('replica_count');
   }
 
+  // server_ca_mode - computed: true, optional: false, required: false
+  public get serverCaMode() {
+    return this.getStringAttribute('server_ca_mode');
+  }
+
+  // server_ca_pool - computed: true, optional: false, required: false
+  public get serverCaPool() {
+    return this.getStringAttribute('server_ca_pool');
+  }
+
   // shard_count - computed: true, optional: false, required: false
   public get shardCount() {
     return this.getNumberAttribute('shard_count');
@@ -2571,6 +2603,12 @@ export class DataGoogleRedisCluster extends cdktn.TerraformDataSource {
   private _stateInfo = new DataGoogleRedisClusterStateInfoList(this, "state_info", false);
   public get stateInfo() {
     return this._stateInfo;
+  }
+
+  // terraform_labels - computed: true, optional: false, required: false
+  private _terraformLabels = new cdktn.StringMap(this, "terraform_labels");
+  public get terraformLabels() {
+    return this._terraformLabels;
   }
 
   // transit_encryption_mode - computed: true, optional: false, required: false

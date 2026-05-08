@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DatabaseMigrationServiceMigrationJobConfig extends cdktn.Terraf
   /**
   * The name of the destination connection profile resource in the form of projects/{project}/locations/{location}/connectionProfiles/{destinationConnectionProfile}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#destination DatabaseMigrationServiceMigrationJob#destination}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#destination DatabaseMigrationServiceMigrationJob#destination}
   */
   readonly destination: string;
   /**
   * The migration job display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#display_name DatabaseMigrationServiceMigrationJob#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#display_name DatabaseMigrationServiceMigrationJob#display_name}
   */
   readonly displayName?: string;
   /**
@@ -29,18 +29,18 @@ export interface DatabaseMigrationServiceMigrationJobConfig extends cdktn.Terraf
   * in the format: (gs://[BUCKET_NAME]/[OBJECT_NAME]).
   * This field and the "dump_flags" field are mutually exclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#dump_path DatabaseMigrationServiceMigrationJob#dump_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#dump_path DatabaseMigrationServiceMigrationJob#dump_path}
   */
   readonly dumpPath?: string;
   /**
   * The type of the data dump. Supported for MySQL to CloudSQL for MySQL
   * migrations only. Possible values: ["LOGICAL", "PHYSICAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#dump_type DatabaseMigrationServiceMigrationJob#dump_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#dump_type DatabaseMigrationServiceMigrationJob#dump_type}
   */
   readonly dumpType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#id DatabaseMigrationServiceMigrationJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#id DatabaseMigrationServiceMigrationJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,71 +53,77 @@ export interface DatabaseMigrationServiceMigrationJobConfig extends cdktn.Terraf
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#labels DatabaseMigrationServiceMigrationJob#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#labels DatabaseMigrationServiceMigrationJob#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the migration job should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#location DatabaseMigrationServiceMigrationJob#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#location DatabaseMigrationServiceMigrationJob#location}
   */
   readonly location?: string;
   /**
   * The ID of the migration job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#migration_job_id DatabaseMigrationServiceMigrationJob#migration_job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#migration_job_id DatabaseMigrationServiceMigrationJob#migration_job_id}
   */
   readonly migrationJobId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#project DatabaseMigrationServiceMigrationJob#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#project DatabaseMigrationServiceMigrationJob#project}
   */
   readonly project?: string;
   /**
   * The name of the source connection profile resource in the form of projects/{project}/locations/{location}/connectionProfiles/{sourceConnectionProfile}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#source DatabaseMigrationServiceMigrationJob#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#source DatabaseMigrationServiceMigrationJob#source}
   */
   readonly source: string;
   /**
   * The type of the migration job. Possible values: ["ONE_TIME", "CONTINUOUS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#type DatabaseMigrationServiceMigrationJob#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#type DatabaseMigrationServiceMigrationJob#type}
   */
   readonly type: string;
   /**
   * dump_flags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#dump_flags DatabaseMigrationServiceMigrationJob#dump_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#dump_flags DatabaseMigrationServiceMigrationJob#dump_flags}
   */
   readonly dumpFlags?: DatabaseMigrationServiceMigrationJobDumpFlags;
   /**
+  * objects_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#objects_config DatabaseMigrationServiceMigrationJob#objects_config}
+  */
+  readonly objectsConfig?: DatabaseMigrationServiceMigrationJobObjectsConfig;
+  /**
   * performance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#performance_config DatabaseMigrationServiceMigrationJob#performance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#performance_config DatabaseMigrationServiceMigrationJob#performance_config}
   */
   readonly performanceConfig?: DatabaseMigrationServiceMigrationJobPerformanceConfig;
   /**
   * reverse_ssh_connectivity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#reverse_ssh_connectivity DatabaseMigrationServiceMigrationJob#reverse_ssh_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#reverse_ssh_connectivity DatabaseMigrationServiceMigrationJob#reverse_ssh_connectivity}
   */
   readonly reverseSshConnectivity?: DatabaseMigrationServiceMigrationJobReverseSshConnectivity;
   /**
   * static_ip_connectivity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#static_ip_connectivity DatabaseMigrationServiceMigrationJob#static_ip_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#static_ip_connectivity DatabaseMigrationServiceMigrationJob#static_ip_connectivity}
   */
   readonly staticIpConnectivity?: DatabaseMigrationServiceMigrationJobStaticIpConnectivity;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#timeouts DatabaseMigrationServiceMigrationJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#timeouts DatabaseMigrationServiceMigrationJob#timeouts}
   */
   readonly timeouts?: DatabaseMigrationServiceMigrationJobTimeouts;
   /**
   * vpc_peering_connectivity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#vpc_peering_connectivity DatabaseMigrationServiceMigrationJob#vpc_peering_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#vpc_peering_connectivity DatabaseMigrationServiceMigrationJob#vpc_peering_connectivity}
   */
   readonly vpcPeeringConnectivity?: DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity;
 }
@@ -211,13 +217,13 @@ export interface DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags {
   /**
   * The name of the flag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#name DatabaseMigrationServiceMigrationJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#name DatabaseMigrationServiceMigrationJob#name}
   */
   readonly name?: string;
   /**
   * The vale of the flag
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#value DatabaseMigrationServiceMigrationJob#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#value DatabaseMigrationServiceMigrationJob#value}
   */
   readonly value?: string;
 }
@@ -364,7 +370,7 @@ export interface DatabaseMigrationServiceMigrationJobDumpFlags {
   /**
   * dump_flags block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#dump_flags DatabaseMigrationServiceMigrationJob#dump_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#dump_flags DatabaseMigrationServiceMigrationJob#dump_flags}
   */
   readonly dumpFlags?: DatabaseMigrationServiceMigrationJobDumpFlagsDumpFlags[] | cdktn.IResolvable;
 }
@@ -446,11 +452,531 @@ export class DatabaseMigrationServiceMigrationJobDumpFlagsOutputReference extend
     return this._dumpFlags.internalValue;
   }
 }
+export interface DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier {
+  /**
+  * The database name. Required only if the object uses
+  * a database name as part of its unique identifier.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#database DatabaseMigrationServiceMigrationJob#database}
+  */
+  readonly database?: string;
+  /**
+  * The schema name. Required only if the object uses
+  * a schema name as part of its unique identifier.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#schema DatabaseMigrationServiceMigrationJob#schema}
+  */
+  readonly schema?: string;
+  /**
+  * The table name. Required only if the object is a level
+  * below database or schema.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#table DatabaseMigrationServiceMigrationJob#table}
+  */
+  readonly table?: string;
+  /**
+  * The category of the migration job object: 'DATABASE',
+  * 'SCHEMA', or 'TABLE'. Possible values: ["DATABASE", "SCHEMA", "TABLE"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#type DatabaseMigrationServiceMigrationJob#type}
+  */
+  readonly type: string;
+}
+
+export function databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierToTerraform(struct?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierOutputReference | DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    database: cdktn.stringToTerraform(struct!.database),
+    schema: cdktn.stringToTerraform(struct!.schema),
+    table: cdktn.stringToTerraform(struct!.table),
+    type: cdktn.stringToTerraform(struct!.type),
+  }
+}
+
+
+export function databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierOutputReference | DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    database: {
+      value: cdktn.stringToHclTerraform(struct!.database),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    schema: {
+      value: cdktn.stringToHclTerraform(struct!.schema),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    table: {
+      value: cdktn.stringToHclTerraform(struct!.table),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktn.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._database !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.database = this._database;
+    }
+    if (this._schema !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schema = this._schema;
+    }
+    if (this._table !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.table = this._table;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._database = undefined;
+      this._schema = undefined;
+      this._table = undefined;
+      this._type = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._database = value.database;
+      this._schema = value.schema;
+      this._table = value.table;
+      this._type = value.type;
+    }
+  }
+
+  // database - computed: false, optional: true, required: false
+  private _database?: string; 
+  public get database() {
+    return this.getStringAttribute('database');
+  }
+  public set database(value: string) {
+    this._database = value;
+  }
+  public resetDatabase() {
+    this._database = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseInput() {
+    return this._database;
+  }
+
+  // schema - computed: false, optional: true, required: false
+  private _schema?: string; 
+  public get schema() {
+    return this.getStringAttribute('schema');
+  }
+  public set schema(value: string) {
+    this._schema = value;
+  }
+  public resetSchema() {
+    this._schema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schemaInput() {
+    return this._schema;
+  }
+
+  // table - computed: false, optional: true, required: false
+  private _table?: string; 
+  public get table() {
+    return this.getStringAttribute('table');
+  }
+  public set table(value: string) {
+    this._table = value;
+  }
+  public resetTable() {
+    this._table = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableInput() {
+    return this._table;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+export interface DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigs {
+  /**
+  * object_identifier block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#object_identifier DatabaseMigrationServiceMigrationJob#object_identifier}
+  */
+  readonly objectIdentifier?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier;
+}
+
+export function databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsToTerraform(struct?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    object_identifier: databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierToTerraform(struct!.objectIdentifier),
+  }
+}
+
+
+export function databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    object_identifier: {
+      value: databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierToHclTerraform(struct!.objectIdentifier),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigs | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._objectIdentifier?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.objectIdentifier = this._objectIdentifier?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigs | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._objectIdentifier.internalValue = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._objectIdentifier.internalValue = value.objectIdentifier;
+    }
+  }
+
+  // object_identifier - computed: false, optional: true, required: false
+  private _objectIdentifier = new DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifierOutputReference(this, "object_identifier");
+  public get objectIdentifier() {
+    return this._objectIdentifier;
+  }
+  public putObjectIdentifier(value: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsObjectIdentifier) {
+    this._objectIdentifier.internalValue = value;
+  }
+  public resetObjectIdentifier() {
+    this._objectIdentifier.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectIdentifierInput() {
+    return this._objectIdentifier.internalValue;
+  }
+}
+
+export class DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsList extends cdktn.ComplexList {
+  public internalValue? : DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigs[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsOutputReference {
+    return new DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig {
+  /**
+  * The objects selection type of the migration job. When set to
+  * 'SPECIFIED_OBJECTS', only the objects listed in 'objectConfigs' are
+  * migrated. When set to 'ALL_OBJECTS', all objects available on the
+  * source are migrated. Possible values: ["ALL_OBJECTS", "SPECIFIED_OBJECTS"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#objects_selection_type DatabaseMigrationServiceMigrationJob#objects_selection_type}
+  */
+  readonly objectsSelectionType?: string;
+  /**
+  * object_configs block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#object_configs DatabaseMigrationServiceMigrationJob#object_configs}
+  */
+  readonly objectConfigs?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigs[] | cdktn.IResolvable;
+}
+
+export function databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigToTerraform(struct?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigOutputReference | DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    objects_selection_type: cdktn.stringToTerraform(struct!.objectsSelectionType),
+    object_configs: cdktn.listMapper(databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsToTerraform, true)(struct!.objectConfigs),
+  }
+}
+
+
+export function databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigOutputReference | DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    objects_selection_type: {
+      value: cdktn.stringToHclTerraform(struct!.objectsSelectionType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    object_configs: {
+      value: cdktn.listMapperHcl(databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsToHclTerraform, true)(struct!.objectConfigs),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._objectsSelectionType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.objectsSelectionType = this._objectsSelectionType;
+    }
+    if (this._objectConfigs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.objectConfigs = this._objectConfigs?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._objectsSelectionType = undefined;
+      this._objectConfigs.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._objectsSelectionType = value.objectsSelectionType;
+      this._objectConfigs.internalValue = value.objectConfigs;
+    }
+  }
+
+  // objects_selection_type - computed: true, optional: true, required: false
+  private _objectsSelectionType?: string; 
+  public get objectsSelectionType() {
+    return this.getStringAttribute('objects_selection_type');
+  }
+  public set objectsSelectionType(value: string) {
+    this._objectsSelectionType = value;
+  }
+  public resetObjectsSelectionType() {
+    this._objectsSelectionType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectsSelectionTypeInput() {
+    return this._objectsSelectionType;
+  }
+
+  // object_configs - computed: false, optional: true, required: false
+  private _objectConfigs = new DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigsList(this, "object_configs", false);
+  public get objectConfigs() {
+    return this._objectConfigs;
+  }
+  public putObjectConfigs(value: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigObjectConfigs[] | cdktn.IResolvable) {
+    this._objectConfigs.internalValue = value;
+  }
+  public resetObjectConfigs() {
+    this._objectConfigs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectConfigsInput() {
+    return this._objectConfigs.internalValue;
+  }
+}
+export interface DatabaseMigrationServiceMigrationJobObjectsConfig {
+  /**
+  * source_objects_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#source_objects_config DatabaseMigrationServiceMigrationJob#source_objects_config}
+  */
+  readonly sourceObjectsConfig?: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig;
+}
+
+export function databaseMigrationServiceMigrationJobObjectsConfigToTerraform(struct?: DatabaseMigrationServiceMigrationJobObjectsConfigOutputReference | DatabaseMigrationServiceMigrationJobObjectsConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    source_objects_config: databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigToTerraform(struct!.sourceObjectsConfig),
+  }
+}
+
+
+export function databaseMigrationServiceMigrationJobObjectsConfigToHclTerraform(struct?: DatabaseMigrationServiceMigrationJobObjectsConfigOutputReference | DatabaseMigrationServiceMigrationJobObjectsConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    source_objects_config: {
+      value: databaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigToHclTerraform(struct!.sourceObjectsConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DatabaseMigrationServiceMigrationJobObjectsConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DatabaseMigrationServiceMigrationJobObjectsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._sourceObjectsConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceObjectsConfig = this._sourceObjectsConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseMigrationServiceMigrationJobObjectsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._sourceObjectsConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._sourceObjectsConfig.internalValue = value.sourceObjectsConfig;
+    }
+  }
+
+  // source_objects_config - computed: false, optional: true, required: false
+  private _sourceObjectsConfig = new DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfigOutputReference(this, "source_objects_config");
+  public get sourceObjectsConfig() {
+    return this._sourceObjectsConfig;
+  }
+  public putSourceObjectsConfig(value: DatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig) {
+    this._sourceObjectsConfig.internalValue = value;
+  }
+  public resetSourceObjectsConfig() {
+    this._sourceObjectsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceObjectsConfigInput() {
+    return this._sourceObjectsConfig.internalValue;
+  }
+}
 export interface DatabaseMigrationServiceMigrationJobPerformanceConfig {
   /**
   * Initial dump parallelism level. Possible values: ["MIN", "OPTIMAL", "MAX"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#dump_parallel_level DatabaseMigrationServiceMigrationJob#dump_parallel_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#dump_parallel_level DatabaseMigrationServiceMigrationJob#dump_parallel_level}
   */
   readonly dumpParallelLevel?: string;
 }
@@ -537,27 +1063,27 @@ export interface DatabaseMigrationServiceMigrationJobReverseSshConnectivity {
   * The name of the virtual machine (Compute Engine) used as the bastion server
   * for the SSH tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#vm DatabaseMigrationServiceMigrationJob#vm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#vm DatabaseMigrationServiceMigrationJob#vm}
   */
   readonly vm?: string;
   /**
   * The IP of the virtual machine (Compute Engine) used as the bastion server
   * for the SSH tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#vm_ip DatabaseMigrationServiceMigrationJob#vm_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#vm_ip DatabaseMigrationServiceMigrationJob#vm_ip}
   */
   readonly vmIp?: string;
   /**
   * The forwarding port of the virtual machine (Compute Engine) used as the
   * bastion server for the SSH tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#vm_port DatabaseMigrationServiceMigrationJob#vm_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#vm_port DatabaseMigrationServiceMigrationJob#vm_port}
   */
   readonly vmPort?: number;
   /**
   * The name of the VPC to peer with the Cloud SQL private network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#vpc DatabaseMigrationServiceMigrationJob#vpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#vpc DatabaseMigrationServiceMigrationJob#vpc}
   */
   readonly vpc?: string;
 }
@@ -777,15 +1303,15 @@ export class DatabaseMigrationServiceMigrationJobStaticIpConnectivityOutputRefer
 }
 export interface DatabaseMigrationServiceMigrationJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#create DatabaseMigrationServiceMigrationJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#create DatabaseMigrationServiceMigrationJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#delete DatabaseMigrationServiceMigrationJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#delete DatabaseMigrationServiceMigrationJob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#update DatabaseMigrationServiceMigrationJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#update DatabaseMigrationServiceMigrationJob#update}
   */
   readonly update?: string;
 }
@@ -939,7 +1465,7 @@ export interface DatabaseMigrationServiceMigrationJobVpcPeeringConnectivity {
   /**
   * The name of the VPC network to peer with the Cloud SQL private network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#vpc DatabaseMigrationServiceMigrationJob#vpc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#vpc DatabaseMigrationServiceMigrationJob#vpc}
   */
   readonly vpc?: string;
 }
@@ -1023,7 +1549,7 @@ export class DatabaseMigrationServiceMigrationJobVpcPeeringConnectivityOutputRef
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job}
 */
 export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResource {
 
@@ -1039,7 +1565,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
   * Generates CDKTN code for importing a DatabaseMigrationServiceMigrationJob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseMigrationServiceMigrationJob to import
-  * @param importFromId The id of the existing DatabaseMigrationServiceMigrationJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseMigrationServiceMigrationJob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseMigrationServiceMigrationJob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1051,7 +1577,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/database_migration_service_migration_job google_database_migration_service_migration_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1062,8 +1588,8 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
       terraformResourceType: 'google_database_migration_service_migration_job',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1085,6 +1611,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
     this._source = config.source;
     this._type = config.type;
     this._dumpFlags.internalValue = config.dumpFlags;
+    this._objectsConfig.internalValue = config.objectsConfig;
     this._performanceConfig.internalValue = config.performanceConfig;
     this._reverseSshConnectivity.internalValue = config.reverseSshConnectivity;
     this._staticIpConnectivity.internalValue = config.staticIpConnectivity;
@@ -1314,6 +1841,22 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
     return this._dumpFlags.internalValue;
   }
 
+  // objects_config - computed: false, optional: true, required: false
+  private _objectsConfig = new DatabaseMigrationServiceMigrationJobObjectsConfigOutputReference(this, "objects_config");
+  public get objectsConfig() {
+    return this._objectsConfig;
+  }
+  public putObjectsConfig(value: DatabaseMigrationServiceMigrationJobObjectsConfig) {
+    this._objectsConfig.internalValue = value;
+  }
+  public resetObjectsConfig() {
+    this._objectsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get objectsConfigInput() {
+    return this._objectsConfig.internalValue;
+  }
+
   // performance_config - computed: false, optional: true, required: false
   private _performanceConfig = new DatabaseMigrationServiceMigrationJobPerformanceConfigOutputReference(this, "performance_config");
   public get performanceConfig() {
@@ -1412,6 +1955,7 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
       source: cdktn.stringToTerraform(this._source),
       type: cdktn.stringToTerraform(this._type),
       dump_flags: databaseMigrationServiceMigrationJobDumpFlagsToTerraform(this._dumpFlags.internalValue),
+      objects_config: databaseMigrationServiceMigrationJobObjectsConfigToTerraform(this._objectsConfig.internalValue),
       performance_config: databaseMigrationServiceMigrationJobPerformanceConfigToTerraform(this._performanceConfig.internalValue),
       reverse_ssh_connectivity: databaseMigrationServiceMigrationJobReverseSshConnectivityToTerraform(this._reverseSshConnectivity.internalValue),
       static_ip_connectivity: databaseMigrationServiceMigrationJobStaticIpConnectivityToTerraform(this._staticIpConnectivity.internalValue),
@@ -1493,6 +2037,12 @@ export class DatabaseMigrationServiceMigrationJob extends cdktn.TerraformResourc
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseMigrationServiceMigrationJobDumpFlagsList",
+      },
+      objects_config: {
+        value: databaseMigrationServiceMigrationJobObjectsConfigToHclTerraform(this._objectsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatabaseMigrationServiceMigrationJobObjectsConfigList",
       },
       performance_config: {
         value: databaseMigrationServiceMigrationJobPerformanceConfigToHclTerraform(this._performanceConfig.internalValue),

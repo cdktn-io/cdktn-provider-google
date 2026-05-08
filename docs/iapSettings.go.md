@@ -4,12 +4,12 @@
 
 ### IapSettings <a name="IapSettings" id="@cdktn/provider-google.iapSettings.IapSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings google_iap_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings google_iap_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettings(scope Construct, id *string, config IapSettingsConfig) IapSettings
 ```
@@ -467,7 +467,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapSettings.IapSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.IapSettings_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapSettings.IapSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.IapSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ iapsettings.IapSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapSettings.IapSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.IapSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ iapsettings.IapSettings_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapSettings.IapSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.IapSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -556,7 +556,7 @@ The construct id used in the generated config for the IapSettings to import.
 
 The id of the existing IapSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,16 +866,16 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsAccessSettings {
-	AllowedDomainsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsAccessSettingsAllowedDomainsSettings,
-	CorsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsAccessSettingsCorsSettings,
-	GcipSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsAccessSettingsGcipSettings,
+	AllowedDomainsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsAccessSettingsAllowedDomainsSettings,
+	CorsSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsAccessSettingsCorsSettings,
+	GcipSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsAccessSettingsGcipSettings,
 	IdentitySources: *[]*string,
-	OauthSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsAccessSettingsOauthSettings,
-	ReauthSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsAccessSettingsReauthSettings,
-	WorkforceIdentitySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettings,
+	OauthSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsAccessSettingsOauthSettings,
+	ReauthSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsAccessSettingsReauthSettings,
+	WorkforceIdentitySettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettings,
 }
 ```
 
@@ -903,7 +903,7 @@ AllowedDomainsSettings IapSettingsAccessSettingsAllowedDomainsSettings
 
 allowed_domains_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#allowed_domains_settings IapSettings#allowed_domains_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#allowed_domains_settings IapSettings#allowed_domains_settings}
 
 ---
 
@@ -917,7 +917,7 @@ CorsSettings IapSettingsAccessSettingsCorsSettings
 
 cors_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#cors_settings IapSettings#cors_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#cors_settings IapSettings#cors_settings}
 
 ---
 
@@ -931,7 +931,7 @@ GcipSettings IapSettingsAccessSettingsGcipSettings
 
 gcip_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#gcip_settings IapSettings#gcip_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#gcip_settings IapSettings#gcip_settings}
 
 ---
 
@@ -951,7 +951,7 @@ can be configured. The possible values are:
 * 'WORKFORCE_IDENTITY_FEDERATION': Use external identities set up on Google Cloud Workforce
   Identity Federation. Possible values: ["WORKFORCE_IDENTITY_FEDERATION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#identity_sources IapSettings#identity_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#identity_sources IapSettings#identity_sources}
 
 ---
 
@@ -965,7 +965,7 @@ OauthSettings IapSettingsAccessSettingsOauthSettings
 
 oauth_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#oauth_settings IapSettings#oauth_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#oauth_settings IapSettings#oauth_settings}
 
 ---
 
@@ -979,7 +979,7 @@ ReauthSettings IapSettingsAccessSettingsReauthSettings
 
 reauth_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#reauth_settings IapSettings#reauth_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#reauth_settings IapSettings#reauth_settings}
 
 ---
 
@@ -993,7 +993,7 @@ WorkforceIdentitySettings IapSettingsAccessSettingsWorkforceIdentitySettings
 
 workforce_identity_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#workforce_identity_settings IapSettings#workforce_identity_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#workforce_identity_settings IapSettings#workforce_identity_settings}
 
 ---
 
@@ -1002,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsAllowedDomainsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsAccessSettingsAllowedDomainsSettings {
 	Domains: *[]*string,
@@ -1029,7 +1029,7 @@ Domains *[]*string
 
 List of trusted domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#domains IapSettings#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#domains IapSettings#domains}
 
 ---
 
@@ -1043,7 +1043,7 @@ Enable interface{}
 
 Configuration for customers to opt in for the feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#enable IapSettings#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#enable IapSettings#enable}
 
 ---
 
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsCorsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsAccessSettingsCorsSettings {
 	AllowHttpOptions: interface{},
@@ -1079,7 +1079,7 @@ Configuration to allow HTTP OPTIONS calls to skip authorization.
 
 If undefined, IAP will not apply any special logic to OPTIONS requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#allow_http_options IapSettings#allow_http_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#allow_http_options IapSettings#allow_http_options}
 
 ---
 
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsGcipSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsAccessSettingsGcipSettings {
 	LoginPageUri: *string,
@@ -1119,7 +1119,7 @@ Typically, all resources within
 the same project share the same login page, though it could be overridden at the
 sub resource level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#login_page_uri IapSettings#login_page_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#login_page_uri IapSettings#login_page_uri}
 
 ---
 
@@ -1139,7 +1139,7 @@ or in the format of _ to indicate authenticating with GCIP agent flow. If agent 
 is used, tenantIds should only contain one single element, while for tenant flow,
 tenantIds can contain multiple elements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#tenant_ids IapSettings#tenant_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#tenant_ids IapSettings#tenant_ids}
 
 ---
 
@@ -1148,9 +1148,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsAccessSettingsOauthSettings {
+	ClientId: *string,
+	ClientSecret: *string,
 	LoginHint: *string,
 	ProgrammaticClients: *[]*string,
 }
@@ -1160,8 +1162,38 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettings.property.clientId">ClientId</a></code> | <code>*string</code> | OAuth 2.0 client ID used in the OAuth flow to generate an access token. If this field is set, you can skip obtaining the OAuth credentials in this. |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettings.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | OAuth secret paired with client ID. |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettings.property.loginHint">LoginHint</a></code> | <code>*string</code> | Domain hint to send as hd=? |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettings.property.programmaticClients">ProgrammaticClients</a></code> | <code>*[]*string</code> | List of client ids allowed to use IAP programmatically. |
+
+---
+
+##### `ClientId`<sup>Optional</sup> <a name="ClientId" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettings.property.clientId"></a>
+
+```go
+ClientId *string
+```
+
+- *Type:* *string
+
+OAuth 2.0 client ID used in the OAuth flow to generate an access token. If this field is set, you can skip obtaining the OAuth credentials in this.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#client_id IapSettings#client_id}
+
+---
+
+##### `ClientSecret`<sup>Optional</sup> <a name="ClientSecret" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettings.property.clientSecret"></a>
+
+```go
+ClientSecret *string
+```
+
+- *Type:* *string
+
+OAuth secret paired with client ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#client_secret IapSettings#client_secret}
 
 ---
 
@@ -1183,7 +1215,7 @@ since access behavior is managed by IAM policies.
 
 * loginHint setting is not a replacement for access control. Always enforce an appropriate access policy if you want to restrict access to users outside your domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#login_hint IapSettings#login_hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#login_hint IapSettings#login_hint}
 
 ---
 
@@ -1197,7 +1229,7 @@ ProgrammaticClients *[]*string
 
 List of client ids allowed to use IAP programmatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#programmatic_clients IapSettings#programmatic_clients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#programmatic_clients IapSettings#programmatic_clients}
 
 ---
 
@@ -1206,7 +1238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsReauthSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsAccessSettingsReauthSettings {
 	MaxAge: *string,
@@ -1238,7 +1270,7 @@ Reauth session lifetime, how long before a user has to reauthenticate again.
 A duration in seconds with up to nine fractional digits, ending with 's'.
 Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#max_age IapSettings#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#max_age IapSettings#max_age}
 
 ---
 
@@ -1256,7 +1288,7 @@ Reauth method requested. The possible values are:.
 * 'SECURE_KEY': User must use their secure key 2nd factor device.
 * 'ENROLLED_SECOND_FACTORS': User can use any enabled 2nd factor. Possible values: ["LOGIN", "SECURE_KEY", "ENROLLED_SECOND_FACTORS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#method IapSettings#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#method IapSettings#method}
 
 ---
 
@@ -1277,7 +1309,7 @@ The possible values are:
   Effective policy may only be the same or stricter.
 * 'DEFAULT': This policy acts as a default if no other reauth policy is set. Possible values: ["MINIMUM", "DEFAULT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#policy_type IapSettings#policy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#policy_type IapSettings#policy_type}
 
 ---
 
@@ -1286,10 +1318,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsAccessSettingsWorkforceIdentitySettings {
-	Oauth2: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2,
+	Oauth2: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2,
 	WorkforcePools: *[]*string,
 }
 ```
@@ -1313,7 +1345,7 @@ Oauth2 IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2
 
 oauth2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#oauth2 IapSettings#oauth2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#oauth2 IapSettings#oauth2}
 
 ---
 
@@ -1327,7 +1359,7 @@ WorkforcePools *[]*string
 
 The workforce pool resources. Only one workforce pool is accepted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#workforce_pools IapSettings#workforce_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#workforce_pools IapSettings#workforce_pools}
 
 ---
 
@@ -1336,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2 {
 	ClientId: *string,
@@ -1363,7 +1395,7 @@ ClientId *string
 
 The OAuth 2.0 client ID registered in the workforce identity federation OAuth 2.0 Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#client_id IapSettings#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#client_id IapSettings#client_id}
 
 ---
 
@@ -1377,7 +1409,7 @@ ClientSecret *string
 
 Input only. The OAuth 2.0 client secret created while registering the client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#client_secret IapSettings#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#client_secret IapSettings#client_secret}
 
 ---
 
@@ -1386,13 +1418,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsApplicationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsApplicationSettings {
-	AccessDeniedPageSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsApplicationSettingsAccessDeniedPageSettings,
-	AttributePropagationSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsApplicationSettingsAttributePropagationSettings,
+	AccessDeniedPageSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsApplicationSettingsAccessDeniedPageSettings,
+	AttributePropagationSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsApplicationSettingsAttributePropagationSettings,
 	CookieDomain: *string,
-	CsmSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsApplicationSettingsCsmSettings,
+	CsmSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsApplicationSettingsCsmSettings,
 }
 ```
 
@@ -1417,7 +1449,7 @@ AccessDeniedPageSettings IapSettingsApplicationSettingsAccessDeniedPageSettings
 
 access_denied_page_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#access_denied_page_settings IapSettings#access_denied_page_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#access_denied_page_settings IapSettings#access_denied_page_settings}
 
 ---
 
@@ -1431,7 +1463,7 @@ AttributePropagationSettings IapSettingsApplicationSettingsAttributePropagationS
 
 attribute_propagation_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#attribute_propagation_settings IapSettings#attribute_propagation_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#attribute_propagation_settings IapSettings#attribute_propagation_settings}
 
 ---
 
@@ -1448,7 +1480,7 @@ The Domain value to set for cookies generated by IAP.
 This value is not validated by the API,
 but will be ignored at runtime if invalid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#cookie_domain IapSettings#cookie_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#cookie_domain IapSettings#cookie_domain}
 
 ---
 
@@ -1462,7 +1494,7 @@ CsmSettings IapSettingsApplicationSettingsCsmSettings
 
 csm_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#csm_settings IapSettings#csm_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#csm_settings IapSettings#csm_settings}
 
 ---
 
@@ -1471,7 +1503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsApplicationSettingsAccessDeniedPageSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsApplicationSettingsAccessDeniedPageSettings {
 	AccessDeniedPageUri: *string,
@@ -1500,7 +1532,7 @@ AccessDeniedPageUri *string
 
 The URI to be redirected to when access is denied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#access_denied_page_uri IapSettings#access_denied_page_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#access_denied_page_uri IapSettings#access_denied_page_uri}
 
 ---
 
@@ -1514,7 +1546,7 @@ GenerateTroubleshootingUri interface{}
 
 Whether to generate a troubleshooting URL on access denied events to this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#generate_troubleshooting_uri IapSettings#generate_troubleshooting_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#generate_troubleshooting_uri IapSettings#generate_troubleshooting_uri}
 
 ---
 
@@ -1528,7 +1560,7 @@ RemediationTokenGenerationEnabled interface{}
 
 Whether to generate remediation token on access denied events to this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#remediation_token_generation_enabled IapSettings#remediation_token_generation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#remediation_token_generation_enabled IapSettings#remediation_token_generation_enabled}
 
 ---
 
@@ -1537,7 +1569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsApplicationSettingsAttributePropagationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsApplicationSettingsAttributePropagationSettings {
 	Enable: interface{},
@@ -1568,7 +1600,7 @@ Whether the provided attribute propagation settings should be evaluated on user 
 
 If set to true, attributes returned from the expression will be propagated in the set output credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#enable IapSettings#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#enable IapSettings#enable}
 
 ---
 
@@ -1586,7 +1618,7 @@ Must return a list of attributes. A maximum of 45 attributes can
 be selected. Expressions can select different attribute types from attributes:
 attributes.saml_attributes, attributes.iap_attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#expression IapSettings#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#expression IapSettings#expression}
 
 ---
 
@@ -1609,7 +1641,7 @@ Possible values are:
 * 'RCTOKEN': Propagate attributes in the RCToken of the form: "
   additional_claims": { "my_attribute": ["value1", "value2"] } Possible values: ["HEADER", "JWT", "RCTOKEN"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#output_credentials IapSettings#output_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#output_credentials IapSettings#output_credentials}
 
 ---
 
@@ -1618,7 +1650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsApplicationSettingsCsmSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsApplicationSettingsCsmSettings {
 	RctokenAud: *string,
@@ -1643,7 +1675,7 @@ RctokenAud *string
 
 Audience claim set in the generated RCToken. This value is not validated by IAP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#rctoken_aud IapSettings#rctoken_aud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#rctoken_aud IapSettings#rctoken_aud}
 
 ---
 
@@ -1652,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsConfig {
 	Connection: interface{},
@@ -1663,10 +1695,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	AccessSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsAccessSettings,
-	ApplicationSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsApplicationSettings,
+	AccessSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsAccessSettings,
+	ApplicationSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsApplicationSettings,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.iapSettings.IapSettingsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iapSettings.IapSettingsTimeouts,
 }
 ```
 
@@ -1684,7 +1716,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsConfig.property.name">Name</a></code> | <code>*string</code> | The resource name of the IAP protected resource. |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsConfig.property.accessSettings">AccessSettings</a></code> | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettings">IapSettingsAccessSettings</a></code> | access_settings block. |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsConfig.property.applicationSettings">ApplicationSettings</a></code> | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsApplicationSettings">IapSettingsApplicationSettings</a></code> | application_settings block. |
-| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#id IapSettings#id}. |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#id IapSettings#id}. |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsTimeouts">IapSettingsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1783,7 +1815,7 @@ Name can have below resources:
 * projects/{project_id}/iap_web/appengine-{app_id}/services/{service_id}
 * projects/{project_id}/iap_web/appengine-{app_id}/services/{service_id}/version/{version_id}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#name IapSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#name IapSettings#name}
 
 ---
 
@@ -1797,7 +1829,7 @@ AccessSettings IapSettingsAccessSettings
 
 access_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#access_settings IapSettings#access_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#access_settings IapSettings#access_settings}
 
 ---
 
@@ -1811,7 +1843,7 @@ ApplicationSettings IapSettingsApplicationSettings
 
 application_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#application_settings IapSettings#application_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#application_settings IapSettings#application_settings}
 
 ---
 
@@ -1823,7 +1855,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#id IapSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#id IapSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1840,7 +1872,7 @@ Timeouts IapSettingsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#timeouts IapSettings#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#timeouts IapSettings#timeouts}
 
 ---
 
@@ -1849,7 +1881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapSettings.IapSettingsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 &iapsettings.IapSettingsTimeouts {
 	Create: *string,
@@ -1862,9 +1894,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#create IapSettings#create}. |
-| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#delete IapSettings#delete}. |
-| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#update IapSettings#update}. |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#create IapSettings#create}. |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#delete IapSettings#delete}. |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#update IapSettings#update}. |
 
 ---
 
@@ -1876,7 +1908,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#create IapSettings#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#create IapSettings#create}.
 
 ---
 
@@ -1888,7 +1920,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#delete IapSettings#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#delete IapSettings#delete}.
 
 ---
 
@@ -1900,7 +1932,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/iap_settings#update IapSettings#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_settings#update IapSettings#update}.
 
 ---
 
@@ -1911,7 +1943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsAccessSettingsAllowedDomainsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsAllowedDomainsSettingsOutputReference
 ```
@@ -2218,7 +2250,7 @@ func InternalValue() IapSettingsAccessSettingsAllowedDomainsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsCorsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsAccessSettingsCorsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsCorsSettingsOutputReference
 ```
@@ -2496,7 +2528,7 @@ func InternalValue() IapSettingsAccessSettingsCorsSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsGcipSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsAccessSettingsGcipSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsGcipSettingsOutputReference
 ```
@@ -2803,7 +2835,7 @@ func InternalValue() IapSettingsAccessSettingsGcipSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsAccessSettingsOauthSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsOauthSettingsOutputReference
 ```
@@ -2848,6 +2880,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.resetClientId">ResetClientId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.resetClientSecret">ResetClientSecret</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.resetLoginHint">ResetLoginHint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.resetProgrammaticClients">ResetProgrammaticClients</a></code> | *No description.* |
 
@@ -3003,6 +3037,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetClientId` <a name="ResetClientId" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.resetClientId"></a>
+
+```go
+func ResetClientId()
+```
+
+##### `ResetClientSecret` <a name="ResetClientSecret" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.resetClientSecret"></a>
+
+```go
+func ResetClientSecret()
+```
+
 ##### `ResetLoginHint` <a name="ResetLoginHint" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.resetLoginHint"></a>
 
 ```go
@@ -3022,8 +3068,13 @@ func ResetProgrammaticClients()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.clientSecretSha256">ClientSecretSha256</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.clientIdInput">ClientIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.clientSecretInput">ClientSecretInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.loginHintInput">LoginHintInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.programmaticClientsInput">ProgrammaticClientsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.clientId">ClientId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.clientSecret">ClientSecret</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.loginHint">LoginHint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.programmaticClients">ProgrammaticClients</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettings">IapSettingsAccessSettingsOauthSettings</a></code> | *No description.* |
@@ -3054,6 +3105,36 @@ func Fqn() *string
 
 ---
 
+##### `ClientSecretSha256`<sup>Required</sup> <a name="ClientSecretSha256" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.clientSecretSha256"></a>
+
+```go
+func ClientSecretSha256() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ClientIdInput`<sup>Optional</sup> <a name="ClientIdInput" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.clientIdInput"></a>
+
+```go
+func ClientIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ClientSecretInput`<sup>Optional</sup> <a name="ClientSecretInput" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.clientSecretInput"></a>
+
+```go
+func ClientSecretInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `LoginHintInput`<sup>Optional</sup> <a name="LoginHintInput" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.loginHintInput"></a>
 
 ```go
@@ -3071,6 +3152,26 @@ func ProgrammaticClientsInput() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `ClientId`<sup>Required</sup> <a name="ClientId" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.clientId"></a>
+
+```go
+func ClientId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ClientSecret`<sup>Required</sup> <a name="ClientSecret" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOauthSettingsOutputReference.property.clientSecret"></a>
+
+```go
+func ClientSecret() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -3110,7 +3211,7 @@ func InternalValue() IapSettingsAccessSettingsOauthSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsAccessSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsOutputReference
 ```
@@ -3640,7 +3741,7 @@ func InternalValue() IapSettingsAccessSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsReauthSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsAccessSettingsReauthSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsReauthSettingsOutputReference
 ```
@@ -3955,7 +4056,7 @@ func InternalValue() IapSettingsAccessSettingsReauthSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2OutputReference
 ```
@@ -4273,7 +4374,7 @@ func InternalValue() IapSettingsAccessSettingsWorkforceIdentitySettingsOauth2
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsAccessSettingsWorkforceIdentitySettingsOutputReference
 ```
@@ -4593,7 +4694,7 @@ func InternalValue() IapSettingsAccessSettingsWorkforceIdentitySettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference
 ```
@@ -4929,7 +5030,7 @@ func InternalValue() IapSettingsApplicationSettingsAccessDeniedPageSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsApplicationSettingsAttributePropagationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsApplicationSettingsAttributePropagationSettingsOutputReference
 ```
@@ -5265,7 +5366,7 @@ func InternalValue() IapSettingsApplicationSettingsAttributePropagationSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsApplicationSettingsCsmSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsApplicationSettingsCsmSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsApplicationSettingsCsmSettingsOutputReference
 ```
@@ -5543,7 +5644,7 @@ func InternalValue() IapSettingsApplicationSettingsCsmSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsApplicationSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsApplicationSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsApplicationSettingsOutputReference
 ```
@@ -5947,7 +6048,7 @@ func InternalValue() IapSettingsApplicationSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapSettings.IapSettingsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/iapsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iapsettings"
 
 iapsettings.NewIapSettingsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapSettingsTimeoutsOutputReference
 ```

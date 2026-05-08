@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,50 @@ import * as cdktn from 'cdktn';
 
 export interface BigtableTableIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#id BigtableTableIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#id BigtableTableIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#instance BigtableTableIamMember#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#instance_name BigtableTableIamMember#instance_name}
   */
-  readonly instance?: string;
+  readonly instanceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#instance_name BigtableTableIamMember#instance_name}
-  */
-  readonly instanceName?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#member BigtableTableIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#member BigtableTableIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#project BigtableTableIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#project BigtableTableIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#role BigtableTableIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#role BigtableTableIamMember#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#table BigtableTableIamMember#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#table BigtableTableIamMember#table}
   */
   readonly table: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#condition BigtableTableIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#condition BigtableTableIamMember#condition}
   */
   readonly condition?: BigtableTableIamMemberCondition;
 }
 export interface BigtableTableIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#description BigtableTableIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#description BigtableTableIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#expression BigtableTableIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#expression BigtableTableIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#title BigtableTableIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#title BigtableTableIamMember#title}
   */
   readonly title: string;
 }
@@ -196,7 +192,7 @@ export class BigtableTableIamMemberConditionOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member google_bigtable_table_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member google_bigtable_table_iam_member}
 */
 export class BigtableTableIamMember extends cdktn.TerraformResource {
 
@@ -212,7 +208,7 @@ export class BigtableTableIamMember extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BigtableTableIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BigtableTableIamMember to import
-  * @param importFromId The id of the existing BigtableTableIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BigtableTableIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BigtableTableIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -224,7 +220,7 @@ export class BigtableTableIamMember extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigtable_table_iam_member google_bigtable_table_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/bigtable_table_iam_member google_bigtable_table_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,8 +231,8 @@ export class BigtableTableIamMember extends cdktn.TerraformResource {
       terraformResourceType: 'google_bigtable_table_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -247,7 +243,6 @@ export class BigtableTableIamMember extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._id = config.id;
-    this._instance = config.instance;
     this._instanceName = config.instanceName;
     this._member = config.member;
     this._project = config.project;
@@ -281,32 +276,13 @@ export class BigtableTableIamMember extends cdktn.TerraformResource {
     return this._id;
   }
 
-  // instance - computed: true, optional: true, required: false
-  private _instance?: string; 
-  public get instance() {
-    return this.getStringAttribute('instance');
-  }
-  public set instance(value: string) {
-    this._instance = value;
-  }
-  public resetInstance() {
-    this._instance = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get instanceInput() {
-    return this._instance;
-  }
-
-  // instance_name - computed: true, optional: true, required: false
+  // instance_name - computed: false, optional: false, required: true
   private _instanceName?: string; 
   public get instanceName() {
     return this.getStringAttribute('instance_name');
   }
   public set instanceName(value: string) {
     this._instanceName = value;
-  }
-  public resetInstanceName() {
-    this._instanceName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get instanceNameInput() {
@@ -391,7 +367,6 @@ export class BigtableTableIamMember extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktn.stringToTerraform(this._id),
-      instance: cdktn.stringToTerraform(this._instance),
       instance_name: cdktn.stringToTerraform(this._instanceName),
       member: cdktn.stringToTerraform(this._member),
       project: cdktn.stringToTerraform(this._project),
@@ -405,12 +380,6 @@ export class BigtableTableIamMember extends cdktn.TerraformResource {
     const attrs = {
       id: {
         value: cdktn.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      instance: {
-        value: cdktn.stringToHclTerraform(this._instance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

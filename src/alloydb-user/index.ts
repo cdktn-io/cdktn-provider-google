@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,17 +16,17 @@ export interface AlloydbUserConfig extends cdktn.TerraformMetaArguments {
   * Identifies the alloydb cluster. Must be in the format
   * 'projects/{project}/locations/{location}/clusters/{cluster_id}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user#cluster AlloydbUser#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#cluster AlloydbUser#cluster}
   */
   readonly cluster: string;
   /**
   * List of database roles this database user has.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user#database_roles AlloydbUser#database_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#database_roles AlloydbUser#database_roles}
   */
   readonly databaseRoles?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user#id AlloydbUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#id AlloydbUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,39 +35,51 @@ export interface AlloydbUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * Password for this database user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user#password AlloydbUser#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#password AlloydbUser#password}
   */
   readonly password?: string;
   /**
+  * Password for this database user.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#password_wo AlloydbUser#password_wo}
+  */
+  readonly passwordWo?: string;
+  /**
+  * Triggers update of 'password_wo' write-only. Increment this value when an update to 'password_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#password_wo_version AlloydbUser#password_wo_version}
+  */
+  readonly passwordWoVersion?: string;
+  /**
   * The database role name of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user#user_id AlloydbUser#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#user_id AlloydbUser#user_id}
   */
   readonly userId: string;
   /**
   * The type of this user. Possible values: ["ALLOYDB_BUILT_IN", "ALLOYDB_IAM_USER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user#user_type AlloydbUser#user_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#user_type AlloydbUser#user_type}
   */
   readonly userType: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user#timeouts AlloydbUser#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#timeouts AlloydbUser#timeouts}
   */
   readonly timeouts?: AlloydbUserTimeouts;
 }
 export interface AlloydbUserTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user#create AlloydbUser#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#create AlloydbUser#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user#delete AlloydbUser#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#delete AlloydbUser#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user#update AlloydbUser#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#update AlloydbUser#update}
   */
   readonly update?: string;
 }
@@ -219,7 +231,7 @@ export class AlloydbUserTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user google_alloydb_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user google_alloydb_user}
 */
 export class AlloydbUser extends cdktn.TerraformResource {
 
@@ -235,7 +247,7 @@ export class AlloydbUser extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AlloydbUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AlloydbUser to import
-  * @param importFromId The id of the existing AlloydbUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AlloydbUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AlloydbUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -247,7 +259,7 @@ export class AlloydbUser extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/alloydb_user google_alloydb_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/alloydb_user google_alloydb_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -258,8 +270,8 @@ export class AlloydbUser extends cdktn.TerraformResource {
       terraformResourceType: 'google_alloydb_user',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -273,6 +285,8 @@ export class AlloydbUser extends cdktn.TerraformResource {
     this._databaseRoles = config.databaseRoles;
     this._id = config.id;
     this._password = config.password;
+    this._passwordWo = config.passwordWo;
+    this._passwordWoVersion = config.passwordWoVersion;
     this._userId = config.userId;
     this._userType = config.userType;
     this._timeouts.internalValue = config.timeouts;
@@ -348,6 +362,38 @@ export class AlloydbUser extends cdktn.TerraformResource {
     return this._password;
   }
 
+  // password_wo - computed: false, optional: true, required: false
+  private _passwordWo?: string; 
+  public get passwordWo() {
+    return this.getStringAttribute('password_wo');
+  }
+  public set passwordWo(value: string) {
+    this._passwordWo = value;
+  }
+  public resetPasswordWo() {
+    this._passwordWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordWoInput() {
+    return this._passwordWo;
+  }
+
+  // password_wo_version - computed: false, optional: true, required: false
+  private _passwordWoVersion?: string; 
+  public get passwordWoVersion() {
+    return this.getStringAttribute('password_wo_version');
+  }
+  public set passwordWoVersion(value: string) {
+    this._passwordWoVersion = value;
+  }
+  public resetPasswordWoVersion() {
+    this._passwordWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordWoVersionInput() {
+    return this._passwordWoVersion;
+  }
+
   // user_id - computed: false, optional: false, required: true
   private _userId?: string; 
   public get userId() {
@@ -400,6 +446,8 @@ export class AlloydbUser extends cdktn.TerraformResource {
       database_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._databaseRoles),
       id: cdktn.stringToTerraform(this._id),
       password: cdktn.stringToTerraform(this._password),
+      password_wo: cdktn.stringToTerraform(this._passwordWo),
+      password_wo_version: cdktn.stringToTerraform(this._passwordWoVersion),
       user_id: cdktn.stringToTerraform(this._userId),
       user_type: cdktn.stringToTerraform(this._userType),
       timeouts: alloydbUserTimeoutsToTerraform(this._timeouts.internalValue),
@@ -428,6 +476,18 @@ export class AlloydbUser extends cdktn.TerraformResource {
       },
       password: {
         value: cdktn.stringToHclTerraform(this._password),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_wo: {
+        value: cdktn.stringToHclTerraform(this._passwordWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_wo_version: {
+        value: cdktn.stringToHclTerraform(this._passwordWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

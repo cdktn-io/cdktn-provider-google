@@ -4,7 +4,7 @@
 
 ### FirestoreDatabase <a name="FirestoreDatabase" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database google_firestore_database}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database google_firestore_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer"></a>
 
@@ -30,9 +30,12 @@ firestoreDatabase.FirestoreDatabase(
   database_edition: str = None,
   delete_protection_state: str = None,
   deletion_policy: str = None,
+  firestore_data_access_mode: str = None,
   id: str = None,
+  mongodb_compatible_data_access_mode: str = None,
   point_in_time_recovery_enablement: str = None,
   project: str = None,
+  realtime_updates_mode: str = None,
   tags: typing.Mapping[str] = None,
   timeouts: FirestoreDatabaseTimeouts = None
 )
@@ -55,12 +58,15 @@ firestoreDatabase.FirestoreDatabase(
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.appEngineIntegrationMode">app_engine_integration_mode</a></code> | <code>str</code> | The App Engine integration mode to use for this database. Possible values: ["ENABLED", "DISABLED"]. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.cmekConfig">cmek_config</a></code> | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseCmekConfig">FirestoreDatabaseCmekConfig</a></code> | cmek_config block. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.concurrencyMode">concurrency_mode</a></code> | <code>str</code> | The concurrency control mode to use for this database. Possible values: ["OPTIMISTIC", "PESSIMISTIC", "OPTIMISTIC_WITH_ENTITY_GROUPS"]. |
-| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.databaseEdition">database_edition</a></code> | <code>str</code> | The database edition. Possible values: ["STANDARD", "ENTERPRISE"]. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.databaseEdition">database_edition</a></code> | <code>str</code> | The database edition. When set to 'ENTERPRISE', then type must be set to 'FIRESTORE_NATIVE'. Possible values: ["STANDARD", "ENTERPRISE"]. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.deleteProtectionState">delete_protection_state</a></code> | <code>str</code> | State of delete protection for the database. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Deletion behavior for this database. |
-| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#id FirestoreDatabase#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.firestoreDataAccessMode">firestore_data_access_mode</a></code> | <code>str</code> | The Firestore API data access mode to use for this database. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#id FirestoreDatabase#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.mongodbCompatibleDataAccessMode">mongodb_compatible_data_access_mode</a></code> | <code>str</code> | The MongoDB compatible API data access mode to use for this database. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.pointInTimeRecoveryEnablement">point_in_time_recovery_enablement</a></code> | <code>str</code> | Whether to enable the PITR feature on this database. |
-| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#project FirestoreDatabase#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#project FirestoreDatabase#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.realtimeUpdatesMode">realtime_updates_mode</a></code> | <code>str</code> | The Realtime Updates mode to use for this database. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Input only. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseTimeouts">FirestoreDatabaseTimeouts</a></code> | timeouts block. |
 
@@ -132,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 The location of the database. Available locations are listed at https://cloud.google.com/firestore/docs/locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#location_id FirestoreDatabase#location_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#location_id FirestoreDatabase#location_id}
 
 ---
 
@@ -148,7 +154,7 @@ a letter and the last a letter or a number. Must not be
 UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
 "(default)" database id is also valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#name FirestoreDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#name FirestoreDatabase#name}
 
 ---
 
@@ -158,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of the database. See https://cloud.google.com/datastore/docs/firestore-or-datastore for information about how to choose. Possible values: ["FIRESTORE_NATIVE", "DATASTORE_MODE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#type FirestoreDatabase#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#type FirestoreDatabase#type}
 
 ---
 
@@ -168,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The App Engine integration mode to use for this database. Possible values: ["ENABLED", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#app_engine_integration_mode FirestoreDatabase#app_engine_integration_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#app_engine_integration_mode FirestoreDatabase#app_engine_integration_mode}
 
 ---
 
@@ -178,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cmek_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#cmek_config FirestoreDatabase#cmek_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#cmek_config FirestoreDatabase#cmek_config}
 
 ---
 
@@ -188,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The concurrency control mode to use for this database. Possible values: ["OPTIMISTIC", "PESSIMISTIC", "OPTIMISTIC_WITH_ENTITY_GROUPS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#concurrency_mode FirestoreDatabase#concurrency_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#concurrency_mode FirestoreDatabase#concurrency_mode}
 
 ---
 
@@ -196,9 +202,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-The database edition. Possible values: ["STANDARD", "ENTERPRISE"].
+The database edition. When set to 'ENTERPRISE', then type must be set to 'FIRESTORE_NATIVE'. Possible values: ["STANDARD", "ENTERPRISE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#database_edition FirestoreDatabase#database_edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#database_edition FirestoreDatabase#database_edition}
 
 ---
 
@@ -212,7 +218,7 @@ When delete protection is enabled, this database cannot be deleted.
 The default value is 'DELETE_PROTECTION_STATE_UNSPECIFIED', which is currently equivalent to 'DELETE_PROTECTION_DISABLED'.
 **Note:** Additionally, to delete this database using 'terraform destroy', 'deletion_policy' must be set to 'DELETE'. Possible values: ["DELETE_PROTECTION_STATE_UNSPECIFIED", "DELETE_PROTECTION_ENABLED", "DELETE_PROTECTION_DISABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#delete_protection_state FirestoreDatabase#delete_protection_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#delete_protection_state FirestoreDatabase#delete_protection_state}
 
 ---
 
@@ -227,7 +233,20 @@ If the deletion policy is 'DELETE', the database will both be removed from Terra
 The default value is 'ABANDON'.
 See also 'delete_protection'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#deletion_policy FirestoreDatabase#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#deletion_policy FirestoreDatabase#deletion_policy}
+
+---
+
+##### `firestore_data_access_mode`<sup>Optional</sup> <a name="firestore_data_access_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.firestoreDataAccessMode"></a>
+
+- *Type:* str
+
+The Firestore API data access mode to use for this database.
+
+Can only be
+specified for 'ENTERPRISE' edition databases. Possible values: ["DATA_ACCESS_MODE_ENABLED", "DATA_ACCESS_MODE_DISABLED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#firestore_data_access_mode FirestoreDatabase#firestore_data_access_mode}
 
 ---
 
@@ -235,10 +254,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#id FirestoreDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#id FirestoreDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `mongodb_compatible_data_access_mode`<sup>Optional</sup> <a name="mongodb_compatible_data_access_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.mongodbCompatibleDataAccessMode"></a>
+
+- *Type:* str
+
+The MongoDB compatible API data access mode to use for this database.
+
+Can
+only be specified for 'ENTERPRISE' edition databases. Possible values: ["DATA_ACCESS_MODE_ENABLED", "DATA_ACCESS_MODE_DISABLED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#mongodb_compatible_data_access_mode FirestoreDatabase#mongodb_compatible_data_access_mode}
 
 ---
 
@@ -253,7 +285,7 @@ versionRetentionPeriod and earliestVersionTime can be used to determine the supp
 and reads against 1-minute snapshots beyond 1 hour and within 7 days.
 If 'POINT_IN_TIME_RECOVERY_DISABLED' is selected, reads are supported on any version of the data from within the past 1 hour. Default value: "POINT_IN_TIME_RECOVERY_DISABLED" Possible values: ["POINT_IN_TIME_RECOVERY_ENABLED", "POINT_IN_TIME_RECOVERY_DISABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#point_in_time_recovery_enablement FirestoreDatabase#point_in_time_recovery_enablement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#point_in_time_recovery_enablement FirestoreDatabase#point_in_time_recovery_enablement}
 
 ---
 
@@ -261,7 +293,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#project FirestoreDatabase#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#project FirestoreDatabase#project}.
+
+---
+
+##### `realtime_updates_mode`<sup>Optional</sup> <a name="realtime_updates_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.Initializer.parameter.realtimeUpdatesMode"></a>
+
+- *Type:* str
+
+The Realtime Updates mode to use for this database.
+
+Can only be specified
+for 'ENTERPRISE' edition databases. Possible values: ["REALTIME_UPDATES_MODE_ENABLED", "REALTIME_UPDATES_MODE_DISABLED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#realtime_updates_mode FirestoreDatabase#realtime_updates_mode}
 
 ---
 
@@ -278,7 +323,7 @@ The field is ignored when empty. The field is immutable and causes
 resource replacement when mutated. To apply tags to an existing resource, see
 the 'google_tags_tag_value' resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#tags FirestoreDatabase#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#tags FirestoreDatabase#tags}
 
 ---
 
@@ -288,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#timeouts FirestoreDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#timeouts FirestoreDatabase#timeouts}
 
 ---
 
@@ -328,9 +373,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetDatabaseEdition">reset_database_edition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetDeleteProtectionState">reset_delete_protection_state</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetFirestoreDataAccessMode">reset_firestore_data_access_mode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetMongodbCompatibleDataAccessMode">reset_mongodb_compatible_data_access_mode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetPointInTimeRecoveryEnablement">reset_point_in_time_recovery_enablement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetRealtimeUpdatesMode">reset_realtime_updates_mode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
@@ -712,7 +760,7 @@ This value should be the KMS key resource ID in the format of
 How to retrieve this resource ID is listed at
 https://cloud.google.com/kms/docs/getting-resource-ids#getting_the_id_for_a_key_and_version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#kms_key_name FirestoreDatabase#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#kms_key_name FirestoreDatabase#kms_key_name}
 
 ---
 
@@ -730,7 +778,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#create FirestoreDatabase#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#create FirestoreDatabase#create}.
 
 ---
 
@@ -738,7 +786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#delete FirestoreDatabase#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#delete FirestoreDatabase#delete}.
 
 ---
 
@@ -746,7 +794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#update FirestoreDatabase#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#update FirestoreDatabase#update}.
 
 ---
 
@@ -786,10 +834,22 @@ def reset_delete_protection_state() -> None
 def reset_deletion_policy() -> None
 ```
 
+##### `reset_firestore_data_access_mode` <a name="reset_firestore_data_access_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetFirestoreDataAccessMode"></a>
+
+```python
+def reset_firestore_data_access_mode() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetId"></a>
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_mongodb_compatible_data_access_mode` <a name="reset_mongodb_compatible_data_access_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetMongodbCompatibleDataAccessMode"></a>
+
+```python
+def reset_mongodb_compatible_data_access_mode() -> None
 ```
 
 ##### `reset_point_in_time_recovery_enablement` <a name="reset_point_in_time_recovery_enablement" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetPointInTimeRecoveryEnablement"></a>
@@ -802,6 +862,12 @@ def reset_point_in_time_recovery_enablement() -> None
 
 ```python
 def reset_project() -> None
+```
+
+##### `reset_realtime_updates_mode` <a name="reset_realtime_updates_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetRealtimeUpdatesMode"></a>
+
+```python
+def reset_realtime_updates_mode() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.resetTags"></a>
@@ -930,7 +996,7 @@ The construct id used in the generated config for the FirestoreDatabase to impor
 
 The id of the existing FirestoreDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,11 +1041,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.databaseEditionInput">database_edition_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.deleteProtectionStateInput">delete_protection_state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.firestoreDataAccessModeInput">firestore_data_access_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.locationIdInput">location_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.mongodbCompatibleDataAccessModeInput">mongodb_compatible_data_access_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.pointInTimeRecoveryEnablementInput">point_in_time_recovery_enablement_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.realtimeUpdatesModeInput">realtime_updates_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseTimeouts">FirestoreDatabaseTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
@@ -988,11 +1057,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.databaseEdition">database_edition</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.deleteProtectionState">delete_protection_state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.firestoreDataAccessMode">firestore_data_access_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.locationId">location_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.mongodbCompatibleDataAccessMode">mongodb_compatible_data_access_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.pointInTimeRecoveryEnablement">point_in_time_recovery_enablement</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.realtimeUpdatesMode">realtime_updates_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.type">type</a></code> | <code>str</code> | *No description.* |
 
@@ -1290,6 +1362,16 @@ deletion_policy_input: str
 
 ---
 
+##### `firestore_data_access_mode_input`<sup>Optional</sup> <a name="firestore_data_access_mode_input" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.firestoreDataAccessModeInput"></a>
+
+```python
+firestore_data_access_mode_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.idInput"></a>
 
 ```python
@@ -1304,6 +1386,16 @@ id_input: str
 
 ```python
 location_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `mongodb_compatible_data_access_mode_input`<sup>Optional</sup> <a name="mongodb_compatible_data_access_mode_input" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.mongodbCompatibleDataAccessModeInput"></a>
+
+```python
+mongodb_compatible_data_access_mode_input: str
 ```
 
 - *Type:* str
@@ -1334,6 +1426,16 @@ point_in_time_recovery_enablement_input: str
 
 ```python
 project_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `realtime_updates_mode_input`<sup>Optional</sup> <a name="realtime_updates_mode_input" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.realtimeUpdatesModeInput"></a>
+
+```python
+realtime_updates_mode_input: str
 ```
 
 - *Type:* str
@@ -1420,6 +1522,16 @@ deletion_policy: str
 
 ---
 
+##### `firestore_data_access_mode`<sup>Required</sup> <a name="firestore_data_access_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.firestoreDataAccessMode"></a>
+
+```python
+firestore_data_access_mode: str
+```
+
+- *Type:* str
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.id"></a>
 
 ```python
@@ -1434,6 +1546,16 @@ id: str
 
 ```python
 location_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `mongodb_compatible_data_access_mode`<sup>Required</sup> <a name="mongodb_compatible_data_access_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.mongodbCompatibleDataAccessMode"></a>
+
+```python
+mongodb_compatible_data_access_mode: str
 ```
 
 - *Type:* str
@@ -1464,6 +1586,16 @@ point_in_time_recovery_enablement: str
 
 ```python
 project: str
+```
+
+- *Type:* str
+
+---
+
+##### `realtime_updates_mode`<sup>Required</sup> <a name="realtime_updates_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabase.property.realtimeUpdatesMode"></a>
+
+```python
+realtime_updates_mode: str
 ```
 
 - *Type:* str
@@ -1554,7 +1686,7 @@ This value should be the KMS key resource ID in the format of
 How to retrieve this resource ID is listed at
 https://cloud.google.com/kms/docs/getting-resource-ids#getting_the_id_for_a_key_and_version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#kms_key_name FirestoreDatabase#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#kms_key_name FirestoreDatabase#kms_key_name}
 
 ---
 
@@ -1582,9 +1714,12 @@ firestoreDatabase.FirestoreDatabaseConfig(
   database_edition: str = None,
   delete_protection_state: str = None,
   deletion_policy: str = None,
+  firestore_data_access_mode: str = None,
   id: str = None,
+  mongodb_compatible_data_access_mode: str = None,
   point_in_time_recovery_enablement: str = None,
   project: str = None,
+  realtime_updates_mode: str = None,
   tags: typing.Mapping[str] = None,
   timeouts: FirestoreDatabaseTimeouts = None
 )
@@ -1607,12 +1742,15 @@ firestoreDatabase.FirestoreDatabaseConfig(
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.appEngineIntegrationMode">app_engine_integration_mode</a></code> | <code>str</code> | The App Engine integration mode to use for this database. Possible values: ["ENABLED", "DISABLED"]. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.cmekConfig">cmek_config</a></code> | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseCmekConfig">FirestoreDatabaseCmekConfig</a></code> | cmek_config block. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.concurrencyMode">concurrency_mode</a></code> | <code>str</code> | The concurrency control mode to use for this database. Possible values: ["OPTIMISTIC", "PESSIMISTIC", "OPTIMISTIC_WITH_ENTITY_GROUPS"]. |
-| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.databaseEdition">database_edition</a></code> | <code>str</code> | The database edition. Possible values: ["STANDARD", "ENTERPRISE"]. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.databaseEdition">database_edition</a></code> | <code>str</code> | The database edition. When set to 'ENTERPRISE', then type must be set to 'FIRESTORE_NATIVE'. Possible values: ["STANDARD", "ENTERPRISE"]. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.deleteProtectionState">delete_protection_state</a></code> | <code>str</code> | State of delete protection for the database. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Deletion behavior for this database. |
-| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#id FirestoreDatabase#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.firestoreDataAccessMode">firestore_data_access_mode</a></code> | <code>str</code> | The Firestore API data access mode to use for this database. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#id FirestoreDatabase#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.mongodbCompatibleDataAccessMode">mongodb_compatible_data_access_mode</a></code> | <code>str</code> | The MongoDB compatible API data access mode to use for this database. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.pointInTimeRecoveryEnablement">point_in_time_recovery_enablement</a></code> | <code>str</code> | Whether to enable the PITR feature on this database. |
-| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#project FirestoreDatabase#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#project FirestoreDatabase#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.realtimeUpdatesMode">realtime_updates_mode</a></code> | <code>str</code> | The Realtime Updates mode to use for this database. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Input only. |
 | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseTimeouts">FirestoreDatabaseTimeouts</a></code> | timeouts block. |
 
@@ -1698,7 +1836,7 @@ location_id: str
 
 The location of the database. Available locations are listed at https://cloud.google.com/firestore/docs/locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#location_id FirestoreDatabase#location_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#location_id FirestoreDatabase#location_id}
 
 ---
 
@@ -1718,7 +1856,7 @@ a letter and the last a letter or a number. Must not be
 UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
 "(default)" database id is also valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#name FirestoreDatabase#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#name FirestoreDatabase#name}
 
 ---
 
@@ -1732,7 +1870,7 @@ type: str
 
 The type of the database. See https://cloud.google.com/datastore/docs/firestore-or-datastore for information about how to choose. Possible values: ["FIRESTORE_NATIVE", "DATASTORE_MODE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#type FirestoreDatabase#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#type FirestoreDatabase#type}
 
 ---
 
@@ -1746,7 +1884,7 @@ app_engine_integration_mode: str
 
 The App Engine integration mode to use for this database. Possible values: ["ENABLED", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#app_engine_integration_mode FirestoreDatabase#app_engine_integration_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#app_engine_integration_mode FirestoreDatabase#app_engine_integration_mode}
 
 ---
 
@@ -1760,7 +1898,7 @@ cmek_config: FirestoreDatabaseCmekConfig
 
 cmek_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#cmek_config FirestoreDatabase#cmek_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#cmek_config FirestoreDatabase#cmek_config}
 
 ---
 
@@ -1774,7 +1912,7 @@ concurrency_mode: str
 
 The concurrency control mode to use for this database. Possible values: ["OPTIMISTIC", "PESSIMISTIC", "OPTIMISTIC_WITH_ENTITY_GROUPS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#concurrency_mode FirestoreDatabase#concurrency_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#concurrency_mode FirestoreDatabase#concurrency_mode}
 
 ---
 
@@ -1786,9 +1924,9 @@ database_edition: str
 
 - *Type:* str
 
-The database edition. Possible values: ["STANDARD", "ENTERPRISE"].
+The database edition. When set to 'ENTERPRISE', then type must be set to 'FIRESTORE_NATIVE'. Possible values: ["STANDARD", "ENTERPRISE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#database_edition FirestoreDatabase#database_edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#database_edition FirestoreDatabase#database_edition}
 
 ---
 
@@ -1806,7 +1944,7 @@ When delete protection is enabled, this database cannot be deleted.
 The default value is 'DELETE_PROTECTION_STATE_UNSPECIFIED', which is currently equivalent to 'DELETE_PROTECTION_DISABLED'.
 **Note:** Additionally, to delete this database using 'terraform destroy', 'deletion_policy' must be set to 'DELETE'. Possible values: ["DELETE_PROTECTION_STATE_UNSPECIFIED", "DELETE_PROTECTION_ENABLED", "DELETE_PROTECTION_DISABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#delete_protection_state FirestoreDatabase#delete_protection_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#delete_protection_state FirestoreDatabase#delete_protection_state}
 
 ---
 
@@ -1825,7 +1963,24 @@ If the deletion policy is 'DELETE', the database will both be removed from Terra
 The default value is 'ABANDON'.
 See also 'delete_protection'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#deletion_policy FirestoreDatabase#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#deletion_policy FirestoreDatabase#deletion_policy}
+
+---
+
+##### `firestore_data_access_mode`<sup>Optional</sup> <a name="firestore_data_access_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.firestoreDataAccessMode"></a>
+
+```python
+firestore_data_access_mode: str
+```
+
+- *Type:* str
+
+The Firestore API data access mode to use for this database.
+
+Can only be
+specified for 'ENTERPRISE' edition databases. Possible values: ["DATA_ACCESS_MODE_ENABLED", "DATA_ACCESS_MODE_DISABLED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#firestore_data_access_mode FirestoreDatabase#firestore_data_access_mode}
 
 ---
 
@@ -1837,10 +1992,27 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#id FirestoreDatabase#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#id FirestoreDatabase#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `mongodb_compatible_data_access_mode`<sup>Optional</sup> <a name="mongodb_compatible_data_access_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.mongodbCompatibleDataAccessMode"></a>
+
+```python
+mongodb_compatible_data_access_mode: str
+```
+
+- *Type:* str
+
+The MongoDB compatible API data access mode to use for this database.
+
+Can
+only be specified for 'ENTERPRISE' edition databases. Possible values: ["DATA_ACCESS_MODE_ENABLED", "DATA_ACCESS_MODE_DISABLED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#mongodb_compatible_data_access_mode FirestoreDatabase#mongodb_compatible_data_access_mode}
 
 ---
 
@@ -1859,7 +2031,7 @@ versionRetentionPeriod and earliestVersionTime can be used to determine the supp
 and reads against 1-minute snapshots beyond 1 hour and within 7 days.
 If 'POINT_IN_TIME_RECOVERY_DISABLED' is selected, reads are supported on any version of the data from within the past 1 hour. Default value: "POINT_IN_TIME_RECOVERY_DISABLED" Possible values: ["POINT_IN_TIME_RECOVERY_ENABLED", "POINT_IN_TIME_RECOVERY_DISABLED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#point_in_time_recovery_enablement FirestoreDatabase#point_in_time_recovery_enablement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#point_in_time_recovery_enablement FirestoreDatabase#point_in_time_recovery_enablement}
 
 ---
 
@@ -1871,7 +2043,24 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#project FirestoreDatabase#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#project FirestoreDatabase#project}.
+
+---
+
+##### `realtime_updates_mode`<sup>Optional</sup> <a name="realtime_updates_mode" id="@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseConfig.property.realtimeUpdatesMode"></a>
+
+```python
+realtime_updates_mode: str
+```
+
+- *Type:* str
+
+The Realtime Updates mode to use for this database.
+
+Can only be specified
+for 'ENTERPRISE' edition databases. Possible values: ["REALTIME_UPDATES_MODE_ENABLED", "REALTIME_UPDATES_MODE_DISABLED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#realtime_updates_mode FirestoreDatabase#realtime_updates_mode}
 
 ---
 
@@ -1892,7 +2081,7 @@ The field is ignored when empty. The field is immutable and causes
 resource replacement when mutated. To apply tags to an existing resource, see
 the 'google_tags_tag_value' resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#tags FirestoreDatabase#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#tags FirestoreDatabase#tags}
 
 ---
 
@@ -1906,7 +2095,7 @@ timeouts: FirestoreDatabaseTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#timeouts FirestoreDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#timeouts FirestoreDatabase#timeouts}
 
 ---
 
@@ -1928,9 +2117,9 @@ firestoreDatabase.FirestoreDatabaseTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#create FirestoreDatabase#create}. |
-| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#delete FirestoreDatabase#delete}. |
-| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#update FirestoreDatabase#update}. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#create FirestoreDatabase#create}. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#delete FirestoreDatabase#delete}. |
+| <code><a href="#@cdktn/provider-google.firestoreDatabase.FirestoreDatabaseTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#update FirestoreDatabase#update}. |
 
 ---
 
@@ -1942,7 +2131,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#create FirestoreDatabase#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#create FirestoreDatabase#create}.
 
 ---
 
@@ -1954,7 +2143,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#delete FirestoreDatabase#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#delete FirestoreDatabase#delete}.
 
 ---
 
@@ -1966,7 +2155,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/firestore_database#update FirestoreDatabase#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firestore_database#update FirestoreDatabase#update}.
 
 ---
 

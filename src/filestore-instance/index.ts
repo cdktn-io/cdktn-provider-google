@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,29 @@ export interface FilestoreInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Indicates whether the instance is protected against deletion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#deletion_protection_enabled FilestoreInstance#deletion_protection_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#deletion_protection_enabled FilestoreInstance#deletion_protection_enabled}
   */
   readonly deletionProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * The reason for enabling deletion protection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#deletion_protection_reason FilestoreInstance#deletion_protection_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#deletion_protection_reason FilestoreInstance#deletion_protection_reason}
   */
   readonly deletionProtectionReason?: string;
   /**
   * A description of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#description FilestoreInstance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#description FilestoreInstance#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#id FilestoreInstance#id}
+  * The desired_replica_state field controls the state of a replica. Terraform will attempt to make the actual state of the replica match the desired state. Default value: "READY" Possible values: ["PAUSED", "READY"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#desired_replica_state FilestoreInstance#desired_replica_state}
+  */
+  readonly desiredReplicaState?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#id FilestoreInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,7 +46,7 @@ export interface FilestoreInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * KMS key name used for data encryption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#kms_key_name FilestoreInstance#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#kms_key_name FilestoreInstance#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
@@ -50,23 +56,23 @@ export interface FilestoreInstanceConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#labels FilestoreInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#labels FilestoreInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#location FilestoreInstance#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#location FilestoreInstance#location}
   */
   readonly location?: string;
   /**
   * The resource name of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#name FilestoreInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#name FilestoreInstance#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#project FilestoreInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#project FilestoreInstance#project}
   */
   readonly project?: string;
   /**
@@ -75,7 +81,7 @@ export interface FilestoreInstanceConfig extends cdktn.TerraformMetaArguments {
   * NFSv4.1 can be used with HIGH_SCALE_SSD, ZONAL, REGIONAL and ENTERPRISE.
   * The default is NFSv3. Default value: "NFS_V3" Possible values: ["NFS_V3", "NFS_V4_1"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#protocol FilestoreInstance#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#protocol FilestoreInstance#protocol}
   */
   readonly protocol?: string;
   /**
@@ -89,50 +95,56 @@ export interface FilestoreInstanceConfig extends cdktn.TerraformMetaArguments {
   * will trigger recreation. To apply tags to an existing
   * resource, see the 'google_tags_tag_value' resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#tags FilestoreInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#tags FilestoreInstance#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * The service tier of the instance.
   * Possible values include: STANDARD, PREMIUM, BASIC_HDD, BASIC_SSD, HIGH_SCALE_SSD, ZONAL, REGIONAL and ENTERPRISE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#tier FilestoreInstance#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#tier FilestoreInstance#tier}
   */
   readonly tier: string;
   /**
   * The name of the Filestore zone of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#zone FilestoreInstance#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#zone FilestoreInstance#zone}
   */
   readonly zone?: string;
   /**
+  * directory_services block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#directory_services FilestoreInstance#directory_services}
+  */
+  readonly directoryServices?: FilestoreInstanceDirectoryServices;
+  /**
   * file_shares block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#file_shares FilestoreInstance#file_shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#file_shares FilestoreInstance#file_shares}
   */
   readonly fileShares: FilestoreInstanceFileShares;
   /**
   * initial_replication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#initial_replication FilestoreInstance#initial_replication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#initial_replication FilestoreInstance#initial_replication}
   */
   readonly initialReplication?: FilestoreInstanceInitialReplication;
   /**
   * networks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#networks FilestoreInstance#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#networks FilestoreInstance#networks}
   */
   readonly networks: FilestoreInstanceNetworks[] | cdktn.IResolvable;
   /**
   * performance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#performance_config FilestoreInstance#performance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#performance_config FilestoreInstance#performance_config}
   */
   readonly performanceConfig?: FilestoreInstancePerformanceConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#timeouts FilestoreInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#timeouts FilestoreInstance#timeouts}
   */
   readonly timeouts?: FilestoreInstanceTimeouts;
 }
@@ -307,12 +319,292 @@ export class FilestoreInstanceEffectiveReplicationList extends cdktn.ComplexList
     return new FilestoreInstanceEffectiveReplicationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface FilestoreInstanceDirectoryServicesLdap {
+  /**
+  * The LDAP domain name in the format of 'my-domain.com'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#domain FilestoreInstance#domain}
+  */
+  readonly domain: string;
+  /**
+  * The groups Organizational Unit (OU) is optional. This parameter is a hint
+  * to allow faster lookup in the LDAP namespace. In case that this parameter
+  * is not provided, Filestore instance will query the whole LDAP namespace.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#groups_ou FilestoreInstance#groups_ou}
+  */
+  readonly groupsOu?: string;
+  /**
+  * The servers names are used for specifying the LDAP servers names.
+  * The LDAP servers names can come with two formats:
+  * 1. DNS name, for example: 'ldap.example1.com', 'ldap.example2.com'.
+  * 2. IP address, for example: '10.0.0.1', '10.0.0.2', '10.0.0.3'.
+  * All servers names must be in the same format: either all DNS names or all
+  * IP addresses.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#servers FilestoreInstance#servers}
+  */
+  readonly servers: string[];
+  /**
+  * The users Organizational Unit (OU) is optional. This parameter is a hint
+  * to allow faster lookup in the LDAP namespace. In case that this parameter
+  * is not provided, Filestore instance will query the whole LDAP namespace.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#users_ou FilestoreInstance#users_ou}
+  */
+  readonly usersOu?: string;
+}
+
+export function filestoreInstanceDirectoryServicesLdapToTerraform(struct?: FilestoreInstanceDirectoryServicesLdapOutputReference | FilestoreInstanceDirectoryServicesLdap): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    domain: cdktn.stringToTerraform(struct!.domain),
+    groups_ou: cdktn.stringToTerraform(struct!.groupsOu),
+    servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.servers),
+    users_ou: cdktn.stringToTerraform(struct!.usersOu),
+  }
+}
+
+
+export function filestoreInstanceDirectoryServicesLdapToHclTerraform(struct?: FilestoreInstanceDirectoryServicesLdapOutputReference | FilestoreInstanceDirectoryServicesLdap): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    domain: {
+      value: cdktn.stringToHclTerraform(struct!.domain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    groups_ou: {
+      value: cdktn.stringToHclTerraform(struct!.groupsOu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    servers: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.servers),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    users_ou: {
+      value: cdktn.stringToHclTerraform(struct!.usersOu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FilestoreInstanceDirectoryServicesLdapOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): FilestoreInstanceDirectoryServicesLdap | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
+    if (this._groupsOu !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.groupsOu = this._groupsOu;
+    }
+    if (this._servers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.servers = this._servers;
+    }
+    if (this._usersOu !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usersOu = this._usersOu;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FilestoreInstanceDirectoryServicesLdap | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._domain = undefined;
+      this._groupsOu = undefined;
+      this._servers = undefined;
+      this._usersOu = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._domain = value.domain;
+      this._groupsOu = value.groupsOu;
+      this._servers = value.servers;
+      this._usersOu = value.usersOu;
+    }
+  }
+
+  // domain - computed: false, optional: false, required: true
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+
+  // groups_ou - computed: false, optional: true, required: false
+  private _groupsOu?: string; 
+  public get groupsOu() {
+    return this.getStringAttribute('groups_ou');
+  }
+  public set groupsOu(value: string) {
+    this._groupsOu = value;
+  }
+  public resetGroupsOu() {
+    this._groupsOu = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupsOuInput() {
+    return this._groupsOu;
+  }
+
+  // servers - computed: false, optional: false, required: true
+  private _servers?: string[]; 
+  public get servers() {
+    return this.getListAttribute('servers');
+  }
+  public set servers(value: string[]) {
+    this._servers = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serversInput() {
+    return this._servers;
+  }
+
+  // users_ou - computed: false, optional: true, required: false
+  private _usersOu?: string; 
+  public get usersOu() {
+    return this.getStringAttribute('users_ou');
+  }
+  public set usersOu(value: string) {
+    this._usersOu = value;
+  }
+  public resetUsersOu() {
+    this._usersOu = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usersOuInput() {
+    return this._usersOu;
+  }
+}
+export interface FilestoreInstanceDirectoryServices {
+  /**
+  * ldap block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#ldap FilestoreInstance#ldap}
+  */
+  readonly ldap?: FilestoreInstanceDirectoryServicesLdap;
+}
+
+export function filestoreInstanceDirectoryServicesToTerraform(struct?: FilestoreInstanceDirectoryServicesOutputReference | FilestoreInstanceDirectoryServices): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ldap: filestoreInstanceDirectoryServicesLdapToTerraform(struct!.ldap),
+  }
+}
+
+
+export function filestoreInstanceDirectoryServicesToHclTerraform(struct?: FilestoreInstanceDirectoryServicesOutputReference | FilestoreInstanceDirectoryServices): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    ldap: {
+      value: filestoreInstanceDirectoryServicesLdapToHclTerraform(struct!.ldap),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FilestoreInstanceDirectoryServicesLdapList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FilestoreInstanceDirectoryServicesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): FilestoreInstanceDirectoryServices | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ldap?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ldap = this._ldap?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FilestoreInstanceDirectoryServices | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._ldap.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._ldap.internalValue = value.ldap;
+    }
+  }
+
+  // ldap - computed: false, optional: true, required: false
+  private _ldap = new FilestoreInstanceDirectoryServicesLdapOutputReference(this, "ldap");
+  public get ldap() {
+    return this._ldap;
+  }
+  public putLdap(value: FilestoreInstanceDirectoryServicesLdap) {
+    this._ldap.internalValue = value;
+  }
+  public resetLdap() {
+    this._ldap.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ldapInput() {
+    return this._ldap.internalValue;
+  }
+}
 export interface FilestoreInstanceFileSharesNfsExportOptions {
   /**
   * Either READ_ONLY, for allowing only read requests on the exported directory,
   * or READ_WRITE, for allowing both read and write requests. The default is READ_WRITE. Default value: "READ_WRITE" Possible values: ["READ_ONLY", "READ_WRITE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#access_mode FilestoreInstance#access_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#access_mode FilestoreInstance#access_mode}
   */
   readonly accessMode?: string;
   /**
@@ -320,7 +612,7 @@ export interface FilestoreInstanceFileSharesNfsExportOptions {
   * Anon_gid may only be set with squashMode of ROOT_SQUASH. An error will be returned
   * if this field is specified for other squashMode settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#anon_gid FilestoreInstance#anon_gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#anon_gid FilestoreInstance#anon_gid}
   */
   readonly anonGid?: number;
   /**
@@ -328,7 +620,7 @@ export interface FilestoreInstanceFileSharesNfsExportOptions {
   * Anon_uid may only be set with squashMode of ROOT_SQUASH. An error will be returned
   * if this field is specified for other squashMode settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#anon_uid FilestoreInstance#anon_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#anon_uid FilestoreInstance#anon_uid}
   */
   readonly anonUid?: number;
   /**
@@ -336,14 +628,21 @@ export interface FilestoreInstanceFileSharesNfsExportOptions {
   * Overlapping IP ranges are not allowed, both within and across NfsExportOptions. An error will be returned.
   * The limit is 64 IP ranges/addresses for each FileShareConfig among all NfsExportOptions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#ip_ranges FilestoreInstance#ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#ip_ranges FilestoreInstance#ip_ranges}
   */
   readonly ipRanges?: string[];
+  /**
+  * The source VPC network for 'ip_ranges'.
+  * Required for instances using Private Service Connect, optional otherwise.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#network FilestoreInstance#network}
+  */
+  readonly network?: string;
   /**
   * Either NO_ROOT_SQUASH, for allowing root access on the exported directory, or ROOT_SQUASH,
   * for not allowing root access. The default is NO_ROOT_SQUASH. Default value: "NO_ROOT_SQUASH" Possible values: ["NO_ROOT_SQUASH", "ROOT_SQUASH"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#squash_mode FilestoreInstance#squash_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#squash_mode FilestoreInstance#squash_mode}
   */
   readonly squashMode?: string;
 }
@@ -358,6 +657,7 @@ export function filestoreInstanceFileSharesNfsExportOptionsToTerraform(struct?: 
     anon_gid: cdktn.numberToTerraform(struct!.anonGid),
     anon_uid: cdktn.numberToTerraform(struct!.anonUid),
     ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipRanges),
+    network: cdktn.stringToTerraform(struct!.network),
     squash_mode: cdktn.stringToTerraform(struct!.squashMode),
   }
 }
@@ -392,6 +692,12 @@ export function filestoreInstanceFileSharesNfsExportOptionsToHclTerraform(struct
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
+    },
+    network: {
+      value: cdktn.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     squash_mode: {
       value: cdktn.stringToHclTerraform(struct!.squashMode),
@@ -441,6 +747,10 @@ export class FilestoreInstanceFileSharesNfsExportOptionsOutputReference extends 
       hasAnyValues = true;
       internalValueResult.ipRanges = this._ipRanges;
     }
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
     if (this._squashMode !== undefined) {
       hasAnyValues = true;
       internalValueResult.squashMode = this._squashMode;
@@ -456,6 +766,7 @@ export class FilestoreInstanceFileSharesNfsExportOptionsOutputReference extends 
       this._anonGid = undefined;
       this._anonUid = undefined;
       this._ipRanges = undefined;
+      this._network = undefined;
       this._squashMode = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
@@ -469,6 +780,7 @@ export class FilestoreInstanceFileSharesNfsExportOptionsOutputReference extends 
       this._anonGid = value.anonGid;
       this._anonUid = value.anonUid;
       this._ipRanges = value.ipRanges;
+      this._network = value.network;
       this._squashMode = value.squashMode;
     }
   }
@@ -537,6 +849,22 @@ export class FilestoreInstanceFileSharesNfsExportOptionsOutputReference extends 
     return this._ipRanges;
   }
 
+  // network - computed: false, optional: true, required: false
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  public resetNetwork() {
+    this._network = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+
   // squash_mode - computed: false, optional: true, required: false
   private _squashMode?: string; 
   public get squashMode() {
@@ -578,13 +906,13 @@ export interface FilestoreInstanceFileShares {
   * File share capacity in GiB. This must be at least 1024 GiB
   * for the standard tier, or 2560 GiB for the premium tier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#capacity_gb FilestoreInstance#capacity_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#capacity_gb FilestoreInstance#capacity_gb}
   */
   readonly capacityGb: number;
   /**
   * The name of the fileshare (16 characters or less)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#name FilestoreInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#name FilestoreInstance#name}
   */
   readonly name: string;
   /**
@@ -592,13 +920,21 @@ export interface FilestoreInstanceFileShares {
   * projects/{projectId}/locations/{locationId}/backups/{backupId},
   * that this file share has been restored from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#source_backup FilestoreInstance#source_backup}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#source_backup FilestoreInstance#source_backup}
   */
   readonly sourceBackup?: string;
   /**
+  * The resource name of the BackupDR backup, in the format
+  * 'projects/{project_id}/locations/{location_id}/backupVaults/{backupvault_id}/dataSources/{datasource_id}/backups/{backup_id}',
+  * that this file share has been restored from.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#source_backupdr_backup FilestoreInstance#source_backupdr_backup}
+  */
+  readonly sourceBackupdrBackup?: string;
+  /**
   * nfs_export_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#nfs_export_options FilestoreInstance#nfs_export_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#nfs_export_options FilestoreInstance#nfs_export_options}
   */
   readonly nfsExportOptions?: FilestoreInstanceFileSharesNfsExportOptions[] | cdktn.IResolvable;
 }
@@ -612,6 +948,7 @@ export function filestoreInstanceFileSharesToTerraform(struct?: FilestoreInstanc
     capacity_gb: cdktn.numberToTerraform(struct!.capacityGb),
     name: cdktn.stringToTerraform(struct!.name),
     source_backup: cdktn.stringToTerraform(struct!.sourceBackup),
+    source_backupdr_backup: cdktn.stringToTerraform(struct!.sourceBackupdrBackup),
     nfs_export_options: cdktn.listMapper(filestoreInstanceFileSharesNfsExportOptionsToTerraform, true)(struct!.nfsExportOptions),
   }
 }
@@ -637,6 +974,12 @@ export function filestoreInstanceFileSharesToHclTerraform(struct?: FilestoreInst
     },
     source_backup: {
       value: cdktn.stringToHclTerraform(struct!.sourceBackup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source_backupdr_backup: {
+      value: cdktn.stringToHclTerraform(struct!.sourceBackupdrBackup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -679,6 +1022,10 @@ export class FilestoreInstanceFileSharesOutputReference extends cdktn.ComplexObj
       hasAnyValues = true;
       internalValueResult.sourceBackup = this._sourceBackup;
     }
+    if (this._sourceBackupdrBackup !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceBackupdrBackup = this._sourceBackupdrBackup;
+    }
     if (this._nfsExportOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.nfsExportOptions = this._nfsExportOptions?.internalValue;
@@ -692,6 +1039,7 @@ export class FilestoreInstanceFileSharesOutputReference extends cdktn.ComplexObj
       this._capacityGb = undefined;
       this._name = undefined;
       this._sourceBackup = undefined;
+      this._sourceBackupdrBackup = undefined;
       this._nfsExportOptions.internalValue = undefined;
     }
     else {
@@ -699,6 +1047,7 @@ export class FilestoreInstanceFileSharesOutputReference extends cdktn.ComplexObj
       this._capacityGb = value.capacityGb;
       this._name = value.name;
       this._sourceBackup = value.sourceBackup;
+      this._sourceBackupdrBackup = value.sourceBackupdrBackup;
       this._nfsExportOptions.internalValue = value.nfsExportOptions;
     }
   }
@@ -745,6 +1094,22 @@ export class FilestoreInstanceFileSharesOutputReference extends cdktn.ComplexObj
     return this._sourceBackup;
   }
 
+  // source_backupdr_backup - computed: false, optional: true, required: false
+  private _sourceBackupdrBackup?: string; 
+  public get sourceBackupdrBackup() {
+    return this.getStringAttribute('source_backupdr_backup');
+  }
+  public set sourceBackupdrBackup(value: string) {
+    this._sourceBackupdrBackup = value;
+  }
+  public resetSourceBackupdrBackup() {
+    this._sourceBackupdrBackup = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceBackupdrBackupInput() {
+    return this._sourceBackupdrBackup;
+  }
+
   // nfs_export_options - computed: false, optional: true, required: false
   private _nfsExportOptions = new FilestoreInstanceFileSharesNfsExportOptionsList(this, "nfs_export_options", false);
   public get nfsExportOptions() {
@@ -765,7 +1130,7 @@ export interface FilestoreInstanceInitialReplicationReplicas {
   /**
   * The peer instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#peer_instance FilestoreInstance#peer_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#peer_instance FilestoreInstance#peer_instance}
   */
   readonly peerInstance: string;
 }
@@ -880,13 +1245,13 @@ export interface FilestoreInstanceInitialReplication {
   /**
   * The replication role. Default value: "STANDBY" Possible values: ["ROLE_UNSPECIFIED", "ACTIVE", "STANDBY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#role FilestoreInstance#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#role FilestoreInstance#role}
   */
   readonly role?: string;
   /**
   * replicas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#replicas FilestoreInstance#replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#replicas FilestoreInstance#replicas}
   */
   readonly replicas?: FilestoreInstanceInitialReplicationReplicas[] | cdktn.IResolvable;
 }
@@ -997,36 +1362,131 @@ export class FilestoreInstanceInitialReplicationOutputReference extends cdktn.Co
     return this._replicas.internalValue;
   }
 }
+export interface FilestoreInstanceNetworksPscConfig {
+  /**
+  * Consumer service project in which the Private Service Connect endpoint
+  * would be set up. This is optional, and only relevant in case the network
+  * is a shared VPC. If this is not specified, the endpoint would be set up
+  * in the VPC host project.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#endpoint_project FilestoreInstance#endpoint_project}
+  */
+  readonly endpointProject?: string;
+}
+
+export function filestoreInstanceNetworksPscConfigToTerraform(struct?: FilestoreInstanceNetworksPscConfigOutputReference | FilestoreInstanceNetworksPscConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    endpoint_project: cdktn.stringToTerraform(struct!.endpointProject),
+  }
+}
+
+
+export function filestoreInstanceNetworksPscConfigToHclTerraform(struct?: FilestoreInstanceNetworksPscConfigOutputReference | FilestoreInstanceNetworksPscConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    endpoint_project: {
+      value: cdktn.stringToHclTerraform(struct!.endpointProject),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class FilestoreInstanceNetworksPscConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): FilestoreInstanceNetworksPscConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endpointProject !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpointProject = this._endpointProject;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: FilestoreInstanceNetworksPscConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._endpointProject = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._endpointProject = value.endpointProject;
+    }
+  }
+
+  // endpoint_project - computed: false, optional: true, required: false
+  private _endpointProject?: string; 
+  public get endpointProject() {
+    return this.getStringAttribute('endpoint_project');
+  }
+  public set endpointProject(value: string) {
+    this._endpointProject = value;
+  }
+  public resetEndpointProject() {
+    this._endpointProject = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointProjectInput() {
+    return this._endpointProject;
+  }
+}
 export interface FilestoreInstanceNetworks {
   /**
   * The network connect mode of the Filestore instance.
   * If not provided, the connect mode defaults to
   * DIRECT_PEERING. Default value: "DIRECT_PEERING" Possible values: ["DIRECT_PEERING", "PRIVATE_SERVICE_ACCESS", "PRIVATE_SERVICE_CONNECT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#connect_mode FilestoreInstance#connect_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#connect_mode FilestoreInstance#connect_mode}
   */
   readonly connectMode?: string;
   /**
   * IP versions for which the instance has
   * IP addresses assigned. Possible values: ["ADDRESS_MODE_UNSPECIFIED", "MODE_IPV4", "MODE_IPV6"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#modes FilestoreInstance#modes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#modes FilestoreInstance#modes}
   */
   readonly modes: string[];
   /**
   * The name of the GCE VPC network to which the
   * instance is connected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#network FilestoreInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#network FilestoreInstance#network}
   */
   readonly network: string;
   /**
   * A /29 CIDR block that identifies the range of IP
   * addresses reserved for this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#reserved_ip_range FilestoreInstance#reserved_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#reserved_ip_range FilestoreInstance#reserved_ip_range}
   */
   readonly reservedIpRange?: string;
+  /**
+  * psc_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#psc_config FilestoreInstance#psc_config}
+  */
+  readonly pscConfig?: FilestoreInstanceNetworksPscConfig;
 }
 
 export function filestoreInstanceNetworksToTerraform(struct?: FilestoreInstanceNetworks | cdktn.IResolvable): any {
@@ -1039,6 +1499,7 @@ export function filestoreInstanceNetworksToTerraform(struct?: FilestoreInstanceN
     modes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.modes),
     network: cdktn.stringToTerraform(struct!.network),
     reserved_ip_range: cdktn.stringToTerraform(struct!.reservedIpRange),
+    psc_config: filestoreInstanceNetworksPscConfigToTerraform(struct!.pscConfig),
   }
 }
 
@@ -1072,6 +1533,12 @@ export function filestoreInstanceNetworksToHclTerraform(struct?: FilestoreInstan
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    psc_config: {
+      value: filestoreInstanceNetworksPscConfigToHclTerraform(struct!.pscConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "FilestoreInstanceNetworksPscConfigList",
     },
   };
 
@@ -1115,6 +1582,10 @@ export class FilestoreInstanceNetworksOutputReference extends cdktn.ComplexObjec
       hasAnyValues = true;
       internalValueResult.reservedIpRange = this._reservedIpRange;
     }
+    if (this._pscConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pscConfig = this._pscConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1126,6 +1597,7 @@ export class FilestoreInstanceNetworksOutputReference extends cdktn.ComplexObjec
       this._modes = undefined;
       this._network = undefined;
       this._reservedIpRange = undefined;
+      this._pscConfig.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -1138,6 +1610,7 @@ export class FilestoreInstanceNetworksOutputReference extends cdktn.ComplexObjec
       this._modes = value.modes;
       this._network = value.network;
       this._reservedIpRange = value.reservedIpRange;
+      this._pscConfig.internalValue = value.pscConfig;
     }
   }
 
@@ -1203,6 +1676,22 @@ export class FilestoreInstanceNetworksOutputReference extends cdktn.ComplexObjec
   public get reservedIpRangeInput() {
     return this._reservedIpRange;
   }
+
+  // psc_config - computed: false, optional: true, required: false
+  private _pscConfig = new FilestoreInstanceNetworksPscConfigOutputReference(this, "psc_config");
+  public get pscConfig() {
+    return this._pscConfig;
+  }
+  public putPscConfig(value: FilestoreInstanceNetworksPscConfig) {
+    this._pscConfig.internalValue = value;
+  }
+  public resetPscConfig() {
+    this._pscConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscConfigInput() {
+    return this._pscConfig.internalValue;
+  }
 }
 
 export class FilestoreInstanceNetworksList extends cdktn.ComplexList {
@@ -1229,7 +1718,7 @@ export interface FilestoreInstancePerformanceConfigFixedIops {
   * The number of IOPS to provision for the instance.
   * max_iops must be in multiple of 1000.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#max_iops FilestoreInstance#max_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#max_iops FilestoreInstance#max_iops}
   */
   readonly maxIops?: number;
 }
@@ -1319,7 +1808,7 @@ export interface FilestoreInstancePerformanceConfigIopsPerTb {
   * will be changed dynamically based on the instance
   * capacity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#max_iops_per_tb FilestoreInstance#max_iops_per_tb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#max_iops_per_tb FilestoreInstance#max_iops_per_tb}
   */
   readonly maxIopsPerTb?: number;
 }
@@ -1405,13 +1894,13 @@ export interface FilestoreInstancePerformanceConfig {
   /**
   * fixed_iops block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#fixed_iops FilestoreInstance#fixed_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#fixed_iops FilestoreInstance#fixed_iops}
   */
   readonly fixedIops?: FilestoreInstancePerformanceConfigFixedIops;
   /**
   * iops_per_tb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#iops_per_tb FilestoreInstance#iops_per_tb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#iops_per_tb FilestoreInstance#iops_per_tb}
   */
   readonly iopsPerTb?: FilestoreInstancePerformanceConfigIopsPerTb;
 }
@@ -1524,15 +2013,15 @@ export class FilestoreInstancePerformanceConfigOutputReference extends cdktn.Com
 }
 export interface FilestoreInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#create FilestoreInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#create FilestoreInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#delete FilestoreInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#delete FilestoreInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#update FilestoreInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#update FilestoreInstance#update}
   */
   readonly update?: string;
 }
@@ -1684,7 +2173,7 @@ export class FilestoreInstanceTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance google_filestore_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance google_filestore_instance}
 */
 export class FilestoreInstance extends cdktn.TerraformResource {
 
@@ -1700,7 +2189,7 @@ export class FilestoreInstance extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FilestoreInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FilestoreInstance to import
-  * @param importFromId The id of the existing FilestoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FilestoreInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FilestoreInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1712,7 +2201,7 @@ export class FilestoreInstance extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/filestore_instance google_filestore_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/filestore_instance google_filestore_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1723,8 +2212,8 @@ export class FilestoreInstance extends cdktn.TerraformResource {
       terraformResourceType: 'google_filestore_instance',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1737,6 +2226,7 @@ export class FilestoreInstance extends cdktn.TerraformResource {
     this._deletionProtectionEnabled = config.deletionProtectionEnabled;
     this._deletionProtectionReason = config.deletionProtectionReason;
     this._description = config.description;
+    this._desiredReplicaState = config.desiredReplicaState;
     this._id = config.id;
     this._kmsKeyName = config.kmsKeyName;
     this._labels = config.labels;
@@ -1747,6 +2237,7 @@ export class FilestoreInstance extends cdktn.TerraformResource {
     this._tags = config.tags;
     this._tier = config.tier;
     this._zone = config.zone;
+    this._directoryServices.internalValue = config.directoryServices;
     this._fileShares.internalValue = config.fileShares;
     this._initialReplication.internalValue = config.initialReplication;
     this._networks.internalValue = config.networks;
@@ -1809,6 +2300,22 @@ export class FilestoreInstance extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // desired_replica_state - computed: false, optional: true, required: false
+  private _desiredReplicaState?: string; 
+  public get desiredReplicaState() {
+    return this.getStringAttribute('desired_replica_state');
+  }
+  public set desiredReplicaState(value: string) {
+    this._desiredReplicaState = value;
+  }
+  public resetDesiredReplicaState() {
+    this._desiredReplicaState = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get desiredReplicaStateInput() {
+    return this._desiredReplicaState;
   }
 
   // effective_labels - computed: true, optional: false, required: false
@@ -1988,6 +2495,22 @@ export class FilestoreInstance extends cdktn.TerraformResource {
     return this._zone;
   }
 
+  // directory_services - computed: false, optional: true, required: false
+  private _directoryServices = new FilestoreInstanceDirectoryServicesOutputReference(this, "directory_services");
+  public get directoryServices() {
+    return this._directoryServices;
+  }
+  public putDirectoryServices(value: FilestoreInstanceDirectoryServices) {
+    this._directoryServices.internalValue = value;
+  }
+  public resetDirectoryServices() {
+    this._directoryServices.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directoryServicesInput() {
+    return this._directoryServices.internalValue;
+  }
+
   // file_shares - computed: false, optional: false, required: true
   private _fileShares = new FilestoreInstanceFileSharesOutputReference(this, "file_shares");
   public get fileShares() {
@@ -2071,6 +2594,7 @@ export class FilestoreInstance extends cdktn.TerraformResource {
       deletion_protection_enabled: cdktn.booleanToTerraform(this._deletionProtectionEnabled),
       deletion_protection_reason: cdktn.stringToTerraform(this._deletionProtectionReason),
       description: cdktn.stringToTerraform(this._description),
+      desired_replica_state: cdktn.stringToTerraform(this._desiredReplicaState),
       id: cdktn.stringToTerraform(this._id),
       kms_key_name: cdktn.stringToTerraform(this._kmsKeyName),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
@@ -2081,6 +2605,7 @@ export class FilestoreInstance extends cdktn.TerraformResource {
       tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       tier: cdktn.stringToTerraform(this._tier),
       zone: cdktn.stringToTerraform(this._zone),
+      directory_services: filestoreInstanceDirectoryServicesToTerraform(this._directoryServices.internalValue),
       file_shares: filestoreInstanceFileSharesToTerraform(this._fileShares.internalValue),
       initial_replication: filestoreInstanceInitialReplicationToTerraform(this._initialReplication.internalValue),
       networks: cdktn.listMapper(filestoreInstanceNetworksToTerraform, true)(this._networks.internalValue),
@@ -2105,6 +2630,12 @@ export class FilestoreInstance extends cdktn.TerraformResource {
       },
       description: {
         value: cdktn.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      desired_replica_state: {
+        value: cdktn.stringToHclTerraform(this._desiredReplicaState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2168,6 +2699,12 @@ export class FilestoreInstance extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      directory_services: {
+        value: filestoreInstanceDirectoryServicesToHclTerraform(this._directoryServices.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "FilestoreInstanceDirectoryServicesList",
       },
       file_shares: {
         value: filestoreInstanceFileSharesToHclTerraform(this._fileShares.internalValue),

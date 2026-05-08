@@ -4,12 +4,12 @@
 
 ### SccSourceIamMember <a name="SccSourceIamMember" id="@cdktn/provider-google.sccSourceIamMember.SccSourceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member google_scc_source_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member google_scc_source_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccSourceIamMember.SccSourceIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccsourceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccsourceiammember"
 
 sccsourceiammember.NewSccSourceIamMember(scope Construct, id *string, config SccSourceIamMemberConfig) SccSourceIamMember
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sccSourceIamMember.SccSourceIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccsourceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccsourceiammember"
 
 sccsourceiammember.SccSourceIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sccSourceIamMember.SccSourceIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccsourceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccsourceiammember"
 
 sccsourceiammember.SccSourceIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ sccsourceiammember.SccSourceIamMember_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sccSourceIamMember.SccSourceIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccsourceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccsourceiammember"
 
 sccsourceiammember.SccSourceIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ sccsourceiammember.SccSourceIamMember_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sccSourceIamMember.SccSourceIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccsourceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccsourceiammember"
 
 sccsourceiammember.SccSourceIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the SccSourceIamMember to impo
 
 The id of the existing SccSourceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,7 +859,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccsourceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccsourceiammember"
 
 &sccsourceiammember.SccSourceIamMemberCondition {
 	Expression: *string,
@@ -872,9 +872,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccsourceiammemb
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#expression SccSourceIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#title SccSourceIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#description SccSourceIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#expression SccSourceIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#title SccSourceIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#description SccSourceIamMember#description}. |
 
 ---
 
@@ -886,7 +886,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#expression SccSourceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#expression SccSourceIamMember#expression}.
 
 ---
 
@@ -898,7 +898,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#title SccSourceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#title SccSourceIamMember#title}.
 
 ---
 
@@ -910,7 +910,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#description SccSourceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#description SccSourceIamMember#description}.
 
 ---
 
@@ -919,7 +919,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccsourceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccsourceiammember"
 
 &sccsourceiammember.SccSourceIamMemberConfig {
 	Connection: interface{},
@@ -933,7 +933,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccsourceiammemb
 	Organization: *string,
 	Role: *string,
 	Source: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.sccSourceIamMember.SccSourceIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccSourceIamMember.SccSourceIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -949,12 +949,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccsourceiammemb
 | <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#member SccSourceIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#organization SccSourceIamMember#organization}. |
-| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#role SccSourceIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#source SccSourceIamMember#source}. |
+| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#member SccSourceIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.organization">Organization</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#organization SccSourceIamMember#organization}. |
+| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#role SccSourceIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.source">Source</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#source SccSourceIamMember#source}. |
 | <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberCondition">SccSourceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#id SccSourceIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#id SccSourceIamMember#id}. |
 
 ---
 
@@ -1036,7 +1036,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#member SccSourceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#member SccSourceIamMember#member}.
 
 ---
 
@@ -1048,7 +1048,7 @@ Organization *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#organization SccSourceIamMember#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#organization SccSourceIamMember#organization}.
 
 ---
 
@@ -1060,7 +1060,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#role SccSourceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#role SccSourceIamMember#role}.
 
 ---
 
@@ -1072,7 +1072,7 @@ Source *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#source SccSourceIamMember#source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#source SccSourceIamMember#source}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Condition SccSourceIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#condition SccSourceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#condition SccSourceIamMember#condition}
 
 ---
 
@@ -1098,7 +1098,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_source_iam_member#id SccSourceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/scc_source_iam_member#id SccSourceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1112,7 +1112,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccSourceIamMember.SccSourceIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/sccsourceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccsourceiammember"
 
 sccsourceiammember.NewSccSourceIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccSourceIamMemberConditionOutputReference
 ```

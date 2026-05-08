@@ -4,7 +4,7 @@
 
 ### TagsTagKey <a name="TagsTagKey" id="@cdktn/provider-google.tagsTagKey.TagsTagKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key google_tags_tag_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key google_tags_tag_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer"></a>
 
@@ -21,6 +21,7 @@ TagsTagKey.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .parent(java.lang.String)
     .shortName(java.lang.String)
+//  .allowedValuesRegex(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .purpose(java.lang.String)
@@ -42,8 +43,9 @@ TagsTagKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer.parameter.parent">parent</a></code> | <code>java.lang.String</code> | Input only. The resource name of the new TagKey's parent. Must be of the form organizations/{org_id} or projects/{project_id_or_number}. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer.parameter.shortName">shortName</a></code> | <code>java.lang.String</code> | Input only. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer.parameter.allowedValuesRegex">allowedValuesRegex</a></code> | <code>java.lang.String</code> | Regular expression constraint for dynamic tag values, follows RE2 syntax. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | User-assigned description of the TagKey. Must not exceed 256 characters. |
-| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#id TagsTagKey#id}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#id TagsTagKey#id}. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer.parameter.purpose">purpose</a></code> | <code>java.lang.String</code> | Optional. A purpose cannot be changed once set. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer.parameter.purposeData">purposeData</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Optional. Purpose data cannot be changed once set. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts">TagsTagKeyTimeouts</a></code> | timeouts block. |
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Input only. The resource name of the new TagKey's parent. Must be of the form organizations/{org_id} or projects/{project_id_or_number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#parent TagsTagKey#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#parent TagsTagKey#parent}
 
 ---
 
@@ -130,7 +132,19 @@ The user friendly name for a TagKey. The short name should be unique for TagKeys
 
 The short name can have a maximum length of 256 characters. The permitted character set for the shortName includes all UTF-8 encoded Unicode characters except single quotes ('), double quotes ("), backslashes (\), and forward slashes (/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#short_name TagsTagKey#short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#short_name TagsTagKey#short_name}
+
+---
+
+##### `allowedValuesRegex`<sup>Optional</sup> <a name="allowedValuesRegex" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.Initializer.parameter.allowedValuesRegex"></a>
+
+- *Type:* java.lang.String
+
+Regular expression constraint for dynamic tag values, follows RE2 syntax.
+
+If present, it implicitly allows dynamic values (constrained by the regex).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#allowed_values_regex TagsTagKey#allowed_values_regex}
 
 ---
 
@@ -140,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-assigned description of the TagKey. Must not exceed 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#description TagsTagKey#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#description TagsTagKey#description}
 
 ---
 
@@ -148,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#id TagsTagKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#id TagsTagKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,9 +175,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 Optional. A purpose cannot be changed once set.
 
-A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag. Possible values: ["GCE_FIREWALL"]
+A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag. Possible values: ["GCE_FIREWALL", "DATA_GOVERNANCE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#purpose TagsTagKey#purpose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#purpose TagsTagKey#purpose}
 
 ---
 
@@ -175,7 +189,7 @@ Optional. Purpose data cannot be changed once set.
 
 Purpose data corresponds to the policy system that the tag is intended for. For example, the GCE_FIREWALL purpose expects data in the following format: 'network = "<project-name>/<vpc-name>"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#purpose_data TagsTagKey#purpose_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#purpose_data TagsTagKey#purpose_data}
 
 ---
 
@@ -185,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#timeouts TagsTagKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#timeouts TagsTagKey#timeouts}
 
 ---
 
@@ -218,6 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.resetAllowedValuesRegex">resetAllowedValuesRegex</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.resetPurpose">resetPurpose</a></code> | *No description.* |
@@ -549,6 +564,12 @@ public void putTimeouts(TagsTagKeyTimeouts value)
 
 ---
 
+##### `resetAllowedValuesRegex` <a name="resetAllowedValuesRegex" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.resetAllowedValuesRegex"></a>
+
+```java
+public void resetAllowedValuesRegex()
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.resetDescription"></a>
 
 ```java
@@ -682,7 +703,7 @@ The construct id used in the generated config for the TagsTagKey to import.
 
 The id of the existing TagsTagKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -717,6 +738,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.namespacedName">namespacedName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeoutsOutputReference">TagsTagKeyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.allowedValuesRegexInput">allowedValuesRegexInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.parentInput">parentInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -724,6 +746,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.purposeInput">purposeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.shortNameInput">shortNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts">TagsTagKeyTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.allowedValuesRegex">allowedValuesRegex</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKey.property.parent">parent</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -925,6 +948,16 @@ public java.lang.String getUpdateTime();
 
 ---
 
+##### `allowedValuesRegexInput`<sup>Optional</sup> <a name="allowedValuesRegexInput" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.property.allowedValuesRegexInput"></a>
+
+```java
+public java.lang.String getAllowedValuesRegexInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.property.descriptionInput"></a>
 
 ```java
@@ -992,6 +1025,16 @@ public IResolvable|TagsTagKeyTimeouts getTimeoutsInput();
 ```
 
 - *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts">TagsTagKeyTimeouts</a>
+
+---
+
+##### `allowedValuesRegex`<sup>Required</sup> <a name="allowedValuesRegex" id="@cdktn/provider-google.tagsTagKey.TagsTagKey.property.allowedValuesRegex"></a>
+
+```java
+public java.lang.String getAllowedValuesRegex();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -1092,6 +1135,7 @@ TagsTagKeyConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .parent(java.lang.String)
     .shortName(java.lang.String)
+//  .allowedValuesRegex(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .purpose(java.lang.String)
@@ -1113,8 +1157,9 @@ TagsTagKeyConfig.builder()
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.parent">parent</a></code> | <code>java.lang.String</code> | Input only. The resource name of the new TagKey's parent. Must be of the form organizations/{org_id} or projects/{project_id_or_number}. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.shortName">shortName</a></code> | <code>java.lang.String</code> | Input only. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.allowedValuesRegex">allowedValuesRegex</a></code> | <code>java.lang.String</code> | Regular expression constraint for dynamic tag values, follows RE2 syntax. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.description">description</a></code> | <code>java.lang.String</code> | User-assigned description of the TagKey. Must not exceed 256 characters. |
-| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#id TagsTagKey#id}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#id TagsTagKey#id}. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.purpose">purpose</a></code> | <code>java.lang.String</code> | Optional. A purpose cannot be changed once set. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.purposeData">purposeData</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Optional. Purpose data cannot be changed once set. |
 | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts">TagsTagKeyTimeouts</a></code> | timeouts block. |
@@ -1201,7 +1246,7 @@ public java.lang.String getParent();
 
 Input only. The resource name of the new TagKey's parent. Must be of the form organizations/{org_id} or projects/{project_id_or_number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#parent TagsTagKey#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#parent TagsTagKey#parent}
 
 ---
 
@@ -1219,7 +1264,23 @@ The user friendly name for a TagKey. The short name should be unique for TagKeys
 
 The short name can have a maximum length of 256 characters. The permitted character set for the shortName includes all UTF-8 encoded Unicode characters except single quotes ('), double quotes ("), backslashes (\), and forward slashes (/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#short_name TagsTagKey#short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#short_name TagsTagKey#short_name}
+
+---
+
+##### `allowedValuesRegex`<sup>Optional</sup> <a name="allowedValuesRegex" id="@cdktn/provider-google.tagsTagKey.TagsTagKeyConfig.property.allowedValuesRegex"></a>
+
+```java
+public java.lang.String getAllowedValuesRegex();
+```
+
+- *Type:* java.lang.String
+
+Regular expression constraint for dynamic tag values, follows RE2 syntax.
+
+If present, it implicitly allows dynamic values (constrained by the regex).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#allowed_values_regex TagsTagKey#allowed_values_regex}
 
 ---
 
@@ -1233,7 +1294,7 @@ public java.lang.String getDescription();
 
 User-assigned description of the TagKey. Must not exceed 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#description TagsTagKey#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#description TagsTagKey#description}
 
 ---
 
@@ -1245,7 +1306,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#id TagsTagKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#id TagsTagKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1262,9 +1323,9 @@ public java.lang.String getPurpose();
 
 Optional. A purpose cannot be changed once set.
 
-A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag. Possible values: ["GCE_FIREWALL"]
+A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag. Possible values: ["GCE_FIREWALL", "DATA_GOVERNANCE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#purpose TagsTagKey#purpose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#purpose TagsTagKey#purpose}
 
 ---
 
@@ -1280,7 +1341,7 @@ Optional. Purpose data cannot be changed once set.
 
 Purpose data corresponds to the policy system that the tag is intended for. For example, the GCE_FIREWALL purpose expects data in the following format: 'network = "<project-name>/<vpc-name>"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#purpose_data TagsTagKey#purpose_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#purpose_data TagsTagKey#purpose_data}
 
 ---
 
@@ -1294,7 +1355,7 @@ public TagsTagKeyTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#timeouts TagsTagKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#timeouts TagsTagKey#timeouts}
 
 ---
 
@@ -1316,9 +1377,9 @@ TagsTagKeyTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#create TagsTagKey#create}. |
-| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#delete TagsTagKey#delete}. |
-| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#update TagsTagKey#update}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#create TagsTagKey#create}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#delete TagsTagKey#delete}. |
+| <code><a href="#@cdktn/provider-google.tagsTagKey.TagsTagKeyTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#update TagsTagKey#update}. |
 
 ---
 
@@ -1330,7 +1391,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#create TagsTagKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#create TagsTagKey#create}.
 
 ---
 
@@ -1342,7 +1403,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#delete TagsTagKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#delete TagsTagKey#delete}.
 
 ---
 
@@ -1354,7 +1415,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_key#update TagsTagKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/tags_tag_key#update TagsTagKey#update}.
 
 ---
 

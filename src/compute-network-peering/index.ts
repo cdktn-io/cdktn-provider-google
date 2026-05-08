@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,15 +15,15 @@ export interface ComputeNetworkPeeringConfig extends cdktn.TerraformMetaArgument
   /**
   * Whether to export the custom routes to the peer network. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#export_custom_routes ComputeNetworkPeering#export_custom_routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#export_custom_routes ComputeNetworkPeering#export_custom_routes}
   */
   readonly exportCustomRoutes?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#export_subnet_routes_with_public_ip ComputeNetworkPeering#export_subnet_routes_with_public_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#export_subnet_routes_with_public_ip ComputeNetworkPeering#export_subnet_routes_with_public_ip}
   */
   readonly exportSubnetRoutesWithPublicIp?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#id ComputeNetworkPeering#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#id ComputeNetworkPeering#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,55 +32,61 @@ export interface ComputeNetworkPeeringConfig extends cdktn.TerraformMetaArgument
   /**
   * Whether to export the custom routes from the peer network. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#import_custom_routes ComputeNetworkPeering#import_custom_routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#import_custom_routes ComputeNetworkPeering#import_custom_routes}
   */
   readonly importCustomRoutes?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#import_subnet_routes_with_public_ip ComputeNetworkPeering#import_subnet_routes_with_public_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#import_subnet_routes_with_public_ip ComputeNetworkPeering#import_subnet_routes_with_public_ip}
   */
   readonly importSubnetRoutesWithPublicIp?: boolean | cdktn.IResolvable;
   /**
   * Name of the peering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#name ComputeNetworkPeering#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#name ComputeNetworkPeering#name}
   */
   readonly name: string;
   /**
   * The primary network of the peering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#network ComputeNetworkPeering#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#network ComputeNetworkPeering#network}
   */
   readonly network: string;
   /**
   * The peer network in the peering. The peer network may belong to a different project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#peer_network ComputeNetworkPeering#peer_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#peer_network ComputeNetworkPeering#peer_network}
   */
   readonly peerNetwork: string;
   /**
   * Which IP version(s) of traffic and routes are allowed to be imported or exported between peer networks. The default value is IPV4_ONLY. Possible values: ["IPV4_ONLY", "IPV4_IPV6"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#stack_type ComputeNetworkPeering#stack_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#stack_type ComputeNetworkPeering#stack_type}
   */
   readonly stackType?: string;
   /**
+  * The update strategy determines the semantics for updates and deletes to the peering connection configuration. The default value is INDEPENDENT. Possible values: ["INDEPENDENT", "CONSENSUS"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#update_strategy ComputeNetworkPeering#update_strategy}
+  */
+  readonly updateStrategy?: string;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#timeouts ComputeNetworkPeering#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#timeouts ComputeNetworkPeering#timeouts}
   */
   readonly timeouts?: ComputeNetworkPeeringTimeouts;
 }
 export interface ComputeNetworkPeeringTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#create ComputeNetworkPeering#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#create ComputeNetworkPeering#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#delete ComputeNetworkPeering#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#delete ComputeNetworkPeering#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#update ComputeNetworkPeering#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#update ComputeNetworkPeering#update}
   */
   readonly update?: string;
 }
@@ -232,7 +238,7 @@ export class ComputeNetworkPeeringTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering google_compute_network_peering}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering google_compute_network_peering}
 */
 export class ComputeNetworkPeering extends cdktn.TerraformResource {
 
@@ -248,7 +254,7 @@ export class ComputeNetworkPeering extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeNetworkPeering resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeNetworkPeering to import
-  * @param importFromId The id of the existing ComputeNetworkPeering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeNetworkPeering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeNetworkPeering to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -260,7 +266,7 @@ export class ComputeNetworkPeering extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_peering google_compute_network_peering} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_network_peering google_compute_network_peering} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -271,8 +277,8 @@ export class ComputeNetworkPeering extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_network_peering',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -291,6 +297,7 @@ export class ComputeNetworkPeering extends cdktn.TerraformResource {
     this._network = config.network;
     this._peerNetwork = config.peerNetwork;
     this._stackType = config.stackType;
+    this._updateStrategy = config.updateStrategy;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -443,6 +450,22 @@ export class ComputeNetworkPeering extends cdktn.TerraformResource {
     return this.getStringAttribute('state_details');
   }
 
+  // update_strategy - computed: false, optional: true, required: false
+  private _updateStrategy?: string; 
+  public get updateStrategy() {
+    return this.getStringAttribute('update_strategy');
+  }
+  public set updateStrategy(value: string) {
+    this._updateStrategy = value;
+  }
+  public resetUpdateStrategy() {
+    this._updateStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateStrategyInput() {
+    return this._updateStrategy;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new ComputeNetworkPeeringTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -474,6 +497,7 @@ export class ComputeNetworkPeering extends cdktn.TerraformResource {
       network: cdktn.stringToTerraform(this._network),
       peer_network: cdktn.stringToTerraform(this._peerNetwork),
       stack_type: cdktn.stringToTerraform(this._stackType),
+      update_strategy: cdktn.stringToTerraform(this._updateStrategy),
       timeouts: computeNetworkPeeringTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -530,6 +554,12 @@ export class ComputeNetworkPeering extends cdktn.TerraformResource {
       },
       stack_type: {
         value: cdktn.stringToHclTerraform(this._stackType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      update_strategy: {
+        value: cdktn.stringToHclTerraform(this._updateStrategy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

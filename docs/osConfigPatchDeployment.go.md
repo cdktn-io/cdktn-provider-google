@@ -4,12 +4,12 @@
 
 ### OsConfigPatchDeployment <a name="OsConfigPatchDeployment" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment google_os_config_patch_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment google_os_config_patch_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeployment(scope Construct, id *string, config OsConfigPatchDeploymentConfig) OsConfigPatchDeployment
 ```
@@ -541,7 +541,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.OsConfigPatchDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.OsConfigPatchDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -587,7 +587,7 @@ osconfigpatchdeployment.OsConfigPatchDeployment_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.OsConfigPatchDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -601,7 +601,7 @@ osconfigpatchdeployment.OsConfigPatchDeployment_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.OsConfigPatchDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -630,7 +630,7 @@ The construct id used in the generated config for the OsConfigPatchDeployment to
 
 The id of the existing OsConfigPatchDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1116,7 +1116,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentConfig {
 	Connection: interface{},
@@ -1126,17 +1126,17 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdep
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	InstanceFilter: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilter,
+	InstanceFilter: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilter,
 	PatchDeploymentId: *string,
 	Description: *string,
 	Duration: *string,
 	Id: *string,
-	OneTimeSchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeSchedule,
-	PatchConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig,
+	OneTimeSchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeSchedule,
+	PatchConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig,
 	Project: *string,
-	RecurringSchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringSchedule,
-	Rollout: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentRollout,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentTimeouts,
+	RecurringSchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringSchedule,
+	Rollout: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentRollout,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentTimeouts,
 }
 ```
 
@@ -1155,10 +1155,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdep
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.patchDeploymentId">PatchDeploymentId</a></code> | <code>*string</code> | A name for the patch deployment in the project. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.description">Description</a></code> | <code>*string</code> | Description of the patch deployment. Length of the description is limited to 1024 characters. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.duration">Duration</a></code> | <code>*string</code> | Duration of the patch. |
-| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#id OsConfigPatchDeployment#id}. |
+| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#id OsConfigPatchDeployment#id}. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.oneTimeSchedule">OneTimeSchedule</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeSchedule">OsConfigPatchDeploymentOneTimeSchedule</a></code> | one_time_schedule block. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.patchConfig">PatchConfig</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig">OsConfigPatchDeploymentPatchConfig</a></code> | patch_config block. |
-| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#project OsConfigPatchDeployment#project}. |
+| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#project OsConfigPatchDeployment#project}. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.recurringSchedule">RecurringSchedule</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringSchedule">OsConfigPatchDeploymentRecurringSchedule</a></code> | recurring_schedule block. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.rollout">Rollout</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRollout">OsConfigPatchDeploymentRollout</a></code> | rollout block. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeouts">OsConfigPatchDeploymentTimeouts</a></code> | timeouts block. |
@@ -1245,7 +1245,7 @@ InstanceFilter OsConfigPatchDeploymentInstanceFilter
 
 instance_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#instance_filter OsConfigPatchDeployment#instance_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#instance_filter OsConfigPatchDeployment#instance_filter}
 
 ---
 
@@ -1267,7 +1267,7 @@ When creating a name the following rules apply:
 * Must end with a number or a letter.
 * Must be unique within the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#patch_deployment_id OsConfigPatchDeployment#patch_deployment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#patch_deployment_id OsConfigPatchDeployment#patch_deployment_id}
 
 ---
 
@@ -1281,7 +1281,7 @@ Description *string
 
 Description of the patch deployment. Length of the description is limited to 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#description OsConfigPatchDeployment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#description OsConfigPatchDeployment#description}
 
 ---
 
@@ -1298,7 +1298,7 @@ Duration of the patch.
 After the duration ends, the patch times out.
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#duration OsConfigPatchDeployment#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#duration OsConfigPatchDeployment#duration}
 
 ---
 
@@ -1310,7 +1310,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#id OsConfigPatchDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#id OsConfigPatchDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1327,7 +1327,7 @@ OneTimeSchedule OsConfigPatchDeploymentOneTimeSchedule
 
 one_time_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#one_time_schedule OsConfigPatchDeployment#one_time_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#one_time_schedule OsConfigPatchDeployment#one_time_schedule}
 
 ---
 
@@ -1341,7 +1341,7 @@ PatchConfig OsConfigPatchDeploymentPatchConfig
 
 patch_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#patch_config OsConfigPatchDeployment#patch_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#patch_config OsConfigPatchDeployment#patch_config}
 
 ---
 
@@ -1353,7 +1353,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#project OsConfigPatchDeployment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#project OsConfigPatchDeployment#project}.
 
 ---
 
@@ -1367,7 +1367,7 @@ RecurringSchedule OsConfigPatchDeploymentRecurringSchedule
 
 recurring_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#recurring_schedule OsConfigPatchDeployment#recurring_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#recurring_schedule OsConfigPatchDeployment#recurring_schedule}
 
 ---
 
@@ -1381,7 +1381,7 @@ Rollout OsConfigPatchDeploymentRollout
 
 rollout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#rollout OsConfigPatchDeployment#rollout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#rollout OsConfigPatchDeployment#rollout}
 
 ---
 
@@ -1395,7 +1395,7 @@ Timeouts OsConfigPatchDeploymentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#timeouts OsConfigPatchDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#timeouts OsConfigPatchDeployment#timeouts}
 
 ---
 
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentInstanceFilter {
 	All: interface{},
@@ -1437,7 +1437,7 @@ All interface{}
 
 Target all VM instances in the project. If true, no other criteria is permitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#all OsConfigPatchDeployment#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#all OsConfigPatchDeployment#all}
 
 ---
 
@@ -1451,7 +1451,7 @@ GroupLabels interface{}
 
 group_labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#group_labels OsConfigPatchDeployment#group_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#group_labels OsConfigPatchDeployment#group_labels}
 
 ---
 
@@ -1468,7 +1468,7 @@ Targets VMs whose name starts with one of these prefixes.
 Similar to labels, this is another way to group
 VMs when targeting configs, for example prefix="prod-".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#instance_name_prefixes OsConfigPatchDeployment#instance_name_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#instance_name_prefixes OsConfigPatchDeployment#instance_name_prefixes}
 
 ---
 
@@ -1482,7 +1482,7 @@ Instances *[]*string
 
 Targets any of the VM instances specified. Instances are specified by their URI in the 'form zones/{{zone}}/instances/{{instance_name}}', 'projects/{{project_id}}/zones/{{zone}}/instances/{{instance_name}}', or 'https://www.googleapis.com/compute/v1/projects/{{project_id}}/zones/{{zone}}/instances/{{instance_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#instances OsConfigPatchDeployment#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#instances OsConfigPatchDeployment#instances}
 
 ---
 
@@ -1496,7 +1496,7 @@ Zones *[]*string
 
 Targets VM instances in ANY of these zones. Leave empty to target VM instances in any zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#zones OsConfigPatchDeployment#zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#zones OsConfigPatchDeployment#zones}
 
 ---
 
@@ -1505,7 +1505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentInstanceFilterGroupLabels {
 	Labels: *map[string]*string,
@@ -1530,7 +1530,7 @@ Labels *map[string]*string
 
 Compute Engine instance labels that must be present for a VM instance to be targeted by this filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#labels OsConfigPatchDeployment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#labels OsConfigPatchDeployment#labels}
 
 ---
 
@@ -1539,7 +1539,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentOneTimeSchedule {
 	ExecuteTime: *string,
@@ -1564,7 +1564,7 @@ ExecuteTime *string
 
 The desired patch job execution time. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#execute_time OsConfigPatchDeployment#execute_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#execute_time OsConfigPatchDeployment#execute_time}
 
 ---
 
@@ -1573,18 +1573,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfig {
-	Apt: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigApt,
-	Goo: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigGoo,
+	Apt: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigApt,
+	Goo: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigGoo,
 	MigInstancesAllowed: interface{},
-	PostStep: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStep,
-	PreStep: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStep,
+	PostStep: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStep,
+	PreStep: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStep,
 	RebootConfig: *string,
-	WindowsUpdate: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdate,
-	Yum: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYum,
-	Zypper: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypper,
+	SkipUnpatchableVms: interface{},
+	WindowsUpdate: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdate,
+	Yum: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYum,
+	Zypper: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypper,
 }
 ```
 
@@ -1598,6 +1599,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdep
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig.property.postStep">PostStep</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStep">OsConfigPatchDeploymentPatchConfigPostStep</a></code> | post_step block. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig.property.preStep">PreStep</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStep">OsConfigPatchDeploymentPatchConfigPreStep</a></code> | pre_step block. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig.property.rebootConfig">RebootConfig</a></code> | <code>*string</code> | Post-patch reboot settings. Possible values: ["DEFAULT", "ALWAYS", "NEVER"]. |
+| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig.property.skipUnpatchableVms">SkipUnpatchableVms</a></code> | <code>interface{}</code> | Enables enhanced reporting for the patch job:. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig.property.windowsUpdate">WindowsUpdate</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdate">OsConfigPatchDeploymentPatchConfigWindowsUpdate</a></code> | windows_update block. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig.property.yum">Yum</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYum">OsConfigPatchDeploymentPatchConfigYum</a></code> | yum block. |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig.property.zypper">Zypper</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypper">OsConfigPatchDeploymentPatchConfigZypper</a></code> | zypper block. |
@@ -1614,7 +1616,7 @@ Apt OsConfigPatchDeploymentPatchConfigApt
 
 apt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#apt OsConfigPatchDeployment#apt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#apt OsConfigPatchDeployment#apt}
 
 ---
 
@@ -1628,7 +1630,7 @@ Goo OsConfigPatchDeploymentPatchConfigGoo
 
 goo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#goo OsConfigPatchDeployment#goo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#goo OsConfigPatchDeployment#goo}
 
 ---
 
@@ -1642,7 +1644,7 @@ MigInstancesAllowed interface{}
 
 Allows the patch job to run on Managed instance groups (MIGs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#mig_instances_allowed OsConfigPatchDeployment#mig_instances_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#mig_instances_allowed OsConfigPatchDeployment#mig_instances_allowed}
 
 ---
 
@@ -1656,7 +1658,7 @@ PostStep OsConfigPatchDeploymentPatchConfigPostStep
 
 post_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#post_step OsConfigPatchDeployment#post_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#post_step OsConfigPatchDeployment#post_step}
 
 ---
 
@@ -1670,7 +1672,7 @@ PreStep OsConfigPatchDeploymentPatchConfigPreStep
 
 pre_step block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#pre_step OsConfigPatchDeployment#pre_step}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#pre_step OsConfigPatchDeployment#pre_step}
 
 ---
 
@@ -1684,7 +1686,28 @@ RebootConfig *string
 
 Post-patch reboot settings. Possible values: ["DEFAULT", "ALWAYS", "NEVER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#reboot_config OsConfigPatchDeployment#reboot_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#reboot_config OsConfigPatchDeployment#reboot_config}
+
+---
+
+##### `SkipUnpatchableVms`<sup>Optional</sup> <a name="SkipUnpatchableVms" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig.property.skipUnpatchableVms"></a>
+
+```go
+SkipUnpatchableVms interface{}
+```
+
+- *Type:* interface{}
+
+Enables enhanced reporting for the patch job:.
+
+1. The patch job skips instances that cannot be patched and reports them as 'SKIPPED'. An instance cannot be patched for two reasons:
+
+   * The instance runs Container-Optimized OS (COS), which cannot be patched.
+   * The instance is part of a managed instance group (MIG), and patching MIG instances is disabled in the patch job's configuration ('mig_instances_allowed' is false).
+2. The patch job is reported as 'SUCCEEDED' if it completes without errors, even if some instances are 'SKIPPED'.
+3. The patch job is reported as 'COMPLETED_WITH_INACTIVE_VMS' if it completes without errors, but does not patch instances that are 'INACTIVE'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#skip_unpatchable_vms OsConfigPatchDeployment#skip_unpatchable_vms}
 
 ---
 
@@ -1698,7 +1721,7 @@ WindowsUpdate OsConfigPatchDeploymentPatchConfigWindowsUpdate
 
 windows_update block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#windows_update OsConfigPatchDeployment#windows_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#windows_update OsConfigPatchDeployment#windows_update}
 
 ---
 
@@ -1712,7 +1735,7 @@ Yum OsConfigPatchDeploymentPatchConfigYum
 
 yum block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#yum OsConfigPatchDeployment#yum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#yum OsConfigPatchDeployment#yum}
 
 ---
 
@@ -1726,7 +1749,7 @@ Zypper OsConfigPatchDeploymentPatchConfigZypper
 
 zypper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#zypper OsConfigPatchDeployment#zypper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#zypper OsConfigPatchDeployment#zypper}
 
 ---
 
@@ -1735,7 +1758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigApt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigApt {
 	Excludes: *[]*string,
@@ -1764,7 +1787,7 @@ Excludes *[]*string
 
 List of packages to exclude from update. These packages will be excluded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#excludes OsConfigPatchDeployment#excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#excludes OsConfigPatchDeployment#excludes}
 
 ---
 
@@ -1782,7 +1805,7 @@ These are the only packages that will be updated.
 If these packages are not installed, they will be ignored. This field cannot be specified with
 any other patch configuration fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#exclusive_packages OsConfigPatchDeployment#exclusive_packages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#exclusive_packages OsConfigPatchDeployment#exclusive_packages}
 
 ---
 
@@ -1796,7 +1819,7 @@ Type *string
 
 By changing the type to DIST, the patching is performed using apt-get dist-upgrade instead. Possible values: ["DIST", "UPGRADE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#type OsConfigPatchDeployment#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#type OsConfigPatchDeployment#type}
 
 ---
 
@@ -1805,7 +1828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigGoo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigGoo {
 	Enabled: interface{},
@@ -1830,7 +1853,7 @@ Enabled interface{}
 
 goo update settings. Use this setting to override the default goo patch rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#enabled OsConfigPatchDeployment#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#enabled OsConfigPatchDeployment#enabled}
 
 ---
 
@@ -1839,11 +1862,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStep.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigPostStep {
-	LinuxExecStepConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig,
-	WindowsExecStepConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig,
+	LinuxExecStepConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig,
+	WindowsExecStepConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig,
 }
 ```
 
@@ -1866,7 +1889,7 @@ LinuxExecStepConfig OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfi
 
 linux_exec_step_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#linux_exec_step_config OsConfigPatchDeployment#linux_exec_step_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#linux_exec_step_config OsConfigPatchDeployment#linux_exec_step_config}
 
 ---
 
@@ -1880,7 +1903,7 @@ WindowsExecStepConfig OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepC
 
 windows_exec_step_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#windows_exec_step_config OsConfigPatchDeployment#windows_exec_step_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#windows_exec_step_config OsConfigPatchDeployment#windows_exec_step_config}
 
 ---
 
@@ -1889,11 +1912,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig {
 	AllowedSuccessCodes: *[]*f64,
-	GcsObject: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject,
+	GcsObject: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject,
 	Interpreter: *string,
 	LocalPath: *string,
 }
@@ -1920,7 +1943,7 @@ AllowedSuccessCodes *[]*f64
 
 Defaults to [0]. A list of possible return values that the execution can return to indicate a success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#allowed_success_codes OsConfigPatchDeployment#allowed_success_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#allowed_success_codes OsConfigPatchDeployment#allowed_success_codes}
 
 ---
 
@@ -1934,7 +1957,7 @@ GcsObject OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject
 
 gcs_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#gcs_object OsConfigPatchDeployment#gcs_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#gcs_object OsConfigPatchDeployment#gcs_object}
 
 ---
 
@@ -1951,7 +1974,7 @@ The script interpreter to use to run the script.
 If no interpreter is specified the script will
 be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#interpreter OsConfigPatchDeployment#interpreter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#interpreter OsConfigPatchDeployment#interpreter}
 
 ---
 
@@ -1965,7 +1988,7 @@ LocalPath *string
 
 An absolute path to the executable on the VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#local_path OsConfigPatchDeployment#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#local_path OsConfigPatchDeployment#local_path}
 
 ---
 
@@ -1974,7 +1997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject {
 	Bucket: *string,
@@ -2003,7 +2026,7 @@ Bucket *string
 
 Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#bucket OsConfigPatchDeployment#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#bucket OsConfigPatchDeployment#bucket}
 
 ---
 
@@ -2019,7 +2042,7 @@ Generation number of the Cloud Storage object.
 
 This is used to ensure that the ExecStep specified by this PatchJob does not change.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#generation_number OsConfigPatchDeployment#generation_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#generation_number OsConfigPatchDeployment#generation_number}
 
 ---
 
@@ -2033,7 +2056,7 @@ Object *string
 
 Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#object OsConfigPatchDeployment#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#object OsConfigPatchDeployment#object}
 
 ---
 
@@ -2042,11 +2065,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig {
 	AllowedSuccessCodes: *[]*f64,
-	GcsObject: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject,
+	GcsObject: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject,
 	Interpreter: *string,
 	LocalPath: *string,
 }
@@ -2073,7 +2096,7 @@ AllowedSuccessCodes *[]*f64
 
 Defaults to [0]. A list of possible return values that the execution can return to indicate a success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#allowed_success_codes OsConfigPatchDeployment#allowed_success_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#allowed_success_codes OsConfigPatchDeployment#allowed_success_codes}
 
 ---
 
@@ -2087,7 +2110,7 @@ GcsObject OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObje
 
 gcs_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#gcs_object OsConfigPatchDeployment#gcs_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#gcs_object OsConfigPatchDeployment#gcs_object}
 
 ---
 
@@ -2104,7 +2127,7 @@ The script interpreter to use to run the script.
 If no interpreter is specified the script will
 be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#interpreter OsConfigPatchDeployment#interpreter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#interpreter OsConfigPatchDeployment#interpreter}
 
 ---
 
@@ -2118,7 +2141,7 @@ LocalPath *string
 
 An absolute path to the executable on the VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#local_path OsConfigPatchDeployment#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#local_path OsConfigPatchDeployment#local_path}
 
 ---
 
@@ -2127,7 +2150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject {
 	Bucket: *string,
@@ -2156,7 +2179,7 @@ Bucket *string
 
 Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#bucket OsConfigPatchDeployment#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#bucket OsConfigPatchDeployment#bucket}
 
 ---
 
@@ -2172,7 +2195,7 @@ Generation number of the Cloud Storage object.
 
 This is used to ensure that the ExecStep specified by this PatchJob does not change.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#generation_number OsConfigPatchDeployment#generation_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#generation_number OsConfigPatchDeployment#generation_number}
 
 ---
 
@@ -2186,7 +2209,7 @@ Object *string
 
 Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#object OsConfigPatchDeployment#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#object OsConfigPatchDeployment#object}
 
 ---
 
@@ -2195,11 +2218,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStep.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigPreStep {
-	LinuxExecStepConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig,
-	WindowsExecStepConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig,
+	LinuxExecStepConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig,
+	WindowsExecStepConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig,
 }
 ```
 
@@ -2222,7 +2245,7 @@ LinuxExecStepConfig OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig
 
 linux_exec_step_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#linux_exec_step_config OsConfigPatchDeployment#linux_exec_step_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#linux_exec_step_config OsConfigPatchDeployment#linux_exec_step_config}
 
 ---
 
@@ -2236,7 +2259,7 @@ WindowsExecStepConfig OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepCo
 
 windows_exec_step_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#windows_exec_step_config OsConfigPatchDeployment#windows_exec_step_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#windows_exec_step_config OsConfigPatchDeployment#windows_exec_step_config}
 
 ---
 
@@ -2245,11 +2268,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig {
 	AllowedSuccessCodes: *[]*f64,
-	GcsObject: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject,
+	GcsObject: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject,
 	Interpreter: *string,
 	LocalPath: *string,
 }
@@ -2276,7 +2299,7 @@ AllowedSuccessCodes *[]*f64
 
 Defaults to [0]. A list of possible return values that the execution can return to indicate a success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#allowed_success_codes OsConfigPatchDeployment#allowed_success_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#allowed_success_codes OsConfigPatchDeployment#allowed_success_codes}
 
 ---
 
@@ -2290,7 +2313,7 @@ GcsObject OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject
 
 gcs_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#gcs_object OsConfigPatchDeployment#gcs_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#gcs_object OsConfigPatchDeployment#gcs_object}
 
 ---
 
@@ -2307,7 +2330,7 @@ The script interpreter to use to run the script.
 If no interpreter is specified the script will
 be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#interpreter OsConfigPatchDeployment#interpreter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#interpreter OsConfigPatchDeployment#interpreter}
 
 ---
 
@@ -2321,7 +2344,7 @@ LocalPath *string
 
 An absolute path to the executable on the VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#local_path OsConfigPatchDeployment#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#local_path OsConfigPatchDeployment#local_path}
 
 ---
 
@@ -2330,7 +2353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject {
 	Bucket: *string,
@@ -2359,7 +2382,7 @@ Bucket *string
 
 Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#bucket OsConfigPatchDeployment#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#bucket OsConfigPatchDeployment#bucket}
 
 ---
 
@@ -2375,7 +2398,7 @@ Generation number of the Cloud Storage object.
 
 This is used to ensure that the ExecStep specified by this PatchJob does not change.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#generation_number OsConfigPatchDeployment#generation_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#generation_number OsConfigPatchDeployment#generation_number}
 
 ---
 
@@ -2389,7 +2412,7 @@ Object *string
 
 Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#object OsConfigPatchDeployment#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#object OsConfigPatchDeployment#object}
 
 ---
 
@@ -2398,11 +2421,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig {
 	AllowedSuccessCodes: *[]*f64,
-	GcsObject: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject,
+	GcsObject: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject,
 	Interpreter: *string,
 	LocalPath: *string,
 }
@@ -2429,7 +2452,7 @@ AllowedSuccessCodes *[]*f64
 
 Defaults to [0]. A list of possible return values that the execution can return to indicate a success.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#allowed_success_codes OsConfigPatchDeployment#allowed_success_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#allowed_success_codes OsConfigPatchDeployment#allowed_success_codes}
 
 ---
 
@@ -2443,7 +2466,7 @@ GcsObject OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjec
 
 gcs_object block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#gcs_object OsConfigPatchDeployment#gcs_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#gcs_object OsConfigPatchDeployment#gcs_object}
 
 ---
 
@@ -2460,7 +2483,7 @@ The script interpreter to use to run the script.
 If no interpreter is specified the script will
 be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#interpreter OsConfigPatchDeployment#interpreter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#interpreter OsConfigPatchDeployment#interpreter}
 
 ---
 
@@ -2474,7 +2497,7 @@ LocalPath *string
 
 An absolute path to the executable on the VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#local_path OsConfigPatchDeployment#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#local_path OsConfigPatchDeployment#local_path}
 
 ---
 
@@ -2483,7 +2506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject {
 	Bucket: *string,
@@ -2512,7 +2535,7 @@ Bucket *string
 
 Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#bucket OsConfigPatchDeployment#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#bucket OsConfigPatchDeployment#bucket}
 
 ---
 
@@ -2528,7 +2551,7 @@ Generation number of the Cloud Storage object.
 
 This is used to ensure that the ExecStep specified by this PatchJob does not change.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#generation_number OsConfigPatchDeployment#generation_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#generation_number OsConfigPatchDeployment#generation_number}
 
 ---
 
@@ -2542,7 +2565,7 @@ Object *string
 
 Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#object OsConfigPatchDeployment#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#object OsConfigPatchDeployment#object}
 
 ---
 
@@ -2551,7 +2574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdate {
 	Classifications: *[]*string,
@@ -2582,7 +2605,7 @@ Only apply updates of these windows update classifications.
 
 If empty, all updates are applied. Possible values: ["CRITICAL", "SECURITY", "DEFINITION", "DRIVER", "FEATURE_PACK", "SERVICE_PACK", "TOOL", "UPDATE_ROLLUP", "UPDATE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#classifications OsConfigPatchDeployment#classifications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#classifications OsConfigPatchDeployment#classifications}
 
 ---
 
@@ -2596,7 +2619,7 @@ Excludes *[]*string
 
 List of KBs to exclude from update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#excludes OsConfigPatchDeployment#excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#excludes OsConfigPatchDeployment#excludes}
 
 ---
 
@@ -2613,7 +2636,7 @@ An exclusive list of kbs to be updated.
 These are the only patches that will be updated.
 This field must not be used with other patch configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#exclusive_patches OsConfigPatchDeployment#exclusive_patches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#exclusive_patches OsConfigPatchDeployment#exclusive_patches}
 
 ---
 
@@ -2622,7 +2645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYum.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigYum {
 	Excludes: *[]*string,
@@ -2653,7 +2676,7 @@ Excludes *[]*string
 
 List of packages to exclude from update. These packages will be excluded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#excludes OsConfigPatchDeployment#excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#excludes OsConfigPatchDeployment#excludes}
 
 ---
 
@@ -2671,7 +2694,7 @@ These are the only packages that will be updated.
 If these packages are not installed, they will be ignored. This field cannot be specified with
 any other patch configuration fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#exclusive_packages OsConfigPatchDeployment#exclusive_packages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#exclusive_packages OsConfigPatchDeployment#exclusive_packages}
 
 ---
 
@@ -2685,7 +2708,7 @@ Minimal interface{}
 
 Will cause patch to run yum update-minimal instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#minimal OsConfigPatchDeployment#minimal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#minimal OsConfigPatchDeployment#minimal}
 
 ---
 
@@ -2699,7 +2722,7 @@ Security interface{}
 
 Adds the --security flag to yum update. Not supported on all platforms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#security OsConfigPatchDeployment#security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#security OsConfigPatchDeployment#security}
 
 ---
 
@@ -2708,7 +2731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypper.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentPatchConfigZypper {
 	Categories: *[]*string,
@@ -2743,7 +2766,7 @@ Categories *[]*string
 
 Install only patches with these categories. Common categories include security, recommended, and feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#categories OsConfigPatchDeployment#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#categories OsConfigPatchDeployment#categories}
 
 ---
 
@@ -2757,7 +2780,7 @@ Excludes *[]*string
 
 List of packages to exclude from update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#excludes OsConfigPatchDeployment#excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#excludes OsConfigPatchDeployment#excludes}
 
 ---
 
@@ -2774,7 +2797,7 @@ An exclusive list of patches to be updated.
 These are the only patches that will be installed using 'zypper patch patch:' command.
 This field must not be used with any other patch configuration fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#exclusive_patches OsConfigPatchDeployment#exclusive_patches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#exclusive_patches OsConfigPatchDeployment#exclusive_patches}
 
 ---
 
@@ -2788,7 +2811,7 @@ Severities *[]*string
 
 Install only patches with these severities. Common severities include critical, important, moderate, and low.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#severities OsConfigPatchDeployment#severities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#severities OsConfigPatchDeployment#severities}
 
 ---
 
@@ -2802,7 +2825,7 @@ WithOptional interface{}
 
 Adds the --with-optional flag to zypper patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#with_optional OsConfigPatchDeployment#with_optional}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#with_optional OsConfigPatchDeployment#with_optional}
 
 ---
 
@@ -2816,7 +2839,7 @@ WithUpdate interface{}
 
 Adds the --with-update flag, to zypper patch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#with_update OsConfigPatchDeployment#with_update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#with_update OsConfigPatchDeployment#with_update}
 
 ---
 
@@ -2825,15 +2848,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentRecurringSchedule {
-	TimeOfDay: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDay,
-	TimeZone: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeZone,
+	TimeOfDay: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDay,
+	TimeZone: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeZone,
 	EndTime: *string,
-	Monthly: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthly,
+	Monthly: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthly,
 	StartTime: *string,
-	Weekly: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeekly,
+	Weekly: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeekly,
 }
 ```
 
@@ -2860,7 +2883,7 @@ TimeOfDay OsConfigPatchDeploymentRecurringScheduleTimeOfDay
 
 time_of_day block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#time_of_day OsConfigPatchDeployment#time_of_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#time_of_day OsConfigPatchDeployment#time_of_day}
 
 ---
 
@@ -2874,7 +2897,7 @@ TimeZone OsConfigPatchDeploymentRecurringScheduleTimeZone
 
 time_zone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#time_zone OsConfigPatchDeployment#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#time_zone OsConfigPatchDeployment#time_zone}
 
 ---
 
@@ -2890,7 +2913,7 @@ The end time at which a recurring patch deployment schedule is no longer active.
 
 A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#end_time OsConfigPatchDeployment#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#end_time OsConfigPatchDeployment#end_time}
 
 ---
 
@@ -2904,7 +2927,7 @@ Monthly OsConfigPatchDeploymentRecurringScheduleMonthly
 
 monthly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#monthly OsConfigPatchDeployment#monthly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#monthly OsConfigPatchDeployment#monthly}
 
 ---
 
@@ -2921,7 +2944,7 @@ The time that the recurring schedule becomes effective.
 Defaults to createTime of the patch deployment.
 A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#start_time OsConfigPatchDeployment#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#start_time OsConfigPatchDeployment#start_time}
 
 ---
 
@@ -2935,7 +2958,7 @@ Weekly OsConfigPatchDeploymentRecurringScheduleWeekly
 
 weekly block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#weekly OsConfigPatchDeployment#weekly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#weekly OsConfigPatchDeployment#weekly}
 
 ---
 
@@ -2944,11 +2967,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthly.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentRecurringScheduleMonthly {
 	MonthDay: *f64,
-	WeekDayOfMonth: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth,
+	WeekDayOfMonth: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth,
 }
 ```
 
@@ -2975,7 +2998,7 @@ One day of the month.
 Months without the target day will be skipped. For example, a schedule to run "every month on the 31st"
 will not run in February, April, June, etc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#month_day OsConfigPatchDeployment#month_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#month_day OsConfigPatchDeployment#month_day}
 
 ---
 
@@ -2989,7 +3012,7 @@ WeekDayOfMonth OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth
 
 week_day_of_month block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#week_day_of_month OsConfigPatchDeployment#week_day_of_month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#week_day_of_month OsConfigPatchDeployment#week_day_of_month}
 
 ---
 
@@ -2998,7 +3021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth {
 	DayOfWeek: *string,
@@ -3027,7 +3050,7 @@ DayOfWeek *string
 
 A day of the week. Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#day_of_week OsConfigPatchDeployment#day_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#day_of_week OsConfigPatchDeployment#day_of_week}
 
 ---
 
@@ -3043,7 +3066,7 @@ Week number in a month.
 
 1-4 indicates the 1st to 4th week of the month. -1 indicates the last week of the month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#week_ordinal OsConfigPatchDeployment#week_ordinal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#week_ordinal OsConfigPatchDeployment#week_ordinal}
 
 ---
 
@@ -3057,7 +3080,7 @@ DayOffset *f64
 
 Represents the number of days before or after the given week day of month that the patch deployment is scheduled for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#day_offset OsConfigPatchDeployment#day_offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#day_offset OsConfigPatchDeployment#day_offset}
 
 ---
 
@@ -3066,7 +3089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDay {
 	Hours: *f64,
@@ -3100,7 +3123,7 @@ Hours of day in 24 hour format.
 Should be from 0 to 23.
 An API may choose to allow the value "24:00:00" for scenarios like business closing time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#hours OsConfigPatchDeployment#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#hours OsConfigPatchDeployment#hours}
 
 ---
 
@@ -3114,7 +3137,7 @@ Minutes *f64
 
 Minutes of hour of day. Must be from 0 to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#minutes OsConfigPatchDeployment#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#minutes OsConfigPatchDeployment#minutes}
 
 ---
 
@@ -3128,7 +3151,7 @@ Nanos *f64
 
 Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#nanos OsConfigPatchDeployment#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#nanos OsConfigPatchDeployment#nanos}
 
 ---
 
@@ -3144,7 +3167,7 @@ Seconds of minutes of the time.
 
 Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#seconds OsConfigPatchDeployment#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#seconds OsConfigPatchDeployment#seconds}
 
 ---
 
@@ -3153,7 +3176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeZone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentRecurringScheduleTimeZone {
 	Id: *string,
@@ -3180,7 +3203,7 @@ Id *string
 
 IANA Time Zone Database time zone, e.g. "America/New_York".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#id OsConfigPatchDeployment#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#id OsConfigPatchDeployment#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3197,7 +3220,7 @@ Version *string
 
 IANA Time Zone Database version number, e.g. "2019a".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#version OsConfigPatchDeployment#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#version OsConfigPatchDeployment#version}
 
 ---
 
@@ -3206,7 +3229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeekly.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentRecurringScheduleWeekly {
 	DayOfWeek: *string,
@@ -3231,7 +3254,7 @@ DayOfWeek *string
 
 IANA Time Zone Database time zone, e.g. "America/New_York". Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#day_of_week OsConfigPatchDeployment#day_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#day_of_week OsConfigPatchDeployment#day_of_week}
 
 ---
 
@@ -3240,10 +3263,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRollout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentRollout {
-	DisruptionBudget: github.com/cdktn-io/cdktn-provider-google-go/google/v18.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudget,
+	DisruptionBudget: github.com/cdktn-io/cdktn-provider-google-go/google/v19.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudget,
 	Mode: *string,
 }
 ```
@@ -3267,7 +3290,7 @@ DisruptionBudget OsConfigPatchDeploymentRolloutDisruptionBudget
 
 disruption_budget block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#disruption_budget OsConfigPatchDeployment#disruption_budget}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#disruption_budget OsConfigPatchDeployment#disruption_budget}
 
 ---
 
@@ -3281,7 +3304,7 @@ Mode *string
 
 Mode of the patch rollout. Possible values: ["ZONE_BY_ZONE", "CONCURRENT_ZONES"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#mode OsConfigPatchDeployment#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#mode OsConfigPatchDeployment#mode}
 
 ---
 
@@ -3290,7 +3313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentRolloutDisruptionBudget {
 	Fixed: *f64,
@@ -3317,7 +3340,7 @@ Fixed *f64
 
 Specifies a fixed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#fixed OsConfigPatchDeployment#fixed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#fixed OsConfigPatchDeployment#fixed}
 
 ---
 
@@ -3331,7 +3354,7 @@ Percentage *f64
 
 Specifies the relative value defined as a percentage, which will be multiplied by a reference value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#percentage OsConfigPatchDeployment#percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#percentage OsConfigPatchDeployment#percentage}
 
 ---
 
@@ -3340,7 +3363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 &osconfigpatchdeployment.OsConfigPatchDeploymentTimeouts {
 	Create: *string,
@@ -3352,8 +3375,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdep
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#create OsConfigPatchDeployment#create}. |
-| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#delete OsConfigPatchDeployment#delete}. |
+| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#create OsConfigPatchDeployment#create}. |
+| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#delete OsConfigPatchDeployment#delete}. |
 
 ---
 
@@ -3365,7 +3388,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#create OsConfigPatchDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#create OsConfigPatchDeployment#create}.
 
 ---
 
@@ -3377,7 +3400,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/os_config_patch_deployment#delete OsConfigPatchDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/os_config_patch_deployment#delete OsConfigPatchDeployment#delete}.
 
 ---
 
@@ -3388,7 +3411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentInstanceFilterGroupLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigPatchDeploymentInstanceFilterGroupLabelsList
 ```
@@ -3548,7 +3571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigPatchDeploymentInstanceFilterGroupLabelsOutputReference
 ```
@@ -3837,7 +3860,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentInstanceFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentInstanceFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentInstanceFilterOutputReference
 ```
@@ -4244,7 +4267,7 @@ func InternalValue() OsConfigPatchDeploymentInstanceFilter
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentOneTimeScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentOneTimeScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentOneTimeScheduleOutputReference
 ```
@@ -4515,7 +4538,7 @@ func InternalValue() OsConfigPatchDeploymentOneTimeSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigAptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigAptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigAptOutputReference
 ```
@@ -4851,7 +4874,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigApt
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigGooOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigGooOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigGooOutputReference
 ```
@@ -5122,7 +5145,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigGoo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigOutputReference
 ```
@@ -5180,6 +5203,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.resetPostStep">ResetPostStep</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.resetPreStep">ResetPreStep</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.resetRebootConfig">ResetRebootConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.resetSkipUnpatchableVms">ResetSkipUnpatchableVms</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.resetWindowsUpdate">ResetWindowsUpdate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.resetYum">ResetYum</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.resetZypper">ResetZypper</a></code> | *No description.* |
@@ -5456,6 +5480,12 @@ func ResetPreStep()
 func ResetRebootConfig()
 ```
 
+##### `ResetSkipUnpatchableVms` <a name="ResetSkipUnpatchableVms" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.resetSkipUnpatchableVms"></a>
+
+```go
+func ResetSkipUnpatchableVms()
+```
+
 ##### `ResetWindowsUpdate` <a name="ResetWindowsUpdate" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.resetWindowsUpdate"></a>
 
 ```go
@@ -5494,11 +5524,13 @@ func ResetZypper()
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.postStepInput">PostStepInput</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStep">OsConfigPatchDeploymentPatchConfigPostStep</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.preStepInput">PreStepInput</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStep">OsConfigPatchDeploymentPatchConfigPreStep</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.rebootConfigInput">RebootConfigInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.skipUnpatchableVmsInput">SkipUnpatchableVmsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.windowsUpdateInput">WindowsUpdateInput</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdate">OsConfigPatchDeploymentPatchConfigWindowsUpdate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.yumInput">YumInput</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYum">OsConfigPatchDeploymentPatchConfigYum</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.zypperInput">ZypperInput</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypper">OsConfigPatchDeploymentPatchConfigZypper</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.migInstancesAllowed">MigInstancesAllowed</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.rebootConfig">RebootConfig</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.skipUnpatchableVms">SkipUnpatchableVms</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfig">OsConfigPatchDeploymentPatchConfig</a></code> | *No description.* |
 
 ---
@@ -5657,6 +5689,16 @@ func RebootConfigInput() *string
 
 ---
 
+##### `SkipUnpatchableVmsInput`<sup>Optional</sup> <a name="SkipUnpatchableVmsInput" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.skipUnpatchableVmsInput"></a>
+
+```go
+func SkipUnpatchableVmsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `WindowsUpdateInput`<sup>Optional</sup> <a name="WindowsUpdateInput" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.windowsUpdateInput"></a>
 
 ```go
@@ -5707,6 +5749,16 @@ func RebootConfig() *string
 
 ---
 
+##### `SkipUnpatchableVms`<sup>Required</sup> <a name="SkipUnpatchableVms" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.skipUnpatchableVms"></a>
+
+```go
+func SkipUnpatchableVms() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference.property.internalValue"></a>
 
 ```go
@@ -5723,7 +5775,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectOutputReference
 ```
@@ -6038,7 +6090,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigOutputReference
 ```
@@ -6416,7 +6468,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigPostStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigPostStepOutputReference
 ```
@@ -6749,7 +6801,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigPostStep
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectOutputReference
 ```
@@ -7064,7 +7116,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigOutputReference
 ```
@@ -7442,7 +7494,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepCo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectOutputReference
 ```
@@ -7757,7 +7809,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference
 ```
@@ -8135,7 +8187,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigPreStepOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigPreStepOutputReference
 ```
@@ -8468,7 +8520,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigPreStep
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectOutputReference
 ```
@@ -8783,7 +8835,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference
 ```
@@ -9161,7 +9213,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepCon
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference
 ```
@@ -9497,7 +9549,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigWindowsUpdate
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigYumOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigYumOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigYumOutputReference
 ```
@@ -9862,7 +9914,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigYum
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigZypperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentPatchConfigZypperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigZypperOutputReference
 ```
@@ -10285,7 +10337,7 @@ func InternalValue() OsConfigPatchDeploymentPatchConfigZypper
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentRecurringScheduleMonthlyOutputReference
 ```
@@ -10605,7 +10657,7 @@ func InternalValue() OsConfigPatchDeploymentRecurringScheduleMonthly
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference
 ```
@@ -10927,7 +10979,7 @@ func InternalValue() OsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMon
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentRecurringScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentRecurringScheduleOutputReference
 ```
@@ -11410,7 +11462,7 @@ func InternalValue() OsConfigPatchDeploymentRecurringSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputReference
 ```
@@ -11775,7 +11827,7 @@ func InternalValue() OsConfigPatchDeploymentRecurringScheduleTimeOfDay
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference
 ```
@@ -12075,7 +12127,7 @@ func InternalValue() OsConfigPatchDeploymentRecurringScheduleTimeZone
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference
 ```
@@ -12346,7 +12398,7 @@ func InternalValue() OsConfigPatchDeploymentRecurringScheduleWeekly
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference
 ```
@@ -12653,7 +12705,7 @@ func InternalValue() OsConfigPatchDeploymentRolloutDisruptionBudget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentRolloutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentRolloutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentRolloutOutputReference
 ```
@@ -12959,7 +13011,7 @@ func InternalValue() OsConfigPatchDeploymentRollout
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/osconfigpatchdeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/osconfigpatchdeployment"
 
 osconfigpatchdeployment.NewOsConfigPatchDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentTimeoutsOutputReference
 ```

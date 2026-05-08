@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeImages <a name="DataGoogleComputeImages" id="@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_images google_compute_images}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_images google_compute_images}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeimages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeimages"
 
 datagooglecomputeimages.NewDataGoogleComputeImages(scope Construct, id *string, config DataGoogleComputeImagesConfig) DataGoogleComputeImages
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImages.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeimages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeimages"
 
 datagooglecomputeimages.DataGoogleComputeImages_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeimages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeimages"
 
 datagooglecomputeimages.DataGoogleComputeImages_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputeimages.DataGoogleComputeImages_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImages.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeimages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeimages"
 
 datagooglecomputeimages.DataGoogleComputeImages_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputeimages.DataGoogleComputeImages_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImages.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeimages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeimages"
 
 datagooglecomputeimages.DataGoogleComputeImages_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleComputeImages to
 
 The id of the existing DataGoogleComputeImages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_images#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_images#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeimages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeimages"
 
 &datagooglecomputeimages.DataGoogleComputeImagesConfig {
 	Connection: interface{},
@@ -690,9 +690,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesConfig.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_images#filter DataGoogleComputeImages#filter}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_images#id DataGoogleComputeImages#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_images#project DataGoogleComputeImages#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesConfig.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_images#filter DataGoogleComputeImages#filter}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_images#id DataGoogleComputeImages#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_images#project DataGoogleComputeImages#project}. |
 
 ---
 
@@ -774,7 +774,7 @@ Filter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_images#filter DataGoogleComputeImages#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_images#filter DataGoogleComputeImages#filter}.
 
 ---
 
@@ -786,7 +786,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_images#id DataGoogleComputeImages#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_images#id DataGoogleComputeImages#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -801,7 +801,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/compute_images#project DataGoogleComputeImages#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_images#project DataGoogleComputeImages#project}.
 
 ---
 
@@ -810,7 +810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesImages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeimages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeimages"
 
 &datagooglecomputeimages.DataGoogleComputeImagesImages {
 
@@ -825,7 +825,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesImagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeimages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeimages"
 
 datagooglecomputeimages.NewDataGoogleComputeImagesImagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeImagesImagesList
 ```
@@ -974,7 +974,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeImages.DataGoogleComputeImagesImagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/datagooglecomputeimages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglecomputeimages"
 
 datagooglecomputeimages.NewDataGoogleComputeImagesImagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeImagesImagesOutputReference
 ```

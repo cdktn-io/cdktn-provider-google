@@ -4,12 +4,12 @@
 
 ### DataplexZoneIamMember <a name="DataplexZoneIamMember" id="@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member google_dataplex_zone_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member google_dataplex_zone_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexzoneiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexzoneiammember"
 
 dataplexzoneiammember.NewDataplexZoneIamMember(scope Construct, id *string, config DataplexZoneIamMemberConfig) DataplexZoneIamMember
 ```
@@ -441,7 +441,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexzoneiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexzoneiammember"
 
 dataplexzoneiammember.DataplexZoneIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexzoneiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexzoneiammember"
 
 dataplexzoneiammember.DataplexZoneIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ dataplexzoneiammember.DataplexZoneIamMember_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexzoneiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexzoneiammember"
 
 dataplexzoneiammember.DataplexZoneIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ dataplexzoneiammember.DataplexZoneIamMember_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexzoneiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexzoneiammember"
 
 dataplexzoneiammember.DataplexZoneIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DataplexZoneIamMember to i
 
 The id of the existing DataplexZoneIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexzoneiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexzoneiammember"
 
 &dataplexzoneiammember.DataplexZoneIamMemberCondition {
 	Expression: *string,
@@ -930,9 +930,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexzoneiamm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#expression DataplexZoneIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#title DataplexZoneIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#description DataplexZoneIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#expression DataplexZoneIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#title DataplexZoneIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#description DataplexZoneIamMember#description}. |
 
 ---
 
@@ -944,7 +944,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#expression DataplexZoneIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#expression DataplexZoneIamMember#expression}.
 
 ---
 
@@ -956,7 +956,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#title DataplexZoneIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#title DataplexZoneIamMember#title}.
 
 ---
 
@@ -968,7 +968,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#description DataplexZoneIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#description DataplexZoneIamMember#description}.
 
 ---
 
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexzoneiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexzoneiammember"
 
 &dataplexzoneiammember.DataplexZoneIamMemberConfig {
 	Connection: interface{},
@@ -991,7 +991,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexzoneiamm
 	Lake: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v18.dataplexZoneIamMember.DataplexZoneIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v19.dataplexZoneIamMember.DataplexZoneIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1009,14 +1009,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexzoneiamm
 | <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.dataplexZone">DataplexZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#dataplex_zone DataplexZoneIamMember#dataplex_zone}. |
-| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.lake">Lake</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#lake DataplexZoneIamMember#lake}. |
-| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#member DataplexZoneIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#role DataplexZoneIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.dataplexZone">DataplexZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#dataplex_zone DataplexZoneIamMember#dataplex_zone}. |
+| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.lake">Lake</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#lake DataplexZoneIamMember#lake}. |
+| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#member DataplexZoneIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#role DataplexZoneIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberCondition">DataplexZoneIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#id DataplexZoneIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#location DataplexZoneIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#project DataplexZoneIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#id DataplexZoneIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#location DataplexZoneIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#project DataplexZoneIamMember#project}. |
 
 ---
 
@@ -1098,7 +1098,7 @@ DataplexZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#dataplex_zone DataplexZoneIamMember#dataplex_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#dataplex_zone DataplexZoneIamMember#dataplex_zone}.
 
 ---
 
@@ -1110,7 +1110,7 @@ Lake *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#lake DataplexZoneIamMember#lake}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#lake DataplexZoneIamMember#lake}.
 
 ---
 
@@ -1122,7 +1122,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#member DataplexZoneIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#member DataplexZoneIamMember#member}.
 
 ---
 
@@ -1134,7 +1134,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#role DataplexZoneIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#role DataplexZoneIamMember#role}.
 
 ---
 
@@ -1148,7 +1148,7 @@ Condition DataplexZoneIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#condition DataplexZoneIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#condition DataplexZoneIamMember#condition}
 
 ---
 
@@ -1160,7 +1160,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#id DataplexZoneIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#id DataplexZoneIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1175,7 +1175,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#location DataplexZoneIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#location DataplexZoneIamMember#location}.
 
 ---
 
@@ -1187,7 +1187,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataplex_zone_iam_member#project DataplexZoneIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_zone_iam_member#project DataplexZoneIamMember#project}.
 
 ---
 
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexZoneIamMember.DataplexZoneIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/dataplexzoneiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexzoneiammember"
 
 dataplexzoneiammember.NewDataplexZoneIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexZoneIamMemberConditionOutputReference
 ```

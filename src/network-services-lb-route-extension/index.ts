@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,18 +15,18 @@ export interface NetworkServicesLbRouteExtensionConfig extends cdktn.TerraformMe
   /**
   * A human-readable description of the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#description NetworkServicesLbRouteExtension#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#description NetworkServicesLbRouteExtension#description}
   */
   readonly description?: string;
   /**
   * A list of references to the forwarding rules to which this service extension is attached to.
   * At least one forwarding rule is required. There can be only one LbRouteExtension resource per forwarding rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#forwarding_rules NetworkServicesLbRouteExtension#forwarding_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#forwarding_rules NetworkServicesLbRouteExtension#forwarding_rules}
   */
   readonly forwardingRules: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#id NetworkServicesLbRouteExtension#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#id NetworkServicesLbRouteExtension#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,7 +38,7 @@ export interface NetworkServicesLbRouteExtensionConfig extends cdktn.TerraformMe
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#labels NetworkServicesLbRouteExtension#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#labels NetworkServicesLbRouteExtension#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -46,35 +46,35 @@ export interface NetworkServicesLbRouteExtensionConfig extends cdktn.TerraformMe
   * For more information, refer to [Choosing a load balancer](https://cloud.google.com/load-balancing/docs/backend-service) and
   * [Supported application load balancers](https://cloud.google.com/service-extensions/docs/callouts-overview#supported-lbs). Possible values: ["INTERNAL_MANAGED", "EXTERNAL_MANAGED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#load_balancing_scheme NetworkServicesLbRouteExtension#load_balancing_scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#load_balancing_scheme NetworkServicesLbRouteExtension#load_balancing_scheme}
   */
   readonly loadBalancingScheme: string;
   /**
   * The location of the route extension
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#location NetworkServicesLbRouteExtension#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#location NetworkServicesLbRouteExtension#location}
   */
   readonly location: string;
   /**
   * Name of the LbRouteExtension resource in the following format: projects/{project}/locations/{location}/lbRouteExtensions/{lbRouteExtension}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#project NetworkServicesLbRouteExtension#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#project NetworkServicesLbRouteExtension#project}
   */
   readonly project?: string;
   /**
   * extension_chains block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#extension_chains NetworkServicesLbRouteExtension#extension_chains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#extension_chains NetworkServicesLbRouteExtension#extension_chains}
   */
   readonly extensionChains: NetworkServicesLbRouteExtensionExtensionChains[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#timeouts NetworkServicesLbRouteExtension#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#timeouts NetworkServicesLbRouteExtension#timeouts}
   */
   readonly timeouts?: NetworkServicesLbRouteExtensionTimeouts;
 }
@@ -82,7 +82,7 @@ export interface NetworkServicesLbRouteExtensionExtensionChainsExtensions {
   /**
   * The :authority header in the gRPC request sent from Envoy to the extension service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#authority NetworkServicesLbRouteExtension#authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#authority NetworkServicesLbRouteExtension#authority}
   */
   readonly authority?: string;
   /**
@@ -93,36 +93,79 @@ export interface NetworkServicesLbRouteExtensionExtensionChainsExtensions {
   * a generic 500 error is returned to the client. The error response can be tailored by
   * configuring a custom error response in the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#fail_open NetworkServicesLbRouteExtension#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#fail_open NetworkServicesLbRouteExtension#fail_open}
   */
   readonly failOpen?: boolean | cdktn.IResolvable;
   /**
   * List of the HTTP headers to forward to the extension (from the client or backend).
   * If omitted, all headers are sent. Each element is a string indicating the header name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#forward_headers NetworkServicesLbRouteExtension#forward_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#forward_headers NetworkServicesLbRouteExtension#forward_headers}
   */
   readonly forwardHeaders?: string[];
+  /**
+  * The metadata provided here is included as part of the 'metadata_context' (of type 'google.protobuf.Struct')
+  * in the 'ProcessingRequest' message sent to the extension server.
+  * The metadata is available under the namespace 'com.google.lb_route_extension.<resource_name>.<chain_name>.<extension_name>'.
+  * The following variables are supported in the metadata: '{forwarding_rule_id}' - substituted with the forwarding rule's fully qualified resource name.
+  * This field must not be set for plugin extensions. Setting it results in a validation error.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#metadata NetworkServicesLbRouteExtension#metadata}
+  */
+  readonly metadata?: { [key: string]: string };
   /**
   * The name for this extension. The name is logged as part of the HTTP request logs.
   * The name must conform with RFC-1034, is restricted to lower-cased letters, numbers and hyphens,
   * and can have a maximum length of 63 characters. Additionally, the first character must be a letter
   * and the last a letter or a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
   */
   readonly name: string;
   /**
-  * The reference to the service that runs the extension. Must be a reference to a backend service
+  * When set to 'TRUE', enables 'observability_mode' on the 'ext_proc' filter.
+  * This makes 'ext_proc' calls asynchronous. Envoy doesn't check for the response from 'ext_proc' calls.
+  * For more information about the filter, see: https://www.envoyproxy.io/docs/envoy/v1.32.3/api-v3/extensions/filters/http/ext_proc/v3/ext_proc.proto
+  * This field is helpful when you want to try out the extension in async log-only mode.
+  * Supported by regional 'LbTrafficExtension' and 'LbRouteExtension' resources.
+  * Only 'STREAMED' (default) body processing mode is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#service NetworkServicesLbRouteExtension#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#observability_mode NetworkServicesLbRouteExtension#observability_mode}
+  */
+  readonly observabilityMode?: boolean | cdktn.IResolvable;
+  /**
+  * Configures the send mode for request body processing.
+  * The field can only be set if 'supported_events' includes 'REQUEST_BODY'.
+  * If 'supported_events' includes 'REQUEST_BODY', but 'request_body_send_mode' is unset, the default value 'STREAMED' is used.
+  * When this field is set to 'FULL_DUPLEX_STREAMED', 'supported_events' must include both 'REQUEST_BODY' and 'REQUEST_TRAILERS'.
+  * This field can be set only when the 'service' field of the extension points to a 'BackendService'.
+  * Only 'FULL_DUPLEX_STREAMED' mode is supported for 'LbRouteExtension' resources. Possible values: ["BODY_SEND_MODE_UNSPECIFIED", "BODY_SEND_MODE_STREAMED", "BODY_SEND_MODE_FULL_DUPLEX_STREAMED"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#request_body_send_mode NetworkServicesLbRouteExtension#request_body_send_mode}
+  */
+  readonly requestBodySendMode?: string;
+  /**
+  * The reference to the service that runs the extension.
+  * 
+  * * To configure a callout extension, service must be a fully-qualified reference to a backend service.
+  * * To configure a plugin extension, service must be a reference to a WasmPlugin resource.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#service NetworkServicesLbRouteExtension#service}
   */
   readonly service: string;
+  /**
+  * A set of events during request or response processing for which this extension is called.
+  * This field is optional for the LbRouteExtension resource. If unspecified, 'REQUEST_HEADERS' event is assumed as supported.
+  * Possible values: 'REQUEST_HEADERS', 'REQUEST_BODY', 'REQUEST_TRAILERS'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#supported_events NetworkServicesLbRouteExtension#supported_events}
+  */
+  readonly supportedEvents?: string[];
   /**
   * Specifies the timeout for each individual message on the stream. The timeout must be between 10-1000 milliseconds.
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#timeout NetworkServicesLbRouteExtension#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#timeout NetworkServicesLbRouteExtension#timeout}
   */
   readonly timeout?: string;
 }
@@ -136,8 +179,12 @@ export function networkServicesLbRouteExtensionExtensionChainsExtensionsToTerraf
     authority: cdktn.stringToTerraform(struct!.authority),
     fail_open: cdktn.booleanToTerraform(struct!.failOpen),
     forward_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.forwardHeaders),
+    metadata: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.metadata),
     name: cdktn.stringToTerraform(struct!.name),
+    observability_mode: cdktn.booleanToTerraform(struct!.observabilityMode),
+    request_body_send_mode: cdktn.stringToTerraform(struct!.requestBodySendMode),
     service: cdktn.stringToTerraform(struct!.service),
+    supported_events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.supportedEvents),
     timeout: cdktn.stringToTerraform(struct!.timeout),
   }
 }
@@ -167,8 +214,26 @@ export function networkServicesLbRouteExtensionExtensionChainsExtensionsToHclTer
       type: "list",
       storageClassType: "stringList",
     },
+    metadata: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.metadata),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
     name: {
       value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    observability_mode: {
+      value: cdktn.booleanToHclTerraform(struct!.observabilityMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    request_body_send_mode: {
+      value: cdktn.stringToHclTerraform(struct!.requestBodySendMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -178,6 +243,12 @@ export function networkServicesLbRouteExtensionExtensionChainsExtensionsToHclTer
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    supported_events: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.supportedEvents),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
     },
     timeout: {
       value: cdktn.stringToHclTerraform(struct!.timeout),
@@ -223,13 +294,29 @@ export class NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputRefer
       hasAnyValues = true;
       internalValueResult.forwardHeaders = this._forwardHeaders;
     }
+    if (this._metadata !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metadata = this._metadata;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._observabilityMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.observabilityMode = this._observabilityMode;
+    }
+    if (this._requestBodySendMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestBodySendMode = this._requestBodySendMode;
+    }
     if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
+    }
+    if (this._supportedEvents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.supportedEvents = this._supportedEvents;
     }
     if (this._timeout !== undefined) {
       hasAnyValues = true;
@@ -245,8 +332,12 @@ export class NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputRefer
       this._authority = undefined;
       this._failOpen = undefined;
       this._forwardHeaders = undefined;
+      this._metadata = undefined;
       this._name = undefined;
+      this._observabilityMode = undefined;
+      this._requestBodySendMode = undefined;
       this._service = undefined;
+      this._supportedEvents = undefined;
       this._timeout = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
@@ -259,8 +350,12 @@ export class NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputRefer
       this._authority = value.authority;
       this._failOpen = value.failOpen;
       this._forwardHeaders = value.forwardHeaders;
+      this._metadata = value.metadata;
       this._name = value.name;
+      this._observabilityMode = value.observabilityMode;
+      this._requestBodySendMode = value.requestBodySendMode;
       this._service = value.service;
+      this._supportedEvents = value.supportedEvents;
       this._timeout = value.timeout;
     }
   }
@@ -313,6 +408,22 @@ export class NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputRefer
     return this._forwardHeaders;
   }
 
+  // metadata - computed: false, optional: true, required: false
+  private _metadata?: { [key: string]: string }; 
+  public get metadata() {
+    return this.getStringMapAttribute('metadata');
+  }
+  public set metadata(value: { [key: string]: string }) {
+    this._metadata = value;
+  }
+  public resetMetadata() {
+    this._metadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metadataInput() {
+    return this._metadata;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -326,6 +437,38 @@ export class NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputRefer
     return this._name;
   }
 
+  // observability_mode - computed: false, optional: true, required: false
+  private _observabilityMode?: boolean | cdktn.IResolvable; 
+  public get observabilityMode() {
+    return this.getBooleanAttribute('observability_mode');
+  }
+  public set observabilityMode(value: boolean | cdktn.IResolvable) {
+    this._observabilityMode = value;
+  }
+  public resetObservabilityMode() {
+    this._observabilityMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get observabilityModeInput() {
+    return this._observabilityMode;
+  }
+
+  // request_body_send_mode - computed: false, optional: true, required: false
+  private _requestBodySendMode?: string; 
+  public get requestBodySendMode() {
+    return this.getStringAttribute('request_body_send_mode');
+  }
+  public set requestBodySendMode(value: string) {
+    this._requestBodySendMode = value;
+  }
+  public resetRequestBodySendMode() {
+    this._requestBodySendMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestBodySendModeInput() {
+    return this._requestBodySendMode;
+  }
+
   // service - computed: false, optional: false, required: true
   private _service?: string; 
   public get service() {
@@ -337,6 +480,22 @@ export class NetworkServicesLbRouteExtensionExtensionChainsExtensionsOutputRefer
   // Temporarily expose input value. Use with caution.
   public get serviceInput() {
     return this._service;
+  }
+
+  // supported_events - computed: false, optional: true, required: false
+  private _supportedEvents?: string[]; 
+  public get supportedEvents() {
+    return cdktn.Fn.tolist(this.getListAttribute('supported_events'));
+  }
+  public set supportedEvents(value: string[]) {
+    this._supportedEvents = value;
+  }
+  public resetSupportedEvents() {
+    this._supportedEvents = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get supportedEventsInput() {
+    return this._supportedEvents;
   }
 
   // timeout - computed: false, optional: true, required: false
@@ -379,7 +538,7 @@ export interface NetworkServicesLbRouteExtensionExtensionChainsMatchCondition {
   /**
   * A Common Expression Language (CEL) expression that is used to match requests for which the extension chain is executed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#cel_expression NetworkServicesLbRouteExtension#cel_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#cel_expression NetworkServicesLbRouteExtension#cel_expression}
   */
   readonly celExpression: string;
 }
@@ -465,19 +624,19 @@ export interface NetworkServicesLbRouteExtensionExtensionChains {
   * and can have a maximum length of 63 characters. Additionally, the first character must be a letter
   * and the last character must be a letter or a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#name NetworkServicesLbRouteExtension#name}
   */
   readonly name: string;
   /**
   * extensions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#extensions NetworkServicesLbRouteExtension#extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#extensions NetworkServicesLbRouteExtension#extensions}
   */
   readonly extensions: NetworkServicesLbRouteExtensionExtensionChainsExtensions[] | cdktn.IResolvable;
   /**
   * match_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#match_condition NetworkServicesLbRouteExtension#match_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#match_condition NetworkServicesLbRouteExtension#match_condition}
   */
   readonly matchCondition: NetworkServicesLbRouteExtensionExtensionChainsMatchCondition;
 }
@@ -642,15 +801,15 @@ export class NetworkServicesLbRouteExtensionExtensionChainsList extends cdktn.Co
 }
 export interface NetworkServicesLbRouteExtensionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#create NetworkServicesLbRouteExtension#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#create NetworkServicesLbRouteExtension#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#delete NetworkServicesLbRouteExtension#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#delete NetworkServicesLbRouteExtension#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#update NetworkServicesLbRouteExtension#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#update NetworkServicesLbRouteExtension#update}
   */
   readonly update?: string;
 }
@@ -802,7 +961,7 @@ export class NetworkServicesLbRouteExtensionTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension google_network_services_lb_route_extension}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension google_network_services_lb_route_extension}
 */
 export class NetworkServicesLbRouteExtension extends cdktn.TerraformResource {
 
@@ -818,7 +977,7 @@ export class NetworkServicesLbRouteExtension extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkServicesLbRouteExtension resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkServicesLbRouteExtension to import
-  * @param importFromId The id of the existing NetworkServicesLbRouteExtension that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkServicesLbRouteExtension that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkServicesLbRouteExtension to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -830,7 +989,7 @@ export class NetworkServicesLbRouteExtension extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_services_lb_route_extension google_network_services_lb_route_extension} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/network_services_lb_route_extension google_network_services_lb_route_extension} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -841,8 +1000,8 @@ export class NetworkServicesLbRouteExtension extends cdktn.TerraformResource {
       terraformResourceType: 'google_network_services_lb_route_extension',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

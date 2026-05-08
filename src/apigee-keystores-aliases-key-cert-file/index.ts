@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file
+// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,239 +13,79 @@ import * as cdktn from 'cdktn';
 
 export interface ApigeeKeystoresAliasesKeyCertFileConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Alias Name
+  * Alias Name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#alias ApigeeKeystoresAliasesKeyCertFile#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#alias ApigeeKeystoresAliasesKeyCertFile#alias}
   */
   readonly alias: string;
   /**
-  * Cert content
+  * Cert content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#cert ApigeeKeystoresAliasesKeyCertFile#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#cert ApigeeKeystoresAliasesKeyCertFile#cert}
   */
   readonly cert: string;
   /**
-  * Environment associated with the alias
+  * Environment associated with the alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#environment ApigeeKeystoresAliasesKeyCertFile#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#environment ApigeeKeystoresAliasesKeyCertFile#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#id ApigeeKeystoresAliasesKeyCertFile#id}
+  * Private Key content, omit if uploading to truststore.
   *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
-  * Private Key content, omit if uploading to truststore
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#key ApigeeKeystoresAliasesKeyCertFile#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#key ApigeeKeystoresAliasesKeyCertFile#key}
   */
   readonly key?: string;
   /**
-  * Keystore Name
+  * Keystore Name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#keystore ApigeeKeystoresAliasesKeyCertFile#keystore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#keystore ApigeeKeystoresAliasesKeyCertFile#keystore}
   */
   readonly keystore: string;
   /**
-  * Organization ID associated with the alias
+  * Organization ID associated with the alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#org_id ApigeeKeystoresAliasesKeyCertFile#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#org_id ApigeeKeystoresAliasesKeyCertFile#org_id}
   */
   readonly orgId: string;
   /**
-  * Password for the Private Key if it's encrypted
+  * Password for the Private Key if it's encrypted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#password ApigeeKeystoresAliasesKeyCertFile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#password ApigeeKeystoresAliasesKeyCertFile#password}
   */
   readonly password?: string;
   /**
-  * certs_info block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#certs_info ApigeeKeystoresAliasesKeyCertFile#certs_info}
-  */
-  readonly certsInfo?: ApigeeKeystoresAliasesKeyCertFileCertsInfo;
-  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#timeouts ApigeeKeystoresAliasesKeyCertFile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#timeouts ApigeeKeystoresAliasesKeyCertFile#timeouts}
   */
   readonly timeouts?: ApigeeKeystoresAliasesKeyCertFileTimeouts;
 }
-export interface ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfo {
-  /**
-  * X.509 basic constraints extension.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#basic_constraints ApigeeKeystoresAliasesKeyCertFile#basic_constraints}
-  */
-  readonly basicConstraints?: string;
-  /**
-  * X.509 notAfter validity period in milliseconds since epoch.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#expiry_date ApigeeKeystoresAliasesKeyCertFile#expiry_date}
-  */
-  readonly expiryDate?: string;
-  /**
-  * Flag that specifies whether the certificate is valid. 
-  * Flag is set to Yes if the certificate is valid, No if expired, or Not yet if not yet valid.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#is_valid ApigeeKeystoresAliasesKeyCertFile#is_valid}
-  */
-  readonly isValid?: string;
-  /**
-  * X.509 issuer.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#issuer ApigeeKeystoresAliasesKeyCertFile#issuer}
-  */
-  readonly issuer?: string;
-  /**
-  * Public key component of the X.509 subject public key info.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#public_key ApigeeKeystoresAliasesKeyCertFile#public_key}
-  */
-  readonly publicKey?: string;
-  /**
-  * X.509 serial number.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#serial_number ApigeeKeystoresAliasesKeyCertFile#serial_number}
-  */
-  readonly serialNumber?: string;
-  /**
-  * X.509 signatureAlgorithm.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#sig_alg_name ApigeeKeystoresAliasesKeyCertFile#sig_alg_name}
-  */
-  readonly sigAlgName?: string;
-  /**
-  * X.509 subject.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#subject ApigeeKeystoresAliasesKeyCertFile#subject}
-  */
-  readonly subject?: string;
-  /**
-  * X.509 subject alternative names (SANs) extension.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#subject_alternative_names ApigeeKeystoresAliasesKeyCertFile#subject_alternative_names}
-  */
-  readonly subjectAlternativeNames?: string[];
-  /**
-  * X.509 notBefore validity period in milliseconds since epoch.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#valid_from ApigeeKeystoresAliasesKeyCertFile#valid_from}
-  */
-  readonly validFrom?: string;
-  /**
-  * X.509 version.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#version ApigeeKeystoresAliasesKeyCertFile#version}
-  */
-  readonly version?: number;
+export interface ApigeeKeystoresAliasesKeyCertFileCertsInfo {
 }
 
-export function apigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoToTerraform(struct?: ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfo | cdktn.IResolvable): any {
+export function apigeeKeystoresAliasesKeyCertFileCertsInfoToTerraform(struct?: ApigeeKeystoresAliasesKeyCertFileCertsInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    basic_constraints: cdktn.stringToTerraform(struct!.basicConstraints),
-    expiry_date: cdktn.stringToTerraform(struct!.expiryDate),
-    is_valid: cdktn.stringToTerraform(struct!.isValid),
-    issuer: cdktn.stringToTerraform(struct!.issuer),
-    public_key: cdktn.stringToTerraform(struct!.publicKey),
-    serial_number: cdktn.stringToTerraform(struct!.serialNumber),
-    sig_alg_name: cdktn.stringToTerraform(struct!.sigAlgName),
-    subject: cdktn.stringToTerraform(struct!.subject),
-    subject_alternative_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subjectAlternativeNames),
-    valid_from: cdktn.stringToTerraform(struct!.validFrom),
-    version: cdktn.numberToTerraform(struct!.version),
   }
 }
 
 
-export function apigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoToHclTerraform(struct?: ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfo | cdktn.IResolvable): any {
+export function apigeeKeystoresAliasesKeyCertFileCertsInfoToHclTerraform(struct?: ApigeeKeystoresAliasesKeyCertFileCertsInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
-    basic_constraints: {
-      value: cdktn.stringToHclTerraform(struct!.basicConstraints),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    expiry_date: {
-      value: cdktn.stringToHclTerraform(struct!.expiryDate),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    is_valid: {
-      value: cdktn.stringToHclTerraform(struct!.isValid),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    issuer: {
-      value: cdktn.stringToHclTerraform(struct!.issuer),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    public_key: {
-      value: cdktn.stringToHclTerraform(struct!.publicKey),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    serial_number: {
-      value: cdktn.stringToHclTerraform(struct!.serialNumber),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    sig_alg_name: {
-      value: cdktn.stringToHclTerraform(struct!.sigAlgName),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    subject: {
-      value: cdktn.stringToHclTerraform(struct!.subject),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    subject_alternative_names: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subjectAlternativeNames),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-    valid_from: {
-      value: cdktn.stringToHclTerraform(struct!.validFrom),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    version: {
-      value: cdktn.numberToHclTerraform(struct!.version),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
   };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+  return attrs;
 }
 
-export class ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference extends cdktn.ComplexObject {
+export class ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -257,275 +97,78 @@ export class ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference e
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfo | cdktn.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): ApigeeKeystoresAliasesKeyCertFileCertsInfo | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._basicConstraints !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.basicConstraints = this._basicConstraints;
-    }
-    if (this._expiryDate !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.expiryDate = this._expiryDate;
-    }
-    if (this._isValid !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.isValid = this._isValid;
-    }
-    if (this._issuer !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.issuer = this._issuer;
-    }
-    if (this._publicKey !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.publicKey = this._publicKey;
-    }
-    if (this._serialNumber !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.serialNumber = this._serialNumber;
-    }
-    if (this._sigAlgName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.sigAlgName = this._sigAlgName;
-    }
-    if (this._subject !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.subject = this._subject;
-    }
-    if (this._subjectAlternativeNames !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.subjectAlternativeNames = this._subjectAlternativeNames;
-    }
-    if (this._validFrom !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.validFrom = this._validFrom;
-    }
-    if (this._version !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.version = this._version;
-    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfo | cdktn.IResolvable | undefined) {
+  public set internalValue(value: ApigeeKeystoresAliasesKeyCertFileCertsInfo | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-      this._basicConstraints = undefined;
-      this._expiryDate = undefined;
-      this._isValid = undefined;
-      this._issuer = undefined;
-      this._publicKey = undefined;
-      this._serialNumber = undefined;
-      this._sigAlgName = undefined;
-      this._subject = undefined;
-      this._subjectAlternativeNames = undefined;
-      this._validFrom = undefined;
-      this._version = undefined;
-    }
-    else if (cdktn.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
-      this._basicConstraints = value.basicConstraints;
-      this._expiryDate = value.expiryDate;
-      this._isValid = value.isValid;
-      this._issuer = value.issuer;
-      this._publicKey = value.publicKey;
-      this._serialNumber = value.serialNumber;
-      this._sigAlgName = value.sigAlgName;
-      this._subject = value.subject;
-      this._subjectAlternativeNames = value.subjectAlternativeNames;
-      this._validFrom = value.validFrom;
-      this._version = value.version;
     }
   }
 
-  // basic_constraints - computed: true, optional: true, required: false
-  private _basicConstraints?: string; 
+  // basic_constraints - computed: true, optional: false, required: false
   public get basicConstraints() {
     return this.getStringAttribute('basic_constraints');
   }
-  public set basicConstraints(value: string) {
-    this._basicConstraints = value;
-  }
-  public resetBasicConstraints() {
-    this._basicConstraints = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get basicConstraintsInput() {
-    return this._basicConstraints;
-  }
 
-  // expiry_date - computed: true, optional: true, required: false
-  private _expiryDate?: string; 
+  // expiry_date - computed: true, optional: false, required: false
   public get expiryDate() {
     return this.getStringAttribute('expiry_date');
   }
-  public set expiryDate(value: string) {
-    this._expiryDate = value;
-  }
-  public resetExpiryDate() {
-    this._expiryDate = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get expiryDateInput() {
-    return this._expiryDate;
-  }
 
-  // is_valid - computed: true, optional: true, required: false
-  private _isValid?: string; 
+  // is_valid - computed: true, optional: false, required: false
   public get isValid() {
     return this.getStringAttribute('is_valid');
   }
-  public set isValid(value: string) {
-    this._isValid = value;
-  }
-  public resetIsValid() {
-    this._isValid = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get isValidInput() {
-    return this._isValid;
-  }
 
-  // issuer - computed: true, optional: true, required: false
-  private _issuer?: string; 
+  // issuer - computed: true, optional: false, required: false
   public get issuer() {
     return this.getStringAttribute('issuer');
   }
-  public set issuer(value: string) {
-    this._issuer = value;
-  }
-  public resetIssuer() {
-    this._issuer = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get issuerInput() {
-    return this._issuer;
-  }
 
-  // public_key - computed: true, optional: true, required: false
-  private _publicKey?: string; 
+  // public_key - computed: true, optional: false, required: false
   public get publicKey() {
     return this.getStringAttribute('public_key');
   }
-  public set publicKey(value: string) {
-    this._publicKey = value;
-  }
-  public resetPublicKey() {
-    this._publicKey = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publicKeyInput() {
-    return this._publicKey;
-  }
 
-  // serial_number - computed: true, optional: true, required: false
-  private _serialNumber?: string; 
+  // serial_number - computed: true, optional: false, required: false
   public get serialNumber() {
     return this.getStringAttribute('serial_number');
   }
-  public set serialNumber(value: string) {
-    this._serialNumber = value;
-  }
-  public resetSerialNumber() {
-    this._serialNumber = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get serialNumberInput() {
-    return this._serialNumber;
-  }
 
-  // sig_alg_name - computed: true, optional: true, required: false
-  private _sigAlgName?: string; 
+  // sig_alg_name - computed: true, optional: false, required: false
   public get sigAlgName() {
     return this.getStringAttribute('sig_alg_name');
   }
-  public set sigAlgName(value: string) {
-    this._sigAlgName = value;
-  }
-  public resetSigAlgName() {
-    this._sigAlgName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sigAlgNameInput() {
-    return this._sigAlgName;
-  }
 
-  // subject - computed: true, optional: true, required: false
-  private _subject?: string; 
+  // subject - computed: true, optional: false, required: false
   public get subject() {
     return this.getStringAttribute('subject');
   }
-  public set subject(value: string) {
-    this._subject = value;
-  }
-  public resetSubject() {
-    this._subject = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subjectInput() {
-    return this._subject;
-  }
 
-  // subject_alternative_names - computed: true, optional: true, required: false
-  private _subjectAlternativeNames?: string[]; 
+  // subject_alternative_names - computed: true, optional: false, required: false
   public get subjectAlternativeNames() {
     return this.getListAttribute('subject_alternative_names');
   }
-  public set subjectAlternativeNames(value: string[]) {
-    this._subjectAlternativeNames = value;
-  }
-  public resetSubjectAlternativeNames() {
-    this._subjectAlternativeNames = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get subjectAlternativeNamesInput() {
-    return this._subjectAlternativeNames;
-  }
 
-  // valid_from - computed: true, optional: true, required: false
-  private _validFrom?: string; 
+  // valid_from - computed: true, optional: false, required: false
   public get validFrom() {
     return this.getStringAttribute('valid_from');
   }
-  public set validFrom(value: string) {
-    this._validFrom = value;
-  }
-  public resetValidFrom() {
-    this._validFrom = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get validFromInput() {
-    return this._validFrom;
-  }
 
-  // version - computed: true, optional: true, required: false
-  private _version?: number; 
+  // version - computed: true, optional: false, required: false
   public get version() {
     return this.getNumberAttribute('version');
   }
-  public set version(value: number) {
-    this._version = value;
-  }
-  public resetVersion() {
-    this._version = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get versionInput() {
-    return this._version;
-  }
 }
 
-export class ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList extends cdktn.ComplexList {
-  public internalValue? : ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfo[] | cdktn.IResolvable
+export class ApigeeKeystoresAliasesKeyCertFileCertsInfoList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -539,111 +182,33 @@ export class ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList extends cdkt
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference {
-    return new ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface ApigeeKeystoresAliasesKeyCertFileCertsInfo {
-  /**
-  * cert_info block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#cert_info ApigeeKeystoresAliasesKeyCertFile#cert_info}
-  */
-  readonly certInfo?: ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfo[] | cdktn.IResolvable;
-}
-
-export function apigeeKeystoresAliasesKeyCertFileCertsInfoToTerraform(struct?: ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference | ApigeeKeystoresAliasesKeyCertFileCertsInfo): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-    cert_info: cdktn.listMapper(apigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoToTerraform, true)(struct!.certInfo),
-  }
-}
-
-
-export function apigeeKeystoresAliasesKeyCertFileCertsInfoToHclTerraform(struct?: ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference | ApigeeKeystoresAliasesKeyCertFileCertsInfo): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  const attrs = {
-    cert_info: {
-      value: cdktn.listMapperHcl(apigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoToHclTerraform, true)(struct!.certInfo),
-      isBlock: true,
-      type: "list",
-      storageClassType: "ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): ApigeeKeystoresAliasesKeyCertFileCertsInfo | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._certInfo?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.certInfo = this._certInfo?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: ApigeeKeystoresAliasesKeyCertFileCertsInfo | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._certInfo.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._certInfo.internalValue = value.certInfo;
-    }
-  }
-
-  // cert_info - computed: false, optional: true, required: false
-  private _certInfo = new ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfoList(this, "cert_info", false);
-  public get certInfo() {
-    return this._certInfo;
-  }
-  public putCertInfo(value: ApigeeKeystoresAliasesKeyCertFileCertsInfoCertInfo[] | cdktn.IResolvable) {
-    this._certInfo.internalValue = value;
-  }
-  public resetCertInfo() {
-    this._certInfo.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certInfoInput() {
-    return this._certInfo.internalValue;
+  public get(index: number): ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference {
+    return new ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface ApigeeKeystoresAliasesKeyCertFileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#create ApigeeKeystoresAliasesKeyCertFile#create}
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#create ApigeeKeystoresAliasesKeyCertFile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#delete ApigeeKeystoresAliasesKeyCertFile#delete}
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#delete ApigeeKeystoresAliasesKeyCertFile#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#read ApigeeKeystoresAliasesKeyCertFile#read}
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#read ApigeeKeystoresAliasesKeyCertFile#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#update ApigeeKeystoresAliasesKeyCertFile#update}
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#update ApigeeKeystoresAliasesKeyCertFile#update}
   */
   readonly update?: string;
 }
@@ -824,7 +389,7 @@ export class ApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file google_apigee_keystores_aliases_key_cert_file}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file google_apigee_keystores_aliases_key_cert_file}
 */
 export class ApigeeKeystoresAliasesKeyCertFile extends cdktn.TerraformResource {
 
@@ -840,7 +405,7 @@ export class ApigeeKeystoresAliasesKeyCertFile extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApigeeKeystoresAliasesKeyCertFile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApigeeKeystoresAliasesKeyCertFile to import
-  * @param importFromId The id of the existing ApigeeKeystoresAliasesKeyCertFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApigeeKeystoresAliasesKeyCertFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApigeeKeystoresAliasesKeyCertFile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -852,7 +417,7 @@ export class ApigeeKeystoresAliasesKeyCertFile extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/apigee_keystores_aliases_key_cert_file google_apigee_keystores_aliases_key_cert_file} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_keystores_aliases_key_cert_file google_apigee_keystores_aliases_key_cert_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -863,8 +428,8 @@ export class ApigeeKeystoresAliasesKeyCertFile extends cdktn.TerraformResource {
       terraformResourceType: 'google_apigee_keystores_aliases_key_cert_file',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.50.0'
+        providerVersion: '7.31.0',
+        providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -877,12 +442,10 @@ export class ApigeeKeystoresAliasesKeyCertFile extends cdktn.TerraformResource {
     this._alias = config.alias;
     this._cert = config.cert;
     this._environment = config.environment;
-    this._id = config.id;
     this._key = config.key;
     this._keystore = config.keystore;
     this._orgId = config.orgId;
     this._password = config.password;
-    this._certsInfo.internalValue = config.certsInfo;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -916,6 +479,12 @@ export class ApigeeKeystoresAliasesKeyCertFile extends cdktn.TerraformResource {
     return this._cert;
   }
 
+  // certs_info - computed: true, optional: false, required: false
+  private _certsInfo = new ApigeeKeystoresAliasesKeyCertFileCertsInfoList(this, "certs_info", false);
+  public get certsInfo() {
+    return this._certsInfo;
+  }
+
   // environment - computed: false, optional: false, required: true
   private _environment?: string; 
   public get environment() {
@@ -929,20 +498,9 @@ export class ApigeeKeystoresAliasesKeyCertFile extends cdktn.TerraformResource {
     return this._environment;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // key - computed: false, optional: true, required: false
@@ -1008,22 +566,6 @@ export class ApigeeKeystoresAliasesKeyCertFile extends cdktn.TerraformResource {
     return this.getStringAttribute('type');
   }
 
-  // certs_info - computed: false, optional: true, required: false
-  private _certsInfo = new ApigeeKeystoresAliasesKeyCertFileCertsInfoOutputReference(this, "certs_info");
-  public get certsInfo() {
-    return this._certsInfo;
-  }
-  public putCertsInfo(value: ApigeeKeystoresAliasesKeyCertFileCertsInfo) {
-    this._certsInfo.internalValue = value;
-  }
-  public resetCertsInfo() {
-    this._certsInfo.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get certsInfoInput() {
-    return this._certsInfo.internalValue;
-  }
-
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new ApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1049,12 +591,10 @@ export class ApigeeKeystoresAliasesKeyCertFile extends cdktn.TerraformResource {
       alias: cdktn.stringToTerraform(this._alias),
       cert: cdktn.stringToTerraform(this._cert),
       environment: cdktn.stringToTerraform(this._environment),
-      id: cdktn.stringToTerraform(this._id),
       key: cdktn.stringToTerraform(this._key),
       keystore: cdktn.stringToTerraform(this._keystore),
       org_id: cdktn.stringToTerraform(this._orgId),
       password: cdktn.stringToTerraform(this._password),
-      certs_info: apigeeKeystoresAliasesKeyCertFileCertsInfoToTerraform(this._certsInfo.internalValue),
       timeouts: apigeeKeystoresAliasesKeyCertFileTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1075,12 +615,6 @@ export class ApigeeKeystoresAliasesKeyCertFile extends cdktn.TerraformResource {
       },
       environment: {
         value: cdktn.stringToHclTerraform(this._environment),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1108,12 +642,6 @@ export class ApigeeKeystoresAliasesKeyCertFile extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      certs_info: {
-        value: apigeeKeystoresAliasesKeyCertFileCertsInfoToHclTerraform(this._certsInfo.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "ApigeeKeystoresAliasesKeyCertFileCertsInfoList",
       },
       timeouts: {
         value: apigeeKeystoresAliasesKeyCertFileTimeoutsToHclTerraform(this._timeouts.internalValue),

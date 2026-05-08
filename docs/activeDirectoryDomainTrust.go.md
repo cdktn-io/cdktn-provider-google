@@ -4,12 +4,12 @@
 
 ### ActiveDirectoryDomainTrust <a name="ActiveDirectoryDomainTrust" id="@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/activedirectorydomaintrust"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/activedirectorydomaintrust"
 
 activedirectorydomaintrust.NewActiveDirectoryDomainTrust(scope Construct, id *string, config ActiveDirectoryDomainTrustConfig) ActiveDirectoryDomainTrust
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/activedirectorydomaintrust"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/activedirectorydomaintrust"
 
 activedirectorydomaintrust.ActiveDirectoryDomainTrust_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/activedirectorydomaintrust"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/activedirectorydomaintrust"
 
 activedirectorydomaintrust.ActiveDirectoryDomainTrust_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ activedirectorydomaintrust.ActiveDirectoryDomainTrust_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/activedirectorydomaintrust"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/activedirectorydomaintrust"
 
 activedirectorydomaintrust.ActiveDirectoryDomainTrust_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ activedirectorydomaintrust.ActiveDirectoryDomainTrust_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/activedirectorydomaintrust"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/activedirectorydomaintrust"
 
 activedirectorydomaintrust.ActiveDirectoryDomainTrust_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ActiveDirectoryDomainTrust
 
 The id of the existing ActiveDirectoryDomainTrust that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -950,7 +950,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/activedirectorydomaintrust"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/activedirectorydomaintrust"
 
 &activedirectorydomaintrust.ActiveDirectoryDomainTrustConfig {
 	Connection: interface{},
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/activedirectoryd
 	Id: *string,
 	Project: *string,
 	SelectiveAuthentication: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v18.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts,
 }
 ```
 
@@ -990,8 +990,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/activedirectoryd
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.trustDirection">TrustDirection</a></code> | <code>*string</code> | The trust direction, which decides if the current domain is trusted, trusting, or both. Possible values: ["INBOUND", "OUTBOUND", "BIDIRECTIONAL"]. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.trustHandshakeSecret">TrustHandshakeSecret</a></code> | <code>*string</code> | The trust secret used for the handshake with the target domain. This will not be stored. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.trustType">TrustType</a></code> | <code>*string</code> | The type of trust represented by the trust resource. Possible values: ["FOREST", "EXTERNAL"]. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#id ActiveDirectoryDomainTrust#id}. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#project ActiveDirectoryDomainTrust#project}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#id ActiveDirectoryDomainTrust#id}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#project ActiveDirectoryDomainTrust#project}. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.selectiveAuthentication">SelectiveAuthentication</a></code> | <code>interface{}</code> | Whether the trusted side has forest/domain wide access or selective access to an approved set of resources. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts">ActiveDirectoryDomainTrustTimeouts</a></code> | timeouts block. |
 
@@ -1077,7 +1077,7 @@ Domain *string
 
 The fully qualified domain name. e.g. mydomain.myorganization.com, with the restrictions of https://cloud.google.com/managed-microsoft-ad/reference/rest/v1/projects.locations.global.domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#domain ActiveDirectoryDomainTrust#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#domain ActiveDirectoryDomainTrust#domain}
 
 ---
 
@@ -1091,7 +1091,7 @@ TargetDnsIpAddresses *[]*string
 
 The target DNS server IP addresses which can resolve the remote domain involved in the trust.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#target_dns_ip_addresses ActiveDirectoryDomainTrust#target_dns_ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#target_dns_ip_addresses ActiveDirectoryDomainTrust#target_dns_ip_addresses}
 
 ---
 
@@ -1105,7 +1105,7 @@ TargetDomainName *string
 
 The fully qualified target domain name which will be in trust with the current domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#target_domain_name ActiveDirectoryDomainTrust#target_domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#target_domain_name ActiveDirectoryDomainTrust#target_domain_name}
 
 ---
 
@@ -1119,7 +1119,7 @@ TrustDirection *string
 
 The trust direction, which decides if the current domain is trusted, trusting, or both. Possible values: ["INBOUND", "OUTBOUND", "BIDIRECTIONAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#trust_direction ActiveDirectoryDomainTrust#trust_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#trust_direction ActiveDirectoryDomainTrust#trust_direction}
 
 ---
 
@@ -1133,7 +1133,7 @@ TrustHandshakeSecret *string
 
 The trust secret used for the handshake with the target domain. This will not be stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#trust_handshake_secret ActiveDirectoryDomainTrust#trust_handshake_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#trust_handshake_secret ActiveDirectoryDomainTrust#trust_handshake_secret}
 
 ---
 
@@ -1147,7 +1147,7 @@ TrustType *string
 
 The type of trust represented by the trust resource. Possible values: ["FOREST", "EXTERNAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#trust_type ActiveDirectoryDomainTrust#trust_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#trust_type ActiveDirectoryDomainTrust#trust_type}
 
 ---
 
@@ -1159,7 +1159,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#id ActiveDirectoryDomainTrust#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#id ActiveDirectoryDomainTrust#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1174,7 +1174,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#project ActiveDirectoryDomainTrust#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#project ActiveDirectoryDomainTrust#project}.
 
 ---
 
@@ -1188,7 +1188,7 @@ SelectiveAuthentication interface{}
 
 Whether the trusted side has forest/domain wide access or selective access to an approved set of resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#selective_authentication ActiveDirectoryDomainTrust#selective_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#selective_authentication ActiveDirectoryDomainTrust#selective_authentication}
 
 ---
 
@@ -1202,7 +1202,7 @@ Timeouts ActiveDirectoryDomainTrustTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#timeouts ActiveDirectoryDomainTrust#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#timeouts ActiveDirectoryDomainTrust#timeouts}
 
 ---
 
@@ -1211,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/activedirectorydomaintrust"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/activedirectorydomaintrust"
 
 &activedirectorydomaintrust.ActiveDirectoryDomainTrustTimeouts {
 	Create: *string,
@@ -1224,9 +1224,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/activedirectoryd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#create ActiveDirectoryDomainTrust#create}. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#delete ActiveDirectoryDomainTrust#delete}. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#update ActiveDirectoryDomainTrust#update}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#create ActiveDirectoryDomainTrust#create}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#delete ActiveDirectoryDomainTrust#delete}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#update ActiveDirectoryDomainTrust#update}. |
 
 ---
 
@@ -1238,7 +1238,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#create ActiveDirectoryDomainTrust#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#create ActiveDirectoryDomainTrust#create}.
 
 ---
 
@@ -1250,7 +1250,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#delete ActiveDirectoryDomainTrust#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#delete ActiveDirectoryDomainTrust#delete}.
 
 ---
 
@@ -1262,7 +1262,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/active_directory_domain_trust#update ActiveDirectoryDomainTrust#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#update ActiveDirectoryDomainTrust#update}.
 
 ---
 
@@ -1273,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v18/activedirectorydomaintrust"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/activedirectorydomaintrust"
 
 activedirectorydomaintrust.NewActiveDirectoryDomainTrustTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActiveDirectoryDomainTrustTimeoutsOutputReference
 ```
