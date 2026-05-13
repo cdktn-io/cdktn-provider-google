@@ -4,7 +4,7 @@
 
 ### NetappHostGroup <a name="NetappHostGroup" id="@cdktn/provider-google.netappHostGroup.NetappHostGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group google_netapp_host_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group google_netapp_host_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappHostGroup.NetappHostGroup.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the NetappHostGroup to import.
 
 The id of the existing NetappHostGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1041,9 +1041,9 @@ new NetappHostGroupConfig {
 | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.osType">OsType</a></code> | <code>string</code> | The OS type of the host group. |
 | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.type">Type</a></code> | <code>string</code> | Type of the host group. Possible values: ["ISCSI_INITIATOR"]. |
 | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.description">Description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#id NetappHostGroup#id}. |
+| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#id NetappHostGroup#id}. |
 | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#project NetappHostGroup#project}. |
+| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#project NetappHostGroup#project}. |
 | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts">NetappHostGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1128,7 +1128,7 @@ public string[] Hosts { get; set; }
 
 The list of hosts associated with the host group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#hosts NetappHostGroup#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#hosts NetappHostGroup#hosts}
 
 ---
 
@@ -1142,7 +1142,7 @@ public string Location { get; set; }
 
 Location (region) of the Host Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#location NetappHostGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#location NetappHostGroup#location}
 
 ---
 
@@ -1156,7 +1156,7 @@ public string Name { get; set; }
 
 The resource name of the Host Group. Needs to be unique per location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#name NetappHostGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#name NetappHostGroup#name}
 
 ---
 
@@ -1174,7 +1174,7 @@ It indicates the type of operating system
 used by all of the hosts in the HostGroup. All hosts in a HostGroup must be
 of the same OS type. This can be set only when creating a HostGroup. Possible values: ["LINUX", "WINDOWS", "ESXI"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#os_type NetappHostGroup#os_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#os_type NetappHostGroup#os_type}
 
 ---
 
@@ -1188,7 +1188,7 @@ public string Type { get; set; }
 
 Type of the host group. Possible values: ["ISCSI_INITIATOR"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#type NetappHostGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#type NetappHostGroup#type}
 
 ---
 
@@ -1202,7 +1202,7 @@ public string Description { get; set; }
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#description NetappHostGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#description NetappHostGroup#description}
 
 ---
 
@@ -1214,7 +1214,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#id NetappHostGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#id NetappHostGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1234,7 +1234,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#labels NetappHostGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#labels NetappHostGroup#labels}
 
 ---
 
@@ -1246,7 +1246,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#project NetappHostGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#project NetappHostGroup#project}.
 
 ---
 
@@ -1260,7 +1260,7 @@ public NetappHostGroupTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#timeouts NetappHostGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#timeouts NetappHostGroup#timeouts}
 
 ---
 
@@ -1282,9 +1282,9 @@ new NetappHostGroupTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#create NetappHostGroup#create}. |
-| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#delete NetappHostGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#update NetappHostGroup#update}. |
+| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#create NetappHostGroup#create}. |
+| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#delete NetappHostGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#update NetappHostGroup#update}. |
 
 ---
 
@@ -1296,7 +1296,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#create NetappHostGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#create NetappHostGroup#create}.
 
 ---
 
@@ -1308,7 +1308,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#delete NetappHostGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#delete NetappHostGroup#delete}.
 
 ---
 
@@ -1320,7 +1320,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/netapp_host_group#update NetappHostGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/netapp_host_group#update NetappHostGroup#update}.
 
 ---
 

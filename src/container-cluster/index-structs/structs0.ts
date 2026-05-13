@@ -6,11 +6,11 @@
 import * as cdktn from 'cdktn';
 export interface ContainerClusterAddonsConfigCloudrunConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
   */
   readonly disabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#load_balancer_type ContainerCluster#load_balancer_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#load_balancer_type ContainerCluster#load_balancer_type}
   */
   readonly loadBalancerType?: string;
 }
@@ -120,7 +120,7 @@ export class ContainerClusterAddonsConfigCloudrunConfigOutputReference extends c
 }
 export interface ContainerClusterAddonsConfigConfigConnectorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -201,7 +201,7 @@ export class ContainerClusterAddonsConfigConfigConnectorConfigOutputReference ex
 }
 export interface ContainerClusterAddonsConfigDnsCacheConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -282,7 +282,7 @@ export class ContainerClusterAddonsConfigDnsCacheConfigOutputReference extends c
 }
 export interface ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -363,7 +363,7 @@ export class ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputR
 }
 export interface ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -444,7 +444,7 @@ export class ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputRefere
 }
 export interface ContainerClusterAddonsConfigGcsFuseCsiDriverConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -525,7 +525,7 @@ export class ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference e
 }
 export interface ContainerClusterAddonsConfigGkeBackupAgentConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -606,7 +606,7 @@ export class ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference ext
 }
 export interface ContainerClusterAddonsConfigHorizontalPodAutoscaling {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
   */
   readonly disabled: boolean | cdktn.IResolvable;
 }
@@ -687,7 +687,7 @@ export class ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference
 }
 export interface ContainerClusterAddonsConfigHttpLoadBalancing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
   */
   readonly disabled: boolean | cdktn.IResolvable;
 }
@@ -771,20 +771,20 @@ export interface ContainerClusterAddonsConfigLustreCsiDriverConfig {
   * When set to true, this disables multi-NIC support for the Lustre CSI driver. By default, GKE enables multi-NIC support, which
   * 										allows the Lustre CSI driver to automatically detect and configure all suitable network interfaces on a node to maximize I/O performance for demanding workloads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disable_multi_nic ContainerCluster#disable_multi_nic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disable_multi_nic ContainerCluster#disable_multi_nic}
   */
   readonly disableMultiNic?: boolean | cdktn.IResolvable;
   /**
   * If set to true, the Lustre CSI driver will initialize LNet (the virtual network layer for Lustre kernel module) using port 6988.
   * 										This flag is required to workaround a port conflict with the gke-metadata-server on GKE nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_legacy_lustre_port ContainerCluster#enable_legacy_lustre_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_legacy_lustre_port ContainerCluster#enable_legacy_lustre_port}
   */
   readonly enableLegacyLustrePort?: boolean | cdktn.IResolvable;
   /**
   * Whether the Lustre CSI driver is enabled for this cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -923,7 +923,7 @@ export class ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference ex
 }
 export interface ContainerClusterAddonsConfigNetworkPolicyConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
   */
   readonly disabled: boolean | cdktn.IResolvable;
 }
@@ -1004,7 +1004,7 @@ export class ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference exte
 }
 export interface ContainerClusterAddonsConfigParallelstoreCsiDriverConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -1085,7 +1085,7 @@ export class ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputRefer
 }
 export interface ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -1166,7 +1166,7 @@ export class ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfi
 }
 export interface ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -1247,19 +1247,19 @@ export class ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringCo
 }
 export interface ContainerClusterAddonsConfigRayOperatorConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * ray_cluster_logging_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#ray_cluster_logging_config ContainerCluster#ray_cluster_logging_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#ray_cluster_logging_config ContainerCluster#ray_cluster_logging_config}
   */
   readonly rayClusterLoggingConfig?: ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig;
   /**
   * ray_cluster_monitoring_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#ray_cluster_monitoring_config ContainerCluster#ray_cluster_monitoring_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#ray_cluster_monitoring_config ContainerCluster#ray_cluster_monitoring_config}
   */
   readonly rayClusterMonitoringConfig?: ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig;
 }
@@ -1430,7 +1430,7 @@ export class ContainerClusterAddonsConfigRayOperatorConfigList extends cdktn.Com
 }
 export interface ContainerClusterAddonsConfigSliceControllerConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -1511,7 +1511,7 @@ export class ContainerClusterAddonsConfigSliceControllerConfigOutputReference ex
 }
 export interface ContainerClusterAddonsConfigStatefulHaConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -1594,91 +1594,91 @@ export interface ContainerClusterAddonsConfig {
   /**
   * cloudrun_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cloudrun_config ContainerCluster#cloudrun_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cloudrun_config ContainerCluster#cloudrun_config}
   */
   readonly cloudrunConfig?: ContainerClusterAddonsConfigCloudrunConfig;
   /**
   * config_connector_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#config_connector_config ContainerCluster#config_connector_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#config_connector_config ContainerCluster#config_connector_config}
   */
   readonly configConnectorConfig?: ContainerClusterAddonsConfigConfigConnectorConfig;
   /**
   * dns_cache_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#dns_cache_config ContainerCluster#dns_cache_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#dns_cache_config ContainerCluster#dns_cache_config}
   */
   readonly dnsCacheConfig?: ContainerClusterAddonsConfigDnsCacheConfig;
   /**
   * gce_persistent_disk_csi_driver_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gce_persistent_disk_csi_driver_config ContainerCluster#gce_persistent_disk_csi_driver_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gce_persistent_disk_csi_driver_config ContainerCluster#gce_persistent_disk_csi_driver_config}
   */
   readonly gcePersistentDiskCsiDriverConfig?: ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig;
   /**
   * gcp_filestore_csi_driver_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gcp_filestore_csi_driver_config ContainerCluster#gcp_filestore_csi_driver_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gcp_filestore_csi_driver_config ContainerCluster#gcp_filestore_csi_driver_config}
   */
   readonly gcpFilestoreCsiDriverConfig?: ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig;
   /**
   * gcs_fuse_csi_driver_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gcs_fuse_csi_driver_config ContainerCluster#gcs_fuse_csi_driver_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gcs_fuse_csi_driver_config ContainerCluster#gcs_fuse_csi_driver_config}
   */
   readonly gcsFuseCsiDriverConfig?: ContainerClusterAddonsConfigGcsFuseCsiDriverConfig;
   /**
   * gke_backup_agent_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gke_backup_agent_config ContainerCluster#gke_backup_agent_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gke_backup_agent_config ContainerCluster#gke_backup_agent_config}
   */
   readonly gkeBackupAgentConfig?: ContainerClusterAddonsConfigGkeBackupAgentConfig;
   /**
   * horizontal_pod_autoscaling block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#horizontal_pod_autoscaling ContainerCluster#horizontal_pod_autoscaling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#horizontal_pod_autoscaling ContainerCluster#horizontal_pod_autoscaling}
   */
   readonly horizontalPodAutoscaling?: ContainerClusterAddonsConfigHorizontalPodAutoscaling;
   /**
   * http_load_balancing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#http_load_balancing ContainerCluster#http_load_balancing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#http_load_balancing ContainerCluster#http_load_balancing}
   */
   readonly httpLoadBalancing?: ContainerClusterAddonsConfigHttpLoadBalancing;
   /**
   * lustre_csi_driver_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#lustre_csi_driver_config ContainerCluster#lustre_csi_driver_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#lustre_csi_driver_config ContainerCluster#lustre_csi_driver_config}
   */
   readonly lustreCsiDriverConfig?: ContainerClusterAddonsConfigLustreCsiDriverConfig;
   /**
   * network_policy_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#network_policy_config ContainerCluster#network_policy_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#network_policy_config ContainerCluster#network_policy_config}
   */
   readonly networkPolicyConfig?: ContainerClusterAddonsConfigNetworkPolicyConfig;
   /**
   * parallelstore_csi_driver_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#parallelstore_csi_driver_config ContainerCluster#parallelstore_csi_driver_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#parallelstore_csi_driver_config ContainerCluster#parallelstore_csi_driver_config}
   */
   readonly parallelstoreCsiDriverConfig?: ContainerClusterAddonsConfigParallelstoreCsiDriverConfig;
   /**
   * ray_operator_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#ray_operator_config ContainerCluster#ray_operator_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#ray_operator_config ContainerCluster#ray_operator_config}
   */
   readonly rayOperatorConfig?: ContainerClusterAddonsConfigRayOperatorConfig[] | cdktn.IResolvable;
   /**
   * slice_controller_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#slice_controller_config ContainerCluster#slice_controller_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#slice_controller_config ContainerCluster#slice_controller_config}
   */
   readonly sliceControllerConfig?: ContainerClusterAddonsConfigSliceControllerConfig;
   /**
   * stateful_ha_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#stateful_ha_config ContainerCluster#stateful_ha_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#stateful_ha_config ContainerCluster#stateful_ha_config}
   */
   readonly statefulHaConfig?: ContainerClusterAddonsConfigStatefulHaConfig;
 }
@@ -2173,7 +2173,7 @@ export interface ContainerClusterAnonymousAuthenticationConfig {
   * * ENABLED: Authentication of anonymous users is enabled for all endpoints.
   * * LIMITED: Anonymous access is only allowed for health check endpoints.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#mode ContainerCluster#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#mode ContainerCluster#mode}
   */
   readonly mode: string;
 }
@@ -2256,7 +2256,7 @@ export interface ContainerClusterAuthenticatorGroupsConfig {
   /**
   * The name of the RBAC security group for use with Google security groups in Kubernetes RBAC. Group name must be in format gke-security-groups@yourdomain.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#security_group ContainerCluster#security_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#security_group ContainerCluster#security_group}
   */
   readonly securityGroup: string;
 }
@@ -2339,25 +2339,25 @@ export interface ContainerClusterAutopilotClusterPolicyConfig {
   /**
   * If true, prevents standard node pools and requires only autopilot node pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#no_standard_node_pools ContainerCluster#no_standard_node_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#no_standard_node_pools ContainerCluster#no_standard_node_pools}
   */
   readonly noStandardNodePools?: boolean | cdktn.IResolvable;
   /**
   * If true, prevents impersonation and CSRs for GKE System users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#no_system_impersonation ContainerCluster#no_system_impersonation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#no_system_impersonation ContainerCluster#no_system_impersonation}
   */
   readonly noSystemImpersonation?: boolean | cdktn.IResolvable;
   /**
   * If true, prevents creation and mutation of resources in GKE managed namespaces and cluster-scoped GKE managed resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#no_system_mutation ContainerCluster#no_system_mutation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#no_system_mutation ContainerCluster#no_system_mutation}
   */
   readonly noSystemMutation?: boolean | cdktn.IResolvable;
   /**
   * If true, unsafe webhooks are not allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#no_unsafe_webhooks ContainerCluster#no_unsafe_webhooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#no_unsafe_webhooks ContainerCluster#no_unsafe_webhooks}
   */
   readonly noUnsafeWebhooks?: boolean | cdktn.IResolvable;
 }
@@ -2530,13 +2530,13 @@ export interface ContainerClusterBinaryAuthorization {
   /**
   * Enable Binary Authorization for this cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Mode of operation for Binary Authorization policy evaluation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#evaluation_mode ContainerCluster#evaluation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#evaluation_mode ContainerCluster#evaluation_mode}
   */
   readonly evaluationMode?: string;
 }
@@ -2731,13 +2731,13 @@ export interface ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManag
   /**
   * Specifies whether the node auto-repair is enabled for the node pool. If enabled, the nodes in this node pool will be monitored and, if they fail health checks too many times, an automatic repair action will be triggered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#auto_repair ContainerCluster#auto_repair}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#auto_repair ContainerCluster#auto_repair}
   */
   readonly autoRepair?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether node auto-upgrade is enabled for the node pool. If enabled, node auto-upgrade helps keep the nodes in your node pool up to date with the latest release version of Kubernetes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#auto_upgrade ContainerCluster#auto_upgrade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#auto_upgrade ContainerCluster#auto_upgrade}
   */
   readonly autoUpgrade?: boolean | cdktn.IResolvable;
 }
@@ -2858,13 +2858,13 @@ export interface ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShiel
   /**
   * Defines whether the instance has integrity monitoring enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_integrity_monitoring ContainerCluster#enable_integrity_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_integrity_monitoring ContainerCluster#enable_integrity_monitoring}
   */
   readonly enableIntegrityMonitoring?: boolean | cdktn.IResolvable;
   /**
   * Defines whether the instance has Secure Boot enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_secure_boot ContainerCluster#enable_secure_boot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_secure_boot ContainerCluster#enable_secure_boot}
   */
   readonly enableSecureBoot?: boolean | cdktn.IResolvable;
 }
@@ -2979,13 +2979,13 @@ export interface ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgra
   /**
   * Number of blue nodes to drain in a batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#batch_node_count ContainerCluster#batch_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#batch_node_count ContainerCluster#batch_node_count}
   */
   readonly batchNodeCount?: number;
   /**
   * Percentage of the bool pool nodes to drain in a batch. The range of this field should be (0.0, 1.0].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#batch_percentage ContainerCluster#batch_percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#batch_percentage ContainerCluster#batch_percentage}
   */
   readonly batchPercentage?: number;
   /**
@@ -2993,7 +2993,7 @@ export interface ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgra
   * 
   * 																			A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#batch_soak_duration ContainerCluster#batch_soak_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#batch_soak_duration ContainerCluster#batch_soak_duration}
   */
   readonly batchSoakDuration?: string;
 }
@@ -3139,13 +3139,13 @@ export interface ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgra
   * 
   * 																A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#node_pool_soak_duration ContainerCluster#node_pool_soak_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#node_pool_soak_duration ContainerCluster#node_pool_soak_duration}
   */
   readonly nodePoolSoakDuration?: string;
   /**
   * standard_rollout_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#standard_rollout_policy ContainerCluster#standard_rollout_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#standard_rollout_policy ContainerCluster#standard_rollout_policy}
   */
   readonly standardRolloutPolicy?: ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy;
 }
@@ -3260,25 +3260,25 @@ export interface ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgra
   /**
   * The maximum number of nodes that can be created beyond the current size of the node pool during the upgrade process.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#max_surge ContainerCluster#max_surge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#max_surge ContainerCluster#max_surge}
   */
   readonly maxSurge?: number;
   /**
   * The maximum number of nodes that can be simultaneously unavailable during the upgrade process.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#max_unavailable ContainerCluster#max_unavailable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#max_unavailable ContainerCluster#max_unavailable}
   */
   readonly maxUnavailable?: number;
   /**
   * Update strategy of the node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#strategy ContainerCluster#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#strategy ContainerCluster#strategy}
   */
   readonly strategy?: string;
   /**
   * blue_green_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#blue_green_settings ContainerCluster#blue_green_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#blue_green_settings ContainerCluster#blue_green_settings}
   */
   readonly blueGreenSettings?: ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings;
 }
@@ -3451,61 +3451,61 @@ export interface ContainerClusterClusterAutoscalingAutoProvisioningDefaults {
   /**
   * The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#boot_disk_kms_key ContainerCluster#boot_disk_kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#boot_disk_kms_key ContainerCluster#boot_disk_kms_key}
   */
   readonly bootDiskKmsKey?: string;
   /**
   * Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disk_size ContainerCluster#disk_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disk_size ContainerCluster#disk_size}
   */
   readonly diskSize?: number;
   /**
   * Type of the disk attached to each node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
   */
   readonly diskType?: string;
   /**
   * The default image type used by NAP once a new node pool is being created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#image_type ContainerCluster#image_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#image_type ContainerCluster#image_type}
   */
   readonly imageType?: string;
   /**
   * Minimum CPU platform to be used by this instance. The instance may be scheduled on the specified or newer CPU platform. Applicable values are the friendly names of CPU platforms, such as Intel Haswell.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#min_cpu_platform ContainerCluster#min_cpu_platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#min_cpu_platform ContainerCluster#min_cpu_platform}
   */
   readonly minCpuPlatform?: string;
   /**
   * Scopes that are used by NAP when creating node pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
   */
   readonly oauthScopes?: string[];
   /**
   * The Google Cloud Platform Service Account to be used by the node VMs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#service_account ContainerCluster#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#service_account ContainerCluster#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * management block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#management ContainerCluster#management}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#management ContainerCluster#management}
   */
   readonly management?: ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement;
   /**
   * shielded_instance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
   */
   readonly shieldedInstanceConfig?: ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig;
   /**
   * upgrade_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#upgrade_settings ContainerCluster#upgrade_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#upgrade_settings ContainerCluster#upgrade_settings}
   */
   readonly upgradeSettings?: ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings;
 }
@@ -3852,19 +3852,19 @@ export interface ContainerClusterClusterAutoscalingResourceLimits {
   /**
   * Maximum amount of the resource in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#maximum ContainerCluster#maximum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#maximum ContainerCluster#maximum}
   */
   readonly maximum: number;
   /**
   * Minimum amount of the resource in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#minimum ContainerCluster#minimum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#minimum ContainerCluster#minimum}
   */
   readonly minimum?: number;
   /**
   * The type of the resource. For example, cpu and memory. See the guide to using Node Auto-Provisioning for a list of types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#resource_type ContainerCluster#resource_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#resource_type ContainerCluster#resource_type}
   */
   readonly resourceType: string;
 }
@@ -4034,37 +4034,37 @@ export interface ContainerClusterClusterAutoscaling {
   /**
   * The list of Google Compute Engine zones in which the NodePool's nodes can be created by NAP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#auto_provisioning_locations ContainerCluster#auto_provisioning_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#auto_provisioning_locations ContainerCluster#auto_provisioning_locations}
   */
   readonly autoProvisioningLocations?: string[];
   /**
   * Configuration options for the Autoscaling profile feature, which lets you choose whether the cluster autoscaler should optimize for resource utilization or resource availability when deciding to remove nodes from a cluster. Can be BALANCED or OPTIMIZE_UTILIZATION. Defaults to BALANCED.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#autoscaling_profile ContainerCluster#autoscaling_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#autoscaling_profile ContainerCluster#autoscaling_profile}
   */
   readonly autoscalingProfile?: string;
   /**
   * Specifies whether default compute class behaviour is enabled. If enabled, cluster autoscaler will use Compute Class with name default for all the workloads, if not overriden.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#default_compute_class_enabled ContainerCluster#default_compute_class_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#default_compute_class_enabled ContainerCluster#default_compute_class_enabled}
   */
   readonly defaultComputeClassEnabled?: boolean | cdktn.IResolvable;
   /**
   * Whether node auto-provisioning is enabled. Resource limits for cpu and memory must be defined to enable node auto-provisioning.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * auto_provisioning_defaults block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#auto_provisioning_defaults ContainerCluster#auto_provisioning_defaults}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#auto_provisioning_defaults ContainerCluster#auto_provisioning_defaults}
   */
   readonly autoProvisioningDefaults?: ContainerClusterClusterAutoscalingAutoProvisioningDefaults;
   /**
   * resource_limits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#resource_limits ContainerCluster#resource_limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#resource_limits ContainerCluster#resource_limits}
   */
   readonly resourceLimits?: ContainerClusterClusterAutoscalingResourceLimits[] | cdktn.IResolvable;
 }
@@ -4295,13 +4295,13 @@ export interface ContainerClusterConfidentialNodes {
   /**
   * Defines the type of technology used by the confidential node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#confidential_instance_type ContainerCluster#confidential_instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#confidential_instance_type ContainerCluster#confidential_instance_type}
   */
   readonly confidentialInstanceType?: string;
   /**
   * Whether Confidential Nodes feature is enabled for all nodes in this cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -4413,25 +4413,25 @@ export interface ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig {
   /**
   * Controls whether user traffic is allowed over this endpoint. Note that GCP-managed services may still use the endpoint even if this is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#allow_external_traffic ContainerCluster#allow_external_traffic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#allow_external_traffic ContainerCluster#allow_external_traffic}
   */
   readonly allowExternalTraffic?: boolean | cdktn.IResolvable;
   /**
   * Controls whether the k8s certs auth is allowed via dns.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_k8s_certs_via_dns ContainerCluster#enable_k8s_certs_via_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_k8s_certs_via_dns ContainerCluster#enable_k8s_certs_via_dns}
   */
   readonly enableK8SCertsViaDns?: boolean | cdktn.IResolvable;
   /**
   * Controls whether the k8s token auth is allowed via dns.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_k8s_tokens_via_dns ContainerCluster#enable_k8s_tokens_via_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_k8s_tokens_via_dns ContainerCluster#enable_k8s_tokens_via_dns}
   */
   readonly enableK8STokensViaDns?: boolean | cdktn.IResolvable;
   /**
   * The cluster's DNS endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#endpoint ContainerCluster#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#endpoint ContainerCluster#endpoint}
   */
   readonly endpoint?: string;
 }
@@ -4604,7 +4604,7 @@ export interface ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig {
   /**
   * Controls whether to allow direct IP access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -4690,13 +4690,13 @@ export interface ContainerClusterControlPlaneEndpointsConfig {
   /**
   * dns_endpoint_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#dns_endpoint_config ContainerCluster#dns_endpoint_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#dns_endpoint_config ContainerCluster#dns_endpoint_config}
   */
   readonly dnsEndpointConfig?: ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig;
   /**
   * ip_endpoints_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#ip_endpoints_config ContainerCluster#ip_endpoints_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#ip_endpoints_config ContainerCluster#ip_endpoints_config}
   */
   readonly ipEndpointsConfig?: ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig;
 }
@@ -4811,7 +4811,7 @@ export interface ContainerClusterCostManagementConfig {
   /**
   * Whether to enable GKE cost allocation. When you enable GKE cost allocation, the cluster name and namespace of your GKE workloads appear in the labels field of the billing export to BigQuery. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -4894,13 +4894,13 @@ export interface ContainerClusterDatabaseEncryption {
   /**
   * The key to use to encrypt/decrypt secrets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#key_name ContainerCluster#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#key_name ContainerCluster#key_name}
   */
   readonly keyName?: string;
   /**
   * ENCRYPTED, ALL_OBJECTS_ENCRYPTION_ENABLED or DECRYPTED.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#state ContainerCluster#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#state ContainerCluster#state}
   */
   readonly state: string;
 }
@@ -5012,7 +5012,7 @@ export interface ContainerClusterDefaultSnatStatus {
   /**
   * When disabled is set to false, default IP masquerade rules will be applied to the nodes to prevent sNAT on cluster internal traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
   */
   readonly disabled: boolean | cdktn.IResolvable;
 }
@@ -5095,25 +5095,25 @@ export interface ContainerClusterDnsConfig {
   /**
   * Enable additive VPC scope DNS in a GKE cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#additive_vpc_scope_dns_domain ContainerCluster#additive_vpc_scope_dns_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#additive_vpc_scope_dns_domain ContainerCluster#additive_vpc_scope_dns_domain}
   */
   readonly additiveVpcScopeDnsDomain?: string;
   /**
   * Which in-cluster DNS provider should be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cluster_dns ContainerCluster#cluster_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cluster_dns ContainerCluster#cluster_dns}
   */
   readonly clusterDns?: string;
   /**
   * The suffix used for all cluster service records.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cluster_dns_domain ContainerCluster#cluster_dns_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cluster_dns_domain ContainerCluster#cluster_dns_domain}
   */
   readonly clusterDnsDomain?: string;
   /**
   * The scope of access to cluster DNS records.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cluster_dns_scope ContainerCluster#cluster_dns_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cluster_dns_scope ContainerCluster#cluster_dns_scope}
   */
   readonly clusterDnsScope?: string;
 }
@@ -5286,7 +5286,7 @@ export interface ContainerClusterEnableK8SBetaApis {
   /**
   * Enabled Kubernetes Beta APIs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled_apis ContainerCluster#enabled_apis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled_apis ContainerCluster#enabled_apis}
   */
   readonly enabledApis: string[];
 }
@@ -5369,7 +5369,7 @@ export interface ContainerClusterEnterpriseConfig {
   /**
   * Indicates the desired cluster tier. Available options include STANDARD and ENTERPRISE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#desired_tier ContainerCluster#desired_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#desired_tier ContainerCluster#desired_tier}
   */
   readonly desiredTier?: string;
 }
@@ -5460,13 +5460,13 @@ export interface ContainerClusterFleet {
   /**
   * The type of the cluster's fleet membership.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#membership_type ContainerCluster#membership_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#membership_type ContainerCluster#membership_type}
   */
   readonly membershipType?: string;
   /**
   * The Fleet host project of the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#project ContainerCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#project ContainerCluster#project}
   */
   readonly project?: string;
 }
@@ -5601,7 +5601,7 @@ export interface ContainerClusterGatewayApiConfig {
   /**
   * The Gateway API release channel to use for Gateway API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#channel ContainerCluster#channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#channel ContainerCluster#channel}
   */
   readonly channel: string;
 }
@@ -5685,7 +5685,7 @@ export interface ContainerClusterGkeAutoUpgradeConfig {
   * The selected auto-upgrade patch type. Accepted values are:
   * * ACCELERATED: Upgrades to the latest available patch version in a given minor and release channel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#patch_mode ContainerCluster#patch_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#patch_mode ContainerCluster#patch_mode}
   */
   readonly patchMode: string;
 }
@@ -5768,7 +5768,7 @@ export interface ContainerClusterIdentityServiceConfig {
   /**
   * Whether to enable the Identity Service component.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -5854,19 +5854,19 @@ export interface ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig {
   /**
   * List of secondary ranges names within this subnetwork that can be used for pod IPs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#pod_ipv4_range_names ContainerCluster#pod_ipv4_range_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#pod_ipv4_range_names ContainerCluster#pod_ipv4_range_names}
   */
   readonly podIpv4RangeNames?: string[];
   /**
   * Status of the subnetwork, If in draining status, subnet will not be selected for new node pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#status ContainerCluster#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#status ContainerCluster#status}
   */
   readonly status?: string;
   /**
   * Name of the subnetwork. This can be the full path of the subnetwork or just the name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
   */
   readonly subnetwork: string;
 }
@@ -6039,7 +6039,7 @@ export interface ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig {
   /**
   * Name for pod secondary ipv4 range which has the actual range defined ahead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#pod_range_names ContainerCluster#pod_range_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#pod_range_names ContainerCluster#pod_range_names}
   */
   readonly podRangeNames: string[];
 }
@@ -6122,7 +6122,7 @@ export interface ContainerClusterIpAllocationPolicyAutoIpamConfig {
   /**
   * The flag that enables Auto IPAM on this cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -6205,7 +6205,7 @@ export interface ContainerClusterIpAllocationPolicyNetworkTierConfig {
   /**
   * Network tier configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#network_tier ContainerCluster#network_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#network_tier ContainerCluster#network_tier}
   */
   readonly networkTier: string;
 }
@@ -6286,7 +6286,7 @@ export class ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference 
 }
 export interface ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
   */
   readonly disabled: boolean | cdktn.IResolvable;
 }
@@ -6369,61 +6369,61 @@ export interface ContainerClusterIpAllocationPolicy {
   /**
   * The IP address range for the cluster pod IPs. Set to blank to have a range chosen with the default size. Set to /netmask (e.g. /14) to have a range chosen with a specific netmask. Set to a CIDR notation (e.g. 10.96.0.0/14) from the RFC-1918 private networks (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cluster_ipv4_cidr_block ContainerCluster#cluster_ipv4_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cluster_ipv4_cidr_block ContainerCluster#cluster_ipv4_cidr_block}
   */
   readonly clusterIpv4CidrBlock?: string;
   /**
   * The name of the existing secondary range in the cluster's subnetwork to use for pod IP addresses. Alternatively, cluster_ipv4_cidr_block can be used to automatically create a GKE-managed one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cluster_secondary_range_name ContainerCluster#cluster_secondary_range_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cluster_secondary_range_name ContainerCluster#cluster_secondary_range_name}
   */
   readonly clusterSecondaryRangeName?: string;
   /**
   * The IP address range of the services IPs in this cluster. Set to blank to have a range chosen with the default size. Set to /netmask (e.g. /14) to have a range chosen with a specific netmask. Set to a CIDR notation (e.g. 10.96.0.0/14) from the RFC-1918 private networks (e.g. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) to pick a specific range to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#services_ipv4_cidr_block ContainerCluster#services_ipv4_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#services_ipv4_cidr_block ContainerCluster#services_ipv4_cidr_block}
   */
   readonly servicesIpv4CidrBlock?: string;
   /**
   * The name of the existing secondary range in the cluster's subnetwork to use for service ClusterIPs. Alternatively, services_ipv4_cidr_block can be used to automatically create a GKE-managed one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#services_secondary_range_name ContainerCluster#services_secondary_range_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#services_secondary_range_name ContainerCluster#services_secondary_range_name}
   */
   readonly servicesSecondaryRangeName?: string;
   /**
   * The IP Stack type of the cluster. Choose between IPV4 and IPV4_IPV6. Default type is IPV4 Only if not set
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#stack_type ContainerCluster#stack_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#stack_type ContainerCluster#stack_type}
   */
   readonly stackType?: string;
   /**
   * additional_ip_ranges_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#additional_ip_ranges_config ContainerCluster#additional_ip_ranges_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#additional_ip_ranges_config ContainerCluster#additional_ip_ranges_config}
   */
   readonly additionalIpRangesConfig?: ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig[] | cdktn.IResolvable;
   /**
   * additional_pod_ranges_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#additional_pod_ranges_config ContainerCluster#additional_pod_ranges_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#additional_pod_ranges_config ContainerCluster#additional_pod_ranges_config}
   */
   readonly additionalPodRangesConfig?: ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig;
   /**
   * auto_ipam_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#auto_ipam_config ContainerCluster#auto_ipam_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#auto_ipam_config ContainerCluster#auto_ipam_config}
   */
   readonly autoIpamConfig?: ContainerClusterIpAllocationPolicyAutoIpamConfig;
   /**
   * network_tier_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#network_tier_config ContainerCluster#network_tier_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#network_tier_config ContainerCluster#network_tier_config}
   */
   readonly networkTierConfig?: ContainerClusterIpAllocationPolicyNetworkTierConfig;
   /**
   * pod_cidr_overprovision_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#pod_cidr_overprovision_config ContainerCluster#pod_cidr_overprovision_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#pod_cidr_overprovision_config ContainerCluster#pod_cidr_overprovision_config}
   */
   readonly podCidrOverprovisionConfig?: ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig;
 }
@@ -6770,7 +6770,7 @@ export interface ContainerClusterLoggingConfig {
   /**
   * GKE components exposing logs. Valid values include SYSTEM_COMPONENTS, APISERVER, CONTROLLER_MANAGER, KCP_CONNECTION, KCP_SSHD, KCP_HPA, SCHEDULER, and WORKLOADS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_components ContainerCluster#enable_components}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_components ContainerCluster#enable_components}
   */
   readonly enableComponents: string[];
 }
@@ -6851,7 +6851,7 @@ export class ContainerClusterLoggingConfigOutputReference extends cdktn.ComplexO
 }
 export interface ContainerClusterMaintenancePolicyDailyMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}
   */
   readonly startTime: string;
 }
@@ -6937,11 +6937,11 @@ export class ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputRefere
 }
 export interface ContainerClusterMaintenancePolicyDisruptionBudget {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#minor_version_disruption_interval ContainerCluster#minor_version_disruption_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#minor_version_disruption_interval ContainerCluster#minor_version_disruption_interval}
   */
   readonly minorVersionDisruptionInterval?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#patch_version_disruption_interval ContainerCluster#patch_version_disruption_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#patch_version_disruption_interval ContainerCluster#patch_version_disruption_interval}
   */
   readonly patchVersionDisruptionInterval?: string;
 }
@@ -7066,13 +7066,13 @@ export interface ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionO
   /**
   * The behavior of the exclusion end time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#end_time_behavior ContainerCluster#end_time_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#end_time_behavior ContainerCluster#end_time_behavior}
   */
   readonly endTimeBehavior?: string;
   /**
   * The scope of automatic upgrades to restrict in the exclusion window.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#scope ContainerCluster#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#scope ContainerCluster#scope}
   */
   readonly scope: string;
 }
@@ -7182,21 +7182,21 @@ export class ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptio
 }
 export interface ContainerClusterMaintenancePolicyMaintenanceExclusion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}
   */
   readonly endTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#exclusion_name ContainerCluster#exclusion_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#exclusion_name ContainerCluster#exclusion_name}
   */
   readonly exclusionName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}
   */
   readonly startTime: string;
   /**
   * exclusion_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#exclusion_options ContainerCluster#exclusion_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#exclusion_options ContainerCluster#exclusion_options}
   */
   readonly exclusionOptions?: ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions;
 }
@@ -7393,15 +7393,15 @@ export class ContainerClusterMaintenancePolicyMaintenanceExclusionList extends c
 }
 export interface ContainerClusterMaintenancePolicyRecurringWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#end_time ContainerCluster#end_time}
   */
   readonly endTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#recurrence ContainerCluster#recurrence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#recurrence ContainerCluster#recurrence}
   */
   readonly recurrence: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#start_time ContainerCluster#start_time}
   */
   readonly startTime: string;
 }
@@ -7536,25 +7536,25 @@ export interface ContainerClusterMaintenancePolicy {
   /**
   * daily_maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#daily_maintenance_window ContainerCluster#daily_maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#daily_maintenance_window ContainerCluster#daily_maintenance_window}
   */
   readonly dailyMaintenanceWindow?: ContainerClusterMaintenancePolicyDailyMaintenanceWindow;
   /**
   * disruption_budget block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disruption_budget ContainerCluster#disruption_budget}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disruption_budget ContainerCluster#disruption_budget}
   */
   readonly disruptionBudget?: ContainerClusterMaintenancePolicyDisruptionBudget;
   /**
   * maintenance_exclusion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#maintenance_exclusion ContainerCluster#maintenance_exclusion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#maintenance_exclusion ContainerCluster#maintenance_exclusion}
   */
   readonly maintenanceExclusion?: ContainerClusterMaintenancePolicyMaintenanceExclusion[] | cdktn.IResolvable;
   /**
   * recurring_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#recurring_window ContainerCluster#recurring_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#recurring_window ContainerCluster#recurring_window}
   */
   readonly recurringWindow?: ContainerClusterMaintenancePolicyRecurringWindow;
 }
@@ -7727,7 +7727,7 @@ export interface ContainerClusterMasterAuthClientCertificateConfig {
   /**
   * Whether client certificate authorization is enabled for this cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#issue_client_certificate ContainerCluster#issue_client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#issue_client_certificate ContainerCluster#issue_client_certificate}
   */
   readonly issueClientCertificate: boolean | cdktn.IResolvable;
 }
@@ -7810,7 +7810,7 @@ export interface ContainerClusterMasterAuth {
   /**
   * client_certificate_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#client_certificate_config ContainerCluster#client_certificate_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#client_certificate_config ContainerCluster#client_certificate_config}
   */
   readonly clientCertificateConfig: ContainerClusterMasterAuthClientCertificateConfig;
 }
@@ -7908,13 +7908,13 @@ export interface ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks {
   /**
   * External network that can access Kubernetes master through HTTPS. Must be specified in CIDR notation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cidr_block ContainerCluster#cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cidr_block ContainerCluster#cidr_block}
   */
   readonly cidrBlock: string;
   /**
   * Field for users to identify CIDR blocks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#display_name ContainerCluster#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#display_name ContainerCluster#display_name}
   */
   readonly displayName?: string;
 }
@@ -8058,19 +8058,19 @@ export interface ContainerClusterMasterAuthorizedNetworksConfig {
   /**
   * Whether Kubernetes master is accessible via Google Compute Engine Public IPs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gcp_public_cidrs_access_enabled ContainerCluster#gcp_public_cidrs_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gcp_public_cidrs_access_enabled ContainerCluster#gcp_public_cidrs_access_enabled}
   */
   readonly gcpPublicCidrsAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Whether authorized networks is enforced on the private endpoint or not. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#private_endpoint_enforcement_enabled ContainerCluster#private_endpoint_enforcement_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#private_endpoint_enforcement_enabled ContainerCluster#private_endpoint_enforcement_enabled}
   */
   readonly privateEndpointEnforcementEnabled?: boolean | cdktn.IResolvable;
   /**
   * cidr_blocks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cidr_blocks ContainerCluster#cidr_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cidr_blocks ContainerCluster#cidr_blocks}
   */
   readonly cidrBlocks?: ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks[] | cdktn.IResolvable;
 }
@@ -8214,7 +8214,7 @@ export interface ContainerClusterMeshCertificates {
   /**
   * When enabled the GKE Workload Identity Certificates controller and node agent will be deployed in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_certificates ContainerCluster#enable_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_certificates ContainerCluster#enable_certificates}
   */
   readonly enableCertificates: boolean | cdktn.IResolvable;
 }
@@ -8297,13 +8297,13 @@ export interface ContainerClusterMonitoringConfigAdvancedDatapathObservabilityCo
   /**
   * Whether or not the advanced datapath metrics are enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_metrics ContainerCluster#enable_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_metrics ContainerCluster#enable_metrics}
   */
   readonly enableMetrics: boolean | cdktn.IResolvable;
   /**
   * Whether or not Relay is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_relay ContainerCluster#enable_relay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_relay ContainerCluster#enable_relay}
   */
   readonly enableRelay: boolean | cdktn.IResolvable;
 }
@@ -8412,7 +8412,7 @@ export interface ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoring
   /**
   * The scope of auto-monitoring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#scope ContainerCluster#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#scope ContainerCluster#scope}
   */
   readonly scope: string;
 }
@@ -8495,13 +8495,13 @@ export interface ContainerClusterMonitoringConfigManagedPrometheus {
   /**
   * Whether or not the managed collection is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * auto_monitoring_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#auto_monitoring_config ContainerCluster#auto_monitoring_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#auto_monitoring_config ContainerCluster#auto_monitoring_config}
   */
   readonly autoMonitoringConfig?: ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig;
 }
@@ -8613,19 +8613,19 @@ export interface ContainerClusterMonitoringConfig {
   /**
   * GKE components exposing metrics. Valid values include SYSTEM_COMPONENTS, APISERVER, SCHEDULER, CONTROLLER_MANAGER, STORAGE, HPA, POD, DAEMONSET, DEPLOYMENT, STATEFULSET, KUBELET, CADVISOR, DCGM and JOBSET.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_components ContainerCluster#enable_components}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_components ContainerCluster#enable_components}
   */
   readonly enableComponents?: string[];
   /**
   * advanced_datapath_observability_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#advanced_datapath_observability_config ContainerCluster#advanced_datapath_observability_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#advanced_datapath_observability_config ContainerCluster#advanced_datapath_observability_config}
   */
   readonly advancedDatapathObservabilityConfig?: ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig;
   /**
   * managed_prometheus block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#managed_prometheus ContainerCluster#managed_prometheus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#managed_prometheus ContainerCluster#managed_prometheus}
   */
   readonly managedPrometheus?: ContainerClusterMonitoringConfigManagedPrometheus;
 }
@@ -8769,7 +8769,7 @@ export interface ContainerClusterNetworkPerformanceConfig {
   /**
   * Specifies the total network bandwidth tier for NodePools in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#total_egress_bandwidth_tier ContainerCluster#total_egress_bandwidth_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#total_egress_bandwidth_tier ContainerCluster#total_egress_bandwidth_tier}
   */
   readonly totalEgressBandwidthTier: string;
 }
@@ -8852,13 +8852,13 @@ export interface ContainerClusterNetworkPolicy {
   /**
   * Whether network policy is enabled on the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The selected network policy provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#provider ContainerCluster#provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#provider ContainerCluster#provider}
   */
   readonly provider?: string;
 }
@@ -9055,19 +9055,19 @@ export interface ContainerClusterNodeConfigAdvancedMachineFeatures {
   /**
   * Whether the node should have nested virtualization enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_nested_virtualization ContainerCluster#enable_nested_virtualization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_nested_virtualization ContainerCluster#enable_nested_virtualization}
   */
   readonly enableNestedVirtualization?: boolean | cdktn.IResolvable;
   /**
   * Level of Performance Monitoring Unit (PMU) requested. If unset, no access to the PMU is assumed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#performance_monitoring_unit ContainerCluster#performance_monitoring_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#performance_monitoring_unit ContainerCluster#performance_monitoring_unit}
   */
   readonly performanceMonitoringUnit?: string;
   /**
   * The number of threads per physical core. To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#threads_per_core ContainerCluster#threads_per_core}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#threads_per_core ContainerCluster#threads_per_core}
   */
   readonly threadsPerCore: number;
 }
@@ -9208,25 +9208,25 @@ export interface ContainerClusterNodeConfigBootDisk {
   /**
   * Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
   */
   readonly diskType?: string;
   /**
   * Configured IOPs provisioning. Only valid with disk type hyperdisk-balanced.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#provisioned_iops ContainerCluster#provisioned_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#provisioned_iops ContainerCluster#provisioned_iops}
   */
   readonly provisionedIops?: number;
   /**
   * Configured throughput provisioning. Only valid with disk type hyperdisk-balanced.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#provisioned_throughput ContainerCluster#provisioned_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#provisioned_throughput ContainerCluster#provisioned_throughput}
   */
   readonly provisionedThroughput?: number;
   /**
   * Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#size_gb ContainerCluster#size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#size_gb ContainerCluster#size_gb}
   */
   readonly sizeGb?: number;
 }
@@ -9399,13 +9399,13 @@ export interface ContainerClusterNodeConfigConfidentialNodes {
   /**
   * Defines the type of technology used by the confidential node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#confidential_instance_type ContainerCluster#confidential_instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#confidential_instance_type ContainerCluster#confidential_instance_type}
   */
   readonly confidentialInstanceType?: string;
   /**
   * Whether Confidential Nodes feature is enabled for all nodes in this pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -9517,7 +9517,7 @@ export interface ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccess
   /**
   * URI for the secret that hosts a certificate. Must be in the format 'projects/PROJECT_NUM/secrets/SECRET_NAME/versions/VERSION_OR_LATEST'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#secret_uri ContainerCluster#secret_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#secret_uri ContainerCluster#secret_uri}
   */
   readonly secretUri: string;
 }
@@ -9600,13 +9600,13 @@ export interface ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccess
   /**
   * List of fully-qualified-domain-names. IPv4s and port specification are supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#fqdns ContainerCluster#fqdns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#fqdns ContainerCluster#fqdns}
   */
   readonly fqdns: string[];
   /**
   * gcp_secret_manager_certificate_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gcp_secret_manager_certificate_config ContainerCluster#gcp_secret_manager_certificate_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gcp_secret_manager_certificate_config ContainerCluster#gcp_secret_manager_certificate_config}
   */
   readonly gcpSecretManagerCertificateConfig: ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig;
 }
@@ -9747,13 +9747,13 @@ export interface ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccess
   /**
   * Whether or not private registries are configured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * certificate_authority_domain_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#certificate_authority_domain_config ContainerCluster#certificate_authority_domain_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#certificate_authority_domain_config ContainerCluster#certificate_authority_domain_config}
   */
   readonly certificateAuthorityDomainConfig?: ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig[] | cdktn.IResolvable;
 }
@@ -9865,7 +9865,7 @@ export interface ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCa 
   /**
   * URI for the Secret Manager secret that hosts the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
   */
   readonly gcpSecretManagerSecretUri?: string;
 }
@@ -9983,7 +9983,7 @@ export interface ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCli
   /**
   * URI for the Secret Manager secret that hosts the client certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
   */
   readonly gcpSecretManagerSecretUri?: string;
 }
@@ -10069,7 +10069,7 @@ export interface ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCli
   /**
   * URI for the Secret Manager secret that hosts the private key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gcp_secret_manager_secret_uri ContainerCluster#gcp_secret_manager_secret_uri}
   */
   readonly gcpSecretManagerSecretUri?: string;
 }
@@ -10155,13 +10155,13 @@ export interface ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCli
   /**
   * cert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cert ContainerCluster#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cert ContainerCluster#cert}
   */
   readonly cert: ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientCert;
   /**
   * key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#key ContainerCluster#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#key ContainerCluster#key}
   */
   readonly key?: ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClientKey;
 }
@@ -10305,13 +10305,13 @@ export interface ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHea
   /**
   * Configures the header key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#key ContainerCluster#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#key ContainerCluster#key}
   */
   readonly key: string;
   /**
   * Configures the header value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#value ContainerCluster#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#value ContainerCluster#value}
   */
   readonly value: string[];
 }
@@ -10452,43 +10452,43 @@ export interface ContainerClusterNodeConfigContainerdConfigRegistryHostsHosts {
   /**
   * Represent the capabilities of the registry host, specifying what operations a host is capable of performing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#capabilities ContainerCluster#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#capabilities ContainerCluster#capabilities}
   */
   readonly capabilities?: string[];
   /**
   * Specifies the maximum duration allowed for a connection attempt to complete.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#dial_timeout ContainerCluster#dial_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#dial_timeout ContainerCluster#dial_timeout}
   */
   readonly dialTimeout?: string;
   /**
   * Configures the registry host/mirror.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#host ContainerCluster#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#host ContainerCluster#host}
   */
   readonly host: string;
   /**
   * Indicate the host's API root endpoint is defined in the URL path rather than by the API specification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#override_path ContainerCluster#override_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#override_path ContainerCluster#override_path}
   */
   readonly overridePath?: boolean | cdktn.IResolvable;
   /**
   * ca block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#ca ContainerCluster#ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#ca ContainerCluster#ca}
   */
   readonly ca?: ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsCa[] | cdktn.IResolvable;
   /**
   * client block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#client ContainerCluster#client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#client ContainerCluster#client}
   */
   readonly client?: ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsClient[] | cdktn.IResolvable;
   /**
   * header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#header ContainerCluster#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#header ContainerCluster#header}
   */
   readonly header?: ContainerClusterNodeConfigContainerdConfigRegistryHostsHostsHeader[] | cdktn.IResolvable;
 }
@@ -10777,13 +10777,13 @@ export interface ContainerClusterNodeConfigContainerdConfigRegistryHosts {
   /**
   * Defines the host name of the registry server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#server ContainerCluster#server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#server ContainerCluster#server}
   */
   readonly server: string;
   /**
   * hosts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#hosts ContainerCluster#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#hosts ContainerCluster#hosts}
   */
   readonly hosts?: ContainerClusterNodeConfigContainerdConfigRegistryHostsHosts[] | cdktn.IResolvable;
 }
@@ -10927,7 +10927,7 @@ export interface ContainerClusterNodeConfigContainerdConfigWritableCgroups {
   /**
   * Whether writable cgroups are enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -11010,19 +11010,19 @@ export interface ContainerClusterNodeConfigContainerdConfig {
   /**
   * private_registry_access_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#private_registry_access_config ContainerCluster#private_registry_access_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#private_registry_access_config ContainerCluster#private_registry_access_config}
   */
   readonly privateRegistryAccessConfig?: ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig;
   /**
   * registry_hosts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#registry_hosts ContainerCluster#registry_hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#registry_hosts ContainerCluster#registry_hosts}
   */
   readonly registryHosts?: ContainerClusterNodeConfigContainerdConfigRegistryHosts[] | cdktn.IResolvable;
   /**
   * writable_cgroups block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#writable_cgroups ContainerCluster#writable_cgroups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#writable_cgroups ContainerCluster#writable_cgroups}
   */
   readonly writableCgroups?: ContainerClusterNodeConfigContainerdConfigWritableCgroups;
 }
@@ -11166,13 +11166,13 @@ export interface ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig {
   /**
   * Number of local SSDs to be utilized for GKE Data Cache. Uses NVMe interfaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#data_cache_count ContainerCluster#data_cache_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#data_cache_count ContainerCluster#data_cache_count}
   */
   readonly dataCacheCount?: number;
   /**
   * Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
   */
   readonly localSsdCount: number;
 }
@@ -11284,7 +11284,7 @@ export interface ContainerClusterNodeConfigFastSocket {
   /**
   * Whether or not NCCL Fast Socket is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -11367,7 +11367,7 @@ export interface ContainerClusterNodeConfigGcfsConfig {
   /**
   * Whether or not GCFS is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -11450,7 +11450,7 @@ export interface ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallation
   /**
   * Mode for how the GPU driver is installed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gpu_driver_version ContainerCluster#gpu_driver_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gpu_driver_version ContainerCluster#gpu_driver_version}
   */
   readonly gpuDriverVersion: string;
 }
@@ -11533,13 +11533,13 @@ export interface ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig {
   /**
   * The type of GPU sharing strategy to enable on the GPU node. Possible values are described in the API package (https://pkg.go.dev/google.golang.org/api/container/v1#GPUSharingConfig)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gpu_sharing_strategy ContainerCluster#gpu_sharing_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gpu_sharing_strategy ContainerCluster#gpu_sharing_strategy}
   */
   readonly gpuSharingStrategy: string;
   /**
   * The maximum number of containers that can share a GPU.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#max_shared_clients_per_gpu ContainerCluster#max_shared_clients_per_gpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#max_shared_clients_per_gpu ContainerCluster#max_shared_clients_per_gpu}
   */
   readonly maxSharedClientsPerGpu: number;
 }
@@ -11648,31 +11648,31 @@ export interface ContainerClusterNodeConfigGuestAccelerator {
   /**
   * The number of the accelerator cards exposed to an instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#count ContainerCluster#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#count ContainerCluster#count}
   */
   readonly count: number;
   /**
   * Size of partitions to create on the GPU. Valid values are described in the NVIDIA mig user guide (https://docs.nvidia.com/datacenter/tesla/mig-user-guide/#partitioning)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gpu_partition_size ContainerCluster#gpu_partition_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gpu_partition_size ContainerCluster#gpu_partition_size}
   */
   readonly gpuPartitionSize?: string;
   /**
   * The accelerator type resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#type ContainerCluster#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#type ContainerCluster#type}
   */
   readonly type: string;
   /**
   * gpu_driver_installation_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gpu_driver_installation_config ContainerCluster#gpu_driver_installation_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gpu_driver_installation_config ContainerCluster#gpu_driver_installation_config}
   */
   readonly gpuDriverInstallationConfig?: ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfig;
   /**
   * gpu_sharing_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gpu_sharing_config ContainerCluster#gpu_sharing_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gpu_sharing_config ContainerCluster#gpu_sharing_config}
   */
   readonly gpuSharingConfig?: ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig;
 }
@@ -11900,7 +11900,7 @@ export interface ContainerClusterNodeConfigGvnic {
   /**
   * Whether or not gvnic is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
 }
@@ -11983,7 +11983,7 @@ export interface ContainerClusterNodeConfigHostMaintenancePolicy {
   /**
   * .
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#maintenance_interval ContainerCluster#maintenance_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#maintenance_interval ContainerCluster#maintenance_interval}
   */
   readonly maintenanceInterval: string;
 }
@@ -12066,37 +12066,37 @@ export interface ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaim {
   /**
   * Defines percentage of minimum reclaim for imagefs.available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
   */
   readonly imagefsAvailable?: string;
   /**
   * Defines percentage of minimum reclaim for imagefs.inodesFree.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
   */
   readonly imagefsInodesFree?: string;
   /**
   * Defines percentage of minimum reclaim for memory.available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
   */
   readonly memoryAvailable?: string;
   /**
   * Defines percentage of minimum reclaim for nodefs.available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
   */
   readonly nodefsAvailable?: string;
   /**
   * Defines percentage of minimum reclaim for nodefs.inodesFree.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
   */
   readonly nodefsInodesFree?: string;
   /**
   * Defines percentage of minimum reclaim for pid.available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
   */
   readonly pidAvailable?: string;
 }
@@ -12327,37 +12327,37 @@ export interface ContainerClusterNodeConfigKubeletConfigEvictionSoft {
   /**
   * Defines percentage of soft eviction threshold for imagefs.available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
   */
   readonly imagefsAvailable?: string;
   /**
   * Defines percentage of soft eviction threshold for imagefs.inodesFree.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
   */
   readonly imagefsInodesFree?: string;
   /**
   * Defines quantity of soft eviction threshold for memory.available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
   */
   readonly memoryAvailable?: string;
   /**
   * Defines percentage of soft eviction threshold for nodefs.available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
   */
   readonly nodefsAvailable?: string;
   /**
   * Defines percentage of soft eviction threshold for nodefs.inodesFree.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
   */
   readonly nodefsInodesFree?: string;
   /**
   * Defines percentage of soft eviction threshold for pid.available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
   */
   readonly pidAvailable?: string;
 }
@@ -12588,37 +12588,37 @@ export interface ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriod 
   /**
   * Defines grace period for the imagefs.available soft eviction threshold
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#imagefs_available ContainerCluster#imagefs_available}
   */
   readonly imagefsAvailable?: string;
   /**
   * Defines grace period for the imagefs.inodesFree soft eviction threshold.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#imagefs_inodes_free ContainerCluster#imagefs_inodes_free}
   */
   readonly imagefsInodesFree?: string;
   /**
   * Defines grace period for the memory.available soft eviction threshold.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#memory_available ContainerCluster#memory_available}
   */
   readonly memoryAvailable?: string;
   /**
   * Defines grace period for the nodefs.available soft eviction threshold.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#nodefs_available ContainerCluster#nodefs_available}
   */
   readonly nodefsAvailable?: string;
   /**
   * Defines grace period for the nodefs.inodesFree soft eviction threshold.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#nodefs_inodes_free ContainerCluster#nodefs_inodes_free}
   */
   readonly nodefsInodesFree?: string;
   /**
   * Defines grace period for the pid.available soft eviction threshold.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#pid_available ContainerCluster#pid_available}
   */
   readonly pidAvailable?: string;
 }
@@ -12849,7 +12849,7 @@ export interface ContainerClusterNodeConfigKubeletConfigMemoryManager {
   /**
   * The Memory Manager policy to use. This policy guides how memory and hugepages are allocated and managed for pods on the node, influencing NUMA affinity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#policy ContainerCluster#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#policy ContainerCluster#policy}
   */
   readonly policy?: string;
 }
@@ -12935,13 +12935,13 @@ export interface ContainerClusterNodeConfigKubeletConfigTopologyManager {
   /**
   * The Topology Manager policy to use. This policy dictates how resource alignment is handled on the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#policy ContainerCluster#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#policy ContainerCluster#policy}
   */
   readonly policy?: string;
   /**
   * The Topology Manager scope, defining the granularity at which policy decisions are applied. Valid values are "container" (resources are aligned per container within a pod) or "pod" (resources are aligned for the entire pod).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#scope ContainerCluster#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#scope ContainerCluster#scope}
   */
   readonly scope?: string;
 }
@@ -13056,121 +13056,121 @@ export interface ContainerClusterNodeConfigKubeletConfig {
   /**
   * Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#allowed_unsafe_sysctls ContainerCluster#allowed_unsafe_sysctls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#allowed_unsafe_sysctls ContainerCluster#allowed_unsafe_sysctls}
   */
   readonly allowedUnsafeSysctls?: string[];
   /**
   * Defines the maximum number of container log files that can be present for a container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#container_log_max_files ContainerCluster#container_log_max_files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#container_log_max_files ContainerCluster#container_log_max_files}
   */
   readonly containerLogMaxFiles?: number;
   /**
   * Defines the maximum size of the container log file before it is rotated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#container_log_max_size ContainerCluster#container_log_max_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#container_log_max_size ContainerCluster#container_log_max_size}
   */
   readonly containerLogMaxSize?: string;
   /**
   * Enable CPU CFS quota enforcement for containers that specify CPU limits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cpu_cfs_quota ContainerCluster#cpu_cfs_quota}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cpu_cfs_quota ContainerCluster#cpu_cfs_quota}
   */
   readonly cpuCfsQuota?: boolean | cdktn.IResolvable;
   /**
   * Set the CPU CFS quota period value 'cpu.cfs_period_us'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cpu_cfs_quota_period ContainerCluster#cpu_cfs_quota_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cpu_cfs_quota_period ContainerCluster#cpu_cfs_quota_period}
   */
   readonly cpuCfsQuotaPeriod?: string;
   /**
   * Control the CPU management policy on the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cpu_manager_policy ContainerCluster#cpu_manager_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cpu_manager_policy ContainerCluster#cpu_manager_policy}
   */
   readonly cpuManagerPolicy?: string;
   /**
   * Defines the maximum allowed grace period (in seconds) to use when terminating pods in response to a soft eviction threshold being met.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#eviction_max_pod_grace_period_seconds ContainerCluster#eviction_max_pod_grace_period_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#eviction_max_pod_grace_period_seconds ContainerCluster#eviction_max_pod_grace_period_seconds}
   */
   readonly evictionMaxPodGracePeriodSeconds?: number;
   /**
   * Defines the percent of disk usage after which image garbage collection is always run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#image_gc_high_threshold_percent ContainerCluster#image_gc_high_threshold_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#image_gc_high_threshold_percent ContainerCluster#image_gc_high_threshold_percent}
   */
   readonly imageGcHighThresholdPercent?: number;
   /**
   * Defines the percent of disk usage before which image garbage collection is never run. Lowest disk usage to garbage collect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#image_gc_low_threshold_percent ContainerCluster#image_gc_low_threshold_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#image_gc_low_threshold_percent ContainerCluster#image_gc_low_threshold_percent}
   */
   readonly imageGcLowThresholdPercent?: number;
   /**
   * Defines the maximum age an image can be unused before it is garbage collected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#image_maximum_gc_age ContainerCluster#image_maximum_gc_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#image_maximum_gc_age ContainerCluster#image_maximum_gc_age}
   */
   readonly imageMaximumGcAge?: string;
   /**
   * Defines the minimum age for an unused image before it is garbage collected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#image_minimum_gc_age ContainerCluster#image_minimum_gc_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#image_minimum_gc_age ContainerCluster#image_minimum_gc_age}
   */
   readonly imageMinimumGcAge?: string;
   /**
   * Controls whether the kubelet read-only port is enabled. It is strongly recommended to set this to `FALSE`. Possible values: `TRUE`, `FALSE`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#insecure_kubelet_readonly_port_enabled ContainerCluster#insecure_kubelet_readonly_port_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#insecure_kubelet_readonly_port_enabled ContainerCluster#insecure_kubelet_readonly_port_enabled}
   */
   readonly insecureKubeletReadonlyPortEnabled?: string;
   /**
   * Set the maximum number of image pulls in parallel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#max_parallel_image_pulls ContainerCluster#max_parallel_image_pulls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#max_parallel_image_pulls ContainerCluster#max_parallel_image_pulls}
   */
   readonly maxParallelImagePulls?: number;
   /**
   * Controls the maximum number of processes allowed to run in a pod.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#pod_pids_limit ContainerCluster#pod_pids_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#pod_pids_limit ContainerCluster#pod_pids_limit}
   */
   readonly podPidsLimit?: number;
   /**
   * Defines whether to enable single process OOM killer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#single_process_oom_kill ContainerCluster#single_process_oom_kill}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#single_process_oom_kill ContainerCluster#single_process_oom_kill}
   */
   readonly singleProcessOomKill?: boolean | cdktn.IResolvable;
   /**
   * eviction_minimum_reclaim block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#eviction_minimum_reclaim ContainerCluster#eviction_minimum_reclaim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#eviction_minimum_reclaim ContainerCluster#eviction_minimum_reclaim}
   */
   readonly evictionMinimumReclaim?: ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaim;
   /**
   * eviction_soft block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#eviction_soft ContainerCluster#eviction_soft}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#eviction_soft ContainerCluster#eviction_soft}
   */
   readonly evictionSoft?: ContainerClusterNodeConfigKubeletConfigEvictionSoft;
   /**
   * eviction_soft_grace_period block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#eviction_soft_grace_period ContainerCluster#eviction_soft_grace_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#eviction_soft_grace_period ContainerCluster#eviction_soft_grace_period}
   */
   readonly evictionSoftGracePeriod?: ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriod;
   /**
   * memory_manager block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#memory_manager ContainerCluster#memory_manager}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#memory_manager ContainerCluster#memory_manager}
   */
   readonly memoryManager?: ContainerClusterNodeConfigKubeletConfigMemoryManager;
   /**
   * topology_manager block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#topology_manager ContainerCluster#topology_manager}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#topology_manager ContainerCluster#topology_manager}
   */
   readonly topologyManager?: ContainerClusterNodeConfigKubeletConfigTopologyManager;
 }
@@ -13807,7 +13807,7 @@ export interface ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig {
   /**
   * Whether to enable accurate time synchronization with PTP-KVM.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_ptp_kvm_time_sync ContainerCluster#enable_ptp_kvm_time_sync}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_ptp_kvm_time_sync ContainerCluster#enable_ptp_kvm_time_sync}
   */
   readonly enablePtpKvmTimeSync?: boolean | cdktn.IResolvable;
 }
@@ -13893,13 +13893,13 @@ export interface ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig {
   /**
   * Amount of 1G hugepages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#hugepage_size_1g ContainerCluster#hugepage_size_1g}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#hugepage_size_1g ContainerCluster#hugepage_size_1g}
   */
   readonly hugepageSize1G?: number;
   /**
   * Amount of 2M hugepages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#hugepage_size_2m ContainerCluster#hugepage_size_2m}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#hugepage_size_2m ContainerCluster#hugepage_size_2m}
   */
   readonly hugepageSize2M?: number;
 }
@@ -14014,7 +14014,7 @@ export interface ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoadin
   /**
   * The policy for kernel module loading.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#policy ContainerCluster#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#policy ContainerCluster#policy}
   */
   readonly policy?: string;
 }
@@ -14100,13 +14100,13 @@ export interface ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProf
   /**
   * Specifies the size of the swap space in gibibytes (GiB).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
   */
   readonly swapSizeGib?: number;
   /**
   * Specifies the size of the swap space as a percentage of the boot disk size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
   */
   readonly swapSizePercent?: number;
 }
@@ -14221,7 +14221,7 @@ export interface ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLoc
   /**
   * The number of physical local NVMe SSD disks to attach.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disk_count ContainerCluster#disk_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disk_count ContainerCluster#disk_count}
   */
   readonly diskCount?: number;
 }
@@ -14307,7 +14307,7 @@ export interface ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEncryptionCo
   /**
   * If true, swap space will not be encrypted. Defaults to false (encrypted).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
 }
@@ -14393,13 +14393,13 @@ export interface ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLoc
   /**
   * Specifies the size of the swap space in gibibytes (GiB).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#swap_size_gib ContainerCluster#swap_size_gib}
   */
   readonly swapSizeGib?: number;
   /**
   * Specifies the size of the swap space as a percentage of the ephemeral local SSD capacity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#swap_size_percent ContainerCluster#swap_size_percent}
   */
   readonly swapSizePercent?: number;
 }
@@ -14514,31 +14514,31 @@ export interface ContainerClusterNodeConfigLinuxNodeConfigSwapConfig {
   /**
   * Enables or disables swap for the node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * boot_disk_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#boot_disk_profile ContainerCluster#boot_disk_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#boot_disk_profile ContainerCluster#boot_disk_profile}
   */
   readonly bootDiskProfile?: ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfile;
   /**
   * dedicated_local_ssd_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#dedicated_local_ssd_profile ContainerCluster#dedicated_local_ssd_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#dedicated_local_ssd_profile ContainerCluster#dedicated_local_ssd_profile}
   */
   readonly dedicatedLocalSsdProfile?: ContainerClusterNodeConfigLinuxNodeConfigSwapConfigDedicatedLocalSsdProfile;
   /**
   * encryption_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#encryption_config ContainerCluster#encryption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#encryption_config ContainerCluster#encryption_config}
   */
   readonly encryptionConfig?: ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEncryptionConfig;
   /**
   * ephemeral_local_ssd_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#ephemeral_local_ssd_profile ContainerCluster#ephemeral_local_ssd_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#ephemeral_local_ssd_profile ContainerCluster#ephemeral_local_ssd_profile}
   */
   readonly ephemeralLocalSsdProfile?: ContainerClusterNodeConfigLinuxNodeConfigSwapConfigEphemeralLocalSsdProfile;
 }
@@ -14740,49 +14740,49 @@ export interface ContainerClusterNodeConfigLinuxNodeConfig {
   /**
   * cgroupMode specifies the cgroup mode to be used on the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#cgroup_mode ContainerCluster#cgroup_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#cgroup_mode ContainerCluster#cgroup_mode}
   */
   readonly cgroupMode?: string;
   /**
   * The Linux kernel parameters to be applied to the nodes and all pods running on the nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#sysctls ContainerCluster#sysctls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#sysctls ContainerCluster#sysctls}
   */
   readonly sysctls?: { [key: string]: string };
   /**
   * The Linux kernel transparent hugepage defrag setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#transparent_hugepage_defrag ContainerCluster#transparent_hugepage_defrag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#transparent_hugepage_defrag ContainerCluster#transparent_hugepage_defrag}
   */
   readonly transparentHugepageDefrag?: string;
   /**
   * The Linux kernel transparent hugepage setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#transparent_hugepage_enabled ContainerCluster#transparent_hugepage_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#transparent_hugepage_enabled ContainerCluster#transparent_hugepage_enabled}
   */
   readonly transparentHugepageEnabled?: string;
   /**
   * accurate_time_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#accurate_time_config ContainerCluster#accurate_time_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#accurate_time_config ContainerCluster#accurate_time_config}
   */
   readonly accurateTimeConfig?: ContainerClusterNodeConfigLinuxNodeConfigAccurateTimeConfig;
   /**
   * hugepages_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#hugepages_config ContainerCluster#hugepages_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#hugepages_config ContainerCluster#hugepages_config}
   */
   readonly hugepagesConfig?: ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfig;
   /**
   * node_kernel_module_loading block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#node_kernel_module_loading ContainerCluster#node_kernel_module_loading}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#node_kernel_module_loading ContainerCluster#node_kernel_module_loading}
   */
   readonly nodeKernelModuleLoading?: ContainerClusterNodeConfigLinuxNodeConfigNodeKernelModuleLoading;
   /**
   * swap_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#swap_config ContainerCluster#swap_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#swap_config ContainerCluster#swap_config}
   */
   readonly swapConfig?: ContainerClusterNodeConfigLinuxNodeConfigSwapConfig;
 }
@@ -15071,7 +15071,7 @@ export interface ContainerClusterNodeConfigLocalNvmeSsdBlockConfig {
   /**
   * Number of raw-block local NVMe SSD disks to be attached to the node. Each local SSD is 375 GB in size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
   */
   readonly localSsdCount: number;
 }
@@ -15154,19 +15154,19 @@ export interface ContainerClusterNodeConfigReservationAffinity {
   /**
   * Corresponds to the type of reservation consumption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#consume_reservation_type ContainerCluster#consume_reservation_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#consume_reservation_type ContainerCluster#consume_reservation_type}
   */
   readonly consumeReservationType: string;
   /**
   * The label key of a reservation resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#key ContainerCluster#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#key ContainerCluster#key}
   */
   readonly key?: string;
   /**
   * The label values of the reservation resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#values ContainerCluster#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#values ContainerCluster#values}
   */
   readonly values?: string[];
 }
@@ -15307,7 +15307,7 @@ export interface ContainerClusterNodeConfigSandboxConfig {
   /**
   * Type of the sandbox to use for the node (e.g. 'GVISOR').
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#type ContainerCluster#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#type ContainerCluster#type}
   */
   readonly type: string;
 }
@@ -15390,13 +15390,13 @@ export interface ContainerClusterNodeConfigSecondaryBootDisks {
   /**
   * Disk image to create the secondary boot disk from
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disk_image ContainerCluster#disk_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disk_image ContainerCluster#disk_image}
   */
   readonly diskImage: string;
   /**
   * Mode for how the secondary boot disk is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#mode ContainerCluster#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#mode ContainerCluster#mode}
   */
   readonly mode?: string;
 }
@@ -15540,13 +15540,13 @@ export interface ContainerClusterNodeConfigShieldedInstanceConfig {
   /**
   * Defines whether the instance has integrity monitoring enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_integrity_monitoring ContainerCluster#enable_integrity_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_integrity_monitoring ContainerCluster#enable_integrity_monitoring}
   */
   readonly enableIntegrityMonitoring?: boolean | cdktn.IResolvable;
   /**
   * Defines whether the instance has Secure Boot enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_secure_boot ContainerCluster#enable_secure_boot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_secure_boot ContainerCluster#enable_secure_boot}
   */
   readonly enableSecureBoot?: boolean | cdktn.IResolvable;
 }
@@ -15661,19 +15661,19 @@ export interface ContainerClusterNodeConfigSoleTenantConfigNodeAffinity {
   /**
   * .
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#key ContainerCluster#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#key ContainerCluster#key}
   */
   readonly key: string;
   /**
   * .
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#operator ContainerCluster#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#operator ContainerCluster#operator}
   */
   readonly operator: string;
   /**
   * .
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#values ContainerCluster#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#values ContainerCluster#values}
   */
   readonly values: string[];
 }
@@ -15840,13 +15840,13 @@ export interface ContainerClusterNodeConfigSoleTenantConfig {
   /**
   * Specifies the minimum number of vCPUs that each sole tenant node must have to use CPU overcommit. If not specified, the CPU overcommit feature is disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#min_node_cpus ContainerCluster#min_node_cpus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#min_node_cpus ContainerCluster#min_node_cpus}
   */
   readonly minNodeCpus?: number;
   /**
   * node_affinity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#node_affinity ContainerCluster#node_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#node_affinity ContainerCluster#node_affinity}
   */
   readonly nodeAffinity: ContainerClusterNodeConfigSoleTenantConfigNodeAffinity[] | cdktn.IResolvable;
 }
@@ -15958,19 +15958,19 @@ export interface ContainerClusterNodeConfigTaint {
   /**
   * Effect for taint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#effect ContainerCluster#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#effect ContainerCluster#effect}
   */
   readonly effect: string;
   /**
   * Key for taint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#key ContainerCluster#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#key ContainerCluster#key}
   */
   readonly key: string;
   /**
   * Value for taint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#value ContainerCluster#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#value ContainerCluster#value}
   */
   readonly value: string;
 }
@@ -16137,7 +16137,7 @@ export interface ContainerClusterNodeConfigWindowsNodeConfig {
   /**
   * The OS Version of the windows nodepool.Values are OS_VERSION_UNSPECIFIED,OS_VERSION_LTSC2019 and OS_VERSION_LTSC2022
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#osversion ContainerCluster#osversion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#osversion ContainerCluster#osversion}
   */
   readonly osversion?: string;
 }
@@ -16223,7 +16223,7 @@ export interface ContainerClusterNodeConfigWorkloadMetadataConfig {
   /**
   * Mode is the configuration for how to expose metadata to workloads running on the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#mode ContainerCluster#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#mode ContainerCluster#mode}
   */
   readonly mode: string;
 }
@@ -16306,265 +16306,265 @@ export interface ContainerClusterNodeConfig {
   /**
   * The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#boot_disk_kms_key ContainerCluster#boot_disk_kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#boot_disk_kms_key ContainerCluster#boot_disk_kms_key}
   */
   readonly bootDiskKmsKey?: string;
   /**
   * Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disk_size_gb ContainerCluster#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disk_size_gb ContainerCluster#disk_size_gb}
   */
   readonly diskSizeGb?: number;
   /**
   * Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disk_type ContainerCluster#disk_type}
   */
   readonly diskType?: string;
   /**
   * If enabled boot disks are configured with confidential mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_confidential_storage ContainerCluster#enable_confidential_storage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_confidential_storage ContainerCluster#enable_confidential_storage}
   */
   readonly enableConfidentialStorage?: boolean | cdktn.IResolvable;
   /**
   * Enables Flex Start provisioning model for the node pool
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#flex_start ContainerCluster#flex_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#flex_start ContainerCluster#flex_start}
   */
   readonly flexStart?: boolean | cdktn.IResolvable;
   /**
   * The image type to use for this node. Note that for a given image type, the latest version of it will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#image_type ContainerCluster#image_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#image_type ContainerCluster#image_type}
   */
   readonly imageType?: string;
   /**
   * The map of Kubernetes labels (key/value pairs) to be applied to each node. These will added in addition to any default label(s) that Kubernetes may apply to the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#labels ContainerCluster#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#labels ContainerCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The number of local SSD disks to be attached to the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#local_ssd_count ContainerCluster#local_ssd_count}
   */
   readonly localSsdCount?: number;
   /**
   * LocalSsdEncryptionMode specified the method used for encrypting the local SSDs attached to the node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#local_ssd_encryption_mode ContainerCluster#local_ssd_encryption_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#local_ssd_encryption_mode ContainerCluster#local_ssd_encryption_mode}
   */
   readonly localSsdEncryptionMode?: string;
   /**
   * Type of logging agent that is used as the default value for node pools in the cluster. Valid values include DEFAULT and MAX_THROUGHPUT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#logging_variant ContainerCluster#logging_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#logging_variant ContainerCluster#logging_variant}
   */
   readonly loggingVariant?: string;
   /**
   * The name of a Google Compute Engine machine type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#machine_type ContainerCluster#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#machine_type ContainerCluster#machine_type}
   */
   readonly machineType?: string;
   /**
   * The runtime of each node in the node pool in seconds, terminated by 's'. Example: "3600s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#max_run_duration ContainerCluster#max_run_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#max_run_duration ContainerCluster#max_run_duration}
   */
   readonly maxRunDuration?: string;
   /**
   * The metadata key/value pairs assigned to instances in the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#metadata ContainerCluster#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#metadata ContainerCluster#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Minimum CPU platform to be used by this instance. The instance may be scheduled on the specified or newer CPU platform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#min_cpu_platform ContainerCluster#min_cpu_platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#min_cpu_platform ContainerCluster#min_cpu_platform}
   */
   readonly minCpuPlatform?: string;
   /**
   * Setting this field will assign instances of this pool to run on the specified node group. This is useful for running workloads on sole tenant nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#node_group ContainerCluster#node_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#node_group ContainerCluster#node_group}
   */
   readonly nodeGroup?: string;
   /**
   * The set of Google API scopes to be made available on all of the node VMs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#oauth_scopes ContainerCluster#oauth_scopes}
   */
   readonly oauthScopes?: string[];
   /**
   * Whether the nodes are created as preemptible VM instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#preemptible ContainerCluster#preemptible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#preemptible ContainerCluster#preemptible}
   */
   readonly preemptible?: boolean | cdktn.IResolvable;
   /**
   * The GCE resource labels (a map of key/value pairs) to be applied to the node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#resource_labels ContainerCluster#resource_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#resource_labels ContainerCluster#resource_labels}
   */
   readonly resourceLabels?: { [key: string]: string };
   /**
   * A map of resource manager tags. Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#resource_manager_tags ContainerCluster#resource_manager_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#resource_manager_tags ContainerCluster#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
   /**
   * The Google Cloud Platform Service Account to be used by the node VMs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#service_account ContainerCluster#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#service_account ContainerCluster#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * Whether the nodes are created as spot VM instances.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#spot ContainerCluster#spot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#spot ContainerCluster#spot}
   */
   readonly spot?: boolean | cdktn.IResolvable;
   /**
   * The list of Storage Pools where boot disks are provisioned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#storage_pools ContainerCluster#storage_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#storage_pools ContainerCluster#storage_pools}
   */
   readonly storagePools?: string[];
   /**
   * The list of instance tags applied to all nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#tags ContainerCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#tags ContainerCluster#tags}
   */
   readonly tags?: string[];
   /**
   * advanced_machine_features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#advanced_machine_features ContainerCluster#advanced_machine_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#advanced_machine_features ContainerCluster#advanced_machine_features}
   */
   readonly advancedMachineFeatures?: ContainerClusterNodeConfigAdvancedMachineFeatures;
   /**
   * boot_disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#boot_disk ContainerCluster#boot_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#boot_disk ContainerCluster#boot_disk}
   */
   readonly bootDisk?: ContainerClusterNodeConfigBootDisk;
   /**
   * confidential_nodes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#confidential_nodes ContainerCluster#confidential_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#confidential_nodes ContainerCluster#confidential_nodes}
   */
   readonly confidentialNodes?: ContainerClusterNodeConfigConfidentialNodes;
   /**
   * containerd_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#containerd_config ContainerCluster#containerd_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#containerd_config ContainerCluster#containerd_config}
   */
   readonly containerdConfig?: ContainerClusterNodeConfigContainerdConfig;
   /**
   * ephemeral_storage_local_ssd_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#ephemeral_storage_local_ssd_config ContainerCluster#ephemeral_storage_local_ssd_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#ephemeral_storage_local_ssd_config ContainerCluster#ephemeral_storage_local_ssd_config}
   */
   readonly ephemeralStorageLocalSsdConfig?: ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig;
   /**
   * fast_socket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#fast_socket ContainerCluster#fast_socket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#fast_socket ContainerCluster#fast_socket}
   */
   readonly fastSocket?: ContainerClusterNodeConfigFastSocket;
   /**
   * gcfs_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gcfs_config ContainerCluster#gcfs_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gcfs_config ContainerCluster#gcfs_config}
   */
   readonly gcfsConfig?: ContainerClusterNodeConfigGcfsConfig;
   /**
   * guest_accelerator block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#guest_accelerator ContainerCluster#guest_accelerator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#guest_accelerator ContainerCluster#guest_accelerator}
   */
   readonly guestAccelerator?: ContainerClusterNodeConfigGuestAccelerator[] | cdktn.IResolvable;
   /**
   * gvnic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#gvnic ContainerCluster#gvnic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#gvnic ContainerCluster#gvnic}
   */
   readonly gvnic?: ContainerClusterNodeConfigGvnic;
   /**
   * host_maintenance_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#host_maintenance_policy ContainerCluster#host_maintenance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#host_maintenance_policy ContainerCluster#host_maintenance_policy}
   */
   readonly hostMaintenancePolicy?: ContainerClusterNodeConfigHostMaintenancePolicy;
   /**
   * kubelet_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#kubelet_config ContainerCluster#kubelet_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#kubelet_config ContainerCluster#kubelet_config}
   */
   readonly kubeletConfig?: ContainerClusterNodeConfigKubeletConfig;
   /**
   * linux_node_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#linux_node_config ContainerCluster#linux_node_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#linux_node_config ContainerCluster#linux_node_config}
   */
   readonly linuxNodeConfig?: ContainerClusterNodeConfigLinuxNodeConfig;
   /**
   * local_nvme_ssd_block_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#local_nvme_ssd_block_config ContainerCluster#local_nvme_ssd_block_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#local_nvme_ssd_block_config ContainerCluster#local_nvme_ssd_block_config}
   */
   readonly localNvmeSsdBlockConfig?: ContainerClusterNodeConfigLocalNvmeSsdBlockConfig;
   /**
   * reservation_affinity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#reservation_affinity ContainerCluster#reservation_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#reservation_affinity ContainerCluster#reservation_affinity}
   */
   readonly reservationAffinity?: ContainerClusterNodeConfigReservationAffinity;
   /**
   * sandbox_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#sandbox_config ContainerCluster#sandbox_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#sandbox_config ContainerCluster#sandbox_config}
   */
   readonly sandboxConfig?: ContainerClusterNodeConfigSandboxConfig;
   /**
   * secondary_boot_disks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#secondary_boot_disks ContainerCluster#secondary_boot_disks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#secondary_boot_disks ContainerCluster#secondary_boot_disks}
   */
   readonly secondaryBootDisks?: ContainerClusterNodeConfigSecondaryBootDisks[] | cdktn.IResolvable;
   /**
   * shielded_instance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#shielded_instance_config ContainerCluster#shielded_instance_config}
   */
   readonly shieldedInstanceConfig?: ContainerClusterNodeConfigShieldedInstanceConfig;
   /**
   * sole_tenant_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#sole_tenant_config ContainerCluster#sole_tenant_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#sole_tenant_config ContainerCluster#sole_tenant_config}
   */
   readonly soleTenantConfig?: ContainerClusterNodeConfigSoleTenantConfig;
   /**
   * taint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#taint ContainerCluster#taint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#taint ContainerCluster#taint}
   */
   readonly taint?: ContainerClusterNodeConfigTaint[] | cdktn.IResolvable;
   /**
   * windows_node_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#windows_node_config ContainerCluster#windows_node_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#windows_node_config ContainerCluster#windows_node_config}
   */
   readonly windowsNodeConfig?: ContainerClusterNodeConfigWindowsNodeConfig;
   /**
   * workload_metadata_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#workload_metadata_config ContainerCluster#workload_metadata_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#workload_metadata_config ContainerCluster#workload_metadata_config}
   */
   readonly workloadMetadataConfig?: ContainerClusterNodeConfigWorkloadMetadataConfig;
 }
@@ -17903,31 +17903,31 @@ export interface ContainerClusterNodePoolAutoscaling {
   /**
   * Location policy specifies the algorithm used when scaling-up the node pool. "BALANCED" - Is a best effort policy that aims to balance the sizes of available zones. "ANY" - Instructs the cluster autoscaler to prioritize utilization of unused reservations, and reduces preemption risk for Spot VMs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#location_policy ContainerCluster#location_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#location_policy ContainerCluster#location_policy}
   */
   readonly locationPolicy?: string;
   /**
   * Maximum number of nodes per zone in the node pool. Must be >= min_node_count. Cannot be used with total limits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#max_node_count ContainerCluster#max_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#max_node_count ContainerCluster#max_node_count}
   */
   readonly maxNodeCount?: number;
   /**
   * Minimum number of nodes per zone in the node pool. Must be >=0 and <= max_node_count. Cannot be used with total limits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#min_node_count ContainerCluster#min_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#min_node_count ContainerCluster#min_node_count}
   */
   readonly minNodeCount?: number;
   /**
   * Maximum number of all nodes in the node pool. Must be >= total_min_node_count. Cannot be used with per zone limits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#total_max_node_count ContainerCluster#total_max_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#total_max_node_count ContainerCluster#total_max_node_count}
   */
   readonly totalMaxNodeCount?: number;
   /**
   * Minimum number of all nodes in the node pool. Must be >=0 and <= total_max_node_count. Cannot be used with per zone limits.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#total_min_node_count ContainerCluster#total_min_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#total_min_node_count ContainerCluster#total_min_node_count}
   */
   readonly totalMinNodeCount?: number;
 }
@@ -18129,13 +18129,13 @@ export interface ContainerClusterNodePoolManagement {
   /**
   * Whether the nodes will be automatically repaired. Enabled by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#auto_repair ContainerCluster#auto_repair}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#auto_repair ContainerCluster#auto_repair}
   */
   readonly autoRepair?: boolean | cdktn.IResolvable;
   /**
   * Whether the nodes will be automatically upgraded. Enabled by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#auto_upgrade ContainerCluster#auto_upgrade}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#auto_upgrade ContainerCluster#auto_upgrade}
   */
   readonly autoUpgrade?: boolean | cdktn.IResolvable;
 }
@@ -18250,13 +18250,13 @@ export interface ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfi
   /**
   * Name of the VPC where the additional interface belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#network ContainerCluster#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#network ContainerCluster#network}
   */
   readonly network?: string;
   /**
   * Name of the subnetwork where the additional interface belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
   */
   readonly subnetwork?: string;
 }
@@ -18403,19 +18403,19 @@ export interface ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfig
   /**
   * The maximum number of pods per node which use this pod network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#max_pods_per_node ContainerCluster#max_pods_per_node}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#max_pods_per_node ContainerCluster#max_pods_per_node}
   */
   readonly maxPodsPerNode?: number;
   /**
   * The name of the secondary range on the subnet which provides IP address for this pod range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#secondary_pod_range ContainerCluster#secondary_pod_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#secondary_pod_range ContainerCluster#secondary_pod_range}
   */
   readonly secondaryPodRange?: string;
   /**
   * Name of the subnetwork where the additional pod network belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
   */
   readonly subnetwork?: string;
 }
@@ -18591,7 +18591,7 @@ export interface ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig {
   /**
   * Specifies the total network bandwidth tier for the NodePool. [Valid values](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters.nodePools#NodePool.Tier) include: "TIER_1" and "TIER_UNSPECIFIED".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#total_egress_bandwidth_tier ContainerCluster#total_egress_bandwidth_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#total_egress_bandwidth_tier ContainerCluster#total_egress_bandwidth_tier}
   */
   readonly totalEgressBandwidthTier: string;
 }
@@ -18672,7 +18672,7 @@ export class ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutput
 }
 export interface ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}
   */
   readonly disabled: boolean | cdktn.IResolvable;
 }
@@ -18755,61 +18755,61 @@ export interface ContainerClusterNodePoolNetworkConfig {
   /**
   * The accelerator network profile to use for this node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#accelerator_network_profile ContainerCluster#accelerator_network_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#accelerator_network_profile ContainerCluster#accelerator_network_profile}
   */
   readonly acceleratorNetworkProfile?: string;
   /**
   * Whether to create a new range for pod IPs in this node pool. Defaults are provided for pod_range and pod_ipv4_cidr_block if they are not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#create_pod_range ContainerCluster#create_pod_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#create_pod_range ContainerCluster#create_pod_range}
   */
   readonly createPodRange?: boolean | cdktn.IResolvable;
   /**
   * Whether nodes have internal IP addresses only.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#enable_private_nodes ContainerCluster#enable_private_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#enable_private_nodes ContainerCluster#enable_private_nodes}
   */
   readonly enablePrivateNodes?: boolean | cdktn.IResolvable;
   /**
   * The IP address range for pod IPs in this node pool. Only applicable if create_pod_range is true. Set to blank to have a range chosen with the default size. Set to /netmask (e.g. /14) to have a range chosen with a specific netmask. Set to a CIDR notation (e.g. 10.96.0.0/14) to pick a specific range to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#pod_ipv4_cidr_block ContainerCluster#pod_ipv4_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#pod_ipv4_cidr_block ContainerCluster#pod_ipv4_cidr_block}
   */
   readonly podIpv4CidrBlock?: string;
   /**
   * The ID of the secondary range for pod IPs. If create_pod_range is true, this ID is used for the new range. If create_pod_range is false, uses an existing secondary range with this ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#pod_range ContainerCluster#pod_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#pod_range ContainerCluster#pod_range}
   */
   readonly podRange?: string;
   /**
   * The subnetwork name/path for the node pool. Format: subnetwork or projects/{project}/regions/{region}/subnetworks/{subnetwork}. This value may be specified via the nested network_config block (setting this attribute directly is supported for backward compatibility). Once created the node pool's subnetwork is immutable. If not set, the provider/API will choose the subnetwork (e.g. based on IP utilization) and report it here.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#subnetwork ContainerCluster#subnetwork}
   */
   readonly subnetwork?: string;
   /**
   * additional_node_network_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#additional_node_network_configs ContainerCluster#additional_node_network_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#additional_node_network_configs ContainerCluster#additional_node_network_configs}
   */
   readonly additionalNodeNetworkConfigs?: ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs[] | cdktn.IResolvable;
   /**
   * additional_pod_network_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#additional_pod_network_configs ContainerCluster#additional_pod_network_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#additional_pod_network_configs ContainerCluster#additional_pod_network_configs}
   */
   readonly additionalPodNetworkConfigs?: ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs[] | cdktn.IResolvable;
   /**
   * network_performance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#network_performance_config ContainerCluster#network_performance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#network_performance_config ContainerCluster#network_performance_config}
   */
   readonly networkPerformanceConfig?: ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig;
   /**
   * pod_cidr_overprovision_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/container_cluster#pod_cidr_overprovision_config ContainerCluster#pod_cidr_overprovision_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_cluster#pod_cidr_overprovision_config ContainerCluster#pod_cidr_overprovision_config}
   */
   readonly podCidrOverprovisionConfig?: ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig;
 }

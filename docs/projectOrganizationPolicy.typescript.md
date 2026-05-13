@@ -4,7 +4,7 @@
 
 ### ProjectOrganizationPolicy <a name="ProjectOrganizationPolicy" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy google_project_organization_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy google_project_organization_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicy.Initializer"></a>
 
@@ -583,7 +583,7 @@ The construct id used in the generated config for the ProjectOrganizationPolicy 
 
 The id of the existing ProjectOrganizationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1004,7 +1004,7 @@ public readonly enforced: boolean | IResolvable;
 
 If true, then the Policy is enforced. If false, then any configuration is acceptable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#enforced ProjectOrganizationPolicy#enforced}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#enforced ProjectOrganizationPolicy#enforced}
 
 ---
 
@@ -1032,7 +1032,7 @@ const projectOrganizationPolicyConfig: projectOrganizationPolicy.ProjectOrganiza
 | <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyConfig.property.constraint">constraint</a></code> | <code>string</code> | The name of the Constraint the Policy is configuring, for example, serviceuser.services. |
 | <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyConfig.property.project">project</a></code> | <code>string</code> | The project ID. |
 | <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyConfig.property.booleanPolicy">booleanPolicy</a></code> | <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyBooleanPolicy">ProjectOrganizationPolicyBooleanPolicy</a></code> | boolean_policy block. |
-| <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#id ProjectOrganizationPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#id ProjectOrganizationPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyConfig.property.listPolicy">listPolicy</a></code> | <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyListPolicy">ProjectOrganizationPolicyListPolicy</a></code> | list_policy block. |
 | <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyConfig.property.restorePolicy">restorePolicy</a></code> | <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyRestorePolicy">ProjectOrganizationPolicyRestorePolicy</a></code> | restore_policy block. |
 | <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts">ProjectOrganizationPolicyTimeouts</a></code> | timeouts block. |
@@ -1120,7 +1120,7 @@ public readonly constraint: string;
 
 The name of the Constraint the Policy is configuring, for example, serviceuser.services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#constraint ProjectOrganizationPolicy#constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#constraint ProjectOrganizationPolicy#constraint}
 
 ---
 
@@ -1134,7 +1134,7 @@ public readonly project: string;
 
 The project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#project ProjectOrganizationPolicy#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#project ProjectOrganizationPolicy#project}
 
 ---
 
@@ -1148,7 +1148,7 @@ public readonly booleanPolicy: ProjectOrganizationPolicyBooleanPolicy;
 
 boolean_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#boolean_policy ProjectOrganizationPolicy#boolean_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#boolean_policy ProjectOrganizationPolicy#boolean_policy}
 
 ---
 
@@ -1160,7 +1160,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#id ProjectOrganizationPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#id ProjectOrganizationPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1177,7 +1177,7 @@ public readonly listPolicy: ProjectOrganizationPolicyListPolicy;
 
 list_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#list_policy ProjectOrganizationPolicy#list_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#list_policy ProjectOrganizationPolicy#list_policy}
 
 ---
 
@@ -1191,7 +1191,7 @@ public readonly restorePolicy: ProjectOrganizationPolicyRestorePolicy;
 
 restore_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#restore_policy ProjectOrganizationPolicy#restore_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#restore_policy ProjectOrganizationPolicy#restore_policy}
 
 ---
 
@@ -1205,7 +1205,7 @@ public readonly timeouts: ProjectOrganizationPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#timeouts ProjectOrganizationPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#timeouts ProjectOrganizationPolicy#timeouts}
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly version: number;
 
 Version of the Policy. Default version is 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#version ProjectOrganizationPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#version ProjectOrganizationPolicy#version}
 
 ---
 
@@ -1254,7 +1254,7 @@ public readonly allow: ProjectOrganizationPolicyListPolicyAllow;
 
 allow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#allow ProjectOrganizationPolicy#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#allow ProjectOrganizationPolicy#allow}
 
 ---
 
@@ -1268,7 +1268,7 @@ public readonly deny: ProjectOrganizationPolicyListPolicyDeny;
 
 deny block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#deny ProjectOrganizationPolicy#deny}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#deny ProjectOrganizationPolicy#deny}
 
 ---
 
@@ -1282,7 +1282,7 @@ public readonly inheritFromParent: boolean | IResolvable;
 
 If set to true, the values from the effective Policy of the parent resource are inherited, meaning the values set in this Policy are added to the values inherited up the hierarchy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#inherit_from_parent ProjectOrganizationPolicy#inherit_from_parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#inherit_from_parent ProjectOrganizationPolicy#inherit_from_parent}
 
 ---
 
@@ -1296,7 +1296,7 @@ public readonly suggestedValue: string;
 
 The Google Cloud Console will try to default to a configuration that matches the value specified in this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#suggested_value ProjectOrganizationPolicy#suggested_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#suggested_value ProjectOrganizationPolicy#suggested_value}
 
 ---
 
@@ -1329,7 +1329,7 @@ public readonly all: boolean | IResolvable;
 
 The policy allows or denies all values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#all ProjectOrganizationPolicy#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#all ProjectOrganizationPolicy#all}
 
 ---
 
@@ -1343,7 +1343,7 @@ public readonly values: string[];
 
 The policy can define specific values that are allowed or denied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#values ProjectOrganizationPolicy#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#values ProjectOrganizationPolicy#values}
 
 ---
 
@@ -1376,7 +1376,7 @@ public readonly all: boolean | IResolvable;
 
 The policy allows or denies all values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#all ProjectOrganizationPolicy#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#all ProjectOrganizationPolicy#all}
 
 ---
 
@@ -1390,7 +1390,7 @@ public readonly values: string[];
 
 The policy can define specific values that are allowed or denied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#values ProjectOrganizationPolicy#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#values ProjectOrganizationPolicy#values}
 
 ---
 
@@ -1422,7 +1422,7 @@ public readonly default: boolean | IResolvable;
 
 May only be set to true. If set, then the default Policy is restored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#default ProjectOrganizationPolicy#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#default ProjectOrganizationPolicy#default}
 
 ---
 
@@ -1440,10 +1440,10 @@ const projectOrganizationPolicyTimeouts: projectOrganizationPolicy.ProjectOrgani
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#create ProjectOrganizationPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#delete ProjectOrganizationPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#read ProjectOrganizationPolicy#read}. |
-| <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#update ProjectOrganizationPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#create ProjectOrganizationPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#delete ProjectOrganizationPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#read ProjectOrganizationPolicy#read}. |
+| <code><a href="#@cdktn/provider-google.projectOrganizationPolicy.ProjectOrganizationPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#update ProjectOrganizationPolicy#update}. |
 
 ---
 
@@ -1455,7 +1455,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#create ProjectOrganizationPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#create ProjectOrganizationPolicy#create}.
 
 ---
 
@@ -1467,7 +1467,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#delete ProjectOrganizationPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#delete ProjectOrganizationPolicy#delete}.
 
 ---
 
@@ -1479,7 +1479,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#read ProjectOrganizationPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#read ProjectOrganizationPolicy#read}.
 
 ---
 
@@ -1491,7 +1491,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_organization_policy#update ProjectOrganizationPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_organization_policy#update ProjectOrganizationPolicy#update}.
 
 ---
 

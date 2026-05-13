@@ -4,7 +4,7 @@
 
 ### SecretManagerSecretIamBinding <a name="SecretManagerSecretIamBinding" id="@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding google_secret_manager_secret_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBinding.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the SecretManagerSecretIamBind
 
 The id of the existing SecretManagerSecretIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,9 +879,9 @@ new SecretManagerSecretIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#expression SecretManagerSecretIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#title SecretManagerSecretIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#description SecretManagerSecretIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#expression SecretManagerSecretIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#title SecretManagerSecretIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#description SecretManagerSecretIamBinding#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#expression SecretManagerSecretIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#expression SecretManagerSecretIamBinding#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#title SecretManagerSecretIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#title SecretManagerSecretIamBinding#title}.
 
 ---
 
@@ -917,7 +917,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#description SecretManagerSecretIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#description SecretManagerSecretIamBinding#description}.
 
 ---
 
@@ -956,12 +956,12 @@ new SecretManagerSecretIamBindingConfig {
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#members SecretManagerSecretIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#role SecretManagerSecretIamBinding#role}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.secretId">SecretId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#secret_id SecretManagerSecretIamBinding#secret_id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#members SecretManagerSecretIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#role SecretManagerSecretIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.secretId">SecretId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#secret_id SecretManagerSecretIamBinding#secret_id}. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingCondition">SecretManagerSecretIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#id SecretManagerSecretIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#project SecretManagerSecretIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#id SecretManagerSecretIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecretIamBinding.SecretManagerSecretIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#project SecretManagerSecretIamBinding#project}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#members SecretManagerSecretIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#members SecretManagerSecretIamBinding#members}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#role SecretManagerSecretIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#role SecretManagerSecretIamBinding#role}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public string SecretId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#secret_id SecretManagerSecretIamBinding#secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#secret_id SecretManagerSecretIamBinding#secret_id}.
 
 ---
 
@@ -1081,7 +1081,7 @@ public SecretManagerSecretIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#condition SecretManagerSecretIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#condition SecretManagerSecretIamBinding#condition}
 
 ---
 
@@ -1093,7 +1093,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#id SecretManagerSecretIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#id SecretManagerSecretIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1108,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/secret_manager_secret_iam_binding#project SecretManagerSecretIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/secret_manager_secret_iam_binding#project SecretManagerSecretIamBinding#project}.
 
 ---
 

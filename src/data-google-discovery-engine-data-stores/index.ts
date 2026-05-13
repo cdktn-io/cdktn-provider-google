@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/discovery_engine_data_stores
+// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/discovery_engine_data_stores
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleDiscoveryEngineDataStoresConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/discovery_engine_data_stores#id DataGoogleDiscoveryEngineDataStores#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/discovery_engine_data_stores#id DataGoogleDiscoveryEngineDataStores#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataGoogleDiscoveryEngineDataStoresConfig extends cdktn.Terrafo
   /**
   * The geographic location where the data stores reside. The value can only be one of "global", "us" and "eu".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/discovery_engine_data_stores#location DataGoogleDiscoveryEngineDataStores#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/discovery_engine_data_stores#location DataGoogleDiscoveryEngineDataStores#location}
   */
   readonly location?: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/discovery_engine_data_stores#project DataGoogleDiscoveryEngineDataStores#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/discovery_engine_data_stores#project DataGoogleDiscoveryEngineDataStores#project}
   */
   readonly project?: string;
 }
@@ -144,7 +144,7 @@ export class DataGoogleDiscoveryEngineDataStoresDataStoresList extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/discovery_engine_data_stores google_discovery_engine_data_stores}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/discovery_engine_data_stores google_discovery_engine_data_stores}
 */
 export class DataGoogleDiscoveryEngineDataStores extends cdktn.TerraformDataSource {
 
@@ -160,7 +160,7 @@ export class DataGoogleDiscoveryEngineDataStores extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataGoogleDiscoveryEngineDataStores resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleDiscoveryEngineDataStores to import
-  * @param importFromId The id of the existing DataGoogleDiscoveryEngineDataStores that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/discovery_engine_data_stores#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleDiscoveryEngineDataStores that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/discovery_engine_data_stores#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleDiscoveryEngineDataStores to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -172,7 +172,7 @@ export class DataGoogleDiscoveryEngineDataStores extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/discovery_engine_data_stores google_discovery_engine_data_stores} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/discovery_engine_data_stores google_discovery_engine_data_stores} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -183,7 +183,7 @@ export class DataGoogleDiscoveryEngineDataStores extends cdktn.TerraformDataSour
       terraformResourceType: 'google_discovery_engine_data_stores',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.31.0',
+        providerVersion: '7.32.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

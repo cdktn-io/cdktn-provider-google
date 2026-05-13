@@ -1,7 +1,7 @@
 
-# CDKTN prebuilt bindings for hashicorp/google provider version 7.31.0
+# CDKTN prebuilt bindings for hashicorp/google provider version 7.32.0
 
-This repo builds and publishes the [Terraform google provider](https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs) bindings for [CDK Terrain](https://cdktn.io).
+This repo builds and publishes the [Terraform google provider](https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs) bindings for [CDK Terrain](https://cdktn.io).
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform google provider version 1:
 These are the upstream dependencies:
 
 - [CDK Terrain](https://cdktn.io) - Last official release
-- [Terraform google provider](https://registry.terraform.io/providers/hashicorp/google/7.31.0)
+- [Terraform google provider](https://registry.terraform.io/providers/hashicorp/google/7.32.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

@@ -4,7 +4,7 @@
 
 ### ApigeeEnvReferences <a name="ApigeeEnvReferences" id="@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references google_apigee_env_references}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references google_apigee_env_references}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.Initializer"></a>
 
@@ -45,7 +45,7 @@ ApigeeEnvReferences.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.Initializer.parameter.refers">refers</a></code> | <code>java.lang.String</code> | Required. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.Initializer.parameter.resourceType">resourceType</a></code> | <code>java.lang.String</code> | The type of resource referred to by this reference. Valid values are 'KeyStore' or 'TrustStore'. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Optional. A human-readable description of this reference. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferences.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts">ApigeeEnvReferencesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The Apigee environment group associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#env_id ApigeeEnvReferences#env_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#env_id ApigeeEnvReferences#env_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Required. The resource id of this reference. Values must match the regular expression [\w\s-.]+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#name ApigeeEnvReferences#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#name ApigeeEnvReferences#name}
 
 ---
 
@@ -138,7 +138,7 @@ Required.
 
 The id of the resource to which this reference refers. Must be the id of a resource that exists in the parent environment and is of the given resourceType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#refers ApigeeEnvReferences#refers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#refers ApigeeEnvReferences#refers}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of resource referred to by this reference. Valid values are 'KeyStore' or 'TrustStore'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#resource_type ApigeeEnvReferences#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#resource_type ApigeeEnvReferences#resource_type}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. A human-readable description of this reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#description ApigeeEnvReferences#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#description ApigeeEnvReferences#description}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -179,7 +179,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#timeouts ApigeeEnvReferences#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#timeouts ApigeeEnvReferences#timeouts}
 
 ---
 
@@ -662,7 +662,7 @@ The construct id used in the generated config for the ApigeeEnvReferences to imp
 
 The id of the existing ApigeeEnvReferences that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1052,7 +1052,7 @@ ApigeeEnvReferencesConfig.builder()
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.refers">refers</a></code> | <code>java.lang.String</code> | Required. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.resourceType">resourceType</a></code> | <code>java.lang.String</code> | The type of resource referred to by this reference. Valid values are 'KeyStore' or 'TrustStore'. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.description">description</a></code> | <code>java.lang.String</code> | Optional. A human-readable description of this reference. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts">ApigeeEnvReferencesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1137,7 +1137,7 @@ public java.lang.String getEnvId();
 
 The Apigee environment group associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#env_id ApigeeEnvReferences#env_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#env_id ApigeeEnvReferences#env_id}
 
 ---
 
@@ -1151,7 +1151,7 @@ public java.lang.String getName();
 
 Required. The resource id of this reference. Values must match the regular expression [\w\s-.]+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#name ApigeeEnvReferences#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#name ApigeeEnvReferences#name}
 
 ---
 
@@ -1167,7 +1167,7 @@ Required.
 
 The id of the resource to which this reference refers. Must be the id of a resource that exists in the parent environment and is of the given resourceType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#refers ApigeeEnvReferences#refers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#refers ApigeeEnvReferences#refers}
 
 ---
 
@@ -1181,7 +1181,7 @@ public java.lang.String getResourceType();
 
 The type of resource referred to by this reference. Valid values are 'KeyStore' or 'TrustStore'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#resource_type ApigeeEnvReferences#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#resource_type ApigeeEnvReferences#resource_type}
 
 ---
 
@@ -1195,7 +1195,7 @@ public java.lang.String getDescription();
 
 Optional. A human-readable description of this reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#description ApigeeEnvReferences#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#description ApigeeEnvReferences#description}
 
 ---
 
@@ -1207,7 +1207,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#id ApigeeEnvReferences#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1224,7 +1224,7 @@ public ApigeeEnvReferencesTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#timeouts ApigeeEnvReferences#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#timeouts ApigeeEnvReferences#timeouts}
 
 ---
 
@@ -1246,9 +1246,9 @@ ApigeeEnvReferencesTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#create ApigeeEnvReferences#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#delete ApigeeEnvReferences#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#update ApigeeEnvReferences#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#create ApigeeEnvReferences#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#delete ApigeeEnvReferences#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvReferences.ApigeeEnvReferencesTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#update ApigeeEnvReferences#update}. |
 
 ---
 
@@ -1260,7 +1260,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#create ApigeeEnvReferences#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#create ApigeeEnvReferences#create}.
 
 ---
 
@@ -1272,7 +1272,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#delete ApigeeEnvReferences#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#delete ApigeeEnvReferences#delete}.
 
 ---
 
@@ -1284,7 +1284,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_env_references#update ApigeeEnvReferences#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_env_references#update ApigeeEnvReferences#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### CloudRunV2Service <a name="CloudRunV2Service" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service google_cloud_run_v2_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2Service.CloudRunV2Service.Initializer"></a>
 
@@ -720,7 +720,7 @@ The construct id used in the generated config for the CloudRunV2Service to impor
 
 The id of the existing CloudRunV2Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1684,7 +1684,7 @@ If present, indicates to use Breakglass using this justification.
 
 If useDefault is False, then it must be empty. For more information on breakglass, see https://cloud.google.com/binary-authorization/docs/using-breakglass
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#breakglass_justification CloudRunV2Service#breakglass_justification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#breakglass_justification CloudRunV2Service#breakglass_justification}
 
 ---
 
@@ -1698,7 +1698,7 @@ public readonly policy: string;
 
 The path to a binary authorization policy. Format: projects/{project}/platforms/cloudRun/{policy-name}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#policy CloudRunV2Service#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#policy CloudRunV2Service#policy}
 
 ---
 
@@ -1712,7 +1712,7 @@ public readonly useDefault: boolean | IResolvable;
 
 If True, indicates to use the default project's binary authorization policy. If False, binary authorization will be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#use_default CloudRunV2Service#use_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#use_default CloudRunV2Service#use_default}
 
 ---
 
@@ -1751,7 +1751,7 @@ public readonly baseImage: string;
 
 The base image used to build the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#base_image CloudRunV2Service#base_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#base_image CloudRunV2Service#base_image}
 
 ---
 
@@ -1765,7 +1765,7 @@ public readonly enableAutomaticUpdates: boolean | IResolvable;
 
 Sets whether the function will receive automatic base image updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#enable_automatic_updates CloudRunV2Service#enable_automatic_updates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#enable_automatic_updates CloudRunV2Service#enable_automatic_updates}
 
 ---
 
@@ -1779,7 +1779,7 @@ public readonly environmentVariables: {[ key: string ]: string};
 
 User-provided build-time environment variables for the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#environment_variables CloudRunV2Service#environment_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#environment_variables CloudRunV2Service#environment_variables}
 
 ---
 
@@ -1795,7 +1795,7 @@ The name of the function (as defined in source code) that will be executed.
 
 Defaults to the resource name suffix, if not specified. For backward compatibility, if function with given name is not found, then the system will try to use function named "function".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#function_target CloudRunV2Service#function_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#function_target CloudRunV2Service#function_target}
 
 ---
 
@@ -1809,7 +1809,7 @@ public readonly imageUri: string;
 
 Artifact Registry URI to store the built image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#image_uri CloudRunV2Service#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#image_uri CloudRunV2Service#image_uri}
 
 ---
 
@@ -1823,7 +1823,7 @@ public readonly serviceAccount: string;
 
 Service account to be used for building the container. The format of this field is 'projects/{projectId}/serviceAccounts/{serviceAccountEmail}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#service_account CloudRunV2Service#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#service_account CloudRunV2Service#service_account}
 
 ---
 
@@ -1837,7 +1837,7 @@ public readonly sourceLocation: string;
 
 The Cloud Storage bucket URI where the function source code is located.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#source_location CloudRunV2Service#source_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#source_location CloudRunV2Service#source_location}
 
 ---
 
@@ -1853,7 +1853,7 @@ Name of the Cloud Build Custom Worker Pool that should be used to build the Clou
 
 The format of this field is 'projects/{project}/locations/{region}/workerPools/{workerPool}' where {project} and {region} are the project id and region respectively where the worker pool is defined and {workerPool} is the short name of the worker pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#worker_pool CloudRunV2Service#worker_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#worker_pool CloudRunV2Service#worker_pool}
 
 ---
 
@@ -1902,13 +1902,13 @@ const cloudRunV2ServiceConfig: cloudRunV2Service.CloudRunV2ServiceConfig = { ...
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the service. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.description">description</a></code> | <code>string</code> | User-provided description of the Service. This field currently has a 512-character limit. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.iapEnabled">iapEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Used to enable/disable IAP for the cloud-run service. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.ingress">ingress</a></code> | <code>string</code> | Provides the ingress settings for this Service. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.invokerIamDisabled">invokerIamDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Disables IAM permission check for run.routes.invoke for callers of this service. For more information, visit https://cloud.google.com/run/docs/securing/managing-access#invoker_check. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Unstructured key value map that can be used to organize and categorize objects. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.launchStage">launchStage</a></code> | <code>string</code> | The launch stage as defined by [Google Cloud Platform Launch Stages](https://cloud.google.com/products#product-launch-stages). Cloud Run supports ALPHA, BETA, and GA. If no value is specified, GA is assumed. Set the launch stage to a preview stage on input to allow use of preview features in that stage. On read (or output), describes whether the resource uses preview features. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.multiRegionSettings">multiRegionSettings</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceMultiRegionSettings">CloudRunV2ServiceMultiRegionSettings</a></code> | multi_region_settings block. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.scaling">scaling</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceScaling">CloudRunV2ServiceScaling</a></code> | scaling block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts">CloudRunV2ServiceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceConfig.property.traffic">traffic</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTraffic">CloudRunV2ServiceTraffic</a>[]</code> | traffic block. |
@@ -1995,7 +1995,7 @@ public readonly location: string;
 
 The location of the cloud run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#location CloudRunV2Service#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#location CloudRunV2Service#location}
 
 ---
 
@@ -2009,7 +2009,7 @@ public readonly name: string;
 
 Name of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -2023,7 +2023,7 @@ public readonly template: CloudRunV2ServiceTemplate;
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#template CloudRunV2Service#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#template CloudRunV2Service#template}
 
 ---
 
@@ -2047,7 +2047,7 @@ This field follows Kubernetes annotations' namespacing, limits, and rules.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
 
 ---
 
@@ -2061,7 +2061,7 @@ public readonly binaryAuthorization: CloudRunV2ServiceBinaryAuthorization;
 
 binary_authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#binary_authorization CloudRunV2Service#binary_authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#binary_authorization CloudRunV2Service#binary_authorization}
 
 ---
 
@@ -2075,7 +2075,7 @@ public readonly buildConfig: CloudRunV2ServiceBuildConfig;
 
 build_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#build_config CloudRunV2Service#build_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#build_config CloudRunV2Service#build_config}
 
 ---
 
@@ -2089,7 +2089,7 @@ public readonly client: string;
 
 Arbitrary identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#client CloudRunV2Service#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#client CloudRunV2Service#client}
 
 ---
 
@@ -2103,7 +2103,7 @@ public readonly clientVersion: string;
 
 Arbitrary version identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#client_version CloudRunV2Service#client_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#client_version CloudRunV2Service#client_version}
 
 ---
 
@@ -2120,7 +2120,7 @@ One or more custom audiences that you want this service to support.
 Specify each custom audience as the full URL in a string. The custom audiences are encoded in the token and used to authenticate requests.
 For more information, see https://cloud.google.com/run/docs/configuring/custom-audiences.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#custom_audiences CloudRunV2Service#custom_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#custom_audiences CloudRunV2Service#custom_audiences}
 
 ---
 
@@ -2134,7 +2134,7 @@ public readonly defaultUriDisabled: boolean | IResolvable;
 
 Disables public resolution of the default URI of this service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#default_uri_disabled CloudRunV2Service#default_uri_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#default_uri_disabled CloudRunV2Service#default_uri_disabled}
 
 ---
 
@@ -2155,7 +2155,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the service will fail.
 When the field is set to false, deleting the service is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#deletion_protection CloudRunV2Service#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#deletion_protection CloudRunV2Service#deletion_protection}
 
 ---
 
@@ -2169,7 +2169,7 @@ public readonly description: string;
 
 User-provided description of the Service. This field currently has a 512-character limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#description CloudRunV2Service#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#description CloudRunV2Service#description}
 
 ---
 
@@ -2183,7 +2183,7 @@ public readonly iapEnabled: boolean | IResolvable;
 
 Used to enable/disable IAP for the cloud-run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#iap_enabled CloudRunV2Service#iap_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#iap_enabled CloudRunV2Service#iap_enabled}
 
 ---
 
@@ -2195,7 +2195,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#id CloudRunV2Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2214,7 +2214,7 @@ Provides the ingress settings for this Service.
 
 On output, returns the currently observed ingress settings, or INGRESS_TRAFFIC_UNSPECIFIED if no revision is active. Possible values: ["INGRESS_TRAFFIC_ALL", "INGRESS_TRAFFIC_INTERNAL_ONLY", "INGRESS_TRAFFIC_INTERNAL_LOAD_BALANCER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#ingress CloudRunV2Service#ingress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#ingress CloudRunV2Service#ingress}
 
 ---
 
@@ -2228,7 +2228,7 @@ public readonly invokerIamDisabled: boolean | IResolvable;
 
 Disables IAM permission check for run.routes.invoke for callers of this service. For more information, visit https://cloud.google.com/run/docs/securing/managing-access#invoker_check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#invoker_iam_disabled CloudRunV2Service#invoker_iam_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#invoker_iam_disabled CloudRunV2Service#invoker_iam_disabled}
 
 ---
 
@@ -2251,7 +2251,7 @@ All system labels in v1 now have a corresponding field in v2 Service.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#labels CloudRunV2Service#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#labels CloudRunV2Service#labels}
 
 ---
 
@@ -2267,7 +2267,7 @@ The launch stage as defined by [Google Cloud Platform Launch Stages](https://clo
 
 For example, if ALPHA is provided as input, but only BETA and GA-level features are used, this field will be BETA on output. Possible values: ["UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#launch_stage CloudRunV2Service#launch_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#launch_stage CloudRunV2Service#launch_stage}
 
 ---
 
@@ -2281,7 +2281,7 @@ public readonly multiRegionSettings: CloudRunV2ServiceMultiRegionSettings;
 
 multi_region_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#multi_region_settings CloudRunV2Service#multi_region_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#multi_region_settings CloudRunV2Service#multi_region_settings}
 
 ---
 
@@ -2293,7 +2293,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#project CloudRunV2Service#project}.
 
 ---
 
@@ -2307,7 +2307,7 @@ public readonly scaling: CloudRunV2ServiceScaling;
 
 scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#scaling CloudRunV2Service#scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#scaling CloudRunV2Service#scaling}
 
 ---
 
@@ -2321,7 +2321,7 @@ public readonly timeouts: CloudRunV2ServiceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#timeouts CloudRunV2Service#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#timeouts CloudRunV2Service#timeouts}
 
 ---
 
@@ -2335,7 +2335,7 @@ public readonly traffic: IResolvable | CloudRunV2ServiceTraffic[];
 
 traffic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#traffic CloudRunV2Service#traffic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#traffic CloudRunV2Service#traffic}
 
 ---
 
@@ -2367,7 +2367,7 @@ public readonly regions: string[];
 
 The list of regions to deploy the multi-region Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#regions CloudRunV2Service#regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#regions CloudRunV2Service#regions}
 
 ---
 
@@ -2404,7 +2404,7 @@ Total instance count for the service in manual scaling mode.
 
 This number of instances is divided among all revisions with specified traffic based on the percent of traffic they are receiving.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#manual_instance_count CloudRunV2Service#manual_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#manual_instance_count CloudRunV2Service#manual_instance_count}
 
 ---
 
@@ -2418,7 +2418,7 @@ public readonly maxInstanceCount: number;
 
 Combined maximum number of instances for all revisions receiving traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#max_instance_count CloudRunV2Service#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#max_instance_count CloudRunV2Service#max_instance_count}
 
 ---
 
@@ -2432,7 +2432,7 @@ public readonly minInstanceCount: number;
 
 Minimum number of instances for the service, to be divided among all revisions receiving traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#min_instance_count CloudRunV2Service#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#min_instance_count CloudRunV2Service#min_instance_count}
 
 ---
 
@@ -2446,7 +2446,7 @@ public readonly scalingMode: string;
 
 The [scaling mode](https://cloud.google.com/run/docs/reference/rest/v2/projects.locations.services#scalingmode) for the service. Possible values: ["AUTOMATIC", "MANUAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#scaling_mode CloudRunV2Service#scaling_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#scaling_mode CloudRunV2Service#scaling_mode}
 
 ---
 
@@ -2500,7 +2500,7 @@ All system annotations in v1 now have a corresponding field in v2 RevisionTempla
 
 This field follows Kubernetes annotations' namespacing, limits, and rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#annotations CloudRunV2Service#annotations}
 
 ---
 
@@ -2514,7 +2514,7 @@ public readonly containers: IResolvable | CloudRunV2ServiceTemplateContainers[];
 
 containers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#containers CloudRunV2Service#containers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#containers CloudRunV2Service#containers}
 
 ---
 
@@ -2530,7 +2530,7 @@ A reference to a customer managed encryption key (CMEK) to use to encrypt this c
 
 For more information, go to https://cloud.google.com/run/docs/securing/using-cmek
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#encryption_key CloudRunV2Service#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#encryption_key CloudRunV2Service#encryption_key}
 
 ---
 
@@ -2544,7 +2544,7 @@ public readonly executionEnvironment: string;
 
 The sandbox environment to host this Revision. Possible values: ["EXECUTION_ENVIRONMENT_GEN1", "EXECUTION_ENVIRONMENT_GEN2"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#execution_environment CloudRunV2Service#execution_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#execution_environment CloudRunV2Service#execution_environment}
 
 ---
 
@@ -2558,7 +2558,7 @@ public readonly gpuZonalRedundancyDisabled: boolean | IResolvable;
 
 True if GPU zonal redundancy is disabled on this revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#gpu_zonal_redundancy_disabled CloudRunV2Service#gpu_zonal_redundancy_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#gpu_zonal_redundancy_disabled CloudRunV2Service#gpu_zonal_redundancy_disabled}
 
 ---
 
@@ -2572,7 +2572,7 @@ public readonly healthCheckDisabled: boolean | IResolvable;
 
 Disables health checking containers during deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#health_check_disabled CloudRunV2Service#health_check_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#health_check_disabled CloudRunV2Service#health_check_disabled}
 
 ---
 
@@ -2592,7 +2592,7 @@ For more information, visit https://docs.cloud.google.com/resource-manager/docs/
 Cloud Run API v2 does not support labels with 'run.googleapis.com', 'cloud.googleapis.com', 'serving.knative.dev', or 'autoscaling.knative.dev' namespaces, and they will be rejected.
 All system labels in v1 now have a corresponding field in v2 RevisionTemplate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#labels CloudRunV2Service#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#labels CloudRunV2Service#labels}
 
 ---
 
@@ -2608,7 +2608,7 @@ Sets the maximum number of requests that each serving instance can receive.
 
 If not specified or 0, defaults to 80 when requested CPU >= 1 and defaults to 1 when requested CPU < 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#max_instance_request_concurrency CloudRunV2Service#max_instance_request_concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#max_instance_request_concurrency CloudRunV2Service#max_instance_request_concurrency}
 
 ---
 
@@ -2622,7 +2622,7 @@ public readonly nodeSelector: CloudRunV2ServiceTemplateNodeSelector;
 
 node_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#node_selector CloudRunV2Service#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#node_selector CloudRunV2Service#node_selector}
 
 ---
 
@@ -2638,7 +2638,7 @@ The unique name for the revision.
 
 If this field is omitted, it will be automatically generated based on the Service name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#revision CloudRunV2Service#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#revision CloudRunV2Service#revision}
 
 ---
 
@@ -2652,7 +2652,7 @@ public readonly scaling: CloudRunV2ServiceTemplateScaling;
 
 scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#scaling CloudRunV2Service#scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#scaling CloudRunV2Service#scaling}
 
 ---
 
@@ -2668,7 +2668,7 @@ Email address of the IAM service account associated with the revision of the ser
 
 The service account represents the identity of the running revision, and determines what permissions the revision has. If not provided, the revision will use the project's default service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#service_account CloudRunV2Service#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#service_account CloudRunV2Service#service_account}
 
 ---
 
@@ -2682,7 +2682,7 @@ public readonly sessionAffinity: boolean | IResolvable;
 
 Enables session affinity. For more information, go to https://cloud.google.com/run/docs/configuring/session-affinity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#session_affinity CloudRunV2Service#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#session_affinity CloudRunV2Service#session_affinity}
 
 ---
 
@@ -2698,7 +2698,7 @@ Max allowed time for an instance to respond to a request.
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#timeout CloudRunV2Service#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#timeout CloudRunV2Service#timeout}
 
 ---
 
@@ -2712,7 +2712,7 @@ public readonly volumes: IResolvable | CloudRunV2ServiceTemplateVolumes[];
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#volumes CloudRunV2Service#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#volumes CloudRunV2Service#volumes}
 
 ---
 
@@ -2726,7 +2726,7 @@ public readonly vpcAccess: CloudRunV2ServiceTemplateVpcAccess;
 
 vpc_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#vpc_access CloudRunV2Service#vpc_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#vpc_access CloudRunV2Service#vpc_access}
 
 ---
 
@@ -2771,7 +2771,7 @@ public readonly image: string;
 
 URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#image CloudRunV2Service#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#image CloudRunV2Service#image}
 
 ---
 
@@ -2787,7 +2787,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references are not supported in Cloud Run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#args CloudRunV2Service#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#args CloudRunV2Service#args}
 
 ---
 
@@ -2801,7 +2801,7 @@ public readonly baseImageUri: string;
 
 Base image for this container. If set, it indicates that the service is enrolled into automatic base image update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#base_image_uri CloudRunV2Service#base_image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#base_image_uri CloudRunV2Service#base_image_uri}
 
 ---
 
@@ -2817,7 +2817,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#command CloudRunV2Service#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#command CloudRunV2Service#command}
 
 ---
 
@@ -2833,7 +2833,7 @@ Containers which should be started before this container.
 
 If specified the container will wait to start until all containers with the listed names are healthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#depends_on CloudRunV2Service#depends_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#depends_on CloudRunV2Service#depends_on}
 
 ---
 
@@ -2847,7 +2847,7 @@ public readonly env: IResolvable | CloudRunV2ServiceTemplateContainersEnv[];
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#env CloudRunV2Service#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#env CloudRunV2Service#env}
 
 ---
 
@@ -2861,7 +2861,7 @@ public readonly livenessProbe: CloudRunV2ServiceTemplateContainersLivenessProbe;
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#liveness_probe CloudRunV2Service#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#liveness_probe CloudRunV2Service#liveness_probe}
 
 ---
 
@@ -2875,7 +2875,7 @@ public readonly name: string;
 
 Name of the container specified as a DNS_LABEL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -2889,7 +2889,7 @@ public readonly ports: CloudRunV2ServiceTemplateContainersPorts;
 
 ports block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#ports CloudRunV2Service#ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#ports CloudRunV2Service#ports}
 
 ---
 
@@ -2903,7 +2903,7 @@ public readonly readinessProbe: CloudRunV2ServiceTemplateContainersReadinessProb
 
 readiness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#readiness_probe CloudRunV2Service#readiness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#readiness_probe CloudRunV2Service#readiness_probe}
 
 ---
 
@@ -2917,7 +2917,7 @@ public readonly resources: CloudRunV2ServiceTemplateContainersResources;
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#resources CloudRunV2Service#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#resources CloudRunV2Service#resources}
 
 ---
 
@@ -2931,7 +2931,7 @@ public readonly startupProbe: CloudRunV2ServiceTemplateContainersStartupProbe;
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#startup_probe CloudRunV2Service#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#startup_probe CloudRunV2Service#startup_probe}
 
 ---
 
@@ -2945,7 +2945,7 @@ public readonly volumeMounts: IResolvable | CloudRunV2ServiceTemplateContainersV
 
 volume_mounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#volume_mounts CloudRunV2Service#volume_mounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#volume_mounts CloudRunV2Service#volume_mounts}
 
 ---
 
@@ -2961,7 +2961,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#working_dir CloudRunV2Service#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#working_dir CloudRunV2Service#working_dir}
 
 ---
 
@@ -3006,7 +3006,7 @@ public readonly name: string;
 
 Name of the environment variable. Must be a C_IDENTIFIER, and may not exceed 32768 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -3022,7 +3022,7 @@ Literal value of the environment variable.
 
 Defaults to "" and the maximum allowed length is 32768 characters. Variable references are not supported in Cloud Run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
 
 ---
 
@@ -3036,7 +3036,7 @@ public readonly valueSource: CloudRunV2ServiceTemplateContainersEnvValueSource;
 
 value_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#value_source CloudRunV2Service#value_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#value_source CloudRunV2Service#value_source}
 
 ---
 
@@ -3068,7 +3068,7 @@ public readonly secretKeyRef: CloudRunV2ServiceTemplateContainersEnvValueSourceS
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#secret_key_ref CloudRunV2Service#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#secret_key_ref CloudRunV2Service#secret_key_ref}
 
 ---
 
@@ -3103,7 +3103,7 @@ The name of the secret in Cloud Secret Manager.
 
 Format: {secretName} if the secret is in the same project. projects/{project}/secrets/{secretName} if the secret is in a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
 
 ---
 
@@ -3119,7 +3119,7 @@ The Cloud Secret Manager secret version.
 
 Can be 'latest' for the latest value or an integer for a specific version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#version CloudRunV2Service#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#version CloudRunV2Service#version}
 
 ---
 
@@ -3159,7 +3159,7 @@ Minimum consecutive failures for the probe to be considered failed after having 
 
 Defaults to 3. Minimum value is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#failure_threshold CloudRunV2Service#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#failure_threshold CloudRunV2Service#failure_threshold}
 
 ---
 
@@ -3173,7 +3173,7 @@ public readonly grpc: CloudRunV2ServiceTemplateContainersLivenessProbeGrpc;
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#grpc CloudRunV2Service#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#grpc CloudRunV2Service#grpc}
 
 ---
 
@@ -3187,7 +3187,7 @@ public readonly httpGet: CloudRunV2ServiceTemplateContainersLivenessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#http_get CloudRunV2Service#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#http_get CloudRunV2Service#http_get}
 
 ---
 
@@ -3203,7 +3203,7 @@ Number of seconds after the container has started before the probe is initiated.
 
 Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#initial_delay_seconds CloudRunV2Service#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#initial_delay_seconds CloudRunV2Service#initial_delay_seconds}
 
 ---
 
@@ -3219,7 +3219,7 @@ How often (in seconds) to perform the probe.
 
 Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#period_seconds CloudRunV2Service#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#period_seconds CloudRunV2Service#period_seconds}
 
 ---
 
@@ -3233,7 +3233,7 @@ public readonly tcpSocket: CloudRunV2ServiceTemplateContainersLivenessProbeTcpSo
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#tcp_socket CloudRunV2Service#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#tcp_socket CloudRunV2Service#tcp_socket}
 
 ---
 
@@ -3249,7 +3249,7 @@ Number of seconds after which the probe times out.
 
 Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#timeout_seconds CloudRunV2Service#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#timeout_seconds CloudRunV2Service#timeout_seconds}
 
 ---
 
@@ -3285,7 +3285,7 @@ Port number to access on the container.
 Number must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -3299,7 +3299,7 @@ public readonly service: string;
 
 The name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#service CloudRunV2Service#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#service CloudRunV2Service#service}
 
 ---
 
@@ -3333,7 +3333,7 @@ public readonly httpHeaders: IResolvable | CloudRunV2ServiceTemplateContainersLi
 
 http_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#http_headers CloudRunV2Service#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#http_headers CloudRunV2Service#http_headers}
 
 ---
 
@@ -3347,7 +3347,7 @@ public readonly path: string;
 
 Path to access on the HTTP server. Defaults to '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
 
 ---
 
@@ -3364,7 +3364,7 @@ Port number to access on the container.
 Number must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -3397,7 +3397,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -3411,7 +3411,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
 
 ---
 
@@ -3447,7 +3447,7 @@ Must be in the range 1 to 65535.
 If not specified, defaults to the exposed port of the container, which
 is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -3480,7 +3480,7 @@ public readonly containerPort: number;
 
 Port number the container listens on. This must be a valid TCP port number, 0 < containerPort < 65536.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#container_port CloudRunV2Service#container_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#container_port CloudRunV2Service#container_port}
 
 ---
 
@@ -3494,7 +3494,7 @@ public readonly name: string;
 
 If specified, used to specify which protocol to use. Allowed values are "http1" and "h2c".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -3531,7 +3531,7 @@ public readonly failureThreshold: number;
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#failure_threshold CloudRunV2Service#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#failure_threshold CloudRunV2Service#failure_threshold}
 
 ---
 
@@ -3545,7 +3545,7 @@ public readonly grpc: CloudRunV2ServiceTemplateContainersReadinessProbeGrpc;
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#grpc CloudRunV2Service#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#grpc CloudRunV2Service#grpc}
 
 ---
 
@@ -3559,7 +3559,7 @@ public readonly httpGet: CloudRunV2ServiceTemplateContainersReadinessProbeHttpGe
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#http_get CloudRunV2Service#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#http_get CloudRunV2Service#http_get}
 
 ---
 
@@ -3573,7 +3573,7 @@ public readonly periodSeconds: number;
 
 How often (in seconds) to perform the probe. Default to 10 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#period_seconds CloudRunV2Service#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#period_seconds CloudRunV2Service#period_seconds}
 
 ---
 
@@ -3587,7 +3587,7 @@ public readonly successThreshold: number;
 
 Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#success_threshold CloudRunV2Service#success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#success_threshold CloudRunV2Service#success_threshold}
 
 ---
 
@@ -3601,7 +3601,7 @@ public readonly timeoutSeconds: number;
 
 Number of seconds after which the probe times out. Defaults to 1 second. Must be smaller than period_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#timeout_seconds CloudRunV2Service#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#timeout_seconds CloudRunV2Service#timeout_seconds}
 
 ---
 
@@ -3637,7 +3637,7 @@ Port number to access on the container.
 Number must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -3651,7 +3651,7 @@ public readonly service: string;
 
 The name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#service CloudRunV2Service#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#service CloudRunV2Service#service}
 
 ---
 
@@ -3684,7 +3684,7 @@ public readonly path: string;
 
 Path to access on the HTTP server. If set, it should not be empty string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
 
 ---
 
@@ -3701,7 +3701,7 @@ Port number to access on the container.
 Number must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -3738,7 +3738,7 @@ Determines whether CPU is only allocated during requests.
 True by default if the parent 'resources' field is not set. However, if
 'resources' is set, this field must be explicitly set to true to preserve the default behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#cpu_idle CloudRunV2Service#cpu_idle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#cpu_idle CloudRunV2Service#cpu_idle}
 
 ---
 
@@ -3752,7 +3752,7 @@ public readonly limits: {[ key: string ]: string};
 
 Only memory, CPU, and nvidia.com/gpu are supported. Use key 'cpu' for CPU limit, 'memory' for memory limit, 'nvidia.com/gpu' for gpu limit. Note: The only supported values for CPU are '1', '2', '4', '6' and '8'. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the 'quantity' k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#limits CloudRunV2Service#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#limits CloudRunV2Service#limits}
 
 ---
 
@@ -3766,7 +3766,7 @@ public readonly startupCpuBoost: boolean | IResolvable;
 
 Determines whether CPU should be boosted on startup of a new container instance above the requested CPU threshold, this can help reduce cold-start latency.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#startup_cpu_boost CloudRunV2Service#startup_cpu_boost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#startup_cpu_boost CloudRunV2Service#startup_cpu_boost}
 
 ---
 
@@ -3806,7 +3806,7 @@ Minimum consecutive failures for the probe to be considered failed after having 
 
 Defaults to 3. Minimum value is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#failure_threshold CloudRunV2Service#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#failure_threshold CloudRunV2Service#failure_threshold}
 
 ---
 
@@ -3820,7 +3820,7 @@ public readonly grpc: CloudRunV2ServiceTemplateContainersStartupProbeGrpc;
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#grpc CloudRunV2Service#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#grpc CloudRunV2Service#grpc}
 
 ---
 
@@ -3834,7 +3834,7 @@ public readonly httpGet: CloudRunV2ServiceTemplateContainersStartupProbeHttpGet;
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#http_get CloudRunV2Service#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#http_get CloudRunV2Service#http_get}
 
 ---
 
@@ -3850,7 +3850,7 @@ Number of seconds after the container has started before the probe is initiated.
 
 Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#initial_delay_seconds CloudRunV2Service#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#initial_delay_seconds CloudRunV2Service#initial_delay_seconds}
 
 ---
 
@@ -3866,7 +3866,7 @@ How often (in seconds) to perform the probe.
 
 Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeoutSeconds
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#period_seconds CloudRunV2Service#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#period_seconds CloudRunV2Service#period_seconds}
 
 ---
 
@@ -3880,7 +3880,7 @@ public readonly tcpSocket: CloudRunV2ServiceTemplateContainersStartupProbeTcpSoc
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#tcp_socket CloudRunV2Service#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#tcp_socket CloudRunV2Service#tcp_socket}
 
 ---
 
@@ -3896,7 +3896,7 @@ Number of seconds after which the probe times out.
 
 Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than periodSeconds. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#timeout_seconds CloudRunV2Service#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#timeout_seconds CloudRunV2Service#timeout_seconds}
 
 ---
 
@@ -3932,7 +3932,7 @@ Port number to access on the container.
 Number must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -3946,7 +3946,7 @@ public readonly service: string;
 
 The name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#service CloudRunV2Service#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#service CloudRunV2Service#service}
 
 ---
 
@@ -3980,7 +3980,7 @@ public readonly httpHeaders: IResolvable | CloudRunV2ServiceTemplateContainersSt
 
 http_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#http_headers CloudRunV2Service#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#http_headers CloudRunV2Service#http_headers}
 
 ---
 
@@ -3994,7 +3994,7 @@ public readonly path: string;
 
 Path to access on the HTTP server. Defaults to '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
 
 ---
 
@@ -4011,7 +4011,7 @@ Port number to access on the container.
 Must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -4044,7 +4044,7 @@ public readonly name: string;
 
 The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -4058,7 +4058,7 @@ public readonly value: string;
 
 The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#value CloudRunV2Service#value}
 
 ---
 
@@ -4093,7 +4093,7 @@ Port number to access on the container.
 Must be in the range 1 to 65535.
 If not specified, defaults to the same value as container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#port CloudRunV2Service#port}
 
 ---
 
@@ -4129,7 +4129,7 @@ Path within the container at which the volume should be mounted.
 
 Must not contain ':'. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#mount_path CloudRunV2Service#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#mount_path CloudRunV2Service#mount_path}
 
 ---
 
@@ -4143,7 +4143,7 @@ public readonly name: string;
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -4157,7 +4157,7 @@ public readonly subPath: string;
 
 Path within the volume from which the container's volume should be mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#sub_path CloudRunV2Service#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#sub_path CloudRunV2Service#sub_path}
 
 ---
 
@@ -4189,7 +4189,7 @@ public readonly accelerator: string;
 
 The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#accelerator CloudRunV2Service#accelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#accelerator CloudRunV2Service#accelerator}
 
 ---
 
@@ -4225,7 +4225,7 @@ Maximum number of serving instances that this resource should have.
 Must not be less than minimum instance count. If absent, Cloud Run will calculate
 a default value based on the project's available container instances quota in the region and specified instance size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#max_instance_count CloudRunV2Service#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#max_instance_count CloudRunV2Service#max_instance_count}
 
 ---
 
@@ -4241,7 +4241,7 @@ Minimum number of serving instances that this resource should have.
 
 Defaults to 0. Must not be greater than maximum instance count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#min_instance_count CloudRunV2Service#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#min_instance_count CloudRunV2Service#min_instance_count}
 
 ---
 
@@ -4278,7 +4278,7 @@ public readonly name: string;
 
 Volume's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#name CloudRunV2Service#name}
 
 ---
 
@@ -4292,7 +4292,7 @@ public readonly cloudSqlInstance: CloudRunV2ServiceTemplateVolumesCloudSqlInstan
 
 cloud_sql_instance block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#cloud_sql_instance CloudRunV2Service#cloud_sql_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#cloud_sql_instance CloudRunV2Service#cloud_sql_instance}
 
 ---
 
@@ -4306,7 +4306,7 @@ public readonly emptyDir: CloudRunV2ServiceTemplateVolumesEmptyDir;
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#empty_dir CloudRunV2Service#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#empty_dir CloudRunV2Service#empty_dir}
 
 ---
 
@@ -4320,7 +4320,7 @@ public readonly gcs: CloudRunV2ServiceTemplateVolumesGcs;
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#gcs CloudRunV2Service#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#gcs CloudRunV2Service#gcs}
 
 ---
 
@@ -4334,7 +4334,7 @@ public readonly nfs: CloudRunV2ServiceTemplateVolumesNfs;
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#nfs CloudRunV2Service#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#nfs CloudRunV2Service#nfs}
 
 ---
 
@@ -4348,7 +4348,7 @@ public readonly secret: CloudRunV2ServiceTemplateVolumesSecret;
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
 
 ---
 
@@ -4380,7 +4380,7 @@ public readonly instances: string[];
 
 The Cloud SQL instance connection names, as can be found in https://console.cloud.google.com/sql/instances. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run. Format: {project}:{location}:{instance}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#instances CloudRunV2Service#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#instances CloudRunV2Service#instances}
 
 ---
 
@@ -4413,7 +4413,7 @@ public readonly medium: string;
 
 The different types of medium supported for EmptyDir. Default value: "MEMORY" Possible values: ["MEMORY", "DISK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#medium CloudRunV2Service#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#medium CloudRunV2Service#medium}
 
 ---
 
@@ -4429,7 +4429,7 @@ Limit on the storage usable by this EmptyDir volume.
 
 The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. This field's values are of the 'Quantity' k8s type: https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/quantity/. The default is nil which means that the limit is undefined. More info: https://kubernetes.io/docs/concepts/storage/volumes/#emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#size_limit CloudRunV2Service#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#size_limit CloudRunV2Service#size_limit}
 
 ---
 
@@ -4463,7 +4463,7 @@ public readonly bucket: string;
 
 GCS Bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#bucket CloudRunV2Service#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#bucket CloudRunV2Service#bucket}
 
 ---
 
@@ -4479,7 +4479,7 @@ A list of flags to pass to the gcsfuse command for configuring this volume.
 
 Flags should be passed without leading dashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#mount_options CloudRunV2Service#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#mount_options CloudRunV2Service#mount_options}
 
 ---
 
@@ -4493,7 +4493,7 @@ public readonly readOnly: boolean | IResolvable;
 
 If true, mount the GCS bucket as read-only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#read_only CloudRunV2Service#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#read_only CloudRunV2Service#read_only}
 
 ---
 
@@ -4527,7 +4527,7 @@ public readonly path: string;
 
 Path that is exported by the NFS server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
 
 ---
 
@@ -4541,7 +4541,7 @@ public readonly server: string;
 
 Hostname or IP address of the NFS server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#server CloudRunV2Service#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#server CloudRunV2Service#server}
 
 ---
 
@@ -4555,7 +4555,7 @@ public readonly readOnly: boolean | IResolvable;
 
 If true, mount the NFS volume as read only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#read_only CloudRunV2Service#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#read_only CloudRunV2Service#read_only}
 
 ---
 
@@ -4591,7 +4591,7 @@ The name of the secret in Cloud Secret Manager.
 
 Format: {secret} if the secret is in the same project. projects/{project}/secrets/{secret} if the secret is in a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#secret CloudRunV2Service#secret}
 
 ---
 
@@ -4607,7 +4607,7 @@ Integer representation of mode bits to use on created files by default.
 
 Must be a value between 0000 and 0777 (octal), defaulting to 0444. Directories within the path are not affected by this setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#default_mode CloudRunV2Service#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#default_mode CloudRunV2Service#default_mode}
 
 ---
 
@@ -4621,7 +4621,7 @@ public readonly items: IResolvable | CloudRunV2ServiceTemplateVolumesSecretItems
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#items CloudRunV2Service#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#items CloudRunV2Service#items}
 
 ---
 
@@ -4655,7 +4655,7 @@ public readonly path: string;
 
 The relative path of the secret in the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#path CloudRunV2Service#path}
 
 ---
 
@@ -4671,7 +4671,7 @@ Integer octal mode bits to use on this file, must be a value between 01 and 0777
 
 If 0 or not set, the Volume's default mode will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#mode CloudRunV2Service#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#mode CloudRunV2Service#mode}
 
 ---
 
@@ -4687,7 +4687,7 @@ The Cloud Secret Manager secret version.
 
 Can be 'latest' for the latest value or an integer for a specific version
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#version CloudRunV2Service#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#version CloudRunV2Service#version}
 
 ---
 
@@ -4721,7 +4721,7 @@ public readonly connector: string;
 
 VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#connector CloudRunV2Service#connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#connector CloudRunV2Service#connector}
 
 ---
 
@@ -4735,7 +4735,7 @@ public readonly egress: string;
 
 Traffic VPC egress settings. Possible values: ["ALL_TRAFFIC", "PRIVATE_RANGES_ONLY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#egress CloudRunV2Service#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#egress CloudRunV2Service#egress}
 
 ---
 
@@ -4749,7 +4749,7 @@ public readonly networkInterfaces: IResolvable | CloudRunV2ServiceTemplateVpcAcc
 
 network_interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#network_interfaces CloudRunV2Service#network_interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#network_interfaces CloudRunV2Service#network_interfaces}
 
 ---
 
@@ -4787,7 +4787,7 @@ At least one of network or subnetwork must be specified. If both
 network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If network is not specified, it will be
 looked up from the subnetwork.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#network CloudRunV2Service#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#network CloudRunV2Service#network}
 
 ---
 
@@ -4805,7 +4805,7 @@ At least one of network or subnetwork must be specified. If both
 network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the
 subnetwork with the same name with the network will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#subnetwork CloudRunV2Service#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#subnetwork CloudRunV2Service#subnetwork}
 
 ---
 
@@ -4819,7 +4819,7 @@ public readonly tags: string[];
 
 Network tags applied to this Cloud Run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#tags CloudRunV2Service#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#tags CloudRunV2Service#tags}
 
 ---
 
@@ -4848,9 +4848,9 @@ const cloudRunV2ServiceTimeouts: cloudRunV2Service.CloudRunV2ServiceTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#create CloudRunV2Service#create}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#delete CloudRunV2Service#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#update CloudRunV2Service#update}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#create CloudRunV2Service#create}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#delete CloudRunV2Service#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#update CloudRunV2Service#update}. |
 
 ---
 
@@ -4862,7 +4862,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#create CloudRunV2Service#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#create CloudRunV2Service#create}.
 
 ---
 
@@ -4874,7 +4874,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#delete CloudRunV2Service#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#delete CloudRunV2Service#delete}.
 
 ---
 
@@ -4886,7 +4886,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#update CloudRunV2Service#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#update CloudRunV2Service#update}.
 
 ---
 
@@ -4921,7 +4921,7 @@ public readonly percent: number;
 
 Specifies percent of the traffic to this Revision. This defaults to zero if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#percent CloudRunV2Service#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#percent CloudRunV2Service#percent}
 
 ---
 
@@ -4935,7 +4935,7 @@ public readonly revision: string;
 
 Revision to which to send this portion of traffic, if traffic allocation is by revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#revision CloudRunV2Service#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#revision CloudRunV2Service#revision}
 
 ---
 
@@ -4949,7 +4949,7 @@ public readonly tag: string;
 
 Indicates a string to be part of the URI to exclusively reference this target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#tag CloudRunV2Service#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#tag CloudRunV2Service#tag}
 
 ---
 
@@ -4963,7 +4963,7 @@ public readonly type: string;
 
 The allocation type for this traffic target. Possible values: ["TRAFFIC_TARGET_ALLOCATION_TYPE_LATEST", "TRAFFIC_TARGET_ALLOCATION_TYPE_REVISION"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/cloud_run_v2_service#type CloudRunV2Service#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_run_v2_service#type CloudRunV2Service#type}
 
 ---
 

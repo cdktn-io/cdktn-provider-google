@@ -4,7 +4,7 @@
 
 ### DataprocGdcSparkApplication <a name="DataprocGdcSparkApplication" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application google_dataproc_gdc_spark_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application google_dataproc_gdc_spark_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplication.Initializer"></a>
 
@@ -659,7 +659,7 @@ The construct id used in the generated config for the DataprocGdcSparkApplicatio
 
 The id of the existing DataprocGdcSparkApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1436,10 +1436,10 @@ new DataprocGdcSparkApplicationConfig {
 | <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.applicationEnvironment">ApplicationEnvironment</a></code> | <code>string</code> | An ApplicationEnvironment from which to inherit configuration properties. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.dependencyImages">DependencyImages</a></code> | <code>string[]</code> | List of container image uris for additional file dependencies. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.displayName">DisplayName</a></code> | <code>string</code> | User-provided human-readable name to be used in user interfaces. |
-| <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#id DataprocGdcSparkApplication#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#id DataprocGdcSparkApplication#id}. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | The labels to associate with this application. Labels may be used for filtering and billing tracking. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.namespace">Namespace</a></code> | <code>string</code> | The Kubernetes namespace in which to create the application. This namespace must already exist on the cluster. |
-| <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#project DataprocGdcSparkApplication#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#project DataprocGdcSparkApplication#project}. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.properties">Properties</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | application-specific properties. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.pysparkApplicationConfig">PysparkApplicationConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationPysparkApplicationConfig">DataprocGdcSparkApplicationPysparkApplicationConfig</a></code> | pyspark_application_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationConfig.property.sparkApplicationConfig">SparkApplicationConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationSparkApplicationConfig">DataprocGdcSparkApplicationSparkApplicationConfig</a></code> | spark_application_config block. |
@@ -1530,7 +1530,7 @@ public string Location { get; set; }
 
 The location of the spark application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#location DataprocGdcSparkApplication#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#location DataprocGdcSparkApplication#location}
 
 ---
 
@@ -1544,7 +1544,7 @@ public string Serviceinstance { get; set; }
 
 The id of the service instance to which this spark application belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#serviceinstance DataprocGdcSparkApplication#serviceinstance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#serviceinstance DataprocGdcSparkApplication#serviceinstance}
 
 ---
 
@@ -1558,7 +1558,7 @@ public string SparkApplicationId { get; set; }
 
 The id of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#spark_application_id DataprocGdcSparkApplication#spark_application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#spark_application_id DataprocGdcSparkApplication#spark_application_id}
 
 ---
 
@@ -1577,7 +1577,7 @@ Annotations may be used to store client information, but are not used by the ser
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#annotations DataprocGdcSparkApplication#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#annotations DataprocGdcSparkApplication#annotations}
 
 ---
 
@@ -1591,7 +1591,7 @@ public string ApplicationEnvironment { get; set; }
 
 An ApplicationEnvironment from which to inherit configuration properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#application_environment DataprocGdcSparkApplication#application_environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#application_environment DataprocGdcSparkApplication#application_environment}
 
 ---
 
@@ -1607,7 +1607,7 @@ List of container image uris for additional file dependencies.
 
 Dependent files are sequentially copied from each image. If a file with the same name exists in 2 images then the file from later image is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#dependency_images DataprocGdcSparkApplication#dependency_images}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#dependency_images DataprocGdcSparkApplication#dependency_images}
 
 ---
 
@@ -1621,7 +1621,7 @@ public string DisplayName { get; set; }
 
 User-provided human-readable name to be used in user interfaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#display_name DataprocGdcSparkApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#display_name DataprocGdcSparkApplication#display_name}
 
 ---
 
@@ -1633,7 +1633,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#id DataprocGdcSparkApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#id DataprocGdcSparkApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1653,7 +1653,7 @@ The labels to associate with this application. Labels may be used for filtering 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#labels DataprocGdcSparkApplication#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#labels DataprocGdcSparkApplication#labels}
 
 ---
 
@@ -1667,7 +1667,7 @@ public string Namespace { get; set; }
 
 The Kubernetes namespace in which to create the application. This namespace must already exist on the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#namespace DataprocGdcSparkApplication#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#namespace DataprocGdcSparkApplication#namespace}
 
 ---
 
@@ -1679,7 +1679,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#project DataprocGdcSparkApplication#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#project DataprocGdcSparkApplication#project}.
 
 ---
 
@@ -1693,7 +1693,7 @@ public System.Collections.Generic.IDictionary<string, string> Properties { get; 
 
 application-specific properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#properties DataprocGdcSparkApplication#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#properties DataprocGdcSparkApplication#properties}
 
 ---
 
@@ -1707,7 +1707,7 @@ public DataprocGdcSparkApplicationPysparkApplicationConfig PysparkApplicationCon
 
 pyspark_application_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#pyspark_application_config DataprocGdcSparkApplication#pyspark_application_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#pyspark_application_config DataprocGdcSparkApplication#pyspark_application_config}
 
 ---
 
@@ -1721,7 +1721,7 @@ public DataprocGdcSparkApplicationSparkApplicationConfig SparkApplicationConfig 
 
 spark_application_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#spark_application_config DataprocGdcSparkApplication#spark_application_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#spark_application_config DataprocGdcSparkApplication#spark_application_config}
 
 ---
 
@@ -1735,7 +1735,7 @@ public DataprocGdcSparkApplicationSparkRApplicationConfig SparkRApplicationConfi
 
 spark_r_application_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#spark_r_application_config DataprocGdcSparkApplication#spark_r_application_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#spark_r_application_config DataprocGdcSparkApplication#spark_r_application_config}
 
 ---
 
@@ -1749,7 +1749,7 @@ public DataprocGdcSparkApplicationSparkSqlApplicationConfig SparkSqlApplicationC
 
 spark_sql_application_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#spark_sql_application_config DataprocGdcSparkApplication#spark_sql_application_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#spark_sql_application_config DataprocGdcSparkApplication#spark_sql_application_config}
 
 ---
 
@@ -1763,7 +1763,7 @@ public DataprocGdcSparkApplicationTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#timeouts DataprocGdcSparkApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#timeouts DataprocGdcSparkApplication#timeouts}
 
 ---
 
@@ -1777,7 +1777,7 @@ public string Version { get; set; }
 
 The Dataproc version of this application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#version DataprocGdcSparkApplication#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#version DataprocGdcSparkApplication#version}
 
 ---
 
@@ -1821,7 +1821,7 @@ public string MainPythonFileUri { get; set; }
 
 The HCFS URI of the main Python file to use as the driver. Must be a .py file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#main_python_file_uri DataprocGdcSparkApplication#main_python_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#main_python_file_uri DataprocGdcSparkApplication#main_python_file_uri}
 
 ---
 
@@ -1837,7 +1837,7 @@ HCFS URIs of archives to be extracted into the working directory of each executo
 
 Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#archive_uris DataprocGdcSparkApplication#archive_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#archive_uris DataprocGdcSparkApplication#archive_uris}
 
 ---
 
@@ -1853,7 +1853,7 @@ The arguments to pass to the driver.
 
 Do not include arguments, such as '--conf', that can be set as job properties, since a collision may occur that causes an incorrect job submission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#args DataprocGdcSparkApplication#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#args DataprocGdcSparkApplication#args}
 
 ---
 
@@ -1867,7 +1867,7 @@ public string[] FileUris { get; set; }
 
 HCFS URIs of files to be placed in the working directory of each executor. Useful for naively parallel tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#file_uris DataprocGdcSparkApplication#file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#file_uris DataprocGdcSparkApplication#file_uris}
 
 ---
 
@@ -1881,7 +1881,7 @@ public string[] JarFileUris { get; set; }
 
 HCFS URIs of jar files to add to the CLASSPATHs of the Python driver and tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#jar_file_uris DataprocGdcSparkApplication#jar_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#jar_file_uris DataprocGdcSparkApplication#jar_file_uris}
 
 ---
 
@@ -1895,7 +1895,7 @@ public string[] PythonFileUris { get; set; }
 
 HCFS file URIs of Python files to pass to the PySpark framework. Supported file types: .py, .egg, and .zip.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#python_file_uris DataprocGdcSparkApplication#python_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#python_file_uris DataprocGdcSparkApplication#python_file_uris}
 
 ---
 
@@ -1941,7 +1941,7 @@ HCFS URIs of archives to be extracted into the working directory of each executo
 
 Supported file types: '.jar', '.tar', '.tar.gz', '.tgz', and '.zip'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#archive_uris DataprocGdcSparkApplication#archive_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#archive_uris DataprocGdcSparkApplication#archive_uris}
 
 ---
 
@@ -1957,7 +1957,7 @@ The arguments to pass to the driver.
 
 Do not include arguments that can be set as application properties, such as '--conf', since a collision can occur that causes an incorrect application submission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#args DataprocGdcSparkApplication#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#args DataprocGdcSparkApplication#args}
 
 ---
 
@@ -1971,7 +1971,7 @@ public string[] FileUris { get; set; }
 
 HCFS URIs of files to be placed in the working directory of each executor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#file_uris DataprocGdcSparkApplication#file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#file_uris DataprocGdcSparkApplication#file_uris}
 
 ---
 
@@ -1985,7 +1985,7 @@ public string[] JarFileUris { get; set; }
 
 HCFS URIs of jar files to add to the classpath of the Spark driver and tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#jar_file_uris DataprocGdcSparkApplication#jar_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#jar_file_uris DataprocGdcSparkApplication#jar_file_uris}
 
 ---
 
@@ -2001,7 +2001,7 @@ The name of the driver main class.
 
 The jar file that contains the class must be in the classpath or specified in 'jar_file_uris'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#main_class DataprocGdcSparkApplication#main_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#main_class DataprocGdcSparkApplication#main_class}
 
 ---
 
@@ -2015,7 +2015,7 @@ public string MainJarFileUri { get; set; }
 
 The HCFS URI of the jar file that contains the main class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#main_jar_file_uri DataprocGdcSparkApplication#main_jar_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#main_jar_file_uri DataprocGdcSparkApplication#main_jar_file_uri}
 
 ---
 
@@ -2055,7 +2055,7 @@ public string MainRFileUri { get; set; }
 
 The HCFS URI of the main R file to use as the driver. Must be a .R file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#main_r_file_uri DataprocGdcSparkApplication#main_r_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#main_r_file_uri DataprocGdcSparkApplication#main_r_file_uri}
 
 ---
 
@@ -2071,7 +2071,7 @@ HCFS URIs of archives to be extracted into the working directory of each executo
 
 Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#archive_uris DataprocGdcSparkApplication#archive_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#archive_uris DataprocGdcSparkApplication#archive_uris}
 
 ---
 
@@ -2087,7 +2087,7 @@ The arguments to pass to the driver.
 
 Do not include arguments, such as '--conf', that can be set as job properties, since a collision may occur that causes an incorrect job submission.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#args DataprocGdcSparkApplication#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#args DataprocGdcSparkApplication#args}
 
 ---
 
@@ -2101,7 +2101,7 @@ public string[] FileUris { get; set; }
 
 HCFS URIs of files to be placed in the working directory of each executor. Useful for naively parallel tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#file_uris DataprocGdcSparkApplication#file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#file_uris DataprocGdcSparkApplication#file_uris}
 
 ---
 
@@ -2141,7 +2141,7 @@ public string[] JarFileUris { get; set; }
 
 HCFS URIs of jar files to be added to the Spark CLASSPATH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#jar_file_uris DataprocGdcSparkApplication#jar_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#jar_file_uris DataprocGdcSparkApplication#jar_file_uris}
 
 ---
 
@@ -2155,7 +2155,7 @@ public string QueryFileUri { get; set; }
 
 The HCFS URI of the script that contains SQL queries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#query_file_uri DataprocGdcSparkApplication#query_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#query_file_uri DataprocGdcSparkApplication#query_file_uri}
 
 ---
 
@@ -2169,7 +2169,7 @@ public DataprocGdcSparkApplicationSparkSqlApplicationConfigQueryListStruct Query
 
 query_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#query_list DataprocGdcSparkApplication#query_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#query_list DataprocGdcSparkApplication#query_list}
 
 ---
 
@@ -2183,7 +2183,7 @@ public System.Collections.Generic.IDictionary<string, string> ScriptVariables { 
 
 Mapping of query variable names to values (equivalent to the Spark SQL command: SET 'name="value";').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#script_variables DataprocGdcSparkApplication#script_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#script_variables DataprocGdcSparkApplication#script_variables}
 
 ---
 
@@ -2217,7 +2217,7 @@ public string[] Queries { get; set; }
 
 The queries to run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#queries DataprocGdcSparkApplication#queries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#queries DataprocGdcSparkApplication#queries}
 
 ---
 
@@ -2239,9 +2239,9 @@ new DataprocGdcSparkApplicationTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#create DataprocGdcSparkApplication#create}. |
-| <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#delete DataprocGdcSparkApplication#delete}. |
-| <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#update DataprocGdcSparkApplication#update}. |
+| <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#create DataprocGdcSparkApplication#create}. |
+| <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#delete DataprocGdcSparkApplication#delete}. |
+| <code><a href="#@cdktn/provider-google.dataprocGdcSparkApplication.DataprocGdcSparkApplicationTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#update DataprocGdcSparkApplication#update}. |
 
 ---
 
@@ -2253,7 +2253,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#create DataprocGdcSparkApplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#create DataprocGdcSparkApplication#create}.
 
 ---
 
@@ -2265,7 +2265,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#delete DataprocGdcSparkApplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#delete DataprocGdcSparkApplication#delete}.
 
 ---
 
@@ -2277,7 +2277,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataproc_gdc_spark_application#update DataprocGdcSparkApplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataproc_gdc_spark_application#update DataprocGdcSparkApplication#update}.
 
 ---
 

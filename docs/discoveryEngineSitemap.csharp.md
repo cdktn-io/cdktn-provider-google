@@ -4,7 +4,7 @@
 
 ### DiscoveryEngineSitemap <a name="DiscoveryEngineSitemap" id="@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap google_discovery_engine_sitemap}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap google_discovery_engine_sitemap}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemap.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DiscoveryEngineSitemap to 
 
 The id of the existing DiscoveryEngineSitemap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -927,8 +927,8 @@ new DiscoveryEngineSitemapConfig {
 | <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapConfig.property.dataStoreId">DataStoreId</a></code> | <code>string</code> | The unique id of the data store. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapConfig.property.location">Location</a></code> | <code>string</code> | The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu". |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#id DiscoveryEngineSitemap#id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#project DiscoveryEngineSitemap#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#id DiscoveryEngineSitemap#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#project DiscoveryEngineSitemap#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapTimeouts">DiscoveryEngineSitemapTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapConfig.property.uri">Uri</a></code> | <code>string</code> | Public URI for the sitemap, e.g. "www.example.com/sitemap.xml". |
 
@@ -1014,7 +1014,7 @@ public string DataStoreId { get; set; }
 
 The unique id of the data store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#data_store_id DiscoveryEngineSitemap#data_store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#data_store_id DiscoveryEngineSitemap#data_store_id}
 
 ---
 
@@ -1028,7 +1028,7 @@ public string Location { get; set; }
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#location DiscoveryEngineSitemap#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#location DiscoveryEngineSitemap#location}
 
 ---
 
@@ -1040,7 +1040,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#id DiscoveryEngineSitemap#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#id DiscoveryEngineSitemap#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1055,7 +1055,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#project DiscoveryEngineSitemap#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#project DiscoveryEngineSitemap#project}.
 
 ---
 
@@ -1069,7 +1069,7 @@ public DiscoveryEngineSitemapTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#timeouts DiscoveryEngineSitemap#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#timeouts DiscoveryEngineSitemap#timeouts}
 
 ---
 
@@ -1083,7 +1083,7 @@ public string Uri { get; set; }
 
 Public URI for the sitemap, e.g. "www.example.com/sitemap.xml".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#uri DiscoveryEngineSitemap#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#uri DiscoveryEngineSitemap#uri}
 
 ---
 
@@ -1104,8 +1104,8 @@ new DiscoveryEngineSitemapTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#create DiscoveryEngineSitemap#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#delete DiscoveryEngineSitemap#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#create DiscoveryEngineSitemap#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSitemap.DiscoveryEngineSitemapTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#delete DiscoveryEngineSitemap#delete}. |
 
 ---
 
@@ -1117,7 +1117,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#create DiscoveryEngineSitemap#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#create DiscoveryEngineSitemap#create}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/discovery_engine_sitemap#delete DiscoveryEngineSitemap#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/discovery_engine_sitemap#delete DiscoveryEngineSitemap#delete}.
 
 ---
 

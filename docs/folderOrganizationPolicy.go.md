@@ -4,7 +4,7 @@
 
 ### FolderOrganizationPolicy <a name="FolderOrganizationPolicy" id="@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy google_folder_organization_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy google_folder_organization_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicy.Initializer"></a>
 
@@ -583,7 +583,7 @@ The construct id used in the generated config for the FolderOrganizationPolicy t
 
 The id of the existing FolderOrganizationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1006,7 +1006,7 @@ Enforced interface{}
 
 If true, then the Policy is enforced. If false, then any configuration is acceptable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#enforced FolderOrganizationPolicy#enforced}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#enforced FolderOrganizationPolicy#enforced}
 
 ---
 
@@ -1050,7 +1050,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/folderorganizati
 | <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyConfig.property.constraint">Constraint</a></code> | <code>*string</code> | The name of the Constraint the Policy is configuring, for example, serviceuser.services. |
 | <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyConfig.property.folder">Folder</a></code> | <code>*string</code> | The resource name of the folder to set the policy for. Its format is folders/{folder_id}. |
 | <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyConfig.property.booleanPolicy">BooleanPolicy</a></code> | <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyBooleanPolicy">FolderOrganizationPolicyBooleanPolicy</a></code> | boolean_policy block. |
-| <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#id FolderOrganizationPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#id FolderOrganizationPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyConfig.property.listPolicy">ListPolicy</a></code> | <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyListPolicy">FolderOrganizationPolicyListPolicy</a></code> | list_policy block. |
 | <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyConfig.property.restorePolicy">RestorePolicy</a></code> | <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyRestorePolicy">FolderOrganizationPolicyRestorePolicy</a></code> | restore_policy block. |
 | <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts">FolderOrganizationPolicyTimeouts</a></code> | timeouts block. |
@@ -1138,7 +1138,7 @@ Constraint *string
 
 The name of the Constraint the Policy is configuring, for example, serviceuser.services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#constraint FolderOrganizationPolicy#constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#constraint FolderOrganizationPolicy#constraint}
 
 ---
 
@@ -1152,7 +1152,7 @@ Folder *string
 
 The resource name of the folder to set the policy for. Its format is folders/{folder_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#folder FolderOrganizationPolicy#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#folder FolderOrganizationPolicy#folder}
 
 ---
 
@@ -1166,7 +1166,7 @@ BooleanPolicy FolderOrganizationPolicyBooleanPolicy
 
 boolean_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#boolean_policy FolderOrganizationPolicy#boolean_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#boolean_policy FolderOrganizationPolicy#boolean_policy}
 
 ---
 
@@ -1178,7 +1178,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#id FolderOrganizationPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#id FolderOrganizationPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1195,7 +1195,7 @@ ListPolicy FolderOrganizationPolicyListPolicy
 
 list_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#list_policy FolderOrganizationPolicy#list_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#list_policy FolderOrganizationPolicy#list_policy}
 
 ---
 
@@ -1209,7 +1209,7 @@ RestorePolicy FolderOrganizationPolicyRestorePolicy
 
 restore_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#restore_policy FolderOrganizationPolicy#restore_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#restore_policy FolderOrganizationPolicy#restore_policy}
 
 ---
 
@@ -1223,7 +1223,7 @@ Timeouts FolderOrganizationPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#timeouts FolderOrganizationPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#timeouts FolderOrganizationPolicy#timeouts}
 
 ---
 
@@ -1237,7 +1237,7 @@ Version *f64
 
 Version of the Policy. Default version is 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#version FolderOrganizationPolicy#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#version FolderOrganizationPolicy#version}
 
 ---
 
@@ -1277,7 +1277,7 @@ Allow FolderOrganizationPolicyListPolicyAllow
 
 allow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#allow FolderOrganizationPolicy#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#allow FolderOrganizationPolicy#allow}
 
 ---
 
@@ -1291,7 +1291,7 @@ Deny FolderOrganizationPolicyListPolicyDeny
 
 deny block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#deny FolderOrganizationPolicy#deny}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#deny FolderOrganizationPolicy#deny}
 
 ---
 
@@ -1305,7 +1305,7 @@ InheritFromParent interface{}
 
 If set to true, the values from the effective Policy of the parent resource are inherited, meaning the values set in this Policy are added to the values inherited up the hierarchy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#inherit_from_parent FolderOrganizationPolicy#inherit_from_parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#inherit_from_parent FolderOrganizationPolicy#inherit_from_parent}
 
 ---
 
@@ -1319,7 +1319,7 @@ SuggestedValue *string
 
 The Google Cloud Console will try to default to a configuration that matches the value specified in this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#suggested_value FolderOrganizationPolicy#suggested_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#suggested_value FolderOrganizationPolicy#suggested_value}
 
 ---
 
@@ -1355,7 +1355,7 @@ All interface{}
 
 The policy allows or denies all values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#all FolderOrganizationPolicy#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#all FolderOrganizationPolicy#all}
 
 ---
 
@@ -1369,7 +1369,7 @@ Values *[]*string
 
 The policy can define specific values that are allowed or denied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#values FolderOrganizationPolicy#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#values FolderOrganizationPolicy#values}
 
 ---
 
@@ -1405,7 +1405,7 @@ All interface{}
 
 The policy allows or denies all values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#all FolderOrganizationPolicy#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#all FolderOrganizationPolicy#all}
 
 ---
 
@@ -1419,7 +1419,7 @@ Values *[]*string
 
 The policy can define specific values that are allowed or denied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#values FolderOrganizationPolicy#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#values FolderOrganizationPolicy#values}
 
 ---
 
@@ -1453,7 +1453,7 @@ Default interface{}
 
 May only be set to true. If set, then the default Policy is restored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#default FolderOrganizationPolicy#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#default FolderOrganizationPolicy#default}
 
 ---
 
@@ -1476,10 +1476,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/folderorganizati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#create FolderOrganizationPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#delete FolderOrganizationPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#read FolderOrganizationPolicy#read}. |
-| <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#update FolderOrganizationPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#create FolderOrganizationPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#delete FolderOrganizationPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#read FolderOrganizationPolicy#read}. |
+| <code><a href="#@cdktn/provider-google.folderOrganizationPolicy.FolderOrganizationPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#update FolderOrganizationPolicy#update}. |
 
 ---
 
@@ -1491,7 +1491,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#create FolderOrganizationPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#create FolderOrganizationPolicy#create}.
 
 ---
 
@@ -1503,7 +1503,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#delete FolderOrganizationPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#delete FolderOrganizationPolicy#delete}.
 
 ---
 
@@ -1515,7 +1515,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#read FolderOrganizationPolicy#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#read FolderOrganizationPolicy#read}.
 
 ---
 
@@ -1527,7 +1527,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/folder_organization_policy#update FolderOrganizationPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/folder_organization_policy#update FolderOrganizationPolicy#update}.
 
 ---
 

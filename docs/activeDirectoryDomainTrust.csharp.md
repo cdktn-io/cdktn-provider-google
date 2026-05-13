@@ -4,7 +4,7 @@
 
 ### ActiveDirectoryDomainTrust <a name="ActiveDirectoryDomainTrust" id="@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust google_active_directory_domain_trust}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrust.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ActiveDirectoryDomainTrust
 
 The id of the existing ActiveDirectoryDomainTrust that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -990,8 +990,8 @@ new ActiveDirectoryDomainTrustConfig {
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.trustDirection">TrustDirection</a></code> | <code>string</code> | The trust direction, which decides if the current domain is trusted, trusting, or both. Possible values: ["INBOUND", "OUTBOUND", "BIDIRECTIONAL"]. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.trustHandshakeSecret">TrustHandshakeSecret</a></code> | <code>string</code> | The trust secret used for the handshake with the target domain. This will not be stored. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.trustType">TrustType</a></code> | <code>string</code> | The type of trust represented by the trust resource. Possible values: ["FOREST", "EXTERNAL"]. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#id ActiveDirectoryDomainTrust#id}. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#project ActiveDirectoryDomainTrust#project}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#id ActiveDirectoryDomainTrust#id}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#project ActiveDirectoryDomainTrust#project}. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.selectiveAuthentication">SelectiveAuthentication</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether the trusted side has forest/domain wide access or selective access to an approved set of resources. |
 | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts">ActiveDirectoryDomainTrustTimeouts</a></code> | timeouts block. |
 
@@ -1077,7 +1077,7 @@ public string Domain { get; set; }
 
 The fully qualified domain name. e.g. mydomain.myorganization.com, with the restrictions of https://cloud.google.com/managed-microsoft-ad/reference/rest/v1/projects.locations.global.domains.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#domain ActiveDirectoryDomainTrust#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#domain ActiveDirectoryDomainTrust#domain}
 
 ---
 
@@ -1091,7 +1091,7 @@ public string[] TargetDnsIpAddresses { get; set; }
 
 The target DNS server IP addresses which can resolve the remote domain involved in the trust.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#target_dns_ip_addresses ActiveDirectoryDomainTrust#target_dns_ip_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#target_dns_ip_addresses ActiveDirectoryDomainTrust#target_dns_ip_addresses}
 
 ---
 
@@ -1105,7 +1105,7 @@ public string TargetDomainName { get; set; }
 
 The fully qualified target domain name which will be in trust with the current domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#target_domain_name ActiveDirectoryDomainTrust#target_domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#target_domain_name ActiveDirectoryDomainTrust#target_domain_name}
 
 ---
 
@@ -1119,7 +1119,7 @@ public string TrustDirection { get; set; }
 
 The trust direction, which decides if the current domain is trusted, trusting, or both. Possible values: ["INBOUND", "OUTBOUND", "BIDIRECTIONAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#trust_direction ActiveDirectoryDomainTrust#trust_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#trust_direction ActiveDirectoryDomainTrust#trust_direction}
 
 ---
 
@@ -1133,7 +1133,7 @@ public string TrustHandshakeSecret { get; set; }
 
 The trust secret used for the handshake with the target domain. This will not be stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#trust_handshake_secret ActiveDirectoryDomainTrust#trust_handshake_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#trust_handshake_secret ActiveDirectoryDomainTrust#trust_handshake_secret}
 
 ---
 
@@ -1147,7 +1147,7 @@ public string TrustType { get; set; }
 
 The type of trust represented by the trust resource. Possible values: ["FOREST", "EXTERNAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#trust_type ActiveDirectoryDomainTrust#trust_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#trust_type ActiveDirectoryDomainTrust#trust_type}
 
 ---
 
@@ -1159,7 +1159,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#id ActiveDirectoryDomainTrust#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#id ActiveDirectoryDomainTrust#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1174,7 +1174,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#project ActiveDirectoryDomainTrust#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#project ActiveDirectoryDomainTrust#project}.
 
 ---
 
@@ -1188,7 +1188,7 @@ public bool|IResolvable SelectiveAuthentication { get; set; }
 
 Whether the trusted side has forest/domain wide access or selective access to an approved set of resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#selective_authentication ActiveDirectoryDomainTrust#selective_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#selective_authentication ActiveDirectoryDomainTrust#selective_authentication}
 
 ---
 
@@ -1202,7 +1202,7 @@ public ActiveDirectoryDomainTrustTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#timeouts ActiveDirectoryDomainTrust#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#timeouts ActiveDirectoryDomainTrust#timeouts}
 
 ---
 
@@ -1224,9 +1224,9 @@ new ActiveDirectoryDomainTrustTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#create ActiveDirectoryDomainTrust#create}. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#delete ActiveDirectoryDomainTrust#delete}. |
-| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#update ActiveDirectoryDomainTrust#update}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#create ActiveDirectoryDomainTrust#create}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#delete ActiveDirectoryDomainTrust#delete}. |
+| <code><a href="#@cdktn/provider-google.activeDirectoryDomainTrust.ActiveDirectoryDomainTrustTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#update ActiveDirectoryDomainTrust#update}. |
 
 ---
 
@@ -1238,7 +1238,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#create ActiveDirectoryDomainTrust#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#create ActiveDirectoryDomainTrust#create}.
 
 ---
 
@@ -1250,7 +1250,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#delete ActiveDirectoryDomainTrust#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#delete ActiveDirectoryDomainTrust#delete}.
 
 ---
 
@@ -1262,7 +1262,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/active_directory_domain_trust#update ActiveDirectoryDomainTrust#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/active_directory_domain_trust#update ActiveDirectoryDomainTrust#update}.
 
 ---
 

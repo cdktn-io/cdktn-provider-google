@@ -4,7 +4,7 @@
 
 ### DataGoogleArtifactRegistryPythonPackage <a name="DataGoogleArtifactRegistryPythonPackage" id="@cdktn/provider-google.dataGoogleArtifactRegistryPythonPackage.DataGoogleArtifactRegistryPythonPackage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_python_package google_artifact_registry_python_package}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_python_package google_artifact_registry_python_package}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleArtifactRegistryPythonPackage.DataGoogleArtifactRegistryPythonPackage.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleArtifactRegistry
 
 The id of the existing DataGoogleArtifactRegistryPythonPackage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_python_package#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_python_package#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -765,7 +765,7 @@ new DataGoogleArtifactRegistryPythonPackageConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPythonPackage.DataGoogleArtifactRegistryPythonPackageConfig.property.location">Location</a></code> | <code>string</code> | The region of the Artifact Registry repository. |
 | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPythonPackage.DataGoogleArtifactRegistryPythonPackageConfig.property.packageName">PackageName</a></code> | <code>string</code> | The name of the Python package. |
 | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPythonPackage.DataGoogleArtifactRegistryPythonPackageConfig.property.repositoryId">RepositoryId</a></code> | <code>string</code> | The repository ID containing the Python package. |
-| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPythonPackage.DataGoogleArtifactRegistryPythonPackageConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_python_package#id DataGoogleArtifactRegistryPythonPackage#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPythonPackage.DataGoogleArtifactRegistryPythonPackageConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_python_package#id DataGoogleArtifactRegistryPythonPackage#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPythonPackage.DataGoogleArtifactRegistryPythonPackageConfig.property.project">Project</a></code> | <code>string</code> | Project ID of the project. |
 
 ---
@@ -850,7 +850,7 @@ public string Location { get; set; }
 
 The region of the Artifact Registry repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_python_package#location DataGoogleArtifactRegistryPythonPackage#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_python_package#location DataGoogleArtifactRegistryPythonPackage#location}
 
 ---
 
@@ -864,7 +864,7 @@ public string PackageName { get; set; }
 
 The name of the Python package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_python_package#package_name DataGoogleArtifactRegistryPythonPackage#package_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_python_package#package_name DataGoogleArtifactRegistryPythonPackage#package_name}
 
 ---
 
@@ -878,7 +878,7 @@ public string RepositoryId { get; set; }
 
 The repository ID containing the Python package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_python_package#repository_id DataGoogleArtifactRegistryPythonPackage#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_python_package#repository_id DataGoogleArtifactRegistryPythonPackage#repository_id}
 
 ---
 
@@ -890,7 +890,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_python_package#id DataGoogleArtifactRegistryPythonPackage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_python_package#id DataGoogleArtifactRegistryPythonPackage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -907,7 +907,7 @@ public string Project { get; set; }
 
 Project ID of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/artifact_registry_python_package#project DataGoogleArtifactRegistryPythonPackage#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/artifact_registry_python_package#project DataGoogleArtifactRegistryPythonPackage#project}
 
 ---
 

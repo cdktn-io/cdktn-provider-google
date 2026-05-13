@@ -4,7 +4,7 @@
 
 ### StorageBucketIamBinding <a name="StorageBucketIamBinding" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding google_storage_bucket_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding.Initializer"></a>
 
@@ -536,7 +536,7 @@ The construct id used in the generated config for the StorageBucketIamBinding to
 
 The id of the existing StorageBucketIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -892,9 +892,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#expression StorageBucketIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#title StorageBucketIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#description StorageBucketIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#expression StorageBucketIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#title StorageBucketIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#description StorageBucketIamBinding#description}. |
 
 ---
 
@@ -906,7 +906,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#expression StorageBucketIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#expression StorageBucketIamBinding#expression}.
 
 ---
 
@@ -918,7 +918,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#title StorageBucketIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#title StorageBucketIamBinding#title}.
 
 ---
 
@@ -930,7 +930,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#description StorageBucketIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#description StorageBucketIamBinding#description}.
 
 ---
 
@@ -969,11 +969,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiam
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#bucket StorageBucketIamBinding#bucket}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#members StorageBucketIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#role StorageBucketIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#bucket StorageBucketIamBinding#bucket}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#members StorageBucketIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#role StorageBucketIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition">StorageBucketIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#id StorageBucketIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#id StorageBucketIamBinding#id}. |
 | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts">StorageBucketIamBindingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1056,7 +1056,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#bucket StorageBucketIamBinding#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#bucket StorageBucketIamBinding#bucket}.
 
 ---
 
@@ -1068,7 +1068,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#members StorageBucketIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#members StorageBucketIamBinding#members}.
 
 ---
 
@@ -1080,7 +1080,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#role StorageBucketIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#role StorageBucketIamBinding#role}.
 
 ---
 
@@ -1094,7 +1094,7 @@ Condition StorageBucketIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#condition StorageBucketIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#condition StorageBucketIamBinding#condition}
 
 ---
 
@@ -1106,7 +1106,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#id StorageBucketIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#id StorageBucketIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1123,7 +1123,7 @@ Timeouts StorageBucketIamBindingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#timeouts StorageBucketIamBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#timeouts StorageBucketIamBinding#timeouts}
 
 ---
 
@@ -1143,7 +1143,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/storagebucketiam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#create StorageBucketIamBinding#create}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#create StorageBucketIamBinding#create}. |
 
 ---
 
@@ -1155,7 +1155,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/storage_bucket_iam_binding#create StorageBucketIamBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/storage_bucket_iam_binding#create StorageBucketIamBinding#create}.
 
 ---
 

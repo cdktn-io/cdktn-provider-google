@@ -4,7 +4,7 @@
 
 ### DataplexGlossary <a name="DataplexGlossary" id="@cdktn/provider-google.dataplexGlossary.DataplexGlossary"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary google_dataplex_glossary}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary google_dataplex_glossary}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexGlossary.DataplexGlossary.Initializer"></a>
 
@@ -47,9 +47,9 @@ dataplexGlossary.DataplexGlossary(
 | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossary.Initializer.parameter.location">location</a></code> | <code>str</code> | The location where the glossary should reside. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossary.Initializer.parameter.description">description</a></code> | <code>str</code> | The user-mutable description of the glossary. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossary.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User friendly display name of the glossary. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossary.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#id DataplexGlossary#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossary.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#id DataplexGlossary#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossary.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User-defined labels for the Glossary. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossary.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#project DataplexGlossary#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossary.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#project DataplexGlossary#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossary.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryTimeouts">DataplexGlossaryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The glossary id for creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#glossary_id DataplexGlossary#glossary_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#glossary_id DataplexGlossary#glossary_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location where the glossary should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#location DataplexGlossary#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#location DataplexGlossary#location}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The user-mutable description of the glossary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#description DataplexGlossary#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#description DataplexGlossary#description}
 
 ---
 
@@ -152,7 +152,7 @@ User friendly display name of the glossary.
 
 This is user-mutable. This will be same as the glossaryId, if not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#display_name DataplexGlossary#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#display_name DataplexGlossary#display_name}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#id DataplexGlossary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#id DataplexGlossary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -176,7 +176,7 @@ User-defined labels for the Glossary.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#labels DataplexGlossary#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#labels DataplexGlossary#labels}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#project DataplexGlossary#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#project DataplexGlossary#project}.
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#timeouts DataplexGlossary#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#timeouts DataplexGlossary#timeouts}
 
 ---
 
@@ -598,7 +598,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#create DataplexGlossary#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#create DataplexGlossary#create}.
 
 ---
 
@@ -606,7 +606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#delete DataplexGlossary#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#delete DataplexGlossary#delete}.
 
 ---
 
@@ -614,7 +614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#update DataplexGlossary#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#update DataplexGlossary#update}.
 
 ---
 
@@ -768,7 +768,7 @@ The construct id used in the generated config for the DataplexGlossary to import
 
 The id of the existing DataplexGlossary that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1268,9 +1268,9 @@ dataplexGlossary.DataplexGlossaryConfig(
 | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryConfig.property.location">location</a></code> | <code>str</code> | The location where the glossary should reside. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryConfig.property.description">description</a></code> | <code>str</code> | The user-mutable description of the glossary. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryConfig.property.displayName">display_name</a></code> | <code>str</code> | User friendly display name of the glossary. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#id DataplexGlossary#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#id DataplexGlossary#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User-defined labels for the Glossary. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#project DataplexGlossary#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#project DataplexGlossary#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryTimeouts">DataplexGlossaryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1355,7 +1355,7 @@ glossary_id: str
 
 The glossary id for creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#glossary_id DataplexGlossary#glossary_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#glossary_id DataplexGlossary#glossary_id}
 
 ---
 
@@ -1369,7 +1369,7 @@ location: str
 
 The location where the glossary should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#location DataplexGlossary#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#location DataplexGlossary#location}
 
 ---
 
@@ -1383,7 +1383,7 @@ description: str
 
 The user-mutable description of the glossary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#description DataplexGlossary#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#description DataplexGlossary#description}
 
 ---
 
@@ -1399,7 +1399,7 @@ User friendly display name of the glossary.
 
 This is user-mutable. This will be same as the glossaryId, if not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#display_name DataplexGlossary#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#display_name DataplexGlossary#display_name}
 
 ---
 
@@ -1411,7 +1411,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#id DataplexGlossary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#id DataplexGlossary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1431,7 +1431,7 @@ User-defined labels for the Glossary.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#labels DataplexGlossary#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#labels DataplexGlossary#labels}
 
 ---
 
@@ -1443,7 +1443,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#project DataplexGlossary#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#project DataplexGlossary#project}.
 
 ---
 
@@ -1457,7 +1457,7 @@ timeouts: DataplexGlossaryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#timeouts DataplexGlossary#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#timeouts DataplexGlossary#timeouts}
 
 ---
 
@@ -1479,9 +1479,9 @@ dataplexGlossary.DataplexGlossaryTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#create DataplexGlossary#create}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#delete DataplexGlossary#delete}. |
-| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#update DataplexGlossary#update}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#create DataplexGlossary#create}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#delete DataplexGlossary#delete}. |
+| <code><a href="#@cdktn/provider-google.dataplexGlossary.DataplexGlossaryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#update DataplexGlossary#update}. |
 
 ---
 
@@ -1493,7 +1493,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#create DataplexGlossary#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#create DataplexGlossary#create}.
 
 ---
 
@@ -1505,7 +1505,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#delete DataplexGlossary#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#delete DataplexGlossary#delete}.
 
 ---
 
@@ -1517,7 +1517,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataplex_glossary#update DataplexGlossary#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_glossary#update DataplexGlossary#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ProjectService <a name="ProjectService" id="@cdktn/provider-google.projectService.ProjectService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service google_project_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service google_project_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectService.ProjectService.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ProjectService to import.
 
 The id of the existing ProjectService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -885,11 +885,11 @@ const projectServiceConfig: projectService.ProjectServiceConfig = { ... }
 | <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.service">service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#service ProjectService#service}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.disableDependentServices">disableDependentServices</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#disable_dependent_services ProjectService#disable_dependent_services}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.disableOnDestroy">disableOnDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#disable_on_destroy ProjectService#disable_on_destroy}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#id ProjectService#id}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#project ProjectService#project}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.service">service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#service ProjectService#service}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.disableDependentServices">disableDependentServices</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#disable_dependent_services ProjectService#disable_dependent_services}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.disableOnDestroy">disableOnDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#disable_on_destroy ProjectService#disable_on_destroy}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#id ProjectService#id}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#project ProjectService#project}. |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts">ProjectServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -972,7 +972,7 @@ public readonly service: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#service ProjectService#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#service ProjectService#service}.
 
 ---
 
@@ -984,7 +984,7 @@ public readonly disableDependentServices: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#disable_dependent_services ProjectService#disable_dependent_services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#disable_dependent_services ProjectService#disable_dependent_services}.
 
 ---
 
@@ -996,7 +996,7 @@ public readonly disableOnDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#disable_on_destroy ProjectService#disable_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#disable_on_destroy ProjectService#disable_on_destroy}.
 
 ---
 
@@ -1008,7 +1008,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#id ProjectService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#id ProjectService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1023,7 +1023,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#project ProjectService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#project ProjectService#project}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly timeouts: ProjectServiceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#timeouts ProjectService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#timeouts ProjectService#timeouts}
 
 ---
 
@@ -1055,10 +1055,10 @@ const projectServiceTimeouts: projectService.ProjectServiceTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#create ProjectService#create}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#delete ProjectService#delete}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#read ProjectService#read}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#update ProjectService#update}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#create ProjectService#create}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#delete ProjectService#delete}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#read ProjectService#read}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#update ProjectService#update}. |
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#create ProjectService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#create ProjectService#create}.
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#delete ProjectService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#delete ProjectService#delete}.
 
 ---
 
@@ -1094,7 +1094,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#read ProjectService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#read ProjectService#read}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/project_service#update ProjectService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#update ProjectService#update}.
 
 ---
 

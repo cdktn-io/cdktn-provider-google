@@ -4,7 +4,7 @@
 
 ### ApigeeControlPlaneAccess <a name="ApigeeControlPlaneAccess" id="@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccess"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access google_apigee_control_plane_access}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access google_apigee_control_plane_access}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccess.Initializer"></a>
 
@@ -40,7 +40,7 @@ ApigeeControlPlaneAccess.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccess.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccess.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the Apigee organization. |
 | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccess.Initializer.parameter.analyticsPublisherIdentities">analyticsPublisherIdentities</a></code> | <code>java.util.List<java.lang.String></code> | Array of service accounts authorized to publish analytics data to the control plane, each specified using the following format: 'serviceAccount:service-account-name'. |
-| <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccess.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#id ApigeeControlPlaneAccess#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccess.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#id ApigeeControlPlaneAccess#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccess.Initializer.parameter.synchronizerIdentities">synchronizerIdentities</a></code> | <code>java.util.List<java.lang.String></code> | Array of service accounts to grant access to control plane resources (for the Synchronizer component), each specified using the following format: 'serviceAccount:service-account-name'. |
 | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccess.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessTimeouts">ApigeeControlPlaneAccessTimeouts</a></code> | timeouts block. |
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the Apigee organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#name ApigeeControlPlaneAccess#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#name ApigeeControlPlaneAccess#name}
 
 ---
 
@@ -126,7 +126,7 @@ The 'service-account-name' is formatted like an email address. For example: serv
 
 You might specify multiple service accounts, for example, if you have multiple environments and wish to assign a unique service account to each one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#analytics_publisher_identities ApigeeControlPlaneAccess#analytics_publisher_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#analytics_publisher_identities ApigeeControlPlaneAccess#analytics_publisher_identities}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#id ApigeeControlPlaneAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#id ApigeeControlPlaneAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -153,7 +153,7 @@ You might specify multiple service accounts, for example, if you have multiple e
 
 The service accounts must have **Apigee Synchronizer Manager** role. See also [Create service accounts](https://cloud.google.com/apigee/docs/hybrid/v1.8/sa-about#create-the-service-accounts).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#synchronizer_identities ApigeeControlPlaneAccess#synchronizer_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#synchronizer_identities ApigeeControlPlaneAccess#synchronizer_identities}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#timeouts ApigeeControlPlaneAccess#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#timeouts ApigeeControlPlaneAccess#timeouts}
 
 ---
 
@@ -653,7 +653,7 @@ The construct id used in the generated config for the ApigeeControlPlaneAccess t
 
 The id of the existing ApigeeControlPlaneAccess that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,7 +994,7 @@ ApigeeControlPlaneAccessConfig.builder()
 | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Apigee organization. |
 | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessConfig.property.analyticsPublisherIdentities">analyticsPublisherIdentities</a></code> | <code>java.util.List<java.lang.String></code> | Array of service accounts authorized to publish analytics data to the control plane, each specified using the following format: 'serviceAccount:service-account-name'. |
-| <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#id ApigeeControlPlaneAccess#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#id ApigeeControlPlaneAccess#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessConfig.property.synchronizerIdentities">synchronizerIdentities</a></code> | <code>java.util.List<java.lang.String></code> | Array of service accounts to grant access to control plane resources (for the Synchronizer component), each specified using the following format: 'serviceAccount:service-account-name'. |
 | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessTimeouts">ApigeeControlPlaneAccessTimeouts</a></code> | timeouts block. |
 
@@ -1080,7 +1080,7 @@ public java.lang.String getName();
 
 Name of the Apigee organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#name ApigeeControlPlaneAccess#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#name ApigeeControlPlaneAccess#name}
 
 ---
 
@@ -1098,7 +1098,7 @@ The 'service-account-name' is formatted like an email address. For example: serv
 
 You might specify multiple service accounts, for example, if you have multiple environments and wish to assign a unique service account to each one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#analytics_publisher_identities ApigeeControlPlaneAccess#analytics_publisher_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#analytics_publisher_identities ApigeeControlPlaneAccess#analytics_publisher_identities}
 
 ---
 
@@ -1110,7 +1110,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#id ApigeeControlPlaneAccess#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#id ApigeeControlPlaneAccess#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1133,7 +1133,7 @@ You might specify multiple service accounts, for example, if you have multiple e
 
 The service accounts must have **Apigee Synchronizer Manager** role. See also [Create service accounts](https://cloud.google.com/apigee/docs/hybrid/v1.8/sa-about#create-the-service-accounts).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#synchronizer_identities ApigeeControlPlaneAccess#synchronizer_identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#synchronizer_identities ApigeeControlPlaneAccess#synchronizer_identities}
 
 ---
 
@@ -1147,7 +1147,7 @@ public ApigeeControlPlaneAccessTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#timeouts ApigeeControlPlaneAccess#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#timeouts ApigeeControlPlaneAccess#timeouts}
 
 ---
 
@@ -1169,9 +1169,9 @@ ApigeeControlPlaneAccessTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#create ApigeeControlPlaneAccess#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#delete ApigeeControlPlaneAccess#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#update ApigeeControlPlaneAccess#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#create ApigeeControlPlaneAccess#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#delete ApigeeControlPlaneAccess#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeControlPlaneAccess.ApigeeControlPlaneAccessTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#update ApigeeControlPlaneAccess#update}. |
 
 ---
 
@@ -1183,7 +1183,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#create ApigeeControlPlaneAccess#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#create ApigeeControlPlaneAccess#create}.
 
 ---
 
@@ -1195,7 +1195,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#delete ApigeeControlPlaneAccess#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#delete ApigeeControlPlaneAccess#delete}.
 
 ---
 
@@ -1207,7 +1207,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_control_plane_access#update ApigeeControlPlaneAccess#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_control_plane_access#update ApigeeControlPlaneAccess#update}.
 
 ---
 

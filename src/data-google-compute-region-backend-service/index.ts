@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_backend_service
+// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_backend_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeRegionBackendServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_backend_service#id DataGoogleComputeRegionBackendService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_backend_service#id DataGoogleComputeRegionBackendService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,18 +28,18 @@ export interface DataGoogleComputeRegionBackendServiceConfig extends cdktn.Terra
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_backend_service#name DataGoogleComputeRegionBackendService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_backend_service#name DataGoogleComputeRegionBackendService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_backend_service#project DataGoogleComputeRegionBackendService#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_backend_service#project DataGoogleComputeRegionBackendService#project}
   */
   readonly project?: string;
   /**
   * The Region in which the created backend service should reside.
   * If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_backend_service#region DataGoogleComputeRegionBackendService#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_backend_service#region DataGoogleComputeRegionBackendService#region}
   */
   readonly region?: string;
 }
@@ -649,6 +649,96 @@ export class DataGoogleComputeRegionBackendServiceCircuitBreakersList extends cd
   */
   public get(index: number): DataGoogleComputeRegionBackendServiceCircuitBreakersOutputReference {
     return new DataGoogleComputeRegionBackendServiceCircuitBreakersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleComputeRegionBackendServiceConnectionTrackingPolicy {
+}
+
+export function dataGoogleComputeRegionBackendServiceConnectionTrackingPolicyToTerraform(struct?: DataGoogleComputeRegionBackendServiceConnectionTrackingPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleComputeRegionBackendServiceConnectionTrackingPolicyToHclTerraform(struct?: DataGoogleComputeRegionBackendServiceConnectionTrackingPolicy): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleComputeRegionBackendServiceConnectionTrackingPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleComputeRegionBackendServiceConnectionTrackingPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // connection_persistence_on_unhealthy_backends - computed: true, optional: false, required: false
+  public get connectionPersistenceOnUnhealthyBackends() {
+    return this.getStringAttribute('connection_persistence_on_unhealthy_backends');
+  }
+
+  // enable_strong_affinity - computed: true, optional: false, required: false
+  public get enableStrongAffinity() {
+    return this.getBooleanAttribute('enable_strong_affinity');
+  }
+
+  // idle_timeout_sec - computed: true, optional: false, required: false
+  public get idleTimeoutSec() {
+    return this.getNumberAttribute('idle_timeout_sec');
+  }
+
+  // tracking_mode - computed: true, optional: false, required: false
+  public get trackingMode() {
+    return this.getStringAttribute('tracking_mode');
+  }
+}
+
+export class DataGoogleComputeRegionBackendServiceConnectionTrackingPolicyList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference {
+    return new DataGoogleComputeRegionBackendServiceConnectionTrackingPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataGoogleComputeRegionBackendServiceConsistentHashHttpCookieTtl {
@@ -2338,7 +2428,7 @@ export class DataGoogleComputeRegionBackendServiceTlsSettingsList extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_backend_service google_compute_region_backend_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_backend_service google_compute_region_backend_service}
 */
 export class DataGoogleComputeRegionBackendService extends cdktn.TerraformDataSource {
 
@@ -2354,7 +2444,7 @@ export class DataGoogleComputeRegionBackendService extends cdktn.TerraformDataSo
   * Generates CDKTN code for importing a DataGoogleComputeRegionBackendService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeRegionBackendService to import
-  * @param importFromId The id of the existing DataGoogleComputeRegionBackendService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_backend_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeRegionBackendService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_backend_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeRegionBackendService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2366,7 +2456,7 @@ export class DataGoogleComputeRegionBackendService extends cdktn.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_backend_service google_compute_region_backend_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_backend_service google_compute_region_backend_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2377,7 +2467,7 @@ export class DataGoogleComputeRegionBackendService extends cdktn.TerraformDataSo
       terraformResourceType: 'google_compute_region_backend_service',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.31.0',
+        providerVersion: '7.32.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -2424,6 +2514,12 @@ export class DataGoogleComputeRegionBackendService extends cdktn.TerraformDataSo
   // connection_draining_timeout_sec - computed: true, optional: false, required: false
   public get connectionDrainingTimeoutSec() {
     return this.getNumberAttribute('connection_draining_timeout_sec');
+  }
+
+  // connection_tracking_policy - computed: true, optional: false, required: false
+  private _connectionTrackingPolicy = new DataGoogleComputeRegionBackendServiceConnectionTrackingPolicyList(this, "connection_tracking_policy", false);
+  public get connectionTrackingPolicy() {
+    return this._connectionTrackingPolicy;
   }
 
   // consistent_hash - computed: true, optional: false, required: false

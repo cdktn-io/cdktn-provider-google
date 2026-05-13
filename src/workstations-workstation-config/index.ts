@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config
+// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,29 +18,29 @@ export interface WorkstationsWorkstationConfigAConfig extends cdktn.TerraformMet
   * **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
   * Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#annotations WorkstationsWorkstationConfigA#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#annotations WorkstationsWorkstationConfigA#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Disables support for plain TCP connections in the workstation. By default the service supports TCP connections via a websocket relay. Setting this option to true disables that relay, which prevents the usage of services that require plain tcp connections, such as ssh. When enabled, all communication must occur over https or wss.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#disable_tcp_connections WorkstationsWorkstationConfigA#disable_tcp_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#disable_tcp_connections WorkstationsWorkstationConfigA#disable_tcp_connections}
   */
   readonly disableTcpConnections?: boolean | cdktn.IResolvable;
   /**
   * Human-readable name for this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#display_name WorkstationsWorkstationConfigA#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#display_name WorkstationsWorkstationConfigA#display_name}
   */
   readonly displayName?: string;
   /**
   * Whether to enable Linux 'auditd' logging on the workstation. When enabled, a service account must also be specified that has 'logging.buckets.write' permission on the project. Operating system audit logging is distinct from Cloud Audit Logs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#enable_audit_agent WorkstationsWorkstationConfigA#enable_audit_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#enable_audit_agent WorkstationsWorkstationConfigA#enable_audit_agent}
   */
   readonly enableAuditAgent?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#id WorkstationsWorkstationConfigA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#id WorkstationsWorkstationConfigA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -50,7 +50,7 @@ export interface WorkstationsWorkstationConfigAConfig extends cdktn.TerraformMet
   * How long to wait before automatically stopping an instance that hasn't recently received any user traffic. A value of 0 indicates that this instance should never time out from idleness. Defaults to 20 minutes.
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#idle_timeout WorkstationsWorkstationConfigA#idle_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#idle_timeout WorkstationsWorkstationConfigA#idle_timeout}
   */
   readonly idleTimeout?: string;
   /**
@@ -59,97 +59,97 @@ export interface WorkstationsWorkstationConfigAConfig extends cdktn.TerraformMet
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#labels WorkstationsWorkstationConfigA#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#labels WorkstationsWorkstationConfigA#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the workstation cluster config should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#location WorkstationsWorkstationConfigA#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#location WorkstationsWorkstationConfigA#location}
   */
   readonly location: string;
   /**
   * Maximum number of workstations under this configuration a user can have workstations.workstation.use permission on. Only enforced on CreateWorkstation API calls on the user issuing the API request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#max_usable_workstations WorkstationsWorkstationConfigA#max_usable_workstations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#max_usable_workstations WorkstationsWorkstationConfigA#max_usable_workstations}
   */
   readonly maxUsableWorkstations?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#project WorkstationsWorkstationConfigA#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#project WorkstationsWorkstationConfigA#project}
   */
   readonly project?: string;
   /**
   * Specifies the zones used to replicate the VM and disk resources within the region. If set, exactly two zones within the workstation cluster's region must be specified—for example, '['us-central1-a', 'us-central1-f']'.
   * If this field is empty, two default zones within the region are used. Immutable after the workstation configuration is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#replica_zones WorkstationsWorkstationConfigA#replica_zones}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#replica_zones WorkstationsWorkstationConfigA#replica_zones}
   */
   readonly replicaZones?: string[];
   /**
   * How long to wait before automatically stopping a workstation after it was started. A value of 0 indicates that workstations using this configuration should never time out from running duration. Must be greater than 0 and less than 24 hours if 'encryption_key' is set. Defaults to 12 hours.
   * A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#running_timeout WorkstationsWorkstationConfigA#running_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#running_timeout WorkstationsWorkstationConfigA#running_timeout}
   */
   readonly runningTimeout?: string;
   /**
   * The ID of the parent workstation cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#workstation_cluster_id WorkstationsWorkstationConfigA#workstation_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#workstation_cluster_id WorkstationsWorkstationConfigA#workstation_cluster_id}
   */
   readonly workstationClusterId: string;
   /**
   * The ID to be assigned to the workstation cluster config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#workstation_config_id WorkstationsWorkstationConfigA#workstation_config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#workstation_config_id WorkstationsWorkstationConfigA#workstation_config_id}
   */
   readonly workstationConfigId: string;
   /**
   * allowed_ports block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#allowed_ports WorkstationsWorkstationConfigA#allowed_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#allowed_ports WorkstationsWorkstationConfigA#allowed_ports}
   */
   readonly allowedPorts?: WorkstationsWorkstationConfigAllowedPorts[] | cdktn.IResolvable;
   /**
   * container block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#container WorkstationsWorkstationConfigA#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#container WorkstationsWorkstationConfigA#container}
   */
   readonly container?: WorkstationsWorkstationConfigContainer;
   /**
   * encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#encryption_key WorkstationsWorkstationConfigA#encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#encryption_key WorkstationsWorkstationConfigA#encryption_key}
   */
   readonly encryptionKey?: WorkstationsWorkstationConfigEncryptionKey;
   /**
   * ephemeral_directories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#ephemeral_directories WorkstationsWorkstationConfigA#ephemeral_directories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#ephemeral_directories WorkstationsWorkstationConfigA#ephemeral_directories}
   */
   readonly ephemeralDirectories?: WorkstationsWorkstationConfigEphemeralDirectories[] | cdktn.IResolvable;
   /**
   * host block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#host WorkstationsWorkstationConfigA#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#host WorkstationsWorkstationConfigA#host}
   */
   readonly host?: WorkstationsWorkstationConfigHost;
   /**
   * persistent_directories block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#persistent_directories WorkstationsWorkstationConfigA#persistent_directories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#persistent_directories WorkstationsWorkstationConfigA#persistent_directories}
   */
   readonly persistentDirectories?: WorkstationsWorkstationConfigPersistentDirectories[] | cdktn.IResolvable;
   /**
   * readiness_checks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#readiness_checks WorkstationsWorkstationConfigA#readiness_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#readiness_checks WorkstationsWorkstationConfigA#readiness_checks}
   */
   readonly readinessChecks?: WorkstationsWorkstationConfigReadinessChecks[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#timeouts WorkstationsWorkstationConfigA#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#timeouts WorkstationsWorkstationConfigA#timeouts}
   */
   readonly timeouts?: WorkstationsWorkstationConfigTimeouts;
 }
@@ -243,13 +243,13 @@ export interface WorkstationsWorkstationConfigAllowedPorts {
   /**
   * Starting port number for the current range of ports. Valid ports are 22, 80, and ports within the range 1024-65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#first WorkstationsWorkstationConfigA#first}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#first WorkstationsWorkstationConfigA#first}
   */
   readonly first?: number;
   /**
   * Ending port number for the current range of ports. Valid ports are 22, 80, and ports within the range 1024-65535.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#last WorkstationsWorkstationConfigA#last}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#last WorkstationsWorkstationConfigA#last}
   */
   readonly last?: number;
 }
@@ -396,38 +396,38 @@ export interface WorkstationsWorkstationConfigContainer {
   /**
   * Arguments passed to the entrypoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#args WorkstationsWorkstationConfigA#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#args WorkstationsWorkstationConfigA#args}
   */
   readonly args?: string[];
   /**
   * If set, overrides the default ENTRYPOINT specified by the image.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#command WorkstationsWorkstationConfigA#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#command WorkstationsWorkstationConfigA#command}
   */
   readonly command?: string[];
   /**
   * Environment variables passed to the container.
   * The elements are of the form "KEY=VALUE" for the environment variable "KEY" being given the value "VALUE".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#env WorkstationsWorkstationConfigA#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#env WorkstationsWorkstationConfigA#env}
   */
   readonly env?: { [key: string]: string };
   /**
   * Docker image defining the container. This image must be accessible by the config's service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#image WorkstationsWorkstationConfigA#image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#image WorkstationsWorkstationConfigA#image}
   */
   readonly image?: string;
   /**
   * If set, overrides the USER specified in the image with the given uid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#run_as_user WorkstationsWorkstationConfigA#run_as_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#run_as_user WorkstationsWorkstationConfigA#run_as_user}
   */
   readonly runAsUser?: number;
   /**
   * If set, overrides the default DIR specified by the image.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#working_dir WorkstationsWorkstationConfigA#working_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#working_dir WorkstationsWorkstationConfigA#working_dir}
   */
   readonly workingDir?: string;
 }
@@ -658,13 +658,13 @@ export interface WorkstationsWorkstationConfigEncryptionKey {
   /**
   * The name of the Google Cloud KMS encryption key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#kms_key WorkstationsWorkstationConfigA#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#kms_key WorkstationsWorkstationConfigA#kms_key}
   */
   readonly kmsKey: string;
   /**
   * The service account to use with the specified KMS key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#kms_key_service_account WorkstationsWorkstationConfigA#kms_key_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#kms_key_service_account WorkstationsWorkstationConfigA#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount: string;
 }
@@ -773,13 +773,13 @@ export interface WorkstationsWorkstationConfigEphemeralDirectoriesGcePd {
   /**
   * Type of the disk to use. Defaults to '"pd-standard"'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#disk_type WorkstationsWorkstationConfigA#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#disk_type WorkstationsWorkstationConfigA#disk_type}
   */
   readonly diskType?: string;
   /**
   * Whether the disk is read only. If true, the disk may be shared by multiple VMs and 'sourceSnapshot' must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#read_only WorkstationsWorkstationConfigA#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#read_only WorkstationsWorkstationConfigA#read_only}
   */
   readonly readOnly?: boolean | cdktn.IResolvable;
   /**
@@ -788,7 +788,7 @@ export interface WorkstationsWorkstationConfigEphemeralDirectoriesGcePd {
   * Must be empty 'sourceSnapshot' is set.
   * Updating 'sourceImage' will update content in the ephemeral directory after the workstation is restarted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#source_image WorkstationsWorkstationConfigA#source_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#source_image WorkstationsWorkstationConfigA#source_image}
   */
   readonly sourceImage?: string;
   /**
@@ -798,7 +798,7 @@ export interface WorkstationsWorkstationConfigEphemeralDirectoriesGcePd {
   * Must be empty if 'read_only' is false.
   * Updating 'source_snapshot' will update content in the ephemeral directory after the workstation is restarted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#source_snapshot WorkstationsWorkstationConfigA#source_snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#source_snapshot WorkstationsWorkstationConfigA#source_snapshot}
   */
   readonly sourceSnapshot?: string;
 }
@@ -971,13 +971,13 @@ export interface WorkstationsWorkstationConfigEphemeralDirectories {
   /**
   * Location of this directory in the running workstation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#mount_path WorkstationsWorkstationConfigA#mount_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#mount_path WorkstationsWorkstationConfigA#mount_path}
   */
   readonly mountPath?: string;
   /**
   * gce_pd block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#gce_pd WorkstationsWorkstationConfigA#gce_pd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#gce_pd WorkstationsWorkstationConfigA#gce_pd}
   */
   readonly gcePd?: WorkstationsWorkstationConfigEphemeralDirectoriesGcePd;
 }
@@ -1124,13 +1124,13 @@ export interface WorkstationsWorkstationConfigHostGceInstanceAccelerators {
   /**
   * Number of accelerator cards exposed to the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#count WorkstationsWorkstationConfigA#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#count WorkstationsWorkstationConfigA#count}
   */
   readonly count: number;
   /**
   * Type of accelerator resource to attach to the instance, for example, "nvidia-tesla-p100".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#type WorkstationsWorkstationConfigA#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#type WorkstationsWorkstationConfigA#type}
   */
   readonly type: string;
 }
@@ -1271,13 +1271,13 @@ export interface WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAcceler
   /**
   * Number of accelerator cards exposed to the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#count WorkstationsWorkstationConfigA#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#count WorkstationsWorkstationConfigA#count}
   */
   readonly count: number;
   /**
   * Type of accelerator resource to attach to the instance, for example, "nvidia-tesla-p100".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#type WorkstationsWorkstationConfigA#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#type WorkstationsWorkstationConfigA#type}
   */
   readonly type: string;
 }
@@ -1418,7 +1418,7 @@ export interface WorkstationsWorkstationConfigHostGceInstanceBoostConfigs {
   /**
   * Size of the boot disk in GB. The minimum boot disk size is '30' GB. Defaults to '50' GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#boot_disk_size_gb WorkstationsWorkstationConfigA#boot_disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#boot_disk_size_gb WorkstationsWorkstationConfigA#boot_disk_size_gb}
   */
   readonly bootDiskSizeGb?: number;
   /**
@@ -1426,13 +1426,13 @@ export interface WorkstationsWorkstationConfigHostGceInstanceBoostConfigs {
   * 
   * See https://cloud.google.com/workstations/docs/reference/rest/v1/projects.locations.workstationClusters.workstationConfigs#GceInstance.FIELDS.enable_nested_virtualization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#enable_nested_virtualization WorkstationsWorkstationConfigA#enable_nested_virtualization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#enable_nested_virtualization WorkstationsWorkstationConfigA#enable_nested_virtualization}
   */
   readonly enableNestedVirtualization?: boolean | cdktn.IResolvable;
   /**
   * The id to be used for the boost config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#id WorkstationsWorkstationConfigA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#id WorkstationsWorkstationConfigA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1441,19 +1441,19 @@ export interface WorkstationsWorkstationConfigHostGceInstanceBoostConfigs {
   /**
   * The type of machine that boosted VM instances will use—for example, e2-standard-4. For more information about machine types that Cloud Workstations supports, see the list of available machine types https://cloud.google.com/workstations/docs/available-machine-types. Defaults to e2-standard-4.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#machine_type WorkstationsWorkstationConfigA#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#machine_type WorkstationsWorkstationConfigA#machine_type}
   */
   readonly machineType?: string;
   /**
   * Number of instances to pool for faster workstation boosting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#pool_size WorkstationsWorkstationConfigA#pool_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#pool_size WorkstationsWorkstationConfigA#pool_size}
   */
   readonly poolSize?: number;
   /**
   * accelerators block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#accelerators WorkstationsWorkstationConfigA#accelerators}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#accelerators WorkstationsWorkstationConfigA#accelerators}
   */
   readonly accelerators?: WorkstationsWorkstationConfigHostGceInstanceBoostConfigsAccelerators[] | cdktn.IResolvable;
 }
@@ -1713,7 +1713,7 @@ export interface WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanc
   /**
   * Whether the instance has confidential compute enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#enable_confidential_compute WorkstationsWorkstationConfigA#enable_confidential_compute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#enable_confidential_compute WorkstationsWorkstationConfigA#enable_confidential_compute}
   */
   readonly enableConfidentialCompute?: boolean | cdktn.IResolvable;
 }
@@ -1799,19 +1799,19 @@ export interface WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceCon
   /**
   * Whether the instance has integrity monitoring enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#enable_integrity_monitoring WorkstationsWorkstationConfigA#enable_integrity_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#enable_integrity_monitoring WorkstationsWorkstationConfigA#enable_integrity_monitoring}
   */
   readonly enableIntegrityMonitoring?: boolean | cdktn.IResolvable;
   /**
   * Whether the instance has Secure Boot enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#enable_secure_boot WorkstationsWorkstationConfigA#enable_secure_boot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#enable_secure_boot WorkstationsWorkstationConfigA#enable_secure_boot}
   */
   readonly enableSecureBoot?: boolean | cdktn.IResolvable;
   /**
   * Whether the instance has the vTPM enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#enable_vtpm WorkstationsWorkstationConfigA#enable_vtpm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#enable_vtpm WorkstationsWorkstationConfigA#enable_vtpm}
   */
   readonly enableVtpm?: boolean | cdktn.IResolvable;
 }
@@ -1955,19 +1955,19 @@ export interface WorkstationsWorkstationConfigHostGceInstance {
   /**
   * Size of the boot disk in GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#boot_disk_size_gb WorkstationsWorkstationConfigA#boot_disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#boot_disk_size_gb WorkstationsWorkstationConfigA#boot_disk_size_gb}
   */
   readonly bootDiskSizeGb?: number;
   /**
   * Whether instances have no public IP address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#disable_public_ip_addresses WorkstationsWorkstationConfigA#disable_public_ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#disable_public_ip_addresses WorkstationsWorkstationConfigA#disable_public_ip_addresses}
   */
   readonly disablePublicIpAddresses?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable SSH access to the VM.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#disable_ssh WorkstationsWorkstationConfigA#disable_ssh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#disable_ssh WorkstationsWorkstationConfigA#disable_ssh}
   */
   readonly disableSsh?: boolean | cdktn.IResolvable;
   /**
@@ -1975,37 +1975,37 @@ export interface WorkstationsWorkstationConfigHostGceInstance {
   * 
   * See https://cloud.google.com/workstations/docs/reference/rest/v1/projects.locations.workstationClusters.workstationConfigs#GceInstance.FIELDS.enable_nested_virtualization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#enable_nested_virtualization WorkstationsWorkstationConfigA#enable_nested_virtualization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#enable_nested_virtualization WorkstationsWorkstationConfigA#enable_nested_virtualization}
   */
   readonly enableNestedVirtualization?: boolean | cdktn.IResolvable;
   /**
   * The name of a Compute Engine machine type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#machine_type WorkstationsWorkstationConfigA#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#machine_type WorkstationsWorkstationConfigA#machine_type}
   */
   readonly machineType?: string;
   /**
   * Number of instances to pool for faster workstation startup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#pool_size WorkstationsWorkstationConfigA#pool_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#pool_size WorkstationsWorkstationConfigA#pool_size}
   */
   readonly poolSize?: number;
   /**
   * Email address of the service account that will be used on VM instances used to support this config. This service account must have permission to pull the specified container image. If not set, VMs will run without a service account, in which case the image must be publicly accessible.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#service_account WorkstationsWorkstationConfigA#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#service_account WorkstationsWorkstationConfigA#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * Scopes to grant to the service_account. Various scopes are automatically added based on feature usage. When specified, users of workstations under this configuration must have 'iam.serviceAccounts.actAs' on the service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#service_account_scopes WorkstationsWorkstationConfigA#service_account_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#service_account_scopes WorkstationsWorkstationConfigA#service_account_scopes}
   */
   readonly serviceAccountScopes?: string[];
   /**
   * Network tags to add to the Compute Engine machines backing the Workstations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#tags WorkstationsWorkstationConfigA#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#tags WorkstationsWorkstationConfigA#tags}
   */
   readonly tags?: string[];
   /**
@@ -2015,31 +2015,31 @@ export interface WorkstationsWorkstationConfigHostGceInstance {
   * Keys must be in the format 'tagKeys/{tag_key_id}', and
   * values are in the format 'tagValues/456'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#vm_tags WorkstationsWorkstationConfigA#vm_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#vm_tags WorkstationsWorkstationConfigA#vm_tags}
   */
   readonly vmTags?: { [key: string]: string };
   /**
   * accelerators block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#accelerators WorkstationsWorkstationConfigA#accelerators}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#accelerators WorkstationsWorkstationConfigA#accelerators}
   */
   readonly accelerators?: WorkstationsWorkstationConfigHostGceInstanceAccelerators[] | cdktn.IResolvable;
   /**
   * boost_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#boost_configs WorkstationsWorkstationConfigA#boost_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#boost_configs WorkstationsWorkstationConfigA#boost_configs}
   */
   readonly boostConfigs?: WorkstationsWorkstationConfigHostGceInstanceBoostConfigs[] | cdktn.IResolvable;
   /**
   * confidential_instance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#confidential_instance_config WorkstationsWorkstationConfigA#confidential_instance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#confidential_instance_config WorkstationsWorkstationConfigA#confidential_instance_config}
   */
   readonly confidentialInstanceConfig?: WorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig;
   /**
   * shielded_instance_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#shielded_instance_config WorkstationsWorkstationConfigA#shielded_instance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#shielded_instance_config WorkstationsWorkstationConfigA#shielded_instance_config}
   */
   readonly shieldedInstanceConfig?: WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig;
 }
@@ -2502,7 +2502,7 @@ export interface WorkstationsWorkstationConfigHost {
   /**
   * gce_instance block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#gce_instance WorkstationsWorkstationConfigA#gce_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#gce_instance WorkstationsWorkstationConfigA#gce_instance}
   */
   readonly gceInstance?: WorkstationsWorkstationConfigHostGceInstance;
 }
@@ -2584,36 +2584,227 @@ export class WorkstationsWorkstationConfigHostOutputReference extends cdktn.Comp
     return this._gceInstance.internalValue;
   }
 }
+export interface WorkstationsWorkstationConfigPersistentDirectoriesGceHd {
+  /**
+  * How long to wait before converting the disk into a snapshot.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#archive_timeout WorkstationsWorkstationConfigA#archive_timeout}
+  */
+  readonly archiveTimeout?: string;
+  /**
+  * Whether the persistent disk should be deleted when the workstation is deleted. Possible values: ["DELETE", "RETAIN"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#reclaim_policy WorkstationsWorkstationConfigA#reclaim_policy}
+  */
+  readonly reclaimPolicy?: string;
+  /**
+  * The GB capacity of a persistent home directory. Defaults to '200'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#size_gb WorkstationsWorkstationConfigA#size_gb}
+  */
+  readonly sizeGb?: number;
+  /**
+  * Name of the snapshot to use as the source for the disk.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#source_snapshot WorkstationsWorkstationConfigA#source_snapshot}
+  */
+  readonly sourceSnapshot?: string;
+}
+
+export function workstationsWorkstationConfigPersistentDirectoriesGceHdToTerraform(struct?: WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference | WorkstationsWorkstationConfigPersistentDirectoriesGceHd): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    archive_timeout: cdktn.stringToTerraform(struct!.archiveTimeout),
+    reclaim_policy: cdktn.stringToTerraform(struct!.reclaimPolicy),
+    size_gb: cdktn.numberToTerraform(struct!.sizeGb),
+    source_snapshot: cdktn.stringToTerraform(struct!.sourceSnapshot),
+  }
+}
+
+
+export function workstationsWorkstationConfigPersistentDirectoriesGceHdToHclTerraform(struct?: WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference | WorkstationsWorkstationConfigPersistentDirectoriesGceHd): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    archive_timeout: {
+      value: cdktn.stringToHclTerraform(struct!.archiveTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    reclaim_policy: {
+      value: cdktn.stringToHclTerraform(struct!.reclaimPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    size_gb: {
+      value: cdktn.numberToHclTerraform(struct!.sizeGb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    source_snapshot: {
+      value: cdktn.stringToHclTerraform(struct!.sourceSnapshot),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): WorkstationsWorkstationConfigPersistentDirectoriesGceHd | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._archiveTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.archiveTimeout = this._archiveTimeout;
+    }
+    if (this._reclaimPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.reclaimPolicy = this._reclaimPolicy;
+    }
+    if (this._sizeGb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sizeGb = this._sizeGb;
+    }
+    if (this._sourceSnapshot !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceSnapshot = this._sourceSnapshot;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkstationsWorkstationConfigPersistentDirectoriesGceHd | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._archiveTimeout = undefined;
+      this._reclaimPolicy = undefined;
+      this._sizeGb = undefined;
+      this._sourceSnapshot = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._archiveTimeout = value.archiveTimeout;
+      this._reclaimPolicy = value.reclaimPolicy;
+      this._sizeGb = value.sizeGb;
+      this._sourceSnapshot = value.sourceSnapshot;
+    }
+  }
+
+  // archive_timeout - computed: true, optional: true, required: false
+  private _archiveTimeout?: string; 
+  public get archiveTimeout() {
+    return this.getStringAttribute('archive_timeout');
+  }
+  public set archiveTimeout(value: string) {
+    this._archiveTimeout = value;
+  }
+  public resetArchiveTimeout() {
+    this._archiveTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get archiveTimeoutInput() {
+    return this._archiveTimeout;
+  }
+
+  // reclaim_policy - computed: true, optional: true, required: false
+  private _reclaimPolicy?: string; 
+  public get reclaimPolicy() {
+    return this.getStringAttribute('reclaim_policy');
+  }
+  public set reclaimPolicy(value: string) {
+    this._reclaimPolicy = value;
+  }
+  public resetReclaimPolicy() {
+    this._reclaimPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reclaimPolicyInput() {
+    return this._reclaimPolicy;
+  }
+
+  // size_gb - computed: true, optional: true, required: false
+  private _sizeGb?: number; 
+  public get sizeGb() {
+    return this.getNumberAttribute('size_gb');
+  }
+  public set sizeGb(value: number) {
+    this._sizeGb = value;
+  }
+  public resetSizeGb() {
+    this._sizeGb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeGbInput() {
+    return this._sizeGb;
+  }
+
+  // source_snapshot - computed: false, optional: true, required: false
+  private _sourceSnapshot?: string; 
+  public get sourceSnapshot() {
+    return this.getStringAttribute('source_snapshot');
+  }
+  public set sourceSnapshot(value: string) {
+    this._sourceSnapshot = value;
+  }
+  public resetSourceSnapshot() {
+    this._sourceSnapshot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceSnapshotInput() {
+    return this._sourceSnapshot;
+  }
+}
 export interface WorkstationsWorkstationConfigPersistentDirectoriesGcePd {
   /**
   * The type of the persistent disk for the home directory. Defaults to 'pd-standard'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#disk_type WorkstationsWorkstationConfigA#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#disk_type WorkstationsWorkstationConfigA#disk_type}
   */
   readonly diskType?: string;
   /**
   * Type of file system that the disk should be formatted with. The workstation image must support this file system type. Must be empty if 'sourceSnapshot' is set. Defaults to 'ext4'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#fs_type WorkstationsWorkstationConfigA#fs_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#fs_type WorkstationsWorkstationConfigA#fs_type}
   */
   readonly fsType?: string;
   /**
   * Whether the persistent disk should be deleted when the workstation is deleted. Valid values are 'DELETE' and 'RETAIN'. Defaults to 'DELETE'. Possible values: ["DELETE", "RETAIN"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#reclaim_policy WorkstationsWorkstationConfigA#reclaim_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#reclaim_policy WorkstationsWorkstationConfigA#reclaim_policy}
   */
   readonly reclaimPolicy?: string;
   /**
   * The GB capacity of a persistent home directory for each workstation created with this configuration. Must be empty if 'sourceSnapshot' is set.
   * Valid values are '10', '50', '100', '200', '500', or '1000'. Defaults to '200'. If less than '200' GB, the 'diskType' must be 'pd-balanced' or 'pd-ssd'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#size_gb WorkstationsWorkstationConfigA#size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#size_gb WorkstationsWorkstationConfigA#size_gb}
   */
   readonly sizeGb?: number;
   /**
   * Name of the snapshot to use as the source for the disk. This can be the snapshot's 'self_link', 'id', or a string in the format of 'projects/{project}/global/snapshots/{snapshot}'. If set, 'sizeGb' and 'fsType' must be empty. Can only be updated if it has an existing value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#source_snapshot WorkstationsWorkstationConfigA#source_snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#source_snapshot WorkstationsWorkstationConfigA#source_snapshot}
   */
   readonly sourceSnapshot?: string;
 }
@@ -2815,13 +3006,19 @@ export interface WorkstationsWorkstationConfigPersistentDirectories {
   /**
   * Location of this directory in the running workstation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#mount_path WorkstationsWorkstationConfigA#mount_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#mount_path WorkstationsWorkstationConfigA#mount_path}
   */
   readonly mountPath?: string;
   /**
+  * gce_hd block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#gce_hd WorkstationsWorkstationConfigA#gce_hd}
+  */
+  readonly gceHd?: WorkstationsWorkstationConfigPersistentDirectoriesGceHd;
+  /**
   * gce_pd block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#gce_pd WorkstationsWorkstationConfigA#gce_pd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#gce_pd WorkstationsWorkstationConfigA#gce_pd}
   */
   readonly gcePd?: WorkstationsWorkstationConfigPersistentDirectoriesGcePd;
 }
@@ -2833,6 +3030,7 @@ export function workstationsWorkstationConfigPersistentDirectoriesToTerraform(st
   }
   return {
     mount_path: cdktn.stringToTerraform(struct!.mountPath),
+    gce_hd: workstationsWorkstationConfigPersistentDirectoriesGceHdToTerraform(struct!.gceHd),
     gce_pd: workstationsWorkstationConfigPersistentDirectoriesGcePdToTerraform(struct!.gcePd),
   }
 }
@@ -2849,6 +3047,12 @@ export function workstationsWorkstationConfigPersistentDirectoriesToHclTerraform
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    gce_hd: {
+      value: workstationsWorkstationConfigPersistentDirectoriesGceHdToHclTerraform(struct!.gceHd),
+      isBlock: true,
+      type: "list",
+      storageClassType: "WorkstationsWorkstationConfigPersistentDirectoriesGceHdList",
     },
     gce_pd: {
       value: workstationsWorkstationConfigPersistentDirectoriesGcePdToHclTerraform(struct!.gcePd),
@@ -2886,6 +3090,10 @@ export class WorkstationsWorkstationConfigPersistentDirectoriesOutputReference e
       hasAnyValues = true;
       internalValueResult.mountPath = this._mountPath;
     }
+    if (this._gceHd?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gceHd = this._gceHd?.internalValue;
+    }
     if (this._gcePd?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.gcePd = this._gcePd?.internalValue;
@@ -2898,6 +3106,7 @@ export class WorkstationsWorkstationConfigPersistentDirectoriesOutputReference e
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mountPath = undefined;
+      this._gceHd.internalValue = undefined;
       this._gcePd.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
@@ -2908,6 +3117,7 @@ export class WorkstationsWorkstationConfigPersistentDirectoriesOutputReference e
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._mountPath = value.mountPath;
+      this._gceHd.internalValue = value.gceHd;
       this._gcePd.internalValue = value.gcePd;
     }
   }
@@ -2926,6 +3136,22 @@ export class WorkstationsWorkstationConfigPersistentDirectoriesOutputReference e
   // Temporarily expose input value. Use with caution.
   public get mountPathInput() {
     return this._mountPath;
+  }
+
+  // gce_hd - computed: false, optional: true, required: false
+  private _gceHd = new WorkstationsWorkstationConfigPersistentDirectoriesGceHdOutputReference(this, "gce_hd");
+  public get gceHd() {
+    return this._gceHd;
+  }
+  public putGceHd(value: WorkstationsWorkstationConfigPersistentDirectoriesGceHd) {
+    this._gceHd.internalValue = value;
+  }
+  public resetGceHd() {
+    this._gceHd.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gceHdInput() {
+    return this._gceHd.internalValue;
   }
 
   // gce_pd - computed: false, optional: true, required: false
@@ -2968,13 +3194,13 @@ export interface WorkstationsWorkstationConfigReadinessChecks {
   /**
   * Path to which the request should be sent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#path WorkstationsWorkstationConfigA#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#path WorkstationsWorkstationConfigA#path}
   */
   readonly path: string;
   /**
   * Port to which the request should be sent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#port WorkstationsWorkstationConfigA#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#port WorkstationsWorkstationConfigA#port}
   */
   readonly port: number;
 }
@@ -3113,15 +3339,15 @@ export class WorkstationsWorkstationConfigReadinessChecksList extends cdktn.Comp
 }
 export interface WorkstationsWorkstationConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#create WorkstationsWorkstationConfigA#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#create WorkstationsWorkstationConfigA#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#delete WorkstationsWorkstationConfigA#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#delete WorkstationsWorkstationConfigA#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#update WorkstationsWorkstationConfigA#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#update WorkstationsWorkstationConfigA#update}
   */
   readonly update?: string;
 }
@@ -3273,7 +3499,7 @@ export class WorkstationsWorkstationConfigTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config google_workstations_workstation_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config google_workstations_workstation_config}
 */
 export class WorkstationsWorkstationConfigA extends cdktn.TerraformResource {
 
@@ -3289,7 +3515,7 @@ export class WorkstationsWorkstationConfigA extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WorkstationsWorkstationConfigA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkstationsWorkstationConfigA to import
-  * @param importFromId The id of the existing WorkstationsWorkstationConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkstationsWorkstationConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkstationsWorkstationConfigA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3301,7 +3527,7 @@ export class WorkstationsWorkstationConfigA extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/workstations_workstation_config google_workstations_workstation_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/workstations_workstation_config google_workstations_workstation_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3312,7 +3538,7 @@ export class WorkstationsWorkstationConfigA extends cdktn.TerraformResource {
       terraformResourceType: 'google_workstations_workstation_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.31.0',
+        providerVersion: '7.32.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

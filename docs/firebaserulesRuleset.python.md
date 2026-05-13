@@ -4,7 +4,7 @@
 
 ### FirebaserulesRuleset <a name="FirebaserulesRuleset" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset google_firebaserules_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset google_firebaserules_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer"></a>
 
@@ -40,7 +40,7 @@ firebaserulesRuleset.FirebaserulesRuleset(
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.source">source</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource">FirebaserulesRulesetSource</a></code> | source block. |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.project">project</a></code> | <code>str</code> | The project for the resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a></code> | timeouts block. |
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#source FirebaserulesRuleset#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#source FirebaserulesRuleset#source}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#project FirebaserulesRuleset#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#project FirebaserulesRuleset#project}
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#timeouts FirebaserulesRuleset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#timeouts FirebaserulesRuleset#timeouts}
 
 ---
 
@@ -546,7 +546,7 @@ def put_source(
 
 files block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#files FirebaserulesRuleset#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#files FirebaserulesRuleset#files}
 
 ---
 
@@ -556,7 +556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 `Language` of the `Source` bundle. If unspecified, the language will default to `FIREBASE_RULES`. Possible values: LANGUAGE_UNSPECIFIED, FIREBASE_RULES, EVENT_FLOW_TRIGGERS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#language FirebaserulesRuleset#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#language FirebaserulesRuleset#language}
 
 ---
 
@@ -573,7 +573,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#create FirebaserulesRuleset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#create FirebaserulesRuleset#create}.
 
 ---
 
@@ -581,7 +581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#delete FirebaserulesRuleset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#delete FirebaserulesRuleset#delete}.
 
 ---
 
@@ -717,7 +717,7 @@ The construct id used in the generated config for the FirebaserulesRuleset to im
 
 The id of the existing FirebaserulesRuleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1067,7 +1067,7 @@ firebaserulesRuleset.FirebaserulesRulesetConfig(
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.source">source</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource">FirebaserulesRulesetSource</a></code> | source block. |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.project">project</a></code> | <code>str</code> | The project for the resource. |
 | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts">FirebaserulesRulesetTimeouts</a></code> | timeouts block. |
 
@@ -1153,7 +1153,7 @@ source: FirebaserulesRulesetSource
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#source FirebaserulesRuleset#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#source FirebaserulesRuleset#source}
 
 ---
 
@@ -1165,7 +1165,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#id FirebaserulesRuleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1182,7 +1182,7 @@ project: str
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#project FirebaserulesRuleset#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#project FirebaserulesRuleset#project}
 
 ---
 
@@ -1196,7 +1196,7 @@ timeouts: FirebaserulesRulesetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#timeouts FirebaserulesRuleset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#timeouts FirebaserulesRuleset#timeouts}
 
 ---
 
@@ -1243,7 +1243,7 @@ files: IResolvable | typing.List[FirebaserulesRulesetSourceFiles]
 
 files block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#files FirebaserulesRuleset#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#files FirebaserulesRuleset#files}
 
 ---
 
@@ -1257,7 +1257,7 @@ language: str
 
 `Language` of the `Source` bundle. If unspecified, the language will default to `FIREBASE_RULES`. Possible values: LANGUAGE_UNSPECIFIED, FIREBASE_RULES, EVENT_FLOW_TRIGGERS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#language FirebaserulesRuleset#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#language FirebaserulesRuleset#language}
 
 ---
 
@@ -1295,7 +1295,7 @@ content: str
 
 Textual Content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#content FirebaserulesRuleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#content FirebaserulesRuleset#content}
 
 ---
 
@@ -1309,7 +1309,7 @@ name: str
 
 File name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#name FirebaserulesRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#name FirebaserulesRuleset#name}
 
 ---
 
@@ -1323,7 +1323,7 @@ fingerprint: str
 
 Fingerprint (e.g. github sha) associated with the `File`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#fingerprint FirebaserulesRuleset#fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#fingerprint FirebaserulesRuleset#fingerprint}
 
 ---
 
@@ -1344,8 +1344,8 @@ firebaserulesRuleset.FirebaserulesRulesetTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#create FirebaserulesRuleset#create}. |
-| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#delete FirebaserulesRuleset#delete}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#create FirebaserulesRuleset#create}. |
+| <code><a href="#@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#delete FirebaserulesRuleset#delete}. |
 
 ---
 
@@ -1357,7 +1357,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#create FirebaserulesRuleset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#create FirebaserulesRuleset#create}.
 
 ---
 
@@ -1369,7 +1369,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/firebaserules_ruleset#delete FirebaserulesRuleset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebaserules_ruleset#delete FirebaserulesRuleset#delete}.
 
 ---
 

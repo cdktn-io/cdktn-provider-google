@@ -4,7 +4,7 @@
 
 ### EdgenetworkNetwork <a name="EdgenetworkNetwork" id="@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network google_edgenetwork_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network google_edgenetwork_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetwork.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the EdgenetworkNetwork to impo
 
 The id of the existing EdgenetworkNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1017,10 +1017,10 @@ const edgenetworkNetworkConfig: edgenetworkNetwork.EdgenetworkNetworkConfig = { 
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.networkId">networkId</a></code> | <code>string</code> | A unique ID that identifies this network. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.zone">zone</a></code> | <code>string</code> | The name of the target Distributed Cloud Edge zone. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.description">description</a></code> | <code>string</code> | A free-text description of the resource. Max length 1024 characters. |
-| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#id EdgenetworkNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#id EdgenetworkNetwork#id}. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels associated with this resource. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.mtu">mtu</a></code> | <code>number</code> | IP (L3) MTU value of the network. Default value is '1500'. Possible values are: '1500', '9000'. |
-| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#project EdgenetworkNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#project EdgenetworkNetwork#project}. |
 | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts">EdgenetworkNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1105,7 +1105,7 @@ public readonly location: string;
 
 The Google Cloud region to which the target Distributed Cloud Edge zone belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#location EdgenetworkNetwork#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#location EdgenetworkNetwork#location}
 
 ---
 
@@ -1119,7 +1119,7 @@ public readonly networkId: string;
 
 A unique ID that identifies this network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#network_id EdgenetworkNetwork#network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#network_id EdgenetworkNetwork#network_id}
 
 ---
 
@@ -1133,7 +1133,7 @@ public readonly zone: string;
 
 The name of the target Distributed Cloud Edge zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#zone EdgenetworkNetwork#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#zone EdgenetworkNetwork#zone}
 
 ---
 
@@ -1147,7 +1147,7 @@ public readonly description: string;
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#description EdgenetworkNetwork#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#description EdgenetworkNetwork#description}
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#id EdgenetworkNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#id EdgenetworkNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1179,7 +1179,7 @@ Labels associated with this resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#labels EdgenetworkNetwork#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#labels EdgenetworkNetwork#labels}
 
 ---
 
@@ -1193,7 +1193,7 @@ public readonly mtu: number;
 
 IP (L3) MTU value of the network. Default value is '1500'. Possible values are: '1500', '9000'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#mtu EdgenetworkNetwork#mtu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#mtu EdgenetworkNetwork#mtu}
 
 ---
 
@@ -1205,7 +1205,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#project EdgenetworkNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#project EdgenetworkNetwork#project}.
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly timeouts: EdgenetworkNetworkTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#timeouts EdgenetworkNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#timeouts EdgenetworkNetwork#timeouts}
 
 ---
 
@@ -1237,9 +1237,9 @@ const edgenetworkNetworkTimeouts: edgenetworkNetwork.EdgenetworkNetworkTimeouts 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#create EdgenetworkNetwork#create}. |
-| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#delete EdgenetworkNetwork#delete}. |
-| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#update EdgenetworkNetwork#update}. |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#create EdgenetworkNetwork#create}. |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#delete EdgenetworkNetwork#delete}. |
+| <code><a href="#@cdktn/provider-google.edgenetworkNetwork.EdgenetworkNetworkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#update EdgenetworkNetwork#update}. |
 
 ---
 
@@ -1251,7 +1251,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#create EdgenetworkNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#create EdgenetworkNetwork#create}.
 
 ---
 
@@ -1263,7 +1263,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#delete EdgenetworkNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#delete EdgenetworkNetwork#delete}.
 
 ---
 
@@ -1275,7 +1275,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/edgenetwork_network#update EdgenetworkNetwork#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgenetwork_network#update EdgenetworkNetwork#update}.
 
 ---
 
