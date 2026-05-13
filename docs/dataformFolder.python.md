@@ -4,7 +4,7 @@
 
 ### DataformFolder <a name="DataformFolder" id="@cdktn/provider-google.dataformFolder.DataformFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder google_dataform_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder google_dataform_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataformFolder.DataformFolder.Initializer"></a>
 
@@ -44,8 +44,8 @@ dataformFolder.DataformFolder(
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Required. The Folder's user-friendly name. |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.Initializer.parameter.region">region</a></code> | <code>str</code> | A reference to the region. |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.Initializer.parameter.containingFolder">containing_folder</a></code> | <code>str</code> | Optional. The containing Folder resource name. Format: 'projects/* /locations/* /folders/*' or 'projects/* /locations/* /teamFolders/*'. |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#id DataformFolder#id}. |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#project DataformFolder#project}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#id DataformFolder#id}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#project DataformFolder#project}. |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts">DataformFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Required. The Folder's user-friendly name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#display_name DataformFolder#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#display_name DataformFolder#display_name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A reference to the region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#region DataformFolder#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#region DataformFolder#region}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. The containing Folder resource name. Format: 'projects/* /locations/* /folders/*' or 'projects/* /locations/* /teamFolders/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#containing_folder DataformFolder#containing_folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#containing_folder DataformFolder#containing_folder}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -146,7 +146,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#id DataformFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#id DataformFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#project DataformFolder#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#project DataformFolder#project}.
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#timeouts DataformFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#timeouts DataformFolder#timeouts}
 
 ---
 
@@ -569,7 +569,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#create DataformFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#create DataformFolder#create}.
 
 ---
 
@@ -577,7 +577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#delete DataformFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#delete DataformFolder#delete}.
 
 ---
 
@@ -585,7 +585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#update DataformFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#update DataformFolder#update}.
 
 ---
 
@@ -727,7 +727,7 @@ The construct id used in the generated config for the DataformFolder to import.
 
 The id of the existing DataformFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1114,8 +1114,8 @@ dataformFolder.DataformFolderConfig(
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.displayName">display_name</a></code> | <code>str</code> | Required. The Folder's user-friendly name. |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.region">region</a></code> | <code>str</code> | A reference to the region. |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.containingFolder">containing_folder</a></code> | <code>str</code> | Optional. The containing Folder resource name. Format: 'projects/* /locations/* /folders/*' or 'projects/* /locations/* /teamFolders/*'. |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#id DataformFolder#id}. |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#project DataformFolder#project}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#id DataformFolder#id}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#project DataformFolder#project}. |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts">DataformFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1200,7 +1200,7 @@ display_name: str
 
 Required. The Folder's user-friendly name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#display_name DataformFolder#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#display_name DataformFolder#display_name}
 
 ---
 
@@ -1214,7 +1214,7 @@ region: str
 
 A reference to the region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#region DataformFolder#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#region DataformFolder#region}
 
 ---
 
@@ -1228,7 +1228,7 @@ containing_folder: str
 
 Optional. The containing Folder resource name. Format: 'projects/* /locations/* /folders/*' or 'projects/* /locations/* /teamFolders/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#containing_folder DataformFolder#containing_folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#containing_folder DataformFolder#containing_folder}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1242,7 +1242,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#id DataformFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#id DataformFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1257,7 +1257,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#project DataformFolder#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#project DataformFolder#project}.
 
 ---
 
@@ -1271,7 +1271,7 @@ timeouts: DataformFolderTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#timeouts DataformFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#timeouts DataformFolder#timeouts}
 
 ---
 
@@ -1293,9 +1293,9 @@ dataformFolder.DataformFolderTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#create DataformFolder#create}. |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#delete DataformFolder#delete}. |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#update DataformFolder#update}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#create DataformFolder#create}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#delete DataformFolder#delete}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#update DataformFolder#update}. |
 
 ---
 
@@ -1307,7 +1307,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#create DataformFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#create DataformFolder#create}.
 
 ---
 
@@ -1319,7 +1319,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#delete DataformFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#delete DataformFolder#delete}.
 
 ---
 
@@ -1331,7 +1331,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_folder#update DataformFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#update DataformFolder#update}.
 
 ---
 

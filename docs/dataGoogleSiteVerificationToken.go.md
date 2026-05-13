@@ -4,7 +4,7 @@
 
 ### DataGoogleSiteVerificationToken <a name="DataGoogleSiteVerificationToken" id="@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/site_verification_token google_site_verification_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/site_verification_token google_site_verification_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationToken.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataGoogleSiteVerification
 
 The id of the existing DataGoogleSiteVerificationToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/site_verification_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/site_verification_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -745,7 +745,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesiteve
 | <code><a href="#@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenConfig.property.identifier">Identifier</a></code> | <code>*string</code> | The site identifier. |
 | <code><a href="#@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenConfig.property.type">Type</a></code> | <code>*string</code> | The type of resource to be verified, either a domain or a web site. Possible values: ["INET_DOMAIN", "SITE"]. |
 | <code><a href="#@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenConfig.property.verificationMethod">VerificationMethod</a></code> | <code>*string</code> | The verification method for the Site Verification system to use to verify this site or domain. |
-| <code><a href="#@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/site_verification_token#id DataGoogleSiteVerificationToken#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/site_verification_token#id DataGoogleSiteVerificationToken#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenTimeouts">DataGoogleSiteVerificationTokenTimeouts</a></code> | timeouts block. |
 
 ---
@@ -833,7 +833,7 @@ The site identifier.
 If the type is set to SITE, the identifier is a URL. If the type is
 set to INET_DOMAIN, the identifier is a domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/site_verification_token#identifier DataGoogleSiteVerificationToken#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/site_verification_token#identifier DataGoogleSiteVerificationToken#identifier}
 
 ---
 
@@ -847,7 +847,7 @@ Type *string
 
 The type of resource to be verified, either a domain or a web site. Possible values: ["INET_DOMAIN", "SITE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/site_verification_token#type DataGoogleSiteVerificationToken#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/site_verification_token#type DataGoogleSiteVerificationToken#type}
 
 ---
 
@@ -863,7 +863,7 @@ The verification method for the Site Verification system to use to verify this s
 
 Possible values: ["ANALYTICS", "DNS_CNAME", "DNS_TXT", "FILE", "META", "TAG_MANAGER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/site_verification_token#verification_method DataGoogleSiteVerificationToken#verification_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/site_verification_token#verification_method DataGoogleSiteVerificationToken#verification_method}
 
 ---
 
@@ -875,7 +875,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/site_verification_token#id DataGoogleSiteVerificationToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/site_verification_token#id DataGoogleSiteVerificationToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -892,7 +892,7 @@ Timeouts DataGoogleSiteVerificationTokenTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/site_verification_token#timeouts DataGoogleSiteVerificationToken#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/site_verification_token#timeouts DataGoogleSiteVerificationToken#timeouts}
 
 ---
 
@@ -912,7 +912,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/datagooglesiteve
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/site_verification_token#read DataGoogleSiteVerificationToken#read}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/site_verification_token#read DataGoogleSiteVerificationToken#read}. |
 
 ---
 
@@ -924,7 +924,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/site_verification_token#read DataGoogleSiteVerificationToken#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/site_verification_token#read DataGoogleSiteVerificationToken#read}.
 
 ---
 

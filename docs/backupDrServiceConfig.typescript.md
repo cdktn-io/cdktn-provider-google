@@ -4,7 +4,7 @@
 
 ### BackupDrServiceConfig <a name="BackupDrServiceConfig" id="@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config google_backup_dr_service_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config google_backup_dr_service_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfig.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the BackupDrServiceConfig to i
 
 The id of the existing BackupDrServiceConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -851,8 +851,8 @@ const backupDrServiceConfigConfig: backupDrServiceConfig.BackupDrServiceConfigCo
 | <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.location">location</a></code> | <code>string</code> | The location in which the Service config is to be initialized. |
 | <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.resourceType">resourceType</a></code> | <code>string</code> | The resource type to which the default service config will be applied. |
-| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#id BackupDrServiceConfig#id}. |
-| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#project BackupDrServiceConfig#project}. |
+| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#id BackupDrServiceConfig#id}. |
+| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#project BackupDrServiceConfig#project}. |
 | <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeouts">BackupDrServiceConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -937,7 +937,7 @@ public readonly location: string;
 
 The location in which the Service config is to be initialized.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#location BackupDrServiceConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#location BackupDrServiceConfig#location}
 
 ---
 
@@ -951,7 +951,7 @@ public readonly resourceType: string;
 
 The resource type to which the default service config will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#resource_type BackupDrServiceConfig#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#resource_type BackupDrServiceConfig#resource_type}
 
 ---
 
@@ -963,7 +963,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#id BackupDrServiceConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#id BackupDrServiceConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -978,7 +978,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#project BackupDrServiceConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#project BackupDrServiceConfig#project}.
 
 ---
 
@@ -992,7 +992,7 @@ public readonly timeouts: BackupDrServiceConfigTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#timeouts BackupDrServiceConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#timeouts BackupDrServiceConfig#timeouts}
 
 ---
 
@@ -1010,8 +1010,8 @@ const backupDrServiceConfigTimeouts: backupDrServiceConfig.BackupDrServiceConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#create BackupDrServiceConfig#create}. |
-| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#delete BackupDrServiceConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#create BackupDrServiceConfig#create}. |
+| <code><a href="#@cdktn/provider-google.backupDrServiceConfig.BackupDrServiceConfigTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#delete BackupDrServiceConfig#delete}. |
 
 ---
 
@@ -1023,7 +1023,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#create BackupDrServiceConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#create BackupDrServiceConfig#create}.
 
 ---
 
@@ -1035,7 +1035,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/backup_dr_service_config#delete BackupDrServiceConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/backup_dr_service_config#delete BackupDrServiceConfig#delete}.
 
 ---
 

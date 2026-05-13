@@ -4,7 +4,7 @@
 
 ### ApigeeApiProduct <a name="ApigeeApiProduct" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product google_apigee_api_product}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product google_apigee_api_product}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.Initializer"></a>
 
@@ -63,7 +63,7 @@ ApigeeApiProduct.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.Initializer.parameter.environments">environments</a></code> | <code>java.util.List<java.lang.String></code> | Comma-separated list of environment names to which the API product is bound. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.Initializer.parameter.graphqlOperationGroup">graphqlOperationGroup</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroup">ApigeeApiProductGraphqlOperationGroup</a></code> | graphql_operation_group block. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.Initializer.parameter.grpcOperationGroup">grpcOperationGroup</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroup">ApigeeApiProductGrpcOperationGroup</a></code> | grpc_operation_group block. |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#id ApigeeApiProduct#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#id ApigeeApiProduct#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.Initializer.parameter.operationGroup">operationGroup</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroup">ApigeeApiProductOperationGroup</a></code> | operation_group block. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.Initializer.parameter.proxies">proxies</a></code> | <code>java.util.List<java.lang.String></code> | Comma-separated list of API proxy names to which this API product is bound. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProduct.Initializer.parameter.quota">quota</a></code> | <code>java.lang.String</code> | Number of request messages permitted per app by this API product for the specified quotaInterval and quotaTimeUnit. |
@@ -142,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 Name displayed in the UI or developer portal to developers registering for API access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#display_name ApigeeApiProduct#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#display_name ApigeeApiProduct#display_name}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Internal name of the API product.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Apigee Organization associated with the Apigee API product, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#org_id ApigeeApiProduct#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#org_id ApigeeApiProduct#org_id}
 
 ---
 
@@ -175,7 +175,7 @@ Comma-separated list of API resources to be bundled in the API product.
 By default, the resource paths are mapped from the proxy.pathsuffix variable.
 The proxy path suffix is defined as the URI fragment following the ProxyEndpoint base path. For example, if the apiResources element is defined to be /forecastrss and the base path defined for the API proxy is /weather, then only requests to /weather/forecastrss are permitted by the API product.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#api_resources ApigeeApiProduct#api_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#api_resources ApigeeApiProduct#api_resources}
 
 ---
 
@@ -187,7 +187,7 @@ Flag that specifies how API keys are approved to access the APIs defined by the 
 
 Valid values are 'auto' or 'manual'. Possible values: ["auto", "manual"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#approval_type ApigeeApiProduct#approval_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#approval_type ApigeeApiProduct#approval_type}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#attributes ApigeeApiProduct#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#attributes ApigeeApiProduct#attributes}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the API product. Include key information about the API product that is not captured by other fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#description ApigeeApiProduct#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#description ApigeeApiProduct#description}
 
 ---
 
@@ -220,7 +220,7 @@ Comma-separated list of environment names to which the API product is bound.
 Requests to environments that are not listed are rejected.
 By specifying one or more environments, you can bind the resources listed in the API product to a specific environment, preventing developers from accessing those resources through API proxies deployed in another environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#environments ApigeeApiProduct#environments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#environments ApigeeApiProduct#environments}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 graphql_operation_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#graphql_operation_group ApigeeApiProduct#graphql_operation_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#graphql_operation_group ApigeeApiProduct#graphql_operation_group}
 
 ---
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 grpc_operation_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#grpc_operation_group ApigeeApiProduct#grpc_operation_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#grpc_operation_group ApigeeApiProduct#grpc_operation_group}
 
 ---
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#id ApigeeApiProduct#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#id ApigeeApiProduct#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -261,7 +261,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 operation_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#operation_group ApigeeApiProduct#operation_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#operation_group ApigeeApiProduct#operation_group}
 
 ---
 
@@ -274,7 +274,7 @@ Comma-separated list of API proxy names to which this API product is bound.
 By specifying API proxies, you can associate resources in the API product with specific API proxies, preventing developers from accessing those resources through other API proxies.
 Apigee rejects requests to API proxies that are not listed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#proxies ApigeeApiProduct#proxies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#proxies ApigeeApiProduct#proxies}
 
 ---
 
@@ -286,7 +286,7 @@ Number of request messages permitted per app by this API product for the specifi
 
 For example, a quota of 50, for a quotaInterval of 12 and a quotaTimeUnit of hours means 50 requests are allowed every 12 hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#quota ApigeeApiProduct#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#quota ApigeeApiProduct#quota}
 
 ---
 
@@ -298,7 +298,7 @@ Scope of the quota decides how the quota counter gets applied and evaluate for q
 
 If the Scope is set as PROXY, then all the operations defined for the APIproduct that are associated with the same proxy will share the same quota counter set at the APIproduct level, making it a global counter at a proxy level. If the Scope is set as OPERATION, then each operations get the counter set at the API product dedicated, making it a local counter. Note that, the QuotaCounterScope applies only when an operation does not have dedicated quota set for itself. Possible values: ["QUOTA_COUNTER_SCOPE_UNSPECIFIED", "PROXY", "OPERATION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#quota_counter_scope ApigeeApiProduct#quota_counter_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#quota_counter_scope ApigeeApiProduct#quota_counter_scope}
 
 ---
 
@@ -308,7 +308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Time interval over which the number of request messages is calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#quota_interval ApigeeApiProduct#quota_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#quota_interval ApigeeApiProduct#quota_interval}
 
 ---
 
@@ -318,7 +318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Time unit defined for the quotaInterval. Valid values include second, minute, hour, day, month or year.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#quota_time_unit ApigeeApiProduct#quota_time_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#quota_time_unit ApigeeApiProduct#quota_time_unit}
 
 ---
 
@@ -330,7 +330,7 @@ Comma-separated list of OAuth scopes that are validated at runtime.
 
 Apigee validates that the scopes in any access token presented match the scopes defined in the OAuth policy associated with the API product.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#scopes ApigeeApiProduct#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#scopes ApigeeApiProduct#scopes}
 
 ---
 
@@ -340,7 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. The resource ID of the parent Space. If not set, the parent resource will be the Organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#space ApigeeApiProduct#space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#space ApigeeApiProduct#space}
 
 ---
 
@@ -350,7 +350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#timeouts ApigeeApiProduct#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#timeouts ApigeeApiProduct#timeouts}
 
 ---
 
@@ -983,7 +983,7 @@ The construct id used in the generated config for the ApigeeApiProduct to import
 
 The id of the existing ApigeeApiProduct that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1672,7 +1672,7 @@ public java.lang.String getName();
 
 Key of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
 
 ---
 
@@ -1686,7 +1686,7 @@ public java.lang.String getValue();
 
 Value of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#value ApigeeApiProduct#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#value ApigeeApiProduct#value}
 
 ---
 
@@ -1749,7 +1749,7 @@ ApigeeApiProductConfig.builder()
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.environments">environments</a></code> | <code>java.util.List<java.lang.String></code> | Comma-separated list of environment names to which the API product is bound. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.graphqlOperationGroup">graphqlOperationGroup</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGraphqlOperationGroup">ApigeeApiProductGraphqlOperationGroup</a></code> | graphql_operation_group block. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.grpcOperationGroup">grpcOperationGroup</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroup">ApigeeApiProductGrpcOperationGroup</a></code> | grpc_operation_group block. |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#id ApigeeApiProduct#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#id ApigeeApiProduct#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.operationGroup">operationGroup</a></code> | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductOperationGroup">ApigeeApiProductOperationGroup</a></code> | operation_group block. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.proxies">proxies</a></code> | <code>java.util.List<java.lang.String></code> | Comma-separated list of API proxy names to which this API product is bound. |
 | <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductConfig.property.quota">quota</a></code> | <code>java.lang.String</code> | Number of request messages permitted per app by this API product for the specified quotaInterval and quotaTimeUnit. |
@@ -1842,7 +1842,7 @@ public java.lang.String getDisplayName();
 
 Name displayed in the UI or developer portal to developers registering for API access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#display_name ApigeeApiProduct#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#display_name ApigeeApiProduct#display_name}
 
 ---
 
@@ -1856,7 +1856,7 @@ public java.lang.String getName();
 
 Internal name of the API product.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
 
 ---
 
@@ -1870,7 +1870,7 @@ public java.lang.String getOrgId();
 
 The Apigee Organization associated with the Apigee API product, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#org_id ApigeeApiProduct#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#org_id ApigeeApiProduct#org_id}
 
 ---
 
@@ -1887,7 +1887,7 @@ Comma-separated list of API resources to be bundled in the API product.
 By default, the resource paths are mapped from the proxy.pathsuffix variable.
 The proxy path suffix is defined as the URI fragment following the ProxyEndpoint base path. For example, if the apiResources element is defined to be /forecastrss and the base path defined for the API proxy is /weather, then only requests to /weather/forecastrss are permitted by the API product.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#api_resources ApigeeApiProduct#api_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#api_resources ApigeeApiProduct#api_resources}
 
 ---
 
@@ -1903,7 +1903,7 @@ Flag that specifies how API keys are approved to access the APIs defined by the 
 
 Valid values are 'auto' or 'manual'. Possible values: ["auto", "manual"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#approval_type ApigeeApiProduct#approval_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#approval_type ApigeeApiProduct#approval_type}
 
 ---
 
@@ -1917,7 +1917,7 @@ public IResolvable|java.util.List<ApigeeApiProductAttributes> getAttributes();
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#attributes ApigeeApiProduct#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#attributes ApigeeApiProduct#attributes}
 
 ---
 
@@ -1931,7 +1931,7 @@ public java.lang.String getDescription();
 
 Description of the API product. Include key information about the API product that is not captured by other fields.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#description ApigeeApiProduct#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#description ApigeeApiProduct#description}
 
 ---
 
@@ -1948,7 +1948,7 @@ Comma-separated list of environment names to which the API product is bound.
 Requests to environments that are not listed are rejected.
 By specifying one or more environments, you can bind the resources listed in the API product to a specific environment, preventing developers from accessing those resources through API proxies deployed in another environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#environments ApigeeApiProduct#environments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#environments ApigeeApiProduct#environments}
 
 ---
 
@@ -1962,7 +1962,7 @@ public ApigeeApiProductGraphqlOperationGroup getGraphqlOperationGroup();
 
 graphql_operation_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#graphql_operation_group ApigeeApiProduct#graphql_operation_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#graphql_operation_group ApigeeApiProduct#graphql_operation_group}
 
 ---
 
@@ -1976,7 +1976,7 @@ public ApigeeApiProductGrpcOperationGroup getGrpcOperationGroup();
 
 grpc_operation_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#grpc_operation_group ApigeeApiProduct#grpc_operation_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#grpc_operation_group ApigeeApiProduct#grpc_operation_group}
 
 ---
 
@@ -1988,7 +1988,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#id ApigeeApiProduct#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#id ApigeeApiProduct#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2005,7 +2005,7 @@ public ApigeeApiProductOperationGroup getOperationGroup();
 
 operation_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#operation_group ApigeeApiProduct#operation_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#operation_group ApigeeApiProduct#operation_group}
 
 ---
 
@@ -2022,7 +2022,7 @@ Comma-separated list of API proxy names to which this API product is bound.
 By specifying API proxies, you can associate resources in the API product with specific API proxies, preventing developers from accessing those resources through other API proxies.
 Apigee rejects requests to API proxies that are not listed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#proxies ApigeeApiProduct#proxies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#proxies ApigeeApiProduct#proxies}
 
 ---
 
@@ -2038,7 +2038,7 @@ Number of request messages permitted per app by this API product for the specifi
 
 For example, a quota of 50, for a quotaInterval of 12 and a quotaTimeUnit of hours means 50 requests are allowed every 12 hours.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#quota ApigeeApiProduct#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#quota ApigeeApiProduct#quota}
 
 ---
 
@@ -2054,7 +2054,7 @@ Scope of the quota decides how the quota counter gets applied and evaluate for q
 
 If the Scope is set as PROXY, then all the operations defined for the APIproduct that are associated with the same proxy will share the same quota counter set at the APIproduct level, making it a global counter at a proxy level. If the Scope is set as OPERATION, then each operations get the counter set at the API product dedicated, making it a local counter. Note that, the QuotaCounterScope applies only when an operation does not have dedicated quota set for itself. Possible values: ["QUOTA_COUNTER_SCOPE_UNSPECIFIED", "PROXY", "OPERATION"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#quota_counter_scope ApigeeApiProduct#quota_counter_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#quota_counter_scope ApigeeApiProduct#quota_counter_scope}
 
 ---
 
@@ -2068,7 +2068,7 @@ public java.lang.String getQuotaInterval();
 
 Time interval over which the number of request messages is calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#quota_interval ApigeeApiProduct#quota_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#quota_interval ApigeeApiProduct#quota_interval}
 
 ---
 
@@ -2082,7 +2082,7 @@ public java.lang.String getQuotaTimeUnit();
 
 Time unit defined for the quotaInterval. Valid values include second, minute, hour, day, month or year.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#quota_time_unit ApigeeApiProduct#quota_time_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#quota_time_unit ApigeeApiProduct#quota_time_unit}
 
 ---
 
@@ -2098,7 +2098,7 @@ Comma-separated list of OAuth scopes that are validated at runtime.
 
 Apigee validates that the scopes in any access token presented match the scopes defined in the OAuth policy associated with the API product.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#scopes ApigeeApiProduct#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#scopes ApigeeApiProduct#scopes}
 
 ---
 
@@ -2112,7 +2112,7 @@ public java.lang.String getSpace();
 
 Optional. The resource ID of the parent Space. If not set, the parent resource will be the Organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#space ApigeeApiProduct#space}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#space ApigeeApiProduct#space}
 
 ---
 
@@ -2126,7 +2126,7 @@ public ApigeeApiProductTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#timeouts ApigeeApiProduct#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#timeouts ApigeeApiProduct#timeouts}
 
 ---
 
@@ -2162,7 +2162,7 @@ public IResolvable|java.util.List<ApigeeApiProductGraphqlOperationGroupOperation
 
 operation_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#operation_configs ApigeeApiProduct#operation_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#operation_configs ApigeeApiProduct#operation_configs}
 
 ---
 
@@ -2178,7 +2178,7 @@ Flag that specifes whether the configuration is for Apigee API proxy or a remote
 
 Valid values include proxy or remoteservice. Defaults to proxy. Set to proxy when Apigee API proxies are associated with the API product. Set to remoteservice when non-Apigee proxies like Istio-Envoy are associated with the API product. Possible values: ["proxy", "remoteservice"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#operation_config_type ApigeeApiProduct#operation_config_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#operation_config_type ApigeeApiProduct#operation_config_type}
 
 ---
 
@@ -2218,7 +2218,7 @@ public java.lang.String getApiSource();
 
 Required. Name of the API proxy endpoint or remote service with which the GraphQL operation and quota are associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#api_source ApigeeApiProduct#api_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#api_source ApigeeApiProduct#api_source}
 
 ---
 
@@ -2232,7 +2232,7 @@ public IResolvable|java.util.List<ApigeeApiProductGraphqlOperationGroupOperation
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#attributes ApigeeApiProduct#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#attributes ApigeeApiProduct#attributes}
 
 ---
 
@@ -2246,7 +2246,7 @@ public IResolvable|java.util.List<ApigeeApiProductGraphqlOperationGroupOperation
 
 operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#operations ApigeeApiProduct#operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#operations ApigeeApiProduct#operations}
 
 ---
 
@@ -2260,7 +2260,7 @@ public ApigeeApiProductGraphqlOperationGroupOperationConfigsQuota getQuota();
 
 quota block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#quota ApigeeApiProduct#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#quota ApigeeApiProduct#quota}
 
 ---
 
@@ -2296,7 +2296,7 @@ public java.lang.String getName();
 
 Key of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
 
 ---
 
@@ -2310,7 +2310,7 @@ public java.lang.String getValue();
 
 Value of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#value ApigeeApiProduct#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#value ApigeeApiProduct#value}
 
 ---
 
@@ -2348,7 +2348,7 @@ GraphQL operation name.
 
 The name and operation type will be used to apply quotas. If no name is specified, the quota will be applied to all GraphQL operations irrespective of their operation names in the payload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#operation ApigeeApiProduct#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#operation ApigeeApiProduct#operation}
 
 ---
 
@@ -2362,7 +2362,7 @@ public java.util.List<java.lang.String> getOperationTypes();
 
 Required. GraphQL operation types. Valid values include query or mutation. Note: Apigee does not currently support subscription types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#operation_types ApigeeApiProduct#operation_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#operation_types ApigeeApiProduct#operation_types}
 
 ---
 
@@ -2400,7 +2400,7 @@ public java.lang.String getInterval();
 
 Required. Time interval over which the number of request messages is calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#interval ApigeeApiProduct#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#interval ApigeeApiProduct#interval}
 
 ---
 
@@ -2414,7 +2414,7 @@ public java.lang.String getLimit();
 
 Required. Upper limit allowed for the time interval and time unit specified. Requests exceeding this limit will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#limit ApigeeApiProduct#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#limit ApigeeApiProduct#limit}
 
 ---
 
@@ -2430,7 +2430,7 @@ Time unit defined for the interval.
 
 Valid values include second, minute, hour, day, month or year. If limit and interval are valid, the default value is hour; otherwise, the default is null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#time_unit ApigeeApiProduct#time_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#time_unit ApigeeApiProduct#time_unit}
 
 ---
 
@@ -2464,7 +2464,7 @@ public IResolvable|java.util.List<ApigeeApiProductGrpcOperationGroupOperationCon
 
 operation_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#operation_configs ApigeeApiProduct#operation_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#operation_configs ApigeeApiProduct#operation_configs}
 
 ---
 
@@ -2506,7 +2506,7 @@ public java.lang.String getApiSource();
 
 Required. Name of the API proxy with which the gRPC operation and quota are associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#api_source ApigeeApiProduct#api_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#api_source ApigeeApiProduct#api_source}
 
 ---
 
@@ -2520,7 +2520,7 @@ public IResolvable|java.util.List<ApigeeApiProductGrpcOperationGroupOperationCon
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#attributes ApigeeApiProduct#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#attributes ApigeeApiProduct#attributes}
 
 ---
 
@@ -2540,7 +2540,7 @@ Example: Given a proxy that is configured to serve com.petstore.PetService, the 
 
 Note: Currently, you can specify only a single GraphQLOperation. Specifying more than one will cause the operation to fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#methods ApigeeApiProduct#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#methods ApigeeApiProduct#methods}
 
 ---
 
@@ -2554,7 +2554,7 @@ public ApigeeApiProductGrpcOperationGroupOperationConfigsQuota getQuota();
 
 quota block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#quota ApigeeApiProduct#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#quota ApigeeApiProduct#quota}
 
 ---
 
@@ -2570,7 +2570,7 @@ Required.
 
 gRPC Service name associated to be associated with the API proxy, on which quota rules can be applied upon.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#service ApigeeApiProduct#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#service ApigeeApiProduct#service}
 
 ---
 
@@ -2606,7 +2606,7 @@ public java.lang.String getName();
 
 Key of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
 
 ---
 
@@ -2620,7 +2620,7 @@ public java.lang.String getValue();
 
 Value of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#value ApigeeApiProduct#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#value ApigeeApiProduct#value}
 
 ---
 
@@ -2658,7 +2658,7 @@ public java.lang.String getInterval();
 
 Required. Time interval over which the number of request messages is calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#interval ApigeeApiProduct#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#interval ApigeeApiProduct#interval}
 
 ---
 
@@ -2672,7 +2672,7 @@ public java.lang.String getLimit();
 
 Required. Upper limit allowed for the time interval and time unit specified. Requests exceeding this limit will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#limit ApigeeApiProduct#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#limit ApigeeApiProduct#limit}
 
 ---
 
@@ -2688,7 +2688,7 @@ Time unit defined for the interval.
 
 Valid values include second, minute, hour, day, month or year. If limit and interval are valid, the default value is hour; otherwise, the default is null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#time_unit ApigeeApiProduct#time_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#time_unit ApigeeApiProduct#time_unit}
 
 ---
 
@@ -2724,7 +2724,7 @@ public IResolvable|java.util.List<ApigeeApiProductOperationGroupOperationConfigs
 
 operation_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#operation_configs ApigeeApiProduct#operation_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#operation_configs ApigeeApiProduct#operation_configs}
 
 ---
 
@@ -2740,7 +2740,7 @@ Flag that specifes whether the configuration is for Apigee API proxy or a remote
 
 Valid values include proxy or remoteservice. Defaults to proxy. Set to proxy when Apigee API proxies are associated with the API product. Set to remoteservice when non-Apigee proxies like Istio-Envoy are associated with the API product. Possible values: ["proxy", "remoteservice"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#operation_config_type ApigeeApiProduct#operation_config_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#operation_config_type ApigeeApiProduct#operation_config_type}
 
 ---
 
@@ -2780,7 +2780,7 @@ public java.lang.String getApiSource();
 
 Required. Name of the API proxy or remote service with which the resources, methods, and quota are associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#api_source ApigeeApiProduct#api_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#api_source ApigeeApiProduct#api_source}
 
 ---
 
@@ -2794,7 +2794,7 @@ public IResolvable|java.util.List<ApigeeApiProductOperationGroupOperationConfigs
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#attributes ApigeeApiProduct#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#attributes ApigeeApiProduct#attributes}
 
 ---
 
@@ -2808,7 +2808,7 @@ public IResolvable|java.util.List<ApigeeApiProductOperationGroupOperationConfigs
 
 operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#operations ApigeeApiProduct#operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#operations ApigeeApiProduct#operations}
 
 ---
 
@@ -2822,7 +2822,7 @@ public ApigeeApiProductOperationGroupOperationConfigsQuota getQuota();
 
 quota block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#quota ApigeeApiProduct#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#quota ApigeeApiProduct#quota}
 
 ---
 
@@ -2858,7 +2858,7 @@ public java.lang.String getName();
 
 Key of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#name ApigeeApiProduct#name}
 
 ---
 
@@ -2872,7 +2872,7 @@ public java.lang.String getValue();
 
 Value of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#value ApigeeApiProduct#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#value ApigeeApiProduct#value}
 
 ---
 
@@ -2908,7 +2908,7 @@ public java.util.List<java.lang.String> getMethods();
 
 Methods refers to the REST verbs, when none specified, all verb types are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#methods ApigeeApiProduct#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#methods ApigeeApiProduct#methods}
 
 ---
 
@@ -2922,7 +2922,7 @@ public java.lang.String getResource();
 
 Required. REST resource path associated with the API proxy or remote service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#resource ApigeeApiProduct#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#resource ApigeeApiProduct#resource}
 
 ---
 
@@ -2960,7 +2960,7 @@ public java.lang.String getInterval();
 
 Required. Time interval over which the number of request messages is calculated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#interval ApigeeApiProduct#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#interval ApigeeApiProduct#interval}
 
 ---
 
@@ -2974,7 +2974,7 @@ public java.lang.String getLimit();
 
 Required. Upper limit allowed for the time interval and time unit specified. Requests exceeding this limit will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#limit ApigeeApiProduct#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#limit ApigeeApiProduct#limit}
 
 ---
 
@@ -2990,7 +2990,7 @@ Time unit defined for the interval.
 
 Valid values include second, minute, hour, day, month or year. If limit and interval are valid, the default value is hour; otherwise, the default is null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#time_unit ApigeeApiProduct#time_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#time_unit ApigeeApiProduct#time_unit}
 
 ---
 
@@ -3012,9 +3012,9 @@ ApigeeApiProductTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#create ApigeeApiProduct#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#delete ApigeeApiProduct#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#update ApigeeApiProduct#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#create ApigeeApiProduct#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#delete ApigeeApiProduct#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#update ApigeeApiProduct#update}. |
 
 ---
 
@@ -3026,7 +3026,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#create ApigeeApiProduct#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#create ApigeeApiProduct#create}.
 
 ---
 
@@ -3038,7 +3038,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#delete ApigeeApiProduct#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#delete ApigeeApiProduct#delete}.
 
 ---
 
@@ -3050,7 +3050,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/apigee_api_product#update ApigeeApiProduct#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_api_product#update ApigeeApiProduct#update}.
 
 ---
 

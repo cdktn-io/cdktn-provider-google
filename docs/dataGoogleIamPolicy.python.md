@@ -4,7 +4,7 @@
 
 ### DataGoogleIamPolicy <a name="DataGoogleIamPolicy" id="@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy google_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy google_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy.Initializer"></a>
 
@@ -40,7 +40,7 @@ dataGoogleIamPolicy.DataGoogleIamPolicy(
 | <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy.Initializer.parameter.auditConfig">audit_config</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig">DataGoogleIamPolicyAuditConfig</a>]</code> | audit_config block. |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy.Initializer.parameter.binding">binding</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding">DataGoogleIamPolicyBinding</a>]</code> | binding block. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 audit_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#audit_config DataGoogleIamPolicy#audit_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#audit_config DataGoogleIamPolicy#audit_config}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#binding DataGoogleIamPolicy#binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#binding DataGoogleIamPolicy#binding}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -565,7 +565,7 @@ The construct id used in the generated config for the DataGoogleIamPolicy to imp
 
 The id of the existing DataGoogleIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig.property.auditLogConfigs">audit_log_configs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs">DataGoogleIamPolicyAuditConfigAuditLogConfigs</a>]</code> | audit_log_configs block. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig.property.service">service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#service DataGoogleIamPolicy#service}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig.property.service">service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#service DataGoogleIamPolicy#service}. |
 
 ---
 
@@ -847,7 +847,7 @@ audit_log_configs: IResolvable | typing.List[DataGoogleIamPolicyAuditConfigAudit
 
 audit_log_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#audit_log_configs DataGoogleIamPolicy#audit_log_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#audit_log_configs DataGoogleIamPolicy#audit_log_configs}
 
 ---
 
@@ -859,7 +859,7 @@ service: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#service DataGoogleIamPolicy#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#service DataGoogleIamPolicy#service}.
 
 ---
 
@@ -880,8 +880,8 @@ dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs.property.logType">log_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#log_type DataGoogleIamPolicy#log_type}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs.property.exemptedMembers">exempted_members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#exempted_members DataGoogleIamPolicy#exempted_members}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs.property.logType">log_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#log_type DataGoogleIamPolicy#log_type}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs.property.exemptedMembers">exempted_members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#exempted_members DataGoogleIamPolicy#exempted_members}. |
 
 ---
 
@@ -893,7 +893,7 @@ log_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#log_type DataGoogleIamPolicy#log_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#log_type DataGoogleIamPolicy#log_type}.
 
 ---
 
@@ -905,7 +905,7 @@ exempted_members: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#exempted_members DataGoogleIamPolicy#exempted_members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#exempted_members DataGoogleIamPolicy#exempted_members}.
 
 ---
 
@@ -927,8 +927,8 @@ dataGoogleIamPolicy.DataGoogleIamPolicyBinding(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#members DataGoogleIamPolicy#members}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#role DataGoogleIamPolicy#role}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#members DataGoogleIamPolicy#members}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#role DataGoogleIamPolicy#role}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition">DataGoogleIamPolicyBindingCondition</a></code> | condition block. |
 
 ---
@@ -941,7 +941,7 @@ members: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#members DataGoogleIamPolicy#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#members DataGoogleIamPolicy#members}.
 
 ---
 
@@ -953,7 +953,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#role DataGoogleIamPolicy#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#role DataGoogleIamPolicy#role}.
 
 ---
 
@@ -967,7 +967,7 @@ condition: DataGoogleIamPolicyBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#condition DataGoogleIamPolicy#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#condition DataGoogleIamPolicy#condition}
 
 ---
 
@@ -989,9 +989,9 @@ dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#expression DataGoogleIamPolicy#expression}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#title DataGoogleIamPolicy#title}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#description DataGoogleIamPolicy#description}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#expression DataGoogleIamPolicy#expression}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#title DataGoogleIamPolicy#title}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#description DataGoogleIamPolicy#description}. |
 
 ---
 
@@ -1003,7 +1003,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#expression DataGoogleIamPolicy#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#expression DataGoogleIamPolicy#expression}.
 
 ---
 
@@ -1015,7 +1015,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#title DataGoogleIamPolicy#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#title DataGoogleIamPolicy#title}.
 
 ---
 
@@ -1027,7 +1027,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#description DataGoogleIamPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#description DataGoogleIamPolicy#description}.
 
 ---
 
@@ -1065,7 +1065,7 @@ dataGoogleIamPolicy.DataGoogleIamPolicyConfig(
 | <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyConfig.property.auditConfig">audit_config</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig">DataGoogleIamPolicyAuditConfig</a>]</code> | audit_config block. |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyConfig.property.binding">binding</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding">DataGoogleIamPolicyBinding</a>]</code> | binding block. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}. |
 
 ---
 
@@ -1149,7 +1149,7 @@ audit_config: IResolvable | typing.List[DataGoogleIamPolicyAuditConfig]
 
 audit_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#audit_config DataGoogleIamPolicy#audit_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#audit_config DataGoogleIamPolicy#audit_config}
 
 ---
 
@@ -1163,7 +1163,7 @@ binding: IResolvable | typing.List[DataGoogleIamPolicyBinding]
 
 binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#binding DataGoogleIamPolicy#binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#binding DataGoogleIamPolicy#binding}
 
 ---
 
@@ -1175,7 +1175,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#id DataGoogleIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3003,7 +3003,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#expression DataGoogleIamPolicy#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#expression DataGoogleIamPolicy#expression}.
 
 ---
 
@@ -3011,7 +3011,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#title DataGoogleIamPolicy#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#title DataGoogleIamPolicy#title}.
 
 ---
 
@@ -3019,7 +3019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/iam_policy#description DataGoogleIamPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/iam_policy#description DataGoogleIamPolicy#description}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### IapWebTypeComputeIamMember <a name="IapWebTypeComputeIamMember" id="@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMember.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the IapWebTypeComputeIamMember
 
 The id of the existing IapWebTypeComputeIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,9 +853,9 @@ const iapWebTypeComputeIamMemberCondition: iapWebTypeComputeIamMember.IapWebType
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#expression IapWebTypeComputeIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#title IapWebTypeComputeIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#description IapWebTypeComputeIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#expression IapWebTypeComputeIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#title IapWebTypeComputeIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#description IapWebTypeComputeIamMember#description}. |
 
 ---
 
@@ -867,7 +867,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#expression IapWebTypeComputeIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#expression IapWebTypeComputeIamMember#expression}.
 
 ---
 
@@ -879,7 +879,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#title IapWebTypeComputeIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#title IapWebTypeComputeIamMember#title}.
 
 ---
 
@@ -891,7 +891,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#description IapWebTypeComputeIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#description IapWebTypeComputeIamMember#description}.
 
 ---
 
@@ -916,11 +916,11 @@ const iapWebTypeComputeIamMemberConfig: iapWebTypeComputeIamMember.IapWebTypeCom
 | <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#member IapWebTypeComputeIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#role IapWebTypeComputeIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#member IapWebTypeComputeIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#role IapWebTypeComputeIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberCondition">IapWebTypeComputeIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#id IapWebTypeComputeIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#project IapWebTypeComputeIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#id IapWebTypeComputeIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.iapWebTypeComputeIamMember.IapWebTypeComputeIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#project IapWebTypeComputeIamMember#project}. |
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#member IapWebTypeComputeIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#member IapWebTypeComputeIamMember#member}.
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#role IapWebTypeComputeIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#role IapWebTypeComputeIamMember#role}.
 
 ---
 
@@ -1028,7 +1028,7 @@ public readonly condition: IapWebTypeComputeIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#condition IapWebTypeComputeIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#condition IapWebTypeComputeIamMember#condition}
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#id IapWebTypeComputeIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#id IapWebTypeComputeIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1055,7 +1055,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/iap_web_type_compute_iam_member#project IapWebTypeComputeIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iap_web_type_compute_iam_member#project IapWebTypeComputeIamMember#project}.
 
 ---
 

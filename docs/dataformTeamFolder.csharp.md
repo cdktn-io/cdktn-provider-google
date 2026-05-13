@@ -4,7 +4,7 @@
 
 ### DataformTeamFolder <a name="DataformTeamFolder" id="@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder google_dataform_team_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder google_dataform_team_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataformTeamFolder.DataformTeamFolder.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the DataformTeamFolder to impo
 
 The id of the existing DataformTeamFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,8 +886,8 @@ new DataformTeamFolderConfig {
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Required. The TeamFolder's user-friendly name. |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.region">Region</a></code> | <code>string</code> | A reference to the region. |
-| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#id DataformTeamFolder#id}. |
-| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#project DataformTeamFolder#project}. |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#id DataformTeamFolder#id}. |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#project DataformTeamFolder#project}. |
 | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts">DataformTeamFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -972,7 +972,7 @@ public string DisplayName { get; set; }
 
 Required. The TeamFolder's user-friendly name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#display_name DataformTeamFolder#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#display_name DataformTeamFolder#display_name}
 
 ---
 
@@ -986,7 +986,7 @@ public string Region { get; set; }
 
 A reference to the region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#region DataformTeamFolder#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#region DataformTeamFolder#region}
 
 ---
 
@@ -998,7 +998,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#id DataformTeamFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#id DataformTeamFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1013,7 +1013,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#project DataformTeamFolder#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#project DataformTeamFolder#project}.
 
 ---
 
@@ -1027,7 +1027,7 @@ public DataformTeamFolderTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#timeouts DataformTeamFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#timeouts DataformTeamFolder#timeouts}
 
 ---
 
@@ -1049,9 +1049,9 @@ new DataformTeamFolderTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#create DataformTeamFolder#create}. |
-| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#delete DataformTeamFolder#delete}. |
-| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#update DataformTeamFolder#update}. |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#create DataformTeamFolder#create}. |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#delete DataformTeamFolder#delete}. |
+| <code><a href="#@cdktn/provider-google.dataformTeamFolder.DataformTeamFolderTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#update DataformTeamFolder#update}. |
 
 ---
 
@@ -1063,7 +1063,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#create DataformTeamFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#create DataformTeamFolder#create}.
 
 ---
 
@@ -1075,7 +1075,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#delete DataformTeamFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#delete DataformTeamFolder#delete}.
 
 ---
 
@@ -1087,7 +1087,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/dataform_team_folder#update DataformTeamFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_team_folder#update DataformTeamFolder#update}.
 
 ---
 

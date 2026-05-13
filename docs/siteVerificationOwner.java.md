@@ -4,7 +4,7 @@
 
 ### SiteVerificationOwner <a name="SiteVerificationOwner" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner google_site_verification_owner}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner google_site_verification_owner}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.Initializer"></a>
 
@@ -39,7 +39,7 @@ SiteVerificationOwner.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | The email address of the owner. |
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.Initializer.parameter.webResourceId">webResourceId</a></code> | <code>java.lang.String</code> | The id of the Web Resource to add this owner to, in the form "webResource/<web-resource-id>". |
-| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#id SiteVerificationOwner#id}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#id SiteVerificationOwner#id}. |
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts">SiteVerificationOwnerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The email address of the owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#email SiteVerificationOwner#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#email SiteVerificationOwner#email}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The id of the Web Resource to add this owner to, in the form "webResource/<web-resource-id>".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#web_resource_id SiteVerificationOwner#web_resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#web_resource_id SiteVerificationOwner#web_resource_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#id SiteVerificationOwner#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#id SiteVerificationOwner#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#timeouts SiteVerificationOwner#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#timeouts SiteVerificationOwner#timeouts}
 
 ---
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the SiteVerificationOwner to i
 
 The id of the existing SiteVerificationOwner that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -935,7 +935,7 @@ SiteVerificationOwnerConfig.builder()
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.email">email</a></code> | <code>java.lang.String</code> | The email address of the owner. |
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.webResourceId">webResourceId</a></code> | <code>java.lang.String</code> | The id of the Web Resource to add this owner to, in the form "webResource/<web-resource-id>". |
-| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#id SiteVerificationOwner#id}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#id SiteVerificationOwner#id}. |
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts">SiteVerificationOwnerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1020,7 +1020,7 @@ public java.lang.String getEmail();
 
 The email address of the owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#email SiteVerificationOwner#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#email SiteVerificationOwner#email}
 
 ---
 
@@ -1034,7 +1034,7 @@ public java.lang.String getWebResourceId();
 
 The id of the Web Resource to add this owner to, in the form "webResource/<web-resource-id>".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#web_resource_id SiteVerificationOwner#web_resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#web_resource_id SiteVerificationOwner#web_resource_id}
 
 ---
 
@@ -1046,7 +1046,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#id SiteVerificationOwner#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#id SiteVerificationOwner#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1063,7 +1063,7 @@ public SiteVerificationOwnerTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#timeouts SiteVerificationOwner#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#timeouts SiteVerificationOwner#timeouts}
 
 ---
 
@@ -1084,8 +1084,8 @@ SiteVerificationOwnerTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#create SiteVerificationOwner#create}. |
-| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#delete SiteVerificationOwner#delete}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#create SiteVerificationOwner#create}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#delete SiteVerificationOwner#delete}. |
 
 ---
 
@@ -1097,7 +1097,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#create SiteVerificationOwner#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#create SiteVerificationOwner#create}.
 
 ---
 
@@ -1109,7 +1109,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/site_verification_owner#delete SiteVerificationOwner#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/site_verification_owner#delete SiteVerificationOwner#delete}.
 
 ---
 
