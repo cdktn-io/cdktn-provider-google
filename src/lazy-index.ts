@@ -205,6 +205,7 @@ Object.defineProperty(exports, 'cesExample', { get: function () { return require
 Object.defineProperty(exports, 'cesGuardrail', { get: function () { return require('./ces-guardrail'); } });
 Object.defineProperty(exports, 'cesTool', { get: function () { return require('./ces-tool'); } });
 Object.defineProperty(exports, 'cesToolset', { get: function () { return require('./ces-toolset'); } });
+Object.defineProperty(exports, 'chronicleDashboardChart', { get: function () { return require('./chronicle-dashboard-chart'); } });
 Object.defineProperty(exports, 'chronicleDataAccessLabel', { get: function () { return require('./chronicle-data-access-label'); } });
 Object.defineProperty(exports, 'chronicleDataAccessScope', { get: function () { return require('./chronicle-data-access-scope'); } });
 Object.defineProperty(exports, 'chronicleDataTable', { get: function () { return require('./chronicle-data-table'); } });
@@ -382,6 +383,10 @@ Object.defineProperty(exports, 'computeRegionHealthCheck', { get: function () { 
 Object.defineProperty(exports, 'computeRegionHealthSource', { get: function () { return require('./compute-region-health-source'); } });
 Object.defineProperty(exports, 'computeRegionInstanceGroupManager', { get: function () { return require('./compute-region-instance-group-manager'); } });
 Object.defineProperty(exports, 'computeRegionInstanceTemplate', { get: function () { return require('./compute-region-instance-template'); } });
+Object.defineProperty(exports, 'computeRegionInstantSnapshot', { get: function () { return require('./compute-region-instant-snapshot'); } });
+Object.defineProperty(exports, 'computeRegionInstantSnapshotIamBinding', { get: function () { return require('./compute-region-instant-snapshot-iam-binding'); } });
+Object.defineProperty(exports, 'computeRegionInstantSnapshotIamMember', { get: function () { return require('./compute-region-instant-snapshot-iam-member'); } });
+Object.defineProperty(exports, 'computeRegionInstantSnapshotIamPolicy', { get: function () { return require('./compute-region-instant-snapshot-iam-policy'); } });
 Object.defineProperty(exports, 'computeRegionNetworkEndpoint', { get: function () { return require('./compute-region-network-endpoint'); } });
 Object.defineProperty(exports, 'computeRegionNetworkEndpointGroup', { get: function () { return require('./compute-region-network-endpoint-group'); } });
 Object.defineProperty(exports, 'computeRegionNetworkFirewallPolicy', { get: function () { return require('./compute-region-network-firewall-policy'); } });
@@ -1390,6 +1395,7 @@ Object.defineProperty(exports, 'dataGoogleComputeRegionDiskIamPolicy', { get: fu
 Object.defineProperty(exports, 'dataGoogleComputeRegionInstanceGroup', { get: function () { return require('./data-google-compute-region-instance-group'); } });
 Object.defineProperty(exports, 'dataGoogleComputeRegionInstanceGroupManager', { get: function () { return require('./data-google-compute-region-instance-group-manager'); } });
 Object.defineProperty(exports, 'dataGoogleComputeRegionInstanceTemplate', { get: function () { return require('./data-google-compute-region-instance-template'); } });
+Object.defineProperty(exports, 'dataGoogleComputeRegionInstantSnapshotIamPolicy', { get: function () { return require('./data-google-compute-region-instant-snapshot-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleComputeRegionNetworkEndpointGroup', { get: function () { return require('./data-google-compute-region-network-endpoint-group'); } });
 Object.defineProperty(exports, 'dataGoogleComputeRegionSecurityPolicy', { get: function () { return require('./data-google-compute-region-security-policy'); } });
 Object.defineProperty(exports, 'dataGoogleComputeRegionSslCertificate', { get: function () { return require('./data-google-compute-region-ssl-certificate'); } });

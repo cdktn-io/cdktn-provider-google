@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk
+// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -20,7 +20,7 @@ export interface ComputeRegionDiskConfig extends cdktn.TerraformMetaArguments {
   *   * READ_ONLY_SINGLE: The AccessMode means the disk can be attached to multiple instances in RO mode.
   * The AccessMode is only valid for Hyperdisk disk types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#access_mode ComputeRegionDisk#access_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#access_mode ComputeRegionDisk#access_mode}
   */
   readonly accessMode?: string;
   /**
@@ -28,29 +28,43 @@ export interface ComputeRegionDiskConfig extends cdktn.TerraformMetaArguments {
   * If your disk is encrypted with customer managed encryption keys these will be reused for the snapshot creation.
   * The name of the snapshot by default will be '{{disk-name}}-YYYYMMDD-HHmm'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#create_snapshot_before_destroy ComputeRegionDisk#create_snapshot_before_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#create_snapshot_before_destroy ComputeRegionDisk#create_snapshot_before_destroy}
   */
   readonly createSnapshotBeforeDestroy?: boolean | cdktn.IResolvable;
   /**
   * This will set a custom name prefix for the snapshot that's created when the disk is deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#create_snapshot_before_destroy_prefix ComputeRegionDisk#create_snapshot_before_destroy_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#create_snapshot_before_destroy_prefix ComputeRegionDisk#create_snapshot_before_destroy_prefix}
   */
   readonly createSnapshotBeforeDestroyPrefix?: string;
   /**
   * An optional description of this resource. Provide this property when
   * you create the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#description ComputeRegionDisk#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#description ComputeRegionDisk#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#id ComputeRegionDisk#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#id ComputeRegionDisk#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * The image from which to initialize this disk. This can be
+  * one of: the image's 'self_link', 'projects/{project}/global/images/{image}',
+  * 'projects/{project}/global/images/family/{family}', 'global/images/{image}',
+  * 'global/images/family/{family}', 'family/{family}', '{project}/{family}',
+  * '{project}/{image}', '{family}', or '{image}'. If referred by family, the
+  * images names must include the family name. If they don't, use the
+  * [google_compute_image data source](/docs/providers/google/d/compute_image.html).
+  * For instance, the image 'centos-6-v20180104' includes its family name 'centos-6'.
+  * These images can be referred by family name here.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#image ComputeRegionDisk#image}
+  */
+  readonly image?: string;
   /**
   * Labels to apply to this disk.  A list of key->value pairs.
   * 
@@ -58,13 +72,13 @@ export interface ComputeRegionDiskConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#labels ComputeRegionDisk#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#labels ComputeRegionDisk#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Any applicable license URI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#licenses ComputeRegionDisk#licenses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#licenses ComputeRegionDisk#licenses}
   */
   readonly licenses?: string[];
   /**
@@ -76,7 +90,7 @@ export interface ComputeRegionDiskConfig extends cdktn.TerraformMetaArguments {
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#name ComputeRegionDisk#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#name ComputeRegionDisk#name}
   */
   readonly name: string;
   /**
@@ -86,11 +100,11 @@ export interface ComputeRegionDiskConfig extends cdktn.TerraformMetaArguments {
   * If an unsupported value is requested, the error message will list
   * the supported values for the caller's project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#physical_block_size_bytes ComputeRegionDisk#physical_block_size_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#physical_block_size_bytes ComputeRegionDisk#physical_block_size_bytes}
   */
   readonly physicalBlockSizeBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#project ComputeRegionDisk#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#project ComputeRegionDisk#project}
   */
   readonly project?: string;
   /**
@@ -98,26 +112,26 @@ export interface ComputeRegionDiskConfig extends cdktn.TerraformMetaArguments {
   * that the disk can handle. Values must be between 10,000 and 120,000.
   * For more details, see the Extreme persistent disk [documentation](https://cloud.google.com/compute/docs/disks/extreme-persistent-disk).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#provisioned_iops ComputeRegionDisk#provisioned_iops}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#provisioned_iops ComputeRegionDisk#provisioned_iops}
   */
   readonly provisionedIops?: number;
   /**
   * Indicates how much throughput to provision for the disk. This sets the number of throughput
   * mb per second that the disk can handle. Values must be greater than or equal to 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#provisioned_throughput ComputeRegionDisk#provisioned_throughput}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#provisioned_throughput ComputeRegionDisk#provisioned_throughput}
   */
   readonly provisionedThroughput?: number;
   /**
   * A reference to the region where the disk resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#region ComputeRegionDisk#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#region ComputeRegionDisk#region}
   */
   readonly region?: string;
   /**
   * URLs of the zones where the disk should be replicated to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#replica_zones ComputeRegionDisk#replica_zones}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#replica_zones ComputeRegionDisk#replica_zones}
   */
   readonly replicaZones: string[];
   /**
@@ -130,7 +144,7 @@ export interface ComputeRegionDiskConfig extends cdktn.TerraformMetaArguments {
   * the value of sizeGb must not be less than the size of the sourceImage
   * or the size of the snapshot.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#size ComputeRegionDisk#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#size ComputeRegionDisk#size}
   */
   readonly size?: number;
   /**
@@ -143,7 +157,7 @@ export interface ComputeRegionDiskConfig extends cdktn.TerraformMetaArguments {
   * * 'global/snapshots/snapshot'
   * * 'snapshot'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#snapshot ComputeRegionDisk#snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#snapshot ComputeRegionDisk#snapshot}
   */
   readonly snapshot?: string;
   /**
@@ -157,44 +171,50 @@ export interface ComputeRegionDiskConfig extends cdktn.TerraformMetaArguments {
   * * zones/{zone}/disks/{disk}
   * * regions/{region}/disks/{disk}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#source_disk ComputeRegionDisk#source_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#source_disk ComputeRegionDisk#source_disk}
   */
   readonly sourceDisk?: string;
   /**
   * URL of the disk type resource describing which disk type to use to
   * create the disk. Provide this when creating the disk.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#type ComputeRegionDisk#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#type ComputeRegionDisk#type}
   */
   readonly type?: string;
   /**
   * async_primary_disk block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#async_primary_disk ComputeRegionDisk#async_primary_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#async_primary_disk ComputeRegionDisk#async_primary_disk}
   */
   readonly asyncPrimaryDisk?: ComputeRegionDiskAsyncPrimaryDisk;
   /**
   * disk_encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#disk_encryption_key ComputeRegionDisk#disk_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#disk_encryption_key ComputeRegionDisk#disk_encryption_key}
   */
   readonly diskEncryptionKey?: ComputeRegionDiskDiskEncryptionKey;
   /**
   * guest_os_features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#guest_os_features ComputeRegionDisk#guest_os_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#guest_os_features ComputeRegionDisk#guest_os_features}
   */
   readonly guestOsFeatures?: ComputeRegionDiskGuestOsFeatures[] | cdktn.IResolvable;
   /**
+  * source_image_encryption_key block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#source_image_encryption_key ComputeRegionDisk#source_image_encryption_key}
+  */
+  readonly sourceImageEncryptionKey?: ComputeRegionDiskSourceImageEncryptionKey;
+  /**
   * source_snapshot_encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#source_snapshot_encryption_key ComputeRegionDisk#source_snapshot_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#source_snapshot_encryption_key ComputeRegionDisk#source_snapshot_encryption_key}
   */
   readonly sourceSnapshotEncryptionKey?: ComputeRegionDiskSourceSnapshotEncryptionKey;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#timeouts ComputeRegionDisk#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#timeouts ComputeRegionDisk#timeouts}
   */
   readonly timeouts?: ComputeRegionDiskTimeouts;
 }
@@ -202,7 +222,7 @@ export interface ComputeRegionDiskAsyncPrimaryDisk {
   /**
   * Primary disk for asynchronous disk replication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#disk ComputeRegionDisk#disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#disk ComputeRegionDisk#disk}
   */
   readonly disk: string;
 }
@@ -285,14 +305,14 @@ export interface ComputeRegionDiskDiskEncryptionKey {
   /**
   * The name of the encryption key that is stored in Google Cloud KMS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#kms_key_name ComputeRegionDisk#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#kms_key_name ComputeRegionDisk#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
   * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#raw_key ComputeRegionDisk#raw_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#raw_key ComputeRegionDisk#raw_key}
   */
   readonly rawKey?: string;
   /**
@@ -300,7 +320,7 @@ export interface ComputeRegionDiskDiskEncryptionKey {
   * customer-supplied encryption key to either encrypt or decrypt
   * this resource. You can provide either the rawKey or the rsaEncryptedKey.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#rsa_encrypted_key ComputeRegionDisk#rsa_encrypted_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#rsa_encrypted_key ComputeRegionDisk#rsa_encrypted_key}
   */
   readonly rsaEncryptedKey?: string;
 }
@@ -449,7 +469,7 @@ export interface ComputeRegionDiskGuestOsFeatures {
   /**
   * The type of supported feature. Read [Enabling guest operating system features](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#guest-os-features) to see a list of available options. Possible values: ["MULTI_IP_SUBNET", "SECURE_BOOT", "SEV_CAPABLE", "UEFI_COMPATIBLE", "VIRTIO_SCSI_MULTIQUEUE", "WINDOWS", "GVNIC", "SEV_LIVE_MIGRATABLE", "SEV_SNP_CAPABLE", "SUSPEND_RESUME_COMPATIBLE", "TDX_CAPABLE", "SEV_LIVE_MIGRATABLE_V2", "SNP_SVSM_CAPABLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#type ComputeRegionDisk#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#type ComputeRegionDisk#type}
   */
   readonly type: string;
 }
@@ -560,12 +580,212 @@ export class ComputeRegionDiskGuestOsFeaturesList extends cdktn.ComplexList {
     return new ComputeRegionDiskGuestOsFeaturesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ComputeRegionDiskSourceImageEncryptionKey {
+  /**
+  * The name of the encryption key that is stored in Google Cloud KMS.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#kms_key_name ComputeRegionDisk#kms_key_name}
+  */
+  readonly kmsKeyName?: string;
+  /**
+  * The service account used for the encryption request for the given KMS key.
+  * If absent, the Compute Engine Service Agent service account is used.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#kms_key_service_account ComputeRegionDisk#kms_key_service_account}
+  */
+  readonly kmsKeyServiceAccount?: string;
+  /**
+  * Specifies a 256-bit customer-supplied encryption key, encoded in
+  * RFC 4648 base64 to either encrypt or decrypt this resource.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#raw_key ComputeRegionDisk#raw_key}
+  */
+  readonly rawKey?: string;
+  /**
+  * Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit
+  * customer-supplied encryption key to either encrypt or decrypt
+  * this resource. You can provide either the rawKey or the rsaEncryptedKey.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#rsa_encrypted_key ComputeRegionDisk#rsa_encrypted_key}
+  */
+  readonly rsaEncryptedKey?: string;
+}
+
+export function computeRegionDiskSourceImageEncryptionKeyToTerraform(struct?: ComputeRegionDiskSourceImageEncryptionKeyOutputReference | ComputeRegionDiskSourceImageEncryptionKey): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_key_name: cdktn.stringToTerraform(struct!.kmsKeyName),
+    kms_key_service_account: cdktn.stringToTerraform(struct!.kmsKeyServiceAccount),
+    raw_key: cdktn.stringToTerraform(struct!.rawKey),
+    rsa_encrypted_key: cdktn.stringToTerraform(struct!.rsaEncryptedKey),
+  }
+}
+
+
+export function computeRegionDiskSourceImageEncryptionKeyToHclTerraform(struct?: ComputeRegionDiskSourceImageEncryptionKeyOutputReference | ComputeRegionDiskSourceImageEncryptionKey): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    kms_key_name: {
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    kms_key_service_account: {
+      value: cdktn.stringToHclTerraform(struct!.kmsKeyServiceAccount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    raw_key: {
+      value: cdktn.stringToHclTerraform(struct!.rawKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    rsa_encrypted_key: {
+      value: cdktn.stringToHclTerraform(struct!.rsaEncryptedKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeRegionDiskSourceImageEncryptionKeyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeRegionDiskSourceImageEncryptionKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsKeyName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyName = this._kmsKeyName;
+    }
+    if (this._kmsKeyServiceAccount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyServiceAccount = this._kmsKeyServiceAccount;
+    }
+    if (this._rawKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rawKey = this._rawKey;
+    }
+    if (this._rsaEncryptedKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rsaEncryptedKey = this._rsaEncryptedKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeRegionDiskSourceImageEncryptionKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kmsKeyName = undefined;
+      this._kmsKeyServiceAccount = undefined;
+      this._rawKey = undefined;
+      this._rsaEncryptedKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kmsKeyName = value.kmsKeyName;
+      this._kmsKeyServiceAccount = value.kmsKeyServiceAccount;
+      this._rawKey = value.rawKey;
+      this._rsaEncryptedKey = value.rsaEncryptedKey;
+    }
+  }
+
+  // kms_key_name - computed: false, optional: true, required: false
+  private _kmsKeyName?: string; 
+  public get kmsKeyName() {
+    return this.getStringAttribute('kms_key_name');
+  }
+  public set kmsKeyName(value: string) {
+    this._kmsKeyName = value;
+  }
+  public resetKmsKeyName() {
+    this._kmsKeyName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyNameInput() {
+    return this._kmsKeyName;
+  }
+
+  // kms_key_service_account - computed: false, optional: true, required: false
+  private _kmsKeyServiceAccount?: string; 
+  public get kmsKeyServiceAccount() {
+    return this.getStringAttribute('kms_key_service_account');
+  }
+  public set kmsKeyServiceAccount(value: string) {
+    this._kmsKeyServiceAccount = value;
+  }
+  public resetKmsKeyServiceAccount() {
+    this._kmsKeyServiceAccount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyServiceAccountInput() {
+    return this._kmsKeyServiceAccount;
+  }
+
+  // raw_key - computed: false, optional: true, required: false
+  private _rawKey?: string; 
+  public get rawKey() {
+    return this.getStringAttribute('raw_key');
+  }
+  public set rawKey(value: string) {
+    this._rawKey = value;
+  }
+  public resetRawKey() {
+    this._rawKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rawKeyInput() {
+    return this._rawKey;
+  }
+
+  // rsa_encrypted_key - computed: false, optional: true, required: false
+  private _rsaEncryptedKey?: string; 
+  public get rsaEncryptedKey() {
+    return this.getStringAttribute('rsa_encrypted_key');
+  }
+  public set rsaEncryptedKey(value: string) {
+    this._rsaEncryptedKey = value;
+  }
+  public resetRsaEncryptedKey() {
+    this._rsaEncryptedKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rsaEncryptedKeyInput() {
+    return this._rsaEncryptedKey;
+  }
+
+  // sha256 - computed: true, optional: false, required: false
+  public get sha256() {
+    return this.getStringAttribute('sha256');
+  }
+}
 export interface ComputeRegionDiskSourceSnapshotEncryptionKey {
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
   * RFC 4648 base64 to either encrypt or decrypt this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#raw_key ComputeRegionDisk#raw_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#raw_key ComputeRegionDisk#raw_key}
   */
   readonly rawKey?: string;
 }
@@ -654,15 +874,15 @@ export class ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference extends
 }
 export interface ComputeRegionDiskTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#create ComputeRegionDisk#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#create ComputeRegionDisk#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#delete ComputeRegionDisk#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#delete ComputeRegionDisk#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#update ComputeRegionDisk#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#update ComputeRegionDisk#update}
   */
   readonly update?: string;
 }
@@ -814,7 +1034,7 @@ export class ComputeRegionDiskTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk google_compute_region_disk}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk google_compute_region_disk}
 */
 export class ComputeRegionDisk extends cdktn.TerraformResource {
 
@@ -830,7 +1050,7 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeRegionDisk resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeRegionDisk to import
-  * @param importFromId The id of the existing ComputeRegionDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeRegionDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeRegionDisk to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -842,7 +1062,7 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/resources/compute_region_disk google_compute_region_disk} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_disk google_compute_region_disk} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -853,7 +1073,7 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_region_disk',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.31.0',
+        providerVersion: '7.32.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -869,6 +1089,7 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
     this._createSnapshotBeforeDestroyPrefix = config.createSnapshotBeforeDestroyPrefix;
     this._description = config.description;
     this._id = config.id;
+    this._image = config.image;
     this._labels = config.labels;
     this._licenses = config.licenses;
     this._name = config.name;
@@ -885,6 +1106,7 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
     this._asyncPrimaryDisk.internalValue = config.asyncPrimaryDisk;
     this._diskEncryptionKey.internalValue = config.diskEncryptionKey;
     this._guestOsFeatures.internalValue = config.guestOsFeatures;
+    this._sourceImageEncryptionKey.internalValue = config.sourceImageEncryptionKey;
     this._sourceSnapshotEncryptionKey.internalValue = config.sourceSnapshotEncryptionKey;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -987,6 +1209,22 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // image - computed: false, optional: true, required: false
+  private _image?: string; 
+  public get image() {
+    return this.getStringAttribute('image');
+  }
+  public set image(value: string) {
+    this._image = value;
+  }
+  public resetImage() {
+    this._image = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageInput() {
+    return this._image;
   }
 
   // label_fingerprint - computed: true, optional: false, required: false
@@ -1200,6 +1438,11 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
     return this.getStringAttribute('source_disk_id');
   }
 
+  // source_image_id - computed: true, optional: false, required: false
+  public get sourceImageId() {
+    return this.getStringAttribute('source_image_id');
+  }
+
   // source_snapshot_id - computed: true, optional: false, required: false
   public get sourceSnapshotId() {
     return this.getStringAttribute('source_snapshot_id');
@@ -1280,6 +1523,22 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
     return this._guestOsFeatures.internalValue;
   }
 
+  // source_image_encryption_key - computed: false, optional: true, required: false
+  private _sourceImageEncryptionKey = new ComputeRegionDiskSourceImageEncryptionKeyOutputReference(this, "source_image_encryption_key");
+  public get sourceImageEncryptionKey() {
+    return this._sourceImageEncryptionKey;
+  }
+  public putSourceImageEncryptionKey(value: ComputeRegionDiskSourceImageEncryptionKey) {
+    this._sourceImageEncryptionKey.internalValue = value;
+  }
+  public resetSourceImageEncryptionKey() {
+    this._sourceImageEncryptionKey.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceImageEncryptionKeyInput() {
+    return this._sourceImageEncryptionKey.internalValue;
+  }
+
   // source_snapshot_encryption_key - computed: false, optional: true, required: false
   private _sourceSnapshotEncryptionKey = new ComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference(this, "source_snapshot_encryption_key");
   public get sourceSnapshotEncryptionKey() {
@@ -1323,6 +1582,7 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
       create_snapshot_before_destroy_prefix: cdktn.stringToTerraform(this._createSnapshotBeforeDestroyPrefix),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
+      image: cdktn.stringToTerraform(this._image),
       labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._labels),
       licenses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._licenses),
       name: cdktn.stringToTerraform(this._name),
@@ -1339,6 +1599,7 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
       async_primary_disk: computeRegionDiskAsyncPrimaryDiskToTerraform(this._asyncPrimaryDisk.internalValue),
       disk_encryption_key: computeRegionDiskDiskEncryptionKeyToTerraform(this._diskEncryptionKey.internalValue),
       guest_os_features: cdktn.listMapper(computeRegionDiskGuestOsFeaturesToTerraform, true)(this._guestOsFeatures.internalValue),
+      source_image_encryption_key: computeRegionDiskSourceImageEncryptionKeyToTerraform(this._sourceImageEncryptionKey.internalValue),
       source_snapshot_encryption_key: computeRegionDiskSourceSnapshotEncryptionKeyToTerraform(this._sourceSnapshotEncryptionKey.internalValue),
       timeouts: computeRegionDiskTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1372,6 +1633,12 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
       },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      image: {
+        value: cdktn.stringToHclTerraform(this._image),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1471,6 +1738,12 @@ export class ComputeRegionDisk extends cdktn.TerraformResource {
         isBlock: true,
         type: "set",
         storageClassType: "ComputeRegionDiskGuestOsFeaturesList",
+      },
+      source_image_encryption_key: {
+        value: computeRegionDiskSourceImageEncryptionKeyToHclTerraform(this._sourceImageEncryptionKey.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ComputeRegionDiskSourceImageEncryptionKeyList",
       },
       source_snapshot_encryption_key: {
         value: computeRegionDiskSourceSnapshotEncryptionKeyToHclTerraform(this._sourceSnapshotEncryptionKey.internalValue),

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_disk
+// https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_disk
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeRegionDiskConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_disk#id DataGoogleComputeRegionDisk#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_disk#id DataGoogleComputeRegionDisk#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,17 +28,17 @@ export interface DataGoogleComputeRegionDiskConfig extends cdktn.TerraformMetaAr
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_disk#name DataGoogleComputeRegionDisk#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_disk#name DataGoogleComputeRegionDisk#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_disk#project DataGoogleComputeRegionDisk#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_disk#project DataGoogleComputeRegionDisk#project}
   */
   readonly project?: string;
   /**
   * A reference to the region where the disk resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_disk#region DataGoogleComputeRegionDisk#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_disk#region DataGoogleComputeRegionDisk#region}
   */
   readonly region?: string;
 }
@@ -282,6 +282,101 @@ export class DataGoogleComputeRegionDiskGuestOsFeaturesList extends cdktn.Comple
     return new DataGoogleComputeRegionDiskGuestOsFeaturesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleComputeRegionDiskSourceImageEncryptionKey {
+}
+
+export function dataGoogleComputeRegionDiskSourceImageEncryptionKeyToTerraform(struct?: DataGoogleComputeRegionDiskSourceImageEncryptionKey): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleComputeRegionDiskSourceImageEncryptionKeyToHclTerraform(struct?: DataGoogleComputeRegionDiskSourceImageEncryptionKey): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleComputeRegionDiskSourceImageEncryptionKeyOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleComputeRegionDiskSourceImageEncryptionKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleComputeRegionDiskSourceImageEncryptionKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // kms_key_name - computed: true, optional: false, required: false
+  public get kmsKeyName() {
+    return this.getStringAttribute('kms_key_name');
+  }
+
+  // kms_key_service_account - computed: true, optional: false, required: false
+  public get kmsKeyServiceAccount() {
+    return this.getStringAttribute('kms_key_service_account');
+  }
+
+  // raw_key - computed: true, optional: false, required: false
+  public get rawKey() {
+    return this.getStringAttribute('raw_key');
+  }
+
+  // rsa_encrypted_key - computed: true, optional: false, required: false
+  public get rsaEncryptedKey() {
+    return this.getStringAttribute('rsa_encrypted_key');
+  }
+
+  // sha256 - computed: true, optional: false, required: false
+  public get sha256() {
+    return this.getStringAttribute('sha256');
+  }
+}
+
+export class DataGoogleComputeRegionDiskSourceImageEncryptionKeyList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleComputeRegionDiskSourceImageEncryptionKeyOutputReference {
+    return new DataGoogleComputeRegionDiskSourceImageEncryptionKeyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleComputeRegionDiskSourceSnapshotEncryptionKey {
 }
 
@@ -364,7 +459,7 @@ export class DataGoogleComputeRegionDiskSourceSnapshotEncryptionKeyList extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_disk google_compute_region_disk}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_disk google_compute_region_disk}
 */
 export class DataGoogleComputeRegionDisk extends cdktn.TerraformDataSource {
 
@@ -380,7 +475,7 @@ export class DataGoogleComputeRegionDisk extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleComputeRegionDisk resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeRegionDisk to import
-  * @param importFromId The id of the existing DataGoogleComputeRegionDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_disk#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeRegionDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_disk#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeRegionDisk to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -392,7 +487,7 @@ export class DataGoogleComputeRegionDisk extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.31.0/docs/data-sources/compute_region_disk google_compute_region_disk} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/compute_region_disk google_compute_region_disk} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -403,7 +498,7 @@ export class DataGoogleComputeRegionDisk extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_compute_region_disk',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.31.0',
+        providerVersion: '7.32.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
@@ -492,6 +587,11 @@ export class DataGoogleComputeRegionDisk extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // image - computed: true, optional: false, required: false
+  public get image() {
+    return this.getStringAttribute('image');
   }
 
   // label_fingerprint - computed: true, optional: false, required: false
@@ -608,6 +708,17 @@ export class DataGoogleComputeRegionDisk extends cdktn.TerraformDataSource {
   // source_disk_id - computed: true, optional: false, required: false
   public get sourceDiskId() {
     return this.getStringAttribute('source_disk_id');
+  }
+
+  // source_image_encryption_key - computed: true, optional: false, required: false
+  private _sourceImageEncryptionKey = new DataGoogleComputeRegionDiskSourceImageEncryptionKeyList(this, "source_image_encryption_key", false);
+  public get sourceImageEncryptionKey() {
+    return this._sourceImageEncryptionKey;
+  }
+
+  // source_image_id - computed: true, optional: false, required: false
+  public get sourceImageId() {
+    return this.getStringAttribute('source_image_id');
   }
 
   // source_snapshot_encryption_key - computed: true, optional: false, required: false
