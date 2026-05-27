@@ -4,7 +4,7 @@
 
 ### IamAccessBoundaryPolicy <a name="IamAccessBoundaryPolicy" id="@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy google_iam_access_boundary_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy google_iam_access_boundary_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.putRules">PutRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -415,6 +416,12 @@ func PutTimeouts(value IamAccessBoundaryPolicyTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDisplayName` <a name="ResetDisplayName" id="@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.resetDisplayName"></a>
 
 ```go
@@ -536,7 +543,7 @@ The construct id used in the generated config for the IamAccessBoundaryPolicy to
 
 The id of the existing IamAccessBoundaryPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -569,12 +576,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.rules">Rules</a></code> | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyRulesList">IamAccessBoundaryPolicyRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeoutsOutputReference">IamAccessBoundaryPolicyTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.parentInput">ParentInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.rulesInput">RulesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -754,6 +763,16 @@ func Timeouts() IamAccessBoundaryPolicyTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.displayNameInput"></a>
 
 ```go
@@ -811,6 +830,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicy.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -892,6 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamaccessboundar
 	Name: *string,
 	Parent: *string,
 	Rules: interface{},
+	DeletionPolicy: *string,
 	DisplayName: *string,
 	Id: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeouts,
@@ -912,8 +942,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamaccessboundar
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyConfig.property.name">Name</a></code> | <code>*string</code> | The name of the policy. |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyConfig.property.parent">Parent</a></code> | <code>*string</code> | The attachment point is identified by its URL-encoded full resource name. |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyConfig.property.rules">Rules</a></code> | <code>interface{}</code> | rules block. |
+| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the rule. |
-| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#id IamAccessBoundaryPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#id IamAccessBoundaryPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeouts">IamAccessBoundaryPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -998,7 +1029,7 @@ Name *string
 
 The name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#name IamAccessBoundaryPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#name IamAccessBoundaryPolicy#name}
 
 ---
 
@@ -1012,7 +1043,7 @@ Parent *string
 
 The attachment point is identified by its URL-encoded full resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#parent IamAccessBoundaryPolicy#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#parent IamAccessBoundaryPolicy#parent}
 
 ---
 
@@ -1026,7 +1057,28 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#rules IamAccessBoundaryPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#rules IamAccessBoundaryPolicy#rules}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#deletion_policy IamAccessBoundaryPolicy#deletion_policy}
 
 ---
 
@@ -1040,7 +1092,7 @@ DisplayName *string
 
 The display name of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#display_name IamAccessBoundaryPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#display_name IamAccessBoundaryPolicy#display_name}
 
 ---
 
@@ -1052,7 +1104,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#id IamAccessBoundaryPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#id IamAccessBoundaryPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1069,7 +1121,7 @@ Timeouts IamAccessBoundaryPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#timeouts IamAccessBoundaryPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#timeouts IamAccessBoundaryPolicy#timeouts}
 
 ---
 
@@ -1105,7 +1157,7 @@ AccessBoundaryRule IamAccessBoundaryPolicyRulesAccessBoundaryRule
 
 access_boundary_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#access_boundary_rule IamAccessBoundaryPolicy#access_boundary_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#access_boundary_rule IamAccessBoundaryPolicy#access_boundary_rule}
 
 ---
 
@@ -1119,7 +1171,7 @@ Description *string
 
 The description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#description IamAccessBoundaryPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#description IamAccessBoundaryPolicy#description}
 
 ---
 
@@ -1157,7 +1209,7 @@ AvailabilityCondition IamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailability
 
 availability_condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#availability_condition IamAccessBoundaryPolicy#availability_condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#availability_condition IamAccessBoundaryPolicy#availability_condition}
 
 ---
 
@@ -1171,7 +1223,7 @@ AvailablePermissions *[]*string
 
 A list of permissions that may be allowed for use on the specified resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#available_permissions IamAccessBoundaryPolicy#available_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#available_permissions IamAccessBoundaryPolicy#available_permissions}
 
 ---
 
@@ -1185,7 +1237,7 @@ AvailableResource *string
 
 The full resource name of a Google Cloud resource entity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#available_resource IamAccessBoundaryPolicy#available_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#available_resource IamAccessBoundaryPolicy#available_resource}
 
 ---
 
@@ -1225,7 +1277,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#expression IamAccessBoundaryPolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#expression IamAccessBoundaryPolicy#expression}
 
 ---
 
@@ -1242,7 +1294,7 @@ Description of the expression.
 This is a longer text which describes the expression,
 e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#description IamAccessBoundaryPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#description IamAccessBoundaryPolicy#description}
 
 ---
 
@@ -1256,7 +1308,7 @@ Location *string
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#location IamAccessBoundaryPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#location IamAccessBoundaryPolicy#location}
 
 ---
 
@@ -1270,7 +1322,7 @@ Title *string
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#title IamAccessBoundaryPolicy#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#title IamAccessBoundaryPolicy#title}
 
 ---
 
@@ -1292,9 +1344,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/iamaccessboundar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#create IamAccessBoundaryPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#delete IamAccessBoundaryPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#update IamAccessBoundaryPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#create IamAccessBoundaryPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#delete IamAccessBoundaryPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.iamAccessBoundaryPolicy.IamAccessBoundaryPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#update IamAccessBoundaryPolicy#update}. |
 
 ---
 
@@ -1306,7 +1358,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#create IamAccessBoundaryPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#create IamAccessBoundaryPolicy#create}.
 
 ---
 
@@ -1318,7 +1370,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#delete IamAccessBoundaryPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#delete IamAccessBoundaryPolicy#delete}.
 
 ---
 
@@ -1330,7 +1382,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/iam_access_boundary_policy#update IamAccessBoundaryPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/iam_access_boundary_policy#update IamAccessBoundaryPolicy#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ApigeeEnvironmentKeyvaluemapsEntries <a name="ApigeeEnvironmentKeyvaluemapsEntries" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries google_apigee_environment_keyvaluemaps_entries}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries google_apigee_environment_keyvaluemaps_entries}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.Initializer"></a>
 
@@ -24,6 +24,7 @@ apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries(
   env_keyvaluemap_id: str,
   name: str,
   value: str,
+  deletion_policy: str = None,
   id: str = None,
   timeouts: ApigeeEnvironmentKeyvaluemapsEntriesTimeouts = None
 )
@@ -43,7 +44,8 @@ apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries(
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.Initializer.parameter.envKeyvaluemapId">env_keyvaluemap_id</a></code> | <code>str</code> | The Apigee environment keyvalumaps Id associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}/keyvaluemaps/{{keyvaluemap_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.Initializer.parameter.name">name</a></code> | <code>str</code> | Required. Resource URI that can be used to identify the scope of the key value map entries. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.Initializer.parameter.value">value</a></code> | <code>str</code> | Required. Data or payload that is being retrieved and associated with the unique key. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#id ApigeeEnvironmentKeyvaluemapsEntries#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#id ApigeeEnvironmentKeyvaluemapsEntries#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesTimeouts">ApigeeEnvironmentKeyvaluemapsEntriesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The Apigee environment keyvalumaps Id associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}/keyvaluemaps/{{keyvaluemap_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#env_keyvaluemap_id ApigeeEnvironmentKeyvaluemapsEntries#env_keyvaluemap_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#env_keyvaluemap_id ApigeeEnvironmentKeyvaluemapsEntries#env_keyvaluemap_id}
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Required. Resource URI that can be used to identify the scope of the key value map entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#name ApigeeEnvironmentKeyvaluemapsEntries#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#name ApigeeEnvironmentKeyvaluemapsEntries#name}
 
 ---
 
@@ -134,7 +136,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Required. Data or payload that is being retrieved and associated with the unique key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#value ApigeeEnvironmentKeyvaluemapsEntries#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#value ApigeeEnvironmentKeyvaluemapsEntries#value}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#deletion_policy ApigeeEnvironmentKeyvaluemapsEntries#deletion_policy}
 
 ---
 
@@ -142,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#id ApigeeEnvironmentKeyvaluemapsEntries#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#id ApigeeEnvironmentKeyvaluemapsEntries#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +174,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#timeouts ApigeeEnvironmentKeyvaluemapsEntries#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#timeouts ApigeeEnvironmentKeyvaluemapsEntries#timeouts}
 
 ---
 
@@ -188,6 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
@@ -554,7 +574,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#create ApigeeEnvironmentKeyvaluemapsEntries#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#create ApigeeEnvironmentKeyvaluemapsEntries#create}.
 
 ---
 
@@ -562,9 +582,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#delete ApigeeEnvironmentKeyvaluemapsEntries#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#delete ApigeeEnvironmentKeyvaluemapsEntries#delete}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.resetId"></a>
 
@@ -692,7 +718,7 @@ The construct id used in the generated config for the ApigeeEnvironmentKeyvaluem
 
 The id of the existing ApigeeEnvironmentKeyvaluemapsEntries that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -723,11 +749,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference">ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.envKeyvaluemapIdInput">env_keyvaluemap_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesTimeouts">ApigeeEnvironmentKeyvaluemapsEntriesTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.envKeyvaluemapId">env_keyvaluemap_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -887,6 +915,16 @@ timeouts: ApigeeEnvironmentKeyvaluemapsEntriesTimeoutsOutputReference
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `env_keyvaluemap_id_input`<sup>Optional</sup> <a name="env_keyvaluemap_id_input" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.envKeyvaluemapIdInput"></a>
 
 ```python
@@ -931,6 +969,16 @@ timeouts_input: IResolvable | ApigeeEnvironmentKeyvaluemapsEntriesTimeouts
 
 ```python
 value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntries.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1015,6 +1063,7 @@ apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesConfig(
   env_keyvaluemap_id: str,
   name: str,
   value: str,
+  deletion_policy: str = None,
   id: str = None,
   timeouts: ApigeeEnvironmentKeyvaluemapsEntriesTimeouts = None
 )
@@ -1034,7 +1083,8 @@ apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesConfig(
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesConfig.property.envKeyvaluemapId">env_keyvaluemap_id</a></code> | <code>str</code> | The Apigee environment keyvalumaps Id associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}/keyvaluemaps/{{keyvaluemap_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesConfig.property.name">name</a></code> | <code>str</code> | Required. Resource URI that can be used to identify the scope of the key value map entries. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesConfig.property.value">value</a></code> | <code>str</code> | Required. Data or payload that is being retrieved and associated with the unique key. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#id ApigeeEnvironmentKeyvaluemapsEntries#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#id ApigeeEnvironmentKeyvaluemapsEntries#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesTimeouts">ApigeeEnvironmentKeyvaluemapsEntriesTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1119,7 +1169,7 @@ env_keyvaluemap_id: str
 
 The Apigee environment keyvalumaps Id associated with the Apigee environment, in the format 'organizations/{{org_name}}/environments/{{env_name}}/keyvaluemaps/{{keyvaluemap_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#env_keyvaluemap_id ApigeeEnvironmentKeyvaluemapsEntries#env_keyvaluemap_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#env_keyvaluemap_id ApigeeEnvironmentKeyvaluemapsEntries#env_keyvaluemap_id}
 
 ---
 
@@ -1133,7 +1183,7 @@ name: str
 
 Required. Resource URI that can be used to identify the scope of the key value map entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#name ApigeeEnvironmentKeyvaluemapsEntries#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#name ApigeeEnvironmentKeyvaluemapsEntries#name}
 
 ---
 
@@ -1147,7 +1197,28 @@ value: str
 
 Required. Data or payload that is being retrieved and associated with the unique key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#value ApigeeEnvironmentKeyvaluemapsEntries#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#value ApigeeEnvironmentKeyvaluemapsEntries#value}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#deletion_policy ApigeeEnvironmentKeyvaluemapsEntries#deletion_policy}
 
 ---
 
@@ -1159,7 +1230,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#id ApigeeEnvironmentKeyvaluemapsEntries#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#id ApigeeEnvironmentKeyvaluemapsEntries#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1176,7 +1247,7 @@ timeouts: ApigeeEnvironmentKeyvaluemapsEntriesTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#timeouts ApigeeEnvironmentKeyvaluemapsEntries#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#timeouts ApigeeEnvironmentKeyvaluemapsEntries#timeouts}
 
 ---
 
@@ -1197,8 +1268,8 @@ apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesTimeout
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#create ApigeeEnvironmentKeyvaluemapsEntries#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#delete ApigeeEnvironmentKeyvaluemapsEntries#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#create ApigeeEnvironmentKeyvaluemapsEntries#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeEnvironmentKeyvaluemapsEntries.ApigeeEnvironmentKeyvaluemapsEntriesTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#delete ApigeeEnvironmentKeyvaluemapsEntries#delete}. |
 
 ---
 
@@ -1210,7 +1281,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#create ApigeeEnvironmentKeyvaluemapsEntries#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#create ApigeeEnvironmentKeyvaluemapsEntries#create}.
 
 ---
 
@@ -1222,7 +1293,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_environment_keyvaluemaps_entries#delete ApigeeEnvironmentKeyvaluemapsEntries#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_environment_keyvaluemaps_entries#delete ApigeeEnvironmentKeyvaluemapsEntries#delete}.
 
 ---
 

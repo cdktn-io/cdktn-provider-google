@@ -4,7 +4,7 @@
 
 ### NotebooksEnvironment <a name="NotebooksEnvironment" id="@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment google_notebooks_environment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment google_notebooks_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.putVmImage">PutVmImage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.resetContainerImage">ResetContainerImage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.resetId">ResetId</a></code> | *No description.* |
@@ -439,6 +440,12 @@ private void PutVmImage(NotebooksEnvironmentVmImage Value)
 private void ResetContainerImage()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.resetDescription"></a>
 
 ```csharp
@@ -584,7 +591,7 @@ The construct id used in the generated config for the NotebooksEnvironment to im
 
 The id of the existing NotebooksEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -619,6 +626,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeoutsOutputReference">NotebooksEnvironmentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.vmImage">VmImage</a></code> | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentVmImageOutputReference">NotebooksEnvironmentVmImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.containerImageInput">ContainerImageInput</a></code> | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImage">NotebooksEnvironmentContainerImage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -628,6 +636,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeouts">NotebooksEnvironmentTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.vmImageInput">VmImageInput</a></code> | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentVmImage">NotebooksEnvironmentVmImage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -830,6 +839,16 @@ public NotebooksEnvironmentContainerImage ContainerImageInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.descriptionInput"></a>
 
 ```csharp
@@ -917,6 +936,16 @@ public NotebooksEnvironmentVmImage VmImageInput { get; }
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentVmImage">NotebooksEnvironmentVmImage</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironment.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1028,6 +1057,7 @@ new NotebooksEnvironmentConfig {
     string Location,
     string Name,
     NotebooksEnvironmentContainerImage ContainerImage = null,
+    string DeletionPolicy = null,
     string Description = null,
     string DisplayName = null,
     string Id = null,
@@ -1052,11 +1082,12 @@ new NotebooksEnvironmentConfig {
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.location">Location</a></code> | <code>string</code> | A reference to the zone where the machine resides. |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.name">Name</a></code> | <code>string</code> | The name specified for the Environment instance. Format: projects/{project_id}/locations/{location}/environments/{environmentId}. |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.containerImage">ContainerImage</a></code> | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImage">NotebooksEnvironmentContainerImage</a></code> | container_image block. |
+| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.description">Description</a></code> | <code>string</code> | A brief description of this environment. |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Display name of this environment for the UI. |
-| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#id NotebooksEnvironment#id}. |
+| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#id NotebooksEnvironment#id}. |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.postStartupScript">PostStartupScript</a></code> | <code>string</code> | Path to a Bash script that automatically runs after a notebook instance fully boots up. |
-| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#project NotebooksEnvironment#project}. |
+| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#project NotebooksEnvironment#project}. |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeouts">NotebooksEnvironmentTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.vmImage">VmImage</a></code> | <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentVmImage">NotebooksEnvironmentVmImage</a></code> | vm_image block. |
 
@@ -1142,7 +1173,7 @@ public string Location { get; set; }
 
 A reference to the zone where the machine resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#location NotebooksEnvironment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#location NotebooksEnvironment#location}
 
 ---
 
@@ -1156,7 +1187,7 @@ public string Name { get; set; }
 
 The name specified for the Environment instance. Format: projects/{project_id}/locations/{location}/environments/{environmentId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#name NotebooksEnvironment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#name NotebooksEnvironment#name}
 
 ---
 
@@ -1170,7 +1201,28 @@ public NotebooksEnvironmentContainerImage ContainerImage { get; set; }
 
 container_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#container_image NotebooksEnvironment#container_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#container_image NotebooksEnvironment#container_image}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#deletion_policy NotebooksEnvironment#deletion_policy}
 
 ---
 
@@ -1184,7 +1236,7 @@ public string Description { get; set; }
 
 A brief description of this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#description NotebooksEnvironment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#description NotebooksEnvironment#description}
 
 ---
 
@@ -1198,7 +1250,7 @@ public string DisplayName { get; set; }
 
 Display name of this environment for the UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#display_name NotebooksEnvironment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#display_name NotebooksEnvironment#display_name}
 
 ---
 
@@ -1210,7 +1262,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#id NotebooksEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#id NotebooksEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1229,7 +1281,7 @@ Path to a Bash script that automatically runs after a notebook instance fully bo
 
 The path must be a URL or Cloud Storage path. Example: "gs://path-to-file/file-name"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#post_startup_script NotebooksEnvironment#post_startup_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#post_startup_script NotebooksEnvironment#post_startup_script}
 
 ---
 
@@ -1241,7 +1293,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#project NotebooksEnvironment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#project NotebooksEnvironment#project}.
 
 ---
 
@@ -1255,7 +1307,7 @@ public NotebooksEnvironmentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#timeouts NotebooksEnvironment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#timeouts NotebooksEnvironment#timeouts}
 
 ---
 
@@ -1269,7 +1321,7 @@ public NotebooksEnvironmentVmImage VmImage { get; set; }
 
 vm_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#vm_image NotebooksEnvironment#vm_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#vm_image NotebooksEnvironment#vm_image}
 
 ---
 
@@ -1305,7 +1357,7 @@ public string Repository { get; set; }
 
 The path to the container image repository. For example: gcr.io/{project_id}/{imageName}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#repository NotebooksEnvironment#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#repository NotebooksEnvironment#repository}
 
 ---
 
@@ -1319,7 +1371,7 @@ public string Tag { get; set; }
 
 The tag of the container image. If not specified, this defaults to the latest tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#tag NotebooksEnvironment#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#tag NotebooksEnvironment#tag}
 
 ---
 
@@ -1341,9 +1393,9 @@ new NotebooksEnvironmentTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#create NotebooksEnvironment#create}. |
-| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#delete NotebooksEnvironment#delete}. |
-| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#update NotebooksEnvironment#update}. |
+| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#create NotebooksEnvironment#create}. |
+| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#delete NotebooksEnvironment#delete}. |
+| <code><a href="#@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#update NotebooksEnvironment#update}. |
 
 ---
 
@@ -1355,7 +1407,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#create NotebooksEnvironment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#create NotebooksEnvironment#create}.
 
 ---
 
@@ -1367,7 +1419,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#delete NotebooksEnvironment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#delete NotebooksEnvironment#delete}.
 
 ---
 
@@ -1379,7 +1431,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#update NotebooksEnvironment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#update NotebooksEnvironment#update}.
 
 ---
 
@@ -1417,7 +1469,7 @@ public string Project { get; set; }
 
 The name of the Google Cloud project that this VM image belongs to. Format: projects/{project_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#project NotebooksEnvironment#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#project NotebooksEnvironment#project}
 
 ---
 
@@ -1431,7 +1483,7 @@ public string ImageFamily { get; set; }
 
 Use this VM image family to find the image; the newest image in this family will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#image_family NotebooksEnvironment#image_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#image_family NotebooksEnvironment#image_family}
 
 ---
 
@@ -1445,7 +1497,7 @@ public string ImageName { get; set; }
 
 Use VM image name to find the image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/notebooks_environment#image_name NotebooksEnvironment#image_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/notebooks_environment#image_name NotebooksEnvironment#image_name}
 
 ---
 

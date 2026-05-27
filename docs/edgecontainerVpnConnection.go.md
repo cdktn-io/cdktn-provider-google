@@ -4,7 +4,7 @@
 
 ### EdgecontainerVpnConnection <a name="EdgecontainerVpnConnection" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection google_edgecontainer_vpn_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection google_edgecontainer_vpn_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.putVpcProject">PutVpcProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.resetEnableHighAvailability">ResetEnableHighAvailability</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.resetLabels">ResetLabels</a></code> | *No description.* |
@@ -421,6 +422,12 @@ func PutVpcProject(value EdgecontainerVpnConnectionVpcProject)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetEnableHighAvailability` <a name="ResetEnableHighAvailability" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.resetEnableHighAvailability"></a>
 
 ```go
@@ -578,7 +585,7 @@ The construct id used in the generated config for the EdgecontainerVpnConnection
 
 The id of the existing EdgecontainerVpnConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,6 +623,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.vpcProject">VpcProject</a></code> | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionVpcProjectOutputReference">EdgecontainerVpnConnectionVpcProjectOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.clusterInput">ClusterInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.enableHighAvailabilityInput">EnableHighAvailabilityInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -628,6 +636,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.vpcInput">VpcInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.vpcProjectInput">VpcProjectInput</a></code> | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionVpcProject">EdgecontainerVpnConnectionVpcProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.cluster">Cluster</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.enableHighAvailability">EnableHighAvailability</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.labels">Labels</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -862,6 +871,16 @@ func ClusterInput() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `EnableHighAvailabilityInput`<sup>Optional</sup> <a name="EnableHighAvailabilityInput" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.enableHighAvailabilityInput"></a>
 
 ```go
@@ -976,6 +995,16 @@ func VpcProjectInput() EdgecontainerVpnConnectionVpcProject
 
 ```go
 func Cluster() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnection.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -1110,6 +1139,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpn
 	Cluster: *string,
 	Location: *string,
 	Name: *string,
+	DeletionPolicy: *string,
 	EnableHighAvailability: interface{},
 	Id: *string,
 	Labels: *map[string]*string,
@@ -1136,11 +1166,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpn
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.cluster">Cluster</a></code> | <code>*string</code> | The canonical Cluster name to connect to. It is in the form of projects/{project}/locations/{location}/clusters/{cluster}. |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.location">Location</a></code> | <code>*string</code> | Google Cloud Platform location. |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.name">Name</a></code> | <code>*string</code> | The resource name of VPN connection. |
+| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.enableHighAvailability">EnableHighAvailability</a></code> | <code>interface{}</code> | Whether this VPN connection has HA enabled on cluster side. |
-| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#id EdgecontainerVpnConnection#id}. |
+| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#id EdgecontainerVpnConnection#id}. |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels associated with this resource. |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.natGatewayIp">NatGatewayIp</a></code> | <code>*string</code> | NAT gateway IP, or WAN IP address. |
-| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#project EdgecontainerVpnConnection#project}. |
+| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#project EdgecontainerVpnConnection#project}. |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.router">Router</a></code> | <code>*string</code> | The VPN connection Cloud Router name. |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionTimeouts">EdgecontainerVpnConnectionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.vpc">Vpc</a></code> | <code>*string</code> | The network ID of VPC to connect to. |
@@ -1228,7 +1259,7 @@ Cluster *string
 
 The canonical Cluster name to connect to. It is in the form of projects/{project}/locations/{location}/clusters/{cluster}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#cluster EdgecontainerVpnConnection#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#cluster EdgecontainerVpnConnection#cluster}
 
 ---
 
@@ -1242,7 +1273,7 @@ Location *string
 
 Google Cloud Platform location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#location EdgecontainerVpnConnection#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#location EdgecontainerVpnConnection#location}
 
 ---
 
@@ -1256,7 +1287,28 @@ Name *string
 
 The resource name of VPN connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#name EdgecontainerVpnConnection#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#name EdgecontainerVpnConnection#name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#deletion_policy EdgecontainerVpnConnection#deletion_policy}
 
 ---
 
@@ -1272,7 +1324,7 @@ Whether this VPN connection has HA enabled on cluster side.
 
 If enabled, when creating VPN connection we will attempt to use 2 ANG floating IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#enable_high_availability EdgecontainerVpnConnection#enable_high_availability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#enable_high_availability EdgecontainerVpnConnection#enable_high_availability}
 
 ---
 
@@ -1284,7 +1336,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#id EdgecontainerVpnConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#id EdgecontainerVpnConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1304,7 +1356,7 @@ Labels associated with this resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#labels EdgecontainerVpnConnection#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#labels EdgecontainerVpnConnection#labels}
 
 ---
 
@@ -1321,7 +1373,7 @@ NAT gateway IP, or WAN IP address.
 If a customer has multiple NAT IPs, the customer needs to configure NAT such that only one external IP maps to the GMEC Anthos cluster.
 This is empty if NAT is not used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#nat_gateway_ip EdgecontainerVpnConnection#nat_gateway_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#nat_gateway_ip EdgecontainerVpnConnection#nat_gateway_ip}
 
 ---
 
@@ -1333,7 +1385,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#project EdgecontainerVpnConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#project EdgecontainerVpnConnection#project}.
 
 ---
 
@@ -1347,7 +1399,7 @@ Router *string
 
 The VPN connection Cloud Router name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#router EdgecontainerVpnConnection#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#router EdgecontainerVpnConnection#router}
 
 ---
 
@@ -1361,7 +1413,7 @@ Timeouts EdgecontainerVpnConnectionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#timeouts EdgecontainerVpnConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#timeouts EdgecontainerVpnConnection#timeouts}
 
 ---
 
@@ -1375,7 +1427,7 @@ Vpc *string
 
 The network ID of VPC to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#vpc EdgecontainerVpnConnection#vpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#vpc EdgecontainerVpnConnection#vpc}
 
 ---
 
@@ -1389,7 +1441,7 @@ VpcProject EdgecontainerVpnConnectionVpcProject
 
 vpc_project block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#vpc_project EdgecontainerVpnConnection#vpc_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#vpc_project EdgecontainerVpnConnection#vpc_project}
 
 ---
 
@@ -1450,9 +1502,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/edgecontainervpn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#create EdgecontainerVpnConnection#create}. |
-| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#delete EdgecontainerVpnConnection#delete}. |
-| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#update EdgecontainerVpnConnection#update}. |
+| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#create EdgecontainerVpnConnection#create}. |
+| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#delete EdgecontainerVpnConnection#delete}. |
+| <code><a href="#@cdktn/provider-google.edgecontainerVpnConnection.EdgecontainerVpnConnectionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#update EdgecontainerVpnConnection#update}. |
 
 ---
 
@@ -1464,7 +1516,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#create EdgecontainerVpnConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#create EdgecontainerVpnConnection#create}.
 
 ---
 
@@ -1476,7 +1528,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#delete EdgecontainerVpnConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#delete EdgecontainerVpnConnection#delete}.
 
 ---
 
@@ -1488,7 +1540,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#update EdgecontainerVpnConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#update EdgecontainerVpnConnection#update}.
 
 ---
 
@@ -1522,7 +1574,7 @@ ProjectId *string
 
 The project of the VPC to connect to. If not specified, it is the same as the cluster project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/edgecontainer_vpn_connection#project_id EdgecontainerVpnConnection#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/edgecontainer_vpn_connection#project_id EdgecontainerVpnConnection#project_id}
 
 ---
 

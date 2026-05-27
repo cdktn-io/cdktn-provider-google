@@ -4,7 +4,7 @@
 
 ### GkeHubMembershipBinding <a name="GkeHubMembershipBinding" id="@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding google_gke_hub_membership_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding google_gke_hub_membership_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.resetLabels">ResetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.resetProject">ResetProject</a></code> | *No description.* |
@@ -403,6 +404,12 @@ func PutTimeouts(value GkeHubMembershipBindingTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.resetId"></a>
 
 ```go
@@ -530,7 +537,7 @@ The construct id used in the generated config for the GkeHubMembershipBinding to
 
 The id of the existing GkeHubMembershipBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -569,6 +576,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingTimeoutsOutputReference">GkeHubMembershipBindingTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.uid">Uid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.labelsInput">LabelsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
@@ -577,6 +585,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.scopeInput">ScopeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.labels">Labels</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.location">Location</a></code> | <code>*string</code> | *No description.* |
@@ -819,6 +828,16 @@ func UpdateTime() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.idInput"></a>
 
 ```go
@@ -896,6 +915,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBinding.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1008,6 +1037,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubmembership
 	MembershipBindingId: *string,
 	MembershipId: *string,
 	Scope: *string,
+	DeletionPolicy: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
@@ -1030,9 +1060,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubmembership
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingConfig.property.membershipBindingId">MembershipBindingId</a></code> | <code>*string</code> | The client-provided identifier of the membership binding. |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingConfig.property.membershipId">MembershipId</a></code> | <code>*string</code> | Id of the membership. |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingConfig.property.scope">Scope</a></code> | <code>*string</code> | A Workspace resource name in the format 'projects/* /locations/* /scopes/*'. |
-| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#id GkeHubMembershipBinding#id}. |
+| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#id GkeHubMembershipBinding#id}. |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels for this Membership binding. |
-| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#project GkeHubMembershipBinding#project}. |
+| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#project GkeHubMembershipBinding#project}. |
 | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingTimeouts">GkeHubMembershipBindingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1117,7 +1148,7 @@ Location *string
 
 Location of the membership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#location GkeHubMembershipBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#location GkeHubMembershipBinding#location}
 
 ---
 
@@ -1131,7 +1162,7 @@ MembershipBindingId *string
 
 The client-provided identifier of the membership binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#membership_binding_id GkeHubMembershipBinding#membership_binding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#membership_binding_id GkeHubMembershipBinding#membership_binding_id}
 
 ---
 
@@ -1145,7 +1176,7 @@ MembershipId *string
 
 Id of the membership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#membership_id GkeHubMembershipBinding#membership_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#membership_id GkeHubMembershipBinding#membership_id}
 
 ---
 
@@ -1159,9 +1190,30 @@ Scope *string
 
 A Workspace resource name in the format 'projects/* /locations/* /scopes/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#scope GkeHubMembershipBinding#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#scope GkeHubMembershipBinding#scope}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#deletion_policy GkeHubMembershipBinding#deletion_policy}
 
 ---
 
@@ -1173,7 +1225,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#id GkeHubMembershipBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#id GkeHubMembershipBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1193,7 +1245,7 @@ Labels for this Membership binding.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#labels GkeHubMembershipBinding#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#labels GkeHubMembershipBinding#labels}
 
 ---
 
@@ -1205,7 +1257,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#project GkeHubMembershipBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#project GkeHubMembershipBinding#project}.
 
 ---
 
@@ -1219,7 +1271,7 @@ Timeouts GkeHubMembershipBindingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#timeouts GkeHubMembershipBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#timeouts GkeHubMembershipBinding#timeouts}
 
 ---
 
@@ -1254,9 +1306,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/gkehubmembership
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#create GkeHubMembershipBinding#create}. |
-| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#delete GkeHubMembershipBinding#delete}. |
-| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#update GkeHubMembershipBinding#update}. |
+| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#create GkeHubMembershipBinding#create}. |
+| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#delete GkeHubMembershipBinding#delete}. |
+| <code><a href="#@cdktn/provider-google.gkeHubMembershipBinding.GkeHubMembershipBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#update GkeHubMembershipBinding#update}. |
 
 ---
 
@@ -1268,7 +1320,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#create GkeHubMembershipBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#create GkeHubMembershipBinding#create}.
 
 ---
 
@@ -1280,7 +1332,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#delete GkeHubMembershipBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#delete GkeHubMembershipBinding#delete}.
 
 ---
 
@@ -1292,7 +1344,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/gke_hub_membership_binding#update GkeHubMembershipBinding#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/gke_hub_membership_binding#update GkeHubMembershipBinding#update}.
 
 ---
 

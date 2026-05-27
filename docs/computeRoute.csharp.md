@@ -4,7 +4,7 @@
 
 ### ComputeRoute <a name="ComputeRoute" id="@cdktn/provider-google.computeRoute.ComputeRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route google_compute_route}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route google_compute_route}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRoute.ComputeRoute.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.putParams">PutParams</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.resetNextHopGateway">ResetNextHopGateway</a></code> | *No description.* |
@@ -425,6 +426,12 @@ private void PutTimeouts(ComputeRouteTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computeRoute.ComputeRoute.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.computeRoute.ComputeRoute.resetDescription"></a>
 
 ```csharp
@@ -606,7 +613,7 @@ The construct id used in the generated config for the ComputeRoute to import.
 
 The id of the existing ComputeRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -650,6 +657,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.selfLink">SelfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteTimeoutsOutputReference">ComputeRouteTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.warnings">Warnings</a></code> | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteWarningsList">ComputeRouteWarningsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.destRangeInput">DestRangeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -666,6 +674,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.tagsInput">TagsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeRoute.ComputeRouteTimeouts">ComputeRouteTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.destRange">DestRange</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRoute.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -965,6 +974,16 @@ public ComputeRouteWarningsList Warnings { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computeRoute.ComputeRoute.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.computeRoute.ComputeRoute.property.descriptionInput"></a>
 
 ```csharp
@@ -1122,6 +1141,16 @@ public IResolvable|ComputeRouteTimeouts TimeoutsInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeRoute.ComputeRouteTimeouts">ComputeRouteTimeouts</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeRoute.ComputeRoute.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1316,6 +1345,7 @@ new ComputeRouteConfig {
     string DestRange,
     string Name,
     string Network,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     string NextHopGateway = null,
@@ -1346,8 +1376,9 @@ new ComputeRouteConfig {
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.destRange">DestRange</a></code> | <code>string</code> | The destination range of outgoing packets that this route applies to. Only IPv4 is supported. |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.name">Name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.network">Network</a></code> | <code>string</code> | The network that this route applies to. |
+| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.description">Description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#id ComputeRoute#id}. |
+| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#id ComputeRoute#id}. |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.nextHopGateway">NextHopGateway</a></code> | <code>string</code> | URL to a gateway that should handle matching packets. |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.nextHopIlb">NextHopIlb</a></code> | <code>string</code> | The IP address or URL to a forwarding rule of type loadBalancingScheme=INTERNAL that should handle matching packets. |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.nextHopInstance">NextHopInstance</a></code> | <code>string</code> | URL to an instance that should handle matching packets. |
@@ -1356,7 +1387,7 @@ new ComputeRouteConfig {
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.nextHopVpnTunnel">NextHopVpnTunnel</a></code> | <code>string</code> | URL to a VpnTunnel that should handle matching packets. |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteParams">ComputeRouteParams</a></code> | params block. |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.priority">Priority</a></code> | <code>double</code> | The priority of this route. |
-| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#project ComputeRoute#project}. |
+| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#project ComputeRoute#project}. |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.tags">Tags</a></code> | <code>string[]</code> | A list of instance tags to which this route applies. |
 | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteTimeouts">ComputeRouteTimeouts</a></code> | timeouts block. |
 
@@ -1442,7 +1473,7 @@ public string DestRange { get; set; }
 
 The destination range of outgoing packets that this route applies to. Only IPv4 is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#dest_range ComputeRoute#dest_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#dest_range ComputeRoute#dest_range}
 
 ---
 
@@ -1464,7 +1495,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#name ComputeRoute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#name ComputeRoute#name}
 
 ---
 
@@ -1478,7 +1509,28 @@ public string Network { get; set; }
 
 The network that this route applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#network ComputeRoute#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#network ComputeRoute#network}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeRoute.ComputeRouteConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#deletion_policy ComputeRoute#deletion_policy}
 
 ---
 
@@ -1492,7 +1544,7 @@ public string Description { get; set; }
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#description ComputeRoute#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#description ComputeRoute#description}
 
 ---
 
@@ -1504,7 +1556,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#id ComputeRoute#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#id ComputeRoute#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1529,7 +1581,7 @@ partial valid URL:
 * 'global/gateways/default-internet-gateway'
 * The string 'default-internet-gateway'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#next_hop_gateway ComputeRoute#next_hop_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#next_hop_gateway ComputeRoute#next_hop_gateway}
 
 ---
 
@@ -1557,7 +1609,7 @@ of a forwarding rule from the same VPC or any peered VPC.
 Note that this can only be used when the destinationRange is
 a public (non-RFC 1918) IP CIDR range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#next_hop_ilb ComputeRoute#next_hop_ilb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#next_hop_ilb ComputeRoute#next_hop_ilb}
 
 ---
 
@@ -1578,7 +1630,7 @@ You can specify this as a full or partial URL. For example:
 * 'zones/zone/instances/instance'
 * Just the instance name, with the zone in 'next_hop_instance_zone'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#next_hop_instance ComputeRoute#next_hop_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#next_hop_instance ComputeRoute#next_hop_instance}
 
 ---
 
@@ -1592,7 +1644,7 @@ public string NextHopInstanceZone { get; set; }
 
 The zone of the instance specified in next_hop_instance. Omit if next_hop_instance is specified as a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#next_hop_instance_zone ComputeRoute#next_hop_instance_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#next_hop_instance_zone ComputeRoute#next_hop_instance_zone}
 
 ---
 
@@ -1606,7 +1658,7 @@ public string NextHopIp { get; set; }
 
 Network IP address of an instance that should handle matching packets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#next_hop_ip ComputeRoute#next_hop_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#next_hop_ip ComputeRoute#next_hop_ip}
 
 ---
 
@@ -1620,7 +1672,7 @@ public string NextHopVpnTunnel { get; set; }
 
 URL to a VpnTunnel that should handle matching packets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#next_hop_vpn_tunnel ComputeRoute#next_hop_vpn_tunnel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#next_hop_vpn_tunnel ComputeRoute#next_hop_vpn_tunnel}
 
 ---
 
@@ -1634,7 +1686,7 @@ public ComputeRouteParams Params { get; set; }
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#params ComputeRoute#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#params ComputeRoute#params}
 
 ---
 
@@ -1656,7 +1708,7 @@ lowest-numbered priority value wins.
 
 Default value is 1000. Valid range is 0 through 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#priority ComputeRoute#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#priority ComputeRoute#priority}
 
 ---
 
@@ -1668,7 +1720,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#project ComputeRoute#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#project ComputeRoute#project}.
 
 ---
 
@@ -1682,7 +1734,7 @@ public string[] Tags { get; set; }
 
 A list of instance tags to which this route applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#tags ComputeRoute#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#tags ComputeRoute#tags}
 
 ---
 
@@ -1696,7 +1748,7 @@ public ComputeRouteTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#timeouts ComputeRoute#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#timeouts ComputeRoute#timeouts}
 
 ---
 
@@ -1737,7 +1789,7 @@ The field is immutable and causes resource replacement when mutated. This field 
 set at create time and modifying this field after creation will trigger recreation.
 To apply tags to an existing resource, see the google_tags_tag_binding resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#resource_manager_tags ComputeRoute#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#resource_manager_tags ComputeRoute#resource_manager_tags}
 
 ---
 
@@ -1758,8 +1810,8 @@ new ComputeRouteTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#create ComputeRoute#create}. |
-| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#delete ComputeRoute#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#create ComputeRoute#create}. |
+| <code><a href="#@cdktn/provider-google.computeRoute.ComputeRouteTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#delete ComputeRoute#delete}. |
 
 ---
 
@@ -1771,7 +1823,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#create ComputeRoute#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#create ComputeRoute#create}.
 
 ---
 
@@ -1783,7 +1835,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_route#delete ComputeRoute#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_route#delete ComputeRoute#delete}.
 
 ---
 

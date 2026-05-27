@@ -4,7 +4,7 @@
 
 ### CloudAssetProjectFeed <a name="CloudAssetProjectFeed" id="@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed google_cloud_asset_project_feed}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed google_cloud_asset_project_feed}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.Initializer"></a>
 
@@ -26,6 +26,7 @@ CloudAssetProjectFeed.Builder.create(Construct scope, java.lang.String id)
 //  .billingProject(java.lang.String)
 //  .condition(CloudAssetProjectFeedCondition)
 //  .contentType(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(CloudAssetProjectFeedTimeouts)
@@ -50,8 +51,9 @@ CloudAssetProjectFeed.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.Initializer.parameter.billingProject">billingProject</a></code> | <code>java.lang.String</code> | The project whose identity will be used when sending messages to the destination pubsub topic. |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedCondition">CloudAssetProjectFeedCondition</a></code> | condition block. |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.Initializer.parameter.contentType">contentType</a></code> | <code>java.lang.String</code> | Asset content type. |
-| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#id CloudAssetProjectFeed#id}. |
-| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#project CloudAssetProjectFeed#project}. |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#id CloudAssetProjectFeed#id}. |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#project CloudAssetProjectFeed#project}. |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeouts">CloudAssetProjectFeedTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 This is the client-assigned asset feed identifier and it needs to be unique under a specific parent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#feed_id CloudAssetProjectFeed#feed_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#feed_id CloudAssetProjectFeed#feed_id}
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 feed_output_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#feed_output_config CloudAssetProjectFeed#feed_output_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#feed_output_config CloudAssetProjectFeed#feed_output_config}
 
 ---
 
@@ -147,7 +149,7 @@ assetNames and assetTypes. Only asset updates matching specified assetNames and 
 exported to the feed. For example: //compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1.
 See https://cloud.google.com/apis/design/resourceNames#fullResourceName for more info.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#asset_names CloudAssetProjectFeed#asset_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#asset_names CloudAssetProjectFeed#asset_names}
 
 ---
 
@@ -163,7 +165,7 @@ the feed. For example: "compute.googleapis.com/Disk"
 See https://cloud.google.com/asset-inventory/docs/supported-asset-types for a list of all
 supported asset types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#asset_types CloudAssetProjectFeed#asset_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#asset_types CloudAssetProjectFeed#asset_types}
 
 ---
 
@@ -177,7 +179,7 @@ It also specifies the project for API
 enablement check, quota, and billing. If not specified, the resource's
 project will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#billing_project CloudAssetProjectFeed#billing_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#billing_project CloudAssetProjectFeed#billing_project}
 
 ---
 
@@ -187,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#condition CloudAssetProjectFeed#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#condition CloudAssetProjectFeed#condition}
 
 ---
 
@@ -199,7 +201,24 @@ Asset content type.
 
 If not specified, no content but the asset name and type will be returned. Possible values: ["CONTENT_TYPE_UNSPECIFIED", "RESOURCE", "IAM_POLICY", "ORG_POLICY", "OS_INVENTORY", "ACCESS_POLICY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#content_type CloudAssetProjectFeed#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#content_type CloudAssetProjectFeed#content_type}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#deletion_policy CloudAssetProjectFeed#deletion_policy}
 
 ---
 
@@ -207,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#id CloudAssetProjectFeed#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#id CloudAssetProjectFeed#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -218,7 +237,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#project CloudAssetProjectFeed#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#project CloudAssetProjectFeed#project}.
 
 ---
 
@@ -228,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#timeouts CloudAssetProjectFeed#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#timeouts CloudAssetProjectFeed#timeouts}
 
 ---
 
@@ -268,6 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.resetBillingProject">resetBillingProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.resetCondition">resetCondition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.resetContentType">resetContentType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -651,6 +671,12 @@ public void resetCondition()
 public void resetContentType()
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.resetId"></a>
 
 ```java
@@ -772,7 +798,7 @@ The construct id used in the generated config for the CloudAssetProjectFeed to i
 
 The id of the existing CloudAssetProjectFeed that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -811,6 +837,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.billingProjectInput">billingProjectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.conditionInput">conditionInput</a></code> | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedCondition">CloudAssetProjectFeedCondition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.contentTypeInput">contentTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.feedIdInput">feedIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.feedOutputConfigInput">feedOutputConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedFeedOutputConfig">CloudAssetProjectFeedFeedOutputConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -820,6 +847,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.assetTypes">assetTypes</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.billingProject">billingProject</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.contentType">contentType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.feedId">feedId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1058,6 +1086,16 @@ public java.lang.String getContentTypeInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `feedIdInput`<sup>Optional</sup> <a name="feedIdInput" id="@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.feedIdInput"></a>
 
 ```java
@@ -1142,6 +1180,16 @@ public java.lang.String getBillingProject();
 
 ```java
 public java.lang.String getContentType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeed.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1234,7 +1282,7 @@ public java.lang.String getExpression();
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#expression CloudAssetProjectFeed#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#expression CloudAssetProjectFeed#expression}
 
 ---
 
@@ -1251,7 +1299,7 @@ Description of the expression.
 This is a longer text which describes the expression,
 e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#description CloudAssetProjectFeed#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#description CloudAssetProjectFeed#description}
 
 ---
 
@@ -1265,7 +1313,7 @@ public java.lang.String getLocation();
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#location CloudAssetProjectFeed#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#location CloudAssetProjectFeed#location}
 
 ---
 
@@ -1279,7 +1327,7 @@ public java.lang.String getTitle();
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#title CloudAssetProjectFeed#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#title CloudAssetProjectFeed#title}
 
 ---
 
@@ -1305,6 +1353,7 @@ CloudAssetProjectFeedConfig.builder()
 //  .billingProject(java.lang.String)
 //  .condition(CloudAssetProjectFeedCondition)
 //  .contentType(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(CloudAssetProjectFeedTimeouts)
@@ -1329,8 +1378,9 @@ CloudAssetProjectFeedConfig.builder()
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig.property.billingProject">billingProject</a></code> | <code>java.lang.String</code> | The project whose identity will be used when sending messages to the destination pubsub topic. |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedCondition">CloudAssetProjectFeedCondition</a></code> | condition block. |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig.property.contentType">contentType</a></code> | <code>java.lang.String</code> | Asset content type. |
-| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#id CloudAssetProjectFeed#id}. |
-| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#project CloudAssetProjectFeed#project}. |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#id CloudAssetProjectFeed#id}. |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#project CloudAssetProjectFeed#project}. |
 | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeouts">CloudAssetProjectFeedTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1415,7 +1465,7 @@ public java.lang.String getFeedId();
 
 This is the client-assigned asset feed identifier and it needs to be unique under a specific parent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#feed_id CloudAssetProjectFeed#feed_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#feed_id CloudAssetProjectFeed#feed_id}
 
 ---
 
@@ -1429,7 +1479,7 @@ public CloudAssetProjectFeedFeedOutputConfig getFeedOutputConfig();
 
 feed_output_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#feed_output_config CloudAssetProjectFeed#feed_output_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#feed_output_config CloudAssetProjectFeed#feed_output_config}
 
 ---
 
@@ -1448,7 +1498,7 @@ assetNames and assetTypes. Only asset updates matching specified assetNames and 
 exported to the feed. For example: //compute.googleapis.com/projects/my_project_123/zones/zone1/instances/instance1.
 See https://cloud.google.com/apis/design/resourceNames#fullResourceName for more info.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#asset_names CloudAssetProjectFeed#asset_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#asset_names CloudAssetProjectFeed#asset_names}
 
 ---
 
@@ -1468,7 +1518,7 @@ the feed. For example: "compute.googleapis.com/Disk"
 See https://cloud.google.com/asset-inventory/docs/supported-asset-types for a list of all
 supported asset types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#asset_types CloudAssetProjectFeed#asset_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#asset_types CloudAssetProjectFeed#asset_types}
 
 ---
 
@@ -1486,7 +1536,7 @@ It also specifies the project for API
 enablement check, quota, and billing. If not specified, the resource's
 project will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#billing_project CloudAssetProjectFeed#billing_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#billing_project CloudAssetProjectFeed#billing_project}
 
 ---
 
@@ -1500,7 +1550,7 @@ public CloudAssetProjectFeedCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#condition CloudAssetProjectFeed#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#condition CloudAssetProjectFeed#condition}
 
 ---
 
@@ -1516,7 +1566,28 @@ Asset content type.
 
 If not specified, no content but the asset name and type will be returned. Possible values: ["CONTENT_TYPE_UNSPECIFIED", "RESOURCE", "IAM_POLICY", "ORG_POLICY", "OS_INVENTORY", "ACCESS_POLICY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#content_type CloudAssetProjectFeed#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#content_type CloudAssetProjectFeed#content_type}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#deletion_policy CloudAssetProjectFeed#deletion_policy}
 
 ---
 
@@ -1528,7 +1599,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#id CloudAssetProjectFeed#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#id CloudAssetProjectFeed#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1543,7 +1614,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#project CloudAssetProjectFeed#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#project CloudAssetProjectFeed#project}.
 
 ---
 
@@ -1557,7 +1628,7 @@ public CloudAssetProjectFeedTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#timeouts CloudAssetProjectFeed#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#timeouts CloudAssetProjectFeed#timeouts}
 
 ---
 
@@ -1591,7 +1662,7 @@ public CloudAssetProjectFeedFeedOutputConfigPubsubDestination getPubsubDestinati
 
 pubsub_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#pubsub_destination CloudAssetProjectFeed#pubsub_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#pubsub_destination CloudAssetProjectFeed#pubsub_destination}
 
 ---
 
@@ -1625,7 +1696,7 @@ public java.lang.String getTopic();
 
 Destination on Cloud Pubsub topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#topic CloudAssetProjectFeed#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#topic CloudAssetProjectFeed#topic}
 
 ---
 
@@ -1647,9 +1718,9 @@ CloudAssetProjectFeedTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#create CloudAssetProjectFeed#create}. |
-| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#delete CloudAssetProjectFeed#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#update CloudAssetProjectFeed#update}. |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#create CloudAssetProjectFeed#create}. |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#delete CloudAssetProjectFeed#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudAssetProjectFeed.CloudAssetProjectFeedTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#update CloudAssetProjectFeed#update}. |
 
 ---
 
@@ -1661,7 +1732,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#create CloudAssetProjectFeed#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#create CloudAssetProjectFeed#create}.
 
 ---
 
@@ -1673,7 +1744,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#delete CloudAssetProjectFeed#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#delete CloudAssetProjectFeed#delete}.
 
 ---
 
@@ -1685,7 +1756,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/cloud_asset_project_feed#update CloudAssetProjectFeed#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/cloud_asset_project_feed#update CloudAssetProjectFeed#update}.
 
 ---
 

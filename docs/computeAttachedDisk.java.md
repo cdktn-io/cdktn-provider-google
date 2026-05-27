@@ -4,7 +4,7 @@
 
 ### ComputeAttachedDisk <a name="ComputeAttachedDisk" id="@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk google_compute_attached_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk google_compute_attached_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer"></a>
 
@@ -21,6 +21,7 @@ ComputeAttachedDisk.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .disk(java.lang.String)
     .instance(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .deviceName(java.lang.String)
 //  .id(java.lang.String)
 //  .interface(java.lang.String)
@@ -44,8 +45,9 @@ ComputeAttachedDisk.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer.parameter.disk">disk</a></code> | <code>java.lang.String</code> | name or self_link of the disk that will be attached. |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer.parameter.instance">instance</a></code> | <code>java.lang.String</code> | name or self_link of the compute instance that the disk will be attached to. |
+| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer.parameter.deviceName">deviceName</a></code> | <code>java.lang.String</code> | Specifies a unique device name of your choice that is reflected into the /dev/disk/by-id/google-* tree of a Linux operating system running within the instance. |
-| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#id ComputeAttachedDisk#id}. |
+| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#id ComputeAttachedDisk#id}. |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer.parameter.interface">interface</a></code> | <code>java.lang.String</code> | The disk interface used for attaching this disk. |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer.parameter.mode">mode</a></code> | <code>java.lang.String</code> | The mode in which to attach this disk, either READ_WRITE or READ_ONLY. |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The project that the referenced compute instance is a part of. |
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 name or self_link of the disk that will be attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#disk ComputeAttachedDisk#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#disk ComputeAttachedDisk#disk}
 
 ---
 
@@ -132,7 +134,24 @@ name or self_link of the compute instance that the disk will be attached to.
 
 If the self_link is provided then zone and project are extracted from the self link. If only the name is used then zone and project must be defined as properties on the resource or provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#instance ComputeAttachedDisk#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#instance ComputeAttachedDisk#instance}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#deletion_policy ComputeAttachedDisk#deletion_policy}
 
 ---
 
@@ -144,7 +163,7 @@ Specifies a unique device name of your choice that is reflected into the /dev/di
 
 This name can be used to reference the device for mounting, resizing, and so on, from within the instance. If not specified, the server chooses a default device name to apply to this disk, in the form persistent-disks-x, where x is a number assigned by Google Compute Engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#device_name ComputeAttachedDisk#device_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#device_name ComputeAttachedDisk#device_name}
 
 ---
 
@@ -152,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#id ComputeAttachedDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#id ComputeAttachedDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +186,7 @@ The disk interface used for attaching this disk.
 
 One of SCSI or NVME. (This field is only used for specific cases, please don't specify this field without advice from Google.)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#interface ComputeAttachedDisk#interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#interface ComputeAttachedDisk#interface}
 
 ---
 
@@ -179,7 +198,7 @@ The mode in which to attach this disk, either READ_WRITE or READ_ONLY.
 
 If not specified, the default is to attach the disk in READ_WRITE mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#mode ComputeAttachedDisk#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#mode ComputeAttachedDisk#mode}
 
 ---
 
@@ -191,7 +210,7 @@ The project that the referenced compute instance is a part of.
 
 If instance is referenced by its self_link the project defined in the link will take precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#project ComputeAttachedDisk#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#project ComputeAttachedDisk#project}
 
 ---
 
@@ -201,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#timeouts ComputeAttachedDisk#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#timeouts ComputeAttachedDisk#timeouts}
 
 ---
 
@@ -213,7 +232,7 @@ The zone that the referenced compute instance is located within.
 
 If instance is referenced by its self_link the zone defined in the link will take precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#zone ComputeAttachedDisk#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#zone ComputeAttachedDisk#zone}
 
 ---
 
@@ -246,6 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.resetDeviceName">resetDeviceName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.resetInterface">resetInterface</a></code> | *No description.* |
@@ -579,6 +599,12 @@ public void putTimeouts(ComputeAttachedDiskTimeouts value)
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDeviceName` <a name="resetDeviceName" id="@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.resetDeviceName"></a>
 
 ```java
@@ -724,7 +750,7 @@ The construct id used in the generated config for the ComputeAttachedDisk to imp
 
 The id of the existing ComputeAttachedDisk that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,6 +781,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskTimeoutsOutputReference">ComputeAttachedDiskTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.deviceNameInput">deviceNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.diskInput">diskInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -764,6 +791,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskTimeouts">ComputeAttachedDiskTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.zoneInput">zoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.deviceName">deviceName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.disk">disk</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -927,6 +955,16 @@ public ComputeAttachedDiskTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `deviceNameInput`<sup>Optional</sup> <a name="deviceNameInput" id="@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.deviceNameInput"></a>
 
 ```java
@@ -1011,6 +1049,16 @@ public IResolvable|ComputeAttachedDiskTimeouts getTimeoutsInput();
 
 ```java
 public java.lang.String getZoneInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDisk.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1134,6 +1182,7 @@ ComputeAttachedDiskConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .disk(java.lang.String)
     .instance(java.lang.String)
+//  .deletionPolicy(java.lang.String)
 //  .deviceName(java.lang.String)
 //  .id(java.lang.String)
 //  .interface(java.lang.String)
@@ -1157,8 +1206,9 @@ ComputeAttachedDiskConfig.builder()
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskConfig.property.disk">disk</a></code> | <code>java.lang.String</code> | name or self_link of the disk that will be attached. |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskConfig.property.instance">instance</a></code> | <code>java.lang.String</code> | name or self_link of the compute instance that the disk will be attached to. |
+| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskConfig.property.deviceName">deviceName</a></code> | <code>java.lang.String</code> | Specifies a unique device name of your choice that is reflected into the /dev/disk/by-id/google-* tree of a Linux operating system running within the instance. |
-| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#id ComputeAttachedDisk#id}. |
+| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#id ComputeAttachedDisk#id}. |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskConfig.property.interface">interface</a></code> | <code>java.lang.String</code> | The disk interface used for attaching this disk. |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskConfig.property.mode">mode</a></code> | <code>java.lang.String</code> | The mode in which to attach this disk, either READ_WRITE or READ_ONLY. |
 | <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskConfig.property.project">project</a></code> | <code>java.lang.String</code> | The project that the referenced compute instance is a part of. |
@@ -1247,7 +1297,7 @@ public java.lang.String getDisk();
 
 name or self_link of the disk that will be attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#disk ComputeAttachedDisk#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#disk ComputeAttachedDisk#disk}
 
 ---
 
@@ -1263,7 +1313,28 @@ name or self_link of the compute instance that the disk will be attached to.
 
 If the self_link is provided then zone and project are extracted from the self link. If only the name is used then zone and project must be defined as properties on the resource or provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#instance ComputeAttachedDisk#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#instance ComputeAttachedDisk#instance}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#deletion_policy ComputeAttachedDisk#deletion_policy}
 
 ---
 
@@ -1279,7 +1350,7 @@ Specifies a unique device name of your choice that is reflected into the /dev/di
 
 This name can be used to reference the device for mounting, resizing, and so on, from within the instance. If not specified, the server chooses a default device name to apply to this disk, in the form persistent-disks-x, where x is a number assigned by Google Compute Engine.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#device_name ComputeAttachedDisk#device_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#device_name ComputeAttachedDisk#device_name}
 
 ---
 
@@ -1291,7 +1362,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#id ComputeAttachedDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#id ComputeAttachedDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1310,7 +1381,7 @@ The disk interface used for attaching this disk.
 
 One of SCSI or NVME. (This field is only used for specific cases, please don't specify this field without advice from Google.)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#interface ComputeAttachedDisk#interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#interface ComputeAttachedDisk#interface}
 
 ---
 
@@ -1326,7 +1397,7 @@ The mode in which to attach this disk, either READ_WRITE or READ_ONLY.
 
 If not specified, the default is to attach the disk in READ_WRITE mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#mode ComputeAttachedDisk#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#mode ComputeAttachedDisk#mode}
 
 ---
 
@@ -1342,7 +1413,7 @@ The project that the referenced compute instance is a part of.
 
 If instance is referenced by its self_link the project defined in the link will take precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#project ComputeAttachedDisk#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#project ComputeAttachedDisk#project}
 
 ---
 
@@ -1356,7 +1427,7 @@ public ComputeAttachedDiskTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#timeouts ComputeAttachedDisk#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#timeouts ComputeAttachedDisk#timeouts}
 
 ---
 
@@ -1372,7 +1443,7 @@ The zone that the referenced compute instance is located within.
 
 If instance is referenced by its self_link the zone defined in the link will take precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#zone ComputeAttachedDisk#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#zone ComputeAttachedDisk#zone}
 
 ---
 
@@ -1393,8 +1464,8 @@ ComputeAttachedDiskTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#create ComputeAttachedDisk#create}. |
-| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#delete ComputeAttachedDisk#delete}. |
+| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#create ComputeAttachedDisk#create}. |
+| <code><a href="#@cdktn/provider-google.computeAttachedDisk.ComputeAttachedDiskTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#delete ComputeAttachedDisk#delete}. |
 
 ---
 
@@ -1406,7 +1477,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#create ComputeAttachedDisk#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#create ComputeAttachedDisk#create}.
 
 ---
 
@@ -1418,7 +1489,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_attached_disk#delete ComputeAttachedDisk#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_attached_disk#delete ComputeAttachedDisk#delete}.
 
 ---
 

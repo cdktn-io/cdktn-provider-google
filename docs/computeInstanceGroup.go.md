@@ -4,7 +4,7 @@
 
 ### ComputeInstanceGroup <a name="ComputeInstanceGroup" id="@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group google_compute_instance_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group google_compute_instance_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.putNamedPort">PutNamedPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.resetInstances">ResetInstances</a></code> | *No description.* |
@@ -420,6 +421,12 @@ func PutTimeouts(value ComputeInstanceGroupTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.resetDescription"></a>
 
 ```go
@@ -571,7 +578,7 @@ The construct id used in the generated config for the ComputeInstanceGroup to im
 
 The id of the existing ComputeInstanceGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,6 +612,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.size">Size</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupTimeoutsOutputReference">ComputeInstanceGroupTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.instancesInput">InstancesInput</a></code> | <code>*[]*string</code> | *No description.* |
@@ -614,6 +622,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.zoneInput">ZoneInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.instances">Instances</a></code> | <code>*[]*string</code> | *No description.* |
@@ -806,6 +815,16 @@ func Timeouts() ComputeInstanceGroupTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.descriptionInput"></a>
 
 ```go
@@ -890,6 +909,16 @@ func TimeoutsInput() interface{}
 
 ```go
 func ZoneInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroup.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -1002,6 +1031,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstanceg
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	Instances: *[]*string,
@@ -1025,8 +1055,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstanceg
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig.property.name">Name</a></code> | <code>*string</code> | The name of the instance group. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig.property.description">Description</a></code> | <code>*string</code> | An optional textual description of the instance group. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#id ComputeInstanceGroup#id}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#id ComputeInstanceGroup#id}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig.property.instances">Instances</a></code> | <code>*[]*string</code> | The list of instances in the group, in self_link format. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig.property.namedPort">NamedPort</a></code> | <code>interface{}</code> | named_port block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig.property.network">Network</a></code> | <code>*string</code> | The URL of the network the instance group is in. |
@@ -1118,7 +1149,28 @@ The name of the instance group.
 
 Must be 1-63 characters long and comply with RFC1035. Supported characters include lowercase letters, numbers, and hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#name ComputeInstanceGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#name ComputeInstanceGroup#name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#deletion_policy ComputeInstanceGroup#deletion_policy}
 
 ---
 
@@ -1132,7 +1184,7 @@ Description *string
 
 An optional textual description of the instance group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#description ComputeInstanceGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#description ComputeInstanceGroup#description}
 
 ---
 
@@ -1144,7 +1196,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#id ComputeInstanceGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#id ComputeInstanceGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1163,7 +1215,7 @@ The list of instances in the group, in self_link format.
 
 When adding instances they must all be in the same network and zone as the instance group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#instances ComputeInstanceGroup#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#instances ComputeInstanceGroup#instances}
 
 ---
 
@@ -1177,7 +1229,7 @@ NamedPort interface{}
 
 named_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#named_port ComputeInstanceGroup#named_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#named_port ComputeInstanceGroup#named_port}
 
 ---
 
@@ -1193,7 +1245,7 @@ The URL of the network the instance group is in.
 
 If this is different from the network where the instances are in, the creation fails. Defaults to the network where the instances are in (if neither network nor instances is specified, this field will be blank).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#network ComputeInstanceGroup#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#network ComputeInstanceGroup#network}
 
 ---
 
@@ -1209,7 +1261,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#project ComputeInstanceGroup#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#project ComputeInstanceGroup#project}
 
 ---
 
@@ -1223,7 +1275,7 @@ Timeouts ComputeInstanceGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#timeouts ComputeInstanceGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#timeouts ComputeInstanceGroup#timeouts}
 
 ---
 
@@ -1237,7 +1289,7 @@ Zone *string
 
 The zone that this instance group should be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#zone ComputeInstanceGroup#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#zone ComputeInstanceGroup#zone}
 
 ---
 
@@ -1273,7 +1325,7 @@ Name *string
 
 The name which the port will be mapped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#name ComputeInstanceGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#name ComputeInstanceGroup#name}
 
 ---
 
@@ -1287,7 +1339,7 @@ Port *f64
 
 The port number to map the name to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#port ComputeInstanceGroup#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#port ComputeInstanceGroup#port}
 
 ---
 
@@ -1309,9 +1361,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/computeinstanceg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#create ComputeInstanceGroup#create}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#delete ComputeInstanceGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#update ComputeInstanceGroup#update}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#create ComputeInstanceGroup#create}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#delete ComputeInstanceGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroup.ComputeInstanceGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#update ComputeInstanceGroup#update}. |
 
 ---
 
@@ -1323,7 +1375,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#create ComputeInstanceGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#create ComputeInstanceGroup#create}.
 
 ---
 
@@ -1335,7 +1387,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#delete ComputeInstanceGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#delete ComputeInstanceGroup#delete}.
 
 ---
 
@@ -1347,7 +1399,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_instance_group#update ComputeInstanceGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_instance_group#update ComputeInstanceGroup#update}.
 
 ---
 

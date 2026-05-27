@@ -4,7 +4,7 @@
 
 ### ApihubHostProjectRegistration <a name="ApihubHostProjectRegistration" id="@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration google_apihub_host_project_registration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration google_apihub_host_project_registration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistration.Initializer"></a>
 
@@ -42,8 +42,8 @@ ApihubHostProjectRegistration.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistration.Initializer.parameter.gcpProject">gcpProject</a></code> | <code>java.lang.String</code> | Required. |
 | <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistration.Initializer.parameter.hostProjectRegistrationId">hostProjectRegistrationId</a></code> | <code>java.lang.String</code> | Required. |
 | <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistration.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Part of 'parent'. See documentation of 'projectsId'. |
-| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#id ApihubHostProjectRegistration#id}. |
-| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistration.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#project ApihubHostProjectRegistration#project}. |
+| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#id ApihubHostProjectRegistration#id}. |
+| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistration.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#project ApihubHostProjectRegistration#project}. |
 | <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistration.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationTimeouts">ApihubHostProjectRegistrationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,7 +118,7 @@ Immutable. Google cloud project name in the format: "projects/abc" or "projects/
 As input, project name with either project id or number are accepted.
 As output, this field will contain project number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#gcp_project ApihubHostProjectRegistration#gcp_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#gcp_project ApihubHostProjectRegistration#gcp_project}
 
 ---
 
@@ -133,7 +133,7 @@ final component of the host project registration's resource name. The ID
 must be the same as the Google cloud project specified in the
 host_project_registration.gcp_project field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#host_project_registration_id ApihubHostProjectRegistration#host_project_registration_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#host_project_registration_id ApihubHostProjectRegistration#host_project_registration_id}
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Part of 'parent'. See documentation of 'projectsId'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#location ApihubHostProjectRegistration#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#location ApihubHostProjectRegistration#location}
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#id ApihubHostProjectRegistration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#id ApihubHostProjectRegistration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -162,7 +162,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#project ApihubHostProjectRegistration#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#project ApihubHostProjectRegistration#project}.
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#timeouts ApihubHostProjectRegistration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#timeouts ApihubHostProjectRegistration#timeouts}
 
 ---
 
@@ -655,7 +655,7 @@ The construct id used in the generated config for the ApihubHostProjectRegistrat
 
 The id of the existing ApihubHostProjectRegistration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1042,8 +1042,8 @@ ApihubHostProjectRegistrationConfig.builder()
 | <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationConfig.property.gcpProject">gcpProject</a></code> | <code>java.lang.String</code> | Required. |
 | <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationConfig.property.hostProjectRegistrationId">hostProjectRegistrationId</a></code> | <code>java.lang.String</code> | Required. |
 | <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationConfig.property.location">location</a></code> | <code>java.lang.String</code> | Part of 'parent'. See documentation of 'projectsId'. |
-| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#id ApihubHostProjectRegistration#id}. |
-| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#project ApihubHostProjectRegistration#project}. |
+| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#id ApihubHostProjectRegistration#id}. |
+| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#project ApihubHostProjectRegistration#project}. |
 | <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationTimeouts">ApihubHostProjectRegistrationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1132,7 +1132,7 @@ Immutable. Google cloud project name in the format: "projects/abc" or "projects/
 As input, project name with either project id or number are accepted.
 As output, this field will contain project number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#gcp_project ApihubHostProjectRegistration#gcp_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#gcp_project ApihubHostProjectRegistration#gcp_project}
 
 ---
 
@@ -1151,7 +1151,7 @@ final component of the host project registration's resource name. The ID
 must be the same as the Google cloud project specified in the
 host_project_registration.gcp_project field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#host_project_registration_id ApihubHostProjectRegistration#host_project_registration_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#host_project_registration_id ApihubHostProjectRegistration#host_project_registration_id}
 
 ---
 
@@ -1165,7 +1165,7 @@ public java.lang.String getLocation();
 
 Part of 'parent'. See documentation of 'projectsId'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#location ApihubHostProjectRegistration#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#location ApihubHostProjectRegistration#location}
 
 ---
 
@@ -1177,7 +1177,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#id ApihubHostProjectRegistration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#id ApihubHostProjectRegistration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1192,7 +1192,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#project ApihubHostProjectRegistration#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#project ApihubHostProjectRegistration#project}.
 
 ---
 
@@ -1206,7 +1206,7 @@ public ApihubHostProjectRegistrationTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#timeouts ApihubHostProjectRegistration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#timeouts ApihubHostProjectRegistration#timeouts}
 
 ---
 
@@ -1227,8 +1227,8 @@ ApihubHostProjectRegistrationTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#create ApihubHostProjectRegistration#create}. |
-| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#delete ApihubHostProjectRegistration#delete}. |
+| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#create ApihubHostProjectRegistration#create}. |
+| <code><a href="#@cdktn/provider-google.apihubHostProjectRegistration.ApihubHostProjectRegistrationTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#delete ApihubHostProjectRegistration#delete}. |
 
 ---
 
@@ -1240,7 +1240,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#create ApihubHostProjectRegistration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#create ApihubHostProjectRegistration#create}.
 
 ---
 
@@ -1252,7 +1252,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apihub_host_project_registration#delete ApihubHostProjectRegistration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apihub_host_project_registration#delete ApihubHostProjectRegistration#delete}.
 
 ---
 

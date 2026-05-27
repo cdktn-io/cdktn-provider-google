@@ -4,7 +4,7 @@
 
 ### EventarcEnrollment <a name="EventarcEnrollment" id="@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment google_eventarc_enrollment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment google_eventarc_enrollment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.resetAnnotations">ResetAnnotations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.resetLabels">ResetLabels</a></code> | *No description.* |
@@ -411,6 +412,12 @@ private void PutTimeouts(EventarcEnrollmentTimeouts Value)
 private void ResetAnnotations()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDisplayName` <a name="ResetDisplayName" id="@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.resetDisplayName"></a>
 
 ```csharp
@@ -544,7 +551,7 @@ The construct id used in the generated config for the EventarcEnrollment to impo
 
 The id of the existing EventarcEnrollment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -585,6 +592,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.annotationsInput">AnnotationsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.celMatchInput">CelMatchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.destinationInput">DestinationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.displayNameInput">DisplayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.enrollmentIdInput">EnrollmentIdInput</a></code> | <code>string</code> | *No description.* |
@@ -596,6 +604,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentTimeouts">EventarcEnrollmentTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.annotations">Annotations</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.celMatch">CelMatch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.destination">Destination</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.enrollmentId">EnrollmentId</a></code> | <code>string</code> | *No description.* |
@@ -859,6 +868,16 @@ public string CelMatchInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DestinationInput`<sup>Optional</sup> <a name="DestinationInput" id="@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.destinationInput"></a>
 
 ```csharp
@@ -963,6 +982,16 @@ public System.Collections.Generic.IDictionary<string, string> Annotations { get;
 
 ```csharp
 public string CelMatch { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.eventarcEnrollment.EventarcEnrollment.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
 ```
 
 - *Type:* string
@@ -1090,6 +1119,7 @@ new EventarcEnrollmentConfig {
     string Location,
     string MessageBus,
     System.Collections.Generic.IDictionary<string, string> Annotations = null,
+    string DeletionPolicy = null,
     string DisplayName = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
@@ -1115,10 +1145,11 @@ new EventarcEnrollmentConfig {
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.location">Location</a></code> | <code>string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.messageBus">MessageBus</a></code> | <code>string</code> | Resource name of the message bus identifying the source of the messages. It matches the form projects/{project}/locations/{location}/messageBuses/{messageBus}. |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.annotations">Annotations</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Resource annotations. |
+| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.displayName">DisplayName</a></code> | <code>string</code> | Resource display name. |
-| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#id EventarcEnrollment#id}. |
+| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#id EventarcEnrollment#id}. |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Resource labels. |
-| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#project EventarcEnrollment#project}. |
+| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#project EventarcEnrollment#project}. |
 | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentTimeouts">EventarcEnrollmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1203,7 +1234,7 @@ public string CelMatch { get; set; }
 
 A CEL expression identifying which messages this enrollment applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#cel_match EventarcEnrollment#cel_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#cel_match EventarcEnrollment#cel_match}
 
 ---
 
@@ -1221,7 +1252,7 @@ It must
 point to the full resource name of a Pipeline. Format:
 "projects/{PROJECT_ID}/locations/{region}/pipelines/{PIPELINE_ID)"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#destination EventarcEnrollment#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#destination EventarcEnrollment#destination}
 
 ---
 
@@ -1235,7 +1266,7 @@ public string EnrollmentId { get; set; }
 
 The user-provided ID to be assigned to the Enrollment. It should match the format '^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#enrollment_id EventarcEnrollment#enrollment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#enrollment_id EventarcEnrollment#enrollment_id}
 
 ---
 
@@ -1249,7 +1280,7 @@ public string Location { get; set; }
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#location EventarcEnrollment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#location EventarcEnrollment#location}
 
 ---
 
@@ -1263,7 +1294,7 @@ public string MessageBus { get; set; }
 
 Resource name of the message bus identifying the source of the messages. It matches the form projects/{project}/locations/{location}/messageBuses/{messageBus}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#message_bus EventarcEnrollment#message_bus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#message_bus EventarcEnrollment#message_bus}
 
 ---
 
@@ -1280,7 +1311,28 @@ Resource annotations.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#annotations EventarcEnrollment#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#annotations EventarcEnrollment#annotations}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#deletion_policy EventarcEnrollment#deletion_policy}
 
 ---
 
@@ -1294,7 +1346,7 @@ public string DisplayName { get; set; }
 
 Resource display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#display_name EventarcEnrollment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#display_name EventarcEnrollment#display_name}
 
 ---
 
@@ -1306,7 +1358,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#id EventarcEnrollment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#id EventarcEnrollment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1326,7 +1378,7 @@ Resource labels.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#labels EventarcEnrollment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#labels EventarcEnrollment#labels}
 
 ---
 
@@ -1338,7 +1390,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#project EventarcEnrollment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#project EventarcEnrollment#project}.
 
 ---
 
@@ -1352,7 +1404,7 @@ public EventarcEnrollmentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#timeouts EventarcEnrollment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#timeouts EventarcEnrollment#timeouts}
 
 ---
 
@@ -1374,9 +1426,9 @@ new EventarcEnrollmentTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#create EventarcEnrollment#create}. |
-| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#delete EventarcEnrollment#delete}. |
-| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#update EventarcEnrollment#update}. |
+| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#create EventarcEnrollment#create}. |
+| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#delete EventarcEnrollment#delete}. |
+| <code><a href="#@cdktn/provider-google.eventarcEnrollment.EventarcEnrollmentTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#update EventarcEnrollment#update}. |
 
 ---
 
@@ -1388,7 +1440,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#create EventarcEnrollment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#create EventarcEnrollment#create}.
 
 ---
 
@@ -1400,7 +1452,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#delete EventarcEnrollment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#delete EventarcEnrollment#delete}.
 
 ---
 
@@ -1412,7 +1464,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/eventarc_enrollment#update EventarcEnrollment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/eventarc_enrollment#update EventarcEnrollment#update}.
 
 ---
 

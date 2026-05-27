@@ -4,7 +4,7 @@
 
 ### ComputeRegionAutoscaler <a name="ComputeRegionAutoscaler" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler google_compute_region_autoscaler}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler google_compute_region_autoscaler}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.putAutoscalingPolicy">PutAutoscalingPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.resetProject">ResetProject</a></code> | *No description.* |
@@ -417,6 +418,12 @@ private void PutTimeouts(ComputeRegionAutoscalerTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.resetDescription"></a>
 
 ```csharp
@@ -550,7 +557,7 @@ The construct id used in the generated config for the ComputeRegionAutoscaler to
 
 The id of the existing ComputeRegionAutoscaler that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -585,6 +592,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.selfLink">SelfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerTimeoutsOutputReference">ComputeRegionAutoscalerTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.autoscalingPolicyInput">AutoscalingPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicy">ComputeRegionAutoscalerAutoscalingPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
@@ -592,6 +600,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.targetInput">TargetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerTimeouts">ComputeRegionAutoscalerTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.name">Name</a></code> | <code>string</code> | *No description.* |
@@ -793,6 +802,16 @@ public ComputeRegionAutoscalerAutoscalingPolicy AutoscalingPolicyInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.descriptionInput"></a>
 
 ```csharp
@@ -860,6 +879,16 @@ public IResolvable|ComputeRegionAutoscalerTimeouts TimeoutsInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerTimeouts">ComputeRegionAutoscalerTimeouts</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscaler.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -959,7 +988,8 @@ new ComputeRegionAutoscalerAutoscalingPolicy {
     IResolvable|ComputeRegionAutoscalerAutoscalingPolicyMetric[] Metric = null,
     string Mode = null,
     ComputeRegionAutoscalerAutoscalingPolicyScaleInControl ScaleInControl = null,
-    IResolvable|ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules[] ScalingSchedules = null
+    IResolvable|ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules[] ScalingSchedules = null,
+    double StabilizationPeriod = null
 };
 ```
 
@@ -976,6 +1006,7 @@ new ComputeRegionAutoscalerAutoscalingPolicy {
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicy.property.mode">Mode</a></code> | <code>string</code> | Defines operating mode for this policy. |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicy.property.scaleInControl">ScaleInControl</a></code> | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScaleInControl">ComputeRegionAutoscalerAutoscalingPolicyScaleInControl</a></code> | scale_in_control block. |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicy.property.scalingSchedules">ScalingSchedules</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules">ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules</a>[]</code> | scaling_schedules block. |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicy.property.stabilizationPeriod">StabilizationPeriod</a></code> | <code>double</code> | The number of seconds that the autoscaler waits for load stabilization before making scale-in decisions. |
 
 ---
 
@@ -993,7 +1024,7 @@ This is required when creating or updating an autoscaler. The
 maximum number of replicas should not be lower than minimal number
 of replicas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#max_replicas ComputeRegionAutoscaler#max_replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#max_replicas ComputeRegionAutoscaler#max_replicas}
 
 ---
 
@@ -1011,7 +1042,7 @@ This cannot be less than 0. If not provided, autoscaler will
 choose a default value depending on maximum number of instances
 allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#min_replicas ComputeRegionAutoscaler#min_replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#min_replicas ComputeRegionAutoscaler#min_replicas}
 
 ---
 
@@ -1035,7 +1066,7 @@ numerous factors. We recommend that you test how long an
 instance may take to initialize. To do this, create an instance
 and time the startup process.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#cooldown_period ComputeRegionAutoscaler#cooldown_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#cooldown_period ComputeRegionAutoscaler#cooldown_period}
 
 ---
 
@@ -1049,7 +1080,7 @@ public ComputeRegionAutoscalerAutoscalingPolicyCpuUtilization CpuUtilization { g
 
 cpu_utilization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#cpu_utilization ComputeRegionAutoscaler#cpu_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#cpu_utilization ComputeRegionAutoscaler#cpu_utilization}
 
 ---
 
@@ -1063,7 +1094,7 @@ public ComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilization LoadBala
 
 load_balancing_utilization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#load_balancing_utilization ComputeRegionAutoscaler#load_balancing_utilization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#load_balancing_utilization ComputeRegionAutoscaler#load_balancing_utilization}
 
 ---
 
@@ -1077,7 +1108,7 @@ public IResolvable|ComputeRegionAutoscalerAutoscalingPolicyMetric[] Metric { get
 
 metric block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#metric ComputeRegionAutoscaler#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#metric ComputeRegionAutoscaler#metric}
 
 ---
 
@@ -1091,7 +1122,7 @@ public string Mode { get; set; }
 
 Defines operating mode for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#mode ComputeRegionAutoscaler#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#mode ComputeRegionAutoscaler#mode}
 
 ---
 
@@ -1105,7 +1136,7 @@ public ComputeRegionAutoscalerAutoscalingPolicyScaleInControl ScaleInControl { g
 
 scale_in_control block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#scale_in_control ComputeRegionAutoscaler#scale_in_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#scale_in_control ComputeRegionAutoscaler#scale_in_control}
 
 ---
 
@@ -1119,7 +1150,25 @@ public IResolvable|ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules[] Sc
 
 scaling_schedules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#scaling_schedules ComputeRegionAutoscaler#scaling_schedules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#scaling_schedules ComputeRegionAutoscaler#scaling_schedules}
+
+---
+
+##### `StabilizationPeriod`<sup>Optional</sup> <a name="StabilizationPeriod" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicy.property.stabilizationPeriod"></a>
+
+```csharp
+public double StabilizationPeriod { get; set; }
+```
+
+- *Type:* double
+
+The number of seconds that the autoscaler waits for load stabilization before making scale-in decisions.
+
+This might appear as a delay in scaling in but it is an important mechanism
+for your application to not have fluctuating size due to short term load
+fluctuations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#stabilization_period ComputeRegionAutoscaler#stabilization_period}
 
 ---
 
@@ -1168,7 +1217,7 @@ scales up until it reaches the maximum number of instances you
 specified or until the average utilization reaches the target
 utilization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#target ComputeRegionAutoscaler#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#target ComputeRegionAutoscaler#target}
 
 ---
 
@@ -1185,7 +1234,7 @@ Indicates whether predictive autoscaling based on CPU metric is enabled. Valid v
 * NONE (default). No predictive method is used. The autoscaler scales the group to meet current demand based on real-time metrics.
 * OPTIMIZE_AVAILABILITY. Predictive autoscaling improves availability by monitoring daily and weekly load patterns and scaling out ahead of anticipated demand.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#predictive_method ComputeRegionAutoscaler#predictive_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#predictive_method ComputeRegionAutoscaler#predictive_method}
 
 ---
 
@@ -1222,7 +1271,7 @@ Fraction of backend capacity utilization (set in HTTP(s) load balancing configur
 Must
 be a positive float value. If not defined, the default is 0.8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#target ComputeRegionAutoscaler#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#target ComputeRegionAutoscaler#target}
 
 ---
 
@@ -1266,7 +1315,7 @@ The identifier (type) of the Stackdriver Monitoring metric. The metric cannot ha
 
 The metric must have a value type of INT64 or DOUBLE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#name ComputeRegionAutoscaler#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#name ComputeRegionAutoscaler#name}
 
 ---
 
@@ -1307,7 +1356,7 @@ one TimeSeries for the autoscaled group or for each of the instances
 TimeSeries are returned upon the query execution, the autoscaler
 will sum their respective values to obtain its scaling value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#filter ComputeRegionAutoscaler#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#filter ComputeRegionAutoscaler#filter}
 
 ---
 
@@ -1335,7 +1384,7 @@ latency, since this value can't include a chunk assignable to a
 single instance, it could be better used with utilization_target
 instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#single_instance_assignment ComputeRegionAutoscaler#single_instance_assignment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#single_instance_assignment ComputeRegionAutoscaler#single_instance_assignment}
 
 ---
 
@@ -1358,7 +1407,7 @@ www.googleapis.com/compute/instance/network/received_bytes_count.
 The autoscaler will work to keep this value constant for each
 of the instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#target ComputeRegionAutoscaler#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#target ComputeRegionAutoscaler#target}
 
 ---
 
@@ -1372,7 +1421,7 @@ public string Type { get; set; }
 
 Defines how target utilization value is expressed for a Stackdriver Monitoring metric. Possible values: ["GAUGE", "DELTA_PER_SECOND", "DELTA_PER_MINUTE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#type ComputeRegionAutoscaler#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#type ComputeRegionAutoscaler#type}
 
 ---
 
@@ -1408,7 +1457,7 @@ public ComputeRegionAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas
 
 max_scaled_in_replicas block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#max_scaled_in_replicas ComputeRegionAutoscaler#max_scaled_in_replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#max_scaled_in_replicas ComputeRegionAutoscaler#max_scaled_in_replicas}
 
 ---
 
@@ -1422,7 +1471,7 @@ public double TimeWindowSec { get; set; }
 
 How long back autoscaling should look when computing recommendations to include directives regarding slower scale down, as described above.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#time_window_sec ComputeRegionAutoscaler#time_window_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#time_window_sec ComputeRegionAutoscaler#time_window_sec}
 
 ---
 
@@ -1458,7 +1507,7 @@ public double Fixed { get; set; }
 
 Specifies a fixed number of VM instances. This must be a positive integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#fixed ComputeRegionAutoscaler#fixed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#fixed ComputeRegionAutoscaler#fixed}
 
 ---
 
@@ -1472,7 +1521,7 @@ public double Percent { get; set; }
 
 Specifies a percentage of instances between 0 to 100%, inclusive. For example, specify 80 for 80%.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#percent ComputeRegionAutoscaler#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#percent ComputeRegionAutoscaler#percent}
 
 ---
 
@@ -1500,7 +1549,7 @@ new ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules {
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules.property.durationSec">DurationSec</a></code> | <code>double</code> | The duration of time intervals (in seconds) for which this scaling schedule will be running. |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules.property.minRequiredReplicas">MinRequiredReplicas</a></code> | <code>double</code> | Minimum number of VM instances that autoscaler will recommend in time intervals starting according to schedule. |
-| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#name ComputeRegionAutoscaler#name}. |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#name ComputeRegionAutoscaler#name}. |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules.property.schedule">Schedule</a></code> | <code>string</code> | The start timestamps of time intervals when this scaling schedule should provide a scaling signal. |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules.property.description">Description</a></code> | <code>string</code> | A description of a scaling schedule. |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules.property.disabled">Disabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | A boolean value that specifies if a scaling schedule can influence autoscaler recommendations. |
@@ -1520,7 +1569,7 @@ The duration of time intervals (in seconds) for which this scaling schedule will
 
 The minimum allowed value is 300.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#duration_sec ComputeRegionAutoscaler#duration_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#duration_sec ComputeRegionAutoscaler#duration_sec}
 
 ---
 
@@ -1534,7 +1583,7 @@ public double MinRequiredReplicas { get; set; }
 
 Minimum number of VM instances that autoscaler will recommend in time intervals starting according to schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#min_required_replicas ComputeRegionAutoscaler#min_required_replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#min_required_replicas ComputeRegionAutoscaler#min_required_replicas}
 
 ---
 
@@ -1546,7 +1595,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#name ComputeRegionAutoscaler#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#name ComputeRegionAutoscaler#name}.
 
 ---
 
@@ -1562,7 +1611,7 @@ The start timestamps of time intervals when this scaling schedule should provide
 
 This field uses the extended cron format (with an optional year field).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#schedule ComputeRegionAutoscaler#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#schedule ComputeRegionAutoscaler#schedule}
 
 ---
 
@@ -1576,7 +1625,7 @@ public string Description { get; set; }
 
 A description of a scaling schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#description ComputeRegionAutoscaler#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#description ComputeRegionAutoscaler#description}
 
 ---
 
@@ -1592,7 +1641,7 @@ A boolean value that specifies if a scaling schedule can influence autoscaler re
 
 If set to true, then a scaling schedule has no effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#disabled ComputeRegionAutoscaler#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#disabled ComputeRegionAutoscaler#disabled}
 
 ---
 
@@ -1608,7 +1657,7 @@ The time zone to be used when interpreting the schedule.
 
 The value of this field must be a time zone name from the tz database: http://en.wikipedia.org/wiki/Tz_database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#time_zone ComputeRegionAutoscaler#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#time_zone ComputeRegionAutoscaler#time_zone}
 
 ---
 
@@ -1630,6 +1679,7 @@ new ComputeRegionAutoscalerConfig {
     ComputeRegionAutoscalerAutoscalingPolicy AutoscalingPolicy,
     string Name,
     string Target,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     string Project = null,
@@ -1652,9 +1702,10 @@ new ComputeRegionAutoscalerConfig {
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.autoscalingPolicy">AutoscalingPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicy">ComputeRegionAutoscalerAutoscalingPolicy</a></code> | autoscaling_policy block. |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.name">Name</a></code> | <code>string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.target">Target</a></code> | <code>string</code> | URL of the managed instance group that this autoscaler will scale. |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.description">Description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#id ComputeRegionAutoscaler#id}. |
-| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#project ComputeRegionAutoscaler#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#id ComputeRegionAutoscaler#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#project ComputeRegionAutoscaler#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.region">Region</a></code> | <code>string</code> | URL of the region where the instance group resides. |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerTimeouts">ComputeRegionAutoscalerTimeouts</a></code> | timeouts block. |
 
@@ -1740,7 +1791,7 @@ public ComputeRegionAutoscalerAutoscalingPolicy AutoscalingPolicy { get; set; }
 
 autoscaling_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#autoscaling_policy ComputeRegionAutoscaler#autoscaling_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#autoscaling_policy ComputeRegionAutoscaler#autoscaling_policy}
 
 ---
 
@@ -1760,7 +1811,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#name ComputeRegionAutoscaler#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#name ComputeRegionAutoscaler#name}
 
 ---
 
@@ -1774,7 +1825,28 @@ public string Target { get; set; }
 
 URL of the managed instance group that this autoscaler will scale.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#target ComputeRegionAutoscaler#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#target ComputeRegionAutoscaler#target}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#deletion_policy ComputeRegionAutoscaler#deletion_policy}
 
 ---
 
@@ -1788,7 +1860,7 @@ public string Description { get; set; }
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#description ComputeRegionAutoscaler#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#description ComputeRegionAutoscaler#description}
 
 ---
 
@@ -1800,7 +1872,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#id ComputeRegionAutoscaler#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#id ComputeRegionAutoscaler#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1815,7 +1887,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#project ComputeRegionAutoscaler#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#project ComputeRegionAutoscaler#project}.
 
 ---
 
@@ -1829,7 +1901,7 @@ public string Region { get; set; }
 
 URL of the region where the instance group resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#region ComputeRegionAutoscaler#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#region ComputeRegionAutoscaler#region}
 
 ---
 
@@ -1843,7 +1915,7 @@ public ComputeRegionAutoscalerTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#timeouts ComputeRegionAutoscaler#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#timeouts ComputeRegionAutoscaler#timeouts}
 
 ---
 
@@ -1865,9 +1937,9 @@ new ComputeRegionAutoscalerTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#create ComputeRegionAutoscaler#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#delete ComputeRegionAutoscaler#delete}. |
-| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#update ComputeRegionAutoscaler#update}. |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#create ComputeRegionAutoscaler#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#delete ComputeRegionAutoscaler#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#update ComputeRegionAutoscaler#update}. |
 
 ---
 
@@ -1879,7 +1951,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#create ComputeRegionAutoscaler#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#create ComputeRegionAutoscaler#create}.
 
 ---
 
@@ -1891,7 +1963,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#delete ComputeRegionAutoscaler#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#delete ComputeRegionAutoscaler#delete}.
 
 ---
 
@@ -1903,7 +1975,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/compute_region_autoscaler#update ComputeRegionAutoscaler#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/compute_region_autoscaler#update ComputeRegionAutoscaler#update}.
 
 ---
 
@@ -3107,6 +3179,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.resetMode">ResetMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.resetScaleInControl">ResetScaleInControl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.resetScalingSchedules">ResetScalingSchedules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.resetStabilizationPeriod">ResetStabilizationPeriod</a></code> | *No description.* |
 
 ---
 
@@ -3362,6 +3435,12 @@ private void ResetScaleInControl()
 private void ResetScalingSchedules()
 ```
 
+##### `ResetStabilizationPeriod` <a name="ResetStabilizationPeriod" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.resetStabilizationPeriod"></a>
+
+```csharp
+private void ResetStabilizationPeriod()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3383,10 +3462,12 @@ private void ResetScalingSchedules()
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.modeInput">ModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.scaleInControlInput">ScaleInControlInput</a></code> | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScaleInControl">ComputeRegionAutoscalerAutoscalingPolicyScaleInControl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.scalingSchedulesInput">ScalingSchedulesInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules">ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.stabilizationPeriodInput">StabilizationPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.cooldownPeriod">CooldownPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.maxReplicas">MaxReplicas</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.minReplicas">MinReplicas</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.stabilizationPeriod">StabilizationPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicy">ComputeRegionAutoscalerAutoscalingPolicy</a></code> | *No description.* |
 
 ---
@@ -3555,6 +3636,16 @@ public IResolvable|ComputeRegionAutoscalerAutoscalingPolicyScalingSchedules[] Sc
 
 ---
 
+##### `StabilizationPeriodInput`<sup>Optional</sup> <a name="StabilizationPeriodInput" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.stabilizationPeriodInput"></a>
+
+```csharp
+public double StabilizationPeriodInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `CooldownPeriod`<sup>Required</sup> <a name="CooldownPeriod" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.cooldownPeriod"></a>
 
 ```csharp
@@ -3592,6 +3683,16 @@ public string Mode { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `StabilizationPeriod`<sup>Required</sup> <a name="StabilizationPeriod" id="@cdktn/provider-google.computeRegionAutoscaler.ComputeRegionAutoscalerAutoscalingPolicyOutputReference.property.stabilizationPeriod"></a>
+
+```csharp
+public double StabilizationPeriod { get; }
+```
+
+- *Type:* double
 
 ---
 

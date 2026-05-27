@@ -4,7 +4,7 @@
 
 ### FilestoreSnapshot <a name="FilestoreSnapshot" id="@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot google_filestore_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot google_filestore_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.resetLabels">ResetLabels</a></code> | *No description.* |
@@ -404,6 +405,12 @@ private void PutTimeouts(FilestoreSnapshotTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.resetDescription"></a>
 
 ```csharp
@@ -537,7 +544,7 @@ The construct id used in the generated config for the FilestoreSnapshot to impor
 
 The id of the existing FilestoreSnapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -573,6 +580,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.state">State</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotTimeoutsOutputReference">FilestoreSnapshotTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.instanceInput">InstanceInput</a></code> | <code>string</code> | *No description.* |
@@ -581,6 +589,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotTimeouts">FilestoreSnapshotTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.instance">Instance</a></code> | <code>string</code> | *No description.* |
@@ -793,6 +802,16 @@ public FilestoreSnapshotTimeoutsOutputReference Timeouts { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.descriptionInput"></a>
 
 ```csharp
@@ -870,6 +889,16 @@ public IResolvable|FilestoreSnapshotTimeouts TimeoutsInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotTimeouts">FilestoreSnapshotTimeouts</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshot.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -981,6 +1010,7 @@ new FilestoreSnapshotConfig {
     string Instance,
     string Location,
     string Name,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     System.Collections.Generic.IDictionary<string, string> Labels = null,
@@ -1003,10 +1033,11 @@ new FilestoreSnapshotConfig {
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.instance">Instance</a></code> | <code>string</code> | The resource name of the filestore instance. |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.location">Location</a></code> | <code>string</code> | The name of the location of the instance. This can be a region for ENTERPRISE tier instances. |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.name">Name</a></code> | <code>string</code> | The resource name of the snapshot. The name must be unique within the specified instance. |
+| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.description">Description</a></code> | <code>string</code> | A description of the snapshot with 2048 characters or less. Requests with longer descriptions will be rejected. |
-| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#id FilestoreSnapshot#id}. |
+| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#id FilestoreSnapshot#id}. |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Resource labels to represent user-provided metadata. |
-| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#project FilestoreSnapshot#project}. |
+| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#project FilestoreSnapshot#project}. |
 | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotTimeouts">FilestoreSnapshotTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1091,7 +1122,7 @@ public string Instance { get; set; }
 
 The resource name of the filestore instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#instance FilestoreSnapshot#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#instance FilestoreSnapshot#instance}
 
 ---
 
@@ -1105,7 +1136,7 @@ public string Location { get; set; }
 
 The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#location FilestoreSnapshot#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#location FilestoreSnapshot#location}
 
 ---
 
@@ -1126,7 +1157,28 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#name FilestoreSnapshot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#name FilestoreSnapshot#name}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#deletion_policy FilestoreSnapshot#deletion_policy}
 
 ---
 
@@ -1140,7 +1192,7 @@ public string Description { get; set; }
 
 A description of the snapshot with 2048 characters or less. Requests with longer descriptions will be rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#description FilestoreSnapshot#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#description FilestoreSnapshot#description}
 
 ---
 
@@ -1152,7 +1204,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#id FilestoreSnapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#id FilestoreSnapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1172,7 +1224,7 @@ Resource labels to represent user-provided metadata.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#labels FilestoreSnapshot#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#labels FilestoreSnapshot#labels}
 
 ---
 
@@ -1184,7 +1236,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#project FilestoreSnapshot#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#project FilestoreSnapshot#project}.
 
 ---
 
@@ -1198,7 +1250,7 @@ public FilestoreSnapshotTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#timeouts FilestoreSnapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#timeouts FilestoreSnapshot#timeouts}
 
 ---
 
@@ -1220,9 +1272,9 @@ new FilestoreSnapshotTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#create FilestoreSnapshot#create}. |
-| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#delete FilestoreSnapshot#delete}. |
-| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#update FilestoreSnapshot#update}. |
+| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#create FilestoreSnapshot#create}. |
+| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#delete FilestoreSnapshot#delete}. |
+| <code><a href="#@cdktn/provider-google.filestoreSnapshot.FilestoreSnapshotTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#update FilestoreSnapshot#update}. |
 
 ---
 
@@ -1234,7 +1286,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#create FilestoreSnapshot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#create FilestoreSnapshot#create}.
 
 ---
 
@@ -1246,7 +1298,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#delete FilestoreSnapshot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#delete FilestoreSnapshot#delete}.
 
 ---
 
@@ -1258,7 +1310,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/filestore_snapshot#update FilestoreSnapshot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/filestore_snapshot#update FilestoreSnapshot#update}.
 
 ---
 

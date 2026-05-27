@@ -4,7 +4,7 @@
 
 ### SccFolderSccBigQueryExport <a name="SccFolderSccBigQueryExport" id="@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export google_scc_folder_scc_big_query_export}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export google_scc_folder_scc_big_query_export}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -401,6 +402,12 @@ func PutTimeouts(value SccFolderSccBigQueryExportTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.resetId"></a>
 
 ```go
@@ -516,7 +523,7 @@ The construct id used in the generated config for the SccFolderSccBigQueryExport
 
 The id of the existing SccFolderSccBigQueryExport that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -554,6 +561,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.bigQueryExportIdInput">BigQueryExportIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.datasetInput">DatasetInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.filterInput">FilterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.folderInput">FolderInput</a></code> | <code>*string</code> | *No description.* |
@@ -561,6 +569,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.bigQueryExportId">BigQueryExportId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.dataset">Dataset</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.filter">Filter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.folder">Folder</a></code> | <code>*string</code> | *No description.* |
@@ -790,6 +799,16 @@ func DatasetInput() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.descriptionInput"></a>
 
 ```go
@@ -854,6 +873,16 @@ func BigQueryExportId() *string
 
 ```go
 func Dataset() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExport.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -940,6 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccfoldersccbigq
 	Description: *string,
 	Filter: *string,
 	Folder: *string,
+	DeletionPolicy: *string,
 	Id: *string,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v19.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportTimeouts,
 }
@@ -961,7 +991,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccfoldersccbigq
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportConfig.property.description">Description</a></code> | <code>*string</code> | The description of the export (max of 1024 characters). |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportConfig.property.filter">Filter</a></code> | <code>*string</code> | Expression that defines the filter to apply across create/update events of findings. |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportConfig.property.folder">Folder</a></code> | <code>*string</code> | The folder where Cloud Security Command Center Big Query Export Config lives in. |
-| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#id SccFolderSccBigQueryExport#id}. |
+| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#id SccFolderSccBigQueryExport#id}. |
 | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportTimeouts">SccFolderSccBigQueryExportTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1046,7 +1077,7 @@ BigQueryExportId *string
 
 This must be unique within the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#big_query_export_id SccFolderSccBigQueryExport#big_query_export_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#big_query_export_id SccFolderSccBigQueryExport#big_query_export_id}
 
 ---
 
@@ -1063,7 +1094,7 @@ The dataset to write findings' updates to.
 Its format is "projects/[projectId]/datasets/[bigquery_dataset_id]".
 BigQuery Dataset unique ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#dataset SccFolderSccBigQueryExport#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#dataset SccFolderSccBigQueryExport#dataset}
 
 ---
 
@@ -1077,7 +1108,7 @@ Description *string
 
 The description of the export (max of 1024 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#description SccFolderSccBigQueryExport#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#description SccFolderSccBigQueryExport#description}
 
 ---
 
@@ -1116,7 +1147,7 @@ See
 [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 for information on how to write a filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#filter SccFolderSccBigQueryExport#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#filter SccFolderSccBigQueryExport#filter}
 
 ---
 
@@ -1130,7 +1161,28 @@ Folder *string
 
 The folder where Cloud Security Command Center Big Query Export Config lives in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#folder SccFolderSccBigQueryExport#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#folder SccFolderSccBigQueryExport#folder}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#deletion_policy SccFolderSccBigQueryExport#deletion_policy}
 
 ---
 
@@ -1142,7 +1194,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#id SccFolderSccBigQueryExport#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#id SccFolderSccBigQueryExport#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1159,7 +1211,7 @@ Timeouts SccFolderSccBigQueryExportTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#timeouts SccFolderSccBigQueryExport#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#timeouts SccFolderSccBigQueryExport#timeouts}
 
 ---
 
@@ -1181,9 +1233,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/sccfoldersccbigq
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#create SccFolderSccBigQueryExport#create}. |
-| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#delete SccFolderSccBigQueryExport#delete}. |
-| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#update SccFolderSccBigQueryExport#update}. |
+| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#create SccFolderSccBigQueryExport#create}. |
+| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#delete SccFolderSccBigQueryExport#delete}. |
+| <code><a href="#@cdktn/provider-google.sccFolderSccBigQueryExport.SccFolderSccBigQueryExportTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#update SccFolderSccBigQueryExport#update}. |
 
 ---
 
@@ -1195,7 +1247,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#create SccFolderSccBigQueryExport#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#create SccFolderSccBigQueryExport#create}.
 
 ---
 
@@ -1207,7 +1259,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#delete SccFolderSccBigQueryExport#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#delete SccFolderSccBigQueryExport#delete}.
 
 ---
 
@@ -1219,7 +1271,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/scc_folder_scc_big_query_export#update SccFolderSccBigQueryExport#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/scc_folder_scc_big_query_export#update SccFolderSccBigQueryExport#update}.
 
 ---
 

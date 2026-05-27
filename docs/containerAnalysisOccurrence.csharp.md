@@ -4,7 +4,7 @@
 
 ### ContainerAnalysisOccurrence <a name="ContainerAnalysisOccurrence" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence google_container_analysis_occurrence}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence google_container_analysis_occurrence}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.putAttestation">PutAttestation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.resetRemediation">ResetRemediation</a></code> | *No description.* |
@@ -416,6 +417,12 @@ private void PutTimeouts(ContainerAnalysisOccurrenceTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.resetId"></a>
 
 ```csharp
@@ -543,7 +550,7 @@ The construct id used in the generated config for the ContainerAnalysisOccurrenc
 
 The id of the existing ContainerAnalysisOccurrence that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -580,12 +587,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeoutsOutputReference">ContainerAnalysisOccurrenceTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.attestationInput">AttestationInput</a></code> | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestation">ContainerAnalysisOccurrenceAttestation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.noteNameInput">NoteNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.remediationInput">RemediationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.resourceUriInput">ResourceUriInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts">ContainerAnalysisOccurrenceTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.noteName">NoteName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.project">Project</a></code> | <code>string</code> | *No description.* |
@@ -806,6 +815,16 @@ public ContainerAnalysisOccurrenceAttestation AttestationInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.idInput"></a>
 
 ```csharp
@@ -863,6 +882,16 @@ public IResolvable|ContainerAnalysisOccurrenceTimeouts TimeoutsInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts">ContainerAnalysisOccurrenceTimeouts</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrence.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -968,7 +997,7 @@ public string SerializedPayload { get; set; }
 
 The serialized payload that is verified by one or more signatures. A base64-encoded string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#serialized_payload ContainerAnalysisOccurrence#serialized_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#serialized_payload ContainerAnalysisOccurrence#serialized_payload}
 
 ---
 
@@ -982,7 +1011,7 @@ public IResolvable|ContainerAnalysisOccurrenceAttestationSignatures[] Signatures
 
 signatures block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#signatures ContainerAnalysisOccurrence#signatures}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#signatures ContainerAnalysisOccurrence#signatures}
 
 ---
 
@@ -1031,7 +1060,7 @@ Examples of valid values:
 
   * "ni:///sha-256;cD9o9Cq6LG3jD0iKXqEi_vdjJGecm_iXkbqVoScViaU"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#public_key_id ContainerAnalysisOccurrence#public_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#public_key_id ContainerAnalysisOccurrence#public_key_id}
 
 ---
 
@@ -1052,7 +1081,7 @@ payload explicitly. Alternatively, a message might
 have a canonical serialization that can always be
 unambiguously computed to derive the payload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#signature ContainerAnalysisOccurrence#signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#signature ContainerAnalysisOccurrence#signature}
 
 ---
 
@@ -1074,6 +1103,7 @@ new ContainerAnalysisOccurrenceConfig {
     ContainerAnalysisOccurrenceAttestation Attestation,
     string NoteName,
     string ResourceUri,
+    string DeletionPolicy = null,
     string Id = null,
     string Project = null,
     string Remediation = null,
@@ -1095,8 +1125,9 @@ new ContainerAnalysisOccurrenceConfig {
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.property.attestation">Attestation</a></code> | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceAttestation">ContainerAnalysisOccurrenceAttestation</a></code> | attestation block. |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.property.noteName">NoteName</a></code> | <code>string</code> | The analysis note associated with this occurrence, in the form of projects/[PROJECT]/notes/[NOTE_ID]. |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.property.resourceUri">ResourceUri</a></code> | <code>string</code> | Required. Immutable. A URI that represents the resource for which the occurrence applies. For example, https://gcr.io/project/image@sha256:123abc for a Docker image. |
-| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#id ContainerAnalysisOccurrence#id}. |
-| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#project ContainerAnalysisOccurrence#project}. |
+| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#id ContainerAnalysisOccurrence#id}. |
+| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#project ContainerAnalysisOccurrence#project}. |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.property.remediation">Remediation</a></code> | <code>string</code> | A description of actions that can be taken to remedy the note. |
 | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts">ContainerAnalysisOccurrenceTimeouts</a></code> | timeouts block. |
 
@@ -1182,7 +1213,7 @@ public ContainerAnalysisOccurrenceAttestation Attestation { get; set; }
 
 attestation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#attestation ContainerAnalysisOccurrence#attestation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#attestation ContainerAnalysisOccurrence#attestation}
 
 ---
 
@@ -1199,7 +1230,7 @@ The analysis note associated with this occurrence, in the form of projects/[PROJ
 This field can be used as a
 filter in list requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#note_name ContainerAnalysisOccurrence#note_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#note_name ContainerAnalysisOccurrence#note_name}
 
 ---
 
@@ -1213,7 +1244,28 @@ public string ResourceUri { get; set; }
 
 Required. Immutable. A URI that represents the resource for which the occurrence applies. For example, https://gcr.io/project/image@sha256:123abc for a Docker image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#resource_uri ContainerAnalysisOccurrence#resource_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#resource_uri ContainerAnalysisOccurrence#resource_uri}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#deletion_policy ContainerAnalysisOccurrence#deletion_policy}
 
 ---
 
@@ -1225,7 +1277,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#id ContainerAnalysisOccurrence#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#id ContainerAnalysisOccurrence#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1240,7 +1292,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#project ContainerAnalysisOccurrence#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#project ContainerAnalysisOccurrence#project}.
 
 ---
 
@@ -1254,7 +1306,7 @@ public string Remediation { get; set; }
 
 A description of actions that can be taken to remedy the note.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#remediation ContainerAnalysisOccurrence#remediation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#remediation ContainerAnalysisOccurrence#remediation}
 
 ---
 
@@ -1268,7 +1320,7 @@ public ContainerAnalysisOccurrenceTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#timeouts ContainerAnalysisOccurrence#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#timeouts ContainerAnalysisOccurrence#timeouts}
 
 ---
 
@@ -1290,9 +1342,9 @@ new ContainerAnalysisOccurrenceTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#create ContainerAnalysisOccurrence#create}. |
-| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#delete ContainerAnalysisOccurrence#delete}. |
-| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#update ContainerAnalysisOccurrence#update}. |
+| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#create ContainerAnalysisOccurrence#create}. |
+| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#delete ContainerAnalysisOccurrence#delete}. |
+| <code><a href="#@cdktn/provider-google.containerAnalysisOccurrence.ContainerAnalysisOccurrenceTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#update ContainerAnalysisOccurrence#update}. |
 
 ---
 
@@ -1304,7 +1356,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#create ContainerAnalysisOccurrence#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#create ContainerAnalysisOccurrence#create}.
 
 ---
 
@@ -1316,7 +1368,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#delete ContainerAnalysisOccurrence#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#delete ContainerAnalysisOccurrence#delete}.
 
 ---
 
@@ -1328,7 +1380,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/container_analysis_occurrence#update ContainerAnalysisOccurrence#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/container_analysis_occurrence#update ContainerAnalysisOccurrence#update}.
 
 ---
 

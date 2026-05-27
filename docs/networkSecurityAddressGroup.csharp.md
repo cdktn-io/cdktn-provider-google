@@ -4,7 +4,7 @@
 
 ### NetworkSecurityAddressGroup <a name="NetworkSecurityAddressGroup" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group google_network_security_address_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group google_network_security_address_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.resetItems">ResetItems</a></code> | *No description.* |
@@ -405,6 +406,12 @@ private void PutTimeouts(NetworkSecurityAddressGroupTimeouts Value)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.resetDeletionPolicy"></a>
+
+```csharp
+private void ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.resetDescription"></a>
 
 ```csharp
@@ -544,7 +551,7 @@ The construct id used in the generated config for the NetworkSecurityAddressGrou
 
 The id of the existing NetworkSecurityAddressGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -580,6 +587,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeoutsOutputReference">NetworkSecurityAddressGroupTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.capacityInput">CapacityInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.itemsInput">ItemsInput</a></code> | <code>string[]</code> | *No description.* |
@@ -590,6 +598,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeouts">NetworkSecurityAddressGroupTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.capacity">Capacity</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.items">Items</a></code> | <code>string[]</code> | *No description.* |
@@ -803,6 +812,16 @@ public double CapacityInput { get; }
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.deletionPolicyInput"></a>
+
+```csharp
+public string DeletionPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.descriptionInput"></a>
 
 ```csharp
@@ -900,6 +919,16 @@ public double Capacity { get; }
 ```
 
 - *Type:* double
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1022,6 +1051,7 @@ new NetworkSecurityAddressGroupConfig {
     string Location,
     string Name,
     string Type,
+    string DeletionPolicy = null,
     string Description = null,
     string Id = null,
     string[] Items = null,
@@ -1046,8 +1076,9 @@ new NetworkSecurityAddressGroupConfig {
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.property.location">Location</a></code> | <code>string</code> | The location of the gateway security policy. The default value is 'global'. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.property.name">Name</a></code> | <code>string</code> | Name of the AddressGroup resource. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.property.type">Type</a></code> | <code>string</code> | The type of the Address Group. Possible values are "IPV4" or "IPV6". Possible values: ["IPV4", "IPV6"]. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.property.description">Description</a></code> | <code>string</code> | Free-text description of the resource. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#id NetworkSecurityAddressGroup#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#id NetworkSecurityAddressGroup#id}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.property.items">Items</a></code> | <code>string[]</code> | List of items. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Set of label tags associated with the AddressGroup resource. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.property.parent">Parent</a></code> | <code>string</code> | The name of the parent this address group belongs to. Format: organizations/{organization_id} or projects/{project_id}. |
@@ -1135,7 +1166,7 @@ public double Capacity { get; set; }
 
 Capacity of the Address Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#capacity NetworkSecurityAddressGroup#capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#capacity NetworkSecurityAddressGroup#capacity}
 
 ---
 
@@ -1149,7 +1180,7 @@ public string Location { get; set; }
 
 The location of the gateway security policy. The default value is 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#location NetworkSecurityAddressGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#location NetworkSecurityAddressGroup#location}
 
 ---
 
@@ -1163,7 +1194,7 @@ public string Name { get; set; }
 
 Name of the AddressGroup resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#name NetworkSecurityAddressGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#name NetworkSecurityAddressGroup#name}
 
 ---
 
@@ -1177,7 +1208,28 @@ public string Type { get; set; }
 
 The type of the Address Group. Possible values are "IPV4" or "IPV6". Possible values: ["IPV4", "IPV6"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#type NetworkSecurityAddressGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#type NetworkSecurityAddressGroup#type}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.property.deletionPolicy"></a>
+
+```csharp
+public string DeletionPolicy { get; set; }
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#deletion_policy NetworkSecurityAddressGroup#deletion_policy}
 
 ---
 
@@ -1191,7 +1243,7 @@ public string Description { get; set; }
 
 Free-text description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#description NetworkSecurityAddressGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#description NetworkSecurityAddressGroup#description}
 
 ---
 
@@ -1203,7 +1255,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#id NetworkSecurityAddressGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#id NetworkSecurityAddressGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1220,7 +1272,7 @@ public string[] Items { get; set; }
 
 List of items.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#items NetworkSecurityAddressGroup#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#items NetworkSecurityAddressGroup#items}
 
 ---
 
@@ -1239,7 +1291,7 @@ An object containing a list of "key": value pairs. Example: { "name": "wrench", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#labels NetworkSecurityAddressGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#labels NetworkSecurityAddressGroup#labels}
 
 ---
 
@@ -1253,7 +1305,7 @@ public string Parent { get; set; }
 
 The name of the parent this address group belongs to. Format: organizations/{organization_id} or projects/{project_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#parent NetworkSecurityAddressGroup#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#parent NetworkSecurityAddressGroup#parent}
 
 ---
 
@@ -1267,7 +1319,7 @@ public NetworkSecurityAddressGroupTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#timeouts NetworkSecurityAddressGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#timeouts NetworkSecurityAddressGroup#timeouts}
 
 ---
 
@@ -1289,9 +1341,9 @@ new NetworkSecurityAddressGroupTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#create NetworkSecurityAddressGroup#create}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#delete NetworkSecurityAddressGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#update NetworkSecurityAddressGroup#update}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#create NetworkSecurityAddressGroup#create}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#delete NetworkSecurityAddressGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#update NetworkSecurityAddressGroup#update}. |
 
 ---
 
@@ -1303,7 +1355,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#create NetworkSecurityAddressGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#create NetworkSecurityAddressGroup#create}.
 
 ---
 
@@ -1315,7 +1367,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#delete NetworkSecurityAddressGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#delete NetworkSecurityAddressGroup#delete}.
 
 ---
 
@@ -1327,7 +1379,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/network_security_address_group#update NetworkSecurityAddressGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/network_security_address_group#update NetworkSecurityAddressGroup#update}.
 
 ---
 

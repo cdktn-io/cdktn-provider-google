@@ -4,7 +4,7 @@
 
 ### PubsubTopicIamBinding <a name="PubsubTopicIamBinding" id="@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding google_pubsub_topic_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBinding.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the PubsubTopicIamBinding to i
 
 The id of the existing PubsubTopicIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,9 +879,9 @@ new PubsubTopicIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#expression PubsubTopicIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#title PubsubTopicIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#description PubsubTopicIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#expression PubsubTopicIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#title PubsubTopicIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#description PubsubTopicIamBinding#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#expression PubsubTopicIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#expression PubsubTopicIamBinding#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#title PubsubTopicIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#title PubsubTopicIamBinding#title}.
 
 ---
 
@@ -917,7 +917,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#description PubsubTopicIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#description PubsubTopicIamBinding#description}.
 
 ---
 
@@ -956,12 +956,12 @@ new PubsubTopicIamBindingConfig {
 | <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#members PubsubTopicIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#role PubsubTopicIamBinding#role}. |
-| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.topic">Topic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#topic PubsubTopicIamBinding#topic}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#members PubsubTopicIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#role PubsubTopicIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.topic">Topic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#topic PubsubTopicIamBinding#topic}. |
 | <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingCondition">PubsubTopicIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#id PubsubTopicIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#project PubsubTopicIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#id PubsubTopicIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubTopicIamBinding.PubsubTopicIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#project PubsubTopicIamBinding#project}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#members PubsubTopicIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#members PubsubTopicIamBinding#members}.
 
 ---
 
@@ -1055,7 +1055,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#role PubsubTopicIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#role PubsubTopicIamBinding#role}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public string Topic { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#topic PubsubTopicIamBinding#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#topic PubsubTopicIamBinding#topic}.
 
 ---
 
@@ -1081,7 +1081,7 @@ public PubsubTopicIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#condition PubsubTopicIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#condition PubsubTopicIamBinding#condition}
 
 ---
 
@@ -1093,7 +1093,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#id PubsubTopicIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#id PubsubTopicIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1108,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/pubsub_topic_iam_binding#project PubsubTopicIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/pubsub_topic_iam_binding#project PubsubTopicIamBinding#project}.
 
 ---
 

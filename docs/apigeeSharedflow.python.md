@@ -4,7 +4,7 @@
 
 ### ApigeeSharedflow <a name="ApigeeSharedflow" id="@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow google_apigee_sharedflow}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow google_apigee_sharedflow}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.Initializer"></a>
 
@@ -24,6 +24,7 @@ apigeeSharedflow.ApigeeSharedflow(
   config_bundle: str,
   name: str,
   org_id: str,
+  deletion_policy: str = None,
   detect_md5_hash: str = None,
   id: str = None,
   timeouts: ApigeeSharedflowTimeouts = None
@@ -44,8 +45,9 @@ apigeeSharedflow.ApigeeSharedflow(
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.Initializer.parameter.configBundle">config_bundle</a></code> | <code>str</code> | Path to the config zip bundle. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.Initializer.parameter.name">name</a></code> | <code>str</code> | The ID of the shared flow. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.Initializer.parameter.orgId">org_id</a></code> | <code>str</code> | The Apigee Organization name associated with the Apigee instance. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.Initializer.parameter.detectMd5Hash">detect_md5_hash</a></code> | <code>str</code> | A hash of local config bundle in string, user needs to use a Terraform Hash function of their choice. |
-| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#id ApigeeSharedflow#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#id ApigeeSharedflow#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowTimeouts">ApigeeSharedflowTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Path to the config zip bundle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#config_bundle ApigeeSharedflow#config_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#config_bundle ApigeeSharedflow#config_bundle}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID of the shared flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#name ApigeeSharedflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#name ApigeeSharedflow#name}
 
 ---
 
@@ -136,7 +138,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Apigee Organization name associated with the Apigee instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#org_id ApigeeSharedflow#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#org_id ApigeeSharedflow#org_id}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#deletion_policy ApigeeSharedflow#deletion_policy}
 
 ---
 
@@ -148,7 +167,7 @@ A hash of local config bundle in string, user needs to use a Terraform Hash func
 
 A change in hash will trigger an update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#detect_md5hash ApigeeSharedflow#detect_md5hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#detect_md5hash ApigeeSharedflow#detect_md5hash}
 
 ---
 
@@ -156,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#id ApigeeSharedflow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#id ApigeeSharedflow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +188,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#timeouts ApigeeSharedflow#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#timeouts ApigeeSharedflow#timeouts}
 
 ---
 
@@ -202,6 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.resetDetectMd5Hash">reset_detect_md5_hash</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -570,7 +590,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#create ApigeeSharedflow#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#create ApigeeSharedflow#create}.
 
 ---
 
@@ -578,7 +598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#delete ApigeeSharedflow#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#delete ApigeeSharedflow#delete}.
 
 ---
 
@@ -586,9 +606,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#update ApigeeSharedflow#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#update ApigeeSharedflow#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_detect_md5_hash` <a name="reset_detect_md5_hash" id="@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.resetDetectMd5Hash"></a>
 
@@ -722,7 +748,7 @@ The construct id used in the generated config for the ApigeeSharedflow to import
 
 The id of the existing ApigeeSharedflow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -758,12 +784,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.revision">revision</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowTimeoutsOutputReference">ApigeeSharedflowTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.configBundleInput">config_bundle_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.detectMd5HashInput">detect_md5_hash_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.orgIdInput">org_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowTimeouts">ApigeeSharedflowTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.configBundle">config_bundle</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.detectMd5Hash">detect_md5_hash</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -973,6 +1001,16 @@ config_bundle_input: str
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `detect_md5_hash_input`<sup>Optional</sup> <a name="detect_md5_hash_input" id="@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.detectMd5HashInput"></a>
 
 ```python
@@ -1027,6 +1065,16 @@ timeouts_input: IResolvable | ApigeeSharedflowTimeouts
 
 ```python
 config_bundle: str
+```
+
+- *Type:* str
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflow.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
 ```
 
 - *Type:* str
@@ -1111,6 +1159,7 @@ apigeeSharedflow.ApigeeSharedflowConfig(
   config_bundle: str,
   name: str,
   org_id: str,
+  deletion_policy: str = None,
   detect_md5_hash: str = None,
   id: str = None,
   timeouts: ApigeeSharedflowTimeouts = None
@@ -1131,8 +1180,9 @@ apigeeSharedflow.ApigeeSharedflowConfig(
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowConfig.property.configBundle">config_bundle</a></code> | <code>str</code> | Path to the config zip bundle. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowConfig.property.name">name</a></code> | <code>str</code> | The ID of the shared flow. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowConfig.property.orgId">org_id</a></code> | <code>str</code> | The Apigee Organization name associated with the Apigee instance. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowConfig.property.detectMd5Hash">detect_md5_hash</a></code> | <code>str</code> | A hash of local config bundle in string, user needs to use a Terraform Hash function of their choice. |
-| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#id ApigeeSharedflow#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#id ApigeeSharedflow#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowTimeouts">ApigeeSharedflowTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1217,7 +1267,7 @@ config_bundle: str
 
 Path to the config zip bundle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#config_bundle ApigeeSharedflow#config_bundle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#config_bundle ApigeeSharedflow#config_bundle}
 
 ---
 
@@ -1231,7 +1281,7 @@ name: str
 
 The ID of the shared flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#name ApigeeSharedflow#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#name ApigeeSharedflow#name}
 
 ---
 
@@ -1245,7 +1295,28 @@ org_id: str
 
 The Apigee Organization name associated with the Apigee instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#org_id ApigeeSharedflow#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#org_id ApigeeSharedflow#org_id}
+
+---
+
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#deletion_policy ApigeeSharedflow#deletion_policy}
 
 ---
 
@@ -1261,7 +1332,7 @@ A hash of local config bundle in string, user needs to use a Terraform Hash func
 
 A change in hash will trigger an update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#detect_md5hash ApigeeSharedflow#detect_md5hash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#detect_md5hash ApigeeSharedflow#detect_md5hash}
 
 ---
 
@@ -1273,7 +1344,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#id ApigeeSharedflow#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#id ApigeeSharedflow#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1290,7 +1361,7 @@ timeouts: ApigeeSharedflowTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#timeouts ApigeeSharedflow#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#timeouts ApigeeSharedflow#timeouts}
 
 ---
 
@@ -1323,9 +1394,9 @@ apigeeSharedflow.ApigeeSharedflowTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#create ApigeeSharedflow#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#delete ApigeeSharedflow#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#update ApigeeSharedflow#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#create ApigeeSharedflow#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#delete ApigeeSharedflow#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#update ApigeeSharedflow#update}. |
 
 ---
 
@@ -1337,7 +1408,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#create ApigeeSharedflow#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#create ApigeeSharedflow#create}.
 
 ---
 
@@ -1349,7 +1420,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#delete ApigeeSharedflow#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#delete ApigeeSharedflow#delete}.
 
 ---
 
@@ -1361,7 +1432,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_sharedflow#update ApigeeSharedflow#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_sharedflow#update ApigeeSharedflow#update}.
 
 ---
 

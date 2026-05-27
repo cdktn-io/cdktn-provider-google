@@ -4,7 +4,7 @@
 
 ### MigrationCenterPreferenceSet <a name="MigrationCenterPreferenceSet" id="@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set google_migration_center_preference_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set google_migration_center_preference_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.putVirtualMachinePreferences">PutVirtualMachinePreferences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.resetId">ResetId</a></code> | *No description.* |
@@ -418,6 +419,12 @@ func PutVirtualMachinePreferences(value MigrationCenterPreferenceSetVirtualMachi
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.resetDescription"></a>
 
 ```go
@@ -557,7 +564,7 @@ The construct id used in the generated config for the MigrationCenterPreferenceS
 
 The id of the existing MigrationCenterPreferenceSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -592,6 +599,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeoutsOutputReference">MigrationCenterPreferenceSetTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.virtualMachinePreferences">VirtualMachinePreferences</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference">MigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -600,6 +608,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.virtualMachinePreferencesInput">VirtualMachinePreferencesInput</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferences">MigrationCenterPreferenceSetVirtualMachinePreferences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -801,6 +810,16 @@ func VirtualMachinePreferences() MigrationCenterPreferenceSetVirtualMachinePrefe
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.descriptionInput"></a>
 
 ```go
@@ -878,6 +897,16 @@ func VirtualMachinePreferencesInput() MigrationCenterPreferenceSetVirtualMachine
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferences">MigrationCenterPreferenceSetVirtualMachinePreferences</a>
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSet.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -978,6 +1007,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterp
 	Provisioners: *[]interface{},
 	Location: *string,
 	PreferenceSetId: *string,
+	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
@@ -1000,10 +1030,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterp
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.location">Location</a></code> | <code>*string</code> | Part of 'parent'. See documentation of 'projectsId'. |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.preferenceSetId">PreferenceSetId</a></code> | <code>*string</code> | Required. |
+| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.description">Description</a></code> | <code>*string</code> | A description of the preference set. |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User-friendly display name. Maximum length is 63 characters. |
-| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#id MigrationCenterPreferenceSet#id}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#project MigrationCenterPreferenceSet#project}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#id MigrationCenterPreferenceSet#id}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#project MigrationCenterPreferenceSet#project}. |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeouts">MigrationCenterPreferenceSetTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.virtualMachinePreferences">VirtualMachinePreferences</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetVirtualMachinePreferences">MigrationCenterPreferenceSetVirtualMachinePreferences</a></code> | virtual_machine_preferences block. |
 
@@ -1089,7 +1120,7 @@ Location *string
 
 Part of 'parent'. See documentation of 'projectsId'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#location MigrationCenterPreferenceSet#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#location MigrationCenterPreferenceSet#location}
 
 ---
 
@@ -1105,7 +1136,28 @@ Required.
 
 User specified ID for the preference set. It will become the last component of the preference set name. The ID must be unique within the project, must conform with RFC-1034, is restricted to lower-cased letters, and has a maximum length of 63 characters. The ID must match the regular expression '[a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#preference_set_id MigrationCenterPreferenceSet#preference_set_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#preference_set_id MigrationCenterPreferenceSet#preference_set_id}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#deletion_policy MigrationCenterPreferenceSet#deletion_policy}
 
 ---
 
@@ -1119,7 +1171,7 @@ Description *string
 
 A description of the preference set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#description MigrationCenterPreferenceSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#description MigrationCenterPreferenceSet#description}
 
 ---
 
@@ -1133,7 +1185,7 @@ DisplayName *string
 
 User-friendly display name. Maximum length is 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#display_name MigrationCenterPreferenceSet#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#display_name MigrationCenterPreferenceSet#display_name}
 
 ---
 
@@ -1145,7 +1197,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#id MigrationCenterPreferenceSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#id MigrationCenterPreferenceSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1160,7 +1212,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#project MigrationCenterPreferenceSet#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#project MigrationCenterPreferenceSet#project}.
 
 ---
 
@@ -1174,7 +1226,7 @@ Timeouts MigrationCenterPreferenceSetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#timeouts MigrationCenterPreferenceSet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#timeouts MigrationCenterPreferenceSet#timeouts}
 
 ---
 
@@ -1188,7 +1240,7 @@ VirtualMachinePreferences MigrationCenterPreferenceSetVirtualMachinePreferences
 
 virtual_machine_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#virtual_machine_preferences MigrationCenterPreferenceSet#virtual_machine_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#virtual_machine_preferences MigrationCenterPreferenceSet#virtual_machine_preferences}
 
 ---
 
@@ -1210,9 +1262,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/migrationcenterp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#create MigrationCenterPreferenceSet#create}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#delete MigrationCenterPreferenceSet#delete}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#update MigrationCenterPreferenceSet#update}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#create MigrationCenterPreferenceSet#create}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#delete MigrationCenterPreferenceSet#delete}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#update MigrationCenterPreferenceSet#update}. |
 
 ---
 
@@ -1224,7 +1276,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#create MigrationCenterPreferenceSet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#create MigrationCenterPreferenceSet#create}.
 
 ---
 
@@ -1236,7 +1288,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#delete MigrationCenterPreferenceSet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#delete MigrationCenterPreferenceSet#delete}.
 
 ---
 
@@ -1248,7 +1300,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#update MigrationCenterPreferenceSet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#update MigrationCenterPreferenceSet#update}.
 
 ---
 
@@ -1296,7 +1348,7 @@ Commitment plan to consider when calculating costs for virtual machine insights 
 
 If you are unsure which value to set, a 3 year commitment plan is often a good value to start with. Possible values: 'COMMITMENT_PLAN_UNSPECIFIED', 'COMMITMENT_PLAN_NONE', 'COMMITMENT_PLAN_ONE_YEAR', 'COMMITMENT_PLAN_THREE_YEARS'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#commitment_plan MigrationCenterPreferenceSet#commitment_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#commitment_plan MigrationCenterPreferenceSet#commitment_plan}
 
 ---
 
@@ -1310,7 +1362,7 @@ ComputeEnginePreferences MigrationCenterPreferenceSetVirtualMachinePreferencesCo
 
 compute_engine_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#compute_engine_preferences MigrationCenterPreferenceSet#compute_engine_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#compute_engine_preferences MigrationCenterPreferenceSet#compute_engine_preferences}
 
 ---
 
@@ -1324,7 +1376,7 @@ RegionPreferences MigrationCenterPreferenceSetVirtualMachinePreferencesRegionPre
 
 region_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#region_preferences MigrationCenterPreferenceSet#region_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#region_preferences MigrationCenterPreferenceSet#region_preferences}
 
 ---
 
@@ -1340,7 +1392,7 @@ Sizing optimization strategy specifies the preferred strategy used when extrapol
 
 If you are unsure which value to set, a moderate sizing optimization strategy is often a good value to start with. Possible values: 'SIZING_OPTIMIZATION_STRATEGY_UNSPECIFIED', 'SIZING_OPTIMIZATION_STRATEGY_SAME_AS_SOURCE', 'SIZING_OPTIMIZATION_STRATEGY_MODERATE', 'SIZING_OPTIMIZATION_STRATEGY_AGGRESSIVE'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#sizing_optimization_strategy MigrationCenterPreferenceSet#sizing_optimization_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#sizing_optimization_strategy MigrationCenterPreferenceSet#sizing_optimization_strategy}
 
 ---
 
@@ -1354,7 +1406,7 @@ SoleTenancyPreferences MigrationCenterPreferenceSetVirtualMachinePreferencesSole
 
 sole_tenancy_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#sole_tenancy_preferences MigrationCenterPreferenceSet#sole_tenancy_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#sole_tenancy_preferences MigrationCenterPreferenceSet#sole_tenancy_preferences}
 
 ---
 
@@ -1370,7 +1422,7 @@ Target product for assets using this preference set.
 
 Specify either target product or business goal, but not both. Possible values: 'COMPUTE_MIGRATION_TARGET_PRODUCT_UNSPECIFIED', 'COMPUTE_MIGRATION_TARGET_PRODUCT_COMPUTE_ENGINE', 'COMPUTE_MIGRATION_TARGET_PRODUCT_VMWARE_ENGINE', 'COMPUTE_MIGRATION_TARGET_PRODUCT_SOLE_TENANCY'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#target_product MigrationCenterPreferenceSet#target_product}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#target_product MigrationCenterPreferenceSet#target_product}
 
 ---
 
@@ -1384,7 +1436,7 @@ VmwareEnginePreferences MigrationCenterPreferenceSetVirtualMachinePreferencesVmw
 
 vmware_engine_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#vmware_engine_preferences MigrationCenterPreferenceSet#vmware_engine_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#vmware_engine_preferences MigrationCenterPreferenceSet#vmware_engine_preferences}
 
 ---
 
@@ -1424,7 +1476,7 @@ License type to consider when calculating costs for virtual machine insights and
 
 If unspecified, costs are calculated based on the default licensing plan. Possible values: 'LICENSE_TYPE_UNSPECIFIED', 'LICENSE_TYPE_DEFAULT', 'LICENSE_TYPE_BRING_YOUR_OWN_LICENSE'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#license_type MigrationCenterPreferenceSet#license_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#license_type MigrationCenterPreferenceSet#license_type}
 
 ---
 
@@ -1438,7 +1490,7 @@ MachinePreferences MigrationCenterPreferenceSetVirtualMachinePreferencesComputeE
 
 machine_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#machine_preferences MigrationCenterPreferenceSet#machine_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#machine_preferences MigrationCenterPreferenceSet#machine_preferences}
 
 ---
 
@@ -1454,7 +1506,7 @@ Persistent disk type to use.
 
 If unspecified (default), all types are considered, based on available usage data. Possible values: ["PERSISTENT_DISK_TYPE_STANDARD", "PERSISTENT_DISK_TYPE_BALANCED", "PERSISTENT_DISK_TYPE_SSD"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#persistent_disk_type MigrationCenterPreferenceSet#persistent_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#persistent_disk_type MigrationCenterPreferenceSet#persistent_disk_type}
 
 ---
 
@@ -1488,7 +1540,7 @@ AllowedMachineSeries interface{}
 
 allowed_machine_series block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#allowed_machine_series MigrationCenterPreferenceSet#allowed_machine_series}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#allowed_machine_series MigrationCenterPreferenceSet#allowed_machine_series}
 
 ---
 
@@ -1522,7 +1574,7 @@ Code *string
 
 Code to identify a Compute Engine machine series. Consult https://cloud.google.com/compute/docs/machine-resource#machine_type_comparison for more details on the available series.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#code MigrationCenterPreferenceSet#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#code MigrationCenterPreferenceSet#code}
 
 ---
 
@@ -1558,7 +1610,7 @@ A list of preferred regions, ordered by the most preferred region first.
 
 Set only valid Google Cloud region names. See https://cloud.google.com/compute/docs/regions-zones for available regions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#preferred_regions MigrationCenterPreferenceSet#preferred_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#preferred_regions MigrationCenterPreferenceSet#preferred_regions}
 
 ---
 
@@ -1600,7 +1652,7 @@ Commitment plan to consider when calculating costs for virtual machine insights 
 
 If you are unsure which value to set, a 3 year commitment plan is often a good value to start with. Possible values: 'COMMITMENT_PLAN_UNSPECIFIED', 'ON_DEMAND', 'COMMITMENT_1_YEAR', 'COMMITMENT_3_YEAR'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#commitment_plan MigrationCenterPreferenceSet#commitment_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#commitment_plan MigrationCenterPreferenceSet#commitment_plan}
 
 ---
 
@@ -1614,7 +1666,7 @@ CpuOvercommitRatio *f64
 
 CPU overcommit ratio. Acceptable values are between 1.0 and 2.0 inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#cpu_overcommit_ratio MigrationCenterPreferenceSet#cpu_overcommit_ratio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#cpu_overcommit_ratio MigrationCenterPreferenceSet#cpu_overcommit_ratio}
 
 ---
 
@@ -1628,7 +1680,7 @@ HostMaintenancePolicy *string
 
 Sole Tenancy nodes maintenance policy. Possible values: 'HOST_MAINTENANCE_POLICY_UNSPECIFIED', 'HOST_MAINTENANCE_POLICY_DEFAULT', 'HOST_MAINTENANCE_POLICY_RESTART_IN_PLACE', 'HOST_MAINTENANCE_POLICY_MIGRATE_WITHIN_NODE_GROUP'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#host_maintenance_policy MigrationCenterPreferenceSet#host_maintenance_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#host_maintenance_policy MigrationCenterPreferenceSet#host_maintenance_policy}
 
 ---
 
@@ -1642,7 +1694,7 @@ NodeTypes interface{}
 
 node_types block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#node_types MigrationCenterPreferenceSet#node_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#node_types MigrationCenterPreferenceSet#node_types}
 
 ---
 
@@ -1676,7 +1728,7 @@ NodeName *string
 
 Name of the Sole Tenant node. Consult https://cloud.google.com/compute/docs/nodes/sole-tenant-nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#node_name MigrationCenterPreferenceSet#node_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#node_name MigrationCenterPreferenceSet#node_name}
 
 ---
 
@@ -1718,7 +1770,7 @@ Commitment plan to consider when calculating costs for virtual machine insights 
 
 If you are unsure which value to set, a 3 year commitment plan is often a good value to start with. Possible values: 'COMMITMENT_PLAN_UNSPECIFIED', 'ON_DEMAND', 'COMMITMENT_1_YEAR_MONTHLY_PAYMENTS', 'COMMITMENT_3_YEAR_MONTHLY_PAYMENTS', 'COMMITMENT_1_YEAR_UPFRONT_PAYMENT', 'COMMITMENT_3_YEAR_UPFRONT_PAYMENT',
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#commitment_plan MigrationCenterPreferenceSet#commitment_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#commitment_plan MigrationCenterPreferenceSet#commitment_plan}
 
 ---
 
@@ -1732,7 +1784,7 @@ CpuOvercommitRatio *f64
 
 CPU overcommit ratio. Acceptable values are between 1.0 and 8.0, with 0.1 increment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#cpu_overcommit_ratio MigrationCenterPreferenceSet#cpu_overcommit_ratio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#cpu_overcommit_ratio MigrationCenterPreferenceSet#cpu_overcommit_ratio}
 
 ---
 
@@ -1746,7 +1798,7 @@ MemoryOvercommitRatio *f64
 
 Memory overcommit ratio. Acceptable values are 1.0, 1.25, 1.5, 1.75 and 2.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#memory_overcommit_ratio MigrationCenterPreferenceSet#memory_overcommit_ratio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#memory_overcommit_ratio MigrationCenterPreferenceSet#memory_overcommit_ratio}
 
 ---
 
@@ -1762,7 +1814,7 @@ The Deduplication and Compression ratio is based on the logical (Used Before) sp
 
 Specifically, the ratio is the Used Before space divided by the Used After space. For example, if the Used Before space is 3 GB, but the physical Used After space is 1 GB, the deduplication and compression ratio is 3x. Acceptable values are between 1.0 and 4.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/migration_center_preference_set#storage_deduplication_compression_ratio MigrationCenterPreferenceSet#storage_deduplication_compression_ratio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/migration_center_preference_set#storage_deduplication_compression_ratio MigrationCenterPreferenceSet#storage_deduplication_compression_ratio}
 
 ---
 

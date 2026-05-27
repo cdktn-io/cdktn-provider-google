@@ -4,7 +4,7 @@
 
 ### DialogflowVersion <a name="DialogflowVersion" id="@cdktn/provider-google.dialogflowVersion.DialogflowVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version google_dialogflow_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version google_dialogflow_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer"></a>
 
@@ -21,6 +21,7 @@ dialogflowVersion.DialogflowVersion(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   parent: str = None,
@@ -39,8 +40,9 @@ dialogflowVersion.DialogflowVersion(
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer.parameter.description">description</a></code> | <code>str</code> | The developer-provided description of this version. |
-| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#id DialogflowVersion#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#id DialogflowVersion#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer.parameter.parent">parent</a></code> | <code>str</code> | The Flow to create an Version for. Format: projects/<Project ID>/agent. |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionTimeouts">DialogflowVersionTimeouts</a></code> | timeouts block. |
 
@@ -106,13 +108,30 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#deletion_policy DialogflowVersion#deletion_policy}
+
+---
+
 ##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.dialogflowVersion.DialogflowVersion.Initializer.parameter.description"></a>
 
 - *Type:* str
 
 The developer-provided description of this version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#description DialogflowVersion#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#description DialogflowVersion#description}
 
 ---
 
@@ -120,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#id DialogflowVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#id DialogflowVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +152,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The Flow to create an Version for. Format: projects/<Project ID>/agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#parent DialogflowVersion#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#parent DialogflowVersion#parent}
 
 ---
 
@@ -143,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#timeouts DialogflowVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#timeouts DialogflowVersion#timeouts}
 
 ---
 
@@ -176,6 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.resetParent">reset_parent</a></code> | *No description.* |
@@ -545,7 +565,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#create DialogflowVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#create DialogflowVersion#create}.
 
 ---
 
@@ -553,7 +573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#delete DialogflowVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#delete DialogflowVersion#delete}.
 
 ---
 
@@ -561,9 +581,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#update DialogflowVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#update DialogflowVersion#update}.
 
 ---
+
+##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.dialogflowVersion.DialogflowVersion.resetDeletionPolicy"></a>
+
+```python
+def reset_deletion_policy() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.dialogflowVersion.DialogflowVersion.resetDescription"></a>
 
@@ -703,7 +729,7 @@ The construct id used in the generated config for the DialogflowVersion to impor
 
 The id of the existing DialogflowVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -737,10 +763,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.status">status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionTimeoutsOutputReference">DialogflowVersionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.versionNumber">version_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.parentInput">parent_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionTimeouts">DialogflowVersionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.parent">parent</a></code> | <code>str</code> | *No description.* |
@@ -929,6 +957,16 @@ version_number: typing.Union[int, float]
 
 ---
 
+##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.deletionPolicyInput"></a>
+
+```python
+deletion_policy_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.descriptionInput"></a>
 
 ```python
@@ -966,6 +1004,16 @@ timeouts_input: IResolvable | DialogflowVersionTimeouts
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionTimeouts">DialogflowVersionTimeouts</a>
+
+---
+
+##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.dialogflowVersion.DialogflowVersion.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1034,6 +1082,7 @@ dialogflowVersion.DialogflowVersionConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  deletion_policy: str = None,
   description: str = None,
   id: str = None,
   parent: str = None,
@@ -1052,8 +1101,9 @@ dialogflowVersion.DialogflowVersionConfig(
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionConfig.property.description">description</a></code> | <code>str</code> | The developer-provided description of this version. |
-| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#id DialogflowVersion#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#id DialogflowVersion#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionConfig.property.parent">parent</a></code> | <code>str</code> | The Flow to create an Version for. Format: projects/<Project ID>/agent. |
 | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionTimeouts">DialogflowVersionTimeouts</a></code> | timeouts block. |
 
@@ -1129,6 +1179,27 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `deletion_policy`<sup>Optional</sup> <a name="deletion_policy" id="@cdktn/provider-google.dialogflowVersion.DialogflowVersionConfig.property.deletionPolicy"></a>
+
+```python
+deletion_policy: str
+```
+
+- *Type:* str
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#deletion_policy DialogflowVersion#deletion_policy}
+
+---
+
 ##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.dialogflowVersion.DialogflowVersionConfig.property.description"></a>
 
 ```python
@@ -1139,7 +1210,7 @@ description: str
 
 The developer-provided description of this version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#description DialogflowVersion#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#description DialogflowVersion#description}
 
 ---
 
@@ -1151,7 +1222,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#id DialogflowVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#id DialogflowVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1168,7 +1239,7 @@ parent: str
 
 The Flow to create an Version for. Format: projects/<Project ID>/agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#parent DialogflowVersion#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#parent DialogflowVersion#parent}
 
 ---
 
@@ -1182,7 +1253,7 @@ timeouts: DialogflowVersionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#timeouts DialogflowVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#timeouts DialogflowVersion#timeouts}
 
 ---
 
@@ -1204,9 +1275,9 @@ dialogflowVersion.DialogflowVersionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#create DialogflowVersion#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#delete DialogflowVersion#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#update DialogflowVersion#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#create DialogflowVersion#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#delete DialogflowVersion#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowVersion.DialogflowVersionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#update DialogflowVersion#update}. |
 
 ---
 
@@ -1218,7 +1289,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#create DialogflowVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#create DialogflowVersion#create}.
 
 ---
 
@@ -1230,7 +1301,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#delete DialogflowVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#delete DialogflowVersion#delete}.
 
 ---
 
@@ -1242,7 +1313,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dialogflow_version#update DialogflowVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dialogflow_version#update DialogflowVersion#update}.
 
 ---
 

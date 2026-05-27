@@ -4,7 +4,7 @@
 
 ### BillingBudget <a name="BillingBudget" id="@cdktn/provider-google.billingBudget.BillingBudget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget google_billing_budget}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget google_billing_budget}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.billingBudget.BillingBudget.Initializer"></a>
 
@@ -23,6 +23,7 @@ BillingBudget.Builder.create(Construct scope, java.lang.String id)
     .billingAccount(java.lang.String)
 //  .allUpdatesRule(BillingBudgetAllUpdatesRule)
 //  .budgetFilter(BillingBudgetBudgetFilter)
+//  .deletionPolicy(java.lang.String)
 //  .displayName(java.lang.String)
 //  .id(java.lang.String)
 //  .ownershipScope(java.lang.String)
@@ -46,8 +47,9 @@ BillingBudget.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.billingAccount">billingAccount</a></code> | <code>java.lang.String</code> | ID of the billing account to set a budget on. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.allUpdatesRule">allUpdatesRule</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRule">BillingBudgetAllUpdatesRule</a></code> | all_updates_rule block. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.budgetFilter">budgetFilter</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilter">BillingBudgetBudgetFilter</a></code> | budget_filter block. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | User data for display name in UI. Must be <= 60 chars. |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#id BillingBudget#id}. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#id BillingBudget#id}. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.ownershipScope">ownershipScope</a></code> | <code>java.lang.String</code> | The ownership scope of the budget. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.thresholdRules">thresholdRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>></code> | threshold_rules block. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a></code> | timeouts block. |
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 amount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#amount BillingBudget#amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#amount BillingBudget#amount}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the billing account to set a budget on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#billing_account BillingBudget#billing_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#billing_account BillingBudget#billing_account}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 all_updates_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#all_updates_rule BillingBudget#all_updates_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#all_updates_rule BillingBudget#all_updates_rule}
 
 ---
 
@@ -150,7 +152,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 budget_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#budget_filter BillingBudget#budget_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#budget_filter BillingBudget#budget_filter}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.billingBudget.BillingBudget.Initializer.parameter.deletionPolicy"></a>
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#deletion_policy BillingBudget#deletion_policy}
 
 ---
 
@@ -160,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User data for display name in UI. Must be <= 60 chars.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#display_name BillingBudget#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#display_name BillingBudget#display_name}
 
 ---
 
@@ -168,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#id BillingBudget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#id BillingBudget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -184,7 +203,7 @@ The ownership scope of the budget.
 The ownership scope and users'
 IAM permissions determine who has full access to the budget's data. Possible values: ["OWNERSHIP_SCOPE_UNSPECIFIED", "ALL_USERS", "BILLING_ACCOUNT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#ownership_scope BillingBudget#ownership_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#ownership_scope BillingBudget#ownership_scope}
 
 ---
 
@@ -194,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 threshold_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#threshold_rules BillingBudget#threshold_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#threshold_rules BillingBudget#threshold_rules}
 
 ---
 
@@ -204,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#timeouts BillingBudget#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#timeouts BillingBudget#timeouts}
 
 ---
 
@@ -243,6 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.resetAllUpdatesRule">resetAllUpdatesRule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.resetBudgetFilter">resetBudgetFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.resetDisplayName">resetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.resetOwnershipScope">resetOwnershipScope</a></code> | *No description.* |
@@ -634,6 +654,12 @@ public void resetAllUpdatesRule()
 public void resetBudgetFilter()
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.billingBudget.BillingBudget.resetDeletionPolicy"></a>
+
+```java
+public void resetDeletionPolicy()
+```
+
 ##### `resetDisplayName` <a name="resetDisplayName" id="@cdktn/provider-google.billingBudget.BillingBudget.resetDisplayName"></a>
 
 ```java
@@ -767,7 +793,7 @@ The construct id used in the generated config for the BillingBudget to import.
 
 The id of the existing BillingBudget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,12 +833,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.amountInput">amountInput</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAmount">BillingBudgetAmount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.billingAccountInput">billingAccountInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.budgetFilterInput">budgetFilterInput</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilter">BillingBudgetBudgetFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.ownershipScopeInput">ownershipScopeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.thresholdRulesInput">thresholdRulesInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.billingAccount">billingAccount</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudget.property.ownershipScope">ownershipScope</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1061,6 +1089,16 @@ public BillingBudgetBudgetFilter getBudgetFilterInput();
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.billingBudget.BillingBudget.property.deletionPolicyInput"></a>
+
+```java
+public java.lang.String getDeletionPolicyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktn/provider-google.billingBudget.BillingBudget.property.displayNameInput"></a>
 
 ```java
@@ -1115,6 +1153,16 @@ public IResolvable|BillingBudgetTimeouts getTimeoutsInput();
 
 ```java
 public java.lang.String getBillingAccount();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.billingBudget.BillingBudget.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
 ```
 
 - *Type:* java.lang.String
@@ -1214,7 +1262,7 @@ when a threshold is exceeded. Default recipients are
 those with Billing Account Administrators and Billing
 Account Users IAM roles for the target account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#disable_default_iam_recipients BillingBudget#disable_default_iam_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#disable_default_iam_recipients BillingBudget#disable_default_iam_recipients}
 
 ---
 
@@ -1232,7 +1280,7 @@ This field will be ignored if the budget has multiple or no project configured.
 
 Currently, project level recipients are the users with Owner role on a cloud project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#enable_project_level_recipients BillingBudget#enable_project_level_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#enable_project_level_recipients BillingBudget#enable_project_level_recipients}
 
 ---
 
@@ -1246,7 +1294,7 @@ public java.util.List<java.lang.String> getMonitoringNotificationChannels();
 
 The full resource name of a monitoring notification channel in the form projects/{project_id}/notificationChannels/{channel_id}. A maximum of 5 channels are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#monitoring_notification_channels BillingBudget#monitoring_notification_channels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#monitoring_notification_channels BillingBudget#monitoring_notification_channels}
 
 ---
 
@@ -1263,7 +1311,7 @@ The name of the Cloud Pub/Sub topic where budget related messages will be publis
 Updates are sent
 at regular intervals to the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#pubsub_topic BillingBudget#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#pubsub_topic BillingBudget#pubsub_topic}
 
 ---
 
@@ -1277,7 +1325,7 @@ public java.lang.String getSchemaVersion();
 
 The schema version of the notification. Only "1.0" is accepted. It represents the JSON schema as defined in https://cloud.google.com/billing/docs/how-to/budgets#notification_format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#schema_version BillingBudget#schema_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#schema_version BillingBudget#schema_version}
 
 ---
 
@@ -1316,7 +1364,7 @@ Configures a budget amount that is automatically set to 100% of last period's sp
 Boolean. Set value to true to use. Do not set to false, instead
 use the 'specified_amount' block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#last_period_amount BillingBudget#last_period_amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#last_period_amount BillingBudget#last_period_amount}
 
 ---
 
@@ -1330,7 +1378,7 @@ public BillingBudgetAmountSpecifiedAmount getSpecifiedAmount();
 
 specified_amount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#specified_amount BillingBudget#specified_amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#specified_amount BillingBudget#specified_amount}
 
 ---
 
@@ -1368,7 +1416,7 @@ public java.lang.String getCurrencyCode();
 
 The 3-letter currency code defined in ISO 4217.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#currency_code BillingBudget#currency_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#currency_code BillingBudget#currency_code}
 
 ---
 
@@ -1389,7 +1437,7 @@ negative. If units is negative, nanos must be negative or
 zero. For example $-1.75 is represented as units=-1 and
 nanos=-750,000,000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#nanos BillingBudget#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#nanos BillingBudget#nanos}
 
 ---
 
@@ -1403,7 +1451,7 @@ public java.lang.String getUnits();
 
 The whole units of the amount. For example if currencyCode is "USD", then 1 unit is one US dollar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#units BillingBudget#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#units BillingBudget#units}
 
 ---
 
@@ -1458,7 +1506,7 @@ All calendar times begin at 12 AM US and Canadian Pacific Time (UTC-8).
 
 Exactly one of 'calendar_period', 'custom_period' must be provided. Possible values: ["MONTH", "QUARTER", "YEAR", "CALENDAR_PERIOD_UNSPECIFIED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#calendar_period BillingBudget#calendar_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#calendar_period BillingBudget#calendar_period}
 
 ---
 
@@ -1476,7 +1524,7 @@ If creditTypesTreatment is INCLUDE_SPECIFIED_CREDITS,
 this is a list of credit types to be subtracted from gross cost to determine the spend for threshold calculations. See a list of acceptable credit type values.
 If creditTypesTreatment is not INCLUDE_SPECIFIED_CREDITS, this field must be empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#credit_types BillingBudget#credit_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#credit_types BillingBudget#credit_types}
 
 ---
 
@@ -1490,7 +1538,7 @@ public java.lang.String getCreditTypesTreatment();
 
 Specifies how credits should be treated when determining spend for threshold calculations. Default value: "INCLUDE_ALL_CREDITS" Possible values: ["INCLUDE_ALL_CREDITS", "EXCLUDE_ALL_CREDITS", "INCLUDE_SPECIFIED_CREDITS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#credit_types_treatment BillingBudget#credit_types_treatment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#credit_types_treatment BillingBudget#credit_types_treatment}
 
 ---
 
@@ -1504,7 +1552,7 @@ public BillingBudgetBudgetFilterCustomPeriod getCustomPeriod();
 
 custom_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#custom_period BillingBudget#custom_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#custom_period BillingBudget#custom_period}
 
 ---
 
@@ -1518,7 +1566,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 A single label and value pair specifying that usage from only this set of labeled resources should be included in the budget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#labels BillingBudget#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#labels BillingBudget#labels}
 
 ---
 
@@ -1536,7 +1584,7 @@ If omitted, the report will include
 all usage for the billing account, regardless of which project
 the usage occurred on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#projects BillingBudget#projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#projects BillingBudget#projects}
 
 ---
 
@@ -1553,7 +1601,7 @@ A set of folder and organization names of the form folders/{folderId} or organiz
 If omitted, the budget includes all usage that the billing account pays for. If the folder or organization
 contains projects that are paid for by a different Cloud Billing account, the budget doesn't apply to those projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#resource_ancestors BillingBudget#resource_ancestors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#resource_ancestors BillingBudget#resource_ancestors}
 
 ---
 
@@ -1572,7 +1620,7 @@ usage for all the services. The service names are available
 through the Catalog API:
 https://cloud.google.com/billing/v1/how-tos/catalog-api.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#services BillingBudget#services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#services BillingBudget#services}
 
 ---
 
@@ -1591,7 +1639,7 @@ the parent account, usage from the parent account will be included.
 If the field is omitted, the report will include usage from the parent
 account and all subaccounts, if they exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#subaccounts BillingBudget#subaccounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#subaccounts BillingBudget#subaccounts}
 
 ---
 
@@ -1627,7 +1675,7 @@ public BillingBudgetBudgetFilterCustomPeriodStartDate getStartDate();
 
 start_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#start_date BillingBudget#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#start_date BillingBudget#start_date}
 
 ---
 
@@ -1641,7 +1689,7 @@ public BillingBudgetBudgetFilterCustomPeriodEndDate getEndDate();
 
 end_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#end_date BillingBudget#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#end_date BillingBudget#end_date}
 
 ---
 
@@ -1679,7 +1727,7 @@ public java.lang.Number getDay();
 
 Day of a month. Must be from 1 to 31 and valid for the year and month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#day BillingBudget#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#day BillingBudget#day}
 
 ---
 
@@ -1693,7 +1741,7 @@ public java.lang.Number getMonth();
 
 Month of a year. Must be from 1 to 12.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#month BillingBudget#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#month BillingBudget#month}
 
 ---
 
@@ -1707,7 +1755,7 @@ public java.lang.Number getYear();
 
 Year of the date. Must be from 1 to 9999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#year BillingBudget#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#year BillingBudget#year}
 
 ---
 
@@ -1745,7 +1793,7 @@ public java.lang.Number getDay();
 
 Day of a month. Must be from 1 to 31 and valid for the year and month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#day BillingBudget#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#day BillingBudget#day}
 
 ---
 
@@ -1759,7 +1807,7 @@ public java.lang.Number getMonth();
 
 Month of a year. Must be from 1 to 12.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#month BillingBudget#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#month BillingBudget#month}
 
 ---
 
@@ -1773,7 +1821,7 @@ public java.lang.Number getYear();
 
 Year of the date. Must be from 1 to 9999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#year BillingBudget#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#year BillingBudget#year}
 
 ---
 
@@ -1796,6 +1844,7 @@ BillingBudgetConfig.builder()
     .billingAccount(java.lang.String)
 //  .allUpdatesRule(BillingBudgetAllUpdatesRule)
 //  .budgetFilter(BillingBudgetBudgetFilter)
+//  .deletionPolicy(java.lang.String)
 //  .displayName(java.lang.String)
 //  .id(java.lang.String)
 //  .ownershipScope(java.lang.String)
@@ -1819,8 +1868,9 @@ BillingBudgetConfig.builder()
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.billingAccount">billingAccount</a></code> | <code>java.lang.String</code> | ID of the billing account to set a budget on. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.allUpdatesRule">allUpdatesRule</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetAllUpdatesRule">BillingBudgetAllUpdatesRule</a></code> | all_updates_rule block. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.budgetFilter">budgetFilter</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetBudgetFilter">BillingBudgetBudgetFilter</a></code> | budget_filter block. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | User data for display name in UI. Must be <= 60 chars. |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#id BillingBudget#id}. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#id BillingBudget#id}. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.ownershipScope">ownershipScope</a></code> | <code>java.lang.String</code> | The ownership scope of the budget. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.thresholdRules">thresholdRules</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.billingBudget.BillingBudgetThresholdRules">BillingBudgetThresholdRules</a>></code> | threshold_rules block. |
 | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts">BillingBudgetTimeouts</a></code> | timeouts block. |
@@ -1907,7 +1957,7 @@ public BillingBudgetAmount getAmount();
 
 amount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#amount BillingBudget#amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#amount BillingBudget#amount}
 
 ---
 
@@ -1921,7 +1971,7 @@ public java.lang.String getBillingAccount();
 
 ID of the billing account to set a budget on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#billing_account BillingBudget#billing_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#billing_account BillingBudget#billing_account}
 
 ---
 
@@ -1935,7 +1985,7 @@ public BillingBudgetAllUpdatesRule getAllUpdatesRule();
 
 all_updates_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#all_updates_rule BillingBudget#all_updates_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#all_updates_rule BillingBudget#all_updates_rule}
 
 ---
 
@@ -1949,7 +1999,28 @@ public BillingBudgetBudgetFilter getBudgetFilter();
 
 budget_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#budget_filter BillingBudget#budget_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#budget_filter BillingBudget#budget_filter}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.billingBudget.BillingBudgetConfig.property.deletionPolicy"></a>
+
+```java
+public java.lang.String getDeletionPolicy();
+```
+
+- *Type:* java.lang.String
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#deletion_policy BillingBudget#deletion_policy}
 
 ---
 
@@ -1963,7 +2034,7 @@ public java.lang.String getDisplayName();
 
 User data for display name in UI. Must be <= 60 chars.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#display_name BillingBudget#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#display_name BillingBudget#display_name}
 
 ---
 
@@ -1975,7 +2046,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#id BillingBudget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#id BillingBudget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1995,7 +2066,7 @@ The ownership scope of the budget.
 The ownership scope and users'
 IAM permissions determine who has full access to the budget's data. Possible values: ["OWNERSHIP_SCOPE_UNSPECIFIED", "ALL_USERS", "BILLING_ACCOUNT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#ownership_scope BillingBudget#ownership_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#ownership_scope BillingBudget#ownership_scope}
 
 ---
 
@@ -2009,7 +2080,7 @@ public IResolvable|java.util.List<BillingBudgetThresholdRules> getThresholdRules
 
 threshold_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#threshold_rules BillingBudget#threshold_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#threshold_rules BillingBudget#threshold_rules}
 
 ---
 
@@ -2023,7 +2094,7 @@ public BillingBudgetTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#timeouts BillingBudget#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#timeouts BillingBudget#timeouts}
 
 ---
 
@@ -2062,7 +2133,7 @@ Send an alert when this threshold is exceeded.
 This is a
 1.0-based percentage, so 0.5 = 50%. Must be >= 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#threshold_percent BillingBudget#threshold_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#threshold_percent BillingBudget#threshold_percent}
 
 ---
 
@@ -2076,7 +2147,7 @@ public java.lang.String getSpendBasis();
 
 The type of basis used to determine if spend has passed the threshold. Default value: "CURRENT_SPEND" Possible values: ["CURRENT_SPEND", "FORECASTED_SPEND"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#spend_basis BillingBudget#spend_basis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#spend_basis BillingBudget#spend_basis}
 
 ---
 
@@ -2098,9 +2169,9 @@ BillingBudgetTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#create BillingBudget#create}. |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#delete BillingBudget#delete}. |
-| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#update BillingBudget#update}. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#create BillingBudget#create}. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#delete BillingBudget#delete}. |
+| <code><a href="#@cdktn/provider-google.billingBudget.BillingBudgetTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#update BillingBudget#update}. |
 
 ---
 
@@ -2112,7 +2183,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#create BillingBudget#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#create BillingBudget#create}.
 
 ---
 
@@ -2124,7 +2195,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#delete BillingBudget#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#delete BillingBudget#delete}.
 
 ---
 
@@ -2136,7 +2207,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/billing_budget#update BillingBudget#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/billing_budget#update BillingBudget#update}.
 
 ---
 

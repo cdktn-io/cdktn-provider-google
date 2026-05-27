@@ -4,7 +4,7 @@
 
 ### DataformFolder <a name="DataformFolder" id="@cdktn/provider-google.dataformFolder.DataformFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder google_dataform_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder google_dataform_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataformFolder.DataformFolder.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.resetContainingFolder">resetContainingFolder</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -409,6 +410,12 @@ public putTimeouts(value: DataformFolderTimeouts): void
 public resetContainingFolder(): void
 ```
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.dataformFolder.DataformFolder.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.dataformFolder.DataformFolder.resetId"></a>
 
 ```typescript
@@ -530,7 +537,7 @@ The construct id used in the generated config for the DataformFolder to import.
 
 The id of the existing DataformFolder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -564,12 +571,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeoutsOutputReference">DataformFolderTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.containingFolderInput">containingFolderInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts">DataformFolderTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.containingFolder">containingFolder</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolder.property.project">project</a></code> | <code>string</code> | *No description.* |
@@ -759,6 +768,16 @@ public readonly containingFolderInput: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.dataformFolder.DataformFolder.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `displayNameInput`<sup>Optional</sup> <a name="displayNameInput" id="@cdktn/provider-google.dataformFolder.DataformFolder.property.displayNameInput"></a>
 
 ```typescript
@@ -813,6 +832,16 @@ public readonly timeoutsInput: IResolvable | DataformFolderTimeouts;
 
 ```typescript
 public readonly containingFolder: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.dataformFolder.DataformFolder.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
 ```
 
 - *Type:* string
@@ -903,8 +932,9 @@ const dataformFolderConfig: dataformFolder.DataformFolderConfig = { ... }
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.displayName">displayName</a></code> | <code>string</code> | Required. The Folder's user-friendly name. |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.region">region</a></code> | <code>string</code> | A reference to the region. |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.containingFolder">containingFolder</a></code> | <code>string</code> | Optional. The containing Folder resource name. Format: 'projects/* /locations/* /folders/*' or 'projects/* /locations/* /teamFolders/*'. |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#id DataformFolder#id}. |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#project DataformFolder#project}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#id DataformFolder#id}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#project DataformFolder#project}. |
 | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts">DataformFolderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -989,7 +1019,7 @@ public readonly displayName: string;
 
 Required. The Folder's user-friendly name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#display_name DataformFolder#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#display_name DataformFolder#display_name}
 
 ---
 
@@ -1003,7 +1033,7 @@ public readonly region: string;
 
 A reference to the region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#region DataformFolder#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#region DataformFolder#region}
 
 ---
 
@@ -1017,9 +1047,31 @@ public readonly containingFolder: string;
 
 Optional. The containing Folder resource name. Format: 'projects/* /locations/* /folders/*' or 'projects/* /locations/* /teamFolders/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#containing_folder DataformFolder#containing_folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#containing_folder DataformFolder#containing_folder}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.dataformFolder.DataformFolderConfig.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#deletion_policy DataformFolder#deletion_policy}
 
 ---
 
@@ -1031,7 +1083,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#id DataformFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#id DataformFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1046,7 +1098,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#project DataformFolder#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#project DataformFolder#project}.
 
 ---
 
@@ -1060,7 +1112,7 @@ public readonly timeouts: DataformFolderTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#timeouts DataformFolder#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#timeouts DataformFolder#timeouts}
 
 ---
 
@@ -1078,9 +1130,9 @@ const dataformFolderTimeouts: dataformFolder.DataformFolderTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#create DataformFolder#create}. |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#delete DataformFolder#delete}. |
-| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#update DataformFolder#update}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#create DataformFolder#create}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#delete DataformFolder#delete}. |
+| <code><a href="#@cdktn/provider-google.dataformFolder.DataformFolderTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#update DataformFolder#update}. |
 
 ---
 
@@ -1092,7 +1144,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#create DataformFolder#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#create DataformFolder#create}.
 
 ---
 
@@ -1104,7 +1156,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#delete DataformFolder#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#delete DataformFolder#delete}.
 
 ---
 
@@ -1116,7 +1168,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataform_folder#update DataformFolder#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataform_folder#update DataformFolder#update}.
 
 ---
 

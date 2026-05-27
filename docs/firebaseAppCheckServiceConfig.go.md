@@ -4,7 +4,7 @@
 
 ### FirebaseAppCheckServiceConfig <a name="FirebaseAppCheckServiceConfig" id="@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config google_firebase_app_check_service_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.resetEnforcementMode">ResetEnforcementMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.resetProject">ResetProject</a></code> | *No description.* |
@@ -403,6 +404,12 @@ func PutTimeouts(value FirebaseAppCheckServiceConfigTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetEnforcementMode` <a name="ResetEnforcementMode" id="@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.resetEnforcementMode"></a>
 
 ```go
@@ -530,7 +537,7 @@ The construct id used in the generated config for the FirebaseAppCheckServiceCon
 
 The id of the existing FirebaseAppCheckServiceConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -562,11 +569,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigTimeoutsOutputReference">FirebaseAppCheckServiceConfigTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.enforcementModeInput">EnforcementModeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.serviceIdInput">ServiceIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.enforcementMode">EnforcementMode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.project">Project</a></code> | <code>*string</code> | *No description.* |
@@ -736,6 +745,16 @@ func Timeouts() FirebaseAppCheckServiceConfigTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `EnforcementModeInput`<sup>Optional</sup> <a name="EnforcementModeInput" id="@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.enforcementModeInput"></a>
 
 ```go
@@ -783,6 +802,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfig.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -862,6 +891,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheck
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	ServiceId: *string,
+	DeletionPolicy: *string,
 	EnforcementMode: *string,
 	Id: *string,
 	Project: *string,
@@ -881,9 +911,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheck
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigConfig.property.serviceId">ServiceId</a></code> | <code>*string</code> | The identifier of the service to configure enforcement. |
+| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigConfig.property.enforcementMode">EnforcementMode</a></code> | <code>*string</code> | The App Check enforcement mode for a service supported by App Check. Valid values are. |
-| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#id FirebaseAppCheckServiceConfig#id}. |
-| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#project FirebaseAppCheckServiceConfig#project}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#id FirebaseAppCheckServiceConfig#id}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#project FirebaseAppCheckServiceConfig#project}. |
 | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigTimeouts">FirebaseAppCheckServiceConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -974,7 +1005,28 @@ firebasedatabase.googleapis.com (Firebase Realtime Database)
 firestore.googleapis.com (Cloud Firestore)
 identitytoolkit.googleapis.com (Authentication)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#service_id FirebaseAppCheckServiceConfig#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#service_id FirebaseAppCheckServiceConfig#service_id}
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#deletion_policy FirebaseAppCheckServiceConfig#deletion_policy}
 
 ---
 
@@ -1017,7 +1069,7 @@ Check on your Firebase services.
 If your app has not launched yet, you should enable enforcement immediately, since there are no outdated
 clients in use. Possible values: ["UNENFORCED", "ENFORCED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#enforcement_mode FirebaseAppCheckServiceConfig#enforcement_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#enforcement_mode FirebaseAppCheckServiceConfig#enforcement_mode}
 
 ---
 
@@ -1029,7 +1081,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#id FirebaseAppCheckServiceConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#id FirebaseAppCheckServiceConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1044,7 +1096,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#project FirebaseAppCheckServiceConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#project FirebaseAppCheckServiceConfig#project}.
 
 ---
 
@@ -1058,7 +1110,7 @@ Timeouts FirebaseAppCheckServiceConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#timeouts FirebaseAppCheckServiceConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#timeouts FirebaseAppCheckServiceConfig#timeouts}
 
 ---
 
@@ -1080,9 +1132,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/firebaseappcheck
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#create FirebaseAppCheckServiceConfig#create}. |
-| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#delete FirebaseAppCheckServiceConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#update FirebaseAppCheckServiceConfig#update}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#create FirebaseAppCheckServiceConfig#create}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#delete FirebaseAppCheckServiceConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.firebaseAppCheckServiceConfig.FirebaseAppCheckServiceConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#update FirebaseAppCheckServiceConfig#update}. |
 
 ---
 
@@ -1094,7 +1146,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#create FirebaseAppCheckServiceConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#create FirebaseAppCheckServiceConfig#create}.
 
 ---
 
@@ -1106,7 +1158,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#delete FirebaseAppCheckServiceConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#delete FirebaseAppCheckServiceConfig#delete}.
 
 ---
 
@@ -1118,7 +1170,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/firebase_app_check_service_config#update FirebaseAppCheckServiceConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/firebase_app_check_service_config#update FirebaseAppCheckServiceConfig#update}.
 
 ---
 

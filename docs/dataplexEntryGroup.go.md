@@ -4,7 +4,7 @@
 
 ### DataplexEntryGroup <a name="DataplexEntryGroup" id="@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group google_dataplex_entry_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group google_dataplex_entry_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.resetEntryGroupId">ResetEntryGroupId</a></code> | *No description.* |
@@ -407,6 +408,12 @@ func PutTimeouts(value DataplexEntryGroupTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.resetDescription"></a>
 
 ```go
@@ -558,7 +565,7 @@ The construct id used in the generated config for the DataplexEntryGroup to impo
 
 The id of the existing DataplexEntryGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -596,6 +603,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.transferStatus">TransferStatus</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.uid">Uid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.entryGroupIdInput">EntryGroupIdInput</a></code> | <code>*string</code> | *No description.* |
@@ -604,6 +612,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.entryGroupId">EntryGroupId</a></code> | <code>*string</code> | *No description.* |
@@ -836,6 +845,16 @@ func UpdateTime() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.descriptionInput"></a>
 
 ```go
@@ -913,6 +932,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroup.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1021,6 +1050,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrygro
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
+	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
 	EntryGroupId: *string,
@@ -1043,13 +1073,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrygro
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.description">Description</a></code> | <code>*string</code> | Description of the EntryGroup. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User friendly display name. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.entryGroupId">EntryGroupId</a></code> | <code>*string</code> | The entry group id of the entry group. |
-| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#id DataplexEntryGroup#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#id DataplexEntryGroup#id}. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | User-defined labels for the EntryGroup. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.location">Location</a></code> | <code>*string</code> | The location where entry group will be created in. |
-| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#project DataplexEntryGroup#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#project DataplexEntryGroup#project}. |
 | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupTimeouts">DataplexEntryGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1124,6 +1155,27 @@ Provisioners *[]interface{}
 
 ---
 
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#deletion_policy DataplexEntryGroup#deletion_policy}
+
+---
+
 ##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupConfig.property.description"></a>
 
 ```go
@@ -1134,7 +1186,7 @@ Description *string
 
 Description of the EntryGroup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#description DataplexEntryGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#description DataplexEntryGroup#description}
 
 ---
 
@@ -1148,7 +1200,7 @@ DisplayName *string
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#display_name DataplexEntryGroup#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#display_name DataplexEntryGroup#display_name}
 
 ---
 
@@ -1162,7 +1214,7 @@ EntryGroupId *string
 
 The entry group id of the entry group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#entry_group_id DataplexEntryGroup#entry_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#entry_group_id DataplexEntryGroup#entry_group_id}
 
 ---
 
@@ -1174,7 +1226,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#id DataplexEntryGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#id DataplexEntryGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1194,7 +1246,7 @@ User-defined labels for the EntryGroup.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#labels DataplexEntryGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#labels DataplexEntryGroup#labels}
 
 ---
 
@@ -1208,7 +1260,7 @@ Location *string
 
 The location where entry group will be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#location DataplexEntryGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#location DataplexEntryGroup#location}
 
 ---
 
@@ -1220,7 +1272,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#project DataplexEntryGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#project DataplexEntryGroup#project}.
 
 ---
 
@@ -1234,7 +1286,7 @@ Timeouts DataplexEntryGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#timeouts DataplexEntryGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#timeouts DataplexEntryGroup#timeouts}
 
 ---
 
@@ -1256,9 +1308,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/dataplexentrygro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#create DataplexEntryGroup#create}. |
-| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#delete DataplexEntryGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#update DataplexEntryGroup#update}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#create DataplexEntryGroup#create}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#delete DataplexEntryGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.dataplexEntryGroup.DataplexEntryGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#update DataplexEntryGroup#update}. |
 
 ---
 
@@ -1270,7 +1322,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#create DataplexEntryGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#create DataplexEntryGroup#create}.
 
 ---
 
@@ -1282,7 +1334,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#delete DataplexEntryGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#delete DataplexEntryGroup#delete}.
 
 ---
 
@@ -1294,7 +1346,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/dataplex_entry_group#update DataplexEntryGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/dataplex_entry_group#update DataplexEntryGroup#update}.
 
 ---
 

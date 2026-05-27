@@ -4,7 +4,7 @@
 
 ### ApigeeSecurityProfileV2 <a name="ApigeeSecurityProfileV2" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2 google_apigee_security_profile_v2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2 google_apigee_security_profile_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.putProfileAssessmentConfigs">putProfileAssessmentConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -415,6 +416,12 @@ public putTimeouts(value: ApigeeSecurityProfileV2Timeouts): void
 
 ---
 
+##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.resetDeletionPolicy"></a>
+
+```typescript
+public resetDeletionPolicy(): void
+```
+
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.resetDescription"></a>
 
 ```typescript
@@ -536,7 +543,7 @@ The construct id used in the generated config for the ApigeeSecurityProfileV2 to
 
 The id of the existing ApigeeSecurityProfileV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -571,12 +578,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.profileAssessmentConfigs">profileAssessmentConfigs</a></code> | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigsList">ApigeeSecurityProfileV2ProfileAssessmentConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2TimeoutsOutputReference">ApigeeSecurityProfileV2TimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.orgIdInput">orgIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.profileAssessmentConfigsInput">profileAssessmentConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigs">ApigeeSecurityProfileV2ProfileAssessmentConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.profileIdInput">profileIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts">ApigeeSecurityProfileV2Timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.orgId">orgId</a></code> | <code>string</code> | *No description.* |
@@ -776,6 +785,16 @@ public readonly updateTime: string;
 
 ---
 
+##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.deletionPolicyInput"></a>
+
+```typescript
+public readonly deletionPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.descriptionInput"></a>
 
 ```typescript
@@ -833,6 +852,16 @@ public readonly timeoutsInput: IResolvable | ApigeeSecurityProfileV2Timeouts;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts">ApigeeSecurityProfileV2Timeouts</a>
+
+---
+
+##### `deletionPolicy`<sup>Required</sup> <a name="deletionPolicy" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -920,8 +949,9 @@ const apigeeSecurityProfileV2Config: apigeeSecurityProfileV2.ApigeeSecurityProfi
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.orgId">orgId</a></code> | <code>string</code> | The Apigee Organization associated with the Apigee Security Profile V2, in the format 'organizations/{{org_name}}'. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.profileAssessmentConfigs">profileAssessmentConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigs">ApigeeSecurityProfileV2ProfileAssessmentConfigs</a>[]</code> | profile_assessment_configs block. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.profileId">profileId</a></code> | <code>string</code> | Resource ID of the security profile. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.description">description</a></code> | <code>string</code> | Description of the security profile. |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#id ApigeeSecurityProfileV2#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#id ApigeeSecurityProfileV2#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts">ApigeeSecurityProfileV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1006,7 +1036,7 @@ public readonly orgId: string;
 
 The Apigee Organization associated with the Apigee Security Profile V2, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#org_id ApigeeSecurityProfileV2#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#org_id ApigeeSecurityProfileV2#org_id}
 
 ---
 
@@ -1020,7 +1050,7 @@ public readonly profileAssessmentConfigs: IResolvable | ApigeeSecurityProfileV2P
 
 profile_assessment_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#profile_assessment_configs ApigeeSecurityProfileV2#profile_assessment_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#profile_assessment_configs ApigeeSecurityProfileV2#profile_assessment_configs}
 
 ---
 
@@ -1034,7 +1064,29 @@ public readonly profileId: string;
 
 Resource ID of the security profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#profile_id ApigeeSecurityProfileV2#profile_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#profile_id ApigeeSecurityProfileV2#profile_id}
+
+---
+
+##### `deletionPolicy`<sup>Optional</sup> <a name="deletionPolicy" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.deletionPolicy"></a>
+
+```typescript
+public readonly deletionPolicy: string;
+```
+
+- *Type:* string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#deletion_policy ApigeeSecurityProfileV2#deletion_policy}
 
 ---
 
@@ -1048,7 +1100,7 @@ public readonly description: string;
 
 Description of the security profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#description ApigeeSecurityProfileV2#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#description ApigeeSecurityProfileV2#description}
 
 ---
 
@@ -1060,7 +1112,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#id ApigeeSecurityProfileV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#id ApigeeSecurityProfileV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1077,7 +1129,7 @@ public readonly timeouts: ApigeeSecurityProfileV2Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#timeouts ApigeeSecurityProfileV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#timeouts ApigeeSecurityProfileV2#timeouts}
 
 ---
 
@@ -1095,7 +1147,7 @@ const apigeeSecurityProfileV2ProfileAssessmentConfigs: apigeeSecurityProfileV2.A
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigs.property.assessment">assessment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#assessment ApigeeSecurityProfileV2#assessment}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigs.property.assessment">assessment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#assessment ApigeeSecurityProfileV2#assessment}. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigs.property.weight">weight</a></code> | <code>string</code> | The weight of the assessment. Possible values: ["MINOR", "MODERATE", "MAJOR"]. |
 
 ---
@@ -1108,7 +1160,7 @@ public readonly assessment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#assessment ApigeeSecurityProfileV2#assessment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#assessment ApigeeSecurityProfileV2#assessment}.
 
 ---
 
@@ -1122,7 +1174,7 @@ public readonly weight: string;
 
 The weight of the assessment. Possible values: ["MINOR", "MODERATE", "MAJOR"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#weight ApigeeSecurityProfileV2#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#weight ApigeeSecurityProfileV2#weight}
 
 ---
 
@@ -1140,9 +1192,9 @@ const apigeeSecurityProfileV2Timeouts: apigeeSecurityProfileV2.ApigeeSecurityPro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#create ApigeeSecurityProfileV2#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#delete ApigeeSecurityProfileV2#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#update ApigeeSecurityProfileV2#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#create ApigeeSecurityProfileV2#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#delete ApigeeSecurityProfileV2#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#update ApigeeSecurityProfileV2#update}. |
 
 ---
 
@@ -1154,7 +1206,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#create ApigeeSecurityProfileV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#create ApigeeSecurityProfileV2#create}.
 
 ---
 
@@ -1166,7 +1218,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#delete ApigeeSecurityProfileV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#delete ApigeeSecurityProfileV2#delete}.
 
 ---
 
@@ -1178,7 +1230,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/apigee_security_profile_v2#update ApigeeSecurityProfileV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/apigee_security_profile_v2#update ApigeeSecurityProfileV2#update}.
 
 ---
 

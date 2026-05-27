@@ -4,7 +4,7 @@
 
 ### KmsCryptoKey <a name="KmsCryptoKey" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key google_kms_crypto_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key google_kms_crypto_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.putVersionTemplate">PutVersionTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.resetCryptoKeyBackend">ResetCryptoKeyBackend</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.resetDestroyScheduledDuration">ResetDestroyScheduledDuration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.resetImportOnly">ResetImportOnly</a></code> | *No description.* |
@@ -428,6 +429,12 @@ func PutVersionTemplate(value KmsCryptoKeyVersionTemplate)
 func ResetCryptoKeyBackend()
 ```
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDestroyScheduledDuration` <a name="ResetDestroyScheduledDuration" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.resetDestroyScheduledDuration"></a>
 
 ```go
@@ -585,7 +592,7 @@ The construct id used in the generated config for the KmsCryptoKey to import.
 
 The id of the existing KmsCryptoKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,6 +628,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference">KmsCryptoKeyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.versionTemplate">VersionTemplate</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference">KmsCryptoKeyVersionTemplateOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.cryptoKeyBackendInput">CryptoKeyBackendInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.destroyScheduledDurationInput">DestroyScheduledDurationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.importOnlyInput">ImportOnlyInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -633,6 +641,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.versionTemplateInput">VersionTemplateInput</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplate">KmsCryptoKeyVersionTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.cryptoKeyBackend">CryptoKeyBackend</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.destroyScheduledDuration">DestroyScheduledDuration</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.importOnly">ImportOnly</a></code> | <code>interface{}</code> | *No description.* |
@@ -847,6 +856,16 @@ func CryptoKeyBackendInput() *string
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DestroyScheduledDurationInput`<sup>Optional</sup> <a name="DestroyScheduledDurationInput" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.destroyScheduledDurationInput"></a>
 
 ```go
@@ -961,6 +980,16 @@ func VersionTemplateInput() KmsCryptoKeyVersionTemplate
 
 ```go
 func CryptoKeyBackend() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
 ```
 
 - *Type:* *string
@@ -1095,6 +1124,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmscryptokey"
 	KeyRing: *string,
 	Name: *string,
 	CryptoKeyBackend: *string,
+	DeletionPolicy: *string,
 	DestroyScheduledDuration: *string,
 	Id: *string,
 	ImportOnly: interface{},
@@ -1121,8 +1151,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmscryptokey"
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.keyRing">KeyRing</a></code> | <code>*string</code> | The KeyRing that this key belongs to. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.name">Name</a></code> | <code>*string</code> | The resource name for the CryptoKey. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.cryptoKeyBackend">CryptoKeyBackend</a></code> | <code>*string</code> | The resource name of the backend environment associated with all CryptoKeyVersions within this CryptoKey. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.destroyScheduledDuration">DestroyScheduledDuration</a></code> | <code>*string</code> | The period of time that versions of this key spend in the DESTROY_SCHEDULED state before transitioning to DESTROYED. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.importOnly">ImportOnly</a></code> | <code>interface{}</code> | Whether this key may contain imported versions only. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels with user-defined metadata to apply to this resource. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.purpose">Purpose</a></code> | <code>*string</code> | The immutable purpose of this CryptoKey. See the [purpose reference](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys#CryptoKeyPurpose) for possible inputs. Default value is "ENCRYPT_DECRYPT". |
@@ -1213,7 +1244,7 @@ KeyRing *string
 
 The KeyRing that this key belongs to. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#key_ring KmsCryptoKey#key_ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#key_ring KmsCryptoKey#key_ring}
 
 ---
 
@@ -1227,7 +1258,7 @@ Name *string
 
 The resource name for the CryptoKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#name KmsCryptoKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#name KmsCryptoKey#name}
 
 ---
 
@@ -1243,9 +1274,30 @@ The resource name of the backend environment associated with all CryptoKeyVersio
 
 The resource name is in the format "projects/* /locations/* /ekmConnections/*" and only applies to "EXTERNAL_VPC" keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#crypto_key_backend KmsCryptoKey#crypto_key_backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#crypto_key_backend KmsCryptoKey#crypto_key_backend}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#deletion_policy KmsCryptoKey#deletion_policy}
 
 ---
 
@@ -1261,7 +1313,7 @@ The period of time that versions of this key spend in the DESTROY_SCHEDULED stat
 
 If not specified at creation time, the default duration is 30 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#destroy_scheduled_duration KmsCryptoKey#destroy_scheduled_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#destroy_scheduled_duration KmsCryptoKey#destroy_scheduled_duration}
 
 ---
 
@@ -1273,7 +1325,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#id KmsCryptoKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1290,7 +1342,7 @@ ImportOnly interface{}
 
 Whether this key may contain imported versions only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#import_only KmsCryptoKey#import_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#import_only KmsCryptoKey#import_only}
 
 ---
 
@@ -1307,7 +1359,7 @@ Labels with user-defined metadata to apply to this resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#labels KmsCryptoKey#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#labels KmsCryptoKey#labels}
 
 ---
 
@@ -1321,7 +1373,7 @@ Purpose *string
 
 The immutable purpose of this CryptoKey. See the [purpose reference](https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys#CryptoKeyPurpose) for possible inputs. Default value is "ENCRYPT_DECRYPT".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#purpose KmsCryptoKey#purpose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#purpose KmsCryptoKey#purpose}
 
 ---
 
@@ -1339,7 +1391,7 @@ The first rotation will take place after the specified period. The rotation peri
 the format of a decimal number with up to 9 fractional digits, followed by the
 letter 's' (seconds). It must be greater than a day (ie, 86400).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#rotation_period KmsCryptoKey#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#rotation_period KmsCryptoKey#rotation_period}
 
 ---
 
@@ -1357,7 +1409,7 @@ You must use the 'google_kms_crypto_key_version' resource to create a new Crypto
 or 'google_kms_key_ring_import_job' resource to import the CryptoKeyVersion.
 This field is only applicable during initial CryptoKey creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#skip_initial_version_creation KmsCryptoKey#skip_initial_version_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#skip_initial_version_creation KmsCryptoKey#skip_initial_version_creation}
 
 ---
 
@@ -1371,7 +1423,7 @@ Timeouts KmsCryptoKeyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#timeouts KmsCryptoKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#timeouts KmsCryptoKey#timeouts}
 
 ---
 
@@ -1385,7 +1437,7 @@ VersionTemplate KmsCryptoKeyVersionTemplate
 
 version_template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#version_template KmsCryptoKey#version_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#version_template KmsCryptoKey#version_template}
 
 ---
 
@@ -1420,9 +1472,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/kmscryptokey"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}. |
 
 ---
 
@@ -1434,7 +1486,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#create KmsCryptoKey#create}.
 
 ---
 
@@ -1446,7 +1498,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#delete KmsCryptoKey#delete}.
 
 ---
 
@@ -1458,7 +1510,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#update KmsCryptoKey#update}.
 
 ---
 
@@ -1494,7 +1546,7 @@ Algorithm *string
 
 The algorithm to use when creating a version based on this template. See the [algorithm reference](https://cloud.google.com/kms/docs/reference/rest/v1/CryptoKeyVersionAlgorithm) for possible inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#algorithm KmsCryptoKey#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#algorithm KmsCryptoKey#algorithm}
 
 ---
 
@@ -1510,7 +1562,7 @@ The protection level to use when creating a version based on this template.
 
 Possible values include "SOFTWARE", "HSM", "EXTERNAL", "EXTERNAL_VPC". Defaults to "SOFTWARE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/kms_crypto_key#protection_level KmsCryptoKey#protection_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/kms_crypto_key#protection_level KmsCryptoKey#protection_level}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ProjectService <a name="ProjectService" id="@cdktn/provider-google.projectService.ProjectService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service google_project_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service google_project_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectService.ProjectService.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectService.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.resetDisableDependentServices">ResetDisableDependentServices</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.resetDisableOnDestroy">ResetDisableOnDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.resetId">ResetId</a></code> | *No description.* |
@@ -404,6 +405,12 @@ func PutTimeouts(value ProjectServiceTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.projectService.ProjectService.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetDisableDependentServices` <a name="ResetDisableDependentServices" id="@cdktn/provider-google.projectService.ProjectService.resetDisableDependentServices"></a>
 
 ```go
@@ -537,7 +544,7 @@ The construct id used in the generated config for the ProjectService to import.
 
 The id of the existing ProjectService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -568,12 +575,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.3
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeoutsOutputReference">ProjectServiceTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.disableDependentServicesInput">DisableDependentServicesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.disableOnDestroyInput">DisableOnDestroyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.serviceInput">ServiceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.disableDependentServices">DisableDependentServices</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.disableOnDestroy">DisableOnDestroy</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectService.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -734,6 +743,16 @@ func Timeouts() ProjectServiceTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.projectService.ProjectService.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DisableDependentServicesInput`<sup>Optional</sup> <a name="DisableDependentServicesInput" id="@cdktn/provider-google.projectService.ProjectService.property.disableDependentServicesInput"></a>
 
 ```go
@@ -791,6 +810,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.projectService.ProjectService.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -880,6 +909,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectservice"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Service: *string,
+	DeletionPolicy: *string,
 	DisableDependentServices: interface{},
 	DisableOnDestroy: interface{},
 	Id: *string,
@@ -899,11 +929,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectservice"
 | <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#service ProjectService#service}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.disableDependentServices">DisableDependentServices</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#disable_dependent_services ProjectService#disable_dependent_services}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.disableOnDestroy">DisableOnDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#disable_on_destroy ProjectService#disable_on_destroy}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#id ProjectService#id}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#project ProjectService#project}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#service ProjectService#service}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.disableDependentServices">DisableDependentServices</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#disable_dependent_services ProjectService#disable_dependent_services}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.disableOnDestroy">DisableOnDestroy</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#disable_on_destroy ProjectService#disable_on_destroy}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#id ProjectService#id}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#project ProjectService#project}. |
 | <code><a href="#@cdktn/provider-google.projectService.ProjectServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts">ProjectServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -986,7 +1017,28 @@ Service *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#service ProjectService#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#service ProjectService#service}.
+
+---
+
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.projectService.ProjectServiceConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+Whether Terraform will be prevented from destroying the instance.
+
+Defaults to "DELETE".
+When a 'terraform destroy' or 'terraform apply' would delete the instance,
+the command will fail if this field is set to "PREVENT" in Terraform state.
+When set to "ABANDON", the command will remove the resource from Terraform
+management without updating or deleting the resource in the API.
+When set to "DELETE", deleting the resource is allowed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#deletion_policy ProjectService#deletion_policy}
 
 ---
 
@@ -998,7 +1050,7 @@ DisableDependentServices interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#disable_dependent_services ProjectService#disable_dependent_services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#disable_dependent_services ProjectService#disable_dependent_services}.
 
 ---
 
@@ -1010,7 +1062,7 @@ DisableOnDestroy interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#disable_on_destroy ProjectService#disable_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#disable_on_destroy ProjectService#disable_on_destroy}.
 
 ---
 
@@ -1022,7 +1074,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#id ProjectService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#id ProjectService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1037,7 +1089,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#project ProjectService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#project ProjectService#project}.
 
 ---
 
@@ -1051,7 +1103,7 @@ Timeouts ProjectServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#timeouts ProjectService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#timeouts ProjectService#timeouts}
 
 ---
 
@@ -1074,10 +1126,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v19/projectservice"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#create ProjectService#create}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#delete ProjectService#delete}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#read ProjectService#read}. |
-| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#update ProjectService#update}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#create ProjectService#create}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#delete ProjectService#delete}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#read ProjectService#read}. |
+| <code><a href="#@cdktn/provider-google.projectService.ProjectServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#update ProjectService#update}. |
 
 ---
 
@@ -1089,7 +1141,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#create ProjectService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#create ProjectService#create}.
 
 ---
 
@@ -1101,7 +1153,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#delete ProjectService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#delete ProjectService#delete}.
 
 ---
 
@@ -1113,7 +1165,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#read ProjectService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#read ProjectService#read}.
 
 ---
 
@@ -1125,7 +1177,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/resources/project_service#update ProjectService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.33.0/docs/resources/project_service#update ProjectService#update}.
 
 ---
 
